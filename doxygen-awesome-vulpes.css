@@ -1,0 +1,107 @@
+/*
+ * Copyright (c) 2024 Vulpes
+ * SPDX-License-Identifier: GPL-3.0-only
+ */
+
+/* This file contains color customizations that follow Vulpes's branding */
+
+html {
+    --primary-color: #e38501;
+    --primary-dark-color: #b3790e;
+    --primary-light-color: #ffb54f;
+    --primary-lighter-color: #ffc574;
+    --primary-lightest-color: #ffd69c;
+
+    --side-nav-background: #e7ecff;
+    --side-nav-foreground: #4978f0;
+
+    --searchbar-background: var(--page-background-color);
+    --searchbar-foreground: var(--page-foreground-color);
+
+    --link-color: #2980b9;
+    --param-color: #b71c1c;
+
+    --side-nav-fixed-width: 300px;
+    --top-height: 220px;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not(.light-mode) {
+        color-scheme: dark;
+
+        --primary-color: #ff9705;
+        --primary-dark-color: #b3790e;
+        --primary-light-color: #aa6f00;
+        --primary-lighter-color: #543700;
+        --primary-lightest-color: #1c1200;
+
+        --side-nav-background: #020100;
+        --side-nav-foreground: var(--page-foreground-color);
+
+        --param-color: #9ad0ef;
+    }
+}
+
+html.dark-mode {
+    color-scheme: dark;
+
+    --primary-color: #ff9705;
+    --primary-dark-color: #b3790e;
+    --primary-light-color: #aa6f00;
+    --primary-lighter-color: #543700;
+    --primary-lightest-color: #1c1200;
+
+    --side-nav-background: #020100;
+    --side-nav-foreground: var(--page-foreground-color);
+
+    --param-color: #9ad0ef;
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+    color: var(--link-color) !important;
+}
+
+.paramname {
+    color: var(--param-color);
+}
+
+dl.section dd, dl.bug dd, dl.deprecated dd {
+    margin-inline-start: revert;
+}
+
+/* adjust top and title to ~match Sphinx docs */
+#top {
+    background: var(--side-nav-background);
+}
+
+#titlearea {
+    padding-bottom: 0;
+}
+
+#titlearea table {
+    width: 100%;
+}
+
+#projectlogo img {
+    width: 200px;
+    height: 95px;
+    max-height: none !important;
+    padding-top: 12px;
+}
+
+#projectalign {
+    display: none;
+}
+
+@media screen and (min-width: 767px) {
+    #doc-content {
+        padding-top: calc(var(--top-height) - 180px);
+    }
+}
+
+/* style for re-injected version */
+#projectversion {
+    color: var(--side-nav-foreground);
+    padding-top: 10px;
+    text-align: center;
+}
