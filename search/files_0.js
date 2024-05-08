@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['index_2emd_0',['index.md',['../index_8md.html',1,'']]]
+  ['gauss_2ehpp_0',['gauss.hpp',['../gauss_8hpp.html',1,'']]]
 ];

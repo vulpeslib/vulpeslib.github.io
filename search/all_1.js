@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['index_2emd_0',['index.md',['../index_8md.html',1,'']]],
-  ['introduction_1',['Introduction',['../index.html',1,'']]]
+  ['deploy_0',['Website deploy',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md4',1,'']]],
+  ['devcontainer_1',['Build devcontainer',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md3',1,'']]],
+  ['developers_20setup_2',['Developers Setup',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html',1,'']]]
 ];

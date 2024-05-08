@@ -26,16 +26,28 @@ var NAVTREE =
 [
   [ "Vulpes", "index.html", [
     [ "Introduction", "index.html", null ],
-    [ "Developers Setup", "md__2workspaces_2vulpes_2doc_2developers-guide_2index.html", [
-      [ "Documentation", "md__2workspaces_2vulpes_2doc_2developers-guide_2index.html#autotoc_md2", null ],
-      [ "Test Workflows", "md__2workspaces_2vulpes_2doc_2developers-guide_2index.html#autotoc_md3", null ]
+    [ "Developers Setup", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html", [
+      [ "Workflows", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md2", [
+        [ "Build devcontainer", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md3", null ],
+        [ "Website deploy", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md4", null ]
+      ] ]
+    ] ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"dir_35f1a0849d07b3f60f0d7ab29139efdc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

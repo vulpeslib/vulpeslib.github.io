@@ -1,21 +1,27 @@
 var indexSectionsWithContent =
 {
-  0: "dimstw",
-  1: "im",
-  2: "dis"
+  0: "bdegimsvw",
+  1: "v",
+  2: "gim",
+  3: "e",
+  4: "dis"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "pages"
+  1: "namespaces",
+  2: "files",
+  3: "functions",
+  4: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Files",
-  2: "Pages"
+  1: "Namespaces",
+  2: "Files",
+  3: "Functions",
+  4: "Pages"
 };
 

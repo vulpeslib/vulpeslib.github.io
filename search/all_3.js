@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setup_0',['Developers Setup',['../md__2workspaces_2vulpes_2doc_2developers-guide_2index.html',1,'']]]
+  ['gauss_2ehpp_0',['gauss.hpp',['../gauss_8hpp.html',1,'']]]
 ];
