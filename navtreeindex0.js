@@ -8,10 +8,11 @@ var NAVTREEINDEX0 =
 "gauss_8hpp.html":[3,0,1,0,0],
 "gauss_8hpp.html#a0e6b176d115774ed58fbaa69c39f84ac":[3,0,1,0,0,1],
 "gauss_8hpp.html#a579a3a0c092eae24bcaba3a695c0e6ae":[3,0,1,0,0,2],
+"gauss_8hpp.html#abbfd3608db32c82752d1119881b8111c":[3,0,1,0,0,3],
 "gauss_8hpp.html#abfb3fa0044cce54307404e5d814c9410":[3,0,1,0,0,0],
 "gauss_8hpp_source.html":[3,0,1,0,0],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html":[1],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md2":[1,0],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md3":[1,0,0],
@@ -23,6 +24,7 @@ var NAVTREEINDEX0 =
 "namespacevulpes_1_1quadrature.html":[2,0,0,0],
 "namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac":[2,0,0,0,1],
 "namespacevulpes_1_1quadrature.html#a579a3a0c092eae24bcaba3a695c0e6ae":[2,0,0,0,2],
+"namespacevulpes_1_1quadrature.html#abbfd3608db32c82752d1119881b8111c":[2,0,0,0,3],
 "namespacevulpes_1_1quadrature.html#abfb3fa0044cce54307404e5d814c9410":[2,0,0,0,0],
 "pages.html":[]
 };

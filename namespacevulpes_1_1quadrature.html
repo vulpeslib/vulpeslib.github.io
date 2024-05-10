@@ -120,6 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a579a3a0c092eae24bcaba3a695c0e6ae" id="r_a579a3a0c092eae24bcaba3a695c0e6ae"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
 <tr class="memitem:a579a3a0c092eae24bcaba3a695c0e6ae"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; T, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1quadrature.html#a579a3a0c092eae24bcaba3a695c0e6ae">EvaluateLegendreDer2</a> (T x, size_t n)</td></tr>
 <tr class="separator:a579a3a0c092eae24bcaba3a695c0e6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfd3608db32c82752d1119881b8111c" id="r_abbfd3608db32c82752d1119881b8111c"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:abbfd3608db32c82752d1119881b8111c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; T, 2 &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1quadrature.html#abbfd3608db32c82752d1119881b8111c">GaussLegendreQuadrature</a> (size_t n)</td></tr>
+<tr class="separator:abbfd3608db32c82752d1119881b8111c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abfb3fa0044cce54307404e5d814c9410" name="abfb3fa0044cce54307404e5d814c9410"></a>
@@ -239,6 +242,34 @@ template&lt;std::floating_point T&gt; </div>
 
 </div>
 </div>
+<a id="abbfd3608db32c82752d1119881b8111c" name="abbfd3608db32c82752d1119881b8111c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbfd3608db32c82752d1119881b8111c">&#9670;&#160;</a></span>GaussLegendreQuadrature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::floating_point T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::array&lt; T, 2 &gt; &gt; vulpes::quadrature::GaussLegendreQuadrature </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the Gauss-Legendre quadrature points and weights for a given number of points using the Newton's method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The number of points for the quadrature. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of arrays, where each array contains the x-coordinate and weight of a quadrature point. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -246,7 +277,7 @@ template&lt;std::floating_point T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1quadrature.html">quadrature</a></li>
-    <li class="footer">Generated on Wed May 8 2024 16:39:52 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 10 2024 12:18:30 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

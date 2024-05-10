@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "bdegimsvw",
   1: "v",
   2: "gim",
-  3: "e",
+  3: "eg",
   4: "dis"
 };
 

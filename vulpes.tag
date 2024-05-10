@@ -46,6 +46,13 @@
       <anchor>a579a3a0c092eae24bcaba3a695c0e6ae</anchor>
       <arglist>(T x, size_t n)</arglist>
     </member>
+    <member kind="function">
+      <type>std::vector&lt; std::array&lt; T, 2 &gt; &gt;</type>
+      <name>GaussLegendreQuadrature</name>
+      <anchorfile>namespacevulpes_1_1quadrature.html</anchorfile>
+      <anchor>abbfd3608db32c82752d1119881b8111c</anchor>
+      <arglist>(size_t n)</arglist>
+    </member>
   </compound>
   <compound kind="page">
     <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index</name>
