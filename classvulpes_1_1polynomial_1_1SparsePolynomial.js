@@ -1,0 +1,28 @@
+var classvulpes_1_1polynomial_1_1SparsePolynomial =
+[
+    [ "MonomialType", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae32700e708c26c16a0887aeaebece114", null ],
+    [ "SparsePolynomial", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a80c07570de84096e689825ca5207d74d", null ],
+    [ "SparsePolynomial", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#aa629f32b06e22b822ea93d624560532e", null ],
+    [ "SparsePolynomial", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a858a6a2a209331181c80e4f496310b12", null ],
+    [ "SparsePolynomial", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#aa7ba6f08bb48c7e4efb07c2aebd3b4ed", null ],
+    [ "add", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a64ca52c8602c14baa2fc57e081260323", null ],
+    [ "data", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a869d53806df3259c9d8721803dd34422", null ],
+    [ "data", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#ac7980b98edb7bda6c8e6b3d0bdb857df", null ],
+    [ "derivative", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#ad6c37a953603b2d2f6554bf1559f3f75", null ],
+    [ "evaluate", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae07b1d1782da2b6adb2cff4d3803d528", null ],
+    [ "evaluate", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a2f344f3b2869c2f845a1632ff08aef3e", null ],
+    [ "gradient", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a9212cf0e17c4c76de9ce06010ef83ef2", null ],
+    [ "integrate", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a86c472da35039e41facefe0f0c865b28", null ],
+    [ "integrate", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#acd1911e9d2b23e10607e2137e58391b8", null ],
+    [ "operator*=", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#ab1dff788a1a8bad54d9fdc52a8259297", null ],
+    [ "operator*=", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#ab79bf225d3384f709941c90a0a5651a8", null ],
+    [ "operator+=", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#aa9061a2d225589f2e35df0eb3489bc41", null ],
+    [ "operator-=", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a1eeaee03e9910fd42a0b5d1421bb5553", null ],
+    [ "primitive", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a079d6c8e713d8024ae8f7e5c83b1d195", null ],
+    [ "self", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#acb35aa91415753bac40f94e47483d841", null ],
+    [ "self", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a82a2b8e6329b5027d5476a2db49efaab", null ],
+    [ "to", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a7f846c4daf0ea4bc45bb8b3937c1f37d", null ],
+    [ "operator<<", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a836b3873667e633ac524a0dd2de366a3", null ],
+    [ "operator==", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a92948cf5624b54daac7a4321b9dc048e", null ],
+    [ "m_monomials", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#ac7f08c2467b4055a9e50e8f21b05a478", null ]
+];

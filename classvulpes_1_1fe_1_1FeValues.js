@@ -1,0 +1,28 @@
+var classvulpes_1_1fe_1_1FeValues =
+[
+    [ "FeValuesGrad", "classvulpes_1_1fe_1_1FeValues.html#aea04afc07f3b0c7eab2b430b1c5d2cfe", null ],
+    [ "FeValuesScalar", "classvulpes_1_1fe_1_1FeValues.html#a0dd06df502fa1b0a7997d37111b03849", null ],
+    [ "PhysicalQPts", "classvulpes_1_1fe_1_1FeValues.html#a91e49e226ca98a64f16e5748a3db7b25", null ],
+    [ "QuadtratureWeigths", "classvulpes_1_1fe_1_1FeValues.html#a006cadf9a687ce754027c1b69a63280f", null ],
+    [ "real_t", "classvulpes_1_1fe_1_1FeValues.html#aee373c97689fabfccd3ed0049f91c20f", null ],
+    [ "createNeighValues", "classvulpes_1_1fe_1_1FeValues.html#a86770231f0e320007888170b5a08f2da", null ],
+    [ "evalAndApplyMapping", "classvulpes_1_1fe_1_1FeValues.html#afad6d795a5d05440b8967421a6e04b42", null ],
+    [ "evalOnReferenceFrame", "classvulpes_1_1fe_1_1FeValues.html#a5f8893a236e47ac67ec7369466e96e51", null ],
+    [ "getFaceNormal", "classvulpes_1_1fe_1_1FeValues.html#af6f14503ff2c1a3c4ba1a3e4b84c4f5f", null ],
+    [ "getGradEval", "classvulpes_1_1fe_1_1FeValues.html#a8f543651d01aee50596ca4ba7d84efc0", null ],
+    [ "getShapeEval", "classvulpes_1_1fe_1_1FeValues.html#a7b6d18987920d6e5a1602f40000e39bd", null ],
+    [ "neighValues", "classvulpes_1_1fe_1_1FeValues.html#ae0e32f00e673ca85042ee2435a0e09ed", null ],
+    [ "neighValues", "classvulpes_1_1fe_1_1FeValues.html#a1d436a476ec7d53f97cf5c582f34350f", null ],
+    [ "setFaceNormal", "classvulpes_1_1fe_1_1FeValues.html#a1ab9b672498f4fc1394fae88ac5b68e3", null ],
+    [ "weights", "classvulpes_1_1fe_1_1FeValues.html#a5b46ec99efe80963a848593f7a245781", null ],
+    [ "m_face_normal", "classvulpes_1_1fe_1_1FeValues.html#a522b1e1ce0de1390d755b58b487bd982", null ],
+    [ "m_fe_values_neigh", "classvulpes_1_1fe_1_1FeValues.html#ac9e29d8fd65a0c7b4f57c11edc2d2969", null ],
+    [ "m_grads_shapes", "classvulpes_1_1fe_1_1FeValues.html#a7415de2066151ee0284746c67fffedb8", null ],
+    [ "m_grads_shapes_ref", "classvulpes_1_1fe_1_1FeValues.html#ab187e2bc206e82db0eeb992372b2c603", null ],
+    [ "m_physical_qpts", "classvulpes_1_1fe_1_1FeValues.html#a3dd09af7636659d1137310438038ef98", null ],
+    [ "m_physical_qpts_ref", "classvulpes_1_1fe_1_1FeValues.html#a7ab4877fcb8448dc5e72687cfb38f557", null ],
+    [ "m_quadrature_weights", "classvulpes_1_1fe_1_1FeValues.html#aaf50537b87bd288623e9e2cc51287bd4", null ],
+    [ "m_quadrature_weights_ref", "classvulpes_1_1fe_1_1FeValues.html#a877e1af350fe4ad7612e162e736be761", null ],
+    [ "m_scalar_shapes", "classvulpes_1_1fe_1_1FeValues.html#abbf748385e56e6538ef320c4daac9705", null ],
+    [ "m_scalar_shapes_ref", "classvulpes_1_1fe_1_1FeValues.html#a2137a3c415bc29bd96fa83307710898e", null ]
+];

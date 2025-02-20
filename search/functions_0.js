@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['evaluatelegendre_0',['EvaluateLegendre',['../namespacevulpes_1_1quadrature.html#abfb3fa0044cce54307404e5d814c9410',1,'vulpes::quadrature']]],
-  ['evaluatelegendreder_1',['EvaluateLegendreDer',['../namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac',1,'vulpes::quadrature']]],
-  ['evaluatelegendreder2_2',['EvaluateLegendreDer2',['../namespacevulpes_1_1quadrature.html#a579a3a0c092eae24bcaba3a695c0e6ae',1,'vulpes::quadrature']]]
+  ['_5finterval_5finterval_5f1d_0',['_interval_interval_1d',['../structscipy_1_1BoxDist1D.html#aa30622b2b8d8af67799f1499c8ff7344',1,'scipy::BoxDist1D']]],
+  ['_5fresize_5fstack_1',['_resize_stack',['../structscipy_1_1RectRectDistanceTracker.html#aa5b18b4e8d5c818d41d6f5cceeaa21e8',1,'scipy::RectRectDistanceTracker']]]
 ];

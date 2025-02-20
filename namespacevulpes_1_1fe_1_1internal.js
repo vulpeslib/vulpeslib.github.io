@@ -1,0 +1,27 @@
+var namespacevulpes_1_1fe_1_1internal =
+[
+    [ "LagrangianNodesPolicy", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy" ],
+    [ "WarpAndBlendNodesPolicy", "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html", "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy" ],
+    [ "real_t", "namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6", null ],
+    [ "buildVandermonde", "namespacevulpes_1_1fe_1_1internal.html#a149529c6dad257c887c4eccc4f56de2a", null ],
+    [ "computeInverse", "namespacevulpes_1_1fe_1_1internal.html#a84ad20732cf47d1ef97208cde6f50ee7", null ],
+    [ "computeLagrangianPolyCoef", "namespacevulpes_1_1fe_1_1internal.html#af3cdecea87d7b118a0a5c8578e165c2a", null ],
+    [ "computeWarp", "namespacevulpes_1_1fe_1_1internal.html#afec06edd0d41fe90cbf18654eb1f8a9b", null ],
+    [ "computeWarpAndBlend", "namespacevulpes_1_1fe_1_1internal.html#a744281520a73eb8f840f17c971fb9640", null ],
+    [ "conditionNumber", "namespacevulpes_1_1fe_1_1internal.html#a767f53f9bfe43511d2c38a8496931bf3", null ],
+    [ "equinNodes3D", "namespacevulpes_1_1fe_1_1internal.html#a9db91a1e60c78db411bee31cb09dbb75", null ],
+    [ "evalLegendre", "namespacevulpes_1_1fe_1_1internal.html#a4f101f8650c6d4f16e9ee840fabab748", null ],
+    [ "evalSimplex", "namespacevulpes_1_1fe_1_1internal.html#a930d811c0cfcf4b591444ed7264c112d", null ],
+    [ "gaussLobattoRoots", "namespacevulpes_1_1fe_1_1internal.html#a0a3fe3ce99eb005082620506f1652738", null ],
+    [ "interpolateFunctionAtNodes", "namespacevulpes_1_1fe_1_1internal.html#a8a3ac0047d31adeb05ff8d7a66d79e76", null ],
+    [ "jacobiP", "namespacevulpes_1_1fe_1_1internal.html#ac7f456429dbf147bddb488e0705bdc8a", null ],
+    [ "nodes2D", "namespacevulpes_1_1fe_1_1internal.html#ad73d11b3d2c132f1808b1a5c11cd293b", null ],
+    [ "nodes3D", "namespacevulpes_1_1fe_1_1internal.html#a7b1a9465945945b874c98904e51c4326", null ],
+    [ "normalize", "namespacevulpes_1_1fe_1_1internal.html#aee537e01f990924884412e7dcc32e52f", null ],
+    [ "rs2ab", "namespacevulpes_1_1fe_1_1internal.html#a84031c3af794935ac8c25bb21346f1cf", null ],
+    [ "rst2abc", "namespacevulpes_1_1fe_1_1internal.html#ad3aaa939c5bb95941d16f2b78c89b9c4", null ],
+    [ "simplex2DP", "namespacevulpes_1_1fe_1_1internal.html#a0204f4dc193b91e6326ecaf6b409887c", null ],
+    [ "simplex3DP", "namespacevulpes_1_1fe_1_1internal.html#a9c66ba0b8f1de46b9dcef2b2fbb97592", null ],
+    [ "xy2rs", "namespacevulpes_1_1fe_1_1internal.html#ab4ec10d73a9235bcb58895b8a06452ca", null ],
+    [ "xyz2rst", "namespacevulpes_1_1fe_1_1internal.html#a29ac1793359aa6eec0d0768d44d75b95", null ]
+];

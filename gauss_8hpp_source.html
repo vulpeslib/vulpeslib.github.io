@@ -23,6 +23,16 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -35,12 +45,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.0.1-alpha</span>
    </div>
-   <div id="projectbrief">Virtual and Polytopal Elements Library</div>
+   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
  </tr>
  </tbody>
@@ -111,134 +121,87 @@ $(document).ready(function(){initNavTree('gauss_8hpp_source.html',''); initResiz
   <div class="headertitle"><div class="title">gauss.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="gauss_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef VULEPES_QUADRATURE_GAUSS_HPP_</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define VULEPES_QUADRATURE_GAUSS_HPP_</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;concepts&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;numbers&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespacevulpes.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevulpes.html">vulpes</a> {</div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1quadrature.html">   11</a></span><span class="keyword">namespace </span>quadrature {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">template</span> &lt;std::<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> T&gt;</div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1quadrature.html#abfb3fa0044cce54307404e5d814c9410">   23</a></span>T <a class="code hl_function" href="namespacevulpes_1_1quadrature.html#abfb3fa0044cce54307404e5d814c9410">EvaluateLegendre</a>(T x, <span class="keywordtype">size_t</span> n) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordflow">if</span> (n == 0) <span class="keywordflow">return</span> 1.0;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  T p1 = 1.0;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  T p2 = x;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  T p3 = x;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    p3 = (T(2ull * i + 1ull) * x * p2 - T(i) * p1) / T(i + 1ull);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    p1 = p2;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    p2 = p3;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  }</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">return</span> p3;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
-</div>
+<a href="gauss_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ----------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (C) 2024 - 2025 by the vulpes authors.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// This file is part of Vulpes.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Vulpes is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// it under the terms of the GdimU General Public License as published by</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// (at your option) any later version.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Vulpes is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// but WITHOUT AdimY WARRAdimTY; without even the implied warranty of</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// MERCHAdimTABILITY or FITdimESS FOR A PARTICULAR PURPOSE. See the GdimU</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// General Public License for more details.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// You should have received a copy of the GdimU General Public License</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// along with Vulpes. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// ----------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Author: Matteo Caldana &lt;matteo.caldana@polimi.it&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef VULPES_QUADRATURE_GAUSS_HPP_</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define VULPES_QUADRATURE_GAUSS_HPP_</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;gmpxx.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="qrule_8hpp.html">vulpes/quadrature/qrule.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="vmath_8hpp.html">vulpes/utils/vmath.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevulpes.html">vulpes</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span>qrule {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span> &lt;std::<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> T&gt;</div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac">   48</a></span>std::array&lt;T, 2&gt; <a class="code hl_function" href="namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac">EvaluateLegendreDer</a>(T x, <span class="keywordtype">size_t</span> n) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordflow">if</span> (n == 0) <span class="keywordflow">return</span> {T(1.0), T(0.0)};</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  T p1 = 1.0;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  T p2 = x;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  T p3 = x;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  T dp1 = 0.0;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  T dp2 = 1.0;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  T dp3 = 1.0;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    p3 = (T(2ull * i + 1ull) * x * p2 - T(i) * p1) / T(i + 1ull);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    dp3 = T(i + 1ull) * p2 + x * dp2;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    p1 = p2;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    p2 = p3;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    dp1 = dp2;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    dp2 = dp3;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">return</span> {p3, dp3};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1qrule.html#a0540b0d397bb8efa560704709b4b90fc">   38</a></span><span class="keyword">using </span><a class="code hl_struct" href="structvulpes_1_1qrule_1_1QuadratureRule.html">QuadratureRule1Dmp</a> = <a class="code hl_struct" href="structvulpes_1_1qrule_1_1QuadratureRule.html">QuadratureRule1D&lt;mpf_class&gt;</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><a class="code hl_struct" href="structvulpes_1_1qrule_1_1QuadratureRule.html">QuadratureRule1Dmp</a> <a class="code hl_function" href="namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb">gmpGaussLegendreQuadrature</a>(</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    std::size_t n, std::size_t precision = 256);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><a class="code hl_struct" href="structvulpes_1_1qrule_1_1QuadratureRule.html">QuadratureRule1Dmp</a> <a class="code hl_function" href="namespacevulpes_1_1qrule.html#acf808d810fe514bf8cf0c6a3229ff4a2">gmpGaussLobattoQuadrature</a>(</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    std::size_t n, std::size_t precision = 256);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> dim, <span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1qrule.html#a08f90f4c63ab870c7f01fc4258f994ed">  105</a></span><a class="code hl_struct" href="structvulpes_1_1qrule_1_1QuadratureRule.html">QuadratureRule&lt;T, dim&gt;</a> <a class="code hl_function" href="namespacevulpes_1_1qrule.html#a08f90f4c63ab870c7f01fc4258f994ed">buildTensorQuadrature</a>(</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structvulpes_1_1qrule_1_1QuadratureRule.html">QuadratureRule1D&lt;T&gt;</a>&amp; rule1d) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (dim == 1) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> rule1d;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code hl_struct" href="structvulpes_1_1qrule_1_1QuadratureRule.html">QuadratureRule&lt;T, dim&gt;</a> rule;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keyword">const</span> std::size_t size_1d = rule1d.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">nodes</a>.size();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keyword">const</span> std::size_t size_nd = <a class="code hl_function" href="namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b">vmath::upow</a>(size_1d, dim);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  rule.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">nodes</a>.resize(size_nd);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; size_nd; ++i) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    rule.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">nodes</a>[i].weight = T(1);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">// this is like writing `i` in radix `size_1d`</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    std::size_t idx = i;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">for</span> (std::size_t d = 0; d &lt; dim; ++d) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      std::size_t digit = idx % size_1d;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      idx /= size_1d;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      rule.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">nodes</a>[i].weight *= rule1d.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">nodes</a>[digit].weight;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      rule.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">nodes</a>[i].point[d] = rule1d.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">nodes</a>[digit].point[0];</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordflow">return</span> rule;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">template</span> &lt;std::<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> T&gt;</div>
-<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1quadrature.html#a579a3a0c092eae24bcaba3a695c0e6ae">   79</a></span>std::array&lt;T, 3&gt; <a class="code hl_function" href="namespacevulpes_1_1quadrature.html#a579a3a0c092eae24bcaba3a695c0e6ae">EvaluateLegendreDer2</a>(T x, <span class="keywordtype">size_t</span> n) {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">if</span> (n == 0) <span class="keywordflow">return</span> {T(1.0), T(0.0), T(0.0)};</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  T p1 = 1.0;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  T p2 = x;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  T p3 = x;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  T dp1 = 0.0;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  T dp2 = 1.0;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  T dp3 = 1.0;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  T ddp1 = 0.0;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  T ddp2 = 0.0;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  T ddp3 = 0.0;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    p3 = (T(2ull * i + 1ull) * x * p2 - T(i) * p1) / T(i + 1ull);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    dp3 = T(i + 1ull) * p2 + x * dp2;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    ddp3 = (T(2ull * i + 1ull) * (T(2ull) * dp2 + x * ddp2) - T(i) * ddp1) /</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>           T(i + 1ull);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    p1 = p2;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    p2 = p3;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    dp1 = dp2;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    dp2 = dp3;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    ddp1 = ddp2;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    ddp2 = ddp3;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">return</span> {p3, dp3, ddp3};</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
-</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">template</span> &lt;std::<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> T&gt;</div>
-<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1quadrature.html#abbfd3608db32c82752d1119881b8111c">  114</a></span>std::vector&lt;std::array&lt;T, 2&gt;&gt; <a class="code hl_function" href="namespacevulpes_1_1quadrature.html#abbfd3608db32c82752d1119881b8111c">GaussLegendreQuadrature</a>(<span class="keywordtype">size_t</span> n) {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">if</span> (n == 0) {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordflow">if</span> (n == 1) {</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">return</span> {{T(0), T(2)}};</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  std::vector&lt;std::array&lt;T, 2&gt;&gt; xw(n);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n / 2; ++i) {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">// initial approximation</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    xw[i][0] = std::cos(std::numbers::pi_v&lt;T&gt; * (i + T(0.75)) / (n + T(0.5)));</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> ITERMAX = 10 * <span class="keyword">sizeof</span>(T);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iter = 0; iter &lt; ITERMAX; ++iter) {</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      <span class="keyword">const</span> <span class="keyword">auto</span> [px, pdx] = <a class="code hl_function" href="namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac">EvaluateLegendreDer</a>(xw[i][0], n);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      <span class="comment">// Newton method</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <span class="keyword">const</span> <span class="keyword">auto</span> delta = px / pdx;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      xw[i][0] -= delta;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      <span class="keywordflow">if</span> (std::abs(delta) &lt; std::numeric_limits&lt;T&gt;::epsilon()) <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      <span class="comment">// TODO: handle output in a more gracefull way</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      <span class="keywordflow">if</span> (iter == ITERMAX - 1)</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;WARNING: reached max iterations&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    xw[n - i - 1][0] = -xw[i][0];</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">const</span> <span class="keyword">auto</span> [px, pdx] = <a class="code hl_function" href="namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac">EvaluateLegendreDer</a>(xw[i][0], n);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = T(2) / ((T(1) - xw[i][0] * xw[i][0]) * pdx * pdx);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    xw[i][1] = w;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    xw[n - i - 1][1] = w;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  }</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keyword">const</span> <span class="keyword">auto</span> [px, pdx] = <a class="code hl_function" href="namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac">EvaluateLegendreDer</a>(T(0), n);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  xw[n / 2][1] = T(2) / (pdx * pdx);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordflow">return</span> xw;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
-</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}  <span class="comment">// namespace quadrature</span></div>
-</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}  <span class="comment">// namespace vulpes</span></div>
-</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#endif  </span><span class="comment">// VULEPES_QUADRATURE_GAUSS_HPP_</span></div>
-<div class="ttc" id="anamespacevulpes_1_1quadrature_html_a0e6b176d115774ed58fbaa69c39f84ac"><div class="ttname"><a href="namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac">vulpes::quadrature::EvaluateLegendreDer</a></div><div class="ttdeci">std::array&lt; T, 2 &gt; EvaluateLegendreDer(T x, size_t n)</div><div class="ttdef"><b>Definition</b> gauss.hpp:48</div></div>
-<div class="ttc" id="anamespacevulpes_1_1quadrature_html_a579a3a0c092eae24bcaba3a695c0e6ae"><div class="ttname"><a href="namespacevulpes_1_1quadrature.html#a579a3a0c092eae24bcaba3a695c0e6ae">vulpes::quadrature::EvaluateLegendreDer2</a></div><div class="ttdeci">std::array&lt; T, 3 &gt; EvaluateLegendreDer2(T x, size_t n)</div><div class="ttdef"><b>Definition</b> gauss.hpp:79</div></div>
-<div class="ttc" id="anamespacevulpes_1_1quadrature_html_abbfd3608db32c82752d1119881b8111c"><div class="ttname"><a href="namespacevulpes_1_1quadrature.html#abbfd3608db32c82752d1119881b8111c">vulpes::quadrature::GaussLegendreQuadrature</a></div><div class="ttdeci">std::vector&lt; std::array&lt; T, 2 &gt; &gt; GaussLegendreQuadrature(size_t n)</div><div class="ttdef"><b>Definition</b> gauss.hpp:114</div></div>
-<div class="ttc" id="anamespacevulpes_1_1quadrature_html_abfb3fa0044cce54307404e5d814c9410"><div class="ttname"><a href="namespacevulpes_1_1quadrature.html#abfb3fa0044cce54307404e5d814c9410">vulpes::quadrature::EvaluateLegendre</a></div><div class="ttdeci">T EvaluateLegendre(T x, size_t n)</div><div class="ttdef"><b>Definition</b> gauss.hpp:23</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> gauss.hpp:10</div></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}  <span class="comment">// namespace qrule</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}  <span class="comment">// namespace vulpes</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_QUADRATURE_GAUSS_HPP_</span></div>
+<div class="ttc" id="anamespacevulpes_1_1qrule_html_a08f90f4c63ab870c7f01fc4258f994ed"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#a08f90f4c63ab870c7f01fc4258f994ed">vulpes::qrule::buildTensorQuadrature</a></div><div class="ttdeci">QuadratureRule&lt; T, dim &gt; buildTensorQuadrature(const QuadratureRule1D&lt; T &gt; &amp;rule1d)</div><div class="ttdoc">Constructs a tensor-product quadrature rule from a 1D quadrature rule.</div><div class="ttdef"><b>Definition</b> gauss.hpp:105</div></div>
+<div class="ttc" id="anamespacevulpes_1_1qrule_html_a26941ef29304bec3f440a7dde07eb9bb"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb">vulpes::qrule::gmpGaussLegendreQuadrature</a></div><div class="ttdeci">QuadratureRule1Dmp gmpGaussLegendreQuadrature(std::size_t n, std::size_t precision)</div><div class="ttdoc">Computes a Gauss-Legendre quadrature rule with arbitrary precision.</div><div class="ttdef"><b>Definition</b> gauss.cpp:40</div></div>
+<div class="ttc" id="anamespacevulpes_1_1qrule_html_acf808d810fe514bf8cf0c6a3229ff4a2"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#acf808d810fe514bf8cf0c6a3229ff4a2">vulpes::qrule::gmpGaussLobattoQuadrature</a></div><div class="ttdeci">QuadratureRule1Dmp gmpGaussLobattoQuadrature(std::size_t n, std::size_t precision)</div><div class="ttdoc">Generates a Gauss-Lobatto quadrature rule in 1D with arbitrary-precision arithmetic.</div><div class="ttdef"><b>Definition</b> gauss.cpp:111</div></div>
+<div class="ttc" id="anamespacevulpes_1_1vmath_html_a2b17e16df3a08f27fff0aa30c875555b"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b">vulpes::vmath::upow</a></div><div class="ttdeci">constexpr U upow(U base, V exp, U result=U(1))</div><div class="ttdoc">Computes the unsigned power of a number.</div><div class="ttdef"><b>Definition</b> vmath.hpp:106</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> integrator_base.hpp:34</div></div>
+<div class="ttc" id="aqrule_8hpp_html"><div class="ttname"><a href="qrule_8hpp.html">qrule.hpp</a></div></div>
+<div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html">vulpes::qrule::QuadratureRule</a></div><div class="ttdoc">Represents a quadrature rule consisting of a set of points and associated weights.</div><div class="ttdef"><b>Definition</b> qrule.hpp:68</div></div>
+<div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html_a539e7c059c883b5d72added2ff7351cf"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">vulpes::qrule::QuadratureRule::nodes</a></div><div class="ttdeci">std::vector&lt; QuadraturePoint&lt; T, Dim &gt; &gt; nodes</div><div class="ttdoc">List of quadrature points.</div><div class="ttdef"><b>Definition</b> qrule.hpp:70</div></div>
+<div class="ttc" id="avmath_8hpp_html"><div class="ttname"><a href="vmath_8hpp.html">vmath.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -246,7 +209,7 @@ $(document).ready(function(){initNavTree('gauss_8hpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="gauss_8hpp.html">gauss.hpp</a></li>
-    <li class="footer">Generated on Fri May 10 2024 12:18:30 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Feb 20 2025 16:00:44 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

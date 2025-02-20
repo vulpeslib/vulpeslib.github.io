@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gauss_2ehpp_0',['gauss.hpp',['../gauss_8hpp.html',1,'']]]
+  ['additive_5frecurrence_2ehpp_0',['additive_recurrence.hpp',['../additive__recurrence_8hpp.html',1,'']]]
 ];

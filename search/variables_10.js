@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['s_5fbehavior_5finit_0',['s_behavior_init',['../classvulpes_1_1geometry_1_1Triangulation.html#a23a6399950d90eb5c4e14682dab75cac',1,'vulpes::geometry::Triangulation']]],
+  ['s_5fbuffer_5fsize_1',['s_buffer_size',['../classvulpes_1_1geometry_1_1Triangulation.html#aa036e2a77bcc54a4ab2b998fcbdc4a1f',1,'vulpes::geometry::Triangulation']]],
+  ['s_5fdefault_5ftag_2',['s_default_tag',['../namespacevulpes_1_1mpi.html#af0aa73963def61173de2fb35b08b9979',1,'vulpes::mpi']]],
+  ['s_5fdefault_5fthread_5frequired_3',['s_default_thread_required',['../classvulpes_1_1mpi_1_1MpiHandle.html#a1a2f87c9178e2ddfdf0360edc71b6372',1,'vulpes::mpi::MpiHandle']]],
+  ['s_5ffacelist_4',['s_facelist',['../classvulpes_1_1geometry_1_1Tetrahedralization.html#abb622bf8eb0e34881ad4f1e8af417e39',1,'vulpes::geometry::Tetrahedralization']]],
+  ['s_5fgmp_5fprecision_5',['s_gmp_precision',['../classvulpes_1_1qrule_1_1QuadratureLibrary.html#a0abbc47bfad7da445804245d69f005f2',1,'vulpes::qrule::QuadratureLibrary']]],
+  ['s_5fmapping_6',['s_mapping',['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#a22f59e6b615b729c84190c470265648c',1,'vulpes::fe::FeSpaceModalQ']]],
+  ['s_5fn_5fexpr_7',['s_n_expr',['../classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a36f30be95fc99b59c377107ba4d28da6',1,'vulpes::assemble::WeakFormIntegratorSimplexify::s_n_expr'],['../classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a42d5afb12b12967d1cc4a1a5342b86b7',1,'vulpes::assemble::WeakFormIntegratorBase::s_n_expr']]],
+  ['s_5fn_5fface_5fexpr_8',['s_n_face_expr',['../classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a3fa851907f2c3828c3f9b2b69f8f930b',1,'vulpes::assemble::WeakFormIntegratorSimplexify::s_n_face_expr'],['../classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a031215aad86c1d2a188d84511c23ffab',1,'vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr']]],
+  ['s_5fone_9',['s_one',['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#afd543bbf917c4031eb4cbe29a1aab341',1,'vulpes::fe::FeSpaceModalQ']]],
+  ['s_5fpolygons_10',['s_polygons',['../classvulpes_1_1geometry_1_1Tetrahedralization.html#a396da0ed15e6ee20b91f6c8eb6faf75a',1,'vulpes::geometry::Tetrahedralization']]],
+  ['s_5fstatic_5fbuffer_5fsize_11',['s_static_buffer_size',['../classvulpes_1_1geometry_1_1Tetrahedralization.html#ac992c257f53a1c5e379d4257f1efe6a6',1,'vulpes::geometry::Tetrahedralization']]],
+  ['self_5fdim_12',['self_dim',['../classvulpes_1_1geometry_1_1MeshBase.html#a0d0131275bab569064e6db359428ea20',1,'vulpes::geometry::MeshBase::self_dim'],['../classvulpes_1_1geometry_1_1ParallelMesh.html#a0cb70ee70a94e789c040880fbb58dbd8',1,'vulpes::geometry::ParallelMesh::self_dim']]],
+  ['space_13',['space',['../structscipy_1_1heap.html#ae193f81f6da4c2d2cbd6f536265ef395',1,'scipy::heap']]],
+  ['split_14',['split',['../structscipy_1_1ckdtreenode.html#a2cd2aa1a568b3b5c727d7f5dac74079d',1,'scipy::ckdtreenode']]],
+  ['split_5fdim_15',['split_dim',['../structscipy_1_1ckdtreenode.html#a2b0397fb257eb71121245075ea352c17',1,'scipy::ckdtreenode::split_dim'],['../structscipy_1_1RR__stack__item.html#a5d43df9e468cf12fda9ea4228879f973',1,'scipy::RR_stack_item::split_dim']]],
+  ['stack_16',['stack',['../structscipy_1_1RectRectDistanceTracker.html#af52560cbf667c5d6249fca3521c04c9f',1,'scipy::RectRectDistanceTracker']]],
+  ['stack_5farr_17',['stack_arr',['../structscipy_1_1RectRectDistanceTracker.html#a9298b0d4b404da133fe4c60b7b684124',1,'scipy::RectRectDistanceTracker']]],
+  ['stack_5fmax_5fsize_18',['stack_max_size',['../structscipy_1_1RectRectDistanceTracker.html#a3971f5c1be8c2876cbda50271ed1018f',1,'scipy::RectRectDistanceTracker']]],
+  ['stack_5fsize_19',['stack_size',['../structscipy_1_1RectRectDistanceTracker.html#a647e103cb093ff547b7389617fb3c5a9',1,'scipy::RectRectDistanceTracker']]],
+  ['start_5fidx_20',['start_idx',['../structscipy_1_1ckdtreenode.html#a51410515817115f94634f4cd5a64b617',1,'scipy::ckdtreenode']]],
+  ['start_5ftimes_21',['start_times',['../classProfiler.html#a711d0a8f471a10e0096777148343442b',1,'Profiler']]],
+  ['std_5fdev_22',['std_dev',['../structinternal_1_1Statistics.html#a08ea2e5d7dcf9566cfe8059d461e8480',1,'internal::Statistics']]]
+];

@@ -23,6 +23,16 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -35,12 +45,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.0.1-alpha</span>
    </div>
-   <div id="projectbrief">Virtual and Polytopal Elements Library</div>
+   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
  </tr>
  </tbody>
@@ -106,19 +116,21 @@ $(document).ready(function(){initNavTree('md__2____w_2vulpes_2vulpes_2doc_2devel
   <div class="headertitle"><div class="title">Developers Setup</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a></p><ol type="1">
-<li>Install Docker</li>
-<li>Install VS Code</li>
-<li>Install the "Docker" and "Remote Container" extension</li>
+<div class="textblock"><p><a class="anchor" id="autotoc_md14"></a></p><ol type="1">
+<li>Install Docker Desktop <a href="https://docs.docker.com/desktop/">link</a> and follow the instruction for your OS. To check that the installation is working try to run <code>sudo docker run hello-world</code></li>
+<li>Manage Docker as a non-root user <a href="https://docs.docker.com/engine/install/linux-postinstall/">link</a></li>
+<li>Install VS Code <a href="https://code.visualstudio.com/">link</a></li>
+<li>Install the "Docker" and "Dev Container" extension in VS Code (Open the extension panel with Ctrl+Shift+X)</li>
 <li>Should be promped to enter the <code>.devcontaier</code> when opening the <code>vulpes</code> folder</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<p>Every time you install a kernel update you may need to restart your pc to use this setup.</p>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Workflows</h1>
 <p>We employ GitHub workflows to check code quality and automate tasks. If you are interested in testing locally a workflow before pushing it use <a href="https://nektosact.com/installation/index.html">Act</a>.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 Build devcontainer</h2>
 <p>The workflow <code>build-publish-docker-image</code> automatically builds the Docker image of the devcontainer and pushed it to the GitHub regestry of the Vulpes organization each time <code>.devcontainer/Dockerfile</code> changes.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Website deploy</h2>
 <p>The workflow <code>build-publish-docs</code> automatically builds and deploy the documentation of the library to the GitHub page of the organization. The website is built with Doxygen and includes various <a href="https://doxygen.nl/manual/additional.html">additional documentation</a>, such as this page. </p>
 </div></div><!-- contents -->
@@ -128,7 +140,7 @@ Website deploy</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 10 2024 12:18:30 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Feb 20 2025 16:00:44 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

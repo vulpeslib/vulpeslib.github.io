@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['pair_0',['Pair',['../namespacevulpes_1_1dofs_1_1boosttypes.html#a662d86e03fdcdf381cc259d9b09c8799',1,'vulpes::dofs::boosttypes']]],
+  ['permutation_1',['Permutation',['../namespacevulpes_1_1dofs.html#ab481c1d4bac86f40d09a31064e92255a',1,'vulpes::dofs']]],
+  ['physicalqpts_2',['PhysicalQPts',['../classvulpes_1_1fe_1_1FeValues.html#a91e49e226ca98a64f16e5748a3db7b25',1,'vulpes::fe::FeValues']]],
+  ['point_3',['point',['../namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a',1,'vulpes::geometry::Point'],['../namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3',1,'vulpes::fe::Point']]],
+  ['pointer_5ft_4',['pointer_t',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a7de00b17518312c1f969c81166a131a4',1,'vulpes::datastructure::CrsMap::RowView']]],
+  ['pointstype_5',['pointstype',['../classvulpes_1_1geometry_1_1Simplexify.html#a26be005549e4fdd0ef1e7100f52caad5',1,'vulpes::geometry::Simplexify::PointsType'],['../classvulpes_1_1geometry_1_1Tetrahedralization.html#aa593e8d78938148242d61d7a31322b07',1,'vulpes::geometry::Tetrahedralization::PointsType'],['../classvulpes_1_1geometry_1_1Triangulation.html#a52cb342d174d564e15ec3aaf05d97e26',1,'vulpes::geometry::Triangulation::PointsType']]],
+  ['pointsviewtype_6',['pointsviewtype',['../classvulpes_1_1geometry_1_1Tetrahedralization.html#ab8b399ec446c8fbdd1884fea96cd9027',1,'vulpes::geometry::Tetrahedralization::PointsViewType'],['../classvulpes_1_1geometry_1_1Simplexify.html#a8d3448450f06d16fd9b9d28869c15644',1,'vulpes::geometry::Simplexify::PointsViewType'],['../classvulpes_1_1geometry_1_1Triangulation.html#ac74c090404cb24dca509ed5d146c4f02',1,'vulpes::geometry::Triangulation::PointsViewType']]],
+  ['pointtype_7',['pointtype',['../classvulpes_1_1geometry_1_1Triangulation.html#a9c8af0e603ec6206a1bc8ae4917e4591',1,'vulpes::geometry::Triangulation::PointType'],['../classvulpes_1_1geometry_1_1Tetrahedralization.html#ac20b4c8ed08a7e7a121fa35ef74669bf',1,'vulpes::geometry::Tetrahedralization::PointType']]],
+  ['polynomial_8',['polynomial',['../classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a24188379f1c9653ebb75d848a277578b',1,'vulpes::fe::FeSpaceLagrangeP::Polynomial'],['../classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html#a5dbc2922a89dec1bbbd267fb7a74d2c0',1,'vulpes::fe::FeSpaceLagrangeQ::Polynomial'],['../classvulpes_1_1fe_1_1FeSpaceModalP.html#a20e459db96a4abbc6a71fbba5ca16073',1,'vulpes::fe::FeSpaceModalP::Polynomial'],['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#a4cfecf7098810230444a02bc604846d8',1,'vulpes::fe::FeSpaceModalQ::Polynomial']]],
+  ['polynomialfast_9',['PolynomialFast',['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#a4e7658d3c3585600a6dab02a905426e1',1,'vulpes::fe::FeSpaceModalQ']]]
+];

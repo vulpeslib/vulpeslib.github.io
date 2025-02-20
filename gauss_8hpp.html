@@ -23,6 +23,16 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -35,12 +45,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.0.1-alpha</span>
    </div>
-   <div id="projectbrief">Virtual and Polytopal Elements Library</div>
+   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
  </tr>
  </tbody>
@@ -105,19 +115,24 @@ $(document).ready(function(){initNavTree('gauss_8hpp.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">gauss.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;array&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;concepts&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;numbers&gt;</code><br />
+<div class="textblock"><code>#include &lt;gmpxx.h&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &quot;<a class="el" href="qrule_8hpp_source.html">vulpes/quadrature/qrule.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vmath_8hpp_source.html">vulpes/utils/vmath.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for gauss.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="gauss_8hpp__incl.svg" width="446" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="gauss_8hpp__incl.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="gauss_8hpp__dep__incl.svg" width="100%" height="569"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="gauss_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -126,23 +141,26 @@ Include dependency graph for gauss.hpp:</div>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevulpes" id="r_namespacevulpes"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes.html">vulpes</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacevulpes_1_1quadrature" id="r_namespacevulpes_1_1quadrature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1quadrature.html">vulpes::quadrature</a></td></tr>
+<tr class="memitem:namespacevulpes_1_1qrule" id="r_namespacevulpes_1_1qrule"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qrule.html">vulpes::qrule</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0540b0d397bb8efa560704709b4b90fc" id="r_a0540b0d397bb8efa560704709b4b90fc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qrule.html#a0540b0d397bb8efa560704709b4b90fc">vulpes::qrule::QuadratureRule1Dmp</a> = <a class="el" href="namespacevulpes_1_1qrule.html#a56510856f2f5be4f448320e97c0bf54e">QuadratureRule1D</a>&lt; mpf_class &gt;</td></tr>
+<tr class="separator:a0540b0d397bb8efa560704709b4b90fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abfb3fa0044cce54307404e5d814c9410" id="r_abfb3fa0044cce54307404e5d814c9410"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:abfb3fa0044cce54307404e5d814c9410"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1quadrature.html#abfb3fa0044cce54307404e5d814c9410">vulpes::quadrature::EvaluateLegendre</a> (T x, size_t n)</td></tr>
-<tr class="separator:abfb3fa0044cce54307404e5d814c9410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e6b176d115774ed58fbaa69c39f84ac" id="r_a0e6b176d115774ed58fbaa69c39f84ac"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a0e6b176d115774ed58fbaa69c39f84ac"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; T, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1quadrature.html#a0e6b176d115774ed58fbaa69c39f84ac">vulpes::quadrature::EvaluateLegendreDer</a> (T x, size_t n)</td></tr>
-<tr class="separator:a0e6b176d115774ed58fbaa69c39f84ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a579a3a0c092eae24bcaba3a695c0e6ae" id="r_a579a3a0c092eae24bcaba3a695c0e6ae"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a579a3a0c092eae24bcaba3a695c0e6ae"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; T, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1quadrature.html#a579a3a0c092eae24bcaba3a695c0e6ae">vulpes::quadrature::EvaluateLegendreDer2</a> (T x, size_t n)</td></tr>
-<tr class="separator:a579a3a0c092eae24bcaba3a695c0e6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbfd3608db32c82752d1119881b8111c" id="r_abbfd3608db32c82752d1119881b8111c"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:abbfd3608db32c82752d1119881b8111c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; T, 2 &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1quadrature.html#abbfd3608db32c82752d1119881b8111c">vulpes::quadrature::GaussLegendreQuadrature</a> (size_t n)</td></tr>
-<tr class="separator:abbfd3608db32c82752d1119881b8111c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26941ef29304bec3f440a7dde07eb9bb" id="r_a26941ef29304bec3f440a7dde07eb9bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1qrule.html#a0540b0d397bb8efa560704709b4b90fc">QuadratureRule1Dmp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb">vulpes::qrule::gmpGaussLegendreQuadrature</a> (std::size_t n, std::size_t precision=256)</td></tr>
+<tr class="memdesc:a26941ef29304bec3f440a7dde07eb9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a Gauss-Legendre quadrature rule with arbitrary precision.  <br /></td></tr>
+<tr class="separator:a26941ef29304bec3f440a7dde07eb9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf808d810fe514bf8cf0c6a3229ff4a2" id="r_acf808d810fe514bf8cf0c6a3229ff4a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1qrule.html#a0540b0d397bb8efa560704709b4b90fc">QuadratureRule1Dmp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qrule.html#acf808d810fe514bf8cf0c6a3229ff4a2">vulpes::qrule::gmpGaussLobattoQuadrature</a> (std::size_t n, std::size_t precision=256)</td></tr>
+<tr class="memdesc:acf808d810fe514bf8cf0c6a3229ff4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a Gauss-Lobatto quadrature rule in 1D with arbitrary-precision arithmetic.  <br /></td></tr>
+<tr class="separator:acf808d810fe514bf8cf0c6a3229ff4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f90f4c63ab870c7f01fc4258f994ed" id="r_a08f90f4c63ab870c7f01fc4258f994ed"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename T &gt; </td></tr>
+<tr class="memitem:a08f90f4c63ab870c7f01fc4258f994ed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1qrule_1_1QuadratureRule.html">QuadratureRule</a>&lt; T, dim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qrule.html#a08f90f4c63ab870c7f01fc4258f994ed">vulpes::qrule::buildTensorQuadrature</a> (const <a class="el" href="namespacevulpes_1_1qrule.html#a56510856f2f5be4f448320e97c0bf54e">QuadratureRule1D</a>&lt; T &gt; &amp;rule1d)</td></tr>
+<tr class="memdesc:a08f90f4c63ab870c7f01fc4258f994ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a tensor-product quadrature rule from a 1D quadrature rule.  <br /></td></tr>
+<tr class="separator:a08f90f4c63ab870c7f01fc4258f994ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -151,7 +169,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="gauss_8hpp.html">gauss.hpp</a></li>
-    <li class="footer">Generated on Fri May 10 2024 12:18:30 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Feb 20 2025 16:00:44 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,7 @@
 var gauss_8hpp =
 [
-    [ "EvaluateLegendre", "gauss_8hpp.html#abfb3fa0044cce54307404e5d814c9410", null ],
-    [ "EvaluateLegendreDer", "gauss_8hpp.html#a0e6b176d115774ed58fbaa69c39f84ac", null ],
-    [ "EvaluateLegendreDer2", "gauss_8hpp.html#a579a3a0c092eae24bcaba3a695c0e6ae", null ],
-    [ "GaussLegendreQuadrature", "gauss_8hpp.html#abbfd3608db32c82752d1119881b8111c", null ]
+    [ "QuadratureRule1Dmp", "gauss_8hpp.html#a0540b0d397bb8efa560704709b4b90fc", null ],
+    [ "buildTensorQuadrature", "gauss_8hpp.html#a08f90f4c63ab870c7f01fc4258f994ed", null ],
+    [ "gmpGaussLegendreQuadrature", "gauss_8hpp.html#a26941ef29304bec3f440a7dde07eb9bb", null ],
+    [ "gmpGaussLobattoQuadrature", "gauss_8hpp.html#acf808d810fe514bf8cf0c6a3229ff4a2", null ]
 ];

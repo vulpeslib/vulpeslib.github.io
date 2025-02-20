@@ -23,6 +23,16 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -35,12 +45,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.0.1-alpha</span>
    </div>
-   <div id="projectbrief">Virtual and Polytopal Elements Library</div>
+   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
  </tr>
  </tbody>
@@ -106,7 +116,18 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Introduction </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2____w_2vulpes_2vulpes_2doc_2mainpage"></a> Vulpes is </p>
+<div class="textblock"><p><a class="anchor" id="md__2____w_2vulpes_2vulpes_2doc_2mainpage"></a> <b>Vulpes</b> (VirtUaL and Discontinuous Polytopal ElementS method) is an open-source library.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Contribute</h1>
+<p>The Vulpes team welcomes contributions at all levels: bugfixes, code improvements, simplifications, improved documentation, new examples and so on. If you plan on contributing to Vulpes check out our <a href="https://vulpeslib.github.io/md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html">Developer's guide</a></p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+The research group</h1>
+<p>Vulpes is developed at Politecnico di Milano and at Università degli Studi di Milano-Bicocca. The development of Vulpes is part of the activities of the <a href="https://erc-nemesis.eu">ERC Synergy Grant NEMESIS</a>. The principal developers are:</p>
+<ul>
+<li>Matteo Caldana <a href="#" onclick="location.href='mai'+'lto:'+'mat'+'te'+'o.c'+'al'+'dan'+'a@'+'pol'+'im'+'i.i'+'t'; return false;">matte<span class="obfuscator">.nosp@m.</span>o.ca<span class="obfuscator">.nosp@m.</span>ldana<span class="obfuscator">.nosp@m.</span>@pol<span class="obfuscator">.nosp@m.</span>imi.i<span class="obfuscator">.nosp@m.</span>t</a></li>
+<li>Franco Dassi <a href="#" onclick="location.href='mai'+'lto:'+'fra'+'nc'+'o.d'+'as'+'si@'+'un'+'imi'+'b.'+'it'; return false;">franc<span class="obfuscator">.nosp@m.</span>o.da<span class="obfuscator">.nosp@m.</span>ssi@u<span class="obfuscator">.nosp@m.</span>nimi<span class="obfuscator">.nosp@m.</span>b.it</a></li>
+<li>Ilario Mazzieri <a href="#" onclick="location.href='mai'+'lto:'+'ila'+'ri'+'o.m'+'az'+'zie'+'ri'+'@po'+'li'+'mi.'+'it'; return false;">ilari<span class="obfuscator">.nosp@m.</span>o.ma<span class="obfuscator">.nosp@m.</span>zzier<span class="obfuscator">.nosp@m.</span>i@po<span class="obfuscator">.nosp@m.</span>limi.<span class="obfuscator">.nosp@m.</span>it</a> </li>
+</ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -114,7 +135,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 10 2024 12:18:30 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Feb 20 2025 16:00:44 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
