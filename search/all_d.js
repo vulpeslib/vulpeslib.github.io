@@ -144,7 +144,7 @@ var searchData=
   ['m_5fvtxs_141',['m_vtxs',['../classvulpes_1_1geometry_1_1Cell2D.html#aded935b340752123ddee90cfe20e1318',1,'vulpes::geometry::Cell2D::m_vtxs'],['../classvulpes_1_1geometry_1_1Cell3D.html#a4344701f35902ed4513b714fffad1689',1,'vulpes::geometry::Cell3D::m_vtxs']]],
   ['m_5fw_142',['m_w',['../classvulpes_1_1fe_1_1FeExpressionGradFunc.html#a8de2b7d713e8101e5ae3bc2e509cc0eb',1,'vulpes::fe::FeExpressionGradFunc::m_w'],['../classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#ab64add45a858f7db3c0963b801024cc2',1,'vulpes::fe::FeExpressionNeighborFunc::m_w']]],
   ['m_5fweak_5fdual_143',['m_weak_dual',['../classvulpes_1_1geometry_1_1ParallelMesh.html#aca82b5aecf2236993d281e1b03e69428',1,'vulpes::geometry::ParallelMesh']]],
-  ['macros_144',['Macros',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md40',1,'']]],
+  ['macros_144',['Macros',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md41',1,'']]],
   ['mainpage_2emd_145',['mainpage.md',['../mainpage_8md.html',1,'']]],
   ['makerule_146',['makeRule',['../classvulpes_1_1qrule_1_1QuadratureLibrary.html#a78ec9d97f40a27613dc64176ed6d8dc6',1,'vulpes::qrule::QuadratureLibrary']]],
   ['mapping_2ehpp_147',['mapping.hpp',['../mapping_8hpp.html',1,'']]],

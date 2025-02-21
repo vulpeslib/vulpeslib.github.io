@@ -116,11 +116,11 @@ $(document).ready(function(){initNavTree('md__2____w_2vulpes_2vulpes_2doc_2devel
   <div class="headertitle"><div class="title">C++ Style Guide</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md18"></a> </p>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md19"></a> </p>
+<h1><a class="anchor" id="autotoc_md20"></a>
 Background</h1>
 <p>This document attempts to define a unified style for C++ programming. It is heavily inspired by <a href="https://google.github.io/styleguide/cppguide.html">Google Coding style for C++ code</a>.</p>
-<h1><a class="anchor" id="autotoc_md20"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Formatting code</h1>
 <ul>
 <li>Format code automatically via clang-format and the provided <code>.clang-format</code> file.</li>
@@ -129,7 +129,7 @@ Formatting code</h1>
 <li>Non-ASCII characters should be rare, and must use UTF-8 formatting.</li>
 <li>Use only spaces, and indent 2 spaces at a time.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md21"></a>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Static analysis</h1>
 <ul>
 <li>Use <code>cpplint.py</code> to detect style errors. It is not perfect, and has both false positives and false negatives.</li>
@@ -140,12 +140,12 @@ Static analysis</h1>
 <div class="line">cppcheck --project=compile_commands.json --check-level=exhaustive --inconclusive --enable=all</div>
 </div><!-- fragment --></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 File structure</h1>
 <p>In general, every header file (<code>.hpp</code>) should have an associated source file (<code>.cpp</code>). Header files should be self-contained (compile on their own).</p><ul>
 <li>Filenames should be all lowercase and can include underscores (<code>_</code>)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md23"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 Define guard</h2>
 <p>All header files should have <code>#define</code> guards to prevent multiple inclusion. The format of the symbol name should be <code>&lt;PROJECT&gt;_&lt;PATH&gt;_&lt;FILE&gt;_H_</code>. To guarantee uniqueness, they should be based on the full path in a project's source tree. For example, the file <code>foo/src/bar/baz.h</code> in project foo should have the following guard: </p><div class="fragment"><div class="line"><span class="preprocessor">#ifndef FOO_BAR_BAZ_H_</span></div>
 <div class="line"><span class="preprocessor">#define FOO_BAR_BAZ_H_</span></div>
@@ -153,20 +153,20 @@ Define guard</h2>
 <div class="line">...</div>
 <div class="line"> </div>
 <div class="line">#endif  <span class="comment">// FOO_BAR_BAZ_H_</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md24"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md25"></a>
 Includes</h2>
 <p>Include headers in the following order: Related header, C system headers, C++ standard library headers, other libraries' headers, your project's headers. Separate each non-empty group with one blank line.</p>
 <p><b>IMPORTANT:</b> If a source or header file refers to a symbol defined elsewhere, the file should directly include a header file which properly intends to provide a declaration or definition of that symbol. It should not include header files for any other reason. <b>Do not rely on transitive inclusions.</b></p>
-<h1><a class="anchor" id="autotoc_md25"></a>
+<h1><a class="anchor" id="autotoc_md26"></a>
 Namespaces</h1>
 <p>With few exceptions, place code in a namespace. Namespaces should have unique names based on the project name, and possibly its path. Do not use using-directives (e.g., <code>using namespace foo</code>).</p><ul>
 <li>You may not use a using-directive to make all names from a namespace available. <div class="fragment"><div class="line"><span class="comment">// FORBIDDEN -- This pollutes the namespace.</span></div>
 <div class="line"><span class="keyword">using namespace </span>foo;</div>
 </div><!-- fragment --></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 Variables</h1>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 Local Variables</h2>
 <p>Place a function's variables in the narrowest scope possible.</p><ul>
 <li>Initialize variables in the declaration. <div class="fragment"><div class="line"><span class="keywordtype">int</span> i;</div>
@@ -201,7 +201,7 @@ Local Variables</h2>
 <div class="line">}</div>
 </div><!-- fragment --> </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 Global Variables</h2>
 <p>Objects with static storage duration are forbidden unless they are trivially destructible. Note that fundamental types and variables marked with <code>constexpr</code> are trivially destructible. </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> k_num = 10;  <span class="comment">// Allowed</span></div>
 <div class="line"> </div>
@@ -221,13 +221,13 @@ Global Variables</h2>
 <div class="line">  <span class="comment">// BAD: non-trivial destructor.</span></div>
 <div class="line">  <span class="keyword">static</span> std::map&lt;int, int&gt; k_data = {{1, 0}, {2, 0}, {3, 0}};</div>
 <div class="line">}</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md29"></a>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md30"></a>
 Common patterns</h3>
 <ul>
 <li>Global strings: if you require a named global or static string constant, consider using a <code>constexpr</code> variable of <code>std::string_view</code> or character array <code>char k_str[]</code>.</li>
 <li>Maps, sets, and other dynamic containers: if you require a static, fixed collection, such as a set to search against or a lookup table, you <b>cannot use</b> the dynamic containers from the standard library as a static variable, since they have non-trivial destructors. Instead, consider a simple array of trivial types, e.g., an array of arrays of ints (for a "map from int to int")</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md31"></a>
 Classes</h1>
 <p>Classes are the fundamental unit of code in C++. Naturally, we use them extensively.</p><ul>
 <li>Make classes' data members <code>private</code>, unless they are constants.</li>
@@ -245,13 +245,13 @@ Classes</h1>
 </li>
 <li>Do not define implicit conversions. Use the explicit keyword for conversion operators.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md31"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 Struct</h2>
 <ul>
 <li>Use a <code>struct</code> only for passive objects that carry data; everything else is a <code>class</code>.</li>
 <li>Prefer to use a <code>struct</code> instead of a pair or a tuple whenever the elements can have meaningful names. <b>Caveat:</b> prefer a tuple if you heavily rely on comparing and swapping elements in a list (see <a href="https://stackoverflow.com/questions/5852261/c-tuple-vs-struct">C++ Tuple vs Struct</a>).</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md32"></a>
+<h2><a class="anchor" id="autotoc_md33"></a>
 Inheritance</h2>
 <ul>
 <li>Composition is often more appropriate than inheritance. When using inheritance, make it public. Try to restrict use of inheritance to the "is-a" case.</li>
@@ -259,7 +259,7 @@ Inheritance</h2>
 <li>Explicitly annotate overrides of virtual functions or virtual destructors with exactly one of an <code>override</code> or (less frequently) <code>final</code> specifier. Do not use <code>virtual</code> when declaring an override. Rationale: A function or destructor marked <code>override</code> or <code>final</code> that is not an override of a base class virtual function will not compile, and this helps catch common errors.</li>
 <li>Polymorphism is powerful but expensive. Use polymorphism only if you are exploiting the run-time features it provides.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md33"></a>
+<h2><a class="anchor" id="autotoc_md34"></a>
 Operator Overloading</h2>
 <ul>
 <li>Overload operators judiciously. Define overloaded operators only if their meaning is obvious, unsurprising, and consistent with the corresponding built-in operators.</li>
@@ -269,10 +269,10 @@ Operator Overloading</h2>
 <li>Don't go out of your way to avoid defining operator overloads. For example, prefer to define <code>==</code>, <code>=</code>, and <code>&lt;&lt;</code>, rather than <code>Equals()</code>, <code>CopyFrom()</code>, and <code>PrintTo()</code>.</li>
 <li>See <a href="https://en.cppreference.com/w/cpp/language/operators">cppreference</a> for more details</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md34"></a>
+<h2><a class="anchor" id="autotoc_md35"></a>
 Friends</h2>
 <p>We allow use of friend classes and functions, within reason. Friends should usually be defined in the same file so that the reader does not have to look in another file to find uses of the private members of a class. A common use of <code>friend</code> is to have a <code>FooBuilder</code> class be a friend of Foo so that it can construct the inner state of Foo correctly, without exposing this state to the world. In some cases it may be useful to make a unittest class a friend of the class it tests.</p>
-<h1><a class="anchor" id="autotoc_md35"></a>
+<h1><a class="anchor" id="autotoc_md36"></a>
 Functions</h1>
 <p>Even if C++ is Object-Oriented, do not be afraid of using free functions.</p><ul>
 <li>Parameters are either <em>inputs</em> to the function, <em>outputs</em> from the function, or <em>both</em>. <br  />
@@ -293,7 +293,7 @@ Functions</h1>
 <div class="line"><span class="keyword">auto</span> add(T t, U u) -&gt; <span class="keyword">decltype</span>(t + u);</div>
 </div><!-- fragment --></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md36"></a>
+<h1><a class="anchor" id="autotoc_md37"></a>
 The &lt;tt&gt;auto&lt;/tt&gt; keyword</h1>
 <p><code>auto</code> is a powerfull keyword as it allows to write generic code, especially when combined with templates. However, try to use it carefully, in particular bad thing can happen with template expression if the expression is not evaluated into a concrete type. E.g. </p><div class="fragment"><div class="line">Eigen::VectorXd someV(){</div>
 <div class="line">  Eigen::VectorXd a(3);</div>
@@ -309,25 +309,25 @@ The &lt;tt&gt;auto&lt;/tt&gt; keyword</h1>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p> does not produce an output since <code>c</code> is an expression. For this reason try to <b>avoid using <code>auto</code></b> if you know the type of the result.</p>
-<h1><a class="anchor" id="autotoc_md37"></a>
+<h1><a class="anchor" id="autotoc_md38"></a>
 Exceptions</h1>
 <p>We avoid C++ exceptions as much as possible. It pollutes the control flow.</p>
-<h1><a class="anchor" id="autotoc_md38"></a>
+<h1><a class="anchor" id="autotoc_md39"></a>
 Casting</h1>
 <p>Use C++-style casts like <code>static_cast&lt;float&gt;(double_value)</code>, or brace initialization for conversion of arithmetic types like <code>int64_t y = int64_t{1} &lt;&lt; 42</code>. Do not use cast formats like <code>(int)x</code> unless the cast is to <code>void</code>. You may use cast formats like <code>T(x)</code> only when <code>T</code> is a class type.</p>
-<h1><a class="anchor" id="autotoc_md39"></a>
+<h1><a class="anchor" id="autotoc_md40"></a>
 Integer Types</h1>
 <p>It is often difficult to choose among the many built-in C++ integer types. Keep in mind that implicit casting from one type to another is <b>expensive</b>.</p><ul>
 <li>When working with std containers use <code>size_t</code> for all the indexes</li>
 <li>If a program needs an integer type of a different size, use an exact-width integer type from <code>&lt;cstdint&gt;</code>, such as <code>int16_t</code>.</li>
 <li>Try as much as possible not to mix signedness</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md40"></a>
+<h1><a class="anchor" id="autotoc_md41"></a>
 Macros</h1>
 <p><b>Avoid as much as possible defining macros</b>, especially in headers; prefer <code>inline</code> functions, <code>enums</code>, and <code>constexpr</code> variables.</p>
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md42"></a>
 Naming conventions</h1>
-<h2><a class="anchor" id="autotoc_md42"></a>
+<h2><a class="anchor" id="autotoc_md43"></a>
 Types</h2>
 <ul>
 <li>Classes, aliases of aggregate types and enums should use <code>PascalCase</code>.</li>
@@ -342,14 +342,14 @@ Types</h2>
 <div class="line"><span class="keyword">using </span>VecD = std::vector&lt;double&gt;;</div>
 <div class="line"><span class="keyword">using </span><a class="code hl_typedef" href="namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6">real_t</a> = float;</div>
 <div class="ttc" id="anamespacevulpes_1_1fe_1_1internal_html_a6603eb9554bb6b7399878a3bba383ad6"><div class="ttname"><a href="namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6">vulpes::fe::internal::real_t</a></div><div class="ttdeci">mpf_class real_t</div><div class="ttdef"><b>Definition</b> fe_space.hpp:170</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md44"></a>
 Variable prefixes</h2>
 <ul>
 <li>Private class attributes should have a prefix <code>m_</code></li>
 <li>Static class attributes should have a prefix <code>s_</code></li>
 <li><code>constexpr</code> and <code>const</code> integral variables should have a prefix <code>k_</code></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md44"></a>
+<h1><a class="anchor" id="autotoc_md45"></a>
 Control structures</h1>
 <p>Always brace controlled statements, even a single-line consequent of <code>if</code> or <code>for</code>. Examples: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (...) {</div>
 <div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (...) {</div>
@@ -364,13 +364,13 @@ Control structures</h1>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">for</span> (...; ...; ...) {</div>
 <div class="line">}</div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md45"></a>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md46"></a>
 Switch</h2>
 <ul>
 <li>If an <code>if else</code> has more than one branch think to use a <code>switch</code></li>
 <li>If not conditional on an enumerated value, <code>switch</code> statements should always have a default case</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md46"></a>
+<h1><a class="anchor" id="autotoc_md47"></a>
 Pointers</h1>
 <ul>
 <li>Prefer to have single, fixed owners for dynamically allocated objects. Prefer to transfer ownership with smart pointers. That is do not use the keyword <code>new</code>,</li>
@@ -378,7 +378,7 @@ Pointers</h1>
 <li>When testing a pointer, use <code>(!my_ptr)</code> or <code>(my_ptr)</code>; don’t use <code>my_ptr != nullptr</code> or <code>my_ptr == nullptr</code>.</li>
 <li>Do not compare <code>x == true</code> or <code>x == false</code>. Use <code>(x)</code> or <code>(!x)</code></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h1><a class="anchor" id="autotoc_md48"></a>
 Return from errors immediately</h1>
 <p>In most cases, your knee-jerk reaction should be to return from the current function. Don’t do this: </p><div class="fragment"><div class="line">rv = foo-&gt;call1();</div>
 <div class="line"><span class="keywordflow">if</span> (rv) {</div>
@@ -398,7 +398,7 @@ Return from errors immediately</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 20 2025 16:00:44 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

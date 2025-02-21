@@ -61,7 +61,7 @@ var searchData=
   ['getvertexes_58',['getvertexes',['../classvulpes_1_1geometry_1_1MeshBase.html#a926fb8304fca73c32bbb106ba3007fae',1,'vulpes::geometry::MeshBase::getVertexes() const'],['../classvulpes_1_1geometry_1_1MeshBase.html#a77cb0eb9c228f601dbb5c72b222c75ed',1,'vulpes::geometry::MeshBase::getVertexes()']]],
   ['getvtxtocellmap_59',['getvtxtocellmap',['../classvulpes_1_1geometry_1_1MeshBase.html#a0544fcaabb78c4ca5788f2097e097ee7',1,'vulpes::geometry::MeshBase::getVtxToCellMap() const'],['../classvulpes_1_1geometry_1_1MeshBase.html#a328775105fa39c2decd8785a14d6c1dc',1,'vulpes::geometry::MeshBase::getVtxToCellMap()']]],
   ['getvtxtoface_60',['getVtxToFace',['../classvulpes_1_1geometry_1_1Cell3D.html#afae24b6838458f294c3447ba50152471',1,'vulpes::geometry::Cell3D']]],
-  ['global_20variables_61',['Global Variables',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md28',1,'']]],
+  ['global_20variables_61',['Global Variables',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md29',1,'']]],
   ['globaltolocal_62',['globalToLocal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#af30ff62e37b643b338f9673bd7e78555',1,'vulpes::geometry::ParallelMesh']]],
   ['globaltolocalmap_63',['GlobalToLocalMap',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a3d8461309261d8dd566674d8cf186b4a',1,'vulpes::geometry::ParallelMesh']]],
   ['gmpgausslegendrequadrature_64',['gmpGaussLegendreQuadrature',['../namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb',1,'vulpes::qrule']]],
@@ -73,7 +73,7 @@ var searchData=
   ['graphindex_70',['GraphIndex',['../namespacevulpes_1_1dofs_1_1boosttypes.html#ad206b320ef8210caec815e94406333a3',1,'vulpes::dofs::boosttypes']]],
   ['greater_71',['greater',['../structscipy_1_1ckdtreenode.html#af843e2087c4f95cd92792487ef25bd47',1,'scipy::ckdtreenode::greater'],['../namespacescipy.html#aeb2c783fbc91c2bcdd4c2c3f6da897e2',1,'scipy::GREATER']]],
   ['group_72',['The research group',['../index.html#autotoc_md2',1,'']]],
-  ['guard_73',['Define guard',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md23',1,'']]],
+  ['guard_73',['Define guard',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md24',1,'']]],
   ['guide_74',['C++ Style Guide',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html',1,'']]],
   ['guidelines_75',['Commit Guidelines',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md6',1,'']]]
 ];

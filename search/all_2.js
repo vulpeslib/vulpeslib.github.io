@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['background_0',['background',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md19',1,'Background'],['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md10',1,'Background']]],
+  ['background_0',['background',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md20',1,'Background'],['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md10',1,'Background']]],
   ['baricentryctocartesian_1',['baricentrycToCartesian',['../namespacevulpes_1_1qrule.html#a28fb6e32bf6c2fb7a722adf869ea5d85',1,'vulpes::qrule']]],
   ['base64_2',['Base64',['../namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba893648d04b9aa2e46ef4d69dff4c06f2',1,'vulpes::geometry']]],
   ['baseminkowskidistp1_3',['BaseMinkowskiDistP1',['../structscipy_1_1BaseMinkowskiDistP1.html',1,'scipy']]],
@@ -19,7 +19,7 @@ var searchData=
   ['branch_20strategy_16',['Feature Branch Strategy',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md5',1,'']]],
   ['buf_17',['buf',['../structscipy_1_1Rectangle.html#a5382698d7ef5403b8a5d4f2083668dd7',1,'scipy::Rectangle::buf'],['../structscipy_1_1nodeinfo.html#ad3f0414af19070b4114cf80b89d2612a',1,'scipy::nodeinfo::buf']]],
   ['build_18',['build',['../classvulpes_1_1datastructure_1_1KDTree.html#a285a9ca8f107e9dd3c7382d7bbad20ed',1,'vulpes::datastructure::KDTree::build(int64_t leafsize, bool median, bool compact)'],['../classvulpes_1_1datastructure_1_1KDTree.html#a8e45f417b201340aefc744287a6037f6',1,'vulpes::datastructure::KDTree::build(const std::array&lt; double, 2 *Dim &gt; &amp;boxsize, int64_t leafsize, bool median, bool compact)']]],
-  ['build_20devcontainer_19',['Build devcontainer',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md16',1,'']]],
+  ['build_20devcontainer_19',['Build devcontainer',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md17',1,'']]],
   ['build_5fckdtree_20',['build_ckdtree',['../namespacescipy.html#a83ea8ec99f39f03fe332e81e3d40abd7',1,'scipy']]],
   ['buildcelltocelldof_21',['buildCellToCellDof',['../classvulpes_1_1dofs_1_1DofHandler.html#a1633a1690b5075a7b5fd72131ad61daa',1,'vulpes::dofs::DofHandler']]],
   ['buildcelltofacet_22',['buildCellToFacet',['../classvulpes_1_1geometry_1_1MeshBase.html#a85cfc8c315d92a96d07b46888152f7fe',1,'vulpes::geometry::MeshBase']]],

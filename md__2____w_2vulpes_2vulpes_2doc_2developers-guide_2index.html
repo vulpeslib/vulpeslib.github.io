@@ -125,12 +125,18 @@ $(document).ready(function(){initNavTree('md__2____w_2vulpes_2vulpes_2doc_2devel
 </ol>
 <p>Every time you install a kernel update you may need to restart your pc to use this setup.</p>
 <h1><a class="anchor" id="autotoc_md15"></a>
+Use the Docker from VSCode</h1>
+<ul>
+<li>To create a new terminal from VS Code use <code>Ctrl+Shift+P</code> and select <code>Terminal: Create New Terminal</code></li>
+<li>To enter the docker from a generic terminal, find the name of the container using <code>docker ps -a</code>, then use <code>docker exec -it &lt;docker container name&gt; /bin/bash</code> to open the container in interactive mode</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Workflows</h1>
 <p>We employ GitHub workflows to check code quality and automate tasks. If you are interested in testing locally a workflow before pushing it use <a href="https://nektosact.com/installation/index.html">Act</a>.</p>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Build devcontainer</h2>
 <p>The workflow <code>build-publish-docker-image</code> automatically builds the Docker image of the devcontainer and pushed it to the GitHub regestry of the Vulpes organization each time <code>.devcontainer/Dockerfile</code> changes.</p>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Website deploy</h2>
 <p>The workflow <code>build-publish-docs</code> automatically builds and deploy the documentation of the library to the GitHub page of the organization. The website is built with Doxygen and includes various <a href="https://doxygen.nl/manual/additional.html">additional documentation</a>, such as this page. </p>
 </div></div><!-- contents -->
@@ -140,7 +146,7 @@ Website deploy</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 20 2025 16:00:44 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

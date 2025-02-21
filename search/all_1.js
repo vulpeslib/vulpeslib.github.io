@@ -9,7 +9,7 @@ var searchData=
   ['additiverecurrence_6',['additiverecurrence',['../namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750faddce14bb30c5b66a7d44ba653428b466',1,'vulpes::geometry::polymesher::AdditiveRecurrence'],['../namespacevulpes_1_1random.html#abc9e3fe9f35e3d27c5a741281e31a848',1,'vulpes::random::additiveRecurrence()']]],
   ['alloc_5fsize_7',['alloc_size',['../structscipy_1_1nodeinfo__pool.html#af1e8f3d4e00d53189c3ae6c1b7c6da93',1,'scipy::nodeinfo_pool']]],
   ['allocate_8',['allocate',['../structscipy_1_1nodeinfo__pool.html#a0a6119b8e16ce6e0242eba39eabba90e',1,'scipy::nodeinfo_pool']]],
-  ['analysis_9',['Static analysis',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md21',1,'']]],
+  ['analysis_9',['Static analysis',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md22',1,'']]],
   ['and_20merge_20policy_10',['Commit and Merge Policy',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html',1,'']]],
   ['anonymous_11',['anonymous',['../namespaceanonymous.html',1,'']]],
   ['applyrenumbering_12',['applyRenumbering',['../classvulpes_1_1dofs_1_1DofHandler.html#a6ab8b920c5f72735cb158dc7e0741c8f',1,'vulpes::dofs::DofHandler']]],
@@ -21,5 +21,5 @@ var searchData=
   ['arena_5fsize_18',['arena_size',['../structscipy_1_1nodeinfo__pool.html#aefa8ccd781a8dcc358bef2c029481d4d',1,'scipy::nodeinfo_pool']]],
   ['ascii_19',['Ascii',['../namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba0b113699bc543798d4bd94c7ba44fe01',1,'vulpes::geometry']]],
   ['assign_20',['assign',['../classvulpes_1_1datastructure_1_1SmallVector.html#a30714f026a365bacfa46e444cbe6c486',1,'vulpes::datastructure::SmallVector']]],
-  ['auto_20tt_20keyword_21',['The &lt;tt&gt;auto&lt;/tt&gt; keyword',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md36',1,'']]]
+  ['auto_20tt_20keyword_21',['The &lt;tt&gt;auto&lt;/tt&gt; keyword',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md37',1,'']]]
 ];

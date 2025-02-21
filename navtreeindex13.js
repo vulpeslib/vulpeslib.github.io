@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"structinternal_1_1Statistics.html#a4edaf15d49bbbe95b14836fcf53078a6":[6,0,0,0,1],
 "structinternal_1_1Statistics.html#a5e5639fd25ffd782704e134ae39184f7":[5,0,2,0,2],
 "structinternal_1_1Statistics.html#a5e5639fd25ffd782704e134ae39184f7":[6,0,0,0,2],
 "structinternal_1_1Statistics.html#a687fe72c93336fbe0436a867df582aa8":[5,0,2,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structscipy_1_1nodeinfo__pool.html#a38fe2e288b1ea5fdda86094afba3645f":[5,0,3,13,4],
 "structscipy_1_1nodeinfo__pool.html#a619e7ca4a78bd67cf67abe5c54500ad2":[5,0,3,13,7],
 "structscipy_1_1nodeinfo__pool.html#a619e7ca4a78bd67cf67abe5c54500ad2":[6,0,1,13,7],
-"structscipy_1_1nodeinfo__pool.html#ae815f971497ed6f411f84f5dfe578f76":[6,0,1,13,5],
-"structscipy_1_1nodeinfo__pool.html#ae815f971497ed6f411f84f5dfe578f76":[5,0,3,13,5]
+"structscipy_1_1nodeinfo__pool.html#ae815f971497ed6f411f84f5dfe578f76":[6,0,1,13,5]
 };

@@ -17,5 +17,6 @@ var searchData=
   ['updatevoronoicentroid_14',['updateVoronoiCentroid',['../namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27',1,'vulpes::geometry::internal']]],
   ['updateweights_15',['UpdateWeights',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa30366acf17ea86ca9e5012ecd382dfd1',1,'vulpes::fe']]],
   ['upow_16',['upow',['../namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b',1,'vulpes::vmath']]],
-  ['upper_5fbound_17',['upper_bound',['../structscipy_1_1RectRectDistanceTracker.html#a6a71312795ab6a7850b4002ee70b51e2',1,'scipy::RectRectDistanceTracker']]]
+  ['upper_5fbound_17',['upper_bound',['../structscipy_1_1RectRectDistanceTracker.html#a6a71312795ab6a7850b4002ee70b51e2',1,'scipy::RectRectDistanceTracker']]],
+  ['use_20the_20docker_20from_20vscode_18',['Use the Docker from VSCode',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md15',1,'']]]
 ];

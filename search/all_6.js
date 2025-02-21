@@ -68,14 +68,15 @@ var searchData=
   ['fevalues_3c_20dim_20_3e_65',['FeValues&lt; dim &gt;',['../classvulpes_1_1fe_1_1FeValues.html',1,'vulpes::fe']]],
   ['fevaluesgrad_66',['FeValuesGrad',['../classvulpes_1_1fe_1_1FeValues.html#aea04afc07f3b0c7eab2b430b1c5d2cfe',1,'vulpes::fe::FeValues']]],
   ['fevaluesscalar_67',['FeValuesScalar',['../classvulpes_1_1fe_1_1FeValues.html#a0dd06df502fa1b0a7997d37111b03849',1,'vulpes::fe::FeValues']]],
-  ['file_20structure_68',['File structure',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md22',1,'']]],
+  ['file_20structure_68',['File structure',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md23',1,'']]],
   ['finalize_69',['finalize',['../classvulpes_1_1mpi_1_1MpiHandle.html#ab20add7947a8601721cf7dec841680e2',1,'vulpes::mpi::MpiHandle']]],
   ['findedgestocompute_70',['findEdgesToCompute',['../classvulpes_1_1geometry_1_1Cell3D.html#a3cfddc3ee435ac794cc4025bf27df08c',1,'vulpes::geometry::Cell3D']]],
   ['finite_5fdifference_5fh_71',['finite_difference_h',['../structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#a484f0dd12ea89d3d3f4560e6b0d08219',1,'vulpes::geometry::polymesher::PolyMesherParams']]],
   ['float_5ft_72',['float_t',['../classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df',1,'vulpes::geometry::Simplexify::float_t'],['../classvulpes_1_1geometry_1_1Triangulation.html#a39553688b2f1637c02aaaf7cf9b09d33',1,'vulpes::geometry::Triangulation::float_t'],['../classvulpes_1_1geometry_1_1Tetrahedralization.html#abccbab76ea5868476090d136c46306e4',1,'vulpes::geometry::Tetrahedralization::float_t'],['../classvulpes_1_1qrule_1_1QuadratureLibrary.html#a1cb9b2972774291ad81c60d1d539b8aa',1,'vulpes::qrule::QuadratureLibrary::float_t']]],
-  ['formatting_20code_73',['Formatting code',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md20',1,'']]],
-  ['friends_74',['Friends',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md34',1,'']]],
-  ['from_20errors_20immediately_75',['Return from errors immediately',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md47',1,'']]],
-  ['frugal_2ehpp_76',['frugal.hpp',['../frugal_8hpp.html',1,'']]],
-  ['functions_77',['Functions',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md35',1,'']]]
+  ['formatting_20code_73',['Formatting code',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md21',1,'']]],
+  ['friends_74',['Friends',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md35',1,'']]],
+  ['from_20errors_20immediately_75',['Return from errors immediately',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md48',1,'']]],
+  ['from_20vscode_76',['Use the Docker from VSCode',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md15',1,'']]],
+  ['frugal_2ehpp_77',['frugal.hpp',['../frugal_8hpp.html',1,'']]],
+  ['functions_78',['Functions',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md36',1,'']]]
 ];

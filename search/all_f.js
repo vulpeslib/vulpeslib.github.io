@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['operator_20overloading_0',['Operator Overloading',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md33',1,'']]],
+  ['operator_20overloading_0',['Operator Overloading',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md34',1,'']]],
   ['operator_25_1',['operator%',['../classvulpes_1_1polynomial_1_1Polynomial.html#a0032ff3b329a0c3d30fea2c00dec3c73',1,'vulpes::polynomial::Polynomial']]],
   ['operator_25_3d_2',['operator%=',['../classvulpes_1_1polynomial_1_1Polynomial.html#adb45bfea844a7ba857015492cde12a6b',1,'vulpes::polynomial::Polynomial']]],
   ['operator_26_3',['operator&amp;',['../namespacevulpes_1_1geometry.html#a6a9e5e09036a979b348aa0dcf7c2cabf',1,'vulpes::geometry']]],
@@ -24,6 +24,6 @@ var searchData=
   ['ordered_5fpair_21',['ordered_pair',['../structscipy_1_1ordered__pair.html',1,'scipy']]],
   ['outer_5fdim_22',['outer_dim',['../classvulpes_1_1geometry_1_1MeshBase.html#ae67d09036cb8c36132230a7078898ee9',1,'vulpes::geometry::MeshBase']]],
   ['outputvtu_23',['outputvtu',['../classvulpes_1_1geometry_1_1Mesh3D.html#aff625b8029e8ae65f8a538eafa66b67f',1,'vulpes::geometry::Mesh3D::outputVTU()'],['../classvulpes_1_1geometry_1_1Mesh2D.html#a8dd516a4d15e307964d53a3ee48eabff',1,'vulpes::geometry::Mesh2D::outputVTU()']]],
-  ['overloading_24',['Operator Overloading',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md33',1,'']]],
+  ['overloading_24',['Operator Overloading',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md34',1,'']]],
   ['overview_25',['Overview',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md4',1,'']]]
 ];

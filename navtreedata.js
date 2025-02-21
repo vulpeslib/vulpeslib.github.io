@@ -41,47 +41,48 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Developers Setup", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html", [
-      [ "Workflows", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md15", [
-        [ "Build devcontainer", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md16", null ],
-        [ "Website deploy", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md17", null ]
+      [ "Use the Docker from VSCode", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md15", null ],
+      [ "Workflows", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md16", [
+        [ "Build devcontainer", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md17", null ],
+        [ "Website deploy", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md18", null ]
       ] ]
     ] ],
     [ "C++ Style Guide", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html", [
-      [ "Background", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md19", null ],
-      [ "Formatting code", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md20", null ],
-      [ "Static analysis", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md21", null ],
-      [ "File structure", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md22", [
-        [ "Define guard", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md23", null ],
-        [ "Includes", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md24", null ]
+      [ "Background", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md20", null ],
+      [ "Formatting code", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md21", null ],
+      [ "Static analysis", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md22", null ],
+      [ "File structure", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md23", [
+        [ "Define guard", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md24", null ],
+        [ "Includes", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md25", null ]
       ] ],
-      [ "Namespaces", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md25", null ],
-      [ "Variables", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md26", [
-        [ "Local Variables", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md27", null ],
-        [ "Global Variables", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md28", [
-          [ "Common patterns", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md29", null ]
+      [ "Namespaces", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md26", null ],
+      [ "Variables", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md27", [
+        [ "Local Variables", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md28", null ],
+        [ "Global Variables", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md29", [
+          [ "Common patterns", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md30", null ]
         ] ]
       ] ],
-      [ "Classes", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md30", [
-        [ "Struct", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md31", null ],
-        [ "Inheritance", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md32", null ],
-        [ "Operator Overloading", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md33", null ],
-        [ "Friends", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md34", null ]
+      [ "Classes", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md31", [
+        [ "Struct", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md32", null ],
+        [ "Inheritance", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md33", null ],
+        [ "Operator Overloading", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md34", null ],
+        [ "Friends", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md35", null ]
       ] ],
-      [ "Functions", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md35", null ],
-      [ "The <tt>auto</tt> keyword", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md36", null ],
-      [ "Exceptions", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md37", null ],
-      [ "Casting", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md38", null ],
-      [ "Integer Types", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md39", null ],
-      [ "Macros", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md40", null ],
-      [ "Naming conventions", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md41", [
-        [ "Types", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md42", null ],
-        [ "Variable prefixes", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md43", null ]
+      [ "Functions", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md36", null ],
+      [ "The <tt>auto</tt> keyword", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md37", null ],
+      [ "Exceptions", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md38", null ],
+      [ "Casting", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md39", null ],
+      [ "Integer Types", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md40", null ],
+      [ "Macros", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md41", null ],
+      [ "Naming conventions", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md42", [
+        [ "Types", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md43", null ],
+        [ "Variable prefixes", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md44", null ]
       ] ],
-      [ "Control structures", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md44", [
-        [ "Switch", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md45", null ]
+      [ "Control structures", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md45", [
+        [ "Switch", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md46", null ]
       ] ],
-      [ "Pointers", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md46", null ],
-      [ "Return from errors immediately", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md47", null ]
+      [ "Pointers", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md47", null ],
+      [ "Return from errors immediately", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md48", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -130,9 +131,9 @@ var NAVTREEINDEX =
 "classvulpes_1_1polynomial_1_1Polynomial.html#a7e8bc2c21f53daa23c0c20c9d0ec6ee0",
 "classvulpes_1_1qrule_1_1QuadratureLibrary.html#a0abbc47bfad7da445804245d69f005f2",
 "kdtree_8hpp_source.html",
-"namespacevulpes_1_1fe_1_1internal.html#a0204f4dc193b91e6326ecaf6b409887c",
-"structinternal_1_1Statistics.html#a5e5639fd25ffd782704e134ae39184f7",
-"structscipy_1_1nodeinfo__pool.html#aea57ebfc385a2de737820ee453e53551"
+"namespacevulpes_1_1fe_1_1internal.html",
+"structinternal_1_1Statistics.html#a4edaf15d49bbbe95b14836fcf53078a6",
+"structscipy_1_1nodeinfo__pool.html#ae815f971497ed6f411f84f5dfe578f76"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

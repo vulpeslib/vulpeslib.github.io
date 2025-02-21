@@ -31,7 +31,7 @@ var searchData=
   ['requirements_28',['Merge Requirements',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md7',1,'']]],
   ['research_20group_29',['The research group',['../index.html#autotoc_md2',1,'']]],
   ['resize_30',['resize',['../classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a858b641ff02038594a8ad3b423948711',1,'vulpes::datastructure::CrsMapUncompressed']]],
-  ['return_20from_20errors_20immediately_31',['Return from errors immediately',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md47',1,'']]],
+  ['return_20from_20errors_20immediately_31',['Return from errors immediately',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md48',1,'']]],
   ['root_32',['root',['../namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546',1,'vulpes::mpi']]],
   ['rowview_33',['rowview',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#aec43b637e6198255d17e3b5b99a55883',1,'vulpes::datastructure::CrsMap::RowView::RowView()'],['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html',1,'vulpes::datastructure::CrsMap&lt; DataType, IndexType, RowSize &gt;::RowView&lt; Mutable &gt;']]],
   ['rr_5fstack_5fitem_34',['RR_stack_item',['../structscipy_1_1RR__stack__item.html',1,'scipy']]],

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['n_0',['n',['../namespacevulpes_1_1fe.html#a83d9fe5cdc5624db44b012daf9690757',1,'vulpes::fe::n()'],['../structscipy_1_1ckdtree.html#aee80e337228b2be0207ff7f8784116d1',1,'scipy::ckdtree::n'],['../structscipy_1_1heap.html#a480e687412a3de6311219bdc36bdc058',1,'scipy::heap::n']]],
-  ['namespaces_1',['Namespaces',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md25',1,'']]],
-  ['naming_20conventions_2',['Naming conventions',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md41',1,'']]],
+  ['namespaces_1',['Namespaces',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md26',1,'']]],
+  ['naming_20conventions_2',['Naming conventions',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md42',1,'']]],
   ['ndofs_3',['ndofs',['../classvulpes_1_1dofs_1_1DofHandler.html#a5a158e97447963099803197b53dc20c5',1,'vulpes::dofs::DofHandler']]],
   ['ndpolynomial_4',['NdPolynomial',['../namespacevulpes_1_1polynomial.html#a75599e84a0a9593e9442ee310abb0ff5',1,'vulpes::polynomial']]],
   ['ndpolynomial_2ehpp_5',['ndpolynomial.hpp',['../ndpolynomial_8hpp.html',1,'']]],

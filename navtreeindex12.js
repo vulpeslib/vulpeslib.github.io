@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"namespacevulpes_1_1fe_1_1internal.html":[5,0,4,3,0],
 "namespacevulpes_1_1fe_1_1internal.html#a0204f4dc193b91e6326ecaf6b409887c":[5,0,4,3,0,20],
 "namespacevulpes_1_1fe_1_1internal.html#a0a3fe3ce99eb005082620506f1652738":[5,0,4,3,0,12],
 "namespacevulpes_1_1fe_1_1internal.html#a149529c6dad257c887c4eccc4f56de2a":[5,0,4,3,0,3],
@@ -161,8 +162,8 @@ var NAVTREEINDEX12 =
 "namespacevulpes_1_1vutils.html":[5,0,4,12],
 "namespacevulpes_1_1vutils.html#a0bd0e624421d07a12ad0b3efc57e6b57":[5,0,4,12,1],
 "namespacevulpes_1_1vutils_1_1internal.html":[5,0,4,12,0],
-"namespacevulpes_1_1vutils_1_1internal.html#a91af4262edd06b4882cb9496c57265c9":[5,0,4,12,0,0],
 "namespacevulpes_1_1vutils_1_1internal.html#a91af4262edd06b4882cb9496c57265c9":[5,0,4,12,0,1],
+"namespacevulpes_1_1vutils_1_1internal.html#a91af4262edd06b4882cb9496c57265c9":[5,0,4,12,0,0],
 "ndpolynomial_8hpp.html":[7,0,1,5,1],
 "ndpolynomial_8hpp.html#a75599e84a0a9593e9442ee310abb0ff5":[7,0,1,5,1,0],
 "ndpolynomial_8hpp_source.html":[7,0,1,5,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structinternal_1_1Statistics.html":[6,0,0,0],
 "structinternal_1_1Statistics.html#a08ea2e5d7dcf9566cfe8059d461e8480":[5,0,2,0,4],
 "structinternal_1_1Statistics.html#a08ea2e5d7dcf9566cfe8059d461e8480":[6,0,0,0,4],
-"structinternal_1_1Statistics.html#a4edaf15d49bbbe95b14836fcf53078a6":[5,0,2,0,1],
-"structinternal_1_1Statistics.html#a4edaf15d49bbbe95b14836fcf53078a6":[6,0,0,0,1]
+"structinternal_1_1Statistics.html#a4edaf15d49bbbe95b14836fcf53078a6":[5,0,2,0,1]
 };
