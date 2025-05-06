@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -196,8 +193,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:af53ca31ffd3d5d3b73be3720cc934891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the tensor dimension, if applicable.  <br /></td></tr>
 <tr class="separator:af53ca31ffd3d5d3b73be3720cc934891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a198f3c1bb14fc9cc51b4d12c12c824bc" id="r_a198f3c1bb14fc9cc51b4d12c12c824bc"><td class="memItemLeft" align="right" valign="top">IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html#a198f3c1bb14fc9cc51b4d12c12c824bc">m_tri_size</a></td></tr>
-<tr class="memdesc:a198f3c1bb14fc9cc51b4d12c12c824bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements stored in the matrix.  <br /></td></tr>
+<tr class="memdesc:a198f3c1bb14fc9cc51b4d12c12c824bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements in one slice.  <br /></td></tr>
 <tr class="separator:a198f3c1bb14fc9cc51b4d12c12c824bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9744daa41c4a2f434284ab35b8359d7" id="r_ac9744daa41c4a2f434284ab35b8359d7"><td class="memItemLeft" align="right" valign="top">IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html#ac9744daa41c4a2f434284ab35b8359d7">m_numel</a></td></tr>
+<tr class="memdesc:ac9744daa41c4a2f434284ab35b8359d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements stored in the matrix.  <br /></td></tr>
+<tr class="separator:ac9744daa41c4a2f434284ab35b8359d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9187d5f3bd7e31694f536af565864d9b" id="r_a9187d5f3bd7e31694f536af565864d9b"><td class="memItemLeft" align="right" valign="top">StorageType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html#a9187d5f3bd7e31694f536af565864d9b">m_data</a></td></tr>
 <tr class="memdesc:a9187d5f3bd7e31694f536af565864d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying data storage.  <br /></td></tr>
 <tr class="separator:a9187d5f3bd7e31694f536af565864d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -942,6 +942,32 @@ template&lt;bool Triangular, bool Tensor, typename DataType , typename IndexType
 
 </div>
 </div>
+<a id="ac9744daa41c4a2f434284ab35b8359d7" name="ac9744daa41c4a2f434284ab35b8359d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9744daa41c4a2f434284ab35b8359d7">&#9670;&#160;</a></span>m_numel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool Triangular, bool Tensor, typename DataType , typename IndexType , typename StorageType  = std::vector&lt;DataType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IndexType <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">vulpes::datastructure::TriMatrix</a>&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;::m_numel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Total number of elements stored in the matrix. </p>
+
+</div>
+</div>
 <a id="af53ca31ffd3d5d3b73be3720cc934891" name="af53ca31ffd3d5d3b73be3720cc934891"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af53ca31ffd3d5d3b73be3720cc934891">&#9670;&#160;</a></span>m_tensor_size</h2>
 
@@ -1016,7 +1042,7 @@ template&lt;bool Triangular, bool Tensor, typename DataType , typename IndexType
 </table>
 </div><div class="memdoc">
 
-<p>Total number of elements stored in the matrix. </p>
+<p>Total number of elements in one slice. </p>
 
 </div>
 </div>
@@ -1030,7 +1056,7 @@ template&lt;bool Triangular, bool Tensor, typename DataType , typename IndexType
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1datastructure.html">datastructure</a></li><li class="navelem"><a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">TriMatrix</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

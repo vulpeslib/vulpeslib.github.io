@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -123,7 +120,7 @@ $(document).ready(function(){initNavTree('structvulpes_1_1fe_1_1DofPolicyFeSpace
   <tr class="odd"><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html#ac583f2e4205572e1e9651678e366d84f">DofPolicyBase</a>(std::size_t order)</td><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html#ae47920496051d3234d3780dea2ddb407">DofPolicyFeSpaceDQ</a>(std::size_t order)</td><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html">vulpes::fe::DofPolicyFeSpaceDQ&lt; Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html#afb33d29b577896534f4a8afab0e6e1ed">dofsInteractionDistance</a>()</td><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html">vulpes::fe::DofPolicyFeSpaceDQ&lt; Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html#a07e8924155c06b86125e4e09a0bffab7">dofToCellDof</a>(const MeshType &amp;, MeshType::index_t cell_id, MeshType::index_t owning_enty_id, MeshType::index_t enty_dim, MeshType::index_t enty_multiplicity) const</td><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html">vulpes::fe::DofPolicyFeSpaceDQ&lt; Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html#a040475c19c3d27f923260559c62ee71b">dofToCellDof</a>(const MeshType &amp;mesh, MeshType::index_t cell_id, MeshType::index_t owning_enty_id, MeshType::index_t enty_dim, MeshType::index_t enty_multiplicity) const</td><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html">vulpes::fe::DofPolicyFeSpaceDQ&lt; Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html#a62037be1cb1f84122c01ea7f92d79b0e">m_order</a></td><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html#af351c17ac2f2cbd8e2ec3fe9fae05172">self</a>() const</td><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html#a2bd9e284b4c3251ca30b5e0ae60f637d">self</a>()</td><td class="entry"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
@@ -133,7 +130,7 @@ $(document).ready(function(){initNavTree('structvulpes_1_1fe_1_1DofPolicyFeSpace
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

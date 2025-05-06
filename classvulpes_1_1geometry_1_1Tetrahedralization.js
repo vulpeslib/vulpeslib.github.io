@@ -9,7 +9,7 @@ var classvulpes_1_1geometry_1_1Tetrahedralization =
     [ "SimplexesViewType", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a4b8187a4227ddce7e9da47a279d049b9", null ],
     [ "SubsimplexesType", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a8405bf699891668e3c9584ebda2efe33", null ],
     [ "SubsimplexesViewType", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a4a609a1bd90454e076725257b34c9897", null ],
-    [ "Tetrahedralization", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a17914d8840cbe3d5ff48fe9828fd9791", null ],
+    [ "Tetrahedralization", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a2f52eeb88c807ad9c65d62a0e55466ee", null ],
     [ "cell", "classvulpes_1_1geometry_1_1Tetrahedralization.html#ac90d8dd7406a5d2a268e91f058799b10", null ],
     [ "getNumPoints", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a885f5817737770c6357432b0036d2df7", null ],
     [ "getNumTetrahedra", "classvulpes_1_1geometry_1_1Tetrahedralization.html#acaf6cf6f37e5bd15af7a15ef1758be83", null ],
@@ -21,6 +21,7 @@ var classvulpes_1_1geometry_1_1Tetrahedralization =
     [ "m_cell", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a9451de51f7e41d7bc418985b25d30993", null ],
     [ "m_facelist", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a593ad1d0b30e8b388bff2fe55e6c7ceb", null ],
     [ "m_faces_subsimplexes", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a249976a487f9498b042ab42b331760af", null ],
+    [ "m_facetmarkerlist", "classvulpes_1_1geometry_1_1Tetrahedralization.html#ad08f3d18db2e6dd4a2e078f6e590a2df", null ],
     [ "m_in", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a792d61a805c4b7fab300933d28712f6d", null ],
     [ "m_num_subfaces_per_face", "classvulpes_1_1geometry_1_1Tetrahedralization.html#ab55cb2a6434aa8f69f1c7a47dbac525c", null ],
     [ "m_num_subfaces_per_face_cumsum", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a6a92f4138fa78fcc84d966d05e18ec51", null ],
@@ -30,5 +31,6 @@ var classvulpes_1_1geometry_1_1Tetrahedralization =
     [ "m_tetrahedra_list", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a87f6e2f1b5fbf40d2049402a06c749e2", null ],
     [ "s_facelist", "classvulpes_1_1geometry_1_1Tetrahedralization.html#abb622bf8eb0e34881ad4f1e8af417e39", null ],
     [ "s_polygons", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a396da0ed15e6ee20b91f6c8eb6faf75a", null ],
-    [ "s_static_buffer_size", "classvulpes_1_1geometry_1_1Tetrahedralization.html#ac992c257f53a1c5e379d4257f1efe6a6", null ]
+    [ "s_static_buffer_size", "classvulpes_1_1geometry_1_1Tetrahedralization.html#ac992c257f53a1c5e379d4257f1efe6a6", null ],
+    [ "s_tetgen_default_options", "classvulpes_1_1geometry_1_1Tetrahedralization.html#ac68c044d6fb2bd2ce829436b9f28717d", null ]
 ];

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -159,7 +156,7 @@ Functions</h2></td></tr>
 <tr class="memitem:accaba2d6f40c92b841125e3ec0f96bf9"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; Eigen::Matrix&lt; FloatType, -1, -1 &gt;, Eigen::Matrix&lt; FloatType, -1, -1 &gt;, Eigen::Matrix&lt; FloatType, Dim, -1 &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree_1_1internal.html#accaba2d6f40c92b841125e3ec0f96bf9">vulpes::qfree::internal::vandermondeDecomposition</a> (std::size_t order)</td></tr>
 <tr class="separator:accaba2d6f40c92b841125e3ec0f96bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a271a2f67bae64f04de1373da61fd774d" id="r_a271a2f67bae64f04de1373da61fd774d"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , std::size_t Dim&gt; </td></tr>
-<tr class="memitem:a271a2f67bae64f04de1373da61fd774d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1qrule_1_1QuadratureRule.html">qrule::QuadratureRule</a>&lt; FloatType, Dim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a271a2f67bae64f04de1373da61fd774d">vulpes::qfree::computeFrugalQuadrature</a> (<a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">datastructure::SimplexDataView</a>&lt; Dim, true, FloatType, IndexType &gt; integrals)</td></tr>
+<tr class="memitem:a271a2f67bae64f04de1373da61fd774d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1qrule_1_1QuadratureRule.html">qrule::QuadratureRule</a>&lt; FloatType, Dim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a271a2f67bae64f04de1373da61fd774d">vulpes::qfree::computeFrugalQuadrature</a> (<a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; Dim, true, FloatType, IndexType &gt; integrals)</td></tr>
 <tr class="separator:a271a2f67bae64f04de1373da61fd774d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -169,7 +166,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="frugal_8hpp.html">frugal.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

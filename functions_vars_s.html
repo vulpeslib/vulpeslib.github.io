@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,17 +113,21 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <div class="textblock">Here is a list of all variables with links to the classes they belong to:</div>
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>s_behavior_init&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a23a6399950d90eb5c4e14682dab75cac">vulpes::geometry::Triangulation</a></li>
 <li>s_buffer_size&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#aa036e2a77bcc54a4ab2b998fcbdc4a1f">vulpes::geometry::Triangulation</a></li>
 <li>s_default_thread_required&#160;:&#160;<a class="el" href="classvulpes_1_1mpi_1_1MpiHandle.html#a1a2f87c9178e2ddfdf0360edc71b6372">vulpes::mpi::MpiHandle</a></li>
 <li>s_facelist&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#abb622bf8eb0e34881ad4f1e8af417e39">vulpes::geometry::Tetrahedralization</a></li>
 <li>s_gmp_precision&#160;:&#160;<a class="el" href="classvulpes_1_1qrule_1_1QuadratureLibrary.html#a0abbc47bfad7da445804245d69f005f2">vulpes::qrule::QuadratureLibrary&lt; Dim, FloatType &gt;</a></li>
-<li>s_mapping&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a22f59e6b615b729c84190c470265648c">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
-<li>s_n_expr&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a42d5afb12b12967d1cc4a1a5342b86b7">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a36f30be95fc99b59c377107ba4d28da6">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
-<li>s_n_face_expr&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a031215aad86c1d2a188d84511c23ffab">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a3fa851907f2c3828c3f9b2b69f8f930b">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
-<li>s_one&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#afd543bbf917c4031eb4cbe29a1aab341">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
+<li>s_n_blocks&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ab9d50af71153bc7edeb68797350a46d9">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a5f41ffabf8ec2fb329bea01ce444ba26">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>s_n_expr&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorGauss.html#a980dce003b24a161eb658e5d9f0069a5">vulpes::assemble::WeakFormIntegratorGauss&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a8ee80f969deef1cdaa3c07989c4e65eb">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>s_n_expr_bilinear&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#afdaea1cf72a8df534d7662302870fcc9">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#aa7ebfe586c3a94173ed317ecc1ab6fa2">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>s_n_expr_linear&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5d4bd5b93741168929d1513f2cb65705">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a9700fdf21ecea1251f9ae2fa1041f712">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>s_n_face_expr&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorGauss.html#afcb6b30d298ac6949c5f26afce5a28cc">vulpes::assemble::WeakFormIntegratorGauss&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a4047b439abad8c755edc3202e768c34a">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>s_n_face_expr_bilinear&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#af7e7cff4afcf9f6d6dbbf8406e7556c3">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a91acbb8db44fae40d2f12873b070ea10">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>s_n_face_expr_linear&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a3d674996c0083c63fd73ce787186677e">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#ad3661c2452f6443106758406ee3ec000">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>s_polygons&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a396da0ed15e6ee20b91f6c8eb6faf75a">vulpes::geometry::Tetrahedralization</a></li>
 <li>s_static_buffer_size&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac992c257f53a1c5e379d4257f1efe6a6">vulpes::geometry::Tetrahedralization</a></li>
+<li>s_tetgen_default_options&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac68c044d6fb2bd2ce829436b9f28717d">vulpes::geometry::Tetrahedralization</a></li>
+<li>s_triangle_default_options&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ae8f021221a27387d999f4b80ac52f632">vulpes::geometry::Triangulation</a></li>
 <li>self_dim&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a0d0131275bab569064e6db359428ea20">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a0cb70ee70a94e789c040880fbb58dbd8">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
 <li>space&#160;:&#160;<a class="el" href="structscipy_1_1heap.html#ae193f81f6da4c2d2cbd6f536265ef395">scipy::heap</a></li>
 <li>split&#160;:&#160;<a class="el" href="structscipy_1_1ckdtreenode.html#a2cd2aa1a568b3b5c727d7f5dac74079d">scipy::ckdtreenode</a></li>
@@ -138,6 +139,8 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>start_idx&#160;:&#160;<a class="el" href="structscipy_1_1ckdtreenode.html#a51410515817115f94634f4cd5a64b617">scipy::ckdtreenode</a></li>
 <li>start_times&#160;:&#160;<a class="el" href="classProfiler.html#a711d0a8f471a10e0096777148343442b">Profiler</a></li>
 <li>std_dev&#160;:&#160;<a class="el" href="structinternal_1_1Statistics.html#a08ea2e5d7dcf9566cfe8059d461e8480">internal::Statistics&lt; FloatType &gt;</a></li>
+<li>strong_threshold&#160;:&#160;<a class="el" href="structvulpes_1_1la_1_1DataBoomerAMG.html#ad0543600f3cdaa4d576d00afe9551d97">vulpes::la::DataBoomerAMG</a></li>
+<li>symmetric_operator&#160;:&#160;<a class="el" href="structvulpes_1_1la_1_1DataBoomerAMG.html#aad37d03dc01bf2e89ede2229ea4f1ed4">vulpes::la::DataBoomerAMG</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -145,7 +148,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,12 +1,17 @@
 var classvulpes_1_1fe_1_1FeExpressionBase =
 [
+    [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionBase.html#aba0b18cd54e491637f9cbbb0d8ee4660", null ],
     [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionBase.html#a7883d4007def8170999b98cf18a6b9a2", null ],
-    [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionBase.html#ae521e08a97297c07a2c1ba60bba5f1b3", null ],
+    [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionBase.html#a3874c9b3773cc1c7618e428d00398f10", null ],
     [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionBase.html#a96c2216f8cced7805760bcb1a721cf21", null ],
-    [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionBase.html#ac78a19f502c510ff761cc61ce36db4ca", null ],
+    [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionBase.html#a7f218549438922fe3086361f5968b884", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionBase.html#ac1821df705596b62a788c64b8744f69c", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionBase.html#af0333705ad7416bd31da37eb47dd3491", null ],
-    [ "nPolyComponents", "classvulpes_1_1fe_1_1FeExpressionBase.html#a694856e085b560e21ad08a35fa4d02a8", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionBase.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "precompute", "classvulpes_1_1fe_1_1FeExpressionBase.html#ad7996ee82c01975a92f07f0312ed9a2d", null ],
     [ "self", "classvulpes_1_1fe_1_1FeExpressionBase.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
-    [ "is_leaf", "classvulpes_1_1fe_1_1FeExpressionBase.html#a4e9998c05278c1e66bd15637732d7488", null ]
+    [ "is_bilinear", "classvulpes_1_1fe_1_1FeExpressionBase.html#a26b220cfd0ad47f3798e1e39b018b4b3", null ],
+    [ "is_leaf", "classvulpes_1_1fe_1_1FeExpressionBase.html#a4e9998c05278c1e66bd15637732d7488", null ],
+    [ "k_index_begin", "classvulpes_1_1fe_1_1FeExpressionBase.html#a2ea9e3bdcbdc3dd7835c64ac607e30be", null ],
+    [ "k_index_end", "classvulpes_1_1fe_1_1FeExpressionBase.html#a6482f4e05433e454afd3bfb876f7ac37", null ]
 ];

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -120,6 +117,7 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html',''); initResi
 <li>gather()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#aabf5ac17692143e3eb480292d5aaef50">vulpes::mpi</a></li>
 <li>gaussLobattoRoots()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a0a3fe3ce99eb005082620506f1652738">vulpes::fe::internal</a></li>
 <li>getFileExtension()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#abf351d6f6479b97562557b6345358921">vulpes::geometry::internal</a></li>
+<li>getLinearIndex()&#160;:&#160;<a class="el" href="namespacevulpes_1_1monomial.html#a99258c2e17e438e167c1364470e1390c">vulpes::monomial</a></li>
 <li>getMonomial()&#160;:&#160;<a class="el" href="namespacevulpes_1_1monomial.html#a181285290fa3e961b82dbe6252e844eb">vulpes::monomial</a></li>
 <li>getMonomial2D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1monomial.html#a0ec905016864e5eded1b159eba549a55">vulpes::monomial</a></li>
 <li>getMonomial3D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1monomial.html#a8a6d562a6e8b3840be88ad886a191dfe">vulpes::monomial</a></li>
@@ -129,7 +127,7 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html',''); initResi
 <li>getUncompressedCrsMapWithStaticStorageGreaterThan()&#160;:&#160;<a class="el" href="namespacevulpes_1_1datastructure.html#aa178df0b2038f563b1561a1343c30366">vulpes::datastructure</a></li>
 <li>gmpGaussLegendreQuadrature()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb">vulpes::qrule</a></li>
 <li>gmpGaussLobattoQuadrature()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#acf808d810fe514bf8cf0c6a3229ff4a2">vulpes::qrule</a></li>
-<li>grad()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a1df29590f4817b4574b4d87e2a17385f">vulpes::fe</a></li>
+<li>grad()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#af24d31d4d96f90905f1c5aaa725fda77">vulpes::fe</a></li>
 <li>Graph&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs_1_1boosttypes.html#a7404e8f96c7799b64254b1c2ec0cf6ec">vulpes::dofs::boosttypes</a></li>
 <li>GraphDegree&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs_1_1boosttypes.html#aa66414c3fd26ecc00465cb019debc82b">vulpes::dofs::boosttypes</a></li>
 <li>GraphIndex&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs_1_1boosttypes.html#ad206b320ef8210caec815e94406333a3">vulpes::dofs::boosttypes</a></li>
@@ -141,7 +139,7 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

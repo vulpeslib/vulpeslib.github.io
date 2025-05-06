@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,6 +113,7 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 <div class="textblock">Here is a list of all variables with links to the classes they belong to:</div>
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
+<li>aggressive_coarsening_num_levels&#160;:&#160;<a class="el" href="structvulpes_1_1la_1_1DataBoomerAMG.html#a5146e09563b78d7743ef8c82ff599d72">vulpes::la::DataBoomerAMG</a></li>
 <li>alloc_size&#160;:&#160;<a class="el" href="structscipy_1_1nodeinfo__pool.html#af1e8f3d4e00d53189c3ae6c1b7c6da93">scipy::nodeinfo_pool</a></li>
 <li>area_relax&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#ab934a430a7a87b3be56795f0d11fa0f2">vulpes::geometry::polymesher::PolyMesherParams&lt; FloatType &gt;</a></li>
 <li>arena&#160;:&#160;<a class="el" href="structscipy_1_1nodeinfo__pool.html#a38fe2e288b1ea5fdda86094afba3645f">scipy::nodeinfo_pool</a></li>
@@ -128,7 +126,7 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

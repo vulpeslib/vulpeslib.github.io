@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -117,15 +114,18 @@ $(document).ready(function(){initNavTree('functions_func_n.html',''); initResiza
 
 <h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
 <li>ndofs()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5a158e97447963099803197b53dc20c5">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
-<li>needTrasformation()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a840f6466f07b7f3e5b06c2dbf1c442c3">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a8087974d65a7c6851cfc61d2712e9479">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
+<li>ndofsGlobal()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a72bd366229fa4c3e0090e1f2c6836c25">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
+<li>nedges()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a74f6813c81cb576cb7fb74b66f0b8ba9">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#ae9f0cf32f4fa3e6009ef2403a3be1357">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
+<li>needBasisScaling()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a60c34c5f700be623951082d841403778">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a32a2a6c7d748d31e2b5b30c4836d6fea">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
+<li>needTrasformation()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a840f6466f07b7f3e5b06c2dbf1c442c3">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a></li>
 <li>neighValues()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#ae0e32f00e673ca85042ee2435a0e09ed">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
 <li>nEntity()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html#a4cec3153b4af33e813a1274875c65f0b">vulpes::geometry::Mesh2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html#aa795283e72554718845eb959a4c1d4cf">vulpes::geometry::Mesh3D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a8a315984f7a8aea6a1331066da967fd8">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aed332b759f9c41487e535bacd0c74143">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
-<li>nfaces()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a95831dbbfaede48a8f2a49b5298a88ae">vulpes::geometry::Cell2D&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#a5c5794e5d8241a1e1469a3ea8a871e8c">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
+<li>nfaces()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ae5f9c200a125b26eb10ac01f2e7e66f4">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#a8e03a256e90b2939aeacabd15819dc38">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
 <li>nGhostEntity()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ac6b0aa1d13b99216d5f564f40ac90c77">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
 <li>nLocEntity()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a6ed2c1cfe340c6005d06f0a0bf865659">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a8fffa6e45563376cee7e42f3a4e22f79">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
 <li>nodeinfo_pool()&#160;:&#160;<a class="el" href="structscipy_1_1nodeinfo__pool.html#aea57ebfc385a2de737820ee453e53551">scipy::nodeinfo_pool</a></li>
-<li>normals()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ac4c0cfdc7b00b14cef77b0e5d74e7251">vulpes::geometry::Cell2D&lt; FloatType &gt;</a></li>
-<li>nPolyComponents()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#a694856e085b560e21ad08a35fa4d02a8">vulpes::fe::FeExpressionBase&lt; Dim, FeExpression &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionConstant.html#a24af5f92d6ddfb9d4027557d6afcee74">vulpes::fe::FeExpressionConstant&lt; Dim &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#abe551d472e5cffc553c8d3ec5941c07d">vulpes::fe::FeExpressionFaceNormal&lt; Dim &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html#a9a431e4e15cb492bee00021f43f1c8e9">vulpes::fe::FeExpressionFunc&lt; Dim, FeSpace, IsTest &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html#a4943117fa697b8c6165d753ef3408349">vulpes::fe::FeExpressionGradFunc&lt; Dim, FeSpace, IsTest &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionInner.html#ad1e3d9a1b9c9d72cbe73d9c78faab07b">vulpes::fe::FeExpressionInner&lt; Dim, E1, E2 &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a77b63c88efacb4978dc8d8eda49c648e">vulpes::fe::FeExpressionNeighborFunc&lt; Dim, FeSpace, IsTest &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionPolynomial.html#adac55478901d46cd95456108029a3258">vulpes::fe::FeExpressionPolynomial&lt; Dim, Polynomial &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionProduct.html#a1e141e24906fc613bcd2b57a3088af24">vulpes::fe::FeExpressionProduct&lt; Dim, E1, E2 &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionSum.html#a32b62cd015c0d3931069face7a133ec9">vulpes::fe::FeExpressionSum&lt; Dim, E1, E2 &gt;</a></li>
+<li>norm()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a38a2ad79a5bab8d501e933cbd0021de7">vulpes::la::Vector</a></li>
+<li>normals()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#acea86f70656c0dbb87bf9fce258d48c4">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#ac226570597b361064bcc2e9fa8284e37">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
 <li>numCells()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ab3ad58daae8b5324daa8640307d82606">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
 <li>numel()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html#ae9cac2edbf4854322c98df75b130cdaa">vulpes::datastructure::TetraTensor&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8">vulpes::datastructure::TriMatrix&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a></li>
 </ul>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('functions_func_n.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

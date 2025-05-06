@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scipy_0',['scipy',['../namespacescipy.html',1,'']]]
+  ['internal_0',['internal',['../namespaceinternal.html',1,'']]]
 ];

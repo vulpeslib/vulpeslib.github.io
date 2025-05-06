@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['n_0',['n',['../structscipy_1_1ckdtree.html#aee80e337228b2be0207ff7f8784116d1',1,'scipy::ckdtree::n'],['../structscipy_1_1heap.html#a480e687412a3de6311219bdc36bdc058',1,'scipy::heap::n']]],
-  ['node_1',['node',['../structscipy_1_1nodeinfo.html#a0f61344383a9ce8691ab0ba0f5ea3e9c',1,'scipy::nodeinfo']]],
-  ['nodes_2',['nodes',['../structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf',1,'vulpes::qrule::QuadratureRule']]],
-  ['num_5ftetrahedron_5ftabled_5frules_3',['num_tetrahedron_tabled_rules',['../namespacevulpes_1_1qrule.html#a0dfcc4e6e3f0fe610b5b90ab7cb2f708',1,'vulpes::qrule']]],
-  ['num_5ftriangle_5ftabled_5frules_4',['num_triangle_tabled_rules',['../namespacevulpes_1_1qrule.html#a0b7d30d08435e39cd9372cceb614c79b',1,'vulpes::qrule']]]
+  ['leafsize_0',['leafsize',['../structscipy_1_1ckdtree.html#a0e58157ca568213dbe5e808a5c4aa62f',1,'scipy::ckdtree']]],
+  ['less_1',['less',['../structscipy_1_1ckdtreenode.html#a55b8fd434530d00090e4ed29a400efcc',1,'scipy::ckdtreenode::less'],['../namespacescipy.html#aa39be7c380efeb194412d9ef22ce1021',1,'scipy::LESS']]],
+  ['loc_5fneigh_5fcell_5fid_2',['loc_neigh_cell_id',['../structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#aadb1e40c60e0e2d37eb21b76343661d3',1,'vulpes::assemble::CellManager::NeighInfo']]],
+  ['loc_5fneigh_5fface_5fid_3',['loc_neigh_face_id',['../structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#ae6682a4b48a3190399ef303a1a8485f6',1,'vulpes::assemble::CellManager::NeighInfo']]]
 ];

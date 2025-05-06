@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,6 +113,8 @@ $(document).ready(function(){initNavTree('functions_q.html',''); initResizable()
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_q" name="index_q"></a>- q -</h3><ul>
+<li>qpts()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a3002d77320a8d067393ddef8848eadb0">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
+<li>qptsRef()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a5fd7d44a4a1962ee4ce134220797d87d">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
 <li>QRule&#160;:&#160;<a class="el" href="classvulpes_1_1qrule_1_1QuadratureLibrary.html#ac548d5f5f860b661d1a7675a13a5132d">vulpes::qrule::QuadratureLibrary&lt; Dim, FloatType &gt;</a></li>
 <li>QRuleRef&#160;:&#160;<a class="el" href="classvulpes_1_1qrule_1_1QuadratureLibrary.html#ab6436bd3239a2a880382cf1bd91e96be">vulpes::qrule::QuadratureLibrary&lt; Dim, FloatType &gt;</a></li>
 <li>QuadratureKey&#160;:&#160;<a class="el" href="classvulpes_1_1qrule_1_1QuadratureLibrary.html#a744a9a377d5a0e29582a839b3d409813">vulpes::qrule::QuadratureLibrary&lt; Dim, FloatType &gt;</a></li>
@@ -131,7 +130,7 @@ $(document).ready(function(){initNavTree('functions_q.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

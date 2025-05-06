@@ -17,6 +17,7 @@ var classvulpes_1_1datastructure_1_1TriMatrix =
     [ "operator()", "classvulpes_1_1datastructure_1_1TriMatrix.html#ae4963a97a6f7146d49095acd6847d045", null ],
     [ "tdim", "classvulpes_1_1datastructure_1_1TriMatrix.html#a4c612b3aea56f084485c4403901ff03d", null ],
     [ "m_data", "classvulpes_1_1datastructure_1_1TriMatrix.html#a9187d5f3bd7e31694f536af565864d9b", null ],
+    [ "m_numel", "classvulpes_1_1datastructure_1_1TriMatrix.html#ac9744daa41c4a2f434284ab35b8359d7", null ],
     [ "m_tensor_size", "classvulpes_1_1datastructure_1_1TriMatrix.html#af53ca31ffd3d5d3b73be3720cc934891", null ],
     [ "m_tri_dim", "classvulpes_1_1datastructure_1_1TriMatrix.html#a48d244d022087c1af62571577b6e65a5", null ],
     [ "m_tri_size", "classvulpes_1_1datastructure_1_1TriMatrix.html#a198f3c1bb14fc9cc51b4d12c12c824bc", null ]

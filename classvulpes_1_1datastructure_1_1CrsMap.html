@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -142,6 +139,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a177713ccf7ac955166eef8582462c6b8" id="r_a177713ccf7ac955166eef8582462c6b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#a177713ccf7ac955166eef8582462c6b8">CrsMap</a> (const std::vector&lt; std::vector&lt; DataType &gt; &gt; &amp;<a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#af961a22c1319e66289277e7f44d4765e">data</a>)</td></tr>
+<tr class="separator:a177713ccf7ac955166eef8582462c6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a130b5ff748daa6788502df81dcb80100" id="r_a130b5ff748daa6788502df81dcb80100"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#a130b5ff748daa6788502df81dcb80100">CrsMap</a> (const std::vector&lt; DataType &gt; &amp;<a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#af961a22c1319e66289277e7f44d4765e">data</a>, const std::vector&lt; IndexType &gt; &amp;<a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#a270f6ccf296ec7ddf725da468220e176">indices</a>)</td></tr>
 <tr class="memdesc:a130b5ff748daa6788502df81dcb80100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <code><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">CrsMap</a></code> with the provided data and index arrays.  <br /></td></tr>
 <tr class="separator:a130b5ff748daa6788502df81dcb80100"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +183,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a630764b558a1df3e2c3f92bbe2a3d44b" id="r_a630764b558a1df3e2c3f92bbe2a3d44b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#a630764b558a1df3e2c3f92bbe2a3d44b">remove</a> (const DataType &amp;value_to_remove)</td></tr>
 <tr class="memdesc:a630764b558a1df3e2c3f92bbe2a3d44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove in-place all entries with a certain value.  <br /></td></tr>
 <tr class="separator:a630764b558a1df3e2c3f92bbe2a3d44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceae495fa2cb7af269464073d7e8bba8" id="r_aceae495fa2cb7af269464073d7e8bba8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#aceae495fa2cb7af269464073d7e8bba8">pushBack</a> (const std::vector&lt; DataType &gt; &amp;row)</td></tr>
+<tr class="separator:aceae495fa2cb7af269464073d7e8bba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af961a22c1319e66289277e7f44d4765e" id="r_af961a22c1319e66289277e7f44d4765e"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#af961a22c1319e66289277e7f44d4765e">data</a> () const</td></tr>
 <tr class="memdesc:af961a22c1319e66289277e7f44d4765e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant accessor to the data buffer.  <br /></td></tr>
 <tr class="separator:af961a22c1319e66289277e7f44d4765e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,8 +261,36 @@ template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexTy
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a177713ccf7ac955166eef8582462c6b8" name="a177713ccf7ac955166eef8582462c6b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177713ccf7ac955166eef8582462c6b8">&#9670;&#160;</a></span>CrsMap() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexType(-1)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">vulpes::datastructure::CrsMap</a>&lt; DataType, IndexType, RowSize &gt;::CrsMap </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; DataType &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a130b5ff748daa6788502df81dcb80100" name="a130b5ff748daa6788502df81dcb80100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a130b5ff748daa6788502df81dcb80100">&#9670;&#160;</a></span>CrsMap() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a130b5ff748daa6788502df81dcb80100">&#9670;&#160;</a></span>CrsMap() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +337,7 @@ template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexTy
 </div>
 </div>
 <a id="a83beba82e32d769f4d5924b406f2bf1d" name="a83beba82e32d769f4d5924b406f2bf1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83beba82e32d769f4d5924b406f2bf1d">&#9670;&#160;</a></span>CrsMap() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83beba82e32d769f4d5924b406f2bf1d">&#9670;&#160;</a></span>CrsMap() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +386,7 @@ template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexTy
 </div>
 </div>
 <a id="a15cece197ae2539f082869bd7986a512" name="a15cece197ae2539f082869bd7986a512"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15cece197ae2539f082869bd7986a512">&#9670;&#160;</a></span>CrsMap() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a15cece197ae2539f082869bd7986a512">&#9670;&#160;</a></span>CrsMap() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -796,6 +825,34 @@ template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexTy
 
 </div>
 </div>
+<a id="aceae495fa2cb7af269464073d7e8bba8" name="aceae495fa2cb7af269464073d7e8bba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceae495fa2cb7af269464073d7e8bba8">&#9670;&#160;</a></span>pushBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexType(-1)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">vulpes::datastructure::CrsMap</a>&lt; DataType, IndexType, RowSize &gt;::pushBack </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; DataType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a630764b558a1df3e2c3f92bbe2a3d44b" name="a630764b558a1df3e2c3f92bbe2a3d44b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a630764b558a1df3e2c3f92bbe2a3d44b">&#9670;&#160;</a></span>remove()</h2>
 
@@ -1041,7 +1098,7 @@ template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexTy
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1datastructure.html">datastructure</a></li><li class="navelem"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">CrsMap</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

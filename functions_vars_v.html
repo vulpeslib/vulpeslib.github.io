@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,6 +115,7 @@ $(document).ready(function(){initNavTree('functions_vars_v.html',''); initResiza
 <h3><a id="index_v" name="index_v"></a>- v -</h3><ul>
 <li>v&#160;:&#160;<a class="el" href="structscipy_1_1coo__entry.html#a6210d396a1b9640d04a041703ccb92fd">scipy::coo_entry</a></li>
 <li>value&#160;:&#160;<a class="el" href="structvulpes_1_1datastructure_1_1internal_1_1StaticSelector.html#a40e89665d9cb5068f9aadd64a3f81376">vulpes::datastructure::internal::StaticSelector&lt; T, Static, Default &gt;</a>, <a class="el" href="structvulpes_1_1datastructure_1_1internal_1_1StaticSelector_3_01T_00_01true_00_01Default_01_4.html#ac47d17900e564abeb82759042cf6d9b8">vulpes::datastructure::internal::StaticSelector&lt; T, true, Default &gt;</a></li>
+<li>vertex_data&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1MeshExporter_1_1MeshDataAttachement.html#aaef39ced0daab1505954a27dbce876d7">vulpes::geometry::MeshExporter&lt; MeshDerived &gt;::MeshDataAttachement</a>, <a class="el" href="structvulpes_1_1geometry_1_1MeshExporterSubmesh_1_1MeshDataAttachement.html#a045037cb170c54ca788ba0478986a604">vulpes::geometry::MeshExporterSubmesh&lt; MeshDerived &gt;::MeshDataAttachement</a></li>
 <li>vtx_per_face&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a5d79394ae49b19a34e8133b1987bf82e">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
 </ul>
 </div><!-- contents -->
@@ -126,7 +124,7 @@ $(document).ready(function(){initNavTree('functions_vars_v.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

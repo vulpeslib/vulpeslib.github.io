@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -153,9 +150,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a96f9e6c8445732dd8db92b30b240b015" id="r_a96f9e6c8445732dd8db92b30b240b015"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, bool Simplex, typename DataType , typename IndexType &gt; </td></tr>
-<tr class="memitem:a96f9e6c8445732dd8db92b30b240b015"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">vulpes::datastructure::SimplexDataView</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">TriMatrix</a>&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, std::conditional_t&lt; Dim==3, <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">TetraTensor</a>&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, void &gt; &gt;</td></tr>
-<tr class="separator:a96f9e6c8445732dd8db92b30b240b015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe4387e8c43ac4721d755d611be9951" id="r_acfe4387e8c43ac4721d755d611be9951"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, bool Simplex, typename DataType , typename IndexType &gt; </td></tr>
+<tr class="memitem:acfe4387e8c43ac4721d755d611be9951"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">vulpes::datastructure::SimplexDataView</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">TriMatrix</a>&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, std::conditional_t&lt; Dim==3, <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">TetraTensor</a>&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, const DataType * &gt; &gt;</td></tr>
+<tr class="separator:acfe4387e8c43ac4721d755d611be9951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -164,7 +161,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_76c7cfc4ed48b69da3495ed0a3f2a82b.html">datastructure</a></li><li class="navelem"><a class="el" href="tensor_8hpp.html">tensor.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

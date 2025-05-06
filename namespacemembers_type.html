@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -121,8 +118,12 @@ $(document).ready(function(){initNavTree('namespacemembers_type.html',''); initR
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>Cell&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry.html#a93a5cf513d4258ef7fbce6fd1ddcb1cc">vulpes::geometry</a></li>
+<li>Cell&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">vulpes::geometry</a></li>
+<li>CellInitOptionsType&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">vulpes::geometry</a></li>
+<li>CellsType&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a4f45bdccfe2a399019887657e481717d">vulpes::fe</a></li>
+<li>CellType&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ad7d6019942d7c210a8bb0d0dc47538f1">vulpes::fe</a></li>
 <li>ckdtree_intp_t&#160;:&#160;<a class="el" href="namespacescipy.html#abe8ae2cce0bf7b6b1c15afa821eca396">scipy</a></li>
+<li>concat_tuples_t&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a116fdd6feb479918b206188e4a2aefeb">vulpes::assemble::internal</a></li>
 <li>CrsMapUncompressedVariant&#160;:&#160;<a class="el" href="namespacevulpes_1_1datastructure.html#a1d0afa4e29d50830f14a082548043887">vulpes::datastructure</a></li>
 </ul>
 
@@ -138,8 +139,7 @@ $(document).ready(function(){initNavTree('namespacemembers_type.html',''); initR
 <li>FeSpaceLagrangeDP&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#af30448e7da7545f7abafd001dd487b5a">vulpes::fe</a></li>
 <li>FeSpaceLagrangeDQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a0b5f00f2f85fe9f07d65efbb09d701a5">vulpes::fe</a></li>
 <li>FeSpaceModalLegendreDP&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a45667ebd33208ca3c2f00200a1c6fae9">vulpes::fe</a></li>
-<li>FeSpaceModalLegendreDQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#af0feb103c0764d262f93612a388d9546">vulpes::fe</a></li>
-<li>FeSpaceScaledMonomialsVEM&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#acfa88112629fa12c856d723bfd5fec62">vulpes::fe</a></li>
+<li>FeSpaceModalLegendreDQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#aa900a9c8403894acdcbe5919e4944c64">vulpes::fe</a></li>
 <li>FeSpaceSpectralCP&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a5b02fefffe02f141356f10fc50939632">vulpes::fe</a></li>
 <li>FeSpaceSpectralCQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#aaa50172ce0a62935d383460e78d962ef">vulpes::fe</a></li>
 <li>FeSpaceSpectralDP&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#aa87cba6aa045e3438e3304d00bba95e6">vulpes::fe</a></li>
@@ -192,14 +192,14 @@ $(document).ready(function(){initNavTree('namespacemembers_type.html',''); initR
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>SimplexDataView&#160;:&#160;<a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">vulpes::datastructure</a></li>
+<li>SimplexDataView&#160;:&#160;<a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">vulpes::datastructure</a></li>
 <li>size_type&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs_1_1boosttypes.html#acada01fe12cc1d40b5e635a62ce1f7c7">vulpes::dofs::boosttypes</a></li>
 </ul>
 
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
-<li>TestFunction&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac6176b0bff0b317fb0316fa9ea819f3b">vulpes::fe</a></li>
-<li>TrialFunction&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a282cf95f75200501f25a003fc436f026">vulpes::fe</a></li>
+<li>TestFunction&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a54bf5266142e2da10063b4aea96d64d2">vulpes::fe</a></li>
+<li>TrialFunction&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a76a59ed77112997baea20fa092654530">vulpes::fe</a></li>
 </ul>
 
 
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('namespacemembers_type.html',''); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

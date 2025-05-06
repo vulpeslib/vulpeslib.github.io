@@ -1,5 +1,28 @@
 var searchData=
 [
-  ['xy2rs_0',['xy2rs',['../namespacevulpes_1_1fe_1_1internal.html#ab4ec10d73a9235bcb58895b8a06452ca',1,'vulpes::fe::internal']]],
-  ['xyz2rst_1',['xyz2rst',['../namespacevulpes_1_1fe_1_1internal.html#a29ac1793359aa6eec0d0768d44d75b95',1,'vulpes::fe::internal']]]
+  ['uniondistance_0',['uniondistance',['../classvulpes_1_1geometry_1_1UnionDistance.html#a84f7e39732f0de028be18f0bc61c0df0',1,'vulpes::geometry::UnionDistance::UnionDistance()'],['../classvulpes_1_1geometry_1_1UnionDistance.html',1,'vulpes::geometry::UnionDistance&lt; FloatType, Dim, D1, D2 &gt;']]],
+  ['update_5fside_5fdistance_1',['update_side_distance',['../structscipy_1_1nodeinfo.html#ab1a61a2c79a40d85e8843815bd0e85d0',1,'scipy::nodeinfo']]],
+  ['updateall_2',['UpdateAll',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa000c668d9188fd4be6af9ccd77761b76',1,'vulpes::fe']]],
+  ['updatefacenormalandgetnanson_3',['updateFaceNormalAndGetNanson',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adc74124859d8b3c1af21071f4e0966f3',1,'vulpes::assemble::WeakFormIntegratorQFree']]],
+  ['updateflags_4',['UpdateFlags',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62f',1,'vulpes::fe']]],
+  ['updateflagstype_5',['UpdateFlagsType',['../namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21',1,'vulpes::fe']]],
+  ['updategradients_6',['UpdateGradients',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa65a8bb15e3666495b4a3b3201fa07039',1,'vulpes::fe']]],
+  ['updatehessians_7',['UpdateHessians',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa9530cac0a1d27f70f7369fd21813378c',1,'vulpes::fe']]],
+  ['updateid_8',['UpdateId',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62facd80b741faa03cd18a9e92a0fe26820f',1,'vulpes::fe']]],
+  ['updatemapping_9',['UpdateMapping',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa8951d89a8579d00a679621692eccb00d',1,'vulpes::fe']]],
+  ['updatemaxexp_10',['updateMaxExp',['../classvulpes_1_1polynomial_1_1SparsePolynomial.html#a613f1c0e842a79b9cf77a87efb097d91',1,'vulpes::polynomial::SparsePolynomial']]],
+  ['updateneighborcell_11',['UpdateNeighborCell',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa3d4fa5052a332e53b088c83e31d64091',1,'vulpes::fe']]],
+  ['updateneighborvalues_12',['UpdateNeighborValues',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa4d35240e7133f9979cf52324e593c874',1,'vulpes::fe']]],
+  ['updatenormals_13',['UpdateNormals',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa05dd11c4de99493614058054bdaff73c',1,'vulpes::fe']]],
+  ['updatenothing_14',['UpdateNothing',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa42f5f9e73ecca69ea8877f0ef7db282a',1,'vulpes::fe']]],
+  ['updateqptsandmappingforthisandneigh_15',['updateQptsAndMappingForThisAndNeigh',['../classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#aa83ec166222c2d9b65130815add612dd',1,'vulpes::assemble::WeakFormIntegratorSimplexify']]],
+  ['updatequadraturepts_16',['UpdateQuadraturePts',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62faab779e486c4ffe937f1710281d00d952',1,'vulpes::fe']]],
+  ['updatevalues_17',['UpdateValues',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa52f1d67a21cbac57619f64d1cb48e083',1,'vulpes::fe']]],
+  ['updatevoronoicentroid_18',['updateVoronoiCentroid',['../namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27',1,'vulpes::geometry::internal']]],
+  ['updateweights_19',['UpdateWeights',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa30366acf17ea86ca9e5012ecd382dfd1',1,'vulpes::fe']]],
+  ['upow_20',['upow',['../namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b',1,'vulpes::vmath']]],
+  ['upper_5fbound_21',['upper_bound',['../structscipy_1_1RectRectDistanceTracker.html#a6a71312795ab6a7850b4002ee70b51e2',1,'scipy::RectRectDistanceTracker']]],
+  ['use_20the_20docker_20from_20vscode_22',['Use the Docker from VSCode',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index.html#autotoc_md24',1,'']]],
+  ['using_20assembly_20comments_23',['2. Checking Assembly Code and Using Assembly Comments',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md31',1,'']]],
+  ['using_20callgrind_24',['Using Callgrind',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md30',1,'']]]
 ];

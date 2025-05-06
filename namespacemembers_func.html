@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -128,7 +125,9 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <li>bcast()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#ae392da87c62647799e306debadc288d1">vulpes::mpi</a></li>
 <li>binomial()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#ab92197fc1dd44e10fc9edce422091207">vulpes::vmath</a></li>
 <li>build_ckdtree()&#160;:&#160;<a class="el" href="namespacescipy.html#a83ea8ec99f39f03fe332e81e3d40abd7">scipy</a></li>
+<li>buildHexagonTessellation()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a46a520fce4ceb37ca9c898753ec9796a">vulpes::geometry::polymesher</a></li>
 <li>buildLegendrePolynomials()&#160;:&#160;<a class="el" href="namespacevulpes_1_1polynomial.html#ab4d94fbb8f99ae97ccda985cd29915e3">vulpes::polynomial</a></li>
+<li>buildOctahedronTessellation()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a5f50f2fbc529997751d960c7cd6aca61">vulpes::geometry::polymesher</a></li>
 <li>buildTensorQuadrature()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#a08f90f4c63ab870c7f01fc4258f994ed">vulpes::qrule</a></li>
 <li>buildVandermonde()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a149529c6dad257c887c4eccc4f56de2a">vulpes::fe::internal</a></li>
 </ul>
@@ -136,15 +135,18 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>calculateStatistics()&#160;:&#160;<a class="el" href="namespaceinternal.html#a070e4379fc2f4b3d661b9d340d5fab77">internal</a></li>
+<li>cartesian_hcat()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a738594faa323683b391d5c17ff0ae312">vulpes::fe::internal</a></li>
 <li>castRule()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#a3cee3ab88c715115e1edc26168fabec1">vulpes::qrule</a></li>
 <li>checks()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils_1_1internal.html#a91af4262edd06b4882cb9496c57265c9">vulpes::vutils::internal</a></li>
 <li>computeBoostCuthillMckeeOrdering()&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs.html#a49b2d4a032188147ed88c0a0233f3995">vulpes::dofs</a></li>
 <li>computeBoostKingOrdering()&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs.html#afd351cc2c8263c2318ddc76bc3efd4d0">vulpes::dofs</a></li>
 <li>computeDistance()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry.html#add0639d9d38f2a713d11dddebd31d03b">vulpes::geometry</a></li>
+<li>computeError()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ab47891e1f6b99bc401b5cd2396f373fb">vulpes::assemble::dg</a></li>
 <li>computeFrugalQuadrature()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a271a2f67bae64f04de1373da61fd774d">vulpes::qfree</a></li>
 <li>computeGradient()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a26a9fb77b98f1d370896b71f54d9dfa9">vulpes::geometry::internal</a></li>
 <li>computeInverse()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a84ad20732cf47d1ef97208cde6f50ee7">vulpes::fe::internal</a></li>
 <li>computeLagrangianPolyCoef()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#af3cdecea87d7b118a0a5c8578e165c2a">vulpes::fe::internal</a></li>
+<li>computeOrder()&#160;:&#160;<a class="el" href="namespacevulpes_1_1postprocessing.html#aa6a9e2a56768b8e5076941d3e9b8d497">vulpes::postprocessing</a></li>
 <li>computePhiM()&#160;:&#160;<a class="el" href="namespacevulpes_1_1random_1_1internal.html#ae3c0ed094ada209ec7eeb4a3f85847ed">vulpes::random::internal</a></li>
 <li>computeReverseCuthillMckeeOrdering()&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs.html#ae1241641e230350d59e0fbee1441cff6">vulpes::dofs</a></li>
 <li>computeVoronoiMesh2D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#adba98ffe37b9cf9811ed77c29a7e2409">vulpes::geometry::internal</a></li>
@@ -153,11 +155,14 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <li>computeWarpAndBlend()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a744281520a73eb8f840f17c971fb9640">vulpes::fe::internal</a></li>
 <li>conditionNumber()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a767f53f9bfe43511d2c38a8496931bf3">vulpes::fe::internal</a></li>
 <li>createGraph()&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs_1_1internal.html#aec2fe4a94046fafac40c620169b31eca">vulpes::dofs::internal</a></li>
+<li>createPenaltyExpression()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a8f7bebd8916f4c289633d4d6531fc0a1">vulpes::assemble::dg</a></li>
+<li>createPenaltyExpressionKb()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#aa23de54555633cd41a12f489aff57fe5">vulpes::assemble::dg</a></li>
 </ul>
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
 <li>determinant()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a8a5558c1b124aafd4f504c0049beccf5">vulpes::vmath</a></li>
+<li>dot()&#160;:&#160;<a class="el" href="namespacevulpes_1_1la.html#a484729c4a7c5a2e6e07a4f912814520b">vulpes::la</a></li>
 </ul>
 
 
@@ -166,11 +171,17 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <li>equinNodes3D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a9db91a1e60c78db411bee31cb09dbb75">vulpes::fe::internal</a></li>
 <li>evalLegendre()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a4f101f8650c6d4f16e9ee840fabab748">vulpes::fe::internal</a></li>
 <li>evalSimplex()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a930d811c0cfcf4b591444ed7264c112d">vulpes::fe::internal</a></li>
+<li>extract_false()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a8de999237d41ed61782b1f0ac4657ab7">vulpes::assemble::internal</a></li>
+<li>extract_true()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#ab9497678b40f0c2ef5887367e2522061">vulpes::assemble::internal</a></li>
 </ul>
 
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
 <li>factorial()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a16a1af55d6088b09db1ff15e730dde81">vulpes::vmath</a></li>
+<li>for_each()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#adef74d45dd575ad10f2d51460aedc4ae">vulpes::vutils</a></li>
+<li>for_each_idxed()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#aab6903411968dab01497e6e432f64bd7">vulpes::vutils</a></li>
+<li>for_each_impl()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#a0c6463b6e7d4017c0d2bc4667e2331bd">vulpes::vutils</a></li>
+<li>for_each_impl_idxed()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#a4336d47f77f009cde65bbce2b8f21f47">vulpes::vutils</a></li>
 </ul>
 
 
@@ -179,6 +190,7 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <li>gather()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#aabf5ac17692143e3eb480292d5aaef50">vulpes::mpi</a></li>
 <li>gaussLobattoRoots()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a0a3fe3ce99eb005082620506f1652738">vulpes::fe::internal</a></li>
 <li>getFileExtension()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#abf351d6f6479b97562557b6345358921">vulpes::geometry::internal</a></li>
+<li>getLinearIndex()&#160;:&#160;<a class="el" href="namespacevulpes_1_1monomial.html#a99258c2e17e438e167c1364470e1390c">vulpes::monomial</a></li>
 <li>getMonomial()&#160;:&#160;<a class="el" href="namespacevulpes_1_1monomial.html#a181285290fa3e961b82dbe6252e844eb">vulpes::monomial</a></li>
 <li>getMonomial2D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1monomial.html#a0ec905016864e5eded1b159eba549a55">vulpes::monomial</a></li>
 <li>getMonomial3D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1monomial.html#a8a6d562a6e8b3840be88ad886a191dfe">vulpes::monomial</a></li>
@@ -188,20 +200,20 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <li>getUncompressedCrsMapWithStaticStorageGreaterThan()&#160;:&#160;<a class="el" href="namespacevulpes_1_1datastructure.html#aa178df0b2038f563b1561a1343c30366">vulpes::datastructure</a></li>
 <li>gmpGaussLegendreQuadrature()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb">vulpes::qrule</a></li>
 <li>gmpGaussLobattoQuadrature()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#acf808d810fe514bf8cf0c6a3229ff4a2">vulpes::qrule</a></li>
-<li>grad()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a1df29590f4817b4574b4d87e2a17385f">vulpes::fe</a></li>
+<li>grad()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#af24d31d4d96f90905f1c5aaa725fda77">vulpes::fe</a></li>
+</ul>
+
+
+<h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
+<li>hcat()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a94c5da1acc368603daf26306923400ae">vulpes::fe::internal</a></li>
 </ul>
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
 <li>inner()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">vulpes::fe</a></li>
-<li>integrateMonomialsQuadratureFree2D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#ada7b3ab30d528632becda4014b9a0b3a">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree2D&lt; false, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a469e5d465c4f0cb6ed895bb0fab01cff">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree2D&lt; true, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a0782bfa4ef6334005ebe89c44988d080">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a100930b6bc80f0d5d28d03ed224c4ec9">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D&lt; false, false, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#ae0ae3e2c67f5dce68e3ad6d8536c2247">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D&lt; false, true, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#aba6e667d5a214ab9dfde4be023c495f7">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D&lt; true, false, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a9b95cad24d7adfd74c43cf1ef80552f0">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D&lt; true, true, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a2199524f462e664bd21230254ab5b035">vulpes::qfree</a></li>
+<li>integrateMonomialsQFree()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#ad6c6cf7c49c0131cdab6226c5dfc373d">vulpes::qfree</a></li>
+<li>integrateMonomialsQFree2D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#adbf474d2e1b5de0ebe5a0be2820d69c7">vulpes::qfree</a></li>
+<li>integrateMonomialsQFree3D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a9c3bbb32d2a10f8b76611d8daa3e2c1d">vulpes::qfree</a></li>
 <li>interpolateFunctionAtNodes()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a8a3ac0047d31adeb05ff8d7a66d79e76">vulpes::fe::internal</a></li>
 <li>ipow()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a1da3b522ac38484cf973b4e7799463da">vulpes::vmath</a></li>
 <li>isFinalized()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a69d9be96b8f08244e3e81936907d5023">vulpes::mpi</a></li>
@@ -222,18 +234,19 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>makeRowMat()&#160;:&#160;<a class="el" href="namespaceEigenVulpes.html#a8e7547839698f9a709eeea9df883af7e">EigenVulpes</a></li>
+<li>makeSymMat()&#160;:&#160;<a class="el" href="namespaceEigenVulpes.html#a7c0729a670828cc11960fd9729d51409">EigenVulpes</a></li>
 <li>mesh()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a397e2504394d19c9d762515a7ec612ec">vulpes::geometry::polymesher</a></li>
 <li>mpfGrundammMoellerQuadrature()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#a69f6219fca29b0c9d1adb00fbf00fd10">vulpes::qrule</a></li>
 </ul>
 
 
 <h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
-<li>n()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a83d9fe5cdc5624db44b012daf9690757">vulpes::fe</a></li>
-<li>neigh()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a706632f032c68c8d41276196852a4503">vulpes::fe</a></li>
+<li>neigh()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">vulpes::fe</a></li>
 <li>nodeDegrees()&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs_1_1internal.html#a018b5e385bc0f17fa1ea62dc94400cdb">vulpes::dofs::internal</a></li>
 <li>nodes2D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ad73d11b3d2c132f1808b1a5c11cd293b">vulpes::fe::internal</a></li>
 <li>nodes3D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a7b1a9465945945b874c98904e51c4326">vulpes::fe::internal</a></li>
-<li>normal()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a89b4dabdb6eb077a182d55267007a562">vulpes::vmath</a></li>
+<li>normal()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a4b0d70188866f3fee35b43cd7e3f5971">vulpes::fe</a>, <a class="el" href="namespacevulpes_1_1vmath.html#a89b4dabdb6eb077a182d55267007a562">vulpes::vmath</a></li>
 <li>normalize()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#aee537e01f990924884412e7dcc32e52f">vulpes::fe::internal</a></li>
 </ul>
 
@@ -242,8 +255,8 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <li>operator&amp;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry.html#a6a9e5e09036a979b348aa0dcf7c2cabf">vulpes::geometry</a></li>
 <li>operator*()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a9bddf18cd9a1cd0538c776dc4f5fafd1">vulpes::fe</a></li>
 <li>operator+()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a032f025e8697e868b6d7dd95079de378">vulpes::fe</a></li>
-<li>operator-()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ace6f17c7eb014ded29c2dd35e3ed860c">vulpes::geometry</a></li>
-<li>operator&lt;&lt;()&#160;:&#160;<a class="el" href="namespaceinternal.html#a7a40349b7b4f86b24ae257706e30af0f">internal</a>, <a class="el" href="namespacevulpes_1_1datastructure.html#a519608faf986abafa7a1b011b35a3d8d">vulpes::datastructure</a>, <a class="el" href="namespacevulpes.html#ad80adb4e62d5f5501a65053065191c21">vulpes</a></li>
+<li>operator-()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#aeb4d489de83cf29feef2f13e09b36c6e">vulpes::fe</a>, <a class="el" href="namespacevulpes_1_1geometry.html#ace6f17c7eb014ded29c2dd35e3ed860c">vulpes::geometry</a></li>
+<li>operator&lt;&lt;()&#160;:&#160;<a class="el" href="namespaceinternal.html#a7a40349b7b4f86b24ae257706e30af0f">internal</a>, <a class="el" href="namespacevulpes_1_1datastructure.html#a519608faf986abafa7a1b011b35a3d8d">vulpes::datastructure</a>, <a class="el" href="namespacevulpes.html#a47fb0f2a22d56fdb96264dd8218bd321">vulpes</a></li>
 <li>operator|()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ae80ee0aa29e203e6c1b2b55d0b5efea0">vulpes::geometry</a></li>
 </ul>
 
@@ -251,13 +264,16 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>pi()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#afd505c3e574f16edc6ca9a0ace45ebbf">vulpes::vmath</a></li>
 <li>polyMesherAdjustFixedPoints()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ad0881f836ef5e935ef2f46031b10857c">vulpes::geometry::internal</a></li>
-<li>polyMesherClipToBoundary()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a8f11426ba25ff2f40139489d77e0833b">vulpes::geometry::internal</a></li>
+<li>polyMesherClipToBoundary()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a3db2ab4dd1e19d7e4cb131778c3764bb">vulpes::geometry::internal</a></li>
 <li>polyMesherCollapseEdges()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ae704555005f472e6b200962395a45194">vulpes::geometry::internal</a></li>
 <li>polyMesherComputeEdgeAngle()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a2d6f59f282ff90f3a0b0f7856e8b4f37">vulpes::geometry::internal</a></li>
 <li>polyMesherReflect()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a28d98e6e35b60331d6f6aa7f0dd1e0a4">vulpes::geometry::internal</a></li>
 <li>pow()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#af4ab07bc370e28683e9531fc72f98157">vulpes::vmath</a></li>
 <li>pow1()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a0682f20a70be8fa66858922f1b08ec85">vulpes::vmath</a></li>
 <li>precision()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#af34773c0f619a5fce594f333ecc17a23">vulpes::vmath</a></li>
+<li>print()&#160;:&#160;<a class="el" href="namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15">vulpes</a></li>
+<li>projectSolution()&#160;:&#160;<a class="el" href="namespacevulpes_1_1postprocessing.html#a6c3808bba47ef678266618d5c7d941f5">vulpes::postprocessing</a></li>
+<li>projectSolutionSubmesh()&#160;:&#160;<a class="el" href="namespacevulpes_1_1postprocessing.html#abc31fa8655aee2c9d3043afd81671076">vulpes::postprocessing</a></li>
 </ul>
 
 
@@ -273,8 +289,9 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
 <li>rank()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a124f98aa371424a6bb8cc87031f1a904">vulpes::mpi</a></li>
 <li>read()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#acb98f6d1c8eb052888e52b34c3082a84">vulpes::geometry::mesh2d</a></li>
+<li>readCSVToEigenMatrix()&#160;:&#160;<a class="el" href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">vulpes::io</a></li>
 <li>readpts()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a09324f44a3c75e4bb590a896c21a22a1">vulpes::geometry::internal</a></li>
-<li>readVTU()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1mesh3d.html#a3bd6b0b0b7f0dca8d6364d683a000260">vulpes::geometry::mesh3d</a></li>
+<li>readVTU()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1mesh3d.html#aad96bb1e56b4893f637a6ff840c5366b">vulpes::geometry::mesh3d</a></li>
 <li>rect_cuboid()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1mesh3d.html#a927c5ee9d72145bacd91df3f118927ea">vulpes::geometry::mesh3d</a></li>
 <li>rectangle()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa71c0611a353e086e9accf6245c86cfa">vulpes::geometry::mesh2d</a></li>
 <li>recv()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#abd76d896bc1b4d7d64d1173782661514">vulpes::mpi</a></li>
@@ -288,25 +305,32 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>sarrus_det()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a74b793c9b0c3ef71dd6779b4e160feb4">vulpes::vmath</a></li>
 <li>scatter()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a7edf67ee451d1f06d4cf742cba2847eb">vulpes::mpi</a></li>
-<li>send()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a9faa1f6e305d49fd2760fcbc13315257">vulpes::mpi</a></li>
+<li>send()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38">vulpes::mpi</a></li>
 <li>serialize()&#160;:&#160;<a class="el" href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">boost::serialization</a></li>
+<li>setPETScOptionValue()&#160;:&#160;<a class="el" href="namespacevulpes_1_1la.html#a3826656435a19ca632911e187101a335">vulpes::la</a></li>
 <li>simplex2DP()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a0204f4dc193b91e6326ecaf6b409887c">vulpes::fe::internal</a></li>
 <li>simplex3DP()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a9c66ba0b8f1de46b9dcef2b2fbb97592">vulpes::fe::internal</a></li>
 <li>size()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a2511052bffbdeaf3e7292592e93f8c83">vulpes::mpi</a></li>
+<li>skip()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a226e4922aefb47edea4078ad3b0b7c0d">vulpes::fe</a></li>
 <li>slice()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#a0bd0e624421d07a12ad0b3efc57e6b57">vulpes::vutils</a></li>
+<li>split_expression_tuple()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a3452007ee5d0906d35c5771b51048895">vulpes::assemble::internal</a></li>
+<li>split_tuple_impl()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#ab7ba426dd42c9a3a3c4f2d66fc1b2580">vulpes::assemble::internal</a></li>
 <li>sqeuclidean_distance_double()&#160;:&#160;<a class="el" href="namespacescipy.html#a838a3703a67948223fe40c1869265e34">scipy</a></li>
 <li>sqrt()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a633acb04daa4a135d4f1888236170bab">vulpes::vmath</a></li>
+<li>symgrad()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a28fb99ecd0e1e09dabb1e2f9406bb190">vulpes::fe</a></li>
 </ul>
 
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
 <li>to()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a245458b9bfd85c85466bd41be8cc6866">vulpes::vmath</a></li>
+<li>to_string()&#160;:&#160;<a class="el" href="namespacevulpes_1_1la_1_1internal.html#ad19b0ee9d23741f39bd48c49931bc092">vulpes::la::internal</a></li>
 <li>traverse_checking_query_ball_point()&#160;:&#160;<a class="el" href="namespacescipy.html#a0c4f8afc87f33e941251cc5b141660f5">scipy</a></li>
 <li>traverse_checking_query_ball_tree()&#160;:&#160;<a class="el" href="namespacescipy.html#a85cc5db2e1d2195f67b8813180d637f6">scipy</a></li>
 <li>traverse_checking_query_pairs()&#160;:&#160;<a class="el" href="namespacescipy.html#a7fa782f04232c07e4a88c77db0aaab79">scipy</a></li>
 <li>traverse_no_checking_query_ball_point()&#160;:&#160;<a class="el" href="namespacescipy.html#aa4f21d4b376052adf47aee8042b71107">scipy</a></li>
 <li>traverse_no_checking_query_ball_tree()&#160;:&#160;<a class="el" href="namespacescipy.html#a0e262ab102a5f3bef150b3f937751f10">scipy</a></li>
 <li>traverse_no_checking_query_pairs()&#160;:&#160;<a class="el" href="namespacescipy.html#af3070824b0cf70d6238c39a07920a025">scipy</a></li>
+<li>trsymgrad()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a47bf0094f170763071298c558b5b3d1f">vulpes::fe</a></li>
 </ul>
 
 
@@ -334,7 +358,7 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html',''); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

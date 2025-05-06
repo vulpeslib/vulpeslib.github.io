@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -143,9 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a28d98e6e35b60331d6f6aa7f0dd1e0a4" id="r_a28d98e6e35b60331d6f6aa7f0dd1e0a4"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D &gt; </td></tr>
 <tr class="memitem:a28d98e6e35b60331d6f6aa7f0dd1e0a4"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a28d98e6e35b60331d6f6aa7f0dd1e0a4">polyMesherReflect</a> (const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;distanceFunction, FloatType alpha, const <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">polymesher::PolyMesherParams</a>&lt; FloatType &gt; &amp;params, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;seed_pts)</td></tr>
 <tr class="separator:a28d98e6e35b60331d6f6aa7f0dd1e0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f11426ba25ff2f40139489d77e0833b" id="r_a8f11426ba25ff2f40139489d77e0833b"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D &gt; </td></tr>
-<tr class="memitem:a8f11426ba25ff2f40139489d77e0833b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a8f11426ba25ff2f40139489d77e0833b">polyMesherClipToBoundary</a> (<a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh, FloatType alpha, const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;distanceFunction, const <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">polymesher::PolyMesherParams</a>&lt; FloatType &gt; &amp;params)</td></tr>
-<tr class="separator:a8f11426ba25ff2f40139489d77e0833b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db2ab4dd1e19d7e4cb131778c3764bb" id="r_a3db2ab4dd1e19d7e4cb131778c3764bb"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename MeshType , typename D &gt; </td></tr>
+<tr class="memitem:a3db2ab4dd1e19d7e4cb131778c3764bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a3db2ab4dd1e19d7e4cb131778c3764bb">polyMesherClipToBoundary</a> (MeshType &amp;mesh, FloatType alpha, const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, MeshType::self_dim, D &gt; &amp;distanceFunction, const <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">polymesher::PolyMesherParams</a>&lt; FloatType &gt; &amp;params)</td></tr>
+<tr class="separator:a3db2ab4dd1e19d7e4cb131778c3764bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d6f59f282ff90f3a0b0f7856e8b4f37" id="r_a2d6f59f282ff90f3a0b0f7856e8b4f37"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
 <tr class="memitem:a2d6f59f282ff90f3a0b0f7856e8b4f37"><td class="memTemplItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a2d6f59f282ff90f3a0b0f7856e8b4f37">polyMesherComputeEdgeAngle</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh, IndexType cell_id, const std::array&lt; IndexType, 2 &gt; &amp;edge)</td></tr>
 <tr class="separator:a2d6f59f282ff90f3a0b0f7856e8b4f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,18 +327,18 @@ template&lt;typename FloatType , typename IndexType , IndexType Dim&gt; </div>
 
 </div>
 </div>
-<a id="a8f11426ba25ff2f40139489d77e0833b" name="a8f11426ba25ff2f40139489d77e0833b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f11426ba25ff2f40139489d77e0833b">&#9670;&#160;</a></span>polyMesherClipToBoundary()</h2>
+<a id="a3db2ab4dd1e19d7e4cb131778c3764bb" name="a3db2ab4dd1e19d7e4cb131778c3764bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db2ab4dd1e19d7e4cb131778c3764bb">&#9670;&#160;</a></span>polyMesherClipToBoundary()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D &gt; </div>
+template&lt;typename FloatType , typename MeshType , typename D &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void vulpes::geometry::internal::polyMesherClipToBoundary </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;&#160;</td>
+          <td class="paramtype">MeshType &amp;&#160;</td>
           <td class="paramname"><em>mesh</em>, </td>
         </tr>
         <tr>
@@ -353,7 +350,7 @@ template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, MeshType::self_dim, D &gt; &amp;&#160;</td>
           <td class="paramname"><em>distanceFunction</em>, </td>
         </tr>
         <tr>
@@ -555,7 +552,7 @@ template&lt;int32_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html">internal</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

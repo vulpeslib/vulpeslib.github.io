@@ -1,0 +1,4 @@
+var structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5 =
+[
+    [ "type", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5.html#a3f3a50e5baf93ee7db54726c815f2acf", null ]
+];

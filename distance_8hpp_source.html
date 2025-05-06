@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -595,7 +592,7 @@ $(document).ready(function(){initNavTree('distance_8hpp_source.html',''); initRe
 <div class="ttc" id="anamespacevulpes_1_1geometry_html_ace6f17c7eb014ded29c2dd35e3ed860c"><div class="ttname"><a href="namespacevulpes_1_1geometry.html#ace6f17c7eb014ded29c2dd35e3ed860c">vulpes::geometry::operator-</a></div><div class="ttdeci">DifferenceDistance&lt; FloatType, Dim, D1, D2 &gt; operator-(const DistanceExpression&lt; FloatType, Dim, D1 &gt; &amp;u, const DistanceExpression&lt; FloatType, Dim, D2 &gt; &amp;v)</div><div class="ttdoc">Create a difference of two distance functions.</div><div class="ttdef"><b>Definition</b> distance.hpp:687</div></div>
 <div class="ttc" id="anamespacevulpes_1_1geometry_html_add0639d9d38f2a713d11dddebd31d03b"><div class="ttname"><a href="namespacevulpes_1_1geometry.html#add0639d9d38f2a713d11dddebd31d03b">vulpes::geometry::computeDistance</a></div><div class="ttdeci">auto computeDistance(const Point&lt; FloatType, Dim &gt; &amp;point, const DistanceExpression&lt; FloatType, Dim, D &gt; &amp;distance_function)</div><div class="ttdoc">Computes the signed distance between a point and a shape defined by a distance function.</div><div class="ttdef"><b>Definition</b> distance.hpp:716</div></div>
 <div class="ttc" id="anamespacevulpes_1_1geometry_html_ae80ee0aa29e203e6c1b2b55d0b5efea0"><div class="ttname"><a href="namespacevulpes_1_1geometry.html#ae80ee0aa29e203e6c1b2b55d0b5efea0">vulpes::geometry::operator|</a></div><div class="ttdeci">UnionDistance&lt; FloatType, Dim, D1, D2 &gt; operator|(const DistanceExpression&lt; FloatType, Dim, D1 &gt; &amp;u, const DistanceExpression&lt; FloatType, Dim, D2 &gt; &amp;v)</div><div class="ttdoc">Create a union of two signed distance functions.</div><div class="ttdef"><b>Definition</b> distance.hpp:471</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> integrator_base.hpp:34</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:33</div></div>
 <div class="ttc" id="aprofiler_8hpp_html"><div class="ttname"><a href="profiler_8hpp.html">profiler.hpp</a></div></div>
 <div class="ttc" id="avmath_8hpp_html"><div class="ttname"><a href="vmath_8hpp.html">vmath.hpp</a></div></div>
 <div class="ttc" id="avoronoi_8hpp_html"><div class="ttname"><a href="voronoi_8hpp.html">voronoi.hpp</a></div></div>
@@ -606,7 +603,7 @@ $(document).ready(function(){initNavTree('distance_8hpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="distance_8hpp.html">distance.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:04 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

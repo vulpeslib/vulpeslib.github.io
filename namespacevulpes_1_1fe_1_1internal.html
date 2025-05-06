@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -130,66 +127,70 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a6603eb9554bb6b7399878a3bba383ad6" id="r_a6603eb9554bb6b7399878a3bba383ad6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6">real_t</a> = mpf_class</td></tr>
+<tr class="memitem:a6603eb9554bb6b7399878a3bba383ad6" id="r_a6603eb9554bb6b7399878a3bba383ad6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6">real_t</a> = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">mpf_class</a></td></tr>
 <tr class="separator:a6603eb9554bb6b7399878a3bba383ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a767f53f9bfe43511d2c38a8496931bf3" id="r_a767f53f9bfe43511d2c38a8496931bf3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a767f53f9bfe43511d2c38a8496931bf3">conditionNumber</a> (const Eigen::MatrixXd &amp;A)</td></tr>
+<tr class="memitem:a94c5da1acc368603daf26306923400ae" id="r_a94c5da1acc368603daf26306923400ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="macros_8hpp.html#a64dde711449fa720b63e56ff84f35ffc">VULPES_ALWAYS_INLINE</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a94c5da1acc368603daf26306923400ae">hcat</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">u</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;v)</td></tr>
+<tr class="separator:a94c5da1acc368603daf26306923400ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738594faa323683b391d5c17ff0ae312" id="r_a738594faa323683b391d5c17ff0ae312"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="macros_8hpp.html#a64dde711449fa720b63e56ff84f35ffc">VULPES_ALWAYS_INLINE</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a738594faa323683b391d5c17ff0ae312">cartesian_hcat</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">u</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;v)</td></tr>
+<tr class="separator:a738594faa323683b391d5c17ff0ae312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767f53f9bfe43511d2c38a8496931bf3" id="r_a767f53f9bfe43511d2c38a8496931bf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a767f53f9bfe43511d2c38a8496931bf3">conditionNumber</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::MatrixXd &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">A</a>)</td></tr>
 <tr class="memdesc:a767f53f9bfe43511d2c38a8496931bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Estimate condition number of a dense matrix using SVD  <br /></td></tr>
 <tr class="separator:a767f53f9bfe43511d2c38a8496931bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149529c6dad257c887c4eccc4f56de2a" id="r_a149529c6dad257c887c4eccc4f56de2a"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , std::size_t Dim&gt; </td></tr>
-<tr class="memitem:a149529c6dad257c887c4eccc4f56de2a"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, -1, -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a149529c6dad257c887c4eccc4f56de2a">buildVandermonde</a> (const std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;points)</td></tr>
+<tr class="memitem:a149529c6dad257c887c4eccc4f56de2a" id="r_a149529c6dad257c887c4eccc4f56de2a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a> , std::size_t Dim&gt; </td></tr>
+<tr class="memitem:a149529c6dad257c887c4eccc4f56de2a"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, -1, -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a149529c6dad257c887c4eccc4f56de2a">buildVandermonde</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">points</a>)</td></tr>
 <tr class="memdesc:a149529c6dad257c887c4eccc4f56de2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Build Vandermonde matrix for a polynomial of P space  <br /></td></tr>
 <tr class="separator:a149529c6dad257c887c4eccc4f56de2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ad20732cf47d1ef97208cde6f50ee7" id="r_a84ad20732cf47d1ef97208cde6f50ee7"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:a84ad20732cf47d1ef97208cde6f50ee7"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, -1, -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a84ad20732cf47d1ef97208cde6f50ee7">computeInverse</a> (const Eigen::Matrix&lt; FloatType, -1, -1 &gt; &amp;matrix)</td></tr>
+<tr class="memitem:a84ad20732cf47d1ef97208cde6f50ee7" id="r_a84ad20732cf47d1ef97208cde6f50ee7"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a> &gt; </td></tr>
+<tr class="memitem:a84ad20732cf47d1ef97208cde6f50ee7"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, -1, -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a84ad20732cf47d1ef97208cde6f50ee7">computeInverse</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, -1, -1 &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">matrix</a>)</td></tr>
 <tr class="memdesc:a84ad20732cf47d1ef97208cde6f50ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Invert a matrix, use partial pivot if we have exact arithmetic  <br /></td></tr>
 <tr class="separator:a84ad20732cf47d1ef97208cde6f50ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cdecea87d7b118a0a5c8578e165c2a" id="r_af3cdecea87d7b118a0a5c8578e165c2a"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FloatType &gt; </td></tr>
-<tr class="memitem:af3cdecea87d7b118a0a5c8578e165c2a"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, -1, -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#af3cdecea87d7b118a0a5c8578e165c2a">computeLagrangianPolyCoef</a> (const std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;points)</td></tr>
+<tr class="memitem:af3cdecea87d7b118a0a5c8578e165c2a" id="r_af3cdecea87d7b118a0a5c8578e165c2a"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a> &gt; </td></tr>
+<tr class="memitem:af3cdecea87d7b118a0a5c8578e165c2a"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, -1, -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#af3cdecea87d7b118a0a5c8578e165c2a">computeLagrangianPolyCoef</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">points</a>)</td></tr>
 <tr class="memdesc:af3cdecea87d7b118a0a5c8578e165c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Compute the coefficients of interpolatory lagrangian polynomials of a set of points  <br /></td></tr>
 <tr class="separator:af3cdecea87d7b118a0a5c8578e165c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3fe3ce99eb005082620506f1652738" id="r_a0a3fe3ce99eb005082620506f1652738"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a0a3fe3ce99eb005082620506f1652738">gaussLobattoRoots</a> (Eigen::Index N)</td></tr>
+<tr class="memitem:a0a3fe3ce99eb005082620506f1652738" id="r_a0a3fe3ce99eb005082620506f1652738"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a0a3fe3ce99eb005082620506f1652738">gaussLobattoRoots</a> (Eigen::Index <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">N</a>)</td></tr>
 <tr class="separator:a0a3fe3ce99eb005082620506f1652738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f101f8650c6d4f16e9ee840fabab748" id="r_a4f101f8650c6d4f16e9ee840fabab748"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a4f101f8650c6d4f16e9ee840fabab748">evalLegendre</a> (const Eigen::VectorXd &amp;x, Eigen::Index <a class="el" href="namespacevulpes_1_1fe.html#a83d9fe5cdc5624db44b012daf9690757">n</a>)</td></tr>
+<tr class="memitem:a4f101f8650c6d4f16e9ee840fabab748" id="r_a4f101f8650c6d4f16e9ee840fabab748"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a4f101f8650c6d4f16e9ee840fabab748">evalLegendre</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">x</a>, Eigen::Index n)</td></tr>
 <tr class="separator:a4f101f8650c6d4f16e9ee840fabab748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afec06edd0d41fe90cbf18654eb1f8a9b" id="r_afec06edd0d41fe90cbf18654eb1f8a9b"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#afec06edd0d41fe90cbf18654eb1f8a9b">computeWarp</a> (Eigen::Index N, const Eigen::VectorXd &amp;rout)</td></tr>
+<tr class="memitem:afec06edd0d41fe90cbf18654eb1f8a9b" id="r_afec06edd0d41fe90cbf18654eb1f8a9b"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#afec06edd0d41fe90cbf18654eb1f8a9b">computeWarp</a> (Eigen::Index <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">N</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">rout</a>)</td></tr>
 <tr class="separator:afec06edd0d41fe90cbf18654eb1f8a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a744281520a73eb8f840f17c971fb9640" id="r_a744281520a73eb8f840f17c971fb9640"><td class="memItemLeft" align="right" valign="top">std::pair&lt; Eigen::VectorXd, Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a744281520a73eb8f840f17c971fb9640">computeWarpAndBlend</a> (Eigen::Index N, double alpha, const Eigen::VectorXd &amp;L1, const Eigen::VectorXd &amp;L2, const Eigen::VectorXd &amp;L3)</td></tr>
+<tr class="memitem:a744281520a73eb8f840f17c971fb9640" id="r_a744281520a73eb8f840f17c971fb9640"><td class="memItemLeft" align="right" valign="top">std::pair&lt; Eigen::VectorXd, Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a744281520a73eb8f840f17c971fb9640">computeWarpAndBlend</a> (Eigen::Index <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">N</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">double</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">alpha</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">L1</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">L2</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">L3</a>)</td></tr>
 <tr class="separator:a744281520a73eb8f840f17c971fb9640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad73d11b3d2c132f1808b1a5c11cd293b" id="r_ad73d11b3d2c132f1808b1a5c11cd293b"><td class="memItemLeft" align="right" valign="top">std::pair&lt; Eigen::VectorXd, Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ad73d11b3d2c132f1808b1a5c11cd293b">nodes2D</a> (Eigen::Index N)</td></tr>
+<tr class="memitem:ad73d11b3d2c132f1808b1a5c11cd293b" id="r_ad73d11b3d2c132f1808b1a5c11cd293b"><td class="memItemLeft" align="right" valign="top">std::pair&lt; Eigen::VectorXd, Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ad73d11b3d2c132f1808b1a5c11cd293b">nodes2D</a> (Eigen::Index <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">N</a>)</td></tr>
 <tr class="separator:ad73d11b3d2c132f1808b1a5c11cd293b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ec10d73a9235bcb58895b8a06452ca" id="r_ab4ec10d73a9235bcb58895b8a06452ca"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix2Xd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ab4ec10d73a9235bcb58895b8a06452ca">xy2rs</a> (const std::pair&lt; Eigen::VectorXd, Eigen::VectorXd &gt; &amp;xy)</td></tr>
+<tr class="memitem:ab4ec10d73a9235bcb58895b8a06452ca" id="r_ab4ec10d73a9235bcb58895b8a06452ca"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix2Xd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ab4ec10d73a9235bcb58895b8a06452ca">xy2rs</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::pair&lt; Eigen::VectorXd, Eigen::VectorXd &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">xy</a>)</td></tr>
 <tr class="separator:ab4ec10d73a9235bcb58895b8a06452ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee537e01f990924884412e7dcc32e52f" id="r_aee537e01f990924884412e7dcc32e52f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#aee537e01f990924884412e7dcc32e52f">normalize</a> (const Eigen::Vector3d &amp;v)</td></tr>
+<tr class="memitem:aee537e01f990924884412e7dcc32e52f" id="r_aee537e01f990924884412e7dcc32e52f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#aee537e01f990924884412e7dcc32e52f">normalize</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector3d &amp;v)</td></tr>
 <tr class="separator:aee537e01f990924884412e7dcc32e52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db91a1e60c78db411bee31cb09dbb75" id="r_a9db91a1e60c78db411bee31cb09dbb75"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a9db91a1e60c78db411bee31cb09dbb75">equinNodes3D</a> (Eigen::Index N)</td></tr>
+<tr class="memitem:a9db91a1e60c78db411bee31cb09dbb75" id="r_a9db91a1e60c78db411bee31cb09dbb75"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a9db91a1e60c78db411bee31cb09dbb75">equinNodes3D</a> (Eigen::Index <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">N</a>)</td></tr>
 <tr class="separator:a9db91a1e60c78db411bee31cb09dbb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b1a9465945945b874c98904e51c4326" id="r_a7b1a9465945945b874c98904e51c4326"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3Xd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a7b1a9465945945b874c98904e51c4326">nodes3D</a> (Eigen::Index p)</td></tr>
 <tr class="separator:a7b1a9465945945b874c98904e51c4326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29ac1793359aa6eec0d0768d44d75b95" id="r_a29ac1793359aa6eec0d0768d44d75b95"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3Xd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a29ac1793359aa6eec0d0768d44d75b95">xyz2rst</a> (const Eigen::Matrix3Xd &amp;xyz)</td></tr>
+<tr class="memitem:a29ac1793359aa6eec0d0768d44d75b95" id="r_a29ac1793359aa6eec0d0768d44d75b95"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3Xd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a29ac1793359aa6eec0d0768d44d75b95">xyz2rst</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Matrix3Xd &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">xyz</a>)</td></tr>
 <tr class="separator:a29ac1793359aa6eec0d0768d44d75b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f456429dbf147bddb488e0705bdc8a" id="r_ac7f456429dbf147bddb488e0705bdc8a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac7f456429dbf147bddb488e0705bdc8a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ac7f456429dbf147bddb488e0705bdc8a">jacobiP</a> (const T &amp;x, std::size_t alpha, std::size_t beta, std::size_t N)</td></tr>
+<tr class="memitem:ac7f456429dbf147bddb488e0705bdc8a" id="r_ac7f456429dbf147bddb488e0705bdc8a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </td></tr>
+<tr class="memitem:ac7f456429dbf147bddb488e0705bdc8a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ac7f456429dbf147bddb488e0705bdc8a">jacobiP</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">x</a>, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">alpha</a>, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">beta</a>, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">N</a>)</td></tr>
 <tr class="separator:ac7f456429dbf147bddb488e0705bdc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0204f4dc193b91e6326ecaf6b409887c" id="r_a0204f4dc193b91e6326ecaf6b409887c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0204f4dc193b91e6326ecaf6b409887c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a0204f4dc193b91e6326ecaf6b409887c">simplex2DP</a> (const Eigen::Vector&lt; T, 2 &gt; &amp;ab, const std::array&lt; std::size_t, 2 &gt; &amp;ij)</td></tr>
+<tr class="memitem:a0204f4dc193b91e6326ecaf6b409887c" id="r_a0204f4dc193b91e6326ecaf6b409887c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </td></tr>
+<tr class="memitem:a0204f4dc193b91e6326ecaf6b409887c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a0204f4dc193b91e6326ecaf6b409887c">simplex2DP</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 2 &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">ab</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::array&lt; std::size_t, 2 &gt; &amp;ij)</td></tr>
 <tr class="separator:a0204f4dc193b91e6326ecaf6b409887c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c66ba0b8f1de46b9dcef2b2fbb97592" id="r_a9c66ba0b8f1de46b9dcef2b2fbb97592"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9c66ba0b8f1de46b9dcef2b2fbb97592"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a9c66ba0b8f1de46b9dcef2b2fbb97592">simplex3DP</a> (const Eigen::Vector&lt; T, 3 &gt; &amp;abc, const std::array&lt; std::size_t, 3 &gt; &amp;ijk)</td></tr>
+<tr class="memitem:a9c66ba0b8f1de46b9dcef2b2fbb97592" id="r_a9c66ba0b8f1de46b9dcef2b2fbb97592"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </td></tr>
+<tr class="memitem:a9c66ba0b8f1de46b9dcef2b2fbb97592"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a9c66ba0b8f1de46b9dcef2b2fbb97592">simplex3DP</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 3 &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">abc</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::array&lt; std::size_t, 3 &gt; &amp;ijk)</td></tr>
 <tr class="separator:a9c66ba0b8f1de46b9dcef2b2fbb97592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84031c3af794935ac8c25bb21346f1cf" id="r_a84031c3af794935ac8c25bb21346f1cf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a84031c3af794935ac8c25bb21346f1cf"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; T, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a84031c3af794935ac8c25bb21346f1cf">rs2ab</a> (const Eigen::Vector&lt; T, 2 &gt; &amp;rs)</td></tr>
+<tr class="memitem:a84031c3af794935ac8c25bb21346f1cf" id="r_a84031c3af794935ac8c25bb21346f1cf"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </td></tr>
+<tr class="memitem:a84031c3af794935ac8c25bb21346f1cf"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a84031c3af794935ac8c25bb21346f1cf">rs2ab</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 2 &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">rs</a>)</td></tr>
 <tr class="separator:a84031c3af794935ac8c25bb21346f1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3aaa939c5bb95941d16f2b78c89b9c4" id="r_ad3aaa939c5bb95941d16f2b78c89b9c4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad3aaa939c5bb95941d16f2b78c89b9c4"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; T, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ad3aaa939c5bb95941d16f2b78c89b9c4">rst2abc</a> (const Eigen::Vector&lt; T, 3 &gt; &amp;rst)</td></tr>
+<tr class="memitem:ad3aaa939c5bb95941d16f2b78c89b9c4" id="r_ad3aaa939c5bb95941d16f2b78c89b9c4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </td></tr>
+<tr class="memitem:ad3aaa939c5bb95941d16f2b78c89b9c4"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#ad3aaa939c5bb95941d16f2b78c89b9c4">rst2abc</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 3 &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">rst</a>)</td></tr>
 <tr class="separator:ad3aaa939c5bb95941d16f2b78c89b9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a930d811c0cfcf4b591444ed7264c112d" id="r_a930d811c0cfcf4b591444ed7264c112d"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t Dim&gt; </td></tr>
-<tr class="memitem:a930d811c0cfcf4b591444ed7264c112d"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a930d811c0cfcf4b591444ed7264c112d">evalSimplex</a> (const Eigen::Vector&lt; T, Dim &gt; &amp;x, std::size_t <a class="el" href="namespacevulpes_1_1fe.html#a83d9fe5cdc5624db44b012daf9690757">n</a>)</td></tr>
+<tr class="memitem:a930d811c0cfcf4b591444ed7264c112d" id="r_a930d811c0cfcf4b591444ed7264c112d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> , std::size_t Dim&gt; </td></tr>
+<tr class="memitem:a930d811c0cfcf4b591444ed7264c112d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a930d811c0cfcf4b591444ed7264c112d">evalSimplex</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">x</a>, std::size_t n)</td></tr>
 <tr class="separator:a930d811c0cfcf4b591444ed7264c112d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a3ac0047d31adeb05ff8d7a66d79e76" id="r_a8a3ac0047d31adeb05ff8d7a66d79e76"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t Dim&gt; </td></tr>
-<tr class="memitem:a8a3ac0047d31adeb05ff8d7a66d79e76"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; T, -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a8a3ac0047d31adeb05ff8d7a66d79e76">interpolateFunctionAtNodes</a> (const std::vector&lt; Eigen::Vector&lt; T, Dim &gt; &gt; &amp;nodes, const std::function&lt; T(const Eigen::Vector&lt; T, Dim &gt; &amp;)&gt; &amp;f, std::size_t deg)</td></tr>
+<tr class="memitem:a8a3ac0047d31adeb05ff8d7a66d79e76" id="r_a8a3ac0047d31adeb05ff8d7a66d79e76"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> , std::size_t Dim&gt; </td></tr>
+<tr class="memitem:a8a3ac0047d31adeb05ff8d7a66d79e76"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a8a3ac0047d31adeb05ff8d7a66d79e76">interpolateFunctionAtNodes</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::vector&lt; Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt; &amp;nodes, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::function&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;)&gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">f</a>, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">deg</a>)</td></tr>
 <tr class="separator:a8a3ac0047d31adeb05ff8d7a66d79e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -203,7 +204,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6">vulpes::fe::internal::real_t</a> = typedef mpf_class</td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a> <a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6">vulpes::fe::internal::real_t</a> = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typedef</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">mpf_class</a></td>
         </tr>
       </table>
   </td>
@@ -222,15 +223,15 @@ Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType , std::size_t Dim&gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a> , std::size_t Dim&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt; FloatType, -1, -1 &gt; vulpes::fe::internal::buildVandermonde </td>
+          <td class="memname">Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, -1, -1 &gt; vulpes::fe::internal::buildVandermonde </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>points</em></td><td>)</td>
           <td></td>
         </tr>
@@ -246,21 +247,57 @@ template&lt;typename FloatType , std::size_t Dim&gt; </div>
 
 </div>
 </div>
+<a id="a738594faa323683b391d5c17ff0ae312" name="a738594faa323683b391d5c17ff0ae312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738594faa323683b391d5c17ff0ae312">&#9670;&#160;</a></span>cartesian_hcat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="macros_8hpp.html#a64dde711449fa720b63e56ff84f35ffc">VULPES_ALWAYS_INLINE</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> vulpes::fe::internal::cartesian_hcat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a84ad20732cf47d1ef97208cde6f50ee7" name="a84ad20732cf47d1ef97208cde6f50ee7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84ad20732cf47d1ef97208cde6f50ee7">&#9670;&#160;</a></span>computeInverse()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt; FloatType, -1, -1 &gt; vulpes::fe::internal::computeInverse </td>
+          <td class="memname">Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, -1, -1 &gt; vulpes::fe::internal::computeInverse </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Matrix&lt; FloatType, -1, -1 &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, -1, -1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>matrix</em></td><td>)</td>
           <td></td>
         </tr>
@@ -282,15 +319,15 @@ template&lt;typename FloatType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FloatType &gt; </div>
+template&lt;std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt; FloatType, -1, -1 &gt; vulpes::fe::internal::computeLagrangianPolyCoef </td>
+          <td class="memname">Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, -1, -1 &gt; vulpes::fe::internal::computeLagrangianPolyCoef </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>points</em></td><td>)</td>
           <td></td>
         </tr>
@@ -321,7 +358,7 @@ template&lt;std::size_t Dim, typename FloatType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;&#160;</td>
           <td class="paramname"><em>rout</em>&#160;</td>
         </tr>
         <tr>
@@ -349,25 +386,25 @@ template&lt;std::size_t Dim, typename FloatType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">double</a>&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;&#160;</td>
           <td class="paramname"><em>L1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;&#160;</td>
           <td class="paramname"><em>L2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;&#160;</td>
           <td class="paramname"><em>L3</em>&#160;</td>
         </tr>
         <tr>
@@ -390,9 +427,9 @@ template&lt;std::size_t Dim, typename FloatType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double vulpes::fe::internal::conditionNumber </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">double</a> vulpes::fe::internal::conditionNumber </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::MatrixXd &amp;&#160;</td>
           <td class="paramname"><em>A</em></td><td>)</td>
           <td></td>
         </tr>
@@ -435,7 +472,7 @@ template&lt;std::size_t Dim, typename FloatType &gt; </div>
         <tr>
           <td class="memname">Eigen::VectorXd vulpes::fe::internal::evalLegendre </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::VectorXd &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -460,12 +497,12 @@ template&lt;std::size_t Dim, typename FloatType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , std::size_t Dim&gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> , std::size_t Dim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T vulpes::fe::internal::evalSimplex </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> vulpes::fe::internal::evalSimplex </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; T, Dim &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -502,24 +539,60 @@ template&lt;typename T , std::size_t Dim&gt; </div>
 
 </div>
 </div>
+<a id="a94c5da1acc368603daf26306923400ae" name="a94c5da1acc368603daf26306923400ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c5da1acc368603daf26306923400ae">&#9670;&#160;</a></span>hcat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="macros_8hpp.html#a64dde711449fa720b63e56ff84f35ffc">VULPES_ALWAYS_INLINE</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> vulpes::fe::internal::hcat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8a3ac0047d31adeb05ff8d7a66d79e76" name="a8a3ac0047d31adeb05ff8d7a66d79e76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a3ac0047d31adeb05ff8d7a66d79e76">&#9670;&#160;</a></span>interpolateFunctionAtNodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , std::size_t Dim&gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> , std::size_t Dim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; T, -1 &gt; vulpes::fe::internal::interpolateFunctionAtNodes </td>
+          <td class="memname">Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, -1 &gt; vulpes::fe::internal::interpolateFunctionAtNodes </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; Eigen::Vector&lt; T, Dim &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::vector&lt; Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>nodes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::function&lt; T(const Eigen::Vector&lt; T, Dim &gt; &amp;)&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::function&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;)&gt; &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -544,15 +617,15 @@ template&lt;typename T , std::size_t Dim&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T vulpes::fe::internal::jacobiP </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> vulpes::fe::internal::jacobiP </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -633,7 +706,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">Eigen::Vector3d vulpes::fe::internal::normalize </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector3d &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector3d &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
@@ -648,15 +721,15 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; T, 2 &gt; vulpes::fe::internal::rs2ab </td>
+          <td class="memname">Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 2 &gt; vulpes::fe::internal::rs2ab </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; T, 2 &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 2 &gt; &amp;&#160;</td>
           <td class="paramname"><em>rs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -676,15 +749,15 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; T, 3 &gt; vulpes::fe::internal::rst2abc </td>
+          <td class="memname">Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 3 &gt; vulpes::fe::internal::rst2abc </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; T, 3 &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 3 &gt; &amp;&#160;</td>
           <td class="paramname"><em>rst</em></td><td>)</td>
           <td></td>
         </tr>
@@ -704,18 +777,18 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T vulpes::fe::internal::simplex2DP </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> vulpes::fe::internal::simplex2DP </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; T, 2 &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 2 &gt; &amp;&#160;</td>
           <td class="paramname"><em>ab</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; std::size_t, 2 &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::array&lt; std::size_t, 2 &gt; &amp;&#160;</td>
           <td class="paramname"><em>ij</em>&#160;</td>
         </tr>
         <tr>
@@ -734,18 +807,18 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T vulpes::fe::internal::simplex3DP </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a> vulpes::fe::internal::simplex3DP </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; T, 3 &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">T</a>, 3 &gt; &amp;&#160;</td>
           <td class="paramname"><em>abc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; std::size_t, 3 &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::array&lt; std::size_t, 3 &gt; &amp;&#160;</td>
           <td class="paramname"><em>ijk</em>&#160;</td>
         </tr>
         <tr>
@@ -767,7 +840,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">Eigen::Matrix2Xd vulpes::fe::internal::xy2rs </td>
           <td>(</td>
-          <td class="paramtype">const std::pair&lt; Eigen::VectorXd, Eigen::VectorXd &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::pair&lt; Eigen::VectorXd, Eigen::VectorXd &gt; &amp;&#160;</td>
           <td class="paramname"><em>xy</em></td><td>)</td>
           <td></td>
         </tr>
@@ -785,7 +858,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">Eigen::Matrix3Xd vulpes::fe::internal::xyz2rst </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Matrix3Xd &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> Eigen::Matrix3Xd &amp;&#160;</td>
           <td class="paramname"><em>xyz</em></td><td>)</td>
           <td></td>
         </tr>
@@ -801,7 +874,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html">internal</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

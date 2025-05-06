@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -641,8 +638,8 @@ $(document).ready(function(){initNavTree('mpi__wrappers_8hpp_source.html',''); i
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span> </div>
 <div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_UTILS_MPI_WRAPPERS_HPP_</span></div>
 <div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html">vulpes::datastructure::CrsMap</a></div><div class="ttdef"><b>Definition</b> crs_map.hpp:72</div></div>
-<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_a270f6ccf296ec7ddf725da468220e176"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#a270f6ccf296ec7ddf725da468220e176">vulpes::datastructure::CrsMap::indices</a></div><div class="ttdeci">const auto &amp; indices() const</div><div class="ttdoc">Constant accessor to the indices buffer.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:422</div></div>
-<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_af961a22c1319e66289277e7f44d4765e"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#af961a22c1319e66289277e7f44d4765e">vulpes::datastructure::CrsMap::data</a></div><div class="ttdeci">const auto &amp; data() const</div><div class="ttdoc">Constant accessor to the data buffer.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:418</div></div>
+<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_a270f6ccf296ec7ddf725da468220e176"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#a270f6ccf296ec7ddf725da468220e176">vulpes::datastructure::CrsMap::indices</a></div><div class="ttdeci">const auto &amp; indices() const</div><div class="ttdoc">Constant accessor to the indices buffer.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:442</div></div>
+<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_af961a22c1319e66289277e7f44d4765e"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#af961a22c1319e66289277e7f44d4765e">vulpes::datastructure::CrsMap::data</a></div><div class="ttdeci">const auto &amp; data() const</div><div class="ttdoc">Constant accessor to the data buffer.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:438</div></div>
 <div class="ttc" id="aclassvulpes_1_1mpi_1_1MpiHandle_html"><div class="ttname"><a href="classvulpes_1_1mpi_1_1MpiHandle.html">vulpes::mpi::MpiHandle</a></div><div class="ttdef"><b>Definition</b> mpi_wrappers.hpp:416</div></div>
 <div class="ttc" id="aclassvulpes_1_1mpi_1_1MpiHandle_html_a1655076b8fc7c5e74f8dc34667de3e44"><div class="ttname"><a href="classvulpes_1_1mpi_1_1MpiHandle.html#a1655076b8fc7c5e74f8dc34667de3e44">vulpes::mpi::MpiHandle::MpiHandle</a></div><div class="ttdeci">MpiHandle()=default</div><div class="ttdoc">Prevent direct construction of objects of this class.</div></div>
 <div class="ttc" id="aclassvulpes_1_1mpi_1_1MpiHandle_html_a1a2f87c9178e2ddfdf0360edc71b6372"><div class="ttname"><a href="classvulpes_1_1mpi_1_1MpiHandle.html#a1a2f87c9178e2ddfdf0360edc71b6372">vulpes::mpi::MpiHandle::s_default_thread_required</a></div><div class="ttdeci">static constexpr int s_default_thread_required</div><div class="ttdoc">Default level of thread support for MPI_Init_thread.</div><div class="ttdef"><b>Definition</b> mpi_wrappers.hpp:450</div></div>
@@ -667,7 +664,7 @@ $(document).ready(function(){initNavTree('mpi__wrappers_8hpp_source.html',''); i
 <div class="ttc" id="anamespacevulpes_1_1mpi_html_adc07090404a3e322663c803500ba08f4"><div class="ttname"><a href="namespacevulpes_1_1mpi.html#adc07090404a3e322663c803500ba08f4">vulpes::mpi::getMpiType</a></div><div class="ttdeci">MPI_Datatype getMpiType()</div><div class="ttdef"><b>Definition</b> mpi_wrappers.hpp:43</div></div>
 <div class="ttc" id="anamespacevulpes_1_1mpi_html_ae392da87c62647799e306debadc288d1"><div class="ttname"><a href="namespacevulpes_1_1mpi.html#ae392da87c62647799e306debadc288d1">vulpes::mpi::bcast</a></div><div class="ttdeci">void bcast(T *data, int count, int root, MPI_Comm communicator=MPI_COMM_WORLD)</div><div class="ttdef"><b>Definition</b> mpi_wrappers.hpp:299</div></div>
 <div class="ttc" id="anamespacevulpes_1_1mpi_html_af0aa73963def61173de2fb35b08b9979"><div class="ttname"><a href="namespacevulpes_1_1mpi.html#af0aa73963def61173de2fb35b08b9979">vulpes::mpi::s_default_tag</a></div><div class="ttdeci">static constexpr int s_default_tag</div><div class="ttdef"><b>Definition</b> mpi_wrappers.hpp:40</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> integrator_base.hpp:34</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -675,7 +672,7 @@ $(document).ready(function(){initNavTree('mpi__wrappers_8hpp_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_57fd5c05a3144478f1fe40cbcefca761.html">utils</a></li><li class="navelem"><a class="el" href="mpi__wrappers_8hpp.html">mpi_wrappers.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

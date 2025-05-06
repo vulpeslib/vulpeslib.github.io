@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -160,9 +157,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a17914d8840cbe3d5ff48fe9828fd9791" id="r_a17914d8840cbe3d5ff48fe9828fd9791"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a17914d8840cbe3d5ff48fe9828fd9791">Tetrahedralization</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">geometry::Cell3D</a>&lt; <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#abccbab76ea5868476090d136c46306e4">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a30df0be3b066a1598c29b94d6227970f">index_t</a> &gt; &amp;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac90d8dd7406a5d2a268e91f058799b10">cell</a>)</td></tr>
-<tr class="memdesc:a17914d8840cbe3d5ff48fe9828fd9791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html" title="Performs tetrahedralization of a 3D cell using the TetGen library.">Tetrahedralization</a> object for a given 3D cell.  <br /></td></tr>
-<tr class="separator:a17914d8840cbe3d5ff48fe9828fd9791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f52eeb88c807ad9c65d62a0e55466ee" id="r_a2f52eeb88c807ad9c65d62a0e55466ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a2f52eeb88c807ad9c65d62a0e55466ee">Tetrahedralization</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">geometry::Cell3D</a>&lt; <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#abccbab76ea5868476090d136c46306e4">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a30df0be3b066a1598c29b94d6227970f">index_t</a> &gt; &amp;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac90d8dd7406a5d2a268e91f058799b10">cell</a>, bool reconstruct_boundary=false, tetgen::tetgenbehavior options=<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac68c044d6fb2bd2ce829436b9f28717d">s_tetgen_default_options</a>)</td></tr>
+<tr class="memdesc:a2f52eeb88c807ad9c65d62a0e55466ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html" title="Performs tetrahedralization of a 3D cell using the TetGen library.">Tetrahedralization</a> object for a given 3D cell.  <br /></td></tr>
+<tr class="separator:a2f52eeb88c807ad9c65d62a0e55466ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885f5817737770c6357432b0036d2df7" id="r_a885f5817737770c6357432b0036d2df7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a30df0be3b066a1598c29b94d6227970f">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a885f5817737770c6357432b0036d2df7">getNumPoints</a> () const</td></tr>
 <tr class="memdesc:a885f5817737770c6357432b0036d2df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of points in the tetrahedralization.  <br /></td></tr>
 <tr class="separator:a885f5817737770c6357432b0036d2df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +183,8 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a663407c0466f68d2652fe64548eb3f75" id="r_a663407c0466f68d2652fe64548eb3f75"><td class="memItemLeft" align="right" valign="top">static constexpr int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a663407c0466f68d2652fe64548eb3f75">dim</a> = 3</td></tr>
 <tr class="separator:a663407c0466f68d2652fe64548eb3f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68c044d6fb2bd2ce829436b9f28717d" id="r_ac68c044d6fb2bd2ce829436b9f28717d"><td class="memItemLeft" align="right" valign="top">static const tetgen::tetgenbehavior&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac68c044d6fb2bd2ce829436b9f28717d">s_tetgen_default_options</a></td></tr>
+<tr class="separator:ac68c044d6fb2bd2ce829436b9f28717d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac992c257f53a1c5e379d4257f1efe6a6" id="r_ac992c257f53a1c5e379d4257f1efe6a6"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a30df0be3b066a1598c29b94d6227970f">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac992c257f53a1c5e379d4257f1efe6a6">s_static_buffer_size</a> = 256</td></tr>
 <tr class="memdesc:ac992c257f53a1c5e379d4257f1efe6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static constant defining the size of the static buffer for avoiding dynamic allocation of facet and polygon lists.  <br /></td></tr>
 <tr class="separator:ac992c257f53a1c5e379d4257f1efe6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +212,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ac45acf89f4103b77d2b34413d87561df" id="r_ac45acf89f4103b77d2b34413d87561df"><td class="memItemLeft" align="right" valign="top">std::vector&lt; tetgen::tetgenio::polygon &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac45acf89f4103b77d2b34413d87561df">m_polygons</a></td></tr>
 <tr class="memdesc:ac45acf89f4103b77d2b34413d87561df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic buffer for storing the list of polygons in the tetrahedralization. This is used only if the static buffer is not large enough.  <br /></td></tr>
 <tr class="separator:ac45acf89f4103b77d2b34413d87561df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08f3d18db2e6dd4a2e078f6e590a2df" id="r_ad08f3d18db2e6dd4a2e078f6e590a2df"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ad08f3d18db2e6dd4a2e078f6e590a2df">m_facetmarkerlist</a></td></tr>
+<tr class="memdesc:ad08f3d18db2e6dd4a2e078f6e590a2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boundary markers are tags (integers) used mainly to identify which entities are associated with which boundary element of the input PLC. We use it to reconstruct to which face each triface belongs to.  <br /></td></tr>
+<tr class="separator:ad08f3d18db2e6dd4a2e078f6e590a2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5f713bf5adaf4838fba84d2b0786aed" id="r_ae5f713bf5adaf4838fba84d2b0786aed"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ab8b399ec446c8fbdd1884fea96cd9027">PointsViewType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ae5f713bf5adaf4838fba84d2b0786aed">m_point_list</a></td></tr>
 <tr class="memdesc:ae5f713bf5adaf4838fba84d2b0786aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique pointer to an Eigen::Map representing the list of points in the tetrahedralization. The data is generated by TetGen in <code>m_out</code>.  <br /></td></tr>
 <tr class="separator:ae5f713bf5adaf4838fba84d2b0786aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,8 +375,8 @@ Static Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a17914d8840cbe3d5ff48fe9828fd9791" name="a17914d8840cbe3d5ff48fe9828fd9791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17914d8840cbe3d5ff48fe9828fd9791">&#9670;&#160;</a></span>Tetrahedralization()</h2>
+<a id="a2f52eeb88c807ad9c65d62a0e55466ee" name="a2f52eeb88c807ad9c65d62a0e55466ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f52eeb88c807ad9c65d62a0e55466ee">&#9670;&#160;</a></span>Tetrahedralization()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,8 +388,24 @@ Static Protected Attributes</h2></td></tr>
           <td class="memname">vulpes::geometry::Tetrahedralization::Tetrahedralization </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">geometry::Cell3D</a>&lt; <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#abccbab76ea5868476090d136c46306e4">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a30df0be3b066a1598c29b94d6227970f">index_t</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cell</em></td><td>)</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reconstruct_boundary</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tetgen::tetgenbehavior&#160;</td>
+          <td class="paramname"><em>options</em> = <code><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#ac68c044d6fb2bd2ce829436b9f28717d">s_tetgen_default_options</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -402,6 +420,8 @@ Static Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cell</td><td>A 3D cell to be tetrahedralized, represented by <code><a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">geometry::Cell3D</a></code>. </td></tr>
+    <tr><td class="paramname">reconstruct_boundary</td><td>For every triangular face of each tetrahedron in the tessellation, identify the corresponding face of the cell to which it belongs. </td></tr>
+    <tr><td class="paramname">options</td><td>Tetgen library options </td></tr>
   </table>
   </dd>
 </dl>
@@ -516,7 +536,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the list of points in the tetrahedralization. </p>
-<p>The points are represented as a 3xN Eigen matrix where each column is a point (x, y, z).</p>
+<p>The points are represented as a 3xN <a class="el" href="namespaceEigen.html">Eigen</a> matrix where each column is a point (x, y, z).</p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to an Eigen::Map representing the point list. </dd></dl>
 
 </div>
@@ -545,7 +565,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the list of tetrahedra in the tetrahedralization. </p>
-<p>The tetrahedra are represented as a 4xM Eigen matrix where each column contains the indices of the four vertices of a tetrahedron.</p>
+<p>The tetrahedra are represented as a 4xM <a class="el" href="namespaceEigen.html">Eigen</a> matrix where each column contains the indices of the four vertices of a tetrahedron.</p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to an Eigen::Map representing the tetrahedron list. </dd></dl>
 
 </div>
@@ -699,6 +719,30 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Triangles in each face of the cell. </p>
 <p>For sake of performace the triangles are saved as indices in a contiguous buffer, to extract them we use <code>m_num_subfaces_per_face</code> and <code>m_num_subfaces_per_face_cumsum</code> </p>
+
+</div>
+</div>
+<a id="ad08f3d18db2e6dd4a2e078f6e590a2df" name="ad08f3d18db2e6dd4a2e078f6e590a2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08f3d18db2e6dd4a2e078f6e590a2df">&#9670;&#160;</a></span>m_facetmarkerlist</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int32_t&gt; vulpes::geometry::Tetrahedralization::m_facetmarkerlist</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Boundary markers are tags (integers) used mainly to identify which entities are associated with which boundary element of the input PLC. We use it to reconstruct to which face each triface belongs to. </p>
 
 </div>
 </div>
@@ -943,6 +987,42 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac68c044d6fb2bd2ce829436b9f28717d" name="ac68c044d6fb2bd2ce829436b9f28717d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac68c044d6fb2bd2ce829436b9f28717d">&#9670;&#160;</a></span>s_tetgen_default_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const tetgen::tetgenbehavior vulpes::geometry::Tetrahedralization::s_tetgen_default_options</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    []() {</div>
+<div class="line">      tetgen::tetgenbehavior options;</div>
+<div class="line">      options.plc = 1;                 </div>
+<div class="line">      options.zeroindex = 1;           </div>
+<div class="line">      options.quality = 1;             </div>
+<div class="line">      options.minratio = 2.0;          </div>
+<div class="line">      options.mindihedral = 3.5;       </div>
+<div class="line">      options.opt_max_flip_level = 3;  </div>
+<div class="line">      options.opt_scheme = 7;          </div>
+<div class="line">      options.opt_iterations = 3;      </div>
+<div class="line">      options.quiet = 1;               </div>
+<div class="line">      <span class="keywordflow">return</span> options;</div>
+<div class="line">    }()</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/__w/vulpes/vulpes/vulpes/geometry/<a class="el" href="simplexify_8hpp_source.html">simplexify.hpp</a></li>
 <li>/__w/vulpes/vulpes/vulpes/geometry/<a class="el" href="simplexify_8cpp.html">simplexify.cpp</a></li>
@@ -954,7 +1034,7 @@ Static Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html">Tetrahedralization</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

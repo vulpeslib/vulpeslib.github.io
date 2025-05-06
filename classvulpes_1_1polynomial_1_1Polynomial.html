@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -230,7 +227,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8f3709edb1680749b38a5e4e64ffe43" id="r_ae8f3709edb1680749b38a5e4e64ffe43"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#ae8f3709edb1680749b38a5e4e64ffe43">evaluate</a> (const Eigen::Vector&lt; T, Dim &gt; &amp;x) const</td></tr>
 <tr class="memdesc:ae8f3709edb1680749b38a5e4e64ffe43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the polynomial in a given point.  <br /></td></tr>
 <tr class="separator:ae8f3709edb1680749b38a5e4e64ffe43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c472da35039e41facefe0f0c865b28" id="r_a86c472da35039e41facefe0f0c865b28"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#a86c472da35039e41facefe0f0c865b28">integrate</a> (const <a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">datastructure::SimplexDataView</a>&lt; Dim, SimplexData, T, std::size_t &gt; &amp;monomial_integrals) const</td></tr>
+<tr class="memitem:a86c472da35039e41facefe0f0c865b28" id="r_a86c472da35039e41facefe0f0c865b28"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#a86c472da35039e41facefe0f0c865b28">integrate</a> (const <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; Dim, SimplexData, T, std::size_t &gt; &amp;monomial_integrals) const</td></tr>
 <tr class="memdesc:a86c472da35039e41facefe0f0c865b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate the polynomial given the monomials integrals.  <br /></td></tr>
 <tr class="separator:a86c472da35039e41facefe0f0c865b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079d6c8e713d8024ae8f7e5c83b1d195" id="r_a079d6c8e713d8024ae8f7e5c83b1d195"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1polynomial_1_1Polynomial.html">Polynomial</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#a079d6c8e713d8024ae8f7e5c83b1d195">primitive</a> (std::size_t component) const</td></tr>
@@ -853,7 +850,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">T <a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html">vulpes::polynomial::PolynomialBase</a>&lt; T, Dim, <a class="el" href="classvulpes_1_1polynomial_1_1Polynomial.html">Polynomial</a>&lt; T &gt;  &gt;::integrate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">datastructure::SimplexDataView</a>&lt; Dim, SimplexData, T, std::size_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; Dim, SimplexData, T, std::size_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>monomial_integrals</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1770,7 +1767,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1polynomial.html">polynomial</a></li><li class="navelem"><a class="el" href="classvulpes_1_1polynomial_1_1Polynomial.html">Polynomial</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,6 +115,7 @@ $(document).ready(function(){initNavTree('namespacemembers_d.html',''); initResi
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
 <li>DataMode&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab">vulpes::geometry</a></li>
 <li>determinant()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a8a5558c1b124aafd4f504c0049beccf5">vulpes::vmath</a></li>
+<li>dot()&#160;:&#160;<a class="el" href="namespacevulpes_1_1la.html#a484729c4a7c5a2e6e07a4f912814520b">vulpes::la</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -125,7 +123,7 @@ $(document).ready(function(){initNavTree('namespacemembers_d.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

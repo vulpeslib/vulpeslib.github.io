@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updateflags_0',['UpdateFlags',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62f',1,'vulpes::fe']]]
+  ['fetype_0',['FeType',['../namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221',1,'vulpes::fe']]]
 ];

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,6 +113,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1SimplexMapp
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvulpes_1_1geometry_1_1SimplexMapping-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt; Class Template Reference</div></div>
@@ -138,6 +136,11 @@ Collaboration diagram for vulpes::geometry::SimplexMapping&lt; FloatType, Dim &g
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f25d7f6ac03963c4e5f6b176c4c60cd" id="r_a8f25d7f6ac03963c4e5f6b176c4c60cd"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a8f25d7f6ac03963c4e5f6b176c4c60cd">SimplexMapping</a> (const Eigen::Matrix&lt; FloatType, Dim, Dim+1 &gt; &amp;vtxs)</td></tr>
 <tr class="separator:a8f25d7f6ac03963c4e5f6b176c4c60cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf85bae73d672c58c7b5740f483c6537" id="r_acf85bae73d672c58c7b5740f483c6537"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#acf85bae73d672c58c7b5740f483c6537">SimplexMapping</a> (const Eigen::Matrix&lt; FloatType, Dim, -1 &gt; &amp;vtxs)</td></tr>
+<tr class="separator:acf85bae73d672c58c7b5740f483c6537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c6f6f9bd110ac4119af7b8fb3b2ecf" id="r_ad1c6f6f9bd110ac4119af7b8fb3b2ecf"><td class="memTemplParams" colspan="2">template&lt;typename Derived &gt; </td></tr>
+<tr class="memitem:ad1c6f6f9bd110ac4119af7b8fb3b2ecf"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#ad1c6f6f9bd110ac4119af7b8fb3b2ecf">SimplexMapping</a> (const Eigen::MatrixBase&lt; Derived &gt; &amp;vtxs, const Eigen::Vector&lt; int32_t, Dim+1 &gt; &amp;idxs, bool compute_inverse=true)</td></tr>
+<tr class="separator:ad1c6f6f9bd110ac4119af7b8fb3b2ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a25e9f70e9e048da7471f7f44273cf1" id="r_a8a25e9f70e9e048da7471f7f44273cf1"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a8a25e9f70e9e048da7471f7f44273cf1">transform</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &amp;pt) const</td></tr>
 <tr class="separator:a8a25e9f70e9e048da7471f7f44273cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f638922ade4faec76669a6deb2ecbe7" id="r_a4f638922ade4faec76669a6deb2ecbe7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a4f638922ade4faec76669a6deb2ecbe7">transformInv</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &amp;pt) const</td></tr>
@@ -156,20 +159,44 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae9e44a8eda2131b13a3c10fa18b7fcf1" id="r_ae9e44a8eda2131b13a3c10fa18b7fcf1"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#ae9e44a8eda2131b13a3c10fa18b7fcf1">m_jacobian_det</a></td></tr>
 <tr class="separator:ae9e44a8eda2131b13a3c10fa18b7fcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:acdbc2a3e8eaebdec89d48ebb42f5873e" id="r_acdbc2a3e8eaebdec89d48ebb42f5873e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#acdbc2a3e8eaebdec89d48ebb42f5873e">MappingType</a> = <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">SimplexMapping</a>&lt; FloatType, Dim &gt;</td></tr>
+<tr class="separator:acdbc2a3e8eaebdec89d48ebb42f5873e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a76a94bae762945f0d8342f1586ba4099" id="r_a76a94bae762945f0d8342f1586ba4099"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#a76a94bae762945f0d8342f1586ba4099">transform_</a> (Eigen::Map&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; pt) const</td></tr>
-<tr class="separator:a76a94bae762945f0d8342f1586ba4099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add13279087b30ac7487c3b9b82b7a4d4" id="r_add13279087b30ac7487c3b9b82b7a4d4"><td class="memItemLeft" align="right" valign="top">constexpr Eigen::Matrix&lt; FloatType, Dim, Dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#add13279087b30ac7487c3b9b82b7a4d4">jacobian</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &amp;pt) const</td></tr>
-<tr class="separator:add13279087b30ac7487c3b9b82b7a4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32aa5c79a66a4297f3f02b7656a520da" id="r_a32aa5c79a66a4297f3f02b7656a520da"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#a32aa5c79a66a4297f3f02b7656a520da">self</a> ()</td></tr>
 <tr class="separator:a32aa5c79a66a4297f3f02b7656a520da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add1aee4c19067d3ab7e67772c1775aa9" id="r_add1aee4c19067d3ab7e67772c1775aa9"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#add1aee4c19067d3ab7e67772c1775aa9">self</a> () const</td></tr>
 <tr class="separator:add1aee4c19067d3ab7e67772c1775aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="acdbc2a3e8eaebdec89d48ebb42f5873e" name="acdbc2a3e8eaebdec89d48ebb42f5873e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdbc2a3e8eaebdec89d48ebb42f5873e">&#9670;&#160;</a></span>MappingType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html">vulpes::geometry::MappingBase</a>&lt; FloatType, Dim, <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">SimplexMapping</a>&lt; FloatType, Dim &gt;  &gt;::MappingType =  <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">SimplexMapping</a>&lt; FloatType, Dim &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8f25d7f6ac03963c4e5f6b176c4c60cd" name="a8f25d7f6ac03963c4e5f6b176c4c60cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f25d7f6ac03963c4e5f6b176c4c60cd">&#9670;&#160;</a></span>SimplexMapping()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f25d7f6ac03963c4e5f6b176c4c60cd">&#9670;&#160;</a></span>SimplexMapping() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,33 +223,81 @@ template&lt;typename FloatType , std::size_t Dim&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="add13279087b30ac7487c3b9b82b7a4d4" name="add13279087b30ac7487c3b9b82b7a4d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add13279087b30ac7487c3b9b82b7a4d4">&#9670;&#160;</a></span>jacobian()</h2>
+<a id="acf85bae73d672c58c7b5740f483c6537" name="acf85bae73d672c58c7b5740f483c6537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf85bae73d672c58c7b5740f483c6537">&#9670;&#160;</a></span>SimplexMapping() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , std::size_t Dim&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr Eigen::Matrix&lt; FloatType, Dim, Dim &gt; <a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html">vulpes::geometry::MappingBase</a>&lt; FloatType, Dim, <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">SimplexMapping</a>&lt; FloatType, Dim &gt;  &gt;::jacobian </td>
+          <td class="memname">constexpr <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping</a>&lt; FloatType, Dim &gt;::SimplexMapping </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pt</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const Eigen::Matrix&lt; FloatType, Dim, -1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vtxs</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<a id="ad1c6f6f9bd110ac4119af7b8fb3b2ecf" name="ad1c6f6f9bd110ac4119af7b8fb3b2ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c6f6f9bd110ac4119af7b8fb3b2ecf">&#9670;&#160;</a></span>SimplexMapping() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , std::size_t Dim&gt; </div>
+<div class="memtemplate">
+template&lt;typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping</a>&lt; FloatType, Dim &gt;::SimplexMapping </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::MatrixBase&lt; Derived &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vtxs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector&lt; int32_t, Dim+1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>idxs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>compute_inverse</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1d5517787195e2588d9473062d0ec20a" name="a1d5517787195e2588d9473062d0ec20a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d5517787195e2588d9473062d0ec20a">&#9670;&#160;</a></span>jacobianDet()</h2>
 
@@ -323,32 +398,6 @@ template&lt;typename FloatType , std::size_t Dim&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a76a94bae762945f0d8342f1586ba4099" name="a76a94bae762945f0d8342f1586ba4099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76a94bae762945f0d8342f1586ba4099">&#9670;&#160;</a></span>transform_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void <a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html">vulpes::geometry::MappingBase</a>&lt; FloatType, Dim, <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">SimplexMapping</a>&lt; FloatType, Dim &gt;  &gt;::transform_ </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::Map&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt;&#160;</td>
-          <td class="paramname"><em>pt</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -490,7 +539,7 @@ template&lt;typename FloatType , std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">SimplexMapping</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

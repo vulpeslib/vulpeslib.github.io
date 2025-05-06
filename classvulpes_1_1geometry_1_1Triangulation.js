@@ -9,7 +9,7 @@ var classvulpes_1_1geometry_1_1Triangulation =
     [ "SimplexesViewType", "classvulpes_1_1geometry_1_1Triangulation.html#ab3310eadfbb059ad516411ee0d876087", null ],
     [ "SubsimplexesType", "classvulpes_1_1geometry_1_1Triangulation.html#ac6896c65615129560a9edae804903da3", null ],
     [ "SubsimplexesViewType", "classvulpes_1_1geometry_1_1Triangulation.html#a6bafa8c603d911e440337d83a165b241", null ],
-    [ "Triangulation", "classvulpes_1_1geometry_1_1Triangulation.html#a5da65dbaaf68433272a4817d9a2aa063", null ],
+    [ "Triangulation", "classvulpes_1_1geometry_1_1Triangulation.html#a8bfee7fe79de83bca50f0c27618afefb", null ],
     [ "~Triangulation", "classvulpes_1_1geometry_1_1Triangulation.html#abfd10a13749d1f32dfddc8d5ecf5d3c2", null ],
     [ "cell", "classvulpes_1_1geometry_1_1Triangulation.html#a5c65437d3fdb26b1ebdd0f5d32e20a06", null ],
     [ "getNumPoints", "classvulpes_1_1geometry_1_1Triangulation.html#ac7d914caa06affc3854462f42e83eba0", null ],
@@ -26,6 +26,6 @@ var classvulpes_1_1geometry_1_1Triangulation =
     [ "m_static_segmentlist", "classvulpes_1_1geometry_1_1Triangulation.html#a6e5342605b07ffedbb206bea5d0ed55f", null ],
     [ "m_surface_segment_list", "classvulpes_1_1geometry_1_1Triangulation.html#a463169e1d742b3427294749eb3752759", null ],
     [ "m_triangle_list", "classvulpes_1_1geometry_1_1Triangulation.html#a78e45095b7ea730cce494e0547d39f25", null ],
-    [ "s_behavior_init", "classvulpes_1_1geometry_1_1Triangulation.html#a23a6399950d90eb5c4e14682dab75cac", null ],
-    [ "s_buffer_size", "classvulpes_1_1geometry_1_1Triangulation.html#aa036e2a77bcc54a4ab2b998fcbdc4a1f", null ]
+    [ "s_buffer_size", "classvulpes_1_1geometry_1_1Triangulation.html#aa036e2a77bcc54a4ab2b998fcbdc4a1f", null ],
+    [ "s_triangle_default_options", "classvulpes_1_1geometry_1_1Triangulation.html#ae8f021221a27387d999f4b80ac52f632", null ]
 ];

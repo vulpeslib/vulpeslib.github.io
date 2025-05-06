@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -119,25 +116,26 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1SimplexMapp
 
 <p>This is the complete list of members for <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#add13279087b30ac7487c3b9b82b7a4d4">jacobian</a>(const Point&lt; FloatType, Dim &gt; &amp;pt) const</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html">vulpes::geometry::MappingBase&lt; FloatType, Dim, SimplexMapping&lt; FloatType, Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a1d5517787195e2588d9473062d0ec20a">jacobianDet</a>(const Point&lt; FloatType, Dim &gt; &amp;) const</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a69b421d66697dd17aa6af6294477efdb">m_homogeneous</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a527f53a8d7cd48b48af0b4836f514b88">m_homogeneous_inv</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#ae9e44a8eda2131b13a3c10fa18b7fcf1">m_jacobian_det</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a4df6f5aced8a3b313eb9c090f2e5509a">m_translations</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a1d5517787195e2588d9473062d0ec20a">jacobianDet</a>(const Point&lt; FloatType, Dim &gt; &amp;) const</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a69b421d66697dd17aa6af6294477efdb">m_homogeneous</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a527f53a8d7cd48b48af0b4836f514b88">m_homogeneous_inv</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#ae9e44a8eda2131b13a3c10fa18b7fcf1">m_jacobian_det</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a4df6f5aced8a3b313eb9c090f2e5509a">m_translations</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#acdbc2a3e8eaebdec89d48ebb42f5873e">MappingType</a> typedef</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html">vulpes::geometry::MappingBase&lt; FloatType, Dim, SimplexMapping&lt; FloatType, Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#a32aa5c79a66a4297f3f02b7656a520da">self</a>()</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html">vulpes::geometry::MappingBase&lt; FloatType, Dim, SimplexMapping&lt; FloatType, Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#add1aee4c19067d3ab7e67772c1775aa9">self</a>() const</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html">vulpes::geometry::MappingBase&lt; FloatType, Dim, SimplexMapping&lt; FloatType, Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a8f25d7f6ac03963c4e5f6b176c4c60cd">SimplexMapping</a>(const Eigen::Matrix&lt; FloatType, Dim, Dim+1 &gt; &amp;vtxs)</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#acf85bae73d672c58c7b5740f483c6537">SimplexMapping</a>(const Eigen::Matrix&lt; FloatType, Dim, -1 &gt; &amp;vtxs)</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#ad1c6f6f9bd110ac4119af7b8fb3b2ecf">SimplexMapping</a>(const Eigen::MatrixBase&lt; Derived &gt; &amp;vtxs, const Eigen::Vector&lt; int32_t, Dim+1 &gt; &amp;idxs, bool compute_inverse=true)</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a8a25e9f70e9e048da7471f7f44273cf1">transform</a>(const Point&lt; FloatType, Dim &gt; &amp;pt) const</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#a76a94bae762945f0d8342f1586ba4099">transform_</a>(Eigen::Map&lt; Point&lt; FloatType, Dim &gt; &gt; pt) const</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html">vulpes::geometry::MappingBase&lt; FloatType, Dim, SimplexMapping&lt; FloatType, Dim &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a4f638922ade4faec76669a6deb2ecbe7">transformInv</a>(const Point&lt; FloatType, Dim &gt; &amp;pt) const</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a4f638922ade4faec76669a6deb2ecbe7">transformInv</a>(const Point&lt; FloatType, Dim &gt; &amp;pt) const</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

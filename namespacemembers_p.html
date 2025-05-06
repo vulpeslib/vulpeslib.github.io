@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -122,13 +119,16 @@ $(document).ready(function(){initNavTree('namespacemembers_p.html',''); initResi
 <li>Point&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">vulpes::fe</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">vulpes::geometry</a></li>
 <li>Poly&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221a6bdbb579d67508699c1a889cb96f719e">vulpes::fe</a></li>
 <li>polyMesherAdjustFixedPoints()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ad0881f836ef5e935ef2f46031b10857c">vulpes::geometry::internal</a></li>
-<li>polyMesherClipToBoundary()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a8f11426ba25ff2f40139489d77e0833b">vulpes::geometry::internal</a></li>
+<li>polyMesherClipToBoundary()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a3db2ab4dd1e19d7e4cb131778c3764bb">vulpes::geometry::internal</a></li>
 <li>polyMesherCollapseEdges()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ae704555005f472e6b200962395a45194">vulpes::geometry::internal</a></li>
 <li>polyMesherComputeEdgeAngle()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a2d6f59f282ff90f3a0b0f7856e8b4f37">vulpes::geometry::internal</a></li>
 <li>polyMesherReflect()&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a28d98e6e35b60331d6f6aa7f0dd1e0a4">vulpes::geometry::internal</a></li>
 <li>pow()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#af4ab07bc370e28683e9531fc72f98157">vulpes::vmath</a></li>
 <li>pow1()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a0682f20a70be8fa66858922f1b08ec85">vulpes::vmath</a></li>
 <li>precision()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#af34773c0f619a5fce594f333ecc17a23">vulpes::vmath</a></li>
+<li>print()&#160;:&#160;<a class="el" href="namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15">vulpes</a></li>
+<li>projectSolution()&#160;:&#160;<a class="el" href="namespacevulpes_1_1postprocessing.html#a6c3808bba47ef678266618d5c7d941f5">vulpes::postprocessing</a></li>
+<li>projectSolutionSubmesh()&#160;:&#160;<a class="el" href="namespacevulpes_1_1postprocessing.html#abc31fa8655aee2c9d3043afd81671076">vulpes::postprocessing</a></li>
 <li>Pseudo&#160;:&#160;<a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750faaaa0c5a92e7cf9b18d13e8f58936b7a4">vulpes::geometry::polymesher</a></li>
 </ul>
 </div><!-- contents -->
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('namespacemembers_p.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

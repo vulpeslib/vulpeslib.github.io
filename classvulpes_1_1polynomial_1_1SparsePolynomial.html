@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,6 +113,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1polynomial_1_1SparsePol
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -136,13 +134,15 @@ Inheritance diagram for vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType,
 <div class="dynheader">
 Collaboration diagram for vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1polynomial_1_1SparsePolynomial__coll__graph.svg" width="570" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1polynomial_1_1SparsePolynomial__coll__graph.svg" width="472" height="95"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae32700e708c26c16a0887aeaebece114" id="r_ae32700e708c26c16a0887aeaebece114"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae32700e708c26c16a0887aeaebece114">MonomialType</a> = <a class="el" href="classvulpes_1_1monomial_1_1Monomial.html">monomial::Monomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;</td></tr>
 <tr class="separator:ae32700e708c26c16a0887aeaebece114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6a844f69a0fc1ce4bb8d9dcfe3f8b3" id="r_a3e6a844f69a0fc1ce4bb8d9dcfe3f8b3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a3e6a844f69a0fc1ce4bb8d9dcfe3f8b3">ScalarType</a> = CoefType</td></tr>
+<tr class="separator:a3e6a844f69a0fc1ce4bb8d9dcfe3f8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -161,7 +161,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f344f3b2869c2f845a1632ff08aef3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae07b1d1782da2b6adb2cff4d3803d528" id="r_ae07b1d1782da2b6adb2cff4d3803d528"><td class="memItemLeft" align="right" valign="top">CoefType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae07b1d1782da2b6adb2cff4d3803d528">evaluate</a> (const CoefType *point) const</td></tr>
 <tr class="separator:ae07b1d1782da2b6adb2cff4d3803d528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd1911e9d2b23e10607e2137e58391b8" id="r_acd1911e9d2b23e10607e2137e58391b8"><td class="memItemLeft" align="right" valign="top">CoefType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#acd1911e9d2b23e10607e2137e58391b8">integrate</a> (const <a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">datastructure::SimplexDataView</a>&lt; Dim, true, CoefType, std::size_t &gt; &amp;monomial_integrals) const</td></tr>
+<tr class="memitem:a077cb8c50824f8ed47b62608049c30ab" id="r_a077cb8c50824f8ed47b62608049c30ab"><td class="memTemplParams" colspan="2">template&lt;std::size_t IntegralDim&gt; </td></tr>
+<tr class="memitem:a077cb8c50824f8ed47b62608049c30ab"><td class="memTemplItemLeft" align="right" valign="top">CoefType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a077cb8c50824f8ed47b62608049c30ab">integrateAndEvaluate</a> (const <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; IntegralDim, true, CoefType, std::size_t &gt; &amp;monomial_integrals, const CoefType *val_ptr) const</td></tr>
+<tr class="separator:a077cb8c50824f8ed47b62608049c30ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1911e9d2b23e10607e2137e58391b8" id="r_acd1911e9d2b23e10607e2137e58391b8"><td class="memItemLeft" align="right" valign="top">CoefType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#acd1911e9d2b23e10607e2137e58391b8">integrate</a> (const <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; Dim, true, CoefType, std::size_t &gt; &amp;monomial_integrals) const</td></tr>
 <tr class="separator:acd1911e9d2b23e10607e2137e58391b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c37a953603b2d2f6554bf1559f3f75" id="r_ad6c37a953603b2d2f6554bf1559f3f75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ad6c37a953603b2d2f6554bf1559f3f75">derivative</a> (std::size_t component) const</td></tr>
 <tr class="separator:ad6c37a953603b2d2f6554bf1559f3f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +174,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac7980b98edb7bda6c8e6b3d0bdb857df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9212cf0e17c4c76de9ce06010ef83ef2" id="r_a9212cf0e17c4c76de9ce06010ef83ef2"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>, Dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a9212cf0e17c4c76de9ce06010ef83ef2">gradient</a> () const</td></tr>
 <tr class="separator:a9212cf0e17c4c76de9ce06010ef83ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613f1c0e842a79b9cf77a87efb097d91" id="r_a613f1c0e842a79b9cf77a87efb097d91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a613f1c0e842a79b9cf77a87efb097d91">updateMaxExp</a> ()</td></tr>
+<tr class="separator:a613f1c0e842a79b9cf77a87efb097d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cf90c0ef5a86255de67e3e50197c2a" id="r_af6cf90c0ef5a86255de67e3e50197c2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>&lt; Dim *3, IndexType, CoefType, IsScaled &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#af6cf90c0ef5a86255de67e3e50197c2a">applyCartesianMapping</a> () const</td></tr>
+<tr class="separator:af6cf90c0ef5a86255de67e3e50197c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b22d4e4f358e4abad4c67bdba1a9206" id="r_a6b22d4e4f358e4abad4c67bdba1a9206"><td class="memTemplParams" colspan="2">template&lt;std::size_t PreDim, std::size_t PostDim&gt; </td></tr>
+<tr class="memitem:a6b22d4e4f358e4abad4c67bdba1a9206"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>&lt; Dim+PreDim+PostDim, IndexType, CoefType, IsScaled &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6b22d4e4f358e4abad4c67bdba1a9206">liftDimension</a> () const</td></tr>
+<tr class="separator:a6b22d4e4f358e4abad4c67bdba1a9206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6572739f0aa5daf946eaab6813dde08e" id="r_a6572739f0aa5daf946eaab6813dde08e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6572739f0aa5daf946eaab6813dde08e">permuteVariables</a> (const std::array&lt; std::size_t, Dim &gt; &amp;permutation)</td></tr>
+<tr class="separator:a6572739f0aa5daf946eaab6813dde08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f846c4daf0ea4bc45bb8b3937c1f37d" id="r_a7f846c4daf0ea4bc45bb8b3937c1f37d"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a7f846c4daf0ea4bc45bb8b3937c1f37d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>&lt; Dim, IndexType, U, IsScaled &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a7f846c4daf0ea4bc45bb8b3937c1f37d">to</a> () const</td></tr>
 <tr class="memdesc:a7f846c4daf0ea4bc45bb8b3937c1f37d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast the polynomial to a different underlying type.  <br /></td></tr>
@@ -184,12 +196,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab79bf225d3384f709941c90a0a5651a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1dff788a1a8bad54d9fdc52a8259297" id="r_ab1dff788a1a8bad54d9fdc52a8259297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ab1dff788a1a8bad54d9fdc52a8259297">operator*=</a> (const CoefType &amp;scalar)</td></tr>
 <tr class="separator:ab1dff788a1a8bad54d9fdc52a8259297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c472da35039e41facefe0f0c865b28" id="r_a86c472da35039e41facefe0f0c865b28"><td class="memItemLeft" align="right" valign="top">CoefType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#a86c472da35039e41facefe0f0c865b28">integrate</a> (const <a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">datastructure::SimplexDataView</a>&lt; Dim, SimplexData, CoefType, std::size_t &gt; &amp;monomial_integrals) const</td></tr>
+<tr class="memitem:a86c472da35039e41facefe0f0c865b28" id="r_a86c472da35039e41facefe0f0c865b28"><td class="memItemLeft" align="right" valign="top">CoefType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#a86c472da35039e41facefe0f0c865b28">integrate</a> (const <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; Dim, SimplexData, CoefType, std::size_t &gt; &amp;monomial_integrals) const</td></tr>
 <tr class="memdesc:a86c472da35039e41facefe0f0c865b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate the polynomial given the monomials integrals.  <br /></td></tr>
 <tr class="separator:a86c472da35039e41facefe0f0c865b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079d6c8e713d8024ae8f7e5c83b1d195" id="r_a079d6c8e713d8024ae8f7e5c83b1d195"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#a079d6c8e713d8024ae8f7e5c83b1d195">primitive</a> (std::size_t component) const</td></tr>
 <tr class="memdesc:a079d6c8e713d8024ae8f7e5c83b1d195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the primitive of the polynomial.  <br /></td></tr>
 <tr class="separator:a079d6c8e713d8024ae8f7e5c83b1d195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a414add3d964bea4f7aaf53376aaa70cc" id="r_a414add3d964bea4f7aaf53376aaa70cc"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a414add3d964bea4f7aaf53376aaa70cc">dim</a> = Dim</td></tr>
+<tr class="separator:a414add3d964bea4f7aaf53376aaa70cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -204,8 +221,10 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ac7f08c2467b4055a9e50e8f21b05a478" id="r_ac7f08c2467b4055a9e50e8f21b05a478"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">datastructure::SmallVector</a>&lt; <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae32700e708c26c16a0887aeaebece114">MonomialType</a>, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ac7f08c2467b4055a9e50e8f21b05a478">m_monomials</a></td></tr>
-<tr class="separator:ac7f08c2467b4055a9e50e8f21b05a478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18db0e7e62ca450db79225703a0972e" id="r_ab18db0e7e62ca450db79225703a0972e"><td class="memItemLeft" align="right" valign="top">IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ab18db0e7e62ca450db79225703a0972e">m_max_exp</a> = 0</td></tr>
+<tr class="separator:ab18db0e7e62ca450db79225703a0972e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9270080457bf895c826fab56f5eaca0" id="r_ad9270080457bf895c826fab56f5eaca0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae32700e708c26c16a0887aeaebece114">MonomialType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ad9270080457bf895c826fab56f5eaca0">m_monomials</a></td></tr>
+<tr class="separator:ad9270080457bf895c826fab56f5eaca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -233,6 +252,22 @@ template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsSca
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::MonomialType =  <a class="el" href="classvulpes_1_1monomial_1_1Monomial.html">monomial::Monomial</a>&lt;Dim, IndexType, CoefType, IsScaled&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e6a844f69a0fc1ce4bb8d9dcfe3f8b3" name="a3e6a844f69a0fc1ce4bb8d9dcfe3f8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6a844f69a0fc1ce4bb8d9dcfe3f8b3">&#9670;&#160;</a></span>ScalarType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsScaled&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::ScalarType =  CoefType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -388,6 +423,33 @@ template&lt;bool IsAddition&gt; </div>
 </div><div class="memdoc">
 
 <p>Sum or subtract two sparse polynomials. </p>
+
+</div>
+</div>
+<a id="af6cf90c0ef5a86255de67e3e50197c2a" name="af6cf90c0ef5a86255de67e3e50197c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cf90c0ef5a86255de67e3e50197c2a">&#9670;&#160;</a></span>applyCartesianMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsScaled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>&lt; Dim *3, IndexType, CoefType, IsScaled &gt; <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::applyCartesianMapping </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -568,7 +630,7 @@ template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsSca
         <tr>
           <td class="memname">CoefType  <a class="el" href="classvulpes_1_1polynomial_1_1PolynomialBase.html">vulpes::polynomial::PolynomialBase</a>&lt; CoefType , Dim, <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;  &gt;::integrate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">datastructure::SimplexDataView</a>&lt; Dim, SimplexData, CoefType , std::size_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; Dim, SimplexData, CoefType , std::size_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>monomial_integrals</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -598,8 +660,77 @@ template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsSca
         <tr>
           <td class="memname">CoefType <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::integrate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">datastructure::SimplexDataView</a>&lt; Dim, true, CoefType, std::size_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; Dim, true, CoefType, std::size_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>monomial_integrals</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a077cb8c50824f8ed47b62608049c30ab" name="a077cb8c50824f8ed47b62608049c30ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077cb8c50824f8ed47b62608049c30ab">&#9670;&#160;</a></span>integrateAndEvaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsScaled&gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t IntegralDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CoefType <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::integrateAndEvaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView</a>&lt; IntegralDim, true, CoefType, std::size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>monomial_integrals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CoefType *&#160;</td>
+          <td class="paramname"><em>val_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b22d4e4f358e4abad4c67bdba1a9206" name="a6b22d4e4f358e4abad4c67bdba1a9206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b22d4e4f358e4abad4c67bdba1a9206">&#9670;&#160;</a></span>liftDimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsScaled&gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t PreDim, std::size_t PostDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a>&lt; Dim+PreDim+PostDim, IndexType, CoefType, IsScaled &gt; <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::liftDimension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -727,6 +858,34 @@ template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsSca
 
 </div>
 </div>
+<a id="a6572739f0aa5daf946eaab6813dde08e" name="a6572739f0aa5daf946eaab6813dde08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6572739f0aa5daf946eaab6813dde08e">&#9670;&#160;</a></span>permuteVariables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsScaled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::permuteVariables </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; std::size_t, Dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>permutation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a079d6c8e713d8024ae8f7e5c83b1d195" name="a079d6c8e713d8024ae8f7e5c83b1d195"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a079d6c8e713d8024ae8f7e5c83b1d195">&#9670;&#160;</a></span>primitive()</h2>
 
@@ -836,6 +995,33 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
+<a id="a613f1c0e842a79b9cf77a87efb097d91" name="a613f1c0e842a79b9cf77a87efb097d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a613f1c0e842a79b9cf77a87efb097d91">&#9670;&#160;</a></span>updateMaxExp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsScaled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::updateMaxExp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
 <a id="a836b3873667e633ac524a0dd2de366a3" name="a836b3873667e633ac524a0dd2de366a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a836b3873667e633ac524a0dd2de366a3">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
@@ -917,8 +1103,8 @@ template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsSca
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac7f08c2467b4055a9e50e8f21b05a478" name="ac7f08c2467b4055a9e50e8f21b05a478"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7f08c2467b4055a9e50e8f21b05a478">&#9670;&#160;</a></span>m_monomials</h2>
+<a id="a414add3d964bea4f7aaf53376aaa70cc" name="a414add3d964bea4f7aaf53376aaa70cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414add3d964bea4f7aaf53376aaa70cc">&#9670;&#160;</a></span>dim</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -929,7 +1115,55 @@ template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsSca
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">datastructure::SmallVector</a>&lt;<a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae32700e708c26c16a0887aeaebece114">MonomialType</a>, 16&gt; <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::m_monomials</td>
+          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::dim = Dim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab18db0e7e62ca450db79225703a0972e" name="ab18db0e7e62ca450db79225703a0972e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18db0e7e62ca450db79225703a0972e">&#9670;&#160;</a></span>m_max_exp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsScaled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IndexType <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::m_max_exp = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9270080457bf895c826fab56f5eaca0" name="ad9270080457bf895c826fab56f5eaca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9270080457bf895c826fab56f5eaca0">&#9670;&#160;</a></span>m_monomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsScaled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae32700e708c26c16a0887aeaebece114">MonomialType</a>&gt; <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">vulpes::polynomial::SparsePolynomial</a>&lt; Dim, IndexType, CoefType, IsScaled &gt;::m_monomials</td>
         </tr>
       </table>
   </td>
@@ -952,7 +1186,7 @@ template&lt;std::size_t Dim, typename IndexType , typename CoefType , bool IsSca
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1polynomial.html">polynomial</a></li><li class="navelem"><a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html">SparsePolynomial</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

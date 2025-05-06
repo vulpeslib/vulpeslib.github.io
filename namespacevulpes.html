@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -132,11 +129,17 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1geometry" id="r_namespacevulpes_1_1geometry"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevulpes_1_1io" id="r_namespacevulpes_1_1io"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html">io</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevulpes_1_1la" id="r_namespacevulpes_1_1la"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1la.html">la</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1monomial" id="r_namespacevulpes_1_1monomial"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1monomial.html">monomial</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1mpi" id="r_namespacevulpes_1_1mpi"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html">mpi</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1polynomial" id="r_namespacevulpes_1_1polynomial"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1polynomial.html">polynomial</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevulpes_1_1postprocessing" id="r_namespacevulpes_1_1postprocessing"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1postprocessing.html">postprocessing</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1qfree" id="r_namespacevulpes_1_1qfree"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html">qfree</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,21 +154,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad80adb4e62d5f5501a65053065191c21" id="r_ad80adb4e62d5f5501a65053065191c21"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad80adb4e62d5f5501a65053065191c21"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes.html#ad80adb4e62d5f5501a65053065191c21">operator&lt;&lt;</a> (std::ostream &amp;os, const std::vector&lt; T &gt; &amp;v)</td></tr>
-<tr class="separator:ad80adb4e62d5f5501a65053065191c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf266c6a317230f5e51d8d0e4d1bf15" id="r_a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
+<tr class="memitem:a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15">print</a> (std::ostream &amp;os, const Container &amp;container, const std::string &amp;separator=&quot;,&quot;, const std::string &amp;postpend=&quot;\n&quot;, const std::string &amp;prepend=&quot;&quot;)</td></tr>
+<tr class="separator:a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fb0f2a22d56fdb96264dd8218bd321" id="r_a47fb0f2a22d56fdb96264dd8218bd321"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
+<tr class="memitem:a47fb0f2a22d56fdb96264dd8218bd321"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_printable_container&lt; Container &gt;::value, std::ostream &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes.html#a47fb0f2a22d56fdb96264dd8218bd321">operator&lt;&lt;</a> (std::ostream &amp;os, const Container &amp;container)</td></tr>
+<tr class="separator:a47fb0f2a22d56fdb96264dd8218bd321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad80adb4e62d5f5501a65053065191c21" name="ad80adb4e62d5f5501a65053065191c21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad80adb4e62d5f5501a65053065191c21">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+<a id="a47fb0f2a22d56fdb96264dd8218bd321" name="a47fb0f2a22d56fdb96264dd8218bd321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fb0f2a22d56fdb96264dd8218bd321">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename Container &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; vulpes::operator&lt;&lt; </td>
+          <td class="memname">std::enable_if&lt; is_printable_container&lt; Container &gt;::value, std::ostream &amp; &gt;::type vulpes::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>os</em>, </td>
@@ -173,8 +179,56 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
+          <td class="paramtype">const Container &amp;&#160;</td>
+          <td class="paramname"><em>container</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bf266c6a317230f5e51d8d0e4d1bf15" name="a4bf266c6a317230f5e51d8d0e4d1bf15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf266c6a317230f5e51d8d0e4d1bf15">&#9670;&#160;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; vulpes::print </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Container &amp;&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>separator</em> = <code>&quot;,&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>postpend</em> = <code>&quot;\n&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>prepend</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -193,7 +247,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

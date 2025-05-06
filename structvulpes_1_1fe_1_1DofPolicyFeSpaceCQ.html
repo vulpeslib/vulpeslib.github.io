@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -140,29 +137,29 @@ Collaboration diagram for vulpes::fe::DofPolicyFeSpaceCQ&lt; Dim &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a31defae0e2ea78e5fbddcca1e1b548bf" id="r_a31defae0e2ea78e5fbddcca1e1b548bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a31defae0e2ea78e5fbddcca1e1b548bf">DofPolicyFeSpaceCQ</a> (std::size_t order)</td></tr>
 <tr class="separator:a31defae0e2ea78e5fbddcca1e1b548bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ce59f280a4314171625b165b72b049" id="r_af5ce59f280a4314171625b165b72b049"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
-<tr class="memitem:af5ce59f280a4314171625b165b72b049"><td class="memTemplItemLeft" align="right" valign="top">constexpr MeshType::index_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#af5ce59f280a4314171625b165b72b049">dofToCellDof</a> (const MeshType &amp;mesh, MeshType::index_t cell_id, MeshType::index_t owning_enty_id, MeshType::index_t enty_dim, MeshType::index_t enty_multiplicity) const</td></tr>
+<tr class="memitem:af5ce59f280a4314171625b165b72b049" id="r_af5ce59f280a4314171625b165b72b049"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">MeshType</a> &gt; </td></tr>
+<tr class="memitem:af5ce59f280a4314171625b165b72b049"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> MeshType::index_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#af5ce59f280a4314171625b165b72b049">dofToCellDof</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">MeshType</a> &amp;mesh, MeshType::index_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">cell_id</a>, MeshType::index_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">owning_enty_id</a>, MeshType::index_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">enty_dim</a>, MeshType::index_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">enty_multiplicity</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
 <tr class="separator:af5ce59f280a4314171625b165b72b049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0de7f3fec92e33627f3d609785d829b" id="r_aa0de7f3fec92e33627f3d609785d829b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#aa0de7f3fec92e33627f3d609785d829b">buildDofTable</a> ()</td></tr>
+<tr class="memitem:aa0de7f3fec92e33627f3d609785d829b" id="r_aa0de7f3fec92e33627f3d609785d829b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#aa0de7f3fec92e33627f3d609785d829b">buildDofTable</a> ()</td></tr>
 <tr class="separator:aa0de7f3fec92e33627f3d609785d829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6a6368cbae6b8003334850550415006" id="r_ad6a6368cbae6b8003334850550415006"><td class="memItemLeft" align="right" valign="top">static std::array&lt; std::size_t, Dim+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#ad6a6368cbae6b8003334850550415006">buildDofSubdimEntity</a> (std::size_t order)</td></tr>
+<tr class="memitem:ad6a6368cbae6b8003334850550415006" id="r_ad6a6368cbae6b8003334850550415006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> std::array&lt; std::size_t, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#ad6a6368cbae6b8003334850550415006">buildDofSubdimEntity</a> (std::size_t order)</td></tr>
 <tr class="separator:ad6a6368cbae6b8003334850550415006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da7b5c005a1108953e1298eff6e5762" id="r_a5da7b5c005a1108953e1298eff6e5762"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a5da7b5c005a1108953e1298eff6e5762">dofsInteractionDistance</a> ()</td></tr>
+<tr class="memitem:a5da7b5c005a1108953e1298eff6e5762" id="r_a5da7b5c005a1108953e1298eff6e5762"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a5da7b5c005a1108953e1298eff6e5762">dofsInteractionDistance</a> ()</td></tr>
 <tr class="separator:a5da7b5c005a1108953e1298eff6e5762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acccc0d5b88500ee016ba0a0421ba7d85" id="r_acccc0d5b88500ee016ba0a0421ba7d85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; uint16_t, 1&lt;&lt; Dim &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#acccc0d5b88500ee016ba0a0421ba7d85">m_dofs</a> = {}</td></tr>
+<tr class="memitem:acccc0d5b88500ee016ba0a0421ba7d85" id="r_acccc0d5b88500ee016ba0a0421ba7d85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">uint16_t</a>, 1&lt;&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#acccc0d5b88500ee016ba0a0421ba7d85">m_dofs</a> = {}</td></tr>
 <tr class="separator:acccc0d5b88500ee016ba0a0421ba7d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af351c17ac2f2cbd8e2ec3fe9fae05172" id="r_af351c17ac2f2cbd8e2ec3fe9fae05172"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html#af351c17ac2f2cbd8e2ec3fe9fae05172">self</a> () const</td></tr>
+<tr class="memitem:af351c17ac2f2cbd8e2ec3fe9fae05172" id="r_af351c17ac2f2cbd8e2ec3fe9fae05172"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html#af351c17ac2f2cbd8e2ec3fe9fae05172">self</a> () <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
 <tr class="separator:af351c17ac2f2cbd8e2ec3fe9fae05172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd9e284b4c3251ca30b5e0ae60f637d" id="r_a2bd9e284b4c3251ca30b5e0ae60f637d"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html#a2bd9e284b4c3251ca30b5e0ae60f637d">self</a> ()</td></tr>
+<tr class="memitem:a2bd9e284b4c3251ca30b5e0ae60f637d" id="r_a2bd9e284b4c3251ca30b5e0ae60f637d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html#a2bd9e284b4c3251ca30b5e0ae60f637d">self</a> ()</td></tr>
 <tr class="separator:a2bd9e284b4c3251ca30b5e0ae60f637d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -186,7 +183,7 @@ template&lt;std::size_t Dim&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; Dim &gt;::DofPolicyFeSpaceCQ </td>
+          <td class="memname"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;::DofPolicyFeSpaceCQ </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>order</em></td><td>)</td>
@@ -215,7 +212,7 @@ template&lt;std::size_t Dim&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::array&lt; std::size_t, Dim+1 &gt; <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; Dim &gt;::buildDofSubdimEntity </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> std::array&lt; std::size_t, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>+1 &gt; <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;::buildDofSubdimEntity </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>order</em></td><td>)</td>
@@ -243,7 +240,7 @@ template&lt;std::size_t Dim&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; Dim &gt;::buildDofTable </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">void</a> <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;::buildDofTable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -270,7 +267,7 @@ template&lt;std::size_t Dim&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr bool <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; Dim &gt;::dofsInteractionDistance </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;::dofsInteractionDistance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -293,15 +290,15 @@ template&lt;std::size_t Dim&gt; </div>
 <div class="memtemplate">
 template&lt;std::size_t Dim&gt; </div>
 <div class="memtemplate">
-template&lt;typename MeshType &gt; </div>
+template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">MeshType</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr MeshType::index_t <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; Dim &gt;::dofToCellDof </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> MeshType::index_t <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;::dofToCellDof </td>
           <td>(</td>
-          <td class="paramtype">const MeshType &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">MeshType</a> &amp;&#160;</td>
           <td class="paramname"><em>mesh</em>, </td>
         </tr>
         <tr>
@@ -354,7 +351,7 @@ template&lt;typename MeshType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto &amp; <a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase</a>&lt; Dim, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a>&lt; Dim &gt;  &gt;::self </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp; <a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;  &gt;::self </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -379,7 +376,7 @@ template&lt;typename MeshType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const auto &amp; <a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase</a>&lt; Dim, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a>&lt; Dim &gt;  &gt;::self </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp; <a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;  &gt;::self </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -404,7 +401,7 @@ template&lt;typename MeshType &gt; </div>
 template&lt;std::size_t Dim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::array&lt;uint16_t, 1 &lt;&lt; Dim&gt; &gt; <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; Dim &gt;::m_dofs = {}</td>
+          <td class="memname">std::vector&lt;std::array&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">uint16_t</a>, 1 &lt;&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>&gt; &gt; <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">vulpes::fe::DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;::m_dofs = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -421,7 +418,7 @@ template&lt;std::size_t Dim&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t <a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase</a>&lt; Dim, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a>&lt; Dim &gt;  &gt;::m_order</td>
+          <td class="memname">std::size_t <a class="el" href="structvulpes_1_1fe_1_1DofPolicyBase.html">vulpes::fe::DofPolicyBase</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;  &gt;::m_order</td>
         </tr>
       </table>
   </td>
@@ -443,7 +440,7 @@ template&lt;std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

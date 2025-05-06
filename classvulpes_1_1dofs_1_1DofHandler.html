@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,6 +113,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1dofs_1_1DofHandler.html
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -153,20 +151,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a158e97447963099803197b53dc20c5" id="r_a5a158e97447963099803197b53dc20c5"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5a158e97447963099803197b53dc20c5">ndofs</a> () const</td></tr>
 <tr class="memdesc:a5a158e97447963099803197b53dc20c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of dofs.  <br /></td></tr>
 <tr class="separator:a5a158e97447963099803197b53dc20c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72bd366229fa4c3e0090e1f2c6836c25" id="r_a72bd366229fa4c3e0090e1f2c6836c25"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a72bd366229fa4c3e0090e1f2c6836c25">ndofsGlobal</a> () const</td></tr>
+<tr class="memdesc:a72bd366229fa4c3e0090e1f2c6836c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of dofs.  <br /></td></tr>
+<tr class="separator:a72bd366229fa4c3e0090e1f2c6836c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb2d1bc7e17291526602b2112cadb62" id="r_a4bb2d1bc7e17291526602b2112cadb62"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a4bb2d1bc7e17291526602b2112cadb62">dofOffset</a> () const</td></tr>
+<tr class="memdesc:a4bb2d1bc7e17291526602b2112cadb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dofs offset of each proc.  <br /></td></tr>
+<tr class="separator:a4bb2d1bc7e17291526602b2112cadb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ab4aa38cadc5beb3e01415275d03832" id="r_a8ab4aa38cadc5beb3e01415275d03832"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a8ab4aa38cadc5beb3e01415275d03832">getSparsityPattern</a> () const</td></tr>
 <tr class="memdesc:a8ab4aa38cadc5beb3e01415275d03832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CrsMap of the sparsity pattern.  <br /></td></tr>
 <tr class="separator:a8ab4aa38cadc5beb3e01415275d03832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e2c7bf27665599e569304686a4627c" id="r_a84e2c7bf27665599e569304686a4627c"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a84e2c7bf27665599e569304686a4627c">getCellToDof</a> () const</td></tr>
 <tr class="memdesc:a84e2c7bf27665599e569304686a4627c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cell to dof map.  <br /></td></tr>
 <tr class="separator:a84e2c7bf27665599e569304686a4627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7362d0656af4c62edfce7dca02e6f0a8" id="r_a7362d0656af4c62edfce7dca02e6f0a8"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a7362d0656af4c62edfce7dca02e6f0a8">getDofToCell</a> () const</td></tr>
-<tr class="memdesc:a7362d0656af4c62edfce7dca02e6f0a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dof to cell map.  <br /></td></tr>
-<tr class="separator:a7362d0656af4c62edfce7dca02e6f0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97440e5ffd6be885615450aef96661aa" id="r_a97440e5ffd6be885615450aef96661aa"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a97440e5ffd6be885615450aef96661aa">getCellToCellDof</a> () const</td></tr>
 <tr class="separator:a97440e5ffd6be885615450aef96661aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3f313e3249782ba86357b634c2819c" id="r_a8f3f313e3249782ba86357b634c2819c"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a8f3f313e3249782ba86357b634c2819c">getCurrToRefNumbering</a> () const</td></tr>
+<tr class="separator:a8f3f313e3249782ba86357b634c2819c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2368438cdd5d5b6a44e80254dcfcd3bc" id="r_a2368438cdd5d5b6a44e80254dcfcd3bc"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a2368438cdd5d5b6a44e80254dcfcd3bc">getRefToCurrNumbering</a> () const</td></tr>
+<tr class="separator:a2368438cdd5d5b6a44e80254dcfcd3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a2505ac22c9a63d0009f3542a62f5e" id="r_aa1a2505ac22c9a63d0009f3542a62f5e"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#aa1a2505ac22c9a63d0009f3542a62f5e">getGlobToLocNumbering</a> () const</td></tr>
+<tr class="separator:aa1a2505ac22c9a63d0009f3542a62f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed698784609cdef626db54d8b70063f" id="r_a9ed698784609cdef626db54d8b70063f"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a9ed698784609cdef626db54d8b70063f">getLocToGlobNumbering</a> () const</td></tr>
+<tr class="separator:a9ed698784609cdef626db54d8b70063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd402cc5e89c751957b0aae64c4807d" id="r_a6dd402cc5e89c751957b0aae64c4807d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a6dd402cc5e89c751957b0aae64c4807d">hasRenumbering</a> () const</td></tr>
+<tr class="separator:a6dd402cc5e89c751957b0aae64c4807d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f517c13f599e46af9cfdf7b86b3e91" id="r_ab3f517c13f599e46af9cfdf7b86b3e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize</a> ()</td></tr>
+<tr class="separator:ab3f517c13f599e46af9cfdf7b86b3e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab35a631fbdc6f37b18a1e70a325f01b" id="r_aab35a631fbdc6f37b18a1e70a325f01b"><td class="memTemplParams" colspan="2">template&lt;bool DofInteractionDistance&gt; </td></tr>
 <tr class="memitem:aab35a631fbdc6f37b18a1e70a325f01b"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename MeshType::index_t, typename MeshType::index_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#aab35a631fbdc6f37b18a1e70a325f01b">computeSparsityForDof</a> (typename MeshType::index_t dof_id, typename MeshType::index_t *buffer1, typename MeshType::index_t *buffer2)</td></tr>
 <tr class="separator:aab35a631fbdc6f37b18a1e70a325f01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a994f6923a0ef75c0d1043635b05c84a4" id="r_a994f6923a0ef75c0d1043635b05c84a4"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a994f6923a0ef75c0d1043635b05c84a4">parallel</a> = MeshType::parallel()</td></tr>
+<tr class="separator:a994f6923a0ef75c0d1043635b05c84a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -216,6 +234,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a816f2a87ef14ede17ad6351b751690a9" id="r_a816f2a87ef14ede17ad6351b751690a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a816f2a87ef14ede17ad6351b751690a9">m_has_renumbering</a> = false</td></tr>
+<tr class="separator:a816f2a87ef14ede17ad6351b751690a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3bc0bd6302426a8fe90d32354aac997" id="r_aa3bc0bd6302426a8fe90d32354aac997"><td class="memItemLeft" align="right" valign="top">const MeshType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#aa3bc0bd6302426a8fe90d32354aac997">m_mesh</a></td></tr>
 <tr class="separator:aa3bc0bd6302426a8fe90d32354aac997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7947516f389df1b26e6dd4285a838ba" id="r_ad7947516f389df1b26e6dd4285a838ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>, <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ad7947516f389df1b26e6dd4285a838ba">m_dof_to_cell</a></td></tr>
@@ -248,6 +268,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a520e7286786e890ca0855b91c49354ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace09d55ab5561a79f4a115d4735e1d04" id="r_ace09d55ab5561a79f4a115d4735e1d04"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ace09d55ab5561a79f4a115d4735e1d04">m_dof_offset</a> = 0</td></tr>
 <tr class="separator:ace09d55ab5561a79f4a115d4735e1d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4212577a8520e0d1272c279475527094" id="r_a4212577a8520e0d1272c279475527094"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a4212577a8520e0d1272c279475527094">m_all_dof_offset</a></td></tr>
+<tr class="separator:a4212577a8520e0d1272c279475527094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01eb44f115ba61c5c09d1e45064adac6" id="r_a01eb44f115ba61c5c09d1e45064adac6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a01eb44f115ba61c5c09d1e45064adac6">m_owned_cells_dofs</a></td></tr>
 <tr class="separator:a01eb44f115ba61c5c09d1e45064adac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a093d037d7e2326913811348bcad45a68" id="r_a093d037d7e2326913811348bcad45a68"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a093d037d7e2326913811348bcad45a68">m_owning_matrix_rows</a> = 0</td></tr>
@@ -264,7 +286,8 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename MeshType&gt;<br />
 class vulpes::dofs::DofHandler&lt; MeshType &gt;</div><p>Compute and distribute the DoFs and sparsity pattern associated with a mesh and a certain finite element space. </p>
-<p>This class implements the tools to distribute and compute the DoFs and sparsity pattern of a mesh and finite element space both in serial and in parallel. The class distinguishes between the two cases by checking the boolean value of MeshType::parallel(). The <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html" title="Compute and distribute the DoFs and sparsity pattern associated with a mesh and a certain finite elem...">DofHandler</a> also manages the renumbering of the DoFs to minimize the bandwidth of the sparsity pattern (to enhance cache locality and reduce the condition number of the final matrix). If the mesh is parallel the class automatically applies a preliminary renumbering in order to minimize intra-process communications at assebly-time. </p>
+<p>This class implements the tools to distribute and compute the DoFs and sparsity pattern of a mesh and finite element space both in serial and in parallel. The class distinguishes between the two cases by checking the boolean value of MeshType::parallel(). The <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html" title="Compute and distribute the DoFs and sparsity pattern associated with a mesh and a certain finite elem...">DofHandler</a> also manages the renumbering of the DoFs to minimize the bandwidth of the sparsity pattern (to enhance cache locality and reduce the condition number of the final matrix). If the mesh is parallel the class automatically applies a preliminary renumbering in order to minimize intra-process communications at assebly-time.</p>
+<dl class="section note"><dt>Note</dt><dd>: before using the class call the method <code>finalize</code> to apply the <code>cell_to_cell_dof</code> permutation to each of the rows in <code>cell_to_dof</code>. This is not automatically done since the user may want to apply a renumbering to the dofs. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a00fbdf56b883d0c08c4e1160c24a112c" name="a00fbdf56b883d0c08c4e1160c24a112c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00fbdf56b883d0c08c4e1160c24a112c">&#9670;&#160;</a></span>index_t</h2>
@@ -751,6 +774,54 @@ template&lt;std::size_t SubentityDim, std::size_t Dim, typename FloatType , type
 
 </div>
 </div>
+<a id="a4bb2d1bc7e17291526602b2112cadb62" name="a4bb2d1bc7e17291526602b2112cadb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb2d1bc7e17291526602b2112cadb62">&#9670;&#160;</a></span>dofOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::dofOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the dofs offset of each proc. </p>
+
+</div>
+</div>
+<a id="ab3f517c13f599e46af9cfdf7b86b3e91" name="ab3f517c13f599e46af9cfdf7b86b3e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f517c13f599e46af9cfdf7b86b3e91">&#9670;&#160;</a></span>finalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::finalize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a97440e5ffd6be885615450aef96661aa" name="a97440e5ffd6be885615450aef96661aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97440e5ffd6be885615450aef96661aa">&#9670;&#160;</a></span>getCellToCellDof()</h2>
 
@@ -804,12 +875,12 @@ template&lt;typename MeshType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the cell to dof map. </p>
-<p>The cell is in local index, the dof in global index TODO: check is true, and update after renumbering </p>
+<p>The cell is in local index, the dof in global index TODO: check it is updated after renumbering TODO: this should also take into account the m_cell_to_cell_dof </p>
 
 </div>
 </div>
-<a id="a7362d0656af4c62edfce7dca02e6f0a8" name="a7362d0656af4c62edfce7dca02e6f0a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7362d0656af4c62edfce7dca02e6f0a8">&#9670;&#160;</a></span>getDofToCell()</h2>
+<a id="a8f3f313e3249782ba86357b634c2819c" name="a8f3f313e3249782ba86357b634c2819c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3f313e3249782ba86357b634c2819c">&#9670;&#160;</a></span>getCurrToRefNumbering()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -820,7 +891,7 @@ template&lt;typename MeshType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::getDofToCell </td>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::getCurrToRefNumbering </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -833,8 +904,86 @@ template&lt;typename MeshType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the dof to cell map. </p>
-<p>The dof is in local index, the cell in global index TODO: check is true, and update after renumbering </p>
+</div>
+</div>
+<a id="aa1a2505ac22c9a63d0009f3542a62f5e" name="aa1a2505ac22c9a63d0009f3542a62f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a2505ac22c9a63d0009f3542a62f5e">&#9670;&#160;</a></span>getGlobToLocNumbering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::getGlobToLocNumbering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ed698784609cdef626db54d8b70063f" name="a9ed698784609cdef626db54d8b70063f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed698784609cdef626db54d8b70063f">&#9670;&#160;</a></span>getLocToGlobNumbering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::getLocToGlobNumbering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2368438cdd5d5b6a44e80254dcfcd3bc" name="a2368438cdd5d5b6a44e80254dcfcd3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2368438cdd5d5b6a44e80254dcfcd3bc">&#9670;&#160;</a></span>getRefToCurrNumbering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::getRefToCurrNumbering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -864,6 +1013,33 @@ template&lt;typename MeshType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the CrsMap of the sparsity pattern. </p>
+
+</div>
+</div>
+<a id="a6dd402cc5e89c751957b0aae64c4807d" name="a6dd402cc5e89c751957b0aae64c4807d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd402cc5e89c751957b0aae64c4807d">&#9670;&#160;</a></span>hasRenumbering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::hasRenumbering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -912,6 +1088,35 @@ template&lt;typename MeshType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::size_t <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::ndofs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the total number of dofs. </p>
+
+</div>
+</div>
+<a id="a72bd366229fa4c3e0090e1f2c6836c25" name="a72bd366229fa4c3e0090e1f2c6836c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bd366229fa4c3e0090e1f2c6836c25">&#9670;&#160;</a></span>ndofsGlobal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::ndofsGlobal </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -989,6 +1194,31 @@ template&lt;typename MeshType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4212577a8520e0d1272c279475527094" name="a4212577a8520e0d1272c279475527094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4212577a8520e0d1272c279475527094">&#9670;&#160;</a></span>m_all_dof_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::size_t&gt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::m_all_dof_offset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>global dof offset from which this proc can start numbering the owned dofs in the mpi renumbering for each processor </p>
+
+</div>
+</div>
 <a id="ac2b56d07508ff3d2298cd422e9d2ed6a" name="ac2b56d07508ff3d2298cd422e9d2ed6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2b56d07508ff3d2298cd422e9d2ed6a">&#9670;&#160;</a></span>m_all_old_to_new_numbering</h2>
 
@@ -1211,6 +1441,30 @@ template&lt;typename MeshType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>map the dof associated with the geometry to the one in local enumeration </p>
+
+</div>
+</div>
+<a id="a816f2a87ef14ede17ad6351b751690a9" name="a816f2a87ef14ede17ad6351b751690a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816f2a87ef14ede17ad6351b751690a9">&#9670;&#160;</a></span>m_has_renumbering</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::m_has_renumbering = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1539,6 +1793,30 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
+<a id="a994f6923a0ef75c0d1043635b05c84a4" name="a994f6923a0ef75c0d1043635b05c84a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a994f6923a0ef75c0d1043635b05c84a4">&#9670;&#160;</a></span>parallel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::parallel = MeshType::parallel()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/__w/vulpes/vulpes/vulpes/dofs/<a class="el" href="dof__handler_8hpp_source.html">dof_handler.hpp</a></li>
 </ul>
@@ -1549,7 +1827,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1dofs.html">dofs</a></li><li class="navelem"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">DofHandler</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

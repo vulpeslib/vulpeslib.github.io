@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -125,12 +122,12 @@ $(document).ready(function(){initNavTree('structvulpes_1_1fe_1_1internal_1_1Lagr
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9711beb0249e618a19bd3e39ee64453f" id="r_a9711beb0249e618a19bd3e39ee64453f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a9711beb0249e618a19bd3e39ee64453f">real_t</a> = mpq_class</td></tr>
+<tr class="memitem:a9711beb0249e618a19bd3e39ee64453f" id="r_a9711beb0249e618a19bd3e39ee64453f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a9711beb0249e618a19bd3e39ee64453f">real_t</a> = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">mpq_class</a></td></tr>
 <tr class="separator:a9711beb0249e618a19bd3e39ee64453f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b090161ac366c3831e4b66d8fee760e" id="r_a7b090161ac366c3831e4b66d8fee760e"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a9711beb0249e618a19bd3e39ee64453f">real_t</a>, Dim &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a7b090161ac366c3831e4b66d8fee760e">computeNodes</a> (std::size_t n_pts)</td></tr>
+<tr class="memitem:a7b090161ac366c3831e4b66d8fee760e" id="r_a7b090161ac366c3831e4b66d8fee760e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a9711beb0249e618a19bd3e39ee64453f">real_t</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a7b090161ac366c3831e4b66d8fee760e">computeNodes</a> (std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">n_pts</a>)</td></tr>
 <tr class="separator:a7b090161ac366c3831e4b66d8fee760e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -143,7 +140,7 @@ Static Public Member Functions</h2></td></tr>
 template&lt;std::size_t Dim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">vulpes::fe::internal::LagrangianNodesPolicy</a>&lt; Dim &gt;::real_t =  mpq_class</td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a> <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">vulpes::fe::internal::LagrangianNodesPolicy</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;::real_t =  <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">mpq_class</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -163,7 +160,7 @@ template&lt;std::size_t Dim&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a9711beb0249e618a19bd3e39ee64453f">real_t</a>, Dim &gt; &gt; <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">vulpes::fe::internal::LagrangianNodesPolicy</a>&lt; Dim &gt;::computeNodes </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3">Point</a>&lt; <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a9711beb0249e618a19bd3e39ee64453f">real_t</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt; <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">vulpes::fe::internal::LagrangianNodesPolicy</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;::computeNodes </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>n_pts</em></td><td>)</td>
@@ -189,7 +186,7 @@ template&lt;std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">LagrangianNodesPolicy</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

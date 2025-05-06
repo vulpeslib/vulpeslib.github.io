@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -115,17 +112,19 @@ $(document).ready(function(){initNavTree('integrator__base_8hpp.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">integrator_base.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;unsupported/Eigen/CXX11/Tensor&gt;</code><br />
-<code>#include &quot;<a class="el" href="dof__handler_8hpp_source.html">vulpes/dofs/dof_handler.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="cell__manager_8hpp_source.html">vulpes/assemble/cell_manager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="integrator__traits_8hpp_source.html">vulpes/assemble/integrator_traits.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fe__expression_8hpp_source.html">vulpes/fe/fe_expression.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fe__values_8hpp_source.html">vulpes/fe/fe_values.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mesh_8hpp_source.html">vulpes/geometry/mesh.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="profiler_8hpp_source.html">vulpes/utils/profiler.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for integrator_base.hpp:</div>
 <div class="dyncontent">
@@ -134,27 +133,13 @@ Include dependency graph for integrator_base.hpp:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="integrator__base_8hpp__dep__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="integrator__base_8hpp__dep__incl.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="integrator__base_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple.html">vulpes::assemble::internal::is_tuple&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html">vulpes::assemble::internal::is_tuple&lt; std::tuple&lt; Args... &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived.html">vulpes::assemble::internal::is_fe_expression_derived&lt; T, typename &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived__dim.html">vulpes::assemble::internal::is_fe_expression_derived_dim&lt; T, Dim &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived_3_01T_00_01std_1_1void__t_3_4_01_4.html">vulpes::assemble::internal::is_fe_expression_derived&lt; T, std::void_t&lt;&gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers.html">vulpes::assemble::internal::is_tuple_of_fe_expr_pointers&lt; T, typename &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html">vulpes::assemble::internal::is_tuple_of_fe_expr_pointers&lt; std::tuple&lt; Args... &gt;, std::enable_if_t&lt;(std::conjunction_v&lt; std::is_pointer&lt; Args &gt;... &gt;) &amp;&amp;(std::conjunction_v&lt; is_fe_expression_derived&lt; std::remove_pointer_t&lt; Args &gt; &gt;... &gt;)&gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -164,20 +149,6 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1assemble" id="r_namespacevulpes_1_1assemble"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble.html">vulpes::assemble</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacevulpes_1_1assemble_1_1internal" id="r_namespacevulpes_1_1assemble_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html">vulpes::assemble::internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a315316767dbd8426c25cdecc5e2c7abd" id="r_a315316767dbd8426c25cdecc5e2c7abd"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">typename</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a> &gt; </td></tr>
-<tr class="memitem:a315316767dbd8426c25cdecc5e2c7abd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">constexpr</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a315316767dbd8426c25cdecc5e2c7abd">vulpes::assemble::internal::is_tuple_v</a> = <a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple.html">is_tuple</a>&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a>&gt;::value</td></tr>
-<tr class="separator:a315316767dbd8426c25cdecc5e2c7abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2749b64a77065ed4830daacd6ee0aed" id="r_af2749b64a77065ed4830daacd6ee0aed"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">typename</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a> &gt; </td></tr>
-<tr class="memitem:af2749b64a77065ed4830daacd6ee0aed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">constexpr</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#af2749b64a77065ed4830daacd6ee0aed">vulpes::assemble::internal::is_fe_expression_derived_v</a></td></tr>
-<tr class="separator:af2749b64a77065ed4830daacd6ee0aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4aeab8908f7eac1e38a5f5963aed5e" id="r_a6b4aeab8908f7eac1e38a5f5963aed5e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6b4aeab8908f7eac1e38a5f5963aed5e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">vulpes::assemble::internal::is_tuple_of_fe_expr_pointers_v</a></td></tr>
-<tr class="separator:a6b4aeab8908f7eac1e38a5f5963aed5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -186,7 +157,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_fbdf0309f37d26479fea532d5cc8eb08.html">assemble</a></li><li class="navelem"><a class="el" href="integrator__base_8hpp.html">integrator_base.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

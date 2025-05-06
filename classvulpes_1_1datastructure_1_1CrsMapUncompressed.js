@@ -5,6 +5,7 @@ var classvulpes_1_1datastructure_1_1CrsMapUncompressed =
     [ "begin", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a906953dd89170918153dc4cd8d1b5ad6", null ],
     [ "begin", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aac9212b3d1817e936b46351cb0fe1479", null ],
     [ "compress", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a5da9052f50cc20d6985c4b91c409e952", null ],
+    [ "emplace_back", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a2270522ab7370180ca5f064ddc5f3890", null ],
     [ "end", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aecf39c895ffefa82f524b7464d042538", null ],
     [ "end", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#ad526c600b1bc1583e9e228fe725dfc3f", null ],
     [ "getRow", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#af3956070366f0b87cc007d496ae405a2", null ],

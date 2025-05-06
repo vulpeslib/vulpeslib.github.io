@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,8 +113,9 @@ $(document).ready(function(){initNavTree('functions_func_b.html',''); initResiza
 <div class="textblock">Here is a list of all functions with links to the classes they belong to:</div>
 
 <h3><a id="index_b" name="index_b"></a>- b -</h3><ul>
-<li>bbox()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ae868e4c0d0757ab8441ec9015dbd1454">vulpes::geometry::Cell2D&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#aebd06bc93ddf9ad7f88414d17a465297">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1DifferenceDistance.html#a8d643a1034aeecb5005e0b576e23b8ab">vulpes::geometry::DifferenceDistance&lt; FloatType, Dim, D1, D2 &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1dist2d_1_1CircleDistance.html#ae24e51546dba907bb873b09077f637a1">vulpes::geometry::dist2d::CircleDistance&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html#a38e39320b92021b831343111ab774315">vulpes::geometry::dist2d::RectangleDistance&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html#a0b509989f96c19063c43d761ce3e8510">vulpes::geometry::dist3d::HexahedronDistance&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance.html#a76b2a75d72c6d83c47a76afc72e8dc46">vulpes::geometry::dist3d::SphereDistance&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html#a3317d96da4b74b3fd2c7342079f2922a">vulpes::geometry::DistanceExpression&lt; FloatType, Dim, Distance &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1IntersectDistance.html#a5557fc6ec4359456df4b8b75616adc5d">vulpes::geometry::IntersectDistance&lt; FloatType, Dim, D1, D2 &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1UnionDistance.html#afd92dabd0d7cdc7fb15dc298bb19f9cb">vulpes::geometry::UnionDistance&lt; FloatType, Dim, D1, D2 &gt;</a></li>
-<li>begin()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a414737244773f4660f914762a5cc019d">vulpes::datastructure::CrsMap&lt; DataType, IndexType, RowSize &gt;::RowView&lt; Mutable &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aac9212b3d1817e936b46351cb0fe1479">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html#a8d60a5b3cb88d46924d68d990ff342ac">vulpes::datastructure::SmallVector&lt; T, N &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html#abb4a933254f00c4dc7dd52b5bcf36ee0">vulpes::datastructure::TetraTensor&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html#a1cc7c8aa967231429946687528c1c1b9">vulpes::datastructure::TriMatrix&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a></li>
+<li>barycenter()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ae072c15eb8dbe2d2881474f3f483a7f8">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#aeb4ceb2076f503e3c45c440c2d11e27c">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
+<li>bbox()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#aedeb0293c7f727c6d573e010a2ddd683">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#aebd06bc93ddf9ad7f88414d17a465297">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1DifferenceDistance.html#a8d643a1034aeecb5005e0b576e23b8ab">vulpes::geometry::DifferenceDistance&lt; FloatType, Dim, D1, D2 &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1dist2d_1_1CircleDistance.html#ae24e51546dba907bb873b09077f637a1">vulpes::geometry::dist2d::CircleDistance&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html#a38e39320b92021b831343111ab774315">vulpes::geometry::dist2d::RectangleDistance&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html#a0b509989f96c19063c43d761ce3e8510">vulpes::geometry::dist3d::HexahedronDistance&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance.html#a76b2a75d72c6d83c47a76afc72e8dc46">vulpes::geometry::dist3d::SphereDistance&lt; FloatType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html#a3317d96da4b74b3fd2c7342079f2922a">vulpes::geometry::DistanceExpression&lt; FloatType, Dim, Distance &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1IntersectDistance.html#a5557fc6ec4359456df4b8b75616adc5d">vulpes::geometry::IntersectDistance&lt; FloatType, Dim, D1, D2 &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1UnionDistance.html#afd92dabd0d7cdc7fb15dc298bb19f9cb">vulpes::geometry::UnionDistance&lt; FloatType, Dim, D1, D2 &gt;</a></li>
+<li>begin()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a414737244773f4660f914762a5cc019d">vulpes::datastructure::CrsMap&lt; DataType, IndexType, RowSize &gt;::RowView&lt; Mutable &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aac9212b3d1817e936b46351cb0fe1479">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html#a792f7133d03d3153df9e3446cd883ccd">vulpes::datastructure::SmallVector&lt; T, N &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html#abb4a933254f00c4dc7dd52b5bcf36ee0">vulpes::datastructure::TetraTensor&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html#a1cc7c8aa967231429946687528c1c1b9">vulpes::datastructure::TriMatrix&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a></li>
 <li>build()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1KDTree.html#a285a9ca8f107e9dd3c7382d7bbad20ed">vulpes::datastructure::KDTree&lt; Dim &gt;</a></li>
 <li>buildCellToCellDof()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a1633a1690b5075a7b5fd72131ad61daa">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>buildCellToFacet()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a85cfc8c315d92a96d07b46888152f7fe">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
@@ -137,6 +135,9 @@ $(document).ready(function(){initNavTree('functions_func_b.html',''); initResiza
 <li>buildLocalRenumbering()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ae80c0534ae01445a588ee187caeb8eba">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
 <li>buildMesh()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html#a65c317b3b5c303b0ba640694b3e01c02">vulpes::geometry::Mesh2D&lt; FloatType, IndexType &gt;</a></li>
 <li>buildRun()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1KDTree.html#a45329daf3c2eb341f123cbdf000e80ce">vulpes::datastructure::KDTree&lt; Dim &gt;</a></li>
+<li>buildUniqueEvaTable()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ada14157078d24c0513d06d4298b414fb">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>buildVtkMesh2D()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#a632fefd91a7203a870b5ec9f06bd2199">vulpes::geometry::MeshExporter&lt; MeshDerived &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#ae0355c3cd413eb4457bf4c87db19c02f">vulpes::geometry::MeshExporterSubmesh&lt; MeshDerived &gt;</a></li>
+<li>buildVtkMesh3D()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#aa3fd3a4c3bd010acae6884ff1a4d9d82">vulpes::geometry::MeshExporter&lt; MeshDerived &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#a2d16a3d3a30b66921627fe47e0bacd73">vulpes::geometry::MeshExporterSubmesh&lt; MeshDerived &gt;</a></li>
 <li>buildVtxToCell()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#afe4ce62803d2629aa3e8bb1e6cde5f1a">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
 <li>buildWeakDual()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a5eea6589e29b1f12e3181507b53adc91">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
 </ul>
@@ -146,7 +147,7 @@ $(document).ready(function(){initNavTree('functions_func_b.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

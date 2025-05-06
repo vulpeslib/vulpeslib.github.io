@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,6 +115,7 @@ $(document).ready(function(){initNavTree('functions_vars_e.html',''); initResiza
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>end_idx&#160;:&#160;<a class="el" href="structscipy_1_1ckdtreenode.html#acf984fe377a04cfded9cc2f1e1cfb1b9">scipy::ckdtreenode</a></li>
 <li>epsfac&#160;:&#160;<a class="el" href="structscipy_1_1RectRectDistanceTracker.html#a3fe355c96cc4848c0d12c1ec776a258b">scipy::RectRectDistanceTracker&lt; MinMaxDist, Dim &gt;</a></li>
+<li>evalut_id&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CompressedGatheredMonomial.html#a0c9b9919e776ed2d23386375a94b0b99">vulpes::assemble::CompressedGatheredMonomial</a>, <a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html#a7ba67ed426dff81c90f8997faf356712">vulpes::assemble::GatheredMonomial&lt; Dim &gt;</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -125,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_vars_e.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

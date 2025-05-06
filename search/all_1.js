@@ -1,25 +1,4 @@
 var searchData=
 [
-  ['abs_0',['abs',['../namespacevulpes_1_1vmath.html#a47bd8773af7dcaf40f8fc6823110f0f7',1,'vulpes::vmath']]],
-  ['add_1',['add',['../classvulpes_1_1polynomial_1_1SparsePolynomial.html#a64ca52c8602c14baa2fc57e081260323',1,'vulpes::polynomial::SparsePolynomial']]],
-  ['add_5f_2',['add_',['../classvulpes_1_1polynomial_1_1Polynomial2D.html#a3c6875b6650a2ae25906b9e7342f3cf2',1,'vulpes::polynomial::Polynomial2D::add_()'],['../classvulpes_1_1polynomial_1_1Polynomial3D.html#a10605254a132be446b60358e4c0e0211',1,'vulpes::polynomial::Polynomial3D::add_()']]],
-  ['add_5fordered_5fpair_3',['add_ordered_pair',['../namespacescipy.html#a14340ac0b7fe8997acff08050f3e89c0',1,'scipy']]],
-  ['additional_20recommendations_4',['Additional Recommendations',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md8',1,'']]],
-  ['additive_5frecurrence_2ehpp_5',['additive_recurrence.hpp',['../additive__recurrence_8hpp.html',1,'']]],
-  ['additiverecurrence_6',['additiverecurrence',['../namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750faddce14bb30c5b66a7d44ba653428b466',1,'vulpes::geometry::polymesher::AdditiveRecurrence'],['../namespacevulpes_1_1random.html#abc9e3fe9f35e3d27c5a741281e31a848',1,'vulpes::random::additiveRecurrence()']]],
-  ['alloc_5fsize_7',['alloc_size',['../structscipy_1_1nodeinfo__pool.html#af1e8f3d4e00d53189c3ae6c1b7c6da93',1,'scipy::nodeinfo_pool']]],
-  ['allocate_8',['allocate',['../structscipy_1_1nodeinfo__pool.html#a0a6119b8e16ce6e0242eba39eabba90e',1,'scipy::nodeinfo_pool']]],
-  ['analysis_9',['Static analysis',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md22',1,'']]],
-  ['and_20merge_20policy_10',['Commit and Merge Policy',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html',1,'']]],
-  ['anonymous_11',['anonymous',['../namespaceanonymous.html',1,'']]],
-  ['applyrenumbering_12',['applyRenumbering',['../classvulpes_1_1dofs_1_1DofHandler.html#a6ab8b920c5f72735cb158dc7e0741c8f',1,'vulpes::dofs::DofHandler']]],
-  ['area_13',['area',['../namespacevulpes_1_1vmath.html#a0d64d1a041deda5a61934ab375e7c5ea',1,'vulpes::vmath']]],
-  ['area_5frelax_14',['area_relax',['../structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#ab934a430a7a87b3be56795f0d11fa0f2',1,'vulpes::geometry::polymesher::PolyMesherParams']]],
-  ['areaintegral2d_15',['AreaIntegral2D',['../namespacevulpes_1_1qfree.html#a90d000a0daf511e876e95deb8dd181b1',1,'vulpes::qfree']]],
-  ['arena_16',['arena',['../structscipy_1_1nodeinfo__pool.html#a38fe2e288b1ea5fdda86094afba3645f',1,'scipy::nodeinfo_pool']]],
-  ['arena_5fptr_17',['arena_ptr',['../structscipy_1_1nodeinfo__pool.html#ae815f971497ed6f411f84f5dfe578f76',1,'scipy::nodeinfo_pool']]],
-  ['arena_5fsize_18',['arena_size',['../structscipy_1_1nodeinfo__pool.html#aefa8ccd781a8dcc358bef2c029481d4d',1,'scipy::nodeinfo_pool']]],
-  ['ascii_19',['Ascii',['../namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba0b113699bc543798d4bd94c7ba44fe01',1,'vulpes::geometry']]],
-  ['assign_20',['assign',['../classvulpes_1_1datastructure_1_1SmallVector.html#a30714f026a365bacfa46e444cbe6c486',1,'vulpes::datastructure::SmallVector']]],
-  ['auto_20tt_20keyword_21',['The &lt;tt&gt;auto&lt;/tt&gt; keyword',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md37',1,'']]]
+  ['2_20checking_20assembly_20code_20and_20using_20assembly_20comments_0',['2. Checking Assembly Code and Using Assembly Comments',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md31',1,'']]]
 ];

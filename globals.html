@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -120,12 +117,15 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 <li>CKDTREE_LIKELY&#160;:&#160;<a class="el" href="ckdtree__decl_8hpp.html#a8f9b6b94636def54bef0bc1e0b5de4fa">ckdtree_decl.hpp</a></li>
 <li>CKDTREE_PREFETCH&#160;:&#160;<a class="el" href="ckdtree__decl_8hpp.html#a5803b14b7f16c411f8561785696748e0">ckdtree_decl.hpp</a></li>
 <li>CKDTREE_UNLIKELY&#160;:&#160;<a class="el" href="ckdtree__decl_8hpp.html#ad18618dacbe201a1d5d3163165666de9">ckdtree_decl.hpp</a></li>
+<li>FE_EXPRESSION_BINARY_IMPL&#160;:&#160;<a class="el" href="fe__expr__op_8hpp.html#a9836f33bbfaacdb824fa05e48462c956">fe_expr_op.hpp</a></li>
 <li>HANDLE_KNN&#160;:&#160;<a class="el" href="ckdtree__decl_8hpp.html#a83be61ee6f2f6f390fc50f73f80953cf">ckdtree_decl.hpp</a></li>
 <li>HANDLE_PAIRS&#160;:&#160;<a class="el" href="ckdtree__decl_8hpp.html#a817ae347cc0785b5cf9767a707588961">ckdtree_decl.hpp</a></li>
 <li>HANDLE_QBP&#160;:&#160;<a class="el" href="ckdtree__decl_8hpp.html#a8d6dab939258402b38ddcdf038801124">ckdtree_decl.hpp</a></li>
 <li>HANDLE_TREE&#160;:&#160;<a class="el" href="ckdtree__decl_8hpp.html#ae3a6264aa558329c307aa9cad15837c7">ckdtree_decl.hpp</a></li>
+<li>PetscCallAbortWorld&#160;:&#160;<a class="el" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">petsc_utils.hpp</a></li>
 <li>PROFILE&#160;:&#160;<a class="el" href="profiler_8hpp.html#a44a6ff9abeb62481d0ea902a7769bfc8">profiler.hpp</a></li>
 <li>tree_buffer_root&#160;:&#160;<a class="el" href="ckdtree__decl_8hpp.html#a7409ca6d07f78b8ad37e466f708f036f">ckdtree_decl.hpp</a></li>
+<li>VULPES_ALWAYS_INLINE&#160;:&#160;<a class="el" href="macros_8hpp.html#a64dde711449fa720b63e56ff84f35ffc">macros.hpp</a></li>
 <li>VULPES_FE_FE_SPACES_HPP_&#160;:&#160;<a class="el" href="fe__lagrange__simplex_8cpp.html#a4034e67ca25a7d611b6d2f784341fa63">fe_lagrange_simplex.cpp</a></li>
 <li>VULPES_UTILS_VVUTILS_HPP_&#160;:&#160;<a class="el" href="checks_8cpp.html#a7bc890e0e2944fc2300af15cf0b22360">checks.cpp</a></li>
 </ul>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

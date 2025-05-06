@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tensor_0',['Tensor',['../namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221ad226ebfe23a8913bfb43ac4614b914e7',1,'vulpes::fe']]],
-  ['tensorlegendre_1',['TensorLegendre',['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa2634746a42faa622f29cd9928374afa0',1,'vulpes::qrule']]],
-  ['tensorlobatto_2',['TensorLobatto',['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa21e423c8c0f659fb602af23ce7163b3d',1,'vulpes::qrule']]]
+  ['fcfjacobi_0',['FCFJacobi',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69a489e1c7173d3b71b371d2613dce857c2',1,'vulpes::la::DataBoomerAMG']]],
+  ['flags_1',['flags',['../structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html#a6294768e50f52162da96eae2f28f2926aa5479134bd8e045553210b8624343082',1,'Eigen::internal::traits&lt; EigenVulpes::SymMat&lt; CrossId, ArgType &gt; &gt;::Flags'],['../structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html#a64deef8a60a3fe8ab8a01658998cc79fa4e92f132ca2dc0bf3d0b51eebadac8b5',1,'Eigen::internal::evaluator&lt; EigenVulpes::SymMat&lt; CrossId, ArgType &gt; &gt;::Flags'],['../structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html#a942adf5612887c3039412151f27c48eca6cf3f0095292c3b9bc390aa345832365',1,'Eigen::internal::traits&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;::Flags'],['../structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html#a4d8c544627b111b3035077d829fa2e55a4d89a499fe2218814f6373a3d3512434',1,'Eigen::internal::evaluator&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;::Flags']]]
 ];

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -141,6 +138,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a867ae4a198b98f51ab763cb719eb79f8" id="r_a867ae4a198b98f51ab763cb719eb79f8"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </td></tr>
 <tr class="memitem:a867ae4a198b98f51ab763cb719eb79f8"><td class="memTemplItemLeft" align="right" valign="top">std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a867ae4a198b98f51ab763cb719eb79f8">mesh</a> (const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;seed_pts, const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;distanceFunction, const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;fixed_pts={}, const <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">PolyMesherParams</a>&lt; FloatType &gt; &amp;params={})</td></tr>
 <tr class="separator:a867ae4a198b98f51ab763cb719eb79f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a520fce4ceb37ca9c898753ec9796a" id="r_a46a520fce4ceb37ca9c898753ec9796a"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a46a520fce4ceb37ca9c898753ec9796a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a46a520fce4ceb37ca9c898753ec9796a">buildHexagonTessellation</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &amp;corner_a, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &amp;corner_b, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; IndexType, 2 &gt; &amp;n_divisions)</td></tr>
+<tr class="separator:a46a520fce4ceb37ca9c898753ec9796a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f50f2fbc529997751d960c7cd6aca61" id="r_a5f50f2fbc529997751d960c7cd6aca61"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a5f50f2fbc529997751d960c7cd6aca61"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a5f50f2fbc529997751d960c7cd6aca61">buildOctahedronTessellation</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 3 &gt; &amp;corner_a, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 3 &gt; &amp;corner_b, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; IndexType, 3 &gt; &amp;n_divisions)</td></tr>
+<tr class="separator:a5f50f2fbc529997751d960c7cd6aca61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a02bbd2267895cd6ab3663f084b28750f" name="a02bbd2267895cd6ab3663f084b28750f"></a>
@@ -162,6 +165,78 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a46a520fce4ceb37ca9c898753ec9796a" name="a46a520fce4ceb37ca9c898753ec9796a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a520fce4ceb37ca9c898753ec9796a">&#9670;&#160;</a></span>buildHexagonTessellation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto vulpes::geometry::polymesher::buildHexagonTessellation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>corner_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>corner_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; IndexType, 2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>n_divisions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f50f2fbc529997751d960c7cd6aca61" name="a5f50f2fbc529997751d960c7cd6aca61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f50f2fbc529997751d960c7cd6aca61">&#9670;&#160;</a></span>buildOctahedronTessellation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto vulpes::geometry::polymesher::buildOctahedronTessellation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>corner_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>corner_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; IndexType, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>n_divisions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a397e2504394d19c9d762515a7ec612ec" name="a397e2504394d19c9d762515a7ec612ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a397e2504394d19c9d762515a7ec612ec">&#9670;&#160;</a></span>mesh() <span class="overload">[1/2]</span></h2>
 
@@ -259,7 +334,7 @@ template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html">polymesher</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

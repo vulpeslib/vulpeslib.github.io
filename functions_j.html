@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -117,8 +114,8 @@ $(document).ready(function(){initNavTree('functions_j.html',''); initResizable()
 
 <h3><a id="index_j" name="index_j"></a>- j -</h3><ul>
 <li>j&#160;:&#160;<a class="el" href="structscipy_1_1coo__entry.html#aac757dad0e5b59dfbbeb6acea2d9a3cc">scipy::coo_entry</a>, <a class="el" href="structscipy_1_1ordered__pair.html#a4fd61b25b94d16b864bbe43b5605daee">scipy::ordered_pair</a></li>
-<li>jacobian()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#add13279087b30ac7487c3b9b82b7a4d4">vulpes::geometry::MappingBase&lt; FloatType, Dim, Mapping &gt;</a></li>
-<li>jacobianDet()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#aaf573a1bf83f1ef4e82c5b5d0468a90a">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#aa2d590d85912369cbb4996fe4f766101">vulpes::geometry::MappingBase&lt; FloatType, Dim, Mapping &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a1d5517787195e2588d9473062d0ec20a">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></li>
+<li>Jacobi&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a24a797c8ab532a6c3ebd7f55f810d85f">vulpes::la::LinearSolver</a></li>
+<li>jacobianDet()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#aaf573a1bf83f1ef4e82c5b5d0468a90a">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a1d5517787195e2588d9473062d0ec20a">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></li>
 <li>jacobianInv()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#a9bed09dac87406c0df0b7128565bc081">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a></li>
 </ul>
 </div><!-- contents -->
@@ -127,7 +124,7 @@ $(document).ready(function(){initNavTree('functions_j.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

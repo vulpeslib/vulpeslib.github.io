@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,7 +115,6 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1Triangulati
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classvulpes_1_1geometry_1_1Triangulation-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">vulpes::geometry::Triangulation Class Reference</div></div>
 </div><!--header-->
@@ -159,9 +155,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5da65dbaaf68433272a4817d9a2aa063" id="r_a5da65dbaaf68433272a4817d9a2aa063"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a5da65dbaaf68433272a4817d9a2aa063">Triangulation</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">geometry::Cell2D</a>&lt; <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a39553688b2f1637c02aaaf7cf9b09d33">float_t</a> &gt; &amp;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a5c65437d3fdb26b1ebdd0f5d32e20a06">cell</a>)</td></tr>
-<tr class="memdesc:a5da65dbaaf68433272a4817d9a2aa063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html" title="Performs triangulation of a 2D cell using the Triangle library.">Triangulation</a> object for a given 2D cell.  <br /></td></tr>
-<tr class="separator:a5da65dbaaf68433272a4817d9a2aa063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bfee7fe79de83bca50f0c27618afefb" id="r_a8bfee7fe79de83bca50f0c27618afefb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a8bfee7fe79de83bca50f0c27618afefb">Triangulation</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">geometry::Cell2D</a>&lt; <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a39553688b2f1637c02aaaf7cf9b09d33">float_t</a> &gt; &amp;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a5c65437d3fdb26b1ebdd0f5d32e20a06">cell</a>, triangle::behavior options=<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ae8f021221a27387d999f4b80ac52f632">s_triangle_default_options</a>)</td></tr>
+<tr class="memdesc:a8bfee7fe79de83bca50f0c27618afefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html" title="Performs triangulation of a 2D cell using the Triangle library.">Triangulation</a> object for a given 2D cell.  <br /></td></tr>
+<tr class="separator:a8bfee7fe79de83bca50f0c27618afefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfd10a13749d1f32dfddc8d5ecf5d3c2" id="r_abfd10a13749d1f32dfddc8d5ecf5d3c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#abfd10a13749d1f32dfddc8d5ecf5d3c2">~Triangulation</a> ()</td></tr>
 <tr class="memdesc:abfd10a13749d1f32dfddc8d5ecf5d3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html" title="Performs triangulation of a 2D cell using the Triangle library.">Triangulation</a> class.  <br /></td></tr>
 <tr class="separator:abfd10a13749d1f32dfddc8d5ecf5d3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +184,8 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a6167f361213d443f2e1488e7de4383fb" id="r_a6167f361213d443f2e1488e7de4383fb"><td class="memItemLeft" align="right" valign="top">static constexpr int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a6167f361213d443f2e1488e7de4383fb">dim</a> = 2</td></tr>
 <tr class="separator:a6167f361213d443f2e1488e7de4383fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f021221a27387d999f4b80ac52f632" id="r_ae8f021221a27387d999f4b80ac52f632"><td class="memItemLeft" align="right" valign="top">static const triangle::behavior&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ae8f021221a27387d999f4b80ac52f632">s_triangle_default_options</a></td></tr>
+<tr class="separator:ae8f021221a27387d999f4b80ac52f632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa036e2a77bcc54a4ab2b998fcbdc4a1f" id="r_aa036e2a77bcc54a4ab2b998fcbdc4a1f"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a2351385c7dff4ba568c956701a00d375">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#aa036e2a77bcc54a4ab2b998fcbdc4a1f">s_buffer_size</a> = 256</td></tr>
 <tr class="memdesc:aa036e2a77bcc54a4ab2b998fcbdc4a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static constant defining the size of the static buffer for avoiding dynamic allocation of segment lists. The enumeration is always the same since the cell already provides the vertexes in the correct order.  <br /></td></tr>
 <tr class="separator:aa036e2a77bcc54a4ab2b998fcbdc4a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,12 +216,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a463169e1d742b3427294749eb3752759" id="r_a463169e1d742b3427294749eb3752759"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a6bafa8c603d911e440337d83a165b241">SubsimplexesViewType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a463169e1d742b3427294749eb3752759">m_surface_segment_list</a></td></tr>
 <tr class="memdesc:a463169e1d742b3427294749eb3752759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique pointer to an Eigen::Map representing the list of edges in the boundary of the triangulation.  <br /></td></tr>
 <tr class="separator:a463169e1d742b3427294749eb3752759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a23a6399950d90eb5c4e14682dab75cac" id="r_a23a6399950d90eb5c4e14682dab75cac"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a23a6399950d90eb5c4e14682dab75cac">s_behavior_init</a> = false</td></tr>
-<tr class="memdesc:a23a6399950d90eb5c4e14682dab75cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static flag to ensure the behavior structure initialization for the Triangle library. That is the stucture that sets the options of the library.  <br /></td></tr>
-<tr class="separator:a23a6399950d90eb5c4e14682dab75cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Performs triangulation of a 2D cell using the Triangle library. </p>
@@ -360,8 +352,8 @@ Static Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5da65dbaaf68433272a4817d9a2aa063" name="a5da65dbaaf68433272a4817d9a2aa063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5da65dbaaf68433272a4817d9a2aa063">&#9670;&#160;</a></span>Triangulation()</h2>
+<a id="a8bfee7fe79de83bca50f0c27618afefb" name="a8bfee7fe79de83bca50f0c27618afefb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bfee7fe79de83bca50f0c27618afefb">&#9670;&#160;</a></span>Triangulation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,8 +365,18 @@ Static Protected Attributes</h2></td></tr>
           <td class="memname">vulpes::geometry::Triangulation::Triangulation </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">geometry::Cell2D</a>&lt; <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a39553688b2f1637c02aaaf7cf9b09d33">float_t</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cell</em></td><td>)</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">triangle::behavior&#160;</td>
+          <td class="paramname"><em>options</em> = <code><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ae8f021221a27387d999f4b80ac52f632">s_triangle_default_options</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -388,6 +390,7 @@ Static Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cell</td><td>A 2D cell to be triangulated, represented by <code><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">geometry::Cell2D</a></code>. </td></tr>
+    <tr><td class="paramname">options</td><td>Triangle library options </td></tr>
   </table>
   </dd>
 </dl>
@@ -522,7 +525,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the list of points in the triangulation. </p>
-<p>The points are represented as a 2xN Eigen matrix where each column is a point (x, y).</p>
+<p>The points are represented as a 2xN <a class="el" href="namespaceEigen.html">Eigen</a> matrix where each column is a point (x, y).</p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to an Eigen::Map representing the point list. </dd></dl>
 
 </div>
@@ -578,7 +581,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the list of triangles in the triangulation. </p>
-<p>The triangles are represented as a 3xM Eigen matrix where each column contains the indices of the three vertices of a triangle.</p>
+<p>The triangles are represented as a 3xM <a class="el" href="namespaceEigen.html">Eigen</a> matrix where each column contains the indices of the three vertices of a triangle.</p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to an Eigen::Map representing the triangle list. </dd></dl>
 
 </div>
@@ -820,30 +823,6 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a23a6399950d90eb5c4e14682dab75cac" name="a23a6399950d90eb5c4e14682dab75cac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23a6399950d90eb5c4e14682dab75cac">&#9670;&#160;</a></span>s_behavior_init</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool vulpes::geometry::Triangulation::s_behavior_init = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Static flag to ensure the behavior structure initialization for the Triangle library. That is the stucture that sets the options of the library. </p>
-
-</div>
-</div>
 <a id="aa036e2a77bcc54a4ab2b998fcbdc4a1f" name="aa036e2a77bcc54a4ab2b998fcbdc4a1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa036e2a77bcc54a4ab2b998fcbdc4a1f">&#9670;&#160;</a></span>s_buffer_size</h2>
 
@@ -868,6 +847,35 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae8f021221a27387d999f4b80ac52f632" name="ae8f021221a27387d999f4b80ac52f632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f021221a27387d999f4b80ac52f632">&#9670;&#160;</a></span>s_triangle_default_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const triangle::behavior vulpes::geometry::Triangulation::s_triangle_default_options</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    .poly = 1,</div>
+<div class="line">    .quality = 1,</div>
+<div class="line">    .firstnumber = 0,</div>
+<div class="line">    .edgesout = 1,</div>
+<div class="line">    .quiet = 1,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/__w/vulpes/vulpes/vulpes/geometry/<a class="el" href="simplexify_8hpp_source.html">simplexify.hpp</a></li>
 <li>/__w/vulpes/vulpes/vulpes/geometry/<a class="el" href="simplexify_8cpp.html">simplexify.cpp</a></li>
@@ -879,7 +887,7 @@ Static Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">Triangulation</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

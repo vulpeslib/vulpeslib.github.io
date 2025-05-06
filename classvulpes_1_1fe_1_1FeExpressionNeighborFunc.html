@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vulpes: vulpes::fe::FeExpressionNeighborFunc&lt; Dim, FeSpace, IsTest &gt; Class Template Reference</title>
+<title>Vulpes: vulpes::fe::FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; Class Template Reference</title>
 <link rel="icon" href="vulpes_logo_notext_32.png" type="image/png" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -120,72 +117,83 @@ $(document).ready(function(){initNavTree('classvulpes_1_1fe_1_1FeExpressionNeigh
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">vulpes::fe::FeExpressionNeighborFunc&lt; Dim, FeSpace, IsTest &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">vulpes::fe::FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="fe__expression_8hpp_source.html">fe_expression.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="fe__expr__basis_8hpp_source.html">fe_expr_basis.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for vulpes::fe::FeExpressionNeighborFunc&lt; Dim, FeSpace, IsTest &gt;:</div>
+Inheritance diagram for vulpes::fe::FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeExpressionNeighborFunc__inherit__graph.svg" width="230" height="154"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeExpressionNeighborFunc__inherit__graph.svg" width="511" height="80"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for vulpes::fe::FeExpressionNeighborFunc&lt; Dim, FeSpace, IsTest &gt;:</div>
+Collaboration diagram for vulpes::fe::FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeExpressionNeighborFunc__coll__graph.svg" width="100%" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeExpressionNeighborFunc__coll__graph.svg" width="100%" height="425"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afaf166696a0888105efd0b73da649ede" id="r_afaf166696a0888105efd0b73da649ede"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#afaf166696a0888105efd0b73da649ede">FeSpaceType</a> = FeSpace</td></tr>
-<tr class="separator:afaf166696a0888105efd0b73da649ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ec3fbff9dc9cc3db1b414106250166" id="r_ad2ec3fbff9dc9cc3db1b414106250166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#ad2ec3fbff9dc9cc3db1b414106250166">FeSpaceType</a> = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a></td></tr>
+<tr class="separator:ad2ec3fbff9dc9cc3db1b414106250166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa936c935880796c8c1eeaf4b494e5a54" id="r_aa936c935880796c8c1eeaf4b494e5a54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#aa936c935880796c8c1eeaf4b494e5a54">FeExpressionNeighborFunc</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; Dim, FeSpace, IsTest &gt; &amp;w)</td></tr>
-<tr class="separator:aa936c935880796c8c1eeaf4b494e5a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91f89e0f112b77865a537269e5236474" id="r_a91f89e0f112b77865a537269e5236474"><td class="memItemLeft" align="right" valign="top">constexpr const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a91f89e0f112b77865a537269e5236474">feSpace</a> () const</td></tr>
-<tr class="separator:a91f89e0f112b77865a537269e5236474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcf4e9e1a24e00f0967744afcabec642" id="r_afcf4e9e1a24e00f0967744afcabec642"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#afcf4e9e1a24e00f0967744afcabec642">evaluate</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</td></tr>
-<tr class="separator:afcf4e9e1a24e00f0967744afcabec642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bf092f728c742185a71c726723773bc" id="r_a1bf092f728c742185a71c726723773bc"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62f">UpdateFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a1bf092f728c742185a71c726723773bc">computeUpdateFlags</a> () const</td></tr>
-<tr class="separator:a1bf092f728c742185a71c726723773bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce7bcc530001630bf8aa44937a9a353" id="r_a2ce7bcc530001630bf8aa44937a9a353"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a2ce7bcc530001630bf8aa44937a9a353">computeOrder</a> () const</td></tr>
-<tr class="separator:a2ce7bcc530001630bf8aa44937a9a353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9acd0f1f241147a0971f485070e0c801" id="r_a9acd0f1f241147a0971f485070e0c801"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a9acd0f1f241147a0971f485070e0c801">evaluatePoly</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;, std::size_t i, std::size_t j) const</td></tr>
-<tr class="separator:a9acd0f1f241147a0971f485070e0c801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec1e608406b43b873e39e598b3abc52" id="r_acec1e608406b43b873e39e598b3abc52"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#acec1e608406b43b873e39e598b3abc52">evaluatePolyCoef</a> (const auto &amp;mapping) const</td></tr>
-<tr class="separator:acec1e608406b43b873e39e598b3abc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77b63c88efacb4978dc8d8eda49c648e" id="r_a77b63c88efacb4978dc8d8eda49c648e"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a77b63c88efacb4978dc8d8eda49c648e">nPolyComponents</a> () const</td></tr>
-<tr class="separator:a77b63c88efacb4978dc8d8eda49c648e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde2f268bb9702463cf489a3a1adcaf4" id="r_abde2f268bb9702463cf489a3a1adcaf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#abde2f268bb9702463cf489a3a1adcaf4">FeExpressionNeighborFunc</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">w</a>)</td></tr>
+<tr class="separator:abde2f268bb9702463cf489a3a1adcaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381e59575af791d16798b2b7bc0f0475" id="r_a381e59575af791d16798b2b7bc0f0475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a381e59575af791d16798b2b7bc0f0475">feSpace</a> () <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:a381e59575af791d16798b2b7bc0f0475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96393a681140d154ac036071fe792a76" id="r_a96393a681140d154ac036071fe792a76"><td class="memTemplParams" colspan="2">template&lt;std::size_t I = 0, std::size_t J = 0&gt; </td></tr>
+<tr class="memitem:a96393a681140d154ac036071fe792a76"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">decltype</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a96393a681140d154ac036071fe792a76">evaluate</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">fe_values</a>, std::size_t i, std::size_t j, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">q</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:a96393a681140d154ac036071fe792a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2b55f610ce3a69bc2ae97fd47ee77a" id="r_a0b2b55f610ce3a69bc2ae97fd47ee77a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">UpdateFlagsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a0b2b55f610ce3a69bc2ae97fd47ee77a">computeUpdateFlags</a> () <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:a0b2b55f610ce3a69bc2ae97fd47ee77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b44bd417a1693be17de376fd330b84" id="r_ae7b44bd417a1693be17de376fd330b84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#ae7b44bd417a1693be17de376fd330b84">computeOrder</a> () <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:ae7b44bd417a1693be17de376fd330b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51413588d443b333b43c4fdff5e8dc1" id="r_ab51413588d443b333b43c4fdff5e8dc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">decltype</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#ab51413588d443b333b43c4fdff5e8dc1">evaluatePoly</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">fe_values</a>, std::size_t i, std::size_t j, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bi</a>, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bj</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:ab51413588d443b333b43c4fdff5e8dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaef3f7344d10031d47ac9d8d27727ec" id="r_acaef3f7344d10031d47ac9d8d27727ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">decltype</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#acaef3f7344d10031d47ac9d8d27727ec">evaluatePolyCoef</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">mapping</a>, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bi</a>, std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bj</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:acaef3f7344d10031d47ac9d8d27727ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea931e9153ca5b8587a99e58db7bac60" id="r_aea931e9153ca5b8587a99e58db7bac60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#aea931e9153ca5b8587a99e58db7bac60">precompute</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="namespacevulpes_1_1fe.html#a4f45bdccfe2a399019887657e481717d">CellsType</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:aea931e9153ca5b8587a99e58db7bac60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1821df705596b62a788c64b8744f69c" id="r_ac1821df705596b62a788c64b8744f69c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">decltype</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#ac1821df705596b62a788c64b8744f69c">evaluatePolyCoef</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">mapping</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:ac1821df705596b62a788c64b8744f69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242455c6754f4eaa5c15e6c1c39db4a2" id="r_a242455c6754f4eaa5c15e6c1c39db4a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">FeExpressionUnaryMinus</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#a242455c6754f4eaa5c15e6c1c39db4a2">operator-</a> () <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
+<tr class="separator:a242455c6754f4eaa5c15e6c1c39db4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4d5aad50b6431426f8edecc50769279c" id="r_a4d5aad50b6431426f8edecc50769279c"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a4d5aad50b6431426f8edecc50769279c">is_leaf</a> = false</td></tr>
-<tr class="separator:a4d5aad50b6431426f8edecc50769279c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b4529cd7be1179c0c2d5295370bd45" id="r_a23b4529cd7be1179c0c2d5295370bd45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a23b4529cd7be1179c0c2d5295370bd45">is_leaf</a> = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">false</a></td></tr>
+<tr class="separator:a23b4529cd7be1179c0c2d5295370bd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50793af58c9c8056b4b9625f606699db" id="r_a50793af58c9c8056b4b9625f606699db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a50793af58c9c8056b4b9625f606699db">is_bilinear</a> = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> ? <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bda6a506d38a5246cc1f633c1ac60956d6a">IsLinearTest</a> : <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdad2a37047321895490c10c252b57729a6">IsLinearTrial</a></td></tr>
+<tr class="separator:a50793af58c9c8056b4b9625f606699db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a30d59eebebf173fc918ecf06c4b0a5" id="r_a7a30d59eebebf173fc918ecf06c4b0a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a7a30d59eebebf173fc918ecf06c4b0a5">k_index_begin</a> = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a></td></tr>
+<tr class="separator:a7a30d59eebebf173fc918ecf06c4b0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5627ff0e53386a0431a86cd5af7bf27" id="r_ac5627ff0e53386a0431a86cd5af7bf27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#ac5627ff0e53386a0431a86cd5af7bf27">k_index_end</a> = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a></td></tr>
+<tr class="separator:ac5627ff0e53386a0431a86cd5af7bf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae09c076ff44d5c6113219d3f5c72cab9" id="r_ae09c076ff44d5c6113219d3f5c72cab9"><td class="memItemLeft" align="right" valign="top">const FeExpression &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#ae09c076ff44d5c6113219d3f5c72cab9">self</a> () const</td></tr>
+<tr class="memitem:ae09c076ff44d5c6113219d3f5c72cab9" id="r_ae09c076ff44d5c6113219d3f5c72cab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#ae09c076ff44d5c6113219d3f5c72cab9">self</a> () <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a></td></tr>
 <tr class="separator:ae09c076ff44d5c6113219d3f5c72cab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab64add45a858f7db3c0963b801024cc2" id="r_ab64add45a858f7db3c0963b801024cc2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; Dim, FeSpace, IsTest &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#ab64add45a858f7db3c0963b801024cc2">m_w</a></td></tr>
-<tr class="separator:ab64add45a858f7db3c0963b801024cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed915ca876313874280afbacece61a10" id="r_aed915ca876313874280afbacece61a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#aed915ca876313874280afbacece61a10">m_w</a></td></tr>
+<tr class="separator:aed915ca876313874280afbacece61a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="afaf166696a0888105efd0b73da649ede" name="afaf166696a0888105efd0b73da649ede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaf166696a0888105efd0b73da649ede">&#9670;&#160;</a></span>FeSpaceType</h2>
+<a id="ad2ec3fbff9dc9cc3db1b414106250166" name="ad2ec3fbff9dc9cc3db1b414106250166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ec3fbff9dc9cc3db1b414106250166">&#9670;&#160;</a></span>FeSpaceType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::FeSpaceType =  FeSpace</td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::FeSpaceType =  <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -193,21 +201,21 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa936c935880796c8c1eeaf4b494e5a54" name="aa936c935880796c8c1eeaf4b494e5a54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa936c935880796c8c1eeaf4b494e5a54">&#9670;&#160;</a></span>FeExpressionNeighborFunc()</h2>
+<a id="abde2f268bb9702463cf489a3a1adcaf4" name="abde2f268bb9702463cf489a3a1adcaf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde2f268bb9702463cf489a3a1adcaf4">&#9670;&#160;</a></span>FeExpressionNeighborFunc()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::FeExpressionNeighborFunc </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::FeExpressionNeighborFunc </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; Dim, FeSpace, IsTest &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
@@ -222,19 +230,19 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2ce7bcc530001630bf8aa44937a9a353" name="a2ce7bcc530001630bf8aa44937a9a353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ce7bcc530001630bf8aa44937a9a353">&#9670;&#160;</a></span>computeOrder()</h2>
+<a id="ae7b44bd417a1693be17de376fd330b84" name="ae7b44bd417a1693be17de376fd330b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b44bd417a1693be17de376fd330b84">&#9670;&#160;</a></span>computeOrder()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::computeOrder </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::computeOrder </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -249,19 +257,19 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 
 </div>
 </div>
-<a id="a1bf092f728c742185a71c726723773bc" name="a1bf092f728c742185a71c726723773bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bf092f728c742185a71c726723773bc">&#9670;&#160;</a></span>computeUpdateFlags()</h2>
+<a id="a0b2b55f610ce3a69bc2ae97fd47ee77a" name="a0b2b55f610ce3a69bc2ae97fd47ee77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b2b55f610ce3a69bc2ae97fd47ee77a">&#9670;&#160;</a></span>computeUpdateFlags()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62f">UpdateFlags</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::computeUpdateFlags </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">UpdateFlagsType</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::computeUpdateFlags </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -276,21 +284,23 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 
 </div>
 </div>
-<a id="afcf4e9e1a24e00f0967744afcabec642" name="afcf4e9e1a24e00f0967744afcabec642"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcf4e9e1a24e00f0967744afcabec642">&#9670;&#160;</a></span>evaluate()</h2>
+<a id="a96393a681140d154ac036071fe792a76" name="a96393a681140d154ac036071fe792a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96393a681140d154ac036071fe792a76">&#9670;&#160;</a></span>evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t I = 0, std::size_t J = 0&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::evaluate </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">decltype</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>fe_values</em>, </td>
         </tr>
         <tr>
@@ -326,22 +336,22 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 
 </div>
 </div>
-<a id="a9acd0f1f241147a0971f485070e0c801" name="a9acd0f1f241147a0971f485070e0c801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9acd0f1f241147a0971f485070e0c801">&#9670;&#160;</a></span>evaluatePoly()</h2>
+<a id="ab51413588d443b333b43c4fdff5e8dc1" name="ab51413588d443b333b43c4fdff5e8dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51413588d443b333b43c4fdff5e8dc1">&#9670;&#160;</a></span>evaluatePoly()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::evaluatePoly </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">decltype</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::evaluatePoly </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fe_values</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -353,7 +363,19 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>j</em>&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bj</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -370,23 +392,65 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 
 </div>
 </div>
-<a id="acec1e608406b43b873e39e598b3abc52" name="acec1e608406b43b873e39e598b3abc52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acec1e608406b43b873e39e598b3abc52">&#9670;&#160;</a></span>evaluatePolyCoef()</h2>
+<a id="ac1821df705596b62a788c64b8744f69c" name="ac1821df705596b62a788c64b8744f69c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1821df705596b62a788c64b8744f69c">&#9670;&#160;</a></span>evaluatePolyCoef() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::evaluatePolyCoef </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">decltype</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;  &gt;::evaluatePolyCoef </td>
           <td>(</td>
-          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td>
           <td class="paramname"><em>mapping</em></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acaef3f7344d10031d47ac9d8d27727ec" name="acaef3f7344d10031d47ac9d8d27727ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaef3f7344d10031d47ac9d8d27727ec">&#9670;&#160;</a></span>evaluatePolyCoef() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">decltype</a>(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a>) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::evaluatePolyCoef </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp;&#160;</td>
+          <td class="paramname"><em>mapping</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -398,19 +462,19 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 
 </div>
 </div>
-<a id="a91f89e0f112b77865a537269e5236474" name="a91f89e0f112b77865a537269e5236474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91f89e0f112b77865a537269e5236474">&#9670;&#160;</a></span>feSpace()</h2>
+<a id="a381e59575af791d16798b2b7bc0f0475" name="a381e59575af791d16798b2b7bc0f0475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381e59575af791d16798b2b7bc0f0475">&#9670;&#160;</a></span>feSpace()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const auto &amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::feSpace </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">auto</a> &amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::feSpace </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -425,22 +489,58 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 
 </div>
 </div>
-<a id="a77b63c88efacb4978dc8d8eda49c648e" name="a77b63c88efacb4978dc8d8eda49c648e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77b63c88efacb4978dc8d8eda49c648e">&#9670;&#160;</a></span>nPolyComponents()</h2>
+<a id="a242455c6754f4eaa5c15e6c1c39db4a2" name="a242455c6754f4eaa5c15e6c1c39db4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a242455c6754f4eaa5c15e6c1c39db4a2">&#9670;&#160;</a></span>operator-()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::nPolyComponents </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">FeExpressionUnaryMinus</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;  &gt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;  &gt;::operator- </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea931e9153ca5b8587a99e58db7bac60" name="aea931e9153ca5b8587a99e58db7bac60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea931e9153ca5b8587a99e58db7bac60">&#9670;&#160;</a></span>precompute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::precompute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="namespacevulpes_1_1fe.html#a4f45bdccfe2a399019887657e481717d">CellsType</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -457,14 +557,12 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;std::size_t Dim, typename FeExpression &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const FeExpression &amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; Dim, FeExpression &gt;::self </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;  &amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;  &gt;::self </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -480,19 +578,19 @@ template&lt;std::size_t Dim, typename FeExpression &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4d5aad50b6431426f8edecc50769279c" name="a4d5aad50b6431426f8edecc50769279c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d5aad50b6431426f8edecc50769279c">&#9670;&#160;</a></span>is_leaf</h2>
+<a id="a50793af58c9c8056b4b9625f606699db" name="a50793af58c9c8056b4b9625f606699db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50793af58c9c8056b4b9625f606699db">&#9670;&#160;</a></span>is_bilinear</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::is_leaf = false</td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">uint8_t</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::is_bilinear = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> ? <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bda6a506d38a5246cc1f633c1ac60956d6a">IsLinearTest</a> : <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdad2a37047321895490c10c252b57729a6">IsLinearTrial</a></td>
         </tr>
       </table>
   </td>
@@ -504,19 +602,91 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 
 </div>
 </div>
-<a id="ab64add45a858f7db3c0963b801024cc2" name="ab64add45a858f7db3c0963b801024cc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab64add45a858f7db3c0963b801024cc2">&#9670;&#160;</a></span>m_w</h2>
+<a id="a23b4529cd7be1179c0c2d5295370bd45" name="a23b4529cd7be1179c0c2d5295370bd45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b4529cd7be1179c0c2d5295370bd45">&#9670;&#160;</a></span>is_leaf</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt;Dim, FeSpace, IsTest&gt;&amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; Dim, FeSpace, IsTest &gt;::m_w</td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::is_leaf = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a30d59eebebf173fc918ecf06c4b0a5" name="a7a30d59eebebf173fc918ecf06c4b0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a30d59eebebf173fc918ecf06c4b0a5">&#9670;&#160;</a></span>k_index_begin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::k_index_begin = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5627ff0e53386a0431a86cd5af7bf27" name="ac5627ff0e53386a0431a86cd5af7bf27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5627ff0e53386a0431a86cd5af7bf27">&#9670;&#160;</a></span>k_index_end</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::k_index_end = <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed915ca876313874280afbacece61a10" name="aed915ca876313874280afbacece61a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed915ca876313874280afbacece61a10">&#9670;&#160;</a></span>m_w</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> IsTest&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a>&gt;&amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">vulpes::fe::FeExpressionNeighborFunc</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexBegin</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IndexEnd</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FeSpace</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">IsTest</a> &gt;::m_w</td>
         </tr>
       </table>
   </td>
@@ -529,7 +699,7 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/__w/vulpes/vulpes/vulpes/fe/<a class="el" href="fe__expression_8hpp_source.html">fe_expression.hpp</a></li>
+<li>/__w/vulpes/vulpes/vulpes/fe/fe_expressions/<a class="el" href="fe__expr__basis_8hpp_source.html">fe_expr_basis.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -538,7 +708,7 @@ template&lt;std::size_t Dim, typename FeSpace , bool IsTest = false&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

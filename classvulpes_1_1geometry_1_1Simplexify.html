@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -148,9 +145,14 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4ee2a46ac66b48bd6f4bfdc2a800607" id="r_aa4ee2a46ac66b48bd6f4bfdc2a800607"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#aa4ee2a46ac66b48bd6f4bfdc2a800607">Simplexify</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a93a5cf513d4258ef7fbce6fd1ddcb1cc">geometry::Cell</a>&lt; Dim, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> &gt; &amp;cell, bool reconstruct_boundaries=false)</td></tr>
-<tr class="memdesc:aa4ee2a46ac66b48bd6f4bfdc2a800607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a simplexification for the given geometric cell.  <br /></td></tr>
-<tr class="separator:aa4ee2a46ac66b48bd6f4bfdc2a800607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb15a2103a2f88e4e1257d1d1668c946" id="r_adb15a2103a2f88e4e1257d1d1668c946"><td class="memTemplParams" colspan="2">template&lt;typename T  = void, typename  = std::enable_if_t&lt;Dim == 2, T&gt;&gt; </td></tr>
+<tr class="memitem:adb15a2103a2f88e4e1257d1d1668c946"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#adb15a2103a2f88e4e1257d1d1668c946">Simplexify</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt; 2, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> &gt; &amp;cell, bool=false)</td></tr>
+<tr class="memdesc:adb15a2103a2f88e4e1257d1d1668c946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a simplexification for the given geometric cell.  <br /></td></tr>
+<tr class="separator:adb15a2103a2f88e4e1257d1d1668c946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a254b148072f55e8e105de9e9761ca" id="r_ad9a254b148072f55e8e105de9e9761ca"><td class="memTemplParams" colspan="2">template&lt;typename T  = void, typename  = std::enable_if_t&lt;Dim == 3, T&gt;&gt; </td></tr>
+<tr class="memitem:ad9a254b148072f55e8e105de9e9761ca"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ad9a254b148072f55e8e105de9e9761ca">Simplexify</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt; 3, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> &gt; &amp;cell, bool reconstruct_boundaries=false)</td></tr>
+<tr class="memdesc:ad9a254b148072f55e8e105de9e9761ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a simplexification for the given geometric cell.  <br /></td></tr>
+<tr class="separator:ad9a254b148072f55e8e105de9e9761ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b4a064a52e4b85daad68827a1c5ff9" id="r_a69b4a064a52e4b85daad68827a1c5ff9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a69b4a064a52e4b85daad68827a1c5ff9">getSubsimplexesListFacet</a> (<a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> face_id) const</td></tr>
 <tr class="memdesc:a69b4a064a52e4b85daad68827a1c5ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">List the sub-simplexes (segments in 2D or triangles in 3D) that make a certain face in the simplixification.  <br /></td></tr>
 <tr class="separator:a69b4a064a52e4b85daad68827a1c5ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,13 +307,15 @@ template&lt;std::size_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa4ee2a46ac66b48bd6f4bfdc2a800607" name="aa4ee2a46ac66b48bd6f4bfdc2a800607"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4ee2a46ac66b48bd6f4bfdc2a800607">&#9670;&#160;</a></span>Simplexify()</h2>
+<a id="adb15a2103a2f88e4e1257d1d1668c946" name="adb15a2103a2f88e4e1257d1d1668c946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb15a2103a2f88e4e1257d1d1668c946">&#9670;&#160;</a></span>Simplexify() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::size_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename T  = void, typename  = std::enable_if_t&lt;Dim == 2, T&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -319,7 +323,56 @@ template&lt;std::size_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim 
         <tr>
           <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, typename &gt;::Simplexify </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a93a5cf513d4258ef7fbce6fd1ddcb1cc">geometry::Cell</a>&lt; Dim, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt; 2, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a simplexification for the given geometric cell. </p>
+<p>The appropriate simplexification engine (<code><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html" title="Performs triangulation of a 2D cell using the Triangle library.">Triangulation</a></code> or <code><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html" title="Performs tetrahedralization of a 3D cell using the TetGen library.">Tetrahedralization</a></code>) is initialized based on the dimension of the input cell.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell</td><td>A geometric cell to be simplexified, represented by <code><a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt;Dim, float_t, index_t&gt;</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9a254b148072f55e8e105de9e9761ca" name="ad9a254b148072f55e8e105de9e9761ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a254b148072f55e8e105de9e9761ca">&#9670;&#160;</a></span>Simplexify() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename T  = void, typename  = std::enable_if_t&lt;Dim == 3, T&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, typename &gt;::Simplexify </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt; 3, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>cell</em>, </td>
         </tr>
         <tr>
@@ -345,7 +398,7 @@ template&lt;std::size_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim 
 <p>The appropriate simplexification engine (<code><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html" title="Performs triangulation of a 2D cell using the Triangle library.">Triangulation</a></code> or <code><a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html" title="Performs tetrahedralization of a 3D cell using the TetGen library.">Tetrahedralization</a></code>) is initialized based on the dimension of the input cell.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cell</td><td>A geometric cell to be simplexified, represented by <code><a class="el" href="namespacevulpes_1_1geometry.html#a93a5cf513d4258ef7fbce6fd1ddcb1cc">geometry::Cell</a>&lt;Dim, float_t, index_t&gt;</code>. </td></tr>
+    <tr><td class="paramname">cell</td><td>A geometric cell to be simplexified, represented by <code><a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt;Dim, float_t, index_t&gt;</code>. </td></tr>
     <tr><td class="paramname">reconstruct_boundaries</td><td>Boolean indicating the necessity to find which faces of the tetrahedrons belong to the boundary of the cell </td></tr>
   </table>
   </dd>
@@ -573,7 +626,7 @@ template&lt;std::size_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">Simplexify</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['tetrahedralization_0',['Tetrahedralization',['../classvulpes_1_1geometry_1_1Tetrahedralization.html',1,'vulpes::geometry']]],
-  ['tetratensor_1',['TetraTensor',['../classvulpes_1_1datastructure_1_1TetraTensor.html',1,'vulpes::datastructure']]],
-  ['tetratensor_3c_20true_2c_20false_2c_20t_2c_20std_3a_3asize_5ft_20_3e_2',['TetraTensor&lt; true, false, T, std::size_t &gt;',['../classvulpes_1_1datastructure_1_1TetraTensor.html',1,'vulpes::datastructure']]],
-  ['triangulation_3',['Triangulation',['../classvulpes_1_1geometry_1_1Triangulation.html',1,'vulpes::geometry']]],
-  ['trimatrix_4',['TriMatrix',['../classvulpes_1_1datastructure_1_1TriMatrix.html',1,'vulpes::datastructure']]],
-  ['trimatrix_3c_20true_2c_20false_2c_20t_2c_20std_3a_3asize_5ft_20_3e_5',['TriMatrix&lt; true, false, T, std::size_t &gt;',['../classvulpes_1_1datastructure_1_1TriMatrix.html',1,'vulpes::datastructure']]]
+  ['rectangle_0',['Rectangle',['../structscipy_1_1Rectangle.html',1,'scipy']]],
+  ['rectangledistance_1',['RectangleDistance',['../classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html',1,'vulpes::geometry::dist2d']]],
+  ['rectrectdistancetracker_2',['RectRectDistanceTracker',['../structscipy_1_1RectRectDistanceTracker.html',1,'scipy']]],
+  ['rowmat_3',['RowMat',['../classEigenVulpes_1_1RowMat.html',1,'EigenVulpes']]],
+  ['rowview_4',['RowView',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html',1,'vulpes::datastructure::CrsMap']]],
+  ['rr_5fstack_5fitem_5',['RR_stack_item',['../structscipy_1_1RR__stack__item.html',1,'scipy']]]
 ];

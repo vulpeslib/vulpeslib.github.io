@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,8 +113,10 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 <div class="textblock">Here is a list of all variables with links to the classes they belong to:</div>
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>cell_data&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1MeshExporter_1_1MeshDataAttachement.html#ab2b4a719c9c43f0fb76e320ec0e8d231">vulpes::geometry::MeshExporter&lt; MeshDerived &gt;::MeshDataAttachement</a>, <a class="el" href="structvulpes_1_1geometry_1_1MeshExporterSubmesh_1_1MeshDataAttachement.html#a8798e1dcd343913b0881b1a7064f5ccd">vulpes::geometry::MeshExporterSubmesh&lt; MeshDerived &gt;::MeshDataAttachement</a></li>
 <li>children&#160;:&#160;<a class="el" href="structscipy_1_1ckdtreenode.html#a8810e25905a58be52e26d7d49387dc73">scipy::ckdtreenode</a></li>
 <li>clipping_relax&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#a6cbde58523b8cfb0e627513c98a202f9">vulpes::geometry::polymesher::PolyMesherParams&lt; FloatType &gt;</a></li>
+<li>coef&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CompressedMonomial.html#a870d5fedb937867aba63e98b1c9905ff">vulpes::assemble::CompressedMonomial</a></li>
 <li>collapse_edge_toll&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#a2785a2c5d7513ba87bae6100d56b724d">vulpes::geometry::polymesher::PolyMesherParams&lt; FloatType &gt;</a></li>
 <li>compressor_type&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1VtuOptions.html#a8a1ec447ea6f503b07aaa245858600d7">vulpes::geometry::VtuOptions</a></li>
 <li>contents&#160;:&#160;<a class="el" href="structscipy_1_1heapitem.html#af4bc886b0fb499bfb54a02c3edc3cde1">scipy::heapitem</a></li>
@@ -129,7 +128,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

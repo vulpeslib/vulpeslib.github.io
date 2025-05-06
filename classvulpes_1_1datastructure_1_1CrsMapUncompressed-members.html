@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -124,23 +121,24 @@ $(document).ready(function(){initNavTree('classvulpes_1_1datastructure_1_1CrsMap
   <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a5da9052f50cc20d6985c4b91c409e952">compress</a>() const</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a95be6960dc1c56869ba4a48ea791f5a6">CrsMapUncompressed</a>()=default</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a2f0e50bb18055f4fadf5e024cce02127">CrsMapUncompressed</a>(std::initializer_list&lt; SmallVector&lt; DataType, N &gt; &gt; init_list)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aecf39c895ffefa82f524b7464d042538">end</a>()</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#ad526c600b1bc1583e9e228fe725dfc3f">end</a>() const</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#af3956070366f0b87cc007d496ae405a2">getRow</a>(std::size_t row_idx)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a03df88abee500dd38ab06033168eef17">m_data</a></td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a607d02cd3a6627cf6c63cb8ea3524af1">operator[]</a>(std::size_t idx) const</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aa69c03e6844785f7ae2e339c7354d175">operator[]</a>(std::size_t idx)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#ae06918addf2cabcff2cbadcc254a8e99">push_back</a>(const SmallVector&lt; DataType, N &gt; &amp;value)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a59dd2d240b291c87d06ed94732d7fae5">push_back</a>(SmallVector&lt; DataType, N &gt; &amp;&amp;value)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a858b641ff02038594a8ad3b423948711">resize</a>(std::size_t new_size)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#adc24f1247ddcac003835bd20d6608c6f">size</a>() const</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a2270522ab7370180ca5f064ddc5f3890">emplace_back</a>(Args &amp;&amp;... args)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aecf39c895ffefa82f524b7464d042538">end</a>()</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#ad526c600b1bc1583e9e228fe725dfc3f">end</a>() const</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#af3956070366f0b87cc007d496ae405a2">getRow</a>(std::size_t row_idx)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a03df88abee500dd38ab06033168eef17">m_data</a></td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a607d02cd3a6627cf6c63cb8ea3524af1">operator[]</a>(std::size_t idx) const</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aa69c03e6844785f7ae2e339c7354d175">operator[]</a>(std::size_t idx)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#ae06918addf2cabcff2cbadcc254a8e99">push_back</a>(const SmallVector&lt; DataType, N &gt; &amp;value)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a59dd2d240b291c87d06ed94732d7fae5">push_back</a>(SmallVector&lt; DataType, N &gt; &amp;&amp;value)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a858b641ff02038594a8ad3b423948711">resize</a>(std::size_t new_size)</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#adc24f1247ddcac003835bd20d6608c6f">size</a>() const</td><td class="entry"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

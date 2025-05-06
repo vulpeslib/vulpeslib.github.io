@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -273,7 +270,7 @@ $(document).ready(function(){initNavTree('simplex_8hpp_source.html',''); initRes
 <div class="ttc" id="anamespacevulpes_1_1vmath_html_a0682f20a70be8fa66858922f1b08ec85"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a0682f20a70be8fa66858922f1b08ec85">vulpes::vmath::pow1</a></div><div class="ttdeci">constexpr int64_t pow1(T exp)</div><div class="ttdoc">Computes (-1)^exp.</div><div class="ttdef"><b>Definition</b> vmath.hpp:380</div></div>
 <div class="ttc" id="anamespacevulpes_1_1vmath_html_a16a1af55d6088b09db1ff15e730dde81"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a16a1af55d6088b09db1ff15e730dde81">vulpes::vmath::factorial</a></div><div class="ttdeci">T factorial(T n)</div><div class="ttdoc">Computes the factorial of a pseudo-arithmetic number iteratively.</div><div class="ttdef"><b>Definition</b> vmath.hpp:347</div></div>
 <div class="ttc" id="anamespacevulpes_1_1vmath_html_a2b17e16df3a08f27fff0aa30c875555b"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b">vulpes::vmath::upow</a></div><div class="ttdeci">constexpr U upow(U base, V exp, U result=U(1))</div><div class="ttdoc">Computes the unsigned power of a number.</div><div class="ttdef"><b>Definition</b> vmath.hpp:106</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> integrator_base.hpp:34</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:33</div></div>
 <div class="ttc" id="aqrule_8hpp_html"><div class="ttname"><a href="qrule_8hpp.html">qrule.hpp</a></div></div>
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html">vulpes::qrule::QuadratureRule</a></div><div class="ttdoc">Represents a quadrature rule consisting of a set of points and associated weights.</div><div class="ttdef"><b>Definition</b> qrule.hpp:68</div></div>
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html_a0edb88c1e8aee56cc5cf60b25931263a"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html#a0edb88c1e8aee56cc5cf60b25931263a">vulpes::qrule::QuadratureRule::degree</a></div><div class="ttdeci">std::size_t degree</div><div class="ttdoc">Polynomial degree of accuracy of the rule.</div><div class="ttdef"><b>Definition</b> qrule.hpp:72</div></div>
@@ -286,7 +283,7 @@ $(document).ready(function(){initNavTree('simplex_8hpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="simplex_8hpp.html">simplex.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

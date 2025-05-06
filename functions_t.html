@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,22 +113,33 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>TagLabel&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#aff9208a71d973731d32fa9288b172fcb">vulpes::geometry::MeshTag&lt; Dim &gt;</a></li>
+<li>tags&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46b8310693061aa3160d4e805f4e0787">vulpes::geometry::MeshTag&lt; Dim &gt;</a></li>
+<li>TagTable&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a50a540cad13e3a9f28e218a8d3cfdff0">vulpes::geometry::MeshTag&lt; Dim &gt;</a></li>
+<li>TagType&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#ab55c91761e91268dba0e6e7a251f76fc">vulpes::geometry::MeshTag&lt; Dim &gt;</a></li>
 <li>tdim()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html#a750a87c68011b43c53c925c335717943">vulpes::datastructure::TetraTensor&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html#a4c612b3aea56f084485c4403901ff03d">vulpes::datastructure::TriMatrix&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a></li>
-<li>Tetrahedralization()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a17914d8840cbe3d5ff48fe9828fd9791">vulpes::geometry::Tetrahedralization</a></li>
+<li>Tetrahedralization()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a2f52eeb88c807ad9c65d62a0e55466ee">vulpes::geometry::Tetrahedralization</a></li>
 <li>TetraTensor()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html#a31fbf4958715fae48de4961b7e05e1dd">vulpes::datastructure::TetraTensor&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a></li>
 <li>time_map&#160;:&#160;<a class="el" href="classProfiler.html#aea825739824f578cb007e970272ee781">Profiler</a></li>
 <li>time_point&#160;:&#160;<a class="el" href="classProfiler.html#af79c03f89822fbef749883106b877346">Profiler</a></li>
 <li>to()&#160;:&#160;<a class="el" href="classvulpes_1_1monomial_1_1Monomial.html#abd514deca50d0aa9ab051696c41247b3">vulpes::monomial::Monomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a>, <a class="el" href="classvulpes_1_1polynomial_1_1Polynomial2D.html#ad82d735e6172260b969fc5fa7337e485">vulpes::polynomial::Polynomial2D&lt; T, IsSpaceP &gt;</a>, <a class="el" href="classvulpes_1_1polynomial_1_1Polynomial3D.html#a087bdaf63a331172f8673c8f4ba01058">vulpes::polynomial::Polynomial3D&lt; T, IsSpaceP &gt;</a>, <a class="el" href="classvulpes_1_1polynomial_1_1Polynomial.html#a3b6ca702faa2bb138e208b69fc258ca4">vulpes::polynomial::Polynomial&lt; T &gt;</a>, <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a7f846c4daf0ea4bc45bb8b3937c1f37d">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
+<li>toEigen()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#ad03263aaac344f03662738a613077a87">vulpes::la::Vector</a></li>
+<li>toEigenDense()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a2e24da77e87720f0ec35398d2c68ba12">vulpes::la::SparseMatrix</a></li>
+<li>tol&#160;:&#160;<a class="el" href="structvulpes_1_1la_1_1DataBoomerAMG.html#ac2190fd933d9af1bae1c94e69d542a6b">vulpes::la::DataBoomerAMG</a></li>
 <li>toll&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#a67760c3e4ae098b8fb920161ffe40728">vulpes::geometry::polymesher::PolyMesherParams&lt; FloatType &gt;</a></li>
-<li>transform()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#ac961956b42d0b531dfa58b7a24a0fc22">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#acbfcd82c4d05d0de7571176659d6e653">vulpes::geometry::MappingBase&lt; FloatType, Dim, Mapping &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a8a25e9f70e9e048da7471f7f44273cf1">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></li>
-<li>transform_()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#aba9fa3fd56d2b5038e4dd0c9a40eeb4d">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MappingBase.html#a76a94bae762945f0d8342f1586ba4099">vulpes::geometry::MappingBase&lt; FloatType, Dim, Mapping &gt;</a></li>
+<li>transform()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#ad74291d328f006522c28fb7287214a8d">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a8a25e9f70e9e048da7471f7f44273cf1">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></li>
+<li>transform_()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#a9de0e70d965091e4dd6694b3c3ab8d96">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a></li>
 <li>transformInv()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#a1bf54a016eb08d3f9e6e616482e81d85">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1SimplexMapping.html#a4f638922ade4faec76669a6deb2ecbe7">vulpes::geometry::SimplexMapping&lt; FloatType, Dim &gt;</a></li>
-<li>transformInv_()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#ae02cf5409225256eef4fd8fc0a393a2c">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a></li>
+<li>transformInv_()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#a43d7e5021a99dd3649a058915fd830df">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a></li>
+<li>transposeMatMult()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a2d1d3304cff1759263726b7671222b74">vulpes::la::SparseMatrix</a></li>
+<li>transposeMatMult_()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a731e9b7ad4ebf81fb0dcf223b80527cc">vulpes::la::SparseMatrix</a></li>
 <li>tree&#160;:&#160;<a class="el" href="structscipy_1_1RectRectDistanceTracker.html#ad54686248fed70ea7cb729c31449f6d5">scipy::RectRectDistanceTracker&lt; MinMaxDist, Dim &gt;</a></li>
 <li>tree_buffer&#160;:&#160;<a class="el" href="structscipy_1_1ckdtree.html#accdd6b37d304de52fd2ea6421a9d314d">scipy::ckdtree&lt; Dim &gt;</a></li>
-<li>Triangulation()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a5da65dbaaf68433272a4817d9a2aa063">vulpes::geometry::Triangulation</a></li>
+<li>Triangulation()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a8bfee7fe79de83bca50f0c27618afefb">vulpes::geometry::Triangulation</a></li>
 <li>trim()&#160;:&#160;<a class="el" href="classvulpes_1_1polynomial_1_1Polynomial.html#a5913948ed5893e6cb6d3874225ece529">vulpes::polynomial::Polynomial&lt; T &gt;</a></li>
 <li>TriMatrix()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html#a56eca77a2c24c87a1945e43d20c035fb">vulpes::datastructure::TriMatrix&lt; Triangular, Tensor, DataType, IndexType, StorageType &gt;</a></li>
+<li>type&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5.html#a3f3a50e5baf93ee7db54726c815f2acf">vulpes::assemble::internal::concat_tuples&lt; std::tuple&lt; Ts... &gt;, std::tuple&lt; Us... &gt; &gt;</a></li>
+<li>Type&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a02549faebd5fbd5298b8b55ca492821f">vulpes::la::LinearSolver</a>, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5ca">vulpes::la::SparseMatrix</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -139,7 +147,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -117,6 +114,9 @@ $(document).ready(function(){initNavTree('functions_vars_n.html',''); initResiza
 
 <h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
 <li>n&#160;:&#160;<a class="el" href="structscipy_1_1ckdtree.html#aee80e337228b2be0207ff7f8784116d1">scipy::ckdtree&lt; Dim &gt;</a>, <a class="el" href="structscipy_1_1heap.html#a480e687412a3de6311219bdc36bdc058">scipy::heap</a></li>
+<li>n_sweeps_coarse&#160;:&#160;<a class="el" href="structvulpes_1_1la_1_1DataBoomerAMG.html#ab760e19a296b597a3fc1b932154c0eed">vulpes::la::DataBoomerAMG</a></li>
+<li>nblocks&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>neigh_cell_id&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a27a374284a93dec6ed6f46c169ab4677">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;::NeighInfo</a></li>
 <li>node&#160;:&#160;<a class="el" href="structscipy_1_1nodeinfo.html#a0f61344383a9ce8691ab0ba0f5ea3e9c">scipy::nodeinfo</a></li>
 <li>nodes&#160;:&#160;<a class="el" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">vulpes::qrule::QuadratureRule&lt; T, Dim &gt;</a></li>
 </ul>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('functions_vars_n.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

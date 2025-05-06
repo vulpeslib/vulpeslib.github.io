@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,7 +115,7 @@ $(document).ready(function(){initNavTree('functions_vars_d.html',''); initResiza
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
 <li>data_mode&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1VtuOptions.html#a69556faf3567c35f743390d2ee05326d">vulpes::geometry::VtuOptions</a></li>
 <li>degree&#160;:&#160;<a class="el" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a0edb88c1e8aee56cc5cf60b25931263a">vulpes::qrule::QuadratureRule&lt; T, Dim &gt;</a></li>
-<li>dim&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorGauss.html#a7202bc9935b5552d58be7f3be80318fe">vulpes::assemble::WeakFormIntegratorGauss&lt; MeshType, FeExpression &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#ae33eb0d9e1ef03e36e2f91ffc18738d5">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVemMoment.html#a2b8205d5f329161125a21666ae4421c4">vulpes::assemble::WeakFormIntegratorVemMoment&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a90d644a3d1dcb078b2bc97c4c27924e7">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a1233f7838eaa730cea813b7efe2eab8d">vulpes::geometry::Simplexify&lt; Dim, typename &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a663407c0466f68d2652fe64548eb3f75">vulpes::geometry::Tetrahedralization</a>, <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a6167f361213d443f2e1488e7de4383fb">vulpes::geometry::Triangulation</a></li>
+<li>dim&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4205e10b1a6b29ef7dd1d3be948be65e">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a25bf372e893010379813a9f3c1cfadb8">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorGauss.html#af1933fc86ca0fa62e6d9b3ac7717b0a8">vulpes::assemble::WeakFormIntegratorGauss&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#ae33eb0d9e1ef03e36e2f91ffc18738d5">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a542d6479de86ce15c880af739c50f62a">vulpes::assemble::WeakFormIntegratorVem&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a90d644a3d1dcb078b2bc97c4c27924e7">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a1233f7838eaa730cea813b7efe2eab8d">vulpes::geometry::Simplexify&lt; Dim, typename &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a663407c0466f68d2652fe64548eb3f75">vulpes::geometry::Tetrahedralization</a>, <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a6167f361213d443f2e1488e7de4383fb">vulpes::geometry::Triangulation</a>, <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a414add3d964bea4f7aaf53376aaa70cc">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -126,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_vars_d.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

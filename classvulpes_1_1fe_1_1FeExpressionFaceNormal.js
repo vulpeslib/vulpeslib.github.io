@@ -1,17 +1,24 @@
 var classvulpes_1_1fe_1_1FeExpressionFaceNormal =
 [
+    [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#aba0b18cd54e491637f9cbbb0d8ee4660", null ],
     [ "FeExpressionFaceNormal", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a186e67bfdf3a1c451a41388c2ba8e46c", null ],
     [ "FeExpressionFaceNormal", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#abb873d77eb3a5a3cd2b77146256f538b", null ],
     [ "FeExpressionFaceNormal", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a3e004be78270b919f6fab14e5867b5e7", null ],
     [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a32bb0d3e48094549e38e56b630b0ffcd", null ],
-    [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a04435f75fca51d1ef8ed211cbdf4e235", null ],
-    [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a77aff1bd5d42b68dc23830601a25c131", null ],
-    [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#ab777eec83f27ab86bf12e92e16c03fa8", null ],
-    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#abb7d17f30c77ed95d403c9f11da18405", null ],
+    [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#aff4829a2d51ec50efe6e0aac5ef1e7bc", null ],
+    [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a78a35418f73cec86d848379fb157603a", null ],
+    [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#adfb50f22d5044c910baffe4582cd2c7a", null ],
+    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a595808c6e7d6a304175b5c0ee676bc92", null ],
+    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#ac1821df705596b62a788c64b8744f69c", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#af0333705ad7416bd31da37eb47dd3491", null ],
-    [ "nPolyComponents", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#abe551d472e5cffc553c8d3ec5941c07d", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#ad4fc20f7895cde13e1fda54934c3f4d3", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a66941c1725d5685fd316a2a6b567b801", null ],
+    [ "precompute", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a7e64ff35abcbc91ebe6d6a6e733b9ec2", null ],
     [ "self", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
-    [ "is_leaf", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a0674d04f409343ae8d333fff53e4f3f1", null ]
+    [ "is_bilinear", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a78cd6fabf7183998f5d49fbe03aede59", null ],
+    [ "is_leaf", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a0674d04f409343ae8d333fff53e4f3f1", null ],
+    [ "k_index_begin", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a2ea9e3bdcbdc3dd7835c64ac607e30be", null ],
+    [ "k_index_end", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a6482f4e05433e454afd3bfb876f7ac37", null ],
+    [ "m_normal", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#ab0c8b446835e06a601065ddb59e8f7a2", null ]
 ];

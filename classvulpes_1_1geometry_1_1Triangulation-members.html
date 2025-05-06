@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -139,13 +136,13 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1Triangulati
   <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a52cb342d174d564e15ec3aaf05d97e26">PointsType</a> typedef</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ac74c090404cb24dca509ed5d146c4f02">PointsViewType</a> typedef</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a9c8af0e603ec6206a1bc8ae4917e4591">PointType</a> typedef</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a23a6399950d90eb5c4e14682dab75cac">s_behavior_init</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#aa036e2a77bcc54a4ab2b998fcbdc4a1f">s_buffer_size</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#aa036e2a77bcc54a4ab2b998fcbdc4a1f">s_buffer_size</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ae8f021221a27387d999f4b80ac52f632">s_triangle_default_options</a></td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a84d6ae9c9601be1395442902054e70c9">SimplexesType</a> typedef</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ab3310eadfbb059ad516411ee0d876087">SimplexesViewType</a> typedef</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ac6896c65615129560a9edae804903da3">SubsimplexesType</a> typedef</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a6bafa8c603d911e440337d83a165b241">SubsimplexesViewType</a> typedef</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a5da65dbaaf68433272a4817d9a2aa063">Triangulation</a>(const geometry::Cell2D&lt; float_t &gt; &amp;cell)</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a8bfee7fe79de83bca50f0c27618afefb">Triangulation</a>(const geometry::Cell2D&lt; float_t &gt; &amp;cell, triangle::behavior options=s_triangle_default_options)</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#abfd10a13749d1f32dfddc8d5ecf5d3c2">~Triangulation</a>()</td><td class="entry"><a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">vulpes::geometry::Triangulation</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
@@ -153,7 +150,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1Triangulati
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

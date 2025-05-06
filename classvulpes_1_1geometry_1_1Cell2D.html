@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vulpes: vulpes::geometry::Cell2D&lt; FloatType &gt; Class Template Reference</title>
+<title>Vulpes: vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt; Class Template Reference</title>
 <link rel="icon" href="vulpes_logo_notext_32.png" type="image/png" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -117,7 +114,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1Cell2D.html
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvulpes_1_1geometry_1_1Cell2D-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">vulpes::geometry::Cell2D&lt; FloatType &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -125,49 +122,80 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1Cell2D.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a736c8fb5546ba60f0d2b6bde42c15d62" id="r_a736c8fb5546ba60f0d2b6bde42c15d62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a736c8fb5546ba60f0d2b6bde42c15d62">Cell2D</a> ()=default</td></tr>
-<tr class="separator:a736c8fb5546ba60f0d2b6bde42c15d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae1767441699bdbd91a8534ffde9b461" id="r_aae1767441699bdbd91a8534ffde9b461"><td class="memTemplParams" colspan="2">template&lt;typename IndexType &gt; </td></tr>
-<tr class="memitem:aae1767441699bdbd91a8534ffde9b461"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#aae1767441699bdbd91a8534ffde9b461">Cell2D</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh, IndexType cell_id, bool compute_normals=false)</td></tr>
-<tr class="separator:aae1767441699bdbd91a8534ffde9b461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54d938a6f45c9e4228124ebc56bb55fb" id="r_a54d938a6f45c9e4228124ebc56bb55fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a54d938a6f45c9e4228124ebc56bb55fb">computeBbox</a> ()</td></tr>
-<tr class="separator:a54d938a6f45c9e4228124ebc56bb55fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7395059f0bc18b4703987ff3ee7e32f0" id="r_a7395059f0bc18b4703987ff3ee7e32f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a7395059f0bc18b4703987ff3ee7e32f0">computeNormals</a> ()</td></tr>
-<tr class="separator:a7395059f0bc18b4703987ff3ee7e32f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c8733ea81e6e568814bdf9f2d5f9bc" id="r_aa7c8733ea81e6e568814bdf9f2d5f9bc"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#aa7c8733ea81e6e568814bdf9f2d5f9bc">vtxs</a> () const</td></tr>
-<tr class="separator:aa7c8733ea81e6e568814bdf9f2d5f9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7ddeb408d1dc54ceff7e5487c5cefbb" id="r_ac7ddeb408d1dc54ceff7e5487c5cefbb"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ac7ddeb408d1dc54ceff7e5487c5cefbb">vtxs</a> ()</td></tr>
-<tr class="separator:ac7ddeb408d1dc54ceff7e5487c5cefbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae868e4c0d0757ab8441ec9015dbd1454" id="r_ae868e4c0d0757ab8441ec9015dbd1454"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ae868e4c0d0757ab8441ec9015dbd1454">bbox</a> () const</td></tr>
-<tr class="separator:ae868e4c0d0757ab8441ec9015dbd1454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c0cfdc7b00b14cef77b0e5d74e7251" id="r_ac4c0cfdc7b00b14cef77b0e5d74e7251"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ac4c0cfdc7b00b14cef77b0e5d74e7251">normals</a> () const</td></tr>
-<tr class="separator:ac4c0cfdc7b00b14cef77b0e5d74e7251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95831dbbfaede48a8f2a49b5298a88ae" id="r_a95831dbbfaede48a8f2a49b5298a88ae"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a95831dbbfaede48a8f2a49b5298a88ae">nfaces</a> () const</td></tr>
-<tr class="separator:a95831dbbfaede48a8f2a49b5298a88ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbbb958e47d0ca15f362ab2c12cf0a3" id="r_aedbbb958e47d0ca15f362ab2c12cf0a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#aedbbb958e47d0ca15f362ab2c12cf0a3">Cell2D</a> ()=default</td></tr>
+<tr class="separator:aedbbb958e47d0ca15f362ab2c12cf0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e4f26b5fd5a7c8aaadb07142abc4e1" id="r_af1e4f26b5fd5a7c8aaadb07142abc4e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#af1e4f26b5fd5a7c8aaadb07142abc4e1">Cell2D</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh, IndexType cell_id, <a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">CellInitOptionsType</a> cell_init_options=<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea2359fd7251d07a4997cc86bcfde6564e">CellInitVtxOnly</a>)</td></tr>
+<tr class="separator:af1e4f26b5fd5a7c8aaadb07142abc4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0324af3a672d64943a934a72ded4dbe" id="r_ae0324af3a672d64943a934a72ded4dbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ae0324af3a672d64943a934a72ded4dbe">computeBbox</a> ()</td></tr>
+<tr class="separator:ae0324af3a672d64943a934a72ded4dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879ade6fabb3e3b16f7f2fe207597e41" id="r_a879ade6fabb3e3b16f7f2fe207597e41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a879ade6fabb3e3b16f7f2fe207597e41">computeNormals</a> ()</td></tr>
+<tr class="separator:a879ade6fabb3e3b16f7f2fe207597e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be9e1b6c0666d3718c372feb98d9792" id="r_a7be9e1b6c0666d3718c372feb98d9792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a7be9e1b6c0666d3718c372feb98d9792">computeCellDiameter</a> ()</td></tr>
+<tr class="separator:a7be9e1b6c0666d3718c372feb98d9792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31b046d7c479e37db1bc06ef9ac490a" id="r_ad31b046d7c479e37db1bc06ef9ac490a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ad31b046d7c479e37db1bc06ef9ac490a">computeFaceDiameter</a> ()</td></tr>
+<tr class="separator:ad31b046d7c479e37db1bc06ef9ac490a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa38ef16947cb7541a45e721215f55e0" id="r_aaa38ef16947cb7541a45e721215f55e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#aaa38ef16947cb7541a45e721215f55e0">computeFaceKb</a> ()</td></tr>
+<tr class="separator:aaa38ef16947cb7541a45e721215f55e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8da34c50c9c32a05723badf24b3a6e1" id="r_ab8da34c50c9c32a05723badf24b3a6e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ab8da34c50c9c32a05723badf24b3a6e1">computeMeasure</a> (bool compute_barycenter)</td></tr>
+<tr class="separator:ab8da34c50c9c32a05723badf24b3a6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661949ff90870e447c3df81be984d03d" id="r_a661949ff90870e447c3df81be984d03d"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a661949ff90870e447c3df81be984d03d">vtxs</a> () const</td></tr>
+<tr class="separator:a661949ff90870e447c3df81be984d03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d2abe522507f03e8a1069c3000e44d" id="r_a25d2abe522507f03e8a1069c3000e44d"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a25d2abe522507f03e8a1069c3000e44d">vtxs</a> ()</td></tr>
+<tr class="separator:a25d2abe522507f03e8a1069c3000e44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedeb0293c7f727c6d573e010a2ddd683" id="r_aedeb0293c7f727c6d573e010a2ddd683"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#aedeb0293c7f727c6d573e010a2ddd683">bbox</a> () const</td></tr>
+<tr class="separator:aedeb0293c7f727c6d573e010a2ddd683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea86f70656c0dbb87bf9fce258d48c4" id="r_acea86f70656c0dbb87bf9fce258d48c4"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#acea86f70656c0dbb87bf9fce258d48c4">normals</a> () const</td></tr>
+<tr class="separator:acea86f70656c0dbb87bf9fce258d48c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f9c200a125b26eb10ac01f2e7e66f4" id="r_ae5f9c200a125b26eb10ac01f2e7e66f4"><td class="memItemLeft" align="right" valign="top">Eigen::Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ae5f9c200a125b26eb10ac01f2e7e66f4">nfaces</a> () const</td></tr>
+<tr class="separator:ae5f9c200a125b26eb10ac01f2e7e66f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f6813c81cb576cb7fb74b66f0b8ba9" id="r_a74f6813c81cb576cb7fb74b66f0b8ba9"><td class="memItemLeft" align="right" valign="top">Eigen::Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a74f6813c81cb576cb7fb74b66f0b8ba9">nedges</a> () const</td></tr>
+<tr class="separator:a74f6813c81cb576cb7fb74b66f0b8ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae072c15eb8dbe2d2881474f3f483a7f8" id="r_ae072c15eb8dbe2d2881474f3f483a7f8"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ae072c15eb8dbe2d2881474f3f483a7f8">barycenter</a> () const</td></tr>
+<tr class="separator:ae072c15eb8dbe2d2881474f3f483a7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da0203c3f7f0db9201523ca368347bb" id="r_a0da0203c3f7f0db9201523ca368347bb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a0da0203c3f7f0db9201523ca368347bb">diameter</a> () const</td></tr>
+<tr class="separator:a0da0203c3f7f0db9201523ca368347bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81702c41139e61696e93efe1a18ba677" id="r_a81702c41139e61696e93efe1a18ba677"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a81702c41139e61696e93efe1a18ba677">measure</a> () const</td></tr>
+<tr class="separator:a81702c41139e61696e93efe1a18ba677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b4b6f50da891cd6302355d9799fc78" id="r_a39b4b6f50da891cd6302355d9799fc78"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a39b4b6f50da891cd6302355d9799fc78">faceDiam</a> () const</td></tr>
+<tr class="separator:a39b4b6f50da891cd6302355d9799fc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df0241654672872c75ff488285f3905" id="r_a2df0241654672872c75ff488285f3905"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a2df0241654672872c75ff488285f3905">faceKb</a> () const</td></tr>
+<tr class="separator:a2df0241654672872c75ff488285f3905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aded935b340752123ddee90cfe20e1318" id="r_aded935b340752123ddee90cfe20e1318"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, 2, -1, Eigen::ColMajor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#aded935b340752123ddee90cfe20e1318">m_vtxs</a></td></tr>
-<tr class="separator:aded935b340752123ddee90cfe20e1318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a908cb94fdd2286349e10e1b7edf1091a" id="r_a908cb94fdd2286349e10e1b7edf1091a"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, 2, -1, Eigen::ColMajor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a908cb94fdd2286349e10e1b7edf1091a">m_normals</a></td></tr>
-<tr class="separator:a908cb94fdd2286349e10e1b7edf1091a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42fb5dcb001c16145c5d40ab485172bb" id="r_a42fb5dcb001c16145c5d40ab485172bb"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, 2, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a42fb5dcb001c16145c5d40ab485172bb">m_bbox</a></td></tr>
-<tr class="separator:a42fb5dcb001c16145c5d40ab485172bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8ce1d9b35bed2d8dd45349c6412c2b" id="r_a7a8ce1d9b35bed2d8dd45349c6412c2b"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, 2, -1, Eigen::ColMajor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a7a8ce1d9b35bed2d8dd45349c6412c2b">m_vtxs</a></td></tr>
+<tr class="separator:a7a8ce1d9b35bed2d8dd45349c6412c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5810c7dbabe289a7a7d73bf23cdde008" id="r_a5810c7dbabe289a7a7d73bf23cdde008"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, 2, -1, Eigen::ColMajor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a5810c7dbabe289a7a7d73bf23cdde008">m_normals</a></td></tr>
+<tr class="separator:a5810c7dbabe289a7a7d73bf23cdde008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792f5ce2d1c1dbf22ad563a9961f8d0f" id="r_a792f5ce2d1c1dbf22ad563a9961f8d0f"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; FloatType, 2, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a792f5ce2d1c1dbf22ad563a9961f8d0f">m_bbox</a></td></tr>
+<tr class="separator:a792f5ce2d1c1dbf22ad563a9961f8d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadfce142ef463a862ef7bbc804625f7" id="r_adadfce142ef463a862ef7bbc804625f7"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#adadfce142ef463a862ef7bbc804625f7">m_diameter</a> = 0.0</td></tr>
+<tr class="separator:adadfce142ef463a862ef7bbc804625f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360dbf38726a490fded27f0d59ec4bf3" id="r_a360dbf38726a490fded27f0d59ec4bf3"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a360dbf38726a490fded27f0d59ec4bf3">m_measure</a> = 0.0</td></tr>
+<tr class="separator:a360dbf38726a490fded27f0d59ec4bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1722d0fa9ea812264760e02eb835a7" id="r_adf1722d0fa9ea812264760e02eb835a7"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; FloatType, -1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#adf1722d0fa9ea812264760e02eb835a7">m_face_measures</a></td></tr>
+<tr class="separator:adf1722d0fa9ea812264760e02eb835a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893be96234ff9f77fd5e6b0c082b18aa" id="r_a893be96234ff9f77fd5e6b0c082b18aa"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; FloatType, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a893be96234ff9f77fd5e6b0c082b18aa">m_barycenter</a></td></tr>
+<tr class="separator:a893be96234ff9f77fd5e6b0c082b18aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a8e8497205e0cb74af1e98f74e7f1a3" id="r_a8a8e8497205e0cb74af1e98f74e7f1a3"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; FloatType, -1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a8a8e8497205e0cb74af1e98f74e7f1a3">m_face_diameter</a></td></tr>
+<tr class="separator:a8a8e8497205e0cb74af1e98f74e7f1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12eeb7e94e718656fac035d36cc96c7d" id="r_a12eeb7e94e718656fac035d36cc96c7d"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; FloatType, -1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a12eeb7e94e718656fac035d36cc96c7d">m_face_kb</a></td></tr>
+<tr class="separator:a12eeb7e94e718656fac035d36cc96c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a736c8fb5546ba60f0d2b6bde42c15d62" name="a736c8fb5546ba60f0d2b6bde42c15d62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a736c8fb5546ba60f0d2b6bde42c15d62">&#9670;&#160;</a></span>Cell2D() <span class="overload">[1/2]</span></h2>
+<a id="aedbbb958e47d0ca15f362ab2c12cf0a3" name="aedbbb958e47d0ca15f362ab2c12cf0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedbbb958e47d0ca15f362ab2c12cf0a3">&#9670;&#160;</a></span>Cell2D() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::Cell2D </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::Cell2D </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -182,21 +210,19 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="aae1767441699bdbd91a8534ffde9b461" name="aae1767441699bdbd91a8534ffde9b461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae1767441699bdbd91a8534ffde9b461">&#9670;&#160;</a></span>Cell2D() <span class="overload">[2/2]</span></h2>
+<a id="af1e4f26b5fd5a7c8aaadb07142abc4e1" name="af1e4f26b5fd5a7c8aaadb07142abc4e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e4f26b5fd5a7c8aaadb07142abc4e1">&#9670;&#160;</a></span>Cell2D() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
-<div class="memtemplate">
-template&lt;typename IndexType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::Cell2D </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::Cell2D </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;&#160;</td>
           <td class="paramname"><em>mesh</em>, </td>
@@ -210,8 +236,8 @@ template&lt;typename IndexType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>compute_normals</em> = <code>false</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">CellInitOptionsType</a>&#160;</td>
+          <td class="paramname"><em>cell_init_options</em> = <code><a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea2359fd7251d07a4997cc86bcfde6564e">CellInitVtxOnly</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,19 +255,19 @@ template&lt;typename IndexType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae868e4c0d0757ab8441ec9015dbd1454" name="ae868e4c0d0757ab8441ec9015dbd1454"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae868e4c0d0757ab8441ec9015dbd1454">&#9670;&#160;</a></span>bbox()</h2>
+<a id="ae072c15eb8dbe2d2881474f3f483a7f8" name="ae072c15eb8dbe2d2881474f3f483a7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae072c15eb8dbe2d2881474f3f483a7f8">&#9670;&#160;</a></span>barycenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::bbox </td>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::barycenter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -256,73 +282,19 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="a54d938a6f45c9e4228124ebc56bb55fb" name="a54d938a6f45c9e4228124ebc56bb55fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54d938a6f45c9e4228124ebc56bb55fb">&#9670;&#160;</a></span>computeBbox()</h2>
+<a id="aedeb0293c7f727c6d573e010a2ddd683" name="aedeb0293c7f727c6d573e010a2ddd683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedeb0293c7f727c6d573e010a2ddd683">&#9670;&#160;</a></span>bbox()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::computeBbox </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7395059f0bc18b4703987ff3ee7e32f0" name="a7395059f0bc18b4703987ff3ee7e32f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7395059f0bc18b4703987ff3ee7e32f0">&#9670;&#160;</a></span>computeNormals()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::computeNormals </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a95831dbbfaede48a8f2a49b5298a88ae" name="a95831dbbfaede48a8f2a49b5298a88ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95831dbbfaede48a8f2a49b5298a88ae">&#9670;&#160;</a></span>nfaces()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::nfaces </td>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::bbox </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -337,46 +309,19 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="ac4c0cfdc7b00b14cef77b0e5d74e7251" name="ac4c0cfdc7b00b14cef77b0e5d74e7251"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4c0cfdc7b00b14cef77b0e5d74e7251">&#9670;&#160;</a></span>normals()</h2>
+<a id="ae0324af3a672d64943a934a72ded4dbe" name="ae0324af3a672d64943a934a72ded4dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0324af3a672d64943a934a72ded4dbe">&#9670;&#160;</a></span>computeBbox()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::normals </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac7ddeb408d1dc54ceff7e5487c5cefbb" name="ac7ddeb408d1dc54ceff7e5487c5cefbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7ddeb408d1dc54ceff7e5487c5cefbb">&#9670;&#160;</a></span>vtxs() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::vtxs </td>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::computeBbox </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -391,19 +336,371 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="aa7c8733ea81e6e568814bdf9f2d5f9bc" name="aa7c8733ea81e6e568814bdf9f2d5f9bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7c8733ea81e6e568814bdf9f2d5f9bc">&#9670;&#160;</a></span>vtxs() <span class="overload">[2/2]</span></h2>
+<a id="a7be9e1b6c0666d3718c372feb98d9792" name="a7be9e1b6c0666d3718c372feb98d9792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be9e1b6c0666d3718c372feb98d9792">&#9670;&#160;</a></span>computeCellDiameter()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::vtxs </td>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::computeCellDiameter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad31b046d7c479e37db1bc06ef9ac490a" name="ad31b046d7c479e37db1bc06ef9ac490a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31b046d7c479e37db1bc06ef9ac490a">&#9670;&#160;</a></span>computeFaceDiameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::computeFaceDiameter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa38ef16947cb7541a45e721215f55e0" name="aaa38ef16947cb7541a45e721215f55e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa38ef16947cb7541a45e721215f55e0">&#9670;&#160;</a></span>computeFaceKb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::computeFaceKb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8da34c50c9c32a05723badf24b3a6e1" name="ab8da34c50c9c32a05723badf24b3a6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8da34c50c9c32a05723badf24b3a6e1">&#9670;&#160;</a></span>computeMeasure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::computeMeasure </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>compute_barycenter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a879ade6fabb3e3b16f7f2fe207597e41" name="a879ade6fabb3e3b16f7f2fe207597e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a879ade6fabb3e3b16f7f2fe207597e41">&#9670;&#160;</a></span>computeNormals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::computeNormals </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0da0203c3f7f0db9201523ca368347bb" name="a0da0203c3f7f0db9201523ca368347bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da0203c3f7f0db9201523ca368347bb">&#9670;&#160;</a></span>diameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::diameter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39b4b6f50da891cd6302355d9799fc78" name="a39b4b6f50da891cd6302355d9799fc78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b4b6f50da891cd6302355d9799fc78">&#9670;&#160;</a></span>faceDiam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::faceDiam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2df0241654672872c75ff488285f3905" name="a2df0241654672872c75ff488285f3905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df0241654672872c75ff488285f3905">&#9670;&#160;</a></span>faceKb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::faceKb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81702c41139e61696e93efe1a18ba677" name="a81702c41139e61696e93efe1a18ba677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81702c41139e61696e93efe1a18ba677">&#9670;&#160;</a></span>measure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::measure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74f6813c81cb576cb7fb74b66f0b8ba9" name="a74f6813c81cb576cb7fb74b66f0b8ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f6813c81cb576cb7fb74b66f0b8ba9">&#9670;&#160;</a></span>nedges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Index <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::nedges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5f9c200a125b26eb10ac01f2e7e66f4" name="ae5f9c200a125b26eb10ac01f2e7e66f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f9c200a125b26eb10ac01f2e7e66f4">&#9670;&#160;</a></span>nfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Index <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::nfaces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acea86f70656c0dbb87bf9fce258d48c4" name="acea86f70656c0dbb87bf9fce258d48c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea86f70656c0dbb87bf9fce258d48c4">&#9670;&#160;</a></span>normals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::normals </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25d2abe522507f03e8a1069c3000e44d" name="a25d2abe522507f03e8a1069c3000e44d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d2abe522507f03e8a1069c3000e44d">&#9670;&#160;</a></span>vtxs() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::vtxs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a661949ff90870e447c3df81be984d03d" name="a661949ff90870e447c3df81be984d03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a661949ff90870e447c3df81be984d03d">&#9670;&#160;</a></span>vtxs() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::vtxs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -419,19 +716,19 @@ template&lt;typename FloatType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a42fb5dcb001c16145c5d40ab485172bb" name="a42fb5dcb001c16145c5d40ab485172bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42fb5dcb001c16145c5d40ab485172bb">&#9670;&#160;</a></span>m_bbox</h2>
+<a id="a893be96234ff9f77fd5e6b0c082b18aa" name="a893be96234ff9f77fd5e6b0c082b18aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a893be96234ff9f77fd5e6b0c082b18aa">&#9670;&#160;</a></span>m_barycenter</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt;FloatType, 2, 2&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::m_bbox</td>
+          <td class="memname">Eigen::Vector&lt;FloatType, 2&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_barycenter</td>
         </tr>
       </table>
   </td>
@@ -443,19 +740,19 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="a908cb94fdd2286349e10e1b7edf1091a" name="a908cb94fdd2286349e10e1b7edf1091a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a908cb94fdd2286349e10e1b7edf1091a">&#9670;&#160;</a></span>m_normals</h2>
+<a id="a792f5ce2d1c1dbf22ad563a9961f8d0f" name="a792f5ce2d1c1dbf22ad563a9961f8d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a792f5ce2d1c1dbf22ad563a9961f8d0f">&#9670;&#160;</a></span>m_bbox</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt;FloatType, 2, -1, Eigen::ColMajor&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::m_normals</td>
+          <td class="memname">Eigen::Matrix&lt;FloatType, 2, 2&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_bbox</td>
         </tr>
       </table>
   </td>
@@ -467,19 +764,163 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="aded935b340752123ddee90cfe20e1318" name="aded935b340752123ddee90cfe20e1318"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aded935b340752123ddee90cfe20e1318">&#9670;&#160;</a></span>m_vtxs</h2>
+<a id="adadfce142ef463a862ef7bbc804625f7" name="adadfce142ef463a862ef7bbc804625f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adadfce142ef463a862ef7bbc804625f7">&#9670;&#160;</a></span>m_diameter</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt;FloatType, 2, -1, Eigen::ColMajor&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType &gt;::m_vtxs</td>
+          <td class="memname">FloatType <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_diameter = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a8e8497205e0cb74af1e98f74e7f1a3" name="a8a8e8497205e0cb74af1e98f74e7f1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a8e8497205e0cb74af1e98f74e7f1a3">&#9670;&#160;</a></span>m_face_diameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector&lt;FloatType, -1&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_face_diameter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12eeb7e94e718656fac035d36cc96c7d" name="a12eeb7e94e718656fac035d36cc96c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12eeb7e94e718656fac035d36cc96c7d">&#9670;&#160;</a></span>m_face_kb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector&lt;FloatType, -1&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_face_kb</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf1722d0fa9ea812264760e02eb835a7" name="adf1722d0fa9ea812264760e02eb835a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1722d0fa9ea812264760e02eb835a7">&#9670;&#160;</a></span>m_face_measures</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector&lt;FloatType, -1&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_face_measures</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a360dbf38726a490fded27f0d59ec4bf3" name="a360dbf38726a490fded27f0d59ec4bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360dbf38726a490fded27f0d59ec4bf3">&#9670;&#160;</a></span>m_measure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatType <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_measure = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5810c7dbabe289a7a7d73bf23cdde008" name="a5810c7dbabe289a7a7d73bf23cdde008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5810c7dbabe289a7a7d73bf23cdde008">&#9670;&#160;</a></span>m_normals</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;FloatType, 2, -1, Eigen::ColMajor&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_normals</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a8ce1d9b35bed2d8dd45349c6412c2b" name="a7a8ce1d9b35bed2d8dd45349c6412c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8ce1d9b35bed2d8dd45349c6412c2b">&#9670;&#160;</a></span>m_vtxs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType  = int32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;FloatType, 2, -1, Eigen::ColMajor&gt; <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a>&lt; FloatType, IndexType &gt;::m_vtxs</td>
         </tr>
       </table>
   </td>
@@ -501,7 +942,7 @@ template&lt;typename FloatType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">Cell2D</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,7 +115,12 @@ $(document).ready(function(){initNavTree('functions_l.html',''); initResizable()
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
 <li>leafsize&#160;:&#160;<a class="el" href="structscipy_1_1ckdtree.html#a0e58157ca568213dbe5e808a5c4aa62f">scipy::ckdtree&lt; Dim &gt;</a></li>
 <li>less&#160;:&#160;<a class="el" href="structscipy_1_1ckdtreenode.html#a55b8fd434530d00090e4ed29a400efcc">scipy::ckdtreenode</a></li>
+<li>liftDimension()&#160;:&#160;<a class="el" href="classvulpes_1_1monomial_1_1Monomial.html#a4326407c592293eececabf9dcf5c1963">vulpes::monomial::Monomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a>, <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6b22d4e4f358e4abad4c67bdba1a9206">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
+<li>LinearSolver()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a0ecc24f106ebe2c1b7270c5aa1fddfa2">vulpes::la::LinearSolver</a></li>
+<li>loc_neigh_cell_id&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#aadb1e40c60e0e2d37eb21b76343661d3">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;::NeighInfo</a></li>
+<li>loc_neigh_face_id&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#ae6682a4b48a3190399ef303a1a8485f6">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;::NeighInfo</a></li>
 <li>localToGlobal()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
+<li>LU&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a35465277fa4ea8d11e4b614122500a9b">vulpes::la::LinearSolver</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -126,7 +128,7 @@ $(document).ready(function(){initNavTree('functions_l.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

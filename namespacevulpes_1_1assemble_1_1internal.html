@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -115,6 +112,8 @@ $(document).ready(function(){initNavTree('namespacevulpes_1_1assemble_1_1interna
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">vulpes::assemble::internal Namespace Reference</div></div>
 </div><!--header-->
@@ -122,6 +121,10 @@ $(document).ready(function(){initNavTree('namespacevulpes_1_1assemble_1_1interna
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1concat__tuples.html">concat_tuples</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5.html">concat_tuples&lt; std::tuple&lt; Ts... &gt;, std::tuple&lt; Us... &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived.html">is_fe_expression_derived</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived_3_01T_00_01std_1_1void__t_3_4_01_4.html">is_fe_expression_derived&lt; T, std::void_t&lt;&gt; &gt;</a></td></tr>
@@ -137,18 +140,179 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html">is_tuple_of_fe_expr_pointers&lt; std::tuple&lt; Args... &gt;, std::enable_if_t&lt;(std::conjunction_v&lt; std::is_pointer&lt; Args &gt;... &gt;) &amp;&amp;(std::conjunction_v&lt; is_fe_expression_derived&lt; std::remove_pointer_t&lt; Args &gt; &gt;... &gt;)&gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a116fdd6feb479918b206188e4a2aefeb" id="r_a116fdd6feb479918b206188e4a2aefeb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a116fdd6feb479918b206188e4a2aefeb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a116fdd6feb479918b206188e4a2aefeb">concat_tuples_t</a> = typename <a class="el" href="structvulpes_1_1assemble_1_1internal_1_1concat__tuples.html">concat_tuples</a>&lt; T, U &gt;::type</td></tr>
+<tr class="separator:a116fdd6feb479918b206188e4a2aefeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab9497678b40f0c2ef5887367e2522061" id="r_ab9497678b40f0c2ef5887367e2522061"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , std::size_t I&gt; </td></tr>
+<tr class="memitem:ab9497678b40f0c2ef5887367e2522061"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#ab9497678b40f0c2ef5887367e2522061">extract_true</a> (Tuple &amp;&amp;t)</td></tr>
+<tr class="separator:ab9497678b40f0c2ef5887367e2522061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de999237d41ed61782b1f0ac4657ab7" id="r_a8de999237d41ed61782b1f0ac4657ab7"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , std::size_t I&gt; </td></tr>
+<tr class="memitem:a8de999237d41ed61782b1f0ac4657ab7"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a8de999237d41ed61782b1f0ac4657ab7">extract_false</a> (Tuple &amp;&amp;t)</td></tr>
+<tr class="separator:a8de999237d41ed61782b1f0ac4657ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ba426dd42c9a3a3c4f2d66fc1b2580" id="r_ab7ba426dd42c9a3a3c4f2d66fc1b2580"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , std::size_t... Is&gt; </td></tr>
+<tr class="memitem:ab7ba426dd42c9a3a3c4f2d66fc1b2580"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#ab7ba426dd42c9a3a3c4f2d66fc1b2580">split_tuple_impl</a> (Tuple &amp;&amp;t, std::index_sequence&lt; Is... &gt;)</td></tr>
+<tr class="separator:ab7ba426dd42c9a3a3c4f2d66fc1b2580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3452007ee5d0906d35c5771b51048895" id="r_a3452007ee5d0906d35c5771b51048895"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a3452007ee5d0906d35c5771b51048895"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a3452007ee5d0906d35c5771b51048895">split_expression_tuple</a> (std::tuple&lt; Ts... &gt; t)</td></tr>
+<tr class="separator:a3452007ee5d0906d35c5771b51048895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a315316767dbd8426c25cdecc5e2c7abd" id="r_a315316767dbd8426c25cdecc5e2c7abd"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">typename</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a> &gt; </td></tr>
-<tr class="memitem:a315316767dbd8426c25cdecc5e2c7abd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">constexpr</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a315316767dbd8426c25cdecc5e2c7abd">is_tuple_v</a> = <a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple.html">is_tuple</a>&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a>&gt;::value</td></tr>
+<tr class="memitem:a315316767dbd8426c25cdecc5e2c7abd" id="r_a315316767dbd8426c25cdecc5e2c7abd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a315316767dbd8426c25cdecc5e2c7abd"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a315316767dbd8426c25cdecc5e2c7abd">is_tuple_v</a> = <a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple.html">is_tuple</a>&lt;T&gt;::value</td></tr>
 <tr class="separator:a315316767dbd8426c25cdecc5e2c7abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2749b64a77065ed4830daacd6ee0aed" id="r_af2749b64a77065ed4830daacd6ee0aed"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">typename</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a> &gt; </td></tr>
-<tr class="memitem:af2749b64a77065ed4830daacd6ee0aed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">constexpr</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#af2749b64a77065ed4830daacd6ee0aed">is_fe_expression_derived_v</a></td></tr>
+<tr class="memitem:af2749b64a77065ed4830daacd6ee0aed" id="r_af2749b64a77065ed4830daacd6ee0aed"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af2749b64a77065ed4830daacd6ee0aed"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#af2749b64a77065ed4830daacd6ee0aed">is_fe_expression_derived_v</a></td></tr>
 <tr class="separator:af2749b64a77065ed4830daacd6ee0aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b4aeab8908f7eac1e38a5f5963aed5e" id="r_a6b4aeab8908f7eac1e38a5f5963aed5e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6b4aeab8908f7eac1e38a5f5963aed5e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">is_tuple_of_fe_expr_pointers_v</a></td></tr>
 <tr class="separator:a6b4aeab8908f7eac1e38a5f5963aed5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a116fdd6feb479918b206188e4a2aefeb" name="a116fdd6feb479918b206188e4a2aefeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a116fdd6feb479918b206188e4a2aefeb">&#9670;&#160;</a></span>concat_tuples_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a116fdd6feb479918b206188e4a2aefeb">vulpes::assemble::internal::concat_tuples_t</a> = typedef typename <a class="el" href="structvulpes_1_1assemble_1_1internal_1_1concat__tuples.html">concat_tuples</a>&lt;T, U&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a8de999237d41ed61782b1f0ac4657ab7" name="a8de999237d41ed61782b1f0ac4657ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de999237d41ed61782b1f0ac4657ab7">&#9670;&#160;</a></span>extract_false()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tuple , std::size_t I&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto vulpes::assemble::internal::extract_false </td>
+          <td>(</td>
+          <td class="paramtype">Tuple &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9497678b40f0c2ef5887367e2522061" name="ab9497678b40f0c2ef5887367e2522061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9497678b40f0c2ef5887367e2522061">&#9670;&#160;</a></span>extract_true()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tuple , std::size_t I&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto vulpes::assemble::internal::extract_true </td>
+          <td>(</td>
+          <td class="paramtype">Tuple &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3452007ee5d0906d35c5771b51048895" name="a3452007ee5d0906d35c5771b51048895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3452007ee5d0906d35c5771b51048895">&#9670;&#160;</a></span>split_expression_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto vulpes::assemble::internal::split_expression_tuple </td>
+          <td>(</td>
+          <td class="paramtype">std::tuple&lt; Ts... &gt;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7ba426dd42c9a3a3c4f2d66fc1b2580" name="ab7ba426dd42c9a3a3c4f2d66fc1b2580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7ba426dd42c9a3a3c4f2d66fc1b2580">&#9670;&#160;</a></span>split_tuple_impl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tuple , std::size_t... Is&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto vulpes::assemble::internal::split_tuple_impl </td>
+          <td>(</td>
+          <td class="paramtype">Tuple &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::index_sequence&lt; Is... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="af2749b64a77065ed4830daacd6ee0aed" name="af2749b64a77065ed4830daacd6ee0aed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2749b64a77065ed4830daacd6ee0aed">&#9670;&#160;</a></span>is_fe_expression_derived_v</h2>
@@ -156,13 +320,13 @@ Variables</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">typename</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a> &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">constexpr</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">bool</a> vulpes::assemble::internal::is_fe_expression_derived_v</td>
+          <td class="memname">constexpr bool vulpes::assemble::internal::is_fe_expression_derived_v</td>
         </tr>
       </table>
   </td>
@@ -208,13 +372,13 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">typename</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a> &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">constexpr</a> <a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">bool</a> vulpes::assemble::internal::is_tuple_v = <a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple.html">is_tuple</a>&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">T</a>&gt;::value</td>
+          <td class="memname">constexpr bool vulpes::assemble::internal::is_tuple_v = <a class="el" href="structvulpes_1_1assemble_1_1internal_1_1is__tuple.html">is_tuple</a>&lt;T&gt;::value</td>
         </tr>
       </table>
   </td>
@@ -233,7 +397,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1internal.html">internal</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

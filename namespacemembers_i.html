@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -117,21 +114,21 @@ $(document).ready(function(){initNavTree('namespacemembers_i.html',''); initResi
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
 <li>inner()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">vulpes::fe</a></li>
-<li>integrateMonomialsQuadratureFree2D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#ada7b3ab30d528632becda4014b9a0b3a">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree2D&lt; false, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a469e5d465c4f0cb6ed895bb0fab01cff">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree2D&lt; true, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a0782bfa4ef6334005ebe89c44988d080">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a100930b6bc80f0d5d28d03ed224c4ec9">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D&lt; false, false, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#ae0ae3e2c67f5dce68e3ad6d8536c2247">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D&lt; false, true, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#aba6e667d5a214ab9dfde4be023c495f7">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D&lt; true, false, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a9b95cad24d7adfd74c43cf1ef80552f0">vulpes::qfree</a></li>
-<li>integrateMonomialsQuadratureFree3D&lt; true, true, double, uint32_t &gt;()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a2199524f462e664bd21230254ab5b035">vulpes::qfree</a></li>
+<li>integrateMonomialsQFree()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#ad6c6cf7c49c0131cdab6226c5dfc373d">vulpes::qfree</a></li>
+<li>integrateMonomialsQFree2D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#adbf474d2e1b5de0ebe5a0be2820d69c7">vulpes::qfree</a></li>
+<li>integrateMonomialsQFree3D()&#160;:&#160;<a class="el" href="namespacevulpes_1_1qfree.html#a9c3bbb32d2a10f8b76611d8daa3e2c1d">vulpes::qfree</a></li>
+<li>IntegrationForm&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bd">vulpes::fe</a></li>
 <li>interpolateFunctionAtNodes()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a8a3ac0047d31adeb05ff8d7a66d79e76">vulpes::fe::internal</a></li>
 <li>ipow()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a1da3b522ac38484cf973b4e7799463da">vulpes::vmath</a></li>
 <li>is_fe_expression_derived_v&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#af2749b64a77065ed4830daacd6ee0aed">vulpes::assemble::internal</a></li>
 <li>is_tuple_of_fe_expr_pointers_v&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a6b4aeab8908f7eac1e38a5f5963aed5e">vulpes::assemble::internal</a></li>
 <li>is_tuple_v&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a315316767dbd8426c25cdecc5e2c7abd">vulpes::assemble::internal</a></li>
+<li>IsBilinear&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdae1ee74daa22febc532721ecb824cf32d">vulpes::fe</a></li>
 <li>isFinalized()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a69d9be96b8f08244e3e81936907d5023">vulpes::mpi</a></li>
 <li>isInitialized()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#ad2d509a0ca4a115dac378ca0e4856ae3">vulpes::mpi</a></li>
+<li>IsLinearTest&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bda6a506d38a5246cc1f633c1ac60956d6a">vulpes::fe</a></li>
+<li>IsLinearTrial&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdad2a37047321895490c10c252b57729a6">vulpes::fe</a></li>
+<li>IsNothing&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bda77de660f3159503734d5b49ec951ebbc">vulpes::fe</a></li>
 <li>isPetscFinalized()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a5d25d97349ad971ed39593382db3a3c8">vulpes::mpi</a></li>
 <li>isPetscInitialized()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a9f0003d4087b1bb597c21947a1113b29">vulpes::mpi</a></li>
 </ul>
@@ -141,7 +138,7 @@ $(document).ready(function(){initNavTree('namespacemembers_i.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

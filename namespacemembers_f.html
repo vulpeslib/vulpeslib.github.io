@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -122,13 +119,16 @@ $(document).ready(function(){initNavTree('namespacemembers_f.html',''); initResi
 <li>FeSpaceLagrangeDP&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#af30448e7da7545f7abafd001dd487b5a">vulpes::fe</a></li>
 <li>FeSpaceLagrangeDQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a0b5f00f2f85fe9f07d65efbb09d701a5">vulpes::fe</a></li>
 <li>FeSpaceModalLegendreDP&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a45667ebd33208ca3c2f00200a1c6fae9">vulpes::fe</a></li>
-<li>FeSpaceModalLegendreDQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#af0feb103c0764d262f93612a388d9546">vulpes::fe</a></li>
-<li>FeSpaceScaledMonomialsVEM&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#acfa88112629fa12c856d723bfd5fec62">vulpes::fe</a></li>
+<li>FeSpaceModalLegendreDQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#aa900a9c8403894acdcbe5919e4944c64">vulpes::fe</a></li>
 <li>FeSpaceSpectralCP&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a5b02fefffe02f141356f10fc50939632">vulpes::fe</a></li>
 <li>FeSpaceSpectralCQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#aaa50172ce0a62935d383460e78d962ef">vulpes::fe</a></li>
 <li>FeSpaceSpectralDP&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#aa87cba6aa045e3438e3304d00bba95e6">vulpes::fe</a></li>
 <li>FeSpaceSpectralDQ&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ae6388f676176d533d7c6fd18e3061ab7">vulpes::fe</a></li>
 <li>FeType&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221">vulpes::fe</a></li>
+<li>for_each()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#adef74d45dd575ad10f2d51460aedc4ae">vulpes::vutils</a></li>
+<li>for_each_idxed()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#aab6903411968dab01497e6e432f64bd7">vulpes::vutils</a></li>
+<li>for_each_impl()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#a0c6463b6e7d4017c0d2bc4667e2331bd">vulpes::vutils</a></li>
+<li>for_each_impl_idxed()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#a4336d47f77f009cde65bbce2b8f21f47">vulpes::vutils</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('namespacemembers_f.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -124,6 +121,7 @@ $(document).ready(function(){initNavTree('mesh__3d_8hpp.html',''); initResizable
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
@@ -176,9 +174,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3bd6b0b0b7f0dca8d6364d683a000260" id="r_a3bd6b0b0b7f0dca8d6364d683a000260"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
-<tr class="memitem:a3bd6b0b0b7f0dca8d6364d683a000260"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh3d.html#a3bd6b0b0b7f0dca8d6364d683a000260">vulpes::geometry::mesh3d::readVTU</a> (const std::string &amp;filename, bool)</td></tr>
-<tr class="separator:a3bd6b0b0b7f0dca8d6364d683a000260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad96bb1e56b4893f637a6ff840c5366b" id="r_aad96bb1e56b4893f637a6ff840c5366b"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:aad96bb1e56b4893f637a6ff840c5366b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh3d.html#aad96bb1e56b4893f637a6ff840c5366b">vulpes::geometry::mesh3d::readVTU</a> (const std::string &amp;filename, bool=true)</td></tr>
+<tr class="separator:aad96bb1e56b4893f637a6ff840c5366b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a927c5ee9d72145bacd91df3f118927ea" id="r_a927c5ee9d72145bacd91df3f118927ea"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
 <tr class="memitem:a927c5ee9d72145bacd91df3f118927ea"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh3d.html#a927c5ee9d72145bacd91df3f118927ea">vulpes::geometry::mesh3d::rect_cuboid</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 3 &gt; &amp;corner_a, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 3 &gt; &amp;corner_b, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; IndexType, 3 &gt; &amp;n_divisions, bool tetra_elements=false)</td></tr>
 <tr class="separator:a927c5ee9d72145bacd91df3f118927ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,7 +188,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="dir_3213ab77fe4ea86cfa506605152366dc.html">mesh</a></li><li class="navelem"><a class="el" href="mesh__3d_8hpp.html">mesh_3d.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

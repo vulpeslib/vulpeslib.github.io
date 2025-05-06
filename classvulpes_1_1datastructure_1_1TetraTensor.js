@@ -17,6 +17,7 @@ var classvulpes_1_1datastructure_1_1TetraTensor =
     [ "operator()", "classvulpes_1_1datastructure_1_1TetraTensor.html#ab648c43b4a8894fd32aad95a8dc0dd6c", null ],
     [ "tdim", "classvulpes_1_1datastructure_1_1TetraTensor.html#a750a87c68011b43c53c925c335717943", null ],
     [ "m_data", "classvulpes_1_1datastructure_1_1TetraTensor.html#a91dd3f27eca91c7baa69683545c23f4d", null ],
+    [ "m_numel", "classvulpes_1_1datastructure_1_1TetraTensor.html#acb6d618fc1f89f52ef2292146062dce2", null ],
     [ "m_tensor_size", "classvulpes_1_1datastructure_1_1TetraTensor.html#a496bb41729238b1193522c12f0fa0f24", null ],
     [ "m_tri_dim", "classvulpes_1_1datastructure_1_1TetraTensor.html#a779f37ca8cc2e1dcad5748dc3da763fe", null ],
     [ "m_tri_size", "classvulpes_1_1datastructure_1_1TetraTensor.html#a7b58b0d669bd95d0e32a15310e926433", null ]

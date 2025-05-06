@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,16 +113,21 @@ $(document).ready(function(){initNavTree('cell_8hpp.html',''); initResizable(); 
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">cell.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;set&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;boost/unordered/unordered_flat_map.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="crs__map_8hpp_source.html">vulpes/datastructure/crs_map.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mesh_8hpp_source.html">vulpes/geometry/mesh.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="traits_8hpp_source.html">vulpes/geometry/traits.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="qfree_8hpp_source.html">vulpes/quadrature/qfree.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cell.hpp:</div>
 <div class="dyncontent">
@@ -141,7 +143,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D&lt; FloatType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,12 +154,62 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1geometry" id="r_namespacevulpes_1_1geometry"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html">vulpes::geometry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevulpes_1_1qfree" id="r_namespacevulpes_1_1qfree"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html">vulpes::qfree</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a93a5cf513d4258ef7fbce6fd1ddcb1cc" id="r_a93a5cf513d4258ef7fbce6fd1ddcb1cc"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FloatType , typename IndexType , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </td></tr>
-<tr class="memitem:a93a5cf513d4258ef7fbce6fd1ddcb1cc"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a93a5cf513d4258ef7fbce6fd1ddcb1cc">vulpes::geometry::Cell</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">Cell2D</a>&lt; FloatType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">Cell3D</a>&lt; FloatType, IndexType &gt; &gt;</td></tr>
-<tr class="separator:a93a5cf513d4258ef7fbce6fd1ddcb1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d000a0daf511e876e95deb8dd181b1" id="r_a90d000a0daf511e876e95deb8dd181b1"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a90d000a0daf511e876e95deb8dd181b1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a90d000a0daf511e876e95deb8dd181b1">vulpes::qfree::AreaIntegral2D</a> = <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">datastructure::TriMatrix</a>&lt; PPoly, false, FloatType, IndexType &gt;</td></tr>
+<tr class="separator:a90d000a0daf511e876e95deb8dd181b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7e62280a4037f61d40bce7e42f1230" id="r_afc7e62280a4037f61d40bce7e42f1230"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:afc7e62280a4037f61d40bce7e42f1230"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#afc7e62280a4037f61d40bce7e42f1230">vulpes::qfree::EdgeIntegral2D</a> = <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">datastructure::TriMatrix</a>&lt; PPoly, true, FloatType, IndexType &gt;</td></tr>
+<tr class="separator:afc7e62280a4037f61d40bce7e42f1230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf22c9be809ca91dd654059febec70bd" id="r_abf22c9be809ca91dd654059febec70bd"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:abf22c9be809ca91dd654059febec70bd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#abf22c9be809ca91dd654059febec70bd">vulpes::qfree::VolumeIntegral3D</a> = <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">datastructure::TetraTensor</a>&lt; PPoly, false, FloatType, IndexType &gt;</td></tr>
+<tr class="separator:abf22c9be809ca91dd654059febec70bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e99dc5f3471d81f48abcca915180569" id="r_a2e99dc5f3471d81f48abcca915180569"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a2e99dc5f3471d81f48abcca915180569"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a2e99dc5f3471d81f48abcca915180569">vulpes::qfree::LowerIntegral3D</a> = <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">datastructure::TetraTensor</a>&lt; PPoly, true, FloatType, IndexType &gt;</td></tr>
+<tr class="separator:a2e99dc5f3471d81f48abcca915180569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a786c7fca1e115d7874dee2bd72985" id="r_af3a786c7fca1e115d7874dee2bd72985"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">vulpes::geometry::CellInitOptionsType</a> = std::underlying_type_t&lt; <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2e">CellInitOptions</a> &gt;</td></tr>
+<tr class="separator:af3a786c7fca1e115d7874dee2bd72985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c09611cfe1534ef23da85c983c0aa1f" id="r_a9c09611cfe1534ef23da85c983c0aa1f"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FloatType , typename IndexType , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </td></tr>
+<tr class="memitem:a9c09611cfe1534ef23da85c983c0aa1f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">vulpes::geometry::Cell</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">Cell2D</a>&lt; FloatType, IndexType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">Cell3D</a>&lt; FloatType, IndexType &gt; &gt;</td></tr>
+<tr class="separator:a9c09611cfe1534ef23da85c983c0aa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ad2f45b81f4d778acb7c48e9c5f104e2e" id="r_ad2f45b81f4d778acb7c48e9c5f104e2e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2e">vulpes::geometry::CellInitOptions</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea2359fd7251d07a4997cc86bcfde6564e">vulpes::geometry::CellInitVtxOnly</a> = 0ULL
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2eacf220dcaa3bf69ee7b002a86ee5dc5cf">vulpes::geometry::CellInitNormals</a> = (1ULL &lt;&lt; 0ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea7253e02fee3563c1958c4d20607b5cd4">vulpes::geometry::CellInitLocalMaps</a> = (1ULL &lt;&lt; 1ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea5541c1339edb3fdfc4850a123d94bd76">vulpes::geometry::CellInitInverseMaps</a> = (1ULL &lt;&lt; 2ULL)
+, <br />
+&#160;&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea1a321bf33128c977da956fad1b00f403">vulpes::geometry::CellInitEdgeToCompute</a> = (1ULL &lt;&lt; 3ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea6c10de81e99c1074718866c3550cd9c8">vulpes::geometry::CellInitFaces</a> = (1ULL &lt;&lt; 4ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea8e46c29857e30fc00b93aa073246f75b">vulpes::geometry::CellInitBBox</a> = (1ULL &lt;&lt; 5ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2eaf1d0bb6342c7367423d5bf8df75dbeb8">vulpes::geometry::CellInitDiameter</a> = (1ULL &lt;&lt; 6ULL)
+, <br />
+&#160;&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2eabf14a56c396317913abc19a17cb08311">vulpes::geometry::CellInitMeasure</a> = (1ULL &lt;&lt; 7ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea69bcc45742d69b56ed3a6fd46f0284d8">vulpes::geometry::CellInitBarycenter</a> = (1ULL &lt;&lt; 8ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea4ef54dee0fb1c9a62a0f9e0855772506">vulpes::geometry::CellInitFaceDiameter</a> = (1ULL &lt;&lt; 9ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea27a15df6b1b37e9f6fe2a8f6e6af96ef">vulpes::geometry::CellInitFaceKb</a> = (1ULL &lt;&lt; 10ULL)
+, <br />
+&#160;&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4">vulpes::geometry::CellInitAll</a> = 0xFFFFFFFFUL
+<br />
+ }</td></tr>
+<tr class="separator:ad2f45b81f4d778acb7c48e9c5f104e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:adbf474d2e1b5de0ebe5a0be2820d69c7" id="r_adbf474d2e1b5de0ebe5a0be2820d69c7"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:adbf474d2e1b5de0ebe5a0be2820d69c7"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1qfree.html#a90d000a0daf511e876e95deb8dd181b1">AreaIntegral2D</a>&lt; PPoly, FloatType, IndexType &gt;, <a class="el" href="namespacevulpes_1_1qfree.html#afc7e62280a4037f61d40bce7e42f1230">EdgeIntegral2D</a>&lt; PPoly, FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#adbf474d2e1b5de0ebe5a0be2820d69c7">vulpes::qfree::integrateMonomialsQFree2D</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">geometry::Cell2D</a>&lt; FloatType, IndexType &gt; &amp;cell, IndexType deg)</td></tr>
+<tr class="memdesc:adbf474d2e1b5de0ebe5a0be2820d69c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the 2D area and edge integrals over a polygonal cell without requiring quadrature points of all monomials up to a fixed degree.  <br /></td></tr>
+<tr class="separator:adbf474d2e1b5de0ebe5a0be2820d69c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3bbb32d2a10f8b76611d8daa3e2c1d" id="r_a9c3bbb32d2a10f8b76611d8daa3e2c1d"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, bool Pruning, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a9c3bbb32d2a10f8b76611d8daa3e2c1d"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1qfree.html#abf22c9be809ca91dd654059febec70bd">VolumeIntegral3D</a>&lt; PPoly, FloatType, IndexType &gt;, <a class="el" href="namespacevulpes_1_1qfree.html#a2e99dc5f3471d81f48abcca915180569">LowerIntegral3D</a>&lt; PPoly, FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a9c3bbb32d2a10f8b76611d8daa3e2c1d">vulpes::qfree::integrateMonomialsQFree3D</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">geometry::Cell3D</a>&lt; FloatType, IndexType &gt; &amp;elem, IndexType deg)</td></tr>
+<tr class="memdesc:a9c3bbb32d2a10f8b76611d8daa3e2c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the volume and lower-dimensional integrals over a 3D element without quadrature.  <br /></td></tr>
+<tr class="separator:a9c3bbb32d2a10f8b76611d8daa3e2c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -166,7 +218,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="cell_8hpp.html">cell.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

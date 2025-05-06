@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -397,7 +394,7 @@ $(document).ready(function(){initNavTree('polynomial2d_8hpp_source.html',''); in
 <div class="ttc" id="aclassvulpes_1_1polynomial_1_1Polynomial2D_html_aeed36fb6803aadce19ded3fb4e0f18ee"><div class="ttname"><a href="classvulpes_1_1polynomial_1_1Polynomial2D.html#aeed36fb6803aadce19ded3fb4e0f18ee">vulpes::polynomial::Polynomial2D::operator+=</a></div><div class="ttdeci">Polynomial2D&lt; T, IsSpaceP &gt; &amp; operator+=(const Polynomial2D&lt; T, IsSpaceP &gt; &amp;other)</div><div class="ttdoc">Adds another polynomial to the current polynomial in place.</div><div class="ttdef"><b>Definition</b> polynomial2d.hpp:174</div></div>
 <div class="ttc" id="aclassvulpes_1_1polynomial_1_1Polynomial2D_html_af8110455f9a82392daa230cb1a58003b"><div class="ttname"><a href="classvulpes_1_1polynomial_1_1Polynomial2D.html#af8110455f9a82392daa230cb1a58003b">vulpes::polynomial::Polynomial2D::coef</a></div><div class="ttdeci">const T &amp; coef(std::size_t i, std::size_t j) const</div><div class="ttdef"><b>Definition</b> polynomial2d.hpp:61</div></div>
 <div class="ttc" id="aclassvulpes_1_1polynomial_1_1PolynomialBase_html"><div class="ttname"><a href="classvulpes_1_1polynomial_1_1PolynomialBase.html">vulpes::polynomial::PolynomialBase</a></div><div class="ttdoc">Base template class for a general polynomial.</div><div class="ttdef"><b>Definition</b> polynomial.hpp:46</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> integrator_base.hpp:34</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:33</div></div>
 <div class="ttc" id="apolynomial_8hpp_html"><div class="ttname"><a href="polynomial_8hpp.html">polynomial.hpp</a></div></div>
 <div class="ttc" id="atensor_8hpp_html"><div class="ttname"><a href="tensor_8hpp.html">tensor.hpp</a></div></div>
 <div class="ttc" id="avmath_8hpp_html"><div class="ttname"><a href="vmath_8hpp.html">vmath.hpp</a></div></div>
@@ -408,7 +405,7 @@ $(document).ready(function(){initNavTree('polynomial2d_8hpp_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_f847fbc2a10034652ea68ba29427c8a1.html">polynomials</a></li><li class="navelem"><a class="el" href="polynomial2d_8hpp.html">polynomial2d.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

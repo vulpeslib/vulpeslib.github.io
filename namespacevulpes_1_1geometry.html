@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -163,6 +160,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">MeshBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">MeshExporter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html">MeshExporterBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterSubmesh.html">MeshExporterSubmesh</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">MeshTag</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps any serial mesh class and adds suitable attribute needed to distributes it in parallel.  <a href="classvulpes_1_1geometry_1_1ParallelMesh.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +190,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a93a5cf513d4258ef7fbce6fd1ddcb1cc" id="r_a93a5cf513d4258ef7fbce6fd1ddcb1cc"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FloatType , typename IndexType , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </td></tr>
-<tr class="memitem:a93a5cf513d4258ef7fbce6fd1ddcb1cc"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a93a5cf513d4258ef7fbce6fd1ddcb1cc">Cell</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">Cell2D</a>&lt; FloatType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">Cell3D</a>&lt; FloatType, IndexType &gt; &gt;</td></tr>
-<tr class="separator:a93a5cf513d4258ef7fbce6fd1ddcb1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a786c7fca1e115d7874dee2bd72985" id="r_af3a786c7fca1e115d7874dee2bd72985"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">CellInitOptionsType</a> = std::underlying_type_t&lt; <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2e">CellInitOptions</a> &gt;</td></tr>
+<tr class="separator:af3a786c7fca1e115d7874dee2bd72985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c09611cfe1534ef23da85c983c0aa1f" id="r_a9c09611cfe1534ef23da85c983c0aa1f"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FloatType , typename IndexType , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </td></tr>
+<tr class="memitem:a9c09611cfe1534ef23da85c983c0aa1f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">Cell</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">Cell2D</a>&lt; FloatType, IndexType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">Cell3D</a>&lt; FloatType, IndexType &gt; &gt;</td></tr>
+<tr class="separator:a9c09611cfe1534ef23da85c983c0aa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e6a6deae9bfee82032a94e225d980a" id="r_a72e6a6deae9bfee82032a94e225d980a"><td class="memTemplParams" colspan="2">template&lt;typename DataType , int Dim&gt; </td></tr>
 <tr class="memitem:a72e6a6deae9bfee82032a94e225d980a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a> = Eigen::Matrix&lt; DataType, Dim, 1, Eigen::ColMajor &gt;</td></tr>
 <tr class="separator:a72e6a6deae9bfee82032a94e225d980a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +205,26 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ad2f45b81f4d778acb7c48e9c5f104e2e" id="r_ad2f45b81f4d778acb7c48e9c5f104e2e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2e">CellInitOptions</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea2359fd7251d07a4997cc86bcfde6564e">CellInitVtxOnly</a> = 0ULL
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2eacf220dcaa3bf69ee7b002a86ee5dc5cf">CellInitNormals</a> = (1ULL &lt;&lt; 0ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea7253e02fee3563c1958c4d20607b5cd4">CellInitLocalMaps</a> = (1ULL &lt;&lt; 1ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea5541c1339edb3fdfc4850a123d94bd76">CellInitInverseMaps</a> = (1ULL &lt;&lt; 2ULL)
+, <br />
+&#160;&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea1a321bf33128c977da956fad1b00f403">CellInitEdgeToCompute</a> = (1ULL &lt;&lt; 3ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea6c10de81e99c1074718866c3550cd9c8">CellInitFaces</a> = (1ULL &lt;&lt; 4ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea8e46c29857e30fc00b93aa073246f75b">CellInitBBox</a> = (1ULL &lt;&lt; 5ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2eaf1d0bb6342c7367423d5bf8df75dbeb8">CellInitDiameter</a> = (1ULL &lt;&lt; 6ULL)
+, <br />
+&#160;&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2eabf14a56c396317913abc19a17cb08311">CellInitMeasure</a> = (1ULL &lt;&lt; 7ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea69bcc45742d69b56ed3a6fd46f0284d8">CellInitBarycenter</a> = (1ULL &lt;&lt; 8ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea4ef54dee0fb1c9a62a0f9e0855772506">CellInitFaceDiameter</a> = (1ULL &lt;&lt; 9ULL)
+, <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea27a15df6b1b37e9f6fe2a8f6e6af96ef">CellInitFaceKb</a> = (1ULL &lt;&lt; 10ULL)
+, <br />
+&#160;&#160;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4">CellInitAll</a> = 0xFFFFFFFFUL
+<br />
+ }</td></tr>
+<tr class="separator:ad2f45b81f4d778acb7c48e9c5f104e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb9ef6723547f9fe3e6aa1490c8b2ab" id="r_a5cb9ef6723547f9fe3e6aa1490c8b2ab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab">DataMode</a> : std::uint8_t { <a class="el" href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba0b113699bc543798d4bd94c7ba44fe01">Ascii</a> = vtkXMLWriterBase::Ascii
 , <a class="el" href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba68e36ebb95b2ed53b079c8080f546dc2">Binary</a> = vtkXMLWriterBase::Binary
 , <a class="el" href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba893648d04b9aa2e46ef4d69dff4c06f2">Base64</a> = vtkXMLWriterBase::Appended
@@ -238,8 +265,8 @@ Functions</h2></td></tr>
 <tr class="separator:a4addb93c64bac421b210251486415946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a93a5cf513d4258ef7fbce6fd1ddcb1cc" name="a93a5cf513d4258ef7fbce6fd1ddcb1cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a5cf513d4258ef7fbce6fd1ddcb1cc">&#9670;&#160;</a></span>Cell</h2>
+<a id="a9c09611cfe1534ef23da85c983c0aa1f" name="a9c09611cfe1534ef23da85c983c0aa1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c09611cfe1534ef23da85c983c0aa1f">&#9670;&#160;</a></span>Cell</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +274,21 @@ Functions</h2></td></tr>
 template&lt;std::size_t Dim, typename FloatType , typename IndexType , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacevulpes_1_1geometry.html#a93a5cf513d4258ef7fbce6fd1ddcb1cc">vulpes::geometry::Cell</a> = typedef std:: conditional_t&lt;Dim == 2, <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">Cell2D</a>&lt;FloatType&gt;, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">Cell3D</a>&lt;FloatType, IndexType&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">vulpes::geometry::Cell</a> = typedef std::conditional_t&lt; Dim == 2, <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">Cell2D</a>&lt;FloatType, IndexType&gt;, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">Cell3D</a>&lt;FloatType, IndexType&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3a786c7fca1e115d7874dee2bd72985" name="af3a786c7fca1e115d7874dee2bd72985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a786c7fca1e115d7874dee2bd72985">&#9670;&#160;</a></span>CellInitOptionsType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">vulpes::geometry::CellInitOptionsType</a> = typedef std::underlying_type_t&lt;<a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2e">CellInitOptions</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -296,6 +337,35 @@ template&lt;int32_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ad2f45b81f4d778acb7c48e9c5f104e2e" name="ad2f45b81f4d778acb7c48e9c5f104e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f45b81f4d778acb7c48e9c5f104e2e">&#9670;&#160;</a></span>CellInitOptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2e">vulpes::geometry::CellInitOptions</a> : uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea2359fd7251d07a4997cc86bcfde6564e" name="ad2f45b81f4d778acb7c48e9c5f104e2ea2359fd7251d07a4997cc86bcfde6564e"></a>CellInitVtxOnly&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2eacf220dcaa3bf69ee7b002a86ee5dc5cf" name="ad2f45b81f4d778acb7c48e9c5f104e2eacf220dcaa3bf69ee7b002a86ee5dc5cf"></a>CellInitNormals&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea7253e02fee3563c1958c4d20607b5cd4" name="ad2f45b81f4d778acb7c48e9c5f104e2ea7253e02fee3563c1958c4d20607b5cd4"></a>CellInitLocalMaps&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea5541c1339edb3fdfc4850a123d94bd76" name="ad2f45b81f4d778acb7c48e9c5f104e2ea5541c1339edb3fdfc4850a123d94bd76"></a>CellInitInverseMaps&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea1a321bf33128c977da956fad1b00f403" name="ad2f45b81f4d778acb7c48e9c5f104e2ea1a321bf33128c977da956fad1b00f403"></a>CellInitEdgeToCompute&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea6c10de81e99c1074718866c3550cd9c8" name="ad2f45b81f4d778acb7c48e9c5f104e2ea6c10de81e99c1074718866c3550cd9c8"></a>CellInitFaces&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea8e46c29857e30fc00b93aa073246f75b" name="ad2f45b81f4d778acb7c48e9c5f104e2ea8e46c29857e30fc00b93aa073246f75b"></a>CellInitBBox&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2eaf1d0bb6342c7367423d5bf8df75dbeb8" name="ad2f45b81f4d778acb7c48e9c5f104e2eaf1d0bb6342c7367423d5bf8df75dbeb8"></a>CellInitDiameter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2eabf14a56c396317913abc19a17cb08311" name="ad2f45b81f4d778acb7c48e9c5f104e2eabf14a56c396317913abc19a17cb08311"></a>CellInitMeasure&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea69bcc45742d69b56ed3a6fd46f0284d8" name="ad2f45b81f4d778acb7c48e9c5f104e2ea69bcc45742d69b56ed3a6fd46f0284d8"></a>CellInitBarycenter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea4ef54dee0fb1c9a62a0f9e0855772506" name="ad2f45b81f4d778acb7c48e9c5f104e2ea4ef54dee0fb1c9a62a0f9e0855772506"></a>CellInitFaceDiameter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea27a15df6b1b37e9f6fe2a8f6e6af96ef" name="ad2f45b81f4d778acb7c48e9c5f104e2ea27a15df6b1b37e9f6fe2a8f6e6af96ef"></a>CellInitFaceKb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4" name="ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4"></a>CellInitAll&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a5cb9ef6723547f9fe3e6aa1490c8b2ab" name="a5cb9ef6723547f9fe3e6aa1490c8b2ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cb9ef6723547f9fe3e6aa1490c8b2ab">&#9670;&#160;</a></span>DataMode</h2>
 
@@ -734,7 +804,7 @@ template&lt;int32_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

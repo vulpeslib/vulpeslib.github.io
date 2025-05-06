@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -433,7 +430,7 @@ $(document).ready(function(){initNavTree('kdtree_8hpp_source.html',''); initResi
 <div class="ttc" id="aclassvulpes_1_1datastructure_1_1KDTree_html_af40c5ea8b9d050eb31e373956185a2e0"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1KDTree.html#af40c5ea8b9d050eb31e373956185a2e0">vulpes::datastructure::KDTree::m_maxs</a></div><div class="ttdeci">std::array&lt; double, Dim &gt; m_maxs</div><div class="ttdef"><b>Definition</b> kdtree.hpp:456</div></div>
 <div class="ttc" id="anamespacescipy_html_a83ea8ec99f39f03fe332e81e3d40abd7"><div class="ttname"><a href="namespacescipy.html#a83ea8ec99f39f03fe332e81e3d40abd7">scipy::build_ckdtree</a></div><div class="ttdeci">static ckdtree_intp_t build_ckdtree(ckdtree&lt; Dim &gt; *self, ckdtree_intp_t start_idx, intptr_t end_idx, double *maxes, double *mins, const int _median, const int _compact)</div><div class="ttdef"><b>Definition</b> ckdtree_decl.hpp:138</div></div>
 <div class="ttc" id="anamespacescipy_html_abe8ae2cce0bf7b6b1c15afa821eca396"><div class="ttname"><a href="namespacescipy.html#abe8ae2cce0bf7b6b1c15afa821eca396">scipy::ckdtree_intp_t</a></div><div class="ttdeci">intptr_t ckdtree_intp_t</div><div class="ttdef"><b>Definition</b> ckdtree_decl.hpp:79</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> integrator_base.hpp:34</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:33</div></div>
 <div class="ttc" id="astructscipy_1_1ckdtree_html"><div class="ttname"><a href="structscipy_1_1ckdtree.html">scipy::ckdtree</a></div><div class="ttdef"><b>Definition</b> ckdtree_decl.hpp:120</div></div>
 <div class="ttc" id="astructscipy_1_1ckdtreenode_html"><div class="ttname"><a href="structscipy_1_1ckdtreenode.html">scipy::ckdtreenode</a></div><div class="ttdef"><b>Definition</b> ckdtree_decl.hpp:109</div></div>
 <div class="ttc" id="astructscipy_1_1ckdtreenode_html_a2b0397fb257eb71121245075ea352c17"><div class="ttname"><a href="structscipy_1_1ckdtreenode.html#a2b0397fb257eb71121245075ea352c17">scipy::ckdtreenode::split_dim</a></div><div class="ttdeci">ckdtree_intp_t split_dim</div><div class="ttdef"><b>Definition</b> ckdtree_decl.hpp:110</div></div>
@@ -446,7 +443,7 @@ $(document).ready(function(){initNavTree('kdtree_8hpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_76c7cfc4ed48b69da3495ed0a3f2a82b.html">datastructure</a></li><li class="navelem"><a class="el" href="kdtree_8hpp.html">kdtree.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:04 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

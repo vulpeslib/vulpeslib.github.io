@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -160,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59dd2d240b291c87d06ed94732d7fae5" id="r_a59dd2d240b291c87d06ed94732d7fae5"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a59dd2d240b291c87d06ed94732d7fae5">push_back</a> (<a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">SmallVector</a>&lt; DataType, N &gt; &amp;&amp;value)</td></tr>
 <tr class="memdesc:a59dd2d240b291c87d06ed94732d7fae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends an rvalue <code><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">SmallVector</a></code> to the map.  <br /></td></tr>
 <tr class="separator:a59dd2d240b291c87d06ed94732d7fae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2270522ab7370180ca5f064ddc5f3890" id="r_a2270522ab7370180ca5f064ddc5f3890"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:a2270522ab7370180ca5f064ddc5f3890"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a2270522ab7370180ca5f064ddc5f3890">emplace_back</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a2270522ab7370180ca5f064ddc5f3890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3956070366f0b87cc007d496ae405a2" id="r_af3956070366f0b87cc007d496ae405a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">SmallVector</a>&lt; DataType, N &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#af3956070366f0b87cc007d496ae405a2">getRow</a> (std::size_t row_idx)</td></tr>
 <tr class="memdesc:af3956070366f0b87cc007d496ae405a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a row of the matrix as a mutable reference.  <br /></td></tr>
 <tr class="separator:af3956070366f0b87cc007d496ae405a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,6 +344,36 @@ template&lt;typename IndexType &gt; </div>
 <p>Compresses the uncompressed <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">CrsMap</a> into a compressed format. </p>
 <p>Converts the uncompressed representation of the matrix (stored as a vector of <code><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">SmallVector</a></code> rows) into a compressed row storage (CRS) format. The resulting <code><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">CrsMap</a></code> contains the data and indices vectors, which represent the compressed matrix structure.</p>
 <dl class="section return"><dt>Returns</dt><dd>CrsMap&lt;DataType&gt; A compressed representation of the matrix in CRS format. </dd></dl>
+
+</div>
+</div>
+<a id="a2270522ab7370180ca5f064ddc5f3890" name="a2270522ab7370180ca5f064ddc5f3890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2270522ab7370180ca5f064ddc5f3890">&#9670;&#160;</a></span>emplace_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType , std::size_t N = 16&gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed</a>&lt; DataType, N &gt;::emplace_back </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -696,7 +726,7 @@ template&lt;typename DataType , std::size_t N = 16&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1datastructure.html">datastructure</a></li><li class="navelem"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

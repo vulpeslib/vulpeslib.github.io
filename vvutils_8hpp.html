@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -122,11 +119,13 @@ $(document).ready(function(){initNavTree('vvutils_8hpp.html',''); initResizable(
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for vvutils.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="vvutils_8hpp__incl.svg" width="379" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="vvutils_8hpp__incl.svg" width="547" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -145,12 +144,27 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad80adb4e62d5f5501a65053065191c21" id="r_ad80adb4e62d5f5501a65053065191c21"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad80adb4e62d5f5501a65053065191c21"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes.html#ad80adb4e62d5f5501a65053065191c21">vulpes::operator&lt;&lt;</a> (std::ostream &amp;os, const std::vector&lt; T &gt; &amp;v)</td></tr>
-<tr class="separator:ad80adb4e62d5f5501a65053065191c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf266c6a317230f5e51d8d0e4d1bf15" id="r_a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
+<tr class="memitem:a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15">vulpes::print</a> (std::ostream &amp;os, const Container &amp;container, const std::string &amp;separator=&quot;,&quot;, const std::string &amp;postpend=&quot;\n&quot;, const std::string &amp;prepend=&quot;&quot;)</td></tr>
+<tr class="separator:a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fb0f2a22d56fdb96264dd8218bd321" id="r_a47fb0f2a22d56fdb96264dd8218bd321"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
+<tr class="memitem:a47fb0f2a22d56fdb96264dd8218bd321"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_printable_container&lt; Container &gt;::value, std::ostream &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes.html#a47fb0f2a22d56fdb96264dd8218bd321">vulpes::operator&lt;&lt;</a> (std::ostream &amp;os, const Container &amp;container)</td></tr>
+<tr class="separator:a47fb0f2a22d56fdb96264dd8218bd321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bd0e624421d07a12ad0b3efc57e6b57" id="r_a0bd0e624421d07a12ad0b3efc57e6b57"><td class="memTemplParams" colspan="2">template&lt;typename T , typename IndexType &gt; </td></tr>
 <tr class="memitem:a0bd0e624421d07a12ad0b3efc57e6b57"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#a0bd0e624421d07a12ad0b3efc57e6b57">vulpes::vutils::slice</a> (const std::vector&lt; T &gt; &amp;source, const std::vector&lt; IndexType &gt; &amp;indices)</td></tr>
 <tr class="separator:a0bd0e624421d07a12ad0b3efc57e6b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6463b6e7d4017c0d2bc4667e2331bd" id="r_a0c6463b6e7d4017c0d2bc4667e2331bd"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , typename Func , std::size_t... Is&gt; </td></tr>
+<tr class="memitem:a0c6463b6e7d4017c0d2bc4667e2331bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#a0c6463b6e7d4017c0d2bc4667e2331bd">vulpes::vutils::for_each_impl</a> (Tuple &amp;&amp;tuple, Func &amp;&amp;func, std::index_sequence&lt; Is... &gt;)</td></tr>
+<tr class="separator:a0c6463b6e7d4017c0d2bc4667e2331bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef74d45dd575ad10f2d51460aedc4ae" id="r_adef74d45dd575ad10f2d51460aedc4ae"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , typename Func &gt; </td></tr>
+<tr class="memitem:adef74d45dd575ad10f2d51460aedc4ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#adef74d45dd575ad10f2d51460aedc4ae">vulpes::vutils::for_each</a> (Tuple &amp;&amp;tuple, Func &amp;&amp;func)</td></tr>
+<tr class="separator:adef74d45dd575ad10f2d51460aedc4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4336d47f77f009cde65bbce2b8f21f47" id="r_a4336d47f77f009cde65bbce2b8f21f47"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , typename Func , std::size_t... Is&gt; </td></tr>
+<tr class="memitem:a4336d47f77f009cde65bbce2b8f21f47"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#a4336d47f77f009cde65bbce2b8f21f47">vulpes::vutils::for_each_impl_idxed</a> (Tuple &amp;&amp;tuple, Func &amp;&amp;func, std::index_sequence&lt; Is... &gt;)</td></tr>
+<tr class="separator:a4336d47f77f009cde65bbce2b8f21f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6903411968dab01497e6e432f64bd7" id="r_aab6903411968dab01497e6e432f64bd7"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , typename Func &gt; </td></tr>
+<tr class="memitem:aab6903411968dab01497e6e432f64bd7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#aab6903411968dab01497e6e432f64bd7">vulpes::vutils::for_each_idxed</a> (Tuple &amp;&amp;tuple, Func &amp;&amp;func)</td></tr>
+<tr class="separator:aab6903411968dab01497e6e432f64bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -159,7 +173,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_57fd5c05a3144478f1fe40cbcefca761.html">utils</a></li><li class="navelem"><a class="el" href="vvutils_8hpp.html">vvutils.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

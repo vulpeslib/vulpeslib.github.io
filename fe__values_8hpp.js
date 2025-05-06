@@ -12,6 +12,7 @@ var fe__values_8hpp =
       [ "UpdateQuadraturePts", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62faab779e486c4ffe937f1710281d00d952", null ],
       [ "UpdateNormals", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62fa05dd11c4de99493614058054bdaff73c", null ],
       [ "UpdateId", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62facd80b741faa03cd18a9e92a0fe26820f", null ],
+      [ "UpdateNeighborCell", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62fa3d4fa5052a332e53b088c83e31d64091", null ],
       [ "UpdateNeighborValues", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62fa4d35240e7133f9979cf52324e593c874", null ],
       [ "UpdateAll", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62fa000c668d9188fd4be6af9ccd77761b76", null ]
     ] ]

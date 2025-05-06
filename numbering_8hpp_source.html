@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -397,9 +394,9 @@ $(document).ready(function(){initNavTree('numbering_8hpp_source.html',''); initR
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_DOFS_NUMBERING_HPP_</span></div>
 <div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html">vulpes::datastructure::CrsMap</a></div><div class="ttdef"><b>Definition</b> crs_map.hpp:72</div></div>
-<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_a251096f3df9c8bcffba04c58e48b31e2"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#a251096f3df9c8bcffba04c58e48b31e2">vulpes::datastructure::CrsMap::size</a></div><div class="ttdeci">IndexType size() const</div><div class="ttdoc">Get the number of rows in the CRS map.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:320</div></div>
-<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_a270f6ccf296ec7ddf725da468220e176"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#a270f6ccf296ec7ddf725da468220e176">vulpes::datastructure::CrsMap::indices</a></div><div class="ttdeci">const auto &amp; indices() const</div><div class="ttdoc">Constant accessor to the indices buffer.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:422</div></div>
-<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_af961a22c1319e66289277e7f44d4765e"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#af961a22c1319e66289277e7f44d4765e">vulpes::datastructure::CrsMap::data</a></div><div class="ttdeci">const auto &amp; data() const</div><div class="ttdoc">Constant accessor to the data buffer.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:418</div></div>
+<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_a251096f3df9c8bcffba04c58e48b31e2"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#a251096f3df9c8bcffba04c58e48b31e2">vulpes::datastructure::CrsMap::size</a></div><div class="ttdeci">IndexType size() const</div><div class="ttdoc">Get the number of rows in the CRS map.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:331</div></div>
+<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_a270f6ccf296ec7ddf725da468220e176"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#a270f6ccf296ec7ddf725da468220e176">vulpes::datastructure::CrsMap::indices</a></div><div class="ttdeci">const auto &amp; indices() const</div><div class="ttdoc">Constant accessor to the indices buffer.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:442</div></div>
+<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_af961a22c1319e66289277e7f44d4765e"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#af961a22c1319e66289277e7f44d4765e">vulpes::datastructure::CrsMap::data</a></div><div class="ttdeci">const auto &amp; data() const</div><div class="ttdoc">Constant accessor to the data buffer.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:438</div></div>
 <div class="ttc" id="acrs__map_8hpp_html"><div class="ttname"><a href="crs__map_8hpp.html">crs_map.hpp</a></div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition</b> dof_handler.hpp:46</div></div>
 <div class="ttc" id="anamespacevulpes_1_1dofs_1_1boosttypes_html_a662d86e03fdcdf381cc259d9b09c8799"><div class="ttname"><a href="namespacevulpes_1_1dofs_1_1boosttypes.html#a662d86e03fdcdf381cc259d9b09c8799">vulpes::dofs::boosttypes::Pair</a></div><div class="ttdeci">std::pair&lt; size_type, size_type &gt; Pair</div><div class="ttdef"><b>Definition</b> numbering.hpp:196</div></div>
@@ -415,7 +412,7 @@ $(document).ready(function(){initNavTree('numbering_8hpp_source.html',''); initR
 <div class="ttc" id="anamespacevulpes_1_1dofs_html_ac4c45bbcac2b56eee9de8acf68bc0fd3"><div class="ttname"><a href="namespacevulpes_1_1dofs.html#ac4c45bbcac2b56eee9de8acf68bc0fd3">vulpes::dofs::RenumberingFunctor</a></div><div class="ttdeci">std::function&lt; Permutation&lt; T &gt;(const datastructure::CrsMap&lt; T, T &gt; &amp;sparsity_pattern, bool reversed)&gt; RenumberingFunctor</div><div class="ttdoc">Type of a function that renumbers a CrsMap.</div><div class="ttdef"><b>Definition</b> numbering.hpp:53</div></div>
 <div class="ttc" id="anamespacevulpes_1_1dofs_html_ae1241641e230350d59e0fbee1441cff6"><div class="ttname"><a href="namespacevulpes_1_1dofs.html#ae1241641e230350d59e0fbee1441cff6">vulpes::dofs::computeReverseCuthillMckeeOrdering</a></div><div class="ttdeci">Permutation&lt; T &gt; computeReverseCuthillMckeeOrdering(const datastructure::CrsMap&lt; T, T &gt; &amp;sparsity_pattern, bool reversed)</div><div class="ttdoc">Returns the permutation array that orders a sparse CSR matrix in Reverse-Cuthill McKee ordering.</div><div class="ttdef"><b>Definition</b> numbering.hpp:89</div></div>
 <div class="ttc" id="anamespacevulpes_1_1dofs_html_afd351cc2c8263c2318ddc76bc3efd4d0"><div class="ttname"><a href="namespacevulpes_1_1dofs.html#afd351cc2c8263c2318ddc76bc3efd4d0">vulpes::dofs::computeBoostKingOrdering</a></div><div class="ttdeci">Permutation&lt; T &gt; computeBoostKingOrdering(const datastructure::CrsMap&lt; T, T &gt; &amp;sparsity_pattern, bool reversed_numbering)</div><div class="ttdoc">Returns the permutation array that orders a sparse CSR matrix in King ordering as implemented by boos...</div><div class="ttdef"><b>Definition</b> numbering.hpp:227</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> integrator_base.hpp:34</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -423,7 +420,7 @@ $(document).ready(function(){initNavTree('numbering_8hpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_6eff03e4f108943e0ec081c616da05c3.html">dofs</a></li><li class="navelem"><a class="el" href="numbering_8hpp.html">numbering.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:04 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

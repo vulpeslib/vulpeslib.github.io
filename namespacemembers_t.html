@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -119,15 +116,17 @@ $(document).ready(function(){initNavTree('namespacemembers_t.html',''); initResi
 <li>Tensor&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221ad226ebfe23a8913bfb43ac4614b914e7">vulpes::fe</a></li>
 <li>TensorLegendre&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa2634746a42faa622f29cd9928374afa0">vulpes::qrule</a></li>
 <li>TensorLobatto&#160;:&#160;<a class="el" href="namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa21e423c8c0f659fb602af23ce7163b3d">vulpes::qrule</a></li>
-<li>TestFunction&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac6176b0bff0b317fb0316fa9ea819f3b">vulpes::fe</a></li>
+<li>TestFunction&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a54bf5266142e2da10063b4aea96d64d2">vulpes::fe</a></li>
 <li>to()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a245458b9bfd85c85466bd41be8cc6866">vulpes::vmath</a></li>
+<li>to_string()&#160;:&#160;<a class="el" href="namespacevulpes_1_1la_1_1internal.html#ad19b0ee9d23741f39bd48c49931bc092">vulpes::la::internal</a></li>
 <li>traverse_checking_query_ball_point()&#160;:&#160;<a class="el" href="namespacescipy.html#a0c4f8afc87f33e941251cc5b141660f5">scipy</a></li>
 <li>traverse_checking_query_ball_tree()&#160;:&#160;<a class="el" href="namespacescipy.html#a85cc5db2e1d2195f67b8813180d637f6">scipy</a></li>
 <li>traverse_checking_query_pairs()&#160;:&#160;<a class="el" href="namespacescipy.html#a7fa782f04232c07e4a88c77db0aaab79">scipy</a></li>
 <li>traverse_no_checking_query_ball_point()&#160;:&#160;<a class="el" href="namespacescipy.html#aa4f21d4b376052adf47aee8042b71107">scipy</a></li>
 <li>traverse_no_checking_query_ball_tree()&#160;:&#160;<a class="el" href="namespacescipy.html#a0e262ab102a5f3bef150b3f937751f10">scipy</a></li>
 <li>traverse_no_checking_query_pairs()&#160;:&#160;<a class="el" href="namespacescipy.html#af3070824b0cf70d6238c39a07920a025">scipy</a></li>
-<li>TrialFunction&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a282cf95f75200501f25a003fc436f026">vulpes::fe</a></li>
+<li>TrialFunction&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a76a59ed77112997baea20fa092654530">vulpes::fe</a></li>
+<li>trsymgrad()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a47bf0094f170763071298c558b5b3d1f">vulpes::fe</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -135,7 +134,7 @@ $(document).ready(function(){initNavTree('namespacemembers_t.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

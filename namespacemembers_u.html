@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -123,6 +120,7 @@ $(document).ready(function(){initNavTree('namespacemembers_u.html',''); initResi
 <li>UpdateHessians&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa9530cac0a1d27f70f7369fd21813378c">vulpes::fe</a></li>
 <li>UpdateId&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62facd80b741faa03cd18a9e92a0fe26820f">vulpes::fe</a></li>
 <li>UpdateMapping&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa8951d89a8579d00a679621692eccb00d">vulpes::fe</a></li>
+<li>UpdateNeighborCell&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa3d4fa5052a332e53b088c83e31d64091">vulpes::fe</a></li>
 <li>UpdateNeighborValues&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa4d35240e7133f9979cf52324e593c874">vulpes::fe</a></li>
 <li>UpdateNormals&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa05dd11c4de99493614058054bdaff73c">vulpes::fe</a></li>
 <li>UpdateNothing&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa42f5f9e73ecca69ea8877f0ef7db282a">vulpes::fe</a></li>
@@ -138,7 +136,7 @@ $(document).ready(function(){initNavTree('namespacemembers_u.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

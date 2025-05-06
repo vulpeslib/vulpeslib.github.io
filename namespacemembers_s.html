@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -120,16 +117,21 @@ $(document).ready(function(){initNavTree('namespacemembers_s.html',''); initResi
 <li>sarrus_det()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a74b793c9b0c3ef71dd6779b4e160feb4">vulpes::vmath</a></li>
 <li>scatter()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a7edf67ee451d1f06d4cf742cba2847eb">vulpes::mpi</a></li>
 <li>send()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38">vulpes::mpi</a></li>
-<li>serialize()&#160;:&#160;<a class="el" href="namespaceboost_1_1serialization.html#a419b1127ceff8910acac15024e9ad81a">boost::serialization</a></li>
+<li>serialize()&#160;:&#160;<a class="el" href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">boost::serialization</a></li>
+<li>setPETScOptionValue()&#160;:&#160;<a class="el" href="namespacevulpes_1_1la.html#a3826656435a19ca632911e187101a335">vulpes::la</a></li>
 <li>Simplex&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221a7e63b9d2d8bd512603139e052c216204">vulpes::fe</a>, <a class="el" href="namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa22eb8c32466025c68a498dd37c6ebf46">vulpes::qrule</a></li>
 <li>simplex2DP()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a0204f4dc193b91e6326ecaf6b409887c">vulpes::fe::internal</a></li>
 <li>simplex3DP()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a9c66ba0b8f1de46b9dcef2b2fbb97592">vulpes::fe::internal</a></li>
-<li>SimplexDataView&#160;:&#160;<a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">vulpes::datastructure</a></li>
+<li>SimplexDataView&#160;:&#160;<a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">vulpes::datastructure</a></li>
 <li>size()&#160;:&#160;<a class="el" href="namespacevulpes_1_1mpi.html#a2511052bffbdeaf3e7292592e93f8c83">vulpes::mpi</a></li>
 <li>size_type&#160;:&#160;<a class="el" href="namespacevulpes_1_1dofs_1_1boosttypes.html#acada01fe12cc1d40b5e635a62ce1f7c7">vulpes::dofs::boosttypes</a></li>
+<li>skip()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a226e4922aefb47edea4078ad3b0b7c0d">vulpes::fe</a></li>
 <li>slice()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vutils.html#a0bd0e624421d07a12ad0b3efc57e6b57">vulpes::vutils</a></li>
+<li>split_expression_tuple()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a3452007ee5d0906d35c5771b51048895">vulpes::assemble::internal</a></li>
+<li>split_tuple_impl()&#160;:&#160;<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#ab7ba426dd42c9a3a3c4f2d66fc1b2580">vulpes::assemble::internal</a></li>
 <li>sqeuclidean_distance_double()&#160;:&#160;<a class="el" href="namespacescipy.html#a838a3703a67948223fe40c1869265e34">scipy</a></li>
 <li>sqrt()&#160;:&#160;<a class="el" href="namespacevulpes_1_1vmath.html#a633acb04daa4a135d4f1888236170bab">vulpes::vmath</a></li>
+<li>symgrad()&#160;:&#160;<a class="el" href="namespacevulpes_1_1fe.html#a28fb99ecd0e1e09dabb1e2f9406bb190">vulpes::fe</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -137,7 +139,7 @@ $(document).ready(function(){initNavTree('namespacemembers_s.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

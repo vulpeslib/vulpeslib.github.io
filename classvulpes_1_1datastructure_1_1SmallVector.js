@@ -6,6 +6,7 @@ var classvulpes_1_1datastructure_1_1SmallVector =
     [ "StaticStorage", "classvulpes_1_1datastructure_1_1SmallVector.html#aec8d022f19f9f8bc575b994fc859e2be", null ],
     [ "SmallVector", "classvulpes_1_1datastructure_1_1SmallVector.html#a06f65e6358abb9000448b1618355022c", null ],
     [ "SmallVector", "classvulpes_1_1datastructure_1_1SmallVector.html#aea58ac74bb0b324c7f0c55bb1ebfc6c4", null ],
+    [ "SmallVector", "classvulpes_1_1datastructure_1_1SmallVector.html#ad99e66d7b863d131f9ed685f3c75fadd", null ],
     [ "assign", "classvulpes_1_1datastructure_1_1SmallVector.html#a30714f026a365bacfa46e444cbe6c486", null ],
     [ "begin", "classvulpes_1_1datastructure_1_1SmallVector.html#a792f7133d03d3153df9e3446cd883ccd", null ],
     [ "begin", "classvulpes_1_1datastructure_1_1SmallVector.html#a8d60a5b3cb88d46924d68d990ff342ac", null ],

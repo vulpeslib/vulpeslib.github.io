@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,6 +115,9 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
 <li>UnionDistance()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1UnionDistance.html#a84f7e39732f0de028be18f0bc61c0df0">vulpes::geometry::UnionDistance&lt; FloatType, Dim, D1, D2 &gt;</a></li>
 <li>update_side_distance()&#160;:&#160;<a class="el" href="structscipy_1_1nodeinfo.html#ab1a61a2c79a40d85e8843815bd0e85d0">scipy::nodeinfo</a></li>
+<li>updateFaceNormalAndGetNanson()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adc74124859d8b3c1af21071f4e0966f3">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>updateMaxExp()&#160;:&#160;<a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a613f1c0e842a79b9cf77a87efb097d91">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
+<li>updateQptsAndMappingForThisAndNeigh()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#aa83ec166222c2d9b65130815add612dd">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>upper_bound&#160;:&#160;<a class="el" href="structscipy_1_1RectRectDistanceTracker.html#a6a71312795ab6a7850b4002ee70b51e2">scipy::RectRectDistanceTracker&lt; MinMaxDist, Dim &gt;</a></li>
 </ul>
 </div><!-- contents -->
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

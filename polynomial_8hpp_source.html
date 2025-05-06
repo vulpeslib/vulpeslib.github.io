@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -171,7 +168,7 @@ $(document).ready(function(){initNavTree('polynomial_8hpp_source.html',''); init
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> SimplexData&gt;</div>
 <div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#a86c472da35039e41facefe0f0c865b28">   62</a></span>  T <a class="code hl_function" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#a86c472da35039e41facefe0f0c865b28">integrate</a>(</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">datastructure::SimplexDataView&lt;Dim, SimplexData, T, std::size_t&gt;</a>&amp;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">datastructure::SimplexDataView&lt;Dim, SimplexData, T, std::size_t&gt;</a>&amp;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>          monomial_integrals)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classvulpes_1_1polynomial_1_1PolynomialBase.html#acb35aa91415753bac40f94e47483d841">self</a>()-&gt;<a class="code hl_function" href="classvulpes_1_1polynomial_1_1Polynomial.html#a9faac8fc11fd79060f8d58594d128c47">integrate</a>(monomial_integrals);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
@@ -256,8 +253,8 @@ $(document).ready(function(){initNavTree('polynomial_8hpp_source.html',''); init
 <div class="ttc" id="aclassvulpes_1_1polynomial_1_1Polynomial_html_a50b0a538f31864d296392162107a6b96"><div class="ttname"><a href="classvulpes_1_1polynomial_1_1Polynomial.html#a50b0a538f31864d296392162107a6b96">vulpes::polynomial::Polynomial::primitive</a></div><div class="ttdeci">Polynomial&lt; T &gt; primitive(const T &amp;c=T(0)) const</div><div class="ttdoc">Computes the indefinite integral (primitive) of the polynomial.</div><div class="ttdef"><b>Definition</b> polynomial1d.hpp:175</div></div>
 <div class="ttc" id="aclassvulpes_1_1polynomial_1_1Polynomial_html_a97fb9e5140619643eb0b984131358196"><div class="ttname"><a href="classvulpes_1_1polynomial_1_1Polynomial.html#a97fb9e5140619643eb0b984131358196">vulpes::polynomial::Polynomial::derivative</a></div><div class="ttdeci">Polynomial&lt; T &gt; derivative() const</div><div class="ttdoc">Computes the derivative of the polynomial.</div><div class="ttdef"><b>Definition</b> polynomial1d.hpp:113</div></div>
 <div class="ttc" id="aclassvulpes_1_1polynomial_1_1Polynomial_html_a9faac8fc11fd79060f8d58594d128c47"><div class="ttname"><a href="classvulpes_1_1polynomial_1_1Polynomial.html#a9faac8fc11fd79060f8d58594d128c47">vulpes::polynomial::Polynomial::integrate</a></div><div class="ttdeci">T integrate(const T &amp;left, const T &amp;right) const</div><div class="ttdoc">Computes the definite integral of the polynomial between two bounds.</div><div class="ttdef"><b>Definition</b> polynomial1d.hpp:163</div></div>
-<div class="ttc" id="anamespacevulpes_1_1datastructure_html_a96f9e6c8445732dd8db92b30b240b015"><div class="ttname"><a href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">vulpes::datastructure::SimplexDataView</a></div><div class="ttdeci">std::conditional_t&lt; Dim==2, TriMatrix&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, std::conditional_t&lt; Dim==3, TetraTensor&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, void &gt; &gt; SimplexDataView</div><div class="ttdef"><b>Definition</b> tensor.hpp:503</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> integrator_base.hpp:34</div></div>
+<div class="ttc" id="anamespacevulpes_1_1datastructure_html_acfe4387e8c43ac4721d755d611be9951"><div class="ttname"><a href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">vulpes::datastructure::SimplexDataView</a></div><div class="ttdeci">std::conditional_t&lt; Dim==2, TriMatrix&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, std::conditional_t&lt; Dim==3, TetraTensor&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, const DataType * &gt; &gt; SimplexDataView</div><div class="ttdef"><b>Definition</b> tensor.hpp:513</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:33</div></div>
 <div class="ttc" id="atensor_8hpp_html"><div class="ttname"><a href="tensor_8hpp.html">tensor.hpp</a></div></div>
 <div class="ttc" id="avmath_8hpp_html"><div class="ttname"><a href="vmath_8hpp.html">vmath.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -267,7 +264,7 @@ $(document).ready(function(){initNavTree('polynomial_8hpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_f847fbc2a10034652ea68ba29427c8a1.html">polynomials</a></li><li class="navelem"><a class="el" href="polynomial_8hpp.html">polynomial.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

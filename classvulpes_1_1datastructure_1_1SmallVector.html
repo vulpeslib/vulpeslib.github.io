@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -154,6 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aea58ac74bb0b324c7f0c55bb1ebfc6c4" id="r_aea58ac74bb0b324c7f0c55bb1ebfc6c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html#aea58ac74bb0b324c7f0c55bb1ebfc6c4">SmallVector</a> (std::initializer_list&lt; T &gt; init_list)</td></tr>
 <tr class="memdesc:aea58ac74bb0b324c7f0c55bb1ebfc6c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to initialize the vector with an initializer list.  <br /></td></tr>
 <tr class="separator:aea58ac74bb0b324c7f0c55bb1ebfc6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad99e66d7b863d131f9ed685f3c75fadd" id="r_ad99e66d7b863d131f9ed685f3c75fadd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html#ad99e66d7b863d131f9ed685f3c75fadd">SmallVector</a> (const T *<a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html#a792f7133d03d3153df9e3446cd883ccd">begin</a>, const T *<a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html#a7bbcb791ef4792d9725e860c435257e0">end</a>)</td></tr>
+<tr class="separator:ad99e66d7b863d131f9ed685f3c75fadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe60e444388c3c67bdd84124cea3a6ec" id="r_afe60e444388c3c67bdd84124cea3a6ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html#afe60e444388c3c67bdd84124cea3a6ec">push_back</a> (const T &amp;value)</td></tr>
 <tr class="memdesc:afe60e444388c3c67bdd84124cea3a6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an element to the end of the vector.  <br /></td></tr>
 <tr class="separator:afe60e444388c3c67bdd84124cea3a6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,7 +294,7 @@ template&lt;typename T , std::size_t N&gt; </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a06f65e6358abb9000448b1618355022c" name="a06f65e6358abb9000448b1618355022c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f65e6358abb9000448b1618355022c">&#9670;&#160;</a></span>SmallVector() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f65e6358abb9000448b1618355022c">&#9670;&#160;</a></span>SmallVector() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,7 +323,7 @@ template&lt;typename T , std::size_t N&gt; </div>
 </div>
 </div>
 <a id="aea58ac74bb0b324c7f0c55bb1ebfc6c4" name="aea58ac74bb0b324c7f0c55bb1ebfc6c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea58ac74bb0b324c7f0c55bb1ebfc6c4">&#9670;&#160;</a></span>SmallVector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aea58ac74bb0b324c7f0c55bb1ebfc6c4">&#9670;&#160;</a></span>SmallVector() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,6 +355,44 @@ template&lt;typename T , std::size_t N&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad99e66d7b863d131f9ed685f3c75fadd" name="ad99e66d7b863d131f9ed685f3c75fadd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad99e66d7b863d131f9ed685f3c75fadd">&#9670;&#160;</a></span>SmallVector() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">vulpes::datastructure::SmallVector</a>&lt; T, N &gt;::SmallVector </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -787,7 +824,7 @@ template&lt;typename T , std::size_t N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1datastructure.html">datastructure</a></li><li class="navelem"><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">SmallVector</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

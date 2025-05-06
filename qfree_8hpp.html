@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -115,7 +112,6 @@ $(document).ready(function(){initNavTree('qfree_8hpp.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">qfree.hpp File Reference</div></div>
 </div><!--header-->
@@ -144,7 +140,7 @@ Include dependency graph for qfree.hpp:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="qfree_8hpp__dep__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="qfree_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="qfree_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -153,34 +149,24 @@ This graph shows which files directly or indirectly include this file:</div>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevulpes" id="r_namespacevulpes"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes.html">vulpes</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevulpes_1_1geometry" id="r_namespacevulpes_1_1geometry"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html">vulpes::geometry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1qfree" id="r_namespacevulpes_1_1qfree"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html">vulpes::qfree</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a90d000a0daf511e876e95deb8dd181b1" id="r_a90d000a0daf511e876e95deb8dd181b1"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
-<tr class="memitem:a90d000a0daf511e876e95deb8dd181b1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a90d000a0daf511e876e95deb8dd181b1">vulpes::qfree::AreaIntegral2D</a> = <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">datastructure::TriMatrix</a>&lt; PPoly, false, FloatType, IndexType &gt;</td></tr>
-<tr class="separator:a90d000a0daf511e876e95deb8dd181b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7e62280a4037f61d40bce7e42f1230" id="r_afc7e62280a4037f61d40bce7e42f1230"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
-<tr class="memitem:afc7e62280a4037f61d40bce7e42f1230"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#afc7e62280a4037f61d40bce7e42f1230">vulpes::qfree::EdgeIntegral2D</a> = <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">datastructure::TriMatrix</a>&lt; PPoly, true, FloatType, IndexType &gt;</td></tr>
-<tr class="separator:afc7e62280a4037f61d40bce7e42f1230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf22c9be809ca91dd654059febec70bd" id="r_abf22c9be809ca91dd654059febec70bd"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
-<tr class="memitem:abf22c9be809ca91dd654059febec70bd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#abf22c9be809ca91dd654059febec70bd">vulpes::qfree::VolumeIntegral3D</a> = <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">datastructure::TetraTensor</a>&lt; PPoly, false, FloatType, IndexType &gt;</td></tr>
-<tr class="separator:abf22c9be809ca91dd654059febec70bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e99dc5f3471d81f48abcca915180569" id="r_a2e99dc5f3471d81f48abcca915180569"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
-<tr class="memitem:a2e99dc5f3471d81f48abcca915180569"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a2e99dc5f3471d81f48abcca915180569">vulpes::qfree::LowerIntegral3D</a> = <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">datastructure::TetraTensor</a>&lt; PPoly, true, FloatType, IndexType &gt;</td></tr>
-<tr class="separator:a2e99dc5f3471d81f48abcca915180569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ada7b3ab30d528632becda4014b9a0b3a" id="r_ada7b3ab30d528632becda4014b9a0b3a"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
-<tr class="memitem:ada7b3ab30d528632becda4014b9a0b3a"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1qfree.html#a90d000a0daf511e876e95deb8dd181b1">AreaIntegral2D</a>&lt; PPoly, FloatType, IndexType &gt;, <a class="el" href="namespacevulpes_1_1qfree.html#afc7e62280a4037f61d40bce7e42f1230">EdgeIntegral2D</a>&lt; PPoly, FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#ada7b3ab30d528632becda4014b9a0b3a">vulpes::qfree::integrateMonomialsQuadratureFree2D</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">geometry::Cell2D</a>&lt; FloatType &gt; &amp;cell, IndexType deg)</td></tr>
-<tr class="memdesc:ada7b3ab30d528632becda4014b9a0b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the 2D area and edge integrals over a polygonal cell without requiring quadrature points of all monomials up to a fixed degree.  <br /></td></tr>
-<tr class="separator:ada7b3ab30d528632becda4014b9a0b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a100930b6bc80f0d5d28d03ed224c4ec9" id="r_a100930b6bc80f0d5d28d03ed224c4ec9"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, bool Pruning, typename FloatType , typename IndexType &gt; </td></tr>
-<tr class="memitem:a100930b6bc80f0d5d28d03ed224c4ec9"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1qfree.html#abf22c9be809ca91dd654059febec70bd">VolumeIntegral3D</a>&lt; PPoly, FloatType, IndexType &gt;, <a class="el" href="namespacevulpes_1_1qfree.html#a2e99dc5f3471d81f48abcca915180569">LowerIntegral3D</a>&lt; PPoly, FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a100930b6bc80f0d5d28d03ed224c4ec9">vulpes::qfree::integrateMonomialsQuadratureFree3D</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">geometry::Cell3D</a>&lt; FloatType, IndexType &gt; &amp;elem, IndexType deg)</td></tr>
-<tr class="memdesc:a100930b6bc80f0d5d28d03ed224c4ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the volume and lower-dimensional integrals over a 3D element without quadrature.  <br /></td></tr>
-<tr class="separator:a100930b6bc80f0d5d28d03ed224c4ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf474d2e1b5de0ebe5a0be2820d69c7" id="r_adbf474d2e1b5de0ebe5a0be2820d69c7"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:adbf474d2e1b5de0ebe5a0be2820d69c7"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1qfree.html#a90d000a0daf511e876e95deb8dd181b1">AreaIntegral2D</a>&lt; PPoly, FloatType, IndexType &gt;, <a class="el" href="namespacevulpes_1_1qfree.html#afc7e62280a4037f61d40bce7e42f1230">EdgeIntegral2D</a>&lt; PPoly, FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#adbf474d2e1b5de0ebe5a0be2820d69c7">vulpes::qfree::integrateMonomialsQFree2D</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html">geometry::Cell2D</a>&lt; FloatType, IndexType &gt; &amp;cell, IndexType deg)</td></tr>
+<tr class="memdesc:adbf474d2e1b5de0ebe5a0be2820d69c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the 2D area and edge integrals over a polygonal cell without requiring quadrature points of all monomials up to a fixed degree.  <br /></td></tr>
+<tr class="separator:adbf474d2e1b5de0ebe5a0be2820d69c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3bbb32d2a10f8b76611d8daa3e2c1d" id="r_a9c3bbb32d2a10f8b76611d8daa3e2c1d"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, bool Pruning, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a9c3bbb32d2a10f8b76611d8daa3e2c1d"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1qfree.html#abf22c9be809ca91dd654059febec70bd">VolumeIntegral3D</a>&lt; PPoly, FloatType, IndexType &gt;, <a class="el" href="namespacevulpes_1_1qfree.html#a2e99dc5f3471d81f48abcca915180569">LowerIntegral3D</a>&lt; PPoly, FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#a9c3bbb32d2a10f8b76611d8daa3e2c1d">vulpes::qfree::integrateMonomialsQFree3D</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html">geometry::Cell3D</a>&lt; FloatType, IndexType &gt; &amp;elem, IndexType deg)</td></tr>
+<tr class="memdesc:a9c3bbb32d2a10f8b76611d8daa3e2c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the volume and lower-dimensional integrals over a 3D element without quadrature.  <br /></td></tr>
+<tr class="separator:a9c3bbb32d2a10f8b76611d8daa3e2c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c6cf7c49c0131cdab6226c5dfc373d" id="r_ad6c6cf7c49c0131cdab6226c5dfc373d"><td class="memTemplParams" colspan="2">template&lt;bool PPoly, bool Pruning, std::size_t Dim, typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:ad6c6cf7c49c0131cdab6226c5dfc373d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1qfree.html#ad6c6cf7c49c0131cdab6226c5dfc373d">vulpes::qfree::integrateMonomialsQFree</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt; Dim, FloatType, IndexType &gt; &amp;elem, IndexType deg)</td></tr>
+<tr class="separator:ad6c6cf7c49c0131cdab6226c5dfc373d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -189,7 +175,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="qfree_8hpp.html">qfree.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

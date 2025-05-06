@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,43 +113,69 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <div class="textblock">Here is a list of all functions with links to the classes they belong to:</div>
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>getBasis()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a22705d7bfe2f7b16a2f78320b92985f3">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a3b76b757f966089bd34f59335071f42f">vulpes::fe::FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html#ad8b94d97d9528ffe5006056d46d495c0">vulpes::fe::FeSpaceLagrangeQ&lt; Dim, DofPolicy, Poly1DPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalP.html#a84b0b183f6c14ad373be7ec9d089363c">vulpes::fe::FeSpaceModalP&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a043a1429e7ffcb03623189dc7c6ff673">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
-<li>getBasisFast()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a4eb27c252225f4afff0f7a582f74c702">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#aa542b2a54e56b3cd5194961a135bb1a9">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
+<li>gatherMonomials()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a47d9d8f6553be92b9ddab5d46c106633">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>gatherUpcompressedMonomials()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aca82a0931a0860515fc0f7e28dfb1444">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>getBasis()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a22705d7bfe2f7b16a2f78320b92985f3">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a3b76b757f966089bd34f59335071f42f">vulpes::fe::FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html#ad8b94d97d9528ffe5006056d46d495c0">vulpes::fe::FeSpaceLagrangeQ&lt; Dim, DofPolicy, Poly1DPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalP.html#a84b0b183f6c14ad373be7ec9d089363c">vulpes::fe::FeSpaceModalP&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a043a1429e7ffcb03623189dc7c6ff673">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#a5bfc6d7153aa8d13aef70f7a733a94b5">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
+<li>getBasisFast()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a4eb27c252225f4afff0f7a582f74c702">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#aa542b2a54e56b3cd5194961a135bb1a9">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#af66479cec250ca78ccfd4b8a046599f6">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
+<li>getCell()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a36cc95db6f6912fa05ee5415fb968316">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#aea77692ea8d7176e0f80510ca8f7dce4">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>getCellId()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a4d3f83a2740d1fd1d5231c55eea67aec">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
+<li>getCells()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a0f43143e60a22990caedc5e9635603c6">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</a></li>
 <li>getCellToCellDof()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a97440e5ffd6be885615450aef96661aa">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>getCellToDof()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a84e2c7bf27665599e569304686a4627c">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
-<li>getCellToEdgeMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html#a886cddfcedc0de63b222db9a09aa5abf">vulpes::geometry::Mesh3D&lt; FloatType, IndexType &gt;</a></li>
+<li>getCellToEdgeMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html#a47cc48ad9b82ddcb9c8c63c3b5729911">vulpes::geometry::Mesh3D&lt; FloatType, IndexType &gt;</a></li>
 <li>getCellToFacetMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a4ba829982e8b9e0cfa66a04d9e7e3fe2">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
 <li>getCellToVtxMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a935616fffbd94d46313296bae998bdcf">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
-<li>getDofToCell()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a7362d0656af4c62edfce7dca02e6f0a8">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
+<li>getConvergenceReason()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a08809b8322e5c151ebe4e3ec3f8d7e0e">vulpes::la::LinearSolver</a></li>
+<li>getCurrFaceIntegral()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a4a8246448e5a9c2728eb7598f61a377f">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>getCurrToRefNumbering()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a8f3f313e3249782ba86357b634c2819c">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>getDualMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a58e4e9223c4384fdce2db629682b59f5">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
 <li>getEdgesToCompute()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#a297eacd7c02b20ad346c181b5e358ccc">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
 <li>getEdgeToCellMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html#a4a2a04d81e2489d8ac714620242b4d50">vulpes::geometry::Mesh3D&lt; FloatType, IndexType &gt;</a></li>
 <li>getEdgeToFaces()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#a6cf2978bd3f2bc1ff314b9df5e3b89f5">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
 <li>getEdgeToVtxMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html#aa78a7d3861c63e3482f78b3c4a7c38ab">vulpes::geometry::Mesh3D&lt; FloatType, IndexType &gt;</a></li>
 <li>getEntityToCellMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html#aa93a5269ec4322e8dac7ca67888b15ab">vulpes::geometry::Mesh2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html#ac3f1355778f4fcf5bbbc6bd4ca649a3b">vulpes::geometry::Mesh3D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a07a0f206f184adbf893f8d6e96eb9910">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
+<li>getExtraExpression()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#a3de333b284da149a57959370f5e73e08">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
+<li>getExtraMatrices()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a20ad4b9599525f5cd6952438372cbd0f">vulpes::assemble::WeakFormIntegratorVem&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>getFaceCenterIdx()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#a4798518487b770be4d6e0d55e76ffc96">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
+<li>getFaceId()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a191eb5a833de8cf7c29b7647eda6b09b">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
 <li>getFaceIntegrals()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#aa63435525f2391570170ad1374050808">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>getFaceIntegralsNeigh()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5a74f7ea7eb50b0b03c621a1fc794e8d">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>getFaceNormal()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#af6f14503ff2c1a3c4ba1a3e4b84c4f5f">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
 <li>getFacetToCellMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a07c71a75247d41828ca62edbbd4cf666">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
 <li>getFacetToVtxMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a8e51e0b9525b8c5c8797ec2fa05050f6">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
+<li>getFeSpace()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a291452dafce2e60bc4f4afb077d514dc">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</a></li>
+<li>getGlobToLocNumbering()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#aa1a2505ac22c9a63d0009f3542a62f5e">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>getGradEval()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a8f543651d01aee50596ca4ba7d84efc0">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
-<li>getIntegrals()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6817f75da211f46b5dae853676b1ba18">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>getIntegrals()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6817f75da211f46b5dae853676b1ba18">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a76b22dd3eabd4631f8cfea57a7fcfc93">vulpes::assemble::WeakFormIntegratorVem&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>getIterationCount()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a1328fa138649881278065570bebc4f38">vulpes::la::LinearSolver</a></li>
 <li>getJacobian()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#adbe2a718ce29802298f8429f046c2ab3">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a></li>
 <li>getJacobianInv()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#a05cccb42d9738379e9291c8600ac9888">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a></li>
-<li>getMapping()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#ac52a981616e97533a410c86160887981">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a1b3c43f9f046c017ecaeb7d8a91efbf3">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
+<li>getKSP()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#af08ae1bd34e38662e57ea2a38b479018">vulpes::la::LinearSolver</a></li>
+<li>getLocalSize()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#aa383a88cfa8b1981bbd945d71a2761bd">vulpes::la::Vector</a></li>
+<li>getLocalValues()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#ac97324888ae7a929f0f1620cf219c440">vulpes::la::Vector</a></li>
+<li>getLocToGlobNumbering()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a9ed698784609cdef626db54d8b70063f">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
+<li>getMapping()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#aafb3befca9ee98431b9cff5e16b7987e">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a2962e82507a3f5392dbcaa9a2ecf31ed">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#aeddd4f8ef3c5c7ab5ab74198eff20903">vulpes::fe::FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalP.html#a5c07cf1d0162c182840bfa9ea6602644">vulpes::fe::FeSpaceModalP&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a170370f20450ed3223e8db21a2423002">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#a920d257f9b2f923a147839f2981746ce">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
+<li>getMesh()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#aff17d22eb06001ff4df758bdf47ec2df">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a92ece065f944f45600ecbdc2be576a66">vulpes::geometry::MeshExporterBase&lt; MeshDerived &gt;</a></li>
 <li>getNodes()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#aee47a48d2e18f7b3e76d94f006c5d8ad">vulpes::fe::FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html#abb288af7b8e8546cd9b556f3cfc26e1c">vulpes::fe::FeSpaceLagrangeQ&lt; Dim, DofPolicy, Poly1DPolicy &gt;</a></li>
 <li>getNumDofsForSubdimEntity()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a15a31ef849ae2ea3237a0f28ccda0ac7">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a></li>
 <li>getNumPoints()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a6819f2cc57ab7236cef20e943abeb403">vulpes::geometry::Simplexify&lt; Dim, typename &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a885f5817737770c6357432b0036d2df7">vulpes::geometry::Tetrahedralization</a>, <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#ac7d914caa06affc3854462f42e83eba0">vulpes::geometry::Triangulation</a></li>
 <li>getNumSimplexes()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a99668874d86af372e258133c5f7db6cb">vulpes::geometry::Simplexify&lt; Dim, typename &gt;</a></li>
 <li>getNumTetrahedra()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#acaf6cf6f37e5bd15af7a15ef1758be83">vulpes::geometry::Tetrahedralization</a></li>
 <li>getNumTriangles()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a4dfc07a3a8b516814eef6dc0e33f1103">vulpes::geometry::Triangulation</a></li>
+<li>getPC()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#ab1c86dad2b2ee2056877f0f879efb64f">vulpes::la::LinearSolver</a></li>
+<li>getPetscMatrix()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a5d1f9d16c2b7ae2d7d59e8fbdd34d65e">vulpes::la::SparseMatrix</a></li>
+<li>getPetscVector()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#af407e094636cbf2098f50282c860503f">vulpes::la::Vector</a></li>
 <li>getPointList()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a02770c01aa7fccfe486d616b9a242021">vulpes::geometry::Simplexify&lt; Dim, typename &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a63364c83fdd04b8f0d1f11474ba57b60">vulpes::geometry::Tetrahedralization</a>, <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a3edb24567efd06ec9c4f0e0f4509b115">vulpes::geometry::Triangulation</a></li>
 <li>getRank0Mesh()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a42a1d2d045cd769bc420979ab5147f34">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
+<li>getRefToCurrNumbering()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a2368438cdd5d5b6a44e80254dcfcd3bc">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
+<li>getResidualNorm()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a72991037c1fb8b369a7fd94215fe01cb">vulpes::la::LinearSolver</a></li>
+<li>getRhsFaceIntegrals()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a855dc5de374ec5d7fa5162d1817a82f9">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>getRhsIntegrals()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a889717afc24367ed219d524b2e72c0f5">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>getRow()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html#a299c5e8eb795856362bc980d508778d7">vulpes::datastructure::CrsMap&lt; DataType, IndexType, RowSize &gt;</a>, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#af3956070366f0b87cc007d496ae405a2">vulpes::datastructure::CrsMapUncompressed&lt; DataType, N &gt;</a></li>
 <li>getRule()&#160;:&#160;<a class="el" href="classvulpes_1_1qrule_1_1QuadratureLibrary.html#a3af29c778d19945df6c4b83d7baf2568">vulpes::qrule::QuadratureLibrary&lt; Dim, FloatType &gt;</a></li>
 <li>getShapeEval()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a7b6d18987920d6e5a1602f40000e39bd">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
 <li>getSimplexesList()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a11ccf3bd7bd5e7c2ed4c7172908aee63">vulpes::geometry::Simplexify&lt; Dim, typename &gt;</a></li>
+<li>getSize()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a98bdee8e83a65cbf02ef1b3c1374752e">vulpes::la::SparseMatrix</a>, <a class="el" href="classvulpes_1_1la_1_1Vector.html#a28e715fd46fad6739abb5d947b3bf661">vulpes::la::Vector</a></li>
 <li>getSparsityPattern()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a8ab4aa38cadc5beb3e01415275d03832">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>getSubsimplexesListFacet()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a69b4a064a52e4b85daad68827a1c5ff9">vulpes::geometry::Simplexify&lt; Dim, typename &gt;</a></li>
 <li>getSurfaceSegmentList()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#adbed69d04a0b6b8ff825d71e1767a2fc">vulpes::geometry::Triangulation</a></li>
@@ -161,7 +184,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>getTranslationInv()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#ad4a0dde7359fd78fd4945670414359ea">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a></li>
 <li>getTriangleList()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html#a23780aa50fb5a23361db9d8a46673155">vulpes::geometry::Triangulation</a></li>
 <li>getTriangleListFacet()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html#a0443911520239c74e252f5bc5152819c">vulpes::geometry::Tetrahedralization</a></li>
+<li>getValue()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a152cf647068bd0e2956771c663db88b0">vulpes::la::Vector</a></li>
 <li>getVertexes()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a77cb0eb9c228f601dbb5c72b222c75ed">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
+<li>getVtkGrids()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a4deb7b8039a748c1ab28ee5800bf381e">vulpes::geometry::MeshExporterBase&lt; MeshDerived &gt;</a></li>
 <li>getVtxToCellMap()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a328775105fa39c2decd8785a14d6c1dc">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
 <li>getVtxToFace()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#afae24b6838458f294c3447ba50152471">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
 <li>globalToLocal()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#af30ff62e37b643b338f9673bd7e78555">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
@@ -173,7 +198,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

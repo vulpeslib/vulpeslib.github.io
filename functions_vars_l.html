@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,6 +115,8 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
 <li>leafsize&#160;:&#160;<a class="el" href="structscipy_1_1ckdtree.html#a0e58157ca568213dbe5e808a5c4aa62f">scipy::ckdtree&lt; Dim &gt;</a></li>
 <li>less&#160;:&#160;<a class="el" href="structscipy_1_1ckdtreenode.html#a55b8fd434530d00090e4ed29a400efcc">scipy::ckdtreenode</a></li>
+<li>loc_neigh_cell_id&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#aadb1e40c60e0e2d37eb21b76343661d3">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;::NeighInfo</a></li>
+<li>loc_neigh_face_id&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#ae6682a4b48a3190399ef303a1a8485f6">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;::NeighInfo</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -125,7 +124,7 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

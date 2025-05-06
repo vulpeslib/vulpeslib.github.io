@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -341,13 +338,13 @@ template&lt;typename T , int Dim, int Options&gt; </div>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The scalar type of the matrix elements (e.g., <code>float</code>, <code>double</code>). </td></tr>
     <tr><td class="paramname">Dim</td><td>Dimension of the matrix: 2 or 3. </td></tr>
-    <tr><td class="paramname">Options</td><td>The storage options for the Eigen matrix (e.g., <code>RowMajor</code> or <code>ColMajor</code>). </td></tr>
+    <tr><td class="paramname">Options</td><td>The storage options for the <a class="el" href="namespaceEigen.html">Eigen</a> matrix (e.g., <code>RowMajor</code> or <code>ColMajor</code>). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mat</td><td>An Eigen matrix whose determinant is to be calculated. </td></tr>
+    <tr><td class="paramname">mat</td><td>An <a class="el" href="namespaceEigen.html">Eigen</a> matrix whose determinant is to be calculated. </td></tr>
   </table>
   </dd>
 </dl>
@@ -778,13 +775,13 @@ template&lt;typename T , int Options&gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The scalar type of the matrix elements (e.g., <code>float</code>, <code>double</code>). </td></tr>
-    <tr><td class="paramname">Options</td><td>The storage options for the Eigen matrix (e.g., <code>RowMajor</code> or <code>ColMajor</code>). </td></tr>
+    <tr><td class="paramname">Options</td><td>The storage options for the <a class="el" href="namespaceEigen.html">Eigen</a> matrix (e.g., <code>RowMajor</code> or <code>ColMajor</code>). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mat</td><td>A 3x3 Eigen matrix whose determinant is to be calculated. </td></tr>
+    <tr><td class="paramname">mat</td><td>A 3x3 <a class="el" href="namespaceEigen.html">Eigen</a> matrix whose determinant is to be calculated. </td></tr>
   </table>
   </dd>
 </dl>
@@ -937,7 +934,7 @@ template&lt;typename U , typename V , typename  = std::enable_if_t&lt;std::is_un
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1vmath.html">vmath</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

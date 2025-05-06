@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -151,9 +148,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a1d0afa4e29d50830f14a082548043887" id="r_a1d0afa4e29d50830f14a082548043887"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
 <tr class="memitem:a1d0afa4e29d50830f14a082548043887"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1datastructure.html#a1d0afa4e29d50830f14a082548043887">CrsMapUncompressedVariant</a> = std::variant&lt; <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 4 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 8 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 16 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 32 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 64 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 128 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 256 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 512 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 1024 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 2048 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 4096 &gt;, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a>&lt; DataType, 8192 &gt; &gt;</td></tr>
 <tr class="separator:a1d0afa4e29d50830f14a082548043887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f9e6c8445732dd8db92b30b240b015" id="r_a96f9e6c8445732dd8db92b30b240b015"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, bool Simplex, typename DataType , typename IndexType &gt; </td></tr>
-<tr class="memitem:a96f9e6c8445732dd8db92b30b240b015"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">SimplexDataView</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">TriMatrix</a>&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, std::conditional_t&lt; Dim==3, <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">TetraTensor</a>&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, void &gt; &gt;</td></tr>
-<tr class="separator:a96f9e6c8445732dd8db92b30b240b015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe4387e8c43ac4721d755d611be9951" id="r_acfe4387e8c43ac4721d755d611be9951"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, bool Simplex, typename DataType , typename IndexType &gt; </td></tr>
+<tr class="memitem:acfe4387e8c43ac4721d755d611be9951"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">SimplexDataView</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">TriMatrix</a>&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, std::conditional_t&lt; Dim==3, <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">TetraTensor</a>&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, const DataType * &gt; &gt;</td></tr>
+<tr class="separator:acfe4387e8c43ac4721d755d611be9951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -187,8 +184,8 @@ template&lt;typename DataType &gt; </div>
 
 </div>
 </div>
-<a id="a96f9e6c8445732dd8db92b30b240b015" name="a96f9e6c8445732dd8db92b30b240b015"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96f9e6c8445732dd8db92b30b240b015">&#9670;&#160;</a></span>SimplexDataView</h2>
+<a id="acfe4387e8c43ac4721d755d611be9951" name="acfe4387e8c43ac4721d755d611be9951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe4387e8c43ac4721d755d611be9951">&#9670;&#160;</a></span>SimplexDataView</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +193,7 @@ template&lt;typename DataType &gt; </div>
 template&lt;std::size_t Dim, bool Simplex, typename DataType , typename IndexType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacevulpes_1_1datastructure.html#a96f9e6c8445732dd8db92b30b240b015">vulpes::datastructure::SimplexDataView</a> = typedef std::conditional_t&lt; Dim == 2, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">TriMatrix</a>&lt;Simplex, false, DataType, IndexType, const DataType*&gt;, std::conditional_t&lt; Dim == 3, <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">TetraTensor</a>&lt;Simplex, false, DataType, IndexType, const DataType*&gt;, void&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">vulpes::datastructure::SimplexDataView</a> = typedef std::conditional_t&lt; Dim == 2, <a class="el" href="classvulpes_1_1datastructure_1_1TriMatrix.html">TriMatrix</a>&lt;Simplex, false, DataType, IndexType, const DataType*&gt;, std::conditional_t&lt; Dim == 3, <a class="el" href="classvulpes_1_1datastructure_1_1TetraTensor.html">TetraTensor</a>&lt;Simplex, false, DataType, IndexType, const DataType*&gt;, const DataType*&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -329,7 +326,7 @@ template&lt;typename DataType , std::size_t N&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the output stream after writing the <code><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html" title="A class that behaves like a vector of vectors, providing automatic row range checking.">CrsMapUncompressed</a></code>.</dd></dl>
 <p>The function writes the <code><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html" title="A class that behaves like a vector of vectors, providing automatic row range checking.">CrsMapUncompressed</a></code> row by row, displaying each row's index and contents. The format is: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a> with &lt;number_of_rows&gt; rows:</div>
 <div class="line">Row &lt;row_index&gt;: [ &lt;element_1&gt; &lt;element_2&gt; ... ]</div>
-<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMapUncompressed_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed</a></div><div class="ttdoc">A class that behaves like a vector of vectors, providing automatic row range checking.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:715</div></div>
+<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMapUncompressed_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed</a></div><div class="ttdoc">A class that behaves like a vector of vectors, providing automatic row range checking.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:758</div></div>
 </div><!-- fragment --><p> Each element in a row is separated by a space, and rows are displayed on separate lines. </p>
 
 </div>
@@ -341,7 +338,7 @@ template&lt;typename DataType , std::size_t N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1datastructure.html">datastructure</a></li>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

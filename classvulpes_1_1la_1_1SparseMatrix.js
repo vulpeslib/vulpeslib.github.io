@@ -1,0 +1,37 @@
+var classvulpes_1_1la_1_1SparseMatrix =
+[
+    [ "Type", "classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5ca", [
+      [ "Plain", "classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa075d68a58ca2701c399d87c40a22f760", null ],
+      [ "IntelMKL", "classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa70f882fcdc8c9f56bf89418ca3c04924", null ],
+      [ "AcceleratedSIMD", "classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caae6ca427ebde2f3c1bc32597a8768f640", null ],
+      [ "Vectorized", "classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa65224a10a81201e39db8a63afdbb59ec", null ]
+    ] ],
+    [ "SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html#adc17e4703a9cb0984d0e696cde22d341", null ],
+    [ "~SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html#a915b36d629448243ec1091dfe1dc5af3", null ],
+    [ "SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html#af90b10690f98fb62338afc1bf5c3e19d", null ],
+    [ "allocateMatrix", "classvulpes_1_1la_1_1SparseMatrix.html#aeb32b513515e6599048efb4e995e3e5b", null ],
+    [ "compress", "classvulpes_1_1la_1_1SparseMatrix.html#a5a2e77008ac580d6a1de753cb1ec7316", null ],
+    [ "computePreallocationData", "classvulpes_1_1la_1_1SparseMatrix.html#aad583ca048ced776976adeb3b0e3edbd", null ],
+    [ "createMatrix", "classvulpes_1_1la_1_1SparseMatrix.html#a398c85783ac21c115ba01e4f58da56f4", null ],
+    [ "getPetscMatrix", "classvulpes_1_1la_1_1SparseMatrix.html#ae391b71887d55a4582abe99b290cc652", null ],
+    [ "getPetscMatrix", "classvulpes_1_1la_1_1SparseMatrix.html#a5d1f9d16c2b7ae2d7d59e8fbdd34d65e", null ],
+    [ "getSize", "classvulpes_1_1la_1_1SparseMatrix.html#a98bdee8e83a65cbf02ef1b3c1374752e", null ],
+    [ "init", "classvulpes_1_1la_1_1SparseMatrix.html#a41732cdc1b21d73a7ac14021daaf39cb", null ],
+    [ "insertValues", "classvulpes_1_1la_1_1SparseMatrix.html#a94789ae7e6300dbcaa03cdec850cc2a0", null ],
+    [ "matMult", "classvulpes_1_1la_1_1SparseMatrix.html#a55914869de5399718b654b3f487dc895", null ],
+    [ "matMult_", "classvulpes_1_1la_1_1SparseMatrix.html#a462e9ed6f46877e3945a8d5a1749d45b", null ],
+    [ "matMultTranspose", "classvulpes_1_1la_1_1SparseMatrix.html#af8484c6f6fd67cbd383a7d8862c85f90", null ],
+    [ "matMultTranspose_", "classvulpes_1_1la_1_1SparseMatrix.html#a458163d1fbe8e70ddf87990495b011d6", null ],
+    [ "print", "classvulpes_1_1la_1_1SparseMatrix.html#a9b01eebc30786b2e14701c7adf8a2c63", null ],
+    [ "saveAsMatlab", "classvulpes_1_1la_1_1SparseMatrix.html#a21aa02a7869341d6800b5162ffb29e7d", null ],
+    [ "setMatrixSizes", "classvulpes_1_1la_1_1SparseMatrix.html#accea9d1a8604072dd8c3b0e3de5aa70b", null ],
+    [ "setupParallelSizes", "classvulpes_1_1la_1_1SparseMatrix.html#ab767e5406f0b1c389229e82106f6a03c", null ],
+    [ "toEigenDense", "classvulpes_1_1la_1_1SparseMatrix.html#a2e24da77e87720f0ec35398d2c68ba12", null ],
+    [ "transposeMatMult", "classvulpes_1_1la_1_1SparseMatrix.html#a2d1d3304cff1759263726b7671222b74", null ],
+    [ "transposeMatMult_", "classvulpes_1_1la_1_1SparseMatrix.html#a731e9b7ad4ebf81fb0dcf223b80527cc", null ],
+    [ "vmult", "classvulpes_1_1la_1_1SparseMatrix.html#ac30a671086b2e6f846c16a49abe961ff", null ],
+    [ "vmultAdd", "classvulpes_1_1la_1_1SparseMatrix.html#ac203262c3c8c452fc26db6d67737086e", null ],
+    [ "vmultT", "classvulpes_1_1la_1_1SparseMatrix.html#af96974bba1d666fdfeffd59e94294acf", null ],
+    [ "vmultTAdd", "classvulpes_1_1la_1_1SparseMatrix.html#abf0db8b7279b0e02209655ef92bc6c7f", null ],
+    [ "m_petsc_matrix", "classvulpes_1_1la_1_1SparseMatrix.html#a2f3ab9c833852ba563ce125f795dd941", null ]
+];

@@ -23,16 +23,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -116,9 +113,15 @@ $(document).ready(function(){initNavTree('functions_func_a.html',''); initResiza
 <div class="textblock">Here is a list of all functions with links to the classes they belong to:</div>
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>add()&#160;:&#160;<a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a64ca52c8602c14baa2fc57e081260323">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
+<li>add()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a6426d0a4a96f020e603537fa245caf30">vulpes::la::Vector</a>, <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a64ca52c8602c14baa2fc57e081260323">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
 <li>add_()&#160;:&#160;<a class="el" href="classvulpes_1_1polynomial_1_1Polynomial2D.html#a3c6875b6650a2ae25906b9e7342f3cf2">vulpes::polynomial::Polynomial2D&lt; T, IsSpaceP &gt;</a>, <a class="el" href="classvulpes_1_1polynomial_1_1Polynomial3D.html#a10605254a132be446b60358e4c0e0211">vulpes::polynomial::Polynomial3D&lt; T, IsSpaceP &gt;</a></li>
+<li>addCouple()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a1bbc39557274ebcbd1ca4b90e99b769d">vulpes::la::Vector</a></li>
+<li>addGeneric()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a9711575493fef6746b0264e89fa22b39">vulpes::la::Vector</a></li>
+<li>addScaled()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#af6ead2d6a6ebde449e657c9030902bbf">vulpes::la::Vector</a></li>
+<li>addTriplet()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a05ae8d1cb4604026326571da11f71878">vulpes::la::Vector</a></li>
 <li>allocate()&#160;:&#160;<a class="el" href="structscipy_1_1nodeinfo__pool.html#a0a6119b8e16ce6e0242eba39eabba90e">scipy::nodeinfo_pool</a></li>
+<li>allocateMatrix()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#aeb32b513515e6599048efb4e995e3e5b">vulpes::la::SparseMatrix</a></li>
+<li>applyCartesianMapping()&#160;:&#160;<a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#af6cf90c0ef5a86255de67e3e50197c2a">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
 <li>applyRenumbering()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a6ab8b920c5f72735cb158dc7e0741c8f">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>assign()&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html#a30714f026a365bacfa46e444cbe6c486">vulpes::datastructure::SmallVector&lt; T, N &gt;</a></li>
 </ul>
@@ -128,7 +131,7 @@ $(document).ready(function(){initNavTree('functions_func_a.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 21 2025 10:02:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 6 2025 14:20:46 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
