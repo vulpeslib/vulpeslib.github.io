@@ -33,5 +33,7 @@ var searchData=
   ['vulpes_3a_3arandom_3a_3ainternal_30',['internal',['../namespacevulpes_1_1random_1_1internal.html',1,'vulpes::random']]],
   ['vulpes_3a_3avmath_31',['vmath',['../namespacevulpes_1_1vmath.html',1,'vulpes']]],
   ['vulpes_3a_3avutils_32',['vutils',['../namespacevulpes_1_1vutils.html',1,'vulpes']]],
-  ['vulpes_3a_3avutils_3a_3ainternal_33',['internal',['../namespacevulpes_1_1vutils_1_1internal.html',1,'vulpes::vutils']]]
+  ['vulpes_3a_3avutils_3a_3ainternal_33',['internal',['../namespacevulpes_1_1vutils_1_1internal.html',1,'vulpes::vutils']]],
+  ['vulpes_3a_3avvutils_34',['vvutils',['../namespacevulpes_1_1vvutils.html',1,'vulpes']]],
+  ['vulpes_3a_3avvutils_3a_3ainternal_35',['internal',['../namespacevulpes_1_1vvutils_1_1internal.html',1,'vulpes::vvutils']]]
 ];

@@ -162,9 +162,9 @@ var NAVTREEINDEX =
 "fe__lagrange__simplex_8hpp.html#afec06edd0d41fe90cbf18654eb1f8a9b",
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md59",
 "namespacevulpes_1_1fe_1_1internal.html#a8a3ac0047d31adeb05ff8d7a66d79e76",
-"simplex_8hpp_source.html",
-"structscipy_1_1ckdtreenode.html#a51410515817115f94634f4cd5a64b617",
-"structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html"
+"simplex_8hpp.html#a69f6219fca29b0c9d1adb00fbf00fd10",
+"structscipy_1_1ckdtreenode.html#a2cd2aa1a568b3b5c727d7f5dac74079d",
+"structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html#afb33d29b577896534f4a8afab0e6e1ed"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

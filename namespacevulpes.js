@@ -22,6 +22,7 @@ var namespacevulpes =
     [ "random", "namespacevulpes_1_1random.html", "namespacevulpes_1_1random" ],
     [ "vmath", "namespacevulpes_1_1vmath.html", "namespacevulpes_1_1vmath" ],
     [ "vutils", "namespacevulpes_1_1vutils.html", "namespacevulpes_1_1vutils" ],
-    [ "operator<<", "namespacevulpes.html#a47fb0f2a22d56fdb96264dd8218bd321", null ],
+    [ "vvutils", "namespacevulpes_1_1vvutils.html", "namespacevulpes_1_1vvutils" ],
+    [ "operator<<", "namespacevulpes.html#aa0fd08767263de129fce9f788148ef9b", null ],
     [ "print", "namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15", null ]
 ];

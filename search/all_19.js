@@ -11,7 +11,7 @@ var searchData=
   ['vector_2ehpp_8',['vector.hpp',['../vector_8hpp.html',1,'']]],
   ['vectorized_9',['Vectorized',['../classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa65224a10a81201e39db8a63afdbb59ec',1,'vulpes::la::SparseMatrix']]],
   ['vertex_10',['Vertex',['../namespacevulpes_1_1dofs_1_1boosttypes.html#aa4eb2a40b4c72422bbdca1579ab412c0',1,'vulpes::dofs::boosttypes']]],
-  ['vertex_5fdata_11',['vertex_data',['../structvulpes_1_1geometry_1_1MeshExporter_1_1MeshDataAttachement.html#aaef39ced0daab1505954a27dbce876d7',1,'vulpes::geometry::MeshExporter::MeshDataAttachement::vertex_data'],['../structvulpes_1_1geometry_1_1MeshExporterSubmesh_1_1MeshDataAttachement.html#a045037cb170c54ca788ba0478986a604',1,'vulpes::geometry::MeshExporterSubmesh::MeshDataAttachement::vertex_data']]],
+  ['vertex_5fdata_11',['vertex_data',['../structvulpes_1_1geometry_1_1MeshExporterSubmesh_1_1MeshDataAttachement.html#a045037cb170c54ca788ba0478986a604',1,'vulpes::geometry::MeshExporterSubmesh::MeshDataAttachement::vertex_data'],['../structvulpes_1_1geometry_1_1MeshExporter_1_1MeshDataAttachement.html#aaef39ced0daab1505954a27dbce876d7',1,'vulpes::geometry::MeshExporter::MeshDataAttachement::vertex_data']]],
   ['vmath_2ehpp_12',['vmath.hpp',['../vmath_8hpp.html',1,'']]],
   ['vmult_13',['vmult',['../classvulpes_1_1la_1_1SparseMatrix.html#ac30a671086b2e6f846c16a49abe961ff',1,'vulpes::la::SparseMatrix']]],
   ['vmultadd_14',['vmultAdd',['../classvulpes_1_1la_1_1SparseMatrix.html#ac203262c3c8c452fc26db6d67737086e',1,'vulpes::la::SparseMatrix']]],
@@ -28,7 +28,7 @@ var searchData=
   ['vtk_25',['vtk',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md10',1,'']]],
   ['vtuoptions_26',['VtuOptions',['../structvulpes_1_1geometry_1_1VtuOptions.html',1,'vulpes::geometry']]],
   ['vtx_5fper_5fface_27',['vtx_per_face',['../classvulpes_1_1geometry_1_1MeshBase.html#a5d79394ae49b19a34e8133b1987bf82e',1,'vulpes::geometry::MeshBase']]],
-  ['vtxs_28',['vtxs',['../classvulpes_1_1geometry_1_1Cell3D.html#ab495c573ab55f75a841530860bdb71c3',1,'vulpes::geometry::Cell3D::vtxs()'],['../classvulpes_1_1geometry_1_1Cell2D.html#a661949ff90870e447c3df81be984d03d',1,'vulpes::geometry::Cell2D::vtxs() const'],['../classvulpes_1_1geometry_1_1Cell2D.html#a25d2abe522507f03e8a1069c3000e44d',1,'vulpes::geometry::Cell2D::vtxs()'],['../classvulpes_1_1geometry_1_1Cell3D.html#a6d5f45135c7c06a80c635d373ac515ca',1,'vulpes::geometry::Cell3D::vtxs()']]],
+  ['vtxs_28',['vtxs',['../classvulpes_1_1geometry_1_1Cell2D.html#a25d2abe522507f03e8a1069c3000e44d',1,'vulpes::geometry::Cell2D::vtxs()'],['../classvulpes_1_1geometry_1_1Cell2D.html#a661949ff90870e447c3df81be984d03d',1,'vulpes::geometry::Cell2D::vtxs() const'],['../classvulpes_1_1geometry_1_1Cell3D.html#ab495c573ab55f75a841530860bdb71c3',1,'vulpes::geometry::Cell3D::vtxs() const'],['../classvulpes_1_1geometry_1_1Cell3D.html#a6d5f45135c7c06a80c635d373ac515ca',1,'vulpes::geometry::Cell3D::vtxs()']]],
   ['vtxtocellmap_29',['VtxToCellMap',['../classvulpes_1_1geometry_1_1MeshBase.html#a4f5a146f9a260fc93650e8f05866d15d',1,'vulpes::geometry::MeshBase']]],
   ['vulpes_30',['vulpes',['../namespacevulpes.html',1,'']]],
   ['vulpes_3a_3aassemble_31',['assemble',['../namespacevulpes_1_1assemble.html',1,'vulpes']]],
@@ -64,8 +64,10 @@ var searchData=
   ['vulpes_3a_3avmath_61',['vmath',['../namespacevulpes_1_1vmath.html',1,'vulpes']]],
   ['vulpes_3a_3avutils_62',['vutils',['../namespacevulpes_1_1vutils.html',1,'vulpes']]],
   ['vulpes_3a_3avutils_3a_3ainternal_63',['internal',['../namespacevulpes_1_1vutils_1_1internal.html',1,'vulpes::vutils']]],
-  ['vulpes_5falways_5finline_64',['VULPES_ALWAYS_INLINE',['../macros_8hpp.html#a64dde711449fa720b63e56ff84f35ffc',1,'macros.hpp']]],
-  ['vulpes_5ffe_5ffe_5fspaces_5fhpp_5f_65',['VULPES_FE_FE_SPACES_HPP_',['../fe__lagrange__simplex_8cpp.html#a4034e67ca25a7d611b6d2f784341fa63',1,'fe_lagrange_simplex.cpp']]],
-  ['vulpes_5futils_5fvvutils_5fhpp_5f_66',['VULPES_UTILS_VVUTILS_HPP_',['../checks_8cpp.html#a7bc890e0e2944fc2300af15cf0b22360',1,'checks.cpp']]],
-  ['vvutils_2ehpp_67',['vvutils.hpp',['../vvutils_8hpp.html',1,'']]]
+  ['vulpes_3a_3avvutils_64',['vvutils',['../namespacevulpes_1_1vvutils.html',1,'vulpes']]],
+  ['vulpes_3a_3avvutils_3a_3ainternal_65',['internal',['../namespacevulpes_1_1vvutils_1_1internal.html',1,'vulpes::vvutils']]],
+  ['vulpes_5falways_5finline_66',['VULPES_ALWAYS_INLINE',['../macros_8hpp.html#a64dde711449fa720b63e56ff84f35ffc',1,'macros.hpp']]],
+  ['vulpes_5ffe_5ffe_5fspaces_5fhpp_5f_67',['VULPES_FE_FE_SPACES_HPP_',['../fe__lagrange__simplex_8cpp.html#a4034e67ca25a7d611b6d2f784341fa63',1,'fe_lagrange_simplex.cpp']]],
+  ['vulpes_5futils_5fvvutils_5fhpp_5f_68',['VULPES_UTILS_VVUTILS_HPP_',['../checks_8cpp.html#a7bc890e0e2944fc2300af15cf0b22360',1,'checks.cpp']]],
+  ['vvutils_2ehpp_69',['vvutils.hpp',['../vvutils_8hpp.html',1,'']]]
 ];

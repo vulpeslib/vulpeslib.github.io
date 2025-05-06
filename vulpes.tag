@@ -1120,7 +1120,13 @@
     <name>vvutils.hpp</name>
     <path>/__w/vulpes/vulpes/vulpes/utils/</path>
     <filename>vvutils_8hpp.html</filename>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container</class>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::vector&lt; Args... &gt; &gt;</class>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::set&lt; Args... &gt; &gt;</class>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::array&lt; T, N &gt; &gt;</class>
     <namespace>vulpes</namespace>
+    <namespace>vulpes::vvutils</namespace>
+    <namespace>vulpes::vvutils::internal</namespace>
     <namespace>vulpes::vutils</namespace>
   </compound>
   <compound kind="struct">
@@ -16816,6 +16822,27 @@
     <filename>structvulpes_1_1vmath_1_1is__pseudofloating.html</filename>
     <templarg>typename T</templarg>
   </compound>
+  <compound kind="struct">
+    <name>vulpes::vvutils::internal::is_printable_container</name>
+    <filename>structvulpes_1_1vvutils_1_1internal_1_1is__printable__container.html</filename>
+    <templarg>typename T</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::vvutils::internal::is_printable_container&lt; std::array&lt; T, N &gt; &gt;</name>
+    <filename>structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html</filename>
+    <templarg>typename T</templarg>
+    <templarg>std::size_t N</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::vvutils::internal::is_printable_container&lt; std::set&lt; Args... &gt; &gt;</name>
+    <filename>structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1set_3_01Args_8_8_8_01_4_01_4.html</filename>
+    <templarg>typename... Args</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::vvutils::internal::is_printable_container&lt; std::vector&lt; Args... &gt; &gt;</name>
+    <filename>structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html</filename>
+    <templarg>typename... Args</templarg>
+  </compound>
   <compound kind="namespace">
     <name>anonymous</name>
     <filename>namespaceanonymous.html</filename>
@@ -17084,6 +17111,7 @@
     <namespace>vulpes::random</namespace>
     <namespace>vulpes::vmath</namespace>
     <namespace>vulpes::vutils</namespace>
+    <namespace>vulpes::vvutils</namespace>
     <member kind="function">
       <type>std::ostream &amp;</type>
       <name>print</name>
@@ -17092,10 +17120,10 @@
       <arglist>(std::ostream &amp;os, const Container &amp;container, const std::string &amp;separator=&quot;,&quot;, const std::string &amp;postpend=&quot;\n&quot;, const std::string &amp;prepend=&quot;&quot;)</arglist>
     </member>
     <member kind="function">
-      <type>std::enable_if&lt; is_printable_container&lt; Container &gt;::value, std::ostream &amp; &gt;::type</type>
+      <type>std::enable_if&lt; vvutils::internal::is_printable_container&lt; Container &gt;::value, std::ostream &amp; &gt;::type</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>namespacevulpes.html</anchorfile>
-      <anchor>a47fb0f2a22d56fdb96264dd8218bd321</anchor>
+      <anchor>aa0fd08767263de129fce9f788148ef9b</anchor>
       <arglist>(std::ostream &amp;os, const Container &amp;container)</arglist>
     </member>
   </compound>
@@ -19040,6 +19068,19 @@
       <anchor>a91af4262edd06b4882cb9496c57265c9</anchor>
       <arglist>()</arglist>
     </member>
+  </compound>
+  <compound kind="namespace">
+    <name>vulpes::vvutils</name>
+    <filename>namespacevulpes_1_1vvutils.html</filename>
+    <namespace>vulpes::vvutils::internal</namespace>
+  </compound>
+  <compound kind="namespace">
+    <name>vulpes::vvutils::internal</name>
+    <filename>namespacevulpes_1_1vvutils_1_1internal.html</filename>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container</class>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::array&lt; T, N &gt; &gt;</class>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::set&lt; Args... &gt; &gt;</class>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::vector&lt; Args... &gt; &gt;</class>
   </compound>
   <compound kind="page">
     <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index</name>

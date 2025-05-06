@@ -177,7 +177,8 @@ var hierarchy =
     [ "std::false_type", null, [
       [ "vulpes::assemble::internal::is_fe_expression_derived< T, typename >", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived.html", null ],
       [ "vulpes::assemble::internal::is_tuple< T >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple.html", null ],
-      [ "vulpes::assemble::internal::is_tuple_of_fe_expr_pointers< T, typename >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers.html", null ]
+      [ "vulpes::assemble::internal::is_tuple_of_fe_expr_pointers< T, typename >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers.html", null ],
+      [ "vulpes::vvutils::internal::is_printable_container< T >", "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container.html", null ]
     ] ],
     [ "std::integral_constant", null, [
       [ "vulpes::vmath::is_gnump< T >", "structvulpes_1_1vmath_1_1is__gnump.html", null ],
@@ -186,7 +187,10 @@ var hierarchy =
     ] ],
     [ "std::true_type", null, [
       [ "vulpes::assemble::internal::is_tuple< std::tuple< Args... > >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html", null ],
-      [ "vulpes::assemble::internal::is_tuple_of_fe_expr_pointers< std::tuple< Args... >, std::enable_if_t<(std::conjunction_v< std::is_pointer< Args >... >) &&(std::conjunction_v< is_fe_expression_derived< std::remove_pointer_t< Args > >... >)> >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html", null ]
+      [ "vulpes::assemble::internal::is_tuple_of_fe_expr_pointers< std::tuple< Args... >, std::enable_if_t<(std::conjunction_v< std::is_pointer< Args >... >) &&(std::conjunction_v< is_fe_expression_derived< std::remove_pointer_t< Args > >... >)> >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html", null ],
+      [ "vulpes::vvutils::internal::is_printable_container< std::array< T, N > >", "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
+      [ "vulpes::vvutils::internal::is_printable_container< std::set< Args... > >", "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1set_3_01Args_8_8_8_01_4_01_4.html", null ],
+      [ "vulpes::vvutils::internal::is_printable_container< std::vector< Args... > >", "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "vulpes::datastructure::TetraTensor< true, false, T, std::size_t >", "classvulpes_1_1datastructure_1_1TetraTensor.html", null ],
     [ "vulpes::datastructure::TriMatrix< true, false, T, std::size_t >", "classvulpes_1_1datastructure_1_1TriMatrix.html", null ],

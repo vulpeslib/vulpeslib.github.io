@@ -181,6 +181,8 @@ var NAVTREEINDEX18 =
 "namespacevulpes_1_1vutils_1_1internal.html":[9,0,6,15,0],
 "namespacevulpes_1_1vutils_1_1internal.html#a91af4262edd06b4882cb9496c57265c9":[9,0,6,15,0,0],
 "namespacevulpes_1_1vutils_1_1internal.html#a91af4262edd06b4882cb9496c57265c9":[9,0,6,15,0,1],
+"namespacevulpes_1_1vvutils.html":[9,0,6,16],
+"namespacevulpes_1_1vvutils_1_1internal.html":[9,0,6,16,0],
 "ndpolynomial_8hpp.html":[11,0,1,6,1],
 "ndpolynomial_8hpp.html#a75599e84a0a9593e9442ee310abb0ff5":[11,0,1,6,1,0],
 "ndpolynomial_8hpp_source.html":[11,0,1,6,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "simplex_8hpp.html#a0b7d30d08435e39cd9372cceb614c79b":[11,0,1,8,7,5],
 "simplex_8hpp.html#a0dfcc4e6e3f0fe610b5b90ab7cb2f708":[11,0,1,8,7,4],
 "simplex_8hpp.html#a28fb6e32bf6c2fb7a722adf869ea5d85":[11,0,1,8,7,0],
-"simplex_8hpp.html#a5dacf2bd4887e9379061365daa65920a":[11,0,1,8,7,1],
-"simplex_8hpp.html#a69f6219fca29b0c9d1adb00fbf00fd10":[11,0,1,8,7,3],
-"simplex_8hpp.html#af41db6b3f780ef06246c9d55a199347d":[11,0,1,8,7,2]
+"simplex_8hpp.html#a5dacf2bd4887e9379061365daa65920a":[11,0,1,8,7,1]
 };
