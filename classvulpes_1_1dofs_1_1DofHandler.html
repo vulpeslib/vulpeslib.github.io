@@ -134,6 +134,8 @@ Collaboration diagram for vulpes::dofs::DofHandler&lt; MeshType &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a2f53b8c3dfc789f66555f7b56c5a90f2" id="r_a2f53b8c3dfc789f66555f7b56c5a90f2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a2f53b8c3dfc789f66555f7b56c5a90f2">Mesh</a> = MeshType</td></tr>
+<tr class="separator:a2f53b8c3dfc789f66555f7b56c5a90f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00fbdf56b883d0c08c4e1160c24a112c" id="r_a00fbdf56b883d0c08c4e1160c24a112c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> = typename MeshType::index_t</td></tr>
 <tr class="separator:a00fbdf56b883d0c08c4e1160c24a112c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -149,7 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6ab8b920c5f72735cb158dc7e0741c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a renumbering to the DoFs to minimize the bandwidth.  <br /></td></tr>
 <tr class="separator:a6ab8b920c5f72735cb158dc7e0741c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a158e97447963099803197b53dc20c5" id="r_a5a158e97447963099803197b53dc20c5"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5a158e97447963099803197b53dc20c5">ndofs</a> () const</td></tr>
-<tr class="memdesc:a5a158e97447963099803197b53dc20c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of dofs.  <br /></td></tr>
+<tr class="memdesc:a5a158e97447963099803197b53dc20c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of dofs for this MPI proc.  <br /></td></tr>
 <tr class="separator:a5a158e97447963099803197b53dc20c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72bd366229fa4c3e0090e1f2c6836c25" id="r_a72bd366229fa4c3e0090e1f2c6836c25"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a72bd366229fa4c3e0090e1f2c6836c25">ndofsGlobal</a> () const</td></tr>
 <tr class="memdesc:a72bd366229fa4c3e0090e1f2c6836c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of dofs.  <br /></td></tr>
@@ -177,6 +179,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6dd402cc5e89c751957b0aae64c4807d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f517c13f599e46af9cfdf7b86b3e91" id="r_ab3f517c13f599e46af9cfdf7b86b3e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize</a> ()</td></tr>
 <tr class="separator:ab3f517c13f599e46af9cfdf7b86b3e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3ab425fbdf6d07e82d9b0e5c9ee85a" id="r_a3e3ab425fbdf6d07e82d9b0e5c9ee85a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a3e3ab425fbdf6d07e82d9b0e5c9ee85a">renumberMpiSubdomainWise</a> ()</td></tr>
+<tr class="memdesc:a3e3ab425fbdf6d07e82d9b0e5c9ee85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renumber the DoFs in order to minimize the MPI communications.  <br /></td></tr>
+<tr class="separator:a3e3ab425fbdf6d07e82d9b0e5c9ee85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a78398279060fc683a4350acddbb7e" id="r_af9a78398279060fc683a4350acddbb7e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#af9a78398279060fc683a4350acddbb7e">gatherSparsityPatternRank0</a> () const</td></tr>
+<tr class="memdesc:af9a78398279060fc683a4350acddbb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the global sparsity pattern scattered among MPI procs.  <br /></td></tr>
+<tr class="separator:af9a78398279060fc683a4350acddbb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab35a631fbdc6f37b18a1e70a325f01b" id="r_aab35a631fbdc6f37b18a1e70a325f01b"><td class="memTemplParams" colspan="2">template&lt;bool DofInteractionDistance&gt; </td></tr>
 <tr class="memitem:aab35a631fbdc6f37b18a1e70a325f01b"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename MeshType::index_t, typename MeshType::index_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#aab35a631fbdc6f37b18a1e70a325f01b">computeSparsityForDof</a> (typename MeshType::index_t dof_id, typename MeshType::index_t *buffer1, typename MeshType::index_t *buffer2)</td></tr>
 <tr class="separator:aab35a631fbdc6f37b18a1e70a325f01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,11 +233,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa4435fa10dd9ab0ca6d03f131ff91333" id="r_aa4435fa10dd9ab0ca6d03f131ff91333"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#aa4435fa10dd9ab0ca6d03f131ff91333">computeOwnedSparsityPattern</a> ()</td></tr>
 <tr class="memdesc:aa4435fa10dd9ab0ca6d03f131ff91333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the slice of the sparsity pattern that belongs to this proc.  <br /></td></tr>
 <tr class="separator:aa4435fa10dd9ab0ca6d03f131ff91333"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e3ab425fbdf6d07e82d9b0e5c9ee85a" id="r_a3e3ab425fbdf6d07e82d9b0e5c9ee85a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a3e3ab425fbdf6d07e82d9b0e5c9ee85a">renumberMpiSubdomainWise</a> ()</td></tr>
-<tr class="memdesc:a3e3ab425fbdf6d07e82d9b0e5c9ee85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renumber the DoFs in order to minimize the MPI communications.  <br /></td></tr>
-<tr class="separator:a3e3ab425fbdf6d07e82d9b0e5c9ee85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1633a1690b5075a7b5fd72131ad61daa" id="r_a1633a1690b5075a7b5fd72131ad61daa"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FloatType , typename DofPolicy , typename FeSpace &gt; </td></tr>
 <tr class="memitem:a1633a1690b5075a7b5fd72131ad61daa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a1633a1690b5075a7b5fd72131ad61daa">buildCellToCellDof</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html">fe::FeSpaceBase</a>&lt; Dim, FloatType, DofPolicy, FeSpace &gt; &amp;fe_space)</td></tr>
+<tr class="memdesc:a1633a1690b5075a7b5fd72131ad61daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the local enumeration of the basis functions for each cell.  <br /></td></tr>
 <tr class="separator:a1633a1690b5075a7b5fd72131ad61daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -330,6 +336,22 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
+<a id="a2f53b8c3dfc789f66555f7b56c5a90f2" name="a2f53b8c3dfc789f66555f7b56c5a90f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f53b8c3dfc789f66555f7b56c5a90f2">&#9670;&#160;</a></span>Mesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::Mesh =  MeshType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae5a475cc95debab99a743b805d2f2b6e" name="ae5a475cc95debab99a743b805d2f2b6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5a475cc95debab99a743b805d2f2b6e">&#9670;&#160;</a></span>DofHandler()</h2>
@@ -389,6 +411,8 @@ template&lt;typename MeshType &gt; </div>
 </div><div class="memdoc">
 
 <p>Apply a renumbering to the DoFs to minimize the bandwidth. </p>
+<p>In parallel it is applied to all the owned dofs by each proc.</p>
+<dl class="section note"><dt>Note</dt><dd>It updates the new-to-old and old-to-new dof maps but not the sparsity pattern. To conclude the (possible) composition of renumberings you should call <code><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -419,6 +443,8 @@ template&lt;std::size_t Dim, typename FloatType , typename DofPolicy , typename 
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Build the local enumeration of the basis functions for each cell. </p>
 
 </div>
 </div>
@@ -480,7 +506,8 @@ template&lt;typename MeshType &gt; </div>
 </div><div class="memdoc">
 
 <p>Compute owned cell dofs and boundary dofs. </p>
-<p>Find which are the DoFs that belong to cell that are owned by this proc. Moreover, find which are the DoFs that lie on the boundary on the partition, that is, DoFs that belong both to ghost cells and owned cells</p>
+<p>Find which are the DoFs that belong to cell that are owned by this proc. Moreover, find which are the DoFs that lie on the boundary on the partition, that is, DoFs that belong both to ghost cells and owned cells.</p>
+<p>Namely, it fills <code>m_partition_bnd_dofs</code> and leaves it sorted</p>
 <p>This make sense only in parallel. </p>
 
 </div>
@@ -637,6 +664,7 @@ template&lt;typename FeSpace &gt; </div>
 </div><div class="memdoc">
 
 <p>Compute the sparsity pattern of the global matrix. </p>
+<p>The spartisity pattern is a local dof to local dof map created by composing the dof-to-cell, global-to-local-cell, and cell-to-dof maps </p>
 
 </div>
 </div>
@@ -679,6 +707,15 @@ template&lt;std::size_t Dim, typename FloatType , typename DofPolicy , typename 
 </div><div class="memdoc">
 
 <p>Distribute the dofs associated to a all geometric entities. </p>
+<p>It fills the uncompressed crs map passed as second input. The map links the dof (in local enumeration) to the global cell id</p>
+<p>In parallel, it also builds:</p><ul>
+<li>m_local_to_global_dof</li>
+<li>m_global_to_local_dof</li>
+<li>m_owned_dofs</li>
+<li>m_local_owned_dofs</li>
+<li>m_shared_dofs</li>
+<li>m_local_shared_dofs</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fe_space</td><td>the finite element space that defines the cell DoFs </td></tr>
@@ -758,12 +795,21 @@ template&lt;std::size_t SubentityDim, std::size_t Dim, typename FloatType , type
 <li>0: Vertices</li>
 <li>1: Edges</li>
 <li>2: Faces</li>
-<li>3: Volumes SubentityDim must be smaller or equal to Dim </li>
+<li>3: Volumes SubentityDim must be smaller or equal to Dim</li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
+<p>It fills the uncompressed crs map passed as second input. The map links the dof (in local enumeration) to the global cell id.</p>
+<p>In parallel, it also builds:</p><ul>
+<li>m_local_to_global_dof</li>
+<li>m_global_to_local_dof</li>
+<li>m_owned_dofs</li>
+<li>m_local_owned_dofs</li>
+<li>m_shared_dofs</li>
+<li>m_local_shared_dofs</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fe_space</td><td>the finite element space that defines the cell DoFs </td></tr>
@@ -819,6 +865,28 @@ template&lt;typename MeshType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9a78398279060fc683a4350acddbb7e" name="af9a78398279060fc683a4350acddbb7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a78398279060fc683a4350acddbb7e">&#9670;&#160;</a></span>gatherSparsityPatternRank0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::gatherSparsityPatternRank0 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the global sparsity pattern scattered among MPI procs. </p>
+<dl class="section note"><dt>Note</dt><dd>This method is very expensive and its main use is debugging </dd></dl>
 
 </div>
 </div>
@@ -1070,7 +1138,7 @@ template&lt;typename MeshType &gt; </div>
 </div><div class="memdoc">
 
 <p>Invert the dof to cell mapping. </p>
-<p>The forward and inverted map are compressed and saved as an attribute</p>
+<p>The forward and inverted map are compressed and saved as the attributes <code>m_dof_to_cell</code> and <code>m_cell_to_dof</code>. The latter, during inversion, transforms the global cell id to local cell id to have dense rows.</p>
 <dl class="section note"><dt>Note</dt><dd>it also sort the dofs to make the computations of the sparsity pattern quicker </dd></dl>
 
 </div>
@@ -1100,7 +1168,7 @@ template&lt;typename MeshType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the total number of dofs. </p>
+<p>Get the total number of dofs for this MPI proc. </p>
 
 </div>
 </div>
@@ -1140,9 +1208,6 @@ template&lt;typename MeshType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename MeshType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::renumberMpiSubdomainWise </td>
@@ -1151,11 +1216,6 @@ template&lt;typename MeshType &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Renumber the DoFs in order to minimize the MPI communications. </p>
@@ -1340,7 +1400,8 @@ template&lt;typename MeshType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Map each (local) cell to the dofs that are inside it </p>
+<p>Map each (local) cell to the dofs that are inside it</p>
+<p>The dofs are first computed in local enumeration and are transformed into global enumeration during the call to <code><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize()</a></code> </p>
 
 </div>
 </div>
@@ -1639,7 +1700,7 @@ template&lt;typename MeshType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>map from the old numbering (the one associated with the geometry in serial,the local one in parallel) to the new one </p>
+<p>map from the old numbering (the one associated with the geometry in serial, the local one in parallel) to the new one </p>
 
 </div>
 </div>
@@ -1827,7 +1888,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1dofs.html">dofs</a></li><li class="navelem"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">DofHandler</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

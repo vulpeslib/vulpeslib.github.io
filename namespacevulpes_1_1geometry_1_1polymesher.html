@@ -112,6 +112,7 @@ $(document).ready(function(){initNavTree('namespacevulpes_1_1geometry_1_1polymes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">vulpes::geometry::polymesher Namespace Reference</div></div>
@@ -123,6 +124,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">PolyMesherParams</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ad0ea0a08a8b86084f1c2fd7e601c4d11" id="r_ad0ea0a08a8b86084f1c2fd7e601c4d11"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , IndexType Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </td></tr>
+<tr class="memitem:ad0ea0a08a8b86084f1c2fd7e601c4d11"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#ad0ea0a08a8b86084f1c2fd7e601c4d11">Mesh</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt; &gt;</td></tr>
+<tr class="separator:ad0ea0a08a8b86084f1c2fd7e601c4d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a02bbd2267895cd6ab3663f084b28750f" id="r_a02bbd2267895cd6ab3663f084b28750f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750f">RandomEngine</a> : std::uint8_t { <a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750faaaa0c5a92e7cf9b18d13e8f58936b7a4">Pseudo</a>
@@ -132,12 +139,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a397e2504394d19c9d762515a7ec612ec" id="r_a397e2504394d19c9d762515a7ec612ec"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </td></tr>
-<tr class="memitem:a397e2504394d19c9d762515a7ec612ec"><td class="memTemplItemLeft" align="right" valign="top">std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a397e2504394d19c9d762515a7ec612ec">mesh</a> (const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;distanceFunction, size_t n_elems, const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;fixed_pts={}, const <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">PolyMesherParams</a>&lt; FloatType &gt; &amp;params={}, size_t seed=0)</td></tr>
-<tr class="separator:a397e2504394d19c9d762515a7ec612ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a867ae4a198b98f51ab763cb719eb79f8" id="r_a867ae4a198b98f51ab763cb719eb79f8"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </td></tr>
-<tr class="memitem:a867ae4a198b98f51ab763cb719eb79f8"><td class="memTemplItemLeft" align="right" valign="top">std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a867ae4a198b98f51ab763cb719eb79f8">mesh</a> (const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;seed_pts, const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;distanceFunction, const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;fixed_pts={}, const <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">PolyMesherParams</a>&lt; FloatType &gt; &amp;params={})</td></tr>
-<tr class="separator:a867ae4a198b98f51ab763cb719eb79f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db9fe8d83091e842e82ef710dfc7292" id="r_a8db9fe8d83091e842e82ef710dfc7292"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D &gt; </td></tr>
+<tr class="memitem:a8db9fe8d83091e842e82ef710dfc7292"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#ad0ea0a08a8b86084f1c2fd7e601c4d11">Mesh</a>&lt; FloatType, IndexType, Dim &gt;, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a8db9fe8d83091e842e82ef710dfc7292">mesh</a> (const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;distanceFunction, size_t n_elems, const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;fixed_pts={}, const <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">PolyMesherParams</a>&lt; FloatType &gt; &amp;params={}, size_t seed=0)</td></tr>
+<tr class="separator:a8db9fe8d83091e842e82ef710dfc7292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bcab299923555070224972e245081c" id="r_a26bcab299923555070224972e245081c"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D &gt; </td></tr>
+<tr class="memitem:a26bcab299923555070224972e245081c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#ad0ea0a08a8b86084f1c2fd7e601c4d11">Mesh</a>&lt; FloatType, IndexType, Dim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a26bcab299923555070224972e245081c">mesh</a> (std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;center_pts, const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;distanceFunction, const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;fixed_pts={}, const <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">PolyMesherParams</a>&lt; FloatType &gt; &amp;params={})</td></tr>
+<tr class="separator:a26bcab299923555070224972e245081c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a520fce4ceb37ca9c898753ec9796a" id="r_a46a520fce4ceb37ca9c898753ec9796a"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
 <tr class="memitem:a46a520fce4ceb37ca9c898753ec9796a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a46a520fce4ceb37ca9c898753ec9796a">buildHexagonTessellation</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &amp;corner_a, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &amp;corner_b, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; IndexType, 2 &gt; &amp;n_divisions)</td></tr>
 <tr class="separator:a46a520fce4ceb37ca9c898753ec9796a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +152,23 @@ Functions</h2></td></tr>
 <tr class="memitem:a5f50f2fbc529997751d960c7cd6aca61"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#a5f50f2fbc529997751d960c7cd6aca61">buildOctahedronTessellation</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 3 &gt; &amp;corner_a, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 3 &gt; &amp;corner_b, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; IndexType, 3 &gt; &amp;n_divisions)</td></tr>
 <tr class="separator:a5f50f2fbc529997751d960c7cd6aca61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ad0ea0a08a8b86084f1c2fd7e601c4d11" name="ad0ea0a08a8b86084f1c2fd7e601c4d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0ea0a08a8b86084f1c2fd7e601c4d11">&#9670;&#160;</a></span>Mesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#ad0ea0a08a8b86084f1c2fd7e601c4d11">vulpes::geometry::polymesher::Mesh</a> = typedef std::conditional_t&lt; Dim == 2, <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt;FloatType, IndexType&gt;, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt;FloatType, IndexType&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a02bbd2267895cd6ab3663f084b28750f" name="a02bbd2267895cd6ab3663f084b28750f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a02bbd2267895cd6ab3663f084b28750f">&#9670;&#160;</a></span>RandomEngine</h2>
@@ -237,16 +261,16 @@ template&lt;typename FloatType , typename IndexType &gt; </div>
 
 </div>
 </div>
-<a id="a397e2504394d19c9d762515a7ec612ec" name="a397e2504394d19c9d762515a7ec612ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a397e2504394d19c9d762515a7ec612ec">&#9670;&#160;</a></span>mesh() <span class="overload">[1/2]</span></h2>
+<a id="a8db9fe8d83091e842e82ef710dfc7292" name="a8db9fe8d83091e842e82ef710dfc7292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db9fe8d83091e842e82ef710dfc7292">&#9670;&#160;</a></span>mesh() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
+template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt; &gt; vulpes::geometry::polymesher::mesh </td>
+          <td class="memname">std::pair&lt; <a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#ad0ea0a08a8b86084f1c2fd7e601c4d11">Mesh</a>&lt; FloatType, IndexType, Dim &gt;, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &gt; vulpes::geometry::polymesher::mesh </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; FloatType, Dim, D &gt; &amp;&#160;</td>
           <td class="paramname"><em>distanceFunction</em>, </td>
@@ -285,19 +309,19 @@ template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D 
 
 </div>
 </div>
-<a id="a867ae4a198b98f51ab763cb719eb79f8" name="a867ae4a198b98f51ab763cb719eb79f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a867ae4a198b98f51ab763cb719eb79f8">&#9670;&#160;</a></span>mesh() <span class="overload">[2/2]</span></h2>
+<a id="a26bcab299923555070224972e245081c" name="a26bcab299923555070224972e245081c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26bcab299923555070224972e245081c">&#9670;&#160;</a></span>mesh() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D , typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
+template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; FloatType, IndexType &gt; &gt; vulpes::geometry::polymesher::mesh </td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html#ad0ea0a08a8b86084f1c2fd7e601c4d11">Mesh</a>&lt; FloatType, IndexType, Dim &gt; vulpes::geometry::polymesher::mesh </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>seed_pts</em>, </td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, Dim &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>center_pts</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -334,7 +358,7 @@ template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry_1_1polymesher.html">polymesher</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,4 +1,5 @@
 var kmeans_8hpp =
 [
-    [ "kmeans", "kmeans_8hpp.html#a2059e2327ebd8445a270c84e27e7e68e", null ]
+    [ "vulpes::geometry::KMeansBase< T, Dim >", "classvulpes_1_1geometry_1_1KMeansBase.html", "classvulpes_1_1geometry_1_1KMeansBase" ],
+    [ "vulpes::geometry::KMeansNaive< T, Dim >", "classvulpes_1_1geometry_1_1KMeansNaive.html", "classvulpes_1_1geometry_1_1KMeansNaive" ]
 ];

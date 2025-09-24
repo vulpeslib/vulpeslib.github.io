@@ -178,6 +178,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ace0aacbad87cf69a1e2a0620536e52a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d21c968f6949c4cefa7a711b1c4309" id="r_af0d21c968f6949c4cefa7a711b1c4309"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af0d21c968f6949c4cefa7a711b1c4309">WeakFormIntegratorQFree</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae32e2842128c3543eadba4e84e9e4146">FeType</a> &gt; &amp;cell_manager, const FeExpressionTuple &amp;fe_expression, const FeExpressionFaceTuple &amp;fe_expression_face=FeExpressionFaceTuple{})</td></tr>
 <tr class="separator:af0d21c968f6949c4cefa7a711b1c4309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d81f0d2700fa560d05acdb2c2cc282" id="r_ab4d81f0d2700fa560d05acdb2c2cc282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ab4d81f0d2700fa560d05acdb2c2cc282">buildLookupTables</a> ()</td></tr>
+<tr class="separator:ab4d81f0d2700fa560d05acdb2c2cc282"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca82a0931a0860515fc0f7e28dfb1444" id="r_aca82a0931a0860515fc0f7e28dfb1444"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aca82a0931a0860515fc0f7e28dfb1444">gatherUpcompressedMonomials</a> ()</td></tr>
 <tr class="memdesc:aca82a0931a0860515fc0f7e28dfb1444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gather the common terms for each polynomial (row of the map) in m_poly_table_face_lifted_flat.  <br /></td></tr>
 <tr class="separator:aca82a0931a0860515fc0f7e28dfb1444"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,8 +213,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab2320ad878c0a7608535063bb73a003a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba501e8a43cec560cc7a355b5da2b9d0" id="r_aba501e8a43cec560cc7a355b5da2b9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#aba501e8a43cec560cc7a355b5da2b9d0">findCellNeigh</a> ()</td></tr>
 <tr class="separator:aba501e8a43cec560cc7a355b5da2b9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196c35e1397f737c2f6d9ebb27af5eac" id="r_a196c35e1397f737c2f6d9ebb27af5eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a196c35e1397f737c2f6d9ebb27af5eac">applyBasisScaling</a> ()</td></tr>
+<tr class="separator:a196c35e1397f737c2f6d9ebb27af5eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8246448e5a9c2728eb7598f61a377f" id="r_a4a8246448e5a9c2728eb7598f61a377f"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a4a8246448e5a9c2728eb7598f61a377f">getCurrFaceIntegral</a> (const auto &amp;expr, Eigen::Index expr_id)</td></tr>
 <tr class="separator:a4a8246448e5a9c2728eb7598f61a377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44cde557f64f11974c53ad5ec32aff11" id="r_a44cde557f64f11974c53ad5ec32aff11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a44cde557f64f11974c53ad5ec32aff11">buildWeakFormPointerTable</a> ()</td></tr>
+<tr class="separator:a44cde557f64f11974c53ad5ec32aff11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6817f75da211f46b5dae853676b1ba18" id="r_a6817f75da211f46b5dae853676b1ba18"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6817f75da211f46b5dae853676b1ba18">getIntegrals</a> () const</td></tr>
 <tr class="separator:a6817f75da211f46b5dae853676b1ba18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889717afc24367ed219d524b2e72c0f5" id="r_a889717afc24367ed219d524b2e72c0f5"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a889717afc24367ed219d524b2e72c0f5">getRhsIntegrals</a> () const</td></tr>
@@ -223,6 +229,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a855dc5de374ec5d7fa5162d1817a82f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a74f7ea7eb50b0b03c621a1fc794e8d" id="r_a5a74f7ea7eb50b0b03c621a1fc794e8d"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5a74f7ea7eb50b0b03c621a1fc794e8d">getFaceIntegralsNeigh</a> () const</td></tr>
 <tr class="separator:a5a74f7ea7eb50b0b03c621a1fc794e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657cf22865a0ad92bfdd0fa99cba2a63" id="r_a657cf22865a0ad92bfdd0fa99cba2a63"><td class="memItemLeft" align="right" valign="top">const auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a657cf22865a0ad92bfdd0fa99cba2a63">getIntegral</a> (auto wf_ptr, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> loc_neigh_id=0) const</td></tr>
+<tr class="separator:a657cf22865a0ad92bfdd0fa99cba2a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -251,6 +259,10 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
+<tr class="memitem:a6752ab50577cd23363daac716386baed" id="r_a6752ab50577cd23363daac716386baed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6752ab50577cd23363daac716386baed">TypeIJ</a> = std::array&lt; Eigen::Index, 3 &gt;</td></tr>
+<tr class="separator:a6752ab50577cd23363daac716386baed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e85fe4e4ff9dfae2c82ca9a16735bad" id="r_a0e85fe4e4ff9dfae2c82ca9a16735bad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6752ab50577cd23363daac716386baed">TypeIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> &gt;</td></tr>
+<tr class="separator:a0e85fe4e4ff9dfae2c82ca9a16735bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95869de30e73d6da82e27fd016092055" id="r_a95869de30e73d6da82e27fd016092055"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a95869de30e73d6da82e27fd016092055">CellNeighInfo</a> = <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae32e2842128c3543eadba4e84e9e4146">FeType</a> &gt;::NeighInfo</td></tr>
 <tr class="separator:a95869de30e73d6da82e27fd016092055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -258,14 +270,24 @@ Protected Types</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a3d54624eb0c0d234b2bd824c42336f91" id="r_a3d54624eb0c0d234b2bd824c42336f91"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a3d54624eb0c0d234b2bd824c42336f91">m_poly_table_flat</a></td></tr>
 <tr class="separator:a3d54624eb0c0d234b2bd824c42336f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a7e5588d1f408101e51539d2bd4f7d" id="r_a56a7e5588d1f408101e51539d2bd4f7d"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a56a7e5588d1f408101e51539d2bd4f7d">m_poly_table_flat_nodupes</a></td></tr>
+<tr class="separator:a56a7e5588d1f408101e51539d2bd4f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fe00a8337314cf830973516b320f45" id="r_a38fe00a8337314cf830973516b320f45"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a38fe00a8337314cf830973516b320f45">m_poly_table_flat_ijs_table</a></td></tr>
+<tr class="separator:a38fe00a8337314cf830973516b320f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17dfd7732bfe374b5c93709ad4af8f4c" id="r_a17dfd7732bfe374b5c93709ad4af8f4c"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a17dfd7732bfe374b5c93709ad4af8f4c">m_poly_table_face_flat</a></td></tr>
 <tr class="separator:a17dfd7732bfe374b5c93709ad4af8f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf1963a667e6af6ee53ce16272597df" id="r_aecf1963a667e6af6ee53ce16272597df"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aecf1963a667e6af6ee53ce16272597df">m_poly_table_face_flat_nodupes</a></td></tr>
+<tr class="separator:aecf1963a667e6af6ee53ce16272597df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce8951bc390251d1693262439b63a96" id="r_a6ce8951bc390251d1693262439b63a96"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6ce8951bc390251d1693262439b63a96">m_poly_table_face_flat_ijs_table</a></td></tr>
+<tr class="separator:a6ce8951bc390251d1693262439b63a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcea5bc34b2904430eda4da661760924" id="r_afcea5bc34b2904430eda4da661760924"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae33f52db60116b82b4c8c69cc9647812">FlatPolyTypeLifted</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#afcea5bc34b2904430eda4da661760924">m_poly_table_face_lifted_flat</a></td></tr>
 <tr class="separator:afcea5bc34b2904430eda4da661760924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dea3ba212e666989cd7875bab4cf063" id="r_a7dea3ba212e666989cd7875bab4cf063"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#abf590e2a650459eb8fb8f152cb2fa7ec">CompressedListGatheredPoly</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7dea3ba212e666989cd7875bab4cf063">m_poly_table_face_lifted_gathered</a></td></tr>
 <tr class="separator:a7dea3ba212e666989cd7875bab4cf063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0ead3da3bf86bf805673c4a58dda77" id="r_afa0ead3da3bf86bf805673c4a58dda77"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, -1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#afa0ead3da3bf86bf805673c4a58dda77">m_poly_comps_coef</a></td></tr>
-<tr class="separator:afa0ead3da3bf86bf805673c4a58dda77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8bfa8fecd67c0061fb8772c24ff537" id="r_a6a8bfa8fecd67c0061fb8772c24ff537"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#abf590e2a650459eb8fb8f152cb2fa7ec">CompressedListGatheredPoly</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6a8bfa8fecd67c0061fb8772c24ff537">m_poly_table_face_lifted_gathered_nodupes</a></td></tr>
+<tr class="separator:a6a8bfa8fecd67c0061fb8772c24ff537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50351bbee6fe07f3b059f63185467df9" id="r_a50351bbee6fe07f3b059f63185467df9"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a50351bbee6fe07f3b059f63185467df9">m_poly_table_face_lifted_gathered_ijs_table</a></td></tr>
+<tr class="separator:a50351bbee6fe07f3b059f63185467df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f27e1a0b5f8ecd50d2fd6418afc085" id="r_a93f27e1a0b5f8ecd50d2fd6418afc085"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; uint8_t, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> *2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a93f27e1a0b5f8ecd50d2fd6418afc085">m_eva_idx_table</a></td></tr>
 <tr class="separator:a93f27e1a0b5f8ecd50d2fd6418afc085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a672fe50b7bf7f95810f3fb2a84f5cb53" id="r_a672fe50b7bf7f95810f3fb2a84f5cb53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; std::pair&lt; double, uint16_t &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a672fe50b7bf7f95810f3fb2a84f5cb53">m_gathered_monos</a></td></tr>
@@ -274,6 +296,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ac453a013ec1fd8fd03b97edd208fe700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b" id="r_a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b">m_eval_table_ext</a></td></tr>
 <tr class="separator:a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080ecfa8b171913d55d9d1f81bba68f2" id="r_a080ecfa8b171913d55d9d1f81bba68f2"><td class="memItemLeft" align="right" valign="top">std::array&lt; Eigen::Index, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a080ecfa8b171913d55d9d1f81bba68f2">m_npoly_comps_volume</a></td></tr>
+<tr class="separator:a080ecfa8b171913d55d9d1f81bba68f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb9f4e66cfb1237219193bb4819e535" id="r_aecb9f4e66cfb1237219193bb4819e535"><td class="memItemLeft" align="right" valign="top">std::array&lt; Eigen::Index, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aecb9f4e66cfb1237219193bb4819e535">m_npoly_comps_face</a></td></tr>
+<tr class="separator:aecb9f4e66cfb1237219193bb4819e535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e5f1491a9910247c84381b8eb67e11" id="r_a86e5f1491a9910247c84381b8eb67e11"><td class="memItemLeft" align="right" valign="top">const MeshType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a86e5f1491a9910247c84381b8eb67e11">m_mesh</a></td></tr>
 <tr class="separator:a86e5f1491a9910247c84381b8eb67e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab71822ff31667b86b66d81494792620b" id="r_ab71822ff31667b86b66d81494792620b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae32e2842128c3543eadba4e84e9e4146">FeType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#ab71822ff31667b86b66d81494792620b">m_cell_manager</a></td></tr>
@@ -288,6 +314,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2edbca422d1cc0e31a77f0c312456403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c0b508e89e3d94c5a371729f7f17db2" id="r_a4c0b508e89e3d94c5a371729f7f17db2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a4c0b508e89e3d94c5a371729f7f17db2">m_order_face</a> = -1</td></tr>
 <tr class="separator:a4c0b508e89e3d94c5a371729f7f17db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba4ecf5b10100eebbddcb1448c3ea84" id="r_a8ba4ecf5b10100eebbddcb1448c3ea84"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; void *, double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a8ba4ecf5b10100eebbddcb1448c3ea84">m_wf_ptr_table</a></td></tr>
+<tr class="separator:a8ba4ecf5b10100eebbddcb1448c3ea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc5093c36bee05548aa9c84fa2b19f7" id="r_a2cc5093c36bee05548aa9c84fa2b19f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">fe::UpdateFlagsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a2cc5093c36bee05548aa9c84fa2b19f7">m_update_flags</a> = 0</td></tr>
 <tr class="separator:a2cc5093c36bee05548aa9c84fa2b19f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4aacfcb9001e32dd2903a39a3b9709" id="r_afc4aacfcb9001e32dd2903a39a3b9709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">fe::UpdateFlagsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#afc4aacfcb9001e32dd2903a39a3b9709">m_update_flags_face</a> = 0</td></tr>
@@ -662,6 +690,54 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 
 </div>
 </div>
+<a id="a0e85fe4e4ff9dfae2c82ca9a16735bad" name="a0e85fe4e4ff9dfae2c82ca9a16735bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e85fe4e4ff9dfae2c82ca9a16735bad">&#9670;&#160;</a></span>RepeatingTableIJ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::RepeatingTableIJ =  <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6752ab50577cd23363daac716386baed">TypeIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6752ab50577cd23363daac716386baed" name="a6752ab50577cd23363daac716386baed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6752ab50577cd23363daac716386baed">&#9670;&#160;</a></span>TypeIJ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::TypeIJ =  std::array&lt;Eigen::Index, 3&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2bfaa434c47b8b35087bd4592fec4383" name="a2bfaa434c47b8b35087bd4592fec4383"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bfaa434c47b8b35087bd4592fec4383">&#9670;&#160;</a></span>WeakFormIntegratorBaseType</h2>
 
@@ -730,6 +806,60 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a196c35e1397f737c2f6d9ebb27af5eac" name="a196c35e1397f737c2f6d9ebb27af5eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196c35e1397f737c2f6d9ebb27af5eac">&#9670;&#160;</a></span>applyBasisScaling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html">vulpes::assemble::WeakFormIntegratorBase</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::applyBasisScaling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4d81f0d2700fa560d05acdb2c2cc282" name="ab4d81f0d2700fa560d05acdb2c2cc282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d81f0d2700fa560d05acdb2c2cc282">&#9670;&#160;</a></span>buildLookupTables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::buildLookupTables </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ada14157078d24c0513d06d4298b414fb" name="ada14157078d24c0513d06d4298b414fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada14157078d24c0513d06d4298b414fb">&#9670;&#160;</a></span>buildUniqueEvaTable()</h2>
 
@@ -752,6 +882,33 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44cde557f64f11974c53ad5ec32aff11" name="a44cde557f64f11974c53ad5ec32aff11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44cde557f64f11974c53ad5ec32aff11">&#9670;&#160;</a></span>buildWeakFormPointerTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html">vulpes::assemble::WeakFormIntegratorBase</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::buildWeakFormPointerTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1103,6 +1260,44 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a657cf22865a0ad92bfdd0fa99cba2a63" name="a657cf22865a0ad92bfdd0fa99cba2a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657cf22865a0ad92bfdd0fa99cba2a63">&#9670;&#160;</a></span>getIntegral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html">vulpes::assemble::WeakFormIntegratorBase</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::getIntegral </td>
+          <td>(</td>
+          <td class="paramtype">auto&#160;</td>
+          <td class="paramname"><em>wf_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a77826b49db64f01fb25d44f06ce59c92">index_t</a>&#160;</td>
+          <td class="paramname"><em>loc_neigh_id</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1878,6 +2073,54 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 
 </div>
 </div>
+<a id="aecb9f4e66cfb1237219193bb4819e535" name="aecb9f4e66cfb1237219193bb4819e535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecb9f4e66cfb1237219193bb4819e535">&#9670;&#160;</a></span>m_npoly_comps_face</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;Eigen::Index, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_npoly_comps_face</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a080ecfa8b171913d55d9d1f81bba68f2" name="a080ecfa8b171913d55d9d1f81bba68f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a080ecfa8b171913d55d9d1f81bba68f2">&#9670;&#160;</a></span>m_npoly_comps_volume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;Eigen::Index, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_npoly_comps_volume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2edbca422d1cc0e31a77f0c312456403" name="a2edbca422d1cc0e31a77f0c312456403"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2edbca422d1cc0e31a77f0c312456403">&#9670;&#160;</a></span>m_order</h2>
 
@@ -1926,30 +2169,6 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 
 </div>
 </div>
-<a id="afa0ead3da3bf86bf805673c4a58dda77" name="afa0ead3da3bf86bf805673c4a58dda77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa0ead3da3bf86bf805673c4a58dda77">&#9670;&#160;</a></span>m_poly_comps_coef</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Eigen::Vector&lt;double, -1&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_comps_coef</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a17dfd7732bfe374b5c93709ad4af8f4c" name="a17dfd7732bfe374b5c93709ad4af8f4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17dfd7732bfe374b5c93709ad4af8f4c">&#9670;&#160;</a></span>m_poly_table_face_flat</h2>
 
@@ -1963,6 +2182,54 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       <table class="memname">
         <tr>
           <td class="memname">std::array&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_table_face_flat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ce8951bc390251d1693262439b63a96" name="a6ce8951bc390251d1693262439b63a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce8951bc390251d1693262439b63a96">&#9670;&#160;</a></span>m_poly_table_face_flat_ijs_table</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_table_face_flat_ijs_table</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecf1963a667e6af6ee53ce16272597df" name="aecf1963a667e6af6ee53ce16272597df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf1963a667e6af6ee53ce16272597df">&#9670;&#160;</a></span>m_poly_table_face_flat_nodupes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_table_face_flat_nodupes</td>
         </tr>
       </table>
   </td>
@@ -2022,6 +2289,54 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 
 </div>
 </div>
+<a id="a50351bbee6fe07f3b059f63185467df9" name="a50351bbee6fe07f3b059f63185467df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50351bbee6fe07f3b059f63185467df9">&#9670;&#160;</a></span>m_poly_table_face_lifted_gathered_ijs_table</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_table_face_lifted_gathered_ijs_table</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a8bfa8fecd67c0061fb8772c24ff537" name="a6a8bfa8fecd67c0061fb8772c24ff537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8bfa8fecd67c0061fb8772c24ff537">&#9670;&#160;</a></span>m_poly_table_face_lifted_gathered_nodupes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#abf590e2a650459eb8fb8f152cb2fa7ec">CompressedListGatheredPoly</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_table_face_lifted_gathered_nodupes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3d54624eb0c0d234b2bd824c42336f91" name="a3d54624eb0c0d234b2bd824c42336f91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d54624eb0c0d234b2bd824c42336f91">&#9670;&#160;</a></span>m_poly_table_flat</h2>
 
@@ -2035,6 +2350,54 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       <table class="memname">
         <tr>
           <td class="memname">std::array&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_table_flat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38fe00a8337314cf830973516b320f45" name="a38fe00a8337314cf830973516b320f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fe00a8337314cf830973516b320f45">&#9670;&#160;</a></span>m_poly_table_flat_ijs_table</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_table_flat_ijs_table</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56a7e5588d1f408101e51539d2bd4f7d" name="a56a7e5588d1f408101e51539d2bd4f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a7e5588d1f408101e51539d2bd4f7d">&#9670;&#160;</a></span>m_poly_table_flat_nodupes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a>&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_poly_table_flat_nodupes</td>
         </tr>
       </table>
   </td>
@@ -2118,6 +2481,30 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 
 </div>
 </div>
+<a id="a8ba4ecf5b10100eebbddcb1448c3ea84" name="a8ba4ecf5b10100eebbddcb1448c3ea84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba4ecf5b10100eebbddcb1448c3ea84">&#9670;&#160;</a></span>m_wf_ptr_table</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;void*, double*&gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html">vulpes::assemble::WeakFormIntegratorBase</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::m_wf_ptr_table</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6f76f0c9fe18aab1cdff42a133da4be2" name="a6f76f0c9fe18aab1cdff42a133da4be2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f76f0c9fe18aab1cdff42a133da4be2">&#9670;&#160;</a></span>nblocks</h2>
 
@@ -2170,7 +2557,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">WeakFormIntegratorBaseType::nblocks</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a6f76f0c9fe18aab1cdff42a133da4be2"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">vulpes::assemble::WeakFormIntegratorBase::nblocks</a></div><div class="ttdeci">static constexpr uint32_t nblocks</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:91</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a6f76f0c9fe18aab1cdff42a133da4be2"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">vulpes::assemble::WeakFormIntegratorBase::nblocks</a></div><div class="ttdeci">static constexpr uint32_t nblocks</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:93</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2197,7 +2584,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">WeakFormIntegratorBaseType::s_n_expr</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a004380571b0cca53b1931a71efc3a493"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">vulpes::assemble::WeakFormIntegratorBase::s_n_expr</a></div><div class="ttdeci">static constexpr index_t s_n_expr</div><div class="ttdoc">total number of expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:58</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a004380571b0cca53b1931a71efc3a493"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">vulpes::assemble::WeakFormIntegratorBase::s_n_expr</a></div><div class="ttdeci">static constexpr index_t s_n_expr</div><div class="ttdoc">total number of expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:60</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2280,7 +2667,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">WeakFormIntegratorBaseType::s_n_face_expr</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_adbd29bba2be5d7a53cb4fc74e5bef660"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr</div><div class="ttdoc">total number of expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:61</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_adbd29bba2be5d7a53cb4fc74e5bef660"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr</div><div class="ttdoc">total number of expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:63</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2350,7 +2737,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">WeakFormIntegratorQFree</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

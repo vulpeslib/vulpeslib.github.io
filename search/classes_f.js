@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['rectangle_0',['Rectangle',['../structscipy_1_1Rectangle.html',1,'scipy']]],
-  ['rectangledistance_1',['RectangleDistance',['../classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html',1,'vulpes::geometry::dist2d']]],
-  ['rectrectdistancetracker_2',['RectRectDistanceTracker',['../structscipy_1_1RectRectDistanceTracker.html',1,'scipy']]],
-  ['rowmat_3',['RowMat',['../classEigenVulpes_1_1RowMat.html',1,'EigenVulpes']]],
-  ['rowview_4',['RowView',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html',1,'vulpes::datastructure::CrsMap']]],
-  ['rr_5fstack_5fitem_5',['RR_stack_item',['../structscipy_1_1RR__stack__item.html',1,'scipy']]]
+  ['quadraturelibrary_0',['QuadratureLibrary',['../classvulpes_1_1qrule_1_1QuadratureLibrary.html',1,'vulpes::qrule']]],
+  ['quadraturepoint_1',['QuadraturePoint',['../structvulpes_1_1qrule_1_1QuadraturePoint.html',1,'vulpes::qrule']]],
+  ['quadraturerule_2',['QuadratureRule',['../structvulpes_1_1qrule_1_1QuadratureRule.html',1,'vulpes::qrule']]],
+  ['quadraturerule_3c_20double_2c_20dim_20_2d_201_20_3e_3',['QuadratureRule&lt; double, dim - 1 &gt;',['../structvulpes_1_1qrule_1_1QuadratureRule.html',1,'vulpes::qrule']]],
+  ['quadraturerule_3c_20double_2c_20dim_20_3e_4',['QuadratureRule&lt; double, dim &gt;',['../structvulpes_1_1qrule_1_1QuadratureRule.html',1,'vulpes::qrule']]],
+  ['quadraturerule_3c_20fast_5ffloat_5ft_20_3e_5',['QuadratureRule&lt; fast_float_t &gt;',['../structvulpes_1_1qrule_1_1QuadratureRule.html',1,'vulpes::qrule']]],
+  ['quadraturerule_3c_20mpf_5fclass_2c_20dim_20_2d_201_20_3e_6',['QuadratureRule&lt; mpf_class, dim - 1 &gt;',['../structvulpes_1_1qrule_1_1QuadratureRule.html',1,'vulpes::qrule']]],
+  ['quadraturerule_3c_20mpf_5fclass_2c_20dim_20_3e_7',['QuadratureRule&lt; mpf_class, dim &gt;',['../structvulpes_1_1qrule_1_1QuadratureRule.html',1,'vulpes::qrule']]]
 ];

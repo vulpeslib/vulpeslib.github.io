@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['randomengine_0',['RandomEngine',['../namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750f',1,'vulpes::geometry::polymesher']]],
-  ['relaxationtype_1',['RelaxationType',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69',1,'vulpes::la::DataBoomerAMG']]]
+  ['precondtype_0',['PrecondType',['../classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40',1,'vulpes::la::LinearSolver']]]
 ];

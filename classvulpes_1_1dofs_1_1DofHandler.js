@@ -2,6 +2,7 @@ var classvulpes_1_1dofs_1_1DofHandler =
 [
     [ "index_t", "classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c", null ],
     [ "MappingType", "classvulpes_1_1dofs_1_1DofHandler.html#ab9cc001b9f2ec76a4b9971c6aeb19f0d", null ],
+    [ "Mesh", "classvulpes_1_1dofs_1_1DofHandler.html#a2f53b8c3dfc789f66555f7b56c5a90f2", null ],
     [ "DofHandler", "classvulpes_1_1dofs_1_1DofHandler.html#ae5a475cc95debab99a743b805d2f2b6e", null ],
     [ "applyRenumbering", "classvulpes_1_1dofs_1_1DofHandler.html#a6ab8b920c5f72735cb158dc7e0741c8f", null ],
     [ "buildCellToCellDof", "classvulpes_1_1dofs_1_1DofHandler.html#a1633a1690b5075a7b5fd72131ad61daa", null ],
@@ -16,6 +17,7 @@ var classvulpes_1_1dofs_1_1DofHandler =
     [ "distributeSubentityDofs", "classvulpes_1_1dofs_1_1DofHandler.html#a07befdf0da34b9536766371aa72a8577", null ],
     [ "dofOffset", "classvulpes_1_1dofs_1_1DofHandler.html#a4bb2d1bc7e17291526602b2112cadb62", null ],
     [ "finalize", "classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91", null ],
+    [ "gatherSparsityPatternRank0", "classvulpes_1_1dofs_1_1DofHandler.html#af9a78398279060fc683a4350acddbb7e", null ],
     [ "getCellToCellDof", "classvulpes_1_1dofs_1_1DofHandler.html#a97440e5ffd6be885615450aef96661aa", null ],
     [ "getCellToDof", "classvulpes_1_1dofs_1_1DofHandler.html#a84e2c7bf27665599e569304686a4627c", null ],
     [ "getCurrToRefNumbering", "classvulpes_1_1dofs_1_1DofHandler.html#a8f3f313e3249782ba86357b634c2819c", null ],

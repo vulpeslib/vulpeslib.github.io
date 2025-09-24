@@ -21,6 +21,7 @@ var cell_8hpp =
       [ "CellInitBarycenter", "cell_8hpp.html#ad2f45b81f4d778acb7c48e9c5f104e2ea69bcc45742d69b56ed3a6fd46f0284d8", null ],
       [ "CellInitFaceDiameter", "cell_8hpp.html#ad2f45b81f4d778acb7c48e9c5f104e2ea4ef54dee0fb1c9a62a0f9e0855772506", null ],
       [ "CellInitFaceKb", "cell_8hpp.html#ad2f45b81f4d778acb7c48e9c5f104e2ea27a15df6b1b37e9f6fe2a8f6e6af96ef", null ],
+      [ "CellInitInscribedDiameter", "cell_8hpp.html#ad2f45b81f4d778acb7c48e9c5f104e2eadcc59c55c020ebf08a7d66e9e6b92101", null ],
       [ "CellInitAll", "cell_8hpp.html#ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4", null ]
     ] ],
     [ "integrateMonomialsQFree2D", "cell_8hpp.html#adbf474d2e1b5de0ebe5a0be2820d69c7", null ],

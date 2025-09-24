@@ -1,15 +1,11 @@
 var searchData=
 [
-  ['updateall_0',['UpdateAll',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa000c668d9188fd4be6af9ccd77761b76',1,'vulpes::fe']]],
-  ['updategradients_1',['UpdateGradients',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa65a8bb15e3666495b4a3b3201fa07039',1,'vulpes::fe']]],
-  ['updatehessians_2',['UpdateHessians',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa9530cac0a1d27f70f7369fd21813378c',1,'vulpes::fe']]],
-  ['updateid_3',['UpdateId',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62facd80b741faa03cd18a9e92a0fe26820f',1,'vulpes::fe']]],
-  ['updatemapping_4',['UpdateMapping',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa8951d89a8579d00a679621692eccb00d',1,'vulpes::fe']]],
-  ['updateneighborcell_5',['UpdateNeighborCell',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa3d4fa5052a332e53b088c83e31d64091',1,'vulpes::fe']]],
-  ['updateneighborvalues_6',['UpdateNeighborValues',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa4d35240e7133f9979cf52324e593c874',1,'vulpes::fe']]],
-  ['updatenormals_7',['UpdateNormals',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa05dd11c4de99493614058054bdaff73c',1,'vulpes::fe']]],
-  ['updatenothing_8',['UpdateNothing',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa42f5f9e73ecca69ea8877f0ef7db282a',1,'vulpes::fe']]],
-  ['updatequadraturepts_9',['UpdateQuadraturePts',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62faab779e486c4ffe937f1710281d00d952',1,'vulpes::fe']]],
-  ['updatevalues_10',['UpdateValues',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa52f1d67a21cbac57619f64d1cb48e083',1,'vulpes::fe']]],
-  ['updateweights_11',['UpdateWeights',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa30366acf17ea86ca9e5012ecd382dfd1',1,'vulpes::fe']]]
+  ['segregatebisection_0',['SegregateBisection',['../namespacevulpes_1_1geometry.html#a730357b7b79829ebc6c34cf9737e871da046fdf1873ac8ee9bdb181ddb432ecd2',1,'vulpes::geometry']]],
+  ['seqboundarygaussseidel_1',['seqboundaryGaussSeidel',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69a8bdb0acdc296b32211ecc65ae96bea6a',1,'vulpes::la::DataBoomerAMG']]],
+  ['sequentialgaussseidel_2',['sequentialGaussSeidel',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69ad3425970cedf65b45a74e11454751aff',1,'vulpes::la::DataBoomerAMG']]],
+  ['simplex_3',['simplex',['../namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221a7e63b9d2d8bd512603139e052c216204',1,'vulpes::fe::Simplex'],['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa22eb8c32466025c68a498dd37c6ebf46',1,'vulpes::qrule::Simplex']]],
+  ['sor_4',['SOR',['../classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a97044e0ece5298ae55ac770e63f8c4b5',1,'vulpes::la::LinearSolver']]],
+  ['sorjacobi_5',['SORJacobi',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69a532f235785ea593b4cb5310addde46d0',1,'vulpes::la::DataBoomerAMG']]],
+  ['superlu_6',['SuperLU',['../classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a34d71e624f819eb74a127e9c2ec41715',1,'vulpes::la::LinearSolver']]],
+  ['symmetricsorjacobi_7',['symmetricSORJacobi',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69af6d02e46b6363dc27250d2155b8912bf',1,'vulpes::la::DataBoomerAMG']]]
 ];

@@ -1,6 +1,8 @@
 var namespacevulpes_1_1fe_1_1internal =
 [
     [ "LagrangianNodesPolicy", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy" ],
+    [ "PolynomialTypeHelper", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper" ],
+    [ "PolynomialTypeHelper< T, std::enable_if_t< std::is_same_v< T, void > > >", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331" ],
     [ "WarpAndBlendNodesPolicy", "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html", "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy" ],
     [ "real_t", "namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6", null ],
     [ "buildVandermonde", "namespacevulpes_1_1fe_1_1internal.html#a149529c6dad257c887c4eccc4f56de2a", null ],
@@ -17,6 +19,9 @@ var namespacevulpes_1_1fe_1_1internal =
     [ "hcat", "namespacevulpes_1_1fe_1_1internal.html#a94c5da1acc368603daf26306923400ae", null ],
     [ "interpolateFunctionAtNodes", "namespacevulpes_1_1fe_1_1internal.html#a8a3ac0047d31adeb05ff8d7a66d79e76", null ],
     [ "jacobiP", "namespacevulpes_1_1fe_1_1internal.html#ac7f456429dbf147bddb488e0705bdc8a", null ],
+    [ "lift_to_same_space", "namespacevulpes_1_1fe_1_1internal.html#a76442cdd7a8c95b0428c27315db12541", null ],
+    [ "liftConstant", "namespacevulpes_1_1fe_1_1internal.html#ae5ff9de2b5ed3bf9b9077440ce0f957f", null ],
+    [ "liftDimension", "namespacevulpes_1_1fe_1_1internal.html#a69e6589db41bd17ce0fd9cd98e489c15", null ],
     [ "nodes2D", "namespacevulpes_1_1fe_1_1internal.html#ad73d11b3d2c132f1808b1a5c11cd293b", null ],
     [ "nodes3D", "namespacevulpes_1_1fe_1_1internal.html#a7b1a9465945945b874c98904e51c4326", null ],
     [ "normalize", "namespacevulpes_1_1fe_1_1internal.html#aee537e01f990924884412e7dcc32e52f", null ],

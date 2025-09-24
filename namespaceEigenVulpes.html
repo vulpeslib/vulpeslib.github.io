@@ -119,6 +119,8 @@ $(document).ready(function(){initNavTree('namespaceEigenVulpes.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEigenVulpes_1_1OneComponentVector.html">OneComponentVector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEigenVulpes_1_1RowMat.html">RowMat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEigenVulpes_1_1SymMat.html">SymMat</a></td></tr>
@@ -132,6 +134,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a8e7547839698f9a709eeea9df883af7e" id="r_a8e7547839698f9a709eeea9df883af7e"><td class="memTemplParams" colspan="2">template&lt;Eigen::Index RowId, class ArgType &gt; </td></tr>
 <tr class="memitem:a8e7547839698f9a709eeea9df883af7e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classEigenVulpes_1_1RowMat.html">RowMat</a>&lt; RowId, ArgType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEigenVulpes.html#a8e7547839698f9a709eeea9df883af7e">makeRowMat</a> (const Eigen::MatrixBase&lt; ArgType &gt; &amp;arg)</td></tr>
 <tr class="separator:a8e7547839698f9a709eeea9df883af7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b78c9cefc38e472d674e57dfc258bc4" id="r_a8b78c9cefc38e472d674e57dfc258bc4"><td class="memTemplParams" colspan="2">template&lt;typename Derived &gt; </td></tr>
+<tr class="memitem:a8b78c9cefc38e472d674e57dfc258bc4"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEigenVulpes.html#a8b78c9cefc38e472d674e57dfc258bc4">toMap</a> (Eigen::MatrixBase&lt; Derived &gt; &amp;mat)</td></tr>
+<tr class="separator:a8b78c9cefc38e472d674e57dfc258bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0ac3594467fff73a18674f24394c23" id="r_a7d0ac3594467fff73a18674f24394c23"><td class="memTemplParams" colspan="2">template&lt;typename Derived &gt; </td></tr>
+<tr class="memitem:a7d0ac3594467fff73a18674f24394c23"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEigenVulpes.html#a7d0ac3594467fff73a18674f24394c23">toConstMap</a> (const Eigen::MatrixBase&lt; Derived &gt; &amp;mat)</td></tr>
+<tr class="separator:a7d0ac3594467fff73a18674f24394c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a8e7547839698f9a709eeea9df883af7e" name="a8e7547839698f9a709eeea9df883af7e"></a>
@@ -174,6 +182,62 @@ template&lt;Eigen::Index CrossId, class ArgType &gt; </div>
 
 </div>
 </div>
+<a id="a7d0ac3594467fff73a18674f24394c23" name="a7d0ac3594467fff73a18674f24394c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0ac3594467fff73a18674f24394c23">&#9670;&#160;</a></span>toConstMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto EigenVulpes::toConstMap </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::MatrixBase&lt; Derived &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b78c9cefc38e472d674e57dfc258bc4" name="a8b78c9cefc38e472d674e57dfc258bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b78c9cefc38e472d674e57dfc258bc4">&#9670;&#160;</a></span>toMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto EigenVulpes::toMap </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixBase&lt; Derived &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -181,7 +245,7 @@ template&lt;Eigen::Index CrossId, class ArgType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceEigenVulpes.html">EigenVulpes</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

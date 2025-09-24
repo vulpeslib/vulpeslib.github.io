@@ -123,6 +123,9 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1MeshBase.ht
 </div><!--header-->
 <div class="contents">
 
+<p>A base class for creating and managing mesh data structures.  
+ <a href="classvulpes_1_1geometry_1_1MeshBase.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mesh__base_8hpp_source.html">mesh_base.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;:</div>
@@ -132,31 +135,47 @@ Collaboration diagram for vulpes::geometry::MeshBase&lt; FloatType, IndexType, O
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a3acf8926bf8ae0cd4ca86d9898bad426" id="r_a3acf8926bf8ae0cd4ca86d9898bad426"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a3acf8926bf8ae0cd4ca86d9898bad426">Entity</a> { <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a3acf8926bf8ae0cd4ca86d9898bad426ae1703d4e7932d2377e6ba5d84b979d2d">VtxEnty</a> = 0
+, <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a3acf8926bf8ae0cd4ca86d9898bad426a1b2a2045bb7e54db093df17ea25c8d86">FacetEnty</a> = SelfDim - 1
+, <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a3acf8926bf8ae0cd4ca86d9898bad426a1192285801e95350c31b8b1f29e9c586">CellEnty</a> = SelfDim
+ }</td></tr>
+<tr class="memdesc:a3acf8926bf8ae0cd4ca86d9898bad426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates the different types of mesh entities based on their dimension.  <a href="classvulpes_1_1geometry_1_1MeshBase.html#a3acf8926bf8ae0cd4ca86d9898bad426">More...</a><br /></td></tr>
+<tr class="separator:a3acf8926bf8ae0cd4ca86d9898bad426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d8df1be7296f871ad847b65c978e69e" id="r_a9d8df1be7296f871ad847b65c978e69e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> = IndexType</td></tr>
 <tr class="separator:a9d8df1be7296f871ad847b65c978e69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d59e487f83993524976c7bf96d31cc" id="r_a59d59e487f83993524976c7bf96d31cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a59d59e487f83993524976c7bf96d31cc">float_t</a> = FloatType</td></tr>
 <tr class="separator:a59d59e487f83993524976c7bf96d31cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add9d465824bf7b2d622934ddbc6f01d4" id="r_add9d465824bf7b2d622934ddbc6f01d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#add9d465824bf7b2d622934ddbc6f01d4">SelfPoint</a> = <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, SelfDim &gt;</td></tr>
+<tr class="memdesc:add9d465824bf7b2d622934ddbc6f01d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map for cell-to-cell connectivity (the dual graph).  <br /></td></tr>
 <tr class="separator:add9d465824bf7b2d622934ddbc6f01d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204f14be8b6510b16b3790002920d1e6" id="r_a204f14be8b6510b16b3790002920d1e6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a204f14be8b6510b16b3790002920d1e6">DualMap</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt;</td></tr>
+<tr class="memdesc:a204f14be8b6510b16b3790002920d1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from cells to the facets that form their boundary.  <br /></td></tr>
 <tr class="separator:a204f14be8b6510b16b3790002920d1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35477ed31c4300faa64cf296a3d83a3e" id="r_a35477ed31c4300faa64cf296a3d83a3e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a35477ed31c4300faa64cf296a3d83a3e">CellToFacetMap</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt;</td></tr>
+<tr class="memdesc:a35477ed31c4300faa64cf296a3d83a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from cells to the vertices that define them.  <br /></td></tr>
 <tr class="separator:a35477ed31c4300faa64cf296a3d83a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ff1f8004bb8b892bbe7802347d46bcf" id="r_a1ff1f8004bb8b892bbe7802347d46bcf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1ff1f8004bb8b892bbe7802347d46bcf">CellToVtxMap</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt;</td></tr>
+<tr class="memdesc:a1ff1f8004bb8b892bbe7802347d46bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An uncompressed (temporary) version of the CellToVtxMap.  <br /></td></tr>
 <tr class="separator:a1ff1f8004bb8b892bbe7802347d46bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2b63fb4745ea392db31b1fc3baa904b" id="r_af2b63fb4745ea392db31b1fc3baa904b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#af2b63fb4745ea392db31b1fc3baa904b">CellToVtxMapUncompressed</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">datastructure::CrsMapUncompressed</a>&lt; IndexType &gt;</td></tr>
 <tr class="separator:af2b63fb4745ea392db31b1fc3baa904b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ba8fcda650ebfb9f8830002ca14ab4" id="r_af2ba8fcda650ebfb9f8830002ca14ab4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#af2ba8fcda650ebfb9f8830002ca14ab4">FacetToCellMap</a> = std::conditional_t&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a484db3e30ca54e3565f07bef6f118058">is_manifold</a>, <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt;, std::vector&lt; std::array&lt; IndexType, 2 &gt; &gt; &gt;</td></tr>
+<tr class="memdesc:af2ba8fcda650ebfb9f8830002ca14ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from facets to the vertices that define them.  <br /></td></tr>
 <tr class="separator:af2ba8fcda650ebfb9f8830002ca14ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1345b5fc1dda8e2fb6d043cfa2619c09" id="r_a1345b5fc1dda8e2fb6d043cfa2619c09"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1345b5fc1dda8e2fb6d043cfa2619c09">FacetToVtxMap</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType, <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a5d79394ae49b19a34e8133b1987bf82e">vtx_per_face</a> &gt;</td></tr>
+<tr class="memdesc:a1345b5fc1dda8e2fb6d043cfa2619c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from vertices to the cells they belong to.  <br /></td></tr>
 <tr class="separator:a1345b5fc1dda8e2fb6d043cfa2619c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f5a146f9a260fc93650e8f05866d15d" id="r_a4f5a146f9a260fc93650e8f05866d15d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a4f5a146f9a260fc93650e8f05866d15d">VtxToCellMap</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt;</td></tr>
+<tr class="memdesc:a4f5a146f9a260fc93650e8f05866d15d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an edge as a pair of vertex indices.  <br /></td></tr>
 <tr class="separator:a4f5a146f9a260fc93650e8f05866d15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa3946e3e8ba82b4cd3f5ee9d7e12384" id="r_afa3946e3e8ba82b4cd3f5ee9d7e12384"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#afa3946e3e8ba82b4cd3f5ee9d7e12384">EdgeVtxs</a> = std::array&lt; IndexType, 2 &gt;</td></tr>
+<tr class="memdesc:afa3946e3e8ba82b4cd3f5ee9d7e12384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from an edge to its two vertices.  <br /></td></tr>
 <tr class="separator:afa3946e3e8ba82b4cd3f5ee9d7e12384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d18e041835162fd74380c532cce6ca" id="r_aa3d18e041835162fd74380c532cce6ca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#aa3d18e041835162fd74380c532cce6ca">EdgeToVtxMap</a> = std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#afa3946e3e8ba82b4cd3f5ee9d7e12384">EdgeVtxs</a> &gt;</td></tr>
+<tr class="memdesc:aa3d18e041835162fd74380c532cce6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from cells to their edges.  <br /></td></tr>
 <tr class="separator:aa3d18e041835162fd74380c532cce6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664f0fe481e62a7b541bb5179d3b57e1" id="r_a664f0fe481e62a7b541bb5179d3b57e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a664f0fe481e62a7b541bb5179d3b57e1">CellToEdgeMap</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt;</td></tr>
+<tr class="memdesc:a664f0fe481e62a7b541bb5179d3b57e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from edges to adjacent cells.  <br /></td></tr>
 <tr class="separator:a664f0fe481e62a7b541bb5179d3b57e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a583d784e0cd1936f09ac3b9784f56374" id="r_a583d784e0cd1936f09ac3b9784f56374"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a583d784e0cd1936f09ac3b9784f56374">EdgeToCellMap</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt;</td></tr>
 <tr class="separator:a583d784e0cd1936f09ac3b9784f56374"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,102 +183,198 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a77cb0eb9c228f601dbb5c72b222c75ed" id="r_a77cb0eb9c228f601dbb5c72b222c75ed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#add9d465824bf7b2d622934ddbc6f01d4">SelfPoint</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a77cb0eb9c228f601dbb5c72b222c75ed">getVertexes</a> ()</td></tr>
+<tr class="memdesc:a77cb0eb9c228f601dbb5c72b222c75ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the vector of vertices.  <br /></td></tr>
 <tr class="separator:a77cb0eb9c228f601dbb5c72b222c75ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926fb8304fca73c32bbb106ba3007fae" id="r_a926fb8304fca73c32bbb106ba3007fae"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#add9d465824bf7b2d622934ddbc6f01d4">SelfPoint</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a926fb8304fca73c32bbb106ba3007fae">getVertexes</a> () const</td></tr>
+<tr class="memdesc:a926fb8304fca73c32bbb106ba3007fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the vector of vertices.  <br /></td></tr>
 <tr class="separator:a926fb8304fca73c32bbb106ba3007fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58e4e9223c4384fdce2db629682b59f5" id="r_a58e4e9223c4384fdce2db629682b59f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a204f14be8b6510b16b3790002920d1e6">DualMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a58e4e9223c4384fdce2db629682b59f5">getDualMap</a> ()</td></tr>
+<tr class="memdesc:a58e4e9223c4384fdce2db629682b59f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the dual graph (cell-to-cell connections).  <br /></td></tr>
 <tr class="separator:a58e4e9223c4384fdce2db629682b59f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94019c30d6ecad7f5228a5559afcb04" id="r_ac94019c30d6ecad7f5228a5559afcb04"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a204f14be8b6510b16b3790002920d1e6">DualMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ac94019c30d6ecad7f5228a5559afcb04">getDualMap</a> () const</td></tr>
+<tr class="memdesc:ac94019c30d6ecad7f5228a5559afcb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the dual graph (cell-to-cell connections).  <br /></td></tr>
 <tr class="separator:ac94019c30d6ecad7f5228a5559afcb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ba829982e8b9e0cfa66a04d9e7e3fe2" id="r_a4ba829982e8b9e0cfa66a04d9e7e3fe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a35477ed31c4300faa64cf296a3d83a3e">CellToFacetMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a4ba829982e8b9e0cfa66a04d9e7e3fe2">getCellToFacetMap</a> ()</td></tr>
+<tr class="memdesc:a4ba829982e8b9e0cfa66a04d9e7e3fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the cell-to-facet map.  <br /></td></tr>
 <tr class="separator:a4ba829982e8b9e0cfa66a04d9e7e3fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d250269d1c23d9306d8dd136b7bf15" id="r_a30d250269d1c23d9306d8dd136b7bf15"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a35477ed31c4300faa64cf296a3d83a3e">CellToFacetMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a30d250269d1c23d9306d8dd136b7bf15">getCellToFacetMap</a> () const</td></tr>
+<tr class="memdesc:a30d250269d1c23d9306d8dd136b7bf15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the cell-to-facet map.  <br /></td></tr>
 <tr class="separator:a30d250269d1c23d9306d8dd136b7bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a935616fffbd94d46313296bae998bdcf" id="r_a935616fffbd94d46313296bae998bdcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1ff1f8004bb8b892bbe7802347d46bcf">CellToVtxMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a935616fffbd94d46313296bae998bdcf">getCellToVtxMap</a> ()</td></tr>
+<tr class="memdesc:a935616fffbd94d46313296bae998bdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the cell-to-vertex map.  <br /></td></tr>
 <tr class="separator:a935616fffbd94d46313296bae998bdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54817d7fb0d122853f86a48abb1bd323" id="r_a54817d7fb0d122853f86a48abb1bd323"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1ff1f8004bb8b892bbe7802347d46bcf">CellToVtxMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a54817d7fb0d122853f86a48abb1bd323">getCellToVtxMap</a> () const</td></tr>
+<tr class="memdesc:a54817d7fb0d122853f86a48abb1bd323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the cell-to-vertex map.  <br /></td></tr>
 <tr class="separator:a54817d7fb0d122853f86a48abb1bd323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c71a75247d41828ca62edbbd4cf666" id="r_a07c71a75247d41828ca62edbbd4cf666"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#af2ba8fcda650ebfb9f8830002ca14ab4">FacetToCellMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a07c71a75247d41828ca62edbbd4cf666">getFacetToCellMap</a> ()</td></tr>
+<tr class="memdesc:a07c71a75247d41828ca62edbbd4cf666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the facet-to-cell map.  <br /></td></tr>
 <tr class="separator:a07c71a75247d41828ca62edbbd4cf666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a25c31a3c0172758f8b0f5165a6c84" id="r_a29a25c31a3c0172758f8b0f5165a6c84"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#af2ba8fcda650ebfb9f8830002ca14ab4">FacetToCellMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a29a25c31a3c0172758f8b0f5165a6c84">getFacetToCellMap</a> () const</td></tr>
+<tr class="memdesc:a29a25c31a3c0172758f8b0f5165a6c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the facet-to-cell map.  <br /></td></tr>
 <tr class="separator:a29a25c31a3c0172758f8b0f5165a6c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e51e0b9525b8c5c8797ec2fa05050f6" id="r_a8e51e0b9525b8c5c8797ec2fa05050f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1345b5fc1dda8e2fb6d043cfa2619c09">FacetToVtxMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a8e51e0b9525b8c5c8797ec2fa05050f6">getFacetToVtxMap</a> ()</td></tr>
+<tr class="memdesc:a8e51e0b9525b8c5c8797ec2fa05050f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the facet-to-vertex map.  <br /></td></tr>
 <tr class="separator:a8e51e0b9525b8c5c8797ec2fa05050f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d2ea0d9638674e96df7feff59ceb3e2" id="r_a5d2ea0d9638674e96df7feff59ceb3e2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1345b5fc1dda8e2fb6d043cfa2619c09">FacetToVtxMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a5d2ea0d9638674e96df7feff59ceb3e2">getFacetToVtxMap</a> () const</td></tr>
+<tr class="memdesc:a5d2ea0d9638674e96df7feff59ceb3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the facet-to-vertex map.  <br /></td></tr>
 <tr class="separator:a5d2ea0d9638674e96df7feff59ceb3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a328775105fa39c2decd8785a14d6c1dc" id="r_a328775105fa39c2decd8785a14d6c1dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a4f5a146f9a260fc93650e8f05866d15d">VtxToCellMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a328775105fa39c2decd8785a14d6c1dc">getVtxToCellMap</a> ()</td></tr>
+<tr class="memdesc:a328775105fa39c2decd8785a14d6c1dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the vertex-to-cell map.  <br /></td></tr>
 <tr class="separator:a328775105fa39c2decd8785a14d6c1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0544fcaabb78c4ca5788f2097e097ee7" id="r_a0544fcaabb78c4ca5788f2097e097ee7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a4f5a146f9a260fc93650e8f05866d15d">VtxToCellMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a0544fcaabb78c4ca5788f2097e097ee7">getVtxToCellMap</a> () const</td></tr>
+<tr class="memdesc:a0544fcaabb78c4ca5788f2097e097ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the vertex-to-cell map.  <br /></td></tr>
 <tr class="separator:a0544fcaabb78c4ca5788f2097e097ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca106e911722456a107dd49b5140e2a" id="r_a7ca106e911722456a107dd49b5140e2a"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a7ca106e911722456a107dd49b5140e2a">getDualGlobalMap</a> () const</td></tr>
+<tr class="separator:a7ca106e911722456a107dd49b5140e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c737bce926caf4ed40134ee061236f" id="r_a24c737bce926caf4ed40134ee061236f"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a24c737bce926caf4ed40134ee061236f">getCellToFacetGlobalMap</a> () const</td></tr>
+<tr class="separator:a24c737bce926caf4ed40134ee061236f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472193656c8afc992dd72242e7f01fc3" id="r_a472193656c8afc992dd72242e7f01fc3"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a472193656c8afc992dd72242e7f01fc3">getCellToVtxGlobalMap</a> () const</td></tr>
+<tr class="separator:a472193656c8afc992dd72242e7f01fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8406f62ab595e007f988de41bbca26" id="r_a9f8406f62ab595e007f988de41bbca26"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9f8406f62ab595e007f988de41bbca26">getFacetToCellGlobalMap</a> () const</td></tr>
+<tr class="separator:a9f8406f62ab595e007f988de41bbca26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7961d4e8ae9c7f90f4e25330135823" id="r_a7a7961d4e8ae9c7f90f4e25330135823"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a7a7961d4e8ae9c7f90f4e25330135823">getFacetToVtxGlobalMap</a> () const</td></tr>
+<tr class="separator:a7a7961d4e8ae9c7f90f4e25330135823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace77915f7540486335e02367742724cf" id="r_ace77915f7540486335e02367742724cf"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ace77915f7540486335e02367742724cf">getVtxToCellGlobalMap</a> () const</td></tr>
+<tr class="separator:ace77915f7540486335e02367742724cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923006fb665f547be6535c038b8e101a" id="r_a923006fb665f547be6535c038b8e101a"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a923006fb665f547be6535c038b8e101a">getMeshTags</a> ()</td></tr>
+<tr class="memdesc:a923006fb665f547be6535c038b8e101a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the mesh tags.  <br /></td></tr>
+<tr class="separator:a923006fb665f547be6535c038b8e101a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397d1abb23215b0874a647e53e203299" id="r_a397d1abb23215b0874a647e53e203299"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a397d1abb23215b0874a647e53e203299">getMeshTags</a> () const</td></tr>
+<tr class="memdesc:a397d1abb23215b0874a647e53e203299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the mesh tags.  <br /></td></tr>
+<tr class="separator:a397d1abb23215b0874a647e53e203299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ad58daae8b5324daa8640307d82606" id="r_ab3ad58daae8b5324daa8640307d82606"><td class="memItemLeft" align="right" valign="top">IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ab3ad58daae8b5324daa8640307d82606">numCells</a> () const</td></tr>
+<tr class="memdesc:ab3ad58daae8b5324daa8640307d82606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of cells in the mesh.  <br /></td></tr>
 <tr class="separator:ab3ad58daae8b5324daa8640307d82606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add83a6e844785882f4a47620d1d9ceaf" id="r_add83a6e844785882f4a47620d1d9ceaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#add83a6e844785882f4a47620d1d9ceaf">buildInternalMaps</a> ()</td></tr>
+<tr class="memdesc:add83a6e844785882f4a47620d1d9ceaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds all the secondary connectivity maps from the primary ones.  <br /></td></tr>
 <tr class="separator:add83a6e844785882f4a47620d1d9ceaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a315984f7a8aea6a1331066da967fd8" id="r_a8a315984f7a8aea6a1331066da967fd8"><td class="memItemLeft" align="right" valign="top">constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a8a315984f7a8aea6a1331066da967fd8">nEntity</a> (std::size_t dim) const</td></tr>
+<tr class="memdesc:a8a315984f7a8aea6a1331066da967fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of entities of a given dimension.  <br /></td></tr>
 <tr class="separator:a8a315984f7a8aea6a1331066da967fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ed2c1cfe340c6005d06f0a0bf865659" id="r_a6ed2c1cfe340c6005d06f0a0bf865659"><td class="memItemLeft" align="right" valign="top">constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a6ed2c1cfe340c6005d06f0a0bf865659">nLocEntity</a> (std::size_t dim) const</td></tr>
+<tr class="memdesc:a6ed2c1cfe340c6005d06f0a0bf865659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of locally owned entities of a given dimension.  <br /></td></tr>
 <tr class="separator:a6ed2c1cfe340c6005d06f0a0bf865659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a0f206f184adbf893f8d6e96eb9910" id="r_a07a0f206f184adbf893f8d6e96eb9910"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim&gt; </td></tr>
 <tr class="memitem:a07a0f206f184adbf893f8d6e96eb9910"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a07a0f206f184adbf893f8d6e96eb9910">getEntityToCellMap</a> () const</td></tr>
+<tr class="memdesc:a07a0f206f184adbf893f8d6e96eb9910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the map from a given entity dimension to cells.  <br /></td></tr>
 <tr class="separator:a07a0f206f184adbf893f8d6e96eb9910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac82ae8d3448c11f2a94ef9e6f1771e" id="r_a7ac82ae8d3448c11f2a94ef9e6f1771e"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim&gt; </td></tr>
+<tr class="memitem:a7ac82ae8d3448c11f2a94ef9e6f1771e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a7ac82ae8d3448c11f2a94ef9e6f1771e">getEntityToCellGlobalMap</a> () const</td></tr>
+<tr class="memdesc:a7ac82ae8d3448c11f2a94ef9e6f1771e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the global map from a given entity dimension to cells.  <br /></td></tr>
+<tr class="separator:a7ac82ae8d3448c11f2a94ef9e6f1771e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad176650a426095659b2c91267b08a8eb" id="r_ad176650a426095659b2c91267b08a8eb"><td class="memItemLeft" align="right" valign="top">constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ad176650a426095659b2c91267b08a8eb">nOwnedCells</a> () const</td></tr>
+<tr class="memdesc:ad176650a426095659b2c91267b08a8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of locally owned cells.  <br /></td></tr>
+<tr class="separator:ad176650a426095659b2c91267b08a8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630a65386b9eb045bb5f08707e9e982b" id="r_a630a65386b9eb045bb5f08707e9e982b"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
 <tr class="memitem:a630a65386b9eb045bb5f08707e9e982b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a630a65386b9eb045bb5f08707e9e982b">serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:a630a65386b9eb045bb5f08707e9e982b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the mesh data.  <br /></td></tr>
 <tr class="separator:a630a65386b9eb045bb5f08707e9e982b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af6b3f4808fdfb8f190fcaf145e44cd71" id="r_af6b3f4808fdfb8f190fcaf145e44cd71"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#af6b3f4808fdfb8f190fcaf145e44cd71">parallel</a> ()</td></tr>
+<tr class="memdesc:af6b3f4808fdfb8f190fcaf145e44cd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the mesh is configured for parallel computation.  <br /></td></tr>
 <tr class="separator:af6b3f4808fdfb8f190fcaf145e44cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ae67d09036cb8c36132230a7078898ee9" id="r_ae67d09036cb8c36132230a7078898ee9"><td class="memItemLeft" align="right" valign="top">static constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ae67d09036cb8c36132230a7078898ee9">outer_dim</a> = OuterDim</td></tr>
+<tr class="memdesc:ae67d09036cb8c36132230a7078898ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of the embedding space.  <br /></td></tr>
 <tr class="separator:ae67d09036cb8c36132230a7078898ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d0131275bab569064e6db359428ea20" id="r_a0d0131275bab569064e6db359428ea20"><td class="memItemLeft" align="right" valign="top">static constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a0d0131275bab569064e6db359428ea20">self_dim</a> = SelfDim</td></tr>
+<tr class="memdesc:a0d0131275bab569064e6db359428ea20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of the mesh itself.  <br /></td></tr>
 <tr class="separator:a0d0131275bab569064e6db359428ea20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d79394ae49b19a34e8133b1987bf82e" id="r_a5d79394ae49b19a34e8133b1987bf82e"><td class="memItemLeft" align="right" valign="top">static constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a5d79394ae49b19a34e8133b1987bf82e">vtx_per_face</a> = <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a0d0131275bab569064e6db359428ea20">self_dim</a> &lt;= 2 ? <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a0d0131275bab569064e6db359428ea20">self_dim</a> : -1</td></tr>
 <tr class="separator:a5d79394ae49b19a34e8133b1987bf82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a484db3e30ca54e3565f07bef6f118058" id="r_a484db3e30ca54e3565f07bef6f118058"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a484db3e30ca54e3565f07bef6f118058">is_manifold</a> = !(<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ae67d09036cb8c36132230a7078898ee9">outer_dim</a> == <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a0d0131275bab569064e6db359428ea20">self_dim</a>)</td></tr>
+<tr class="memdesc:a484db3e30ca54e3565f07bef6f118058"><td class="mdescLeft">&#160;</td><td class="mdescRight">A special value used to represent an undefined or invalid index.  <br /></td></tr>
 <tr class="separator:a484db3e30ca54e3565f07bef6f118058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7adf769acf684564c5d6e0919359fcf" id="r_ab7adf769acf684564c5d6e0919359fcf"><td class="memItemLeft" align="right" valign="top">static constexpr IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ab7adf769acf684564c5d6e0919359fcf">UNDEF</a> = static_cast&lt;IndexType&gt;(-1)</td></tr>
+<tr class="separator:ab7adf769acf684564c5d6e0919359fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a46583d503a5c16d51eb3e1a2ff158d1b" id="r_a46583d503a5c16d51eb3e1a2ff158d1b"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a46583d503a5c16d51eb3e1a2ff158d1b">self</a> () const</td></tr>
+<tr class="memdesc:a46583d503a5c16d51eb3e1a2ff158d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get a constant reference to the <code>Derived</code> class instance.  <br /></td></tr>
 <tr class="separator:a46583d503a5c16d51eb3e1a2ff158d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2d8332b31b2cb52ad8a5bf5fa0bea1" id="r_a5f2d8332b31b2cb52ad8a5bf5fa0bea1"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a5f2d8332b31b2cb52ad8a5bf5fa0bea1">self</a> ()</td></tr>
+<tr class="memdesc:a5f2d8332b31b2cb52ad8a5bf5fa0bea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get a reference to the <code>Derived</code> class instance.  <br /></td></tr>
 <tr class="separator:a5f2d8332b31b2cb52ad8a5bf5fa0bea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae088577c94dc5abf19350f0f0bf88a07" id="r_ae088577c94dc5abf19350f0f0bf88a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ae088577c94dc5abf19350f0f0bf88a07">invertCellAgglomeration</a> (const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt; &amp;old_to_new_cell) const</td></tr>
+<tr class="memdesc:ae088577c94dc5abf19350f0f0bf88a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a map from new (agglomerated) cell IDs to old (fine) cell IDs.  <br /></td></tr>
+<tr class="separator:ae088577c94dc5abf19350f0f0bf88a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6760574f6df4812ab827e646bc458183" id="r_a6760574f6df4812ab827e646bc458183"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a6760574f6df4812ab827e646bc458183">buildNewToOldFacetAgglomerationAndCellToFacet</a> (const auto &amp;new_to_old_cell, Derived &amp;agg_mesh) const</td></tr>
+<tr class="memdesc:a6760574f6df4812ab827e646bc458183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the facet mapping and cell-to-facet map for an agglomerated mesh.  <br /></td></tr>
+<tr class="separator:a6760574f6df4812ab827e646bc458183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c282cb513ddb63a8f4b40eafebe5bc" id="r_a93c282cb513ddb63a8f4b40eafebe5bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a93c282cb513ddb63a8f4b40eafebe5bc">buildFacetToCellAndFacetToVtxAgglomeration</a> (const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt; &amp;new_to_old_facet, const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt; &amp;old_to_new_cell, Derived &amp;agg_mesh) const</td></tr>
+<tr class="memdesc:a93c282cb513ddb63a8f4b40eafebe5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the facet-to-cell and facet-to-vertex maps for an agglomerated mesh.  <br /></td></tr>
+<tr class="separator:a93c282cb513ddb63a8f4b40eafebe5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0213bab62862b08d710d799b8b70b30a" id="r_a0213bab62862b08d710d799b8b70b30a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a0213bab62862b08d710d799b8b70b30a">buildCellToVtxAgglomeration</a> (const auto &amp;new_to_old_cell, const auto &amp;old_to_new_vtx, Derived &amp;agg_mesh) const</td></tr>
+<tr class="memdesc:a0213bab62862b08d710d799b8b70b30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the cell-to-vertex map for an agglomerated mesh.  <br /></td></tr>
+<tr class="separator:a0213bab62862b08d710d799b8b70b30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1d30da10a0c0fe459b9bf3972b5270" id="r_a0a1d30da10a0c0fe459b9bf3972b5270"><td class="memItemLeft" align="right" valign="top">Derived&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a0a1d30da10a0c0fe459b9bf3972b5270">agglomerateBase</a> (const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt; &amp;old_to_new_cell, bool check_connected=true) const</td></tr>
+<tr class="memdesc:a0a1d30da10a0c0fe459b9bf3972b5270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new, coarser mesh by grouping cells together.  <br /></td></tr>
+<tr class="separator:a0a1d30da10a0c0fe459b9bf3972b5270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b28458f3d2cc1e932308241f62d4350" id="r_a7b28458f3d2cc1e932308241f62d4350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a7b28458f3d2cc1e932308241f62d4350">agglomerateCheckConnected</a> (const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt; &amp;new_to_old_cell) const</td></tr>
+<tr class="memdesc:a7b28458f3d2cc1e932308241f62d4350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if each new agglomerated cell consists of connected old cells.  <br /></td></tr>
+<tr class="separator:a7b28458f3d2cc1e932308241f62d4350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4ce62803d2629aa3e8bb1e6cde5f1a" id="r_afe4ce62803d2629aa3e8bb1e6cde5f1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#afe4ce62803d2629aa3e8bb1e6cde5f1a">buildVtxToCell</a> ()</td></tr>
+<tr class="memdesc:afe4ce62803d2629aa3e8bb1e6cde5f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the vertex-to-cell connectivity map.  <br /></td></tr>
 <tr class="separator:afe4ce62803d2629aa3e8bb1e6cde5f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85cfc8c315d92a96d07b46888152f7fe" id="r_a85cfc8c315d92a96d07b46888152f7fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a85cfc8c315d92a96d07b46888152f7fe">buildCellToFacet</a> ()</td></tr>
+<tr class="memdesc:a85cfc8c315d92a96d07b46888152f7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the cell-to-facet connectivity map.  <br /></td></tr>
 <tr class="separator:a85cfc8c315d92a96d07b46888152f7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee37292de5b93ea0b1d24faa4f719a3" id="r_a1ee37292de5b93ea0b1d24faa4f719a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1ee37292de5b93ea0b1d24faa4f719a3">buildDualGraph</a> ()</td></tr>
+<tr class="memdesc:a1ee37292de5b93ea0b1d24faa4f719a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the dual graph (cell-to-cell adjacency).  <br /></td></tr>
 <tr class="separator:a1ee37292de5b93ea0b1d24faa4f719a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a436254de0b7daa299601066ebb2c75a0" id="r_a436254de0b7daa299601066ebb2c75a0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#add9d465824bf7b2d622934ddbc6f01d4">SelfPoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a436254de0b7daa299601066ebb2c75a0">m_vertexes</a></td></tr>
+<tr class="memdesc:a436254de0b7daa299601066ebb2c75a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; A list of all vertex coordinates.  <br /></td></tr>
 <tr class="separator:a436254de0b7daa299601066ebb2c75a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84ab42275cbe5df6ec4a21be11cae258" id="r_a84ab42275cbe5df6ec4a21be11cae258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a204f14be8b6510b16b3790002920d1e6">DualMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a84ab42275cbe5df6ec4a21be11cae258">m_dual_graph</a></td></tr>
+<tr class="memdesc:a84ab42275cbe5df6ec4a21be11cae258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps each cell to the list of its boundary facets.  <br /></td></tr>
 <tr class="separator:a84ab42275cbe5df6ec4a21be11cae258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a143840d5662def82078eb7aa3065eec3" id="r_a143840d5662def82078eb7aa3065eec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a35477ed31c4300faa64cf296a3d83a3e">CellToFacetMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a143840d5662def82078eb7aa3065eec3">m_cell_to_facet</a></td></tr>
+<tr class="memdesc:a143840d5662def82078eb7aa3065eec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps each cell to the list of its vertices.  <br /></td></tr>
 <tr class="separator:a143840d5662def82078eb7aa3065eec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab0bb472b55acdae3b8fa5acb617d046" id="r_aab0bb472b55acdae3b8fa5acb617d046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1ff1f8004bb8b892bbe7802347d46bcf">CellToVtxMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#aab0bb472b55acdae3b8fa5acb617d046">m_cell_to_vtx</a></td></tr>
 <tr class="separator:aab0bb472b55acdae3b8fa5acb617d046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7a847d95c96796ba99d4c7b884e144" id="r_a8a7a847d95c96796ba99d4c7b884e144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#af2ba8fcda650ebfb9f8830002ca14ab4">FacetToCellMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a8a7a847d95c96796ba99d4c7b884e144">m_facet_to_cell</a></td></tr>
+<tr class="memdesc:a8a7a847d95c96796ba99d4c7b884e144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps each facet to its vertices.  <br /></td></tr>
 <tr class="separator:a8a7a847d95c96796ba99d4c7b884e144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0c6b90b427aeed2e4098fa66c7776a" id="r_afd0c6b90b427aeed2e4098fa66c7776a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1345b5fc1dda8e2fb6d043cfa2619c09">FacetToVtxMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#afd0c6b90b427aeed2e4098fa66c7776a">m_facet_to_vtx</a></td></tr>
+<tr class="memdesc:afd0c6b90b427aeed2e4098fa66c7776a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps each vertex to the list of cells it belongs to.  <br /></td></tr>
 <tr class="separator:afd0c6b90b427aeed2e4098fa66c7776a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83689c5aaaf5fb2238c4ddc98bcd6686" id="r_a83689c5aaaf5fb2238c4ddc98bcd6686"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a4f5a146f9a260fc93650e8f05866d15d">VtxToCellMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a83689c5aaaf5fb2238c4ddc98bcd6686">m_vtx_to_cell</a></td></tr>
+<tr class="memdesc:a83689c5aaaf5fb2238c4ddc98bcd6686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all tags associated with the mesh.  <br /></td></tr>
 <tr class="separator:a83689c5aaaf5fb2238c4ddc98bcd6686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb4e70a6fdea30dd2c43dbfeabff1f50" id="r_aeb4e70a6fdea30dd2c43dbfeabff1f50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">MeshTag</a>&lt; SelfDim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#aeb4e70a6fdea30dd2c43dbfeabff1f50">m_mesh_tags</a></td></tr>
-<tr class="separator:aeb4e70a6fdea30dd2c43dbfeabff1f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b381e4f7cb4ba6813b44ef8a7eaa36" id="r_a42b381e4f7cb4ba6813b44ef8a7eaa36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">MeshTag</a>&lt; SelfDim, IndexType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a42b381e4f7cb4ba6813b44ef8a7eaa36">m_mesh_tags</a></td></tr>
+<tr class="separator:a42b381e4f7cb4ba6813b44ef8a7eaa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a721a652697cc2d9f9ae2ad68f0f366c5" id="r_a721a652697cc2d9f9ae2ad68f0f366c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a721a652697cc2d9f9ae2ad68f0f366c5">operator==</a> (const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">MeshBase</a> &amp;lhs, const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">MeshBase</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a721a652697cc2d9f9ae2ad68f0f366c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if two meshes are identical.  <br /></td></tr>
 <tr class="separator:a721a652697cc2d9f9ae2ad68f0f366c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename FloatType, typename IndexType, IndexType OuterDim, IndexType SelfDim, typename Derived&gt;<br />
+class vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</div><p>A base class for creating and managing mesh data structures. </p>
+<p>This class provides the fundamental storage and connectivity information for a mesh, such as vertices, cells, and faces. It uses a common programming pattern called CRTP (Curiously Recurring Template Pattern), which allows it to be extended by a <code>Derived</code> class with more specific features.</p>
+<p>It defines the relationships between different mesh parts (e.g., which vertices form a cell, which cells are neighbors).</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FloatType</td><td>The data type for floating-point numbers (e.g., <code>float</code> or <code>double</code>). </td></tr>
+    <tr><td class="paramname">IndexType</td><td>The data type for indices (e.g., <code>int</code> or <code>std::size_t</code>). </td></tr>
+    <tr><td class="paramname">OuterDim</td><td>The dimension of the space the mesh lives in (e.g., 3 for a surface in 3D space). </td></tr>
+    <tr><td class="paramname">SelfDim</td><td>The dimension of the mesh itself (e.g., 2 for a 2D mesh, 3 for a 3D mesh). </td></tr>
+    <tr><td class="paramname">Derived</td><td>The actual mesh class that inherits from this base (CRTP). </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a664f0fe481e62a7b541bb5179d3b57e1" name="a664f0fe481e62a7b541bb5179d3b57e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a664f0fe481e62a7b541bb5179d3b57e1">&#9670;&#160;</a></span>CellToEdgeMap</h2>
 
@@ -273,6 +388,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Map from edges to adjacent cells. </p>
 
 </div>
 </div>
@@ -290,6 +407,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
 </div><div class="memdoc">
 
+<p>Map from cells to the vertices that define them. </p>
+
 </div>
 </div>
 <a id="a1ff1f8004bb8b892bbe7802347d46bcf" name="a1ff1f8004bb8b892bbe7802347d46bcf"></a>
@@ -306,6 +425,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
 </div><div class="memdoc">
 
+<p>An uncompressed (temporary) version of the CellToVtxMap. </p>
+
 </div>
 </div>
 <a id="af2b63fb4745ea392db31b1fc3baa904b" name="af2b63fb4745ea392db31b1fc3baa904b"></a>
@@ -321,6 +442,7 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Map from facets to the cells they separate. If this is not a manyfold a facet separates exactly two cells (unless on the boundary of the mesh). If it is a manifold there is no limit (e.g. a graph junction of many edges) </p>
 
 </div>
 </div>
@@ -337,6 +459,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Map from cells to the facets that form their boundary. </p>
 
 </div>
 </div>
@@ -370,6 +494,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
 </div><div class="memdoc">
 
+<p>Map from cells to their edges. </p>
+
 </div>
 </div>
 <a id="afa3946e3e8ba82b4cd3f5ee9d7e12384" name="afa3946e3e8ba82b4cd3f5ee9d7e12384"></a>
@@ -385,6 +511,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Map from an edge to its two vertices. </p>
 
 </div>
 </div>
@@ -402,6 +530,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
 </div><div class="memdoc">
 
+<p>Map from facets to the vertices that define them. </p>
+
 </div>
 </div>
 <a id="a1345b5fc1dda8e2fb6d043cfa2619c09" name="a1345b5fc1dda8e2fb6d043cfa2619c09"></a>
@@ -417,6 +547,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Map from vertices to the cells they belong to. </p>
 
 </div>
 </div>
@@ -466,6 +598,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
 </div><div class="memdoc">
 
+<p>Map for cell-to-cell connectivity (the dual graph). </p>
+
 </div>
 </div>
 <a id="a4f5a146f9a260fc93650e8f05866d15d" name="a4f5a146f9a260fc93650e8f05866d15d"></a>
@@ -482,9 +616,122 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
 </div><div class="memdoc">
 
+<p>Represents an edge as a pair of vertex indices. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a3acf8926bf8ae0cd4ca86d9898bad426" name="a3acf8926bf8ae0cd4ca86d9898bad426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3acf8926bf8ae0cd4ca86d9898bad426">&#9670;&#160;</a></span>Entity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a3acf8926bf8ae0cd4ca86d9898bad426">vulpes::geometry::MeshBase::Entity</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumerates the different types of mesh entities based on their dimension. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3acf8926bf8ae0cd4ca86d9898bad426ae1703d4e7932d2377e6ba5d84b979d2d" name="a3acf8926bf8ae0cd4ca86d9898bad426ae1703d4e7932d2377e6ba5d84b979d2d"></a>VtxEnty&#160;</td><td class="fielddoc"><p>A vertex (dimension 0). </p>
+<p>A facet (e.g., an edge in 2D, a face in 3D). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3acf8926bf8ae0cd4ca86d9898bad426a1b2a2045bb7e54db093df17ea25c8d86" name="a3acf8926bf8ae0cd4ca86d9898bad426a1b2a2045bb7e54db093df17ea25c8d86"></a>FacetEnty&#160;</td><td class="fielddoc"><p>A cell (e.g., a triangle/quad in 2D, a tet/hex in 3D). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3acf8926bf8ae0cd4ca86d9898bad426a1192285801e95350c31b8b1f29e9c586" name="a3acf8926bf8ae0cd4ca86d9898bad426a1192285801e95350c31b8b1f29e9c586"></a>CellEnty&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0a1d30da10a0c0fe459b9bf3972b5270" name="a0a1d30da10a0c0fe459b9bf3972b5270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a1d30da10a0c0fe459b9bf3972b5270">&#9670;&#160;</a></span>agglomerateBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Derived <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::agglomerateBase </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>old_to_new_cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>check_connected</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new, coarser mesh by grouping cells together. </p>
+<p>This process, called agglomeration, is used to create a simplified version of the mesh, for example in multigrid solvers. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">old_to_new_cell</td><td>A vector mapping each old cell to a new, larger cell ID. </td></tr>
+    <tr><td class="paramname">check_connected</td><td>If <code>true</code>, verifies that each new cell is formed by a connected group of old cells. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <code>Derived</code> mesh object representing the agglomerated mesh. </dd></dl>
+
+</div>
+</div>
+<a id="a7b28458f3d2cc1e932308241f62d4350" name="a7b28458f3d2cc1e932308241f62d4350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b28458f3d2cc1e932308241f62d4350">&#9670;&#160;</a></span>agglomerateCheckConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::agglomerateCheckConnected </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>new_to_old_cell</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if each new agglomerated cell consists of connected old cells. </p>
+<p>It performs a search (DFS) within each group of old cells to ensure they form a single, contiguous block. It will exit with an error if a disconnected group is found. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_to_old_cell</td><td>A map from new cell IDs to the old cell IDs they contain. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a85cfc8c315d92a96d07b46888152f7fe" name="a85cfc8c315d92a96d07b46888152f7fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85cfc8c315d92a96d07b46888152f7fe">&#9670;&#160;</a></span>buildCellToFacet()</h2>
 
@@ -505,10 +752,67 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Builds the cell-to-facet connectivity map. </p>
+<dl class="section note"><dt>Note</dt><dd>Requires the <code>m_facet_to_cell</code> map to be already built. </dd></dl>
+
+</div>
+</div>
+<a id="a0213bab62862b08d710d799b8b70b30a" name="a0213bab62862b08d710d799b8b70b30a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0213bab62862b08d710d799b8b70b30a">&#9670;&#160;</a></span>buildCellToVtxAgglomeration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::buildCellToVtxAgglomeration </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>new_to_old_cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>old_to_new_vtx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Derived &amp;&#160;</td>
+          <td class="paramname"><em>agg_mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds the cell-to-vertex map for an agglomerated mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">new_to_old_cell</td><td>A map from new cell IDs to the old cell IDs they contain. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">old_to_new_vtx</td><td>A map from old vertex IDs to new vertex IDs. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">agg_mesh</td><td>The new, agglomerated mesh being built. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -532,10 +836,68 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Builds the dual graph (cell-to-cell adjacency). </p>
+<p>Two cells are considered neighbors if they share a common facet. </p><dl class="section note"><dt>Note</dt><dd>Requires the <code>m_cell_to_facet</code> and <code>m_facet_to_cell</code> maps to be already built. </dd></dl>
+
+</div>
+</div>
+<a id="a93c282cb513ddb63a8f4b40eafebe5bc" name="a93c282cb513ddb63a8f4b40eafebe5bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c282cb513ddb63a8f4b40eafebe5bc">&#9670;&#160;</a></span>buildFacetToCellAndFacetToVtxAgglomeration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::buildFacetToCellAndFacetToVtxAgglomeration </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>new_to_old_facet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>old_to_new_cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Derived &amp;&#160;</td>
+          <td class="paramname"><em>agg_mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds the facet-to-cell and facet-to-vertex maps for an agglomerated mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">new_to_old_facet</td><td>A map from new facet IDs to old facet IDs. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">old_to_new_cell</td><td>A map from old cell IDs to new cell IDs. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">agg_mesh</td><td>The new, agglomerated mesh being built. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A map from old vertex IDs to new vertex IDs. </dd></dl>
 
 </div>
 </div>
@@ -564,6 +926,57 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Builds all the secondary connectivity maps from the primary ones. </p>
+<p>This is a convenience function that calls the individual <code>build</code> methods for creating maps like <code>VtxToCell</code>, <code>CellToFacet</code>, and the <code>DualGraph</code>. </p>
+
+</div>
+</div>
+<a id="a6760574f6df4812ab827e646bc458183" name="a6760574f6df4812ab827e646bc458183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6760574f6df4812ab827e646bc458183">&#9670;&#160;</a></span>buildNewToOldFacetAgglomerationAndCellToFacet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; IndexType &gt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::buildNewToOldFacetAgglomerationAndCellToFacet </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>new_to_old_cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Derived &amp;&#160;</td>
+          <td class="paramname"><em>agg_mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds the facet mapping and cell-to-facet map for an agglomerated mesh. </p>
+<p>This function identifies the boundary facets of the new, larger cells. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">new_to_old_cell</td><td>A map from new cell IDs to the old cell IDs they contain. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">agg_mesh</td><td>The new, agglomerated mesh being built. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector mapping new facet IDs to their original old facet IDs. </dd></dl>
+
 </div>
 </div>
 <a id="afe4ce62803d2629aa3e8bb1e6cde5f1a" name="afe4ce62803d2629aa3e8bb1e6cde5f1a"></a>
@@ -586,7 +999,37 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds the vertex-to-cell connectivity map. </p>
+<dl class="section note"><dt>Note</dt><dd>Requires the <code>m_cell_to_vtx</code> map to be already built. </dd></dl>
+
+</div>
+</div>
+<a id="a24c737bce926caf4ed40134ee061236f" name="a24c737bce926caf4ed40134ee061236f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c737bce926caf4ed40134ee061236f">&#9670;&#160;</a></span>getCellToFacetGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getCellToFacetGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -618,6 +1061,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Gets a modifiable reference to the cell-to-facet map. </p>
+
 </div>
 </div>
 <a id="a30d250269d1c23d9306d8dd136b7bf15" name="a30d250269d1c23d9306d8dd136b7bf15"></a>
@@ -633,6 +1078,35 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a35477ed31c4300faa64cf296a3d83a3e">CellToFacetMap</a> &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getCellToFacetMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a constant reference to the cell-to-facet map. </p>
+
+</div>
+</div>
+<a id="a472193656c8afc992dd72242e7f01fc3" name="a472193656c8afc992dd72242e7f01fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472193656c8afc992dd72242e7f01fc3">&#9670;&#160;</a></span>getCellToVtxGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getCellToVtxGlobalMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -672,6 +1146,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Gets a modifiable reference to the cell-to-vertex map. </p>
+
 </div>
 </div>
 <a id="a54817d7fb0d122853f86a48abb1bd323" name="a54817d7fb0d122853f86a48abb1bd323"></a>
@@ -687,6 +1163,35 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a1ff1f8004bb8b892bbe7802347d46bcf">CellToVtxMap</a> &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getCellToVtxMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a constant reference to the cell-to-vertex map. </p>
+
+</div>
+</div>
+<a id="a7ca106e911722456a107dd49b5140e2a" name="a7ca106e911722456a107dd49b5140e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca106e911722456a107dd49b5140e2a">&#9670;&#160;</a></span>getDualGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getDualGlobalMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -726,6 +1231,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Gets a modifiable reference to the dual graph (cell-to-cell connections). </p>
+
 </div>
 </div>
 <a id="ac94019c30d6ecad7f5228a5559afcb04" name="ac94019c30d6ecad7f5228a5559afcb04"></a>
@@ -753,6 +1260,46 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Gets a constant reference to the dual graph (cell-to-cell connections). </p>
+
+</div>
+</div>
+<a id="a7ac82ae8d3448c11f2a94ef9e6f1771e" name="a7ac82ae8d3448c11f2a94ef9e6f1771e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac82ae8d3448c11f2a94ef9e6f1771e">&#9670;&#160;</a></span>getEntityToCellGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getEntityToCellGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the global map from a given entity dimension to cells. </p>
+<p>Similar to <code>getEntityToCellMap</code>, but for the entire (global) mesh. This call is forwarded to the <code>Derived</code> class. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim</td><td>The dimension of the entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the corresponding map. </dd></dl>
+
 </div>
 </div>
 <a id="a07a0f206f184adbf893f8d6e96eb9910" name="a07a0f206f184adbf893f8d6e96eb9910"></a>
@@ -778,6 +1325,42 @@ template&lt;std::size_t dim&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the map from a given entity dimension to cells. </p>
+<p>For example, <code>getEntityToCellMap&lt;0&gt;()</code> would return the vertex-to-cell map. This call is forwarded to the <code>Derived</code> class. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim</td><td>The dimension of the entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the corresponding map. </dd></dl>
+
+</div>
+</div>
+<a id="a9f8406f62ab595e007f988de41bbca26" name="a9f8406f62ab595e007f988de41bbca26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8406f62ab595e007f988de41bbca26">&#9670;&#160;</a></span>getFacetToCellGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getFacetToCellGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -809,6 +1392,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Gets a modifiable reference to the facet-to-cell map. </p>
+
 </div>
 </div>
 <a id="a29a25c31a3c0172758f8b0f5165a6c84" name="a29a25c31a3c0172758f8b0f5165a6c84"></a>
@@ -824,6 +1409,35 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#af2ba8fcda650ebfb9f8830002ca14ab4">FacetToCellMap</a> &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getFacetToCellMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a constant reference to the facet-to-cell map. </p>
+
+</div>
+</div>
+<a id="a7a7961d4e8ae9c7f90f4e25330135823" name="a7a7961d4e8ae9c7f90f4e25330135823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7961d4e8ae9c7f90f4e25330135823">&#9670;&#160;</a></span>getFacetToVtxGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getFacetToVtxGlobalMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -863,6 +1477,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Gets a modifiable reference to the facet-to-vertex map. </p>
+
 </div>
 </div>
 <a id="a5d2ea0d9638674e96df7feff59ceb3e2" name="a5d2ea0d9638674e96df7feff59ceb3e2"></a>
@@ -889,6 +1505,66 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets a constant reference to the facet-to-vertex map. </p>
+
+</div>
+</div>
+<a id="a923006fb665f547be6535c038b8e101a" name="a923006fb665f547be6535c038b8e101a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a923006fb665f547be6535c038b8e101a">&#9670;&#160;</a></span>getMeshTags() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getMeshTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a modifiable reference to the mesh tags. </p>
+
+</div>
+</div>
+<a id="a397d1abb23215b0874a647e53e203299" name="a397d1abb23215b0874a647e53e203299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a397d1abb23215b0874a647e53e203299">&#9670;&#160;</a></span>getMeshTags() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getMeshTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a constant reference to the mesh tags. </p>
 
 </div>
 </div>
@@ -917,6 +1593,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Gets a modifiable reference to the vector of vertices. </p>
+
 </div>
 </div>
 <a id="a926fb8304fca73c32bbb106ba3007fae" name="a926fb8304fca73c32bbb106ba3007fae"></a>
@@ -932,6 +1610,35 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
       <table class="memname">
         <tr>
           <td class="memname">const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#add9d465824bf7b2d622934ddbc6f01d4">SelfPoint</a> &gt; &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getVertexes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a constant reference to the vector of vertices. </p>
+
+</div>
+</div>
+<a id="ace77915f7540486335e02367742724cf" name="ace77915f7540486335e02367742724cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace77915f7540486335e02367742724cf">&#9670;&#160;</a></span>getVtxToCellGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getVtxToCellGlobalMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -971,6 +1678,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Gets a modifiable reference to the vertex-to-cell map. </p>
+
 </div>
 </div>
 <a id="a0544fcaabb78c4ca5788f2097e097ee7" name="a0544fcaabb78c4ca5788f2097e097ee7"></a>
@@ -997,6 +1706,45 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets a constant reference to the vertex-to-cell map. </p>
+
+</div>
+</div>
+<a id="ae088577c94dc5abf19350f0f0bf88a07" name="ae088577c94dc5abf19350f0f0bf88a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae088577c94dc5abf19350f0f0bf88a07">&#9670;&#160;</a></span>invertCellAgglomeration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; IndexType, IndexType &gt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::invertCellAgglomeration </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a9d8df1be7296f871ad847b65c978e69e">index_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>old_to_new_cell</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a map from new (agglomerated) cell IDs to old (fine) cell IDs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">old_to_new_cell</td><td>A vector where the index is the old cell ID and the value is the new cell ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A compressed map (<code>CrsMap</code>) from new cell IDs to a list of the old cell IDs they contain. </dd></dl>
 
 </div>
 </div>
@@ -1026,6 +1774,15 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Returns the total number of entities of a given dimension. </p>
+<p>This call is forwarded to the <code>Derived</code> class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dim</td><td>The dimension of the entity (e.g., 0 for vertices, <code>self_dim</code> for cells). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of entities. </dd></dl>
+
 </div>
 </div>
 <a id="a6ed2c1cfe340c6005d06f0a0bf865659" name="a6ed2c1cfe340c6005d06f0a0bf865659"></a>
@@ -1054,6 +1811,45 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Returns the number of locally owned entities of a given dimension. </p>
+<p>This is mainly for parallel computing. This call is forwarded to the <code>Derived</code> class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dim</td><td>The dimension of the entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of local entities. </dd></dl>
+
+</div>
+</div>
+<a id="ad176650a426095659b2c91267b08a8eb" name="ad176650a426095659b2c91267b08a8eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad176650a426095659b2c91267b08a8eb">&#9670;&#160;</a></span>nOwnedCells()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr IndexType <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::nOwnedCells </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of locally owned cells. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of cells owned by the current process. </dd></dl>
+
 </div>
 </div>
 <a id="ab3ad58daae8b5324daa8640307d82606" name="ab3ad58daae8b5324daa8640307d82606"></a>
@@ -1080,6 +1876,9 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns the total number of cells in the mesh. </p>
+<p>It also includes assertions to ensure the mesh data is consistent. </p><dl class="section return"><dt>Returns</dt><dd>The number of cells. </dd></dl>
 
 </div>
 </div>
@@ -1108,6 +1907,9 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Indicates if the mesh is configured for parallel computation. </p>
+<dl class="section return"><dt>Returns</dt><dd>Always returns <code>false</code> in this base implementation. </dd></dl>
+
 </div>
 </div>
 <a id="a5f2d8332b31b2cb52ad8a5bf5fa0bea1" name="a5f2d8332b31b2cb52ad8a5bf5fa0bea1"></a>
@@ -1135,6 +1937,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Helper to get a reference to the <code>Derived</code> class instance. </p>
+
 </div>
 </div>
 <a id="a46583d503a5c16d51eb3e1a2ff158d1b" name="a46583d503a5c16d51eb3e1a2ff158d1b"></a>
@@ -1161,6 +1965,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Helper to get a constant reference to the <code>Derived</code> class instance. </p>
 
 </div>
 </div>
@@ -1202,6 +2008,14 @@ template&lt;class Archive &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Serializes the mesh data. </p>
+<p>This function is used to save or send the mesh's state. It's designed to work with a serialization library like Boost.Serialization. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ar</td><td>The archive object to write to or read from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
@@ -1241,6 +2055,16 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Checks if two meshes are identical. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side mesh. </td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side mesh. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if all data members of the two meshes are equal, <code>false</code> otherwise. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1266,6 +2090,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>A special value used to represent an undefined or invalid index. </p>
+
 </div>
 </div>
 <a id="a143840d5662def82078eb7aa3065eec3" name="a143840d5662def82078eb7aa3065eec3"></a>
@@ -1290,6 +2116,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Maps each cell to the list of its vertices. </p>
+
 </div>
 </div>
 <a id="aab0bb472b55acdae3b8fa5acb617d046" name="aab0bb472b55acdae3b8fa5acb617d046"></a>
@@ -1313,6 +2141,7 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Maps each facet to its borders. If this is not a manifold the cells are always two if the facet is internal and one if on the boundary, in this case one of the two entries is UNDEF. The cell in the first position in the one where the vertices of the facet in m_facet_to_vtx follow the "correct" orientation (CCW in 2D/outer pointing following the right-hand rule in 3D), the second one instead must be the contary. </p>
 
 </div>
 </div>
@@ -1338,6 +2167,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Maps each cell to the list of its boundary facets. </p>
+
 </div>
 </div>
 <a id="a8a7a847d95c96796ba99d4c7b884e144" name="a8a7a847d95c96796ba99d4c7b884e144"></a>
@@ -1361,6 +2192,9 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Maps each facet to its vertices. </p>
+<p>In 1D, facets are the same as vertices. </p>
 
 </div>
 </div>
@@ -1386,10 +2220,12 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Maps each vertex to the list of cells it belongs to. </p>
+
 </div>
 </div>
-<a id="aeb4e70a6fdea30dd2c43dbfeabff1f50" name="aeb4e70a6fdea30dd2c43dbfeabff1f50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb4e70a6fdea30dd2c43dbfeabff1f50">&#9670;&#160;</a></span>m_mesh_tags</h2>
+<a id="a42b381e4f7cb4ba6813b44ef8a7eaa36" name="a42b381e4f7cb4ba6813b44ef8a7eaa36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b381e4f7cb4ba6813b44ef8a7eaa36">&#9670;&#160;</a></span>m_mesh_tags</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1400,7 +2236,7 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">MeshTag</a>&lt;SelfDim&gt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::m_mesh_tags</td>
+          <td class="memname"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">MeshTag</a>&lt;SelfDim, IndexType&gt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::m_mesh_tags</td>
         </tr>
       </table>
   </td>
@@ -1434,6 +2270,9 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>&lt; A list of all vertex coordinates. </p>
+<p>The dual graph, storing neighbors for each cell. Two cells are neighbors if they share a facet. </p>
+
 </div>
 </div>
 <a id="a83689c5aaaf5fb2238c4ddc98bcd6686" name="a83689c5aaaf5fb2238c4ddc98bcd6686"></a>
@@ -1457,6 +2296,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Stores all tags associated with the mesh. </p>
 
 </div>
 </div>
@@ -1482,6 +2323,8 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>The dimension of the embedding space. </p>
+
 </div>
 </div>
 <a id="a0d0131275bab569064e6db359428ea20" name="a0d0131275bab569064e6db359428ea20"></a>
@@ -1502,6 +2345,33 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The dimension of the mesh itself. </p>
+<p>The number of vertices per face. Set to -1 for 3D meshes where faces can have variable vertices. </p>
+
+</div>
+</div>
+<a id="ab7adf769acf684564c5d6e0919359fcf" name="ab7adf769acf684564c5d6e0919359fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7adf769acf684564c5d6e0919359fcf">&#9670;&#160;</a></span>UNDEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr IndexType <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::UNDEF = static_cast&lt;IndexType&gt;(-1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1529,6 +2399,7 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
   </tr>
 </table>
 </div><div class="memdoc">
+<p>True if the mesh is a surface in a higher-dimensional space (e.g., a 2D surface in 3D space). </p>
 
 </div>
 </div>
@@ -1542,7 +2413,7 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">MeshBase</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

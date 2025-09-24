@@ -118,10 +118,31 @@ $(document).ready(function(){initNavTree('namespacevulpes_1_1geometry_1_1interna
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abf351d6f6479b97562557b6345358921" id="r_abf351d6f6479b97562557b6345358921"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#abf351d6f6479b97562557b6345358921">getFileExtension</a> (const std::string &amp;filename)</td></tr>
-<tr class="separator:abf351d6f6479b97562557b6345358921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09324f44a3c75e4bb590a896c21a22a1" id="r_a09324f44a3c75e4bb590a896c21a22a1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; double, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a09324f44a3c75e4bb590a896c21a22a1">readpts</a> (const std::string &amp;filename)</td></tr>
-<tr class="separator:a09324f44a3c75e4bb590a896c21a22a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413b1af581f4e7ea2af184af04def367" id="r_a413b1af581f4e7ea2af184af04def367"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
+<tr class="memitem:a413b1af581f4e7ea2af184af04def367"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html">AbstractAgglomerationModel</a>&lt; MeshType &gt;::float_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a413b1af581f4e7ea2af184af04def367">maxVtxToVtxSquaredDistance</a> (const std::vector&lt; typename MeshType::SelfPoint &gt; &amp;vertexes, const typename <a class="el" href="classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html">AbstractAgglomerationModel</a>&lt; MeshType &gt;::IndVec &amp;subset, float_t early_stop=std::numeric_limits&lt; float_t &gt;::infinity())</td></tr>
+<tr class="separator:a413b1af581f4e7ea2af184af04def367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083529d73bffd666d5304bb7bc17133a" id="r_a083529d73bffd666d5304bb7bc17133a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a083529d73bffd666d5304bb7bc17133a"><td class="memTemplItemLeft" align="right" valign="top">constexpr torch::ScalarType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a083529d73bffd666d5304bb7bc17133a">toTorchType</a> ()</td></tr>
+<tr class="memdesc:a083529d73bffd666d5304bb7bc17133a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map C++ mesh types (float, double, int32_t, int64_t) to the corresponding Torch scalar type.  <br /></td></tr>
+<tr class="separator:a083529d73bffd666d5304bb7bc17133a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47208c45afc797ab228bb38d65144497" id="r_a47208c45afc797ab228bb38d65144497"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">CellInitOptionsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a47208c45afc797ab228bb38d65144497">normalizeCellFlags</a> (<a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">CellInitOptionsType</a> cell_init_options)</td></tr>
+<tr class="separator:a47208c45afc797ab228bb38d65144497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9663906c29eb9b4dde96cf8c8299b9" id="r_abe9663906c29eb9b4dde96cf8c8299b9"><td class="memTemplParams" colspan="2">template&lt;typename Dst , typename Src &gt; </td></tr>
+<tr class="memitem:abe9663906c29eb9b4dde96cf8c8299b9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#abe9663906c29eb9b4dde96cf8c8299b9">cast</a> (const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; Src, Src &gt; &amp;map)</td></tr>
+<tr class="memdesc:abe9663906c29eb9b4dde96cf8c8299b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-types a CRS map to use a different integral type for indices and values.  <br /></td></tr>
+<tr class="separator:abe9663906c29eb9b4dde96cf8c8299b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a5f4421326eb4efbd67fc53e891b2d" id="r_ae3a5f4421326eb4efbd67fc53e891b2d"><td class="memTemplParams" colspan="2">template&lt;typename VecType &gt; </td></tr>
+<tr class="memitem:ae3a5f4421326eb4efbd67fc53e891b2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ae3a5f4421326eb4efbd67fc53e891b2d">checkEmptySets</a> (const VecType &amp;labels)</td></tr>
+<tr class="memdesc:ae3a5f4421326eb4efbd67fc53e891b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for and warns about empty classes in a label vector.  <br /></td></tr>
+<tr class="separator:ae3a5f4421326eb4efbd67fc53e891b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1c9d63b50cc0b9aae11eb0bf9487bd" id="r_a2b1c9d63b50cc0b9aae11eb0bf9487bd"><td class="memTemplParams" colspan="2">template&lt;typename index_t &gt; </td></tr>
+<tr class="memitem:a2b1c9d63b50cc0b9aae11eb0bf9487bd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; index_t, index_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a2b1c9d63b50cc0b9aae11eb0bf9487bd">buildSubDual</a> (const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; index_t, index_t &gt; &amp;dual_map, const std::vector&lt; index_t &gt; &amp;subset_idxs)</td></tr>
+<tr class="memdesc:a2b1c9d63b50cc0b9aae11eb0bf9487bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the dual subgraph corresponding to a subset of vertices.  <br /></td></tr>
+<tr class="separator:a2b1c9d63b50cc0b9aae11eb0bf9487bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57e0234a9f21d3ecae7b168d239349f" id="r_ab57e0234a9f21d3ecae7b168d239349f"><td class="memTemplParams" colspan="2">template&lt;typename index_t &gt; </td></tr>
+<tr class="memitem:ab57e0234a9f21d3ecae7b168d239349f"><td class="memTemplItemLeft" align="right" valign="top">index_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ab57e0234a9f21d3ecae7b168d239349f">removeEmptySets</a> (std::vector&lt; index_t &gt; &amp;labels)</td></tr>
+<tr class="memdesc:ab57e0234a9f21d3ecae7b168d239349f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compresses labels to a contiguous range <code>[0, N-1]</code>.  <br /></td></tr>
+<tr class="separator:ab57e0234a9f21d3ecae7b168d239349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ac66c2afd5dee2e3ba580086085b27" id="r_a77ac66c2afd5dee2e3ba580086085b27"><td class="memTemplParams" colspan="2">template&lt;int32_t Dim&gt; </td></tr>
 <tr class="memitem:a77ac66c2afd5dee2e3ba580086085b27"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; double, double &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27">updateVoronoiCentroid</a> (const std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, Dim &gt;, 2 &gt; &amp;bbox, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, Dim &gt; &gt; &amp;points, int32_t n_inside_seeds)</td></tr>
 <tr class="separator:a77ac66c2afd5dee2e3ba580086085b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +172,138 @@ Functions</h2></td></tr>
 <tr class="separator:ae704555005f472e6b200962395a45194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a2b1c9d63b50cc0b9aae11eb0bf9487bd" name="a2b1c9d63b50cc0b9aae11eb0bf9487bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1c9d63b50cc0b9aae11eb0bf9487bd">&#9670;&#160;</a></span>buildSubDual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename index_t &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; index_t, index_t &gt; vulpes::geometry::internal::buildSubDual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; index_t, index_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dual_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; index_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>subset_idxs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the dual subgraph corresponding to a subset of vertices. </p>
+<p>Given a dual graph for an entire mesh and a list of vertex indices, this function constructs and returns the induced subgraph containing only the specified vertices and the edges between them. The vertices in the resulting subgraph are re-indexed to form a contiguous range <code>[0, N-1]</code>, where <code>N</code> is the number of vertices in the subset.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">index_t</td><td>The integral type used for graph indices. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dual_map</td><td>The dual graph of the entire mesh, represented as a <code>CrsMap</code>. </td></tr>
+    <tr><td class="paramname">subset_idxs</td><td>A vector of vertex indices defining the subgraph to extract. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <code>CrsMap</code> representing the extracted subgraph. </dd></dl>
+
+</div>
+</div>
+<a id="abe9663906c29eb9b4dde96cf8c8299b9" name="abe9663906c29eb9b4dde96cf8c8299b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe9663906c29eb9b4dde96cf8c8299b9">&#9670;&#160;</a></span>cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Dst , typename Src &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto vulpes::geometry::internal::cast </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; Src, Src &gt; &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Re-types a CRS map to use a different integral type for indices and values. </p>
+<p>This function converts a <code>CrsMap</code> from a source integral type <code>Src</code> to a destination integral type <code>Dst</code>. If <code>Dst</code> and <code>Src</code> are the same, the input map is returned unchanged. Otherwise, it constructs a new <code>CrsMap</code> by performing an element-wise cast on both the data and index arrays.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dst</td><td>The destination integral type for the new map's indices and values. </td></tr>
+    <tr><td class="paramname">Src</td><td>The source integral type for the input map's indices and values. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>The input <code>CrsMap</code> with data and indices of type <code>Src</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The original <code>map</code> if <code>Dst</code> is the same as <code>Src</code>, otherwise a new <code>CrsMap&lt;Dst, Dst&gt;</code> with casted elements.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This operation may result in narrowing if values or indices in the source map do not fit within the range of the <code>Dst</code> type. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Complexity is Linear in the number of elements: $O(|map.data()| + |map.indices()|)$. </dd></dl>
+
+</div>
+</div>
+<a id="ae3a5f4421326eb4efbd67fc53e891b2d" name="ae3a5f4421326eb4efbd67fc53e891b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a5f4421326eb4efbd67fc53e891b2d">&#9670;&#160;</a></span>checkEmptySets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VecType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::geometry::internal::checkEmptySets </td>
+          <td>(</td>
+          <td class="paramtype">const VecType &amp;&#160;</td>
+          <td class="paramname"><em>labels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks for and warns about empty classes in a label vector. </p>
+<p>This function inspects a vector of labels and determines the number of classes as <code>max(labels) + 1</code>. It then checks if every class ID in the range <code>[0, max(labels)]</code> is present at least once. A warning message is printed to <code>std::cerr</code> for each class that has no members.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VecType</td><td>A random-access container type that supports <code>size()</code> and <code>operator[]</code>, such as <code>std::vector</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">labels</td><td>A container of partition labels. Values are expected to be non-negative.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>complexity $O(N + M)$, where $N$ is the number of labels and $M$ is the maximum label value. </dd>
+<dd>
+This function has no side effects other than potentially printing diagnostic messages to standard error. </dd></dl>
+
+</div>
+</div>
 <a id="a26a9fb77b98f1d370896b71f54d9dfa9" name="a26a9fb77b98f1d370896b71f54d9dfa9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26a9fb77b98f1d370896b71f54d9dfa9">&#9670;&#160;</a></span>computeGradient()</h2>
 
@@ -265,8 +418,44 @@ template&lt;int32_t Dim, typename D &gt; </div>
 
 </div>
 </div>
-<a id="abf351d6f6479b97562557b6345358921" name="abf351d6f6479b97562557b6345358921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf351d6f6479b97562557b6345358921">&#9670;&#160;</a></span>getFileExtension()</h2>
+<a id="a413b1af581f4e7ea2af184af04def367" name="a413b1af581f4e7ea2af184af04def367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a413b1af581f4e7ea2af184af04def367">&#9670;&#160;</a></span>maxVtxToVtxSquaredDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html">AbstractAgglomerationModel</a>&lt; MeshType &gt;::float_t vulpes::geometry::internal::maxVtxToVtxSquaredDistance </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; typename MeshType::SelfPoint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertexes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html">AbstractAgglomerationModel</a>&lt; MeshType &gt;::IndVec &amp;&#160;</td>
+          <td class="paramname"><em>subset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float_t&#160;</td>
+          <td class="paramname"><em>early_stop</em> = <code>std::numeric_limits&lt;float_t&gt;::infinity()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47208c45afc797ab228bb38d65144497" name="a47208c45afc797ab228bb38d65144497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47208c45afc797ab228bb38d65144497">&#9670;&#160;</a></span>normalizeCellFlags()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,16 +464,16 @@ template&lt;int32_t Dim, typename D &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string vulpes::geometry::internal::getFileExtension </td>
+          <td class="memname">static <a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">CellInitOptionsType</a> vulpes::geometry::internal::normalizeCellFlags </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">CellInitOptionsType</a>&#160;</td>
+          <td class="paramname"><em>cell_init_options</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -483,29 +672,75 @@ template&lt;typename FloatType , typename IndexType , IndexType Dim, typename D 
 
 </div>
 </div>
-<a id="a09324f44a3c75e4bb590a896c21a22a1" name="a09324f44a3c75e4bb590a896c21a22a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09324f44a3c75e4bb590a896c21a22a1">&#9670;&#160;</a></span>readpts()</h2>
+<a id="ab57e0234a9f21d3ecae7b168d239349f" name="ab57e0234a9f21d3ecae7b168d239349f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab57e0234a9f21d3ecae7b168d239349f">&#9670;&#160;</a></span>removeEmptySets()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename index_t &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">index_t vulpes::geometry::internal::removeEmptySets </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; index_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>labels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compresses labels to a contiguous range <code>[0, N-1]</code>. </p>
+<p>This function modifies a vector of labels in-place, remapping them so that the set of unique labels becomes a dense range <code>[0, N-1]</code>, where <code>N</code> is the total number of unique labels originally present. The relative ordering of labels is preserved.</p>
+<p>For example, an input of <code>{3, 0, 3, 5, 0}</code> would be modified to <code>{1, 0, 1, 2, 0}</code>, and the function would return <code>3</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">index_t</td><td>The integral type of the labels. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">labels</td><td>The vector of labels to be modified. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of unique labels, <code>N</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a083529d73bffd666d5304bb7bc17133a" name="a083529d73bffd666d5304bb7bc17133a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083529d73bffd666d5304bb7bc17133a">&#9670;&#160;</a></span>toTorchType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::array&lt; double, 3 &gt; &gt; vulpes::geometry::internal::readpts </td>
+          <td class="memname">constexpr torch::ScalarType vulpes::geometry::internal::toTorchType </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Map C++ mesh types (float, double, int32_t, int64_t) to the corresponding Torch scalar type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>C++ mesh type </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -552,7 +787,7 @@ template&lt;int32_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html">internal</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

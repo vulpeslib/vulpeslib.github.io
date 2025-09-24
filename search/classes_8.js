@@ -1,4 +1,29 @@
 var searchData=
 [
-  ['kdtree_0',['KDTree',['../classvulpes_1_1datastructure_1_1KDTree.html',1,'vulpes::datastructure']]]
+  ['implicitbutcherimex_0',['ImplicitButcherIMEX',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitbutcherimex_3c_20backwardeuler_20_3e_1',['ImplicitButcherIMEX&lt; BackwardEuler &gt;',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitbutcherimex_3c_20ceschinokunzmann3_20_3e_2',['ImplicitButcherIMEX&lt; CeschinoKunzmann3 &gt;',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitbutcherimex_3c_20ceschinokunzmann4_20_3e_3',['ImplicitButcherIMEX&lt; CeschinoKunzmann4 &gt;',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitbutcherimex_3c_20cranknicolson_20_3e_4',['ImplicitButcherIMEX&lt; CrankNicolson &gt;',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitbutcherimex_3c_20lobattoiiic_20_3e_5',['ImplicitButcherIMEX&lt; LobattoIIIC &gt;',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitbutcherimex_3c_20lstabledirk_20_3e_6',['ImplicitButcherIMEX&lt; LstableDIRK &gt;',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitbutcherimex_3c_20miller3_20_3e_7',['ImplicitButcherIMEX&lt; Miller3 &gt;',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitbutcherimex_3c_20trbdf2_20_3e_8',['ImplicitButcherIMEX&lt; TRBDF2 &gt;',['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html',1,'vulpes::timeintegration']]],
+  ['implicitexplicitmidpointimex_9',['ImplicitExplicitMidpointIMEX',['../structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html',1,'vulpes::timeintegration']]],
+  ['indextracker_10',['IndexTracker',['../classvulpes_1_1datastructure_1_1IndexTracker.html',1,'vulpes::datastructure']]],
+  ['intersectdistance_11',['IntersectDistance',['../classvulpes_1_1geometry_1_1IntersectDistance.html',1,'vulpes::geometry']]],
+  ['is_5ffe_5fexpression_5fderived_12',['is_fe_expression_derived',['../structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived.html',1,'vulpes::assemble::internal']]],
+  ['is_5ffe_5fexpression_5fderived_3c_20t_2c_20std_3a_3avoid_5ft_3c_3e_20_3e_13',['is_fe_expression_derived&lt; T, std::void_t&lt;&gt; &gt;',['../structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived_3_01T_00_01std_1_1void__t_3_4_01_4.html',1,'vulpes::assemble::internal']]],
+  ['is_5ffe_5fexpression_5fderived_5fdim_14',['is_fe_expression_derived_dim',['../structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived__dim.html',1,'vulpes::assemble::internal']]],
+  ['is_5fgnump_15',['is_gnump',['../structvulpes_1_1vmath_1_1is__gnump.html',1,'vulpes::vmath']]],
+  ['is_5fprintable_5fcontainer_16',['is_printable_container',['../structvulpes_1_1vvutils_1_1internal_1_1is__printable__container.html',1,'vulpes::vvutils::internal']]],
+  ['is_5fprintable_5fcontainer_3c_20std_3a_3aarray_3c_20t_2c_20n_20_3e_20_3e_17',['is_printable_container&lt; std::array&lt; T, N &gt; &gt;',['../structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html',1,'vulpes::vvutils::internal']]],
+  ['is_5fprintable_5fcontainer_3c_20std_3a_3aset_3c_20args_2e_2e_2e_20_3e_20_3e_18',['is_printable_container&lt; std::set&lt; Args... &gt; &gt;',['../structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1set_3_01Args_8_8_8_01_4_01_4.html',1,'vulpes::vvutils::internal']]],
+  ['is_5fprintable_5fcontainer_3c_20std_3a_3avector_3c_20args_2e_2e_2e_20_3e_20_3e_19',['is_printable_container&lt; std::vector&lt; Args... &gt; &gt;',['../structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html',1,'vulpes::vvutils::internal']]],
+  ['is_5fpseudoaritmetic_20',['is_pseudoaritmetic',['../structvulpes_1_1vmath_1_1is__pseudoaritmetic.html',1,'vulpes::vmath']]],
+  ['is_5fpseudofloating_21',['is_pseudofloating',['../structvulpes_1_1vmath_1_1is__pseudofloating.html',1,'vulpes::vmath']]],
+  ['is_5ftuple_22',['is_tuple',['../structvulpes_1_1assemble_1_1internal_1_1is__tuple.html',1,'vulpes::assemble::internal']]],
+  ['is_5ftuple_3c_20std_3a_3atuple_3c_20args_2e_2e_2e_20_3e_20_3e_23',['is_tuple&lt; std::tuple&lt; Args... &gt; &gt;',['../structvulpes_1_1assemble_1_1internal_1_1is__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html',1,'vulpes::assemble::internal']]],
+  ['is_5ftuple_5fof_5ffe_5fexpr_5fpointers_24',['is_tuple_of_fe_expr_pointers',['../structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers.html',1,'vulpes::assemble::internal']]],
+  ['is_5ftuple_5fof_5ffe_5fexpr_5fpointers_3c_20std_3a_3atuple_3c_20args_2e_2e_2e_20_3e_2c_20std_3a_3aenable_5fif_5ft_3c_28std_3a_3aconjunction_5fv_3c_20std_3a_3ais_5fpointer_3c_20args_20_3e_2e_2e_2e_20_3e_29_20_26_26_28std_3a_3aconjunction_5fv_3c_20is_5ffe_5fexpression_5fderived_3c_20std_3a_3aremove_5fpointer_5ft_3c_20args_20_3e_20_3e_2e_2e_2e_20_3e_29_3e_20_3e_25',['is_tuple_of_fe_expr_pointers&lt; std::tuple&lt; Args... &gt;, std::enable_if_t&lt;(std::conjunction_v&lt; std::is_pointer&lt; Args &gt;... &gt;) &amp;&amp;(std::conjunction_v&lt; is_fe_expression_derived&lt; std::remove_pointer_t&lt; Args &gt; &gt;... &gt;)&gt; &gt;',['../structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html',1,'vulpes::assemble::internal']]]
 ];

@@ -1,14 +1,13 @@
 var classvulpes_1_1fe_1_1FeExpressionSum =
 [
     [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionSum.html#a3b54ff27a963ace18adb77fb3ad04069", null ],
-    [ "PolynomialType", "classvulpes_1_1fe_1_1FeExpressionSum.html#aac551f30777ac7f2251e0b7e98a854c9", null ],
+    [ "PolynomialType", "classvulpes_1_1fe_1_1FeExpressionSum.html#a37f2785200a6d5a829a3a1225e9eb2ac", null ],
     [ "FeExpressionSum", "classvulpes_1_1fe_1_1FeExpressionSum.html#a35243be415b01fc2311eb0d8bd0f4ed9", null ],
     [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionSum.html#acb8eea26dd851c8fbfbe8592b455c5ee", null ],
     [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionSum.html#a1d6a8bfa14511749dc406fec8fb5b517", null ],
     [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionSum.html#a1e01cf42a8075996fb6444cdb4b013f8", null ],
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionSum.html#a391b1ba4ddde845679901f7ebc3c789c", null ],
-    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionSum.html#ac1821df705596b62a788c64b8744f69c", null ],
-    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionSum.html#a4db593972fdbc17671674b586038b6de", null ],
+    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionSum.html#a9f0e329086fc321a4791a9440f2b7fe9", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionSum.html#a44375dc547583f1e907253f28b6f938b", null ],
     [ "operator-", "classvulpes_1_1fe_1_1FeExpressionSum.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionSum.html#a8fb183fe4f8b0aa430e7164144779e5e", null ],

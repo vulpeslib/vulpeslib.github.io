@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['lagrangiannodespolicy_0',['LagrangianNodesPolicy',['../structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html',1,'vulpes::fe::internal']]],
-  ['linearsolver_1',['LinearSolver',['../classvulpes_1_1la_1_1LinearSolver.html',1,'vulpes::la']]]
+  ['kdtree_0',['KDTree',['../classvulpes_1_1datastructure_1_1KDTree.html',1,'vulpes::datastructure']]],
+  ['kmeansagglomeration_1',['KMeansAgglomeration',['../classvulpes_1_1geometry_1_1KMeansAgglomeration.html',1,'vulpes::geometry']]],
+  ['kmeansbase_2',['KMeansBase',['../classvulpes_1_1geometry_1_1KMeansBase.html',1,'vulpes::geometry']]],
+  ['kmeansnaive_3',['KMeansNaive',['../classvulpes_1_1geometry_1_1KMeansNaive.html',1,'vulpes::geometry']]]
 ];

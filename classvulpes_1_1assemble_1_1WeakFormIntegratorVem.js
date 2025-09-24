@@ -8,7 +8,7 @@ var classvulpes_1_1assemble_1_1WeakFormIntegratorVem =
       [ "IntegratorSimplexifyBackend", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45ba4e5823b9aa53d396cb23857c120baffd", null ],
       [ "IntegratorQFreeBackend", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45ba600114ffb7eab5d9ad49a41120167840", null ]
     ] ],
-    [ "WeakFormIntegratorVem", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a320f9dd799950071c9b43cf385b7d352", null ],
+    [ "WeakFormIntegratorVem", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#abd58de27679636aa6e0b28b17025cab1", null ],
     [ "getExtraMatrices", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a20ad4b9599525f5cd6952438372cbd0f", null ],
     [ "getIntegrals", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a76b22dd3eabd4631f8cfea57a7fcfc93", null ],
     [ "integrate", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#ac3af88eeaa9451f97ab2e0f12d878594", null ],

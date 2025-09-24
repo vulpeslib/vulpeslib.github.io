@@ -3,6 +3,7 @@ var namespacevulpes_1_1datastructure =
     [ "internal", "namespacevulpes_1_1datastructure_1_1internal.html", "namespacevulpes_1_1datastructure_1_1internal" ],
     [ "CrsMap", "classvulpes_1_1datastructure_1_1CrsMap.html", "classvulpes_1_1datastructure_1_1CrsMap" ],
     [ "CrsMapUncompressed", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html", "classvulpes_1_1datastructure_1_1CrsMapUncompressed" ],
+    [ "IndexTracker", "classvulpes_1_1datastructure_1_1IndexTracker.html", "classvulpes_1_1datastructure_1_1IndexTracker" ],
     [ "KDTree", "classvulpes_1_1datastructure_1_1KDTree.html", "classvulpes_1_1datastructure_1_1KDTree" ],
     [ "SmallVector", "classvulpes_1_1datastructure_1_1SmallVector.html", "classvulpes_1_1datastructure_1_1SmallVector" ],
     [ "TetraTensor", "classvulpes_1_1datastructure_1_1TetraTensor.html", "classvulpes_1_1datastructure_1_1TetraTensor" ],

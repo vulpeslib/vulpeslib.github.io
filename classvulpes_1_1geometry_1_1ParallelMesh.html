@@ -141,30 +141,44 @@ Collaboration diagram for vulpes::geometry::ParallelMesh&lt; Mesh &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa7a90b41c94365224ec29bb1faa0ccbe" id="r_aa7a90b41c94365224ec29bb1faa0ccbe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> = typename Mesh::index_t</td></tr>
+<tr class="memdesc:aa7a90b41c94365224ec29bb1faa0ccbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for the index type of the base mesh class.  <br /></td></tr>
 <tr class="separator:aa7a90b41c94365224ec29bb1faa0ccbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5f121d50a478f6065276c6b2959759" id="r_abf5f121d50a478f6065276c6b2959759"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#abf5f121d50a478f6065276c6b2959759">SetType</a> = boost::unordered_flat_set&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt;</td></tr>
+<tr class="memdesc:abf5f121d50a478f6065276c6b2959759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for an unordered set of indices, optimized for performance.  <br /></td></tr>
 <tr class="separator:abf5f121d50a478f6065276c6b2959759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d8461309261d8dd566674d8cf186b4a" id="r_a3d8461309261d8dd566674d8cf186b4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a3d8461309261d8dd566674d8cf186b4a">GlobalToLocalMap</a> = boost::unordered_flat_map&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt;</td></tr>
+<tr class="memdesc:a3d8461309261d8dd566674d8cf186b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for an unordered map from global indices to local indices.  <br /></td></tr>
 <tr class="separator:a3d8461309261d8dd566674d8cf186b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83e562d837651284fe017b1bde72c61" id="r_ad83e562d837651284fe017b1bde72c61"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad83e562d837651284fe017b1bde72c61">MeshGenerator</a> = std::function&lt; Mesh()&gt;</td></tr>
+<tr class="memdesc:ad83e562d837651284fe017b1bde72c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function object that generates a serial mesh.  <br /></td></tr>
+<tr class="separator:ad83e562d837651284fe017b1bde72c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc5ce7b07d7dd84af037b971e3718f42" id="r_adc5ce7b07d7dd84af037b971e3718f42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#adc5ce7b07d7dd84af037b971e3718f42">ParallelMesh</a> ()</td></tr>
-<tr class="separator:adc5ce7b07d7dd84af037b971e3718f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c312d632f5285f8f073f10e418862b" id="r_a90c312d632f5285f8f073f10e418862b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a90c312d632f5285f8f073f10e418862b">ParallelMesh</a> ()=default</td></tr>
+<tr class="memdesc:a90c312d632f5285f8f073f10e418862b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:a90c312d632f5285f8f073f10e418862b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25afa5c720d03be8eb9bdac565b075a" id="r_ac25afa5c720d03be8eb9bdac565b075a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ac25afa5c720d03be8eb9bdac565b075a">ParallelMesh</a> (const <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad83e562d837651284fe017b1bde72c61">MeshGenerator</a> &amp;generator)</td></tr>
+<tr class="memdesc:ac25afa5c720d03be8eb9bdac565b075a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that generates a mesh on rank 0 and then parallelizes it.  <br /></td></tr>
+<tr class="separator:ac25afa5c720d03be8eb9bdac565b075a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e15c223a0e16e8fc0dc2e92bbe6dc3" id="r_ab2e15c223a0e16e8fc0dc2e92bbe6dc3"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
 <tr class="memitem:ab2e15c223a0e16e8fc0dc2e92bbe6dc3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ab2e15c223a0e16e8fc0dc2e92bbe6dc3">serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="memdesc:ab2e15c223a0e16e8fc0dc2e92bbe6dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the parallel mesh data.  <br /></td></tr>
 <tr class="separator:ab2e15c223a0e16e8fc0dc2e92bbe6dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30856916a6a20b4070926362c0126666" id="r_a30856916a6a20b4070926362c0126666"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a30856916a6a20b4070926362c0126666">initFromRank0</a> (std::unique_ptr&lt; Mesh &gt; rank0_mesh)</td></tr>
-<tr class="memdesc:a30856916a6a20b4070926362c0126666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parellize an already build mesh by proc 0 by taking its ownership.  <br /></td></tr>
+<tr class="memdesc:a30856916a6a20b4070926362c0126666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallelizes a mesh that has already been built on rank 0.  <br /></td></tr>
 <tr class="separator:a30856916a6a20b4070926362c0126666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fffa6e45563376cee7e42f3a4e22f79" id="r_a8fffa6e45563376cee7e42f3a4e22f79"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a8fffa6e45563376cee7e42f3a4e22f79">nLocEntity</a> (std::size_t dim) const</td></tr>
-<tr class="memdesc:a8fffa6e45563376cee7e42f3a4e22f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of geometric entities of a certain dim owned by this proc.  <br /></td></tr>
+<tr class="memdesc:a8fffa6e45563376cee7e42f3a4e22f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of geometric entities of a certain dim (see <code>enum Entity</code>) owned by this proc.  <br /></td></tr>
 <tr class="separator:a8fffa6e45563376cee7e42f3a4e22f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3382b00f8b94ef451504b2e7e570e0c8" id="r_a3382b00f8b94ef451504b2e7e570e0c8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a3382b00f8b94ef451504b2e7e570e0c8">nOwnedCells</a> () const</td></tr>
+<tr class="memdesc:a3382b00f8b94ef451504b2e7e570e0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of cells owned by this proc.  <br /></td></tr>
+<tr class="separator:a3382b00f8b94ef451504b2e7e570e0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b0aa1d13b99216d5f564f40ac90c77" id="r_ac6b0aa1d13b99216d5f564f40ac90c77"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ac6b0aa1d13b99216d5f564f40ac90c77">nGhostEntity</a> (std::size_t dim) const</td></tr>
-<tr class="memdesc:ac6b0aa1d13b99216d5f564f40ac90c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of ghost geometric entities of a certain dim for this proc.  <br /></td></tr>
+<tr class="memdesc:ac6b0aa1d13b99216d5f564f40ac90c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of ghost geometric entities of a certain dim (see <code>enum Entity</code>) for this proc.  <br /></td></tr>
 <tr class="separator:ac6b0aa1d13b99216d5f564f40ac90c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed332b759f9c41487e535bacd0c74143" id="r_aed332b759f9c41487e535bacd0c74143"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aed332b759f9c41487e535bacd0c74143">nEntity</a> (std::size_t dim) const</td></tr>
-<tr class="memdesc:aed332b759f9c41487e535bacd0c74143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global number of geometric entities of a certain dim.  <br /></td></tr>
+<tr class="memdesc:aed332b759f9c41487e535bacd0c74143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global number of geometric entities of a certain dim (see <code>enum Entity</code>)  <br /></td></tr>
 <tr class="separator:aed332b759f9c41487e535bacd0c74143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b5850973e335a9fceb02f095eee5c4" id="r_a02b5850973e335a9fceb02f095eee5c4"><td class="memItemLeft" align="right" valign="top">constexpr const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4">localToGlobal</a> (std::size_t d) const</td></tr>
 <tr class="memdesc:a02b5850973e335a9fceb02f095eee5c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local to global map for geometric entities of a certain dim.  <br /></td></tr>
@@ -173,40 +187,86 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af30ff62e37b643b338f9673bd7e78555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global to local map for geometric entities of a certain dim.  <br /></td></tr>
 <tr class="separator:af30ff62e37b643b338f9673bd7e78555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a1d2d045cd769bc420979ab5147f34" id="r_a42a1d2d045cd769bc420979ab5147f34"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a42a1d2d045cd769bc420979ab5147f34">getRank0Mesh</a> () const</td></tr>
+<tr class="memdesc:a42a1d2d045cd769bc420979ab5147f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant reference to the original mesh on rank 0, valid only for root.  <br /></td></tr>
 <tr class="separator:a42a1d2d045cd769bc420979ab5147f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77ac9a934186255a7d567e450010514" id="r_af77ac9a934186255a7d567e450010514"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#af77ac9a934186255a7d567e450010514">getDualGlobalMap</a> () const</td></tr>
+<tr class="separator:af77ac9a934186255a7d567e450010514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5800d24f0b760029a689fb40c68d5a5" id="r_ad5800d24f0b760029a689fb40c68d5a5"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad5800d24f0b760029a689fb40c68d5a5">getCellToFacetGlobalMap</a> () const</td></tr>
+<tr class="separator:ad5800d24f0b760029a689fb40c68d5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465aabdceea05fe3a55d7fb3df5d8eac" id="r_a465aabdceea05fe3a55d7fb3df5d8eac"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a465aabdceea05fe3a55d7fb3df5d8eac">getCellToVtxGlobalMap</a> () const</td></tr>
+<tr class="separator:a465aabdceea05fe3a55d7fb3df5d8eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342a3672a901f28b4e27a63185bb1353" id="r_a342a3672a901f28b4e27a63185bb1353"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a342a3672a901f28b4e27a63185bb1353">getFacetToCellGlobalMap</a> () const</td></tr>
+<tr class="separator:a342a3672a901f28b4e27a63185bb1353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52254b7225f75a0ec3287ec45931e70a" id="r_a52254b7225f75a0ec3287ec45931e70a"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a52254b7225f75a0ec3287ec45931e70a">getFacetToVtxGlobalMap</a> () const</td></tr>
+<tr class="separator:a52254b7225f75a0ec3287ec45931e70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2eb78f20bf32df186d7594e7c1a2761" id="r_ad2eb78f20bf32df186d7594e7c1a2761"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad2eb78f20bf32df186d7594e7c1a2761">getVtxToCellGlobalMap</a> () const</td></tr>
+<tr class="separator:ad2eb78f20bf32df186d7594e7c1a2761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a33520d8afcf9c3e419fb68ca85906c" id="r_a6a33520d8afcf9c3e419fb68ca85906c"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a6a33520d8afcf9c3e419fb68ca85906c">getEdgeToVtxGlobalMap</a> () const</td></tr>
+<tr class="separator:a6a33520d8afcf9c3e419fb68ca85906c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663a611d086509cecb4379711297d91e" id="r_a663a611d086509cecb4379711297d91e"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a663a611d086509cecb4379711297d91e">getCellToEdgeGlobalMap</a> () const</td></tr>
+<tr class="separator:a663a611d086509cecb4379711297d91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e0f7edf6cd5bca7f895f76cac0524d" id="r_ae0e0f7edf6cd5bca7f895f76cac0524d"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ae0e0f7edf6cd5bca7f895f76cac0524d">getEdgeToCellGlobalMap</a> () const</td></tr>
+<tr class="separator:ae0e0f7edf6cd5bca7f895f76cac0524d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13578aecbc1ab64cc7c016e492c6efc" id="r_af13578aecbc1ab64cc7c016e492c6efc"><td class="memTemplParams" colspan="2">template&lt;std::size_t req_dim&gt; </td></tr>
+<tr class="memitem:af13578aecbc1ab64cc7c016e492c6efc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#af13578aecbc1ab64cc7c016e492c6efc">getEntityToCellGlobalMap</a> () const</td></tr>
+<tr class="memdesc:af13578aecbc1ab64cc7c016e492c6efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template function that returns the global entity-to-cell map for a given dimension.  <br /></td></tr>
+<tr class="separator:af13578aecbc1ab64cc7c016e492c6efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a917ad105c183761f9d32278266b72cec" id="r_a917ad105c183761f9d32278266b72cec"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a917ad105c183761f9d32278266b72cec">parallel</a> ()</td></tr>
+<tr class="memdesc:a917ad105c183761f9d32278266b72cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the mesh is parallel, which it is.  <br /></td></tr>
 <tr class="separator:a917ad105c183761f9d32278266b72cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a0cb70ee70a94e789c040880fbb58dbd8" id="r_a0cb70ee70a94e789c040880fbb58dbd8"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a0cb70ee70a94e789c040880fbb58dbd8">self_dim</a> = Mesh::self_dim</td></tr>
+<tr class="memdesc:a0cb70ee70a94e789c040880fbb58dbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of the mesh (e.g., 2 for a 2D mesh, 3 for a 3D mesh).  <br /></td></tr>
 <tr class="separator:a0cb70ee70a94e789c040880fbb58dbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a36e9bdd9c3e41d6a63fedd33db788ffe" id="r_a36e9bdd9c3e41d6a63fedd33db788ffe"><td class="memItemLeft" align="right" valign="top">std::vector&lt;::idx_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a36e9bdd9c3e41d6a63fedd33db788ffe">partitionWithParmetis</a> ()</td></tr>
+<tr class="memdesc:a36e9bdd9c3e41d6a63fedd33db788ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partitions the mesh's dual graph using ParMETIS.  <br /></td></tr>
 <tr class="separator:a36e9bdd9c3e41d6a63fedd33db788ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77bea22dda44cb0fbce5108dbb5013d0" id="r_a77bea22dda44cb0fbce5108dbb5013d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a77bea22dda44cb0fbce5108dbb5013d0">buildGhostCells</a> (std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt; &amp;part)</td></tr>
+<tr class="memdesc:a77bea22dda44cb0fbce5108dbb5013d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the ghost cells for the mesh.  <br /></td></tr>
 <tr class="separator:a77bea22dda44cb0fbce5108dbb5013d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5fc70892059ab3abe3ee0ffbe609a2" id="r_a1a5fc70892059ab3abe3ee0ffbe609a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a1a5fc70892059ab3abe3ee0ffbe609a2">reconstructPartitioningAndScatterDual</a> (std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt; &amp;part)</td></tr>
+<tr class="memdesc:a1a5fc70892059ab3abe3ee0ffbe609a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconstructs the full mesh partitioning on rank 0 and scatters the (strong) dual graph.  <br /></td></tr>
+<tr class="separator:a1a5fc70892059ab3abe3ee0ffbe609a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae798b4f754f5de37f0591e3c57afdee7" id="r_ae798b4f754f5de37f0591e3c57afdee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ae798b4f754f5de37f0591e3c57afdee7">buildGhostCellsFromWeakDual</a> ()</td></tr>
+<tr class="memdesc:ae798b4f754f5de37f0591e3c57afdee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines ghost cells based on the weak dual graph.  <br /></td></tr>
+<tr class="separator:ae798b4f754f5de37f0591e3c57afdee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfe0234ac77681b63e1769dda787199" id="r_a4bfe0234ac77681b63e1769dda787199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a4bfe0234ac77681b63e1769dda787199">collectGhostCellsInRoot</a> ()</td></tr>
+<tr class="memdesc:a4bfe0234ac77681b63e1769dda787199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gathers ghost cell information on the root process.  <br /></td></tr>
+<tr class="separator:a4bfe0234ac77681b63e1769dda787199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a437c194a74afea9fc25fe1a793a460ef" id="r_a437c194a74afea9fc25fe1a793a460ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a437c194a74afea9fc25fe1a793a460ef">buildLocalCellToEntityMaps</a> ()</td></tr>
+<tr class="memdesc:a437c194a74afea9fc25fe1a793a460ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and distributes local cell-to-entity maps.  <br /></td></tr>
 <tr class="separator:a437c194a74afea9fc25fe1a793a460ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80c0534ae01445a588ee187caeb8eba" id="r_ae80c0534ae01445a588ee187caeb8eba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ae80c0534ae01445a588ee187caeb8eba">buildLocalRenumbering</a> ()</td></tr>
+<tr class="memdesc:ae80c0534ae01445a588ee187caeb8eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes local-to-global and global-to-local numbering for all entities.  <br /></td></tr>
 <tr class="separator:ae80c0534ae01445a588ee187caeb8eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96a370d8e936fc027f72e0ede2d25249" id="r_a96a370d8e936fc027f72e0ede2d25249"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a96a370d8e936fc027f72e0ede2d25249">buildLocalEntityToCellMaps</a> ()</td></tr>
+<tr class="memdesc:a96a370d8e936fc027f72e0ede2d25249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and distributes local entity-to-cell maps.  <br /></td></tr>
 <tr class="separator:a96a370d8e936fc027f72e0ede2d25249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d9d7fae4dfd46a7f983b1cf3ff5726" id="r_af5d9d7fae4dfd46a7f983b1cf3ff5726"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#af5d9d7fae4dfd46a7f983b1cf3ff5726">buildGlobalEntitySize</a> ()</td></tr>
+<tr class="memdesc:af5d9d7fae4dfd46a7f983b1cf3ff5726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gathers and broadcasts the total number of global entities.  <br /></td></tr>
 <tr class="separator:af5d9d7fae4dfd46a7f983b1cf3ff5726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eea6589e29b1f12e3181507b53adc91" id="r_a5eea6589e29b1f12e3181507b53adc91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a5eea6589e29b1f12e3181507b53adc91">buildWeakDual</a> ()</td></tr>
+<tr class="memdesc:a5eea6589e29b1f12e3181507b53adc91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the weak dual graph of the local mesh partition.  <br /></td></tr>
 <tr class="separator:a5eea6589e29b1f12e3181507b53adc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc4d5481ea5946c51f1e48ecbb9138b" id="r_a5fc4d5481ea5946c51f1e48ecbb9138b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a5fc4d5481ea5946c51f1e48ecbb9138b">buildLocalToLocalMaps</a> ()</td></tr>
+<tr class="memdesc:a5fc4d5481ea5946c51f1e48ecbb9138b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts global entity numbering in the maps to local numbering.  <br /></td></tr>
+<tr class="separator:a5fc4d5481ea5946c51f1e48ecbb9138b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23a1bc8a7a62295d2c5c4cdbae66e09" id="r_ad23a1bc8a7a62295d2c5c4cdbae66e09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad23a1bc8a7a62295d2c5c4cdbae66e09">removeNotOwnedFromLocalEntityToCellMaps</a> ()</td></tr>
+<tr class="memdesc:ad23a1bc8a7a62295d2c5c4cdbae66e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes references to non-owned cells from the local entity-to-cell maps.  <br /></td></tr>
 <tr class="separator:ad23a1bc8a7a62295d2c5c4cdbae66e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a91d2353bbe7a61d33c2e8532d2855e54" id="r_a91d2353bbe7a61d33c2e8532d2855e54"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Mesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a91d2353bbe7a61d33c2e8532d2855e54">m_rank0_mesh</a></td></tr>
+<tr class="memdesc:a91d2353bbe7a61d33c2e8532d2855e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique pointer to the original mesh.  <br /></td></tr>
 <tr class="separator:a91d2353bbe7a61d33c2e8532d2855e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca82b5aecf2236993d281e1b03e69428" id="r_aca82b5aecf2236993d281e1b03e69428"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aca82b5aecf2236993d281e1b03e69428">m_weak_dual</a></td></tr>
 <tr class="memdesc:aca82b5aecf2236993d281e1b03e69428"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell to cell mapping of cells that share at least a vertex  <br /></td></tr>
@@ -238,17 +298,47 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a06c91af604b81b5cb0c99d5a19e486f9" id="r_a06c91af604b81b5cb0c99d5a19e486f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a06c91af604b81b5cb0c99d5a19e486f9">m_all_ghost_size</a></td></tr>
 <tr class="memdesc:a06c91af604b81b5cb0c99d5a19e486f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of ghost cells for each proc, only rank 0 knows it  <br /></td></tr>
 <tr class="separator:a06c91af604b81b5cb0c99d5a19e486f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4632b1f64ab6bbbb7e321752881f845c" id="r_a4632b1f64ab6bbbb7e321752881f845c"><td class="memItemLeft" align="right" valign="top">Mesh::DualMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a4632b1f64ab6bbbb7e321752881f845c">m_dual_graph_glob</a></td></tr>
+<tr class="separator:a4632b1f64ab6bbbb7e321752881f845c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb08e5446e547f1a79f7c7bde15c9a4" id="r_a8cb08e5446e547f1a79f7c7bde15c9a4"><td class="memItemLeft" align="right" valign="top">Mesh::CellToFacetMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a8cb08e5446e547f1a79f7c7bde15c9a4">m_cell_to_facet_glob</a></td></tr>
+<tr class="separator:a8cb08e5446e547f1a79f7c7bde15c9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91a05cbc8bca11151d17e7cfb14bb0b" id="r_ad91a05cbc8bca11151d17e7cfb14bb0b"><td class="memItemLeft" align="right" valign="top">Mesh::CellToVtxMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad91a05cbc8bca11151d17e7cfb14bb0b">m_cell_to_vtx_glob</a></td></tr>
+<tr class="separator:ad91a05cbc8bca11151d17e7cfb14bb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9301441863ddac8033f5418a755ae5" id="r_a4f9301441863ddac8033f5418a755ae5"><td class="memItemLeft" align="right" valign="top">Mesh::FacetToCellMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a4f9301441863ddac8033f5418a755ae5">m_facet_to_cell_glob</a></td></tr>
+<tr class="separator:a4f9301441863ddac8033f5418a755ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281273a436d223b1dc8031e7106957b1" id="r_a281273a436d223b1dc8031e7106957b1"><td class="memItemLeft" align="right" valign="top">Mesh::FacetToVtxMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a281273a436d223b1dc8031e7106957b1">m_facet_to_vtx_glob</a></td></tr>
+<tr class="separator:a281273a436d223b1dc8031e7106957b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade911a0f4776414bfa9286e022a98978" id="r_ade911a0f4776414bfa9286e022a98978"><td class="memItemLeft" align="right" valign="top">Mesh::VtxToCellMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ade911a0f4776414bfa9286e022a98978">m_vtx_to_cell_glob</a></td></tr>
+<tr class="separator:ade911a0f4776414bfa9286e022a98978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252fb01d5128f74f33e2e7c091498375" id="r_a252fb01d5128f74f33e2e7c091498375"><td class="memItemLeft" align="right" valign="top">Mesh::EdgeToVtxMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a252fb01d5128f74f33e2e7c091498375">m_edge_to_vtx_glob</a></td></tr>
+<tr class="separator:a252fb01d5128f74f33e2e7c091498375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1f9ca0c15fe36d1293cf25b172f653" id="r_afd1f9ca0c15fe36d1293cf25b172f653"><td class="memItemLeft" align="right" valign="top">Mesh::CellToEdgeMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#afd1f9ca0c15fe36d1293cf25b172f653">m_cell_to_edge_glob</a></td></tr>
+<tr class="separator:afd1f9ca0c15fe36d1293cf25b172f653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd190545ad17d53cea8fc4cfbd45da8" id="r_a0cd190545ad17d53cea8fc4cfbd45da8"><td class="memItemLeft" align="right" valign="top">Mesh::EdgeToCellMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a0cd190545ad17d53cea8fc4cfbd45da8">m_edge_to_cell_glob</a></td></tr>
+<tr class="separator:a0cd190545ad17d53cea8fc4cfbd45da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ad4875ffe734717b810d5bcc56aac19ad" id="r_ad4875ffe734717b810d5bcc56aac19ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad4875ffe734717b810d5bcc56aac19ad">operator==</a> (const <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a> &amp;lhs, const <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ad4875ffe734717b810d5bcc56aac19ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html" title="This class wraps any serial mesh class and adds suitable attribute needed to distributes it in parall...">ParallelMesh</a> objects for equality.  <br /></td></tr>
 <tr class="separator:ad4875ffe734717b810d5bcc56aac19ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Mesh&gt;<br />
 class vulpes::geometry::ParallelMesh&lt; Mesh &gt;</div><p>This class wraps any serial mesh class and adds suitable attribute needed to distributes it in parallel. </p>
 <p>There are the following ways to build a parallel mesh:</p><ul>
-<li>parellize an already build mesh by proc 0 by taking its ownership </li>
+<li>parellize an already build mesh by proc 0 by taking its ownership</li>
+<li>the map inherited from the base class are local to local</li>
+<li>there is a copy with already the local to global map</li>
+<li>the entity mappings are available as both local to global and the inverse</li>
+</ul>
+<p>This class wraps a serial mesh class and adds attributes and methods for parallelization.</p>
+<p>It enables a mesh, initially created and owned by a single process (rank 0), to be distributed among multiple processes for parallel computation. The parallelization process involves partitioning the mesh and creating local copies for each process, including "ghost" cells that are adjacent to the owned cells but belong to other processes.</p>
+<p>Key features:</p><ul>
+<li>A mesh can be built entirely on a single process (rank 0) and then parallelized.</li>
+<li>The mesh partitions the entity and keeps a local-to-global and global-to-local maps for each entity</li>
+<li>The mesh's entity maps (e.g., cell-to-vertex, facet-to-cell) are stored as local-to-local maps. This are the "default" maps.</li>
+<li>Entity mappings are also available as local-to-global. These are stored as copies, do not require to pass by the entity mappings. Are available with methods called "Global". </li>
 </ul>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3d8461309261d8dd566674d8cf186b4a" name="a3d8461309261d8dd566674d8cf186b4a"></a>
@@ -264,6 +354,8 @@ template&lt;typename Mesh &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Alias for an unordered map from global indices to local indices. </p>
 
 </div>
 </div>
@@ -281,6 +373,26 @@ template&lt;typename Mesh &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Alias for the index type of the base mesh class. </p>
+
+</div>
+</div>
+<a id="ad83e562d837651284fe017b1bde72c61" name="ad83e562d837651284fe017b1bde72c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83e562d837651284fe017b1bde72c61">&#9670;&#160;</a></span>MeshGenerator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::MeshGenerator =  std::function&lt;Mesh()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function object that generates a serial mesh. </p>
+
 </div>
 </div>
 <a id="abf5f121d50a478f6065276c6b2959759" name="abf5f121d50a478f6065276c6b2959759"></a>
@@ -297,11 +409,13 @@ template&lt;typename Mesh &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Alias for an unordered set of indices, optimized for performance. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adc5ce7b07d7dd84af037b971e3718f42" name="adc5ce7b07d7dd84af037b971e3718f42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc5ce7b07d7dd84af037b971e3718f42">&#9670;&#160;</a></span>ParallelMesh()</h2>
+<a id="a90c312d632f5285f8f073f10e418862b" name="a90c312d632f5285f8f073f10e418862b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c312d632f5285f8f073f10e418862b">&#9670;&#160;</a></span>ParallelMesh() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,10 +434,48 @@ template&lt;typename Mesh &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+</div>
+</div>
+<a id="ac25afa5c720d03be8eb9bdac565b075a" name="ac25afa5c720d03be8eb9bdac565b075a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac25afa5c720d03be8eb9bdac565b075a">&#9670;&#160;</a></span>ParallelMesh() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::ParallelMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad83e562d837651284fe017b1bde72c61">MeshGenerator</a> &amp;&#160;</td>
+          <td class="paramname"><em>generator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor that generates a mesh on rank 0 and then parallelizes it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">generator</td><td>A function that returns a Mesh object. This function is called only on rank 0. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -354,6 +506,45 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Builds the ghost cells for the mesh. </p>
+<p>It builds a "weak dual graph" (which includes cells that are connected by at least one vertex, not just a face) to correctly identify all ghost cells that might be needed for computations by each proc. It collects this information on the root process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>A vector representing the cell partition for the current process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae798b4f754f5de37f0591e3c57afdee7" name="ae798b4f754f5de37f0591e3c57afdee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae798b4f754f5de37f0591e3c57afdee7">&#9670;&#160;</a></span>buildGhostCellsFromWeakDual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::buildGhostCellsFromWeakDual </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines ghost cells based on the weak dual graph. </p>
+<p>One of the steps of <code>buildGhostCells</code>. It iterates through the weak dual graph to find neighboring cells that are not owned by the current process. These non-owned neighbors are added to the list of ghost cells. </p>
+
 </div>
 </div>
 <a id="af5d9d7fae4dfd46a7f983b1cf3ff5726" name="af5d9d7fae4dfd46a7f983b1cf3ff5726"></a>
@@ -380,6 +571,9 @@ template&lt;typename Mesh &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gathers and broadcasts the total number of global entities. </p>
+<p>This method has rank 0 determine the total number of vertices, edges, faces, and cells in the global mesh and broadcasts this information to all other processes. </p>
 
 </div>
 </div>
@@ -408,6 +602,9 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Builds and distributes local cell-to-entity maps. </p>
+<p>This method creates local copies of the various cell-to-entity maps (<code>CellToVtxMap</code>, <code>CellToFacetMap</code>, etc.). Rank 0 slices the global maps based on the owned and ghost cells for each process and then sends these local maps to the appropriate processes. </p>
+
 </div>
 </div>
 <a id="a96a370d8e936fc027f72e0ede2d25249" name="a96a370d8e936fc027f72e0ede2d25249"></a>
@@ -434,6 +631,9 @@ template&lt;typename Mesh &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Builds and distributes local entity-to-cell maps. </p>
+<p>This method does the inverse of <code>buildLocalCellToEntityMaps</code>. It creates and distributes local versions of maps like <code>VtxToCellMap</code>, <code>FacetToCellMap</code>, etc. </p>
 
 </div>
 </div>
@@ -462,6 +662,39 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Establishes local-to-global and global-to-local numbering for all entities. </p>
+<p>It assigns a <b>unique local index</b> to each vertex, edge, face, and cell on the current process and maps it to its <b>global index</b>. This allows for efficient lookups between local and global numbering schemes. </p>
+
+</div>
+</div>
+<a id="a5fc4d5481ea5946c51f1e48ecbb9138b" name="a5fc4d5481ea5946c51f1e48ecbb9138b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc4d5481ea5946c51f1e48ecbb9138b">&#9670;&#160;</a></span>buildLocalToLocalMaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::buildLocalToLocalMaps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts global entity numbering in the maps to local numbering. </p>
+<p>This method uses the <code>m_global_numbering</code> map to convert all global indices within the local mesh's connectivity maps (e.g., <code>m_cell_to_vtx</code>) to their corresponding local indices. This makes the maps consistent with the local numbering scheme. </p>
+
 </div>
 </div>
 <a id="a5eea6589e29b1f12e3181507b53adc91" name="a5eea6589e29b1f12e3181507b53adc91"></a>
@@ -489,6 +722,293 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Builds the weak dual graph of the local mesh partition. </p>
+<p>A <b>weak dual graph</b> connects cells that share at least one vertex (unlike a standard dual graph which connects cells that share a face). This is needed to identify all potential ghost cells that might be required by a process, even if they aren't directly adjacent along a face. </p>
+
+</div>
+</div>
+<a id="a4bfe0234ac77681b63e1769dda787199" name="a4bfe0234ac77681b63e1769dda787199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bfe0234ac77681b63e1769dda787199">&#9670;&#160;</a></span>collectGhostCellsInRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::collectGhostCellsInRoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gathers ghost cell information on the root process. </p>
+<p>Each process sends its list of ghost cells to rank 0, which collects and stores this global information. </p>
+
+</div>
+</div>
+<a id="a663a611d086509cecb4379711297d91e" name="a663a611d086509cecb4379711297d91e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663a611d086509cecb4379711297d91e">&#9670;&#160;</a></span>getCellToEdgeGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getCellToEdgeGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5800d24f0b760029a689fb40c68d5a5" name="ad5800d24f0b760029a689fb40c68d5a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5800d24f0b760029a689fb40c68d5a5">&#9670;&#160;</a></span>getCellToFacetGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getCellToFacetGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a465aabdceea05fe3a55d7fb3df5d8eac" name="a465aabdceea05fe3a55d7fb3df5d8eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465aabdceea05fe3a55d7fb3df5d8eac">&#9670;&#160;</a></span>getCellToVtxGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getCellToVtxGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af77ac9a934186255a7d567e450010514" name="af77ac9a934186255a7d567e450010514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77ac9a934186255a7d567e450010514">&#9670;&#160;</a></span>getDualGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getDualGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0e0f7edf6cd5bca7f895f76cac0524d" name="ae0e0f7edf6cd5bca7f895f76cac0524d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e0f7edf6cd5bca7f895f76cac0524d">&#9670;&#160;</a></span>getEdgeToCellGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getEdgeToCellGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a33520d8afcf9c3e419fb68ca85906c" name="a6a33520d8afcf9c3e419fb68ca85906c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a33520d8afcf9c3e419fb68ca85906c">&#9670;&#160;</a></span>getEdgeToVtxGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getEdgeToVtxGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af13578aecbc1ab64cc7c016e492c6efc" name="af13578aecbc1ab64cc7c016e492c6efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13578aecbc1ab64cc7c016e492c6efc">&#9670;&#160;</a></span>getEntityToCellGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t req_dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getEntityToCellGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A template function that returns the global entity-to-cell map for a given dimension. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">req_dim</td><td>The requested dimension (0 for vertex, 1 for edge, 2 for face). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the corresponding global map. </dd></dl>
+
+</div>
+</div>
+<a id="a342a3672a901f28b4e27a63185bb1353" name="a342a3672a901f28b4e27a63185bb1353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342a3672a901f28b4e27a63185bb1353">&#9670;&#160;</a></span>getFacetToCellGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getFacetToCellGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52254b7225f75a0ec3287ec45931e70a" name="a52254b7225f75a0ec3287ec45931e70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52254b7225f75a0ec3287ec45931e70a">&#9670;&#160;</a></span>getFacetToVtxGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getFacetToVtxGlobalMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a42a1d2d045cd769bc420979ab5147f34" name="a42a1d2d045cd769bc420979ab5147f34"></a>
@@ -504,6 +1024,36 @@ template&lt;typename Mesh &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getRank0Mesh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a constant reference to the original mesh on rank 0, valid only for root. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the <code>m_rank0_mesh</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ad2eb78f20bf32df186d7594e7c1a2761" name="ad2eb78f20bf32df186d7594e7c1a2761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2eb78f20bf32df186d7594e7c1a2761">&#9670;&#160;</a></span>getVtxToCellGlobalMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::getVtxToCellGlobalMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -574,8 +1124,14 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Parellize an already build mesh by proc 0 by taking its ownership. </p>
-<p>The partition is done using parmetis </p>
+<p>Parallelizes a mesh that has already been built on rank 0. </p>
+<p>This is the core method for distributing the mesh. It takes a unique pointer to a <code>Mesh</code> object (which is only valid on rank 0) and partitions it using ParMETIS. It then distributes the partitioned data to all processes, builds the ghost cells (which are neighbors of the owned cells but belong to other processes), and constructs the local-to-global and global-to-local maps for all entities (vertices, edges, faces, and cells).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rank0_mesh</td><td>A unique pointer to the mesh owned by rank 0. The ownership is moved to this class. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -635,7 +1191,7 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Global number of geometric entities of a certain dim. </p>
+<p>Global number of geometric entities of a certain dim (see <code>enum Entity</code>) </p>
 
 </div>
 </div>
@@ -665,7 +1221,7 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Number of ghost geometric entities of a certain dim for this proc. </p>
+<p>Number of ghost geometric entities of a certain dim (see <code>enum Entity</code>) for this proc. </p>
 
 </div>
 </div>
@@ -695,7 +1251,36 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Number of geometric entities of a certain dim owned by this proc. </p>
+<p>Number of geometric entities of a certain dim (see <code>enum Entity</code>) owned by this proc. </p>
+
+</div>
+</div>
+<a id="a3382b00f8b94ef451504b2e7e570e0c8" name="a3382b00f8b94ef451504b2e7e570e0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3382b00f8b94ef451504b2e7e570e0c8">&#9670;&#160;</a></span>nOwnedCells()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::nOwnedCells </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of cells owned by this proc. </p>
 
 </div>
 </div>
@@ -724,6 +1309,8 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Returns true if the mesh is parallel, which it is. </p>
+
 </div>
 </div>
 <a id="a36e9bdd9c3e41d6a63fedd33db788ffe" name="a36e9bdd9c3e41d6a63fedd33db788ffe"></a>
@@ -751,6 +1338,47 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Partitions the mesh's dual graph using ParMETIS. </p>
+<p>This method uses the <b>ParMETIS</b> library to partition the <b>dual graph</b> of the mesh, where each node represents a cell. It distributes the dual graph data to all processes and calls <code>ParMETIS_V3_PartKway</code> to perform the partitioning. Each process receives its portion of the partitioning result, which indicates which cells it should own.</p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of <code>idx_t</code> (ParMETIS's index type) containing the partition assignments for the local cells. </dd></dl>
+
+</div>
+</div>
+<a id="a1a5fc70892059ab3abe3ee0ffbe609a2" name="a1a5fc70892059ab3abe3ee0ffbe609a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5fc70892059ab3abe3ee0ffbe609a2">&#9670;&#160;</a></span>reconstructPartitioningAndScatterDual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::reconstructPartitioningAndScatterDual </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reconstructs the full mesh partitioning on rank 0 and scatters the (strong) dual graph. </p>
+<p>Rank 0 collects the partition results from all other processes, reconstructs the global partitioning, and reorders it to minimize communication overhead. It then slices the global dual graph based on the new partitioning and scatters the relevant parts to each process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>A vector of partition assignments for the local cells. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad23a1bc8a7a62295d2c5c4cdbae66e09" name="ad23a1bc8a7a62295d2c5c4cdbae66e09"></a>
@@ -777,6 +1405,9 @@ template&lt;typename Mesh &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Removes references to non-owned cells from the local entity-to-cell maps. </p>
+<p>This method "cleans up" the local entity-to-cell maps by removing any references to cells that are not part of the process's owned or ghost cell set. </p>
 
 </div>
 </div>
@@ -818,6 +1449,21 @@ template&lt;class Archive &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Serializes the parallel mesh data. </p>
+<p>This method serializes the base mesh data and all the additional data structures required for parallelization, such as the weak dual graph and the various numbering maps.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>The archive type (e.g., from Boost.Serialization). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ar</td><td>The archive to serialize to or from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
@@ -856,6 +1502,16 @@ template&lt;typename Mesh &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Compares two <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html" title="This class wraps any serial mesh class and adds suitable attribute needed to distributes it in parall...">ParallelMesh</a> objects for equality. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side parallel mesh. </td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side parallel mesh. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the meshes and all their parallel data structures are identical, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -939,6 +1595,150 @@ template&lt;typename Mesh &gt; </div>
 
 </div>
 </div>
+<a id="afd1f9ca0c15fe36d1293cf25b172f653" name="afd1f9ca0c15fe36d1293cf25b172f653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1f9ca0c15fe36d1293cf25b172f653">&#9670;&#160;</a></span>m_cell_to_edge_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::CellToEdgeMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_cell_to_edge_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cb08e5446e547f1a79f7c7bde15c9a4" name="a8cb08e5446e547f1a79f7c7bde15c9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb08e5446e547f1a79f7c7bde15c9a4">&#9670;&#160;</a></span>m_cell_to_facet_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::CellToFacetMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_cell_to_facet_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad91a05cbc8bca11151d17e7cfb14bb0b" name="ad91a05cbc8bca11151d17e7cfb14bb0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91a05cbc8bca11151d17e7cfb14bb0b">&#9670;&#160;</a></span>m_cell_to_vtx_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::CellToVtxMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_cell_to_vtx_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4632b1f64ab6bbbb7e321752881f845c" name="a4632b1f64ab6bbbb7e321752881f845c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4632b1f64ab6bbbb7e321752881f845c">&#9670;&#160;</a></span>m_dual_graph_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::DualMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_dual_graph_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cd190545ad17d53cea8fc4cfbd45da8" name="a0cd190545ad17d53cea8fc4cfbd45da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd190545ad17d53cea8fc4cfbd45da8">&#9670;&#160;</a></span>m_edge_to_cell_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::EdgeToCellMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_edge_to_cell_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a252fb01d5128f74f33e2e7c091498375" name="a252fb01d5128f74f33e2e7c091498375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252fb01d5128f74f33e2e7c091498375">&#9670;&#160;</a></span>m_edge_to_vtx_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::EdgeToVtxMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_edge_to_vtx_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a03f0cc622776afa80140be02f92da9ae" name="a03f0cc622776afa80140be02f92da9ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03f0cc622776afa80140be02f92da9ae">&#9670;&#160;</a></span>m_edgecut</h2>
 
@@ -962,6 +1762,54 @@ template&lt;typename Mesh &gt; </div>
 </div><div class="memdoc">
 
 <p>number of edge cuts ParMetis makes </p>
+
+</div>
+</div>
+<a id="a4f9301441863ddac8033f5418a755ae5" name="a4f9301441863ddac8033f5418a755ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f9301441863ddac8033f5418a755ae5">&#9670;&#160;</a></span>m_facet_to_cell_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::FacetToCellMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_facet_to_cell_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a281273a436d223b1dc8031e7106957b1" name="a281273a436d223b1dc8031e7106957b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a281273a436d223b1dc8031e7106957b1">&#9670;&#160;</a></span>m_facet_to_vtx_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::FacetToVtxMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_facet_to_vtx_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1119,6 +1967,33 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>A unique pointer to the original mesh. </p>
+<p>This is only valid on rank 0 after the parallelization process has begun. </p>
+
+</div>
+</div>
+<a id="ade911a0f4776414bfa9286e022a98978" name="ade911a0f4776414bfa9286e022a98978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade911a0f4776414bfa9286e022a98978">&#9670;&#160;</a></span>m_vtx_to_cell_glob</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesh::VtxToCellMap <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_vtx_to_cell_glob</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="aca82b5aecf2236993d281e1b03e69428" name="aca82b5aecf2236993d281e1b03e69428"></a>
@@ -1169,6 +2044,8 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>The dimension of the mesh (e.g., 2 for a 2D mesh, 3 for a 3D mesh). </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -1181,7 +2058,7 @@ template&lt;typename Mesh &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -111,7 +111,6 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1MeshExporte
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -120,6 +119,9 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1MeshExporte
   <div class="headertitle"><div class="title">vulpes::geometry::MeshExporter&lt; MeshDerived &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exports a single mesh as a single VTK grid.  
+ <a href="classvulpes_1_1geometry_1_1MeshExporter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mesh__exporter_8hpp_source.html">mesh_exporter.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -133,36 +135,54 @@ Collaboration diagram for vulpes::geometry::MeshExporter&lt; MeshDerived &gt;:</
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1geometry_1_1MeshExporter__coll__graph.svg" width="244" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshExporter_1_1MeshDataAttachement.html">MeshDataAttachement</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ac38b49a87bd3d13cfa4eb8eeb1dca59b" id="r_ac38b49a87bd3d13cfa4eb8eeb1dca59b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#ac38b49a87bd3d13cfa4eb8eeb1dca59b">float_t</a> = MeshDerived::float_t</td></tr>
+<tr class="memdesc:ac38b49a87bd3d13cfa4eb8eeb1dca59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The float type used by the mesh.  <br /></td></tr>
 <tr class="separator:ac38b49a87bd3d13cfa4eb8eeb1dca59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2c874868f41ecdfd8691ac7afbab866" id="r_ab2c874868f41ecdfd8691ac7afbab866"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#ab2c874868f41ecdfd8691ac7afbab866">index_t</a> = MeshDerived::index_t</td></tr>
+<tr class="memdesc:ab2c874868f41ecdfd8691ac7afbab866"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index type used by the mesh.  <br /></td></tr>
 <tr class="separator:ab2c874868f41ecdfd8691ac7afbab866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a46e4a68653f62367120332ae40f446f3" id="r_a46e4a68653f62367120332ae40f446f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#a46e4a68653f62367120332ae40f446f3">MeshExporter</a> (const MeshDerived &amp;mesh)</td></tr>
+<tr class="memdesc:a46e4a68653f62367120332ae40f446f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html" title="Exports a single mesh as a single VTK grid.">MeshExporter</a></code> for a given mesh.  <br /></td></tr>
 <tr class="separator:a46e4a68653f62367120332ae40f446f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7834bb073491211efe0abdb24083ab2e" id="r_a7834bb073491211efe0abdb24083ab2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#a7834bb073491211efe0abdb24083ab2e">setData</a> (const <a class="el" href="structvulpes_1_1geometry_1_1MeshExporter_1_1MeshDataAttachement.html">MeshDataAttachement</a> &amp;data) const</td></tr>
-<tr class="separator:a7834bb073491211efe0abdb24083ab2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcfad1730c500ab29ebd87397cce351" id="r_a3fcfad1730c500ab29ebd87397cce351"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#a3fcfad1730c500ab29ebd87397cce351">attachVertexData</a> (const std::string &amp;label, const Eigen::Map&lt; const Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#ac38b49a87bd3d13cfa4eb8eeb1dca59b">float_t</a>, -1, -1 &gt; &gt; data_view) const</td></tr>
+<tr class="memdesc:a3fcfad1730c500ab29ebd87397cce351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a list of vertex data to the VTK grid.  <br /></td></tr>
+<tr class="separator:a3fcfad1730c500ab29ebd87397cce351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a7dfb5ca1e56d5dafb9e91967f8bcb" id="r_a44a7dfb5ca1e56d5dafb9e91967f8bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#a44a7dfb5ca1e56d5dafb9e91967f8bcb">attachVertexData</a> (const std::string &amp;label, const Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#ac38b49a87bd3d13cfa4eb8eeb1dca59b">float_t</a>, -1, -1 &gt; &amp;data) const</td></tr>
+<tr class="memdesc:a44a7dfb5ca1e56d5dafb9e91967f8bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a list of vertex data to the VTK grid.  <br /></td></tr>
+<tr class="separator:a44a7dfb5ca1e56d5dafb9e91967f8bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2aa7fb1b5309209884ad1d32e3f864a" id="r_af2aa7fb1b5309209884ad1d32e3f864a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#af2aa7fb1b5309209884ad1d32e3f864a">attachVertexData</a> (const std::string &amp;label, const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#ac38b49a87bd3d13cfa4eb8eeb1dca59b">float_t</a> &gt; &amp;data) const</td></tr>
+<tr class="memdesc:af2aa7fb1b5309209884ad1d32e3f864a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches an instance of vertex data to the VTK grid.  <br /></td></tr>
+<tr class="separator:af2aa7fb1b5309209884ad1d32e3f864a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f40d9ae0ac21bdba7ec5ca944619aee" id="r_a8f40d9ae0ac21bdba7ec5ca944619aee"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:a8f40d9ae0ac21bdba7ec5ca944619aee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#a8f40d9ae0ac21bdba7ec5ca944619aee">attachCellData</a> (const std::string &amp;label, const Eigen::Map&lt; const Eigen::Vector&lt; DataType, -1 &gt; &gt; data_view) const</td></tr>
+<tr class="memdesc:a8f40d9ae0ac21bdba7ec5ca944619aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a vector of cell data to the VTK grid.  <br /></td></tr>
+<tr class="separator:a8f40d9ae0ac21bdba7ec5ca944619aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709cc5b506229b2174bd291f4487d213" id="r_a709cc5b506229b2174bd291f4487d213"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:a709cc5b506229b2174bd291f4487d213"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#a709cc5b506229b2174bd291f4487d213">attachCellData</a> (const std::string &amp;label, const std::vector&lt; DataType &gt; &amp;data) const</td></tr>
+<tr class="memdesc:a709cc5b506229b2174bd291f4487d213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a vector of cell data to the VTK grid.  <br /></td></tr>
+<tr class="separator:a709cc5b506229b2174bd291f4487d213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82dd56757a935be907d976c430913654" id="r_a82dd56757a935be907d976c430913654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a82dd56757a935be907d976c430913654">save</a> (const std::string &amp;filename, const <a class="el" href="structvulpes_1_1geometry_1_1VtuOptions.html">VtuOptions</a> &amp;options={}) const</td></tr>
+<tr class="memdesc:a82dd56757a935be907d976c430913654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the mesh data to a file.  <br /></td></tr>
 <tr class="separator:a82dd56757a935be907d976c430913654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92ece065f944f45600ecbdc2be576a66" id="r_a92ece065f944f45600ecbdc2be576a66"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a92ece065f944f45600ecbdc2be576a66">getMesh</a> () const</td></tr>
+<tr class="memdesc:a92ece065f944f45600ecbdc2be576a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the mesh.  <br /></td></tr>
 <tr class="separator:a92ece065f944f45600ecbdc2be576a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4deb7b8039a748c1ab28ee5800bf381e" id="r_a4deb7b8039a748c1ab28ee5800bf381e"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a4deb7b8039a748c1ab28ee5800bf381e">getVtkGrids</a> () const</td></tr>
+<tr class="memdesc:a4deb7b8039a748c1ab28ee5800bf381e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the generated VTK grids.  <br /></td></tr>
 <tr class="separator:a4deb7b8039a748c1ab28ee5800bf381e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a632fefd91a7203a870b5ec9f06bd2199" id="r_a632fefd91a7203a870b5ec9f06bd2199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#a632fefd91a7203a870b5ec9f06bd2199">buildVtkMesh2D</a> ()</td></tr>
+<tr class="memdesc:a632fefd91a7203a870b5ec9f06bd2199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a 2D VTK mesh from the internal mesh data.  <br /></td></tr>
 <tr class="separator:a632fefd91a7203a870b5ec9f06bd2199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3fd3a4c3bd010acae6884ff1a4d9d82" id="r_aa3fd3a4c3bd010acae6884ff1a4d9d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#aa3fd3a4c3bd010acae6884ff1a4d9d82">buildVtkMesh3D</a> ()</td></tr>
+<tr class="memdesc:aa3fd3a4c3bd010acae6884ff1a4d9d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a 3D VTK mesh from the internal mesh data.  <br /></td></tr>
 <tr class="separator:aa3fd3a4c3bd010acae6884ff1a4d9d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -172,7 +192,17 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a9b8a69cb12dc2809acfc73376ab6489e" id="r_a9b8a69cb12dc2809acfc73376ab6489e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; vtkSmartPointer&lt; vtkUnstructuredGrid &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a9b8a69cb12dc2809acfc73376ab6489e">m_vtk_grids</a></td></tr>
 <tr class="separator:a9b8a69cb12dc2809acfc73376ab6489e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename MeshDerived&gt;<br />
+class vulpes::geometry::MeshExporter&lt; MeshDerived &gt;</div><p>Exports a single mesh as a single VTK grid. </p>
+<p>This class extends <code><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html" title="Base class for exporting a mesh to VTK file formats.">MeshExporterBase</a></code> to handle a single mesh and convert it into a single VTK unstructured grid. It provides methods to attach both vertex and cell data to this grid. The constructor automatically builds the grid based on the mesh's dimensionality.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshDerived</td><td>The derived mesh class. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ac38b49a87bd3d13cfa4eb8eeb1dca59b" name="ac38b49a87bd3d13cfa4eb8eeb1dca59b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac38b49a87bd3d13cfa4eb8eeb1dca59b">&#9670;&#160;</a></span>float_t</h2>
 
@@ -186,6 +216,8 @@ template&lt;typename MeshDerived &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The float type used by the mesh. </p>
 
 </div>
 </div>
@@ -202,6 +234,8 @@ template&lt;typename MeshDerived &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The index type used by the mesh. </p>
 
 </div>
 </div>
@@ -232,9 +266,256 @@ template&lt;typename MeshDerived &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Constructs a <code><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html" title="Exports a single mesh as a single VTK grid.">MeshExporter</a></code> for a given mesh. </p>
+<p>This constructor builds the VTK mesh and attaches any tags found in the mesh's metadata.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to be exported. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8f40d9ae0ac21bdba7ec5ca944619aee" name="a8f40d9ae0ac21bdba7ec5ca944619aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f40d9ae0ac21bdba7ec5ca944619aee">&#9670;&#160;</a></span>attachCellData() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshDerived &gt; </div>
+<div class="memtemplate">
+template&lt;typename DataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">vulpes::geometry::MeshExporter</a>&lt; MeshDerived &gt;::attachCellData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Map&lt; const Eigen::Vector&lt; DataType, -1 &gt; &gt;&#160;</td>
+          <td class="paramname"><em>data_view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attaches a vector of cell data to the VTK grid. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">DataType</td><td>The type of the data (e.g., <code>double</code>, <code>int</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>The name for the data array. </td></tr>
+    <tr><td class="paramname">data_view</td><td>A view of the vector containing the cell data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a709cc5b506229b2174bd291f4487d213" name="a709cc5b506229b2174bd291f4487d213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709cc5b506229b2174bd291f4487d213">&#9670;&#160;</a></span>attachCellData() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshDerived &gt; </div>
+<div class="memtemplate">
+template&lt;typename DataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">vulpes::geometry::MeshExporter</a>&lt; MeshDerived &gt;::attachCellData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; DataType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attaches a vector of cell data to the VTK grid. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">DataType</td><td>The type of the data (e.g., <code>double</code>, <code>int</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>The name for the data array. </td></tr>
+    <tr><td class="paramname">data</td><td>The vector containing the cell data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3fcfad1730c500ab29ebd87397cce351" name="a3fcfad1730c500ab29ebd87397cce351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcfad1730c500ab29ebd87397cce351">&#9670;&#160;</a></span>attachVertexData() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshDerived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">vulpes::geometry::MeshExporter</a>&lt; MeshDerived &gt;::attachVertexData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Map&lt; const Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#ac38b49a87bd3d13cfa4eb8eeb1dca59b">float_t</a>, -1, -1 &gt; &gt;&#160;</td>
+          <td class="paramname"><em>data_view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attaches a list of vertex data to the VTK grid. </p>
+<p>The data is attached to the points (vertices) of the grid, with each row of the matrix being a separate data array (in column major format). That is, data is contiguous across the same vertex list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>The base name for the data arrays. An index will be appended for each row. </td></tr>
+    <tr><td class="paramname">data_view</td><td>A view of the matrix containing the vertex data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44a7dfb5ca1e56d5dafb9e91967f8bcb" name="a44a7dfb5ca1e56d5dafb9e91967f8bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a7dfb5ca1e56d5dafb9e91967f8bcb">&#9670;&#160;</a></span>attachVertexData() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshDerived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">vulpes::geometry::MeshExporter</a>&lt; MeshDerived &gt;::attachVertexData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#ac38b49a87bd3d13cfa4eb8eeb1dca59b">float_t</a>, -1, -1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attaches a list of vertex data to the VTK grid. </p>
+<p>The data is attached to the points (vertices) of the grid, with each row of the matrix being a separate data array (in column major format). That is, data is contiguous across the same vertex list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>The base name for the data arrays. An index will be appended for each row. </td></tr>
+    <tr><td class="paramname">data</td><td>The matrix containing the vertex data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af2aa7fb1b5309209884ad1d32e3f864a" name="af2aa7fb1b5309209884ad1d32e3f864a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2aa7fb1b5309209884ad1d32e3f864a">&#9670;&#160;</a></span>attachVertexData() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshDerived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">vulpes::geometry::MeshExporter</a>&lt; MeshDerived &gt;::attachVertexData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#ac38b49a87bd3d13cfa4eb8eeb1dca59b">float_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attaches an instance of vertex data to the VTK grid. </p>
+<p>The data is attached to the points (vertices) of the grid, with each row of the matrix being a separate data array (in column major format). That is, data is contiguous across the same vertex list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>The base name for the data arrays. An index will be appended for each row. </td></tr>
+    <tr><td class="paramname">data</td><td>The vector containing the vertex data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a632fefd91a7203a870b5ec9f06bd2199" name="a632fefd91a7203a870b5ec9f06bd2199"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a632fefd91a7203a870b5ec9f06bd2199">&#9670;&#160;</a></span>buildVtkMesh2D()</h2>
 
@@ -259,6 +540,9 @@ template&lt;typename MeshDerived &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Builds a 2D VTK mesh from the internal mesh data. </p>
+<p>This method creates a single <code>vtkUnstructuredGrid</code> representing the 2D mesh, using <code>vtkPolygon</code> cells. </p>
 
 </div>
 </div>
@@ -287,6 +571,9 @@ template&lt;typename MeshDerived &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Builds a 3D VTK mesh from the internal mesh data. </p>
+<p>This method creates a single <code>vtkUnstructuredGrid</code> representing the 3D mesh, using <code>vtkPolyhedron</code> cells. </p>
+
 </div>
 </div>
 <a id="a92ece065f944f45600ecbdc2be576a66" name="a92ece065f944f45600ecbdc2be576a66"></a>
@@ -314,6 +601,9 @@ template&lt;typename MeshDerived &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets a constant reference to the mesh. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the stored mesh. </dd></dl>
+
 </div>
 </div>
 <a id="a4deb7b8039a748c1ab28ee5800bf381e" name="a4deb7b8039a748c1ab28ee5800bf381e"></a>
@@ -340,6 +630,9 @@ template&lt;typename MeshDerived &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets a constant reference to the generated VTK grids. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of VTK unstructured grids. </dd></dl>
 
 </div>
 </div>
@@ -379,25 +672,15 @@ template&lt;typename MeshDerived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a7834bb073491211efe0abdb24083ab2e" name="a7834bb073491211efe0abdb24083ab2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7834bb073491211efe0abdb24083ab2e">&#9670;&#160;</a></span>setData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MeshDerived &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">vulpes::geometry::MeshExporter</a>&lt; MeshDerived &gt;::setData </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structvulpes_1_1geometry_1_1MeshExporter_1_1MeshDataAttachement.html">MeshDataAttachement</a> &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Saves the mesh data to a file. </p>
+<p>This method writes the internal VTK grid data to the specified filename. It supports <code>.vtu</code> (VTK Unstructured Grid XML) and <code>.vtk</code> (legacy VTK) file formats.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The name of the output file. </td></tr>
+    <tr><td class="paramname">options</td><td>The options for writing the VTU file. Defaults to an empty struct which uses default compression and data mode. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -460,7 +743,7 @@ template&lt;typename MeshDerived &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">MeshExporter</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['seqboundarygaussseidel_0',['seqboundaryGaussSeidel',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69a8bdb0acdc296b32211ecc65ae96bea6a',1,'vulpes::la::DataBoomerAMG']]],
-  ['sequentialgaussseidel_1',['sequentialGaussSeidel',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69ad3425970cedf65b45a74e11454751aff',1,'vulpes::la::DataBoomerAMG']]],
-  ['simplex_2',['simplex',['../namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221a7e63b9d2d8bd512603139e052c216204',1,'vulpes::fe::Simplex'],['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa22eb8c32466025c68a498dd37c6ebf46',1,'vulpes::qrule::Simplex']]],
-  ['sor_3',['SOR',['../classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a97044e0ece5298ae55ac770e63f8c4b5',1,'vulpes::la::LinearSolver']]],
-  ['sorjacobi_4',['SORJacobi',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69a532f235785ea593b4cb5310addde46d0',1,'vulpes::la::DataBoomerAMG']]],
-  ['superlu_5',['SuperLU',['../classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a34d71e624f819eb74a127e9c2ec41715',1,'vulpes::la::LinearSolver']]],
-  ['symmetricsorjacobi_6',['symmetricSORJacobi',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69af6d02e46b6363dc27250d2155b8912bf',1,'vulpes::la::DataBoomerAMG']]]
+  ['plain_0',['Plain',['../classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa075d68a58ca2701c399d87c40a22f760',1,'vulpes::la::SparseMatrix']]],
+  ['poly_1',['Poly',['../namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221a6bdbb579d67508699c1a889cb96f719e',1,'vulpes::fe']]],
+  ['precondonly_2',['PrecondOnly',['../classvulpes_1_1la_1_1LinearSolver.html#a02549faebd5fbd5298b8b55ca492821fa51c387a5ceab1b84d48def1e484acc9b',1,'vulpes::la::LinearSolver']]],
+  ['pseudo_3',['Pseudo',['../namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750faaaa0c5a92e7cf9b18d13e8f58936b7a4',1,'vulpes::geometry::polymesher']]]
 ];

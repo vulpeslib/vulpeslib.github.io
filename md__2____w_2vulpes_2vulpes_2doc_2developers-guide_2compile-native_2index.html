@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vulpes: Compile on NEMESIS cluster without Docker</title>
+<title>Vulpes: Native cluster compile</title>
 <link rel="icon" href="vulpes_logo_notext_32.png" type="image/png" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -110,13 +110,46 @@ $(document).ready(function(){initNavTree('md__2____w_2vulpes_2vulpes_2doc_2devel
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Compile on NEMESIS cluster without Docker</div></div>
+  <div class="headertitle"><div class="title">Native cluster compile</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md9"></a> </p>
 <h1><a class="anchor" id="autotoc_md10"></a>
-vtk</h1>
-<div class="fragment"><div class="line">cmake .. \</div>
+Installing missing packages</h1>
+<h2><a class="anchor" id="autotoc_md11"></a>
+Petsc</h2>
+<p>The following Petsc installation lacks many useful components of Petsc. </p><div class="fragment"><div class="line">wget https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.23.4.tar.gz</div>
+<div class="line">tar xf petsc-3.23.4.tar.gz</div>
+<div class="line">export PETSC_DIR=/u/archive/numer/caldana/petsc-3.23.4</div>
+<div class="line">./configure --with-mpi=1 --with-cc=gcc --with-cxx=g++ --with-fc=0 --prefix=/u/archive/numer/caldana/ --download-f2cblaslapack=1 </div>
+<div class="line">make -j PETSC_DIR=/u/archive/numer/caldana/petsc-3.23.4 PETSC_ARCH=arch-linux-c-debug all</div>
+<div class="line">make PETSC_DIR=/u/archive/numer/caldana/petsc-3.23.4 PETSC_ARCH=arch-linux-c-debug install</div>
+<div class="line"> </div>
+<div class="line">export PETSC_DIR=/u/archive/numer/caldana/petsc-3.23.4 </div>
+<div class="line">export PETSC_ARCH=arch-linux-c-debug</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
+Install a Debug version of Petsc</h3>
+<div class="fragment"><div class="line">./configure \</div>
+<div class="line">  --with-debugging=1 \</div>
+<div class="line">  --with-mpi=1 --with-cc=gcc --with-cxx=g++ --with-fc=0 \</div>
+<div class="line">  --COPTFLAGS=&quot;-O0 -g&quot; --CXXOPTFLAGS=&quot;-O0 -g&quot; --FOPTFLAGS=&quot;-O0 -g&quot; \</div>
+<div class="line">  --with-mpi-dir=/usr/lib/x86_64-linux-gnu/openmpi \</div>
+<div class="line">  COPTFLAGS=&quot;-O0 -g&quot; CXXOPTFLAGS=&quot;-O0 -g&quot;  FOPTFLAGS=&quot;-O0 -g&quot;</div>
+<div class="line">make PETSC_DIR=/workspaces/petsc-3.23.4 PETSC_ARCH=arch-linux-c-debug all</div>
+</div><!-- fragment --><p><b>NOTE:</b> NOT NEED INSTALL IF NO PREFIX</p>
+<p>See, also for other useful stuff: <a href="https://precice.discourse.group/t/cmake-isnt-picking-up-on-the-correct-petsc-version/1921/4">https://precice.discourse.group/t/cmake-isnt-picking-up-on-the-correct-petsc-version/1921/4</a></p>
+<p>CMake uses pkg config to find PETSc, we must update it and check it sees it. </p><div class="fragment"><div class="line">export PETSC_DIR=/workspaces/petsc-3.23.4 </div>
+<div class="line">export PETSC_ARCH=arch-linux-c-debug</div>
+<div class="line">export PKG_CONFIG_PATH=$PETSC_DIR/$PETSC_ARCH/lib/pkgconfig:$PKG_CONFIG_PATH</div>
+<div class="line">pkg-config --modversion PETSc</div>
+<div class="line">PKG_CONFIG_SYSTEM_INCLUDE_PATH=1 pkg-config --cflags PETSc</div>
+<div class="line">PKG_CONFIG_SYSTEM_LIBRARY_PATH=1 pkg-config --libs PETSc</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md13"></a>
+vtk</h2>
+<div class="fragment"><div class="line">wget https://vtk.org/files/release/9.5/VTK-9.5.0.tar.gz</div>
+<div class="line">tar -xvzf VTK-9.5.0.tar.gz</div>
+<div class="line">cd VTK-9.5.0 &amp;&amp; mkdir build &amp;&amp; cd build</div>
+<div class="line">cmake .. \</div>
 <div class="line">  -DCMAKE_BUILD_TYPE=Release \</div>
 <div class="line">  -DBUILD_SHARED_LIBS=ON \</div>
 <div class="line">  -DVTK_GROUP_ENABLE_Qt=NO \</div>
@@ -133,8 +166,9 @@ vtk</h1>
 <div class="line">  -DMPIEXEC_EXECUTABLE=$(which mpiexec) \</div>
 <div class="line">  -DMPI_C_COMPILER=$(which mpicc) \</div>
 <div class="line">  -DMPI_CXX_COMPILER=$(which mpicxx)</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md11"></a>
-boost</h1>
+<div class="line">make -j</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
+boost</h2>
 <div class="fragment"><div class="line">wget https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.gz</div>
 <div class="line">tar -xvzf boost_1_88_0.tar.gz</div>
 <div class="line">cd boost_1_88_0</div>
@@ -142,27 +176,39 @@ boost</h1>
 <div class="line">./b2 --with-serialization --with-unordered --with-graph</div>
 <div class="line">./b2 headers</div>
 <div class="line">./b2 install</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md12"></a>
-parmetis</h1>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
+parmetis</h2>
 <p>git clone <a href="https://github.com/KarypisLab/GKlib.git">https://github.com/KarypisLab/GKlib.git</a> git clone <a href="https://github.com/KarypisLab/METIS.git">https://github.com/KarypisLab/METIS.git</a> git clone <a href="https://github.com/KarypisLab/ParMETIS.git">https://github.com/KarypisLab/ParMETIS.git</a></p>
 <p>cd GKlib make config make make install</p>
-<h1><a class="anchor" id="autotoc_md13"></a>
-spack</h1>
+<h1><a class="anchor" id="autotoc_md16"></a>
+Using Spack</h1>
+<p>To list available compilers in Spack, you can use the following command in your terminal: </p><div class="fragment"><div class="line">spack compilers</div>
+</div><!-- fragment --><p>To check what’s installed: </p><div class="fragment"><div class="line">spack find</div>
+</div><!-- fragment --><p>To list packages explicitly loaded via Spack (in the current session):</p>
+<div class="fragment"><div class="line">spack find --loaded</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md17"></a>
+Our usecase</h2>
+<p>Load the modules we need</p>
 <div class="fragment"><div class="line">source /opt/mox/spack/share/spack/setup-env.sh </div>
 <div class="line">spack load gcc@12.1.0</div>
 <div class="line">spack load mpich@4.1.2</div>
 <div class="line">spack load petsc@3.20.1%gcc@12.1.0 /47qod2s</div>
 </div><!-- fragment --><p>spack load metis@5.1.0gcc@12.1.0 /qu4efxi spack load parmetis@4.0.3gcc@12.1.0 /7shc2am</p>
 <p>spack load parmetis@4.0.3gcc@12.1.0 /ke7auhk spack load <a href="#" onclick="location.href='mai'+'lto:'+'pet'+'sc'+'@3.'+'20'; return false;">petsc<span class="obfuscator">.nosp@m.</span>@3.2<span class="obfuscator">.nosp@m.</span>0</a>.1gcc@12.1.0 /cpthtdp spack load metis@5.1.0gcc@12.1.0 /2wj6juc</p>
-<p>/7shc2am -&gt; ^metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared /47qod2s -&gt; ^metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared /qu4efxi -&gt; metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared </p>
-</div></div><!-- contents -->
+<p>/7shc2am -&gt; ^metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared /47qod2s -&gt; ^metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared /qu4efxi -&gt; metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared</p>
+<h1><a class="anchor" id="autotoc_md18"></a>
+Specifing the position of a library</h1>
+<p>Gigat cluster: </p><div class="fragment"><div class="line">source /u/sw/etc/profile</div>
+<div class="line">module load gcc-glibc/11 metis</div>
+<div class="line">cmake .. -DCMAKE_PREFIX_PATH=&quot;/u/sw/toolchains/gcc-glibc/11.2.0/pkgs/metis/5.1.0/include/;/u/sw/toolchains/gcc-glibc/11.2.0/pkgs/metis/5.1.0/bin/;/u/sw/toolchains/gcc-glibc/11.2.0/pkgs/metis/5.1.0/lib/;/u/archive/numer/caldana/boost/;/u/archive/numer/caldana/VTK-9.5.0/build/&quot;</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

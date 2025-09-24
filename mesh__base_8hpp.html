@@ -112,7 +112,8 @@ $(document).ready(function(){initNavTree('mesh__base_8hpp.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">mesh_base.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -120,12 +121,14 @@ $(document).ready(function(){initNavTree('mesh__base_8hpp.html',''); initResizab
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;Eigen/Dense&gt;</code><br />
+<code>#include &lt;boost/unordered/unordered_flat_set.hpp&gt;</code><br />
 <code>#include &lt;vtkAppendFilter.h&gt;</code><br />
 <code>#include &lt;vtkCell.h&gt;</code><br />
 <code>#include &lt;vtkCellArray.h&gt;</code><br />
@@ -147,7 +150,10 @@ $(document).ready(function(){initNavTree('mesh__base_8hpp.html',''); initResizab
 <code>#include &quot;<a class="el" href="crs__map_8hpp_source.html">vulpes/datastructure/crs_map.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="kdtree_8hpp_source.html">vulpes/datastructure/kdtree.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="traits_8hpp_source.html">vulpes/geometry/traits.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8hpp_source.html">vulpes/utils/macros.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="profiler_8hpp_source.html">vulpes/utils/profiler.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="serialize_8hpp_source.html">vulpes/utils/serialize.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vvutils_8hpp_source.html">vulpes/utils/vvutils.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mesh_base.hpp:</div>
 <div class="dyncontent">
@@ -163,9 +169,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag&lt; Dim &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag&lt; Dim, IndexType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure to store tags for different parts of a mesh.  <a href="structvulpes_1_1geometry_1_1MeshTag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for creating and managing mesh data structures.  <a href="classvulpes_1_1geometry_1_1MeshBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -174,6 +182,27 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1geometry" id="r_namespacevulpes_1_1geometry"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html">vulpes::geometry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevulpes_1_1geometry_1_1internal" id="r_namespacevulpes_1_1geometry_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html">vulpes::geometry::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abe9663906c29eb9b4dde96cf8c8299b9" id="r_abe9663906c29eb9b4dde96cf8c8299b9"><td class="memTemplParams" colspan="2">template&lt;typename Dst , typename Src &gt; </td></tr>
+<tr class="memitem:abe9663906c29eb9b4dde96cf8c8299b9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#abe9663906c29eb9b4dde96cf8c8299b9">vulpes::geometry::internal::cast</a> (const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; Src, Src &gt; &amp;map)</td></tr>
+<tr class="memdesc:abe9663906c29eb9b4dde96cf8c8299b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-types a CRS map to use a different integral type for indices and values.  <br /></td></tr>
+<tr class="separator:abe9663906c29eb9b4dde96cf8c8299b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a5f4421326eb4efbd67fc53e891b2d" id="r_ae3a5f4421326eb4efbd67fc53e891b2d"><td class="memTemplParams" colspan="2">template&lt;typename VecType &gt; </td></tr>
+<tr class="memitem:ae3a5f4421326eb4efbd67fc53e891b2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ae3a5f4421326eb4efbd67fc53e891b2d">vulpes::geometry::internal::checkEmptySets</a> (const VecType &amp;labels)</td></tr>
+<tr class="memdesc:ae3a5f4421326eb4efbd67fc53e891b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for and warns about empty classes in a label vector.  <br /></td></tr>
+<tr class="separator:ae3a5f4421326eb4efbd67fc53e891b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1c9d63b50cc0b9aae11eb0bf9487bd" id="r_a2b1c9d63b50cc0b9aae11eb0bf9487bd"><td class="memTemplParams" colspan="2">template&lt;typename index_t &gt; </td></tr>
+<tr class="memitem:a2b1c9d63b50cc0b9aae11eb0bf9487bd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; index_t, index_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a2b1c9d63b50cc0b9aae11eb0bf9487bd">vulpes::geometry::internal::buildSubDual</a> (const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; index_t, index_t &gt; &amp;dual_map, const std::vector&lt; index_t &gt; &amp;subset_idxs)</td></tr>
+<tr class="memdesc:a2b1c9d63b50cc0b9aae11eb0bf9487bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the dual subgraph corresponding to a subset of vertices.  <br /></td></tr>
+<tr class="separator:a2b1c9d63b50cc0b9aae11eb0bf9487bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57e0234a9f21d3ecae7b168d239349f" id="r_ab57e0234a9f21d3ecae7b168d239349f"><td class="memTemplParams" colspan="2">template&lt;typename index_t &gt; </td></tr>
+<tr class="memitem:ab57e0234a9f21d3ecae7b168d239349f"><td class="memTemplItemLeft" align="right" valign="top">index_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ab57e0234a9f21d3ecae7b168d239349f">vulpes::geometry::internal::removeEmptySets</a> (std::vector&lt; index_t &gt; &amp;labels)</td></tr>
+<tr class="memdesc:ab57e0234a9f21d3ecae7b168d239349f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compresses labels to a contiguous range <code>[0, N-1]</code>.  <br /></td></tr>
+<tr class="separator:ab57e0234a9f21d3ecae7b168d239349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -182,7 +211,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="dir_3213ab77fe4ea86cfa506605152366dc.html">mesh</a></li><li class="navelem"><a class="el" href="mesh__base_8hpp.html">mesh_base.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

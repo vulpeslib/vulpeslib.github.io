@@ -117,16 +117,24 @@ $(document).ready(function(){initNavTree('structvulpes_1_1geometry_1_1VtuOptions
 </div><!--header-->
 <div class="contents">
 
+<p>Configuration options for VTU file export.  
+ <a href="structvulpes_1_1geometry_1_1VtuOptions.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mesh__exporter_8hpp_source.html">mesh_exporter.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8a1ec447ea6f503b07aaa245858600d7" id="r_a8a1ec447ea6f503b07aaa245858600d7"><td class="memItemLeft" align="right" valign="top">vtkXMLWriterBase::CompressorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1VtuOptions.html#a8a1ec447ea6f503b07aaa245858600d7">compressor_type</a></td></tr>
+<tr class="memdesc:a8a1ec447ea6f503b07aaa245858600d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The compression type to use for the output file.  <br /></td></tr>
 <tr class="separator:a8a1ec447ea6f503b07aaa245858600d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69556faf3567c35f743390d2ee05326d" id="r_a69556faf3567c35f743390d2ee05326d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab">DataMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1VtuOptions.html#a69556faf3567c35f743390d2ee05326d">data_mode</a> = <a class="el" href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba893648d04b9aa2e46ef4d69dff4c06f2">DataMode::Base64</a></td></tr>
+<tr class="memdesc:a69556faf3567c35f743390d2ee05326d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data encoding mode.  <br /></td></tr>
 <tr class="separator:a69556faf3567c35f743390d2ee05326d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Configuration options for VTU file export. </p>
+<p>This struct holds settings that control how a VTK Unstructured Grid (.vtu) file is written, including compression and data encoding. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a8a1ec447ea6f503b07aaa245858600d7" name="a8a1ec447ea6f503b07aaa245858600d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a1ec447ea6f503b07aaa245858600d7">&#9670;&#160;</a></span>compressor_type</h2>
 
@@ -141,6 +149,9 @@ Public Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      vtkXMLWriterBase::CompressorType::ZLIB</div>
 </div><!-- fragment -->
+<p>The compression type to use for the output file. </p>
+<p>Defaults to ZLIB for efficient compression. </p>
+
 </div>
 </div>
 <a id="a69556faf3567c35f743390d2ee05326d" name="a69556faf3567c35f743390d2ee05326d"></a>
@@ -155,6 +166,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The data encoding mode. </p>
+<p>Defaults to Base64, which is the recommended format for performance. </p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
@@ -167,7 +181,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="structvulpes_1_1geometry_1_1VtuOptions.html">VtuOptions</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

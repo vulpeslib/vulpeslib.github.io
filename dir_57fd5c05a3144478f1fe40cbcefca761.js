@@ -4,6 +4,7 @@ var dir_57fd5c05a3144478f1fe40cbcefca761 =
     [ "checks.cpp", "checks_8cpp.html", "checks_8cpp" ],
     [ "checks.hpp", "checks_8hpp.html", "checks_8hpp" ],
     [ "eigen.hpp", "eigen_8hpp.html", "eigen_8hpp" ],
+    [ "expression_parser.hpp", "expression__parser_8hpp.html", "expression__parser_8hpp" ],
     [ "io.hpp", "io_8hpp.html", "io_8hpp" ],
     [ "macros.hpp", "macros_8hpp.html", "macros_8hpp" ],
     [ "mpi_wrappers.hpp", "mpi__wrappers_8hpp.html", "mpi__wrappers_8hpp" ],

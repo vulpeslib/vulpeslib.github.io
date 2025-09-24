@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tensor_0',['Tensor',['../namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221ad226ebfe23a8913bfb43ac4614b914e7',1,'vulpes::fe']]],
-  ['tensorlegendre_1',['TensorLegendre',['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa2634746a42faa622f29cd9928374afa0',1,'vulpes::qrule']]],
-  ['tensorlobatto_2',['TensorLobatto',['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa21e423c8c0f659fb602af23ce7163b3d',1,'vulpes::qrule']]]
+  ['rowmajor_0',['RowMajor',['../namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca748db46088f6cfe844946f6dd864d220',1,'vulpes::la']]],
+  ['rowsatcompiletime_1',['rowsatcompiletime',['../structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html#a6294768e50f52162da96eae2f28f2926af021a8db1eb8a801ca0c5d8ea05a36e8',1,'Eigen::internal::traits&lt; EigenVulpes::SymMat&lt; CrossId, ArgType &gt; &gt;::RowsAtCompileTime'],['../structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html#a942adf5612887c3039412151f27c48eca80e45d04bb27a6d33dd33391cf111260',1,'Eigen::internal::traits&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;::RowsAtCompileTime'],['../structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html#a7878f2ec0e68cc693bcc6ca45f4f7f6eab6487aa51c318c842bb9d884e27df021',1,'Eigen::internal::traits&lt; EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt; &gt;::RowsAtCompileTime']]]
 ];

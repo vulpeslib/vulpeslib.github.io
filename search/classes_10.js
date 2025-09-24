@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['scaledmonomial_0',['ScaledMonomial',['../classvulpes_1_1monomial_1_1internal_1_1ScaledMonomial.html',1,'vulpes::monomial::internal']]],
-  ['simplexify_1',['Simplexify',['../classvulpes_1_1geometry_1_1Simplexify.html',1,'vulpes::geometry']]],
-  ['simplexmapping_2',['SimplexMapping',['../classvulpes_1_1geometry_1_1SimplexMapping.html',1,'vulpes::geometry']]],
-  ['smallvector_3',['SmallVector',['../classvulpes_1_1datastructure_1_1SmallVector.html',1,'vulpes::datastructure']]],
-  ['sparsematrix_4',['SparseMatrix',['../classvulpes_1_1la_1_1SparseMatrix.html',1,'vulpes::la']]],
-  ['sparsepolynomial_5',['SparsePolynomial',['../classvulpes_1_1polynomial_1_1SparsePolynomial.html',1,'vulpes::polynomial']]],
-  ['spheredistance_6',['SphereDistance',['../classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance.html',1,'vulpes::geometry::dist3d']]],
-  ['staticselector_7',['StaticSelector',['../structvulpes_1_1datastructure_1_1internal_1_1StaticSelector.html',1,'vulpes::datastructure::internal']]],
-  ['staticselector_3c_20indextype_2c_20rowsize_20_21_3dindextype_28_2d1_29_2c_20rowsize_20_3e_8',['StaticSelector&lt; IndexType, RowSize !=IndexType(-1), RowSize &gt;',['../structvulpes_1_1datastructure_1_1internal_1_1StaticSelector.html',1,'vulpes::datastructure::internal']]],
-  ['staticselector_3c_20t_2c_20true_2c_20default_20_3e_9',['StaticSelector&lt; T, true, Default &gt;',['../structvulpes_1_1datastructure_1_1internal_1_1StaticSelector_3_01T_00_01true_00_01Default_01_4.html',1,'vulpes::datastructure::internal']]],
-  ['statistics_10',['Statistics',['../structinternal_1_1Statistics.html',1,'internal']]],
-  ['symmat_11',['SymMat',['../classEigenVulpes_1_1SymMat.html',1,'EigenVulpes']]]
+  ['ralstonorder2_0',['RalstonOrder2',['../structvulpes_1_1timeintegration_1_1RalstonOrder2.html',1,'vulpes::timeintegration']]],
+  ['ralstonorder3_1',['RalstonOrder3',['../structvulpes_1_1timeintegration_1_1RalstonOrder3.html',1,'vulpes::timeintegration']]],
+  ['rectangle_2',['Rectangle',['../structvulpes_1_1scipy_1_1Rectangle.html',1,'vulpes::scipy']]],
+  ['rectangle_3c_20dim_20_3e_3',['Rectangle&lt; Dim &gt;',['../structvulpes_1_1scipy_1_1Rectangle.html',1,'vulpes::scipy']]],
+  ['rectangledistance_4',['RectangleDistance',['../classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html',1,'vulpes::geometry::dist2d']]],
+  ['rectrectdistancetracker_5',['RectRectDistanceTracker',['../structvulpes_1_1scipy_1_1RectRectDistanceTracker.html',1,'vulpes::scipy']]],
+  ['reference_6',['Reference',['../classvulpes_1_1datastructure_1_1IndexTracker_1_1Reference.html',1,'vulpes::datastructure::IndexTracker']]],
+  ['rk4_7',['RK4',['../structvulpes_1_1timeintegration_1_1RK4.html',1,'vulpes::timeintegration']]],
+  ['rk4imex_8',['RK4IMEX',['../structvulpes_1_1timeintegration_1_1RK4IMEX.html',1,'vulpes::timeintegration']]],
+  ['rowmat_9',['RowMat',['../classEigenVulpes_1_1RowMat.html',1,'EigenVulpes']]],
+  ['rowview_10',['RowView',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html',1,'vulpes::datastructure::CrsMap']]],
+  ['rr_5fstack_5fitem_11',['RR_stack_item',['../structvulpes_1_1scipy_1_1RR__stack__item.html',1,'vulpes::scipy']]]
 ];

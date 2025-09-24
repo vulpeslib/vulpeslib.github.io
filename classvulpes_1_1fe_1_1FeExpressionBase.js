@@ -5,7 +5,7 @@ var classvulpes_1_1fe_1_1FeExpressionBase =
     [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionBase.html#a3874c9b3773cc1c7618e428d00398f10", null ],
     [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionBase.html#a96c2216f8cced7805760bcb1a721cf21", null ],
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionBase.html#a7f218549438922fe3086361f5968b884", null ],
-    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionBase.html#ac1821df705596b62a788c64b8744f69c", null ],
+    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionBase.html#ac35e53267a9736f80c95c4a60c518e58", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionBase.html#af0333705ad7416bd31da37eb47dd3491", null ],
     [ "operator-", "classvulpes_1_1fe_1_1FeExpressionBase.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionBase.html#ad7996ee82c01975a92f07f0312ed9a2d", null ],

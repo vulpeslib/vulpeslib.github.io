@@ -123,7 +123,9 @@ $(document).ready(function(){initNavTree('profiler_8hpp.html',''); initResizable
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;nlohmann/json.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for profiler.hpp:</div>
 <div class="dyncontent">
@@ -140,12 +142,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html">Profiler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects high-resolution timing data for labeled code sections.  <a href="classProfiler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a44a6ff9abeb62481d0ea902a7769bfc8" id="r_a44a6ff9abeb62481d0ea902a7769bfc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="profiler_8hpp.html#a44a6ff9abeb62481d0ea902a7769bfc8">PROFILE</a>(func)</td></tr>
 <tr class="separator:a44a6ff9abeb62481d0ea902a7769bfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd15d06208ee1d0aeebf7eb413f6db2" id="r_acdd15d06208ee1d0aeebf7eb413f6db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="profiler_8hpp.html#acdd15d06208ee1d0aeebf7eb413f6db2">PROFILE_INTERVAL</a>(func)</td></tr>
+<tr class="separator:acdd15d06208ee1d0aeebf7eb413f6db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a44a6ff9abeb62481d0ea902a7769bfc8" name="a44a6ff9abeb62481d0ea902a7769bfc8"></a>
@@ -171,6 +176,29 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="acdd15d06208ee1d0aeebf7eb413f6db2" name="acdd15d06208ee1d0aeebf7eb413f6db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd15d06208ee1d0aeebf7eb413f6db2">&#9670;&#160;</a></span>PROFILE_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROFILE_INTERVAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">func</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                              \</div>
+<div class="line">    Profiler::startInterval(#func); \</div>
+<div class="line">    func;                           \</div>
+<div class="line">    Profiler::stopInterval(#func);  \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -178,7 +206,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_57fd5c05a3144478f1fe40cbcefca761.html">utils</a></li><li class="navelem"><a class="el" href="profiler_8hpp.html">profiler.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

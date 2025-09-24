@@ -111,23 +111,110 @@ $(document).ready(function(){initNavTree('namespacevulpes_1_1geometry_1_1mesh2d.
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">vulpes::geometry::mesh2d Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacevulpes_1_1geometry_1_1mesh2d_1_1internal" id="r_namespacevulpes_1_1geometry_1_1mesh2d_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html">internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acb98f6d1c8eb052888e52b34c3082a84" id="r_acb98f6d1c8eb052888e52b34c3082a84"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
-<tr class="memitem:acb98f6d1c8eb052888e52b34c3082a84"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#acb98f6d1c8eb052888e52b34c3082a84">read</a> (const std::string &amp;filename, bool check_vtxs_unique=true)</td></tr>
-<tr class="separator:acb98f6d1c8eb052888e52b34c3082a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2706b03734b5f2a701283a2efd0841b2" id="r_a2706b03734b5f2a701283a2efd0841b2"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a2706b03734b5f2a701283a2efd0841b2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a2706b03734b5f2a701283a2efd0841b2">intersectCartesianGrid</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh, const std::array&lt; std::vector&lt; FloatType &gt;, 2 &gt; &amp;grids, FloatType agglomeration_threshold=0.25)</td></tr>
+<tr class="memdesc:a2706b03734b5f2a701283a2efd0841b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new mesh by intersecting an existing mesh with a Cartesian grid.  <br /></td></tr>
+<tr class="separator:a2706b03734b5f2a701283a2efd0841b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea5d4ac7b862b12d706b89d27a4e8b8" id="r_a5ea5d4ac7b862b12d706b89d27a4e8b8"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a5ea5d4ac7b862b12d706b89d27a4e8b8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a5ea5d4ac7b862b12d706b89d27a4e8b8">mergeMeshes</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh_a, const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh_b, FloatType atol=0.0, FloatType rtol=1e-4)</td></tr>
+<tr class="memdesc:a5ea5d4ac7b862b12d706b89d27a4e8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges two separate meshes into a single mesh.  <br /></td></tr>
+<tr class="separator:a5ea5d4ac7b862b12d706b89d27a4e8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa3ee0c6f92074bc10645e62db08a00" id="r_a0fa3ee0c6f92074bc10645e62db08a00"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a0fa3ee0c6f92074bc10645e62db08a00"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a0fa3ee0c6f92074bc10645e62db08a00">read</a> (const std::string &amp;filename, bool check_vtxs_unique=true, bool add_tags=true)</td></tr>
+<tr class="memdesc:a0fa3ee0c6f92074bc10645e62db08a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a mesh from a .vtk or .vtu file and creates a <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html" title="A class for a 2D mesh, inheriting from MeshBase.">Mesh2D</a> object.  <br /></td></tr>
+<tr class="separator:a0fa3ee0c6f92074bc10645e62db08a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71c0611a353e086e9accf6245c86cfa" id="r_aa71c0611a353e086e9accf6245c86cfa"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
 <tr class="memitem:aa71c0611a353e086e9accf6245c86cfa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa71c0611a353e086e9accf6245c86cfa">rectangle</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &amp;corner_a, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &amp;corner_b, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; IndexType, 2 &gt; &amp;n_divisions, bool tria_elements=false)</td></tr>
+<tr class="memdesc:aa71c0611a353e086e9accf6245c86cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a simple rectangular mesh.  <br /></td></tr>
 <tr class="separator:aa71c0611a353e086e9accf6245c86cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c22f3df559861a517b9ec67f380225d" id="r_a5c22f3df559861a517b9ec67f380225d"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a5c22f3df559861a517b9ec67f380225d">intersectCartesianGrid&lt; double, int32_t &gt;</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;, const std::array&lt; std::vector&lt; double &gt;, 2 &gt; &amp;, double)</td></tr>
+<tr class="separator:a5c22f3df559861a517b9ec67f380225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72d69c91f7ff756878aa1a18c6a1bc3" id="r_ae72d69c91f7ff756878aa1a18c6a1bc3"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#ae72d69c91f7ff756878aa1a18c6a1bc3">mergeMeshes&lt; double, int32_t &gt;</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;, const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;, double, double)</td></tr>
+<tr class="separator:ae72d69c91f7ff756878aa1a18c6a1bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb2c14965b1e96ddfcf483d63bcd031" id="r_aadb2c14965b1e96ddfcf483d63bcd031"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aadb2c14965b1e96ddfcf483d63bcd031">read&lt; double, int32_t &gt;</a> (const std::string &amp;, bool, bool)</td></tr>
+<tr class="separator:aadb2c14965b1e96ddfcf483d63bcd031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ee0107f9edec9e73dd597419eb35ea" id="r_aa0ee0107f9edec9e73dd597419eb35ea"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa0ee0107f9edec9e73dd597419eb35ea">read&lt; double, uint32_t &gt;</a> (const std::string &amp;, bool, bool)</td></tr>
+<tr class="separator:aa0ee0107f9edec9e73dd597419eb35ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10dd2d78db3cb9a682b81efa95de231b" id="r_a10dd2d78db3cb9a682b81efa95de231b"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a10dd2d78db3cb9a682b81efa95de231b">read&lt; double, int64_t &gt;</a> (const std::string &amp;, bool, bool)</td></tr>
+<tr class="separator:a10dd2d78db3cb9a682b81efa95de231b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8687f651c32cba94afe92dec98300b35" id="r_a8687f651c32cba94afe92dec98300b35"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a8687f651c32cba94afe92dec98300b35">read&lt; double, uint64_t &gt;</a> (const std::string &amp;, bool, bool)</td></tr>
+<tr class="separator:a8687f651c32cba94afe92dec98300b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd61d12db746f29663dbc32da82f2c9" id="r_a6fd61d12db746f29663dbc32da82f2c9"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a6fd61d12db746f29663dbc32da82f2c9">rectangle&lt; double, int32_t &gt;</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; int32_t, 2 &gt; &amp;, bool)</td></tr>
+<tr class="separator:a6fd61d12db746f29663dbc32da82f2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4318e27a9fea0d1cc82318dbc814b49c" id="r_a4318e27a9fea0d1cc82318dbc814b49c"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a4318e27a9fea0d1cc82318dbc814b49c">rectangle&lt; double, uint32_t &gt;</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; uint32_t, 2 &gt; &amp;, bool)</td></tr>
+<tr class="separator:a4318e27a9fea0d1cc82318dbc814b49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcece87f1f584f2806e37492e61f755d" id="r_abcece87f1f584f2806e37492e61f755d"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#abcece87f1f584f2806e37492e61f755d">rectangle&lt; double, int64_t &gt;</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; int64_t, 2 &gt; &amp;, bool)</td></tr>
+<tr class="separator:abcece87f1f584f2806e37492e61f755d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7204199dd2ab0dae385c1abbf9987496" id="r_a7204199dd2ab0dae385c1abbf9987496"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a7204199dd2ab0dae385c1abbf9987496">rectangle&lt; double, uint64_t &gt;</a> (const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;, const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; uint64_t, 2 &gt; &amp;, bool)</td></tr>
+<tr class="separator:a7204199dd2ab0dae385c1abbf9987496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea12c49777fe75b640fd32dce456f3c" id="r_a9ea12c49777fe75b640fd32dce456f3c"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a9ea12c49777fe75b640fd32dce456f3c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a9ea12c49777fe75b640fd32dce456f3c">intersectCartesianGrid</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh, IndexType n_cells_x, FloatType stretch=1, FloatType agglomeration_threshold=0.25)</td></tr>
+<tr class="memdesc:a9ea12c49777fe75b640fd32dce456f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new mesh by intersecting an existing mesh with a Cartesian grid.  <br /></td></tr>
+<tr class="separator:a9ea12c49777fe75b640fd32dce456f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="acb98f6d1c8eb052888e52b34c3082a84" name="acb98f6d1c8eb052888e52b34c3082a84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb98f6d1c8eb052888e52b34c3082a84">&#9670;&#160;</a></span>read()</h2>
+<a id="a2706b03734b5f2a701283a2efd0841b2" name="a2706b03734b5f2a701283a2efd0841b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2706b03734b5f2a701283a2efd0841b2">&#9670;&#160;</a></span>intersectCartesianGrid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; vulpes::geometry::mesh2d::intersectCartesianGrid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; std::vector&lt; FloatType &gt;, 2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>grids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FloatType&#160;</td>
+          <td class="paramname"><em>agglomeration_threshold</em> = <code>0.25</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new mesh by intersecting an existing mesh with a Cartesian grid. </p>
+<p>This function "cuts" the boundary of the input mesh with the grid lines, resulting in a new, less complex mesh. Small fragments created during intersection with the boundary can be merged into larger cells based on a threshold. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The original mesh to intersect. </td></tr>
+    <tr><td class="paramname">grids</td><td>The Cartesian grid lines (x and y coordinates). </td></tr>
+    <tr><td class="paramname">agglomeration_threshold</td><td>A threshold (relative to cell area) below which small cells are merged. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <code><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html" title="A class for a 2D mesh, inheriting from MeshBase.">Mesh2D</a></code> object representing the intersected mesh. </dd></dl>
+
+</div>
+</div>
+<a id="a9ea12c49777fe75b640fd32dce456f3c" name="a9ea12c49777fe75b640fd32dce456f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea12c49777fe75b640fd32dce456f3c">&#9670;&#160;</a></span>intersectCartesianGrid() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,16 +225,28 @@ template&lt;typename FloatType , typename IndexType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; vulpes::geometry::mesh2d::read </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; vulpes::geometry::mesh2d::intersectCartesianGrid </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>check_vtxs_unique</em> = <code>true</code>&#160;</td>
+          <td class="paramtype">IndexType&#160;</td>
+          <td class="paramname"><em>n_cells_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FloatType&#160;</td>
+          <td class="paramname"><em>stretch</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FloatType&#160;</td>
+          <td class="paramname"><em>agglomeration_threshold</em> = <code>0.25</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -162,6 +261,330 @@ template&lt;typename FloatType , typename IndexType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a new mesh by intersecting an existing mesh with a Cartesian grid. </p>
+<p>This function "cuts" the boundary of the input mesh with the grid lines, resulting in a new, less complex mesh. Small fragments created during intersection with the boundary can be merged into larger cells based on a threshold. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The original mesh to intersect. </td></tr>
+    <tr><td class="paramname">n_cells_x</td><td>The number of grid cells to create along the x-axis. </td></tr>
+    <tr><td class="paramname">stretch</td><td>A factor to stretch the grid cells in the y-direction. </td></tr>
+    <tr><td class="paramname">agglomeration_threshold</td><td>A threshold (relative to cell area) below which small cells are merged. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <code><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html" title="A class for a 2D mesh, inheriting from MeshBase.">Mesh2D</a></code> object representing the intersected mesh. </dd></dl>
+
+</div>
+</div>
+<a id="a5c22f3df559861a517b9ec67f380225d" name="a5c22f3df559861a517b9ec67f380225d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c22f3df559861a517b9ec67f380225d">&#9670;&#160;</a></span>intersectCartesianGrid&lt; double, int32_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a2706b03734b5f2a701283a2efd0841b2">vulpes::geometry::mesh2d::intersectCartesianGrid</a>&lt; double, int32_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; std::vector&lt; double &gt;, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ea5d4ac7b862b12d706b89d27a4e8b8" name="a5ea5d4ac7b862b12d706b89d27a4e8b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea5d4ac7b862b12d706b89d27a4e8b8">&#9670;&#160;</a></span>mergeMeshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; vulpes::geometry::mesh2d::mergeMeshes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FloatType&#160;</td>
+          <td class="paramname"><em>atol</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FloatType&#160;</td>
+          <td class="paramname"><em>rtol</em> = <code>1e-4</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merges two separate meshes into a single mesh. </p>
+<p>This function combines the vertices and cells from two meshes. It can identify and merge vertices that are very close to each other, based on the specified tolerances. </p><dl class="section warning"><dt>Warning</dt><dd>If the boundaries are not completely matching the merging will fails. This does not mean that the tolerances must be zero but the discretization of the matching boundary must be the same (e.g., you can merge two edges (0, 0)-(1, 0) and (eps, eps)-(1-eps, -eps) but you cannot merge (0,0)-(0.5,0)-(1,0) with (0,0)-(1,0)) </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh_a</td><td>The first mesh. </td></tr>
+    <tr><td class="paramname">mesh_b</td><td>The second mesh. </td></tr>
+    <tr><td class="paramname">atol</td><td>Absolute tolerance for merging vertices. </td></tr>
+    <tr><td class="paramname">rtol</td><td>Relative tolerance for merging vertices. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <code><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html" title="A class for a 2D mesh, inheriting from MeshBase.">Mesh2D</a></code> object containing both input meshes. </dd></dl>
+
+</div>
+</div>
+<a id="ae72d69c91f7ff756878aa1a18c6a1bc3" name="ae72d69c91f7ff756878aa1a18c6a1bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae72d69c91f7ff756878aa1a18c6a1bc3">&#9670;&#160;</a></span>mergeMeshes&lt; double, int32_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a5ea5d4ac7b862b12d706b89d27a4e8b8">vulpes::geometry::mesh2d::mergeMeshes</a>&lt; double, int32_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fa3ee0c6f92074bc10645e62db08a00" name="a0fa3ee0c6f92074bc10645e62db08a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fa3ee0c6f92074bc10645e62db08a00">&#9670;&#160;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; vulpes::geometry::mesh2d::read </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>check_vtxs_unique</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>add_tags</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a mesh from a .vtk or .vtu file and creates a <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html" title="A class for a 2D mesh, inheriting from MeshBase.">Mesh2D</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The path to the mesh file. </td></tr>
+    <tr><td class="paramname">check_vtxs_unique</td><td>If true, checks for duplicate vertices and raises warnings. </td></tr>
+    <tr><td class="paramname">add_tags</td><td>If true, reads and attaches any tags found in the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <code><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html" title="A class for a 2D mesh, inheriting from MeshBase.">Mesh2D</a></code> object loaded from the file. </dd></dl>
+
+</div>
+</div>
+<a id="aadb2c14965b1e96ddfcf483d63bcd031" name="aadb2c14965b1e96ddfcf483d63bcd031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb2c14965b1e96ddfcf483d63bcd031">&#9670;&#160;</a></span>read&lt; double, int32_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a0fa3ee0c6f92074bc10645e62db08a00">vulpes::geometry::mesh2d::read</a>&lt; double, int32_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10dd2d78db3cb9a682b81efa95de231b" name="a10dd2d78db3cb9a682b81efa95de231b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10dd2d78db3cb9a682b81efa95de231b">&#9670;&#160;</a></span>read&lt; double, int64_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int64_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a0fa3ee0c6f92074bc10645e62db08a00">vulpes::geometry::mesh2d::read</a>&lt; double, int64_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0ee0107f9edec9e73dd597419eb35ea" name="aa0ee0107f9edec9e73dd597419eb35ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ee0107f9edec9e73dd597419eb35ea">&#9670;&#160;</a></span>read&lt; double, uint32_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, uint32_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a0fa3ee0c6f92074bc10645e62db08a00">vulpes::geometry::mesh2d::read</a>&lt; double, uint32_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8687f651c32cba94afe92dec98300b35" name="a8687f651c32cba94afe92dec98300b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8687f651c32cba94afe92dec98300b35">&#9670;&#160;</a></span>read&lt; double, uint64_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, uint64_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a0fa3ee0c6f92074bc10645e62db08a00">vulpes::geometry::mesh2d::read</a>&lt; double, uint64_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="aa71c0611a353e086e9accf6245c86cfa" name="aa71c0611a353e086e9accf6245c86cfa"></a>
@@ -171,9 +594,6 @@ template&lt;typename FloatType , typename IndexType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename FloatType , typename IndexType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; vulpes::geometry::mesh2d::rectangle </td>
@@ -205,11 +625,178 @@ template&lt;typename FloatType , typename IndexType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+<p>Creates a simple rectangular mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">corner_a</td><td>The coordinates of one corner of the rectangle. </td></tr>
+    <tr><td class="paramname">corner_b</td><td>The coordinates of the opposite corner of the rectangle. </td></tr>
+    <tr><td class="paramname">n_divisions</td><td>The number of cell divisions along the x and y axes. </td></tr>
+    <tr><td class="paramname">tria_elements</td><td>If true, divides each rectangular cell into two triangles. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <code><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html" title="A class for a 2D mesh, inheriting from MeshBase.">Mesh2D</a></code> object representing the rectangle. </dd></dl>
+
+</div>
+</div>
+<a id="a6fd61d12db746f29663dbc32da82f2c9" name="a6fd61d12db746f29663dbc32da82f2c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd61d12db746f29663dbc32da82f2c9">&#9670;&#160;</a></span>rectangle&lt; double, int32_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa71c0611a353e086e9accf6245c86cfa">vulpes::geometry::mesh2d::rectangle</a>&lt; double, int32_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; int32_t, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcece87f1f584f2806e37492e61f755d" name="abcece87f1f584f2806e37492e61f755d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcece87f1f584f2806e37492e61f755d">&#9670;&#160;</a></span>rectangle&lt; double, int64_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int64_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa71c0611a353e086e9accf6245c86cfa">vulpes::geometry::mesh2d::rectangle</a>&lt; double, int64_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; int64_t, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4318e27a9fea0d1cc82318dbc814b49c" name="a4318e27a9fea0d1cc82318dbc814b49c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4318e27a9fea0d1cc82318dbc814b49c">&#9670;&#160;</a></span>rectangle&lt; double, uint32_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, uint32_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa71c0611a353e086e9accf6245c86cfa">vulpes::geometry::mesh2d::rectangle</a>&lt; double, uint32_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; uint32_t, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7204199dd2ab0dae385c1abbf9987496" name="a7204199dd2ab0dae385c1abbf9987496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7204199dd2ab0dae385c1abbf9987496">&#9670;&#160;</a></span>rectangle&lt; double, uint64_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, uint64_t &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa71c0611a353e086e9accf6245c86cfa">vulpes::geometry::mesh2d::rectangle</a>&lt; double, uint64_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; uint64_t, 2 &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -221,7 +808,7 @@ template&lt;typename FloatType , typename IndexType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html">mesh2d</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

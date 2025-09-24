@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Base class for exporting a mesh to VTK file formats.">
 <polygon fill="#999999" stroke="#666666" points="175,-54 0,-54 0,-24 175,-24 175,-54"/>
 <text text-anchor="start" x="8" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">vulpes::geometry::MeshExporter</text>
 <text text-anchor="middle" x="87.5" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">Base&lt; MeshDerived &gt;</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classvulpes_1_1geometry_1_1MeshExporter.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classvulpes_1_1geometry_1_1MeshExporter.html" target="_top" xlink:title="Exports a single mesh as a single VTK grid.">
 <polygon fill="white" stroke="#666666" points="386,-78 211,-78 211,-48 386,-48 386,-78"/>
 <text text-anchor="start" x="219" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">vulpes::geometry::MeshExporter</text>
 <text text-anchor="middle" x="298.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; MeshDerived &gt;</text>
@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classvulpes_1_1geometry_1_1MeshExporterSubmesh.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classvulpes_1_1geometry_1_1MeshExporterSubmesh.html" target="_top" xlink:title="Exports a mesh as multiple VTK grids, one for each cell.">
 <polygon fill="white" stroke="#666666" points="386,-30 211,-30 211,0 386,0 386,-30"/>
 <text text-anchor="start" x="219" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">vulpes::geometry::MeshExporter</text>
 <text text-anchor="middle" x="298.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Submesh&lt; MeshDerived &gt;</text>

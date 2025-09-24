@@ -14,12 +14,14 @@ var namespacevulpes =
     [ "polynomial", "namespacevulpes_1_1polynomial.html", "namespacevulpes_1_1polynomial" ],
     [ "postprocessing", "namespacevulpes_1_1postprocessing.html", [
       [ "computeOrder", "namespacevulpes_1_1postprocessing.html#aa6a9e2a56768b8e5076941d3e9b8d497", null ],
-      [ "projectSolution", "namespacevulpes_1_1postprocessing.html#a6c3808bba47ef678266618d5c7d941f5", null ],
+      [ "projectSolution", "namespacevulpes_1_1postprocessing.html#a5f9ec84873a837fb54aed3c043958ec8", null ],
       [ "projectSolutionSubmesh", "namespacevulpes_1_1postprocessing.html#abc31fa8655aee2c9d3043afd81671076", null ]
     ] ],
     [ "qfree", "namespacevulpes_1_1qfree.html", "namespacevulpes_1_1qfree" ],
     [ "qrule", "namespacevulpes_1_1qrule.html", "namespacevulpes_1_1qrule" ],
     [ "random", "namespacevulpes_1_1random.html", "namespacevulpes_1_1random" ],
+    [ "scipy", "namespacevulpes_1_1scipy.html", "namespacevulpes_1_1scipy" ],
+    [ "timeintegration", "namespacevulpes_1_1timeintegration.html", "namespacevulpes_1_1timeintegration" ],
     [ "vmath", "namespacevulpes_1_1vmath.html", "namespacevulpes_1_1vmath" ],
     [ "vutils", "namespacevulpes_1_1vutils.html", "namespacevulpes_1_1vutils" ],
     [ "vvutils", "namespacevulpes_1_1vvutils.html", "namespacevulpes_1_1vvutils" ],

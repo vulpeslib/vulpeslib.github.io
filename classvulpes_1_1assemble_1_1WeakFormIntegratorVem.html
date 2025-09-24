@@ -144,8 +144,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a320f9dd799950071c9b43cf385b7d352" id="r_a320f9dd799950071c9b43cf385b7d352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a320f9dd799950071c9b43cf385b7d352">WeakFormIntegratorVem</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#add3b08413b8c58281b6a529c85f1bf57">FeType</a> &gt; &amp;cell_manager, const FeExpressionTuple &amp;fe_expression, const FeExpressionFaceTuple &amp;fe_expression_face=FeExpressionFaceTuple{})</td></tr>
-<tr class="separator:a320f9dd799950071c9b43cf385b7d352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd58de27679636aa6e0b28b17025cab1" id="r_abd58de27679636aa6e0b28b17025cab1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#abd58de27679636aa6e0b28b17025cab1">WeakFormIntegratorVem</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#add3b08413b8c58281b6a529c85f1bf57">FeType</a> &gt; &amp;cell_manager, const FeExpressionTuple &amp;fe_expression, const FeExpressionFaceTuple &amp;fe_expression_face=FeExpressionFaceTuple{}, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45b">Backend</a> backend=<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45ba4e5823b9aa53d396cb23857c120baffd">IntegratorSimplexifyBackend</a>)</td></tr>
+<tr class="separator:abd58de27679636aa6e0b28b17025cab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3af88eeaa9451f97ab2e0f12d878594" id="r_ac3af88eeaa9451f97ab2e0f12d878594"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#ac3af88eeaa9451f97ab2e0f12d878594">integrate</a> (MeshType::index_t cell_id)</td></tr>
 <tr class="separator:ac3af88eeaa9451f97ab2e0f12d878594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ad4b9599525f5cd6952438372cbd0f" id="r_a20ad4b9599525f5cd6952438372cbd0f"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a20ad4b9599525f5cd6952438372cbd0f">getExtraMatrices</a> () const</td></tr>
@@ -258,8 +258,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a320f9dd799950071c9b43cf385b7d352" name="a320f9dd799950071c9b43cf385b7d352"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a320f9dd799950071c9b43cf385b7d352">&#9670;&#160;</a></span>WeakFormIntegratorVem()</h2>
+<a id="abd58de27679636aa6e0b28b17025cab1" name="abd58de27679636aa6e0b28b17025cab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd58de27679636aa6e0b28b17025cab1">&#9670;&#160;</a></span>WeakFormIntegratorVem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +291,13 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const FeExpressionFaceTuple &amp;&#160;</td>
-          <td class="paramname"><em>fe_expression_face</em> = <code>FeExpressionFaceTuple{}</code>&#160;</td>
+          <td class="paramname"><em>fe_expression_face</em> = <code>FeExpressionFaceTuple{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45b">Backend</a>&#160;</td>
+          <td class="paramname"><em>backend</em> = <code><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45ba4e5823b9aa53d396cb23857c120baffd">IntegratorSimplexifyBackend</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -546,7 +552,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html">WeakFormIntegratorVem</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

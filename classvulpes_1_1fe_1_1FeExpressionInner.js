@@ -1,14 +1,13 @@
 var classvulpes_1_1fe_1_1FeExpressionInner =
 [
     [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionInner.html#a0da1ad2b406784f532cd3d5a023b0bf4", null ],
-    [ "PolynomialType", "classvulpes_1_1fe_1_1FeExpressionInner.html#a4e3f5fe2a64738e3173ff94c232433be", null ],
+    [ "PolynomialType", "classvulpes_1_1fe_1_1FeExpressionInner.html#aa04c3441d197a03f9a63a0599fc0e2d8", null ],
     [ "FeExpressionInner", "classvulpes_1_1fe_1_1FeExpressionInner.html#a244071d3c07eebc09d41babfa4f65e6d", null ],
     [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionInner.html#a8ba61a7a3482be4368de0000e76d152e", null ],
     [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionInner.html#a6767ea984d1f548417e030919db12d7a", null ],
     [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionInner.html#a1976f87cf49c08111cdcf605fa140c43", null ],
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionInner.html#a1eb8f6c331857880b0942f8784bbc35d", null ],
-    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionInner.html#ac1821df705596b62a788c64b8744f69c", null ],
-    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionInner.html#a9ad2073e4fd178c5597130e9b90e1d9f", null ],
+    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionInner.html#a4406b100852116a7aeb3f4086aea5e39", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionInner.html#a536e8a8de35b3c0513a425be2441f14f", null ],
     [ "operator-", "classvulpes_1_1fe_1_1FeExpressionInner.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionInner.html#a2821c6cfa1a239ca0f779df337e0ebcd", null ],

@@ -142,6 +142,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad526c600b1bc1583e9e228fe725dfc3f" id="r_ad526c600b1bc1583e9e228fe725dfc3f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#ad526c600b1bc1583e9e228fe725dfc3f">end</a> () const</td></tr>
 <tr class="memdesc:ad526c600b1bc1583e9e228fe725dfc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant iterator to the end of the map.  <br /></td></tr>
 <tr class="separator:ad526c600b1bc1583e9e228fe725dfc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c03edefe3196d4c8aa00ac3025fb89" id="r_a02c03edefe3196d4c8aa00ac3025fb89"><td class="memItemLeft" align="right" valign="top">constexpr const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a02c03edefe3196d4c8aa00ac3025fb89">back</a> () const</td></tr>
+<tr class="memdesc:a02c03edefe3196d4c8aa00ac3025fb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant reference to the last row of the map.  <br /></td></tr>
+<tr class="separator:a02c03edefe3196d4c8aa00ac3025fb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be65d86ec5ccaf30118d4dd19a3a726" id="r_a7be65d86ec5ccaf30118d4dd19a3a726"><td class="memItemLeft" align="right" valign="top">constexpr auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a7be65d86ec5ccaf30118d4dd19a3a726">back</a> ()</td></tr>
+<tr class="memdesc:a7be65d86ec5ccaf30118d4dd19a3a726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the last row of the map.  <br /></td></tr>
+<tr class="separator:a7be65d86ec5ccaf30118d4dd19a3a726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858b641ff02038594a8ad3b423948711" id="r_a858b641ff02038594a8ad3b423948711"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a858b641ff02038594a8ad3b423948711">resize</a> (std::size_t new_size)</td></tr>
 <tr class="memdesc:a858b641ff02038594a8ad3b423948711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the map to contain the specified number of <code><a class="el" href="classvulpes_1_1datastructure_1_1SmallVector.html">SmallVector</a></code> objects.  <br /></td></tr>
 <tr class="separator:a858b641ff02038594a8ad3b423948711"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +260,66 @@ template&lt;typename DataType , std::size_t N = 16&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7be65d86ec5ccaf30118d4dd19a3a726" name="a7be65d86ec5ccaf30118d4dd19a3a726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be65d86ec5ccaf30118d4dd19a3a726">&#9670;&#160;</a></span>back() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType , std::size_t N = 16&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto &amp; <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed</a>&lt; DataType, N &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the last row of the map. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the last row. </dd></dl>
+
+</div>
+</div>
+<a id="a02c03edefe3196d4c8aa00ac3025fb89" name="a02c03edefe3196d4c8aa00ac3025fb89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c03edefe3196d4c8aa00ac3025fb89">&#9670;&#160;</a></span>back() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataType , std::size_t N = 16&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const auto &amp; <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed</a>&lt; DataType, N &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a constant reference to the last row of the map. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the last row. </dd></dl>
+
+</div>
+</div>
 <a id="a906953dd89170918153dc4cd8d1b5ad6" name="a906953dd89170918153dc4cd8d1b5ad6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a906953dd89170918153dc4cd8d1b5ad6">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
 
@@ -726,7 +792,7 @@ template&lt;typename DataType , std::size_t N = 16&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1datastructure.html">datastructure</a></li><li class="navelem"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

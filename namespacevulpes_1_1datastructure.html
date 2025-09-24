@@ -131,6 +131,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that behaves like a vector of vectors, providing automatic row range checking.  <a href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker.html">IndexTracker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that uses a linked list to keep track of all the indices of a vector that are equal to a certain value. The class assumes that the maximum value contained in an array of size N is N - 1.  <a href="classvulpes_1_1datastructure_1_1IndexTracker.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1KDTree.html">KDTree</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvulpes_1_1datastructure_1_1KDTree.html" title="KDTree is a data structure for efficiently querying nearest neighbors and performing spatial searches...">KDTree</a> is a data structure for efficiently querying nearest neighbors and performing spatial searches in a k-dimensional space.  <a href="classvulpes_1_1datastructure_1_1KDTree.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +277,7 @@ template&lt;typename DataType , typename IndexType , IndexType RowSize&gt; </div
 <dl class="section return"><dt>Returns</dt><dd>A reference to the output stream after writing the <code><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">CrsMap</a></code>.</dd></dl>
 <p>The function writes the <code><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">CrsMap</a></code> row by row, displaying each row's index and contents. The format is: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classvulpes_1_1datastructure_1_1CrsMap.html">CrsMap</a> with &lt;number_of_rows&gt; rows:</div>
 <div class="line">Row &lt;row_index&gt;: [ &lt;element_1&gt; &lt;element_2&gt; ... ]</div>
-<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html">vulpes::datastructure::CrsMap</a></div><div class="ttdef"><b>Definition</b> crs_map.hpp:72</div></div>
+<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html">vulpes::datastructure::CrsMap</a></div><div class="ttdef"><b>Definition</b> crs_map.hpp:71</div></div>
 </div><!-- fragment --><p> Each element in a row is separated by a space, and rows are displayed on separate lines. </p>
 
 </div>
@@ -326,7 +329,7 @@ template&lt;typename DataType , std::size_t N&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the output stream after writing the <code><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html" title="A class that behaves like a vector of vectors, providing automatic row range checking.">CrsMapUncompressed</a></code>.</dd></dl>
 <p>The function writes the <code><a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html" title="A class that behaves like a vector of vectors, providing automatic row range checking.">CrsMapUncompressed</a></code> row by row, displaying each row's index and contents. The format is: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">CrsMapUncompressed</a> with &lt;number_of_rows&gt; rows:</div>
 <div class="line">Row &lt;row_index&gt;: [ &lt;element_1&gt; &lt;element_2&gt; ... ]</div>
-<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMapUncompressed_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed</a></div><div class="ttdoc">A class that behaves like a vector of vectors, providing automatic row range checking.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:758</div></div>
+<div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMapUncompressed_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">vulpes::datastructure::CrsMapUncompressed</a></div><div class="ttdoc">A class that behaves like a vector of vectors, providing automatic row range checking.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:757</div></div>
 </div><!-- fragment --><p> Each element in a row is separated by a space, and rows are displayed on separate lines. </p>
 
 </div>
@@ -338,7 +341,7 @@ template&lt;typename DataType , std::size_t N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1datastructure.html">datastructure</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['vectorized_0',['Vectorized',['../classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa65224a10a81201e39db8a63afdbb59ec',1,'vulpes::la::SparseMatrix']]]
+  ['tensor_0',['Tensor',['../namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221ad226ebfe23a8913bfb43ac4614b914e7',1,'vulpes::fe']]],
+  ['tensorlegendre_1',['TensorLegendre',['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa2634746a42faa622f29cd9928374afa0',1,'vulpes::qrule']]],
+  ['tensorlobatto_2',['TensorLobatto',['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa21e423c8c0f659fb602af23ce7163b3d',1,'vulpes::qrule']]]
 ];

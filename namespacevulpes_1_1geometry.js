@@ -3,33 +3,49 @@ var namespacevulpes_1_1geometry =
     [ "dist2d", "namespacevulpes_1_1geometry_1_1dist2d.html", "namespacevulpes_1_1geometry_1_1dist2d" ],
     [ "dist3d", "namespacevulpes_1_1geometry_1_1dist3d.html", "namespacevulpes_1_1geometry_1_1dist3d" ],
     [ "internal", "namespacevulpes_1_1geometry_1_1internal.html", [
+      [ "buildSubDual", "namespacevulpes_1_1geometry_1_1internal.html#a2b1c9d63b50cc0b9aae11eb0bf9487bd", null ],
+      [ "cast", "namespacevulpes_1_1geometry_1_1internal.html#abe9663906c29eb9b4dde96cf8c8299b9", null ],
+      [ "checkEmptySets", "namespacevulpes_1_1geometry_1_1internal.html#ae3a5f4421326eb4efbd67fc53e891b2d", null ],
       [ "computeGradient", "namespacevulpes_1_1geometry_1_1internal.html#a26a9fb77b98f1d370896b71f54d9dfa9", null ],
       [ "computeVoronoiMesh2D", "namespacevulpes_1_1geometry_1_1internal.html#adba98ffe37b9cf9811ed77c29a7e2409", null ],
       [ "computeVoronoiMesh3D", "namespacevulpes_1_1geometry_1_1internal.html#a837885952ff40014073aa139895d0f36", null ],
-      [ "getFileExtension", "namespacevulpes_1_1geometry_1_1internal.html#abf351d6f6479b97562557b6345358921", null ],
+      [ "maxVtxToVtxSquaredDistance", "namespacevulpes_1_1geometry_1_1internal.html#a413b1af581f4e7ea2af184af04def367", null ],
+      [ "normalizeCellFlags", "namespacevulpes_1_1geometry_1_1internal.html#a47208c45afc797ab228bb38d65144497", null ],
       [ "polyMesherAdjustFixedPoints", "namespacevulpes_1_1geometry_1_1internal.html#ad0881f836ef5e935ef2f46031b10857c", null ],
       [ "polyMesherClipToBoundary", "namespacevulpes_1_1geometry_1_1internal.html#a3db2ab4dd1e19d7e4cb131778c3764bb", null ],
       [ "polyMesherCollapseEdges", "namespacevulpes_1_1geometry_1_1internal.html#ae704555005f472e6b200962395a45194", null ],
       [ "polyMesherComputeEdgeAngle", "namespacevulpes_1_1geometry_1_1internal.html#a2d6f59f282ff90f3a0b0f7856e8b4f37", null ],
       [ "polyMesherReflect", "namespacevulpes_1_1geometry_1_1internal.html#a28d98e6e35b60331d6f6aa7f0dd1e0a4", null ],
-      [ "readpts", "namespacevulpes_1_1geometry_1_1internal.html#a09324f44a3c75e4bb590a896c21a22a1", null ],
+      [ "removeEmptySets", "namespacevulpes_1_1geometry_1_1internal.html#ab57e0234a9f21d3ecae7b168d239349f", null ],
+      [ "toTorchType", "namespacevulpes_1_1geometry_1_1internal.html#a083529d73bffd666d5304bb7bc17133a", null ],
       [ "updateVoronoiCentroid", "namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27", null ]
     ] ],
-    [ "mesh2d", "namespacevulpes_1_1geometry_1_1mesh2d.html", [
-      [ "read", "namespacevulpes_1_1geometry_1_1mesh2d.html#acb98f6d1c8eb052888e52b34c3082a84", null ],
-      [ "rectangle", "namespacevulpes_1_1geometry_1_1mesh2d.html#aa71c0611a353e086e9accf6245c86cfa", null ]
-    ] ],
+    [ "mesh2d", "namespacevulpes_1_1geometry_1_1mesh2d.html", "namespacevulpes_1_1geometry_1_1mesh2d" ],
     [ "mesh3d", "namespacevulpes_1_1geometry_1_1mesh3d.html", [
-      [ "readVTU", "namespacevulpes_1_1geometry_1_1mesh3d.html#aad96bb1e56b4893f637a6ff840c5366b", null ],
-      [ "rect_cuboid", "namespacevulpes_1_1geometry_1_1mesh3d.html#a927c5ee9d72145bacd91df3f118927ea", null ]
+      [ "readVTU", "namespacevulpes_1_1geometry_1_1mesh3d.html#ac2b1c3594f6c440b86c66949bff7784c", null ],
+      [ "readVTU< double, int32_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#a78f714668480edf7383829e41bca9aad", null ],
+      [ "readVTU< double, int64_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#a2f01d7dc02fd5af52e4fe2f49c8e1a24", null ],
+      [ "readVTU< double, uint32_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#a7621b77f6c60bd7f3baa9dee83202743", null ],
+      [ "readVTU< double, uint64_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#a6d2a404b64092391f7a6c0931a6edc78", null ],
+      [ "rect_cuboid", "namespacevulpes_1_1geometry_1_1mesh3d.html#a927c5ee9d72145bacd91df3f118927ea", null ],
+      [ "rect_cuboid< double, int32_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#a30d28f6a72bac4b0f1b6b87480d15045", null ],
+      [ "rect_cuboid< double, int64_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#a6a01702622fdd5e4ea100d8d73bdc49c", null ],
+      [ "rect_cuboid< double, uint32_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#aa0842d1fb0c5682bfa0d302195fdb673", null ],
+      [ "rect_cuboid< double, uint64_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#ae8d45c9cc1517b4cdeda5d25f947d306", null ]
     ] ],
     [ "polymesher", "namespacevulpes_1_1geometry_1_1polymesher.html", "namespacevulpes_1_1geometry_1_1polymesher" ],
+    [ "AbstractAgglomerationModel", "classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html", "classvulpes_1_1geometry_1_1AbstractAgglomerationModel" ],
     [ "CartesianMapping", "classvulpes_1_1geometry_1_1CartesianMapping.html", "classvulpes_1_1geometry_1_1CartesianMapping" ],
     [ "Cell2D", "classvulpes_1_1geometry_1_1Cell2D.html", "classvulpes_1_1geometry_1_1Cell2D" ],
     [ "Cell3D", "classvulpes_1_1geometry_1_1Cell3D.html", "classvulpes_1_1geometry_1_1Cell3D" ],
     [ "DifferenceDistance", "classvulpes_1_1geometry_1_1DifferenceDistance.html", "classvulpes_1_1geometry_1_1DifferenceDistance" ],
     [ "DistanceExpression", "classvulpes_1_1geometry_1_1DistanceExpression.html", "classvulpes_1_1geometry_1_1DistanceExpression" ],
+    [ "GNNAgglomeration", "classvulpes_1_1geometry_1_1GNNAgglomeration.html", "classvulpes_1_1geometry_1_1GNNAgglomeration" ],
+    [ "GNNGraph", "classvulpes_1_1geometry_1_1GNNGraph.html", "classvulpes_1_1geometry_1_1GNNGraph" ],
     [ "IntersectDistance", "classvulpes_1_1geometry_1_1IntersectDistance.html", "classvulpes_1_1geometry_1_1IntersectDistance" ],
+    [ "KMeansAgglomeration", "classvulpes_1_1geometry_1_1KMeansAgglomeration.html", "classvulpes_1_1geometry_1_1KMeansAgglomeration" ],
+    [ "KMeansBase", "classvulpes_1_1geometry_1_1KMeansBase.html", "classvulpes_1_1geometry_1_1KMeansBase" ],
+    [ "KMeansNaive", "classvulpes_1_1geometry_1_1KMeansNaive.html", "classvulpes_1_1geometry_1_1KMeansNaive" ],
     [ "MappingBase", "classvulpes_1_1geometry_1_1MappingBase.html", "classvulpes_1_1geometry_1_1MappingBase" ],
     [ "Mesh2D", "classvulpes_1_1geometry_1_1Mesh2D.html", "classvulpes_1_1geometry_1_1Mesh2D" ],
     [ "Mesh3D", "classvulpes_1_1geometry_1_1Mesh3D.html", "classvulpes_1_1geometry_1_1Mesh3D" ],
@@ -37,8 +53,10 @@ var namespacevulpes_1_1geometry =
     [ "MeshExporter", "classvulpes_1_1geometry_1_1MeshExporter.html", "classvulpes_1_1geometry_1_1MeshExporter" ],
     [ "MeshExporterBase", "classvulpes_1_1geometry_1_1MeshExporterBase.html", "classvulpes_1_1geometry_1_1MeshExporterBase" ],
     [ "MeshExporterSubmesh", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html", "classvulpes_1_1geometry_1_1MeshExporterSubmesh" ],
+    [ "MeshMetrics", "classvulpes_1_1geometry_1_1MeshMetrics.html", "classvulpes_1_1geometry_1_1MeshMetrics" ],
     [ "MeshTag", "structvulpes_1_1geometry_1_1MeshTag.html", "structvulpes_1_1geometry_1_1MeshTag" ],
     [ "ParallelMesh", "classvulpes_1_1geometry_1_1ParallelMesh.html", "classvulpes_1_1geometry_1_1ParallelMesh" ],
+    [ "ParmetisAgglomeration", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html", "classvulpes_1_1geometry_1_1ParmetisAgglomeration" ],
     [ "Simplexify", "classvulpes_1_1geometry_1_1Simplexify.html", "classvulpes_1_1geometry_1_1Simplexify" ],
     [ "SimplexMapping", "classvulpes_1_1geometry_1_1SimplexMapping.html", "classvulpes_1_1geometry_1_1SimplexMapping" ],
     [ "Tetrahedralization", "classvulpes_1_1geometry_1_1Tetrahedralization.html", "classvulpes_1_1geometry_1_1Tetrahedralization" ],
@@ -47,6 +65,7 @@ var namespacevulpes_1_1geometry =
     [ "VtuOptions", "structvulpes_1_1geometry_1_1VtuOptions.html", "structvulpes_1_1geometry_1_1VtuOptions" ],
     [ "Cell", "namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f", null ],
     [ "CellInitOptionsType", "namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985", null ],
+    [ "MetricsInitOptionsType", "namespacevulpes_1_1geometry.html#a38d31d4535d70cf1ffba69b4c3abb959", null ],
     [ "Point", "namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a", null ],
     [ "VoronoiCell", "namespacevulpes_1_1geometry.html#a2a96b5fc017196bde2b03b387d9ec227", null ],
     [ "CellInitOptions", "namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2e", [
@@ -62,6 +81,7 @@ var namespacevulpes_1_1geometry =
       [ "CellInitBarycenter", "namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea69bcc45742d69b56ed3a6fd46f0284d8", null ],
       [ "CellInitFaceDiameter", "namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea4ef54dee0fb1c9a62a0f9e0855772506", null ],
       [ "CellInitFaceKb", "namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea27a15df6b1b37e9f6fe2a8f6e6af96ef", null ],
+      [ "CellInitInscribedDiameter", "namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2eadcc59c55c020ebf08a7d66e9e6b92101", null ],
       [ "CellInitAll", "namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4", null ]
     ] ],
     [ "DataMode", "namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab", [
@@ -69,8 +89,39 @@ var namespacevulpes_1_1geometry =
       [ "Binary", "namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba68e36ebb95b2ed53b079c8080f546dc2", null ],
       [ "Base64", "namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba893648d04b9aa2e46ef4d69dff4c06f2", null ]
     ] ],
+    [ "KMeansAlgType", "namespacevulpes_1_1geometry.html#a535e172da73723fcae91ad230fb18e6d", [
+      [ "Base", "namespacevulpes_1_1geometry.html#a535e172da73723fcae91ad230fb18e6da095a1b43effec73955e31e790438de49", null ]
+    ] ],
+    [ "MethodType", "namespacevulpes_1_1geometry.html#a730357b7b79829ebc6c34cf9737e871d", [
+      [ "BisectNRef", "namespacevulpes_1_1geometry.html#a730357b7b79829ebc6c34cf9737e871dae2e3170ceac6bd1a5a06f2ca51d06811", null ],
+      [ "MultFactor", "namespacevulpes_1_1geometry.html#a730357b7b79829ebc6c34cf9737e871da0263ce12a8ab0304b236b4f8b1636b15", null ],
+      [ "DirectKWay", "namespacevulpes_1_1geometry.html#a730357b7b79829ebc6c34cf9737e871da3b0c138ee471722a3a3d071eef31ac3b", null ],
+      [ "SegregateBisection", "namespacevulpes_1_1geometry.html#a730357b7b79829ebc6c34cf9737e871da046fdf1873ac8ee9bdb181ddb432ecd2", null ]
+    ] ],
+    [ "MetricId", "namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378b", [
+      [ "CircleRatioID", "namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba8a0907581f6dd82c78379f05e678aa76", null ],
+      [ "AreaPerimeterRatioID", "namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba46eb8d49c1b95e3d0999ae125c95a0b0", null ],
+      [ "UniformityFactorID", "namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba3ed46f9ce77cb3dfd87487d17e24cce9", null ],
+      [ "VolumeDifferenceID", "namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba1c39132821be341fb8fd161bb66c0ef5", null ]
+    ] ],
+    [ "MetricsInitOptions", "namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1e", [
+      [ "CircleRatio", "namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1ea883a912a7e61053a61b8f16f92188edc", null ],
+      [ "AreaPerimeterRatio", "namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1eac5ced91a82b26b6fc6958d78a2375e32", null ],
+      [ "UniformityFactor", "namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1eaf1df75dc65fec403c973599ebce4ecc0", null ],
+      [ "VolumeDifference", "namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1eaba017a00c15c52587dbdd3ac0b7c6b31", null ],
+      [ "AllMetrics", "namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1ea6ee8a1be08fc8c99df9e88ff23cdf580", null ]
+    ] ],
+    [ "SAGEType", "namespacevulpes_1_1geometry.html#a2b723d4eda8229ee7f5005b9f71bdb92", [
+      [ "Base", "namespacevulpes_1_1geometry.html#a2b723d4eda8229ee7f5005b9f71bdb92a095a1b43effec73955e31e790438de49", null ],
+      [ "Heterogeneous", "namespacevulpes_1_1geometry.html#a2b723d4eda8229ee7f5005b9f71bdb92abacb92991a0f0e7ae9e0d878d4d14131", null ]
+    ] ],
+    [ "centersKMeansPP", "namespacevulpes_1_1geometry.html#ac2b233bd616efcc3434c3cdebb4f45fe", null ],
+    [ "centersMaximin", "namespacevulpes_1_1geometry.html#a9a8e2f4054c08ac6b72faa9ca576d065", null ],
+    [ "centersRandomPointPick", "namespacevulpes_1_1geometry.html#a00a015eb0c66b43e4b2a662ab6653f68", null ],
+    [ "centersRandomPointPickMap", "namespacevulpes_1_1geometry.html#a9d178ebc43b797c54211a2e1b48c0715", null ],
+    [ "computeClosestCtrToCtrDist", "namespacevulpes_1_1geometry.html#aa4673a55de5020aacce47d07885b81f4", null ],
     [ "computeDistance", "namespacevulpes_1_1geometry.html#add0639d9d38f2a713d11dddebd31d03b", null ],
-    [ "kmeans", "namespacevulpes_1_1geometry.html#a2059e2327ebd8445a270c84e27e7e68e", null ],
+    [ "exportMesh", "namespacevulpes_1_1geometry.html#a496dc31f3303aededdfd38a34f12ab4e", null ],
     [ "operator&", "namespacevulpes_1_1geometry.html#a6a9e5e09036a979b348aa0dcf7c2cabf", null ],
     [ "operator-", "namespacevulpes_1_1geometry.html#ace6f17c7eb014ded29c2dd35e3ed860c", null ],
     [ "operator|", "namespacevulpes_1_1geometry.html#ae80ee0aa29e203e6c1b2b55d0b5efea0", null ],

@@ -252,7 +252,7 @@ template&lt;typename T , typename  = std::enable_if_t&lt;std::is_integral_v&lt;T
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A <code>std::array&lt;T, 2&gt;</code> containing the monomial exponents \((i, j)\) corresponding to the input index \(n\).</dd></dl>
 <p>This function calculates the exponents \(i\) and \(j\) for the monomial \(x^i y^j\) that corresponds to the linear index \(n\) in a 2D monomial ordering scheme. The function assumes the index \(n\) is non-negative and within the range where the floating-point precision of <code>float</code> is sufficient to handle the calculations. It uses a quadratic formula to determine the level of the monomial and then computes the specific exponents within that level. The triangle up to the \(s\)-th level contains \(s(s+1)/2\) elements</p>
-<h3><a class="anchor" id="autotoc_md66"></a>
+<h3><a class="anchor" id="autotoc_md74"></a>
 Example</h3>
 <ul>
 <li>For \(n = 0\), the result will be \((0, 0)\).</li>
@@ -305,7 +305,7 @@ template&lt;typename T , typename  = std::enable_if_t&lt;std::is_integral_v&lt;T
 <dl class="section return"><dt>Returns</dt><dd>A <code>std::array&lt;T, 3&gt;</code> containing the monomial exponents \((i, j,
 k)\) corresponding to the input index \(n\).</dd></dl>
 <p>This function calculates the exponents \(i\), \(j\), and \(k\) for the monomial \(x^i y^j z^k\) that corresponds to the linear index \(n\) in a 3D monomial ordering scheme. The function handles the case when \(n = 0\) by returning \((0, 0, 0)\), and for \(n &gt; 0\), it uses a cubic root approximation and Newton's method to determine the pyramid level. Namely, the pyramid up to the \(s\)-th level contains \(s(s+1)(s+2)/6\) elements The specific exponents within that level are then computed using the <code>getMonomial2D</code> function for the residual index.</p>
-<h3><a class="anchor" id="autotoc_md67"></a>
+<h3><a class="anchor" id="autotoc_md75"></a>
 Example</h3>
 <ul>
 <li>For \(n = 0\), the result will be \((0, 0, 0)\).</li>
@@ -323,7 +323,7 @@ Example</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1monomial.html">monomial</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

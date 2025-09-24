@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vulpes: vulpes::geometry::MeshTag&lt; Dim &gt; Struct Template Reference</title>
+<title>Vulpes: vulpes::geometry::MeshTag&lt; Dim, IndexType &gt; Struct Template Reference</title>
 <link rel="icon" href="vulpes_logo_notext_32.png" type="image/png" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -114,86 +114,107 @@ $(document).ready(function(){initNavTree('structvulpes_1_1geometry_1_1MeshTag.ht
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structvulpes_1_1geometry_1_1MeshTag-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">vulpes::geometry::MeshTag&lt; Dim &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">vulpes::geometry::MeshTag&lt; Dim, IndexType &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A structure to store tags for different parts of a mesh.  
+ <a href="structvulpes_1_1geometry_1_1MeshTag.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mesh__base_8hpp_source.html">mesh_base.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aff9208a71d973731d32fa9288b172fcb" id="r_aff9208a71d973731d32fa9288b172fcb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#aff9208a71d973731d32fa9288b172fcb">TagLabel</a> = std::string</td></tr>
-<tr class="separator:aff9208a71d973731d32fa9288b172fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab55c91761e91268dba0e6e7a251f76fc" id="r_ab55c91761e91268dba0e6e7a251f76fc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#ab55c91761e91268dba0e6e7a251f76fc">TagType</a> = std::size_t</td></tr>
-<tr class="separator:ab55c91761e91268dba0e6e7a251f76fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50a540cad13e3a9f28e218a8d3cfdff0" id="r_a50a540cad13e3a9f28e218a8d3cfdff0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a50a540cad13e3a9f28e218a8d3cfdff0">TagTable</a> = std::unordered_map&lt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#aff9208a71d973731d32fa9288b172fcb">TagLabel</a>, std::vector&lt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#ab55c91761e91268dba0e6e7a251f76fc">TagType</a> &gt; &gt;</td></tr>
-<tr class="separator:a50a540cad13e3a9f28e218a8d3cfdff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0787e22d8218f850c9af7e986e814984" id="r_a0787e22d8218f850c9af7e986e814984"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a0787e22d8218f850c9af7e986e814984">TagLabel</a> = std::string</td></tr>
+<tr class="memdesc:a0787e22d8218f850c9af7e986e814984"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value of the tag (e.g., an integer ID).  <br /></td></tr>
+<tr class="separator:a0787e22d8218f850c9af7e986e814984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383b68b20a05a73df24c25de080c200f" id="r_a383b68b20a05a73df24c25de080c200f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a383b68b20a05a73df24c25de080c200f">TagType</a> = IndexType</td></tr>
+<tr class="memdesc:a383b68b20a05a73df24c25de080c200f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table to store, for each tag name, a list of tag values.  <br /></td></tr>
+<tr class="separator:a383b68b20a05a73df24c25de080c200f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ba4fc468e0fa2b852184332d38a33e" id="r_a46ba4fc468e0fa2b852184332d38a33e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46ba4fc468e0fa2b852184332d38a33e">TagTable</a> = std::unordered_map&lt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a0787e22d8218f850c9af7e986e814984">TagLabel</a>, std::vector&lt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a383b68b20a05a73df24c25de080c200f">TagType</a> &gt; &gt;</td></tr>
+<tr class="separator:a46ba4fc468e0fa2b852184332d38a33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a46b8310693061aa3160d4e805f4e0787" id="r_a46b8310693061aa3160d4e805f4e0787"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a50a540cad13e3a9f28e218a8d3cfdff0">TagTable</a>, Dim+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46b8310693061aa3160d4e805f4e0787">tags</a></td></tr>
-<tr class="separator:a46b8310693061aa3160d4e805f4e0787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f96b9aed1fbbb16d1a6a5d3ba20aaa9" id="r_a8f96b9aed1fbbb16d1a6a5d3ba20aaa9"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46ba4fc468e0fa2b852184332d38a33e">TagTable</a>, Dim+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a8f96b9aed1fbbb16d1a6a5d3ba20aaa9">tags</a></td></tr>
+<tr class="separator:a8f96b9aed1fbbb16d1a6a5d3ba20aaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aff9208a71d973731d32fa9288b172fcb" name="aff9208a71d973731d32fa9288b172fcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff9208a71d973731d32fa9288b172fcb">&#9670;&#160;</a></span>TagLabel</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t Dim, typename IndexType&gt;<br />
+struct vulpes::geometry::MeshTag&lt; Dim, IndexType &gt;</div><p>A structure to store tags for different parts of a mesh. </p>
+<p>Tags are like labels that you can attach to mesh entities (like vertices, facets, or cells). This is useful for identifying specific regions, like boundaries or different materials.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>The dimension of the mesh entities being tagged. </td></tr>
+    <tr><td class="paramname">IndexType</td><td>The type used for tagging. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a0787e22d8218f850c9af7e986e814984" name="a0787e22d8218f850c9af7e986e814984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0787e22d8218f850c9af7e986e814984">&#9670;&#160;</a></span>TagLabel</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim&gt; </div>
+template&lt;std::size_t Dim, typename IndexType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim &gt;::TagLabel =  std::string</td>
+          <td class="memname">using <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim, IndexType &gt;::TagLabel =  std::string</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>The value of the tag (e.g., an integer ID). </p>
+
 </div>
 </div>
-<a id="a50a540cad13e3a9f28e218a8d3cfdff0" name="a50a540cad13e3a9f28e218a8d3cfdff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50a540cad13e3a9f28e218a8d3cfdff0">&#9670;&#160;</a></span>TagTable</h2>
+<a id="a46ba4fc468e0fa2b852184332d38a33e" name="a46ba4fc468e0fa2b852184332d38a33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ba4fc468e0fa2b852184332d38a33e">&#9670;&#160;</a></span>TagTable</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim&gt; </div>
+template&lt;std::size_t Dim, typename IndexType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim &gt;::TagTable =  std::unordered_map&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#aff9208a71d973731d32fa9288b172fcb">TagLabel</a>, std::vector&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#ab55c91761e91268dba0e6e7a251f76fc">TagType</a>&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim, IndexType &gt;::TagTable =  std::unordered_map&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a0787e22d8218f850c9af7e986e814984">TagLabel</a>, std::vector&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a383b68b20a05a73df24c25de080c200f">TagType</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>An array of tag tables, one for each dimension from 0 (vertices) to Dim (cells). </p>
 
 </div>
 </div>
-<a id="ab55c91761e91268dba0e6e7a251f76fc" name="ab55c91761e91268dba0e6e7a251f76fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab55c91761e91268dba0e6e7a251f76fc">&#9670;&#160;</a></span>TagType</h2>
+<a id="a383b68b20a05a73df24c25de080c200f" name="a383b68b20a05a73df24c25de080c200f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383b68b20a05a73df24c25de080c200f">&#9670;&#160;</a></span>TagType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim&gt; </div>
+template&lt;std::size_t Dim, typename IndexType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim &gt;::TagType =  std::size_t</td>
+          <td class="memname">using <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim, IndexType &gt;::TagType =  IndexType</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A table to store, for each tag name, a list of tag values. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a46b8310693061aa3160d4e805f4e0787" name="a46b8310693061aa3160d4e805f4e0787"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46b8310693061aa3160d4e805f4e0787">&#9670;&#160;</a></span>tags</h2>
+<a id="a8f96b9aed1fbbb16d1a6a5d3ba20aaa9" name="a8f96b9aed1fbbb16d1a6a5d3ba20aaa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f96b9aed1fbbb16d1a6a5d3ba20aaa9">&#9670;&#160;</a></span>tags</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t Dim&gt; </div>
+template&lt;std::size_t Dim, typename IndexType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a50a540cad13e3a9f28e218a8d3cfdff0">TagTable</a>, Dim + 1&gt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim &gt;::tags</td>
+          <td class="memname">std::array&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46ba4fc468e0fa2b852184332d38a33e">TagTable</a>, Dim + 1&gt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim, IndexType &gt;::tags</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,7 +231,7 @@ template&lt;std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">MeshTag</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 17:17:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 24 2025 17:13:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

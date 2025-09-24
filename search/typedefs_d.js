@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['real_5ft_0',['real_t',['../classvulpes_1_1fe_1_1FeSpaceBase.html#a4b62e1349bc842589144be01b5ddf8a1',1,'vulpes::fe::FeSpaceBase::real_t'],['../structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a9711beb0249e618a19bd3e39ee64453f',1,'vulpes::fe::internal::LagrangianNodesPolicy::real_t'],['../structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html#ac84e3038b23626871fdabb0f0b55ecb1',1,'vulpes::fe::internal::WarpAndBlendNodesPolicy::real_t'],['../classvulpes_1_1fe_1_1FeValues.html#aee373c97689fabfccd3ed0049f91c20f',1,'vulpes::fe::FeValues::real_t'],['../namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6',1,'vulpes::fe::internal::real_t']]],
-  ['reference_5ft_1',['reference_t',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a2e05b911c45c5936e9c263ab25096d7d',1,'vulpes::datastructure::CrsMap::RowView']]],
-  ['renumberingfunctor_2',['RenumberingFunctor',['../namespacevulpes_1_1dofs.html#ac4c45bbcac2b56eee9de8acf68bc0fd3',1,'vulpes::dofs']]]
+  ['qrule_0',['QRule',['../classvulpes_1_1qrule_1_1QuadratureLibrary.html#ac548d5f5f860b661d1a7675a13a5132d',1,'vulpes::qrule::QuadratureLibrary']]],
+  ['qruleref_1',['QRuleRef',['../classvulpes_1_1qrule_1_1QuadratureLibrary.html#ab6436bd3239a2a880382cf1bd91e96be',1,'vulpes::qrule::QuadratureLibrary']]],
+  ['quadraturekey_2',['QuadratureKey',['../classvulpes_1_1qrule_1_1QuadratureLibrary.html#a744a9a377d5a0e29582a839b3d409813',1,'vulpes::qrule::QuadratureLibrary']]],
+  ['quadraturerule1d_3',['QuadratureRule1D',['../namespacevulpes_1_1qrule.html#a56510856f2f5be4f448320e97c0bf54e',1,'vulpes::qrule']]],
+  ['quadraturerule1dmp_4',['QuadratureRule1Dmp',['../namespacevulpes_1_1qrule.html#a0540b0d397bb8efa560704709b4b90fc',1,'vulpes::qrule']]],
+  ['quadtratureweigths_5',['QuadtratureWeigths',['../classvulpes_1_1fe_1_1FeValues.html#a006cadf9a687ce754027c1b69a63280f',1,'vulpes::fe::FeValues']]]
 ];
