@@ -12,6 +12,8 @@ var mesh__2d_8cpp =
       [ "EXTERNAL", "mesh__2d_8cpp.html#ade11641ea0144ae6023bd435c322dd07a8341978f9ec9ae8e6867126ae5472230", null ]
     ] ],
     [ "clipBoundaryCells", "mesh__2d_8cpp.html#aae1c20156431b538d37d234ed38b5d3e", null ],
+    [ "collapseEdges", "mesh__2d_8cpp.html#a1b97d9f4388442c43a5dad74c65683c1", null ],
+    [ "collapseEdges", "mesh__2d_8cpp.html#a5346b33e6fcd562cc51628fe26d6d390", null ],
     [ "computeAgglomerationIndicator", "mesh__2d_8cpp.html#a6104dd2d2559ad9d9765e9b1221cbd8e", null ],
     [ "createNewCell", "mesh__2d_8cpp.html#a38e0fea5d8e053e433b16a8a7106c9c8", null ],
     [ "extractInternalVtxsAndCells", "mesh__2d_8cpp.html#a80cc7cda07e97196cc5138bfadc05e84", null ],

@@ -226,9 +226,9 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a36e9bdd9c3e41d6a63fedd33db788ffe" id="r_a36e9bdd9c3e41d6a63fedd33db788ffe"><td class="memItemLeft" align="right" valign="top">std::vector&lt;::idx_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a36e9bdd9c3e41d6a63fedd33db788ffe">partitionWithParmetis</a> ()</td></tr>
-<tr class="memdesc:a36e9bdd9c3e41d6a63fedd33db788ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partitions the mesh's dual graph using ParMETIS.  <br /></td></tr>
-<tr class="separator:a36e9bdd9c3e41d6a63fedd33db788ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e54c44074e79dd23ff85a1ea4529f9" id="r_a99e54c44074e79dd23ff85a1ea4529f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SCOTCH_Num &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a99e54c44074e79dd23ff85a1ea4529f9">partitionWithParmetis</a> ()</td></tr>
+<tr class="memdesc:a99e54c44074e79dd23ff85a1ea4529f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partitions the mesh's dual graph using ParMETIS.  <br /></td></tr>
+<tr class="separator:a99e54c44074e79dd23ff85a1ea4529f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77bea22dda44cb0fbce5108dbb5013d0" id="r_a77bea22dda44cb0fbce5108dbb5013d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a77bea22dda44cb0fbce5108dbb5013d0">buildGhostCells</a> (std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt; &amp;part)</td></tr>
 <tr class="memdesc:a77bea22dda44cb0fbce5108dbb5013d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the ghost cells for the mesh.  <br /></td></tr>
 <tr class="separator:a77bea22dda44cb0fbce5108dbb5013d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,9 +286,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a500ece37bb7fca6c484ed4918ff0c6ff" id="r_a500ece37bb7fca6c484ed4918ff0c6ff"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a>, Mesh::self_dim+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a500ece37bb7fca6c484ed4918ff0c6ff">m_ghost_enty_size</a> = {0}</td></tr>
 <tr class="memdesc:a500ece37bb7fca6c484ed4918ff0c6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of ghost [vtxs, edge, facet, cell] owned by this process, they are the last ones in the local numbering  <br /></td></tr>
 <tr class="separator:a500ece37bb7fca6c484ed4918ff0c6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f0cc622776afa80140be02f92da9ae" id="r_a03f0cc622776afa80140be02f92da9ae"><td class="memItemLeft" align="right" valign="top">::idx_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a03f0cc622776afa80140be02f92da9ae">m_edgecut</a> = -1</td></tr>
-<tr class="memdesc:a03f0cc622776afa80140be02f92da9ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of edge cuts ParMetis makes  <br /></td></tr>
-<tr class="separator:a03f0cc622776afa80140be02f92da9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8bfa9183f36171fedaecf5ad3ed674" id="r_a7d8bfa9183f36171fedaecf5ad3ed674"><td class="memItemLeft" align="right" valign="top">SCOTCH_Num&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a7d8bfa9183f36171fedaecf5ad3ed674">m_edgecut</a> = -1</td></tr>
+<tr class="memdesc:a7d8bfa9183f36171fedaecf5ad3ed674"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of edge cuts ParMetis makes  <br /></td></tr>
+<tr class="separator:a7d8bfa9183f36171fedaecf5ad3ed674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a01ebcefc3d5f3507c02c1eec25f7e7" id="r_a5a01ebcefc3d5f3507c02c1eec25f7e7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a5a01ebcefc3d5f3507c02c1eec25f7e7">m_all_own_and_ghost_cell_id</a></td></tr>
 <tr class="memdesc:a5a01ebcefc3d5f3507c02c1eec25f7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">global mesh patitioning, only rank 0 knows it  <br /></td></tr>
 <tr class="separator:a5a01ebcefc3d5f3507c02c1eec25f7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1313,8 +1313,8 @@ template&lt;typename Mesh &gt; </div>
 
 </div>
 </div>
-<a id="a36e9bdd9c3e41d6a63fedd33db788ffe" name="a36e9bdd9c3e41d6a63fedd33db788ffe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36e9bdd9c3e41d6a63fedd33db788ffe">&#9670;&#160;</a></span>partitionWithParmetis()</h2>
+<a id="a99e54c44074e79dd23ff85a1ea4529f9" name="a99e54c44074e79dd23ff85a1ea4529f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e54c44074e79dd23ff85a1ea4529f9">&#9670;&#160;</a></span>partitionWithParmetis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1325,7 +1325,7 @@ template&lt;typename Mesh &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;::idx_t &gt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::partitionWithParmetis </td>
+          <td class="memname">std::vector&lt; SCOTCH_Num &gt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::partitionWithParmetis </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1340,7 +1340,7 @@ template&lt;typename Mesh &gt; </div>
 
 <p>Partitions the mesh's dual graph using ParMETIS. </p>
 <p>This method uses the <b>ParMETIS</b> library to partition the <b>dual graph</b> of the mesh, where each node represents a cell. It distributes the dual graph data to all processes and calls <code>ParMETIS_V3_PartKway</code> to perform the partitioning. Each process receives its portion of the partitioning result, which indicates which cells it should own.</p>
-<dl class="section return"><dt>Returns</dt><dd>A vector of <code>idx_t</code> (ParMETIS's index type) containing the partition assignments for the local cells. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of <code>SCOTCH_Num</code> (ParMETIS's index type) containing the partition assignments for the local cells. </dd></dl>
 
 </div>
 </div>
@@ -1739,8 +1739,8 @@ template&lt;typename Mesh &gt; </div>
 
 </div>
 </div>
-<a id="a03f0cc622776afa80140be02f92da9ae" name="a03f0cc622776afa80140be02f92da9ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03f0cc622776afa80140be02f92da9ae">&#9670;&#160;</a></span>m_edgecut</h2>
+<a id="a7d8bfa9183f36171fedaecf5ad3ed674" name="a7d8bfa9183f36171fedaecf5ad3ed674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d8bfa9183f36171fedaecf5ad3ed674">&#9670;&#160;</a></span>m_edgecut</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1751,7 +1751,7 @@ template&lt;typename Mesh &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">::idx_t <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_edgecut = -1</td>
+          <td class="memname">SCOTCH_Num <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::m_edgecut = -1</td>
         </tr>
       </table>
   </td>
@@ -2058,7 +2058,7 @@ template&lt;typename Mesh &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a></li>
-    <li class="footer">Generated on Fri Sep 26 2025 10:03:50 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 1 2025 15:48:35 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

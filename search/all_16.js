@@ -134,7 +134,7 @@ var searchData=
   ['structure_131',['File structure',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md41',1,'']]],
   ['structures_132',['Control structures',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md63',1,'']]],
   ['style_20guide_133',['C++ Style Guide',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html',1,'']]],
-  ['submesh_134',['subMesh',['../classvulpes_1_1geometry_1_1Mesh2D.html#aa1d726eeb3ac0074d9aeef84893a3e06',1,'vulpes::geometry::Mesh2D']]],
+  ['submesh_134',['subMesh',['../classvulpes_1_1geometry_1_1Mesh2D.html#a92cc5ad0b3e85726782037438b65a742',1,'vulpes::geometry::Mesh2D']]],
   ['subsimplexestype_135',['subsimplexestype',['../classvulpes_1_1geometry_1_1Triangulation.html#ac6896c65615129560a9edae804903da3',1,'vulpes::geometry::Triangulation::SubsimplexesType'],['../classvulpes_1_1geometry_1_1Tetrahedralization.html#a8405bf699891668e3c9584ebda2efe33',1,'vulpes::geometry::Tetrahedralization::SubsimplexesType']]],
   ['subsimplexesviewtype_136',['subsimplexesviewtype',['../classvulpes_1_1geometry_1_1Triangulation.html#a6bafa8c603d911e440337d83a165b241',1,'vulpes::geometry::Triangulation::SubsimplexesViewType'],['../classvulpes_1_1geometry_1_1Tetrahedralization.html#a4a609a1bd90454e076725257b34c9897',1,'vulpes::geometry::Tetrahedralization::SubsimplexesViewType']]],
   ['substitute_137',['substitute',['../classvulpes_1_1polynomial_1_1Polynomial.html#a58aa2d2b38b9563299e04bfdff1e7b7d',1,'vulpes::polynomial::Polynomial']]],

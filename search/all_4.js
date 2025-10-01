@@ -18,7 +18,7 @@ var searchData=
   ['addgeneric_15',['addGeneric',['../classvulpes_1_1la_1_1Vector.html#a9711575493fef6746b0264e89fa22b39',1,'vulpes::la::Vector']]],
   ['additional_20recommendations_16',['Additional Recommendations',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md8',1,'']]],
   ['additive_5frecurrence_2ehpp_17',['additive_recurrence.hpp',['../additive__recurrence_8hpp.html',1,'']]],
-  ['additiverecurrence_18',['additiverecurrence',['../namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750faddce14bb30c5b66a7d44ba653428b466',1,'vulpes::geometry::polymesher::AdditiveRecurrence'],['../namespacevulpes_1_1random.html#abc9e3fe9f35e3d27c5a741281e31a848',1,'vulpes::random::additiveRecurrence()']]],
+  ['additiverecurrence_18',['additiverecurrence',['../namespacevulpes_1_1random.html#abc9e3fe9f35e3d27c5a741281e31a848',1,'vulpes::random::additiveRecurrence()'],['../namespacevulpes_1_1geometry_1_1polymesher.html#a02bbd2267895cd6ab3663f084b28750faddce14bb30c5b66a7d44ba653428b466',1,'vulpes::geometry::polymesher::AdditiveRecurrence']]],
   ['addscaled_19',['addScaled',['../classvulpes_1_1la_1_1Vector.html#af6ead2d6a6ebde449e657c9030902bbf',1,'vulpes::la::Vector']]],
   ['addscaledmatrix_20',['addScaledMatrix',['../classvulpes_1_1la_1_1SparseMatrix.html#a7a7ad1d7bc0162d4e11d64f6f9481bff',1,'vulpes::la::SparseMatrix']]],
   ['addtriplet_21',['addTriplet',['../classvulpes_1_1la_1_1Vector.html#a05ae8d1cb4604026326571da11f71878',1,'vulpes::la::Vector']]],

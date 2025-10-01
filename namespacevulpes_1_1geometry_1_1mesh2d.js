@@ -26,6 +26,8 @@ var namespacevulpes_1_1geometry_1_1mesh2d =
       [ "readpts", "namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html#a496d54cca068edb8ffdadd74f33d4e75", null ],
       [ "splitFacetsIntoSequencesOfVtxs", "namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html#a74ac5b3750f6dc2d3549f846216846c4", null ]
     ] ],
+    [ "collapseEdges", "namespacevulpes_1_1geometry_1_1mesh2d.html#a1b97d9f4388442c43a5dad74c65683c1", null ],
+    [ "collapseEdges", "namespacevulpes_1_1geometry_1_1mesh2d.html#a5346b33e6fcd562cc51628fe26d6d390", null ],
     [ "intersectCartesianGrid", "namespacevulpes_1_1geometry_1_1mesh2d.html#a2706b03734b5f2a701283a2efd0841b2", null ],
     [ "intersectCartesianGrid", "namespacevulpes_1_1geometry_1_1mesh2d.html#a9ea12c49777fe75b640fd32dce456f3c", null ],
     [ "intersectCartesianGrid< double, int32_t >", "namespacevulpes_1_1geometry_1_1mesh2d.html#a5c22f3df559861a517b9ec67f380225d", null ],

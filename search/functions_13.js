@@ -60,7 +60,7 @@ var searchData=
   ['step_57',['step',['../classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#adf403c0805af851e6d5c5be516ac72d0',1,'vulpes::timeintegration::TimeIntegratorDIRKIMEX::step()'],['../classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a90f5dc83b63e9c71d7ad3f58f232b6a7',1,'vulpes::timeintegration::CrankNicolsonSolver::step()']]],
   ['stop_58',['stop',['../classProfiler.html#a4a4e5bc7fe0a0d6423bf476ed42b9c17',1,'Profiler']]],
   ['stopinterval_59',['stopInterval',['../classProfiler.html#a6b7c77d30e2a9b41001b3fee135b9b2c',1,'Profiler']]],
-  ['submesh_60',['subMesh',['../classvulpes_1_1geometry_1_1Mesh2D.html#aa1d726eeb3ac0074d9aeef84893a3e06',1,'vulpes::geometry::Mesh2D']]],
+  ['submesh_60',['subMesh',['../classvulpes_1_1geometry_1_1Mesh2D.html#a92cc5ad0b3e85726782037438b65a742',1,'vulpes::geometry::Mesh2D']]],
   ['substitute_61',['substitute',['../classvulpes_1_1polynomial_1_1Polynomial.html#a58aa2d2b38b9563299e04bfdff1e7b7d',1,'vulpes::polynomial::Polynomial']]],
   ['sum_62',['sum',['../classvulpes_1_1la_1_1Vector.html#a79006f02c00750882ed06548a0087e74',1,'vulpes::la::Vector']]],
   ['symgrad_63',['symgrad',['../namespacevulpes_1_1fe.html#a28fb99ecd0e1e09dabb1e2f9406bb190',1,'vulpes::fe']]],

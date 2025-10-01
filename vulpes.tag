@@ -13889,8 +13889,8 @@
       <type>Mesh2D</type>
       <name>subMesh</name>
       <anchorfile>classvulpes_1_1geometry_1_1Mesh2D.html</anchorfile>
-      <anchor>aa1d726eeb3ac0074d9aeef84893a3e06</anchor>
-      <arglist>(const std::vector&lt; IndexType &gt; &amp;cell_ids)</arglist>
+      <anchor>a92cc5ad0b3e85726782037438b65a742</anchor>
+      <arglist>(const std::vector&lt; IndexType &gt; &amp;cell_ids) const</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; SelfPoint &gt; &amp;</type>
@@ -16131,10 +16131,10 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>std::vector&lt;::idx_t &gt;</type>
+      <type>std::vector&lt; SCOTCH_Num &gt;</type>
       <name>partitionWithParmetis</name>
       <anchorfile>classvulpes_1_1geometry_1_1ParallelMesh.html</anchorfile>
-      <anchor>a36e9bdd9c3e41d6a63fedd33db788ffe</anchor>
+      <anchor>a99e54c44074e79dd23ff85a1ea4529f9</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -16264,10 +16264,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>::idx_t</type>
+      <type>SCOTCH_Num</type>
       <name>m_edgecut</name>
       <anchorfile>classvulpes_1_1geometry_1_1ParallelMesh.html</anchorfile>
-      <anchor>a03f0cc622776afa80140be02f92da9ae</anchor>
+      <anchor>a7d8bfa9183f36171fedaecf5ad3ed674</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -24917,6 +24917,13 @@
       <arglist>(const Point&lt; FloatType, 2 &gt; &amp;corner_a, const Point&lt; FloatType, 2 &gt; &amp;corner_b, const Point&lt; IndexType, 2 &gt; &amp;n_divisions, bool tria_elements=false)</arglist>
     </member>
     <member kind="function">
+      <type>Mesh2D&lt; FloatType, IndexType &gt;</type>
+      <name>collapseEdges</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a5346b33e6fcd562cc51628fe26d6d390</anchor>
+      <arglist>(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh, FloatType edge_collapse_tol)</arglist>
+    </member>
+    <member kind="function">
       <type>template Mesh2D&lt; double, int32_t &gt;</type>
       <name>intersectCartesianGrid&lt; double, int32_t &gt;</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
@@ -24929,6 +24936,13 @@
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
       <anchor>ae72d69c91f7ff756878aa1a18c6a1bc3</anchor>
       <arglist>(const Mesh2D&lt; double, int32_t &gt; &amp;, const Mesh2D&lt; double, int32_t &gt; &amp;, double, double)</arglist>
+    </member>
+    <member kind="function">
+      <type>template Mesh2D&lt; double, int32_t &gt;</type>
+      <name>collapseEdges</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a1b97d9f4388442c43a5dad74c65683c1</anchor>
+      <arglist>(const Mesh2D&lt; double, int32_t &gt; &amp;, double)</arglist>
     </member>
     <member kind="function">
       <type>template Mesh2D&lt; double, int32_t &gt;</type>

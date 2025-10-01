@@ -175,15 +175,15 @@ var NAVTREEINDEX =
 "classvulpes_1_1polynomial_1_1PolynomialBase.html",
 "classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#ad736d48aa1bf9ad9b28018ddd9588007",
 "functions_p.html",
-"mesh__2d_8hpp.html#a10dd2d78db3cb9a682b81efa95de231b",
-"namespacevulpes_1_1fe.html#a4f45bdccfe2a399019887657e481717d",
-"namespacevulpes_1_1mpi.html#ae392da87c62647799e306debadc288d1",
-"structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html#aa55d12b42ae86c006ad489f653da7d93",
-"structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html",
-"structvulpes_1_1scipy_1_1ckdtree.html#a77a3172ea6d33517c8be3017197a69d3",
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html",
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#ad30c039fbcef91414c1eb0742941570f",
-"traits_8hpp.html"
+"mesh__2d_8hpp.html",
+"namespacevulpes_1_1fe.html#a429f4aa2574b71d9b43b664c9e86430e",
+"namespacevulpes_1_1mpi.html#aad85d1b3e07fcdd9551a759bd110546d",
+"structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html#a375b9188d0b85396d692d865232279fd",
+"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html#a86c46a3aafc93edb289d9aae9568b4b2",
+"structvulpes_1_1scipy_1_1ckdtree.html",
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#aca54b32ea2a1d3a08297062c2b82a2b5",
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#aabea129fcb572e111d6c9799f96908da",
+"structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

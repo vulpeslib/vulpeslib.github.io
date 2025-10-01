@@ -7,7 +7,7 @@ var searchData=
   ['parallel_4',['parallel',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a917ad105c183761f9d32278266b72cec',1,'vulpes::geometry::ParallelMesh::parallel()'],['../classvulpes_1_1geometry_1_1MeshBase.html#af6b3f4808fdfb8f190fcaf145e44cd71',1,'vulpes::geometry::MeshBase::parallel()']]],
   ['parallelmesh_5',['parallelmesh',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a90c312d632f5285f8f073f10e418862b',1,'vulpes::geometry::ParallelMesh::ParallelMesh()=default'],['../classvulpes_1_1geometry_1_1ParallelMesh.html#ac25afa5c720d03be8eb9bdac565b075a',1,'vulpes::geometry::ParallelMesh::ParallelMesh(const MeshGenerator &amp;generator)']]],
   ['parmetisagglomeration_6',['ParmetisAgglomeration',['../classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#a7be84ac9e7cf0494f6a7e35d51d55f1e',1,'vulpes::geometry::ParmetisAgglomeration']]],
-  ['partitionwithparmetis_7',['partitionWithParmetis',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a36e9bdd9c3e41d6a63fedd33db788ffe',1,'vulpes::geometry::ParallelMesh']]],
+  ['partitionwithparmetis_7',['partitionWithParmetis',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a99e54c44074e79dd23ff85a1ea4529f9',1,'vulpes::geometry::ParallelMesh']]],
   ['peek_8',['peek',['../structvulpes_1_1scipy_1_1heap.html#ae3045b660c545a264b1321893d2958fd',1,'vulpes::scipy::heap']]],
   ['permute_9',['permute',['../classvulpes_1_1datastructure_1_1CrsMap.html#ac6ad9cf369b00111525ebeaa9b72809d',1,'vulpes::datastructure::CrsMap']]],
   ['permutevariables_10',['permuteVariables',['../classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6572739f0aa5daf946eaab6813dde08e',1,'vulpes::polynomial::SparsePolynomial']]],

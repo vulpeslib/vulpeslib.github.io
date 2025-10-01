@@ -67,7 +67,7 @@ var classvulpes_1_1geometry_1_1Mesh2D =
     [ "self", "classvulpes_1_1geometry_1_1Mesh2D.html#a5f2d8332b31b2cb52ad8a5bf5fa0bea1", null ],
     [ "self", "classvulpes_1_1geometry_1_1Mesh2D.html#a46583d503a5c16d51eb3e1a2ff158d1b", null ],
     [ "serialize", "classvulpes_1_1geometry_1_1Mesh2D.html#a915648dde2c65edb229350379a07d4fa", null ],
-    [ "subMesh", "classvulpes_1_1geometry_1_1Mesh2D.html#aa1d726eeb3ac0074d9aeef84893a3e06", null ],
+    [ "subMesh", "classvulpes_1_1geometry_1_1Mesh2D.html#a92cc5ad0b3e85726782037438b65a742", null ],
     [ "operator==", "classvulpes_1_1geometry_1_1Mesh2D.html#aafea00405db11ef77b4c0c01f6289473", null ],
     [ "is_manifold", "classvulpes_1_1geometry_1_1Mesh2D.html#a484db3e30ca54e3565f07bef6f118058", null ],
     [ "m_cell_to_facet", "classvulpes_1_1geometry_1_1Mesh2D.html#a143840d5662def82078eb7aa3065eec3", null ],

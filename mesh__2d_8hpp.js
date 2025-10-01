@@ -2,6 +2,8 @@ var mesh__2d_8hpp =
 [
     [ "vulpes::geometry::Mesh2D< FloatType, IndexType >", "classvulpes_1_1geometry_1_1Mesh2D.html", "classvulpes_1_1geometry_1_1Mesh2D" ],
     [ "buildCartesianBbox", "mesh__2d_8hpp.html#a2715749fc35a2323e2a7c6ccee5cd9cc", null ],
+    [ "collapseEdges", "mesh__2d_8hpp.html#a1b97d9f4388442c43a5dad74c65683c1", null ],
+    [ "collapseEdges", "mesh__2d_8hpp.html#a5346b33e6fcd562cc51628fe26d6d390", null ],
     [ "intersectCartesianGrid", "mesh__2d_8hpp.html#a2706b03734b5f2a701283a2efd0841b2", null ],
     [ "intersectCartesianGrid", "mesh__2d_8hpp.html#a9ea12c49777fe75b640fd32dce456f3c", null ],
     [ "intersectCartesianGrid< double, int32_t >", "mesh__2d_8hpp.html#a5c22f3df559861a517b9ec67f380225d", null ],

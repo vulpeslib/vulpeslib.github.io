@@ -57,7 +57,7 @@ var searchData=
   ['m_5fedge_5fto_5fcell_5fglob_54',['m_edge_to_cell_glob',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a0cd190545ad17d53cea8fc4cfbd45da8',1,'vulpes::geometry::ParallelMesh']]],
   ['m_5fedge_5fto_5fvtx_55',['m_edge_to_vtx',['../classvulpes_1_1geometry_1_1Mesh3D.html#afa6d4ffd1d06283c646bce33e20fce9d',1,'vulpes::geometry::Mesh3D']]],
   ['m_5fedge_5fto_5fvtx_5fglob_56',['m_edge_to_vtx_glob',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a252fb01d5128f74f33e2e7c091498375',1,'vulpes::geometry::ParallelMesh']]],
-  ['m_5fedgecut_57',['m_edgecut',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a03f0cc622776afa80140be02f92da9ae',1,'vulpes::geometry::ParallelMesh']]],
+  ['m_5fedgecut_57',['m_edgecut',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a7d8bfa9183f36171fedaecf5ad3ed674',1,'vulpes::geometry::ParallelMesh']]],
   ['m_5fedges_58',['m_edges',['../classvulpes_1_1geometry_1_1Cell3D.html#a7f52eb06c0d60cbbe414f4c799b7765f',1,'vulpes::geometry::Cell3D']]],
   ['m_5fedges_5fto_5fcompute_59',['m_edges_to_compute',['../classvulpes_1_1geometry_1_1Cell3D.html#a9d49673734479e09ecc3a8e3ba3a5800',1,'vulpes::geometry::Cell3D']]],
   ['m_5fedges_5fto_5fcompute_5fbuilt_60',['m_edges_to_compute_built',['../classvulpes_1_1geometry_1_1Cell3D.html#a8bc883467d0a9a3af399e7fbe198fe29',1,'vulpes::geometry::Cell3D']]],
