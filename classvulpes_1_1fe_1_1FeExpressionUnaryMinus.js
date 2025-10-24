@@ -8,7 +8,7 @@ var classvulpes_1_1fe_1_1FeExpressionUnaryMinus =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#a888c2cbbe396d1e0f5be2a5a83b20d84", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#af1ab192a93ae86411db885841cc99899", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#af0333705ad7416bd31da37eb47dd3491", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#aa194506aca4e759376e053023687b62b", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#a9dcf793216488aab4cd6c0f1b9d1cd3c", null ],
     [ "self", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
     [ "is_bilinear", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#ab9eb02262a18e0ea4bcf3ccd703da751", null ],

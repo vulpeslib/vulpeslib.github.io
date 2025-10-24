@@ -127,13 +127,6 @@
     <namespace>vulpes::assemble</namespace>
   </compound>
   <compound kind="file">
-    <name>integrator_sukumar.hpp</name>
-    <path>/__w/vulpes/vulpes/vulpes/assemble/</path>
-    <filename>integrator__sukumar_8hpp.html</filename>
-    <namespace>vulpes</namespace>
-    <namespace>vulpes::assemble</namespace>
-  </compound>
-  <compound kind="file">
     <name>integrator_traits.hpp</name>
     <path>/__w/vulpes/vulpes/vulpes/assemble/</path>
     <filename>integrator__traits_8hpp.html</filename>
@@ -3553,88 +3546,11 @@
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>FlatPolyType</type>
-      <name>compress</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>ace0aacbad87cf69a1e2a0620536e52a6</anchor>
-      <arglist>(const auto &amp;uncompressed_table)</arglist>
-    </member>
-    <member kind="function">
       <type></type>
       <name>WeakFormIntegratorQFree</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
       <anchor>af0d21c968f6949c4cefa7a711b1c4309</anchor>
       <arglist>(const MeshType &amp;mesh, CellManager&lt; MeshType, FeType &gt; &amp;cell_manager, const FeExpressionTuple &amp;fe_expression, const FeExpressionFaceTuple &amp;fe_expression_face=FeExpressionFaceTuple{})</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>buildLookupTables</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>ab4d81f0d2700fa560d05acdb2c2cc282</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>std::array&lt; std::vector&lt; GatheredPolynomial &gt;, s_n_face_expr &gt;</type>
-      <name>gatherUpcompressedMonomials</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>aca82a0931a0860515fc0f7e28dfb1444</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; std::array&lt; uint8_t, dim *2 &gt; &gt;</type>
-      <name>buildUniqueEvaTable</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>ada14157078d24c0513d06d4298b414fb</anchor>
-      <arglist>(const std::array&lt; std::vector&lt; GatheredPolynomial &gt;, s_n_face_expr &gt; &amp;gathered_monos_table)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>compressGatheredPolynomials</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>a8d7a2f93461b0d23ff3e475735d2d93f</anchor>
-      <arglist>(const std::array&lt; std::vector&lt; GatheredPolynomial &gt;, s_n_face_expr &gt; &amp;gathered_monos_table)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>gatherMonomials</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>a47d9d8f6553be92b9ddab5d46c106633</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>auto</type>
-      <name>computeRefToNeighRefMap</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>a151baf55ac901980c6959394cffb9b53</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>integrateVolumeCell</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>a2bffd2076b485d9826c848777a57e782</anchor>
-      <arglist>(const double *aints_data)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>updateFaceNormalAndGetNanson</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>adc74124859d8b3c1af21071f4e0966f3</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>precomputeMonomialCoefsForFace</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>a0c67777993d66693cba12e13696068d8</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>integrateFaceCell</name>
-      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>ad6740bffb0e4ec5ce55af391b304190d</anchor>
-      <arglist>(const double *eints_data, double nanson)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3824,6 +3740,83 @@
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
       <anchor>a95869de30e73d6da82e27fd016092055</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>FlatPolyType</type>
+      <name>compress</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>a93dd221f3d0ac710937a31454cdc527e</anchor>
+      <arglist>(const datastructure::CrsMapUncompressed&lt; MonoType &gt; &amp;uncompressed_table)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>buildLookupTables</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>ab4d81f0d2700fa560d05acdb2c2cc282</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>std::array&lt; std::vector&lt; GatheredPolynomial &gt;, s_n_face_expr &gt;</type>
+      <name>gatherUncompressedLiftedMonomials</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>a5d85998975e486e0a614a08b45fb0673</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>std::vector&lt; std::array&lt; uint8_t, dim *2 &gt; &gt;</type>
+      <name>buildUniqueEvaTableLiftedMonomials</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>a300383064ae3868e732a67c652c0531d</anchor>
+      <arglist>(const std::array&lt; std::vector&lt; GatheredPolynomial &gt;, s_n_face_expr &gt; &amp;gathered_monos_table)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>compressGatheredLiftedPolynomials</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>aff6021ffbb2d5515841343fdc2a7f4e9</anchor>
+      <arglist>(const std::array&lt; std::vector&lt; GatheredPolynomial &gt;, s_n_face_expr &gt; &amp;gathered_monos_table)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>gatherLiftedMonomials</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>a068202b27e8e2454becf4cd6011e1daf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>Eigen::Matrix&lt; double, dim, 2 &gt;</type>
+      <name>computeRefToNeighRefMap</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>a437ba39b3cab9345271611bb8ddf832d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>integrateVolumeCell</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>a2bffd2076b485d9826c848777a57e782</anchor>
+      <arglist>(const double *aints_data)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>double</type>
+      <name>updateFaceNormalAndGetNanson</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>adc74124859d8b3c1af21071f4e0966f3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>precomputeMonomialCoefsForFace</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>a0c67777993d66693cba12e13696068d8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>integrateFaceCell</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
+      <anchor>ad6740bffb0e4ec5ce55af391b304190d</anchor>
+      <arglist>(const double *eints_data, double nanson)</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>std::array&lt; FlatPolyType, s_n_expr &gt;</type>
@@ -4091,6 +4084,8 @@
       <anchor>ae8c5734cd99baf571bbac483205c3f50</anchor>
       <arglist></arglist>
     </member>
+    <docanchor file="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html" title="Overview">overview_sec</docanchor>
+    <docanchor file="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html" title="The Integration Process">process_sec</docanchor>
   </compound>
   <compound kind="class">
     <name>vulpes::assemble::WeakFormIntegratorSimplexify</name>
@@ -4348,8 +4343,8 @@
       <type>void</type>
       <name>mapQuadraturePointsToSimplex</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
-      <anchor>a6e425e649efb5775372c0c3ec852a7a4</anchor>
-      <arglist>(const auto &amp;simplexes, const auto &amp;vertexes, int32_t k)</arglist>
+      <anchor>a959be81d802dcfee02c152e67324bf10</anchor>
+      <arglist>(const SimplexMatrixType &amp;simplexes, const VertexMatrixType &amp;vertexes, int32_t k)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -4362,8 +4357,8 @@
       <type>void</type>
       <name>updateQptsAndMappingForThisAndNeigh</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
-      <anchor>aa83ec166222c2d9b65130815add612dd</anchor>
-      <arglist>(const auto &amp;face_subsimplexes, const auto &amp;simplexification_pts, index_t k)</arglist>
+      <anchor>aca8beb52478060f33318363ae025c241</anchor>
+      <arglist>(const FaceSubsimplexMatrix &amp;face_subsimplexes, const SimplexPtsMatrix &amp;simplexification_pts, index_t k)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -5127,13 +5122,6 @@
       <anchorfile>classvulpes_1_1datastructure_1_1IndexTracker.html</anchorfile>
       <anchor>af1cfd1c8d0e8cc2179bc1bde41aeb14b</anchor>
       <arglist>(const std::vector&lt; U &gt; &amp;vec)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~IndexTracker</name>
-      <anchorfile>classvulpes_1_1datastructure_1_1IndexTracker.html</anchorfile>
-      <anchor>a552e42b38d172204db3f2bb647bc7b43</anchor>
-      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type>Reference</type>
@@ -6528,11 +6516,11 @@
       <arglist>(std::size_t order)</arglist>
     </member>
     <member kind="function">
-      <type>auto</type>
+      <type>size_t</type>
       <name>getLocalDof</name>
       <anchorfile>structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html</anchorfile>
-      <anchor>a4b146c111a1110c9378af6f28a0243e5</anchor>
-      <arglist>(const auto &amp;convex_id) const</arglist>
+      <anchor>a7a616a76def9a9203869f634047f9756</anchor>
+      <arglist>(const ConvexCartIndex &amp;convex_id) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr MeshType::index_t</type>
@@ -6814,7 +6802,7 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a96c2216f8cced7805760bcb1a721cf21</anchor>
+      <anchor>ad16fde0ef1875c3fae13cab028202453</anchor>
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
     </member>
     <member kind="function">
@@ -6853,10 +6841,10 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -6999,10 +6987,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionCellConstant&lt; Dim &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionCellConstant&lt; Dim &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -7159,10 +7147,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionCellConstantNeedNeigh&lt; Dim &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionCellConstantNeedNeigh&lt; Dim &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -7326,10 +7314,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionCellConstantTensor&lt; Dim &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionCellConstantTensor&lt; Dim &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -7452,10 +7440,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionComponentDth&lt; Dim, E &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionComponentDth&lt; Dim, E &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -7598,10 +7586,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionConstant&lt; Dim &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionConstant&lt; Dim &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -7724,10 +7712,10 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionDiagOnly&lt; Dim, E &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionDiagOnly&lt; Dim, E &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -7851,10 +7839,10 @@
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionDifference&lt; Dim, E1, E2 &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionDifference&lt; Dim, E1, E2 &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -8004,10 +7992,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionFaceNormal&lt; Dim &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionFaceNormal&lt; Dim &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -8160,10 +8148,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -8338,10 +8326,10 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -8499,10 +8487,10 @@
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -8642,10 +8630,10 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -8769,10 +8757,10 @@
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionInner&lt; Dim, E1, E2 &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionInner&lt; Dim, E1, E2 &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -8898,10 +8886,10 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -9025,10 +9013,10 @@
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionOuter&lt; Dim, E1, E2 &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionOuter&lt; Dim, E1, E2 &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -9159,10 +9147,10 @@
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionProduct&lt; Dim, E1, E2 &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionProduct&lt; Dim, E1, E2 &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -9320,10 +9308,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionSkipper&lt; Dim, E &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionSkipper&lt; Dim, E &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -9454,10 +9442,10 @@
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionSum&lt; Dim, E1, E2 &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionSum&lt; Dim, E1, E2 &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -9590,10 +9578,10 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -9719,10 +9707,10 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -9838,10 +9826,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>FeExpressionUnaryMinus&lt; Dim, FeExpressionUnaryMinus&lt; Dim, E &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionUnaryMinus&lt; Dim, E &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a242455c6754f4eaa5c15e6c1c39db4a2</anchor>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -9962,13 +9950,6 @@
       <name>elemType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>a24160d9d0e8612b97faaa97a8478b7d9</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static constexpr bool</type>
-      <name>needTrasformation</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>a840f6466f07b7f3e5b06c2dbf1c442c3</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
@@ -10141,13 +10122,6 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static constexpr bool</type>
-      <name>needTrasformation</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>a840f6466f07b7f3e5b06c2dbf1c442c3</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
       <type>static constexpr geometry::CellInitOptionsType</type>
       <name>cellInitOptions</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
@@ -10314,13 +10288,6 @@
       <name>needBasisScaling</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>a60c34c5f700be623951082d841403778</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static constexpr bool</type>
-      <name>needTrasformation</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>a840f6466f07b7f3e5b06c2dbf1c442c3</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
@@ -10499,13 +10466,6 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static constexpr bool</type>
-      <name>needTrasformation</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>a840f6466f07b7f3e5b06c2dbf1c442c3</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
       <type>static constexpr geometry::CellInitOptionsType</type>
       <name>cellInitOptions</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
@@ -10678,13 +10638,6 @@
       <name>cellInitOptions</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
       <anchor>ae32e0aa746183d6358b1062e8cc2365b</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static constexpr bool</type>
-      <name>needTrasformation</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>a840f6466f07b7f3e5b06c2dbf1c442c3</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
@@ -10986,13 +10939,6 @@
       <name>needBasisScaling</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>a60c34c5f700be623951082d841403778</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static constexpr bool</type>
-      <name>needTrasformation</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>a840f6466f07b7f3e5b06c2dbf1c442c3</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
@@ -18085,45 +18031,24 @@
       <arglist>(const Vector &amp;in_mult, const Vector &amp;in_add, Vector &amp;out) const</arglist>
     </member>
     <member kind="function">
-      <type>SparseMatrix</type>
+      <type>void</type>
       <name>matMult</name>
       <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
-      <anchor>a55914869de5399718b654b3f487dc895</anchor>
-      <arglist>(const SparseMatrix &amp;B, PetscReal fill=PETSC_DETERMINE) const</arglist>
+      <anchor>a7068d79c6709d50c847a59aa808d8401</anchor>
+      <arglist>(const SparseMatrix &amp;B, SparseMatrix &amp;C, PetscReal fill=PETSC_DETERMINE) const</arglist>
     </member>
     <member kind="function">
-      <type>SparseMatrix</type>
+      <type>void</type>
       <name>matMultTranspose</name>
       <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
-      <anchor>af8484c6f6fd67cbd383a7d8862c85f90</anchor>
-      <arglist>(const SparseMatrix &amp;B, PetscReal fill=PETSC_DETERMINE) const</arglist>
+      <anchor>a3a971ca0b34d2c7bda5085e6060cc60a</anchor>
+      <arglist>(const SparseMatrix &amp;B, SparseMatrix &amp;C, PetscReal fill=PETSC_DETERMINE) const</arglist>
     </member>
     <member kind="function">
-      <type>SparseMatrix</type>
+      <type>void</type>
       <name>transposeMatMult</name>
       <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
-      <anchor>a2d1d3304cff1759263726b7671222b74</anchor>
-      <arglist>(const SparseMatrix &amp;B, PetscReal fill=PETSC_DETERMINE) const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>matMult_</name>
-      <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
-      <anchor>a462e9ed6f46877e3945a8d5a1749d45b</anchor>
-      <arglist>(const SparseMatrix &amp;B, SparseMatrix &amp;C, PetscReal fill=PETSC_DETERMINE) const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>matMultTranspose_</name>
-      <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
-      <anchor>a458163d1fbe8e70ddf87990495b011d6</anchor>
-      <arglist>(const SparseMatrix &amp;B, SparseMatrix &amp;C, PetscReal fill=PETSC_DETERMINE) const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>transposeMatMult_</name>
-      <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
-      <anchor>a731e9b7ad4ebf81fb0dcf223b80527cc</anchor>
+      <anchor>af1c99f87f436eb3b562270b84843f2db</anchor>
       <arglist>(const SparseMatrix &amp;B, SparseMatrix &amp;C, PetscReal fill=PETSC_DETERMINE) const</arglist>
     </member>
     <member kind="function">
@@ -18153,13 +18078,6 @@
       <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
       <anchor>a398c85783ac21c115ba01e4f58da56f4</anchor>
       <arglist>(Type type)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>setupParallelSizes</name>
-      <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
-      <anchor>ab767e5406f0b1c389229e82106f6a03c</anchor>
-      <arglist>(const DofHandler &amp;dof_handler, const PetscInt n_glob, PetscInt &amp;dof_begin, PetscInt &amp;dof_end)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -23364,11 +23282,25 @@
       <arglist>(const char *expression, Args &amp;&amp;... args)</arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>ExpressionParser</name>
+      <anchorfile>classvulpes_1_1vutils_1_1ExpressionParser.html</anchorfile>
+      <anchor>a88c6dd2656e095707214afe20f0c4e85</anchor>
+      <arglist>(const std::string &amp;expression, Args &amp;&amp;... args)</arglist>
+    </member>
+    <member kind="function">
       <type>double</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1vutils_1_1ExpressionParser.html</anchorfile>
-      <anchor>ac576956c324ce5a8077564ce3adfdae4</anchor>
-      <arglist>(double *data) const</arglist>
+      <anchor>a134c2e9e2170c8cb38b9e16aeef9cb2a</anchor>
+      <arglist>(const double *data) const</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>init</name>
+      <anchorfile>classvulpes_1_1vutils_1_1ExpressionParser.html</anchorfile>
+      <anchor>a50f88a4facf2f8a9ae6da384796faa75</anchor>
+      <arglist>(const char *expression, Args &amp;&amp;... args)</arglist>
     </member>
     <member kind="variable" protection="private">
       <type>mathpresso::Context</type>

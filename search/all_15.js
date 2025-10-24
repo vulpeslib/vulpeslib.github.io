@@ -59,7 +59,7 @@ var searchData=
   ['requirements_56',['Merge Requirements',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md7',1,'']]],
   ['research_20group_57',['The research group',['../index.html#autotoc_md2',1,'']]],
   ['resize_58',['resize',['../classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a858b641ff02038594a8ad3b423948711',1,'vulpes::datastructure::CrsMapUncompressed']]],
-  ['return_20from_20errors_20immediately_59',['Return from errors immediately',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md66',1,'']]],
+  ['return_20from_20errors_20immediately_59',['Return from errors immediately',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md67',1,'']]],
   ['rk4_60',['RK4',['../structvulpes_1_1timeintegration_1_1RK4.html',1,'vulpes::timeintegration']]],
   ['rk4imex_61',['RK4IMEX',['../structvulpes_1_1timeintegration_1_1RK4IMEX.html',1,'vulpes::timeintegration']]],
   ['root_62',['root',['../namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546',1,'vulpes::mpi']]],
@@ -71,6 +71,6 @@ var searchData=
   ['rr_5fstack_5fitem_68',['RR_stack_item',['../structvulpes_1_1scipy_1_1RR__stack__item.html',1,'vulpes::scipy']]],
   ['rs2ab_69',['rs2ab',['../namespacevulpes_1_1fe_1_1internal.html#a84031c3af794935ac8c25bb21346f1cf',1,'vulpes::fe::internal']]],
   ['rst2abc_70',['rst2abc',['../namespacevulpes_1_1fe_1_1internal.html#ad3aaa939c5bb95941d16f2b78c89b9c4',1,'vulpes::fe::internal']]],
-  ['rules_3a_71',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md73',1,'']]],
-  ['running_20tests_72',['Running tests',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2testing-and-coverage_2index.html#autotoc_md69',1,'']]]
+  ['rules_3a_71',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md74',1,'']]],
+  ['running_20tests_72',['Running tests',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2testing-and-coverage_2index.html#autotoc_md70',1,'']]]
 ];

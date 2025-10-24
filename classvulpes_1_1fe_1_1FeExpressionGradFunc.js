@@ -9,7 +9,7 @@ var classvulpes_1_1fe_1_1FeExpressionGradFunc =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html#a18a0d74f032ec120402305de9ccc0a2e", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html#a190bc14bc31af6c0f6bb84a1ca67a412", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html#a6bbbd8ca037887b508530401307a31c8", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html#aa194506aca4e759376e053023687b62b", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html#a682b25fc0de945d46f209bd79f8d8e6f", null ],
     [ "self", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
     [ "is_bilinear", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html#a8f050ae016333a30d9ce2e4ce05c7968", null ],

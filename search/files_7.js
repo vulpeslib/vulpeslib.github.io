@@ -8,8 +8,7 @@ var searchData=
   ['integrator_5fgauss_2ehpp_5',['integrator_gauss.hpp',['../integrator__gauss_8hpp.html',1,'']]],
   ['integrator_5fqfree_2ehpp_6',['integrator_qfree.hpp',['../integrator__qfree_8hpp.html',1,'']]],
   ['integrator_5fsimplexify_2ehpp_7',['integrator_simplexify.hpp',['../integrator__simplexify_8hpp.html',1,'']]],
-  ['integrator_5fsukumar_2ehpp_8',['integrator_sukumar.hpp',['../integrator__sukumar_8hpp.html',1,'']]],
-  ['integrator_5ftraits_2ehpp_9',['integrator_traits.hpp',['../integrator__traits_8hpp.html',1,'']]],
-  ['integrator_5fvem_2ehpp_10',['integrator_vem.hpp',['../integrator__vem_8hpp.html',1,'']]],
-  ['io_2ehpp_11',['io.hpp',['../io_8hpp.html',1,'']]]
+  ['integrator_5ftraits_2ehpp_8',['integrator_traits.hpp',['../integrator__traits_8hpp.html',1,'']]],
+  ['integrator_5fvem_2ehpp_9',['integrator_vem.hpp',['../integrator__vem_8hpp.html',1,'']]],
+  ['io_2ehpp_10',['io.hpp',['../io_8hpp.html',1,'']]]
 ];

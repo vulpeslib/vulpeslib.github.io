@@ -139,8 +139,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1cfd1c8d0e8cc2179bc1bde41aeb14b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker.html#af1cfd1c8d0e8cc2179bc1bde41aeb14b">IndexTracker</a> (const std::vector&lt; U &gt; &amp;vec)</td></tr>
 <tr class="memdesc:af1cfd1c8d0e8cc2179bc1bde41aeb14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from any integral vector. Values are cast to IndexType.  <br /></td></tr>
 <tr class="separator:af1cfd1c8d0e8cc2179bc1bde41aeb14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552e42b38d172204db3f2bb647bc7b43" id="r_a552e42b38d172204db3f2bb647bc7b43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker.html#a552e42b38d172204db3f2bb647bc7b43">~IndexTracker</a> ()=default</td></tr>
-<tr class="separator:a552e42b38d172204db3f2bb647bc7b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588113c424f5866e4475c51158f557ca" id="r_a588113c424f5866e4475c51158f557ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker_1_1Reference.html">Reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker.html#a588113c424f5866e4475c51158f557ca">operator[]</a> (IndexType i)</td></tr>
 <tr class="memdesc:a588113c424f5866e4475c51158f557ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a proxy reference to an element at index i.  <br /></td></tr>
 <tr class="separator:a588113c424f5866e4475c51158f557ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +156,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3a6f58d875527888af13ed1a6d2b39f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of tracked elements.  <br /></td></tr>
 <tr class="separator:a3a6f58d875527888af13ed1a6d2b39f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa66aaa19a88124f2cebea00f0fbd40" id="r_a7fa66aaa19a88124f2cebea00f0fbd40"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; IndexType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker.html#a7fa66aaa19a88124f2cebea00f0fbd40">getValues</a> () const</td></tr>
+<tr class="memdesc:a7fa66aaa19a88124f2cebea00f0fbd40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the underlying data.  <br /></td></tr>
 <tr class="separator:a7fa66aaa19a88124f2cebea00f0fbd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -236,33 +235,6 @@ template&lt;typename U &gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a552e42b38d172204db3f2bb647bc7b43" name="a552e42b38d172204db3f2bb647bc7b43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a552e42b38d172204db3f2bb647bc7b43">&#9670;&#160;</a></span>~IndexTracker()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndexType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker.html">vulpes::datastructure::IndexTracker</a>&lt; IndexType &gt;::~<a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker.html">IndexTracker</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -346,6 +318,8 @@ template&lt;typename IndexType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns a const reference to the underlying data. </p>
 
 </div>
 </div>
@@ -707,7 +681,7 @@ template&lt;typename IndexType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1datastructure.html">datastructure</a></li><li class="navelem"><a class="el" href="classvulpes_1_1datastructure_1_1IndexTracker.html">IndexTracker</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -12,7 +12,7 @@ var classvulpes_1_1fe_1_1FeExpressionFunctionWrapper =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a7f218549438922fe3086361f5968b884", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#ac35e53267a9736f80c95c4a60c518e58", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#af0333705ad7416bd31da37eb47dd3491", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#aa194506aca4e759376e053023687b62b", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#ab882a578df0f9f672e5b776abdb594b8", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a5a3307239bd8d657aa505266d399e0f6", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a061137f00b0bab4032bae1a75b6cd51f", null ],

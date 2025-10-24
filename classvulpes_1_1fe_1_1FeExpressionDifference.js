@@ -9,7 +9,7 @@ var classvulpes_1_1fe_1_1FeExpressionDifference =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionDifference.html#a1fd050a7ec2218cf46238b206520d70f", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionDifference.html#a9e848d842b428527cb6c0d1134058963", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionDifference.html#a5d215a6526abc0912ec34e94e23245eb", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionDifference.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionDifference.html#aa194506aca4e759376e053023687b62b", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionDifference.html#a21a2a93e6b2cf1cd01e32bbb947b7d43", null ],
     [ "self", "classvulpes_1_1fe_1_1FeExpressionDifference.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
     [ "is_bilinear", "classvulpes_1_1fe_1_1FeExpressionDifference.html#a0162f2240d321143be3dc071c5b7acf8", null ],

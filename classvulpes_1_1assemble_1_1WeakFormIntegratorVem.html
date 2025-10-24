@@ -120,6 +120,9 @@ $(document).ready(function(){initNavTree('classvulpes_1_1assemble_1_1WeakFormInt
 </div><!--header-->
 <div class="contents">
 
+<p>Class to perform numerical integration of weak form integrals for VEM problems.  
+ <a href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="integrator__vem_8hpp_source.html">integrator_vem.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for vulpes::assemble::WeakFormIntegratorVem&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;:</div>
@@ -171,7 +174,16 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a814682389424931be6d0ecac6ed70212" id="r_a814682389424931be6d0ecac6ed70212"><td class="memItemLeft" align="right" valign="top">std::array&lt; Eigen::MatrixXd, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a814682389424931be6d0ecac6ed70212">m_extra_matrices</a></td></tr>
 <tr class="separator:a814682389424931be6d0ecac6ed70212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename MeshType, typename FeExpressionTuple, typename FeExpressionFaceTuple = std::tuple&lt;&gt;&gt;<br />
+class vulpes::assemble::WeakFormIntegratorVem&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</div><p>Class to perform numerical integration of weak form integrals for VEM problems. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This class is just a sketch of how VEM integrators should work. In particular, the main ideas are:<ul>
+<li>The actual integration is done by another integrator (QFree, Simplexify, Gauss, ...)</li>
+<li>The weak forms to integrate are the one passed by the user, plus the one requested by the VEM Finite Element space (e.g. the integrals of each pair of scaled monomials).</li>
+<li>The VEM finite element space is in charge of computing the "extraMatrices" by using the requested extra integrals. For instance, the matrix "D" is computed by the VEM space using the mass matrix </li>
+</ul>
+</dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aff21130ad7c0df6064e8dc53f9c16562" name="aff21130ad7c0df6064e8dc53f9c16562"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff21130ad7c0df6064e8dc53f9c16562">&#9670;&#160;</a></span>ExtraExpressionTupleType</h2>
 
@@ -552,7 +564,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html">WeakFormIntegratorVem</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

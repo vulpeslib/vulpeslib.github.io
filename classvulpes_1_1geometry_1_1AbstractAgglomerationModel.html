@@ -381,7 +381,7 @@ template&lt;typename MeshType &gt; </div>
 </ul>
 </td></tr>
     <tr><td class="paramname">return_hierarchy</td><td>If true, returns all intermediate meshes from recursive strategies. If false, returns only the final agglomerated mesh. </td></tr>
-    <tr><td class="paramname">segregated_tag</td><td>If non-empty, specifies the mesh tag for segregated agglomeration, where each tagged region is processed independently. </td></tr>
+    <tr><td class="paramname">segregated_tag</td><td>If non-empty, specifies the mesh tag for segregated agglomeration, where each tagged region is processed independently. If the tags indicates parts of the domain that are not connected they are automatically recognised and splitted. The agglomeration procedure is applied to each sub domain independently. </td></tr>
     <tr><td class="paramname">subset</td><td>Optional list of cell IDs to agglomerate. If empty, the entire mesh is processed.</td></tr>
   </table>
   </dd>
@@ -872,7 +872,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html">AbstractAgglomerationModel</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

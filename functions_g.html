@@ -118,9 +118,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>gather_id&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CompressedGatheredMonomial.html#a5be34c40ddd8594e5cb1aa7c5d59ef82">vulpes::assemble::CompressedGatheredMonomial</a></li>
 <li>GatheredPolynomial&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>GatheredPolynomialCoef&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a26ba2c6cf3c5e1bbeb6d5119c98b6681">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
-<li>gatherMonomials()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a47d9d8f6553be92b9ddab5d46c106633">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>gatherLiftedMonomials()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a068202b27e8e2454becf4cd6011e1daf">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>gatherSparsityPatternRank0()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#af9a78398279060fc683a4350acddbb7e">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
-<li>gatherUpcompressedMonomials()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aca82a0931a0860515fc0f7e28dfb1444">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
+<li>gatherUncompressedLiftedMonomials()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a5d85998975e486e0a614a08b45fb0673">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>getAreaToPerimeterRatios()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshMetrics.html#a8d2a43b746a939c2f763ac9e9aef1f34">vulpes::geometry::MeshMetrics&lt; MeshType &gt;</a></li>
 <li>getBasis()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a22705d7bfe2f7b16a2f78320b92985f3">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a3b76b757f966089bd34f59335071f42f">vulpes::fe::FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html#ad8b94d97d9528ffe5006056d46d495c0">vulpes::fe::FeSpaceLagrangeQ&lt; Dim, DofPolicy, Poly1DPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalP.html#a84b0b183f6c14ad373be7ec9d089363c">vulpes::fe::FeSpaceModalP&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a043a1429e7ffcb03623189dc7c6ff673">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#a5bfc6d7153aa8d13aef70f7a733a94b5">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
 <li>getBasisFast()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a4eb27c252225f4afff0f7a582f74c702">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#aa542b2a54e56b3cd5194961a135bb1a9">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#af66479cec250ca78ccfd4b8a046599f6">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getJacobianInv()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1CartesianMapping.html#a05cccb42d9738379e9291c8600ac9888">vulpes::geometry::CartesianMapping&lt; FloatType, Dim &gt;</a></li>
 <li>getKSP()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#af08ae1bd34e38662e57ea2a38b479018">vulpes::la::LinearSolver</a></li>
 <li>getLabels()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1KMeansBase.html#ae3b737df4580a6ad7f9bad65f44e6a83">vulpes::geometry::KMeansBase&lt; T, Dim &gt;</a></li>
-<li>getLocalDof()&#160;:&#160;<a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a4b146c111a1110c9378af6f28a0243e5">vulpes::fe::DofPolicyFeSpaceCQ&lt; Dim &gt;</a></li>
+<li>getLocalDof()&#160;:&#160;<a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a7a616a76def9a9203869f634047f9756">vulpes::fe::DofPolicyFeSpaceCQ&lt; Dim &gt;</a></li>
 <li>getLocalSize()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#aa383a88cfa8b1981bbd945d71a2761bd">vulpes::la::Vector</a></li>
 <li>getLocalValues()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#ac97324888ae7a929f0f1620cf219c440">vulpes::la::Vector</a></li>
 <li>getLocAndGlobSize()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a2bd4901247dc02941fa77f45a0c82ebc">vulpes::la::Vector</a></li>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

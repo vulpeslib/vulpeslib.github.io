@@ -119,83 +119,121 @@ $(document).ready(function(){initNavTree('classvulpes_1_1la_1_1Vector.html','');
 </div><!--header-->
 <div class="contents">
 
+<p>A wrapper around PETSc Vec for distributed vectors.  
+ <a href="classvulpes_1_1la_1_1Vector.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="vector_8hpp_source.html">vector.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a74858b9e609477fd771197e9645a9f91" id="r_a74858b9e609477fd771197e9645a9f91"><td class="memTemplParams" colspan="2">template&lt;typename DofHandler &gt; </td></tr>
 <tr class="memitem:a74858b9e609477fd771197e9645a9f91"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a74858b9e609477fd771197e9645a9f91">Vector</a> (const DofHandler &amp;dof_handler, PetscInt block_size=1)</td></tr>
+<tr class="memdesc:a74858b9e609477fd771197e9645a9f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> from a DofHandler.  <br /></td></tr>
 <tr class="separator:a74858b9e609477fd771197e9645a9f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48e23338b497ab4ebde82f02e59fd506" id="r_a48e23338b497ab4ebde82f02e59fd506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a48e23338b497ab4ebde82f02e59fd506">Vector</a> (const std::pair&lt; PetscInt, PetscInt &gt; &amp;sizes)</td></tr>
+<tr class="memdesc:a48e23338b497ab4ebde82f02e59fd506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> given local and global sizes.  <br /></td></tr>
 <tr class="separator:a48e23338b497ab4ebde82f02e59fd506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7f2275cab5a735d0c45bbf46b1a4fbc" id="r_af7f2275cab5a735d0c45bbf46b1a4fbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#af7f2275cab5a735d0c45bbf46b1a4fbc">operator=</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;other)=delete</td></tr>
 <tr class="separator:af7f2275cab5a735d0c45bbf46b1a4fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c72263a075540e0e34b8f96b417845e" id="r_a7c72263a075540e0e34b8f96b417845e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a7c72263a075540e0e34b8f96b417845e">Vector</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;other)</td></tr>
+<tr class="memdesc:a7c72263a075540e0e34b8f96b417845e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
 <tr class="separator:a7c72263a075540e0e34b8f96b417845e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8180fa3530ea90fe420c48109bbdff05" id="r_a8180fa3530ea90fe420c48109bbdff05"><td class="memTemplParams" colspan="2">template&lt;typename DofHandler &gt; </td></tr>
 <tr class="memitem:a8180fa3530ea90fe420c48109bbdff05"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a8180fa3530ea90fe420c48109bbdff05">init</a> (const DofHandler &amp;dof_handler, PetscInt block_size)</td></tr>
+<tr class="memdesc:a8180fa3530ea90fe420c48109bbdff05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the vector based on a DofHandler.  <br /></td></tr>
 <tr class="separator:a8180fa3530ea90fe420c48109bbdff05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cff4ae56ed5ee16b8ae20cdbf542e51" id="r_a0cff4ae56ed5ee16b8ae20cdbf542e51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a0cff4ae56ed5ee16b8ae20cdbf542e51">copy</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;other)</td></tr>
+<tr class="memdesc:a0cff4ae56ed5ee16b8ae20cdbf542e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the contents of another vector.  <br /></td></tr>
 <tr class="separator:a0cff4ae56ed5ee16b8ae20cdbf542e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848a5296261a4456b8facdc2b4430853" id="r_a848a5296261a4456b8facdc2b4430853"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a848a5296261a4456b8facdc2b4430853">compress</a> ()</td></tr>
+<tr class="memdesc:a848a5296261a4456b8facdc2b4430853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compress the vector (do intracommunication)  <br /></td></tr>
 <tr class="separator:a848a5296261a4456b8facdc2b4430853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e202033d2a0703756264e901d837acc" id="r_a3e202033d2a0703756264e901d837acc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a3e202033d2a0703756264e901d837acc">print</a> () const</td></tr>
+<tr class="memdesc:a3e202033d2a0703756264e901d837acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the vector to standard output.  <br /></td></tr>
 <tr class="separator:a3e202033d2a0703756264e901d837acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d930dca8d068008861a95510c94b781" id="r_a0d930dca8d068008861a95510c94b781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a0d930dca8d068008861a95510c94b781">save</a> (const std::string &amp;filename, const std::string &amp;vecname=&quot;&quot;, PetscViewerFormat format=PETSC_VIEWER_ASCII_MATLAB) const</td></tr>
+<tr class="memdesc:a0d930dca8d068008861a95510c94b781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the vector to a file.  <br /></td></tr>
 <tr class="separator:a0d930dca8d068008861a95510c94b781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a6d51971d8ab8c3f9f6bdfd3452f5f" id="r_a08a6d51971d8ab8c3f9f6bdfd3452f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a08a6d51971d8ab8c3f9f6bdfd3452f5f">insertValues</a> (const PetscScalar *values, const PetscInt *indices, PetscInt n_values, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:a08a6d51971d8ab8c3f9f6bdfd3452f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert values into the vector at specified indices.  <br /></td></tr>
 <tr class="separator:a08a6d51971d8ab8c3f9f6bdfd3452f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dda10fde6e3f6a06d9e1af443a87043" id="r_a6dda10fde6e3f6a06d9e1af443a87043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a6dda10fde6e3f6a06d9e1af443a87043">insertValuesBlocked</a> (const PetscScalar *values, const PetscInt *indices, PetscInt n_values, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:a6dda10fde6e3f6a06d9e1af443a87043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert blocked values into the vector at specified indices.  <br /></td></tr>
 <tr class="separator:a6dda10fde6e3f6a06d9e1af443a87043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6880632c549025404b8d0cc427bdb409" id="r_a6880632c549025404b8d0cc427bdb409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a6880632c549025404b8d0cc427bdb409">insertValues</a> (const Eigen::Map&lt; const Eigen::MatrixXd &gt; &amp;loc_vec, const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; PetscInt, PetscInt &gt;::RowView&lt; false &gt; &amp;idxs, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:a6880632c549025404b8d0cc427bdb409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert values from an <a class="el" href="namespaceEigen.html">Eigen</a> map into the vector at specified indices.  <br /></td></tr>
 <tr class="separator:a6880632c549025404b8d0cc427bdb409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf94744289bfda2394c469027f523f8" id="r_a4bf94744289bfda2394c469027f523f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a4bf94744289bfda2394c469027f523f8">insertValuesBlocked</a> (const Eigen::Map&lt; const Eigen::MatrixXd &gt; &amp;loc_vec, const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; PetscInt, PetscInt &gt;::RowView&lt; false &gt; &amp;idxs, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:a4bf94744289bfda2394c469027f523f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert blocked values from an <a class="el" href="namespaceEigen.html">Eigen</a> map into the vector at specified indices.  <br /></td></tr>
 <tr class="separator:a4bf94744289bfda2394c469027f523f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f2e4e7c85599361fa0c2a30c8bce237" id="r_a3f2e4e7c85599361fa0c2a30c8bce237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a3f2e4e7c85599361fa0c2a30c8bce237">setValue</a> (PetscInt idx, PetscScalar value, InsertMode mode=INSERT_VALUES)</td></tr>
+<tr class="memdesc:a3f2e4e7c85599361fa0c2a30c8bce237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single value in the vector.  <br /></td></tr>
 <tr class="separator:a3f2e4e7c85599361fa0c2a30c8bce237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a152cf647068bd0e2956771c663db88b0" id="r_a152cf647068bd0e2956771c663db88b0"><td class="memItemLeft" align="right" valign="top">PetscScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a152cf647068bd0e2956771c663db88b0">getValue</a> (PetscInt idx) const</td></tr>
+<tr class="memdesc:a152cf647068bd0e2956771c663db88b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single value from the vector.  <br /></td></tr>
 <tr class="separator:a152cf647068bd0e2956771c663db88b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac97324888ae7a929f0f1620cf219c440" id="r_ac97324888ae7a929f0f1620cf219c440"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#ac97324888ae7a929f0f1620cf219c440">getLocalValues</a> (std::vector&lt; PetscScalar &gt; &amp;values) const</td></tr>
+<tr class="memdesc:ac97324888ae7a929f0f1620cf219c440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all local values of the vector.  <br /></td></tr>
 <tr class="separator:ac97324888ae7a929f0f1620cf219c440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8781a33f557c068f09755d25d3aabaa5" id="r_a8781a33f557c068f09755d25d3aabaa5"><td class="memItemLeft" align="right" valign="top">std::array&lt; PetscInt, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a8781a33f557c068f09755d25d3aabaa5">getOwnershipRange</a> () const</td></tr>
+<tr class="memdesc:a8781a33f557c068f09755d25d3aabaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ownership range of the vector.  <br /></td></tr>
 <tr class="separator:a8781a33f557c068f09755d25d3aabaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ec9c2ddf7f3c279a10d244d6f261504" id="r_a7ec9c2ddf7f3c279a10d244d6f261504"><td class="memItemLeft" align="right" valign="top">PetscInt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a7ec9c2ddf7f3c279a10d244d6f261504">getBlockSize</a> () const</td></tr>
+<tr class="memdesc:a7ec9c2ddf7f3c279a10d244d6f261504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the block size of the vector.  <br /></td></tr>
 <tr class="separator:a7ec9c2ddf7f3c279a10d244d6f261504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcaab34f10d4e563da8d0365efcd7f11" id="r_adcaab34f10d4e563da8d0365efcd7f11"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; const Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#adcaab34f10d4e563da8d0365efcd7f11">toEigenMap</a> () const</td></tr>
+<tr class="memdesc:adcaab34f10d4e563da8d0365efcd7f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the vector to an <a class="el" href="namespaceEigen.html">Eigen</a> map.  <br /></td></tr>
 <tr class="separator:adcaab34f10d4e563da8d0365efcd7f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd4901247dc02941fa77f45a0c82ebc" id="r_a2bd4901247dc02941fa77f45a0c82ebc"><td class="memItemLeft" align="right" valign="top">std::pair&lt; PetscInt, PetscInt &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a2bd4901247dc02941fa77f45a0c82ebc">getLocAndGlobSize</a> () const</td></tr>
+<tr class="memdesc:a2bd4901247dc02941fa77f45a0c82ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get local and global sizes of the vector.  <br /></td></tr>
 <tr class="separator:a2bd4901247dc02941fa77f45a0c82ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af407e094636cbf2098f50282c860503f" id="r_af407e094636cbf2098f50282c860503f"><td class="memItemLeft" align="right" valign="top">const Vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#af407e094636cbf2098f50282c860503f">getPetscVector</a> () const</td></tr>
+<tr class="memdesc:af407e094636cbf2098f50282c860503f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying PETSc vector (const version)  <br /></td></tr>
 <tr class="separator:af407e094636cbf2098f50282c860503f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fbdf5a18563e945878a07538e6f7f17" id="r_a2fbdf5a18563e945878a07538e6f7f17"><td class="memItemLeft" align="right" valign="top">Vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a2fbdf5a18563e945878a07538e6f7f17">getPetscVector</a> ()</td></tr>
+<tr class="memdesc:a2fbdf5a18563e945878a07538e6f7f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying PETSc vector (non-const version)  <br /></td></tr>
 <tr class="separator:a2fbdf5a18563e945878a07538e6f7f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f580b91660e2e9d11648f80053c4c4c" id="r_a4f580b91660e2e9d11648f80053c4c4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a4f580b91660e2e9d11648f80053c4c4c">zero</a> ()</td></tr>
+<tr class="memdesc:a4f580b91660e2e9d11648f80053c4c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero out the vector.  <br /></td></tr>
 <tr class="separator:a4f580b91660e2e9d11648f80053c4c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13dc2106c8f1ecc2c173b24c6fb4cc5a" id="r_a13dc2106c8f1ecc2c173b24c6fb4cc5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a13dc2106c8f1ecc2c173b24c6fb4cc5a">set</a> (double value)</td></tr>
+<tr class="memdesc:a13dc2106c8f1ecc2c173b24c6fb4cc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all values in the vector to a constant.  <br /></td></tr>
 <tr class="separator:a13dc2106c8f1ecc2c173b24c6fb4cc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ad1ed7315e5a1c6cbda14407437571" id="r_af2ad1ed7315e5a1c6cbda14407437571"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#af2ad1ed7315e5a1c6cbda14407437571">scale</a> (double value)</td></tr>
+<tr class="memdesc:af2ad1ed7315e5a1c6cbda14407437571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the vector by a constant.  <br /></td></tr>
 <tr class="separator:af2ad1ed7315e5a1c6cbda14407437571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38a2ad79a5bab8d501e933cbd0021de7" id="r_a38a2ad79a5bab8d501e933cbd0021de7"><td class="memItemLeft" align="right" valign="top">PetscScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a38a2ad79a5bab8d501e933cbd0021de7">norm</a> (NormType norm_type=NORM_2) const</td></tr>
+<tr class="memdesc:a38a2ad79a5bab8d501e933cbd0021de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the norm of the vector.  <br /></td></tr>
 <tr class="separator:a38a2ad79a5bab8d501e933cbd0021de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a456491ab379c1b4791e71b1a10d6b22b" id="r_a456491ab379c1b4791e71b1a10d6b22b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a456491ab379c1b4791e71b1a10d6b22b">add</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;x)</td></tr>
+<tr class="memdesc:a456491ab379c1b4791e71b1a10d6b22b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vector in place (this += x)  <br /></td></tr>
 <tr class="separator:a456491ab379c1b4791e71b1a10d6b22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6426d0a4a96f020e603537fa245caf30" id="r_a6426d0a4a96f020e603537fa245caf30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a6426d0a4a96f020e603537fa245caf30">add</a> (PetscScalar alpha, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;x)</td></tr>
+<tr class="memdesc:a6426d0a4a96f020e603537fa245caf30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vector in place (this += alpha x)  <br /></td></tr>
 <tr class="separator:a6426d0a4a96f020e603537fa245caf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6ead2d6a6ebde449e657c9030902bbf" id="r_af6ead2d6a6ebde449e657c9030902bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#af6ead2d6a6ebde449e657c9030902bbf">addScaled</a> (PetscScalar alpha, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;x)</td></tr>
+<tr class="memdesc:af6ead2d6a6ebde449e657c9030902bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vector in place (this = x + alpha this)  <br /></td></tr>
 <tr class="separator:af6ead2d6a6ebde449e657c9030902bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9711575493fef6746b0264e89fa22b39" id="r_a9711575493fef6746b0264e89fa22b39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a9711575493fef6746b0264e89fa22b39">addGeneric</a> (PetscScalar alpha, PetscScalar beta, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;x)</td></tr>
+<tr class="memdesc:a9711575493fef6746b0264e89fa22b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vector in place (this = alpha x + beta this)  <br /></td></tr>
 <tr class="separator:a9711575493fef6746b0264e89fa22b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bbc39557274ebcbd1ca4b90e99b769d" id="r_a1bbc39557274ebcbd1ca4b90e99b769d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a1bbc39557274ebcbd1ca4b90e99b769d">addCouple</a> (PetscScalar alpha, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;x, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;y)</td></tr>
+<tr class="memdesc:a1bbc39557274ebcbd1ca4b90e99b769d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vector in place (this = alpha x + y)  <br /></td></tr>
 <tr class="separator:a1bbc39557274ebcbd1ca4b90e99b769d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05ae8d1cb4604026326571da11f71878" id="r_a05ae8d1cb4604026326571da11f71878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a05ae8d1cb4604026326571da11f71878">addTriplet</a> (PetscScalar alpha, PetscScalar beta, PetscScalar gamma, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;x, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;y)</td></tr>
+<tr class="memdesc:a05ae8d1cb4604026326571da11f71878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vector in place (this = alpha x + beta y + gamma this)  <br /></td></tr>
 <tr class="separator:a05ae8d1cb4604026326571da11f71878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848f42a1d3054f947c33c5736d33cd11" id="r_a848f42a1d3054f947c33c5736d33cd11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a848f42a1d3054f947c33c5736d33cd11">pow</a> (PetscScalar power)</td></tr>
+<tr class="memdesc:a848f42a1d3054f947c33c5736d33cd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces each component of a vector by its p-th power.  <br /></td></tr>
 <tr class="separator:a848f42a1d3054f947c33c5736d33cd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28e715fd46fad6739abb5d947b3bf661" id="r_a28e715fd46fad6739abb5d947b3bf661"><td class="memItemLeft" align="right" valign="top">PetscInt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a28e715fd46fad6739abb5d947b3bf661">getSize</a> () const</td></tr>
+<tr class="memdesc:a28e715fd46fad6739abb5d947b3bf661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the vector.  <br /></td></tr>
 <tr class="separator:a28e715fd46fad6739abb5d947b3bf661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa383a88cfa8b1981bbd945d71a2761bd" id="r_aa383a88cfa8b1981bbd945d71a2761bd"><td class="memItemLeft" align="right" valign="top">PetscInt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#aa383a88cfa8b1981bbd945d71a2761bd">getLocalSize</a> () const</td></tr>
+<tr class="memdesc:aa383a88cfa8b1981bbd945d71a2761bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local size of the vector.  <br /></td></tr>
 <tr class="separator:aa383a88cfa8b1981bbd945d71a2761bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79006f02c00750882ed06548a0087e74" id="r_a79006f02c00750882ed06548a0087e74"><td class="memItemLeft" align="right" valign="top">PetscScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a79006f02c00750882ed06548a0087e74">sum</a> () const</td></tr>
+<tr class="memdesc:a79006f02c00750882ed06548a0087e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the sum of all elements in the vector.  <br /></td></tr>
 <tr class="separator:a79006f02c00750882ed06548a0087e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac23080477fb150e5dc6ad8a652ce2abd" id="r_ac23080477fb150e5dc6ad8a652ce2abd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#ac23080477fb150e5dc6ad8a652ce2abd">~Vector</a> ()</td></tr>
 <tr class="separator:ac23080477fb150e5dc6ad8a652ce2abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,7 +252,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ac784a7878eb34c4cdb14ffd503cdcb1f" id="r_ac784a7878eb34c4cdb14ffd503cdcb1f"><td class="memItemLeft" align="right" valign="top">Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#ac784a7878eb34c4cdb14ffd503cdcb1f">m_petsc_vector</a></td></tr>
 <tr class="separator:ac784a7878eb34c4cdb14ffd503cdcb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A wrapper around PETSc Vec for distributed vectors. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a74858b9e609477fd771197e9645a9f91" name="a74858b9e609477fd771197e9645a9f91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74858b9e609477fd771197e9645a9f91">&#9670;&#160;</a></span>Vector() <span class="overload">[1/3]</span></h2>
 
@@ -251,6 +291,8 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> from a DofHandler. </p>
+
 </div>
 </div>
 <a id="a48e23338b497ab4ebde82f02e59fd506" name="a48e23338b497ab4ebde82f02e59fd506"></a>
@@ -277,6 +319,8 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> given local and global sizes. </p>
+
 </div>
 </div>
 <a id="a7c72263a075540e0e34b8f96b417845e" name="a7c72263a075540e0e34b8f96b417845e"></a>
@@ -294,6 +338,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Copy constructor. </p>
 
 </div>
 </div>
@@ -339,6 +385,8 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Add a vector in place (this += x) </p>
+
 </div>
 </div>
 <a id="a6426d0a4a96f020e603537fa245caf30" name="a6426d0a4a96f020e603537fa245caf30"></a>
@@ -366,6 +414,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add a vector in place (this += alpha x) </p>
 
 </div>
 </div>
@@ -401,6 +451,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Add a vector in place (this = alpha x + y) </p>
+
 </div>
 </div>
 <a id="a9711575493fef6746b0264e89fa22b39" name="a9711575493fef6746b0264e89fa22b39"></a>
@@ -435,6 +487,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Add a vector in place (this = alpha x + beta this) </p>
+
 </div>
 </div>
 <a id="af6ead2d6a6ebde449e657c9030902bbf" name="af6ead2d6a6ebde449e657c9030902bbf"></a>
@@ -462,6 +516,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add a vector in place (this = x + alpha this) </p>
 
 </div>
 </div>
@@ -509,6 +565,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Add a vector in place (this = alpha x + beta y + gamma this) </p>
+
 </div>
 </div>
 <a id="a848a5296261a4456b8facdc2b4430853" name="a848a5296261a4456b8facdc2b4430853"></a>
@@ -525,6 +583,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Compress the vector (do intracommunication) </p>
 
 </div>
 </div>
@@ -543,6 +603,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Copy the contents of another vector. </p>
 
 </div>
 </div>
@@ -586,6 +648,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Get the block size of the vector. </p>
+
 </div>
 </div>
 <a id="aa383a88cfa8b1981bbd945d71a2761bd" name="aa383a88cfa8b1981bbd945d71a2761bd"></a>
@@ -602,6 +666,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the local size of the vector. </p>
 
 </div>
 </div>
@@ -621,6 +687,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Get all local values of the vector. </p>
+
 </div>
 </div>
 <a id="a2bd4901247dc02941fa77f45a0c82ebc" name="a2bd4901247dc02941fa77f45a0c82ebc"></a>
@@ -638,6 +706,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Get local and global sizes of the vector. </p>
+
 </div>
 </div>
 <a id="a8781a33f557c068f09755d25d3aabaa5" name="a8781a33f557c068f09755d25d3aabaa5"></a>
@@ -654,6 +724,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the ownership range of the vector. </p>
 
 </div>
 </div>
@@ -680,6 +752,8 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the underlying PETSc vector (non-const version) </p>
+
 </div>
 </div>
 <a id="af407e094636cbf2098f50282c860503f" name="af407e094636cbf2098f50282c860503f"></a>
@@ -705,6 +779,8 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the underlying PETSc vector (const version) </p>
+
 </div>
 </div>
 <a id="a28e715fd46fad6739abb5d947b3bf661" name="a28e715fd46fad6739abb5d947b3bf661"></a>
@@ -721,6 +797,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the size of the vector. </p>
 
 </div>
 </div>
@@ -739,6 +817,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get a single value from the vector. </p>
 
 </div>
 </div>
@@ -778,6 +858,8 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Initialize the vector based on a DofHandler. </p>
+
 </div>
 </div>
 <a id="a6880632c549025404b8d0cc427bdb409" name="a6880632c549025404b8d0cc427bdb409"></a>
@@ -811,6 +893,16 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Insert values from an <a class="el" href="namespaceEigen.html">Eigen</a> map into the vector at specified indices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_vec</td><td><a class="el" href="namespaceEigen.html">Eigen</a> map of the local vector values </td></tr>
+    <tr><td class="paramname">idxs</td><td>Indices where the values should be inserted </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -852,6 +944,17 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Insert values into the vector at specified indices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>Pointer to the array of values to insert </td></tr>
+    <tr><td class="paramname">indices</td><td>Pointer to the array of indices where values should be inserted </td></tr>
+    <tr><td class="paramname">n_values</td><td>Number of values to insert </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4bf94744289bfda2394c469027f523f8" name="a4bf94744289bfda2394c469027f523f8"></a>
@@ -885,6 +988,16 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Insert blocked values from an <a class="el" href="namespaceEigen.html">Eigen</a> map into the vector at specified indices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_vec</td><td><a class="el" href="namespaceEigen.html">Eigen</a> map of the local blocked vector values (should be of size block_size times the size of idxs) </td></tr>
+    <tr><td class="paramname">idxs</td><td>Indices where the blocked values should be inserted </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -926,6 +1039,17 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Insert blocked values into the vector at specified indices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>Pointer to the array of blocked values to insert (of size block_size * n_values) </td></tr>
+    <tr><td class="paramname">indices</td><td>Pointer to the array of indices where blocked values should be inserted </td></tr>
+    <tr><td class="paramname">n_values</td><td>Number of blocked values to insert </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a38a2ad79a5bab8d501e933cbd0021de7" name="a38a2ad79a5bab8d501e933cbd0021de7"></a>
@@ -943,6 +1067,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Compute the norm of the vector. </p>
 
 </div>
 </div>
@@ -988,6 +1114,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Replaces each component of a vector by its p-th power. </p>
+
 </div>
 </div>
 <a id="a3e202033d2a0703756264e901d837acc" name="a3e202033d2a0703756264e901d837acc"></a>
@@ -1004,6 +1132,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Print the vector to standard output. </p>
 
 </div>
 </div>
@@ -1039,6 +1169,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Save the vector to a file. </p>
+
 </div>
 </div>
 <a id="af2ad1ed7315e5a1c6cbda14407437571" name="af2ad1ed7315e5a1c6cbda14407437571"></a>
@@ -1057,6 +1189,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Scale the vector by a constant. </p>
+
 </div>
 </div>
 <a id="a13dc2106c8f1ecc2c173b24c6fb4cc5a" name="a13dc2106c8f1ecc2c173b24c6fb4cc5a"></a>
@@ -1074,6 +1208,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set all values in the vector to a constant. </p>
 
 </div>
 </div>
@@ -1134,6 +1270,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Set a single value in the vector. </p>
+
 </div>
 </div>
 <a id="a1399d24f381b94f69855fb0e9f7a102b" name="a1399d24f381b94f69855fb0e9f7a102b"></a>
@@ -1187,6 +1325,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Compute the sum of all elements in the vector. </p>
+
 </div>
 </div>
 <a id="adcaab34f10d4e563da8d0365efcd7f11" name="adcaab34f10d4e563da8d0365efcd7f11"></a>
@@ -1204,6 +1344,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Convert the vector to an <a class="el" href="namespaceEigen.html">Eigen</a> map. </p>
+
 </div>
 </div>
 <a id="a4f580b91660e2e9d11648f80053c4c4c" name="a4f580b91660e2e9d11648f80053c4c4c"></a>
@@ -1220,6 +1362,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Zero out the vector. </p>
 
 </div>
 </div>
@@ -1257,7 +1401,7 @@ template&lt;typename DofHandler &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

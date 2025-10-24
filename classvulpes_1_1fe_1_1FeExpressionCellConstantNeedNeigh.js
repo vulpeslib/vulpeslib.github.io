@@ -11,7 +11,7 @@ var classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html#a19343efce11468e5ef4139edbc1654c8", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html#a978d2ab609240c7df0eb07740f09759f", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html#af0333705ad7416bd31da37eb47dd3491", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html#aa194506aca4e759376e053023687b62b", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html#a6c4c9763de06c94626088d9d2b8d37e3", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html#a05fc6fc2855516652bc5a9684413b61a", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html#a0a8758010cf0f5a9a3d366cc4d4cae93", null ],

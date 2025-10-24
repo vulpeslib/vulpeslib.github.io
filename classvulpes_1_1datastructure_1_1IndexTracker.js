@@ -2,7 +2,6 @@ var classvulpes_1_1datastructure_1_1IndexTracker =
 [
     [ "Reference", "classvulpes_1_1datastructure_1_1IndexTracker_1_1Reference.html", "classvulpes_1_1datastructure_1_1IndexTracker_1_1Reference" ],
     [ "IndexTracker", "classvulpes_1_1datastructure_1_1IndexTracker.html#af1cfd1c8d0e8cc2179bc1bde41aeb14b", null ],
-    [ "~IndexTracker", "classvulpes_1_1datastructure_1_1IndexTracker.html#a552e42b38d172204db3f2bb647bc7b43", null ],
     [ "forEachIndex", "classvulpes_1_1datastructure_1_1IndexTracker.html#ab2de254c5c7d57ab3dcbb354b8ded840", null ],
     [ "getValues", "classvulpes_1_1datastructure_1_1IndexTracker.html#a7fa66aaa19a88124f2cebea00f0fbd40", null ],
     [ "indicesOf", "classvulpes_1_1datastructure_1_1IndexTracker.html#a67eee40589f449b41b572f3a24463874", null ],

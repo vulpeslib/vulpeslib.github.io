@@ -141,6 +141,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html">DofPolicyFeSpaceVEM</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for Finite Element Expressions.  <a href="classvulpes_1_1fe_1_1FeExpressionBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstant.html">FeExpressionCellConstant</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,14 +189,19 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class describing the template for a FeSpace.  <a href="classvulpes_1_1fe_1_1FeSpaceBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html">FeSpaceLagrangeP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General finite element space on a simplex with (nodal) Lagrangian basis function, can be either continous or discontinuos.  <a href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html">FeSpaceLagrangeQ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General finite element space on a tensor product cell with (nodal) Lagrangian basis function, can be either continous or discontinuos.  <a href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalP.html">FeSpaceModalP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modal FE Space on simplex elements.  <a href="classvulpes_1_1fe_1_1FeSpaceModalP.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html">FeSpaceModalQ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modal FE Space on polytopal elements (tensor product of Legendre polynomials on the bounding box). The total degree is limited to the given order in the sum of the exponents.  <a href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html">FeSpaceVEM</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Element Method FE Space on polytopal elements.  <a href="classvulpes_1_1fe_1_1FeSpaceVEM.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class works as a cache table for computing efficiently the value of the basis function and its derivatives for each cell.  <a href="classvulpes_1_1fe_1_1FeValues.html#details">More...</a><br /></td></tr>
@@ -220,33 +226,43 @@ Typedefs</h2></td></tr>
 <tr class="separator:a236b70be3e3ef828b4c7f52774e514f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a429f4aa2574b71d9b43b664c9e86430e" id="r_a429f4aa2574b71d9b43b664c9e86430e"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:a429f4aa2574b71d9b43b664c9e86430e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a429f4aa2574b71d9b43b664c9e86430e">FeSpaceLagrangeCP</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html">FeSpaceLagrangeP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCP.html">DofPolicyFeSpaceCP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;, <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">internal::LagrangianNodesPolicy</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a429f4aa2574b71d9b43b664c9e86430e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continuous lagrangian finite element space with equi-spaced nodes.  <br /></td></tr>
 <tr class="separator:a429f4aa2574b71d9b43b664c9e86430e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30448e7da7545f7abafd001dd487b5a" id="r_af30448e7da7545f7abafd001dd487b5a"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:af30448e7da7545f7abafd001dd487b5a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#af30448e7da7545f7abafd001dd487b5a">FeSpaceLagrangeDP</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html">FeSpaceLagrangeP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html">DofPolicyFeSpaceDP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;, <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">internal::LagrangianNodesPolicy</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt;</td></tr>
+<tr class="memdesc:af30448e7da7545f7abafd001dd487b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discontinuous lagrangian finite element space with equi-spaced nodes.  <br /></td></tr>
 <tr class="separator:af30448e7da7545f7abafd001dd487b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b02fefffe02f141356f10fc50939632" id="r_a5b02fefffe02f141356f10fc50939632"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:a5b02fefffe02f141356f10fc50939632"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a5b02fefffe02f141356f10fc50939632">FeSpaceSpectralCP</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html">FeSpaceLagrangeP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCP.html">DofPolicyFeSpaceCP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;, <a class="el" href="structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html">internal::WarpAndBlendNodesPolicy</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a5b02fefffe02f141356f10fc50939632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continuous spectral finite element space with optimal conditioning.  <br /></td></tr>
 <tr class="separator:a5b02fefffe02f141356f10fc50939632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87cba6aa045e3438e3304d00bba95e6" id="r_aa87cba6aa045e3438e3304d00bba95e6"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:aa87cba6aa045e3438e3304d00bba95e6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#aa87cba6aa045e3438e3304d00bba95e6">FeSpaceSpectralDP</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html">FeSpaceLagrangeP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html">DofPolicyFeSpaceDP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;, <a class="el" href="structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html">internal::WarpAndBlendNodesPolicy</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt;</td></tr>
+<tr class="memdesc:aa87cba6aa045e3438e3304d00bba95e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discontinous spectral finite element space with optimal conditioning.  <br /></td></tr>
 <tr class="separator:aa87cba6aa045e3438e3304d00bba95e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6542d71ae0517549f71128d6163419" id="r_a6a6542d71ae0517549f71128d6163419"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:a6a6542d71ae0517549f71128d6163419"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a6a6542d71ae0517549f71128d6163419">FeSpaceLagrangeCQ</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html">FeSpaceLagrangeQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;, <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">internal::LagrangianNodesPolicy</a>&lt; 1 &gt; &gt;</td></tr>
+<tr class="memdesc:a6a6542d71ae0517549f71128d6163419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continuous lagrangian finite element space with equi-spaced nodes.  <br /></td></tr>
 <tr class="separator:a6a6542d71ae0517549f71128d6163419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b5f00f2f85fe9f07d65efbb09d701a5" id="r_a0b5f00f2f85fe9f07d65efbb09d701a5"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:a0b5f00f2f85fe9f07d65efbb09d701a5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a0b5f00f2f85fe9f07d65efbb09d701a5">FeSpaceLagrangeDQ</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html">FeSpaceLagrangeQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html">DofPolicyFeSpaceDQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;, <a class="el" href="structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html">internal::LagrangianNodesPolicy</a>&lt; 1 &gt; &gt;</td></tr>
+<tr class="memdesc:a0b5f00f2f85fe9f07d65efbb09d701a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discontinuous lagrangian finite element space with equi-spaced nodes.  <br /></td></tr>
 <tr class="separator:a0b5f00f2f85fe9f07d65efbb09d701a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa50172ce0a62935d383460e78d962ef" id="r_aaa50172ce0a62935d383460e78d962ef"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:aaa50172ce0a62935d383460e78d962ef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#aaa50172ce0a62935d383460e78d962ef">FeSpaceSpectralCQ</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html">FeSpaceLagrangeQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;, <a class="el" href="structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html">internal::WarpAndBlendNodesPolicy</a>&lt; 1 &gt; &gt;</td></tr>
+<tr class="memdesc:aaa50172ce0a62935d383460e78d962ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continuous spectral finite element space.  <br /></td></tr>
 <tr class="separator:aaa50172ce0a62935d383460e78d962ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6388f676176d533d7c6fd18e3061ab7" id="r_ae6388f676176d533d7c6fd18e3061ab7"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:ae6388f676176d533d7c6fd18e3061ab7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ae6388f676176d533d7c6fd18e3061ab7">FeSpaceSpectralDQ</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html">FeSpaceLagrangeQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html">DofPolicyFeSpaceDQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt;, <a class="el" href="structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html">internal::WarpAndBlendNodesPolicy</a>&lt; 1 &gt; &gt;</td></tr>
+<tr class="memdesc:ae6388f676176d533d7c6fd18e3061ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discontinous spectral finite element space.  <br /></td></tr>
 <tr class="separator:ae6388f676176d533d7c6fd18e3061ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45667ebd33208ca3c2f00200a1c6fae9" id="r_a45667ebd33208ca3c2f00200a1c6fae9"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:a45667ebd33208ca3c2f00200a1c6fae9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a45667ebd33208ca3c2f00200a1c6fae9">FeSpaceModalLegendreDP</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalP.html">FeSpaceModalP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html">DofPolicyFeSpaceDP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a45667ebd33208ca3c2f00200a1c6fae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modal DiscontinuousLegendre FE Space on simplex elements with optimal conditioning for simplex elements.  <br /></td></tr>
 <tr class="separator:a45667ebd33208ca3c2f00200a1c6fae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa900a9c8403894acdcbe5919e4944c64" id="r_aa900a9c8403894acdcbe5919e4944c64"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:aa900a9c8403894acdcbe5919e4944c64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#aa900a9c8403894acdcbe5919e4944c64">FeSpaceModalLegendreDQ</a> = <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html">FeSpaceModalQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html">DofPolicyFeSpaceDP</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &gt;</td></tr>
+<tr class="memdesc:aa900a9c8403894acdcbe5919e4944c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modal Discontinuous Legendre FE Space on bounding box elements.  <br /></td></tr>
 <tr class="separator:aa900a9c8403894acdcbe5919e4944c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca0f7334f0292f04c1dd25339d65d21" id="r_a2ca0f7334f0292f04c1dd25339d65d21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">UpdateFlagsType</a> = std::underlying_type_t&lt; <a class="el" href="namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62f">UpdateFlags</a> &gt;</td></tr>
 <tr class="separator:a2ca0f7334f0292f04c1dd25339d65d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +274,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdad2a37047321895490c10c252b57729a6">IsLinearTrial</a> = 2
 , <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdae1ee74daa22febc532721ecb824cf32d">IsBilinear</a> = IsLinearTest | IsLinearTrial
  }</td></tr>
+<tr class="memdesc:ae5ebf32825cb96839dd980a33ccd72bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for the type of integration form (presence of test/trial functions)  <a href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bd">More...</a><br /></td></tr>
 <tr class="separator:ae5ebf32825cb96839dd980a33ccd72bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5bf3300c0c48c88c8da0dacfb48221" id="r_a0c5bf3300c0c48c88c8da0dacfb48221"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221">FeType</a> : uint8_t { <a class="el" href="namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221a7e63b9d2d8bd512603139e052c216204">Simplex</a>
 , <a class="el" href="namespacevulpes_1_1fe.html#a0c5bf3300c0c48c88c8da0dacfb48221ad226ebfe23a8913bfb43ac4614b914e7">Tensor</a>
@@ -370,6 +387,8 @@ template&lt;std::size_t Dim&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Continuous lagrangian finite element space with equi-spaced nodes. </p>
+
 </div>
 </div>
 <a id="a6a6542d71ae0517549f71128d6163419" name="a6a6542d71ae0517549f71128d6163419"></a>
@@ -385,6 +404,8 @@ template&lt;std::size_t Dim&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Continuous lagrangian finite element space with equi-spaced nodes. </p>
 
 </div>
 </div>
@@ -402,6 +423,8 @@ template&lt;std::size_t Dim&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Discontinuous lagrangian finite element space with equi-spaced nodes. </p>
+
 </div>
 </div>
 <a id="a0b5f00f2f85fe9f07d65efbb09d701a5" name="a0b5f00f2f85fe9f07d65efbb09d701a5"></a>
@@ -417,6 +440,8 @@ template&lt;std::size_t Dim&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Discontinuous lagrangian finite element space with equi-spaced nodes. </p>
 
 </div>
 </div>
@@ -434,6 +459,8 @@ template&lt;std::size_t Dim&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Modal DiscontinuousLegendre FE Space on simplex elements with optimal conditioning for simplex elements. </p>
+
 </div>
 </div>
 <a id="aa900a9c8403894acdcbe5919e4944c64" name="aa900a9c8403894acdcbe5919e4944c64"></a>
@@ -449,6 +476,8 @@ template&lt;std::size_t Dim&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Modal Discontinuous Legendre FE Space on bounding box elements. </p>
 
 </div>
 </div>
@@ -466,6 +495,8 @@ template&lt;std::size_t Dim&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Continuous spectral finite element space with optimal conditioning. </p>
+
 </div>
 </div>
 <a id="aaa50172ce0a62935d383460e78d962ef" name="aaa50172ce0a62935d383460e78d962ef"></a>
@@ -481,6 +512,8 @@ template&lt;std::size_t Dim&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Continuous spectral finite element space. </p>
 
 </div>
 </div>
@@ -498,6 +531,8 @@ template&lt;std::size_t Dim&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Discontinous spectral finite element space with optimal conditioning. </p>
+
 </div>
 </div>
 <a id="ae6388f676176d533d7c6fd18e3061ab7" name="ae6388f676176d533d7c6fd18e3061ab7"></a>
@@ -513,6 +548,8 @@ template&lt;std::size_t Dim&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Discontinous spectral finite element space. </p>
 
 </div>
 </div>
@@ -610,6 +647,8 @@ template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNee
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enumeration for the type of integration form (presence of test/trial functions) </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae5ebf32825cb96839dd980a33ccd72bda77de660f3159503734d5b49ec951ebbc" name="ae5ebf32825cb96839dd980a33ccd72bda77de660f3159503734d5b49ec951ebbc"></a>IsNothing&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae5ebf32825cb96839dd980a33ccd72bda6a506d38a5246cc1f633c1ac60956d6a" name="ae5ebf32825cb96839dd980a33ccd72bda6a506d38a5246cc1f633c1ac60956d6a"></a>IsLinearTest&#160;</td><td class="fielddoc"></td></tr>
@@ -957,7 +996,7 @@ template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, <a cl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

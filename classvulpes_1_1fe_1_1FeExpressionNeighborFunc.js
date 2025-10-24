@@ -8,7 +8,7 @@ var classvulpes_1_1fe_1_1FeExpressionNeighborFunc =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#ab51413588d443b333b43c4fdff5e8dc1", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a1de155ccac31feb542ec50236b16b5a0", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a381e59575af791d16798b2b7bc0f0475", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#aa194506aca4e759376e053023687b62b", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#aea931e9153ca5b8587a99e58db7bac60", null ],
     [ "self", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
     [ "is_bilinear", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a50793af58c9c8056b4b9625f606699db", null ],

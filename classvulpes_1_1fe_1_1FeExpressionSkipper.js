@@ -11,7 +11,7 @@ var classvulpes_1_1fe_1_1FeExpressionSkipper =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionSkipper.html#aad94135116ddd3ee184226ee415cdcbe", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionSkipper.html#a03132fb7da3d7d39682ab2c1dcc41384", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionSkipper.html#af0333705ad7416bd31da37eb47dd3491", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionSkipper.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionSkipper.html#aa194506aca4e759376e053023687b62b", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionSkipper.html#a23f38b6f36e04223b7ca9280c1e99b25", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionSkipper.html#acd16f556c8ded55be547deab41ead455", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionSkipper.html#ad7789ccaf487384d854f17e00b14400a", null ],

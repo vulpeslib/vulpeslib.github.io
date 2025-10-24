@@ -226,7 +226,9 @@ class vulpes::geometry::ParmetisAgglomeration&lt; MeshType &gt;</div><p>Agglomer
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Requires an MPI environment and a working ParMETIS installation. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Partition quality and balance depend on ParMETIS parameters; this class currently uses backend defaults unless overridden internally. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Partition quality and balance depend on ParMETIS parameters; this class currently uses backend defaults unless overridden internally. </dd>
+<dd>
+The class works only in serial mode for now (one MPI rank). </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3df15248a64c4d5710eb6b03728c59d2" name="a3df15248a64c4d5710eb6b03728c59d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3df15248a64c4d5710eb6b03728c59d2">&#9670;&#160;</a></span>CellType</h2>
@@ -1071,7 +1073,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1ParmetisAgglomeration.html">ParmetisAgglomeration</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -154,45 +154,45 @@ $(document).ready(function(){initNavTree('serialize_8hpp_source.html',''); initR
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceboost.html">   33</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceboost.html">boost</a> {</div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespaceboost_1_1serialization.html">   34</a></span><span class="keyword">namespace </span>serialization {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Archive, <span class="keyword">typename</span> Scalar, <span class="keywordtype">int</span> Size&gt;</div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">   36</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">serialize</a>(</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    Archive&amp; ar, Eigen::Matrix&lt;Scalar, Size, 1&gt;&amp; vec, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Size; ++i) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    ar&amp; vec[i];</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Archive, <span class="keyword">typename</span> Scalar, <span class="keywordtype">int</span> Size&gt;</div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">   39</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">serialize</a>(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Archive&amp; ar, Eigen::Matrix&lt;Scalar, Size, 1&gt;&amp; vec, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Size; ++i) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ar&amp; vec[i];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Archive, <span class="keyword">typename</span> Key, <span class="keyword">typename</span> Value&gt;</div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespaceboost_1_1serialization.html#a419b1127ceff8910acac15024e9ad81a">   44</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">serialize</a>(</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Archive&amp; ar,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    boost::unordered_flat_map&lt;Key, Value&gt;&amp; map,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  std::vector&lt;std::pair&lt;Key, Value&gt;&gt; vec;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">if</span> (Archive::is_saving::value) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    vec.insert(vec.end(), map.begin(), map.end());</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  ar &amp; vec;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Archive, <span class="keyword">typename</span> Key, <span class="keyword">typename</span> Value&gt;</div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespaceboost_1_1serialization.html#a419b1127ceff8910acac15024e9ad81a">   50</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">serialize</a>(</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    Archive&amp; ar,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    boost::unordered_flat_map&lt;Key, Value&gt;&amp; map,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  std::vector&lt;std::pair&lt;Key, Value&gt;&gt; vec;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordflow">if</span> (Archive::is_loading::value) {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    map.clear();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pair : vec) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      map.insert(pair);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordflow">if</span> (Archive::is_saving::value) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    vec.insert(vec.end(), map.begin(), map.end());</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  ar &amp; vec;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordflow">if</span> (Archive::is_loading::value) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    map.clear();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pair : vec) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      map.insert(pair);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}  <span class="comment">// namespace serialization</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}  <span class="comment">// namespace serialization</span></div>
 </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}  <span class="comment">// namespace boost</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}  <span class="comment">// namespace boost</span></div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_UTILS_SERIALIZE_HPP_</span></div>
-<div class="ttc" id="anamespaceboost_1_1serialization_html_a669cd374ace66ef44663b4ec461f0a59"><div class="ttname"><a href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">boost::serialization::serialize</a></div><div class="ttdeci">void serialize(Archive &amp;ar, Eigen::Matrix&lt; Scalar, Size, 1 &gt; &amp;vec, const unsigned int)</div><div class="ttdef"><b>Definition</b> serialize.hpp:36</div></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_UTILS_SERIALIZE_HPP_</span></div>
+<div class="ttc" id="anamespaceboost_1_1serialization_html_a669cd374ace66ef44663b4ec461f0a59"><div class="ttname"><a href="namespaceboost_1_1serialization.html#a669cd374ace66ef44663b4ec461f0a59">boost::serialization::serialize</a></div><div class="ttdeci">void serialize(Archive &amp;ar, Eigen::Matrix&lt; Scalar, Size, 1 &gt; &amp;vec, const unsigned int)</div><div class="ttdoc">Serialize with boost an Eigen Vector of static size.</div><div class="ttdef"><b>Definition</b> serialize.hpp:39</div></div>
 <div class="ttc" id="anamespaceboost_html"><div class="ttname"><a href="namespaceboost.html">boost</a></div><div class="ttdef"><b>Definition</b> serialize.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('serialize_8hpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_57fd5c05a3144478f1fe40cbcefca761.html">utils</a></li><li class="navelem"><a class="el" href="serialize_8hpp.html">serialize.hpp</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -115,11 +115,15 @@ $(document).ready(function(){initNavTree('classvulpes_1_1assemble_1_1WeakFormInt
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implements a quadrature-free finite element integrator.  
+ <a href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="integrator__qfree_8hpp_source.html">integrator_qfree.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -140,24 +144,34 @@ Public Types</h2></td></tr>
 <tr class="memitem:ae32e2842128c3543eadba4e84e9e4146" id="r_ae32e2842128c3543eadba4e84e9e4146"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae32e2842128c3543eadba4e84e9e4146">FeType</a> = std::remove_pointer_t&lt; std::tuple_element_t&lt; 0, FeExpressionTuple &gt; &gt;::FeSpaceType</td></tr>
 <tr class="separator:ae32e2842128c3543eadba4e84e9e4146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae412670d4a5531b5d05b34d991ea3524" id="r_ae412670d4a5531b5d05b34d991ea3524"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae412670d4a5531b5d05b34d991ea3524">PolyType</a> = FeType::FeSpaceType::PolynomialFast</td></tr>
+<tr class="memdesc:ae412670d4a5531b5d05b34d991ea3524"><td class="mdescLeft">&#160;</td><td class="mdescRight">The polynomial type used for standard basis functions.  <br /></td></tr>
 <tr class="separator:ae412670d4a5531b5d05b34d991ea3524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d64cd4b18c00191e2722deaf849bee5" id="r_a4d64cd4b18c00191e2722deaf849bee5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a4d64cd4b18c00191e2722deaf849bee5">MonoType</a> = PolyType::MonomialType</td></tr>
+<tr class="memdesc:a4d64cd4b18c00191e2722deaf849bee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The monomial type for standard polynomials.  <br /></td></tr>
 <tr class="separator:a4d64cd4b18c00191e2722deaf849bee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4160c0fae18bd2bc92c61a7ab925ba0" id="r_aa4160c0fae18bd2bc92c61a7ab925ba0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aa4160c0fae18bd2bc92c61a7ab925ba0">PolyTypeLifted</a> = std::decay_t&lt; decltype(<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae412670d4a5531b5d05b34d991ea3524">PolyType</a>{}.template liftDimension&lt; 0, 2 *<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> &gt;())&gt;</td></tr>
+<tr class="memdesc:aa4160c0fae18bd2bc92c61a7ab925ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The polynomial type "lifted" to a higher dimension. This is used for face integrals involving neighbor cell data, where the polynomial also depends on the coefficients of the affine map between reference cells. The extra <code>2*dim</code> dimensions account for the diagonal Jacobian and translation vector.  <br /></td></tr>
 <tr class="separator:aa4160c0fae18bd2bc92c61a7ab925ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a584a078fc43b50282d0616133d636c6c" id="r_a584a078fc43b50282d0616133d636c6c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a584a078fc43b50282d0616133d636c6c">MonoTypeLifted</a> = PolyTypeLifted::MonomialType</td></tr>
+<tr class="memdesc:a584a078fc43b50282d0616133d636c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The monomial type for lifted polynomials.  <br /></td></tr>
 <tr class="separator:a584a078fc43b50282d0616133d636c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e06cf88b240eab0da5351ad880902a7" id="r_a1e06cf88b240eab0da5351ad880902a7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> = typename MeshType::index_t</td></tr>
+<tr class="memdesc:a1e06cf88b240eab0da5351ad880902a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index type used by the mesh.  <br /></td></tr>
 <tr class="separator:a1e06cf88b240eab0da5351ad880902a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a469988acfaf69aa3fbb0e7414311c4" id="r_a7a469988acfaf69aa3fbb0e7414311c4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> = std::vector&lt; <a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html">GatheredMonomial</a>&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a7a469988acfaf69aa3fbb0e7414311c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An uncompressed gathered polynomial for a single entry.  <br /></td></tr>
 <tr class="separator:a7a469988acfaf69aa3fbb0e7414311c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ba2c6cf3c5e1bbeb6d5119c98b6681" id="r_a26ba2c6cf3c5e1bbeb6d5119c98b6681"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a26ba2c6cf3c5e1bbeb6d5119c98b6681">GatheredPolynomialCoef</a> = std::vector&lt; std::pair&lt; double, uint16_t &gt; &gt;</td></tr>
+<tr class="memdesc:a26ba2c6cf3c5e1bbeb6d5119c98b6681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficients for a compressed gathered polynomial.  <br /></td></tr>
 <tr class="separator:a26ba2c6cf3c5e1bbeb6d5119c98b6681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33f52db60116b82b4c8c69cc9647812" id="r_ae33f52db60116b82b4c8c69cc9647812"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae33f52db60116b82b4c8c69cc9647812">FlatPolyTypeLifted</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a584a078fc43b50282d0616133d636c6c">MonoTypeLifted</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> &gt;</td></tr>
+<tr class="memdesc:ae33f52db60116b82b4c8c69cc9647812"><td class="mdescLeft">&#160;</td><td class="mdescRight">A compressed representation of a list of lifted polynomials.  <br /></td></tr>
 <tr class="separator:ae33f52db60116b82b4c8c69cc9647812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88407585193835f8e4e22cb57ec3085a" id="r_a88407585193835f8e4e22cb57ec3085a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; <a class="el" href="structvulpes_1_1assemble_1_1CompressedMonomial.html">CompressedMonomial</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> &gt;</td></tr>
+<tr class="memdesc:a88407585193835f8e4e22cb57ec3085a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A compressed representation of a list of standard polynomials.  <br /></td></tr>
 <tr class="separator:a88407585193835f8e4e22cb57ec3085a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf590e2a650459eb8fb8f152cb2fa7ec" id="r_abf590e2a650459eb8fb8f152cb2fa7ec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#abf590e2a650459eb8fb8f152cb2fa7ec">CompressedListGatheredPoly</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; <a class="el" href="structvulpes_1_1assemble_1_1CompressedGatheredMonomial.html">CompressedGatheredMonomial</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> &gt;</td></tr>
+<tr class="memdesc:abf590e2a650459eb8fb8f152cb2fa7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">A compressed representation of a list of gathered polynomials.  <br /></td></tr>
 <tr class="separator:abf590e2a650459eb8fb8f152cb2fa7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082e207593fdf6b0c1501cde6b1c25fa" id="r_a082e207593fdf6b0c1501cde6b1c25fa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a082e207593fdf6b0c1501cde6b1c25fa">FeExpressionTupleBilinear</a> = decltype(<a class="el" href="namespacevulpes_1_1assemble_1_1internal.html#a3452007ee5d0906d35c5771b51048895">internal::split_expression_tuple</a>(FeExpressionTuple{}).first)</td></tr>
 <tr class="separator:a082e207593fdf6b0c1501cde6b1c25fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,73 +188,68 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace0aacbad87cf69a1e2a0620536e52a6" id="r_ace0aacbad87cf69a1e2a0620536e52a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ace0aacbad87cf69a1e2a0620536e52a6">compress</a> (const auto &amp;uncompressed_table)</td></tr>
-<tr class="separator:ace0aacbad87cf69a1e2a0620536e52a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d21c968f6949c4cefa7a711b1c4309" id="r_af0d21c968f6949c4cefa7a711b1c4309"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af0d21c968f6949c4cefa7a711b1c4309">WeakFormIntegratorQFree</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae32e2842128c3543eadba4e84e9e4146">FeType</a> &gt; &amp;cell_manager, const FeExpressionTuple &amp;fe_expression, const FeExpressionFaceTuple &amp;fe_expression_face=FeExpressionFaceTuple{})</td></tr>
+<tr class="memdesc:af0d21c968f6949c4cefa7a711b1c4309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the quadrature-free integrator.  <br /></td></tr>
 <tr class="separator:af0d21c968f6949c4cefa7a711b1c4309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4d81f0d2700fa560d05acdb2c2cc282" id="r_ab4d81f0d2700fa560d05acdb2c2cc282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ab4d81f0d2700fa560d05acdb2c2cc282">buildLookupTables</a> ()</td></tr>
-<tr class="separator:ab4d81f0d2700fa560d05acdb2c2cc282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca82a0931a0860515fc0f7e28dfb1444" id="r_aca82a0931a0860515fc0f7e28dfb1444"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aca82a0931a0860515fc0f7e28dfb1444">gatherUpcompressedMonomials</a> ()</td></tr>
-<tr class="memdesc:aca82a0931a0860515fc0f7e28dfb1444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gather the common terms for each polynomial (row of the map) in m_poly_table_face_lifted_flat.  <br /></td></tr>
-<tr class="separator:aca82a0931a0860515fc0f7e28dfb1444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada14157078d24c0513d06d4298b414fb" id="r_ada14157078d24c0513d06d4298b414fb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; uint8_t, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> *2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ada14157078d24c0513d06d4298b414fb">buildUniqueEvaTable</a> (const std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt; &amp;gathered_monos_table)</td></tr>
-<tr class="separator:ada14157078d24c0513d06d4298b414fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d7a2f93461b0d23ff3e475735d2d93f" id="r_a8d7a2f93461b0d23ff3e475735d2d93f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a8d7a2f93461b0d23ff3e475735d2d93f">compressGatheredPolynomials</a> (const std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt; &amp;gathered_monos_table)</td></tr>
-<tr class="memdesc:a8d7a2f93461b0d23ff3e475735d2d93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">compress the gathered monomials in <a class="el" href="structvulpes_1_1assemble_1_1CompressedGatheredMonomial.html">CompressedGatheredMonomial</a>  <br /></td></tr>
-<tr class="separator:a8d7a2f93461b0d23ff3e475735d2d93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d9d8f6553be92b9ddab5d46c106633" id="r_a47d9d8f6553be92b9ddab5d46c106633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a47d9d8f6553be92b9ddab5d46c106633">gatherMonomials</a> ()</td></tr>
-<tr class="memdesc:a47d9d8f6553be92b9ddab5d46c106633"><td class="mdescLeft">&#160;</td><td class="mdescRight">gather the lifted monomials to reduce their number  <br /></td></tr>
-<tr class="separator:a47d9d8f6553be92b9ddab5d46c106633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a151baf55ac901980c6959394cffb9b53" id="r_a151baf55ac901980c6959394cffb9b53"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a151baf55ac901980c6959394cffb9b53">computeRefToNeighRefMap</a> () const</td></tr>
-<tr class="separator:a151baf55ac901980c6959394cffb9b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bffd2076b485d9826c848777a57e782" id="r_a2bffd2076b485d9826c848777a57e782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a2bffd2076b485d9826c848777a57e782">integrateVolumeCell</a> (const double *aints_data)</td></tr>
-<tr class="separator:a2bffd2076b485d9826c848777a57e782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc74124859d8b3c1af21071f4e0966f3" id="r_adc74124859d8b3c1af21071f4e0966f3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adc74124859d8b3c1af21071f4e0966f3">updateFaceNormalAndGetNanson</a> ()</td></tr>
-<tr class="separator:adc74124859d8b3c1af21071f4e0966f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c67777993d66693cba12e13696068d8" id="r_a0c67777993d66693cba12e13696068d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0c67777993d66693cba12e13696068d8">precomputeMonomialCoefsForFace</a> ()</td></tr>
-<tr class="separator:a0c67777993d66693cba12e13696068d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6740bffb0e4ec5ce55af391b304190d" id="r_ad6740bffb0e4ec5ce55af391b304190d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ad6740bffb0e4ec5ce55af391b304190d">integrateFaceCell</a> (const double *eints_data, double nanson)</td></tr>
-<tr class="separator:ad6740bffb0e4ec5ce55af391b304190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619054a0312d99c59f835b79f850c23a" id="r_a619054a0312d99c59f835b79f850c23a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a619054a0312d99c59f835b79f850c23a">integrate</a> (<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> cell_id)</td></tr>
+<tr class="memdesc:a619054a0312d99c59f835b79f850c23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the full integration process for a given cell.  <br /></td></tr>
 <tr class="separator:a619054a0312d99c59f835b79f850c23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b68798cda810710b2701a8f47118028" id="r_a9b68798cda810710b2701a8f47118028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a9b68798cda810710b2701a8f47118028">computeUpdateFlags</a> ()</td></tr>
+<tr class="memdesc:a9b68798cda810710b2701a8f47118028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the update flags indicating the values to be updated for each cell in the FEValues.  <br /></td></tr>
 <tr class="separator:a9b68798cda810710b2701a8f47118028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e275b3390ef12060cf62438b6d45271" id="r_a5e275b3390ef12060cf62438b6d45271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5e275b3390ef12060cf62438b6d45271">computeMaxOrder</a> ()</td></tr>
+<tr class="memdesc:a5e275b3390ef12060cf62438b6d45271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the maximum polynomial order among all finite element expressions.  <br /></td></tr>
 <tr class="separator:a5e275b3390ef12060cf62438b6d45271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea77692ea8d7176e0f80510ca8f7dce4" id="r_aea77692ea8d7176e0f80510ca8f7dce4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a4c7c9f73c528a4f316b146ceb1dc528c">CellType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#aea77692ea8d7176e0f80510ca8f7dce4">getCell</a> (<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> cell_id, bool update_mapping=false)</td></tr>
+<tr class="memdesc:aea77692ea8d7176e0f80510ca8f7dce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cell object for a given cell id.  <br /></td></tr>
 <tr class="separator:aea77692ea8d7176e0f80510ca8f7dce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2320ad878c0a7608535063bb73a003a" id="r_ab2320ad878c0a7608535063bb73a003a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#ab2320ad878c0a7608535063bb73a003a">preallocate</a> (<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> cell_id)</td></tr>
+<tr class="memdesc:ab2320ad878c0a7608535063bb73a003a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the internal storage of local integrals (matrices) to fit the number of finite element expressions taking into account which expressions are computed on the faces and which in the volume, and which expressions are bilinear or linear.  <br /></td></tr>
 <tr class="separator:ab2320ad878c0a7608535063bb73a003a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba501e8a43cec560cc7a355b5da2b9d0" id="r_aba501e8a43cec560cc7a355b5da2b9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#aba501e8a43cec560cc7a355b5da2b9d0">findCellNeigh</a> ()</td></tr>
+<tr class="memdesc:aba501e8a43cec560cc7a355b5da2b9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the neighboring cell across the current (local) face (m_face_id) and set up the ids for the neighbor <code>FEValues</code> if needed.  <br /></td></tr>
 <tr class="separator:aba501e8a43cec560cc7a355b5da2b9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a196c35e1397f737c2f6d9ebb27af5eac" id="r_a196c35e1397f737c2f6d9ebb27af5eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a196c35e1397f737c2f6d9ebb27af5eac">applyBasisScaling</a> ()</td></tr>
+<tr class="memdesc:a196c35e1397f737c2f6d9ebb27af5eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the basis scaling to the integrals and right-hand side contributions if needed.  <br /></td></tr>
 <tr class="separator:a196c35e1397f737c2f6d9ebb27af5eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8246448e5a9c2728eb7598f61a377f" id="r_a4a8246448e5a9c2728eb7598f61a377f"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a4a8246448e5a9c2728eb7598f61a377f">getCurrFaceIntegral</a> (const auto &amp;expr, Eigen::Index expr_id)</td></tr>
+<tr class="memdesc:a4a8246448e5a9c2728eb7598f61a377f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a map to the data corresponding to the face integral for the current cell and face being integrated. The data is a raw buffer that points to the correct location in the internal storage.  <br /></td></tr>
 <tr class="separator:a4a8246448e5a9c2728eb7598f61a377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44cde557f64f11974c53ad5ec32aff11" id="r_a44cde557f64f11974c53ad5ec32aff11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a44cde557f64f11974c53ad5ec32aff11">buildWeakFormPointerTable</a> ()</td></tr>
+<tr class="memdesc:a44cde557f64f11974c53ad5ec32aff11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a lookup table that maps finite element expression pointers to their corresponding data storage locations for integrals and right-hand side contributions.  <br /></td></tr>
 <tr class="separator:a44cde557f64f11974c53ad5ec32aff11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6817f75da211f46b5dae853676b1ba18" id="r_a6817f75da211f46b5dae853676b1ba18"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6817f75da211f46b5dae853676b1ba18">getIntegrals</a> () const</td></tr>
+<tr class="memdesc:a6817f75da211f46b5dae853676b1ba18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the (bilinear) volume integrals buffer.  <br /></td></tr>
 <tr class="separator:a6817f75da211f46b5dae853676b1ba18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889717afc24367ed219d524b2e72c0f5" id="r_a889717afc24367ed219d524b2e72c0f5"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a889717afc24367ed219d524b2e72c0f5">getRhsIntegrals</a> () const</td></tr>
+<tr class="memdesc:a889717afc24367ed219d524b2e72c0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the (linear) volume right-hand side buffer.  <br /></td></tr>
 <tr class="separator:a889717afc24367ed219d524b2e72c0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa63435525f2391570170ad1374050808" id="r_aa63435525f2391570170ad1374050808"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#aa63435525f2391570170ad1374050808">getFaceIntegrals</a> () const</td></tr>
+<tr class="memdesc:aa63435525f2391570170ad1374050808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the (bilinear) face integrals buffer where both basis functions belong to this cell.  <br /></td></tr>
 <tr class="separator:aa63435525f2391570170ad1374050808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a855dc5de374ec5d7fa5162d1817a82f9" id="r_a855dc5de374ec5d7fa5162d1817a82f9"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a855dc5de374ec5d7fa5162d1817a82f9">getRhsFaceIntegrals</a> () const</td></tr>
+<tr class="memdesc:a855dc5de374ec5d7fa5162d1817a82f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the (linear) face right-hand side buffer.  <br /></td></tr>
 <tr class="separator:a855dc5de374ec5d7fa5162d1817a82f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a74f7ea7eb50b0b03c621a1fc794e8d" id="r_a5a74f7ea7eb50b0b03c621a1fc794e8d"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5a74f7ea7eb50b0b03c621a1fc794e8d">getFaceIntegralsNeigh</a> () const</td></tr>
+<tr class="memdesc:a5a74f7ea7eb50b0b03c621a1fc794e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the (bilinear) face integrals buffer where one basis function belongs to the neighboring cell.  <br /></td></tr>
 <tr class="separator:a5a74f7ea7eb50b0b03c621a1fc794e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a657cf22865a0ad92bfdd0fa99cba2a63" id="r_a657cf22865a0ad92bfdd0fa99cba2a63"><td class="memItemLeft" align="right" valign="top">const auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a657cf22865a0ad92bfdd0fa99cba2a63">getIntegral</a> (auto wf_ptr, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> loc_neigh_id=0) const</td></tr>
+<tr class="memdesc:a657cf22865a0ad92bfdd0fa99cba2a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the integral (matrix or vector) for the current cell.  <br /></td></tr>
 <tr class="separator:a657cf22865a0ad92bfdd0fa99cba2a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:adfab37d257d408bc64aea62e52a232a3" id="r_adfab37d257d408bc64aea62e52a232a3"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> = MeshType::self_dim</td></tr>
+<tr class="memdesc:adfab37d257d408bc64aea62e52a232a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The spatial dimension of the mesh.  <br /></td></tr>
 <tr class="separator:adfab37d257d408bc64aea62e52a232a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af97bcd73573f715a20ad67d0b1d28387" id="r_af97bcd73573f715a20ad67d0b1d28387"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a></td></tr>
+<tr class="memdesc:af97bcd73573f715a20ad67d0b1d28387"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of volume expressions.  <br /></td></tr>
 <tr class="separator:af97bcd73573f715a20ad67d0b1d28387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac5056abd7e1fac241ca443f7b3ee765" id="r_aac5056abd7e1fac241ca443f7b3ee765"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a></td></tr>
+<tr class="memdesc:aac5056abd7e1fac241ca443f7b3ee765"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of face expressions.  <br /></td></tr>
 <tr class="separator:aac5056abd7e1fac241ca443f7b3ee765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d50af71153bc7edeb68797350a46d9" id="r_ab9d50af71153bc7edeb68797350a46d9"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ab9d50af71153bc7edeb68797350a46d9">s_n_blocks</a></td></tr>
+<tr class="memdesc:ab9d50af71153bc7edeb68797350a46d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of blocks for vector/tensor-valued problems.  <br /></td></tr>
 <tr class="separator:ab9d50af71153bc7edeb68797350a46d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdaea1cf72a8df534d7662302870fcc9" id="r_afdaea1cf72a8df534d7662302870fcc9"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#afdaea1cf72a8df534d7662302870fcc9">s_n_expr_bilinear</a></td></tr>
 <tr class="memdesc:afdaea1cf72a8df534d7662302870fcc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">total number of bilinear expression integrated inside the cell  <br /></td></tr>
@@ -255,97 +264,220 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:a3d674996c0083c63fd73ce787186677e"><td class="mdescLeft">&#160;</td><td class="mdescRight">total number of linear expression integrated on the boundary of the cell  <br /></td></tr>
 <tr class="separator:a3d674996c0083c63fd73ce787186677e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f76f0c9fe18aab1cdff42a133da4be2" id="r_a6f76f0c9fe18aab1cdff42a133da4be2"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">nblocks</a></td></tr>
+<tr class="memdesc:a6f76f0c9fe18aab1cdff42a133da4be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of vector blocks in the system, e.g. for a scalar problem is 1, for an elasticity problem is dim (2 or 3)  <br /></td></tr>
 <tr class="separator:a6f76f0c9fe18aab1cdff42a133da4be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
 <tr class="memitem:a6752ab50577cd23363daac716386baed" id="r_a6752ab50577cd23363daac716386baed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6752ab50577cd23363daac716386baed">TypeIJ</a> = std::array&lt; Eigen::Index, 3 &gt;</td></tr>
+<tr class="memdesc:a6752ab50577cd23363daac716386baed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper type for storing indices (i * s_n_blocks + bi, j * s_n_blocks + bj, k) for the lookup table.  <br /></td></tr>
 <tr class="separator:a6752ab50577cd23363daac716386baed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e85fe4e4ff9dfae2c82ca9a16735bad" id="r_a0e85fe4e4ff9dfae2c82ca9a16735bad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a> = <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6752ab50577cd23363daac716386baed">TypeIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> &gt;</td></tr>
+<tr class="memdesc:a0e85fe4e4ff9dfae2c82ca9a16735bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A compressed map used as a lookup table for repeated polynomials.  <br /></td></tr>
 <tr class="separator:a0e85fe4e4ff9dfae2c82ca9a16735bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95869de30e73d6da82e27fd016092055" id="r_a95869de30e73d6da82e27fd016092055"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a95869de30e73d6da82e27fd016092055">CellNeighInfo</a> = <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae32e2842128c3543eadba4e84e9e4146">FeType</a> &gt;::NeighInfo</td></tr>
 <tr class="separator:a95869de30e73d6da82e27fd016092055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a93dd221f3d0ac710937a31454cdc527e" id="r_a93dd221f3d0ac710937a31454cdc527e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a93dd221f3d0ac710937a31454cdc527e">compress</a> (const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">datastructure::CrsMapUncompressed</a>&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a4d64cd4b18c00191e2722deaf849bee5">MonoType</a> &gt; &amp;uncompressed_table)</td></tr>
+<tr class="memdesc:a93dd221f3d0ac710937a31454cdc527e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compresses a table of polynomials.  <br /></td></tr>
+<tr class="separator:a93dd221f3d0ac710937a31454cdc527e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d81f0d2700fa560d05acdb2c2cc282" id="r_ab4d81f0d2700fa560d05acdb2c2cc282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ab4d81f0d2700fa560d05acdb2c2cc282">buildLookupTables</a> ()</td></tr>
+<tr class="memdesc:ab4d81f0d2700fa560d05acdb2c2cc282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds lookup tables to identify and reuse identical polynomials.  <br /></td></tr>
+<tr class="separator:ab4d81f0d2700fa560d05acdb2c2cc282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d85998975e486e0a614a08b45fb0673" id="r_a5d85998975e486e0a614a08b45fb0673"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a5d85998975e486e0a614a08b45fb0673">gatherUncompressedLiftedMonomials</a> ()</td></tr>
+<tr class="memdesc:a5d85998975e486e0a614a08b45fb0673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gathers terms for lifted monomials from face expressions (uncompressed stage).  <br /></td></tr>
+<tr class="separator:a5d85998975e486e0a614a08b45fb0673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300383064ae3868e732a67c652c0531d" id="r_a300383064ae3868e732a67c652c0531d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; uint8_t, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> *2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a300383064ae3868e732a67c652c0531d">buildUniqueEvaTableLiftedMonomials</a> (const std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt; &amp;gathered_monos_table)</td></tr>
+<tr class="memdesc:a300383064ae3868e732a67c652c0531d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans all gathered (lifted) monomials to build a table of unique evaluation exponents.  <br /></td></tr>
+<tr class="separator:a300383064ae3868e732a67c652c0531d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6021ffbb2d5515841343fdc2a7f4e9" id="r_aff6021ffbb2d5515841343fdc2a7f4e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aff6021ffbb2d5515841343fdc2a7f4e9">compressGatheredLiftedPolynomials</a> (const std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt; &amp;gathered_monos_table)</td></tr>
+<tr class="memdesc:aff6021ffbb2d5515841343fdc2a7f4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compresses the gathered monomials into their final integer-ID-based format.  <br /></td></tr>
+<tr class="separator:aff6021ffbb2d5515841343fdc2a7f4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068202b27e8e2454becf4cd6011e1daf" id="r_a068202b27e8e2454becf4cd6011e1daf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a068202b27e8e2454becf4cd6011e1daf">gatherLiftedMonomials</a> ()</td></tr>
+<tr class="memdesc:a068202b27e8e2454becf4cd6011e1daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orchestrates the gathering and compression of lifted monomials.  <br /></td></tr>
+<tr class="separator:a068202b27e8e2454becf4cd6011e1daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437ba39b3cab9345271611bb8ddf832d" id="r_a437ba39b3cab9345271611bb8ddf832d"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a437ba39b3cab9345271611bb8ddf832d">computeRefToNeighRefMap</a> () const</td></tr>
+<tr class="memdesc:a437ba39b3cab9345271611bb8ddf832d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the affine mapping from the current cell's reference space to a neighbor's reference space.  <br /></td></tr>
+<tr class="separator:a437ba39b3cab9345271611bb8ddf832d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bffd2076b485d9826c848777a57e782" id="r_a2bffd2076b485d9826c848777a57e782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a2bffd2076b485d9826c848777a57e782">integrateVolumeCell</a> (const double *aints_data)</td></tr>
+<tr class="memdesc:a2bffd2076b485d9826c848777a57e782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates all volume expressions over the current cell.  <br /></td></tr>
+<tr class="separator:a2bffd2076b485d9826c848777a57e782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc74124859d8b3c1af21071f4e0966f3" id="r_adc74124859d8b3c1af21071f4e0966f3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adc74124859d8b3c1af21071f4e0966f3">updateFaceNormalAndGetNanson</a> ()</td></tr>
+<tr class="memdesc:adc74124859d8b3c1af21071f4e0966f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the face normal vector in <code>m_fe_values</code> and computes the Nanson's formula factor.  <br /></td></tr>
+<tr class="separator:adc74124859d8b3c1af21071f4e0966f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c67777993d66693cba12e13696068d8" id="r_a0c67777993d66693cba12e13696068d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0c67777993d66693cba12e13696068d8">precomputeMonomialCoefsForFace</a> ()</td></tr>
+<tr class="memdesc:a0c67777993d66693cba12e13696068d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precomputes the values of the evaluation parts of the gathered monomials for the current face.  <br /></td></tr>
+<tr class="separator:a0c67777993d66693cba12e13696068d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6740bffb0e4ec5ce55af391b304190d" id="r_ad6740bffb0e4ec5ce55af391b304190d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ad6740bffb0e4ec5ce55af391b304190d">integrateFaceCell</a> (const double *eints_data, double nanson)</td></tr>
+<tr class="memdesc:ad6740bffb0e4ec5ce55af391b304190d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates all face expressions over the current face of the cell.  <br /></td></tr>
+<tr class="separator:ad6740bffb0e4ec5ce55af391b304190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a3d54624eb0c0d234b2bd824c42336f91" id="r_a3d54624eb0c0d234b2bd824c42336f91"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a3d54624eb0c0d234b2bd824c42336f91">m_poly_table_flat</a></td></tr>
+<tr class="memdesc:a3d54624eb0c0d234b2bd824c42336f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polynomial tables for volume expressions (one per expression).  <br /></td></tr>
 <tr class="separator:a3d54624eb0c0d234b2bd824c42336f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56a7e5588d1f408101e51539d2bd4f7d" id="r_a56a7e5588d1f408101e51539d2bd4f7d"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a56a7e5588d1f408101e51539d2bd4f7d">m_poly_table_flat_nodupes</a></td></tr>
+<tr class="memdesc:a56a7e5588d1f408101e51539d2bd4f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique polynomials for volume expressions, after deduplication.  <br /></td></tr>
 <tr class="separator:a56a7e5588d1f408101e51539d2bd4f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38fe00a8337314cf830973516b320f45" id="r_a38fe00a8337314cf830973516b320f45"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a38fe00a8337314cf830973516b320f45">m_poly_table_flat_ijs_table</a></td></tr>
+<tr class="memdesc:a38fe00a8337314cf830973516b320f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup table to map unique volume polynomials to their matrix entries.  <br /></td></tr>
 <tr class="separator:a38fe00a8337314cf830973516b320f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17dfd7732bfe374b5c93709ad4af8f4c" id="r_a17dfd7732bfe374b5c93709ad4af8f4c"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a17dfd7732bfe374b5c93709ad4af8f4c">m_poly_table_face_flat</a></td></tr>
+<tr class="memdesc:a17dfd7732bfe374b5c93709ad4af8f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polynomial tables for standard face expressions.  <br /></td></tr>
 <tr class="separator:a17dfd7732bfe374b5c93709ad4af8f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf1963a667e6af6ee53ce16272597df" id="r_aecf1963a667e6af6ee53ce16272597df"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aecf1963a667e6af6ee53ce16272597df">m_poly_table_face_flat_nodupes</a></td></tr>
+<tr class="memdesc:aecf1963a667e6af6ee53ce16272597df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique polynomials for standard face expressions.  <br /></td></tr>
 <tr class="separator:aecf1963a667e6af6ee53ce16272597df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ce8951bc390251d1693262439b63a96" id="r_a6ce8951bc390251d1693262439b63a96"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6ce8951bc390251d1693262439b63a96">m_poly_table_face_flat_ijs_table</a></td></tr>
+<tr class="memdesc:a6ce8951bc390251d1693262439b63a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup table for standard face polynomials.  <br /></td></tr>
 <tr class="separator:a6ce8951bc390251d1693262439b63a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcea5bc34b2904430eda4da661760924" id="r_afcea5bc34b2904430eda4da661760924"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae33f52db60116b82b4c8c69cc9647812">FlatPolyTypeLifted</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#afcea5bc34b2904430eda4da661760924">m_poly_table_face_lifted_flat</a></td></tr>
+<tr class="memdesc:afcea5bc34b2904430eda4da661760924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncompressed polynomial tables for lifted (neighbor-dependent) face expressions.  <br /></td></tr>
 <tr class="separator:afcea5bc34b2904430eda4da661760924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dea3ba212e666989cd7875bab4cf063" id="r_a7dea3ba212e666989cd7875bab4cf063"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#abf590e2a650459eb8fb8f152cb2fa7ec">CompressedListGatheredPoly</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7dea3ba212e666989cd7875bab4cf063">m_poly_table_face_lifted_gathered</a></td></tr>
+<tr class="memdesc:a7dea3ba212e666989cd7875bab4cf063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compressed and gathered version of <code>m_poly_table_face_lifted_flat</code>.  <br /></td></tr>
 <tr class="separator:a7dea3ba212e666989cd7875bab4cf063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a8bfa8fecd67c0061fb8772c24ff537" id="r_a6a8bfa8fecd67c0061fb8772c24ff537"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#abf590e2a650459eb8fb8f152cb2fa7ec">CompressedListGatheredPoly</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6a8bfa8fecd67c0061fb8772c24ff537">m_poly_table_face_lifted_gathered_nodupes</a></td></tr>
+<tr class="memdesc:a6a8bfa8fecd67c0061fb8772c24ff537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique polynomials for lifted face expressions, after gathering and deduplication.  <br /></td></tr>
 <tr class="separator:a6a8bfa8fecd67c0061fb8772c24ff537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50351bbee6fe07f3b059f63185467df9" id="r_a50351bbee6fe07f3b059f63185467df9"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad">RepeatingTableIJ</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a50351bbee6fe07f3b059f63185467df9">m_poly_table_face_lifted_gathered_ijs_table</a></td></tr>
+<tr class="memdesc:a50351bbee6fe07f3b059f63185467df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup table for lifted face polynomials.  <br /></td></tr>
 <tr class="separator:a50351bbee6fe07f3b059f63185467df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f27e1a0b5f8ecd50d2fd6418afc085" id="r_a93f27e1a0b5f8ecd50d2fd6418afc085"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; uint8_t, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> *2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a93f27e1a0b5f8ecd50d2fd6418afc085">m_eva_idx_table</a></td></tr>
+<tr class="memdesc:a93f27e1a0b5f8ecd50d2fd6418afc085"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table mapping a unique integer ID to a monomial exponent array. Used to evaluate the mapping-dependent parts of gathered monomials.  <br /></td></tr>
 <tr class="separator:a93f27e1a0b5f8ecd50d2fd6418afc085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a672fe50b7bf7f95810f3fb2a84f5cb53" id="r_a672fe50b7bf7f95810f3fb2a84f5cb53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; std::pair&lt; double, uint16_t &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a672fe50b7bf7f95810f3fb2a84f5cb53">m_gathered_monos</a></td></tr>
+<tr class="memdesc:a672fe50b7bf7f95810f3fb2a84f5cb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the unique "gathered" parts of monomials. Each row corresponds to a <code>gather_id</code> and contains a list of <code>(coefficient, eval_id)</code> pairs, representing a sum like \(\sum_i c_i M_i\), where \(M_i\) is an evaluation monomial and eval_id points to a row of m_eva_idx_table.  <br /></td></tr>
 <tr class="separator:a672fe50b7bf7f95810f3fb2a84f5cb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac453a013ec1fd8fd03b97edd208fe700" id="r_ac453a013ec1fd8fd03b97edd208fe700"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ac453a013ec1fd8fd03b97edd208fe700">m_gather_coef</a></td></tr>
+<tr class="memdesc:ac453a013ec1fd8fd03b97edd208fe700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer storing the computed values of the gathered parts (from <code>m_gathered_monos</code>) for the current face.  <br /></td></tr>
 <tr class="separator:ac453a013ec1fd8fd03b97edd208fe700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b" id="r_a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b">m_eval_table_ext</a></td></tr>
+<tr class="memdesc:a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer storing the computed values of the unique evaluation monomials (from <code>m_eva_idx_table</code>) for the current face.  <br /></td></tr>
 <tr class="separator:a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a080ecfa8b171913d55d9d1f81bba68f2" id="r_a080ecfa8b171913d55d9d1f81bba68f2"><td class="memItemLeft" align="right" valign="top">std::array&lt; Eigen::Index, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#af97bcd73573f715a20ad67d0b1d28387">s_n_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a080ecfa8b171913d55d9d1f81bba68f2">m_npoly_comps_volume</a></td></tr>
+<tr class="memdesc:a080ecfa8b171913d55d9d1f81bba68f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the number of polynomial components for each volume expression.  <br /></td></tr>
 <tr class="separator:a080ecfa8b171913d55d9d1f81bba68f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecb9f4e66cfb1237219193bb4819e535" id="r_aecb9f4e66cfb1237219193bb4819e535"><td class="memItemLeft" align="right" valign="top">std::array&lt; Eigen::Index, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aecb9f4e66cfb1237219193bb4819e535">m_npoly_comps_face</a></td></tr>
+<tr class="memdesc:aecb9f4e66cfb1237219193bb4819e535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the number of polynomial components for each face expression.  <br /></td></tr>
 <tr class="separator:aecb9f4e66cfb1237219193bb4819e535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e5f1491a9910247c84381b8eb67e11" id="r_a86e5f1491a9910247c84381b8eb67e11"><td class="memItemLeft" align="right" valign="top">const MeshType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a86e5f1491a9910247c84381b8eb67e11">m_mesh</a></td></tr>
+<tr class="memdesc:a86e5f1491a9910247c84381b8eb67e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to the underlying mesh.  <br /></td></tr>
 <tr class="separator:a86e5f1491a9910247c84381b8eb67e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab71822ff31667b86b66d81494792620b" id="r_ab71822ff31667b86b66d81494792620b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae32e2842128c3543eadba4e84e9e4146">FeType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#ab71822ff31667b86b66d81494792620b">m_cell_manager</a></td></tr>
+<tr class="memdesc:ab71822ff31667b86b66d81494792620b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cell manager.  <br /></td></tr>
 <tr class="separator:ab71822ff31667b86b66d81494792620b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af54f09cc6320ce8a6ffca84f72b85b07" id="r_af54f09cc6320ce8a6ffca84f72b85b07"><td class="memItemLeft" align="right" valign="top">FeExpressionTuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#af54f09cc6320ce8a6ffca84f72b85b07">m_fe_expression</a></td></tr>
+<tr class="memdesc:af54f09cc6320ce8a6ffca84f72b85b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tuple of pointers to the finite element expressions to compute the volume integrals.  <br /></td></tr>
 <tr class="separator:af54f09cc6320ce8a6ffca84f72b85b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4110c0fe647bfd2c890e0d1195968f3d" id="r_a4110c0fe647bfd2c890e0d1195968f3d"><td class="memItemLeft" align="right" valign="top">FeExpressionFaceTuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a4110c0fe647bfd2c890e0d1195968f3d">m_fe_expression_face</a></td></tr>
+<tr class="memdesc:a4110c0fe647bfd2c890e0d1195968f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tuple of pointers to the finite element expressions to compute the face integrals.  <br /></td></tr>
 <tr class="separator:a4110c0fe647bfd2c890e0d1195968f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1572b9a8434edc85228a22e2f1f19fd" id="r_aa1572b9a8434edc85228a22e2f1f19fd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ae32e2842128c3543eadba4e84e9e4146">FeType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#aa1572b9a8434edc85228a22e2f1f19fd">m_fe_space</a></td></tr>
+<tr class="memdesc:aa1572b9a8434edc85228a22e2f1f19fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to the finite element space.  <br /></td></tr>
 <tr class="separator:aa1572b9a8434edc85228a22e2f1f19fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2edbca422d1cc0e31a77f0c312456403" id="r_a2edbca422d1cc0e31a77f0c312456403"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a2edbca422d1cc0e31a77f0c312456403">m_order</a> = -1</td></tr>
+<tr class="memdesc:a2edbca422d1cc0e31a77f0c312456403"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum polynomial order of the finite element expressions integrated in the volume.  <br /></td></tr>
 <tr class="separator:a2edbca422d1cc0e31a77f0c312456403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c0b508e89e3d94c5a371729f7f17db2" id="r_a4c0b508e89e3d94c5a371729f7f17db2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a4c0b508e89e3d94c5a371729f7f17db2">m_order_face</a> = -1</td></tr>
+<tr class="memdesc:a4c0b508e89e3d94c5a371729f7f17db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum polynomial order of the finite element expressions integrated on the faces.  <br /></td></tr>
 <tr class="separator:a4c0b508e89e3d94c5a371729f7f17db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba4ecf5b10100eebbddcb1448c3ea84" id="r_a8ba4ecf5b10100eebbddcb1448c3ea84"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; void *, double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a8ba4ecf5b10100eebbddcb1448c3ea84">m_wf_ptr_table</a></td></tr>
+<tr class="memdesc:a8ba4ecf5b10100eebbddcb1448c3ea84"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map from finite element expression pointers to their corresponding data storage locations.  <br /></td></tr>
 <tr class="separator:a8ba4ecf5b10100eebbddcb1448c3ea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc5093c36bee05548aa9c84fa2b19f7" id="r_a2cc5093c36bee05548aa9c84fa2b19f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">fe::UpdateFlagsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a2cc5093c36bee05548aa9c84fa2b19f7">m_update_flags</a> = 0</td></tr>
+<tr class="memdesc:a2cc5093c36bee05548aa9c84fa2b19f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update flags indicating which values to update in FEValues for the volume integrals.  <br /></td></tr>
 <tr class="separator:a2cc5093c36bee05548aa9c84fa2b19f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4aacfcb9001e32dd2903a39a3b9709" id="r_afc4aacfcb9001e32dd2903a39a3b9709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">fe::UpdateFlagsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#afc4aacfcb9001e32dd2903a39a3b9709">m_update_flags_face</a> = 0</td></tr>
+<tr class="memdesc:afc4aacfcb9001e32dd2903a39a3b9709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update flags indicating which values to update in FEValues for the face integrals.  <br /></td></tr>
 <tr class="separator:afc4aacfcb9001e32dd2903a39a3b9709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9867615602570c7c0432fef24194f2d8" id="r_a9867615602570c7c0432fef24194f2d8"><td class="memItemLeft" align="right" valign="top">Eigen::Tensor&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a9867615602570c7c0432fef24194f2d8">m_integrals</a></td></tr>
+<tr class="memdesc:a9867615602570c7c0432fef24194f2d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tensor to store the bilinear volume integrals.  <br /></td></tr>
 <tr class="separator:a9867615602570c7c0432fef24194f2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d891d3270ea6232038e579992dc5e64" id="r_a4d891d3270ea6232038e579992dc5e64"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a4d891d3270ea6232038e579992dc5e64">m_rhs</a></td></tr>
+<tr class="memdesc:a4d891d3270ea6232038e579992dc5e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix to store the linear volume right-hand side contributions.  <br /></td></tr>
 <tr class="separator:a4d891d3270ea6232038e579992dc5e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3a2748b3f5998512d15621c16caeb9" id="r_a8c3a2748b3f5998512d15621c16caeb9"><td class="memItemLeft" align="right" valign="top">Eigen::Tensor&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a8c3a2748b3f5998512d15621c16caeb9">m_face_integrals</a></td></tr>
+<tr class="memdesc:a8c3a2748b3f5998512d15621c16caeb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tensor to store the bilinear face integrals where both basis functions belong to this cell.  <br /></td></tr>
 <tr class="separator:a8c3a2748b3f5998512d15621c16caeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15eda22e0f670ffe1a598663883ca496" id="r_a15eda22e0f670ffe1a598663883ca496"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a15eda22e0f670ffe1a598663883ca496">m_face_rhs</a></td></tr>
+<tr class="memdesc:a15eda22e0f670ffe1a598663883ca496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix to store the linear face right-hand side contributions.  <br /></td></tr>
 <tr class="separator:a15eda22e0f670ffe1a598663883ca496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99bcee8a09e4224e0df5630edf24c494" id="r_a99bcee8a09e4224e0df5630edf24c494"><td class="memItemLeft" align="right" valign="top">Eigen::Tensor&lt; double, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a99bcee8a09e4224e0df5630edf24c494">m_face_integrals_neigh</a></td></tr>
+<tr class="memdesc:a99bcee8a09e4224e0df5630edf24c494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tensor to store the bilinear face integrals where one basis function belongs to the neighboring cell.  <br /></td></tr>
 <tr class="separator:a99bcee8a09e4224e0df5630edf24c494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05527052cda4ee3541cd4c87e3b3f4dc" id="r_a05527052cda4ee3541cd4c87e3b3f4dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html">fe::FeValues</a>&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a05527052cda4ee3541cd4c87e3b3f4dc">m_fe_values</a></td></tr>
+<tr class="memdesc:a05527052cda4ee3541cd4c87e3b3f4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The FEValues object to cache ids, normals and the evaluation of shape functions and their derivatives.  <br /></td></tr>
 <tr class="separator:a05527052cda4ee3541cd4c87e3b3f4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c73f59b0ad85183e7a9abb95264463" id="r_a51c73f59b0ad85183e7a9abb95264463"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a51c73f59b0ad85183e7a9abb95264463">m_need_neigh_cell</a> = -1</td></tr>
+<tr class="memdesc:a51c73f59b0ad85183e7a9abb95264463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags indicating whether neighboring cell information is needed.  <br /></td></tr>
 <tr class="separator:a51c73f59b0ad85183e7a9abb95264463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a2b9f31df2093aab4338038313a7be" id="r_a62a2b9f31df2093aab4338038313a7be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a62a2b9f31df2093aab4338038313a7be">m_need_neigh_values</a> = -1</td></tr>
+<tr class="memdesc:a62a2b9f31df2093aab4338038313a7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags indicating whether neighboring cell values are needed, a subset of the above, if this true, than the above is true.  <br /></td></tr>
 <tr class="separator:a62a2b9f31df2093aab4338038313a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b70f7fd74d1ca6d95ccf3cf1b333cf" id="r_ad4b70f7fd74d1ca6d95ccf3cf1b333cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#ad4b70f7fd74d1ca6d95ccf3cf1b333cf">m_cell_id</a> = -1</td></tr>
+<tr class="memdesc:ad4b70f7fd74d1ca6d95ccf3cf1b333cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current cell id being integrated, in mesh MPI local enumeration.  <br /></td></tr>
 <tr class="separator:ad4b70f7fd74d1ca6d95ccf3cf1b333cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afce45b0265c5c60052d0b446301cf896" id="r_afce45b0265c5c60052d0b446301cf896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#afce45b0265c5c60052d0b446301cf896">m_face_id</a> = -1</td></tr>
+<tr class="memdesc:afce45b0265c5c60052d0b446301cf896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current face id being integrated, local to the cell.  <br /></td></tr>
 <tr class="separator:afce45b0265c5c60052d0b446301cf896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3900831d99962f19cb4ce8904e9b864b" id="r_a3900831d99962f19cb4ce8904e9b864b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a95869de30e73d6da82e27fd016092055">CellNeighInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a3900831d99962f19cb4ce8904e9b864b">m_cell_neigh_info</a></td></tr>
+<tr class="memdesc:a3900831d99962f19cb4ce8904e9b864b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about the neighboring cell across the current face it might be empty if the neighbor is not needed or does not exist.  <br /></td></tr>
 <tr class="separator:a3900831d99962f19cb4ce8904e9b864b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c5734cd99baf571bbac483205c3f50" id="r_ae8c5734cd99baf571bbac483205c3f50"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a1562de519ef8e455f2c6c53e6fc014a2">MappingType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#ae8c5734cd99baf571bbac483205c3f50">m_mapping</a> = nullptr</td></tr>
+<tr class="memdesc:ae8c5734cd99baf571bbac483205c3f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the mapping of the current cell being integrated.  <br /></td></tr>
 <tr class="separator:ae8c5734cd99baf571bbac483205c3f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename MeshType, typename FeExpressionTuple, typename FeExpressionFaceTuple = std::tuple&lt;&gt;&gt;<br />
+class vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</div><p>Implements a quadrature-free finite element integrator. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshType</td><td>The type of the mesh. </td></tr>
+    <tr><td class="paramname">FeExpressionTuple</td><td>A tuple of types representing the integrands for volume integrals. </td></tr>
+    <tr><td class="paramname">FeExpressionFaceTuple</td><td>A tuple of types representing the integrands for face integrals.</td></tr>
+  </table>
+  </dd>
+</dl>
+<h1><a class="anchor" id="overview_sec"></a>
+Overview</h1>
+<p>This class assembles local stiffness matrices on a cell-by-cell basis using a quadrature-free approach. Instead of relying on numerical quadrature points (like Gauss points), it leverages the fact that the integrands are polynomials. The integration is performed analytically by pre-calculating the integrals of all monomial bases over the reference element.</p>
+<p>The core workflow involves several stages of optimization to minimize redundant computations, which is crucial for efficiency.</p>
+<h1><a class="anchor" id="process_sec"></a>
+The Integration Process</h1>
+<ol type="1">
+<li><b>Polynomial Representation</b>: The first step, handled by the <code>FeExpression</code> objects, is to express each term of the weak form (e.g., \(c(\mathbf{x}) \nabla \phi_i \cdot \nabla \phi_j\)) as a polynomial in the coordinates of the reference element \(\hat{\mathbf{x}}\). A polynomial \(P(\hat{\mathbf{x}})\) is a sum of monomials:  <p class="formulaDsp">
+\[
+P(\hat{\mathbf{x}}) = \sum_{k} c_k \hat{\mathbf{x}}^{\alpha_k}
+\]
+</p>
+ where \(\hat{\mathbf{x}}^{\alpha_k}\) is a monomial (e.g., in 2D, \(\hat{x}^{\alpha_{k,1}} \hat{y}^{\alpha_{k,2}}\)).</li>
+<li><b>Analytical Integration</b>: The integral of this polynomial over a physical cell \(K\) is transformed to an integral over the reference cell \(\hat{K}\) (<b>NOTE</b>, this is done because the basis function is defined on the reference element and we want to avoid to integrate the composition of the physical mapping with the basis function):  <p class="formulaDsp">
+\[
+\int_K P(\mathbf{x}) \,d\mathbf{x} = \int_{\hat{K}}
+P(\mathbf{F}(\hat{\mathbf{x}})) G(F) |\det(J)| \,d\hat{\mathbf{x}}
+\]
+</p>
+ Here, \(G(F)\) represents the pullback. Indeed, the polynomial can be either a vector field or a covector field (e.g. gradient) that needs further transformation. This terms (like the derminant of the the Jacobian), changes on a cell by cell basis and depending of the part of the weak form considered (e.g. in a reaction-diffusion equation we have both a vector and a covector). For this reason, the <code>FeExpression</code> of a weak form does not return one polynomial, but a list of polynomials that summed represent the weak form. To each polynomial of the list is associated a coefficient \(G(F)\) that needs to be multiplied in order to have the correct tranformation when applying the physical mapping of the cell. E.g., the inner(grad(u), grad(v)) weak form is made by two polynomials, one that represents de_x(u)de_x(v) and one de_y(u)de_y(v), which require as coefficient the inverse of the jacobian in the x and y components, respectively. The integral is further simplified to become a weighted sum of precomputed monomial integrals. The values \(\int_{\hat{K}} \hat{\mathbf{x}}^{\alpha_k} \,d\hat{\mathbf{x}}\) are computed beforehand for all necessary monomial powers \(\alpha_k\) via the quadrature free algorithm.</li>
+<li><b>Optimization via Compression</b>: To manage the potentially vast number of polynomials and monomials, the class employs several compression techniques:</li>
+</ol>
+<ul>
+<li><b>Monomial Compression</b>: Each monomial exponent array \(\alpha_k\) is mapped to a unique integer ID (<code>integr_id</code>). This allows for fast lookups in the precomputed integral table.</li>
+<li><b>Polynomial Deduplication</b>: Many entries in the local matrix result in identical polynomials. The <code>buildLookupTables</code> method identifies these duplicates. Unique polynomials are stored once, and a lookup table maps their computed integral value to all corresponding matrix entries <code>(i, j)</code>.</li>
+</ul>
+<ol type="1">
+<li><b>Handling Face Integrals and Neighbors (Lifting &amp; Gathering)</b>: Face integrals involving terms from a neighboring cell (e.g., in Discontinuous Galerkin methods) are more complex. The coordinates on the neighbor's reference cell, \(\hat{\mathbf{x}}&#39;\), are related to the current cell's coordinates, \(\hat{\mathbf{x}}\), by an affine map: \(\hat{\mathbf{x}}&#39; = \mathbf{A} \hat{\mathbf{x}} + \mathbf{b}\).</li>
+</ol>
+<ul>
+<li><b>Lifting</b>: A monomial on the neighbor, like \((\hat{x}&#39;)^\beta\), becomes a polynomial in \(\hat{\mathbf{x}}\), \(\mathbf{A}\), and \(\mathbf{b}\). This effectively "lifts" the polynomial into a higher-dimensional space with variables \((\hat{\mathbf{x}}, \mathbf{A},
+\mathbf{b})\). For instance, a 1D monomial \((\hat{x}&#39;)^2\) becomes  \((A\hat{x} + b)^2 = A^2\hat{x}^2 + 2Ab\hat{x}
++ b^2\).</li>
+<li><b>Gathering</b>: To evaluate the integral efficiently, terms are factorized and "gathered". The integral is only with respect to \(\hat{\mathbf{x}}\). The parts dependent on the map \((\mathbf{A}, \mathbf{b})\) are evaluated separately. In particular, each polynomial is written as \( P(x, a, b) = M_p(x) M_q(a, b) P_r(a, b) \) where M_p and M_q are monomials and P_r is a polynomial. All the possible M_p, M_q and P_r are precomputed once (during the construction of the integrator) and evaluated for each cell. M_p is evaluated via the quadrature free algorihtm, M_q and P_r (which are not 1 only for FeExpression that need the neighbor), are computed on the fly for each cell. </li>
+</ul>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a95869de30e73d6da82e27fd016092055" name="a95869de30e73d6da82e27fd016092055"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95869de30e73d6da82e27fd016092055">&#9670;&#160;</a></span>CellNeighInfo</h2>
 
@@ -407,6 +539,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A compressed representation of a list of gathered polynomials. </p>
 
 </div>
 </div>
@@ -536,6 +670,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
 </div><div class="memdoc">
 
+<p>A compressed representation of a list of standard polynomials. </p>
+
 </div>
 </div>
 <a id="ae33f52db60116b82b4c8c69cc9647812" name="ae33f52db60116b82b4c8c69cc9647812"></a>
@@ -551,6 +687,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A compressed representation of a list of lifted polynomials. </p>
 
 </div>
 </div>
@@ -568,6 +706,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
 </div><div class="memdoc">
 
+<p>An uncompressed gathered polynomial for a single entry. </p>
+
 </div>
 </div>
 <a id="a26ba2c6cf3c5e1bbeb6d5119c98b6681" name="a26ba2c6cf3c5e1bbeb6d5119c98b6681"></a>
@@ -584,6 +724,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
 </div><div class="memdoc">
 
+<p>Coefficients for a compressed gathered polynomial. </p>
+
 </div>
 </div>
 <a id="a1e06cf88b240eab0da5351ad880902a7" name="a1e06cf88b240eab0da5351ad880902a7"></a>
@@ -599,6 +741,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The index type used by the mesh. </p>
 
 </div>
 </div>
@@ -640,6 +784,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
 </div><div class="memdoc">
 
+<p>The monomial type for standard polynomials. </p>
+
 </div>
 </div>
 <a id="a584a078fc43b50282d0616133d636c6c" name="a584a078fc43b50282d0616133d636c6c"></a>
@@ -655,6 +801,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The monomial type for lifted polynomials. </p>
 
 </div>
 </div>
@@ -672,6 +820,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
 </div><div class="memdoc">
 
+<p>The polynomial type used for standard basis functions. </p>
+
 </div>
 </div>
 <a id="aa4160c0fae18bd2bc92c61a7ab925ba0" name="aa4160c0fae18bd2bc92c61a7ab925ba0"></a>
@@ -687,6 +837,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The polynomial type "lifted" to a higher dimension. This is used for face integrals involving neighbor cell data, where the polynomial also depends on the coefficients of the affine map between reference cells. The extra <code>2*dim</code> dimensions account for the diagonal Jacobian and translation vector. </p>
 
 </div>
 </div>
@@ -712,6 +864,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>A compressed map used as a lookup table for repeated polynomials. </p>
+
 </div>
 </div>
 <a id="a6752ab50577cd23363daac716386baed" name="a6752ab50577cd23363daac716386baed"></a>
@@ -735,6 +889,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Helper type for storing indices (i * s_n_blocks + bi, j * s_n_blocks + bj, k) for the lookup table. </p>
 
 </div>
 </div>
@@ -761,10 +917,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::WeakFormIntegratorQFree </td>
@@ -796,12 +949,18 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Constructs the quadrature-free integrator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh object. </td></tr>
+    <tr><td class="paramname">cell_manager</td><td>Manages cell data and mappings. </td></tr>
+    <tr><td class="paramname">fe_expression</td><td>A tuple of volume integrand expressions. </td></tr>
+    <tr><td class="paramname">fe_expression_face</td><td>A tuple of face integrand expressions. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -831,6 +990,9 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Apply the basis scaling to the integrals and right-hand side contributions if needed. </p>
+<p>This method checks if the finite element type requires basis scaling. If so, it computes the scaling factors based on the Jacobian determinant of the mapping and applies them to the stored integrals and right-hand side contributions. </p>
+
 </div>
 </div>
 <a id="ab4d81f0d2700fa560d05acdb2c2cc282" name="ab4d81f0d2700fa560d05acdb2c2cc282"></a>
@@ -839,7 +1001,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -853,26 +1015,29 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Builds lookup tables to identify and reuse identical polynomials. </p>
+<p>This method analyzes the polynomial tables (m_poly_table_flat, m_poly_table_face_flat, m_poly_table_face_lifted_gathered) for volume and face expressions to find which entries <code>(i, j, k, bi, bj)</code>,( where <code>i</code>, <code>j</code> are the basis index, <code>k</code> the index of the sum component to handle coef. of vector and covector, and <code>bi</code>, <code>bj</code> the block index for vectorial problems) share the exact same polynomial. It then creates a table of unique polynomials (<code>_nodupes</code>) and a corresponding index table (<code>_ijs_table</code>) that maps each unique polynomial back to all the original entries it corresponds to. This avoids re-calculating the integral for the same polynomial multiple times. </p>
+
 </div>
 </div>
-<a id="ada14157078d24c0513d06d4298b414fb" name="ada14157078d24c0513d06d4298b414fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada14157078d24c0513d06d4298b414fb">&#9670;&#160;</a></span>buildUniqueEvaTable()</h2>
+<a id="a300383064ae3868e732a67c652c0531d" name="a300383064ae3868e732a67c652c0531d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a300383064ae3868e732a67c652c0531d">&#9670;&#160;</a></span>buildUniqueEvaTableLiftedMonomials()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::array&lt; uint8_t, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a> *2 &gt; &gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::buildUniqueEvaTable </td>
+          <td class="memname">std::vector&lt; std::array&lt; uint8_t, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">::dim</a> *2 &gt; &gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::buildUniqueEvaTableLiftedMonomials </td>
           <td>(</td>
           <td class="paramtype">const std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>gathered_monos_table</em></td><td>)</td>
@@ -881,10 +1046,20 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Scans all gathered (lifted) monomials to build a table of unique evaluation exponents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gathered_monos_table</td><td>The table of uncompressed gathered monomials.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function loops over all the possible monomial evaluations we have to do (in the lifted variables), both considering the <code>evalut_id</code> part and the monomials in the <code>gather</code> part. It builds a table that maps a unique id to an array representing the exponents of a certain monomial. This table makes it possible to compress the monomials, since we can substitute an exponent (i.e., array) with a unique id.</p>
+<dl class="section return"><dt>Returns</dt><dd>A sorted vector of unique exponent arrays needed for evaluation. </dd></dl>
 
 </div>
 </div>
@@ -913,10 +1088,13 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Build a lookup table that maps finite element expression pointers to their corresponding data storage locations for integrals and right-hand side contributions. </p>
+<p>This method populates an unordered map that associates each finite element expression pointer with a pointer to its corresponding data storage location in the internal tensors and matrices. It ensures that each expression is uniquely mapped and checks for duplicates, reporting an error if the same expression is used more than once. </p>
+
 </div>
 </div>
-<a id="ace0aacbad87cf69a1e2a0620536e52a6" name="ace0aacbad87cf69a1e2a0620536e52a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace0aacbad87cf69a1e2a0620536e52a6">&#9670;&#160;</a></span>compress()</h2>
+<a id="a93dd221f3d0ac710937a31454cdc527e" name="a93dd221f3d0ac710937a31454cdc527e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93dd221f3d0ac710937a31454cdc527e">&#9670;&#160;</a></span>compress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -927,35 +1105,48 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">FlatPolyType</a> <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::compress </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a88407585193835f8e4e22cb57ec3085a">::FlatPolyType</a> <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::compress </td>
           <td>(</td>
-          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMapUncompressed.html">datastructure::CrsMapUncompressed</a>&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a4d64cd4b18c00191e2722deaf849bee5">MonoType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>uncompressed_table</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Compresses a table of polynomials. </p>
+<p>This function takes a table of uncompressed polynomials (represented by their full monomial lists) and performs two levels of compression:</p><ol type="1">
+<li>It compresses the table to a CrsMap.</li>
+<li>It compresses each monomial by converting its exponent array into a single linear index.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uncompressed_table</td><td>An CrsMapUncompressed map of <code>MonoType</code> monomials. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>FlatPolyType</code> containing the compressed table of compressed monomials. </dd></dl>
+
 </div>
 </div>
-<a id="a8d7a2f93461b0d23ff3e475735d2d93f" name="a8d7a2f93461b0d23ff3e475735d2d93f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d7a2f93461b0d23ff3e475735d2d93f">&#9670;&#160;</a></span>compressGatheredPolynomials()</h2>
+<a id="aff6021ffbb2d5515841343fdc2a7f4e9" name="aff6021ffbb2d5515841343fdc2a7f4e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff6021ffbb2d5515841343fdc2a7f4e9">&#9670;&#160;</a></span>compressGatheredLiftedPolynomials()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::compressGatheredPolynomials </td>
+          <td class="memname">void <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::compressGatheredLiftedPolynomials </td>
           <td>(</td>
           <td class="paramtype">const std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>gathered_monos_table</em></td><td>)</td>
@@ -964,13 +1155,21 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>compress the gathered monomials in <a class="el" href="structvulpes_1_1assemble_1_1CompressedGatheredMonomial.html">CompressedGatheredMonomial</a> </p>
-<p>The gathered monomial are stored as three indexes: one that indicates the integral (with respect to the space variable), one that indicates an homogenous term (e.g. the <code>a</code> in <code>xa(b + 1)</code>) and one the indicates the sum of other monomials, that is the index in the gathered_monos table </p>
+<p>Compresses the gathered monomials into their final integer-ID-based format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gathered_monos_table</td><td>The table of uncompressed gathered monomials.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This method converts each <code><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html" title="Represents a monomial after the &quot;gathering&quot; process for face integrals.">GatheredMonomial</a></code> into a <code><a class="el" href="structvulpes_1_1assemble_1_1CompressedGatheredMonomial.html" title="A fully compressed representation of a gathered monomial GatheredMonomial for face integrals.">CompressedGatheredMonomial</a></code> by replacing exponent arrays and coefficient lists with unique integer IDs that point to entries in <code>m_eva_idx_table</code> and <code>m_gathered_monos</code>.</p>
+<p>The gathered monomial are stored as three indexes: one that indicates the integral (with respect to the space variable), one that indicates an homogenous term (e.g. the <code>a</code> in <code>xa(b + 1)</code>) and one the indicates the sum of other monomials, that is the index in the <code>m_gathered_monos</code> table</p>
+<p>It is composed by two steps, in the first one, we substitue the std::array&lt;uint8_t, Dim * 2&gt; using the table <code>m_eva_idx_table</code> computed with buildUniqueEvaTable (in both the <code>evalut_id</code> and <code>gather</code> of <code><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html" title="Represents a monomial after the &quot;gathering&quot; process for face integrals.">GatheredMonomial</a></code>). In the second, we build a table with the unique gathered parts (the gathered part is the sum of monomials times a coefficient); with this table, we substitute the std::vector&lt;std::pair&lt;double, int16_t&gt;&gt; representing the gather part with a unique id. </p>
 
 </div>
 </div>
@@ -999,10 +1198,13 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Compute the maximum polynomial order among all finite element expressions. </p>
+<dl class="section note"><dt>Note</dt><dd>This is needed to choose the right quadrature rule or the order of monomial up to which we need to use the quadrature free algorithm. </dd></dl>
+
 </div>
 </div>
-<a id="a151baf55ac901980c6959394cffb9b53" name="a151baf55ac901980c6959394cffb9b53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a151baf55ac901980c6959394cffb9b53">&#9670;&#160;</a></span>computeRefToNeighRefMap()</h2>
+<a id="a437ba39b3cab9345271611bb8ddf832d" name="a437ba39b3cab9345271611bb8ddf832d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437ba39b3cab9345271611bb8ddf832d">&#9670;&#160;</a></span>computeRefToNeighRefMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1013,7 +1215,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::computeRefToNeighRefMap </td>
+          <td class="memname">Eigen::Matrix&lt; double, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adfab37d257d408bc64aea62e52a232a3">dim</a>, 2 &gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::computeRefToNeighRefMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1021,10 +1223,13 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Computes the affine mapping from the current cell's reference space to a neighbor's reference space. </p>
+<dl class="section return"><dt>Returns</dt><dd>A matrix of size <code>dim x 2</code>, where the first column is the diagonal of the composite Jacobian and the second is the composite translation vector. </dd></dl>
 
 </div>
 </div>
@@ -1053,6 +1258,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Compute the update flags indicating the values to be updated for each cell in the FEValues. </p>
+
 </div>
 </div>
 <a id="aba501e8a43cec560cc7a355b5da2b9d0" name="aba501e8a43cec560cc7a355b5da2b9d0"></a>
@@ -1080,21 +1287,23 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Find the neighboring cell across the current (local) face (m_face_id) and set up the ids for the neighbor <code>FEValues</code> if needed. </p>
+
 </div>
 </div>
-<a id="a47d9d8f6553be92b9ddab5d46c106633" name="a47d9d8f6553be92b9ddab5d46c106633"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47d9d8f6553be92b9ddab5d46c106633">&#9670;&#160;</a></span>gatherMonomials()</h2>
+<a id="a068202b27e8e2454becf4cd6011e1daf" name="a068202b27e8e2454becf4cd6011e1daf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068202b27e8e2454becf4cd6011e1daf">&#9670;&#160;</a></span>gatherLiftedMonomials()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::gatherMonomials </td>
+          <td class="memname">void <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::gatherLiftedMonomials </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1102,29 +1311,35 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>gather the lifted monomials to reduce their number </p>
-<p>The number of elements in the CrsMap containing the monomials is directly proportional to the cost of integration of each cell. For this reason we compress them by gathering common terms and using suitable lookup table for the value of the components of the gathered monomials </p>
+<p>Orchestrates the gathering and compression of lifted monomials. </p>
+<p>This is a key optimization for face integrals. It factors the lifted monomials to separate the parts that need integration from the parts that only depend on the geometric mapping. This significantly reduces the number of unique terms to compute.</p>
+<p>It calls in order:</p><ol type="1">
+<li>gatherUncompressedLiftedMonomials</li>
+<li>buildUniqueEvaTableLiftedMonomials</li>
+<li>compressGatheredLiftedPolynomials</li>
+</ol>
+<dl class="section note"><dt>Note</dt><dd>The number of elements in the CrsMap containing the monomials is directly proportional to the cost of integration of each cell. For this reason we compress them by gathering common terms and using suitable lookup table for the value of the components of the gathered monomials </dd></dl>
 
 </div>
 </div>
-<a id="aca82a0931a0860515fc0f7e28dfb1444" name="aca82a0931a0860515fc0f7e28dfb1444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca82a0931a0860515fc0f7e28dfb1444">&#9670;&#160;</a></span>gatherUpcompressedMonomials()</h2>
+<a id="a5d85998975e486e0a614a08b45fb0673" name="a5d85998975e486e0a614a08b45fb0673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d85998975e486e0a614a08b45fb0673">&#9670;&#160;</a></span>gatherUncompressedLiftedMonomials()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; std::vector&lt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">s_n_face_expr</a> &gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::gatherUpcompressedMonomials </td>
+          <td class="memname">std::array&lt; std::vector&lt; typename <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a7a469988acfaf69aa3fbb0e7414311c4">::GatheredPolynomial</a> &gt;, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aac5056abd7e1fac241ca443f7b3ee765">::s_n_face_expr</a> &gt; <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">vulpes::assemble::WeakFormIntegratorQFree</a>&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;::gatherUncompressedLiftedMonomials </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1132,12 +1347,17 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gather the common terms for each polynomial (row of the map) in m_poly_table_face_lifted_flat. </p>
+<p>Gathers terms for lifted monomials from face expressions (uncompressed stage). </p>
+<p>The method gathers each polynomial in the face expressions that need the neighbor (i.e., lifted polynomial). The process is composed by two steps:</p><ol type="1">
+<li>By looping over each monomial, we compress the integration part (array to int with getLinearIndex) and gather the common integration parts in the polynomial. That is, we pass from x^2a^2b + x^2ab + x to x^2(a^2b + ab) + x</li>
+<li>It further gathers the larges possible monomial in the lifted variables. That is we pass from x^2(a^2b + ab) + x to x^2(ab)(a + 1) + x</li>
+</ol>
+<dl class="section return"><dt>Returns</dt><dd>An array of vectors, where each vector contains the gathered polynomials for a specific face expression. </dd></dl>
 
 </div>
 </div>
@@ -1177,6 +1397,16 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Get the cell object for a given cell id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell_id</td><td>Cell id of the considered cell in mesh (local MPI) enumeration </td></tr>
+    <tr><td class="paramname">update_mapping</td><td>If true, update the internal mapping pointer to the mapping of the current cell </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The cell object corresponding to the given cell id </dd></dl>
+
 </div>
 </div>
 <a id="a4a8246448e5a9c2728eb7598f61a377f" name="a4a8246448e5a9c2728eb7598f61a377f"></a>
@@ -1215,6 +1445,18 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Get a map to the data corresponding to the face integral for the current cell and face being integrated. The data is a raw buffer that points to the correct location in the internal storage. </p>
+<p>This method returns an Eigen::Map to the face integral matrix for the current cell and face being integrated. It takes into account whether the finite element expression requires neighbor values and whether a neighbor cell exists.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr</td><td>Pointer to the finite element expression for which to get the face integral. </td></tr>
+    <tr><td class="paramname">expr_id</td><td>Index of the finite element expression in the tuple. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Eigen::Map&lt;Eigen::MatrixXd&gt; Map to the face integral matrix. If there is no neighbor cell when needed, returns a null map.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The integral is not yet computed </dd></dl>
+
 </div>
 </div>
 <a id="aa63435525f2391570170ad1374050808" name="aa63435525f2391570170ad1374050808"></a>
@@ -1242,6 +1484,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Get a const reference to the (bilinear) face integrals buffer where both basis functions belong to this cell. </p>
+
 </div>
 </div>
 <a id="a5a74f7ea7eb50b0b03c621a1fc794e8d" name="a5a74f7ea7eb50b0b03c621a1fc794e8d"></a>
@@ -1268,6 +1512,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get a const reference to the (bilinear) face integrals buffer where one basis function belongs to the neighboring cell. </p>
 
 </div>
 </div>
@@ -1307,6 +1553,16 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Get the integral (matrix or vector) for the current cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wf_ptr</td><td>Pointer to the finite element expression for which to get the integral. </td></tr>
+    <tr><td class="paramname">loc_neigh_id</td><td>Local id of the neighbor cell across the face being integrated. Default is 0, only needed if the expression requires neighbor values. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const auto The integral as an Eigen::Map&lt;const Eigen::MatrixXd&gt;. If the weak form is linear the map has one column. </dd></dl>
+
 </div>
 </div>
 <a id="a6817f75da211f46b5dae853676b1ba18" name="a6817f75da211f46b5dae853676b1ba18"></a>
@@ -1333,6 +1589,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get a const reference to the (bilinear) volume integrals buffer. </p>
 
 </div>
 </div>
@@ -1361,6 +1619,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Get a const reference to the (linear) face right-hand side buffer. </p>
+
 </div>
 </div>
 <a id="a889717afc24367ed219d524b2e72c0f5" name="a889717afc24367ed219d524b2e72c0f5"></a>
@@ -1388,6 +1648,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Get a const reference to the (linear) volume right-hand side buffer. </p>
+
 </div>
 </div>
 <a id="a619054a0312d99c59f835b79f850c23a" name="a619054a0312d99c59f835b79f850c23a"></a>
@@ -1396,7 +1658,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1411,10 +1673,18 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Performs the full integration process for a given cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell_id</td><td>The index of the cell to integrate over. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a977885b3f5d2c7fcedcedf82ec1db3d0">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>.</p>
 
@@ -1426,7 +1696,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1451,10 +1721,19 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Integrates all face expressions over the current face of the cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eints_data</td><td>Pointer to the precomputed integrals of basis monomials over the reference face. </td></tr>
+    <tr><td class="paramname">nanson</td><td>The scaling factor from Nanson's formula. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1464,7 +1743,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1479,10 +1758,18 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Integrates all volume expressions over the current cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aints_data</td><td>Pointer to the precomputed integrals of basis monomials over the cell volume. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1512,6 +1799,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Resize the internal storage of local integrals (matrices) to fit the number of finite element expressions taking into account which expressions are computed on the faces and which in the volume, and which expressions are bilinear or linear. </p>
+
 </div>
 </div>
 <a id="a0c67777993d66693cba12e13696068d8" name="a0c67777993d66693cba12e13696068d8"></a>
@@ -1520,7 +1809,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1534,10 +1823,13 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Precomputes the values of the evaluation parts of the gathered monomials for the current face. </p>
+<p>This function takes the current cell-to-neighbor mapping and evaluates all unique monomial terms (e.g., \(J^{\beta} T^{\gamma}\)) that were identified during the gathering process. The results are stored in <code>m_eval_table_ext</code> and <code>m_gather_coef</code> for fast lookup during integration. </p>
 
 </div>
 </div>
@@ -1547,7 +1839,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple  = std::tuple&lt;&gt;&gt; </div>
+template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressionFaceTuple &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1561,10 +1853,14 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the face normal vector in <code>m_fe_values</code> and computes the Nanson's formula factor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Nanson factor ( \(|\det(J)| \|J^{-T}
+\mathbf{n}_{\hat{F}}\|^{-1}\)), which scales the reference face integral to the physical face integral. </dd></dl>
 
 </div>
 </div>
@@ -1591,6 +1887,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>The spatial dimension of the mesh. </p>
+
 </div>
 </div>
 <a id="ad4b70f7fd74d1ca6d95ccf3cf1b333cf" name="ad4b70f7fd74d1ca6d95ccf3cf1b333cf"></a>
@@ -1614,6 +1912,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Current cell id being integrated, in mesh MPI local enumeration. </p>
 
 </div>
 </div>
@@ -1639,6 +1939,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>The cell manager. </p>
+
 </div>
 </div>
 <a id="a3900831d99962f19cb4ce8904e9b864b" name="a3900831d99962f19cb4ce8904e9b864b"></a>
@@ -1662,6 +1964,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Information about the neighboring cell across the current face it might be empty if the neighbor is not needed or does not exist. </p>
 
 </div>
 </div>
@@ -1687,6 +1991,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>A table mapping a unique integer ID to a monomial exponent array. Used to evaluate the mapping-dependent parts of gathered monomials. </p>
+
 </div>
 </div>
 <a id="a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b" name="a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b"></a>
@@ -1710,6 +2016,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Buffer storing the computed values of the unique evaluation monomials (from <code>m_eva_idx_table</code>) for the current face. </p>
 
 </div>
 </div>
@@ -1735,6 +2043,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Current face id being integrated, local to the cell. </p>
+
 </div>
 </div>
 <a id="a8c3a2748b3f5998512d15621c16caeb9" name="a8c3a2748b3f5998512d15621c16caeb9"></a>
@@ -1758,6 +2068,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Tensor to store the bilinear face integrals where both basis functions belong to this cell. </p>
 
 </div>
 </div>
@@ -1783,6 +2095,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Tensor to store the bilinear face integrals where one basis function belongs to the neighboring cell. </p>
+
 </div>
 </div>
 <a id="a15eda22e0f670ffe1a598663883ca496" name="a15eda22e0f670ffe1a598663883ca496"></a>
@@ -1806,6 +2120,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Matrix to store the linear face right-hand side contributions. </p>
 
 </div>
 </div>
@@ -1831,6 +2147,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>A tuple of pointers to the finite element expressions to compute the volume integrals. </p>
+
 </div>
 </div>
 <a id="a4110c0fe647bfd2c890e0d1195968f3d" name="a4110c0fe647bfd2c890e0d1195968f3d"></a>
@@ -1854,6 +2172,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A tuple of pointers to the finite element expressions to compute the face integrals. </p>
 
 </div>
 </div>
@@ -1879,6 +2199,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>A reference to the finite element space. </p>
+
 </div>
 </div>
 <a id="a05527052cda4ee3541cd4c87e3b3f4dc" name="a05527052cda4ee3541cd4c87e3b3f4dc"></a>
@@ -1902,6 +2224,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The FEValues object to cache ids, normals and the evaluation of shape functions and their derivatives. </p>
 
 </div>
 </div>
@@ -1927,6 +2251,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Buffer storing the computed values of the gathered parts (from <code>m_gathered_monos</code>) for the current face. </p>
+
 </div>
 </div>
 <a id="a672fe50b7bf7f95810f3fb2a84f5cb53" name="a672fe50b7bf7f95810f3fb2a84f5cb53"></a>
@@ -1950,6 +2276,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Stores the unique "gathered" parts of monomials. Each row corresponds to a <code>gather_id</code> and contains a list of <code>(coefficient, eval_id)</code> pairs, representing a sum like \(\sum_i c_i M_i\), where \(M_i\) is an evaluation monomial and eval_id points to a row of m_eva_idx_table. </p>
 
 </div>
 </div>
@@ -1975,6 +2303,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Tensor to store the bilinear volume integrals. </p>
+
 </div>
 </div>
 <a id="ae8c5734cd99baf571bbac483205c3f50" name="ae8c5734cd99baf571bbac483205c3f50"></a>
@@ -1998,6 +2328,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pointer to the mapping of the current cell being integrated. </p>
 
 </div>
 </div>
@@ -2023,6 +2355,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>A reference to the underlying mesh. </p>
+
 </div>
 </div>
 <a id="a51c73f59b0ad85183e7a9abb95264463" name="a51c73f59b0ad85183e7a9abb95264463"></a>
@@ -2046,6 +2380,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Flags indicating whether neighboring cell information is needed. </p>
 
 </div>
 </div>
@@ -2071,6 +2407,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Flags indicating whether neighboring cell values are needed, a subset of the above, if this true, than the above is true. </p>
+
 </div>
 </div>
 <a id="aecb9f4e66cfb1237219193bb4819e535" name="aecb9f4e66cfb1237219193bb4819e535"></a>
@@ -2094,6 +2432,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Stores the number of polynomial components for each face expression. </p>
 
 </div>
 </div>
@@ -2119,6 +2459,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Stores the number of polynomial components for each volume expression. </p>
+
 </div>
 </div>
 <a id="a2edbca422d1cc0e31a77f0c312456403" name="a2edbca422d1cc0e31a77f0c312456403"></a>
@@ -2142,6 +2484,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The maximum polynomial order of the finite element expressions integrated in the volume. </p>
 
 </div>
 </div>
@@ -2167,6 +2511,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>The maximum polynomial order of the finite element expressions integrated on the faces. </p>
+
 </div>
 </div>
 <a id="a17dfd7732bfe374b5c93709ad4af8f4c" name="a17dfd7732bfe374b5c93709ad4af8f4c"></a>
@@ -2190,6 +2536,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Polynomial tables for standard face expressions. </p>
 
 </div>
 </div>
@@ -2215,6 +2563,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Lookup table for standard face polynomials. </p>
+
 </div>
 </div>
 <a id="aecf1963a667e6af6ee53ce16272597df" name="aecf1963a667e6af6ee53ce16272597df"></a>
@@ -2238,6 +2588,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Unique polynomials for standard face expressions. </p>
 
 </div>
 </div>
@@ -2263,6 +2615,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Uncompressed polynomial tables for lifted (neighbor-dependent) face expressions. </p>
+
 </div>
 </div>
 <a id="a7dea3ba212e666989cd7875bab4cf063" name="a7dea3ba212e666989cd7875bab4cf063"></a>
@@ -2286,6 +2640,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Compressed and gathered version of <code>m_poly_table_face_lifted_flat</code>. </p>
 
 </div>
 </div>
@@ -2311,6 +2667,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Lookup table for lifted face polynomials. </p>
+
 </div>
 </div>
 <a id="a6a8bfa8fecd67c0061fb8772c24ff537" name="a6a8bfa8fecd67c0061fb8772c24ff537"></a>
@@ -2334,6 +2692,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Unique polynomials for lifted face expressions, after gathering and deduplication. </p>
 
 </div>
 </div>
@@ -2359,6 +2719,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Polynomial tables for volume expressions (one per expression). </p>
+
 </div>
 </div>
 <a id="a38fe00a8337314cf830973516b320f45" name="a38fe00a8337314cf830973516b320f45"></a>
@@ -2382,6 +2744,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Lookup table to map unique volume polynomials to their matrix entries. </p>
 
 </div>
 </div>
@@ -2407,6 +2771,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Unique polynomials for volume expressions, after deduplication. </p>
+
 </div>
 </div>
 <a id="a4d891d3270ea6232038e579992dc5e64" name="a4d891d3270ea6232038e579992dc5e64"></a>
@@ -2430,6 +2796,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Matrix to store the linear volume right-hand side contributions. </p>
 
 </div>
 </div>
@@ -2455,6 +2823,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Update flags indicating which values to update in FEValues for the volume integrals. </p>
+
 </div>
 </div>
 <a id="afc4aacfcb9001e32dd2903a39a3b9709" name="afc4aacfcb9001e32dd2903a39a3b9709"></a>
@@ -2479,6 +2849,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
+<p>Update flags indicating which values to update in FEValues for the face integrals. </p>
+
 </div>
 </div>
 <a id="a8ba4ecf5b10100eebbddcb1448c3ea84" name="a8ba4ecf5b10100eebbddcb1448c3ea84"></a>
@@ -2502,6 +2874,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A map from finite element expression pointers to their corresponding data storage locations. </p>
 
 </div>
 </div>
@@ -2532,6 +2906,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div class="line">      std::remove_pointer_t&lt;</div>
 <div class="line">          std::tuple_element_t&lt;0, FeExpressionTuple&gt;&gt;::k_index_begin</div>
 </div><!-- fragment -->
+<p>Number of vector blocks in the system, e.g. for a scalar problem is 1, for an elasticity problem is dim (2 or 3) </p>
+
 </div>
 </div>
 <a id="ab9d50af71153bc7edeb68797350a46d9" name="ab9d50af71153bc7edeb68797350a46d9"></a>
@@ -2557,8 +2933,10 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">WeakFormIntegratorBaseType::nblocks</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a6f76f0c9fe18aab1cdff42a133da4be2"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">vulpes::assemble::WeakFormIntegratorBase::nblocks</a></div><div class="ttdeci">static constexpr uint32_t nblocks</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:93</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a6f76f0c9fe18aab1cdff42a133da4be2"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">vulpes::assemble::WeakFormIntegratorBase::nblocks</a></div><div class="ttdeci">static constexpr uint32_t nblocks</div><div class="ttdoc">Number of vector blocks in the system, e.g. for a scalar problem is 1, for an elasticity problem is d...</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:107</div></div>
 </div><!-- fragment -->
+<p>The number of blocks for vector/tensor-valued problems. </p>
+
 </div>
 </div>
 <a id="af97bcd73573f715a20ad67d0b1d28387" name="af97bcd73573f715a20ad67d0b1d28387"></a>
@@ -2584,8 +2962,10 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">WeakFormIntegratorBaseType::s_n_expr</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a004380571b0cca53b1931a71efc3a493"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">vulpes::assemble::WeakFormIntegratorBase::s_n_expr</a></div><div class="ttdeci">static constexpr index_t s_n_expr</div><div class="ttdoc">total number of expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:60</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a004380571b0cca53b1931a71efc3a493"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">vulpes::assemble::WeakFormIntegratorBase::s_n_expr</a></div><div class="ttdeci">static constexpr index_t s_n_expr</div><div class="ttdoc">total number of expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:72</div></div>
 </div><!-- fragment -->
+<p>The number of volume expressions. </p>
+
 </div>
 </div>
 <a id="afdaea1cf72a8df534d7662302870fcc9" name="afdaea1cf72a8df534d7662302870fcc9"></a>
@@ -2667,8 +3047,10 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">WeakFormIntegratorBaseType::s_n_face_expr</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_adbd29bba2be5d7a53cb4fc74e5bef660"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr</div><div class="ttdoc">total number of expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:63</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_adbd29bba2be5d7a53cb4fc74e5bef660"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr</div><div class="ttdoc">total number of expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:75</div></div>
 </div><!-- fragment -->
+<p>The number of face expressions. </p>
+
 </div>
 </div>
 <a id="af7e7cff4afcf9f6d6dbbf8406e7556c3" name="af7e7cff4afcf9f6d6dbbf8406e7556c3"></a>
@@ -2737,7 +3119,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">WeakFormIntegratorQFree</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -14,7 +14,6 @@ var classvulpes_1_1fe_1_1FeSpaceModalQ =
     [ "getMapping", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a170370f20450ed3223e8db21a2423002", null ],
     [ "getNumDofsForSubdimEntity", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a15a31ef849ae2ea3237a0f28ccda0ac7", null ],
     [ "needBasisScaling", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a32a2a6c7d748d31e2b5b30c4836d6fea", null ],
-    [ "needTrasformation", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a840f6466f07b7f3e5b06c2dbf1c442c3", null ],
     [ "order", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#af644ca63b73d22f902f2857a488e2efa", null ],
     [ "self", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a88e3c3ac717ace22ae95ebdc3624e251", null ],
     [ "self", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ab5390edfdbb28c033cb4fbd3aea88b30", null ],

@@ -12,7 +12,7 @@ var classvulpes_1_1fe_1_1FeExpressionCellConstantTensor =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#ab7bbcc51a3a74489ac36f81edce7db55", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#a78226045deb49b51ed3f9abd20a58d18", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#af0333705ad7416bd31da37eb47dd3491", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#aa194506aca4e759376e053023687b62b", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#afddd3c55675552d9cdad4b44d3100489", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#aadd4049ce2ebd3bc57286c27c2a4f880", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#ac6715d566f8ed03ec02c5b9bad2dfadb", null ],

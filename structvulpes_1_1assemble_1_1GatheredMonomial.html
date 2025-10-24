@@ -117,18 +117,36 @@ $(document).ready(function(){initNavTree('structvulpes_1_1assemble_1_1GatheredMo
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a monomial after the "gathering" process for face integrals.  
+ <a href="structvulpes_1_1assemble_1_1GatheredMonomial.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="integrator__qfree_8hpp_source.html">integrator_qfree.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aaac9627b4f7c6e2ea0cc4fa2c30847f6" id="r_aaac9627b4f7c6e2ea0cc4fa2c30847f6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html#aaac9627b4f7c6e2ea0cc4fa2c30847f6">integr_id</a></td></tr>
+<tr class="memdesc:aaac9627b4f7c6e2ea0cc4fa2c30847f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique ID representing the part of the monomial to be integrated (e.g., \(x^\alpha y^\beta\)).  <br /></td></tr>
 <tr class="separator:aaac9627b4f7c6e2ea0cc4fa2c30847f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ba67ed426dff81c90f8997faf356712" id="r_a7ba67ed426dff81c90f8997faf356712"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, Dim *2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html#a7ba67ed426dff81c90f8997faf356712">evalut_id</a></td></tr>
+<tr class="memdesc:a7ba67ed426dff81c90f8997faf356712"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique ID for the common evaluation part of the monomial (e.g., the term \(J^2 T^1\) in \(J^2 T^1 (c_1 J + c_2 T)\)).  <br /></td></tr>
 <tr class="separator:a7ba67ed426dff81c90f8997faf356712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c88afc9b0a456fe758c3c98cc3d1dd1" id="r_a5c88afc9b0a456fe758c3c98cc3d1dd1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; double, std::array&lt; uint8_t, Dim *2 &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html#a5c88afc9b0a456fe758c3c98cc3d1dd1">gather</a></td></tr>
+<tr class="memdesc:a5c88afc9b0a456fe758c3c98cc3d1dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of remaining terms. Each pair contains a coefficient and the exponents of the non-common evaluation part.  <br /></td></tr>
 <tr class="separator:a5c88afc9b0a456fe758c3c98cc3d1dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t Dim&gt;<br />
+struct vulpes::assemble::GatheredMonomial&lt; Dim &gt;</div><p>Represents a monomial after the "gathering" process for face integrals. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>The spatial dimension of the problem.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>A monomial from a face expression involving a neighbor cell is "lifted" into a higher dimensional space (that is the space where the extra variables are the parameters of the physical (cartesian) mapping of the cell). This struct helps to factorize and group terms of this lifted monomial.</p>
+<p>E.g., in 2D we have P(x, y, j1, j2, t1, t2) where X = (x, y) are physical coordinate, J is the diagonal of the Jacobian and T the translation. Then, P must be integrated in the X variable and evaluated in the J and T variables. We write P as  \( P = X^\Alpha * J^\Beta * T^\Gamma * (\sum c_k * J^\Delta_Jk *
+T^\Delta_Tk) \) where \(\Alpha, \Beta, \Gamma, \Delta_Jk, \Delta_Tk\) are multi-indices </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a7ba67ed426dff81c90f8997faf356712" name="a7ba67ed426dff81c90f8997faf356712"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ba67ed426dff81c90f8997faf356712">&#9670;&#160;</a></span>evalut_id</h2>
 
@@ -142,6 +160,8 @@ template&lt;std::size_t Dim&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A unique ID for the common evaluation part of the monomial (e.g., the term \(J^2 T^1\) in \(J^2 T^1 (c_1 J + c_2 T)\)). </p>
 
 </div>
 </div>
@@ -159,6 +179,8 @@ template&lt;std::size_t Dim&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>A collection of remaining terms. Each pair contains a coefficient and the exponents of the non-common evaluation part. </p>
+
 </div>
 </div>
 <a id="aaac9627b4f7c6e2ea0cc4fa2c30847f6" name="aaac9627b4f7c6e2ea0cc4fa2c30847f6"></a>
@@ -175,6 +197,8 @@ template&lt;std::size_t Dim&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>A unique ID representing the part of the monomial to be integrated (e.g., \(x^\alpha y^\beta\)). </p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
@@ -187,7 +211,7 @@ template&lt;std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html">GatheredMonomial</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

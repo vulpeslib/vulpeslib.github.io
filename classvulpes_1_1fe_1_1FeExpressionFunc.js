@@ -11,7 +11,7 @@ var classvulpes_1_1fe_1_1FeExpressionFunc =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a8aec2e23bf91240b2f3c17b1d2ad3541", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a7edb9abfd1b4f17ce92fac88489f8d67", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionFunc.html#aa8995c26e89fffb21aa139161a5bd1b0", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFunc.html#aa194506aca4e759376e053023687b62b", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a5568d459c11fe04fd4c8f1d99d94136d", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a2994e4b85ed8f42ff6e757887db129ad", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a81fe09ddb24c31206c7cf0e83803dade", null ],

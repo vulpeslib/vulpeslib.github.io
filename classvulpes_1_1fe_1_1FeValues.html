@@ -179,9 +179,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a347afd88f50f6dfb6beeec36246c65b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8893a236e47ac67ec7369466e96e51" id="r_a5f8893a236e47ac67ec7369466e96e51"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> Polynomial &gt; </td></tr>
 <tr class="memitem:a5f8893a236e47ac67ec7369466e96e51"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a5f8893a236e47ac67ec7369466e96e51">evalOnReferenceFrame</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> std::vector&lt; Polynomial &gt; &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">basis</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> <a class="el" href="structvulpes_1_1qrule_1_1QuadratureRule.html">qrule::QuadratureRule</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">FloatType</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a> &gt; &amp;qrule)</td></tr>
+<tr class="memdesc:a5f8893a236e47ac67ec7369466e96e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute and cache the evaluation of the basis on the quadrature points passed as argument. This is usually called just once with quadrature points mapped on the reference cell.  <br /></td></tr>
 <tr class="separator:a5f8893a236e47ac67ec7369466e96e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad6d795a5d05440b8967421a6e04b42" id="r_afad6d795a5d05440b8967421a6e04b42"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> MappingType &gt; </td></tr>
 <tr class="memitem:afad6d795a5d05440b8967421a6e04b42"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#afad6d795a5d05440b8967421a6e04b42">evalAndApplyMapping</a> (<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">const</a> MappingType &amp;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">mapping</a>, <a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">UpdateFlagsType</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">flags</a>)</td></tr>
+<tr class="memdesc:afad6d795a5d05440b8967421a6e04b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the local cache values on the physical element by passing the mapping and a flag signaling which values to update (e.g., gradients, quadrature points, ...)  <br /></td></tr>
 <tr class="separator:afad6d795a5d05440b8967421a6e04b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86770231f0e320007888170b5a08f2da" id="r_a86770231f0e320007888170b5a08f2da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a86770231f0e320007888170b5a08f2da">createNeighValues</a> ()</td></tr>
 <tr class="separator:a86770231f0e320007888170b5a08f2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,7 +224,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t Dim&gt;<br />
 class vulpes::fe::FeValues&lt; Dim &gt;</div><p>This class works as a cache table for computing efficiently the value of the basis function and its derivatives for each cell. </p>
-<p>The values of the basis function and its derivatives saved for the reference element and the values updated for each cell. Computing the values on the reference cell is usually expensive since the polynomial of the basis function is saved in arbitrary precision. The update is usually fast and involves computing some properties of the mapping function. We minimize the computations by indicating what needs an update using <code>UpdateFlags</code>.</p>
+<p>The values of the basis function and its derivatives are saved for the reference element (when calling <code>evalOnReferenceFrame</code>) and the then they are updated for each cell (when calling <code>evalAndApplyMapping</code>). Computing the values on the reference cell is usually expensive since the polynomial of the basis function is saved in arbitrary precision. The update is usually fast and involves computing some properties of the mapping function. We minimize the computations by indicating what needs an update using <code>UpdateFlags</code>.</p>
 <p>In DG elements it happens that a cell needs the values of the neighbour. To accomodate this necessity the class <em>owns</em> a pointer to the <code><a class="el" href="classvulpes_1_1fe_1_1FeValues.html" title="This class works as a cache table for computing efficiently the value of the basis function and its d...">FeValues</a></code> of the neighbour. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aea04afc07f3b0c7eab2b430b1c5d2cfe" name="aea04afc07f3b0c7eab2b430b1c5d2cfe"></a>
@@ -387,6 +389,8 @@ template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNee
 </table>
 </div><div class="memdoc">
 
+<p>Update the local cache values on the physical element by passing the mapping and a flag signaling which values to update (e.g., gradients, quadrature points, ...) </p>
+
 </div>
 </div>
 <a id="a5f8893a236e47ac67ec7369466e96e51" name="a5f8893a236e47ac67ec7369466e96e51"></a>
@@ -426,6 +430,8 @@ template&lt;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNee
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Compute and cache the evaluation of the basis on the quadrature points passed as argument. This is usually called just once with quadrature points mapped on the reference cell. </p>
 
 </div>
 </div>
@@ -1296,7 +1302,7 @@ template&lt;std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

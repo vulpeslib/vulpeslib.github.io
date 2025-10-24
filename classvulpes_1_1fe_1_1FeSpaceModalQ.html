@@ -122,6 +122,9 @@ $(document).ready(function(){initNavTree('classvulpes_1_1fe_1_1FeSpaceModalQ.htm
 </div><!--header-->
 <div class="contents">
 
+<p>Modal FE Space on polytopal elements (tensor product of Legendre polynomials on the bounding box). The total degree is limited to the given order in the sum of the exponents.  
+ <a href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="fe__modal__tensor_8hpp_source.html">fe_modal_tensor.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;:</div>
@@ -174,9 +177,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a170370f20450ed3223e8db21a2423002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae32e0aa746183d6358b1062e8cc2365b" id="r_ae32e0aa746183d6358b1062e8cc2365b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="namespacevulpes_1_1geometry.html#af3a786c7fca1e115d7874dee2bd72985">geometry::CellInitOptionsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#ae32e0aa746183d6358b1062e8cc2365b">cellInitOptions</a> ()</td></tr>
 <tr class="separator:ae32e0aa746183d6358b1062e8cc2365b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a840f6466f07b7f3e5b06c2dbf1c442c3" id="r_a840f6466f07b7f3e5b06c2dbf1c442c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a840f6466f07b7f3e5b06c2dbf1c442c3">needTrasformation</a> ()</td></tr>
-<tr class="memdesc:a840f6466f07b7f3e5b06c2dbf1c442c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">is defined on something that has [0, 1]^n bbox?  <br /></td></tr>
-<tr class="separator:a840f6466f07b7f3e5b06c2dbf1c442c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb208ea0945d45813dac88e764210214" id="r_aeb208ea0945d45813dac88e764210214"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#aeb208ea0945d45813dac88e764210214">dofsInteractionDistance</a> ()</td></tr>
 <tr class="separator:aeb208ea0945d45813dac88e764210214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -207,7 +207,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aceb15ad95a454121903eb59722318ccd" id="r_aceb15ad95a454121903eb59722318ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">DofPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#aceb15ad95a454121903eb59722318ccd">m_dof_policy</a></td></tr>
 <tr class="separator:aceb15ad95a454121903eb59722318ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">typename</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">DofPolicy</a>&gt;<br />
+class vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</div><p>Modal FE Space on polytopal elements (tensor product of Legendre polynomials on the bounding box). The total degree is limited to the given order in the sum of the exponents. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1c77ee7ffd70d229378324aa593113aa" name="a1c77ee7ffd70d229378324aa593113aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c77ee7ffd70d229378324aa593113aa">&#9670;&#160;</a></span>FeSpaceType</h2>
 
@@ -599,33 +602,6 @@ template&lt;std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressi
 
 </div>
 </div>
-<a id="a840f6466f07b7f3e5b06c2dbf1c442c3" name="a840f6466f07b7f3e5b06c2dbf1c442c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a840f6466f07b7f3e5b06c2dbf1c442c3">&#9670;&#160;</a></span>needTrasformation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">static</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">constexpr</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">bool</a> <a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html">vulpes::fe::FeSpaceBase</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6">internal::real_t</a> , <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">DofPolicy</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html">FeSpaceModalQ</a>&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">Dim</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html">DofPolicy</a> &gt;  &gt;::needTrasformation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>is defined on something that has [0, 1]^n bbox? </p>
-
-</div>
-</div>
 <a id="af644ca63b73d22f902f2857a488e2efa" name="af644ca63b73d22f902f2857a488e2efa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af644ca63b73d22f902f2857a488e2efa">&#9670;&#160;</a></span>order()</h2>
 
@@ -872,7 +848,7 @@ template&lt;std::size_t Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html">FeSpaceModalQ</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -151,21 +151,25 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9dae7db17a39632105a73de9d5c807bb" id="r_a9dae7db17a39632105a73de9d5c807bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a9dae7db17a39632105a73de9d5c807bb">CellManager</a> (const MeshType &amp;mesh, const FeSpaceType &amp;fe_space)</td></tr>
+<tr class="memdesc:a9dae7db17a39632105a73de9d5c807bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Cell Manager object.  <br /></td></tr>
 <tr class="separator:a9dae7db17a39632105a73de9d5c807bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a291452dafce2e60bc4f4afb077d514dc" id="r_a291452dafce2e60bc4f4afb077d514dc"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a291452dafce2e60bc4f4afb077d514dc">getFeSpace</a> () const</td></tr>
+<tr class="memdesc:a291452dafce2e60bc4f4afb077d514dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the finite element space associated to this cell manager.  <br /></td></tr>
 <tr class="separator:a291452dafce2e60bc4f4afb077d514dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff17d22eb06001ff4df758bdf47ec2df" id="r_aff17d22eb06001ff4df758bdf47ec2df"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#aff17d22eb06001ff4df758bdf47ec2df">getMesh</a> () const</td></tr>
+<tr class="memdesc:aff17d22eb06001ff4df758bdf47ec2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying mesh.  <br /></td></tr>
 <tr class="separator:aff17d22eb06001ff4df758bdf47ec2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36cc95db6f6912fa05ee5415fb968316" id="r_a36cc95db6f6912fa05ee5415fb968316"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a30c8cd4986aee205bf5b50022df8d6b4">CellType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a36cc95db6f6912fa05ee5415fb968316">getCell</a> (<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a> cell_id)</td></tr>
-<tr class="memdesc:a36cc95db6f6912fa05ee5415fb968316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get and build lazily the cells.  <br /></td></tr>
+<tr class="memdesc:a36cc95db6f6912fa05ee5415fb968316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get and build lazily the cells of the mesh.  <br /></td></tr>
 <tr class="separator:a36cc95db6f6912fa05ee5415fb968316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb3befca9ee98431b9cff5e16b7987e" id="r_aafb3befca9ee98431b9cff5e16b7987e"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#aafb3befca9ee98431b9cff5e16b7987e">getMapping</a> (<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a> cell_id) const</td></tr>
+<tr class="memdesc:aafb3befca9ee98431b9cff5e16b7987e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the geometrical mapping of the reference element to physical element.  <br /></td></tr>
 <tr class="separator:aafb3befca9ee98431b9cff5e16b7987e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f43143e60a22990caedc5e9635603c6" id="r_a0f43143e60a22990caedc5e9635603c6"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a0f43143e60a22990caedc5e9635603c6">getCells</a> () const</td></tr>
 <tr class="memdesc:a0f43143e60a22990caedc5e9635603c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the underlying memory buffer for cells (some might be empty)  <br /></td></tr>
 <tr class="separator:a0f43143e60a22990caedc5e9635603c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfe73e886bb95a67ed3fc1cb6c6d3d96" id="r_acfe73e886bb95a67ed3fc1cb6c6d3d96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html">NeighInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#acfe73e886bb95a67ed3fc1cb6c6d3d96">findCellNeigh</a> (<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a> cell_id, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a> loc_face_id)</td></tr>
-<tr class="memdesc:acfe73e886bb95a67ed3fc1cb6c6d3d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the neighbour of a cell with respect to a face in local cell enumeration.  <br /></td></tr>
+<tr class="memdesc:acfe73e886bb95a67ed3fc1cb6c6d3d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the cell id of the neighbour of a cell given the face id in local cell enumeration.  <br /></td></tr>
 <tr class="separator:acfe73e886bb95a67ed3fc1cb6c6d3d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -192,7 +196,8 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename MeshType, typename FeSpaceType&gt;<br />
 class vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</div><p>Manages geometrical informations about the cell and its mapping to the reference element. </p>
-<p>This class constructs lazily all the cells of a mesh (in a mesh all cells are represented implicitly). This requires a lot of extra memory, but the having contiguous information (e.g., for vertices) significantly improves the speed of the code. The cells are initialized builinding all the extra informations required by the finite element space. The cells are then mapped to the reference element and the mapping is stored. This class also offers the possibility to query the neighbour of the cell in local cell enumeration, which is more costly to do in global mesh enumeration </p>
+<p>This class constructs lazily all the cells of a mesh (in a mesh all cells are represented implicitly). This requires a lot of extra memory, but the having contiguous information (e.g., for vertices) significantly improves the speed of the code. The cells are initialized builinding all the extra informations required by the finite element space, namely the <code>cellInitOptions()</code> static method that all finite elements type must implement. The cells are then mapped to the reference element and the mapping is stored. This class also offers the possibility to query the neighbour of the cell in local cell enumeration, which is more costly to do in global mesh enumeration.</p>
+<dl class="section note"><dt>Note</dt><dd>we have two kind of enumerations: the cell enumeration and the mesh (or MPI) enumerations. The first ranges from 0 to the number of neighbours of the cell, the second one is common to all the mesh, in particular we consider the MPI local mesh enumeration, so that the i-th cell id is the one of the i-th local (MPI) cell </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a30c8cd4986aee205bf5b50022df8d6b4" name="a30c8cd4986aee205bf5b50022df8d6b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30c8cd4986aee205bf5b50022df8d6b4">&#9670;&#160;</a></span>CellType</h2>
@@ -295,6 +300,15 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a new Cell Manager object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to manage </td></tr>
+    <tr><td class="paramname">fe_space</td><td>The finite element space associated to this cell manager </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -334,7 +348,15 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Find the neighbour of a cell with respect to a face in local cell enumeration. </p>
+<p>Find the cell id of the neighbour of a cell given the face id in local cell enumeration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell_id</td><td>Cell id of the considered cell, in mesh (local MPI) enumeration </td></tr>
+    <tr><td class="paramname">loc_face_id</td><td>Face id in local cell enumeration (of the cell pointed by cell_id) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html" title="Information about the neighbouring cell for a certain face.">NeighInfo</a> structure containing the cell id of the neigh in local cell enumeration </dd></dl>
 
 </div>
 </div>
@@ -364,7 +386,14 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get and build lazily the cells. </p>
+<p>Get and build lazily the cells of the mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell_id</td><td>Cell id of the considered cell in mesh (local MPI) enumeration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Cell&lt;Dim, FloatType, IndexType&gt;&amp; class </dd></dl>
 
 </div>
 </div>
@@ -422,6 +451,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the finite element space associated to this cell manager. </p>
+
 </div>
 </div>
 <a id="aafb3befca9ee98431b9cff5e16b7987e" name="aafb3befca9ee98431b9cff5e16b7987e"></a>
@@ -450,6 +481,15 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the geometrical mapping of the reference element to physical element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell_id</td><td>Cell id of the considered cell in mesh (local MPI) enumeration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Class deriving from <code>MappingBase</code> </dd></dl>
+
 </div>
 </div>
 <a id="aff17d22eb06001ff4df758bdf47ec2df" name="aff17d22eb06001ff4df758bdf47ec2df"></a>
@@ -476,6 +516,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the underlying mesh. </p>
 
 </div>
 </div>
@@ -660,7 +702,7 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

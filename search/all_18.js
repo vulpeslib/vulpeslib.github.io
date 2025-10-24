@@ -19,7 +19,7 @@ var searchData=
   ['updateneighborvalues_16',['UpdateNeighborValues',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa4d35240e7133f9979cf52324e593c874',1,'vulpes::fe']]],
   ['updatenormals_17',['UpdateNormals',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa05dd11c4de99493614058054bdaff73c',1,'vulpes::fe']]],
   ['updatenothing_18',['UpdateNothing',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa42f5f9e73ecca69ea8877f0ef7db282a',1,'vulpes::fe']]],
-  ['updateqptsandmappingforthisandneigh_19',['updateQptsAndMappingForThisAndNeigh',['../classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#aa83ec166222c2d9b65130815add612dd',1,'vulpes::assemble::WeakFormIntegratorSimplexify']]],
+  ['updateqptsandmappingforthisandneigh_19',['updateQptsAndMappingForThisAndNeigh',['../classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#aca8beb52478060f33318363ae025c241',1,'vulpes::assemble::WeakFormIntegratorSimplexify']]],
   ['updatequadraturepts_20',['UpdateQuadraturePts',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62faab779e486c4ffe937f1710281d00d952',1,'vulpes::fe']]],
   ['updatevalues_21',['UpdateValues',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa52f1d67a21cbac57619f64d1cb48e083',1,'vulpes::fe']]],
   ['updatevoronoicentroid_22',['updateVoronoiCentroid',['../namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27',1,'vulpes::geometry::internal']]],
@@ -28,7 +28,7 @@ var searchData=
   ['upper_5fbound_25',['upper_bound',['../structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#abd16d1ac55c1299821bb15dcb43063c7',1,'vulpes::scipy::RectRectDistanceTracker']]],
   ['use_20the_20docker_20from_20vscode_26',['Use the Docker from VSCode',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index.html#autotoc_md31',1,'']]],
   ['usecase_27',['Our usecase',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md17',1,'']]],
-  ['using_20assembly_20comments_28',['2. Checking Assembly Code and Using Assembly Comments',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md35',1,'']]],
-  ['using_20callgrind_29',['Using Callgrind',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md34',1,'']]],
+  ['using_20assembly_20comments_28',['2. Checking Assembly Code and Using Assembly Comments',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md36',1,'']]],
+  ['using_20callgrind_29',['Using Callgrind',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md35',1,'']]],
   ['using_20spack_30',['Using Spack',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16',1,'']]]
 ];

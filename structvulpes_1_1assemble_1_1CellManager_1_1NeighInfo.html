@@ -125,14 +125,19 @@ $(document).ready(function(){initNavTree('structvulpes_1_1assemble_1_1CellManage
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a27a374284a93dec6ed6f46c169ab4677" id="r_a27a374284a93dec6ed6f46c169ab4677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a27a374284a93dec6ed6f46c169ab4677">neigh_cell_id</a> = -1</td></tr>
+<tr class="memdesc:a27a374284a93dec6ed6f46c169ab4677"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell id of the neighbor in global cell enumeration, local MPI enumeration  <br /></td></tr>
 <tr class="separator:a27a374284a93dec6ed6f46c169ab4677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadb1e40c60e0e2d37eb21b76343661d3" id="r_aadb1e40c60e0e2d37eb21b76343661d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#aadb1e40c60e0e2d37eb21b76343661d3">loc_neigh_cell_id</a> = -1</td></tr>
+<tr class="memdesc:aadb1e40c60e0e2d37eb21b76343661d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell id of the neighbor in local cell enumeration, ranges [0, num of cell neighs)  <br /></td></tr>
 <tr class="separator:aadb1e40c60e0e2d37eb21b76343661d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6682a4b48a3190399ef303a1a8485f6" id="r_ae6682a4b48a3190399ef303a1a8485f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#ae6682a4b48a3190399ef303a1a8485f6">loc_neigh_face_id</a> = -1</td></tr>
+<tr class="memdesc:ae6682a4b48a3190399ef303a1a8485f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">face id of the cell currently considered in local cell enumeration  <br /></td></tr>
 <tr class="separator:ae6682a4b48a3190399ef303a1a8485f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f54f93eef6ab764030197186ec87402" id="r_a2f54f93eef6ab764030197186ec87402"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a2f54f93eef6ab764030197186ec87402">have_neigh</a> = false</td></tr>
+<tr class="memdesc:a2f54f93eef6ab764030197186ec87402"><td class="mdescLeft">&#160;</td><td class="mdescRight">the currently considered face of the cell has a neigh (i.e. not boundary)  <br /></td></tr>
 <tr class="separator:a2f54f93eef6ab764030197186ec87402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa683a493d0024aa1baa492f16b2d79" id="r_a7fa683a493d0024aa1baa492f16b2d79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a7fa683a493d0024aa1baa492f16b2d79">built</a> = false</td></tr>
+<tr class="memdesc:a7fa683a493d0024aa1baa492f16b2d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">this class instance has been built  <br /></td></tr>
 <tr class="separator:a7fa683a493d0024aa1baa492f16b2d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -153,6 +158,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>this class instance has been built </p>
+
 </div>
 </div>
 <a id="a2f54f93eef6ab764030197186ec87402" name="a2f54f93eef6ab764030197186ec87402"></a>
@@ -168,6 +175,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>the currently considered face of the cell has a neigh (i.e. not boundary) </p>
 
 </div>
 </div>
@@ -185,6 +194,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>cell id of the neighbor in local cell enumeration, ranges [0, num of cell neighs) </p>
+
 </div>
 </div>
 <a id="ae6682a4b48a3190399ef303a1a8485f6" name="ae6682a4b48a3190399ef303a1a8485f6"></a>
@@ -200,6 +211,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>face id of the cell currently considered in local cell enumeration </p>
 
 </div>
 </div>
@@ -217,6 +230,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>cell id of the neighbor in global cell enumeration, local MPI enumeration </p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
@@ -229,7 +244,7 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a></li><li class="navelem"><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html">NeighInfo</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

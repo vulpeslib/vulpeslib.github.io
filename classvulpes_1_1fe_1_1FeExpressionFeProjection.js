@@ -11,7 +11,7 @@ var classvulpes_1_1fe_1_1FeExpressionFeProjection =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#acf6efccbf914e7006e0dab6919c6cc4c", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#af0dab64ec9d1aaa4b3483f8e58712e66", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#af0333705ad7416bd31da37eb47dd3491", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#aa194506aca4e759376e053023687b62b", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#a7fad4e7a93db2353b07c652d1722a0f4", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#a05e4ed4dd89c5524616d588f7d3dd3cb", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#ac173c6526726026070e7434a358bf44f", null ],

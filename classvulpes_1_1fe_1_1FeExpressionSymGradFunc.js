@@ -9,7 +9,7 @@ var classvulpes_1_1fe_1_1FeExpressionSymGradFunc =
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html#aed7b1841b763230b9fddf39fc524f7bd", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html#a9e9304b4651d2fd29bbc5959d8452aad", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html#a183a9e000789f443ecd4e10594dcd504", null ],
-    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html#a242455c6754f4eaa5c15e6c1c39db4a2", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html#aa194506aca4e759376e053023687b62b", null ],
     [ "precompute", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html#a3d94ded7859802e83d2db0bfe95dafbe", null ],
     [ "self", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
     [ "is_bilinear", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html#ac357d526da3237c2fb4422f458975034", null ],

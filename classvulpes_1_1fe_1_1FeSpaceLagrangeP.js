@@ -14,7 +14,6 @@ var classvulpes_1_1fe_1_1FeSpaceLagrangeP =
     [ "getNodes", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#aee47a48d2e18f7b3e76d94f006c5d8ad", null ],
     [ "getNumDofsForSubdimEntity", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a15a31ef849ae2ea3237a0f28ccda0ac7", null ],
     [ "needBasisScaling", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a60c34c5f700be623951082d841403778", null ],
-    [ "needTrasformation", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a840f6466f07b7f3e5b06c2dbf1c442c3", null ],
     [ "order", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#af644ca63b73d22f902f2857a488e2efa", null ],
     [ "self", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a88e3c3ac717ace22ae95ebdc3624e251", null ],
     [ "self", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#ab5390edfdbb28c033cb4fbd3aea88b30", null ],

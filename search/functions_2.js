@@ -43,7 +43,7 @@ var searchData=
   ['buildrun_40',['buildRun',['../classvulpes_1_1datastructure_1_1KDTree.html#a45329daf3c2eb341f123cbdf000e80ce',1,'vulpes::datastructure::KDTree']]],
   ['buildsubdual_41',['buildSubDual',['../namespacevulpes_1_1geometry_1_1internal.html#a2b1c9d63b50cc0b9aae11eb0bf9487bd',1,'vulpes::geometry::internal']]],
   ['buildtensorquadrature_42',['buildTensorQuadrature',['../namespacevulpes_1_1qrule.html#a08f90f4c63ab870c7f01fc4258f994ed',1,'vulpes::qrule']]],
-  ['builduniqueevatable_43',['buildUniqueEvaTable',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ada14157078d24c0513d06d4298b414fb',1,'vulpes::assemble::WeakFormIntegratorQFree']]],
+  ['builduniqueevatableliftedmonomials_43',['buildUniqueEvaTableLiftedMonomials',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a300383064ae3868e732a67c652c0531d',1,'vulpes::assemble::WeakFormIntegratorQFree']]],
   ['buildvandermonde_44',['buildVandermonde',['../namespacevulpes_1_1fe_1_1internal.html#a149529c6dad257c887c4eccc4f56de2a',1,'vulpes::fe::internal']]],
   ['buildvtkmesh2d_45',['buildvtkmesh2d',['../classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#ae0355c3cd413eb4457bf4c87db19c02f',1,'vulpes::geometry::MeshExporterSubmesh::buildVtkMesh2D()'],['../classvulpes_1_1geometry_1_1MeshExporter.html#a632fefd91a7203a870b5ec9f06bd2199',1,'vulpes::geometry::MeshExporter::buildVtkMesh2D()']]],
   ['buildvtkmesh3d_46',['buildvtkmesh3d',['../classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#a2d16a3d3a30b66921627fe47e0bacd73',1,'vulpes::geometry::MeshExporterSubmesh::buildVtkMesh3D()'],['../classvulpes_1_1geometry_1_1MeshExporter.html#aa3fd3a4c3bd010acae6884ff1a4d9d82',1,'vulpes::geometry::MeshExporter::buildVtkMesh3D()']]],

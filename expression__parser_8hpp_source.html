@@ -158,41 +158,60 @@ $(document).ready(function(){initNavTree('expression__parser_8hpp_source.html','
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
 <div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a1a87720ca34c59052ddf50d931b2d107">   38</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a1a87720ca34c59052ddf50d931b2d107">ExpressionParser</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* expression, Args&amp;&amp;... args) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static_assert</span>(</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">sizeof</span>...(Args) == N, <span class="stringliteral">&quot;Incorrect number of variable names provided&quot;</span>);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">m_context</a>.addBuiltIns();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::array&lt;std::string_view, N&gt; variable_names{std::forward&lt;Args&gt;(args)...};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; ++i) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">m_context</a>.addVariable(variable_names[i].data(), i * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> <span class="keyword">auto</span> options = mathpresso::kNoOptions;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">auto</span> err = <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">m_expr</a>.compile(<a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">m_context</a>, expression, options);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (err != mathpresso::kErrorOk) {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keywordflow">throw</span> std::runtime_error(</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>          <span class="stringliteral">&quot;Failed to compile expression: &#39;&quot;</span> + std::string(expression) +</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>          <span class="stringliteral">&quot;&#39;. Error: &quot;</span> + std::to_string(err));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a50f88a4facf2f8a9ae6da384796faa75">init</a>(expression, args...);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ac576956c324ce5a8077564ce3adfdae4">   56</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ac576956c324ce5a8077564ce3adfdae4">evaluate</a>(<span class="keywordtype">double</span>* data)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">m_expr</a>.evaluate(data); }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">   59</a></span>  mathpresso::Context <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">m_context</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">   60</a></span>  mathpresso::Expression <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">m_expr</a>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a88c6dd2656e095707214afe20f0c4e85">   42</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a88c6dd2656e095707214afe20f0c4e85">ExpressionParser</a>(<span class="keyword">const</span> std::string&amp; expression, Args&amp;&amp;... args) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a50f88a4facf2f8a9ae6da384796faa75">init</a>(expression.c_str(), args...);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}  <span class="comment">// namespace vutils</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}  <span class="comment">// namespace vulpes</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_UTILS_EXPRESSION_PARSER_HPP_</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a134c2e9e2170c8cb38b9e16aeef9cb2a">   46</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a134c2e9e2170c8cb38b9e16aeef9cb2a">evaluate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>* data)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">m_expr</a>.evaluate(<span class="keyword">const_cast&lt;</span><span class="keywordtype">double</span>*<span class="keyword">&gt;</span>(data));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a50f88a4facf2f8a9ae6da384796faa75">   52</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a50f88a4facf2f8a9ae6da384796faa75">init</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* expression, Args&amp;&amp;... args) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static_assert</span>(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">sizeof</span>...(Args) == N, <span class="stringliteral">&quot;Incorrect number of variable names provided&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">m_context</a>.addBuiltIns();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::array&lt;std::string_view, N&gt; variable_names{std::forward&lt;Args&gt;(args)...};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; ++i) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">m_context</a>.addVariable(variable_names[i].data(), i * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">const</span> <span class="keyword">auto</span> options = mathpresso::kNoOptions;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">auto</span> err = <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">m_expr</a>.compile(<a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">m_context</a>, expression, options);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">if</span> (err != mathpresso::kErrorOk) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="keywordflow">throw</span> std::runtime_error(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>          <span class="stringliteral">&quot;Failed to compile expression: &#39;&quot;</span> + std::string(expression) +</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>          <span class="stringliteral">&quot;&#39;. Error: &quot;</span> + std::to_string(err));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">   70</a></span>  mathpresso::Context <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">m_context</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">   71</a></span>  mathpresso::Expression <a class="code hl_variable" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">m_expr</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}  <span class="comment">// namespace vutils</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace vulpes</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_UTILS_EXPRESSION_PARSER_HPP_</span></div>
 <div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html">vulpes::vutils::ExpressionParser</a></div><div class="ttdef"><b>Definition</b> expression_parser.hpp:35</div></div>
+<div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_a134c2e9e2170c8cb38b9e16aeef9cb2a"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#a134c2e9e2170c8cb38b9e16aeef9cb2a">vulpes::vutils::ExpressionParser::evaluate</a></div><div class="ttdeci">double evaluate(const double *data) const</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:46</div></div>
 <div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_a1a87720ca34c59052ddf50d931b2d107"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#a1a87720ca34c59052ddf50d931b2d107">vulpes::vutils::ExpressionParser::ExpressionParser</a></div><div class="ttdeci">ExpressionParser(const char *expression, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:38</div></div>
-<div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_a4411c4d9f09af296362068b4d02b6293"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">vulpes::vutils::ExpressionParser::m_expr</a></div><div class="ttdeci">mathpresso::Expression m_expr</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:60</div></div>
-<div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_ab416d7e5557cb5344210c5b617edc563"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">vulpes::vutils::ExpressionParser::m_context</a></div><div class="ttdeci">mathpresso::Context m_context</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:59</div></div>
-<div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_ac576956c324ce5a8077564ce3adfdae4"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#ac576956c324ce5a8077564ce3adfdae4">vulpes::vutils::ExpressionParser::evaluate</a></div><div class="ttdeci">double evaluate(double *data) const</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:56</div></div>
+<div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_a4411c4d9f09af296362068b4d02b6293"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">vulpes::vutils::ExpressionParser::m_expr</a></div><div class="ttdeci">mathpresso::Expression m_expr</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:71</div></div>
+<div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_a50f88a4facf2f8a9ae6da384796faa75"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#a50f88a4facf2f8a9ae6da384796faa75">vulpes::vutils::ExpressionParser::init</a></div><div class="ttdeci">void init(const char *expression, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:52</div></div>
+<div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_a88c6dd2656e095707214afe20f0c4e85"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#a88c6dd2656e095707214afe20f0c4e85">vulpes::vutils::ExpressionParser::ExpressionParser</a></div><div class="ttdeci">ExpressionParser(const std::string &amp;expression, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:42</div></div>
+<div class="ttc" id="aclassvulpes_1_1vutils_1_1ExpressionParser_html_ab416d7e5557cb5344210c5b617edc563"><div class="ttname"><a href="classvulpes_1_1vutils_1_1ExpressionParser.html#ab416d7e5557cb5344210c5b617edc563">vulpes::vutils::ExpressionParser::m_context</a></div><div class="ttdeci">mathpresso::Context m_context</div><div class="ttdef"><b>Definition</b> expression_parser.hpp:70</div></div>
 <div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -201,7 +220,7 @@ $(document).ready(function(){initNavTree('expression__parser_8hpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_57fd5c05a3144478f1fe40cbcefca761.html">utils</a></li><li class="navelem"><a class="el" href="expression__parser_8hpp.html">expression_parser.hpp</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

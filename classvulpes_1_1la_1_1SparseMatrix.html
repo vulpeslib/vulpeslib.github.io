@@ -139,10 +139,13 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4e1a38ec8bd65f7cdf4dad72e7bf134" id="r_ad4e1a38ec8bd65f7cdf4dad72e7bf134"><td class="memTemplParams" colspan="2">template&lt;typename DofHandler &gt; </td></tr>
 <tr class="memitem:ad4e1a38ec8bd65f7cdf4dad72e7bf134"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ad4e1a38ec8bd65f7cdf4dad72e7bf134">SparseMatrix</a> (const DofHandler &amp;dof_handler, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5ca">Type</a> type=<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa075d68a58ca2701c399d87c40a22f760">Plain</a>, PetscInt block_size=1)</td></tr>
+<tr class="memdesc:ad4e1a38ec8bd65f7cdf4dad72e7bf134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> based on a DofHandler's sparsity pattern.  <br /></td></tr>
 <tr class="separator:ad4e1a38ec8bd65f7cdf4dad72e7bf134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c283dbe2184c48233a94eabcbb4a0f9" id="r_a1c283dbe2184c48233a94eabcbb4a0f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a1c283dbe2184c48233a94eabcbb4a0f9">SparseMatrix</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;other, MatDuplicateOption duplicate_options)</td></tr>
+<tr class="memdesc:a1c283dbe2184c48233a94eabcbb4a0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> by duplicating another <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a>.  <br /></td></tr>
 <tr class="separator:a1c283dbe2184c48233a94eabcbb4a0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecbd71ca5ce9f1505fcdbe481b74fd83" id="r_aecbd71ca5ce9f1505fcdbe481b74fd83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#aecbd71ca5ce9f1505fcdbe481b74fd83">SparseMatrix</a> (PetscInt loc_size, PetscInt glob_size, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5ca">Type</a> type=<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa075d68a58ca2701c399d87c40a22f760">Plain</a>)</td></tr>
+<tr class="memdesc:aecbd71ca5ce9f1505fcdbe481b74fd83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> with given local and global sizes.  <br /></td></tr>
 <tr class="separator:aecbd71ca5ce9f1505fcdbe481b74fd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7597c21e1854b3f6df54942c05248d7" id="r_aa7597c21e1854b3f6df54942c05248d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#aa7597c21e1854b3f6df54942c05248d7">operator=</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;other)=delete</td></tr>
 <tr class="separator:aa7597c21e1854b3f6df54942c05248d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,42 +157,61 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2d9d606e5f096a9e8523504a8b62af7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dca71e14b3f9a474538faa9266bffd8" id="r_a0dca71e14b3f9a474538faa9266bffd8"><td class="memTemplParams" colspan="2">template&lt;typename DofHandler &gt; </td></tr>
 <tr class="memitem:a0dca71e14b3f9a474538faa9266bffd8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a0dca71e14b3f9a474538faa9266bffd8">init</a> (const DofHandler &amp;dof_handler, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5ca">Type</a> type=<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caa075d68a58ca2701c399d87c40a22f760">Plain</a>, PetscInt block_size=1)</td></tr>
+<tr class="memdesc:a0dca71e14b3f9a474538faa9266bffd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> based on a DofHandler's sparsity pattern.  <br /></td></tr>
 <tr class="separator:a0dca71e14b3f9a474538faa9266bffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a2e77008ac580d6a1de753cb1ec7316" id="r_a5a2e77008ac580d6a1de753cb1ec7316"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a5a2e77008ac580d6a1de753cb1ec7316">compress</a> ()</td></tr>
+<tr class="memdesc:a5a2e77008ac580d6a1de753cb1ec7316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize the assembly of the matrix by doing intracommunication.  <br /></td></tr>
 <tr class="separator:a5a2e77008ac580d6a1de753cb1ec7316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b01eebc30786b2e14701c7adf8a2c63" id="r_a9b01eebc30786b2e14701c7adf8a2c63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a9b01eebc30786b2e14701c7adf8a2c63">print</a> () const</td></tr>
+<tr class="memdesc:a9b01eebc30786b2e14701c7adf8a2c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the matrix to standard output.  <br /></td></tr>
 <tr class="separator:a9b01eebc30786b2e14701c7adf8a2c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd0d2aa5bf7e9b80ec3fe850cf153ef" id="r_a8fd0d2aa5bf7e9b80ec3fe850cf153ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a8fd0d2aa5bf7e9b80ec3fe850cf153ef">save</a> (const std::string &amp;filename, const std::string &amp;matname=&quot;&quot;, PetscViewerFormat format=PETSC_VIEWER_ASCII_MATLAB) const</td></tr>
+<tr class="memdesc:a8fd0d2aa5bf7e9b80ec3fe850cf153ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the matrix to a file.  <br /></td></tr>
 <tr class="separator:a8fd0d2aa5bf7e9b80ec3fe850cf153ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98bdee8e83a65cbf02ef1b3c1374752e" id="r_a98bdee8e83a65cbf02ef1b3c1374752e"><td class="memItemLeft" align="right" valign="top">std::array&lt; PetscInt, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a98bdee8e83a65cbf02ef1b3c1374752e">getSize</a> () const</td></tr>
+<tr class="memdesc:a98bdee8e83a65cbf02ef1b3c1374752e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the matrix as an array [rows, cols].  <br /></td></tr>
 <tr class="separator:a98bdee8e83a65cbf02ef1b3c1374752e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58eb85084accd15c0ed750cbcfd1f2cb" id="r_a58eb85084accd15c0ed750cbcfd1f2cb"><td class="memItemLeft" align="right" valign="top">PetscInt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a58eb85084accd15c0ed750cbcfd1f2cb">getBlockSize</a> () const</td></tr>
+<tr class="memdesc:a58eb85084accd15c0ed750cbcfd1f2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the block size of the matrix.  <br /></td></tr>
 <tr class="separator:a58eb85084accd15c0ed750cbcfd1f2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71ebf974803e51765653d5f9ad408774" id="r_a71ebf974803e51765653d5f9ad408774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a71ebf974803e51765653d5f9ad408774">copy</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;src, MatStructure str=DIFFERENT_NONZERO_PATTERN)</td></tr>
+<tr class="memdesc:a71ebf974803e51765653d5f9ad408774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the contents of another <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> into this one.  <br /></td></tr>
 <tr class="separator:a71ebf974803e51765653d5f9ad408774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab71684f12cba5ea2decd496c58809992" id="r_ab71684f12cba5ea2decd496c58809992"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ab71684f12cba5ea2decd496c58809992">insertValue</a> (PetscScalar value, PetscInt i, PetscInt j, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:ab71684f12cba5ea2decd496c58809992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a single value into the matrix.  <br /></td></tr>
 <tr class="separator:ab71684f12cba5ea2decd496c58809992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99d7fd9db0414b1850f28ab76516a51f" id="r_a99d7fd9db0414b1850f28ab76516a51f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a99d7fd9db0414b1850f28ab76516a51f">insertValues</a> (const PetscScalar *loc_mat, const PetscInt *idxs_row, const PetscInt *idxs_col, PetscInt n_loc, <a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3c">DataLayout</a> orientation=<a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca5323c9b3e9b062f8110a1e9a1c0ab0af">ColumnMajor</a>, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:a99d7fd9db0414b1850f28ab76516a51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a sub matrix into the matrix.  <br /></td></tr>
 <tr class="separator:a99d7fd9db0414b1850f28ab76516a51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f7d0cd497f56d8d98aadd7c1ad6ff0" id="r_a28f7d0cd497f56d8d98aadd7c1ad6ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a28f7d0cd497f56d8d98aadd7c1ad6ff0">insertValues</a> (const Eigen::Map&lt; const Eigen::MatrixXd &gt; &amp;loc_mat, const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; PetscInt, PetscInt &gt;::RowView&lt; false &gt; &amp;idxs_row_col, <a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3c">DataLayout</a> orientation=<a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca5323c9b3e9b062f8110a1e9a1c0ab0af">ColumnMajor</a>, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:a28f7d0cd497f56d8d98aadd7c1ad6ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a sub matrix into the matrix.  <br /></td></tr>
 <tr class="separator:a28f7d0cd497f56d8d98aadd7c1ad6ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28426b9bc184e6fb5933cef625a1b4bf" id="r_a28426b9bc184e6fb5933cef625a1b4bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a28426b9bc184e6fb5933cef625a1b4bf">insertValues</a> (const Eigen::Map&lt; const Eigen::MatrixXd &gt; &amp;loc_mat, const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; PetscInt, PetscInt &gt;::RowView&lt; false &gt; &amp;idxs_row, const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; PetscInt, PetscInt &gt;::RowView&lt; false &gt; &amp;idxs_col, <a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3c">DataLayout</a> orientation=<a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca5323c9b3e9b062f8110a1e9a1c0ab0af">ColumnMajor</a>, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:a28426b9bc184e6fb5933cef625a1b4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a sub matrix into the matrix.  <br /></td></tr>
 <tr class="separator:a28426b9bc184e6fb5933cef625a1b4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d3bb2f124122b9d6a323298a81ac410" id="r_a2d3bb2f124122b9d6a323298a81ac410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a2d3bb2f124122b9d6a323298a81ac410">insertValuesBlocked</a> (const PetscScalar *loc_mat, const PetscInt *idxs_row, const PetscInt *idxs_col, PetscInt n_loc, <a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3c">DataLayout</a> orientation=<a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca5323c9b3e9b062f8110a1e9a1c0ab0af">ColumnMajor</a>, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:a2d3bb2f124122b9d6a323298a81ac410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a blocked sub matrix into the matrix.  <br /></td></tr>
 <tr class="separator:a2d3bb2f124122b9d6a323298a81ac410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ace82076bcc5214a6a9da37b6f4dff" id="r_ad8ace82076bcc5214a6a9da37b6f4dff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ad8ace82076bcc5214a6a9da37b6f4dff">insertValuesBlocked</a> (const Eigen::Map&lt; const Eigen::MatrixXd &gt; &amp;loc_mat, const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; PetscInt, PetscInt &gt;::RowView&lt; false &gt; &amp;idxs_row_col, <a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3c">DataLayout</a> orientation=<a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca5323c9b3e9b062f8110a1e9a1c0ab0af">ColumnMajor</a>, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:ad8ace82076bcc5214a6a9da37b6f4dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a blocked sub matrix into the matrix.  <br /></td></tr>
 <tr class="separator:ad8ace82076bcc5214a6a9da37b6f4dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee775ed7f545415fb58630de9a1c6798" id="r_aee775ed7f545415fb58630de9a1c6798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#aee775ed7f545415fb58630de9a1c6798">insertValuesBlocked</a> (const Eigen::Map&lt; const Eigen::MatrixXd &gt; &amp;loc_mat, const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; PetscInt, PetscInt &gt;::RowView&lt; false &gt; &amp;idxs_row, const <a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; PetscInt, PetscInt &gt;::RowView&lt; false &gt; &amp;idxs_col, <a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3c">DataLayout</a> orientation=<a class="el" href="namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca5323c9b3e9b062f8110a1e9a1c0ab0af">ColumnMajor</a>, InsertMode mode=ADD_VALUES)</td></tr>
+<tr class="memdesc:aee775ed7f545415fb58630de9a1c6798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a blocked sub matrix into the matrix.  <br /></td></tr>
 <tr class="separator:aee775ed7f545415fb58630de9a1c6798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e24da77e87720f0ec35398d2c68ba12" id="r_a2e24da77e87720f0ec35398d2c68ba12"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a2e24da77e87720f0ec35398d2c68ba12">toEigenDense</a> () const</td></tr>
+<tr class="memdesc:a2e24da77e87720f0ec35398d2c68ba12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the sparse matrix to a dense <a class="el" href="namespaceEigen.html">Eigen</a> matrix.  <br /></td></tr>
 <tr class="separator:a2e24da77e87720f0ec35398d2c68ba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1f9d16c2b7ae2d7d59e8fbdd34d65e" id="r_a5d1f9d16c2b7ae2d7d59e8fbdd34d65e"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a5d1f9d16c2b7ae2d7d59e8fbdd34d65e">getPetscMatrix</a> () const</td></tr>
+<tr class="memdesc:a5d1f9d16c2b7ae2d7d59e8fbdd34d65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying PETSc matrix.  <br /></td></tr>
 <tr class="separator:a5d1f9d16c2b7ae2d7d59e8fbdd34d65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae391b71887d55a4582abe99b290cc652" id="r_ae391b71887d55a4582abe99b290cc652"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ae391b71887d55a4582abe99b290cc652">getPetscMatrix</a> ()</td></tr>
+<tr class="memdesc:ae391b71887d55a4582abe99b290cc652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying PETSc matrix (non-const)  <br /></td></tr>
 <tr class="separator:ae391b71887d55a4582abe99b290cc652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4202c0c85c89399df1818b30538f481f" id="r_a4202c0c85c89399df1818b30538f481f"><td class="memItemLeft" align="right" valign="top">std::pair&lt; PetscInt, PetscInt &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a4202c0c85c89399df1818b30538f481f">getMatrixSizes</a> () const</td></tr>
+<tr class="memdesc:a4202c0c85c89399df1818b30538f481f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local and global sizes of the matrix.  <br /></td></tr>
 <tr class="separator:a4202c0c85c89399df1818b30538f481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35cd15f2134a65e73cdaed4c467e446a" id="r_a35cd15f2134a65e73cdaed4c467e446a"><td class="memItemLeft" align="right" valign="top">PetscReal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a35cd15f2134a65e73cdaed4c467e446a">norm</a> (NormType normType=NORM_FROBENIUS) const</td></tr>
+<tr class="memdesc:a35cd15f2134a65e73cdaed4c467e446a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the norm of the matrix.  <br /></td></tr>
 <tr class="separator:a35cd15f2134a65e73cdaed4c467e446a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac30a671086b2e6f846c16a49abe961ff" id="r_ac30a671086b2e6f846c16a49abe961ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ac30a671086b2e6f846c16a49abe961ff">vmult</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;in, <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;out) const</td></tr>
 <tr class="separator:ac30a671086b2e6f846c16a49abe961ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,18 +221,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac203262c3c8c452fc26db6d67737086e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf0db8b7279b0e02209655ef92bc6c7f" id="r_abf0db8b7279b0e02209655ef92bc6c7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#abf0db8b7279b0e02209655ef92bc6c7f">vmultTAdd</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;in_mult, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;in_add, <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;out) const</td></tr>
 <tr class="separator:abf0db8b7279b0e02209655ef92bc6c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55914869de5399718b654b3f487dc895" id="r_a55914869de5399718b654b3f487dc895"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a55914869de5399718b654b3f487dc895">matMult</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, PetscReal fill=PETSC_DETERMINE) const</td></tr>
-<tr class="separator:a55914869de5399718b654b3f487dc895"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8484c6f6fd67cbd383a7d8862c85f90" id="r_af8484c6f6fd67cbd383a7d8862c85f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#af8484c6f6fd67cbd383a7d8862c85f90">matMultTranspose</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, PetscReal fill=PETSC_DETERMINE) const</td></tr>
-<tr class="separator:af8484c6f6fd67cbd383a7d8862c85f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d1d3304cff1759263726b7671222b74" id="r_a2d1d3304cff1759263726b7671222b74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a2d1d3304cff1759263726b7671222b74">transposeMatMult</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, PetscReal fill=PETSC_DETERMINE) const</td></tr>
-<tr class="separator:a2d1d3304cff1759263726b7671222b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462e9ed6f46877e3945a8d5a1749d45b" id="r_a462e9ed6f46877e3945a8d5a1749d45b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a462e9ed6f46877e3945a8d5a1749d45b">matMult_</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;C, PetscReal fill=PETSC_DETERMINE) const</td></tr>
-<tr class="separator:a462e9ed6f46877e3945a8d5a1749d45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a458163d1fbe8e70ddf87990495b011d6" id="r_a458163d1fbe8e70ddf87990495b011d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a458163d1fbe8e70ddf87990495b011d6">matMultTranspose_</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;C, PetscReal fill=PETSC_DETERMINE) const</td></tr>
-<tr class="separator:a458163d1fbe8e70ddf87990495b011d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a731e9b7ad4ebf81fb0dcf223b80527cc" id="r_a731e9b7ad4ebf81fb0dcf223b80527cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a731e9b7ad4ebf81fb0dcf223b80527cc">transposeMatMult_</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;C, PetscReal fill=PETSC_DETERMINE) const</td></tr>
-<tr class="separator:a731e9b7ad4ebf81fb0dcf223b80527cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7068d79c6709d50c847a59aa808d8401" id="r_a7068d79c6709d50c847a59aa808d8401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a7068d79c6709d50c847a59aa808d8401">matMult</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;C, PetscReal fill=PETSC_DETERMINE) const</td></tr>
+<tr class="separator:a7068d79c6709d50c847a59aa808d8401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a971ca0b34d2c7bda5085e6060cc60a" id="r_a3a971ca0b34d2c7bda5085e6060cc60a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a3a971ca0b34d2c7bda5085e6060cc60a">matMultTranspose</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;C, PetscReal fill=PETSC_DETERMINE) const</td></tr>
+<tr class="separator:a3a971ca0b34d2c7bda5085e6060cc60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c99f87f436eb3b562270b84843f2db" id="r_af1c99f87f436eb3b562270b84843f2db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#af1c99f87f436eb3b562270b84843f2db">transposeMatMult</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;C, PetscReal fill=PETSC_DETERMINE) const</td></tr>
+<tr class="separator:af1c99f87f436eb3b562270b84843f2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7ad1d7bc0162d4e11d64f6f9481bff" id="r_a7a7ad1d7bc0162d4e11d64f6f9481bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a7a7ad1d7bc0162d4e11d64f6f9481bff">addScaledMatrix</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;other, PetscScalar scale, MatStructure str=UNKNOWN_NONZERO_PATTERN)</td></tr>
 <tr class="separator:a7a7ad1d7bc0162d4e11d64f6f9481bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a915b36d629448243ec1091dfe1dc5af3" id="r_a915b36d629448243ec1091dfe1dc5af3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a915b36d629448243ec1091dfe1dc5af3">~SparseMatrix</a> ()</td></tr>
@@ -222,9 +238,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:af90b10690f98fb62338afc1bf5c3e19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398c85783ac21c115ba01e4f58da56f4" id="r_a398c85783ac21c115ba01e4f58da56f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a398c85783ac21c115ba01e4f58da56f4">createMatrix</a> (<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5ca">Type</a> type)</td></tr>
 <tr class="separator:a398c85783ac21c115ba01e4f58da56f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab767e5406f0b1c389229e82106f6a03c" id="r_ab767e5406f0b1c389229e82106f6a03c"><td class="memTemplParams" colspan="2">template&lt;typename DofHandler &gt; </td></tr>
-<tr class="memitem:ab767e5406f0b1c389229e82106f6a03c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ab767e5406f0b1c389229e82106f6a03c">setupParallelSizes</a> (const DofHandler &amp;dof_handler, const PetscInt n_glob, PetscInt &amp;dof_begin, PetscInt &amp;dof_end)</td></tr>
-<tr class="separator:ab767e5406f0b1c389229e82106f6a03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accea9d1a8604072dd8c3b0e3de5aa70b" id="r_accea9d1a8604072dd8c3b0e3de5aa70b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#accea9d1a8604072dd8c3b0e3de5aa70b">setMatrixSizes</a> (const PetscInt n_loc, const PetscInt n_glob)</td></tr>
 <tr class="separator:accea9d1a8604072dd8c3b0e3de5aa70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad583ca048ced776976adeb3b0e3edbd" id="r_aad583ca048ced776976adeb3b0e3edbd"><td class="memTemplParams" colspan="2">template&lt;typename DofHandler &gt; </td></tr>
@@ -303,6 +316,16 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> based on a DofHandler's sparsity pattern. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dof_handler</td><td>The DofHandler providing the sparsity pattern </td></tr>
+    <tr><td class="paramname">type</td><td>The type of the matrix (Plain, Block, etc.) </td></tr>
+    <tr><td class="paramname">block_size</td><td>The block size for Block type matrices </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1c283dbe2184c48233a94eabcbb4a0f9" name="a1c283dbe2184c48233a94eabcbb4a0f9"></a>
@@ -330,6 +353,15 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> by duplicating another <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> to duplicate </td></tr>
+    <tr><td class="paramname">duplicate_options</td><td>Copy options (sparsity pattern, values, etc.) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -364,6 +396,16 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> with given local and global sizes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_size</td><td>The local number of rows </td></tr>
+    <tr><td class="paramname">glob_size</td><td>The global number of rows </td></tr>
+    <tr><td class="paramname">type</td><td>The type of the matrix (Plain, Block, etc.) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -560,6 +602,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Finalize the assembly of the matrix by doing intracommunication. </p>
+
 </div>
 </div>
 <a id="aad583ca048ced776976adeb3b0e3edbd" name="aad583ca048ced776976adeb3b0e3edbd"></a>
@@ -644,6 +688,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Copy the contents of another <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> into this one. </p>
+
 </div>
 </div>
 <a id="a398c85783ac21c115ba01e4f58da56f4" name="a398c85783ac21c115ba01e4f58da56f4"></a>
@@ -687,6 +733,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Get the block size of the matrix. </p>
+
 </div>
 </div>
 <a id="a4202c0c85c89399df1818b30538f481f" name="a4202c0c85c89399df1818b30538f481f"></a>
@@ -703,6 +751,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the local and global sizes of the matrix. </p>
 
 </div>
 </div>
@@ -729,6 +779,8 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the underlying PETSc matrix (non-const) </p>
+
 </div>
 </div>
 <a id="a5d1f9d16c2b7ae2d7d59e8fbdd34d65e" name="a5d1f9d16c2b7ae2d7d59e8fbdd34d65e"></a>
@@ -754,6 +806,8 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the underlying PETSc matrix. </p>
+
 </div>
 </div>
 <a id="a98bdee8e83a65cbf02ef1b3c1374752e" name="a98bdee8e83a65cbf02ef1b3c1374752e"></a>
@@ -770,6 +824,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the size of the matrix as an array [rows, cols]. </p>
 
 </div>
 </div>
@@ -815,6 +871,16 @@ template&lt;typename DofHandler &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Initialize the <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> based on a DofHandler's sparsity pattern. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dof_handler</td><td>The DofHandler providing the sparsity pattern </td></tr>
+    <tr><td class="paramname">type</td><td>The type of the matrix (Plain, Block, etc.) </td></tr>
+    <tr><td class="paramname">block_size</td><td>The block size for Block type matrices </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab71684f12cba5ea2decd496c58809992" name="ab71684f12cba5ea2decd496c58809992"></a>
@@ -854,6 +920,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Insert a single value into the matrix. </p>
 
 </div>
 </div>
@@ -901,6 +969,18 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Insert a sub matrix into the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_mat</td><td><a class="el" href="namespaceEigen.html">Eigen</a> map of the local matrix values </td></tr>
+    <tr><td class="paramname">idxs_row</td><td>Row indices </td></tr>
+    <tr><td class="paramname">idxs_col</td><td>Column indices </td></tr>
+    <tr><td class="paramname">orientation</td><td>Data layout of the local matrix (ColumnMajor or RowMajor) </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a28f7d0cd497f56d8d98aadd7c1ad6ff0" name="a28f7d0cd497f56d8d98aadd7c1ad6ff0"></a>
@@ -940,6 +1020,17 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Insert a sub matrix into the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_mat</td><td><a class="el" href="namespaceEigen.html">Eigen</a> map of the local matrix values </td></tr>
+    <tr><td class="paramname">idxs_row_col</td><td>Row and column indices (same for both) </td></tr>
+    <tr><td class="paramname">orientation</td><td>Data layout of the local matrix (ColumnMajor or RowMajor) </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -993,6 +1084,19 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Insert a sub matrix into the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_mat</td><td>Pointer to the local matrix values </td></tr>
+    <tr><td class="paramname">idxs_row</td><td>Pointer to the row indices </td></tr>
+    <tr><td class="paramname">idxs_col</td><td>Pointer to the column indices </td></tr>
+    <tr><td class="paramname">n_loc</td><td>Number of local rows/columns </td></tr>
+    <tr><td class="paramname">orientation</td><td>Data layout of the local matrix (ColumnMajor or RowMajor) </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aee775ed7f545415fb58630de9a1c6798" name="aee775ed7f545415fb58630de9a1c6798"></a>
@@ -1039,6 +1143,18 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Insert a blocked sub matrix into the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_mat</td><td><a class="el" href="namespaceEigen.html">Eigen</a> map of the local matrix values (it must have size [block_size * n_loc, block_size * n_loc]) </td></tr>
+    <tr><td class="paramname">idxs_row</td><td>Row indices </td></tr>
+    <tr><td class="paramname">idxs_col</td><td>Column indices </td></tr>
+    <tr><td class="paramname">orientation</td><td>Data layout of the local matrix (ColumnMajor or RowMajor) </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad8ace82076bcc5214a6a9da37b6f4dff" name="ad8ace82076bcc5214a6a9da37b6f4dff"></a>
@@ -1078,6 +1194,17 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Insert a blocked sub matrix into the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_mat</td><td><a class="el" href="namespaceEigen.html">Eigen</a> map of the local matrix values (it must have size [block_size * n_loc, block_size * n_loc]) </td></tr>
+    <tr><td class="paramname">idxs_row_col</td><td>Row and column indices (same for both) </td></tr>
+    <tr><td class="paramname">orientation</td><td>Data layout of the local matrix (ColumnMajor or RowMajor) </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1131,44 +1258,29 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Insert a blocked sub matrix into the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc_mat</td><td>Pointer to the local matrix values (it must have size [block_size * n_loc, block_size * n_loc]) </td></tr>
+    <tr><td class="paramname">idxs_row</td><td>Pointer to the row indices </td></tr>
+    <tr><td class="paramname">idxs_col</td><td>Pointer to the column indices </td></tr>
+    <tr><td class="paramname">n_loc</td><td>Number of local rows/columns (in blocks) </td></tr>
+    <tr><td class="paramname">orientation</td><td>Data layout of the local matrix (ColumnMajor or RowMajor) </td></tr>
+    <tr><td class="paramname">mode</td><td>Insertion mode (ADD_VALUES or INSERT_VALUES) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a55914869de5399718b654b3f487dc895" name="a55914869de5399718b654b3f487dc895"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55914869de5399718b654b3f487dc895">&#9670;&#160;</a></span>matMult()</h2>
+<a id="a7068d79c6709d50c847a59aa808d8401" name="a7068d79c6709d50c847a59aa808d8401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7068d79c6709d50c847a59aa808d8401">&#9670;&#160;</a></span>matMult()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> vulpes::la::SparseMatrix::matMult </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>B</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PetscReal&#160;</td>
-          <td class="paramname"><em>fill</em> = <code>PETSC_DETERMINE</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a462e9ed6f46877e3945a8d5a1749d45b" name="a462e9ed6f46877e3945a8d5a1749d45b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a462e9ed6f46877e3945a8d5a1749d45b">&#9670;&#160;</a></span>matMult_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vulpes::la::SparseMatrix::matMult_ </td>
+          <td class="memname">void vulpes::la::SparseMatrix::matMult </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td>
           <td class="paramname"><em>B</em>, </td>
@@ -1195,42 +1307,14 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
-<a id="af8484c6f6fd67cbd383a7d8862c85f90" name="af8484c6f6fd67cbd383a7d8862c85f90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8484c6f6fd67cbd383a7d8862c85f90">&#9670;&#160;</a></span>matMultTranspose()</h2>
+<a id="a3a971ca0b34d2c7bda5085e6060cc60a" name="a3a971ca0b34d2c7bda5085e6060cc60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a971ca0b34d2c7bda5085e6060cc60a">&#9670;&#160;</a></span>matMultTranspose()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> vulpes::la::SparseMatrix::matMultTranspose </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>B</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PetscReal&#160;</td>
-          <td class="paramname"><em>fill</em> = <code>PETSC_DETERMINE</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a458163d1fbe8e70ddf87990495b011d6" name="a458163d1fbe8e70ddf87990495b011d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a458163d1fbe8e70ddf87990495b011d6">&#9670;&#160;</a></span>matMultTranspose_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vulpes::la::SparseMatrix::matMultTranspose_ </td>
+          <td class="memname">void vulpes::la::SparseMatrix::matMultTranspose </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td>
           <td class="paramname"><em>B</em>, </td>
@@ -1272,6 +1356,8 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the norm of the matrix. </p>
 
 </div>
 </div>
@@ -1342,6 +1428,8 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Print the matrix to standard output. </p>
+
 </div>
 </div>
 <a id="a8fd0d2aa5bf7e9b80ec3fe850cf153ef" name="a8fd0d2aa5bf7e9b80ec3fe850cf153ef"></a>
@@ -1375,6 +1463,16 @@ template&lt;typename DofHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Save the matrix to a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The name of the file </td></tr>
+    <tr><td class="paramname">matname</td><td>The name of the matrix inside the file </td></tr>
+    <tr><td class="paramname">format</td><td>The format to use for saving </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1414,56 +1512,6 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
-<a id="ab767e5406f0b1c389229e82106f6a03c" name="ab767e5406f0b1c389229e82106f6a03c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab767e5406f0b1c389229e82106f6a03c">&#9670;&#160;</a></span>setupParallelSizes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename DofHandler &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vulpes::la::SparseMatrix::setupParallelSizes </td>
-          <td>(</td>
-          <td class="paramtype">const DofHandler &amp;&#160;</td>
-          <td class="paramname"><em>dof_handler</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const PetscInt&#160;</td>
-          <td class="paramname"><em>n_glob</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PetscInt &amp;&#160;</td>
-          <td class="paramname"><em>dof_begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PetscInt &amp;&#160;</td>
-          <td class="paramname"><em>dof_end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2e24da77e87720f0ec35398d2c68ba12" name="a2e24da77e87720f0ec35398d2c68ba12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e24da77e87720f0ec35398d2c68ba12">&#9670;&#160;</a></span>toEigenDense()</h2>
 
@@ -1479,44 +1527,18 @@ template&lt;typename DofHandler &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Convert the sparse matrix to a dense <a class="el" href="namespaceEigen.html">Eigen</a> matrix. </p>
+
 </div>
 </div>
-<a id="a2d1d3304cff1759263726b7671222b74" name="a2d1d3304cff1759263726b7671222b74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d1d3304cff1759263726b7671222b74">&#9670;&#160;</a></span>transposeMatMult()</h2>
+<a id="af1c99f87f436eb3b562270b84843f2db" name="af1c99f87f436eb3b562270b84843f2db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c99f87f436eb3b562270b84843f2db">&#9670;&#160;</a></span>transposeMatMult()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> vulpes::la::SparseMatrix::transposeMatMult </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>B</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PetscReal&#160;</td>
-          <td class="paramname"><em>fill</em> = <code>PETSC_DETERMINE</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a731e9b7ad4ebf81fb0dcf223b80527cc" name="a731e9b7ad4ebf81fb0dcf223b80527cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a731e9b7ad4ebf81fb0dcf223b80527cc">&#9670;&#160;</a></span>transposeMatMult_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vulpes::la::SparseMatrix::transposeMatMult_ </td>
+          <td class="memname">void vulpes::la::SparseMatrix::transposeMatMult </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td>
           <td class="paramname"><em>B</em>, </td>
@@ -1701,7 +1723,7 @@ template&lt;typename DofHandler &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

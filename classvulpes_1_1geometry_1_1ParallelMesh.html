@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1ParallelMes
 </div><!--header-->
 <div class="contents">
 
-<p>This class wraps any serial mesh class and adds suitable attribute needed to distributes it in parallel.  
+<p>This class wraps a serial mesh class and adds attributes and methods for parallelization.  
  <a href="classvulpes_1_1geometry_1_1ParallelMesh.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="parallel__mesh_8hpp_source.html">parallel_mesh.hpp</a>&gt;</code></p>
@@ -320,19 +320,12 @@ Protected Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ad4875ffe734717b810d5bcc56aac19ad" id="r_ad4875ffe734717b810d5bcc56aac19ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad4875ffe734717b810d5bcc56aac19ad">operator==</a> (const <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a> &amp;lhs, const <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a> &amp;rhs)</td></tr>
-<tr class="memdesc:ad4875ffe734717b810d5bcc56aac19ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html" title="This class wraps any serial mesh class and adds suitable attribute needed to distributes it in parall...">ParallelMesh</a> objects for equality.  <br /></td></tr>
+<tr class="memdesc:ad4875ffe734717b810d5bcc56aac19ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html" title="This class wraps a serial mesh class and adds attributes and methods for parallelization.">ParallelMesh</a> objects for equality.  <br /></td></tr>
 <tr class="separator:ad4875ffe734717b810d5bcc56aac19ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Mesh&gt;<br />
-class vulpes::geometry::ParallelMesh&lt; Mesh &gt;</div><p>This class wraps any serial mesh class and adds suitable attribute needed to distributes it in parallel. </p>
-<p>There are the following ways to build a parallel mesh:</p><ul>
-<li>parellize an already build mesh by proc 0 by taking its ownership</li>
-<li>the map inherited from the base class are local to local</li>
-<li>there is a copy with already the local to global map</li>
-<li>the entity mappings are available as both local to global and the inverse</li>
-</ul>
-<p>This class wraps a serial mesh class and adds attributes and methods for parallelization.</p>
+class vulpes::geometry::ParallelMesh&lt; Mesh &gt;</div><p>This class wraps a serial mesh class and adds attributes and methods for parallelization. </p>
 <p>It enables a mesh, initially created and owned by a single process (rank 0), to be distributed among multiple processes for parallel computation. The parallelization process involves partitioning the mesh and creating local copies for each process, including "ghost" cells that are adjacent to the owned cells but belong to other processes.</p>
 <p>Key features:</p><ul>
 <li>A mesh can be built entirely on a single process (rank 0) and then parallelized.</li>
@@ -1503,7 +1496,7 @@ template&lt;typename Mesh &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Compares two <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html" title="This class wraps any serial mesh class and adds suitable attribute needed to distributes it in parall...">ParallelMesh</a> objects for equality. </p>
+<p>Compares two <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html" title="This class wraps a serial mesh class and adds attributes and methods for parallelization.">ParallelMesh</a> objects for equality. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td>The left-hand side parallel mesh. </td></tr>
@@ -2058,7 +2051,7 @@ template&lt;typename Mesh &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

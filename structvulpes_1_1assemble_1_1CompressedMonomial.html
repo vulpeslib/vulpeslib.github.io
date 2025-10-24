@@ -118,21 +118,30 @@ $(document).ready(function(){initNavTree('structvulpes_1_1assemble_1_1Compressed
 </div><!--header-->
 <div class="contents">
 
+<p>A compressed representation of a standard monomial.  
+ <a href="structvulpes_1_1assemble_1_1CompressedMonomial.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="integrator__qfree_8hpp_source.html">integrator_qfree.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a947e8fbff94a511c56781f43dcb10523" id="r_a947e8fbff94a511c56781f43dcb10523"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1CompressedMonomial.html#a947e8fbff94a511c56781f43dcb10523">operator&lt;</a> (const <a class="el" href="structvulpes_1_1assemble_1_1CompressedMonomial.html">CompressedMonomial</a> &amp;other) const</td></tr>
+<tr class="memdesc:a947e8fbff94a511c56781f43dcb10523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator to allow sorting and storing in ordered containers.  <br /></td></tr>
 <tr class="separator:a947e8fbff94a511c56781f43dcb10523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a870d5fedb937867aba63e98b1c9905ff" id="r_a870d5fedb937867aba63e98b1c9905ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1CompressedMonomial.html#a870d5fedb937867aba63e98b1c9905ff">coef</a></td></tr>
+<tr class="memdesc:a870d5fedb937867aba63e98b1c9905ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coefficient of the monomial.  <br /></td></tr>
 <tr class="separator:a870d5fedb937867aba63e98b1c9905ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2efcaa781042d819a499422433c20fc" id="r_aa2efcaa781042d819a499422433c20fc"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1assemble_1_1CompressedMonomial.html#aa2efcaa781042d819a499422433c20fc">integr_id</a></td></tr>
+<tr class="memdesc:aa2efcaa781042d819a499422433c20fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique ID representing the monomial's exponents, obtained via linearization (e.g., mapping \((\alpha, \beta)\) to a single integer).  <br /></td></tr>
 <tr class="separator:aa2efcaa781042d819a499422433c20fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A compressed representation of a standard monomial. </p>
+<p>This is used for volume integrals and face integrals that do not involve neighbor cells. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a947e8fbff94a511c56781f43dcb10523" name="a947e8fbff94a511c56781f43dcb10523"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a947e8fbff94a511c56781f43dcb10523">&#9670;&#160;</a></span>operator&lt;()</h2>
 
@@ -157,6 +166,15 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Comparison operator to allow sorting and storing in ordered containers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other <a class="el" href="structvulpes_1_1assemble_1_1CompressedMonomial.html" title="A compressed representation of a standard monomial.">CompressedMonomial</a> to compare against. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if this monomial is less than the other. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -172,6 +190,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The coefficient of the monomial. </p>
+
 </div>
 </div>
 <a id="aa2efcaa781042d819a499422433c20fc" name="aa2efcaa781042d819a499422433c20fc"></a>
@@ -186,6 +206,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>A unique ID representing the monomial's exponents, obtained via linearization (e.g., mapping \((\alpha, \beta)\) to a single integer). </p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
@@ -198,7 +220,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="structvulpes_1_1assemble_1_1CompressedMonomial.html">CompressedMonomial</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

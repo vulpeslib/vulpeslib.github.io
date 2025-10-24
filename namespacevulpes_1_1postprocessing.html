@@ -122,9 +122,11 @@ Functions</h2></td></tr>
 <tr class="separator:aa6a9e2a56768b8e5076941d3e9b8d497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f9ec84873a837fb54aed3c043958ec8" id="r_a5f9ec84873a837fb54aed3c043958ec8"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType &gt; </td></tr>
 <tr class="memitem:a5f9ec84873a837fb54aed3c043958ec8"><td class="memTemplItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1postprocessing.html#a5f9ec84873a837fb54aed3c043958ec8">projectSolution</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;solution)</td></tr>
+<tr class="memdesc:a5f9ec84873a837fb54aed3c043958ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate solution (that is, <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">la::Vector</a> with coefficients of the basis, can be either nodal or modal) on vtxs of a mesh.  <br /></td></tr>
 <tr class="separator:a5f9ec84873a837fb54aed3c043958ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc31fa8655aee2c9d3043afd81671076" id="r_abc31fa8655aee2c9d3043afd81671076"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType &gt; </td></tr>
 <tr class="memitem:abc31fa8655aee2c9d3043afd81671076"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1datastructure_1_1CrsMap.html">datastructure::CrsMap</a>&lt; double, typename MeshType::index_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1postprocessing.html#abc31fa8655aee2c9d3043afd81671076">projectSolutionSubmesh</a> (const <a class="el" href="classvulpes_1_1geometry_1_1MeshExporterSubmesh.html">geometry::MeshExporterSubmesh</a>&lt; MeshType &gt; &amp;mesh_exporter, const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;solution)</td></tr>
+<tr class="memdesc:abc31fa8655aee2c9d3043afd81671076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate solution (that is, <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">la::Vector</a> with coefficients of the basis, can be either nodal or modal) on vtxs of sub-triangulation of a mesh (for visualization purposes only).  <br /></td></tr>
 <tr class="separator:abc31fa8655aee2c9d3043afd81671076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -190,6 +192,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Evaluate solution (that is, <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">la::Vector</a> with coefficients of the basis, can be either nodal or modal) on vtxs of a mesh. </p>
+
 </div>
 </div>
 <a id="abc31fa8655aee2c9d3043afd81671076" name="abc31fa8655aee2c9d3043afd81671076"></a>
@@ -232,6 +236,8 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Evaluate solution (that is, <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">la::Vector</a> with coefficients of the basis, can be either nodal or modal) on vtxs of sub-triangulation of a mesh (for visualization purposes only). </p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -241,7 +247,7 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1postprocessing.html">postprocessing</a></li>
-    <li class="footer">Generated on Mon Oct 6 2025 14:03:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
