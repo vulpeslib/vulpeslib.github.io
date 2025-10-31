@@ -242,6 +242,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a397d1abb23215b0874a647e53e203299" id="r_a397d1abb23215b0874a647e53e203299"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a397d1abb23215b0874a647e53e203299">getMeshTags</a> () const</td></tr>
 <tr class="memdesc:a397d1abb23215b0874a647e53e203299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the mesh tags.  <br /></td></tr>
 <tr class="separator:a397d1abb23215b0874a647e53e203299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28ca2e8dd2cea99c7b70663367e7f97" id="r_aa28ca2e8dd2cea99c7b70663367e7f97"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#aa28ca2e8dd2cea99c7b70663367e7f97">getMetadata</a> ()</td></tr>
+<tr class="memdesc:aa28ca2e8dd2cea99c7b70663367e7f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a modifiable reference to the mesh metadata.  <br /></td></tr>
+<tr class="separator:aa28ca2e8dd2cea99c7b70663367e7f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b14c1482289a2c2533efa6539944f4" id="r_a35b14c1482289a2c2533efa6539944f4"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a35b14c1482289a2c2533efa6539944f4">getMetadata</a> () const</td></tr>
+<tr class="memdesc:a35b14c1482289a2c2533efa6539944f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a constant reference to the mesh metadata.  <br /></td></tr>
+<tr class="separator:a35b14c1482289a2c2533efa6539944f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ad58daae8b5324daa8640307d82606" id="r_ab3ad58daae8b5324daa8640307d82606"><td class="memItemLeft" align="right" valign="top">IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#ab3ad58daae8b5324daa8640307d82606">numCells</a> () const</td></tr>
 <tr class="memdesc:ab3ad58daae8b5324daa8640307d82606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of cells in the mesh.  <br /></td></tr>
 <tr class="separator:ab3ad58daae8b5324daa8640307d82606"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,7 +357,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a83689c5aaaf5fb2238c4ddc98bcd6686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all tags associated with the mesh.  <br /></td></tr>
 <tr class="separator:a83689c5aaaf5fb2238c4ddc98bcd6686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b381e4f7cb4ba6813b44ef8a7eaa36" id="r_a42b381e4f7cb4ba6813b44ef8a7eaa36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">MeshTag</a>&lt; SelfDim, IndexType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a42b381e4f7cb4ba6813b44ef8a7eaa36">m_mesh_tags</a></td></tr>
+<tr class="memdesc:a42b381e4f7cb4ba6813b44ef8a7eaa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores global metadata for the mesh.  <br /></td></tr>
 <tr class="separator:a42b381e4f7cb4ba6813b44ef8a7eaa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240d843337767978ddf046686dcc8865" id="r_a240d843337767978ddf046686dcc8865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1geometry_1_1Metadata.html">Metadata</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a240d843337767978ddf046686dcc8865">m_metadata</a></td></tr>
+<tr class="separator:a240d843337767978ddf046686dcc8865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -1568,6 +1577,64 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 
 </div>
 </div>
+<a id="aa28ca2e8dd2cea99c7b70663367e7f97" name="aa28ca2e8dd2cea99c7b70663367e7f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa28ca2e8dd2cea99c7b70663367e7f97">&#9670;&#160;</a></span>getMetadata() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a modifiable reference to the mesh metadata. </p>
+
+</div>
+</div>
+<a id="a35b14c1482289a2c2533efa6539944f4" name="a35b14c1482289a2c2533efa6539944f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b14c1482289a2c2533efa6539944f4">&#9670;&#160;</a></span>getMetadata() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::getMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a constant reference to the mesh metadata. </p>
+
+</div>
+</div>
 <a id="a77cb0eb9c228f601dbb5c72b222c75ed" name="a77cb0eb9c228f601dbb5c72b222c75ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77cb0eb9c228f601dbb5c72b222c75ed">&#9670;&#160;</a></span>getVertexes() <span class="overload">[1/2]</span></h2>
 
@@ -2246,6 +2313,32 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 </table>
 </div><div class="memdoc">
 
+<p>Stores global metadata for the mesh. </p>
+
+</div>
+</div>
+<a id="a240d843337767978ddf046686dcc8865" name="a240d843337767978ddf046686dcc8865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a240d843337767978ddf046686dcc8865">&#9670;&#160;</a></span>m_metadata</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexType SelfDim, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvulpes_1_1geometry_1_1Metadata.html">Metadata</a>&lt;FloatType, IndexType&gt; <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">vulpes::geometry::MeshBase</a>&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;::m_metadata</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a436254de0b7daa299601066ebb2c75a0" name="a436254de0b7daa299601066ebb2c75a0"></a>
@@ -2413,7 +2506,7 @@ template&lt;typename FloatType , typename IndexType , IndexType OuterDim, IndexT
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html">MeshBase</a></li>
-    <li class="footer">Generated on Fri Oct 24 2025 13:19:47 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 31 2025 15:36:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

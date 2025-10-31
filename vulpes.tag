@@ -819,6 +819,7 @@
     <includes id="profiler_8hpp" name="profiler.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/profiler.hpp</includes>
     <includes id="serialize_8hpp" name="serialize.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/serialize.hpp</includes>
     <includes id="vvutils_8hpp" name="vvutils.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/vvutils.hpp</includes>
+    <class kind="struct">vulpes::geometry::Metadata</class>
     <class kind="struct">vulpes::geometry::MeshTag</class>
     <class kind="class">vulpes::geometry::MeshBase</class>
     <namespace>vulpes</namespace>
@@ -13993,6 +13994,20 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>auto &amp;</type>
+      <name>getMetadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>aa28ca2e8dd2cea99c7b70663367e7f97</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const auto &amp;</type>
+      <name>getMetadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>a35b14c1482289a2c2533efa6539944f4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>IndexType</type>
       <name>numCells</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
@@ -14221,6 +14236,13 @@
       <name>m_mesh_tags</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
       <anchor>a42b381e4f7cb4ba6813b44ef8a7eaa36</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Metadata&lt; FloatType, IndexType &gt;</type>
+      <name>m_metadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>a240d843337767978ddf046686dcc8865</anchor>
       <arglist></arglist>
     </member>
     <member kind="friend">
@@ -14641,6 +14663,20 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>auto &amp;</type>
+      <name>getMetadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>aa28ca2e8dd2cea99c7b70663367e7f97</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const auto &amp;</type>
+      <name>getMetadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>a35b14c1482289a2c2533efa6539944f4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>IndexType</type>
       <name>numCells</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
@@ -14890,6 +14926,13 @@
       <name>m_mesh_tags</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
       <anchor>a42b381e4f7cb4ba6813b44ef8a7eaa36</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Metadata&lt; FloatType, IndexType &gt;</type>
+      <name>m_metadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>a240d843337767978ddf046686dcc8865</anchor>
       <arglist></arglist>
     </member>
     <member kind="friend">
@@ -15204,6 +15247,20 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>auto &amp;</type>
+      <name>getMetadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>aa28ca2e8dd2cea99c7b70663367e7f97</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const auto &amp;</type>
+      <name>getMetadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>a35b14c1482289a2c2533efa6539944f4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>IndexType</type>
       <name>numCells</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
@@ -15432,6 +15489,13 @@
       <name>m_mesh_tags</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
       <anchor>a42b381e4f7cb4ba6813b44ef8a7eaa36</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Metadata&lt; FloatType, IndexType &gt;</type>
+      <name>m_metadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>a240d843337767978ddf046686dcc8865</anchor>
       <arglist></arglist>
     </member>
     <member kind="friend">
@@ -15880,6 +15944,33 @@
       <name>tags</name>
       <anchorfile>structvulpes_1_1geometry_1_1MeshTag.html</anchorfile>
       <anchor>a8f96b9aed1fbbb16d1a6a5d3ba20aaa9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::geometry::Metadata</name>
+    <filename>structvulpes_1_1geometry_1_1Metadata.html</filename>
+    <templarg>typename FloatType</templarg>
+    <templarg>typename IndexType</templarg>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>MetadataLabel</name>
+      <anchorfile>structvulpes_1_1geometry_1_1Metadata.html</anchorfile>
+      <anchor>af1eb938793bee5d8c68b3138f84d4470</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::unordered_map&lt; MetadataLabel, std::vector&lt; FloatType &gt; &gt;</type>
+      <name>doubles</name>
+      <anchorfile>structvulpes_1_1geometry_1_1Metadata.html</anchorfile>
+      <anchor>a77d78819dc54fa0ed59fbbeb2910e219</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::unordered_map&lt; MetadataLabel, std::vector&lt; IndexType &gt; &gt;</type>
+      <name>ints</name>
+      <anchorfile>structvulpes_1_1geometry_1_1Metadata.html</anchorfile>
+      <anchor>a34859ff7b5a6de6a72f6a1cbf7a77416</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -24321,6 +24412,7 @@
     <class kind="class">vulpes::geometry::MeshExporterSubmesh</class>
     <class kind="class">vulpes::geometry::MeshMetrics</class>
     <class kind="struct">vulpes::geometry::MeshTag</class>
+    <class kind="struct">vulpes::geometry::Metadata</class>
     <class kind="class">vulpes::geometry::ParallelMesh</class>
     <class kind="class">vulpes::geometry::ParmetisAgglomeration</class>
     <class kind="class">vulpes::geometry::Simplexify</class>
@@ -24931,6 +25023,48 @@
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
       <anchor>a7204199dd2ab0dae385c1abbf9987496</anchor>
       <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; uint64_t, 2 &gt; &amp;, bool)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isPeriodic</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>ab3ff370e7db0216edbf8bf944d5fcc52</anchor>
+      <arglist>(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</arglist>
+    </member>
+    <member kind="function">
+      <type>template bool</type>
+      <name>isPeriodic&lt; double, int32_t &gt;</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a677eab02ded0cf203d7f1b7739f3634e</anchor>
+      <arglist>(const Mesh2D&lt; double, int32_t &gt; &amp;)</arglist>
+    </member>
+    <member kind="function">
+      <type>Mesh2D&lt; FloatType, IndexType &gt;</type>
+      <name>closePeriodicTopology</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>ab471ec574bb67b1b85296b71343b1337</anchor>
+      <arglist>(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</arglist>
+    </member>
+    <member kind="function">
+      <type>template Mesh2D&lt; double, int32_t &gt;</type>
+      <name>closePeriodicTopology&lt; double, int32_t &gt;</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>ae7a2f3a6b1a6b1eac427ff3e9dc270ec</anchor>
+      <arglist>(const Mesh2D&lt; double, int32_t &gt; &amp;)</arglist>
+    </member>
+    <member kind="function">
+      <type>Mesh2D&lt; FloatType, IndexType &gt;</type>
+      <name>openPeriodicTopology</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>aa10c9d28ffcc4e2c9bbf339de76f4aad</anchor>
+      <arglist>(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</arglist>
+    </member>
+    <member kind="function">
+      <type>template Mesh2D&lt; double, int32_t &gt;</type>
+      <name>openPeriodicTopology&lt; double, int32_t &gt;</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a9276447f1a98f5343e5d585ee9b01e76</anchor>
+      <arglist>(const Mesh2D&lt; double, int32_t &gt; &amp;)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>Mesh2D&lt; FloatType, IndexType &gt;</type>

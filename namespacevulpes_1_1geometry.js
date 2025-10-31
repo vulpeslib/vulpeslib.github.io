@@ -55,6 +55,7 @@ var namespacevulpes_1_1geometry =
     [ "MeshExporterSubmesh", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html", "classvulpes_1_1geometry_1_1MeshExporterSubmesh" ],
     [ "MeshMetrics", "classvulpes_1_1geometry_1_1MeshMetrics.html", "classvulpes_1_1geometry_1_1MeshMetrics" ],
     [ "MeshTag", "structvulpes_1_1geometry_1_1MeshTag.html", "structvulpes_1_1geometry_1_1MeshTag" ],
+    [ "Metadata", "structvulpes_1_1geometry_1_1Metadata.html", "structvulpes_1_1geometry_1_1Metadata" ],
     [ "ParallelMesh", "classvulpes_1_1geometry_1_1ParallelMesh.html", "classvulpes_1_1geometry_1_1ParallelMesh" ],
     [ "ParmetisAgglomeration", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html", "classvulpes_1_1geometry_1_1ParmetisAgglomeration" ],
     [ "Simplexify", "classvulpes_1_1geometry_1_1Simplexify.html", "classvulpes_1_1geometry_1_1Simplexify" ],

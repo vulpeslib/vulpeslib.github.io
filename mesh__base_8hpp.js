@@ -1,5 +1,6 @@
 var mesh__base_8hpp =
 [
+    [ "vulpes::geometry::Metadata< FloatType, IndexType >", "structvulpes_1_1geometry_1_1Metadata.html", "structvulpes_1_1geometry_1_1Metadata" ],
     [ "vulpes::geometry::MeshTag< Dim, IndexType >", "structvulpes_1_1geometry_1_1MeshTag.html", "structvulpes_1_1geometry_1_1MeshTag" ],
     [ "vulpes::geometry::MeshBase< FloatType, IndexType, OuterDim, SelfDim, Derived >", "classvulpes_1_1geometry_1_1MeshBase.html", "classvulpes_1_1geometry_1_1MeshBase" ],
     [ "buildSubDual", "mesh__base_8hpp.html#a2b1c9d63b50cc0b9aae11eb0bf9487bd", null ],

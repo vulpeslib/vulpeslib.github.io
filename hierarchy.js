@@ -319,6 +319,7 @@ var hierarchy =
     ] ],
     [ "vulpes::geometry::MeshMetrics< MeshType >", "classvulpes_1_1geometry_1_1MeshMetrics.html", null ],
     [ "vulpes::geometry::MeshTag< Dim, IndexType >", "structvulpes_1_1geometry_1_1MeshTag.html", null ],
+    [ "vulpes::geometry::Metadata< FloatType, IndexType >", "structvulpes_1_1geometry_1_1Metadata.html", null ],
     [ "vulpes::geometry::polymesher::PolyMesherParams< FloatType >", "structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html", null ],
     [ "vulpes::geometry::Simplexify< Dim, typename >", "classvulpes_1_1geometry_1_1Simplexify.html", null ],
     [ "vulpes::geometry::Tetrahedralization", "classvulpes_1_1geometry_1_1Tetrahedralization.html", null ],

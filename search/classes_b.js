@@ -14,10 +14,11 @@ var searchData=
   ['meshmetrics_11',['MeshMetrics',['../classvulpes_1_1geometry_1_1MeshMetrics.html',1,'vulpes::geometry']]],
   ['meshtag_12',['MeshTag',['../structvulpes_1_1geometry_1_1MeshTag.html',1,'vulpes::geometry']]],
   ['meshtag_3c_20selfdim_2c_20indextype_20_3e_13',['MeshTag&lt; SelfDim, IndexType &gt;',['../structvulpes_1_1geometry_1_1MeshTag.html',1,'vulpes::geometry']]],
-  ['midpoint_14',['MidPoint',['../structvulpes_1_1timeintegration_1_1MidPoint.html',1,'vulpes::timeintegration']]],
-  ['miller3_15',['Miller3',['../structvulpes_1_1timeintegration_1_1Miller3.html',1,'vulpes::timeintegration']]],
-  ['miller3imex_16',['Miller3IMEX',['../structvulpes_1_1timeintegration_1_1Miller3IMEX.html',1,'vulpes::timeintegration']]],
-  ['minkowskidistp2_17',['MinkowskiDistP2',['../structvulpes_1_1scipy_1_1MinkowskiDistP2.html',1,'vulpes::scipy']]],
-  ['monomial_18',['Monomial',['../classvulpes_1_1monomial_1_1Monomial.html',1,'vulpes::monomial']]],
-  ['mpihandle_19',['MpiHandle',['../classvulpes_1_1mpi_1_1MpiHandle.html',1,'vulpes::mpi']]]
+  ['metadata_14',['Metadata',['../structvulpes_1_1geometry_1_1Metadata.html',1,'vulpes::geometry']]],
+  ['midpoint_15',['MidPoint',['../structvulpes_1_1timeintegration_1_1MidPoint.html',1,'vulpes::timeintegration']]],
+  ['miller3_16',['Miller3',['../structvulpes_1_1timeintegration_1_1Miller3.html',1,'vulpes::timeintegration']]],
+  ['miller3imex_17',['Miller3IMEX',['../structvulpes_1_1timeintegration_1_1Miller3IMEX.html',1,'vulpes::timeintegration']]],
+  ['minkowskidistp2_18',['MinkowskiDistP2',['../structvulpes_1_1scipy_1_1MinkowskiDistP2.html',1,'vulpes::scipy']]],
+  ['monomial_19',['Monomial',['../classvulpes_1_1monomial_1_1Monomial.html',1,'vulpes::monomial']]],
+  ['mpihandle_20',['MpiHandle',['../classvulpes_1_1mpi_1_1MpiHandle.html',1,'vulpes::mpi']]]
 ];
