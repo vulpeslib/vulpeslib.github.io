@@ -26,9 +26,9 @@ var searchData=
   ['updateweights_23',['UpdateWeights',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa30366acf17ea86ca9e5012ecd382dfd1',1,'vulpes::fe']]],
   ['upow_24',['upow',['../namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b',1,'vulpes::vmath']]],
   ['upper_5fbound_25',['upper_bound',['../structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#abd16d1ac55c1299821bb15dcb43063c7',1,'vulpes::scipy::RectRectDistanceTracker']]],
-  ['use_20the_20docker_20from_20vscode_26',['Use the Docker from VSCode',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index.html#autotoc_md31',1,'']]],
-  ['usecase_27',['Our usecase',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md17',1,'']]],
-  ['using_20assembly_20comments_28',['2. Checking Assembly Code and Using Assembly Comments',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md36',1,'']]],
-  ['using_20callgrind_29',['Using Callgrind',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md35',1,'']]],
-  ['using_20spack_30',['Using Spack',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16',1,'']]]
+  ['use_20the_20docker_20from_20vscode_26',['Use the Docker from VSCode',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index.html#autotoc_md30',1,'']]],
+  ['usecase_27',['Our usecase',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16',1,'']]],
+  ['using_20assembly_20comments_28',['2. Checking Assembly Code and Using Assembly Comments',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md35',1,'']]],
+  ['using_20callgrind_29',['Using Callgrind',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md34',1,'']]],
+  ['using_20spack_30',['Using Spack',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md15',1,'']]]
 ];

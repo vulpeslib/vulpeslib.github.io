@@ -26533,8 +26533,8 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Introduction</title>
+    <title>Vulpes</title>
     <filename>index.html</filename>
-    <docanchor file="index.html" title="Introduction">md__2____w_2vulpes_2vulpes_2doc_2mainpage</docanchor>
+    <docanchor file="index.html">md__2____w_2vulpes_2vulpes_2doc_2mainpage</docanchor>
   </compound>
 </tagfile>

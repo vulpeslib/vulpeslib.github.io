@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['of_20a_20library_0',['Specifing the position of a library',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md18',1,'']]],
-  ['of_20petsc_1',['Install a Debug version of Petsc',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md12',1,'']]],
+  ['of_20a_20library_0',['Specifing the position of a library',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md17',1,'']]],
+  ['of_20petsc_1',['Install a Debug version of Petsc',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md11',1,'']]],
   ['ondiag_2',['ondiag',['../namespacevulpes_1_1fe.html#a5195455105ab9290dda47487c506bfd7',1,'vulpes::fe']]],
   ['onecomponentvector_3',['onecomponentvector',['../classEigenVulpes_1_1OneComponentVector.html',1,'EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt;'],['../classEigenVulpes_1_1OneComponentVector.html#aee8592dcb80a7eeebc01c53728e79cf1',1,'EigenVulpes::OneComponentVector::OneComponentVector()']]],
   ['openperiodictopology_4',['openPeriodicTopology',['../namespacevulpes_1_1geometry_1_1mesh2d.html#aa10c9d28ffcc4e2c9bbf339de76f4aad',1,'vulpes::geometry::mesh2d']]],
   ['openperiodictopology_3c_20double_2c_20int32_5ft_20_3e_5',['openPeriodicTopology&lt; double, int32_t &gt;',['../namespacevulpes_1_1geometry_1_1mesh2d.html#a9276447f1a98f5343e5d585ee9b01e76',1,'vulpes::geometry::mesh2d']]],
   ['operator_20indextype_6',['operator IndexType',['../classvulpes_1_1datastructure_1_1IndexTracker_1_1Reference.html#aae30afef03020e289823d6465010a272',1,'vulpes::datastructure::IndexTracker::Reference']]],
-  ['operator_20overloading_7',['Operator Overloading',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md53',1,'']]],
+  ['operator_20overloading_7',['Operator Overloading',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md52',1,'']]],
   ['operator_25_8',['operator%',['../classvulpes_1_1polynomial_1_1Polynomial.html#a0032ff3b329a0c3d30fea2c00dec3c73',1,'vulpes::polynomial::Polynomial']]],
   ['operator_25_3d_9',['operator%=',['../classvulpes_1_1polynomial_1_1Polynomial.html#adb45bfea844a7ba857015492cde12a6b',1,'vulpes::polynomial::Polynomial']]],
   ['operator_26_10',['operator&amp;',['../namespacevulpes_1_1geometry.html#a6a9e5e09036a979b348aa0dcf7c2cabf',1,'vulpes::geometry']]],
@@ -29,12 +29,12 @@ var searchData=
   ['options_26',['Compile options',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html',1,'']]],
   ['order_27',['order',['../classvulpes_1_1polynomial_1_1Polynomial3D.html#a38e458cbc6a56631de89af0fc0821d6f',1,'vulpes::polynomial::Polynomial3D::order()'],['../classvulpes_1_1polynomial_1_1Polynomial2D.html#a1398793d220b234956a3d74ae0e26982',1,'vulpes::polynomial::Polynomial2D::order()'],['../classvulpes_1_1fe_1_1FeSpaceBase.html#af644ca63b73d22f902f2857a488e2efa',1,'vulpes::fe::FeSpaceBase::order()']]],
   ['ordered_5fpair_28',['ordered_pair',['../structvulpes_1_1scipy_1_1ordered__pair.html',1,'vulpes::scipy']]],
-  ['ordering_20rules_3a_29',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md74',1,'']]],
-  ['our_20usecase_30',['Our usecase',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md17',1,'']]],
+  ['ordering_20rules_3a_29',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md73',1,'']]],
+  ['our_20usecase_30',['Our usecase',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16',1,'']]],
   ['outer_31',['outer',['../namespacevulpes_1_1fe.html#adaa7c45f087b3135ea06fca66a1c50d4',1,'vulpes::fe']]],
   ['outer_5fdim_32',['outer_dim',['../classvulpes_1_1geometry_1_1MeshBase.html#ae67d09036cb8c36132230a7078898ee9',1,'vulpes::geometry::MeshBase']]],
   ['output_5fdetails_33',['output_details',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a98acb1b919af39f0ddd9805947eb7493',1,'vulpes::la::DataBoomerAMG']]],
   ['outputtype_34',['outputtype',['../classvulpes_1_1fe_1_1FeExpressionFeProjection.html#a37b0560afdab8d6b6dc62f5c50ba728c',1,'vulpes::fe::FeExpressionFeProjection::OutputType'],['../classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a19e2503e4c73a97a23de8d9d9434de6a',1,'vulpes::fe::FeExpressionFunctionWrapper::OutputType']]],
-  ['overloading_35',['Operator Overloading',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md53',1,'']]],
-  ['overview_36',['overview',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md4',1,'Overview'],['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#overview_sec',1,'Overview']]]
+  ['overloading_35',['Operator Overloading',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md52',1,'']]],
+  ['overview_36',['overview',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md3',1,'Overview'],['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#overview_sec',1,'Overview']]]
 ];

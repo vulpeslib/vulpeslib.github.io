@@ -113,18 +113,18 @@ $(document).ready(function(){initNavTree('md__2____w_2vulpes_2vulpes_2doc_2devel
   <div class="headertitle"><div class="title">Profiling</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md33"></a> This document provides guidelines and techniques for profiling C++ code. It covers three main approaches: using Valgrind's Callgrind with KCachegrind, inspecting generated assembly code with inline assembly comments, and using the <code>utils/profiler</code> C++ profiling class into your project.</p>
-<h1><a class="anchor" id="autotoc_md34"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md32"></a> This document provides guidelines and techniques for profiling C++ code. It covers three main approaches: using Valgrind's Callgrind with KCachegrind, inspecting generated assembly code with inline assembly comments, and using the <code>utils/profiler</code> C++ profiling class into your project.</p>
+<h1><a class="anchor" id="autotoc_md33"></a>
 1. Profiling with Valgrind Callgrind and KCachegrind</h1>
 <p>Valgrind's Callgrind is a powerful tool for profiling C++ applications. It helps you understand how your program executes, revealing call graphs, function call frequencies, and more.</p>
-<h2><a class="anchor" id="autotoc_md35"></a>
+<h2><a class="anchor" id="autotoc_md34"></a>
 Using Callgrind</h2>
 <ul>
 <li><b>Run Your Program Under Callgrind:</b> The following command executes your program while collecting detailed profiling information about function calls and CPU usage. Callgrind creates output files (typically named <code>callgrind.out.&lt;pid&gt;</code>) that contain the profiling data. These files can be examined to understand which parts of your code are consuming the most resources. <div class="fragment"><div class="line">valgrind --tool=callgrind ./your_program</div>
 </div><!-- fragment --></li>
 <li><b>Analyzing with KCachegrind</b> Visualize the Data: Open the Callgrind output file using KCachegrind. This tool provides a graphical representation of the call graph, making it easier to identify hotspots and bottlenecks.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md36"></a>
+<h1><a class="anchor" id="autotoc_md35"></a>
 2. Checking Assembly Code and Using Assembly Comments</h1>
 <p>Sometimes it’s necessary to inspect the generated assembly code to understand how the compiler optimizes your code or to debug low-level issues.</p><ul>
 <li><b>Generating Assembly Code</b> CMake has targets built in for both assembler and preprocessor output. For a file called <code>src.cpp</code>, CMake generates the target <code>src.s</code> for assembler output and <code>src.i</code> for the preprocessor output. Use the following command for a list of targets <div class="fragment"><div class="line">make help</div>
@@ -133,7 +133,7 @@ Using Callgrind</h2>
 <div class="line"><span class="keyword">asm</span>(<span class="stringliteral">&quot;# This is an inline assembly comment: checking optimization&quot;</span>);</div>
 </div><!-- fragment --></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md37"></a>
+<h1><a class="anchor" id="autotoc_md36"></a>
 3. Profiling with a the &lt;tt&gt;Profiler&lt;/tt&gt; class</h1>
 <ul>
 <li><b>Start and Stop Methods</b>: The start method records the current time using <code>std::chrono::high_resolution_clock::now()</code> and associates it with a label. The stop method calculates the elapsed time since the corresponding start call and accumulates it in a time map. The profiler supports multiple measurements for the same label by accumulating the elapsed time, enabling you to profile code executed in loops or called multiple times. <div class="fragment"><div class="line"> ++</div>
@@ -157,7 +157,7 @@ Using Callgrind</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 1 2025 15:30:51 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Nov 1 2025 15:55:16 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

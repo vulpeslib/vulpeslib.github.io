@@ -22,7 +22,7 @@ var searchData=
   ['readvtu_3c_20double_2c_20uint32_5ft_20_3e_19',['readVTU&lt; double, uint32_t &gt;',['../namespacevulpes_1_1geometry_1_1mesh3d.html#a7621b77f6c60bd7f3baa9dee83202743',1,'vulpes::geometry::mesh3d']]],
   ['readvtu_3c_20double_2c_20uint64_5ft_20_3e_20',['readVTU&lt; double, uint64_t &gt;',['../namespacevulpes_1_1geometry_1_1mesh3d.html#a6d2a404b64092391f7a6c0931a6edc78',1,'vulpes::geometry::mesh3d']]],
   ['real_5ft_21',['real_t',['../classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a4a4428ed7f52274ada6d8c77c00216a6',1,'vulpes::timeintegration::CrankNicolsonSolver::real_t'],['../namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6',1,'vulpes::fe::internal::real_t'],['../classvulpes_1_1fe_1_1FeSpaceBase.html#a4b62e1349bc842589144be01b5ddf8a1',1,'vulpes::fe::FeSpaceBase::real_t'],['../structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html#a9711beb0249e618a19bd3e39ee64453f',1,'vulpes::fe::internal::LagrangianNodesPolicy::real_t'],['../structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html#ac84e3038b23626871fdabb0f0b55ecb1',1,'vulpes::fe::internal::WarpAndBlendNodesPolicy::real_t'],['../classvulpes_1_1fe_1_1FeValues.html#aee373c97689fabfccd3ed0049f91c20f',1,'vulpes::fe::FeValues::real_t'],['../classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a295ede31af22f47a6654e2ecd9bb89f4',1,'vulpes::timeintegration::TimeIntegratorDIRKIMEX::real_t']]],
-  ['recommendations_22',['Additional Recommendations',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md8',1,'']]],
+  ['recommendations_22',['Additional Recommendations',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md7',1,'']]],
   ['reconstructboundaries_23',['reconstructBoundaries',['../classvulpes_1_1geometry_1_1Tetrahedralization.html#ae6d1e70506aa230ac7cb6066589c8e0d',1,'vulpes::geometry::Tetrahedralization']]],
   ['reconstructpartitioningandscatterdual_24',['reconstructPartitioningAndScatterDual',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a1a5fc70892059ab3abe3ee0ffbe609a2',1,'vulpes::geometry::ParallelMesh']]],
   ['rect1_25',['rect1',['../structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#a20a2a87df3d1f9b1e0b9b5ced1996274',1,'vulpes::scipy::RectRectDistanceTracker']]],
@@ -56,10 +56,10 @@ var searchData=
   ['renumberingfunctor_53',['RenumberingFunctor',['../namespacevulpes_1_1dofs.html#ac4c45bbcac2b56eee9de8acf68bc0fd3',1,'vulpes::dofs']]],
   ['renumbermpisubdomainwise_54',['renumberMpiSubdomainWise',['../classvulpes_1_1dofs_1_1DofHandler.html#a3e3ab425fbdf6d07e82d9b0e5c9ee85a',1,'vulpes::dofs::DofHandler']]],
   ['repeatingtableij_55',['RepeatingTableIJ',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a0e85fe4e4ff9dfae2c82ca9a16735bad',1,'vulpes::assemble::WeakFormIntegratorQFree']]],
-  ['requirements_56',['Merge Requirements',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md7',1,'']]],
-  ['research_20group_57',['The research group',['../index.html#autotoc_md2',1,'']]],
+  ['requirements_56',['Merge Requirements',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md6',1,'']]],
+  ['research_20group_57',['The research group',['../index.html#autotoc_md0',1,'']]],
   ['resize_58',['resize',['../classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#a858b641ff02038594a8ad3b423948711',1,'vulpes::datastructure::CrsMapUncompressed']]],
-  ['return_20from_20errors_20immediately_59',['Return from errors immediately',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md67',1,'']]],
+  ['return_20from_20errors_20immediately_59',['Return from errors immediately',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md66',1,'']]],
   ['rk4_60',['RK4',['../structvulpes_1_1timeintegration_1_1RK4.html',1,'vulpes::timeintegration']]],
   ['rk4imex_61',['RK4IMEX',['../structvulpes_1_1timeintegration_1_1RK4IMEX.html',1,'vulpes::timeintegration']]],
   ['root_62',['root',['../namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546',1,'vulpes::mpi']]],
@@ -71,6 +71,6 @@ var searchData=
   ['rr_5fstack_5fitem_68',['RR_stack_item',['../structvulpes_1_1scipy_1_1RR__stack__item.html',1,'vulpes::scipy']]],
   ['rs2ab_69',['rs2ab',['../namespacevulpes_1_1fe_1_1internal.html#a84031c3af794935ac8c25bb21346f1cf',1,'vulpes::fe::internal']]],
   ['rst2abc_70',['rst2abc',['../namespacevulpes_1_1fe_1_1internal.html#ad3aaa939c5bb95941d16f2b78c89b9c4',1,'vulpes::fe::internal']]],
-  ['rules_3a_71',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md74',1,'']]],
-  ['running_20tests_72',['Running tests',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2testing-and-coverage_2index.html#autotoc_md70',1,'']]]
+  ['rules_3a_71',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md73',1,'']]],
+  ['running_20tests_72',['Running tests',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2testing-and-coverage_2index.html#autotoc_md69',1,'']]]
 ];

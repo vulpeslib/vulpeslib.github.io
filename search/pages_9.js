@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['setup_0',['Developers Setup',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index.html',1,'']]],
-  ['style_20guide_1',['C++ Style Guide',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html',1,'']]]
+  ['testing_20and_20coverage_0',['Testing and Coverage',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2testing-and-coverage_2index.html',1,'']]]
 ];

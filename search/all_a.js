@@ -14,7 +14,7 @@ var searchData=
   ['gauss_2ehpp_11',['gauss.hpp',['../gauss_8hpp.html',1,'']]],
   ['gaussianelimination_12',['GaussianElimination',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69ad29a355c6863a9d059169ef1fe131dcb',1,'vulpes::la::DataBoomerAMG']]],
   ['gausslobattoroots_13',['gaussLobattoRoots',['../namespacevulpes_1_1fe_1_1internal.html#a0a3fe3ce99eb005082620506f1652738',1,'vulpes::fe::internal']]],
-  ['gdb_14',['GDB',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index.html#autotoc_md27',1,'']]],
+  ['gdb_14',['GDB',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index.html#autotoc_md26',1,'']]],
   ['getareatoperimeterratios_15',['getAreaToPerimeterRatios',['../classvulpes_1_1geometry_1_1MeshMetrics.html#a8d2a43b746a939c2f763ac9e9aef1f34',1,'vulpes::geometry::MeshMetrics']]],
   ['getbasis_16',['getbasis',['../classvulpes_1_1fe_1_1FeSpaceBase.html#a22705d7bfe2f7b16a2f78320b92985f3',1,'vulpes::fe::FeSpaceBase::getBasis()'],['../classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a3b76b757f966089bd34f59335071f42f',1,'vulpes::fe::FeSpaceLagrangeP::getBasis()'],['../classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html#ad8b94d97d9528ffe5006056d46d495c0',1,'vulpes::fe::FeSpaceLagrangeQ::getBasis()'],['../classvulpes_1_1fe_1_1FeSpaceModalP.html#a84b0b183f6c14ad373be7ec9d089363c',1,'vulpes::fe::FeSpaceModalP::getBasis()'],['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#a043a1429e7ffcb03623189dc7c6ff673',1,'vulpes::fe::FeSpaceModalQ::getBasis()'],['../classvulpes_1_1fe_1_1FeSpaceVEM.html#a5bfc6d7153aa8d13aef70f7a733a94b5',1,'vulpes::fe::FeSpaceVEM::getBasis()']]],
   ['getbasisfast_17',['getbasisfast',['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#aa542b2a54e56b3cd5194961a135bb1a9',1,'vulpes::fe::FeSpaceModalQ::getBasisFast()'],['../classvulpes_1_1fe_1_1FeSpaceVEM.html#af66479cec250ca78ccfd4b8a046599f6',1,'vulpes::fe::FeSpaceVEM::getBasisFast()'],['../classvulpes_1_1fe_1_1FeSpaceBase.html#a4eb27c252225f4afff0f7a582f74c702',1,'vulpes::fe::FeSpaceBase::getBasisFast()']]],
@@ -134,7 +134,7 @@ var searchData=
   ['getvtxtocellglobalmap_131',['getvtxtocellglobalmap',['../classvulpes_1_1geometry_1_1ParallelMesh.html#ad2eb78f20bf32df186d7594e7c1a2761',1,'vulpes::geometry::ParallelMesh::getVtxToCellGlobalMap()'],['../classvulpes_1_1geometry_1_1MeshBase.html#ace77915f7540486335e02367742724cf',1,'vulpes::geometry::MeshBase::getVtxToCellGlobalMap() const']]],
   ['getvtxtocellmap_132',['getvtxtocellmap',['../classvulpes_1_1geometry_1_1MeshBase.html#a0544fcaabb78c4ca5788f2097e097ee7',1,'vulpes::geometry::MeshBase::getVtxToCellMap() const'],['../classvulpes_1_1geometry_1_1MeshBase.html#a328775105fa39c2decd8785a14d6c1dc',1,'vulpes::geometry::MeshBase::getVtxToCellMap()']]],
   ['getvtxtoface_133',['getVtxToFace',['../classvulpes_1_1geometry_1_1Cell3D.html#afae24b6838458f294c3447ba50152471',1,'vulpes::geometry::Cell3D']]],
-  ['global_20variables_134',['Global Variables',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md48',1,'']]],
+  ['global_20variables_134',['Global Variables',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md47',1,'']]],
   ['globaltolocal_135',['globalToLocal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#af30ff62e37b643b338f9673bd7e78555',1,'vulpes::geometry::ParallelMesh']]],
   ['globaltolocalmap_136',['GlobalToLocalMap',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a3d8461309261d8dd566674d8cf186b4a',1,'vulpes::geometry::ParallelMesh']]],
   ['gmpgausslegendrequadrature_137',['gmpGaussLegendreQuadrature',['../namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb',1,'vulpes::qrule']]],
@@ -152,9 +152,9 @@ var searchData=
   ['graphdegree_149',['GraphDegree',['../namespacevulpes_1_1dofs_1_1boosttypes.html#aa66414c3fd26ecc00465cb019debc82b',1,'vulpes::dofs::boosttypes']]],
   ['graphindex_150',['GraphIndex',['../namespacevulpes_1_1dofs_1_1boosttypes.html#ad206b320ef8210caec815e94406333a3',1,'vulpes::dofs::boosttypes']]],
   ['greater_151',['greater',['../namespacevulpes_1_1scipy.html#a91a6cf914b88debdbfc92d102721d2db',1,'vulpes::scipy::GREATER'],['../structvulpes_1_1scipy_1_1ckdtreenode.html#a9f250170a6331785235eb3770c51b173',1,'vulpes::scipy::ckdtreenode::greater']]],
-  ['group_152',['The research group',['../index.html#autotoc_md2',1,'']]],
+  ['group_152',['The research group',['../index.html#autotoc_md0',1,'']]],
   ['grouptobisection_153',['groupToBisection',['../classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html#aee80e7861e21c1ae0d3bdc3a26dae249',1,'vulpes::geometry::AbstractAgglomerationModel']]],
-  ['guard_154',['Define guard',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md43',1,'']]],
+  ['guard_154',['Define guard',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md42',1,'']]],
   ['guide_155',['C++ Style Guide',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html',1,'']]],
-  ['guidelines_156',['Commit Guidelines',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md6',1,'']]]
+  ['guidelines_156',['Commit Guidelines',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md5',1,'']]]
 ];

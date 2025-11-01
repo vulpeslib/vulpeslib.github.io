@@ -113,10 +113,10 @@ $(document).ready(function(){initNavTree('md__2____w_2vulpes_2vulpes_2doc_2devel
   <div class="headertitle"><div class="title">Native cluster compile</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md9"></a> </p>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md8"></a> </p>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Installing missing packages</h1>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 Petsc</h2>
 <p>The following Petsc installation lacks many useful components of Petsc. </p><div class="fragment"><div class="line">wget https://web.cels.anl.gov/projects/petsc/download/release-snapshots/petsc-3.23.4.tar.gz</div>
 <div class="line">tar xf petsc-3.23.4.tar.gz</div>
@@ -127,7 +127,7 @@ Petsc</h2>
 <div class="line"> </div>
 <div class="line">export PETSC_DIR=/u/archive/numer/caldana/petsc-3.23.4 </div>
 <div class="line">export PETSC_ARCH=arch-linux-c-debug</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
 Install a Debug version of Petsc</h3>
 <div class="fragment"><div class="line">./configure \</div>
 <div class="line">  --with-debugging=1 \</div>
@@ -144,7 +144,7 @@ Install a Debug version of Petsc</h3>
 <div class="line">pkg-config --modversion PETSc</div>
 <div class="line">PKG_CONFIG_SYSTEM_INCLUDE_PATH=1 pkg-config --cflags PETSc</div>
 <div class="line">PKG_CONFIG_SYSTEM_LIBRARY_PATH=1 pkg-config --libs PETSc</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md13"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md12"></a>
 vtk</h2>
 <div class="fragment"><div class="line">wget https://vtk.org/files/release/9.5/VTK-9.5.0.tar.gz</div>
 <div class="line">tar -xvzf VTK-9.5.0.tar.gz</div>
@@ -167,7 +167,7 @@ vtk</h2>
 <div class="line">  -DMPI_C_COMPILER=$(which mpicc) \</div>
 <div class="line">  -DMPI_CXX_COMPILER=$(which mpicxx)</div>
 <div class="line">make -j</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md13"></a>
 boost</h2>
 <div class="fragment"><div class="line">wget https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.gz</div>
 <div class="line">tar -xvzf boost_1_88_0.tar.gz</div>
@@ -176,17 +176,17 @@ boost</h2>
 <div class="line">./b2 --with-serialization --with-unordered --with-graph</div>
 <div class="line">./b2 headers</div>
 <div class="line">./b2 install</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
 parmetis</h2>
 <p>git clone <a href="https://github.com/KarypisLab/GKlib.git">https://github.com/KarypisLab/GKlib.git</a> git clone <a href="https://github.com/KarypisLab/METIS.git">https://github.com/KarypisLab/METIS.git</a> git clone <a href="https://github.com/KarypisLab/ParMETIS.git">https://github.com/KarypisLab/ParMETIS.git</a></p>
 <p>cd GKlib make config make make install</p>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Using Spack</h1>
 <p>To list available compilers in Spack, you can use the following command in your terminal: </p><div class="fragment"><div class="line">spack compilers</div>
 </div><!-- fragment --><p>To check what’s installed: </p><div class="fragment"><div class="line">spack find</div>
 </div><!-- fragment --><p>To list packages explicitly loaded via Spack (in the current session):</p>
 <div class="fragment"><div class="line">spack find --loaded</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md17"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md16"></a>
 Our usecase</h2>
 <p>Load the modules we need</p>
 <div class="fragment"><div class="line">source /opt/mox/spack/share/spack/setup-env.sh </div>
@@ -196,7 +196,7 @@ Our usecase</h2>
 </div><!-- fragment --><p>spack load metis@5.1.0gcc@12.1.0 /qu4efxi spack load parmetis@4.0.3gcc@12.1.0 /7shc2am</p>
 <p>spack load parmetis@4.0.3gcc@12.1.0 /ke7auhk spack load <a href="#" onclick="location.href='mai'+'lto:'+'pet'+'sc'+'@3.'+'20'; return false;">petsc<span class="obfuscator">.nosp@m.</span>@3.2<span class="obfuscator">.nosp@m.</span>0</a>.1gcc@12.1.0 /cpthtdp spack load metis@5.1.0gcc@12.1.0 /2wj6juc</p>
 <p>/7shc2am -&gt; ^metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared /47qod2s -&gt; ^metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared /qu4efxi -&gt; metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared</p>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Specifing the position of a library</h1>
 <p>Gigat cluster: </p><div class="fragment"><div class="line">source /u/sw/etc/profile</div>
 <div class="line">module load gcc-glibc/11 metis</div>
@@ -208,7 +208,7 @@ Specifing the position of a library</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 1 2025 15:30:51 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Nov 1 2025 15:55:16 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
