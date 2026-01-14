@@ -9,5 +9,6 @@ var searchData=
   ['compressor_5ftype_6',['compressor_type',['../structvulpes_1_1geometry_1_1VtuOptions.html#a8a1ec447ea6f503b07aaa245858600d7',1,'vulpes::geometry::VtuOptions']]],
   ['contents_7',['contents',['../structvulpes_1_1scipy_1_1heapitem.html#aa9a0679a8a0413e9449e44426e8b4d0c',1,'vulpes::scipy::heapitem']]],
   ['ctree_8',['ctree',['../structvulpes_1_1scipy_1_1ckdtree.html#ab412245f7cad0366f9ac10a96b84a065',1,'vulpes::scipy::ckdtree']]],
-  ['current_5foffset_9',['current_offset',['../structvulpes_1_1scipy_1_1nodeinfo__pool.html#a9ae3c569197801fc81b58e3059a93347',1,'vulpes::scipy::nodeinfo_pool']]]
+  ['current_5flevel_5f_9',['current_level_',['../classvulpes_1_1utils_1_1pcout__t.html#afba85a980fa313668bde26a83201f764',1,'vulpes::utils::pcout_t']]],
+  ['current_5foffset_10',['current_offset',['../structvulpes_1_1scipy_1_1nodeinfo__pool.html#a9ae3c569197801fc81b58e3059a93347',1,'vulpes::scipy::nodeinfo_pool']]]
 ];

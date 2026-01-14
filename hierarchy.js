@@ -362,8 +362,11 @@ var hierarchy =
     [ "vulpes::scipy::RR_stack_item", "structvulpes_1_1scipy_1_1RR__stack__item.html", null ],
     [ "vulpes::timeintegration::ButcherTable< S >", "structvulpes_1_1timeintegration_1_1ButcherTable.html", null ],
     [ "vulpes::timeintegration::ButcherTableIMEX< S >", "structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html", null ],
+    [ "vulpes::timeintegration::CrankNicolsonMFK", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html", null ],
     [ "vulpes::timeintegration::CrankNicolsonSolver", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html", null ],
+    [ "vulpes::timeintegration::CrankNicolsonSolverFK", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html", null ],
     [ "vulpes::timeintegration::TimeIntegratorDIRKIMEX< ButcherTableType >", "classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html", null ],
+    [ "vulpes::utils::pcout_t", "classvulpes_1_1utils_1_1pcout__t.html", null ],
     [ "vulpes::vutils::ExpressionParser< N >", "classvulpes_1_1vutils_1_1ExpressionParser.html", null ],
     [ "vulpes::assemble::WeakFormIntegratorBase< MeshType, FeExpressionTuple, std::tuple<> >", "classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html", null ]
 ];

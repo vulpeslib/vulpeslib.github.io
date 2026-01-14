@@ -21,12 +21,14 @@ var searchData=
   ['coo_5fentry_18',['coo_entry',['../structvulpes_1_1scipy_1_1coo__entry.html',1,'vulpes::scipy']]],
   ['cranknicolson_19',['CrankNicolson',['../structvulpes_1_1timeintegration_1_1CrankNicolson.html',1,'vulpes::timeintegration']]],
   ['cranknicolsonimex_20',['CrankNicolsonIMEX',['../structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html',1,'vulpes::timeintegration']]],
-  ['cranknicolsonsolver_21',['CrankNicolsonSolver',['../classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html',1,'vulpes::timeintegration']]],
-  ['crsmap_22',['CrsMap',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
-  ['crsmap_3c_20index_5ft_2c_20index_5ft_20_3e_23',['CrsMap&lt; index_t, index_t &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
-  ['crsmap_3c_20indextype_2c_20indextype_20_3e_24',['CrsMap&lt; IndexType, IndexType &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
-  ['crsmap_3c_20indextype_2c_20indextype_2c_20vtx_5fper_5fface_20_3e_25',['CrsMap&lt; IndexType, IndexType, vtx_per_face &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
-  ['crsmap_3c_20std_3a_3apair_3c_20double_2c_20uint16_5ft_20_3e_2c_20index_5ft_20_3e_26',['CrsMap&lt; std::pair&lt; double, uint16_t &gt;, index_t &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
-  ['crsmap_3c_20vulpes_3a_3aassemble_3a_3acellmanager_3a_3aneighinfo_2c_20index_5ft_20_3e_27',['CrsMap&lt; vulpes::assemble::CellManager::NeighInfo, index_t &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
-  ['crsmapuncompressed_28',['CrsMapUncompressed',['../classvulpes_1_1datastructure_1_1CrsMapUncompressed.html',1,'vulpes::datastructure']]]
+  ['cranknicolsonmfk_21',['CrankNicolsonMFK',['../classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html',1,'vulpes::timeintegration']]],
+  ['cranknicolsonsolver_22',['CrankNicolsonSolver',['../classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html',1,'vulpes::timeintegration']]],
+  ['cranknicolsonsolverfk_23',['CrankNicolsonSolverFK',['../classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html',1,'vulpes::timeintegration']]],
+  ['crsmap_24',['CrsMap',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
+  ['crsmap_3c_20index_5ft_2c_20index_5ft_20_3e_25',['CrsMap&lt; index_t, index_t &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
+  ['crsmap_3c_20indextype_2c_20indextype_20_3e_26',['CrsMap&lt; IndexType, IndexType &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
+  ['crsmap_3c_20indextype_2c_20indextype_2c_20vtx_5fper_5fface_20_3e_27',['CrsMap&lt; IndexType, IndexType, vtx_per_face &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
+  ['crsmap_3c_20std_3a_3apair_3c_20double_2c_20uint16_5ft_20_3e_2c_20index_5ft_20_3e_28',['CrsMap&lt; std::pair&lt; double, uint16_t &gt;, index_t &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
+  ['crsmap_3c_20vulpes_3a_3aassemble_3a_3acellmanager_3a_3aneighinfo_2c_20index_5ft_20_3e_29',['CrsMap&lt; vulpes::assemble::CellManager::NeighInfo, index_t &gt;',['../classvulpes_1_1datastructure_1_1CrsMap.html',1,'vulpes::datastructure']]],
+  ['crsmapuncompressed_30',['CrsMapUncompressed',['../classvulpes_1_1datastructure_1_1CrsMapUncompressed.html',1,'vulpes::datastructure']]]
 ];

@@ -1285,6 +1285,7 @@
     <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
     <includes id="io_8hpp" name="io.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/io.hpp</includes>
     <includes id="profiler_8hpp" name="profiler.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/profiler.hpp</includes>
+    <includes id="pcout_8hpp" name="pcout.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/pcout.hpp</includes>
     <class kind="class">vulpes::timeintegration::CrankNicolsonSolver</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::timeintegration</namespace>
@@ -1297,6 +1298,44 @@
     <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
     <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
     <class kind="class">vulpes::timeintegration::TimeIntegratorDIRKIMEX</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::timeintegration</namespace>
+  </compound>
+  <compound kind="file">
+    <name>solverfkpp.cpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/timeintegration/</path>
+    <filename>solverfkpp_8cpp.html</filename>
+    <includes id="solverfkpp_8hpp" name="solverfkpp.hpp" local="yes" import="no" module="no" objc="no">vulpes/timeintegration/solverfkpp.hpp</includes>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::timeintegration</namespace>
+  </compound>
+  <compound kind="file">
+    <name>solverfkpp.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/timeintegration/</path>
+    <filename>solverfkpp_8hpp.html</filename>
+    <includes id="linear__solver_8hpp" name="linear_solver.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/linear_solver.hpp</includes>
+    <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
+    <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
+    <class kind="class">vulpes::timeintegration::CrankNicolsonSolverFK</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::timeintegration</namespace>
+  </compound>
+  <compound kind="file">
+    <name>solvermfk.cpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/timeintegration/</path>
+    <filename>solvermfk_8cpp.html</filename>
+    <includes id="solvermfk_8hpp" name="solvermfk.hpp" local="yes" import="no" module="no" objc="no">vulpes/timeintegration/solvermfk.hpp</includes>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::timeintegration</namespace>
+  </compound>
+  <compound kind="file">
+    <name>solvermfk.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/timeintegration/</path>
+    <filename>solvermfk_8hpp.html</filename>
+    <includes id="linear__solver_8hpp" name="linear_solver.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/linear_solver.hpp</includes>
+    <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
+    <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
+    <class kind="class">vulpes::timeintegration::CrankNicolsonMFK</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::timeintegration</namespace>
   </compound>
@@ -1391,6 +1430,22 @@
     <class kind="class">vulpes::mpi::MpiHandle</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::mpi</namespace>
+  </compound>
+  <compound kind="file">
+    <name>pcout.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/utils/</path>
+    <filename>pcout_8hpp.html</filename>
+    <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
+    <class kind="class">vulpes::utils::pcout_t</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::utils</namespace>
+    <member kind="variable">
+      <type>vulpes::utils::pcout_t &amp;</type>
+      <name>pcout</name>
+      <anchorfile>pcout_8hpp.html</anchorfile>
+      <anchor>a0cc17993fecc31dc6c5a7a8ae1c6f6a2</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>profiler.cpp</name>
@@ -18434,6 +18489,13 @@
       <arglist>(PetscScalar power)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>abs</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a49a35042f0ecc0ae4996325800ebf0c5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>PetscInt</type>
       <name>getSize</name>
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
@@ -21429,6 +21491,220 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>vulpes::timeintegration::CrankNicolsonMFK</name>
+    <filename>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</filename>
+    <member kind="typedef">
+      <type>PetscScalar</type>
+      <name>real_t</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>aeeb618883d56b8cc04d065e3f877a11a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; void(real_t, la::Vector &amp;)&gt;</type>
+      <name>ForceFunc</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a0d8c70c4c4af2b7b19ecd7d08635b8cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CrankNicolsonMFK</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a20dd995642a989a5033097ccc7f58e37</anchor>
+      <arglist>(real_t time_step, real_t initial_time, real_t final_time, const la::SparseMatrix &amp;lin_op, const la::SparseMatrix &amp;mass, const la::Vector &amp;u0, const ForceFunc &amp;force_func)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>step</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>ac42ec832981429356bfb1c139bb51237</anchor>
+      <arglist>(const la::Vector &amp;nl_reaction, const la::SparseMatrix &amp;nl_quadratic)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto &amp;</type>
+      <name>getSolver</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>af78b11977e7c94f340ad13e409804f50</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const la::Vector &amp;</type>
+      <name>getUstar</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>ad162cd5d36e0f298629ac4fa91caf6ad</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const la::Vector &amp;</type>
+      <name>getSolution</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a3339e385866b9898355e26fe11854320</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_t</type>
+      <name>time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a4a7e0c830f88851bafd564ff5889d93e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_t</type>
+      <name>finalTime</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a704674c3e6b5b41f7b793734f9b828a0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>assembleStaticSystem</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>ae3c463df9f666b84112a076d18804c12</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_intial_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a1558d007db8b41171f24466e6999ea2e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_time_step</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>abc6652163da70e94ec9934dd6952fe68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_final_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>afccde6899b276e3b8902631d03e5b60d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>ac4680f79e430e93bcd831757fda4957d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>PetscInt</type>
+      <name>m_iter</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a5b63f5bfd4d6edfae9ca4b40f2ed1c73</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const la::SparseMatrix &amp;</type>
+      <name>m_mass</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>aee2a18664ac67cf52a1c806497e376e0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const la::SparseMatrix &amp;</type>
+      <name>m_lin_op</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>accdaf64ff26115d57612dc6137039b3a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::SparseMatrix</type>
+      <name>m_LHS</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>aca5cb5bcb2a4c7795e6464b321afde45</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::SparseMatrix</type>
+      <name>m_RHS</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>aad63c80ced5c067a91b87bda45edd8ad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u_old</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>ada58041503b86a0e18bede3f2b7f757a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u_oold</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>aa223bda095e3d63f920196f0945f75f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u_star</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a824f72471adbbbec508a920370274d9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a5e557413ca5fb575338fee514957f924</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector *</type>
+      <name>m_f_old</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>af5ebb8424a36043a665f1816b38b26c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector *</type>
+      <name>m_f_new</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>aaaa06649cb1af0fe539848e018c631bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_f_1</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>ae4477c3a9eeaaecbe277b69799889580</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_f_2</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>ae6d689dab40440fea6a0b577186ae23e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_rhs</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>ace1381a5cc69bd0c61915ac847c8f611</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::LinearSolver</type>
+      <name>m_solver</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a71a9fb39ff3cab91c521b17efdbafe12</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const ForceFunc</type>
+      <name>m_force_func</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html</anchorfile>
+      <anchor>a056aebea2ab51485fa929149616f35fb</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>vulpes::timeintegration::CrankNicolsonSolver</name>
     <filename>classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html</filename>
     <member kind="typedef">
@@ -21618,6 +21894,227 @@
       <name>m_force_func</name>
       <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html</anchorfile>
       <anchor>a66acc7e8a325918f2ba7355c4b5a7567</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>vulpes::timeintegration::CrankNicolsonSolverFK</name>
+    <filename>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</filename>
+    <member kind="typedef">
+      <type>PetscScalar</type>
+      <name>real_t</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a4bb7ff57838c2b2012311bc06a35b6d9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; void(real_t, la::Vector &amp;)&gt;</type>
+      <name>ForceFunc</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>ad48bedbf1e52d16cca2e9055aa3352ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CrankNicolsonSolverFK</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>ac527406ae0295bf1b27bb395c7e4116f</anchor>
+      <arglist>(real_t time_step, real_t initial_time, real_t final_time, const la::SparseMatrix &amp;lin_op, const la::SparseMatrix &amp;mass, const la::SparseMatrix &amp;reaction, const la::Vector &amp;u0, const ForceFunc &amp;force_func)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>step</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a7ba51e0fe1d9e4714e746a29cd40db01</anchor>
+      <arglist>(const la::SparseMatrix &amp;nl_quadratic)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto &amp;</type>
+      <name>getSolver</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>acea755a849b9e13e0f2d1537bcda47bd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const la::Vector &amp;</type>
+      <name>getSolution</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a720d822def7014f67c49b15e2d6cf8a2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const la::Vector &amp;</type>
+      <name>getUstar</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a010055dec8b032d4f228eab982d9cbb3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_t</type>
+      <name>time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a44002b9fc45e9bb37e7169bbdb99acd6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_t</type>
+      <name>finalTime</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a60f9bdc4eedc61a4b55cc8e9b4c7d717</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>assembleStaticSystem</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a04bfd21c58f0b5fe5814e853e9b69951</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_intial_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a5ee154333a3d31432e345f3a678e4771</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_time_step</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a6028ca78f75f63c770f20b2feab0615c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_final_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>aaed01d1daab938a250410469e947ef62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a9675c0fc11626428a33f9615f482b0c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>PetscInt</type>
+      <name>m_iter</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a35254159720cac1bea9ddbf4bc4ce780</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const la::SparseMatrix &amp;</type>
+      <name>m_mass</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a612c6ea1774cc0ca09a77eacd2963e35</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const la::SparseMatrix &amp;</type>
+      <name>m_lin_op</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a25193d7e5ded58a274a26c2c0a2a0cf0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const la::SparseMatrix &amp;</type>
+      <name>m_reaction</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a405465e13dc2b6fcfb1b9fb4ca218cc6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::SparseMatrix</type>
+      <name>m_LHS</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>aafbc1dd76ef17a3c3eadeccd45f72b4d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::SparseMatrix</type>
+      <name>m_RHS</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a5008c68061fce69a5ba83cd6520cf9a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u_oold</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>afcdcc74669ef29df0449fbc9269d2d4f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u_old</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a2d57351e89c6f172b9b7a210ffe5aca5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u_star</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a86949bd6613fd4b8b8bf63f44d3e10c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>afd6bad59b7efb781911076daf4eca739</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector *</type>
+      <name>m_f_old</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a31a98c286b0b628e9327a83144310443</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector *</type>
+      <name>m_f_new</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>acba0b18f5b54a22291ca8ad04f3470d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_f_1</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a25186a0f394ab3238fe1fc57fd15f926</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_f_2</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a88d9a897bea590a079687edb4409a042</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_rhs</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a17825db1979456144fb64a104b13779c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::LinearSolver</type>
+      <name>m_solver</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a274cfb0f5c357b621f8c8d5120f3ff06</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const ForceFunc</type>
+      <name>m_force_func</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html</anchorfile>
+      <anchor>a6ac4c19856eb3065e5ba1d5fb9c9b90b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -23346,6 +23843,101 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>vulpes::utils::pcout_t</name>
+    <filename>classvulpes_1_1utils_1_1pcout__t.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>pcout_t</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>a113a0554334ed0b11d23eb7fcbf6589d</anchor>
+      <arglist>(std::ostream &amp;os=std::cout)</arglist>
+    </member>
+    <member kind="function">
+      <type>pcout_t &amp;</type>
+      <name>level</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>a1a8c60927385d83e8e09b96cc6296660</anchor>
+      <arglist>(LogLevel lvl)</arglist>
+    </member>
+    <member kind="function">
+      <type>pcout_t &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>a738207689395fed017873f7c773c8ac3</anchor>
+      <arglist>(const T &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>pcout_t &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>ad984932b500370d0e48793324b2b2dff</anchor>
+      <arglist>(std::ostream &amp;(*pf)(std::ostream &amp;))</arglist>
+    </member>
+    <member kind="function">
+      <type>pcout_t &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>a770a3e3ef51a5a3530e0a326deba8049</anchor>
+      <arglist>(std::ios &amp;(*pf)(std::ios &amp;))</arglist>
+    </member>
+    <member kind="function">
+      <type>pcout_t &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>afb881d3d60004ffdc3a1f69a98effe39</anchor>
+      <arglist>(std::ios_base &amp;(*pf)(std::ios_base &amp;))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>flush</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>a821e9f8dbd5b4d8b7c95635a64d577bf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>shouldPrint</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>a2d0911445b155b3e9de90e517855e4a3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>resetMessageLevel</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>abcda0bffef6939823e5ee4236cf78f7a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" static="yes">
+      <type>static constexpr LogLevel</type>
+      <name>defaultLogLevel</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>ad7e118f3ccf69c8719144f869c9d4ab3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::ostream *</type>
+      <name>os_</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>af982130bcdf6402dc76be4e9a0f516b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>LogLevel</type>
+      <name>current_level_</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>afba85a980fa313668bde26a83201f764</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>LogLevel</type>
+      <name>msg_level_</name>
+      <anchorfile>classvulpes_1_1utils_1_1pcout__t.html</anchorfile>
+      <anchor>a97fa5c96dadb5ad5a190ce69175ca95d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="struct">
     <name>vulpes::vmath::is_gnump</name>
     <filename>structvulpes_1_1vmath_1_1is__gnump.html</filename>
@@ -23521,6 +24113,7 @@
     <namespace>vulpes::random</namespace>
     <namespace>vulpes::scipy</namespace>
     <namespace>vulpes::timeintegration</namespace>
+    <namespace>vulpes::utils</namespace>
     <namespace>vulpes::vmath</namespace>
     <namespace>vulpes::vutils</namespace>
     <namespace>vulpes::vvutils</namespace>
@@ -26216,7 +26809,9 @@
     <class kind="struct">vulpes::timeintegration::CeschinoKunzmann4IMEX</class>
     <class kind="struct">vulpes::timeintegration::CrankNicolson</class>
     <class kind="struct">vulpes::timeintegration::CrankNicolsonIMEX</class>
+    <class kind="class">vulpes::timeintegration::CrankNicolsonMFK</class>
     <class kind="class">vulpes::timeintegration::CrankNicolsonSolver</class>
+    <class kind="class">vulpes::timeintegration::CrankNicolsonSolverFK</class>
     <class kind="struct">vulpes::timeintegration::ExplicitButcherIMEX</class>
     <class kind="struct">vulpes::timeintegration::ForwardBackwardEulerIMEX</class>
     <class kind="struct">vulpes::timeintegration::ForwardEuler</class>
@@ -26286,6 +26881,28 @@
       <anchorfile>namespacevulpes_1_1timeintegration_1_1internal.html</anchorfile>
       <anchor>aa81ff571da7cb0b1a4ce3e0123e2f65f</anchor>
       <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>vulpes::utils</name>
+    <filename>namespacevulpes_1_1utils.html</filename>
+    <class kind="class">vulpes::utils::pcout_t</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>LogLevel</name>
+      <anchorfile>namespacevulpes_1_1utils.html</anchorfile>
+      <anchor>a1d197567093fbdcf511154c249e625bc</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacevulpes_1_1utils.html" anchor="a1d197567093fbdcf511154c249e625bcabb1ca97ec761fc37101737ba0aa2e7c5">ERROR</enumvalue>
+      <enumvalue file="namespacevulpes_1_1utils.html" anchor="a1d197567093fbdcf511154c249e625bca551b723eafd6a31d444fcb2f5920fbd3">INFO</enumvalue>
+      <enumvalue file="namespacevulpes_1_1utils.html" anchor="a1d197567093fbdcf511154c249e625bcadc30ec20708ef7b0f641ef78b7880a15">DEBUG</enumvalue>
+    </member>
+    <member kind="variable">
+      <type>pcout_t</type>
+      <name>pcout</name>
+      <anchorfile>namespacevulpes_1_1utils.html</anchorfile>
+      <anchor>adc854fce8d13404272f63a61fddb3ee5</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="namespace">

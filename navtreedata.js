@@ -147,6 +147,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -173,19 +174,20 @@ var NAVTREEINDEX =
 "classvulpes_1_1geometry_1_1MeshMetrics.html#aafd6ff9177c0015043ab213d42b224e7",
 "classvulpes_1_1geometry_1_1Tetrahedralization.html#a249976a487f9498b042ab42b331760af",
 "classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a197f8088d6bfa2c6e275e1170fb3337c",
-"classvulpes_1_1monomial_1_1Monomial.html#aa0e84e3aa6a8449d6132c6f39b63dcb5",
-"classvulpes_1_1polynomial_1_1PolynomialBase.html#a17057d8b639f1109ad1386aa01b5c33a",
-"classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#aef4567777d0f842ecbc0f20e52da4f15",
-"functions_p.html",
-"mesh__2d_8cpp.html#ae72d69c91f7ff756878aa1a18c6a1bc3",
-"namespacevulpes_1_1fe.html#a0b5f00f2f85fe9f07d65efbb09d701a5",
-"namespacevulpes_1_1mpi.html#a5d25d97349ad971ed39593382db3a3c8",
-"structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html#a6d436244ca6c3829afc33f6d5090af20",
-"structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html#aac598f6bd2fda87c25e6cc50bf400aca",
-"structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#ab71c660c331111d5d9b9a5e5f70eebe7",
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#a755a7d0411d7753ef21bd63afc6dfe16",
-"structvulpes_1_1timeintegration_1_1LobattoIIIC.html#a269cc762d8809949b235fb4329e98777",
-"structvulpes_1_1timeintegration_1_1TRBDF2IMEX.html#aa38ff7ffeb77c00c46857f2e762d9b5b"
+"classvulpes_1_1monomial_1_1Monomial.html#a8fb6f0e28af7407f988e29588c0153e7",
+"classvulpes_1_1polynomial_1_1PolynomialBase.html#a079d6c8e713d8024ae8f7e5c83b1d195",
+"classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html#a2d57351e89c6f172b9b7a210ffe5aca5",
+"fe__expr__base_8hpp.html#ae5ebf32825cb96839dd980a33ccd72bdae1ee74daa22febc532721ecb824cf32d",
+"integrator__simplexify_8hpp.html",
+"mesher_8hpp.html#a837885952ff40014073aa139895d0f36",
+"namespacevulpes_1_1geometry.html#a6a9e5e09036a979b348aa0dcf7c2cabf",
+"namespacevulpes_1_1timeintegration.html",
+"structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#ae6682a4b48a3190399ef303a1a8485f6",
+"structvulpes_1_1la_1_1DataBoomerAMG.html#a06f8b93cb23ecbb9c598bdf11f82d976",
+"structvulpes_1_1scipy_1_1heap.html#a125e89ffbe91fcad78fa345fee3544a7",
+"structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html#a755a7d0411d7753ef21bd63afc6dfe16",
+"structvulpes_1_1timeintegration_1_1MidPoint.html#a1d9068c926145a34d718675047c3bc9e",
+"vvutils_8hpp.html#a0bd0e624421d07a12ad0b3efc57e6b57"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

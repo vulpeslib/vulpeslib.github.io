@@ -35,9 +35,10 @@ var searchData=
   ['vulpes_3a_3ascipy_32',['scipy',['../namespacevulpes_1_1scipy.html',1,'vulpes']]],
   ['vulpes_3a_3atimeintegration_33',['timeintegration',['../namespacevulpes_1_1timeintegration.html',1,'vulpes']]],
   ['vulpes_3a_3atimeintegration_3a_3ainternal_34',['internal',['../namespacevulpes_1_1timeintegration_1_1internal.html',1,'vulpes::timeintegration']]],
-  ['vulpes_3a_3avmath_35',['vmath',['../namespacevulpes_1_1vmath.html',1,'vulpes']]],
-  ['vulpes_3a_3avutils_36',['vutils',['../namespacevulpes_1_1vutils.html',1,'vulpes']]],
-  ['vulpes_3a_3avutils_3a_3ainternal_37',['internal',['../namespacevulpes_1_1vutils_1_1internal.html',1,'vulpes::vutils']]],
-  ['vulpes_3a_3avvutils_38',['vvutils',['../namespacevulpes_1_1vvutils.html',1,'vulpes']]],
-  ['vulpes_3a_3avvutils_3a_3ainternal_39',['internal',['../namespacevulpes_1_1vvutils_1_1internal.html',1,'vulpes::vvutils']]]
+  ['vulpes_3a_3autils_35',['utils',['../namespacevulpes_1_1utils.html',1,'vulpes']]],
+  ['vulpes_3a_3avmath_36',['vmath',['../namespacevulpes_1_1vmath.html',1,'vulpes']]],
+  ['vulpes_3a_3avutils_37',['vutils',['../namespacevulpes_1_1vutils.html',1,'vulpes']]],
+  ['vulpes_3a_3avutils_3a_3ainternal_38',['internal',['../namespacevulpes_1_1vutils_1_1internal.html',1,'vulpes::vutils']]],
+  ['vulpes_3a_3avvutils_39',['vvutils',['../namespacevulpes_1_1vvutils.html',1,'vulpes']]],
+  ['vulpes_3a_3avvutils_3a_3ainternal_40',['internal',['../namespacevulpes_1_1vvutils_1_1internal.html',1,'vulpes::vvutils']]]
 ];

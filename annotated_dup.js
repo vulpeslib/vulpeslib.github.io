@@ -201,7 +201,9 @@ var annotated_dup =
         [ "CeschinoKunzmann4IMEX", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX" ],
         [ "CrankNicolson", "structvulpes_1_1timeintegration_1_1CrankNicolson.html", "structvulpes_1_1timeintegration_1_1CrankNicolson" ],
         [ "CrankNicolsonIMEX", "structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html", "structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX" ],
+        [ "CrankNicolsonMFK", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK" ],
         [ "CrankNicolsonSolver", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolver" ],
+        [ "CrankNicolsonSolverFK", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK" ],
         [ "ExplicitButcherIMEX", "structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX.html", "structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX" ],
         [ "ForwardBackwardEulerIMEX", "structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX.html", "structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX" ],
         [ "ForwardEuler", "structvulpes_1_1timeintegration_1_1ForwardEuler.html", "structvulpes_1_1timeintegration_1_1ForwardEuler" ],
@@ -226,6 +228,9 @@ var annotated_dup =
         [ "TimeIntegratorDIRKIMEX", "classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html", "classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX" ],
         [ "TRBDF2", "structvulpes_1_1timeintegration_1_1TRBDF2.html", "structvulpes_1_1timeintegration_1_1TRBDF2" ],
         [ "TRBDF2IMEX", "structvulpes_1_1timeintegration_1_1TRBDF2IMEX.html", "structvulpes_1_1timeintegration_1_1TRBDF2IMEX" ]
+      ] ],
+      [ "utils", "namespacevulpes_1_1utils.html", [
+        [ "pcout_t", "classvulpes_1_1utils_1_1pcout__t.html", "classvulpes_1_1utils_1_1pcout__t" ]
       ] ],
       [ "vmath", "namespacevulpes_1_1vmath.html", [
         [ "is_gnump", "structvulpes_1_1vmath_1_1is__gnump.html", null ],

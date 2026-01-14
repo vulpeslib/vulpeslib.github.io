@@ -4,6 +4,7 @@ var classvulpes_1_1la_1_1Vector =
     [ "Vector", "classvulpes_1_1la_1_1Vector.html#a48e23338b497ab4ebde82f02e59fd506", null ],
     [ "Vector", "classvulpes_1_1la_1_1Vector.html#a7c72263a075540e0e34b8f96b417845e", null ],
     [ "~Vector", "classvulpes_1_1la_1_1Vector.html#ac23080477fb150e5dc6ad8a652ce2abd", null ],
+    [ "abs", "classvulpes_1_1la_1_1Vector.html#a49a35042f0ecc0ae4996325800ebf0c5", null ],
     [ "add", "classvulpes_1_1la_1_1Vector.html#a456491ab379c1b4791e71b1a10d6b22b", null ],
     [ "add", "classvulpes_1_1la_1_1Vector.html#a6426d0a4a96f020e603537fa245caf30", null ],
     [ "addCouple", "classvulpes_1_1la_1_1Vector.html#a1bbc39557274ebcbd1ca4b90e99b769d", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quadratureelemtype_0',['QuadratureElemType',['../namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350f',1,'vulpes::qrule']]]
+  ['precondtype_0',['PrecondType',['../classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40',1,'vulpes::la::LinearSolver']]]
 ];

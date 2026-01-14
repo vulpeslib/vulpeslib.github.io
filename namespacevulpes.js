@@ -22,6 +22,7 @@ var namespacevulpes =
     [ "random", "namespacevulpes_1_1random.html", "namespacevulpes_1_1random" ],
     [ "scipy", "namespacevulpes_1_1scipy.html", "namespacevulpes_1_1scipy" ],
     [ "timeintegration", "namespacevulpes_1_1timeintegration.html", "namespacevulpes_1_1timeintegration" ],
+    [ "utils", "namespacevulpes_1_1utils.html", "namespacevulpes_1_1utils" ],
     [ "vmath", "namespacevulpes_1_1vmath.html", "namespacevulpes_1_1vmath" ],
     [ "vutils", "namespacevulpes_1_1vutils.html", "namespacevulpes_1_1vutils" ],
     [ "vvutils", "namespacevulpes_1_1vvutils.html", "namespacevulpes_1_1vvutils" ],
