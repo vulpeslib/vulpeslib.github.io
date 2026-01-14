@@ -1284,8 +1284,8 @@
     <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
     <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
     <includes id="io_8hpp" name="io.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/io.hpp</includes>
-    <includes id="profiler_8hpp" name="profiler.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/profiler.hpp</includes>
     <includes id="pcout_8hpp" name="pcout.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/pcout.hpp</includes>
+    <includes id="profiler_8hpp" name="profiler.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/profiler.hpp</includes>
     <class kind="class">vulpes::timeintegration::CrankNicolsonSolver</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::timeintegration</namespace>
