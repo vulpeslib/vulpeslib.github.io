@@ -22,6 +22,8 @@ var mesh__2d_8cpp =
     [ "findBoundaryCartCells", "mesh__2d_8cpp.html#a25b81cf402f98815d890ef0c86d3bf75", null ],
     [ "findCartVtxOnTheRight", "mesh__2d_8cpp.html#ae7d77669b7c032ef28a897eb4bf89848", null ],
     [ "findInternalCartCells", "mesh__2d_8cpp.html#a2f10a22f9051d3b13c11283dfbec6e3c", null ],
+    [ "getCellVertexesPeriodic", "mesh__2d_8cpp.html#a71b4988a190c207582fd2ba073e75800", null ],
+    [ "getCellVertexesPeriodic< double, int32_t >", "mesh__2d_8cpp.html#a560009da902effa46d06c3645a93ce71", null ],
     [ "getFileExtension", "mesh__2d_8cpp.html#afa55381468b46d99fc7df042fb03222a", null ],
     [ "intersectCartCellWithFineFacet", "mesh__2d_8cpp.html#a1c1632ae78f59716502ff6f74b63e5e0", null ],
     [ "intersectCartesianGrid", "mesh__2d_8cpp.html#a2706b03734b5f2a701283a2efd0841b2", null ],

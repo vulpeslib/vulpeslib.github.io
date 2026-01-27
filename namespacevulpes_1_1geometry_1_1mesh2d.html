@@ -181,6 +181,11 @@ Functions</h2></td></tr>
 <tr class="separator:aa10c9d28ffcc4e2c9bbf339de76f4aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9276447f1a98f5343e5d585ee9b01e76" id="r_a9276447f1a98f5343e5d585ee9b01e76"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a9276447f1a98f5343e5d585ee9b01e76">openPeriodicTopology&lt; double, int32_t &gt;</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;)</td></tr>
 <tr class="separator:a9276447f1a98f5343e5d585ee9b01e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b4988a190c207582fd2ba073e75800" id="r_a71b4988a190c207582fd2ba073e75800"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a71b4988a190c207582fd2ba073e75800"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a71b4988a190c207582fd2ba073e75800">getCellVertexesPeriodic</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh, IndexType cell_id)</td></tr>
+<tr class="separator:a71b4988a190c207582fd2ba073e75800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560009da902effa46d06c3645a93ce71" id="r_a560009da902effa46d06c3645a93ce71"><td class="memItemLeft" align="right" valign="top">template std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a560009da902effa46d06c3645a93ce71">getCellVertexesPeriodic&lt; double, int32_t &gt;</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;, int32_t)</td></tr>
+<tr class="separator:a560009da902effa46d06c3645a93ce71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ea12c49777fe75b640fd32dce456f3c" id="r_a9ea12c49777fe75b640fd32dce456f3c"><td class="memTemplParams" colspan="2">template&lt;typename FloatType , typename IndexType &gt; </td></tr>
 <tr class="memitem:a9ea12c49777fe75b640fd32dce456f3c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a9ea12c49777fe75b640fd32dce456f3c">intersectCartesianGrid</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;mesh, IndexType n_cells_x, FloatType stretch=1, FloatType agglomeration_threshold=0.25)</td></tr>
 <tr class="memdesc:a9ea12c49777fe75b640fd32dce456f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new mesh by intersecting an existing mesh with a Cartesian grid.  <br /></td></tr>
@@ -291,6 +296,64 @@ template&lt;typename FloatType , typename IndexType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new <code><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html" title="A class for a 2D mesh, inheriting from MeshBase.">Mesh2D</a></code> without the small edges. </dd></dl>
+
+</div>
+</div>
+<a id="a71b4988a190c207582fd2ba073e75800" name="a71b4988a190c207582fd2ba073e75800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b4988a190c207582fd2ba073e75800">&#9670;&#160;</a></span>getCellVertexesPeriodic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType , typename IndexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; FloatType, 2 &gt; &gt; vulpes::geometry::mesh2d::getCellVertexesPeriodic </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; FloatType, IndexType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IndexType&#160;</td>
+          <td class="paramname"><em>cell_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a560009da902effa46d06c3645a93ce71" name="a560009da902effa46d06c3645a93ce71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560009da902effa46d06c3645a93ce71">&#9670;&#160;</a></span>getCellVertexesPeriodic&lt; double, int32_t &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &gt; <a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a71b4988a190c207582fd2ba073e75800">vulpes::geometry::mesh2d::getCellVertexesPeriodic</a>&lt; double, int32_t &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; double, int32_t &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1014,7 +1077,7 @@ template&lt;typename FloatType , typename IndexType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry_1_1mesh2d.html">mesh2d</a></li>
-    <li class="footer">Generated on Wed Jan 14 2026 16:44:17 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Jan 27 2026 16:09:34 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -25659,6 +25659,20 @@
       <anchor>a9276447f1a98f5343e5d585ee9b01e76</anchor>
       <arglist>(const Mesh2D&lt; double, int32_t &gt; &amp;)</arglist>
     </member>
+    <member kind="function">
+      <type>std::vector&lt; Point&lt; FloatType, 2 &gt; &gt;</type>
+      <name>getCellVertexesPeriodic</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a71b4988a190c207582fd2ba073e75800</anchor>
+      <arglist>(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh, IndexType cell_id)</arglist>
+    </member>
+    <member kind="function">
+      <type>template std::vector&lt; Point&lt; double, 2 &gt; &gt;</type>
+      <name>getCellVertexesPeriodic&lt; double, int32_t &gt;</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a560009da902effa46d06c3645a93ce71</anchor>
+      <arglist>(const Mesh2D&lt; double, int32_t &gt; &amp;, int32_t)</arglist>
+    </member>
     <member kind="function" protection="protected">
       <type>Mesh2D&lt; FloatType, IndexType &gt;</type>
       <name>intersectCartesianGrid</name>

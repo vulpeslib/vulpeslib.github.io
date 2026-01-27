@@ -179,15 +179,15 @@ var NAVTREEINDEX =
 "classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html#a2d57351e89c6f172b9b7a210ffe5aca5",
 "fe__expr__base_8hpp.html#ae5ebf32825cb96839dd980a33ccd72bdae1ee74daa22febc532721ecb824cf32d",
 "integrator__simplexify_8hpp.html",
-"mesher_8hpp.html#a837885952ff40014073aa139895d0f36",
-"namespacevulpes_1_1geometry.html#a6a9e5e09036a979b348aa0dcf7c2cabf",
-"namespacevulpes_1_1timeintegration.html",
-"structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#ae6682a4b48a3190399ef303a1a8485f6",
-"structvulpes_1_1la_1_1DataBoomerAMG.html#a06f8b93cb23ecbb9c598bdf11f82d976",
-"structvulpes_1_1scipy_1_1heap.html#a125e89ffbe91fcad78fa345fee3544a7",
-"structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html#a755a7d0411d7753ef21bd63afc6dfe16",
-"structvulpes_1_1timeintegration_1_1MidPoint.html#a1d9068c926145a34d718675047c3bc9e",
-"vvutils_8hpp.html#a0bd0e624421d07a12ad0b3efc57e6b57"
+"mesher_8hpp.html#a3db2ab4dd1e19d7e4cb131778c3764bb",
+"namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba0b113699bc543798d4bd94c7ba44fe01",
+"namespacevulpes_1_1scipy.html#a9ce772199de1fae1c7a298d2c7f7b8d3",
+"structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a2f54f93eef6ab764030197186ec87402",
+"structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#ac6789ab1fea31d36189418ed95b8ffbb",
+"structvulpes_1_1scipy_1_1coo__entry.html#a7170935e029c21a019262ca35cab72c1",
+"structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html",
+"structvulpes_1_1timeintegration_1_1LstableDIRKIMEX.html#ad30c039fbcef91414c1eb0742941570f",
+"voronoi_8hpp.html#a2a96b5fc017196bde2b03b387d9ec227"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

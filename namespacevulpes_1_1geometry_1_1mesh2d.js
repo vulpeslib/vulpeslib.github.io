@@ -30,6 +30,8 @@ var namespacevulpes_1_1geometry_1_1mesh2d =
     [ "closePeriodicTopology< double, int32_t >", "namespacevulpes_1_1geometry_1_1mesh2d.html#ae7a2f3a6b1a6b1eac427ff3e9dc270ec", null ],
     [ "collapseEdges", "namespacevulpes_1_1geometry_1_1mesh2d.html#a1b97d9f4388442c43a5dad74c65683c1", null ],
     [ "collapseEdges", "namespacevulpes_1_1geometry_1_1mesh2d.html#a5346b33e6fcd562cc51628fe26d6d390", null ],
+    [ "getCellVertexesPeriodic", "namespacevulpes_1_1geometry_1_1mesh2d.html#a71b4988a190c207582fd2ba073e75800", null ],
+    [ "getCellVertexesPeriodic< double, int32_t >", "namespacevulpes_1_1geometry_1_1mesh2d.html#a560009da902effa46d06c3645a93ce71", null ],
     [ "intersectCartesianGrid", "namespacevulpes_1_1geometry_1_1mesh2d.html#a2706b03734b5f2a701283a2efd0841b2", null ],
     [ "intersectCartesianGrid", "namespacevulpes_1_1geometry_1_1mesh2d.html#a9ea12c49777fe75b640fd32dce456f3c", null ],
     [ "intersectCartesianGrid< double, int32_t >", "namespacevulpes_1_1geometry_1_1mesh2d.html#a5c22f3df559861a517b9ec67f380225d", null ],
