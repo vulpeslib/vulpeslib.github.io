@@ -124,6 +124,7 @@ $(document).ready(function(){initNavTree('mesh__exporter_8hpp.html',''); initRes
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
@@ -133,8 +134,12 @@ $(document).ready(function(){initNavTree('mesh__exporter_8hpp.html',''); initRes
 <code>#include &lt;vtkCell.h&gt;</code><br />
 <code>#include &lt;vtkCellArray.h&gt;</code><br />
 <code>#include &lt;vtkCellData.h&gt;</code><br />
+<code>#include &lt;vtkDoubleArray.h&gt;</code><br />
+<code>#include &lt;vtkFieldData.h&gt;</code><br />
 <code>#include &lt;vtkFloatArray.h&gt;</code><br />
 <code>#include &lt;vtkIdList.h&gt;</code><br />
+<code>#include &lt;vtkIntArray.h&gt;</code><br />
+<code>#include &lt;vtkLongLongArray.h&gt;</code><br />
 <code>#include &lt;vtkNew.h&gt;</code><br />
 <code>#include &lt;vtkPointData.h&gt;</code><br />
 <code>#include &lt;vtkPoints.h&gt;</code><br />
@@ -151,13 +156,14 @@ $(document).ready(function(){initNavTree('mesh__exporter_8hpp.html',''); initRes
 <code>#include &lt;vtkXMLUnstructuredGridReader.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="crs__map_8hpp_source.html">vulpes/datastructure/crs_map.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="kdtree_8hpp_source.html">vulpes/datastructure/kdtree.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mesh__2d_8hpp_source.html">vulpes/geometry/mesh/mesh_2d.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="simplexify_8hpp_source.html">vulpes/geometry/simplexify.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="traits_8hpp_source.html">vulpes/geometry/traits.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="serialize_8hpp_source.html">vulpes/utils/serialize.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mesh_exporter.hpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="mesh__exporter_8hpp__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="mesh__exporter_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -197,12 +203,25 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a5cb9ef6723547f9fe3e6aa1490c8b2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the data mode for writing XML files.  <a href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab">More...</a><br /></td></tr>
 <tr class="separator:a5cb9ef6723547f9fe3e6aa1490c8b2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f2ad18a6f49684734fa89872d9f3da" id="r_a36f2ad18a6f49684734fa89872d9f3da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3da">vulpes::geometry::CoordinatePrecision</a> : std::uint8_t { <a class="el" href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3daa37fd270f0eb43bd1cf0e4fbd25b385c5">vulpes::geometry::Float32</a> = VTK_FLOAT
+, <a class="el" href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3daa157a6dc7675987f7d55c678b98eb4c50">vulpes::geometry::Float64</a> = VTK_DOUBLE
+ }</td></tr>
+<tr class="memdesc:a36f2ad18a6f49684734fa89872d9f3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the precision for point coordinates in VTU files.  <a href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3da">More...</a><br /></td></tr>
+<tr class="separator:a36f2ad18a6f49684734fa89872d9f3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a496dc31f3303aededdfd38a34f12ab4e" id="r_a496dc31f3303aededdfd38a34f12ab4e"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
 <tr class="memitem:a496dc31f3303aededdfd38a34f12ab4e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a496dc31f3303aededdfd38a34f12ab4e">vulpes::geometry::exportMesh</a> (const MeshType &amp;mesh, const std::string &amp;filename)</td></tr>
 <tr class="separator:a496dc31f3303aededdfd38a34f12ab4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785c2e941b241d0a48bb6bc0d8d316e1" id="r_a785c2e941b241d0a48bb6bc0d8d316e1"><td class="memTemplParams" colspan="2">template&lt;typename MeshDerived &gt; </td></tr>
+<tr class="memitem:a785c2e941b241d0a48bb6bc0d8d316e1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a785c2e941b241d0a48bb6bc0d8d316e1">vulpes::geometry::shouldModifyPeriodicMesh</a> (const MeshDerived &amp;mesh)</td></tr>
+<tr class="memdesc:a785c2e941b241d0a48bb6bc0d8d316e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a periodic mesh should be modified for export.  <br /></td></tr>
+<tr class="separator:a785c2e941b241d0a48bb6bc0d8d316e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1824e7a29a32dcb6b376b9f84bbaf120" id="r_a1824e7a29a32dcb6b376b9f84bbaf120"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a1824e7a29a32dcb6b376b9f84bbaf120"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; ScalarType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a1824e7a29a32dcb6b376b9f84bbaf120">vulpes::geometry::reopenPeriodicMeshForExport</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; ScalarType, IndexType &gt; &amp;mesh)</td></tr>
+<tr class="memdesc:a1824e7a29a32dcb6b376b9f84bbaf120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reopens a closed 2D periodic mesh for export.  <br /></td></tr>
+<tr class="separator:a1824e7a29a32dcb6b376b9f84bbaf120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -211,7 +230,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="mesh__exporter_8hpp.html">mesh_exporter.hpp</a></li>
-    <li class="footer">Generated on Wed Jan 28 2026 09:16:28 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 9 2026 10:58:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

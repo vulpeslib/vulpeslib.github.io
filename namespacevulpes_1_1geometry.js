@@ -85,6 +85,10 @@ var namespacevulpes_1_1geometry =
       [ "CellInitInscribedDiameter", "namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2eadcc59c55c020ebf08a7d66e9e6b92101", null ],
       [ "CellInitAll", "namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4", null ]
     ] ],
+    [ "CoordinatePrecision", "namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3da", [
+      [ "Float32", "namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3daa37fd270f0eb43bd1cf0e4fbd25b385c5", null ],
+      [ "Float64", "namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3daa157a6dc7675987f7d55c678b98eb4c50", null ]
+    ] ],
     [ "DataMode", "namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab", [
       [ "Ascii", "namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba0b113699bc543798d4bd94c7ba44fe01", null ],
       [ "Binary", "namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2aba68e36ebb95b2ed53b079c8080f546dc2", null ],
@@ -126,6 +130,8 @@ var namespacevulpes_1_1geometry =
     [ "operator&", "namespacevulpes_1_1geometry.html#a6a9e5e09036a979b348aa0dcf7c2cabf", null ],
     [ "operator-", "namespacevulpes_1_1geometry.html#ace6f17c7eb014ded29c2dd35e3ed860c", null ],
     [ "operator|", "namespacevulpes_1_1geometry.html#ae80ee0aa29e203e6c1b2b55d0b5efea0", null ],
+    [ "reopenPeriodicMeshForExport", "namespacevulpes_1_1geometry.html#a1824e7a29a32dcb6b376b9f84bbaf120", null ],
+    [ "shouldModifyPeriodicMesh", "namespacevulpes_1_1geometry.html#a785c2e941b241d0a48bb6bc0d8d316e1", null ],
     [ "voronoi", "namespacevulpes_1_1geometry.html#a4addb93c64bac421b210251486415946", null ],
     [ "voronoi2D", "namespacevulpes_1_1geometry.html#a60a05ed6aba4499d95eafae664ea82ed", null ],
     [ "voronoi3D", "namespacevulpes_1_1geometry.html#aab645011f5943588ef6df3cd997eeb7e", null ]

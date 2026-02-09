@@ -180,6 +180,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_eval_table_ext&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a6f8d5bcf4a2a6b1ff5cccb114fc6ba5b">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>m_evals&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionFeProjection.html#a4f5fde6ce45c51d07b9d2fb3137d2196">vulpes::fe::FeExpressionFeProjection&lt; Dim, FeSpace, DofHandler, OutputDim &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a41750f0ba5e9d4539f33bf22addd3ef9">vulpes::fe::FeExpressionFunctionWrapper&lt; Dim, OutputDim &gt;</a></li>
 <li>m_exponent&#160;:&#160;<a class="el" href="classvulpes_1_1monomial_1_1Monomial.html#aa0e84e3aa6a8449d6132c6f39b63dcb5">vulpes::monomial::Monomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
+<li>m_export_options&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a4d3d00c596f776ab5557994bdf638f16">vulpes::geometry::MeshExporterBase&lt; MeshDerived &gt;</a></li>
 <li>m_expr&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeExpressionComponentDth.html#aabecaf869c1e67ae9ce19b53b7babcf6">vulpes::fe::FeExpressionComponentDth&lt; Dim, E &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionDiagOnly.html#aaa9f010a28e8ff83f88563eb31918764">vulpes::fe::FeExpressionDiagOnly&lt; Dim, E &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionSkipper.html#a6824217b977908a8904ccaa361d13427">vulpes::fe::FeExpressionSkipper&lt; Dim, E &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#a74d98cbfd688c59377cf442c0b56bf77">vulpes::fe::FeExpressionUnaryMinus&lt; Dim, E &gt;</a>, <a class="el" href="classvulpes_1_1vutils_1_1ExpressionParser.html#a4411c4d9f09af296362068b4d02b6293">vulpes::vutils::ExpressionParser&lt; N &gt;</a></li>
 <li>m_extra_expr&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#ab71748231ad07c1db704644ac0072217">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
 <li>m_extra_expr_0&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#a5e6617a68929da65aa10f1bae34f3e09">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
@@ -280,6 +281,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_metadata&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a240d843337767978ddf046686dcc8865">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a></li>
 <li>m_mins&#160;:&#160;<a class="el" href="classvulpes_1_1datastructure_1_1KDTree.html#aa4f81e6b81fae94a3a6ff7dfcb84ee4d">vulpes::datastructure::KDTree&lt; Dim &gt;</a></li>
 <li>m_model&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1GNNAgglomeration.html#a3009f077a5a9629af8e63f22cb14069a">vulpes::geometry::GNNAgglomeration&lt; MeshType &gt;</a></li>
+<li>m_modified_mesh&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a125af6bb7118299e7ddea5e15c1f6924">vulpes::geometry::MeshExporterBase&lt; MeshDerived &gt;</a></li>
 <li>m_moment_integrator&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a9eae68a22fdf0d1282b8c82f0c6eba4b">vulpes::assemble::WeakFormIntegratorVem&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>m_monomials&#160;:&#160;<a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#ad9270080457bf895c826fab56f5eaca0">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
 <li>m_monos&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#a954815dac5bb6e493471e54c37cb793d">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
@@ -429,7 +431,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jan 28 2026 09:16:28 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 9 2026 10:58:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -284,6 +284,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a5cb9ef6723547f9fe3e6aa1490c8b2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the data mode for writing XML files.  <a href="namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab">More...</a><br /></td></tr>
 <tr class="separator:a5cb9ef6723547f9fe3e6aa1490c8b2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f2ad18a6f49684734fa89872d9f3da" id="r_a36f2ad18a6f49684734fa89872d9f3da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3da">CoordinatePrecision</a> : std::uint8_t { <a class="el" href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3daa37fd270f0eb43bd1cf0e4fbd25b385c5">Float32</a> = VTK_FLOAT
+, <a class="el" href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3daa157a6dc7675987f7d55c678b98eb4c50">Float64</a> = VTK_DOUBLE
+ }</td></tr>
+<tr class="memdesc:a36f2ad18a6f49684734fa89872d9f3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the precision for point coordinates in VTU files.  <a href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3da">More...</a><br /></td></tr>
+<tr class="separator:a36f2ad18a6f49684734fa89872d9f3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6b6fe736cc0fc087950ea66815378b" id="r_a7a6b6fe736cc0fc087950ea66815378b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378b">MetricId</a> : uint32_t { <a class="el" href="namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba8a0907581f6dd82c78379f05e678aa76">CircleRatioID</a> = 0ULL
 , <a class="el" href="namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba46eb8d49c1b95e3d0999ae125c95a0b0">AreaPerimeterRatioID</a>
 , <a class="el" href="namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba3ed46f9ce77cb3dfd87487d17e24cce9">UniformityFactorID</a>
@@ -339,6 +344,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a496dc31f3303aededdfd38a34f12ab4e" id="r_a496dc31f3303aededdfd38a34f12ab4e"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
 <tr class="memitem:a496dc31f3303aededdfd38a34f12ab4e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a496dc31f3303aededdfd38a34f12ab4e">exportMesh</a> (const MeshType &amp;mesh, const std::string &amp;filename)</td></tr>
 <tr class="separator:a496dc31f3303aededdfd38a34f12ab4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785c2e941b241d0a48bb6bc0d8d316e1" id="r_a785c2e941b241d0a48bb6bc0d8d316e1"><td class="memTemplParams" colspan="2">template&lt;typename MeshDerived &gt; </td></tr>
+<tr class="memitem:a785c2e941b241d0a48bb6bc0d8d316e1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a785c2e941b241d0a48bb6bc0d8d316e1">shouldModifyPeriodicMesh</a> (const MeshDerived &amp;mesh)</td></tr>
+<tr class="memdesc:a785c2e941b241d0a48bb6bc0d8d316e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a periodic mesh should be modified for export.  <br /></td></tr>
+<tr class="separator:a785c2e941b241d0a48bb6bc0d8d316e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1824e7a29a32dcb6b376b9f84bbaf120" id="r_a1824e7a29a32dcb6b376b9f84bbaf120"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a1824e7a29a32dcb6b376b9f84bbaf120"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; ScalarType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a1824e7a29a32dcb6b376b9f84bbaf120">reopenPeriodicMeshForExport</a> (const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; ScalarType, IndexType &gt; &amp;mesh)</td></tr>
+<tr class="memdesc:a1824e7a29a32dcb6b376b9f84bbaf120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reopens a closed 2D periodic mesh for export.  <br /></td></tr>
+<tr class="separator:a1824e7a29a32dcb6b376b9f84bbaf120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a05ed6aba4499d95eafae664ea82ed" id="r_a60a05ed6aba4499d95eafae664ea82ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry.html#a60a05ed6aba4499d95eafae664ea82ed">voronoi2D</a> (const std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt;, 2 &gt; &amp;bbox, const std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; double, 2 &gt; &gt; &amp;points, const std::function&lt; void(voro::voronoicell_neighbor_2d &amp;cell, int32_t id)&gt; &amp;cell_callback)</td></tr>
 <tr class="memdesc:a60a05ed6aba4499d95eafae664ea82ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a 2D Voronoi tessellation for a given set of points within a bounding box.  <br /></td></tr>
 <tr class="separator:a60a05ed6aba4499d95eafae664ea82ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -463,6 +476,31 @@ template&lt;int32_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3
 <tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea27a15df6b1b37e9f6fe2a8f6e6af96ef" name="ad2f45b81f4d778acb7c48e9c5f104e2ea27a15df6b1b37e9f6fe2a8f6e6af96ef"></a>CellInitFaceKb&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2eadcc59c55c020ebf08a7d66e9e6b92101" name="ad2f45b81f4d778acb7c48e9c5f104e2eadcc59c55c020ebf08a7d66e9e6b92101"></a>CellInitInscribedDiameter&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4" name="ad2f45b81f4d778acb7c48e9c5f104e2ea0c429e3469c2eefe0d59f60a17b4b4f4"></a>CellInitAll&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a36f2ad18a6f49684734fa89872d9f3da" name="a36f2ad18a6f49684734fa89872d9f3da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f2ad18a6f49684734fa89872d9f3da">&#9670;&#160;</a></span>CoordinatePrecision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3da">vulpes::geometry::CoordinatePrecision</a> : std::uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the precision for point coordinates in VTU files. </p>
+<p>This enum defines different precision levels for storing point coordinates, which affects file size and geometric accuracy. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a36f2ad18a6f49684734fa89872d9f3daa37fd270f0eb43bd1cf0e4fbd25b385c5" name="a36f2ad18a6f49684734fa89872d9f3daa37fd270f0eb43bd1cf0e4fbd25b385c5"></a>Float32&#160;</td><td class="fielddoc"><p>32-bit floating-point precision (float). </p>
+<p>Smaller file size, suitable for most applications. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a36f2ad18a6f49684734fa89872d9f3daa157a6dc7675987f7d55c678b98eb4c50" name="a36f2ad18a6f49684734fa89872d9f3daa157a6dc7675987f7d55c678b98eb4c50"></a>Float64&#160;</td><td class="fielddoc"><p>64-bit floating-point precision (double). </p>
+<p>Larger file size, required for high-precision geometric applications. </p>
+</td></tr>
 </table>
 
 </div>
@@ -1012,6 +1050,79 @@ template&lt;typename FloatType , int32_t Dim, typename D1 , typename D2 &gt; </d
 
 </div>
 </div>
+<a id="a1824e7a29a32dcb6b376b9f84bbaf120" name="a1824e7a29a32dcb6b376b9f84bbaf120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1824e7a29a32dcb6b376b9f84bbaf120">&#9670;&#160;</a></span>reopenPeriodicMeshForExport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ScalarType , typename IndexType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; ScalarType, IndexType &gt; vulpes::geometry::reopenPeriodicMeshForExport </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; ScalarType, IndexType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reopens a closed 2D periodic mesh for export. </p>
+<p>This function creates a copy of the input mesh and reopens its periodic topology by restoring ghost cells. Only called for 2D periodic meshes that are in the closed state.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ScalarType</td><td>The scalar type of the mesh (typically double). </td></tr>
+    <tr><td class="paramname">IndexType</td><td>The index type of the mesh. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The closed periodic 2D mesh to reopen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reopened copy of the input mesh with periodic ghost cells restored. </dd></dl>
+
+</div>
+</div>
+<a id="a785c2e941b241d0a48bb6bc0d8d316e1" name="a785c2e941b241d0a48bb6bc0d8d316e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785c2e941b241d0a48bb6bc0d8d316e1">&#9670;&#160;</a></span>shouldModifyPeriodicMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshDerived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vulpes::geometry::shouldModifyPeriodicMesh </td>
+          <td>(</td>
+          <td class="paramtype">const MeshDerived &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines if a periodic mesh should be modified for export. </p>
+<p>A 2D mesh should be modified if it is a closed periodic mesh that would benefit from reopening for better visualization. Checks if the mesh is periodic and in the closed state (has MeshPeriodicTopologyClosed = 1).</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshDerived</td><td>The derived mesh class. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The mesh to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mesh should be modified, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a4addb93c64bac421b210251486415946" name="a4addb93c64bac421b210251486415946"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4addb93c64bac421b210251486415946">&#9670;&#160;</a></span>voronoi()</h2>
 
@@ -1162,7 +1273,7 @@ template&lt;int32_t Dim, typename  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li>
-    <li class="footer">Generated on Wed Jan 28 2026 09:16:28 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 9 2026 10:58:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

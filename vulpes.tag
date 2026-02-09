@@ -832,6 +832,7 @@
     <filename>mesh__exporter_8hpp.html</filename>
     <includes id="crs__map_8hpp" name="crs_map.hpp" local="yes" import="no" module="no" objc="no">vulpes/datastructure/crs_map.hpp</includes>
     <includes id="kdtree_8hpp" name="kdtree.hpp" local="yes" import="no" module="no" objc="no">vulpes/datastructure/kdtree.hpp</includes>
+    <includes id="mesh__2d_8hpp" name="mesh_2d.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/mesh/mesh_2d.hpp</includes>
     <includes id="simplexify_8hpp" name="simplexify.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/simplexify.hpp</includes>
     <includes id="traits_8hpp" name="traits.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/traits.hpp</includes>
     <includes id="serialize_8hpp" name="serialize.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/serialize.hpp</includes>
@@ -15584,8 +15585,8 @@
       <type></type>
       <name>MeshExporter</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporter.html</anchorfile>
-      <anchor>a46e4a68653f62367120332ae40f446f3</anchor>
-      <arglist>(const MeshDerived &amp;mesh)</arglist>
+      <anchor>ae1b368371eaeb3bc481031fc954d03d1</anchor>
+      <arglist>(const MeshDerived &amp;mesh, const VtuOptions &amp;options={})</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -15610,6 +15611,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>attachVertexData</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporter.html</anchorfile>
+      <anchor>a43a12097541e1c29d06e1a04e76c45d6</anchor>
+      <arglist>(const std::string &amp;label, const std::vector&lt; index_t &gt; &amp;data) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>attachCellData</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporter.html</anchorfile>
       <anchor>a8f40d9ae0ac21bdba7ec5ca944619aee</anchor>
@@ -15624,10 +15632,17 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>attachMetadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporter.html</anchorfile>
+      <anchor>a40aa64784c5f99448791f22e5700c960</anchor>
+      <arglist>(const MeshDerived &amp;mesh) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>save</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
-      <anchor>a82dd56757a935be907d976c430913654</anchor>
-      <arglist>(const std::string &amp;filename, const VtuOptions &amp;options={}) const</arglist>
+      <anchor>a3ac5887f31a3d813aef2cd9b711d2336</anchor>
+      <arglist>(const std::string &amp;filename, const std::optional&lt; VtuOptions &gt; &amp;options=std::nullopt) const</arglist>
     </member>
     <member kind="function">
       <type>const auto &amp;</type>
@@ -15657,6 +15672,20 @@
       <anchor>aa3fd3a4c3bd010acae6884ff1a4d9d82</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>initializeMeshForExport</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a0203bccdc64558d34c6ddb105ea7e7fb</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const MeshDerived &amp;</type>
+      <name>getMeshRef</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a05112feada423a6df5193986421aee72</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>const MeshDerived &amp;</type>
       <name>m_mesh</name>
@@ -15665,10 +15694,24 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>VtuOptions</type>
+      <name>m_export_options</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a4d3d00c596f776ab5557994bdf638f16</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>std::vector&lt; vtkSmartPointer&lt; vtkUnstructuredGrid &gt; &gt;</type>
       <name>m_vtk_grids</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
       <anchor>a9b8a69cb12dc2809acfc73376ab6489e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::optional&lt; MeshDerived &gt;</type>
+      <name>m_modified_mesh</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a125af6bb7118299e7ddea5e15c1f6924</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -15687,15 +15730,15 @@
       <type></type>
       <name>MeshExporterBase</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
-      <anchor>a0d2fde080e25bc7056e63c888df311bf</anchor>
-      <arglist>(const MeshDerived &amp;mesh)</arglist>
+      <anchor>ab5761219f844534f31c7dd9c3f0c2763</anchor>
+      <arglist>(const MeshDerived &amp;mesh, const VtuOptions &amp;options={})</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>save</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
-      <anchor>a82dd56757a935be907d976c430913654</anchor>
-      <arglist>(const std::string &amp;filename, const VtuOptions &amp;options={}) const</arglist>
+      <anchor>a3ac5887f31a3d813aef2cd9b711d2336</anchor>
+      <arglist>(const std::string &amp;filename, const std::optional&lt; VtuOptions &gt; &amp;options=std::nullopt) const</arglist>
     </member>
     <member kind="function">
       <type>const auto &amp;</type>
@@ -15711,6 +15754,20 @@
       <anchor>a4deb7b8039a748c1ab28ee5800bf381e</anchor>
       <arglist>() const</arglist>
     </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>initializeMeshForExport</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a0203bccdc64558d34c6ddb105ea7e7fb</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const MeshDerived &amp;</type>
+      <name>getMeshRef</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a05112feada423a6df5193986421aee72</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>const MeshDerived &amp;</type>
       <name>m_mesh</name>
@@ -15719,10 +15776,24 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>VtuOptions</type>
+      <name>m_export_options</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a4d3d00c596f776ab5557994bdf638f16</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>std::vector&lt; vtkSmartPointer&lt; vtkUnstructuredGrid &gt; &gt;</type>
       <name>m_vtk_grids</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
       <anchor>a9b8a69cb12dc2809acfc73376ab6489e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::optional&lt; MeshDerived &gt;</type>
+      <name>m_modified_mesh</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a125af6bb7118299e7ddea5e15c1f6924</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -15749,8 +15820,8 @@
       <type></type>
       <name>MeshExporterSubmesh</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterSubmesh.html</anchorfile>
-      <anchor>af990245778275f0dfb4b40935b21c5fa</anchor>
-      <arglist>(const MeshDerived &amp;mesh, std::size_t min_n_submesh_elem)</arglist>
+      <anchor>a6784d934ada6cefcf0f8b07e040cde5c</anchor>
+      <arglist>(const MeshDerived &amp;mesh, std::size_t min_n_submesh_elem, const VtuOptions &amp;options={})</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -15777,8 +15848,8 @@
       <type>void</type>
       <name>save</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
-      <anchor>a82dd56757a935be907d976c430913654</anchor>
-      <arglist>(const std::string &amp;filename, const VtuOptions &amp;options={}) const</arglist>
+      <anchor>a3ac5887f31a3d813aef2cd9b711d2336</anchor>
+      <arglist>(const std::string &amp;filename, const std::optional&lt; VtuOptions &gt; &amp;options=std::nullopt) const</arglist>
     </member>
     <member kind="function">
       <type>const auto &amp;</type>
@@ -15808,6 +15879,20 @@
       <anchor>a2d16a3d3a30b66921627fe47e0bacd73</anchor>
       <arglist>(std::size_t min_n_submesh_elem)</arglist>
     </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>initializeMeshForExport</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a0203bccdc64558d34c6ddb105ea7e7fb</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const MeshDerived &amp;</type>
+      <name>getMeshRef</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a05112feada423a6df5193986421aee72</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>const MeshDerived &amp;</type>
       <name>m_mesh</name>
@@ -15816,10 +15901,24 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>VtuOptions</type>
+      <name>m_export_options</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a4d3d00c596f776ab5557994bdf638f16</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>std::vector&lt; vtkSmartPointer&lt; vtkUnstructuredGrid &gt; &gt;</type>
       <name>m_vtk_grids</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
       <anchor>a9b8a69cb12dc2809acfc73376ab6489e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::optional&lt; MeshDerived &gt;</type>
+      <name>m_modified_mesh</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>a125af6bb7118299e7ddea5e15c1f6924</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -17406,6 +17505,13 @@
       <name>data_mode</name>
       <anchorfile>structvulpes_1_1geometry_1_1VtuOptions.html</anchorfile>
       <anchor>a69556faf3567c35f743390d2ee05326d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CoordinatePrecision</type>
+      <name>coordinate_precision</name>
+      <anchorfile>structvulpes_1_1geometry_1_1VtuOptions.html</anchorfile>
+      <anchor>ad13a690c077eadf6e385aa51a29b3411</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -25215,6 +25321,25 @@
     </member>
     <member kind="enumeration">
       <type></type>
+      <name>CoordinatePrecision</name>
+      <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
+      <anchor>a36f2ad18a6f49684734fa89872d9f3da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Float32</name>
+      <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
+      <anchor>a36f2ad18a6f49684734fa89872d9f3daa37fd270f0eb43bd1cf0e4fbd25b385c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Float64</name>
+      <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
+      <anchor>a36f2ad18a6f49684734fa89872d9f3daa157a6dc7675987f7d55c678b98eb4c50</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
       <name>MetricId</name>
       <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
       <anchor>a7a6b6fe736cc0fc087950ea66815378b</anchor>
@@ -25350,6 +25475,20 @@
       <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
       <anchor>a496dc31f3303aededdfd38a34f12ab4e</anchor>
       <arglist>(const MeshType &amp;mesh, const std::string &amp;filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>shouldModifyPeriodicMesh</name>
+      <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
+      <anchor>a785c2e941b241d0a48bb6bc0d8d316e1</anchor>
+      <arglist>(const MeshDerived &amp;mesh)</arglist>
+    </member>
+    <member kind="function">
+      <type>Mesh2D&lt; ScalarType, IndexType &gt;</type>
+      <name>reopenPeriodicMeshForExport</name>
+      <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
+      <anchor>a1824e7a29a32dcb6b376b9f84bbaf120</anchor>
+      <arglist>(const Mesh2D&lt; ScalarType, IndexType &gt; &amp;mesh)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
