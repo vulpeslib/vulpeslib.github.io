@@ -813,19 +813,20 @@ $(document).ready(function(){initNavTree('mesh__exporter_8hpp_source.html',''); 
 <div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; md = mesh.getMetadata();</div>
 <div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>  assert(md.ints.contains(<span class="stringliteral">&quot;MeshPeriodicTopologyClosed&quot;</span>));</div>
 <div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>  assert(md.ints.at(<span class="stringliteral">&quot;MeshPeriodicTopologyClosed&quot;</span>).front() == 1);</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span> </div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>  <a class="code hl_class" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D&lt;ScalarType, IndexType&gt;</a> reopened_mesh = mesh;  <span class="comment">// Copy the mesh</span></div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span> </div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>  <span class="comment">// Call openPeriodicTopology to restore ghost cells</span></div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>  reopened_mesh = <a class="code hl_function" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa10c9d28ffcc4e2c9bbf339de76f4aad">vulpes::geometry::mesh2d::openPeriodicTopology</a>(reopened_mesh);</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>  <span class="keywordflow">return</span> reopened_mesh;</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>}</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>  (void)md;  <span class="comment">// Avoid unused variable warning when asserts are disabled</span></div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span> </div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>  <a class="code hl_class" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D&lt;ScalarType, IndexType&gt;</a> reopened_mesh = mesh;  <span class="comment">// Copy the mesh</span></div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>  <span class="comment">// Call openPeriodicTopology to restore ghost cells</span></div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>  reopened_mesh = <a class="code hl_function" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa10c9d28ffcc4e2c9bbf339de76f4aad">vulpes::geometry::mesh2d::openPeriodicTopology</a>(reopened_mesh);</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>  <span class="keywordflow">return</span> reopened_mesh;</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>}</div>
 </div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span> </div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>}  <span class="comment">// namespace geometry</span></div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>}  <span class="comment">// namespace vulpes</span></div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span> </div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_GEOMETRY_MESH_EXPORTER_HPP_</span></div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span> </div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>}  <span class="comment">// namespace geometry</span></div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>}  <span class="comment">// namespace vulpes</span></div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span> </div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_GEOMETRY_MESH_EXPORTER_HPP_</span></div>
 <div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html">vulpes::datastructure::CrsMap</a></div><div class="ttdef"><b>Definition</b> crs_map.hpp:71</div></div>
 <div class="ttc" id="aclassvulpes_1_1datastructure_1_1CrsMap_html_a251096f3df9c8bcffba04c58e48b31e2"><div class="ttname"><a href="classvulpes_1_1datastructure_1_1CrsMap.html#a251096f3df9c8bcffba04c58e48b31e2">vulpes::datastructure::CrsMap::size</a></div><div class="ttdeci">IndexType size() const</div><div class="ttdoc">Get the number of rows in the CRS map.</div><div class="ttdef"><b>Definition</b> crs_map.hpp:330</div></div>
 <div class="ttc" id="aclassvulpes_1_1geometry_1_1Cell2D_html"><div class="ttname"><a href="classvulpes_1_1geometry_1_1Cell2D.html">vulpes::geometry::Cell2D</a></div><div class="ttdef"><b>Definition</b> cell.hpp:98</div></div>
@@ -905,7 +906,7 @@ $(document).ready(function(){initNavTree('mesh__exporter_8hpp_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="mesh__exporter_8hpp.html">mesh_exporter.hpp</a></li>
-    <li class="footer">Generated on Mon Feb 9 2026 10:58:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Feb 9 2026 11:32:38 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
