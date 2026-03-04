@@ -67,6 +67,7 @@
     <name>dg_utils.hpp</name>
     <path>/__w/vulpes/vulpes/vulpes/assemble/</path>
     <filename>dg__utils_8hpp.html</filename>
+    <includes id="integrator__simplexify_8hpp" name="integrator_simplexify.hpp" local="yes" import="no" module="no" objc="no">vulpes/assemble/integrator_simplexify.hpp</includes>
     <includes id="dof__handler_8hpp" name="dof_handler.hpp" local="yes" import="no" module="no" objc="no">vulpes/dofs/dof_handler.hpp</includes>
     <includes id="fe__expression_8hpp" name="fe_expression.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expression.hpp</includes>
     <includes id="fe__values_8hpp" name="fe_values.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_values.hpp</includes>
@@ -125,6 +126,7 @@
     <includes id="simplexify_8hpp" name="simplexify.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/simplexify.hpp</includes>
     <includes id="qlibrary_8hpp" name="qlibrary.hpp" local="yes" import="no" module="no" objc="no">vulpes/quadrature/qlibrary.hpp</includes>
     <class kind="class">vulpes::assemble::WeakFormIntegratorSimplexify</class>
+    <class kind="class">vulpes::assemble::ScalarExpressionIntegrator</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::assemble</namespace>
   </compound>
@@ -2650,6 +2652,97 @@
     <name>vulpes::assemble::internal::is_tuple_of_fe_expr_pointers&lt; std::tuple&lt; Args... &gt;, std::enable_if_t&lt;(std::conjunction_v&lt; std::is_pointer&lt; Args &gt;... &gt;) &amp;&amp;(std::conjunction_v&lt; is_fe_expression_derived&lt; std::remove_pointer_t&lt; Args &gt; &gt;... &gt;)&gt; &gt;</name>
     <filename>structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html</filename>
     <templarg>typename... Args</templarg>
+  </compound>
+  <compound kind="class">
+    <name>vulpes::assemble::ScalarExpressionIntegrator</name>
+    <filename>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</filename>
+    <templarg>typename MeshType</templarg>
+    <templarg>typename FeSpaceType</templarg>
+    <templarg>typename ExprType</templarg>
+    <member kind="typedef">
+      <type>typename MeshType::index_t</type>
+      <name>index_t</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>ad754db1a93b00b6c127d026e51e8d734</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ScalarExpressionIntegrator</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>abfa5542c283145156600153f86b9f80a</anchor>
+      <arglist>(const MeshType &amp;mesh, CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression, uint32_t quadrature_order=5)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>integrate</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>a9e076bd5c29b8f8fdd51767d822ca2c3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>Dim</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>affdc988803ebeb989cee3fa54f4411ba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>double</type>
+      <name>integrateCell</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>af1b597695cc359e289c583bd1a60f885</anchor>
+      <arglist>(index_t cell_id)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>double</type>
+      <name>integrateSimplexDirect</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>a0e525d4d0a4700af762b397d73f8df3c</anchor>
+      <arglist>(index_t cell_id, int32_t simplex_id, const Eigen::MatrixXi &amp;simplexes, const Eigen::MatrixXd &amp;vertexes, const auto &amp;mapping, const auto &amp;fe_space)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>mapQPointsToPhysicalSimplex</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>a2193c3686c4b6ac7c3b4919bf6a7d12d</anchor>
+      <arglist>(qrule::QuadratureRule&lt; double, Dim &gt; &amp;qrule, const Eigen::MatrixXi &amp;simplexes, const Eigen::MatrixXd &amp;vertexes, int32_t k)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const MeshType &amp;</type>
+      <name>m_mesh</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>a6bfb4f67961fe46b577af95ca5e64623</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>CellManager&lt; MeshType, FeSpaceType &gt; &amp;</type>
+      <name>m_cell_manager</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>acf249a64142956058e0375d537708092</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const ExprType &amp;</type>
+      <name>m_expression</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>adc91f94539850e711283209b7556f7e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>uint32_t</type>
+      <name>m_quadrature_order</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>a052e0c3210719d406249af8138f61c40</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::shared_ptr&lt; qrule::QuadratureRule&lt; double, Dim &gt; &gt;</type>
+      <name>m_qrule_ref</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>a3ba892fe4d4f178d6305f994380aa8cd</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>vulpes::assemble::WeakFormIntegratorBase</name>
@@ -24263,6 +24356,7 @@
     <class kind="struct">vulpes::assemble::CompressedGatheredMonomial</class>
     <class kind="struct">vulpes::assemble::CompressedMonomial</class>
     <class kind="struct">vulpes::assemble::GatheredMonomial</class>
+    <class kind="class">vulpes::assemble::ScalarExpressionIntegrator</class>
     <class kind="class">vulpes::assemble::WeakFormIntegratorBase</class>
     <class kind="class">vulpes::assemble::WeakFormIntegratorGauss</class>
     <class kind="class">vulpes::assemble::WeakFormIntegratorQFree</class>
@@ -24272,6 +24366,20 @@
   <compound kind="namespace">
     <name>vulpes::assemble::dg</name>
     <filename>namespacevulpes_1_1assemble_1_1dg.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>integrateFeExpression</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a9c3cb3b4a6b3cd12c6a35b1855edbbc5</anchor>
+      <arglist>(const MeshType &amp;mesh, assemble::CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>computeL2Error</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a780f8be63036a10fa34fd48d932c8632</anchor>
+      <arglist>(const MeshType &amp;mesh, assemble::CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const la::Vector &amp;u_h, const ExprType &amp;u_exact_expr)</arglist>
+    </member>
     <member kind="function">
       <type>auto</type>
       <name>createPenaltyExpression</name>

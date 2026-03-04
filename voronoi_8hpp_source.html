@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('voronoi_8hpp_source.html',''); initRes
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>32_t Dim, <span class="keyword">typename</span> = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1geometry.html#a2a96b5fc017196bde2b03b387d9ec227">   99</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacevulpes_1_1geometry.html#a2a96b5fc017196bde2b03b387d9ec227">VoronoiCell</a> = std::conditional_t&lt;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> == 2,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    Dim == 2,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    voro::voronoicell_neighbor_2d,</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    voro::voronoicell_neighbor&gt;;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('voronoi_8hpp_source.html',''); initRes
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    std::vector&lt;<a class="code hl_typedef" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point&lt;double, Dim&gt;</a>&gt;&amp; <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">points</a>,</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<a class="code hl_typedef" href="namespacevulpes_1_1geometry.html#a2a96b5fc017196bde2b03b387d9ec227">VoronoiCell&lt;Dim&gt;</a>&amp; cell, <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> <span class="keywordtype">id</span>)&gt;&amp;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">cell_callback</a>) {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> == 2) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (Dim == 2) {</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a60a05ed6aba4499d95eafae664ea82ed">voronoi2D</a>(bbox, <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">points</a>, <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">cell_callback</a>);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_function" href="namespacevulpes_1_1geometry.html#aab645011f5943588ef6df3cd997eeb7e">voronoi3D</a>(bbox, <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">points</a>, <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">cell_callback</a>);</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('voronoi_8hpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="voronoi_8hpp.html">voronoi.hpp</a></li>
-    <li class="footer">Generated on Wed Mar 4 2026 16:16:49 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 16:58:11 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

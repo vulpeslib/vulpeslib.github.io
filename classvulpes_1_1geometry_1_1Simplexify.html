@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1geometry_1_1Simplexify.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7bac1eda54fdb1f19d0e72c5ad6f7358" id="r_a7bac1eda54fdb1f19d0e72c5ad6f7358"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a7bac1eda54fdb1f19d0e72c5ad6f7358">SimplexifyEngine</a> = std::conditional_t&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>==2, <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">Triangulation</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html">Tetrahedralization</a> &gt;</td></tr>
+<tr class="memitem:a7bac1eda54fdb1f19d0e72c5ad6f7358" id="r_a7bac1eda54fdb1f19d0e72c5ad6f7358"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a7bac1eda54fdb1f19d0e72c5ad6f7358">SimplexifyEngine</a> = std::conditional_t&lt; Dim==2, <a class="el" href="classvulpes_1_1geometry_1_1Triangulation.html">Triangulation</a>, <a class="el" href="classvulpes_1_1geometry_1_1Tetrahedralization.html">Tetrahedralization</a> &gt;</td></tr>
 <tr class="memdesc:a7bac1eda54fdb1f19d0e72c5ad6f7358"><td class="mdescLeft">&#160;</td><td class="mdescRight">The engine used for simplex generation, determined by the dimension.  <br /></td></tr>
 <tr class="separator:a7bac1eda54fdb1f19d0e72c5ad6f7358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba8266f450394588faba72187e1e7df" id="r_a8ba8266f450394588faba72187e1e7df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a> = SimplexifyEngine::float_t</td></tr>
@@ -200,7 +200,7 @@ class vulpes::geometry::Simplexify&lt; Dim, typename &gt;</div><p>A templated cl
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a>  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::float_t =  SimplexifyEngine::float_t</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::float_t =  SimplexifyEngine::float_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -216,7 +216,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a>  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::index_t =  SimplexifyEngine::index_t</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::index_t =  SimplexifyEngine::index_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -232,7 +232,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a>  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::PointsType =  SimplexifyEngine::PointsType</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::PointsType =  SimplexifyEngine::PointsType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -248,7 +248,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a>  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::PointsViewType =  SimplexifyEngine::PointsViewType</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::PointsViewType =  SimplexifyEngine::PointsViewType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -264,7 +264,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a>  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::SimplexesType =  SimplexifyEngine::SimplexesType</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::SimplexesType =  SimplexifyEngine::SimplexesType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -280,7 +280,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a>  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::SimplexesViewType =  SimplexifyEngine::SimplexesViewType</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::SimplexesViewType =  SimplexifyEngine::SimplexesViewType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -296,7 +296,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a>  = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::SimplexifyEngine</td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::SimplexifyEngine</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -321,7 +321,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::Simplexify </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::Simplexify </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt; 2, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>cell</em>, </td>
@@ -370,7 +370,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::Simplexify </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::Simplexify </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">geometry::Cell</a>&lt; 3, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8ba8266f450394588faba72187e1e7df">float_t</a>, <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>cell</em>, </td>
@@ -419,7 +419,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getNumPoints </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getNumPoints </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -449,7 +449,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getNumSimplexes </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getNumSimplexes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -483,7 +483,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8d3448450f06d16fd9b9d28869c15644">PointsViewType</a> &amp; <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getPointList </td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a8d3448450f06d16fd9b9d28869c15644">PointsViewType</a> &amp; <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getPointList </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -514,7 +514,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a7460d11c2cd443726f82c7e8ceea7a09">SimplexesViewType</a> &amp; <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getSimplexesList </td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a7460d11c2cd443726f82c7e8ceea7a09">SimplexesViewType</a> &amp; <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getSimplexesList </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -549,7 +549,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">auto</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getSubsimplexesListFacet </td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">auto</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::getSubsimplexesListFacet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#ab9453bd79ffa3c4afa5584d78dbbc552">index_t</a>&#160;</td>
           <td class="paramname"><em>face_id</em></td><td>)</td>
@@ -580,7 +580,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">constexpr</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::dim = SimplexifyEngine::dim</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">constexpr</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::dim = SimplexifyEngine::dim</td>
         </tr>
       </table>
   </td>
@@ -604,7 +604,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a7bac1eda54fdb1f19d0e72c5ad6f7358">SimplexifyEngine</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::m_engine</td>
+          <td class="memname"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html#a7bac1eda54fdb1f19d0e72c5ad6f7358">SimplexifyEngine</a> <a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">vulpes::geometry::Simplexify</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> &gt;::m_engine</td>
         </tr>
       </table>
   </td>
@@ -626,7 +626,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1Simplexify.html">Simplexify</a></li>
-    <li class="footer">Generated on Wed Mar 4 2026 16:16:50 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 16:58:12 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

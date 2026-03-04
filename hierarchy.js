@@ -266,6 +266,7 @@ var hierarchy =
     [ "vulpes::assemble::GatheredMonomial< Dim >", "structvulpes_1_1assemble_1_1GatheredMonomial.html", null ],
     [ "vulpes::assemble::internal::concat_tuples< T, U >", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples.html", null ],
     [ "vulpes::assemble::internal::concat_tuples< std::tuple< Ts... >, std::tuple< Us... > >", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5.html", null ],
+    [ "vulpes::assemble::ScalarExpressionIntegrator< MeshType, FeSpaceType, ExprType >", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html", null ],
     [ "vulpes::assemble::WeakFormIntegratorBase< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html", [
       [ "vulpes::assemble::WeakFormIntegratorGauss< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorGauss.html", null ],
       [ "vulpes::assemble::WeakFormIntegratorQFree< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html", null ],

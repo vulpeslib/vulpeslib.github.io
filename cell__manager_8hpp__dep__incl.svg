@@ -85,10 +85,10 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node7 -->
-<g id="Node000007" class="node">
-<title>Node7</title>
-<g id="a_Node000007"><a xlink:href="project__solution_8hpp.html" target="_top" xlink:title=" ">
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:href="project__solution_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="470.5,-195 342.5,-195 342.5,-154 470.5,-154 470.5,-195"/>
 <text text-anchor="start" x="350.5" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">/__w/vulpes/vulpes</text>
 <text text-anchor="start" x="350.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">/vulpes/postprocessing</text>
@@ -96,10 +96,10 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge7_Node000001_Node000007" class="edge">
-<title>Node1&#45;&gt;Node7</title>
-<g id="a_edge7_Node000001_Node000007"><a xlink:title=" ">
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge8_Node000001_Node000008" class="edge">
+<title>Node1&#45;&gt;Node8</title>
+<g id="a_edge8_Node000001_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M354.99,-223.79C365.09,-214.32 376.27,-203.84 385.62,-195.07"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="352.42,-221.4 347.52,-230.79 357.21,-226.51 352.42,-221.4"/>
 </a>
@@ -169,10 +169,10 @@ var sectionId = 'dynsection-1';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="integrator__vem_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="409,-41 256,-41 256,0 409,0 409,-41"/>
-<text text-anchor="start" x="264" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">/__w/vulpes/vulpes</text>
-<text text-anchor="start" x="264" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/vulpes/assemble/integrator</text>
-<text text-anchor="middle" x="332.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_vem.hpp</text>
+<polygon fill="white" stroke="#666666" points="333,-41 180,-41 180,0 333,0 333,-41"/>
+<text text-anchor="start" x="188" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">/__w/vulpes/vulpes</text>
+<text text-anchor="start" x="188" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/vulpes/assemble/integrator</text>
+<text text-anchor="middle" x="256.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_vem.hpp</text>
 </a>
 </g>
 </g>
@@ -180,17 +180,37 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M277.45,-70.07C288.27,-60.52 300.28,-49.93 310.32,-41.07"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="275.02,-67.55 269.83,-76.79 279.65,-72.8 275.02,-67.55"/>
+<path fill="none" stroke="#63b8ff" d="M251.08,-66.69C252.11,-58.08 253.21,-48.9 254.15,-41.07"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="247.58,-66.45 249.86,-76.79 254.53,-67.28 247.58,-66.45"/>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node5 -->
-<g id="edge6_Node000006_Node000005" class="edge">
+<g id="edge7_Node000006_Node000005" class="edge">
 <title>Node6&#45;&gt;Node5</title>
-<g id="a_edge6_Node000006_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M388.19,-70.07C377.25,-60.52 365.1,-49.93 354.94,-41.07"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="386.07,-72.86 395.9,-76.79 390.67,-67.58 386.07,-72.86"/>
+<g id="a_edge7_Node000006_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M367.14,-72.72C345.09,-62.51 319.64,-50.73 298.71,-41.04"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="365.81,-75.97 376.36,-76.99 368.76,-69.61 365.81,-75.97"/>
+</a>
+</g>
+</g>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:href="dg__utils_8hpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="477,-41 360,-41 360,0 477,0 477,-41"/>
+<text text-anchor="start" x="368" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">/__w/vulpes/vulpes</text>
+<text text-anchor="start" x="368" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/vulpes/assemble/dg</text>
+<text text-anchor="middle" x="418.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_utils.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node7 -->
+<g id="edge6_Node000006_Node000007" class="edge">
+<title>Node6&#45;&gt;Node7</title>
+<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M418.5,-66.69C418.5,-58.08 418.5,-48.9 418.5,-41.07"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="415,-66.79 418.5,-76.79 422,-66.79 415,-66.79"/>
 </a>
 </g>
 </g>

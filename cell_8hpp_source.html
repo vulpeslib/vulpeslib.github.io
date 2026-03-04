@@ -402,12 +402,12 @@ $(document).ready(function(){initNavTree('cell_8hpp_source.html',''); initResiza
 </div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keyword">template</span> &lt;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    std::size_t <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>,</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    std::size_t Dim,</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keyword">typename</span> <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>,</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keyword">typename</span> <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a>,</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keyword">typename</span> = std::enable_if_t&lt;(<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> == 2) || (<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> == 3)&gt;&gt;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keyword">typename</span> = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt;</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">  265</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">Cell</a> = std::conditional_t&lt;</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> == 2,</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    Dim == 2,</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <a class="code hl_class" href="classvulpes_1_1geometry_1_1Cell2D.html">Cell2D&lt;FloatType, IndexType&gt;</a>,</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <a class="code hl_class" href="classvulpes_1_1geometry_1_1Cell3D.html">Cell3D&lt;FloatType, IndexType&gt;</a>&gt;;</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
@@ -551,7 +551,7 @@ $(document).ready(function(){initNavTree('cell_8hpp_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="cell_8hpp.html">cell.hpp</a></li>
-    <li class="footer">Generated on Wed Mar 4 2026 16:16:49 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 16:58:11 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

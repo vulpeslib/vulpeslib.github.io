@@ -136,7 +136,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8f96b9aed1fbbb16d1a6a5d3ba20aaa9" id="r_a8f96b9aed1fbbb16d1a6a5d3ba20aaa9"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46ba4fc468e0fa2b852184332d38a33e">TagTable</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a8f96b9aed1fbbb16d1a6a5d3ba20aaa9">tags</a></td></tr>
+<tr class="memitem:a8f96b9aed1fbbb16d1a6a5d3ba20aaa9" id="r_a8f96b9aed1fbbb16d1a6a5d3ba20aaa9"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46ba4fc468e0fa2b852184332d38a33e">TagTable</a>, Dim+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a8f96b9aed1fbbb16d1a6a5d3ba20aaa9">tags</a></td></tr>
 <tr class="separator:a8f96b9aed1fbbb16d1a6a5d3ba20aaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -160,7 +160,7 @@ struct vulpes::geometry::MeshTag&lt; Dim, IndexType &gt;</div><p>A structure to 
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;::TagLabel =  std::string</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;::TagLabel =  std::string</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -178,7 +178,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;::TagTable =  std::unordered_map&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a0787e22d8218f850c9af7e986e814984">TagLabel</a>, std::vector&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a383b68b20a05a73df24c25de080c200f">TagType</a>&gt; &gt;</td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;::TagTable =  std::unordered_map&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a0787e22d8218f850c9af7e986e814984">TagLabel</a>, std::vector&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a383b68b20a05a73df24c25de080c200f">TagType</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -195,7 +195,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;::TagType =  <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a></td>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">using</a> <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;::TagType =  <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -214,7 +214,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46ba4fc468e0fa2b852184332d38a33e">TagTable</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> + 1&gt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;::tags</td>
+          <td class="memname">std::array&lt;<a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html#a46ba4fc468e0fa2b852184332d38a33e">TagTable</a>, Dim + 1&gt; <a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">vulpes::geometry::MeshTag</a>&lt; Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;::tags</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,7 +231,7 @@ template&lt;std::size_t Dim, <a class="el" href="namespacevulpes_1_1geometry.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="structvulpes_1_1geometry_1_1MeshTag.html">MeshTag</a></li>
-    <li class="footer">Generated on Wed Mar 4 2026 16:16:50 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 16:58:12 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

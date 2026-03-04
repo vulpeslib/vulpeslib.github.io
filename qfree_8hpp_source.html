@@ -171,12 +171,12 @@ $(document).ready(function(){initNavTree('qfree_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> FloatType, <span class="keyword">typename</span> IndexType&gt;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">class </span>Cell3D;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">template</span> &lt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    std::size_t <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a>,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    std::size_t Dim,</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">typename</span> <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>,</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">typename</span> <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a>,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">typename</span> = std::enable_if_t&lt;(<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> == 2) || (<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> == 3)&gt;&gt;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">typename</span> = std::enable_if_t&lt;(Dim == 2) || (Dim == 3)&gt;&gt;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">using </span><a class="code hl_typedef" href="namespacevulpes_1_1geometry.html#a9c09611cfe1534ef23da85c983c0aa1f">Cell</a> = std::conditional_t&lt;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Dim</a> == 2,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    Dim == 2,</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Cell2D&lt;FloatType, IndexType&gt;</a>,</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">Cell3D&lt;FloatType, IndexType&gt;</a>&gt;;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace geometry</span></div>
@@ -307,7 +307,7 @@ $(document).ready(function(){initNavTree('qfree_8hpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="qfree_8hpp.html">qfree.hpp</a></li>
-    <li class="footer">Generated on Wed Mar 4 2026 16:16:49 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 16:58:11 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
