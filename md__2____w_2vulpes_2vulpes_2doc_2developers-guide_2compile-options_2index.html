@@ -120,7 +120,10 @@ Background</h1>
 <h2><a class="anchor" id="autotoc_md20"></a>
 Day to day</h2>
 <p>If you are developing the library, you should pass most of you time in <code>Debug</code> mode, namely you should add to the <code>cmake</code> command </p><div class="fragment"><div class="line">-DCMAKE_BUILD_TYPE=Debug</div>
-</div><!-- fragment --><p>If you are developing serial code, it is highly suggested to use a memory sanitizer, which depending on you preferences could be the GNU debugger or Asan. In case of doubts, prefer the second. It is activated by adding the flag </p><div class="fragment"><div class="line">-DAsan=ON</div>
+</div><!-- fragment --><p>To speed up incremental rebuilds during development, enable the <b>developer mode</b>: </p><div class="fragment"><div class="line">-DDeveloper=ON</div>
+</div><!-- fragment --><p> This option activates <a href="https://ccache.dev/">ccache</a> (if installed), a compiler cache that avoids recompiling source files whose inputs have not changed. Install ccache with your system package manager (e.g. <code>apt install ccache</code> or <code>brew install ccache</code>) and then configure with <code>-DDeveloper=ON</code> to benefit from it.</p>
+<p><b>NOTE:</b> bundled thirdparty sources (qhull, voro++, triangle, tetgen) are always compiled into a separate static library (<code>vulpes_thirdparty</code>), so they are only recompiled when their own files change — not every time a Vulpes source file changes.</p>
+<p>If you are developing serial code, it is highly suggested to use a memory sanitizer, which depending on you preferences could be the GNU debugger or Asan. In case of doubts, prefer the second. It is activated by adding the flag </p><div class="fragment"><div class="line">-DAsan=ON</div>
 </div><!-- fragment --><p> <b>WARNING:</b> this flag conflict with MPI, so if you are developing parallel code you should not use it.</p>
 <p>For static analysis purposed, you may need to add the flag </p><div class="fragment"><div class="line">-DCMAKE_EXPORT_COMPILE_COMMANDS=ON</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
@@ -145,7 +148,7 @@ Check the compile commands</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 23 2026 13:45:12 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 10:31:57 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
