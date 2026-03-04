@@ -126,6 +126,7 @@ var namespacevulpes_1_1geometry =
     [ "centersRandomPointPickMap", "namespacevulpes_1_1geometry.html#a9d178ebc43b797c54211a2e1b48c0715", null ],
     [ "computeClosestCtrToCtrDist", "namespacevulpes_1_1geometry.html#aa4673a55de5020aacce47d07885b81f4", null ],
     [ "computeDistance", "namespacevulpes_1_1geometry.html#add0639d9d38f2a713d11dddebd31d03b", null ],
+    [ "computePeriodicShift", "namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb", null ],
     [ "exportMesh", "namespacevulpes_1_1geometry.html#a496dc31f3303aededdfd38a34f12ab4e", null ],
     [ "operator&", "namespacevulpes_1_1geometry.html#a6a9e5e09036a979b348aa0dcf7c2cabf", null ],
     [ "operator-", "namespacevulpes_1_1geometry.html#ace6f17c7eb014ded29c2dd35e3ed860c", null ],

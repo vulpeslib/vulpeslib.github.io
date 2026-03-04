@@ -134,8 +134,73 @@ Functions</h2></td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ab47891e1f6b99bc401b5cd2396f373fb">computeError</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_exact, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;matrix)</td></tr>
 <tr class="memdesc:ab47891e1f6b99bc401b5cd2396f373fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the error between a discrete solution and an exact one.  <br /></td></tr>
 <tr class="separator:ab47891e1f6b99bc401b5cd2396f373fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9164924c547e4576328d228e5d6a9a" id="r_a2f9164924c547e4576328d228e5d6a9a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a2f9164924c547e4576328d228e5d6a9a">computeAverage</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;rhs_const, double domain_measure)</td></tr>
+<tr class="memdesc:a2f9164924c547e4576328d228e5d6a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the spatial average of a function in modal/DG space.  <br /></td></tr>
+<tr class="separator:a2f9164924c547e4576328d228e5d6a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb84be46515d1b568eb329d2b2a7fe8d" id="r_adb84be46515d1b568eb329d2b2a7fe8d"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
+<tr class="memitem:adb84be46515d1b568eb329d2b2a7fe8d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#adb84be46515d1b568eb329d2b2a7fe8d">projectConstantOntoModalSpace</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, double constant_value, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_matrix, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;rhs_const)</td></tr>
+<tr class="memdesc:adb84be46515d1b568eb329d2b2a7fe8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Project a constant value onto modal DG space using L2 projection.  <br /></td></tr>
+<tr class="separator:adb84be46515d1b568eb329d2b2a7fe8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f07f81661669f07b85286c79f2ef2d" id="r_a98f07f81661669f07b85286c79f2ef2d"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
+<tr class="memitem:a98f07f81661669f07b85286c79f2ef2d"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a98f07f81661669f07b85286c79f2ef2d">forceEqualMean</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_reference, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_matrix, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;rhs_const, double domain_measure)</td></tr>
+<tr class="memdesc:a98f07f81661669f07b85286c79f2ef2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust a solution to match the average of a reference solution.  <br /></td></tr>
+<tr class="separator:a98f07f81661669f07b85286c79f2ef2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a2f9164924c547e4576328d228e5d6a9a" name="a2f9164924c547e4576328d228e5d6a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9164924c547e4576328d228e5d6a9a">&#9670;&#160;</a></span>computeAverage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double vulpes::assemble::dg::computeAverage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs_const</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>domain_measure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute the spatial average of a function in modal/DG space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>The solution vector in modal coefficients </td></tr>
+    <tr><td class="paramname">rhs_const</td><td>The RHS vector from assembling constant*v dx </td></tr>
+    <tr><td class="paramname">domain_measure</td><td>The measure (volume/area) of the domain </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The spatial average: (1/|Domain|) * integral of u over domain </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This requires rhs_const assembled from integrating the constant function 1.0 with test functions: rhs_const_i = int_K 1 * v_i dx </dd></dl>
+
+</div>
+</div>
 <a id="ab47891e1f6b99bc401b5cd2396f373fb" name="ab47891e1f6b99bc401b5cd2396f373fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab47891e1f6b99bc401b5cd2396f373fb">&#9670;&#160;</a></span>computeError()</h2>
 
@@ -337,6 +402,142 @@ template&lt;std::size_t Dim&gt; </div>
 
 </div>
 </div>
+<a id="a98f07f81661669f07b85286c79f2ef2d" name="a98f07f81661669f07b85286c79f2ef2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f07f81661669f07b85286c79f2ef2d">&#9670;&#160;</a></span>forceEqualMean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double vulpes::assemble::dg::forceEqualMean </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>u_reference</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>mass_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs_const</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>domain_measure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adjust a solution to match the average of a reference solution. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshType</td><td>Type of the mesh </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dof_handler</td><td>The DOF handler </td></tr>
+    <tr><td class="paramname">u</td><td>The solution vector to modify (modified in place) </td></tr>
+    <tr><td class="paramname">u_reference</td><td>The reference solution </td></tr>
+    <tr><td class="paramname">mass_matrix</td><td>The L2 mass matrix </td></tr>
+    <tr><td class="paramname">rhs_const</td><td>The RHS from assembling constant*v dx </td></tr>
+    <tr><td class="paramname">domain_measure</td><td>The measure (volume/area) of the domain </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The shift value applied in physical space </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use this to remove arbitrary constants from periodic/Neumann problems by forcing numerical solution to match reference solution's average. </dd></dl>
+
+</div>
+</div>
+<a id="adb84be46515d1b568eb329d2b2a7fe8d" name="adb84be46515d1b568eb329d2b2a7fe8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb84be46515d1b568eb329d2b2a7fe8d">&#9670;&#160;</a></span>projectConstantOntoModalSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> vulpes::assemble::dg::projectConstantOntoModalSpace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>constant_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>mass_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs_const</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Project a constant value onto modal DG space using L2 projection. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshType</td><td>Type of the mesh </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dof_handler</td><td>The DOF handler </td></tr>
+    <tr><td class="paramname">constant_value</td><td>The constant value to project </td></tr>
+    <tr><td class="paramname">mass_matrix</td><td>The L2 mass matrix </td></tr>
+    <tr><td class="paramname">rhs_const</td><td>The RHS from assembling constant*v dx </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modal coefficients representing the projected constant </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Solves the linear system: M * c_proj = constant_value * rhs_const. This properly projects a constant function into finite element space. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -344,7 +545,7 @@ template&lt;std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Wed Mar 4 2026 16:13:59 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 16:16:49 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

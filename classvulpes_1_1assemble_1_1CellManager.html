@@ -171,6 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acfe73e886bb95a67ed3fc1cb6c6d3d96" id="r_acfe73e886bb95a67ed3fc1cb6c6d3d96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html">NeighInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#acfe73e886bb95a67ed3fc1cb6c6d3d96">findCellNeigh</a> (<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a> cell_id, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a> loc_face_id)</td></tr>
 <tr class="memdesc:acfe73e886bb95a67ed3fc1cb6c6d3d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the cell id of the neighbour of a cell given the face id in local cell enumeration.  <br /></td></tr>
 <tr class="separator:acfe73e886bb95a67ed3fc1cb6c6d3d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c3f44b9671e8db12f7d74f1c8d127b" id="r_a61c3f44b9671e8db12f7d74f1c8d127b"><td class="memItemLeft" align="right" valign="top">Eigen::Array&lt; double, MeshType::self_dim, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a61c3f44b9671e8db12f7d74f1c8d127b">getPeriodicShift</a> (<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a> neigh_cell_id, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a> current_cell_id) const</td></tr>
+<tr class="memdesc:a61c3f44b9671e8db12f7d74f1c8d127b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the periodic shift needed for neighbor cell coordinate transformation.  <br /></td></tr>
+<tr class="separator:a61c3f44b9671e8db12f7d74f1c8d127b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -521,6 +524,55 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 
 </div>
 </div>
+<a id="a61c3f44b9671e8db12f7d74f1c8d127b" name="a61c3f44b9671e8db12f7d74f1c8d127b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c3f44b9671e8db12f7d74f1c8d127b">&#9670;&#160;</a></span>getPeriodicShift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeSpaceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Array&lt; double, MeshType::self_dim, 1 &gt; <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">vulpes::assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt;::getPeriodicShift </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a>&#160;</td>
+          <td class="paramname"><em>neigh_cell_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#a4a7b24ddcb6c0b191e3b7398bcef2168">index_t</a>&#160;</td>
+          <td class="paramname"><em>current_cell_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the periodic shift needed for neighbor cell coordinate transformation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">neigh_cell_id</td><td>Neighbor cell ID </td></tr>
+    <tr><td class="paramname">current_cell_id</td><td>Current cell ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Periodic shift in PHYSICAL coordinates (+/- period per wrapped dimension)</dd></dl>
+<p>Extracts period values from mesh metadata and delegates geometric calculation to <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb" title="Compute periodic shift between two cells based on bboxes.">geometry::computePeriodicShift</a>. Returns zero if cells are not initialized. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a4205e10b1a6b29ef7dd1d3be948be65e" name="a4205e10b1a6b29ef7dd1d3be948be65e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4205e10b1a6b29ef7dd1d3be948be65e">&#9670;&#160;</a></span>dim</h2>
@@ -702,7 +754,7 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a></li>
-    <li class="footer">Generated on Wed Mar 4 2026 16:13:59 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 16:16:49 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -55,6 +55,7 @@
     <path>/__w/vulpes/vulpes/vulpes/assemble/</path>
     <filename>cell__manager_8hpp.html</filename>
     <includes id="cell_8hpp" name="cell.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/cell.hpp</includes>
+    <includes id="mapping_8hpp" name="mapping.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/mapping.hpp</includes>
     <includes id="mesh_8hpp" name="mesh.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/mesh.hpp</includes>
     <includes id="profiler_8hpp" name="profiler.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/profiler.hpp</includes>
     <class kind="class">vulpes::assemble::CellManager</class>
@@ -69,6 +70,7 @@
     <includes id="dof__handler_8hpp" name="dof_handler.hpp" local="yes" import="no" module="no" objc="no">vulpes/dofs/dof_handler.hpp</includes>
     <includes id="fe__expression_8hpp" name="fe_expression.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expression.hpp</includes>
     <includes id="fe__values_8hpp" name="fe_values.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_values.hpp</includes>
+    <includes id="linear__solver_8hpp" name="linear_solver.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/linear_solver.hpp</includes>
     <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
     <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
     <namespace>vulpes</namespace>
@@ -2412,6 +2414,13 @@
       <anchorfile>classvulpes_1_1assemble_1_1CellManager.html</anchorfile>
       <anchor>acfe73e886bb95a67ed3fc1cb6c6d3d96</anchor>
       <arglist>(index_t cell_id, index_t loc_face_id)</arglist>
+    </member>
+    <member kind="function">
+      <type>Eigen::Array&lt; double, MeshType::self_dim, 1 &gt;</type>
+      <name>getPeriodicShift</name>
+      <anchorfile>classvulpes_1_1assemble_1_1CellManager.html</anchorfile>
+      <anchor>a61c3f44b9671e8db12f7d74f1c8d127b</anchor>
+      <arglist>(index_t neigh_cell_id, index_t current_cell_id) const</arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static constexpr std::size_t</type>
@@ -18311,6 +18320,13 @@
       <arglist>(const SparseMatrix &amp;other, PetscScalar scale, MatStructure str=UNKNOWN_NONZERO_PATTERN)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>pinDof</name>
+      <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
+      <anchor>ab98c0a7df2d200286d590c2e4737e9a8</anchor>
+      <arglist>(PetscInt dof_idx, PetscScalar value=1.0)</arglist>
+    </member>
+    <member kind="function">
       <type></type>
       <name>~SparseMatrix</name>
       <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
@@ -24284,6 +24300,27 @@
       <anchor>ab47891e1f6b99bc401b5cd2396f373fb</anchor>
       <arglist>(const dofs::DofHandler&lt; MeshType &gt; &amp;dof_handler, const la::Vector &amp;u_h, const la::Vector &amp;u_exact, const la::SparseMatrix &amp;matrix)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>computeAverage</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a2f9164924c547e4576328d228e5d6a9a</anchor>
+      <arglist>(const la::Vector &amp;u, const la::Vector &amp;rhs_const, double domain_measure)</arglist>
+    </member>
+    <member kind="function">
+      <type>la::Vector</type>
+      <name>projectConstantOntoModalSpace</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>adb84be46515d1b568eb329d2b2a7fe8d</anchor>
+      <arglist>(const dofs::DofHandler&lt; MeshType &gt; &amp;dof_handler, double constant_value, const la::SparseMatrix &amp;mass_matrix, const la::Vector &amp;rhs_const)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>forceEqualMean</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a98f07f81661669f07b85286c79f2ef2d</anchor>
+      <arglist>(const dofs::DofHandler&lt; MeshType &gt; &amp;dof_handler, la::Vector &amp;u, const la::Vector &amp;u_reference, const la::SparseMatrix &amp;mass_matrix, const la::Vector &amp;rhs_const, double domain_measure)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>vulpes::assemble::internal</name>
@@ -25468,6 +25505,13 @@
       <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
       <anchor>aa4673a55de5020aacce47d07885b81f4</anchor>
       <arglist>(const Eigen::Matrix&lt; T, Eigen::Dynamic, Eigen::Dynamic &gt; &amp;mat)</arglist>
+    </member>
+    <member kind="function">
+      <type>Eigen::Array&lt; double, Dim, 1 &gt;</type>
+      <name>computePeriodicShift</name>
+      <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
+      <anchor>a3a5283ac7f4816cc8964805a225338bb</anchor>
+      <arglist>(const Eigen::Matrix&lt; double, Dim, 2 &gt; &amp;curr_bbox, const Eigen::Matrix&lt; double, Dim, 2 &gt; &amp;neigh_bbox, const Eigen::Array&lt; double, Dim, 1 &gt; &amp;period)</arglist>
     </member>
     <member kind="function">
       <type>void</type>

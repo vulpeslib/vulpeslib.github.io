@@ -38,6 +38,7 @@ var classvulpes_1_1la_1_1SparseMatrix =
     [ "norm", "classvulpes_1_1la_1_1SparseMatrix.html#a35cd15f2134a65e73cdaed4c467e446a", null ],
     [ "operator=", "classvulpes_1_1la_1_1SparseMatrix.html#aa7597c21e1854b3f6df54942c05248d7", null ],
     [ "operator=", "classvulpes_1_1la_1_1SparseMatrix.html#a2d9d606e5f096a9e8523504a8b62af7f", null ],
+    [ "pinDof", "classvulpes_1_1la_1_1SparseMatrix.html#ab98c0a7df2d200286d590c2e4737e9a8", null ],
     [ "print", "classvulpes_1_1la_1_1SparseMatrix.html#a9b01eebc30786b2e14701c7adf8a2c63", null ],
     [ "save", "classvulpes_1_1la_1_1SparseMatrix.html#a8fd0d2aa5bf7e9b80ec3fe850cf153ef", null ],
     [ "setMatrixSizes", "classvulpes_1_1la_1_1SparseMatrix.html#accea9d1a8604072dd8c3b0e3de5aa70b", null ],

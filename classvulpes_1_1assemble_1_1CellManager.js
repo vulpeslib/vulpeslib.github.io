@@ -12,6 +12,7 @@ var classvulpes_1_1assemble_1_1CellManager =
     [ "getFeSpace", "classvulpes_1_1assemble_1_1CellManager.html#a291452dafce2e60bc4f4afb077d514dc", null ],
     [ "getMapping", "classvulpes_1_1assemble_1_1CellManager.html#aafb3befca9ee98431b9cff5e16b7987e", null ],
     [ "getMesh", "classvulpes_1_1assemble_1_1CellManager.html#aff17d22eb06001ff4df758bdf47ec2df", null ],
+    [ "getPeriodicShift", "classvulpes_1_1assemble_1_1CellManager.html#a61c3f44b9671e8db12f7d74f1c8d127b", null ],
     [ "dim", "classvulpes_1_1assemble_1_1CellManager.html#a4205e10b1a6b29ef7dd1d3be948be65e", null ],
     [ "m_cell_is_normalized", "classvulpes_1_1assemble_1_1CellManager.html#aac22baa4cef14c82ab277356c24aab4f", null ],
     [ "m_cell_to_facet_neigh", "classvulpes_1_1assemble_1_1CellManager.html#a3bdb5bd9a6b66f6e017e79f5ba40079b", null ],

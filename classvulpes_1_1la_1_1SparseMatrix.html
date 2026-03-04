@@ -229,6 +229,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af1c99f87f436eb3b562270b84843f2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7ad1d7bc0162d4e11d64f6f9481bff" id="r_a7a7ad1d7bc0162d4e11d64f6f9481bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a7a7ad1d7bc0162d4e11d64f6f9481bff">addScaledMatrix</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;other, PetscScalar scale, MatStructure str=UNKNOWN_NONZERO_PATTERN)</td></tr>
 <tr class="separator:a7a7ad1d7bc0162d4e11d64f6f9481bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98c0a7df2d200286d590c2e4737e9a8" id="r_ab98c0a7df2d200286d590c2e4737e9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ab98c0a7df2d200286d590c2e4737e9a8">pinDof</a> (PetscInt dof_idx, PetscScalar value=1.0)</td></tr>
+<tr class="memdesc:ab98c0a7df2d200286d590c2e4737e9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin a degree of freedom to enforce a constraint This performs symmetric elimination: sets row and column of the specified DOF to zero, except the diagonal which is set to 1.0. This removes a DOF from the system and is useful for enforcing Dirichlet BCs or removing null space (e.g., constant modes in periodic problems). The corresponding RHS entry should be set to the desired value.  <br /></td></tr>
+<tr class="separator:ab98c0a7df2d200286d590c2e4737e9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a915b36d629448243ec1091dfe1dc5af3" id="r_a915b36d629448243ec1091dfe1dc5af3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a915b36d629448243ec1091dfe1dc5af3">~SparseMatrix</a> ()</td></tr>
 <tr class="separator:a915b36d629448243ec1091dfe1dc5af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1413,6 +1416,44 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
+<a id="ab98c0a7df2d200286d590c2e4737e9a8" name="ab98c0a7df2d200286d590c2e4737e9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98c0a7df2d200286d590c2e4737e9a8">&#9670;&#160;</a></span>pinDof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::SparseMatrix::pinDof </td>
+          <td>(</td>
+          <td class="paramtype">PetscInt&#160;</td>
+          <td class="paramname"><em>dof_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PetscScalar&#160;</td>
+          <td class="paramname"><em>value</em> = <code>1.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin a degree of freedom to enforce a constraint This performs symmetric elimination: sets row and column of the specified DOF to zero, except the diagonal which is set to 1.0. This removes a DOF from the system and is useful for enforcing Dirichlet BCs or removing null space (e.g., constant modes in periodic problems). The corresponding RHS entry should be set to the desired value. </p>
+<dl class="section note"><dt>Note</dt><dd>Before calling this method, the matrix object must be in compressed state, e.g. by means of <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a5a2e77008ac580d6a1de753cb1ec7316" title="Finalize the assembly of the matrix by doing intracommunication.">SparseMatrix::compress()</a>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dof_idx</td><td>The global index of the DOF to pin </td></tr>
+    <tr><td class="paramname">value</td><td>The diagonal value to set (default 1.0) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9b01eebc30786b2e14701c7adf8a2c63" name="a9b01eebc30786b2e14701c7adf8a2c63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b01eebc30786b2e14701c7adf8a2c63">&#9670;&#160;</a></span>print()</h2>
 
@@ -1723,7 +1764,7 @@ template&lt;typename DofHandler &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a></li>
-    <li class="footer">Generated on Wed Mar 4 2026 16:13:59 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 4 2026 16:16:50 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
