@@ -129,6 +129,7 @@ var hierarchy =
       [ "Eigen::internal::evaluator< EigenVulpes::RowMat< RowId, ArgType > >", "structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html", null ],
       [ "Eigen::internal::evaluator< EigenVulpes::SymMat< CrossId, ArgType > >", "structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExactExpressionFeProjection< Dim, FeSpace, DofHandler, 1 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionCellConstant< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionCellConstant< Dim >", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html", null ]
     ] ],
@@ -193,8 +194,8 @@ var hierarchy =
     [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicy, FeSpaceModalP< Dim, DofPolicy > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
       [ "vulpes::fe::FeSpaceModalP< Dim, DofPolicy >", "classvulpes_1_1fe_1_1FeSpaceModalP.html", null ]
     ] ],
-    [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicy, FeSpaceModalQ< Dim, DofPolicy > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
-      [ "vulpes::fe::FeSpaceModalQ< Dim, DofPolicy >", "classvulpes_1_1fe_1_1FeSpaceModalQ.html", null ]
+    [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicy, FeSpaceModalQ< Dim, DofPolicy, Testing > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
+      [ "vulpes::fe::FeSpaceModalQ< Dim, DofPolicy, Testing >", "classvulpes_1_1fe_1_1FeSpaceModalQ.html", null ]
     ] ],
     [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicyFeSpaceVEM< Dim >, FeSpaceVEM< Dim > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
       [ "vulpes::fe::FeSpaceVEM< Dim >", "classvulpes_1_1fe_1_1FeSpaceVEM.html", null ]
@@ -287,6 +288,7 @@ var hierarchy =
     [ "vulpes::dofs::DofHandler< MeshType >", "classvulpes_1_1dofs_1_1DofHandler.html", null ],
     [ "vulpes::fe::DofPolicyBase< Dim, DofPolicy >", "structvulpes_1_1fe_1_1DofPolicyBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpression >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExactExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", null ],
       [ "vulpes::fe::FeExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html", null ],
       [ "vulpes::fe::FeExpressionFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionFunc.html", null ],
       [ "vulpes::fe::FeExpressionFunctionWrapper< Dim, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html", null ],

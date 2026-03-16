@@ -12,7 +12,7 @@ var searchData=
   ['ndpolynomial_9',['NdPolynomial',['../namespacevulpes_1_1polynomial.html#a75599e84a0a9593e9442ee310abb0ff5',1,'vulpes::polynomial']]],
   ['ndpolynomial_2ehpp_10',['ndpolynomial.hpp',['../ndpolynomial_8hpp.html',1,'']]],
   ['nedges_11',['nedges',['../classvulpes_1_1geometry_1_1Cell2D.html#a74f6813c81cb576cb7fb74b66f0b8ba9',1,'vulpes::geometry::Cell2D::nedges()'],['../classvulpes_1_1geometry_1_1Cell3D.html#ae9f0cf32f4fa3e6009ef2403a3be1357',1,'vulpes::geometry::Cell3D::nedges()']]],
-  ['needbasisscaling_12',['needbasisscaling',['../classvulpes_1_1fe_1_1FeSpaceBase.html#a60c34c5f700be623951082d841403778',1,'vulpes::fe::FeSpaceBase::needBasisScaling()'],['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#a32a2a6c7d748d31e2b5b30c4836d6fea',1,'vulpes::fe::FeSpaceModalQ::needBasisScaling()']]],
+  ['needbasisscaling_12',['needbasisscaling',['../classvulpes_1_1fe_1_1FeSpaceBase.html#a60c34c5f700be623951082d841403778',1,'vulpes::fe::FeSpaceBase::needBasisScaling()'],['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#a66487ff2295a86290630f9422fa755a7',1,'vulpes::fe::FeSpaceModalQ::needBasisScaling()']]],
   ['neigh_13',['neigh',['../namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470',1,'vulpes::fe']]],
   ['neigh_5fcell_5fid_14',['neigh_cell_id',['../structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a27a374284a93dec6ed6f46c169ab4677',1,'vulpes::assemble::CellManager::NeighInfo']]],
   ['neighinfo_15',['NeighInfo',['../structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html',1,'vulpes::assemble::CellManager']]],

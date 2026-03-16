@@ -28,6 +28,8 @@ var classvulpes_1_1la_1_1Vector =
     [ "insertValues", "classvulpes_1_1la_1_1Vector.html#a08a6d51971d8ab8c3f9f6bdfd3452f5f", null ],
     [ "insertValuesBlocked", "classvulpes_1_1la_1_1Vector.html#a4bf94744289bfda2394c469027f523f8", null ],
     [ "insertValuesBlocked", "classvulpes_1_1la_1_1Vector.html#a6dda10fde6e3f6a06d9e1af443a87043", null ],
+    [ "max", "classvulpes_1_1la_1_1Vector.html#a495889b748b78172c79eb915b0fd4a2e", null ],
+    [ "min", "classvulpes_1_1la_1_1Vector.html#ae8c4e75f194e6d4ec23b5e090c831865", null ],
     [ "norm", "classvulpes_1_1la_1_1Vector.html#a38a2ad79a5bab8d501e933cbd0021de7", null ],
     [ "operator=", "classvulpes_1_1la_1_1Vector.html#af7f2275cab5a735d0c45bbf46b1a4fbc", null ],
     [ "pow", "classvulpes_1_1la_1_1Vector.html#a848f42a1d3054f947c33c5736d33cd11", null ],

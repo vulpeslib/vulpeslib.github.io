@@ -14,7 +14,7 @@ var searchData=
   ['fespacelagrangedp_11',['FeSpaceLagrangeDP',['../namespacevulpes_1_1fe.html#af30448e7da7545f7abafd001dd487b5a',1,'vulpes::fe']]],
   ['fespacelagrangedq_12',['FeSpaceLagrangeDQ',['../namespacevulpes_1_1fe.html#a0b5f00f2f85fe9f07d65efbb09d701a5',1,'vulpes::fe']]],
   ['fespacemodallegendredp_13',['FeSpaceModalLegendreDP',['../namespacevulpes_1_1fe.html#a45667ebd33208ca3c2f00200a1c6fae9',1,'vulpes::fe']]],
-  ['fespacemodallegendredq_14',['FeSpaceModalLegendreDQ',['../namespacevulpes_1_1fe.html#aa900a9c8403894acdcbe5919e4944c64',1,'vulpes::fe']]],
+  ['fespacemodallegendredq_14',['FeSpaceModalLegendreDQ',['../namespacevulpes_1_1fe.html#a229d447c1b547c2ac05db7ceb3241a1c',1,'vulpes::fe']]],
   ['fespacespectralcp_15',['FeSpaceSpectralCP',['../namespacevulpes_1_1fe.html#a5b02fefffe02f141356f10fc50939632',1,'vulpes::fe']]],
   ['fespacespectralcq_16',['FeSpaceSpectralCQ',['../namespacevulpes_1_1fe.html#aaa50172ce0a62935d383460e78d962ef',1,'vulpes::fe']]],
   ['fespacespectraldp_17',['FeSpaceSpectralDP',['../namespacevulpes_1_1fe.html#aa87cba6aa045e3438e3304d00bba95e6',1,'vulpes::fe']]],
