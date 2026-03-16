@@ -1,19 +1,19 @@
 var classvulpes_1_1fe_1_1FeSpaceModalQ =
 [
     [ "FeSpaceType", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a1c77ee7ffd70d229378324aa593113aa", null ],
-    [ "Polynomial", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#af7fa667658ffbbcb0f4cb0a0e3349b6b", null ],
-    [ "PolynomialFast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a7e6dad907982fbf135c0fee9563d7880", null ],
+    [ "Polynomial", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a01197ce7f4579d6e21eacbbd5ed65960", null ],
+    [ "PolynomialFast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#acd193d76a26acef4bcfb9b7fc91b4889", null ],
     [ "real_t", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a4b62e1349bc842589144be01b5ddf8a1", null ],
-    [ "FeSpaceModalQ", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a6fb0c7b7e0f1428eec877cd49f805a93", null ],
-    [ "cellInitOptions", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ad3d46469a8b59f764ac433584b320776", null ],
+    [ "FeSpaceModalQ", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a37dd8aafbd6e7670542f96a93fa46d1c", null ],
+    [ "cellInitOptions", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ae32e0aa746183d6358b1062e8cc2365b", null ],
     [ "dofsInteractionDistance", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#aeb208ea0945d45813dac88e764210214", null ],
     [ "dofToCellDof", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ab22e42a79b20189abf2fca0987c7eeab", null ],
-    [ "elemType", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ad37a5784dc53e5142ca5878db6d6d376", null ],
-    [ "getBasis", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a5a8b404b4c27aae4a4eadd5e1a78940e", null ],
-    [ "getBasisFast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a3e8bdaa0ed83f35248a21d63c2e59ae9", null ],
-    [ "getMapping", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ac9ec9779eb6c349479e23a4eb4d461c5", null ],
+    [ "elemType", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#aaf4191d724b86d832e1063b36da80996", null ],
+    [ "getBasis", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a043a1429e7ffcb03623189dc7c6ff673", null ],
+    [ "getBasisFast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#aa542b2a54e56b3cd5194961a135bb1a9", null ],
+    [ "getMapping", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a170370f20450ed3223e8db21a2423002", null ],
     [ "getNumDofsForSubdimEntity", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a15a31ef849ae2ea3237a0f28ccda0ac7", null ],
-    [ "needBasisScaling", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a66487ff2295a86290630f9422fa755a7", null ],
+    [ "needBasisScaling", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a32a2a6c7d748d31e2b5b30c4836d6fea", null ],
     [ "order", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#af644ca63b73d22f902f2857a488e2efa", null ],
     [ "self", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a88e3c3ac717ace22ae95ebdc3624e251", null ],
     [ "self", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ab5390edfdbb28c033cb4fbd3aea88b30", null ],
@@ -22,6 +22,6 @@ var classvulpes_1_1fe_1_1FeSpaceModalQ =
     [ "m_dof_policy", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#aceb15ad95a454121903eb59722318ccd", null ],
     [ "m_dofs_for_subdim_entity", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ad7aff99f6ff1b6136e866875598853d9", null ],
     [ "m_order", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a989a07812458925373f39087926f0cca", null ],
-    [ "m_polys", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a566af16b410c98308c97bb2ec8f98850", null ],
-    [ "m_polys_fast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a729d7e5cd33204874e4c450865210762", null ]
+    [ "m_polys", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a62274af4cc9434b367925b4a755fa5fc", null ],
+    [ "m_polys_fast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a5a127ee22655acc4e7ec00e623ef263b", null ]
 ];

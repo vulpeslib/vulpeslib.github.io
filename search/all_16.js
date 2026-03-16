@@ -57,7 +57,7 @@ var searchData=
   ['setrelativetolerance_54',['setRelativeTolerance',['../classvulpes_1_1la_1_1LinearSolver.html#a73e330a01f5cc9fe712f1e44cd77f7db',1,'vulpes::la::LinearSolver']]],
   ['setsorparameters_55',['setSORParameters',['../classvulpes_1_1la_1_1LinearSolver.html#a0bed16441050905be35a63f79c49ea9b',1,'vulpes::la::LinearSolver']]],
   ['settolerances_56',['setTolerances',['../classvulpes_1_1la_1_1LinearSolver.html#aa5a79814701cddee255d480c046361ef',1,'vulpes::la::LinearSolver']]],
-  ['settype_57',['settype',['../classvulpes_1_1geometry_1_1ParallelMesh.html#abf5f121d50a478f6065276c6b2959759',1,'vulpes::geometry::ParallelMesh::SetType'],['../classvulpes_1_1la_1_1LinearSolver.html#a238ac6e06df1ea25aca74de2fe9e77af',1,'vulpes::la::LinearSolver::setType()']]],
+  ['settype_57',['settype',['../classvulpes_1_1la_1_1LinearSolver.html#a238ac6e06df1ea25aca74de2fe9e77af',1,'vulpes::la::LinearSolver::setType()'],['../classvulpes_1_1geometry_1_1ParallelMesh.html#abf5f121d50a478f6065276c6b2959759',1,'vulpes::geometry::ParallelMesh::SetType']]],
   ['setup_58',['Developers Setup',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index.html',1,'']]],
   ['setupvector_59',['setupVector',['../classvulpes_1_1la_1_1Vector.html#a60b669d77b29b690636c3e572ed13afe',1,'vulpes::la::Vector']]],
   ['setvalue_60',['setValue',['../classvulpes_1_1la_1_1Vector.html#a3f2e4e7c85599361fa0c2a30c8bce237',1,'vulpes::la::Vector']]],

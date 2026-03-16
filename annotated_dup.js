@@ -68,7 +68,6 @@ var annotated_dup =
         [ "DofPolicyFeSpaceDP", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDP" ],
         [ "DofPolicyFeSpaceDQ", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ" ],
         [ "DofPolicyFeSpaceVEM", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM" ],
-        [ "FeExactExpressionFeProjection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection" ],
         [ "FeExpressionBase", "classvulpes_1_1fe_1_1FeExpressionBase.html", "classvulpes_1_1fe_1_1FeExpressionBase" ],
         [ "FeExpressionCellConstant", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html", "classvulpes_1_1fe_1_1FeExpressionCellConstant" ],
         [ "FeExpressionCellConstantNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh" ],

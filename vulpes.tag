@@ -415,7 +415,6 @@
     <class kind="class">vulpes::fe::FeExpressionSkipper</class>
     <class kind="class">vulpes::fe::FeExpressionFunctionWrapper</class>
     <class kind="class">vulpes::fe::FeExpressionFeProjection</class>
-    <class kind="class">vulpes::fe::FeExactExpressionFeProjection</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::fe</namespace>
   </compound>
@@ -891,7 +890,6 @@
     <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
     <includes id="profiler_8hpp" name="profiler.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/profiler.hpp</includes>
     <includes id="vvutils_8hpp" name="vvutils.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/vvutils.hpp</includes>
-    <includes id="pcout_8hpp" name="pcout.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/pcout.hpp</includes>
     <class kind="class">vulpes::geometry::ParallelMesh</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::geometry</namespace>
@@ -6941,183 +6939,6 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>vulpes::fe::FeExactExpressionFeProjection</name>
-    <filename>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</filename>
-    <templarg>std::size_t Dim</templarg>
-    <templarg>typename FeSpace</templarg>
-    <templarg>typename DofHandler</templarg>
-    <templarg>std::size_t OutputDim</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
-    <member kind="typedef">
-      <type>std::conditional_t&lt; OutputDim==1, double, Eigen::Vector&lt; double, OutputDim &gt; &gt;</type>
-      <name>OutputType</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>ab80d992ff0deec8a04e06eea8a41a4c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>void</type>
-      <name>FeSpaceType</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>aba0b18cd54e491637f9cbbb0d8ee4660</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>constexpr</type>
-      <name>FeExactExpressionFeProjection</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>abd99671bae6814bd7d8ca9f590370059</anchor>
-      <arglist>(const la::Vector &amp;projection, const FeSpace &amp;fe_space, const DofHandler &amp;dof_handler)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>FeExactExpressionFeProjection</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a1f61d25eac796df2e2b6de769c9d9093</anchor>
-      <arglist>(const FeExactExpressionFeProjection &amp;)=delete</arglist>
-    </member>
-    <member kind="function">
-      <type>FeExactExpressionFeProjection &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a7611c8c4594c4a21a8ef8e7cf9ce0766</anchor>
-      <arglist>(const FeExactExpressionFeProjection &amp;)=delete</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>FeExactExpressionFeProjection</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a643333b55562816567a4157b17501114</anchor>
-      <arglist>(FeExactExpressionFeProjection &amp;&amp;)=delete</arglist>
-    </member>
-    <member kind="function">
-      <type>FeExactExpressionFeProjection &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>aa407aa918472cd2e3528d0ad984ec67a</anchor>
-      <arglist>(FeExactExpressionFeProjection &amp;&amp;)=delete</arglist>
-    </member>
-    <member kind="function">
-      <type>decltype(auto)</type>
-      <name>evaluate</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>aa270ed7f5387bff15bb69996d548f4ac</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t q) const</arglist>
-    </member>
-    <member kind="function">
-      <type>decltype(auto)</type>
-      <name>evaluatePoly</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>ad89aed4ecbf255d7e3df0737f427adc9</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t, std::size_t) const</arglist>
-    </member>
-    <member kind="function">
-      <type>decltype(auto)</type>
-      <name>evaluatePolyCoef</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a54edbb07bb3a266db4472447ba13afce</anchor>
-      <arglist>(const auto &amp;, const auto &amp;fe_values, std::size_t, std::size_t) const</arglist>
-    </member>
-    <member kind="function">
-      <type>constexpr UpdateFlagsType</type>
-      <name>computeUpdateFlags</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a2060a97b5504750c3b3ed23c2b2c3fc6</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>constexpr std::size_t</type>
-      <name>computeOrder</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a3042f7cf2bda438cf047fb8316c84ab2</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>constexpr bool</type>
-      <name>precompute</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a20238acff7e9f6953c28e6e6291113c2</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;) const</arglist>
-    </member>
-    <member kind="function">
-      <type>constexpr const auto &amp;</type>
-      <name>feSpace</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>af0333705ad7416bd31da37eb47dd3491</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
-      <name>operator-</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>aa194506aca4e759376e053023687b62b</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr bool</type>
-      <name>is_leaf</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>ae85f0d8b723fa07c13dffe713eb5e8e2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr uint8_t</type>
-      <name>is_bilinear</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>ad9dab33f55a48d32bf09cd0f3eb37d0f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr std::size_t</type>
-      <name>k_index_begin</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a2ea9e3bdcbdc3dd7835c64ac607e30be</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr std::size_t</type>
-      <name>k_index_end</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a6482f4e05433e454afd3bfb876f7ac37</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>const la::Vector &amp;</type>
-      <name>m_projection</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a93c95cc8a444e494e53217f16e525608</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>const FeSpace &amp;</type>
-      <name>m_fe_space</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>ae49f3dfe52f68a6b236b6091b22a8ac8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>const DofHandler &amp;</type>
-      <name>m_dof_handler</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a1fe217d60b90327760769994b5577592</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>std::vector&lt; OutputType &gt;</type>
-      <name>m_evals</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>a6f103b948d56f534da7f27beb71c2278</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
     <name>vulpes::fe::FeExpressionBase</name>
     <filename>classvulpes_1_1fe_1_1FeExpressionBase.html</filename>
     <templarg>std::size_t Dim</templarg>
@@ -10879,20 +10700,19 @@
     <filename>classvulpes_1_1fe_1_1FeSpaceModalQ.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename DofPolicy</templarg>
-    <templarg>bool Testing</templarg>
-    <base>FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceModalQ&lt; Dim, DofPolicy, Testing &gt; &gt;</base>
+    <base>FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceModalQ&lt; Dim, DofPolicy &gt; &gt;</base>
     <member kind="typedef">
       <type>polynomial::SparsePolynomial&lt; Dim, uint8_t, internal::real_t, false &gt;</type>
       <name>Polynomial</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>af7fa667658ffbbcb0f4cb0a0e3349b6b</anchor>
+      <anchor>a01197ce7f4579d6e21eacbbd5ed65960</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>polynomial::SparsePolynomial&lt; Dim, uint8_t, double, false &gt;</type>
       <name>PolynomialFast</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>a7e6dad907982fbf135c0fee9563d7880</anchor>
+      <anchor>acd193d76a26acef4bcfb9b7fc91b4889</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -10903,7 +10723,7 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>FeSpaceModalQ&lt; Dim, DofPolicy, Testing &gt;</type>
+      <type>FeSpaceModalQ&lt; Dim, DofPolicy &gt;</type>
       <name>FeSpaceType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>a1c77ee7ffd70d229378324aa593113aa</anchor>
@@ -10913,21 +10733,21 @@
       <type></type>
       <name>FeSpaceModalQ</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>a6fb0c7b7e0f1428eec877cd49f805a93</anchor>
+      <anchor>a37dd8aafbd6e7670542f96a93fa46d1c</anchor>
       <arglist>(std::size_t order)</arglist>
     </member>
     <member kind="function">
       <type>const auto &amp;</type>
       <name>getBasis</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>a5a8b404b4c27aae4a4eadd5e1a78940e</anchor>
+      <anchor>a043a1429e7ffcb03623189dc7c6ff673</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const auto &amp;</type>
       <name>getBasisFast</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>a3e8bdaa0ed83f35248a21d63c2e59ae9</anchor>
+      <anchor>aa542b2a54e56b3cd5194961a135bb1a9</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -10955,28 +10775,28 @@
       <type>static constexpr bool</type>
       <name>needBasisScaling</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>a66487ff2295a86290630f9422fa755a7</anchor>
+      <anchor>a32a2a6c7d748d31e2b5b30c4836d6fea</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static constexpr FeType</type>
       <name>elemType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>ad37a5784dc53e5142ca5878db6d6d376</anchor>
+      <anchor>aaf4191d724b86d832e1063b36da80996</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static constexpr auto</type>
       <name>getMapping</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>ac9ec9779eb6c349479e23a4eb4d461c5</anchor>
+      <anchor>a170370f20450ed3223e8db21a2423002</anchor>
       <arglist>(const CellType &amp;cell)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static constexpr geometry::CellInitOptionsType</type>
       <name>cellInitOptions</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>ad3d46469a8b59f764ac433584b320776</anchor>
+      <anchor>ae32e0aa746183d6358b1062e8cc2365b</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
@@ -11001,14 +10821,14 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>FeSpaceModalQ&lt; Dim, DofPolicy, Testing &gt; *</type>
+      <type>FeSpaceModalQ&lt; Dim, DofPolicy &gt; *</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>a88e3c3ac717ace22ae95ebdc3624e251</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeSpaceModalQ&lt; Dim, DofPolicy, Testing &gt; *</type>
+      <type>const FeSpaceModalQ&lt; Dim, DofPolicy &gt; *</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>ab5390edfdbb28c033cb4fbd3aea88b30</anchor>
@@ -11018,14 +10838,14 @@
       <type>std::vector&lt; Polynomial &gt;</type>
       <name>m_polys</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>a566af16b410c98308c97bb2ec8f98850</anchor>
+      <anchor>a62274af4cc9434b367925b4a755fa5fc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>std::vector&lt; PolynomialFast &gt;</type>
       <name>m_polys_fast</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>a729d7e5cd33204874e4c450865210762</anchor>
+      <anchor>a5a127ee22655acc4e7ec00e623ef263b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -18912,20 +18732,6 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>PetscScalar</type>
-      <name>max</name>
-      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
-      <anchor>a495889b748b78172c79eb915b0fd4a2e</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>PetscScalar</type>
-      <name>min</name>
-      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
-      <anchor>ae8c4e75f194e6d4ec23b5e090c831865</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
       <type></type>
       <name>~Vector</name>
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
@@ -24862,7 +24668,6 @@
     <class kind="struct">vulpes::fe::DofPolicyFeSpaceDP</class>
     <class kind="struct">vulpes::fe::DofPolicyFeSpaceDQ</class>
     <class kind="struct">vulpes::fe::DofPolicyFeSpaceVEM</class>
-    <class kind="class">vulpes::fe::FeExactExpressionFeProjection</class>
     <class kind="class">vulpes::fe::FeExpressionBase</class>
     <class kind="class">vulpes::fe::FeExpressionCellConstant</class>
     <class kind="class">vulpes::fe::FeExpressionCellConstantNeedNeigh</class>
@@ -24991,10 +24796,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>FeSpaceModalQ&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt;, Testing &gt;</type>
+      <type>FeSpaceModalQ&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt; &gt;</type>
       <name>FeSpaceModalLegendreDQ</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a229d447c1b547c2ac05db7ceb3241a1c</anchor>
+      <anchor>aa900a9c8403894acdcbe5919e4944c64</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
