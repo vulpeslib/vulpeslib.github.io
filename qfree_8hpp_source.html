@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('qfree_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;Eigen/Dense&gt;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="tensor_8hpp.html">vulpes/datastructure/tensor.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="datastructure_2tensor_8hpp.html">vulpes/datastructure/tensor.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="cell_8hpp.html">vulpes/geometry/cell.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="monomial_8hpp.html">vulpes/polynomials/monomial.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="gauss_8hpp.html">vulpes/quadrature/gauss.hpp</a>&quot;</span></div>
@@ -279,6 +279,7 @@ $(document).ready(function(){initNavTree('qfree_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>}  <span class="comment">// namespace vulpes</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_QUADRATURE_QFREE_HPP_</span></div>
 <div class="ttc" id="acell_8hpp_html"><div class="ttname"><a href="cell_8hpp.html">cell.hpp</a></div></div>
+<div class="ttc" id="adatastructure_2tensor_8hpp_html"><div class="ttname"><a href="datastructure_2tensor_8hpp.html">tensor.hpp</a></div></div>
 <div class="ttc" id="agauss_8hpp_html"><div class="ttname"><a href="gauss_8hpp.html">gauss.hpp</a></div></div>
 <div class="ttc" id="amonomial_8hpp_html"><div class="ttname"><a href="monomial_8hpp.html">monomial.hpp</a></div></div>
 <div class="ttc" id="anamespacevulpes_1_1geometry_html_a3a5283ac7f4816cc8964805a225338bb"><div class="ttname"><a href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">vulpes::geometry::computePeriodicShift</a></div><div class="ttdeci">Eigen::Array&lt; double, Dim, 1 &gt; computePeriodicShift(const Eigen::Matrix&lt; double, Dim, 2 &gt; &amp;curr_bbox, const Eigen::Matrix&lt; double, Dim, 2 &gt; &amp;neigh_bbox, const Eigen::Array&lt; double, Dim, 1 &gt; &amp;period)</div><div class="ttdoc">Compute periodic shift between two cells based on bboxes.</div><div class="ttdef"><b>Definition</b> mapping.hpp:228</div></div>
@@ -298,7 +299,6 @@ $(document).ready(function(){initNavTree('qfree_8hpp_source.html',''); initResiz
 <div class="ttc" id="anamespacevulpes_1_1qfree_html_adbf474d2e1b5de0ebe5a0be2820d69c7"><div class="ttname"><a href="namespacevulpes_1_1qfree.html#adbf474d2e1b5de0ebe5a0be2820d69c7">vulpes::qfree::integrateMonomialsQFree2D</a></div><div class="ttdeci">std::pair&lt; AreaIntegral2D&lt; PPoly, FloatType, IndexType &gt;, EdgeIntegral2D&lt; PPoly, FloatType, IndexType &gt; &gt; integrateMonomialsQFree2D(const geometry::Cell2D&lt; FloatType, IndexType &gt; &amp;cell, IndexType deg)</div><div class="ttdoc">Computes the 2D area and edge integrals over a polygonal cell without requiring quadrature points of ...</div><div class="ttdef"><b>Definition</b> qfree.cpp:36</div></div>
 <div class="ttc" id="anamespacevulpes_1_1qfree_html_afc7e62280a4037f61d40bce7e42f1230"><div class="ttname"><a href="namespacevulpes_1_1qfree.html#afc7e62280a4037f61d40bce7e42f1230">vulpes::qfree::EdgeIntegral2D</a></div><div class="ttdeci">datastructure::TriMatrix&lt; PPoly, true, FloatType, IndexType &gt; EdgeIntegral2D</div><div class="ttdef"><b>Definition</b> cell.hpp:55</div></div>
 <div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:36</div></div>
-<div class="ttc" id="atensor_8hpp_html"><div class="ttname"><a href="tensor_8hpp.html">tensor.hpp</a></div></div>
 <div class="ttc" id="avmath_8hpp_html"><div class="ttname"><a href="vmath_8hpp.html">vmath.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -307,7 +307,7 @@ $(document).ready(function(){initNavTree('qfree_8hpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="qfree_8hpp.html">qfree.hpp</a></li>
-    <li class="footer">Generated on Mon Mar 16 2026 10:36:36 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 25 2026 16:13:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

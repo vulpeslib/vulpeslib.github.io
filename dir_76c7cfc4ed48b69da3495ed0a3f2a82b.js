@@ -6,5 +6,5 @@ var dir_76c7cfc4ed48b69da3495ed0a3f2a82b =
     [ "index_tracker.hpp", "index__tracker_8hpp.html", "index__tracker_8hpp" ],
     [ "kdtree.hpp", "kdtree_8hpp.html", "kdtree_8hpp" ],
     [ "tensor.cpp", "tensor_8cpp.html", null ],
-    [ "tensor.hpp", "tensor_8hpp.html", "tensor_8hpp" ]
+    [ "tensor.hpp", "datastructure_2tensor_8hpp.html", "datastructure_2tensor_8hpp" ]
 ];

@@ -129,6 +129,7 @@ var hierarchy =
       [ "Eigen::internal::evaluator< EigenVulpes::RowMat< RowId, ArgType > >", "structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html", null ],
       [ "Eigen::internal::evaluator< EigenVulpes::SymMat< CrossId, ArgType > >", "structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExactExpressionFeProjection< Dim, FeSpace, DofHandler, 1 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionCellConstant< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionCellConstant< Dim >", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html", null ]
     ] ],
@@ -160,6 +161,9 @@ var hierarchy =
       [ "vulpes::fe::FeExpressionFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionFunc.html", null ]
     ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFunctionWrapper< Dim, 1 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFunctionWrapperTensor< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionFunctionWrapperTensor< Dim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html", null ]
+    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradFunc< IndexBegin, IndexEnd, Dim, FeSpace, false > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionInner< Dim, E1, E2 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionInner< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionInner.html", null ]
@@ -287,6 +291,7 @@ var hierarchy =
     [ "vulpes::dofs::DofHandler< MeshType >", "classvulpes_1_1dofs_1_1DofHandler.html", null ],
     [ "vulpes::fe::DofPolicyBase< Dim, DofPolicy >", "structvulpes_1_1fe_1_1DofPolicyBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpression >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExactExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", null ],
       [ "vulpes::fe::FeExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html", null ],
       [ "vulpes::fe::FeExpressionFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionFunc.html", null ],
       [ "vulpes::fe::FeExpressionFunctionWrapper< Dim, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html", null ],
@@ -329,6 +334,7 @@ var hierarchy =
     [ "vulpes::la::DataBoomerAMG", "structvulpes_1_1la_1_1DataBoomerAMG.html", null ],
     [ "vulpes::la::LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html", null ],
     [ "vulpes::la::SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html", null ],
+    [ "vulpes::la::Tensor", "classvulpes_1_1la_1_1Tensor.html", null ],
     [ "vulpes::la::Vector", "classvulpes_1_1la_1_1Vector.html", null ],
     [ "vulpes::monomial::internal::NonScaledMonomial", "classvulpes_1_1monomial_1_1internal_1_1NonScaledMonomial.html", null ],
     [ "vulpes::monomial::internal::ScaledMonomial< Dim, IndexType, CoefType >", "classvulpes_1_1monomial_1_1internal_1_1ScaledMonomial.html", null ],

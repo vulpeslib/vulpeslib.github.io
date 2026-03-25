@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('frugal_8hpp_source.html',''); initResi
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;Eigen/Dense&gt;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="tensor_8hpp.html">vulpes/datastructure/tensor.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="datastructure_2tensor_8hpp.html">vulpes/datastructure/tensor.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="cell_8hpp.html">vulpes/geometry/cell.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="monomial_8hpp.html">vulpes/polynomials/monomial.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="gauss_8hpp.html">vulpes/quadrature/gauss.hpp</a>&quot;</span></div>
@@ -260,6 +260,7 @@ $(document).ready(function(){initNavTree('frugal_8hpp_source.html',''); initResi
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}  <span class="comment">// namespace vulpes</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_QUADRATURE_FRUGAL_HPP_</span></div>
 <div class="ttc" id="acell_8hpp_html"><div class="ttname"><a href="cell_8hpp.html">cell.hpp</a></div></div>
+<div class="ttc" id="adatastructure_2tensor_8hpp_html"><div class="ttname"><a href="datastructure_2tensor_8hpp.html">tensor.hpp</a></div></div>
 <div class="ttc" id="agauss_8hpp_html"><div class="ttname"><a href="gauss_8hpp.html">gauss.hpp</a></div></div>
 <div class="ttc" id="amonomial_8hpp_html"><div class="ttname"><a href="monomial_8hpp.html">monomial.hpp</a></div></div>
 <div class="ttc" id="anamespacevulpes_1_1datastructure_html_acfe4387e8c43ac4721d755d611be9951"><div class="ttname"><a href="namespacevulpes_1_1datastructure.html#acfe4387e8c43ac4721d755d611be9951">vulpes::datastructure::SimplexDataView</a></div><div class="ttdeci">std::conditional_t&lt; Dim==2, TriMatrix&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, std::conditional_t&lt; Dim==3, TetraTensor&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, const DataType * &gt; &gt; SimplexDataView</div><div class="ttdef"><b>Definition</b> tensor.hpp:513</div></div>
@@ -273,7 +274,6 @@ $(document).ready(function(){initNavTree('frugal_8hpp_source.html',''); initResi
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html">vulpes::qrule::QuadratureRule</a></div><div class="ttdoc">Represents a quadrature rule consisting of a set of points and associated weights.</div><div class="ttdef"><b>Definition</b> qrule.hpp:68</div></div>
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html_a0edb88c1e8aee56cc5cf60b25931263a"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html#a0edb88c1e8aee56cc5cf60b25931263a">vulpes::qrule::QuadratureRule::degree</a></div><div class="ttdeci">std::size_t degree</div><div class="ttdoc">Polynomial degree of accuracy of the rule.</div><div class="ttdef"><b>Definition</b> qrule.hpp:72</div></div>
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html_a539e7c059c883b5d72added2ff7351cf"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">vulpes::qrule::QuadratureRule::nodes</a></div><div class="ttdeci">std::vector&lt; QuadraturePoint&lt; T, Dim &gt; &gt; nodes</div><div class="ttdoc">List of quadrature points.</div><div class="ttdef"><b>Definition</b> qrule.hpp:70</div></div>
-<div class="ttc" id="atensor_8hpp_html"><div class="ttname"><a href="tensor_8hpp.html">tensor.hpp</a></div></div>
 <div class="ttc" id="avmath_8hpp_html"><div class="ttname"><a href="vmath_8hpp.html">vmath.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('frugal_8hpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="frugal_8hpp.html">frugal.hpp</a></li>
-    <li class="footer">Generated on Mon Mar 16 2026 10:36:36 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Mar 25 2026 16:13:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

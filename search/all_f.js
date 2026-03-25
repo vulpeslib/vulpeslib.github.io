@@ -20,10 +20,11 @@ var searchData=
   ['loc_5fneigh_5fcell_5fid_17',['loc_neigh_cell_id',['../structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#aadb1e40c60e0e2d37eb21b76343661d3',1,'vulpes::assemble::CellManager::NeighInfo']]],
   ['loc_5fneigh_5fface_5fid_18',['loc_neigh_face_id',['../structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#ae6682a4b48a3190399ef303a1a8485f6',1,'vulpes::assemble::CellManager::NeighInfo']]],
   ['local_20variables_19',['Local Variables',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html#autotoc_md46',1,'']]],
-  ['localtoglobal_20',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]],
-  ['loglevel_21',['LogLevel',['../namespacevulpes_1_1utils.html#a1d197567093fbdcf511154c249e625bc',1,'vulpes::utils']]],
-  ['lowerintegral3d_22',['LowerIntegral3D',['../namespacevulpes_1_1qfree.html#a2e99dc5f3471d81f48abcca915180569',1,'vulpes::qfree']]],
-  ['lstabledirk_23',['LstableDIRK',['../structvulpes_1_1timeintegration_1_1LstableDIRK.html',1,'vulpes::timeintegration']]],
-  ['lstabledirkimex_24',['LstableDIRKIMEX',['../structvulpes_1_1timeintegration_1_1LstableDIRKIMEX.html',1,'vulpes::timeintegration']]],
-  ['lu_25',['LU',['../classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a35465277fa4ea8d11e4b614122500a9b',1,'vulpes::la::LinearSolver']]]
+  ['localmap_20',['LocalMap',['../classvulpes_1_1la_1_1Tensor.html#a09c461cf275f4c044dce7eea0ee67acc',1,'vulpes::la::Tensor']]],
+  ['localtoglobal_21',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]],
+  ['loglevel_22',['LogLevel',['../namespacevulpes_1_1utils.html#a1d197567093fbdcf511154c249e625bc',1,'vulpes::utils']]],
+  ['lowerintegral3d_23',['LowerIntegral3D',['../namespacevulpes_1_1qfree.html#a2e99dc5f3471d81f48abcca915180569',1,'vulpes::qfree']]],
+  ['lstabledirk_24',['LstableDIRK',['../structvulpes_1_1timeintegration_1_1LstableDIRK.html',1,'vulpes::timeintegration']]],
+  ['lstabledirkimex_25',['LstableDIRKIMEX',['../structvulpes_1_1timeintegration_1_1LstableDIRKIMEX.html',1,'vulpes::timeintegration']]],
+  ['lu_26',['LU',['../classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a35465277fa4ea8d11e4b614122500a9b',1,'vulpes::la::LinearSolver']]]
 ];

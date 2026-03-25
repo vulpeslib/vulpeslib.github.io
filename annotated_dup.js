@@ -68,6 +68,7 @@ var annotated_dup =
         [ "DofPolicyFeSpaceDP", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDP" ],
         [ "DofPolicyFeSpaceDQ", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ" ],
         [ "DofPolicyFeSpaceVEM", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM" ],
+        [ "FeExactExpressionFeProjection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection" ],
         [ "FeExpressionBase", "classvulpes_1_1fe_1_1FeExpressionBase.html", "classvulpes_1_1fe_1_1FeExpressionBase" ],
         [ "FeExpressionCellConstant", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html", "classvulpes_1_1fe_1_1FeExpressionCellConstant" ],
         [ "FeExpressionCellConstantNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh" ],
@@ -80,6 +81,7 @@ var annotated_dup =
         [ "FeExpressionFeProjection", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExpressionFeProjection" ],
         [ "FeExpressionFunc", "classvulpes_1_1fe_1_1FeExpressionFunc.html", "classvulpes_1_1fe_1_1FeExpressionFunc" ],
         [ "FeExpressionFunctionWrapper", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper" ],
+        [ "FeExpressionFunctionWrapperTensor", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor" ],
         [ "FeExpressionGradFunc", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html", "classvulpes_1_1fe_1_1FeExpressionGradFunc" ],
         [ "FeExpressionInner", "classvulpes_1_1fe_1_1FeExpressionInner.html", "classvulpes_1_1fe_1_1FeExpressionInner" ],
         [ "FeExpressionNeighborFunc", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc" ],
@@ -145,6 +147,7 @@ var annotated_dup =
         [ "DataBoomerAMG", "structvulpes_1_1la_1_1DataBoomerAMG.html", "structvulpes_1_1la_1_1DataBoomerAMG" ],
         [ "LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html", "classvulpes_1_1la_1_1LinearSolver" ],
         [ "SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html", "classvulpes_1_1la_1_1SparseMatrix" ],
+        [ "Tensor", "classvulpes_1_1la_1_1Tensor.html", "classvulpes_1_1la_1_1Tensor" ],
         [ "Vector", "classvulpes_1_1la_1_1Vector.html", "classvulpes_1_1la_1_1Vector" ]
       ] ],
       [ "monomial", "namespacevulpes_1_1monomial.html", [

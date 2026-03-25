@@ -8,6 +8,8 @@ var fe__expr__func_8hpp =
     [ "vulpes::fe::FeExpressionSkipper< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionSkipper.html", "classvulpes_1_1fe_1_1FeExpressionSkipper" ],
     [ "vulpes::fe::FeExpressionFunctionWrapper< Dim, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper" ],
     [ "vulpes::fe::FeExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExpressionFeProjection" ],
+    [ "vulpes::fe::FeExactExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection" ],
+    [ "vulpes::fe::FeExpressionFunctionWrapperTensor< Dim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor" ],
     [ "normal", "fe__expr__func_8hpp.html#a4b0d70188866f3fee35b43cd7e3f5971", null ],
     [ "skip", "fe__expr__func_8hpp.html#a226e4922aefb47edea4078ad3b0b7c0d", null ]
 ];

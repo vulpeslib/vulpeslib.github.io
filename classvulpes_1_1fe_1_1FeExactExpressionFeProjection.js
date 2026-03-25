@@ -1,0 +1,27 @@
+var classvulpes_1_1fe_1_1FeExactExpressionFeProjection =
+[
+    [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#aba0b18cd54e491637f9cbbb0d8ee4660", null ],
+    [ "OutputType", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#ab80d992ff0deec8a04e06eea8a41a4c4", null ],
+    [ "FeExactExpressionFeProjection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#abd99671bae6814bd7d8ca9f590370059", null ],
+    [ "FeExactExpressionFeProjection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a1f61d25eac796df2e2b6de769c9d9093", null ],
+    [ "FeExactExpressionFeProjection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a643333b55562816567a4157b17501114", null ],
+    [ "computeOrder", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a3042f7cf2bda438cf047fb8316c84ab2", null ],
+    [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a2060a97b5504750c3b3ed23c2b2c3fc6", null ],
+    [ "evaluate", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#aa270ed7f5387bff15bb69996d548f4ac", null ],
+    [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#ad89aed4ecbf255d7e3df0737f427adc9", null ],
+    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a54edbb07bb3a266db4472447ba13afce", null ],
+    [ "feSpace", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#af0333705ad7416bd31da37eb47dd3491", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#aa194506aca4e759376e053023687b62b", null ],
+    [ "operator=", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a7611c8c4594c4a21a8ef8e7cf9ce0766", null ],
+    [ "operator=", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#aa407aa918472cd2e3528d0ad984ec67a", null ],
+    [ "precompute", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a20238acff7e9f6953c28e6e6291113c2", null ],
+    [ "self", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
+    [ "is_bilinear", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#ad9dab33f55a48d32bf09cd0f3eb37d0f", null ],
+    [ "is_leaf", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#ae85f0d8b723fa07c13dffe713eb5e8e2", null ],
+    [ "k_index_begin", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a2ea9e3bdcbdc3dd7835c64ac607e30be", null ],
+    [ "k_index_end", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a6482f4e05433e454afd3bfb876f7ac37", null ],
+    [ "m_dof_handler", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a1fe217d60b90327760769994b5577592", null ],
+    [ "m_evals", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a6f103b948d56f534da7f27beb71c2278", null ],
+    [ "m_fe_space", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#ae49f3dfe52f68a6b236b6091b22a8ac8", null ],
+    [ "m_projection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a93c95cc8a444e494e53217f16e525608", null ]
+];
