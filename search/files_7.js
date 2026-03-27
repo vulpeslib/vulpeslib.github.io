@@ -1,7 +1,7 @@
 var searchData=
 [
   ['imex_2ehpp_0',['imex.hpp',['../imex_8hpp.html',1,'']]],
-  ['index_2emd_1',['index.md',['../commit-and-merge-policy_2index_8md.html',1,'(Global Namespace)'],['../compile-native_2index_8md.html',1,'(Global Namespace)'],['../compile-options_2index_8md.html',1,'(Global Namespace)'],['../debugging_2index_8md.html',1,'(Global Namespace)'],['../developer-setup_2index_8md.html',1,'(Global Namespace)'],['../profiling_2index_8md.html',1,'(Global Namespace)'],['../style-guide_2index_8md.html',1,'(Global Namespace)'],['../testing-and-coverage_2index_8md.html',1,'(Global Namespace)'],['../workflows_2index_8md.html',1,'(Global Namespace)']]],
+  ['index_2emd_1',['index.md',['../compile-native_2index_8md.html',1,'(Global Namespace)'],['../compile-options_2index_8md.html',1,'(Global Namespace)'],['../debugging_2index_8md.html',1,'(Global Namespace)'],['../developer-setup_2index_8md.html',1,'(Global Namespace)'],['../profiling_2index_8md.html',1,'(Global Namespace)'],['../style-guide_2index_8md.html',1,'(Global Namespace)'],['../testing-and-coverage_2index_8md.html',1,'(Global Namespace)'],['../workflows_2index_8md.html',1,'(Global Namespace)'],['../commit-and-merge-policy_2index_8md.html',1,'(Global Namespace)']]],
   ['index_5ftracker_2ecpp_2',['index_tracker.cpp',['../index__tracker_8cpp.html',1,'']]],
   ['index_5ftracker_2ehpp_3',['index_tracker.hpp',['../index__tracker_8hpp.html',1,'']]],
   ['integrator_5fbase_2ehpp_4',['integrator_base.hpp',['../integrator__base_8hpp.html',1,'']]],

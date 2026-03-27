@@ -1,8 +1,8 @@
 var classvulpes_1_1fe_1_1FeSpaceModalQ =
 [
     [ "FeSpaceType", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a1c77ee7ffd70d229378324aa593113aa", null ],
-    [ "Polynomial", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ad07d9a80f3d8f46f6607781610b0035e", null ],
-    [ "PolynomialFast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#af1e82081ab2c49b0795240d74dee220b", null ],
+    [ "Polynomial", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a01197ce7f4579d6e21eacbbd5ed65960", null ],
+    [ "PolynomialFast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#acd193d76a26acef4bcfb9b7fc91b4889", null ],
     [ "real_t", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a4b62e1349bc842589144be01b5ddf8a1", null ],
     [ "FeSpaceModalQ", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a37dd8aafbd6e7670542f96a93fa46d1c", null ],
     [ "cellInitOptions", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ae32e0aa746183d6358b1062e8cc2365b", null ],

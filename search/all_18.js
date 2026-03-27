@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['undef_0',['UNDEF',['../classvulpes_1_1geometry_1_1Mesh2D.html#a2135ea47d8d0186e63deda8664c4af26',1,'vulpes::geometry::Mesh2D::UNDEF'],['../classvulpes_1_1geometry_1_1MeshBase.html#ab7adf769acf684564c5d6e0919359fcf',1,'vulpes::geometry::MeshBase::UNDEF']]],
+  ['undef_0',['undef',['../classvulpes_1_1geometry_1_1Mesh2D.html#a2135ea47d8d0186e63deda8664c4af26',1,'vulpes::geometry::Mesh2D::UNDEF'],['../classvulpes_1_1geometry_1_1MeshBase.html#ab7adf769acf684564c5d6e0919359fcf',1,'vulpes::geometry::MeshBase::UNDEF']]],
   ['uniformityfactor_1',['UniformityFactor',['../namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1eaf1df75dc65fec403c973599ebce4ecc0',1,'vulpes::geometry']]],
   ['uniformityfactorid_2',['UniformityFactorID',['../namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba3ed46f9ce77cb3dfd87487d17e24cce9',1,'vulpes::geometry']]],
-  ['uniondistance_3',['UnionDistance',['../classvulpes_1_1geometry_1_1UnionDistance.html',1,'vulpes::geometry::UnionDistance&lt; FloatType, Dim, D1, D2 &gt;'],['../classvulpes_1_1geometry_1_1UnionDistance.html#a84f7e39732f0de028be18f0bc61c0df0',1,'vulpes::geometry::UnionDistance::UnionDistance()']]],
+  ['uniondistance_3',['uniondistance',['../classvulpes_1_1geometry_1_1UnionDistance.html#a84f7e39732f0de028be18f0bc61c0df0',1,'vulpes::geometry::UnionDistance::UnionDistance()'],['../classvulpes_1_1geometry_1_1UnionDistance.html',1,'vulpes::geometry::UnionDistance&lt; FloatType, Dim, D1, D2 &gt;']]],
   ['update_5fside_5fdistance_4',['update_side_distance',['../structvulpes_1_1scipy_1_1nodeinfo.html#abe1b7d978817dad7c380209b659fc63f',1,'vulpes::scipy::nodeinfo']]],
   ['updateall_5',['UpdateAll',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa000c668d9188fd4be6af9ccd77761b76',1,'vulpes::fe']]],
   ['updatefacenormalandgetnanson_6',['updateFaceNormalAndGetNanson',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adc74124859d8b3c1af21071f4e0966f3',1,'vulpes::assemble::WeakFormIntegratorQFree']]],
   ['updateflags_7',['UpdateFlags',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62f',1,'vulpes::fe']]],
-  ['updateflagstype_8',['UpdateFlagsType',['../namespacevulpes_1_1fe.html#a59d037b358c6d469a6935388db8915df',1,'vulpes::fe']]],
+  ['updateflagstype_8',['UpdateFlagsType',['../namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21',1,'vulpes::fe']]],
   ['updategradients_9',['UpdateGradients',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa65a8bb15e3666495b4a3b3201fa07039',1,'vulpes::fe']]],
   ['updatehessians_10',['UpdateHessians',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa9530cac0a1d27f70f7369fd21813378c',1,'vulpes::fe']]],
   ['updateid_11',['UpdateId',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62facd80b741faa03cd18a9e92a0fe26820f',1,'vulpes::fe']]],
@@ -26,9 +26,9 @@ var searchData=
   ['updateweights_23',['UpdateWeights',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa30366acf17ea86ca9e5012ecd382dfd1',1,'vulpes::fe']]],
   ['upow_24',['upow',['../namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b',1,'vulpes::vmath']]],
   ['upper_5fbound_25',['upper_bound',['../structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#abd16d1ac55c1299821bb15dcb43063c7',1,'vulpes::scipy::RectRectDistanceTracker']]],
-  ['use_20the_20docker_20from_20vscode_26',['Use the Docker from VSCode',['../md__2Users_2ilariomazzieri_2Desktop_2vulpes_2doc_2developers-guide_2developer-setup_2index.html#autotoc_md30',1,'']]],
-  ['usecase_27',['Our usecase',['../md__2Users_2ilariomazzieri_2Desktop_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16',1,'']]],
-  ['using_20assembly_20comments_28',['2. Checking Assembly Code and Using Assembly Comments',['../md__2Users_2ilariomazzieri_2Desktop_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md35',1,'']]],
-  ['using_20callgrind_29',['Using Callgrind',['../md__2Users_2ilariomazzieri_2Desktop_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md34',1,'']]],
-  ['using_20spack_30',['Using Spack',['../md__2Users_2ilariomazzieri_2Desktop_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md15',1,'']]]
+  ['use_20the_20docker_20from_20vscode_26',['Use the Docker from VSCode',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index.html#autotoc_md30',1,'']]],
+  ['usecase_27',['Our usecase',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16',1,'']]],
+  ['using_20assembly_20comments_28',['2. Checking Assembly Code and Using Assembly Comments',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md35',1,'']]],
+  ['using_20callgrind_29',['Using Callgrind',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md34',1,'']]],
+  ['using_20spack_30',['Using Spack',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md15',1,'']]]
 ];

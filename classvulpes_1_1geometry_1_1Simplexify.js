@@ -6,7 +6,7 @@ var classvulpes_1_1geometry_1_1Simplexify =
     [ "PointsViewType", "classvulpes_1_1geometry_1_1Simplexify.html#a8d3448450f06d16fd9b9d28869c15644", null ],
     [ "SimplexesType", "classvulpes_1_1geometry_1_1Simplexify.html#a6ad913f0b153aa1a2581c3f10208334b", null ],
     [ "SimplexesViewType", "classvulpes_1_1geometry_1_1Simplexify.html#a7460d11c2cd443726f82c7e8ceea7a09", null ],
-    [ "SimplexifyEngine", "classvulpes_1_1geometry_1_1Simplexify.html#a7fdf1193328d1733d874a0c6e8e61e28", null ],
+    [ "SimplexifyEngine", "classvulpes_1_1geometry_1_1Simplexify.html#a7bac1eda54fdb1f19d0e72c5ad6f7358", null ],
     [ "Simplexify", "classvulpes_1_1geometry_1_1Simplexify.html#adb15a2103a2f88e4e1257d1d1668c946", null ],
     [ "Simplexify", "classvulpes_1_1geometry_1_1Simplexify.html#ad9a254b148072f55e8e105de9e9761ca", null ],
     [ "getNumPoints", "classvulpes_1_1geometry_1_1Simplexify.html#a6819f2cc57ab7236cef20e943abeb403", null ],

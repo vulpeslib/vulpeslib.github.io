@@ -1,8 +1,8 @@
 var fe__space_8hpp =
 [
     [ "vulpes::fe::FeSpaceBase< Dim, FloatType, DofPolicy, FeSpace >", "classvulpes_1_1fe_1_1FeSpaceBase.html", "classvulpes_1_1fe_1_1FeSpaceBase" ],
-    [ "Point", "fe__space_8hpp.html#a5cefd2b41325473081b6049b24aa4342", null ],
-    [ "real_t", "fe__space_8hpp.html#a2bb3d86813c2e3c81803ddbc4784f9f3", null ],
+    [ "Point", "fe__space_8hpp.html#a236b70be3e3ef828b4c7f52774e514f3", null ],
+    [ "real_t", "fe__space_8hpp.html#a6603eb9554bb6b7399878a3bba383ad6", null ],
     [ "FeType", "fe__space_8hpp.html#a0c5bf3300c0c48c88c8da0dacfb48221", [
       [ "Simplex", "fe__space_8hpp.html#a0c5bf3300c0c48c88c8da0dacfb48221a7e63b9d2d8bd512603139e052c216204", null ],
       [ "Tensor", "fe__space_8hpp.html#a0c5bf3300c0c48c88c8da0dacfb48221ad226ebfe23a8913bfb43ac4614b914e7", null ],

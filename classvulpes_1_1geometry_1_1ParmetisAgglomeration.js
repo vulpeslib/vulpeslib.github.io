@@ -5,7 +5,7 @@ var classvulpes_1_1geometry_1_1ParmetisAgglomeration =
     [ "ClassIndexType", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#aee6425eaa98975a773328afb92a6cc22", null ],
     [ "float_t", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#a39ce37a8fd1673289143fe32ec65b230", null ],
     [ "index_t", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#adfe290106bdf16423be60af98d697aae", null ],
-    [ "IndexTrackerType", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#aaadd1989b400cd12596ff902bd6238fa", null ],
+    [ "IndexTrackerType", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#a9588980045cf99612c945d77c5508968", null ],
     [ "IndVec", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#a2f00ec8c528ccac74cd441c73a8bd63e", null ],
     [ "MapType", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#a9d8573124f20ca15f1160d391ffc60bc", null ],
     [ "MeshFloatType", "classvulpes_1_1geometry_1_1ParmetisAgglomeration.html#a29ac6517da37c7dcdbbe052cdc5f4f48", null ],

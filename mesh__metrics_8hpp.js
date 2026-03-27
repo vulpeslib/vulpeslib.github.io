@@ -1,7 +1,7 @@
 var mesh__metrics_8hpp =
 [
     [ "vulpes::geometry::MeshMetrics< MeshType >", "classvulpes_1_1geometry_1_1MeshMetrics.html", "classvulpes_1_1geometry_1_1MeshMetrics" ],
-    [ "MetricsInitOptionsType", "mesh__metrics_8hpp.html#a153bb847159871979f4813b6365a45f9", null ],
+    [ "MetricsInitOptionsType", "mesh__metrics_8hpp.html#a38d31d4535d70cf1ffba69b4c3abb959", null ],
     [ "MetricId", "mesh__metrics_8hpp.html#a7a6b6fe736cc0fc087950ea66815378b", [
       [ "CircleRatioID", "mesh__metrics_8hpp.html#a7a6b6fe736cc0fc087950ea66815378ba8a0907581f6dd82c78379f05e678aa76", null ],
       [ "AreaPerimeterRatioID", "mesh__metrics_8hpp.html#a7a6b6fe736cc0fc087950ea66815378ba46eb8d49c1b95e3d0999ae125c95a0b0", null ],

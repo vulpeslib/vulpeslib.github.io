@@ -6,7 +6,7 @@ var crs__map_8hpp =
     [ "vulpes::datastructure::CrsMap< DataType, IndexType, RowSize >::RowView< Mutable >", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView" ],
     [ "vulpes::datastructure::SmallVector< T, N >", "classvulpes_1_1datastructure_1_1SmallVector.html", "classvulpes_1_1datastructure_1_1SmallVector" ],
     [ "vulpes::datastructure::CrsMapUncompressed< DataType, N >", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html", "classvulpes_1_1datastructure_1_1CrsMapUncompressed" ],
-    [ "CrsMapUncompressedVariant", "crs__map_8hpp.html#ac4f38fd2832a83a1378dd4197382f759", null ],
+    [ "CrsMapUncompressedVariant", "crs__map_8hpp.html#a1d0afa4e29d50830f14a082548043887", null ],
     [ "getUncompressedCrsMapWithStaticStorageGreaterThan", "crs__map_8hpp.html#aa178df0b2038f563b1561a1343c30366", null ],
     [ "operator<<", "crs__map_8hpp.html#a519608faf986abafa7a1b011b35a3d8d", null ],
     [ "operator<<", "crs__map_8hpp.html#abcfce30924bc975357d7702a68428149", null ]

@@ -1,9 +1,9 @@
 var classvulpes_1_1assemble_1_1WeakFormIntegratorVem =
 [
     [ "ExtraExpressionTupleType", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#aff21130ad7c0df6064e8dc53f9c16562", null ],
-    [ "FeExpressionTupleExtended", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a37fde0ad2e7687884febda08feaf1836", null ],
-    [ "FeType", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a80f23b444dcd0243b18aeaf2d9f57bb0", null ],
-    [ "WeakFormMonomialIntegrator", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a3a773797f47f2a2787ff4344ae5a3894", null ],
+    [ "FeExpressionTupleExtended", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a6173d0410736e11fce50b76874e1f4f9", null ],
+    [ "FeType", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#add3b08413b8c58281b6a529c85f1bf57", null ],
+    [ "WeakFormMonomialIntegrator", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7a7d5ba017cf1c7351d7205e28b7b596", null ],
     [ "Backend", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45b", [
       [ "IntegratorSimplexifyBackend", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45ba4e5823b9aa53d396cb23857c120baffd", null ],
       [ "IntegratorQFreeBackend", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html#a7bb828bb7de99d1faa0fae2914edd45ba600114ffb7eab5d9ad49a41120167840", null ]

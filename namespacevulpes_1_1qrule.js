@@ -3,8 +3,8 @@ var namespacevulpes_1_1qrule =
     [ "QuadratureLibrary", "classvulpes_1_1qrule_1_1QuadratureLibrary.html", "classvulpes_1_1qrule_1_1QuadratureLibrary" ],
     [ "QuadraturePoint", "structvulpes_1_1qrule_1_1QuadraturePoint.html", "structvulpes_1_1qrule_1_1QuadraturePoint" ],
     [ "QuadratureRule", "structvulpes_1_1qrule_1_1QuadratureRule.html", "structvulpes_1_1qrule_1_1QuadratureRule" ],
-    [ "QuadratureRule1D", "namespacevulpes_1_1qrule.html#aab08f1c3e20b6209099b867d841ac8ca", null ],
-    [ "QuadratureRule1Dmp", "namespacevulpes_1_1qrule.html#aa6fbbe35f1eb310dcd7cfb14c92ec1ef", null ],
+    [ "QuadratureRule1D", "namespacevulpes_1_1qrule.html#a56510856f2f5be4f448320e97c0bf54e", null ],
+    [ "QuadratureRule1Dmp", "namespacevulpes_1_1qrule.html#a0540b0d397bb8efa560704709b4b90fc", null ],
     [ "QuadratureElemType", "namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350f", [
       [ "Simplex", "namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa22eb8c32466025c68a498dd37c6ebf46", null ],
       [ "TensorLegendre", "namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa2634746a42faa622f29cd9928374afa0", null ],
