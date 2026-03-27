@@ -1,6 +1,6 @@
 var classvulpes_1_1fe_1_1FeSpaceVEM =
 [
-    [ "ExtraExpression0", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a0eb4acf75d34eadaf9d2cd9878819d0e", null ],
+    [ "ExtraExpression0", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a97ff476a6358c2aa144e0a41fb3c6142", null ],
     [ "ExtraExpressionTuple", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a2067ce91fafd74b8d9ec2c19cf750973", null ],
     [ "fast_float_t", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a0181ddbda712493adde6f5eac2949514", null ],
     [ "fast_int_t", "classvulpes_1_1fe_1_1FeSpaceVEM.html#ad9facaecf1783dd102596fe577f6e3a2", null ],
@@ -9,7 +9,7 @@ var classvulpes_1_1fe_1_1FeSpaceVEM =
     [ "MyTestFunction", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a3aedf22252ae52ca4af0f33216e32449", null ],
     [ "MyTrialFunction", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a9fe6b90b19012e208d544c479d953d11", null ],
     [ "Polynomial", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a5ac77f9e1330412defa3a67e85617cb0", null ],
-    [ "PolynomialFast", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a5a03a6cb242cb17a1307731bfa9621f1", null ],
+    [ "PolynomialFast", "classvulpes_1_1fe_1_1FeSpaceVEM.html#afbb800671c032365ad5582f29c94d263", null ],
     [ "real_t", "classvulpes_1_1fe_1_1FeSpaceVEM.html#a4b62e1349bc842589144be01b5ddf8a1", null ],
     [ "ExtraMatrices", "classvulpes_1_1fe_1_1FeSpaceVEM.html#ad5f8ebf31049f84714f3dca2ad7968d8", [
       [ "MatrixD", "classvulpes_1_1fe_1_1FeSpaceVEM.html#ad5f8ebf31049f84714f3dca2ad7968d8a3212cfec73c7ecc7abfe01242ce9c75a", null ],

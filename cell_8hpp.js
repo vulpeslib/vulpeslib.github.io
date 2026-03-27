@@ -2,12 +2,12 @@ var cell_8hpp =
 [
     [ "vulpes::geometry::Cell2D< FloatType, IndexType >", "classvulpes_1_1geometry_1_1Cell2D.html", "classvulpes_1_1geometry_1_1Cell2D" ],
     [ "vulpes::geometry::Cell3D< FloatType, IndexType >", "classvulpes_1_1geometry_1_1Cell3D.html", "classvulpes_1_1geometry_1_1Cell3D" ],
-    [ "AreaIntegral2D", "cell_8hpp.html#a90d000a0daf511e876e95deb8dd181b1", null ],
-    [ "Cell", "cell_8hpp.html#a9c09611cfe1534ef23da85c983c0aa1f", null ],
-    [ "CellInitOptionsType", "cell_8hpp.html#af3a786c7fca1e115d7874dee2bd72985", null ],
-    [ "EdgeIntegral2D", "cell_8hpp.html#afc7e62280a4037f61d40bce7e42f1230", null ],
-    [ "LowerIntegral3D", "cell_8hpp.html#a2e99dc5f3471d81f48abcca915180569", null ],
-    [ "VolumeIntegral3D", "cell_8hpp.html#abf22c9be809ca91dd654059febec70bd", null ],
+    [ "AreaIntegral2D", "cell_8hpp.html#ade24e4ebb42ed09a72a056bf72998707", null ],
+    [ "Cell", "cell_8hpp.html#a8f9205c1fb00e6879e3eb1ab3f813495", null ],
+    [ "CellInitOptionsType", "cell_8hpp.html#a9ed30ea3597d9bb825d56f5126ac5d82", null ],
+    [ "EdgeIntegral2D", "cell_8hpp.html#aa633100dee24bf514513be4b32bece71", null ],
+    [ "LowerIntegral3D", "cell_8hpp.html#ac746025a5c3628c9dd0115ad86edcd24", null ],
+    [ "VolumeIntegral3D", "cell_8hpp.html#a2ec7769cd57a159ac5d914cbd61eeff9", null ],
     [ "CellInitOptions", "cell_8hpp.html#ad2f45b81f4d778acb7c48e9c5f104e2e", [
       [ "CellInitVtxOnly", "cell_8hpp.html#ad2f45b81f4d778acb7c48e9c5f104e2ea2359fd7251d07a4997cc86bcfde6564e", null ],
       [ "CellInitNormals", "cell_8hpp.html#ad2f45b81f4d778acb7c48e9c5f104e2eacf220dcaa3bf69ee7b002a86ee5dc5cf", null ],

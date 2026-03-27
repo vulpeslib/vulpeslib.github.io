@@ -1,4 +1,4 @@
 var traits_8hpp =
 [
-    [ "Point", "traits_8hpp.html#a72e6a6deae9bfee82032a94e225d980a", null ]
+    [ "Point", "traits_8hpp.html#a14bc8b3480beef4a179361f0e7c5188e", null ]
 ];
