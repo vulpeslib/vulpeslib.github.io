@@ -389,6 +389,7 @@
     <class kind="class">vulpes::fe::FeExpressionSymGradFunc</class>
     <class kind="class">vulpes::fe::FeExpressionTraceSymGradFunc</class>
     <class kind="class">vulpes::fe::FeExpressionNeighborFunc</class>
+    <class kind="class">vulpes::fe::FeExpressionSelfFunc</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::fe</namespace>
   </compound>
@@ -9722,6 +9723,128 @@
       <name>m_v</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionProduct.html</anchorfile>
       <anchor>a19134b49581b941aa2ab3835b4036d7c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>vulpes::fe::FeExpressionSelfFunc</name>
+    <filename>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</filename>
+    <templarg>std::size_t IndexBegin</templarg>
+    <templarg>std::size_t IndexEnd</templarg>
+    <templarg>std::size_t Dim</templarg>
+    <templarg>typename FeSpace</templarg>
+    <templarg>bool IsTest</templarg>
+    <base>FeExpressionBase&lt; Dim, FeExpressionSelfFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &gt;</base>
+    <member kind="typedef">
+      <type>FeSpace</type>
+      <name>FeSpaceType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>a7ab0fbe9cd72d0476c025140baeb9ef8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FeExpressionSelfFunc</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>a7d67e8b076e29245d0361ac4c8801227</anchor>
+      <arglist>(const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr const auto &amp;</type>
+      <name>feSpace</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>ad9ba2f04a38e241e61be03ee1bc8fda3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluate</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>ae94e116a16380d3d9045847115006203</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr UpdateFlagsType</type>
+      <name>computeUpdateFlags</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>a064be03ac06155896c334d1dcf52111f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::size_t</type>
+      <name>computeOrder</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>a3dca27ebbe52df447be55274a00111c4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePoly</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>aef8eafeccb2c8ccd717532ea02438bb2</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePolyCoef</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>ac768ca49ed4600862eedb171bd5042b5</anchor>
+      <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>precompute</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>a72ff27c2b4427b8116277f9b8f2951bf</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionSelfFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &gt;</type>
+      <name>operator-</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr bool</type>
+      <name>is_leaf</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>ac37f4768432c1cd4aff50584ec1aa2e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr uint8_t</type>
+      <name>is_bilinear</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>adfa909ad0d596f7b663d7f38fffc1536</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_begin</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>a521e135a35043249758c7075c9c15075</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_end</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>a744ed9ae605f5aafe533ebccee07aa4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const FeExpressionSelfFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;</type>
+      <name>self</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;</type>
+      <name>m_w</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
+      <anchor>a4ab8673c99761cb5566478fae829ca66</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -24832,6 +24955,13 @@
       <arglist>(std::size_t order, double gamma)</arglist>
     </member>
     <member kind="function">
+      <type>auto</type>
+      <name>createUpwindFlux</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a5c379f196e5ca30eb27dbe967373a98a</anchor>
+      <arglist>(double vx, double vy=0.0, double vz=0.0)</arglist>
+    </member>
+    <member kind="function">
       <type>double</type>
       <name>computeError</name>
       <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
@@ -25117,6 +25247,7 @@
     <class kind="class">vulpes::fe::FeExpressionNeighborFunc</class>
     <class kind="class">vulpes::fe::FeExpressionOuter</class>
     <class kind="class">vulpes::fe::FeExpressionProduct</class>
+    <class kind="class">vulpes::fe::FeExpressionSelfFunc</class>
     <class kind="class">vulpes::fe::FeExpressionSkipper</class>
     <class kind="class">vulpes::fe::FeExpressionSum</class>
     <class kind="class">vulpes::fe::FeExpressionSymGradFunc</class>
@@ -25402,6 +25533,13 @@
       <name>neigh</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
       <anchor>a1efb82f8b9865b641746301504399470</anchor>
+      <arglist>(const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</arglist>
+    </member>
+    <member kind="function">
+      <type>FeExpressionSelfFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt;</type>
+      <name>self</name>
+      <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
+      <anchor>af766bb00e734aee784af3f79a2719ece</anchor>
       <arglist>(const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</arglist>
     </member>
     <member kind="function">

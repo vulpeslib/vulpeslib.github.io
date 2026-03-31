@@ -138,6 +138,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a9f30e5d498a9b58a6e75e1e5cbcc9e98">createPenaltyExpressionHarmonic</a> (std::size_t order, double gamma)</td></tr>
 <tr class="memdesc:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a penalty expression for DG methods using the harmonic mean between the two cells.  <br /></td></tr>
 <tr class="separator:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c379f196e5ca30eb27dbe967373a98a" id="r_a5c379f196e5ca30eb27dbe967373a98a"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
+<tr class="memitem:a5c379f196e5ca30eb27dbe967373a98a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a5c379f196e5ca30eb27dbe967373a98a">createUpwindFlux</a> (double vx, double vy=0.0, double vz=0.0)</td></tr>
+<tr class="memdesc:a5c379f196e5ca30eb27dbe967373a98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an upwind flux coefficient expression for advection problems.  <br /></td></tr>
+<tr class="separator:a5c379f196e5ca30eb27dbe967373a98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb" id="r_ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ab47891e1f6b99bc401b5cd2396f373fb">computeError</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_exact, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;matrix)</td></tr>
 <tr class="memdesc:ab47891e1f6b99bc401b5cd2396f373fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the error between a discrete solution and an exact one.  <br /></td></tr>
@@ -481,6 +485,60 @@ template&lt;std::size_t Dim&gt; </div>
 
 </div>
 </div>
+<a id="a5c379f196e5ca30eb27dbe967373a98a" name="a5c379f196e5ca30eb27dbe967373a98a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c379f196e5ca30eb27dbe967373a98a">&#9670;&#160;</a></span>createUpwindFlux()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto vulpes::assemble::dg::createUpwindFlux </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vy</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vz</em> = <code>0.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an upwind flux coefficient expression for advection problems. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Dimension of the problem </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vx</td><td>X-component of velocity </td></tr>
+    <tr><td class="paramname">vy</td><td>Y-component of velocity (only for 2D) </td></tr>
+    <tr><td class="paramname">vz</td><td>Z-component of velocity (only for 3D) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the upwind flux coefficient </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The upwind flux is computed as 0.5 * (|velocity.n| + velocity.n), which evaluates to velocity . n when velocity . n &gt; 0 (outflow) and 0 when velocity . n &lt; 0 (inflow). This implements the standard upwind flux for first-order hyperbolic problems following Brezzi, Marini, Suli (2004). </dd></dl>
+
+</div>
+</div>
 <a id="a98f07f81661669f07b85286c79f2ef2d" name="a98f07f81661669f07b85286c79f2ef2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a98f07f81661669f07b85286c79f2ef2d">&#9670;&#160;</a></span>forceEqualMean()</h2>
 
@@ -680,7 +738,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Fri Mar 27 2026 14:57:13 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

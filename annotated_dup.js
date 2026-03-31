@@ -87,6 +87,7 @@ var annotated_dup =
         [ "FeExpressionNeighborFunc", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc" ],
         [ "FeExpressionOuter", "classvulpes_1_1fe_1_1FeExpressionOuter.html", "classvulpes_1_1fe_1_1FeExpressionOuter" ],
         [ "FeExpressionProduct", "classvulpes_1_1fe_1_1FeExpressionProduct.html", "classvulpes_1_1fe_1_1FeExpressionProduct" ],
+        [ "FeExpressionSelfFunc", "classvulpes_1_1fe_1_1FeExpressionSelfFunc.html", "classvulpes_1_1fe_1_1FeExpressionSelfFunc" ],
         [ "FeExpressionSkipper", "classvulpes_1_1fe_1_1FeExpressionSkipper.html", "classvulpes_1_1fe_1_1FeExpressionSkipper" ],
         [ "FeExpressionSum", "classvulpes_1_1fe_1_1FeExpressionSum.html", "classvulpes_1_1fe_1_1FeExpressionSum" ],
         [ "FeExpressionSymGradFunc", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc" ],

@@ -15,7 +15,7 @@
 <polygon fill="white" stroke="#666666" points="158,-52 0,-52 0,0 158,0 158,-52"/>
 <text text-anchor="start" x="8" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">vulpes::geometry::MeshBase</text>
 <text text-anchor="start" x="8" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; FloatType, IndexType,</text>
-<text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00"> 3, 3, Mesh3D&lt; FloatType,</text>
+<text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00"> 2, 2, Mesh2D&lt; FloatType,</text>
 <text text-anchor="middle" x="79" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> IndexType &gt; &gt;</text>
 </a>
 </g>
@@ -23,9 +23,9 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:href="classvulpes_1_1geometry_1_1Mesh3D.html" target="_top" xlink:title="Represents a 3D mesh.">
+<g id="a_Node000001"><a xlink:href="classvulpes_1_1geometry_1_1Mesh2D.html" target="_top" xlink:title="A class for a 2D mesh, inheriting from MeshBase.">
 <polygon fill="white" stroke="#666666" points="341,-41 194,-41 194,-11 341,-11 341,-41"/>
-<text text-anchor="start" x="202" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">vulpes::geometry::Mesh3D</text>
+<text text-anchor="start" x="202" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">vulpes::geometry::Mesh2D</text>
 <text text-anchor="middle" x="267.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; FloatType, IndexType &gt;</text>
 </a>
 </g>

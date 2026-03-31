@@ -7,6 +7,7 @@ var namespacevulpes_1_1assemble =
       [ "createPenaltyExpression", "namespacevulpes_1_1assemble_1_1dg.html#a8f7bebd8916f4c289633d4d6531fc0a1", null ],
       [ "createPenaltyExpressionHarmonic", "namespacevulpes_1_1assemble_1_1dg.html#a9f30e5d498a9b58a6e75e1e5cbcc9e98", null ],
       [ "createPenaltyExpressionKb", "namespacevulpes_1_1assemble_1_1dg.html#aa23de54555633cd41a12f489aff57fe5", null ],
+      [ "createUpwindFlux", "namespacevulpes_1_1assemble_1_1dg.html#a5c379f196e5ca30eb27dbe967373a98a", null ],
       [ "forceEqualMean", "namespacevulpes_1_1assemble_1_1dg.html#a98f07f81661669f07b85286c79f2ef2d", null ],
       [ "integrateFeExpression", "namespacevulpes_1_1assemble_1_1dg.html#a9c3cb3b4a6b3cd12c6a35b1855edbbc5", null ],
       [ "projectConstantOntoModalSpace", "namespacevulpes_1_1assemble_1_1dg.html#adb84be46515d1b568eb329d2b2a7fe8d", null ]

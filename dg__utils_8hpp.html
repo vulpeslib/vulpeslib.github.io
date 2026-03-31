@@ -117,7 +117,9 @@ $(document).ready(function(){initNavTree('dg__utils_8hpp.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &quot;<a class="el" href="integrator__simplexify_8hpp_source.html">vulpes/assemble/integrator_simplexify.hpp</a>&quot;</code><br />
@@ -166,6 +168,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a9f30e5d498a9b58a6e75e1e5cbcc9e98">vulpes::assemble::dg::createPenaltyExpressionHarmonic</a> (std::size_t order, double gamma)</td></tr>
 <tr class="memdesc:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a penalty expression for DG methods using the harmonic mean between the two cells.  <br /></td></tr>
 <tr class="separator:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c379f196e5ca30eb27dbe967373a98a" id="r_a5c379f196e5ca30eb27dbe967373a98a"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
+<tr class="memitem:a5c379f196e5ca30eb27dbe967373a98a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a5c379f196e5ca30eb27dbe967373a98a">vulpes::assemble::dg::createUpwindFlux</a> (double vx, double vy=0.0, double vz=0.0)</td></tr>
+<tr class="memdesc:a5c379f196e5ca30eb27dbe967373a98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an upwind flux coefficient expression for advection problems.  <br /></td></tr>
+<tr class="separator:a5c379f196e5ca30eb27dbe967373a98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb" id="r_ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ab47891e1f6b99bc401b5cd2396f373fb">vulpes::assemble::dg::computeError</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_exact, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;matrix)</td></tr>
 <tr class="memdesc:ab47891e1f6b99bc401b5cd2396f373fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the error between a discrete solution and an exact one.  <br /></td></tr>
@@ -189,7 +195,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_fbdf0309f37d26479fea532d5cc8eb08.html">assemble</a></li><li class="navelem"><a class="el" href="dg__utils_8hpp.html">dg_utils.hpp</a></li>
-    <li class="footer">Generated on Fri Mar 27 2026 14:57:12 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

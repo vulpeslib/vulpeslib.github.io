@@ -26,6 +26,7 @@ var namespacevulpes_1_1fe =
     [ "FeExpressionNeighborFunc", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc" ],
     [ "FeExpressionOuter", "classvulpes_1_1fe_1_1FeExpressionOuter.html", "classvulpes_1_1fe_1_1FeExpressionOuter" ],
     [ "FeExpressionProduct", "classvulpes_1_1fe_1_1FeExpressionProduct.html", "classvulpes_1_1fe_1_1FeExpressionProduct" ],
+    [ "FeExpressionSelfFunc", "classvulpes_1_1fe_1_1FeExpressionSelfFunc.html", "classvulpes_1_1fe_1_1FeExpressionSelfFunc" ],
     [ "FeExpressionSkipper", "classvulpes_1_1fe_1_1FeExpressionSkipper.html", "classvulpes_1_1fe_1_1FeExpressionSkipper" ],
     [ "FeExpressionSum", "classvulpes_1_1fe_1_1FeExpressionSum.html", "classvulpes_1_1fe_1_1FeExpressionSum" ],
     [ "FeExpressionSymGradFunc", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc" ],
@@ -88,6 +89,7 @@ var namespacevulpes_1_1fe =
     [ "operator+", "namespacevulpes_1_1fe.html#a032f025e8697e868b6d7dd95079de378", null ],
     [ "operator-", "namespacevulpes_1_1fe.html#aeb4d489de83cf29feef2f13e09b36c6e", null ],
     [ "outer", "namespacevulpes_1_1fe.html#adaa7c45f087b3135ea06fca66a1c50d4", null ],
+    [ "self", "namespacevulpes_1_1fe.html#af766bb00e734aee784af3f79a2719ece", null ],
     [ "skip", "namespacevulpes_1_1fe.html#a226e4922aefb47edea4078ad3b0b7c0d", null ],
     [ "symgrad", "namespacevulpes_1_1fe.html#a28fb99ecd0e1e09dabb1e2f9406bb190", null ],
     [ "trsymgrad", "namespacevulpes_1_1fe.html#a47bf0094f170763071298c558b5b3d1f", null ]
