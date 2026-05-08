@@ -45,7 +45,7 @@ MathJax.Hub.Config({
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1la_1_1SparseMatrix.html
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvulpes_1_1la_1_1SparseMatrix-members.html">List of all members</a>  </div>
@@ -168,6 +169,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fd0d2aa5bf7e9b80ec3fe850cf153ef" id="r_a8fd0d2aa5bf7e9b80ec3fe850cf153ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a8fd0d2aa5bf7e9b80ec3fe850cf153ef">save</a> (const std::string &amp;filename, const std::string &amp;matname=&quot;&quot;, PetscViewerFormat format=PETSC_VIEWER_ASCII_MATLAB) const</td></tr>
 <tr class="memdesc:a8fd0d2aa5bf7e9b80ec3fe850cf153ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the matrix to a file.  <br /></td></tr>
 <tr class="separator:a8fd0d2aa5bf7e9b80ec3fe850cf153ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09be3f823df41df6a9e5990b098f12f" id="r_ab09be3f823df41df6a9e5990b098f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ab09be3f823df41df6a9e5990b098f12f">saveBinary</a> (const std::string &amp;filename, const std::string &amp;matname=&quot;&quot;) const</td></tr>
+<tr class="memdesc:ab09be3f823df41df6a9e5990b098f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the matrix to a file in binary format.  <br /></td></tr>
+<tr class="separator:ab09be3f823df41df6a9e5990b098f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98bdee8e83a65cbf02ef1b3c1374752e" id="r_a98bdee8e83a65cbf02ef1b3c1374752e"><td class="memItemLeft" align="right" valign="top">std::array&lt; PetscInt, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a98bdee8e83a65cbf02ef1b3c1374752e">getSize</a> () const</td></tr>
 <tr class="memdesc:a98bdee8e83a65cbf02ef1b3c1374752e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the matrix as an array [rows, cols].  <br /></td></tr>
 <tr class="separator:a98bdee8e83a65cbf02ef1b3c1374752e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,6 +238,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab98c0a7df2d200286d590c2e4737e9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a915b36d629448243ec1091dfe1dc5af3" id="r_a915b36d629448243ec1091dfe1dc5af3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a915b36d629448243ec1091dfe1dc5af3">~SparseMatrix</a> ()</td></tr>
 <tr class="separator:a915b36d629448243ec1091dfe1dc5af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1eae2407c9c823bf3bc28fa4ab06bc5d" id="r_a1eae2407c9c823bf3bc28fa4ab06bc5d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a1eae2407c9c823bf3bc28fa4ab06bc5d">compareSparseMatrices</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;mat1, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;mat2, double tolerance=1e-12)</td></tr>
+<tr class="memdesc:a1eae2407c9c823bf3bc28fa4ab06bc5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function that compares two sparse matrices for equality within a given tolerance.  <br /></td></tr>
+<tr class="separator:a1eae2407c9c823bf3bc28fa4ab06bc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -587,6 +597,59 @@ template&lt;typename DofHandler &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1eae2407c9c823bf3bc28fa4ab06bc5d" name="a1eae2407c9c823bf3bc28fa4ab06bc5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eae2407c9c823bf3bc28fa4ab06bc5d">&#9670;&#160;</a></span>compareSparseMatrices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vulpes::la::SparseMatrix::compareSparseMatrices </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code>1e-12</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static function that compares two sparse matrices for equality within a given tolerance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat1</td><td>First matrix </td></tr>
+    <tr><td class="paramname">mat2</td><td>Second matrix </td></tr>
+    <tr><td class="paramname">tolerance</td><td>Tolerance for comparison </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if matrices are equal within the given tolerance, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -1517,6 +1580,43 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
+<a id="ab09be3f823df41df6a9e5990b098f12f" name="ab09be3f823df41df6a9e5990b098f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09be3f823df41df6a9e5990b098f12f">&#9670;&#160;</a></span>saveBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::SparseMatrix::saveBinary </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>matname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save the matrix to a file in binary format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The name of the file </td></tr>
+    <tr><td class="paramname">matname</td><td>The name of the matrix inside the file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="accea9d1a8604072dd8c3b0e3de5aa70b" name="accea9d1a8604072dd8c3b0e3de5aa70b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accea9d1a8604072dd8c3b0e3de5aa70b">&#9670;&#160;</a></span>setMatrixSizes()</h2>
 
@@ -1764,7 +1864,7 @@ template&lt;typename DofHandler &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 8 2026 14:30:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

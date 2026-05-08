@@ -45,7 +45,7 @@ MathJax.Hub.Config({
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
@@ -122,10 +122,12 @@ $(document).ready(function(){initNavTree('io_8hpp.html',''); initResizable(); })
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;Eigen/Dense&gt;</code><br />
+<code>#include &quot;<a class="el" href="sparse__matrix_8hpp_source.html">vulpes/la/sparse_matrix.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vector_8hpp_source.html">vulpes/la/vector.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for io.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="io_8hpp__incl.svg" width="592" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="io_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -144,8 +146,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a284f448bad05492253d200085ebc6400" id="r_a284f448bad05492253d200085ebc6400"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400">vulpes::io::loadMatrixFromFile</a> (<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;result, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a284f448bad05492253d200085ebc6400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a PETSc matrix from a binary file and copy it into a SparseMatrix.  <br /></td></tr>
+<tr class="separator:a284f448bad05492253d200085ebc6400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5739b7f5c25af87b5c72088e74c36fed" id="r_a5739b7f5c25af87b5c72088e74c36fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">vulpes::io::loadVectorFromFile</a> (<a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;result, const std::string &amp;filename)</td></tr>
+<tr class="separator:a5739b7f5c25af87b5c72088e74c36fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3470eb59cd11b665f91c2b288cbe4f4" id="r_af3470eb59cd11b665f91c2b288cbe4f4"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">vulpes::io::readCSVToEigenMatrix</a> (const std::string &amp;filename, char delimiter=',')</td></tr>
 <tr class="separator:af3470eb59cd11b665f91c2b288cbe4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8b05abaab65e062e4a72d5fc04d3cf" id="r_a9c8b05abaab65e062e4a72d5fc04d3cf"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf">vulpes::io::readCSVToEigenVector</a> (const std::string &amp;filename, char delimiter=',')</td></tr>
+<tr class="separator:a9c8b05abaab65e062e4a72d5fc04d3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -154,7 +163,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_57fd5c05a3144478f1fe40cbcefca761.html">utils</a></li><li class="navelem"><a class="el" href="io_8hpp.html">io.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 8 2026 14:30:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -5,5 +5,7 @@ var searchData=
   ['liftconstant_2',['liftConstant',['../namespacevulpes_1_1fe_1_1internal.html#ae5ff9de2b5ed3bf9b9077440ce0f957f',1,'vulpes::fe::internal']]],
   ['liftdimension_3',['liftdimension',['../classvulpes_1_1monomial_1_1Monomial.html#a4326407c592293eececabf9dcf5c1963',1,'vulpes::monomial::Monomial::liftDimension()'],['../classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6b22d4e4f358e4abad4c67bdba1a9206',1,'vulpes::polynomial::SparsePolynomial::liftDimension()'],['../namespacevulpes_1_1fe_1_1internal.html#a69e6589db41bd17ce0fd9cd98e489c15',1,'vulpes::fe::internal::liftDimension()']]],
   ['linearsolver_4',['LinearSolver',['../classvulpes_1_1la_1_1LinearSolver.html#a0ecc24f106ebe2c1b7270c5aa1fddfa2',1,'vulpes::la::LinearSolver']]],
-  ['localtoglobal_5',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]]
+  ['loadmatrixfromfile_5',['loadMatrixFromFile',['../namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400',1,'vulpes::io']]],
+  ['loadvectorfromfile_6',['loadVectorFromFile',['../namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed',1,'vulpes::io']]],
+  ['localtoglobal_7',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]]
 ];

@@ -17,6 +17,9 @@ var annotated_dup =
     ] ],
     [ "vulpes", "namespacevulpes.html", [
       [ "assemble", "namespacevulpes_1_1assemble.html", [
+        [ "dg", "namespacevulpes_1_1assemble_1_1dg.html", [
+          [ "FeExpressionUpwindFromFunctionWrapper", "classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html", "classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper" ]
+        ] ],
         [ "internal", "namespacevulpes_1_1assemble_1_1internal.html", [
           [ "concat_tuples", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples.html", null ],
           [ "concat_tuples< std::tuple< Ts... >, std::tuple< Us... > >", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5.html", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5" ],

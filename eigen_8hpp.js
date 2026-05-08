@@ -9,6 +9,8 @@ var eigen_8hpp =
     [ "Eigen::internal::traits< EigenVulpes::OneComponentVector< Idx, Scalar_, Size_ > >", "structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html", "structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4" ],
     [ "Eigen::internal::evaluator< EigenVulpes::OneComponentVector< Idx, Scalar_, Size_ > >", "structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html", "structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4" ],
     [ "EigenVulpes::OneComponentVector< Idx, Scalar_, Size_ >", "classEigenVulpes_1_1OneComponentVector.html", "classEigenVulpes_1_1OneComponentVector" ],
+    [ "compareEigenMatrices", "eigen_8hpp.html#a866b12d4a3bf96a397b69a19cba842af", null ],
+    [ "compareEigenVectors", "eigen_8hpp.html#a653dc28b7fad57b23bc7db8c99f4407a", null ],
     [ "makeRowMat", "eigen_8hpp.html#a8e7547839698f9a709eeea9df883af7e", null ],
     [ "makeSymMat", "eigen_8hpp.html#a7c0729a670828cc11960fd9729d51409", null ],
     [ "toConstMap", "eigen_8hpp.html#a7d0ac3594467fff73a18674f24394c23", null ],

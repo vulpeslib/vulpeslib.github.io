@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['_7elinearsolver_0',['~LinearSolver',['../classvulpes_1_1la_1_1LinearSolver.html#af031c96fa6209ebe4443b76bd4eb1b87',1,'vulpes::la::LinearSolver']]],
-  ['_7empihandle_1',['~MpiHandle',['../classvulpes_1_1mpi_1_1MpiHandle.html#a9ab8e4587edafdd4e12d1c10122ba7c3',1,'vulpes::mpi::MpiHandle']]],
-  ['_7esparsematrix_2',['~SparseMatrix',['../classvulpes_1_1la_1_1SparseMatrix.html#a915b36d629448243ec1091dfe1dc5af3',1,'vulpes::la::SparseMatrix']]],
-  ['_7etensor_3',['~Tensor',['../classvulpes_1_1la_1_1Tensor.html#a755567837ac2d2d43fa904569b768d99',1,'vulpes::la::Tensor']]],
-  ['_7etriangulation_4',['~Triangulation',['../classvulpes_1_1geometry_1_1Triangulation.html#abfd10a13749d1f32dfddc8d5ecf5d3c2',1,'vulpes::geometry::Triangulation']]],
-  ['_7evector_5',['~Vector',['../classvulpes_1_1la_1_1Vector.html#ac23080477fb150e5dc6ad8a652ce2abd',1,'vulpes::la::Vector']]],
-  ['_7eweakformintegratorbase_6',['~WeakFormIntegratorBase',['../classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#ab5ba3d2948d2b9e68eed15235047ac65',1,'vulpes::assemble::WeakFormIntegratorBase']]]
+  ['xprkind_0',['xprkind',['../structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html#af960bdc65c5336527d836fee17ce08e9',1,'Eigen::internal::traits&lt; EigenVulpes::SymMat&lt; CrossId, ArgType &gt; &gt;::XprKind'],['../structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html#ab5215b9baa530eb3da1e50b4c2bc6898',1,'Eigen::internal::traits&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;::XprKind'],['../structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html#a82867b80fc46054c56702600a212b456',1,'Eigen::internal::traits&lt; EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt; &gt;::XprKind']]],
+  ['xprtype_1',['xprtype',['../structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html#a92e4c7c9d85082eb712e16cb5dd56295',1,'Eigen::internal::evaluator&lt; EigenVulpes::SymMat&lt; CrossId, ArgType &gt; &gt;::XprType'],['../structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html#ad78b1848b8ec738b958be6ab8d2ecd18',1,'Eigen::internal::evaluator&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;::XprType'],['../structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html#aa703e397dc862f6b00f54d32b6009075',1,'Eigen::internal::evaluator&lt; EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt; &gt;::XprType']]],
+  ['xy2rs_2',['xy2rs',['../namespacevulpes_1_1fe_1_1internal.html#ab4ec10d73a9235bcb58895b8a06452ca',1,'vulpes::fe::internal']]],
+  ['xyz2rst_3',['xyz2rst',['../namespacevulpes_1_1fe_1_1internal.html#a29ac1793359aa6eec0d0768d44d75b95',1,'vulpes::fe::internal']]]
 ];

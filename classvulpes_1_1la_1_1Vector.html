@@ -45,7 +45,7 @@ MathJax.Hub.Config({
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
@@ -112,6 +112,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1la_1_1Vector.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvulpes_1_1la_1_1Vector-members.html">List of all members</a>  </div>
@@ -154,6 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d930dca8d068008861a95510c94b781" id="r_a0d930dca8d068008861a95510c94b781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a0d930dca8d068008861a95510c94b781">save</a> (const std::string &amp;filename, const std::string &amp;vecname=&quot;&quot;, PetscViewerFormat format=PETSC_VIEWER_ASCII_MATLAB) const</td></tr>
 <tr class="memdesc:a0d930dca8d068008861a95510c94b781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the vector to a file.  <br /></td></tr>
 <tr class="separator:a0d930dca8d068008861a95510c94b781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cca04b1348d00df6bb5a77ad6ae4530" id="r_a9cca04b1348d00df6bb5a77ad6ae4530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a9cca04b1348d00df6bb5a77ad6ae4530">saveBinary</a> (const std::string &amp;filename, const std::string &amp;vecname=&quot;&quot;) const</td></tr>
+<tr class="memdesc:a9cca04b1348d00df6bb5a77ad6ae4530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the vector to a binary file.  <br /></td></tr>
+<tr class="separator:a9cca04b1348d00df6bb5a77ad6ae4530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a6d51971d8ab8c3f9f6bdfd3452f5f" id="r_a08a6d51971d8ab8c3f9f6bdfd3452f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a08a6d51971d8ab8c3f9f6bdfd3452f5f">insertValues</a> (const PetscScalar *values, const PetscInt *indices, PetscInt n_values, InsertMode mode=ADD_VALUES)</td></tr>
 <tr class="memdesc:a08a6d51971d8ab8c3f9f6bdfd3452f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert values into the vector at specified indices.  <br /></td></tr>
 <tr class="separator:a08a6d51971d8ab8c3f9f6bdfd3452f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +244,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a79006f02c00750882ed06548a0087e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac23080477fb150e5dc6ad8a652ce2abd" id="r_ac23080477fb150e5dc6ad8a652ce2abd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#ac23080477fb150e5dc6ad8a652ce2abd">~Vector</a> ()</td></tr>
 <tr class="separator:ac23080477fb150e5dc6ad8a652ce2abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a46f417f690a4d862e7cc50c076b1fdd3" id="r_a46f417f690a4d862e7cc50c076b1fdd3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a46f417f690a4d862e7cc50c076b1fdd3">compareVectors</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;vec1, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;vec2, double tolerance=1e-12)</td></tr>
+<tr class="memdesc:a46f417f690a4d862e7cc50c076b1fdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to compare two vectors with tolerance.  <br /></td></tr>
+<tr class="separator:a46f417f690a4d862e7cc50c076b1fdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -588,6 +598,50 @@ template&lt;typename DofHandler &gt; </div>
 </div><div class="memdoc">
 
 <p>Add a vector in place (this = alpha x + beta y + gamma this) </p>
+
+</div>
+</div>
+<a id="a46f417f690a4d862e7cc50c076b1fdd3" name="a46f417f690a4d862e7cc50c076b1fdd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46f417f690a4d862e7cc50c076b1fdd3">&#9670;&#160;</a></span>compareVectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vulpes::la::Vector::compareVectors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code>1e-12</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static method to compare two vectors with tolerance. </p>
 
 </div>
 </div>
@@ -1195,6 +1249,36 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
+<a id="a9cca04b1348d00df6bb5a77ad6ae4530" name="a9cca04b1348d00df6bb5a77ad6ae4530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cca04b1348d00df6bb5a77ad6ae4530">&#9670;&#160;</a></span>saveBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::Vector::saveBinary </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vecname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save the vector to a binary file. </p>
+
+</div>
+</div>
 <a id="af2ad1ed7315e5a1c6cbda14407437571" name="af2ad1ed7315e5a1c6cbda14407437571"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2ad1ed7315e5a1c6cbda14407437571">&#9670;&#160;</a></span>scale()</h2>
 
@@ -1423,7 +1507,7 @@ template&lt;typename DofHandler &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 8 2026 14:30:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

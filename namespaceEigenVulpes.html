@@ -45,7 +45,7 @@ MathJax.Hub.Config({
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
@@ -140,8 +140,96 @@ Functions</h2></td></tr>
 <tr class="memitem:a7d0ac3594467fff73a18674f24394c23" id="r_a7d0ac3594467fff73a18674f24394c23"><td class="memTemplParams" colspan="2">template&lt;typename Derived &gt; </td></tr>
 <tr class="memitem:a7d0ac3594467fff73a18674f24394c23"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEigenVulpes.html#a7d0ac3594467fff73a18674f24394c23">toConstMap</a> (const Eigen::MatrixBase&lt; Derived &gt; &amp;mat)</td></tr>
 <tr class="separator:a7d0ac3594467fff73a18674f24394c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866b12d4a3bf96a397b69a19cba842af" id="r_a866b12d4a3bf96a397b69a19cba842af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceEigenVulpes.html#a866b12d4a3bf96a397b69a19cba842af">compareEigenMatrices</a> (const Eigen::MatrixXd &amp;mat1, const Eigen::MatrixXd &amp;mat2, const double tolerance=1e-12)</td></tr>
+<tr class="separator:a866b12d4a3bf96a397b69a19cba842af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653dc28b7fad57b23bc7db8c99f4407a" id="r_a653dc28b7fad57b23bc7db8c99f4407a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceEigenVulpes.html#a653dc28b7fad57b23bc7db8c99f4407a">compareEigenVectors</a> (const Eigen::VectorXd &amp;vec1, const Eigen::VectorXd &amp;vec2, const double tolerance=1e-12)</td></tr>
+<tr class="separator:a653dc28b7fad57b23bc7db8c99f4407a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a866b12d4a3bf96a397b69a19cba842af" name="a866b12d4a3bf96a397b69a19cba842af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866b12d4a3bf96a397b69a19cba842af">&#9670;&#160;</a></span>compareEigenMatrices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EigenVulpes::compareEigenMatrices </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>mat1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>mat2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code>1e-12</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a653dc28b7fad57b23bc7db8c99f4407a" name="a653dc28b7fad57b23bc7db8c99f4407a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a653dc28b7fad57b23bc7db8c99f4407a">&#9670;&#160;</a></span>compareEigenVectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EigenVulpes::compareEigenVectors </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>vec1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>vec2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code>1e-12</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8e7547839698f9a709eeea9df883af7e" name="a8e7547839698f9a709eeea9df883af7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e7547839698f9a709eeea9df883af7e">&#9670;&#160;</a></span>makeRowMat()</h2>
 
@@ -245,7 +333,7 @@ template&lt;typename Derived &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceEigenVulpes.html">EigenVulpes</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 8 2026 14:30:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

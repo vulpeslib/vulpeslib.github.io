@@ -9,7 +9,7 @@ var classvulpes_1_1fe_1_1FeExpressionFunctionWrapper =
     [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#acd87be472d39680e4686de701709a8b0", null ],
     [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#ae94bac36618c54729999f0c0b6eaeaf9", null ],
     [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a9c03c921f2be7e2925cf68a925bb5b0a", null ],
-    [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a7f218549438922fe3086361f5968b884", null ],
+    [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#ab34db8f9eb15f296fd3f25dc8bd08a61", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#ac35e53267a9736f80c95c4a60c518e58", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#af0333705ad7416bd31da37eb47dd3491", null ],
     [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#aa194506aca4e759376e053023687b62b", null ],

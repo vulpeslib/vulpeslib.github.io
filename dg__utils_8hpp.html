@@ -45,7 +45,7 @@ MathJax.Hub.Config({
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
@@ -111,6 +111,7 @@ $(document).ready(function(){initNavTree('dg__utils_8hpp.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">dg_utils.hpp File Reference</div></div>
@@ -122,6 +123,7 @@ $(document).ready(function(){initNavTree('dg__utils_8hpp.html',''); initResizabl
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="integrator__simplexify_8hpp_source.html">vulpes/assemble/integrator_simplexify.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dof__handler_8hpp_source.html">vulpes/dofs/dof_handler.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fe__expression_8hpp_source.html">vulpes/fe/fe_expression.hpp</a>&quot;</code><br />
@@ -137,6 +139,12 @@ Include dependency graph for dg_utils.hpp:</div>
 </div>
 <p><a href="dg__utils_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html">vulpes::assemble::dg::FeExpressionUpwindFromFunctionWrapper&lt; Dim, VelocityFunc &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Q-point based upwind flux expression built from a velocity callable.  <a href="classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevulpes" id="r_namespacevulpes"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes.html">vulpes</a></td></tr>
@@ -168,10 +176,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a9f30e5d498a9b58a6e75e1e5cbcc9e98">vulpes::assemble::dg::createPenaltyExpressionHarmonic</a> (std::size_t order, double gamma)</td></tr>
 <tr class="memdesc:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a penalty expression for DG methods using the harmonic mean between the two cells.  <br /></td></tr>
 <tr class="separator:a9f30e5d498a9b58a6e75e1e5cbcc9e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c379f196e5ca30eb27dbe967373a98a" id="r_a5c379f196e5ca30eb27dbe967373a98a"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
-<tr class="memitem:a5c379f196e5ca30eb27dbe967373a98a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a5c379f196e5ca30eb27dbe967373a98a">vulpes::assemble::dg::createUpwindFlux</a> (double vx, double vy=0.0, double vz=0.0)</td></tr>
-<tr class="memdesc:a5c379f196e5ca30eb27dbe967373a98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an upwind flux coefficient expression for advection problems.  <br /></td></tr>
-<tr class="separator:a5c379f196e5ca30eb27dbe967373a98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92970f95e9ab89db9ecafbcce1f19ca" id="r_ae92970f95e9ab89db9ecafbcce1f19ca"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename VelocityFunc &gt; </td></tr>
+<tr class="memitem:ae92970f95e9ab89db9ecafbcce1f19ca"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ae92970f95e9ab89db9ecafbcce1f19ca">vulpes::assemble::dg::createUpwindFlux</a> (VelocityFunc velocity_func)</td></tr>
+<tr class="memdesc:ae92970f95e9ab89db9ecafbcce1f19ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an upwind flux expression from a velocity callable.  <br /></td></tr>
+<tr class="separator:ae92970f95e9ab89db9ecafbcce1f19ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8756536eb1192ba7b20fa879210ce271" id="r_a8756536eb1192ba7b20fa879210ce271"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
+<tr class="memitem:a8756536eb1192ba7b20fa879210ce271"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a8756536eb1192ba7b20fa879210ce271">vulpes::assemble::dg::createUpwindFluxConstant</a> (double vx, double vy=0.0, double vz=0.0)</td></tr>
+<tr class="memdesc:a8756536eb1192ba7b20fa879210ce271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy constant-velocity upwind helper.  <br /></td></tr>
+<tr class="separator:a8756536eb1192ba7b20fa879210ce271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5a3ca701f2be0fa847f671a87bf1b1" id="r_a3d5a3ca701f2be0fa847f671a87bf1b1"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename VelocityFunc &gt; </td></tr>
+<tr class="memitem:a3d5a3ca701f2be0fa847f671a87bf1b1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a3d5a3ca701f2be0fa847f671a87bf1b1">vulpes::assemble::dg::createUpwindFluxVariable</a> (VelocityFunc velocity_func)</td></tr>
+<tr class="memdesc:a3d5a3ca701f2be0fa847f671a87bf1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an upwind flux coefficient expression for VARIABLE (spatially-varying) advection velocity. The velocity is evaluated at the face centroid.  <br /></td></tr>
+<tr class="separator:a3d5a3ca701f2be0fa847f671a87bf1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb" id="r_ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ab47891e1f6b99bc401b5cd2396f373fb">vulpes::assemble::dg::computeError</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_exact, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;matrix)</td></tr>
 <tr class="memdesc:ab47891e1f6b99bc401b5cd2396f373fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the error between a discrete solution and an exact one.  <br /></td></tr>
@@ -195,7 +211,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_fbdf0309f37d26479fea532d5cc8eb08.html">assemble</a></li><li class="navelem"><a class="el" href="dg__utils_8hpp.html">dg_utils.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 8 2026 14:30:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

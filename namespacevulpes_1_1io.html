@@ -45,7 +45,7 @@ MathJax.Hub.Config({
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
@@ -118,10 +118,90 @@ $(document).ready(function(){initNavTree('namespacevulpes_1_1io.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a284f448bad05492253d200085ebc6400" id="r_a284f448bad05492253d200085ebc6400"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400">loadMatrixFromFile</a> (<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;result, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a284f448bad05492253d200085ebc6400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a PETSc matrix from a binary file and copy it into a SparseMatrix.  <br /></td></tr>
+<tr class="separator:a284f448bad05492253d200085ebc6400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5739b7f5c25af87b5c72088e74c36fed" id="r_a5739b7f5c25af87b5c72088e74c36fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">loadVectorFromFile</a> (<a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;result, const std::string &amp;filename)</td></tr>
+<tr class="separator:a5739b7f5c25af87b5c72088e74c36fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3470eb59cd11b665f91c2b288cbe4f4" id="r_af3470eb59cd11b665f91c2b288cbe4f4"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">readCSVToEigenMatrix</a> (const std::string &amp;filename, char delimiter=',')</td></tr>
 <tr class="separator:af3470eb59cd11b665f91c2b288cbe4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8b05abaab65e062e4a72d5fc04d3cf" id="r_a9c8b05abaab65e062e4a72d5fc04d3cf"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf">readCSVToEigenVector</a> (const std::string &amp;filename, char delimiter=',')</td></tr>
+<tr class="separator:a9c8b05abaab65e062e4a72d5fc04d3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a284f448bad05492253d200085ebc6400" name="a284f448bad05492253d200085ebc6400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a284f448bad05492253d200085ebc6400">&#9670;&#160;</a></span>loadMatrixFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::io::loadMatrixFromFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a PETSc matrix from a binary file and copy it into a SparseMatrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>The SparseMatrix to load the data into </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the binary file containing the matrix data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5739b7f5c25af87b5c72088e74c36fed" name="a5739b7f5c25af87b5c72088e74c36fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5739b7f5c25af87b5c72088e74c36fed">&#9670;&#160;</a></span>loadVectorFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::io::loadVectorFromFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af3470eb59cd11b665f91c2b288cbe4f4" name="af3470eb59cd11b665f91c2b288cbe4f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3470eb59cd11b665f91c2b288cbe4f4">&#9670;&#160;</a></span>readCSVToEigenMatrix()</h2>
 
@@ -165,6 +245,57 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9c8b05abaab65e062e4a72d5fc04d3cf" name="a9c8b05abaab65e062e4a72d5fc04d3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8b05abaab65e062e4a72d5fc04d3cf">&#9670;&#160;</a></span>readCSVToEigenVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::VectorXd vulpes::io::readCSVToEigenVector </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>delimiter</em> = <code>','</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads a CSV file containing a dense vector and returns an Eigen::VectorXd.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Path to the CSV file to read </td></tr>
+    <tr><td class="paramname">delimiter</td><td>Character that separates values in the CSV file (default is comma) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Eigen::VectorXd containing the data from the CSV file </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if the file cannot be opened or contains invalid data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -172,7 +303,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1io.html">io</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 8 2026 14:30:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

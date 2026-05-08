@@ -22,8 +22,8 @@
   </compound>
   <compound kind="file">
     <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/developer-setup/</path>
-    <filename>developer-setup_2index_8md.html</filename>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/installation-instruction/</path>
+    <filename>installation-instruction_2index_8md.html</filename>
   </compound>
   <compound kind="file">
     <name>index.md</name>
@@ -74,6 +74,7 @@
     <includes id="linear__solver_8hpp" name="linear_solver.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/linear_solver.hpp</includes>
     <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
     <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
+    <class kind="class">vulpes::assemble::dg::FeExpressionUpwindFromFunctionWrapper</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::assemble</namespace>
     <namespace>vulpes::assemble::dg</namespace>
@@ -310,6 +311,25 @@
     <includes id="datastructure_2tensor_8hpp" name="tensor.hpp" local="yes" import="no" module="no" objc="no">vulpes/datastructure/tensor.hpp</includes>
     <namespace>vulpes</namespace>
     <namespace>vulpes::datastructure</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tensor.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/datastructure/</path>
+    <filename>datastructure_2tensor_8hpp.html</filename>
+    <class kind="class">vulpes::datastructure::TriMatrix</class>
+    <class kind="class">vulpes::datastructure::TetraTensor</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::datastructure</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tensor.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/la/</path>
+    <filename>la_2tensor_8hpp.html</filename>
+    <includes id="petsc__utils_8hpp" name="petsc_utils.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/petsc_utils.hpp</includes>
+    <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
+    <class kind="class">vulpes::la::Tensor</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::la</namespace>
   </compound>
   <compound kind="file">
     <name>dof_handler.hpp</name>
@@ -999,25 +1019,6 @@
     <namespace>vulpes::la</namespace>
   </compound>
   <compound kind="file">
-    <name>tensor.hpp</name>
-    <path>/__w/vulpes/vulpes/vulpes/datastructure/</path>
-    <filename>datastructure_2tensor_8hpp.html</filename>
-    <class kind="class">vulpes::datastructure::TriMatrix</class>
-    <class kind="class">vulpes::datastructure::TetraTensor</class>
-    <namespace>vulpes</namespace>
-    <namespace>vulpes::datastructure</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tensor.hpp</name>
-    <path>/__w/vulpes/vulpes/vulpes/la/</path>
-    <filename>la_2tensor_8hpp.html</filename>
-    <includes id="petsc__utils_8hpp" name="petsc_utils.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/petsc_utils.hpp</includes>
-    <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
-    <class kind="class">vulpes::la::Tensor</class>
-    <namespace>vulpes</namespace>
-    <namespace>vulpes::la</namespace>
-  </compound>
-  <compound kind="file">
     <name>vector.cpp</name>
     <path>/__w/vulpes/vulpes/vulpes/la/</path>
     <filename>vector_8cpp.html</filename>
@@ -1410,6 +1411,8 @@
     <name>io.hpp</name>
     <path>/__w/vulpes/vulpes/vulpes/utils/</path>
     <filename>io_8hpp.html</filename>
+    <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
+    <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
     <namespace>vulpes</namespace>
     <namespace>vulpes::io</namespace>
   </compound>
@@ -2580,6 +2583,160 @@
       <name>integr_id</name>
       <anchorfile>structvulpes_1_1assemble_1_1CompressedMonomial.html</anchorfile>
       <anchor>aa2efcaa781042d819a499422433c20fc</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>vulpes::assemble::dg::FeExpressionUpwindFromFunctionWrapper</name>
+    <filename>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</filename>
+    <templarg>std::size_t Dim</templarg>
+    <templarg>typename VelocityFunc</templarg>
+    <base>FeExpressionBase&lt; Dim, FeExpressionUpwindFromFunctionWrapper&lt; Dim, VelocityFunc &gt; &gt;</base>
+    <member kind="typedef">
+      <type>void</type>
+      <name>FeSpaceType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>aba0b18cd54e491637f9cbbb0d8ee4660</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr</type>
+      <name>FeExpressionUpwindFromFunctionWrapper</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>a9c768b948466d783bc4bb247414367c5</anchor>
+      <arglist>(const VelocityFunc &amp;velocity_func)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FeExpressionUpwindFromFunctionWrapper</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>a00526dc9baeec02ded585da35c63bf54</anchor>
+      <arglist>(const FeExpressionUpwindFromFunctionWrapper &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>FeExpressionUpwindFromFunctionWrapper &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>aed9ac52ea3c73d5cbe5079c61b09d0e6</anchor>
+      <arglist>(const FeExpressionUpwindFromFunctionWrapper &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FeExpressionUpwindFromFunctionWrapper</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>a89375f2e13107e5ae5e248031aab0be2</anchor>
+      <arglist>(FeExpressionUpwindFromFunctionWrapper &amp;&amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>FeExpressionUpwindFromFunctionWrapper &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>a01981419d2cdbbe91d06e267c2f56461</anchor>
+      <arglist>(FeExpressionUpwindFromFunctionWrapper &amp;&amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluate</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>aac30e1ba78748591c6787d9be80f7a9d</anchor>
+      <arglist>(const fe::FeValues&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t q) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr fe::UpdateFlagsType</type>
+      <name>computeUpdateFlags</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>a221deb918eafecdf37791dc3bf9057a7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::size_t</type>
+      <name>computeOrder</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>a17fb7e2459f82ee7c9d700c927846679</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>precompute</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>af10e9d2ade486a7573cad40b4d29aa9e</anchor>
+      <arglist>(const fe::FeValues&lt; Dim &gt; &amp;fe_values, const fe::CellsType&lt; Dim &gt; &amp;) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr const auto &amp;</type>
+      <name>feSpace</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>af0333705ad7416bd31da37eb47dd3491</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePoly</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ab34db8f9eb15f296fd3f25dc8bd08a61</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePolyCoef</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ac35e53267a9736f80c95c4a60c518e58</anchor>
+      <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionUpwindFromFunctionWrapper&lt; Dim, VelocityFunc &gt; &gt;</type>
+      <name>operator-</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr bool</type>
+      <name>is_leaf</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>a7fb54f169b814fdebe88721d121951ab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr uint8_t</type>
+      <name>is_bilinear</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>af965a76acf42f7240016d158dac01fd6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_begin</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>a2ea9e3bdcbdc3dd7835c64ac607e30be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_end</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>a6482f4e05433e454afd3bfb876f7ac37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const FeExpressionUpwindFromFunctionWrapper&lt; Dim, VelocityFunc &gt; &amp;</type>
+      <name>self</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>const VelocityFunc</type>
+      <name>m_velocity_func</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>ac476b01d2e7672958138708a79969997</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::vector&lt; double &gt;</type>
+      <name>m_evals</name>
+      <anchorfile>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</anchorfile>
+      <anchor>a2231b32e9b2fcbb80299afe16c200b7c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7151,15 +7308,15 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>ad16fde0ef1875c3fae13cab028202453</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a0506812ef15e37ea14ee22b2f9176dff</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a7f218549438922fe3086361f5968b884</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>ab34db8f9eb15f296fd3f25dc8bd08a61</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -7743,8 +7900,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionComponentDth.html</anchorfile>
-      <anchor>a13ab4b2344d8cc511d845c9f3c371b4f</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a52b92dd66ae7ec3147cc9c52988599f5</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -7764,8 +7921,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionComponentDth.html</anchorfile>
-      <anchor>a2780fe4705e85565c5c1a51c44fddb5f</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>ae181cfff738f289e877b47825dbb03e0</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -8022,8 +8179,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionDiagOnly.html</anchorfile>
-      <anchor>aac5e7d6efb62e2a08403696e6a18944c</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a6a16db20b511aac72169a7430816c64f</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -8043,8 +8200,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionDiagOnly.html</anchorfile>
-      <anchor>aec1f592b123e4b78f175e768fd164ae6</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a606fdffac9f1a9e884b324032fa589aa</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -8163,8 +8320,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionDifference.html</anchorfile>
-      <anchor>a21a693892cafd4a0727f071ec2584366</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a75ae856116f584840beaa01632ac631b</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr std::size_t</type>
@@ -8177,8 +8334,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionDifference.html</anchorfile>
-      <anchor>a1fd050a7ec2218cf46238b206520d70f</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a62ffc34c1e1a3d236892195ae093547e</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -8636,8 +8793,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFunc.html</anchorfile>
-      <anchor>af1953a408236c59ed251b8010356b88a</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a7c6c5cf574ca5defe84c052b06aae011</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -8657,8 +8814,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFunc.html</anchorfile>
-      <anchor>a8aec2e23bf91240b2f3c17b1d2ad3541</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a83cdfa6cdab48fba11e05af398721869</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -8825,8 +8982,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>a7f218549438922fe3086361f5968b884</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>ab34db8f9eb15f296fd3f25dc8bd08a61</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -9114,8 +9271,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionGradFunc.html</anchorfile>
-      <anchor>a62279bf88e3e7ddb49bd6e97c63f6007</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a3ca0f18d6b892a9ce37565505391eb4d</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -9135,8 +9292,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionGradFunc.html</anchorfile>
-      <anchor>a18a0d74f032ec120402305de9ccc0a2e</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a01b828d484f99105feb18ddc7765d687</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -9255,8 +9412,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionInner.html</anchorfile>
-      <anchor>a1976f87cf49c08111cdcf605fa140c43</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a676a815ea4f1d911044420810e61c6ee</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr std::size_t</type>
@@ -9269,8 +9426,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionInner.html</anchorfile>
-      <anchor>a1eb8f6c331857880b0942f8784bbc35d</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a8ac647af52025518b2a4ec51fd8099c7</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -9370,8 +9527,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html</anchorfile>
-      <anchor>a96393a681140d154ac036071fe792a76</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a5f8227b70aa09b39850afbf6e76964ea</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -9391,8 +9548,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html</anchorfile>
-      <anchor>ab51413588d443b333b43c4fdff5e8dc1</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a0f6a5f04e3963edc79022e21f066badd</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -9511,8 +9668,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionOuter.html</anchorfile>
-      <anchor>a62ab5683b3d03e9e91989d1a488389d9</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a7183cfcf0b86c2e0138a2cfbb1cd30cd</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr std::size_t</type>
@@ -9525,8 +9682,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionOuter.html</anchorfile>
-      <anchor>a6d4f4c80a923369c3e7dcedc241caf39</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a61044df866dd8bd89bd0656899e68403</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -9645,8 +9802,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionProduct.html</anchorfile>
-      <anchor>a314c6e6e0a01e9dbfa0ca5387cb26dda</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a1ade5a3053fdba88a0f1b72501822cd4</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr std::size_t</type>
@@ -9659,8 +9816,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionProduct.html</anchorfile>
-      <anchor>a730f41bee4e76e80cd2a60461f25e116</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>ac1de4d06d8f0a2a7a05daf378e0e0856</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -9760,8 +9917,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
-      <anchor>ae94e116a16380d3d9045847115006203</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>ae3f6548365b4776db34e8f072a6c1920</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -9781,8 +9938,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSelfFunc.html</anchorfile>
-      <anchor>aef8eafeccb2c8ccd717532ea02438bb2</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a76c56f06cd5c46f7b29951d595301119</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -9907,8 +10064,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSkipper.html</anchorfile>
-      <anchor>a742d5beeede4359194e68023cda82346</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a7156e6c2ef9d7ebdd09b287b83863a5b</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -9928,8 +10085,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSkipper.html</anchorfile>
-      <anchor>aad94135116ddd3ee184226ee415cdcbe</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t, std::size_t) const</arglist>
+      <anchor>a73e558671170f133a1e9f5bbf3072e13</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t, std::size_t) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -10062,8 +10219,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSum.html</anchorfile>
-      <anchor>a1e01cf42a8075996fb6444cdb4b013f8</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a3794190cf917d0f31b62c5f6f8d8cdb7</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr std::size_t</type>
@@ -10076,8 +10233,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSum.html</anchorfile>
-      <anchor>a391b1ba4ddde845679901f7ebc3c789c</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>ab34bb9508799c47167b713207bbe83ec</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -10184,8 +10341,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html</anchorfile>
-      <anchor>ad50bad6b6f2eae3118db7deea2d0ed1c</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>ab62b8a21c68759b4905ac39e5afac464</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -10205,8 +10362,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html</anchorfile>
-      <anchor>aed7b1841b763230b9fddf39fc524f7bd</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>ad944c843c3b8ff987a1e7d894932f8e3</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -10313,8 +10470,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionTraceSymGradFunc.html</anchorfile>
-      <anchor>a5dcd3dc0d4dddeba0f0c1795ad04c85b</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a436ca1e1b9531302f86de8e933522d14</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -10334,8 +10491,8 @@
       <type>Eigen::Vector&lt; PolynomialType, 1 &gt;</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionTraceSymGradFunc.html</anchorfile>
-      <anchor>a9de9bdca6d9e0a866a997ee67822cc98</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a1e82581c61cccd79ffbd6853beb7f9bc</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -10425,8 +10582,8 @@
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html</anchorfile>
-      <anchor>a6beb75f408c310a9771c621253774a9f</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t q) const</arglist>
+      <anchor>a0af04b8b06e2db4e666ed76b03643795</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
@@ -10446,8 +10603,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html</anchorfile>
-      <anchor>a888c2cbbe396d1e0f5be2a5a83b20d84</anchor>
-      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t i, std::size_t j, std::size_t bi, std::size_t bj) const</arglist>
+      <anchor>a7404b27e2b6acdc6b4532afe1fae77d4</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
@@ -18738,6 +18895,13 @@
       <arglist>(const std::string &amp;filename, const std::string &amp;matname=&quot;&quot;, PetscViewerFormat format=PETSC_VIEWER_ASCII_MATLAB) const</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>saveBinary</name>
+      <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
+      <anchor>ab09be3f823df41df6a9e5990b098f12f</anchor>
+      <arglist>(const std::string &amp;filename, const std::string &amp;matname=&quot;&quot;) const</arglist>
+    </member>
+    <member kind="function">
       <type>std::array&lt; PetscInt, 2 &gt;</type>
       <name>getSize</name>
       <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
@@ -18911,6 +19075,13 @@
       <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
       <anchor>a915b36d629448243ec1091dfe1dc5af3</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>compareSparseMatrices</name>
+      <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
+      <anchor>a1eae2407c9c823bf3bc28fa4ab06bc5d</anchor>
+      <arglist>(const SparseMatrix &amp;mat1, const SparseMatrix &amp;mat2, double tolerance=1e-12)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -19087,6 +19258,13 @@
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
       <anchor>a0d930dca8d068008861a95510c94b781</anchor>
       <arglist>(const std::string &amp;filename, const std::string &amp;vecname=&quot;&quot;, PetscViewerFormat format=PETSC_VIEWER_ASCII_MATLAB) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>saveBinary</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a9cca04b1348d00df6bb5a77ad6ae4530</anchor>
+      <arglist>(const std::string &amp;filename, const std::string &amp;vecname=&quot;&quot;) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -19290,6 +19468,13 @@
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
       <anchor>ac23080477fb150e5dc6ad8a652ce2abd</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>compareVectors</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a46f417f690a4d862e7cc50c076b1fdd3</anchor>
+      <arglist>(const Vector &amp;vec1, const Vector &amp;vec2, double tolerance=1e-12)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -24861,6 +25046,20 @@
       <anchor>a7d0ac3594467fff73a18674f24394c23</anchor>
       <arglist>(const Eigen::MatrixBase&lt; Derived &gt; &amp;mat)</arglist>
     </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>compareEigenMatrices</name>
+      <anchorfile>namespaceEigenVulpes.html</anchorfile>
+      <anchor>a866b12d4a3bf96a397b69a19cba842af</anchor>
+      <arglist>(const Eigen::MatrixXd &amp;mat1, const Eigen::MatrixXd &amp;mat2, const double tolerance=1e-12)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>compareEigenVectors</name>
+      <anchorfile>namespaceEigenVulpes.html</anchorfile>
+      <anchor>a653dc28b7fad57b23bc7db8c99f4407a</anchor>
+      <arglist>(const Eigen::VectorXd &amp;vec1, const Eigen::VectorXd &amp;vec2, const double tolerance=1e-12)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>vulpes</name>
@@ -24919,6 +25118,7 @@
   <compound kind="namespace">
     <name>vulpes::assemble::dg</name>
     <filename>namespacevulpes_1_1assemble_1_1dg.html</filename>
+    <class kind="class">vulpes::assemble::dg::FeExpressionUpwindFromFunctionWrapper</class>
     <member kind="function">
       <type>double</type>
       <name>integrateFeExpression</name>
@@ -24958,8 +25158,22 @@
       <type>auto</type>
       <name>createUpwindFlux</name>
       <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
-      <anchor>a5c379f196e5ca30eb27dbe967373a98a</anchor>
+      <anchor>ae92970f95e9ab89db9ecafbcce1f19ca</anchor>
+      <arglist>(VelocityFunc velocity_func)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>createUpwindFluxConstant</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a8756536eb1192ba7b20fa879210ce271</anchor>
       <arglist>(double vx, double vy=0.0, double vz=0.0)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>createUpwindFluxVariable</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a3d5a3ca701f2be0fa847f671a87bf1b1</anchor>
+      <arglist>(VelocityFunc velocity_func)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -26479,6 +26693,41 @@
       <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; uint64_t, 2 &gt; &amp;, bool)</arglist>
     </member>
     <member kind="function">
+      <type>Mesh2D&lt; FloatType, IndexType &gt;</type>
+      <name>rectangle_periodic</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a062e00866aa766ec4e6d93be9b5447ac</anchor>
+      <arglist>(const Point&lt; FloatType, 2 &gt; &amp;corner_a, const Point&lt; FloatType, 2 &gt; &amp;corner_b, const Point&lt; IndexType, 2 &gt; &amp;n_divisions, bool tria_elements=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>template Mesh2D&lt; double, int32_t &gt;</type>
+      <name>rectangle_periodic&lt; double, int32_t &gt;</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a5edc475421bf89f7b288a4c9d53f8438</anchor>
+      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int32_t, 2 &gt; &amp;, bool)</arglist>
+    </member>
+    <member kind="function">
+      <type>template Mesh2D&lt; double, uint32_t &gt;</type>
+      <name>rectangle_periodic&lt; double, uint32_t &gt;</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a1ff51dd2526dc4da50e3ca9d3820c0d1</anchor>
+      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; uint32_t, 2 &gt; &amp;, bool)</arglist>
+    </member>
+    <member kind="function">
+      <type>template Mesh2D&lt; double, int64_t &gt;</type>
+      <name>rectangle_periodic&lt; double, int64_t &gt;</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>ab342524a7bc4c00b9822f169493ac21d</anchor>
+      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int64_t, 2 &gt; &amp;, bool)</arglist>
+    </member>
+    <member kind="function">
+      <type>template Mesh2D&lt; double, uint64_t &gt;</type>
+      <name>rectangle_periodic&lt; double, uint64_t &gt;</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
+      <anchor>a2411ea4e6f9ca976592f0fd1664edc47</anchor>
+      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; uint64_t, 2 &gt; &amp;, bool)</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>isPeriodic</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
@@ -26841,10 +27090,31 @@
     <name>vulpes::io</name>
     <filename>namespacevulpes_1_1io.html</filename>
     <member kind="function">
+      <type>void</type>
+      <name>loadMatrixFromFile</name>
+      <anchorfile>namespacevulpes_1_1io.html</anchorfile>
+      <anchor>a284f448bad05492253d200085ebc6400</anchor>
+      <arglist>(la::SparseMatrix &amp;result, const std::string &amp;filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>loadVectorFromFile</name>
+      <anchorfile>namespacevulpes_1_1io.html</anchorfile>
+      <anchor>a5739b7f5c25af87b5c72088e74c36fed</anchor>
+      <arglist>(la::Vector &amp;result, const std::string &amp;filename)</arglist>
+    </member>
+    <member kind="function">
       <type>Eigen::MatrixXd</type>
       <name>readCSVToEigenMatrix</name>
       <anchorfile>namespacevulpes_1_1io.html</anchorfile>
       <anchor>af3470eb59cd11b665f91c2b288cbe4f4</anchor>
+      <arglist>(const std::string &amp;filename, char delimiter=&apos;,&apos;)</arglist>
+    </member>
+    <member kind="function">
+      <type>Eigen::VectorXd</type>
+      <name>readCSVToEigenVector</name>
+      <anchorfile>namespacevulpes_1_1io.html</anchorfile>
+      <anchor>a9c8b05abaab65e062e4a72d5fc04d3cf</anchor>
       <arglist>(const std::string &amp;filename, char delimiter=&apos;,&apos;)</arglist>
     </member>
   </compound>
@@ -28000,9 +28270,9 @@
     <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index.html</filename>
   </compound>
   <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index</name>
-    <title>Developers Setup</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index.html</filename>
+    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index</name>
+    <title>Installation and compilation of Vulpes</title>
+    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html</filename>
   </compound>
   <compound kind="page">
     <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index</name>

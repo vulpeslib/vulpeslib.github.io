@@ -45,7 +45,7 @@ MathJax.Hub.Config({
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vulpes
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
   </td>
@@ -394,8 +394,8 @@ $(document).ready(function(){initNavTree('integrator__simplexify_8hpp_source.htm
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                   [<span class="keyword">this</span>, expr_id, i, j, q, Jdx, expr,</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                    n_dof_loc]&lt;std::size_t... d&gt;(std::index_sequence&lt;d...&gt;) {</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>                     ((this-&gt;m_integrals(</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>                           i * s_n_blocks + d % s_n_blocks,</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>                           j * s_n_blocks + d / s_n_blocks, expr_id) +=</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>                           j * s_n_blocks + d % s_n_blocks,</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>                           i * s_n_blocks + d / s_n_blocks, expr_id) +=</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>                       expr-&gt;template evaluate&lt;d % s_n_blocks, d / s_n_blocks&gt;(</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>                           this-&gt;m_fe_values, i, j, q) *</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>                       Jdx),</div>
@@ -575,7 +575,7 @@ $(document).ready(function(){initNavTree('integrator__simplexify_8hpp_source.htm
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                        <span class="keyword">constexpr</span> <span class="keyword">auto</span> bi = d % s_n_blocks;</div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>                        <span class="keyword">constexpr</span> <span class="keyword">auto</span> bj = d / s_n_blocks;</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                        curr_integral(</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                            i * s_n_blocks + bi, j * s_n_blocks + bj) +=</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                            j * s_n_blocks + bi, i * s_n_blocks + bj) +=</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                            expr-&gt;template evaluate&lt;bi, bj&gt;(</div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                                this-&gt;m_fe_values, i, j, q) *</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                            Jdx;</div>
@@ -862,7 +862,7 @@ $(document).ready(function(){initNavTree('integrator__simplexify_8hpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_fbdf0309f37d26479fea532d5cc8eb08.html">assemble</a></li><li class="navelem"><a class="el" href="integrator__simplexify_8hpp.html">integrator_simplexify.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 31 2026 11:07:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 8 2026 14:30:30 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

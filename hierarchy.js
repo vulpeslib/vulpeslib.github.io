@@ -191,6 +191,9 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionUnaryMinus< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionUnaryMinus< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionUpwindFromFunctionWrapper< Dim, VelocityFunc > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::assemble::dg::FeExpressionUpwindFromFunctionWrapper< Dim, VelocityFunc >", "classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html", null ]
+    ] ],
     [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicy, FeSpaceLagrangeP< Dim, DofPolicy, NodePolicy > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
       [ "vulpes::fe::FeSpaceLagrangeP< Dim, DofPolicy, NodePolicy >", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html", null ]
     ] ],
