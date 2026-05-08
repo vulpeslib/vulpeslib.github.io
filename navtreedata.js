@@ -61,7 +61,7 @@ var NAVTREE =
       [ "GDB", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index.html#autotoc_md26", null ],
       [ "Petsc", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index.html#autotoc_md27", null ]
     ] ],
-    [ "Installation and compilation of Vulpes", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html", [
+    [ "Install & Build", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html", [
       [ "VSCode extensions", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html#autotoc_md30", null ],
       [ "Use the Docker from VSCode", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html#autotoc_md31", null ],
       [ "Simple firsts steps", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html#autotoc_md32", null ],

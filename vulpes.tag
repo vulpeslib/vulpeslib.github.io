@@ -28271,7 +28271,7 @@
   </compound>
   <compound kind="page">
     <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index</name>
-    <title>Installation and compilation of Vulpes</title>
+    <title>Install &amp; Build</title>
     <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html</filename>
   </compound>
   <compound kind="page">
