@@ -32,6 +32,7 @@ var namespacevulpes_1_1fe =
     [ "FeExpressionSymGradFunc", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc" ],
     [ "FeExpressionTraceSymGradFunc", "classvulpes_1_1fe_1_1FeExpressionTraceSymGradFunc.html", "classvulpes_1_1fe_1_1FeExpressionTraceSymGradFunc" ],
     [ "FeExpressionUnaryMinus", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html", "classvulpes_1_1fe_1_1FeExpressionUnaryMinus" ],
+    [ "FeGradProjectionExpr", "classvulpes_1_1fe_1_1FeGradProjectionExpr.html", "classvulpes_1_1fe_1_1FeGradProjectionExpr" ],
     [ "FeSpaceBase", "classvulpes_1_1fe_1_1FeSpaceBase.html", "classvulpes_1_1fe_1_1FeSpaceBase" ],
     [ "FeSpaceLagrangeP", "classvulpes_1_1fe_1_1FeSpaceLagrangeP.html", "classvulpes_1_1fe_1_1FeSpaceLagrangeP" ],
     [ "FeSpaceLagrangeQ", "classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html", "classvulpes_1_1fe_1_1FeSpaceLagrangeQ" ],

@@ -125,6 +125,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac97456719c7d7ab93db4c991d5fbda82" id="r_ac97456719c7d7ab93db4c991d5fbda82"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ac97456719c7d7ab93db4c991d5fbda82">computeDGError</a> (double errH1int, double errJump)</td></tr>
+<tr class="memdesc:ac97456719c7d7ab93db4c991d5fbda82"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the total DG error by combining the H1 semi-norm error and the jump error.  <br /></td></tr>
+<tr class="separator:ac97456719c7d7ab93db4c991d5fbda82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c3cb3b4a6b3cd12c6a35b1855edbbc5" id="r_a9c3cb3b4a6b3cd12c6a35b1855edbbc5"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </td></tr>
 <tr class="memitem:a9c3cb3b4a6b3cd12c6a35b1855edbbc5"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a9c3cb3b4a6b3cd12c6a35b1855edbbc5">integrateFeExpression</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression)</td></tr>
 <tr class="memdesc:a9c3cb3b4a6b3cd12c6a35b1855edbbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate a scalar finite element expression over the entire domain.  <br /></td></tr>
@@ -133,6 +136,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a780f8be63036a10fa34fd48d932c8632"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a780f8be63036a10fa34fd48d932c8632">computeL2Error</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const ExprType &amp;u_exact_expr)</td></tr>
 <tr class="memdesc:a780f8be63036a10fa34fd48d932c8632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the L2 error integral between a numerical solution and an exact expression.  <br /></td></tr>
 <tr class="separator:a780f8be63036a10fa34fd48d932c8632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061a3bf84ba79ed7c85cbc6f40600d41" id="r_a061a3bf84ba79ed7c85cbc6f40600d41"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType , typename ExprType &gt; </td></tr>
+<tr class="memitem:a061a3bf84ba79ed7c85cbc6f40600d41"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a061a3bf84ba79ed7c85cbc6f40600d41">computeH1SemiError</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const ExprType &amp;grad_u_exact_expr)</td></tr>
+<tr class="memdesc:a061a3bf84ba79ed7c85cbc6f40600d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the H1 semi-norm error integral between a numerical solution and an exact gradient.  <br /></td></tr>
+<tr class="separator:a061a3bf84ba79ed7c85cbc6f40600d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1782eff394c79ab30be8fb61a9367d" id="r_a3b1782eff394c79ab30be8fb61a9367d"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
+<tr class="memitem:a3b1782eff394c79ab30be8fb61a9367d"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a3b1782eff394c79ab30be8fb61a9367d">computeJumpError</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;matrix)</td></tr>
+<tr class="memdesc:a3b1782eff394c79ab30be8fb61a9367d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total Jump error that is: sqrt(u_h^T matrix u_h). This is used only when the provided problem has homogeneous Dirichlet boundary conditions.  <br /></td></tr>
+<tr class="separator:a3b1782eff394c79ab30be8fb61a9367d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f7bebd8916f4c289633d4d6531fc0a1" id="r_a8f7bebd8916f4c289633d4d6531fc0a1"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:a8f7bebd8916f4c289633d4d6531fc0a1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a8f7bebd8916f4c289633d4d6531fc0a1">createPenaltyExpression</a> (std::size_t order, double gamma)</td></tr>
 <tr class="memdesc:a8f7bebd8916f4c289633d4d6531fc0a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a penalty expression for DG methods.  <br /></td></tr>
@@ -228,6 +239,52 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac97456719c7d7ab93db4c991d5fbda82" name="ac97456719c7d7ab93db4c991d5fbda82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac97456719c7d7ab93db4c991d5fbda82">&#9670;&#160;</a></span>computeDGError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double vulpes::assemble::dg::computeDGError </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>errH1int</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>errJump</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute the total DG error by combining the H1 semi-norm error and the jump error. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errH1int</td><td>the H1 semi-norm error </td></tr>
+    <tr><td class="paramname">errJump</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="ab47891e1f6b99bc401b5cd2396f373fb" name="ab47891e1f6b99bc401b5cd2396f373fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab47891e1f6b99bc401b5cd2396f373fb">&#9670;&#160;</a></span>computeError()</h2>
 
@@ -285,6 +342,129 @@ template&lt;typename MeshType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The error norm </dd></dl>
+
+</div>
+</div>
+<a id="a061a3bf84ba79ed7c85cbc6f40600d41" name="a061a3bf84ba79ed7c85cbc6f40600d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a061a3bf84ba79ed7c85cbc6f40600d41">&#9670;&#160;</a></span>computeH1SemiError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType , typename ExprType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double vulpes::assemble::dg::computeH1SemiError </td>
+          <td>(</td>
+          <td class="paramtype">const MeshType &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cell_manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DofHandlerType &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>u_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ExprType &amp;&#160;</td>
+          <td class="paramname"><em>grad_u_exact_expr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the H1 semi-norm error integral between a numerical solution and an exact gradient. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshType</td><td>Type of the mesh </td></tr>
+    <tr><td class="paramname">FeSpaceType</td><td>Type of the finite element space </td></tr>
+    <tr><td class="paramname">DofHandlerType</td><td>Type of the DOF handler </td></tr>
+    <tr><td class="paramname">ExprType</td><td>Type of the FE expression (exact gradient solution) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The computational mesh </td></tr>
+    <tr><td class="paramname">cell_manager</td><td>The cell manager </td></tr>
+    <tr><td class="paramname">dof_handler</td><td>The DOF handler for the numerical solution </td></tr>
+    <tr><td class="paramname">u_h</td><td>The numerical solution vector (DOF coefficients) </td></tr>
+    <tr><td class="paramname">grad_u_exact_expr</td><td>The exact solution gradient as an FE expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The H1 semi-norm error: sqrt(integral_Omega |grad(u_h) - grad(u_exact)|^2 dx) </dd></dl>
+
+</div>
+</div>
+<a id="a3b1782eff394c79ab30be8fb61a9367d" name="a3b1782eff394c79ab30be8fb61a9367d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1782eff394c79ab30be8fb61a9367d">&#9670;&#160;</a></span>computeJumpError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double vulpes::assemble::dg::computeJumpError </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>u_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the total Jump error that is: sqrt(u_h^T matrix u_h). This is used only when the provided problem has homogeneous Dirichlet boundary conditions. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshType</td><td>Type of the mesh </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dof_handler</td><td>The dof handler associated to the discrete solution </td></tr>
+    <tr><td class="paramname">u_h</td><td>The discrete solution vector </td></tr>
+    <tr><td class="paramname">matrix</td><td>The matrix used to compute the error norm </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The jump error </dd></dl>
 
 </div>
 </div>
@@ -828,7 +1008,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Mon May 11 2026 09:24:52 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 12 2026 10:13:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
