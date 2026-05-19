@@ -85,6 +85,8 @@ var annotated_dup =
         [ "FeExpressionFunc", "classvulpes_1_1fe_1_1FeExpressionFunc.html", "classvulpes_1_1fe_1_1FeExpressionFunc" ],
         [ "FeExpressionFunctionWrapper", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper" ],
         [ "FeExpressionFunctionWrapperTensor", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor" ],
+        [ "FeExpressionGradContr", "classvulpes_1_1fe_1_1FeExpressionGradContr.html", "classvulpes_1_1fe_1_1FeExpressionGradContr" ],
+        [ "FeExpressionGradContrBlock", "classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html", "classvulpes_1_1fe_1_1FeExpressionGradContrBlock" ],
         [ "FeExpressionGradFunc", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html", "classvulpes_1_1fe_1_1FeExpressionGradFunc" ],
         [ "FeExpressionInner", "classvulpes_1_1fe_1_1FeExpressionInner.html", "classvulpes_1_1fe_1_1FeExpressionInner" ],
         [ "FeExpressionNeighborFunc", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc" ],

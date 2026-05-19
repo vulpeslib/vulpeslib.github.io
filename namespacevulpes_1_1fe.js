@@ -21,6 +21,8 @@ var namespacevulpes_1_1fe =
     [ "FeExpressionFunc", "classvulpes_1_1fe_1_1FeExpressionFunc.html", "classvulpes_1_1fe_1_1FeExpressionFunc" ],
     [ "FeExpressionFunctionWrapper", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper" ],
     [ "FeExpressionFunctionWrapperTensor", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor" ],
+    [ "FeExpressionGradContr", "classvulpes_1_1fe_1_1FeExpressionGradContr.html", "classvulpes_1_1fe_1_1FeExpressionGradContr" ],
+    [ "FeExpressionGradContrBlock", "classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html", "classvulpes_1_1fe_1_1FeExpressionGradContrBlock" ],
     [ "FeExpressionGradFunc", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html", "classvulpes_1_1fe_1_1FeExpressionGradFunc" ],
     [ "FeExpressionInner", "classvulpes_1_1fe_1_1FeExpressionInner.html", "classvulpes_1_1fe_1_1FeExpressionInner" ],
     [ "FeExpressionNeighborFunc", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc" ],
@@ -82,6 +84,8 @@ var namespacevulpes_1_1fe =
       [ "UpdateAll", "namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa000c668d9188fd4be6af9ccd77761b76", null ]
     ] ],
     [ "grad", "namespacevulpes_1_1fe.html#af24d31d4d96f90905f1c5aaa725fda77", null ],
+    [ "grad_contr", "namespacevulpes_1_1fe.html#ada69c75ed8a92fc6bbe7d8ff4cfd4bdc", null ],
+    [ "grad_contr_block", "namespacevulpes_1_1fe.html#a8f23be0a18cbdb4213c62218bd448041", null ],
     [ "inner", "namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c", null ],
     [ "neigh", "namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470", null ],
     [ "normal", "namespacevulpes_1_1fe.html#a4b0d70188866f3fee35b43cd7e3f5971", null ],

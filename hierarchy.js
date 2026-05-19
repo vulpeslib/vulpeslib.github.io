@@ -164,6 +164,12 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFunctionWrapperTensor< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionFunctionWrapperTensor< Dim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradContr< IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionGradContr< IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr >", "classvulpes_1_1fe_1_1FeExpressionGradContr.html", null ]
+    ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradContrBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionGradContrBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr >", "classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html", null ]
+    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradFunc< IndexBegin, IndexEnd, Dim, FeSpace, false > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionInner< Dim, E1, E2 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionInner< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionInner.html", null ]

@@ -140,209 +140,210 @@ $(document).ready(function(){initNavTree('io_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Author: Francesco Daniele &lt;francesco.daniele@polimi.it&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Author: Matteo Caldana &lt;matteo.caldana@polimi.it&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifndef VULPES_UTILS_IO_HPP_</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define VULPES_UTILS_IO_HPP_</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;Eigen/Dense&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="sparse__matrix_8hpp.html">vulpes/la/sparse_matrix.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="vector_8hpp.html">vulpes/la/vector.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevulpes.html">vulpes</a> {</div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html">   39</a></span><span class="keyword">namespace </span>io {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400">   46</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400">loadMatrixFromFile</a>(<a class="code hl_class" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a>&amp; result, <span class="keyword">const</span> std::string&amp; filename) {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  Mat temp_mat;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  PetscViewer viewer;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="comment">// 1. Usa il viewer binario (fondamentale per MatLoad)</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(PetscViewerBinaryOpen(</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      PETSC_COMM_WORLD, filename.c_str(), FILE_MODE_READ, &amp;viewer));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// 2. Carica la matrice (MatLoad chiama internamente MatAssemblyBegin/End su</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// temp_mat)</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatCreate(PETSC_COMM_WORLD, &amp;temp_mat));</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatLoad(temp_mat, viewer));</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(PetscViewerDestroy(&amp;viewer));</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// 3. Ottieni la matrice interna</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  Mat internal_mat = result.<a class="code hl_function" href="classvulpes_1_1la_1_1SparseMatrix.html#a5d1f9d16c2b7ae2d7d59e8fbdd34d65e">getPetscMatrix</a>();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// 4. CORREZIONE: Assicurati che internal_mat sia assemblata prima di MatCopy</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// Anche se è vuota o nuova, PETSc deve sapere che la fase di inserimento è</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="comment">// chiusa</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatAssemblyBegin(internal_mat, MAT_FINAL_ASSEMBLY));</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatAssemblyEnd(internal_mat, MAT_FINAL_ASSEMBLY));</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="comment">// 5. Copia i dati</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="comment">// Se result e temp_mat hanno block size differenti, PETSc lo gestirà grazie a</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="comment">// .info</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      MatCopy(temp_mat, internal_mat, DIFFERENT_NONZERO_PATTERN));</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="comment">// 6. Pulizia</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatDestroy(&amp;temp_mat));</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Author: Pedro Peixoto &lt;ppeixoto@usp.br&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#ifndef VULPES_UTILS_IO_HPP_</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define VULPES_UTILS_IO_HPP_</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;Eigen/Dense&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="sparse__matrix_8hpp.html">vulpes/la/sparse_matrix.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="vector_8hpp.html">vulpes/la/vector.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevulpes.html">vulpes</a> {</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html">   40</a></span><span class="keyword">namespace </span>io {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400">loadMatrixFromFile</a>(<a class="code hl_class" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a>&amp; result, <span class="keyword">const</span> std::string&amp; filename) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  Mat temp_mat;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  PetscViewer viewer;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// 1. Usa il viewer binario (fondamentale per MatLoad)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(PetscViewerBinaryOpen(</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      PETSC_COMM_WORLD, filename.c_str(), FILE_MODE_READ, &amp;viewer));</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// 2. Carica la matrice (MatLoad chiama internamente MatAssemblyBegin/End su</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// temp_mat)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatCreate(PETSC_COMM_WORLD, &amp;temp_mat));</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatLoad(temp_mat, viewer));</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(PetscViewerDestroy(&amp;viewer));</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="comment">// 3. Ottieni la matrice interna</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  Mat internal_mat = result.<a class="code hl_function" href="classvulpes_1_1la_1_1SparseMatrix.html#a5d1f9d16c2b7ae2d7d59e8fbdd34d65e">getPetscMatrix</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// 4. CORREZIONE: Assicurati che internal_mat sia assemblata prima di MatCopy</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="comment">// Anche se e vuota o nuova, PETSc deve sapere che la fase di inserimento e</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// chiusa</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatAssemblyBegin(internal_mat, MAT_FINAL_ASSEMBLY));</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatAssemblyEnd(internal_mat, MAT_FINAL_ASSEMBLY));</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="comment">// 5. Copia i dati</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="comment">// Se result e temp_mat hanno block size differenti, PETSc lo gestira grazie a</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="comment">// .info</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      MatCopy(temp_mat, internal_mat, DIFFERENT_NONZERO_PATTERN));</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="comment">// 6. Pulizia</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(MatDestroy(&amp;temp_mat));</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">   79</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">loadVectorFromFile</a>(</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_class" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&amp; result, <span class="keyword">const</span> std::string&amp; filename) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  Vec temp_vec;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  PetscViewer viewer;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="comment">// 1. Usa il viewer binario (fondamentale per VecLoad)</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(PetscViewerBinaryOpen(</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      PETSC_COMM_WORLD, filename.c_str(), FILE_MODE_READ, &amp;viewer));</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// 2. Carica il vettore (VecLoad chiama internamente VecAssemblyBegin/End su</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">// temp_vec)</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecCreate(PETSC_COMM_WORLD, &amp;temp_vec));</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecLoad(temp_vec, viewer));</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(PetscViewerDestroy(&amp;viewer));</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">// 3. Ottieni il vettore interno</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  Vec internal_vec = result.<a class="code hl_function" href="classvulpes_1_1la_1_1Vector.html#af407e094636cbf2098f50282c860503f">getPetscVector</a>();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">// 4. CORREZIONE: Assicurati che internal_vec sia assemblato prima di VecCopy</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="comment">// Anche se è vuoto o nuovo, PETSc deve sapere che la fase di inserimento è</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="comment">// chiusa</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecAssemblyBegin(internal_vec));</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecAssemblyEnd(internal_vec));</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="comment">// 5. Copia i dati</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecCopy(temp_vec, internal_vec));</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="comment">// 6. Pulizia</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecDestroy(&amp;temp_vec));</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">   80</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">loadVectorFromFile</a>(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_class" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&amp; result, <span class="keyword">const</span> std::string&amp; filename) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  Vec temp_vec;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  PetscViewer viewer;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="comment">// 1. Usa il viewer binario (fondamentale per VecLoad)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(PetscViewerBinaryOpen(</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      PETSC_COMM_WORLD, filename.c_str(), FILE_MODE_READ, &amp;viewer));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">// 2. Carica il vettore (VecLoad chiama internamente VecAssemblyBegin/End su</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// temp_vec)</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecCreate(PETSC_COMM_WORLD, &amp;temp_vec));</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecLoad(temp_vec, viewer));</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(PetscViewerDestroy(&amp;viewer));</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">// 3. Ottieni il vettore interno</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  Vec internal_vec = result.<a class="code hl_function" href="classvulpes_1_1la_1_1Vector.html#af407e094636cbf2098f50282c860503f">getPetscVector</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="comment">// 4. CORREZIONE: Assicurati che internal_vec sia assemblato prima di VecCopy</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="comment">// Anche se e vuoto o nuovo, PETSc deve sapere che la fase di inserimento e</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="comment">// chiusa</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecAssemblyBegin(internal_vec));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecAssemblyEnd(internal_vec));</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="comment">// 5. Copia i dati</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecCopy(temp_vec, internal_vec));</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="comment">// 6. Pulizia</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <a class="code hl_define" href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a>(VecDestroy(&amp;temp_vec));</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">  120</a></span>Eigen::MatrixXd <a class="code hl_function" href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">readCSVToEigenMatrix</a>(</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">const</span> std::string&amp; filename, <span class="keywordtype">char</span> delimiter = <span class="charliteral">&#39;,&#39;</span>) {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  std::ifstream file(filename);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordflow">if</span> (!file.is_open()) {</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Could not open file: &quot;</span> + filename);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  std::string line;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  std::vector&lt;double&gt; data;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keywordtype">size_t</span> numRows = 0;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">size_t</span> numCols = 0;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    std::stringstream ss(line);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    std::string cell;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">size_t</span> colsInCurrentRow = 0;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">while</span> (std::getline(ss, cell, delimiter)) {</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>      <span class="comment">// Trim whitespace</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      cell.erase(0, cell.find_first_not_of(<span class="stringliteral">&quot; \t\r\n&quot;</span>));</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      cell.erase(cell.find_last_not_of(<span class="stringliteral">&quot; \t\r\n&quot;</span>) + 1);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>      <span class="comment">// Convert to double and add to data</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>      <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        data.push_back(std::stod(cell));</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">throw</span> std::runtime_error(</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="stringliteral">&quot;Failed to convert value to double at row &quot;</span> +</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            std::to_string(numRows + 1) + <span class="stringliteral">&quot;, column &quot;</span> +</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            std::to_string(colsInCurrentRow + 1) + <span class="stringliteral">&quot;: &quot;</span> + cell);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      }</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      colsInCurrentRow++;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="comment">// For the first row, establish the column count</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">if</span> (numRows == 0) {</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      numCols = colsInCurrentRow;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (colsInCurrentRow != numCols) {</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>      <span class="comment">// For subsequent rows, check column consistency</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="keywordflow">throw</span> std::runtime_error(</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>          <span class="stringliteral">&quot;Inconsistent number of columns at row &quot;</span> +</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          std::to_string(numRows + 1) + <span class="stringliteral">&quot;: expected &quot;</span> +</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>          std::to_string(numCols) + <span class="stringliteral">&quot; but got &quot;</span> +</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          std::to_string(colsInCurrentRow));</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    numRows++;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keywordflow">return</span> Eigen::Map&lt;Eigen::Matrix&lt;double, -1, -1, Eigen::RowMajor&gt;&gt;(</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      data.data(), numRows, numCols);</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">  121</a></span>Eigen::MatrixXd <a class="code hl_function" href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">readCSVToEigenMatrix</a>(</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">const</span> std::string&amp; filename, <span class="keywordtype">char</span> delimiter = <span class="charliteral">&#39;,&#39;</span>) {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  std::ifstream file(filename);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Could not open file: &quot;</span> + filename);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  std::string line;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  std::vector&lt;double&gt; data;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">size_t</span> numRows = 0;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordtype">size_t</span> numCols = 0;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    std::stringstream ss(line);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    std::string cell;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">size_t</span> colsInCurrentRow = 0;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">while</span> (std::getline(ss, cell, delimiter)) {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      <span class="comment">// Trim whitespace</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      cell.erase(0, cell.find_first_not_of(<span class="stringliteral">&quot; \t\r\n&quot;</span>));</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>      cell.erase(cell.find_last_not_of(<span class="stringliteral">&quot; \t\r\n&quot;</span>) + 1);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>      <span class="comment">// Convert to double and add to data</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>      <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        data.push_back(std::stod(cell));</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">throw</span> std::runtime_error(</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="stringliteral">&quot;Failed to convert value to double at row &quot;</span> +</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            std::to_string(numRows + 1) + <span class="stringliteral">&quot;, column &quot;</span> +</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            std::to_string(colsInCurrentRow + 1) + <span class="stringliteral">&quot;: &quot;</span> + cell);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      colsInCurrentRow++;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="comment">// For the first row, establish the column count</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordflow">if</span> (numRows == 0) {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      numCols = colsInCurrentRow;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (colsInCurrentRow != numCols) {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="comment">// For subsequent rows, check column consistency</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>      <span class="keywordflow">throw</span> std::runtime_error(</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          <span class="stringliteral">&quot;Inconsistent number of columns at row &quot;</span> +</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>          std::to_string(numRows + 1) + <span class="stringliteral">&quot;: expected &quot;</span> +</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          std::to_string(numCols) + <span class="stringliteral">&quot; but got &quot;</span> +</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>          std::to_string(colsInCurrentRow));</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    numRows++;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keywordflow">return</span> Eigen::Map&lt;Eigen::Matrix&lt;double, -1, -1, Eigen::RowMajor&gt;&gt;(</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      data.data(), numRows, numCols);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>}</div>
 </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="foldopen" id="foldopen00183" data-start="{" data-end="}">
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf">  183</a></span><span class="keyword">inline</span> Eigen::VectorXd <a class="code hl_function" href="namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf">readCSVToEigenVector</a>(</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">const</span> std::string&amp; filename, <span class="keywordtype">char</span> delimiter = <span class="charliteral">&#39;,&#39;</span>) {</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  std::ifstream file(filename);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keywordflow">if</span> (!file.is_open()) {</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Could not open file: &quot;</span> + filename);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  std::string line;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  std::vector&lt;double&gt; data;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordtype">size_t</span> numRows = 0;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    std::stringstream ss(line);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    std::string cell;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordtype">size_t</span> colInCurrentRow = 0;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordflow">while</span> (std::getline(ss, cell, delimiter)) {</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>      <span class="comment">// Trim whitespace</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>      cell.erase(0, cell.find_first_not_of(<span class="stringliteral">&quot; \t\r\n&quot;</span>));</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      cell.erase(cell.find_last_not_of(<span class="stringliteral">&quot; \t\r\n&quot;</span>) + 1);</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      <span class="comment">// Convert to double and add to data</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        data.push_back(std::stod(cell));</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">throw</span> std::runtime_error(</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="stringliteral">&quot;Failed to convert value to double at row &quot;</span> +</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            std::to_string(numRows + 1) + <span class="stringliteral">&quot;, column &quot;</span> +</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            std::to_string(colInCurrentRow + 1) + <span class="stringliteral">&quot;: &quot;</span> + cell);</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>      }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      colInCurrentRow++;</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    numRows++;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  file.close();</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="keywordflow">if</span> (data.empty()) {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Empty file: &quot;</span> + filename);</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  }</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordflow">return</span> Eigen::VectorXd::Map(</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>      data.data(), <span class="keyword">static_cast&lt;</span>Eigen::Index<span class="keyword">&gt;</span>(data.size()));</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>}</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="foldopen" id="foldopen00184" data-start="{" data-end="}">
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf">  184</a></span><span class="keyword">inline</span> Eigen::VectorXd <a class="code hl_function" href="namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf">readCSVToEigenVector</a>(</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keyword">const</span> std::string&amp; filename, <span class="keywordtype">char</span> delimiter = <span class="charliteral">&#39;,&#39;</span>) {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  std::ifstream file(filename);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Could not open file: &quot;</span> + filename);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  std::string line;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  std::vector&lt;double&gt; data;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordtype">size_t</span> numRows = 0;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    std::stringstream ss(line);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    std::string cell;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordtype">size_t</span> colInCurrentRow = 0;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordflow">while</span> (std::getline(ss, cell, delimiter)) {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>      <span class="comment">// Trim whitespace</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      cell.erase(0, cell.find_first_not_of(<span class="stringliteral">&quot; \t\r\n&quot;</span>));</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      cell.erase(cell.find_last_not_of(<span class="stringliteral">&quot; \t\r\n&quot;</span>) + 1);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="comment">// Convert to double and add to data</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        data.push_back(std::stod(cell));</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">throw</span> std::runtime_error(</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <span class="stringliteral">&quot;Failed to convert value to double at row &quot;</span> +</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            std::to_string(numRows + 1) + <span class="stringliteral">&quot;, column &quot;</span> +</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            std::to_string(colInCurrentRow + 1) + <span class="stringliteral">&quot;: &quot;</span> + cell);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      colInCurrentRow++;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    numRows++;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  file.close();</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="keywordflow">if</span> (data.empty()) {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Empty file: &quot;</span> + filename);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keywordflow">return</span> Eigen::VectorXd::Map(</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      data.data(), <span class="keyword">static_cast&lt;</span>Eigen::Index<span class="keyword">&gt;</span>(data.size()));</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>}</div>
 </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}  <span class="comment">// namespace io</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>}  <span class="comment">// namespace io</span></div>
 </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>}  <span class="comment">// namespace vulpes</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_UTILS_IO_HPP_</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}  <span class="comment">// namespace vulpes</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_UTILS_IO_HPP_</span></div>
 <div class="ttc" id="aclassvulpes_1_1la_1_1SparseMatrix_html"><div class="ttname"><a href="classvulpes_1_1la_1_1SparseMatrix.html">vulpes::la::SparseMatrix</a></div><div class="ttdef"><b>Definition</b> sparse_matrix.hpp:48</div></div>
 <div class="ttc" id="aclassvulpes_1_1la_1_1SparseMatrix_html_a5d1f9d16c2b7ae2d7d59e8fbdd34d65e"><div class="ttname"><a href="classvulpes_1_1la_1_1SparseMatrix.html#a5d1f9d16c2b7ae2d7d59e8fbdd34d65e">vulpes::la::SparseMatrix::getPetscMatrix</a></div><div class="ttdeci">const auto &amp; getPetscMatrix() const</div><div class="ttdoc">Get the underlying PETSc matrix.</div><div class="ttdef"><b>Definition</b> sparse_matrix.hpp:277</div></div>
 <div class="ttc" id="aclassvulpes_1_1la_1_1Vector_html"><div class="ttname"><a href="classvulpes_1_1la_1_1Vector.html">vulpes::la::Vector</a></div><div class="ttdoc">A wrapper around PETSc Vec for distributed vectors.</div><div class="ttdef"><b>Definition</b> vector.hpp:49</div></div>
 <div class="ttc" id="aclassvulpes_1_1la_1_1Vector_html_af407e094636cbf2098f50282c860503f"><div class="ttname"><a href="classvulpes_1_1la_1_1Vector.html#af407e094636cbf2098f50282c860503f">vulpes::la::Vector::getPetscVector</a></div><div class="ttdeci">const Vec &amp; getPetscVector() const</div><div class="ttdoc">Get the underlying PETSc vector (const version)</div><div class="ttdef"><b>Definition</b> vector.hpp:177</div></div>
-<div class="ttc" id="anamespacevulpes_1_1io_html_a284f448bad05492253d200085ebc6400"><div class="ttname"><a href="namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400">vulpes::io::loadMatrixFromFile</a></div><div class="ttdeci">void loadMatrixFromFile(la::SparseMatrix &amp;result, const std::string &amp;filename)</div><div class="ttdoc">Load a PETSc matrix from a binary file and copy it into a SparseMatrix.</div><div class="ttdef"><b>Definition</b> io.hpp:46</div></div>
-<div class="ttc" id="anamespacevulpes_1_1io_html_a5739b7f5c25af87b5c72088e74c36fed"><div class="ttname"><a href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">vulpes::io::loadVectorFromFile</a></div><div class="ttdeci">void loadVectorFromFile(la::Vector &amp;result, const std::string &amp;filename)</div><div class="ttdef"><b>Definition</b> io.hpp:79</div></div>
-<div class="ttc" id="anamespacevulpes_1_1io_html_a9c8b05abaab65e062e4a72d5fc04d3cf"><div class="ttname"><a href="namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf">vulpes::io::readCSVToEigenVector</a></div><div class="ttdeci">Eigen::VectorXd readCSVToEigenVector(const std::string &amp;filename, char delimiter=',')</div><div class="ttdef"><b>Definition</b> io.hpp:183</div></div>
-<div class="ttc" id="anamespacevulpes_1_1io_html_af3470eb59cd11b665f91c2b288cbe4f4"><div class="ttname"><a href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">vulpes::io::readCSVToEigenMatrix</a></div><div class="ttdeci">Eigen::MatrixXd readCSVToEigenMatrix(const std::string &amp;filename, char delimiter=',')</div><div class="ttdef"><b>Definition</b> io.hpp:120</div></div>
+<div class="ttc" id="anamespacevulpes_1_1io_html_a284f448bad05492253d200085ebc6400"><div class="ttname"><a href="namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400">vulpes::io::loadMatrixFromFile</a></div><div class="ttdeci">void loadMatrixFromFile(la::SparseMatrix &amp;result, const std::string &amp;filename)</div><div class="ttdoc">Load a PETSc matrix from a binary file and copy it into a SparseMatrix.</div><div class="ttdef"><b>Definition</b> io.hpp:47</div></div>
+<div class="ttc" id="anamespacevulpes_1_1io_html_a5739b7f5c25af87b5c72088e74c36fed"><div class="ttname"><a href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">vulpes::io::loadVectorFromFile</a></div><div class="ttdeci">void loadVectorFromFile(la::Vector &amp;result, const std::string &amp;filename)</div><div class="ttdef"><b>Definition</b> io.hpp:80</div></div>
+<div class="ttc" id="anamespacevulpes_1_1io_html_a9c8b05abaab65e062e4a72d5fc04d3cf"><div class="ttname"><a href="namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf">vulpes::io::readCSVToEigenVector</a></div><div class="ttdeci">Eigen::VectorXd readCSVToEigenVector(const std::string &amp;filename, char delimiter=',')</div><div class="ttdef"><b>Definition</b> io.hpp:184</div></div>
+<div class="ttc" id="anamespacevulpes_1_1io_html_af3470eb59cd11b665f91c2b288cbe4f4"><div class="ttname"><a href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">vulpes::io::readCSVToEigenMatrix</a></div><div class="ttdeci">Eigen::MatrixXd readCSVToEigenMatrix(const std::string &amp;filename, char delimiter=',')</div><div class="ttdef"><b>Definition</b> io.hpp:121</div></div>
 <div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:36</div></div>
 <div class="ttc" id="apetsc__utils_8hpp_html_a588881b031f69426b9f5691cb2e32e41"><div class="ttname"><a href="petsc__utils_8hpp.html#a588881b031f69426b9f5691cb2e32e41">PetscCallAbortWorld</a></div><div class="ttdeci">#define PetscCallAbortWorld(...)</div><div class="ttdef"><b>Definition</b> petsc_utils.hpp:32</div></div>
 <div class="ttc" id="asparse__matrix_8hpp_html"><div class="ttname"><a href="sparse__matrix_8hpp.html">sparse_matrix.hpp</a></div></div>
@@ -354,7 +355,7 @@ $(document).ready(function(){initNavTree('io_8hpp_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_57fd5c05a3144478f1fe40cbcefca761.html">utils</a></li><li class="navelem"><a class="el" href="io_8hpp.html">io.hpp</a></li>
-    <li class="footer">Generated on Wed May 13 2026 09:29:26 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 19 2026 10:31:19 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
