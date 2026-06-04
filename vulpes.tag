@@ -74,6 +74,7 @@
     <includes id="linear__solver_8hpp" name="linear_solver.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/linear_solver.hpp</includes>
     <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
     <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
+    <includes id="vector__block__utils_8hpp" name="vector_block_utils.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector_block_utils.hpp</includes>
     <class kind="class">vulpes::assemble::dg::FeExpressionUpwindFromFunctionWrapper</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::assemble</namespace>
@@ -364,9 +365,9 @@
     <includes id="fe__expr__base_8hpp" name="fe_expr_base.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_base.hpp</includes>
     <includes id="fe__expr__basis_8hpp" name="fe_expr_basis.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_basis.hpp</includes>
     <includes id="fe__expr__func_8hpp" name="fe_expr_func.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_func.hpp</includes>
-    <includes id="fe__expr__grad__contr_8hpp" name="fe_expr_grad_contr.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_grad_contr.hpp</includes>
     <includes id="fe__expr__op_8hpp" name="fe_expr_op.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_op.hpp</includes>
     <includes id="fe__expr__unary_8hpp" name="fe_expr_unary.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_unary.hpp</includes>
+    <includes id="fe__expr__vector_8hpp" name="fe_expr_vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_vector.hpp</includes>
   </compound>
   <compound kind="file">
     <name>fe_expr_base.hpp</name>
@@ -416,17 +417,6 @@
     <namespace>vulpes::fe</namespace>
   </compound>
   <compound kind="file">
-    <name>fe_expr_grad_contr.hpp</name>
-    <path>/__w/vulpes/vulpes/vulpes/fe/fe_expressions/</path>
-    <filename>fe__expr__grad__contr_8hpp.html</filename>
-    <includes id="fe__expr__base_8hpp" name="fe_expr_base.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_base.hpp</includes>
-    <includes id="fe__expr__basis_8hpp" name="fe_expr_basis.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_basis.hpp</includes>
-    <class kind="class">vulpes::fe::FeExpressionGradContr</class>
-    <class kind="class">vulpes::fe::FeExpressionGradContrBlock</class>
-    <namespace>vulpes</namespace>
-    <namespace>vulpes::fe</namespace>
-  </compound>
-  <compound kind="file">
     <name>fe_expr_op.hpp</name>
     <path>/__w/vulpes/vulpes/vulpes/fe/fe_expressions/</path>
     <filename>fe__expr__op_8hpp.html</filename>
@@ -457,6 +447,19 @@
     <class kind="class">vulpes::fe::FeExpressionUnaryMinus</class>
     <class kind="class">vulpes::fe::FeExpressionComponentDth</class>
     <class kind="class">vulpes::fe::FeExpressionDiagOnly</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::fe</namespace>
+  </compound>
+  <compound kind="file">
+    <name>fe_expr_vector.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/fe/fe_expressions/</path>
+    <filename>fe__expr__vector_8hpp.html</filename>
+    <includes id="fe__expr__base_8hpp" name="fe_expr_base.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_base.hpp</includes>
+    <includes id="fe__expr__basis_8hpp" name="fe_expr_basis.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_expressions/fe_expr_basis.hpp</includes>
+    <includes id="eigen_8hpp" name="eigen.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/eigen.hpp</includes>
+    <class kind="class">vulpes::fe::FeExpressionGradContr</class>
+    <class kind="class">vulpes::fe::FeExpressionGradContrBlock</class>
+    <class kind="class">vulpes::fe::FeExpressionInnerBlock</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::fe</namespace>
   </compound>
@@ -1046,6 +1049,15 @@
     <includes id="petsc__utils_8hpp" name="petsc_utils.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/petsc_utils.hpp</includes>
     <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
     <class kind="class">vulpes::la::Vector</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::la</namespace>
+  </compound>
+  <compound kind="file">
+    <name>vector_block_utils.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/la/</path>
+    <filename>vector__block__utils_8hpp.html</filename>
+    <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
+    <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
     <namespace>vulpes</namespace>
     <namespace>vulpes::la</namespace>
   </compound>
@@ -8867,6 +8879,13 @@
     </member>
     <member kind="variable" static="yes">
       <type>static constexpr std::size_t</type>
+      <name>k_n_comp</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFunc.html</anchorfile>
+      <anchor>a9db7e899add99641f5e66759272507dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
       <name>k_index_begin</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFunc.html</anchorfile>
       <anchor>a7e9b02bd7a48416e28d0d8dd49b70d64</anchor>
@@ -9778,6 +9797,166 @@
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionInner.html</anchorfile>
       <anchor>a073f9785c7a6fb13c64f277f7012ef32</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>vulpes::fe::FeExpressionInnerBlock</name>
+    <filename>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</filename>
+    <templarg>std::size_t TestComp</templarg>
+    <templarg>std::size_t TrialComp</templarg>
+    <templarg>std::size_t IndexBegin</templarg>
+    <templarg>std::size_t IndexEnd</templarg>
+    <templarg>std::size_t Dim</templarg>
+    <templarg>typename FeSpace</templarg>
+    <templarg>typename CoeffExpr</templarg>
+    <templarg>typename VExpr</templarg>
+    <base>FeExpressionBase&lt; Dim, FeExpressionInnerBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr &gt; &gt;</base>
+    <member kind="typedef">
+      <type>FeSpace</type>
+      <name>FeSpaceType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>aff4728fb7a0550bf12f8726cebee33b6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::decay_t&lt; decltype(FeSpace{0}.getBasis()[0])&gt;</type>
+      <name>PolynomialType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a4fef02202302ede3d4707053106d56f5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FeExpressionInnerBlock</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a43e3f15194537755653c73b65f90d627</anchor>
+      <arglist>(const CoeffExpr &amp;coeff, const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u, const VExpr &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr const auto &amp;</type>
+      <name>feSpace</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>af1fc315c15bfbc5fa42c8c9ce81d3630</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluate</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a310b5e770dc1e36fed6575cefaeb4871</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr UpdateFlagsType</type>
+      <name>computeUpdateFlags</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a925aa4287bd137bb6765e1384d5292a9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::size_t</type>
+      <name>computeOrder</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>ab002a92ae371269fd268e043525191a7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePoly</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>aca77584e5fd4cbb12c91aee181084f80</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t, std::size_t) const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePolyCoef</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a53b1a1cdf9a1d46d2a5d87f410725b73</anchor>
+      <arglist>(const auto &amp;, const auto &amp;, std::size_t, std::size_t) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>precompute</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>ae5427012b29fe9ab8e78f07142e23b5b</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionInnerBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr &gt; &gt;</type>
+      <name>operator-</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr bool</type>
+      <name>is_leaf</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a74cd7490e1134ed8ee7ad2fb6a66fd16</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr uint8_t</type>
+      <name>is_bilinear</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>aa0a29ecf6f0e587727d4b92f0683be8f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_begin</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a2166099e7f3bc08c5d4bd0292d4c1e17</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_end</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a6c94fb800d2ca65f7abb6169f0f42815</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const FeExpressionInnerBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr &gt; &amp;</type>
+      <name>self</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::conditional_t&lt; CoeffExpr::is_leaf, const CoeffExpr &amp;, const CoeffExpr &gt;</type>
+      <name>m_coeff</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>af9f8563dd0b16fc1986266e503fb35d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;</type>
+      <name>m_u</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>ab13e2f51d699434ea670ea412657881e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::conditional_t&lt; VExpr::is_leaf, const VExpr &amp;, const VExpr &gt;</type>
+      <name>m_v</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>a0b5818ba2273aae60146f7143cdc2a81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="private" static="yes">
+      <type>static constexpr double</type>
+      <name>scalarFromBasis</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>ab8f24a2d6b3c8b43b03b537f182e5a37</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function" protection="private" static="yes">
+      <type>static constexpr double</type>
+      <name>scalarFromBasis</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionInnerBlock.html</anchorfile>
+      <anchor>ac1831f152dbba4898c1ddda9680ea712</anchor>
+      <arglist>(const EigenVulpes::OneComponentVector&lt; Idx, Scalar, Size &gt; &amp;v)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -25659,6 +25838,27 @@
       <anchor>a98f07f81661669f07b85286c79f2ef2d</anchor>
       <arglist>(const dofs::DofHandler&lt; MeshType &gt; &amp;dof_handler, la::Vector &amp;u, const la::Vector &amp;u_reference, const la::SparseMatrix &amp;mass_matrix, const la::Vector &amp;rhs_const, double domain_measure)</arglist>
     </member>
+    <member kind="function">
+      <type>la::Vector</type>
+      <name>l2ProjectExpressionScalar</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>aa1954ee8bd51f572126d62fa4a0d7cce</anchor>
+      <arglist>(const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, const la::SparseMatrix &amp;mass_scalar)</arglist>
+    </member>
+    <member kind="function">
+      <type>la::Vector</type>
+      <name>l2ProjectExpressionScalar</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a48e39b0d4340e285739888b2cee17ea0</anchor>
+      <arglist>(const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, const la::SparseMatrix &amp;mass_blocked, std::size_t component)</arglist>
+    </member>
+    <member kind="function">
+      <type>la::Vector</type>
+      <name>l2ProjectExpressionBlockedSubset</name>
+      <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
+      <anchor>a5a607f5519e3de6cd116d9e7ccb75ade</anchor>
+      <arglist>(const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, std::size_t component_offset, const la::SparseMatrix &amp;mass_blocked)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>vulpes::assemble::internal</name>
@@ -25916,6 +26116,7 @@
     <class kind="class">vulpes::fe::FeExpressionGradContrBlock</class>
     <class kind="class">vulpes::fe::FeExpressionGradFunc</class>
     <class kind="class">vulpes::fe::FeExpressionInner</class>
+    <class kind="class">vulpes::fe::FeExpressionInnerBlock</class>
     <class kind="class">vulpes::fe::FeExpressionNeighborFunc</class>
     <class kind="class">vulpes::fe::FeExpressionOuter</class>
     <class kind="class">vulpes::fe::FeExpressionProduct</class>
@@ -26230,20 +26431,6 @@
       <arglist>(const E &amp;expr, const typename FeExpressionSkipper&lt; Dim, E &gt;::FuncType &amp;func)</arglist>
     </member>
     <member kind="function">
-      <type>auto</type>
-      <name>grad_contr</name>
-      <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>ada69c75ed8a92fc6bbe7d8ff4cfd4bdc</anchor>
-      <arglist>(const FeExpressionBase&lt; Dim, FuncExpr &gt; &amp;func, const FeExpressionGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</arglist>
-    </member>
-    <member kind="function">
-      <type>auto</type>
-      <name>grad_contr_block</name>
-      <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a8f23be0a18cbdb4213c62218bd448041</anchor>
-      <arglist>(const FeExpressionBase&lt; Dim, FuncExpr &gt; &amp;func, const FeExpressionGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</arglist>
-    </member>
-    <member kind="function">
       <type>FeExpressionInner&lt; Dim, FeExpressionU, FeExpressionV &gt;</type>
       <name>inner</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
@@ -26284,6 +26471,27 @@
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
       <anchor>a5195455105ab9290dda47487c506bfd7</anchor>
       <arglist>(const E &amp;w)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>grad_contr</name>
+      <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
+      <anchor>ada69c75ed8a92fc6bbe7d8ff4cfd4bdc</anchor>
+      <arglist>(const FeExpressionBase&lt; Dim, FuncExpr &gt; &amp;func, const FeExpressionGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>grad_contr_block</name>
+      <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
+      <anchor>a8f23be0a18cbdb4213c62218bd448041</anchor>
+      <arglist>(const FeExpressionBase&lt; Dim, FuncExpr &gt; &amp;func, const FeExpressionGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>inner_block</name>
+      <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
+      <anchor>a2aee2ab251f90e08c7ff065fc54b6407</anchor>
+      <arglist>(const FeExpressionBase&lt; Dim, CoeffExpr &gt; &amp;coeff, const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u, const FeExpressionBase&lt; Dim, VExpr &gt; &amp;v)</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -27632,6 +27840,48 @@
       <anchorfile>namespacevulpes_1_1la.html</anchorfile>
       <anchor>a484729c4a7c5a2e6e07a4f912814520b</anchor>
       <arglist>(const Vector &amp;a, const Vector &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector</type>
+      <name>extractComponent</name>
+      <anchorfile>namespacevulpes_1_1la.html</anchorfile>
+      <anchor>ad1a9631646b373a8f4ff3bb76b78ff9f</anchor>
+      <arglist>(const Vector &amp;blocked_vec, const DofHandlerType &amp;dof_handler, std::size_t f)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; Vector &gt;</type>
+      <name>extractAllComponents</name>
+      <anchorfile>namespacevulpes_1_1la.html</anchorfile>
+      <anchor>aaca8380f6d8e4d324ed1483e3ce95e9a</anchor>
+      <arglist>(const Vector &amp;blocked_vec, const DofHandlerType &amp;dof_handler)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector</type>
+      <name>mergeBlockedVector</name>
+      <anchorfile>namespacevulpes_1_1la.html</anchorfile>
+      <anchor>aa47c301683f90407fecc34e6f318e3bb</anchor>
+      <arglist>(const std::vector&lt; Vector &gt; &amp;scalars, const DofHandlerType &amp;dof_handler)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>extractDiagonalBlockComponent</name>
+      <anchorfile>namespacevulpes_1_1la.html</anchorfile>
+      <anchor>ab926e40f9912d90f9b01cb3543af2e2e</anchor>
+      <arglist>(const SparseMatrix &amp;blocked_mat, std::size_t component, SparseMatrix &amp;scalar_mat, double zero_tol=0.0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>mergeDiagonalBlockedMatrix</name>
+      <anchorfile>namespacevulpes_1_1la.html</anchorfile>
+      <anchor>a2ba177e96cb4a1e259233310e0d543cc</anchor>
+      <arglist>(const std::array&lt; std::reference_wrapper&lt; const SparseMatrix &gt;, NFields &gt; &amp;scalar_components, SparseMatrix &amp;blocked_mat, double zero_tol=0.0)</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr PetscInt</type>
+      <name>kMaxDenseExtractSize</name>
+      <anchorfile>namespacevulpes_1_1la.html</anchorfile>
+      <anchor>a04b27bf49a3931a86de5024b3662ae21</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="namespace">

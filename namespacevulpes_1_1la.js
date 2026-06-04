@@ -13,5 +13,11 @@ var namespacevulpes_1_1la =
       [ "RowMajor", "namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca748db46088f6cfe844946f6dd864d220", null ]
     ] ],
     [ "dot", "namespacevulpes_1_1la.html#a484729c4a7c5a2e6e07a4f912814520b", null ],
-    [ "setPETScOptionValue", "namespacevulpes_1_1la.html#a3826656435a19ca632911e187101a335", null ]
+    [ "extractAllComponents", "namespacevulpes_1_1la.html#aaca8380f6d8e4d324ed1483e3ce95e9a", null ],
+    [ "extractComponent", "namespacevulpes_1_1la.html#ad1a9631646b373a8f4ff3bb76b78ff9f", null ],
+    [ "extractDiagonalBlockComponent", "namespacevulpes_1_1la.html#ab926e40f9912d90f9b01cb3543af2e2e", null ],
+    [ "mergeBlockedVector", "namespacevulpes_1_1la.html#aa47c301683f90407fecc34e6f318e3bb", null ],
+    [ "mergeDiagonalBlockedMatrix", "namespacevulpes_1_1la.html#a2ba177e96cb4a1e259233310e0d543cc", null ],
+    [ "setPETScOptionValue", "namespacevulpes_1_1la.html#a3826656435a19ca632911e187101a335", null ],
+    [ "kMaxDenseExtractSize", "namespacevulpes_1_1la.html#a04b27bf49a3931a86de5024b3662ae21", null ]
 ];

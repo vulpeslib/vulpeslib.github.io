@@ -183,6 +183,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a98f07f81661669f07b85286c79f2ef2d"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a98f07f81661669f07b85286c79f2ef2d">forceEqualMean</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_reference, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_matrix, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;rhs_const, double domain_measure)</td></tr>
 <tr class="memdesc:a98f07f81661669f07b85286c79f2ef2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust a solution to match the average of a reference solution.  <br /></td></tr>
 <tr class="separator:a98f07f81661669f07b85286c79f2ef2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1954ee8bd51f572126d62fa4a0d7cce" id="r_aa1954ee8bd51f572126d62fa4a0d7cce"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </td></tr>
+<tr class="memitem:aa1954ee8bd51f572126d62fa4a0d7cce"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#aa1954ee8bd51f572126d62fa4a0d7cce">l2ProjectExpressionScalar</a> (const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_scalar)</td></tr>
+<tr class="memdesc:aa1954ee8bd51f572126d62fa4a0d7cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2-project a scalar expression using a precomputed scalar mass matrix.  <br /></td></tr>
+<tr class="separator:aa1954ee8bd51f572126d62fa4a0d7cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e39b0d4340e285739888b2cee17ea0" id="r_a48e39b0d4340e285739888b2cee17ea0"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </td></tr>
+<tr class="memitem:a48e39b0d4340e285739888b2cee17ea0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a48e39b0d4340e285739888b2cee17ea0">l2ProjectExpressionScalar</a> (const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_blocked, std::size_t component)</td></tr>
+<tr class="memdesc:a48e39b0d4340e285739888b2cee17ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2-project a scalar expression using one component extracted from a blocked mass matrix.  <br /></td></tr>
+<tr class="separator:a48e39b0d4340e285739888b2cee17ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a607f5519e3de6cd116d9e7ccb75ade" id="r_a5a607f5519e3de6cd116d9e7ccb75ade"><td class="memTemplParams" colspan="2">template&lt;std::size_t VecSize, std::size_t NFields, typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </td></tr>
+<tr class="memitem:a5a607f5519e3de6cd116d9e7ccb75ade"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a5a607f5519e3de6cd116d9e7ccb75ade">l2ProjectExpressionBlockedSubset</a> (const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, std::size_t component_offset, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_blocked)</td></tr>
+<tr class="memdesc:a5a607f5519e3de6cd116d9e7ccb75ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2-project a vector expression into a subset of components of a blocked vector.  <br /></td></tr>
+<tr class="separator:a5a607f5519e3de6cd116d9e7ccb75ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a2f9164924c547e4576328d228e5d6a9a" name="a2f9164924c547e4576328d228e5d6a9a"></a>
@@ -940,6 +952,256 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
 
 </div>
 </div>
+<a id="a5a607f5519e3de6cd116d9e7ccb75ade" name="a5a607f5519e3de6cd116d9e7ccb75ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a607f5519e3de6cd116d9e7ccb75ade">&#9670;&#160;</a></span>l2ProjectExpressionBlockedSubset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t VecSize, std::size_t NFields, typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> vulpes::assemble::dg::l2ProjectExpressionBlockedSubset </td>
+          <td>(</td>
+          <td class="paramtype">const MeshType &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CellManagerType &amp;&#160;</td>
+          <td class="paramname"><em>cell_manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DofHandlerType &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FeSpaceType &amp;&#160;</td>
+          <td class="paramname"><em>fe_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Expression &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>component_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>mass_blocked</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L2-project a vector expression into a subset of components of a blocked vector. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VecSize</td><td>Number of projected components in the expression </td></tr>
+    <tr><td class="paramname">NFields</td><td>Total number of fields in the blocked vector </td></tr>
+    <tr><td class="paramname">MeshType</td><td>Type of the mesh </td></tr>
+    <tr><td class="paramname">CellManagerType</td><td>Type of the cell manager </td></tr>
+    <tr><td class="paramname">DofHandlerType</td><td>Type of the DOF handler </td></tr>
+    <tr><td class="paramname">FeSpaceType</td><td>Type of the FE space </td></tr>
+    <tr><td class="paramname">Expression</td><td>Type of the vector FE expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The computational mesh </td></tr>
+    <tr><td class="paramname">cell_manager</td><td>Cell manager used by the integrator </td></tr>
+    <tr><td class="paramname">dof_handler</td><td>DOF handler for assembly and output vector </td></tr>
+    <tr><td class="paramname">fe_space</td><td>FE space used to build test functions </td></tr>
+    <tr><td class="paramname">expr</td><td>Vector expression to project </td></tr>
+    <tr><td class="paramname">component_offset</td><td>Start component in the blocked vector where projected values are inserted </td></tr>
+    <tr><td class="paramname">mass_blocked</td><td>Blocked mass matrix used in the L2 solve </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Blocked vector with projected components written in the selected subset </dd></dl>
+
+</div>
+</div>
+<a id="a48e39b0d4340e285739888b2cee17ea0" name="a48e39b0d4340e285739888b2cee17ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e39b0d4340e285739888b2cee17ea0">&#9670;&#160;</a></span>l2ProjectExpressionScalar() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> vulpes::assemble::dg::l2ProjectExpressionScalar </td>
+          <td>(</td>
+          <td class="paramtype">const MeshType &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CellManagerType &amp;&#160;</td>
+          <td class="paramname"><em>cell_manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DofHandlerType &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FeSpaceType &amp;&#160;</td>
+          <td class="paramname"><em>fe_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Expression &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>mass_blocked</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L2-project a scalar expression using one component extracted from a blocked mass matrix. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshType</td><td>Type of the mesh </td></tr>
+    <tr><td class="paramname">CellManagerType</td><td>Type of the cell manager </td></tr>
+    <tr><td class="paramname">DofHandlerType</td><td>Type of the DOF handler </td></tr>
+    <tr><td class="paramname">FeSpaceType</td><td>Type of the FE space </td></tr>
+    <tr><td class="paramname">Expression</td><td>Type of the scalar FE expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The computational mesh </td></tr>
+    <tr><td class="paramname">cell_manager</td><td>Cell manager used by the integrator </td></tr>
+    <tr><td class="paramname">dof_handler</td><td>DOF handler for assembly and output vector </td></tr>
+    <tr><td class="paramname">fe_space</td><td>FE space used to build test functions </td></tr>
+    <tr><td class="paramname">expr</td><td>Expression to project </td></tr>
+    <tr><td class="paramname">mass_blocked</td><td>Blocked mass matrix containing all components </td></tr>
+    <tr><td class="paramname">component</td><td>Component index to extract from the blocked mass matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector of modal coefficients of the projected scalar field </dd></dl>
+
+</div>
+</div>
+<a id="aa1954ee8bd51f572126d62fa4a0d7cce" name="aa1954ee8bd51f572126d62fa4a0d7cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1954ee8bd51f572126d62fa4a0d7cce">&#9670;&#160;</a></span>l2ProjectExpressionScalar() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> vulpes::assemble::dg::l2ProjectExpressionScalar </td>
+          <td>(</td>
+          <td class="paramtype">const MeshType &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CellManagerType &amp;&#160;</td>
+          <td class="paramname"><em>cell_manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DofHandlerType &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FeSpaceType &amp;&#160;</td>
+          <td class="paramname"><em>fe_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Expression &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>mass_scalar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L2-project a scalar expression using a precomputed scalar mass matrix. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MeshType</td><td>Type of the mesh </td></tr>
+    <tr><td class="paramname">CellManagerType</td><td>Type of the cell manager </td></tr>
+    <tr><td class="paramname">DofHandlerType</td><td>Type of the DOF handler </td></tr>
+    <tr><td class="paramname">FeSpaceType</td><td>Type of the FE space </td></tr>
+    <tr><td class="paramname">Expression</td><td>Type of the scalar FE expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The computational mesh </td></tr>
+    <tr><td class="paramname">cell_manager</td><td>Cell manager used by the integrator </td></tr>
+    <tr><td class="paramname">dof_handler</td><td>DOF handler for assembly and output vector </td></tr>
+    <tr><td class="paramname">fe_space</td><td>FE space used to build test functions </td></tr>
+    <tr><td class="paramname">expr</td><td>Expression to project </td></tr>
+    <tr><td class="paramname">mass_scalar</td><td>Scalar mass matrix used in the L2 solve </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector of modal coefficients of the projected scalar field </dd></dl>
+
+</div>
+</div>
 <a id="adb84be46515d1b568eb329d2b2a7fe8d" name="adb84be46515d1b568eb329d2b2a7fe8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb84be46515d1b568eb329d2b2a7fe8d">&#9670;&#160;</a></span>projectConstantOntoModalSpace()</h2>
 
@@ -1008,7 +1270,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Mon May 25 2026 07:13:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -188,6 +188,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInner.html">FeExpressionInner</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-block bilinear expression \( c(x) \, u_l \, v_k \), where \( k \) = <code>TestComp</code> and \( l \) = <code>TrialComp</code>.  <a href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionOuter.html">FeExpressionOuter</a></td></tr>
@@ -349,14 +352,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a226e4922aefb47edea4078ad3b0b7c0d" id="r_a226e4922aefb47edea4078ad3b0b7c0d"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a226e4922aefb47edea4078ad3b0b7c0d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a226e4922aefb47edea4078ad3b0b7c0d">skip</a> (const E &amp;expr, const typename <a class="el" href="classvulpes_1_1fe_1_1FeExpressionSkipper.html">FeExpressionSkipper</a>&lt; Dim, E &gt;::FuncType &amp;func)</td></tr>
 <tr class="separator:a226e4922aefb47edea4078ad3b0b7c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc" id="r_ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
-<tr class="memitem:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ada69c75ed8a92fc6bbe7d8ff4cfd4bdc">grad_contr</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
-<tr class="memdesc:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: F . grad(v_I) * u_I, summed over diagonal component blocks (I == J only)...">FeExpressionGradContr</a>.  <br /></td></tr>
-<tr class="separator:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f23be0a18cbdb4213c62218bd448041" id="r_a8f23be0a18cbdb4213c62218bd448041"><td class="memTemplParams" colspan="2">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
-<tr class="memitem:a8f23be0a18cbdb4213c62218bd448041"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a8f23be0a18cbdb4213c62218bd448041">grad_contr_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
-<tr class="memdesc:a8f23be0a18cbdb4213c62218bd448041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.">FeExpressionGradContrBlock</a>.  <br /></td></tr>
-<tr class="separator:a8f23be0a18cbdb4213c62218bd448041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa0eab5130623619ccbce8071ffe04c" id="r_afaa0eab5130623619ccbce8071ffe04c"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FeExpressionU , typename FeExpressionV &gt; </td></tr>
 <tr class="memitem:afaa0eab5130623619ccbce8071ffe04c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInner.html">FeExpressionInner</a>&lt; Dim, FeExpressionU, FeExpressionV &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">inner</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FeExpressionU &gt; &amp;u, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FeExpressionV &gt; &amp;v)</td></tr>
 <tr class="separator:afaa0eab5130623619ccbce8071ffe04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,6 +370,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a5195455105ab9290dda47487c506bfd7" id="r_a5195455105ab9290dda47487c506bfd7"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a5195455105ab9290dda47487c506bfd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionDiagOnly.html">FeExpressionDiagOnly</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a5195455105ab9290dda47487c506bfd7">ondiag</a> (const E &amp;w)</td></tr>
 <tr class="separator:a5195455105ab9290dda47487c506bfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc" id="r_ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
+<tr class="memitem:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ada69c75ed8a92fc6bbe7d8ff4cfd4bdc">grad_contr</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
+<tr class="memdesc:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: F . grad(v_I) * u_I, summed over diagonal component blocks (I == J only)...">FeExpressionGradContr</a>.  <br /></td></tr>
+<tr class="separator:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f23be0a18cbdb4213c62218bd448041" id="r_a8f23be0a18cbdb4213c62218bd448041"><td class="memTemplParams" colspan="2">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
+<tr class="memitem:a8f23be0a18cbdb4213c62218bd448041"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a8f23be0a18cbdb4213c62218bd448041">grad_contr_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
+<tr class="memdesc:a8f23be0a18cbdb4213c62218bd448041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.">FeExpressionGradContrBlock</a>.  <br /></td></tr>
+<tr class="separator:a8f23be0a18cbdb4213c62218bd448041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aee2ab251f90e08c7ff065fc54b6407" id="r_a2aee2ab251f90e08c7ff065fc54b6407"><td class="memTemplParams" colspan="2">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename CoeffExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace , typename VExpr &gt; </td></tr>
+<tr class="memitem:a2aee2ab251f90e08c7ff065fc54b6407"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a2aee2ab251f90e08c7ff065fc54b6407">inner_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, CoeffExpr &gt; &amp;coeff, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, VExpr &gt; &amp;v)</td></tr>
+<tr class="memdesc:a2aee2ab251f90e08c7ff065fc54b6407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a>.  <br /></td></tr>
+<tr class="separator:a2aee2ab251f90e08c7ff065fc54b6407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a4f45bdccfe2a399019887657e481717d" name="a4f45bdccfe2a399019887657e481717d"></a>
@@ -874,6 +881,58 @@ template&lt;std::size_t Dim, typename FeExpressionU , typename FeExpressionV &gt
 
 </div>
 </div>
+<a id="a2aee2ab251f90e08c7ff065fc54b6407" name="a2aee2ab251f90e08c7ff065fc54b6407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aee2ab251f90e08c7ff065fc54b6407">&#9670;&#160;</a></span>inner_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename CoeffExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace , typename VExpr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto vulpes::fe::inner_block </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, CoeffExpr &gt; &amp;&#160;</td>
+          <td class="paramname"><em>coeff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, VExpr &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a>. </p>
+<p>Builds the bilinear expression \( c(x) \, u_l \, v_k \) for the single (<code>TestComp</code>, <code>TrialComp</code>) block. <code>TestComp</code> and <code>TrialComp</code> must be specified explicitly; the remaining template parameters are deduced from <code>u</code> and <code>v</code>.</p>
+<p>The test argument <code>v</code> may be either a regular vector test function ( <code>FeExpressionFunc&lt;...,true&gt;</code> ) or its neighbour-side wrapper ( <code>FeExpressionNeighborFunc&lt;...,true&gt;</code> obtained via <code><a class="el" href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">fe::neigh</a></code> ).</p>
+<p>Typical use (off-diagonal block <code>k=0</code>, <code>l=1</code>, e.g. one entry of an SWE Godunov flux Jacobian split): </p><div class="fragment"><div class="line"><span class="keyword">auto</span> wf_diag  = fe::inner_block&lt;0, 1&gt;(coeff_expr, u, v);</div>
+<div class="line"><span class="keyword">auto</span> wf_neigh = fe::inner_block&lt;0, 1&gt;(coeff_expr, u, <a class="code hl_function" href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">fe::neigh</a>(v));</div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_a1efb82f8b9865b641746301504399470"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">vulpes::fe::neigh</a></div><div class="ttdeci">FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; neigh(const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</div><div class="ttdef"><b>Definition</b> fe_expr_basis.hpp:673</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coeff</td><td>Scalar coefficient expression \( c(x) \). </td></tr>
+    <tr><td class="paramname">u</td><td>Vector trial function (own cell). </td></tr>
+    <tr><td class="paramname">v</td><td>Vector test function. Own or neighbour; must share the component range of <code>u</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a> instance ready for integration. </dd></dl>
+
+</div>
+</div>
 <a id="a1efb82f8b9865b641746301504399470" name="a1efb82f8b9865b641746301504399470"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1efb82f8b9865b641746301504399470">&#9670;&#160;</a></span>neigh()</h2>
 
@@ -1151,7 +1210,7 @@ template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typen
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li>
-    <li class="footer">Generated on Mon May 25 2026 07:13:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

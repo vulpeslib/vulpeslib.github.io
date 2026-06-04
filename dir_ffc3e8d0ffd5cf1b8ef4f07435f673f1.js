@@ -8,5 +8,6 @@ var dir_ffc3e8d0ffd5cf1b8ef4f07435f673f1 =
     [ "sparse_matrix.hpp", "sparse__matrix_8hpp.html", "sparse__matrix_8hpp" ],
     [ "tensor.hpp", "la_2tensor_8hpp.html", "la_2tensor_8hpp" ],
     [ "vector.cpp", "vector_8cpp.html", "vector_8cpp" ],
-    [ "vector.hpp", "vector_8hpp.html", "vector_8hpp" ]
+    [ "vector.hpp", "vector_8hpp.html", "vector_8hpp" ],
+    [ "vector_block_utils.hpp", "vector__block__utils_8hpp.html", "vector__block__utils_8hpp" ]
 ];

@@ -174,6 +174,9 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionInner< Dim, E1, E2 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionInner< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionInner.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionInnerBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionInnerBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr >", "classvulpes_1_1fe_1_1FeExpressionInnerBlock.html", null ]
+    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionNeighborFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionNeighborFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html", null ]
     ] ],

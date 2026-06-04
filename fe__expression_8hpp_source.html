@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('fe__expression_8hpp_source.html',''); 
 <div class="contents">
 <a href="fe__expression_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (C) 2024 - 2025 by the Vulpes authors.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (C) 2024 - 2026 by the Vulpes authors.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// This file is part of Vulpes.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Vulpes is free software; you can redistribute it and/or modify</span></div>
@@ -139,24 +139,25 @@ $(document).ready(function(){initNavTree('fe__expression_8hpp_source.html',''); 
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Author: Matteo Caldana &lt;matteo.caldana@polimi.it&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef VULPES_FE_FE_EXPRESSION_HPP_</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define VULPES_FE_FE_EXPRESSION_HPP_</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__base_8hpp.html">vulpes/fe/fe_expressions/fe_expr_base.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__basis_8hpp.html">vulpes/fe/fe_expressions/fe_expr_basis.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__func_8hpp.html">vulpes/fe/fe_expressions/fe_expr_func.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__grad__contr_8hpp.html">vulpes/fe/fe_expressions/fe_expr_grad_contr.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Author: Pedro Peixoto &lt;ppeixoto@usp.br&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifndef VULPES_FE_FE_EXPRESSION_HPP_</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define VULPES_FE_FE_EXPRESSION_HPP_</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__base_8hpp.html">vulpes/fe/fe_expressions/fe_expr_base.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__basis_8hpp.html">vulpes/fe/fe_expressions/fe_expr_basis.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__func_8hpp.html">vulpes/fe/fe_expressions/fe_expr_func.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__op_8hpp.html">vulpes/fe/fe_expressions/fe_expr_op.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__unary_8hpp.html">vulpes/fe/fe_expressions/fe_expr_unary.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_FE_FE_EXPRESSION_HPP_</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="fe__expr__vector_8hpp.html">vulpes/fe/fe_expressions/fe_expr_vector.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_FE_FE_EXPRESSION_HPP_</span></div>
 <div class="ttc" id="afe__expr__base_8hpp_html"><div class="ttname"><a href="fe__expr__base_8hpp.html">fe_expr_base.hpp</a></div></div>
 <div class="ttc" id="afe__expr__basis_8hpp_html"><div class="ttname"><a href="fe__expr__basis_8hpp.html">fe_expr_basis.hpp</a></div></div>
 <div class="ttc" id="afe__expr__func_8hpp_html"><div class="ttname"><a href="fe__expr__func_8hpp.html">fe_expr_func.hpp</a></div></div>
-<div class="ttc" id="afe__expr__grad__contr_8hpp_html"><div class="ttname"><a href="fe__expr__grad__contr_8hpp.html">fe_expr_grad_contr.hpp</a></div></div>
 <div class="ttc" id="afe__expr__op_8hpp_html"><div class="ttname"><a href="fe__expr__op_8hpp.html">fe_expr_op.hpp</a></div></div>
 <div class="ttc" id="afe__expr__unary_8hpp_html"><div class="ttname"><a href="fe__expr__unary_8hpp.html">fe_expr_unary.hpp</a></div></div>
+<div class="ttc" id="afe__expr__vector_8hpp_html"><div class="ttname"><a href="fe__expr__vector_8hpp.html">fe_expr_vector.hpp</a></div><div class="ttdoc">Bilinear/linear expressions for vector-valued FE spaces.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -164,7 +165,7 @@ $(document).ready(function(){initNavTree('fe__expression_8hpp_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_1d42be232f14d112552dcd34db4d5ceb.html">fe</a></li><li class="navelem"><a class="el" href="fe__expression_8hpp.html">fe_expression.hpp</a></li>
-    <li class="footer">Generated on Mon May 25 2026 07:13:30 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jun 4 2026 09:40:22 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

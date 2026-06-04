@@ -15,5 +15,8 @@ var namespacevulpes_1_1assemble_1_1dg =
     [ "createUpwindFluxVariable", "namespacevulpes_1_1assemble_1_1dg.html#a3d5a3ca701f2be0fa847f671a87bf1b1", null ],
     [ "forceEqualMean", "namespacevulpes_1_1assemble_1_1dg.html#a98f07f81661669f07b85286c79f2ef2d", null ],
     [ "integrateFeExpression", "namespacevulpes_1_1assemble_1_1dg.html#a9c3cb3b4a6b3cd12c6a35b1855edbbc5", null ],
+    [ "l2ProjectExpressionBlockedSubset", "namespacevulpes_1_1assemble_1_1dg.html#a5a607f5519e3de6cd116d9e7ccb75ade", null ],
+    [ "l2ProjectExpressionScalar", "namespacevulpes_1_1assemble_1_1dg.html#a48e39b0d4340e285739888b2cee17ea0", null ],
+    [ "l2ProjectExpressionScalar", "namespacevulpes_1_1assemble_1_1dg.html#aa1954ee8bd51f572126d62fa4a0d7cce", null ],
     [ "projectConstantOntoModalSpace", "namespacevulpes_1_1assemble_1_1dg.html#adb84be46515d1b568eb329d2b2a7fe8d", null ]
 ];

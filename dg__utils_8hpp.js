@@ -15,5 +15,8 @@ var dg__utils_8hpp =
     [ "createUpwindFluxVariable", "dg__utils_8hpp.html#a3d5a3ca701f2be0fa847f671a87bf1b1", null ],
     [ "forceEqualMean", "dg__utils_8hpp.html#a98f07f81661669f07b85286c79f2ef2d", null ],
     [ "integrateFeExpression", "dg__utils_8hpp.html#a9c3cb3b4a6b3cd12c6a35b1855edbbc5", null ],
+    [ "l2ProjectExpressionBlockedSubset", "dg__utils_8hpp.html#a5a607f5519e3de6cd116d9e7ccb75ade", null ],
+    [ "l2ProjectExpressionScalar", "dg__utils_8hpp.html#a48e39b0d4340e285739888b2cee17ea0", null ],
+    [ "l2ProjectExpressionScalar", "dg__utils_8hpp.html#aa1954ee8bd51f572126d62fa4a0d7cce", null ],
     [ "projectConstantOntoModalSpace", "dg__utils_8hpp.html#adb84be46515d1b568eb329d2b2a7fe8d", null ]
 ];

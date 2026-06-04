@@ -20,5 +20,6 @@ var classvulpes_1_1fe_1_1FeExpressionFunc =
     [ "is_leaf", "classvulpes_1_1fe_1_1FeExpressionFunc.html#ae29726c9c0a358083762ac97c331b18b", null ],
     [ "k_index_begin", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a7e9b02bd7a48416e28d0d8dd49b70d64", null ],
     [ "k_index_end", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a3c625e1179b2869bcf68389d71db46eb", null ],
+    [ "k_n_comp", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a9db7e899add99641f5e66759272507dd", null ],
     [ "m_fe_space", "classvulpes_1_1fe_1_1FeExpressionFunc.html#a4f1075e87df9e3ed32b8827f168a2722", null ]
 ];

@@ -119,10 +119,12 @@ $(document).ready(function(){initNavTree('dg__utils_8hpp.html',''); initResizabl
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="integrator__simplexify_8hpp_source.html">vulpes/assemble/integrator_simplexify.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dof__handler_8hpp_source.html">vulpes/dofs/dof_handler.hpp</a>&quot;</code><br />
@@ -131,6 +133,7 @@ $(document).ready(function(){initNavTree('dg__utils_8hpp.html',''); initResizabl
 <code>#include &quot;<a class="el" href="linear__solver_8hpp_source.html">vulpes/la/linear_solver.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sparse__matrix_8hpp_source.html">vulpes/la/sparse_matrix.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vector_8hpp_source.html">vulpes/la/vector.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vector__block__utils_8hpp_source.html">vulpes/la/vector_block_utils.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dg_utils.hpp:</div>
 <div class="dyncontent">
@@ -214,6 +217,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a98f07f81661669f07b85286c79f2ef2d"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a98f07f81661669f07b85286c79f2ef2d">vulpes::assemble::dg::forceEqualMean</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_reference, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_matrix, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;rhs_const, double domain_measure)</td></tr>
 <tr class="memdesc:a98f07f81661669f07b85286c79f2ef2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust a solution to match the average of a reference solution.  <br /></td></tr>
 <tr class="separator:a98f07f81661669f07b85286c79f2ef2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1954ee8bd51f572126d62fa4a0d7cce" id="r_aa1954ee8bd51f572126d62fa4a0d7cce"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </td></tr>
+<tr class="memitem:aa1954ee8bd51f572126d62fa4a0d7cce"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#aa1954ee8bd51f572126d62fa4a0d7cce">vulpes::assemble::dg::l2ProjectExpressionScalar</a> (const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_scalar)</td></tr>
+<tr class="memdesc:aa1954ee8bd51f572126d62fa4a0d7cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2-project a scalar expression using a precomputed scalar mass matrix.  <br /></td></tr>
+<tr class="separator:aa1954ee8bd51f572126d62fa4a0d7cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e39b0d4340e285739888b2cee17ea0" id="r_a48e39b0d4340e285739888b2cee17ea0"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </td></tr>
+<tr class="memitem:a48e39b0d4340e285739888b2cee17ea0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a48e39b0d4340e285739888b2cee17ea0">vulpes::assemble::dg::l2ProjectExpressionScalar</a> (const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_blocked, std::size_t component)</td></tr>
+<tr class="memdesc:a48e39b0d4340e285739888b2cee17ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2-project a scalar expression using one component extracted from a blocked mass matrix.  <br /></td></tr>
+<tr class="separator:a48e39b0d4340e285739888b2cee17ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a607f5519e3de6cd116d9e7ccb75ade" id="r_a5a607f5519e3de6cd116d9e7ccb75ade"><td class="memTemplParams" colspan="2">template&lt;std::size_t VecSize, std::size_t NFields, typename MeshType , typename CellManagerType , typename DofHandlerType , typename FeSpaceType , typename Expression &gt; </td></tr>
+<tr class="memitem:a5a607f5519e3de6cd116d9e7ccb75ade"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a5a607f5519e3de6cd116d9e7ccb75ade">vulpes::assemble::dg::l2ProjectExpressionBlockedSubset</a> (const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, std::size_t component_offset, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;mass_blocked)</td></tr>
+<tr class="memdesc:a5a607f5519e3de6cd116d9e7ccb75ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2-project a vector expression into a subset of components of a blocked vector.  <br /></td></tr>
+<tr class="separator:a5a607f5519e3de6cd116d9e7ccb75ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -222,7 +237,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_fbdf0309f37d26479fea532d5cc8eb08.html">assemble</a></li><li class="navelem"><a class="el" href="dg__utils_8hpp.html">dg_utils.hpp</a></li>
-    <li class="footer">Generated on Mon May 25 2026 07:13:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

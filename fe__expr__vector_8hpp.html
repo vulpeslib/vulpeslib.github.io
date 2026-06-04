@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vulpes: /__w/vulpes/vulpes/vulpes/fe/fe_expressions/fe_expr_grad_contr.hpp File Reference</title>
+<title>Vulpes: /__w/vulpes/vulpes/vulpes/fe/fe_expressions/fe_expr_vector.hpp File Reference</title>
 <link rel="icon" href="vulpes_logo_notext_32.png" type="image/png" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -84,7 +84,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('fe__expr__grad__contr_8hpp.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('fe__expr__vector_8hpp.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -114,23 +114,27 @@ $(document).ready(function(){initNavTree('fe__expr__grad__contr_8hpp.html',''); 
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">fe_expr_grad_contr.hpp File Reference</div></div>
+  <div class="headertitle"><div class="title">fe_expr_vector.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Bilinear/linear expressions for vector-valued FE spaces.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="fe__expr__base_8hpp_source.html">vulpes/fe/fe_expressions/fe_expr_base.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fe__expr__basis_8hpp_source.html">vulpes/fe/fe_expressions/fe_expr_basis.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="eigen_8hpp_source.html">vulpes/utils/eigen.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for fe_expr_grad_contr.hpp:</div>
+Include dependency graph for fe_expr_vector.hpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="fe__expr__grad__contr_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="fe__expr__vector_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="fe__expr__grad__contr_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="fe__expr__vector_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
-<p><a href="fe__expr__grad__contr_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="fe__expr__vector_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -139,6 +143,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.  <a href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">vulpes::fe::FeExpressionInnerBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-block bilinear expression \( c(x) \, u_l \, v_k \), where \( k \) = <code>TestComp</code> and \( l \) = <code>TrialComp</code>.  <a href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -158,15 +165,28 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f23be0a18cbdb4213c62218bd448041"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a8f23be0a18cbdb4213c62218bd448041">vulpes::fe::grad_contr_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
 <tr class="memdesc:a8f23be0a18cbdb4213c62218bd448041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.">FeExpressionGradContrBlock</a>.  <br /></td></tr>
 <tr class="separator:a8f23be0a18cbdb4213c62218bd448041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aee2ab251f90e08c7ff065fc54b6407" id="r_a2aee2ab251f90e08c7ff065fc54b6407"><td class="memTemplParams" colspan="2">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename CoeffExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace , typename VExpr &gt; </td></tr>
+<tr class="memitem:a2aee2ab251f90e08c7ff065fc54b6407"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a2aee2ab251f90e08c7ff065fc54b6407">vulpes::fe::inner_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, CoeffExpr &gt; &amp;coeff, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, VExpr &gt; &amp;v)</td></tr>
+<tr class="memdesc:a2aee2ab251f90e08c7ff065fc54b6407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a>.  <br /></td></tr>
+<tr class="separator:a2aee2ab251f90e08c7ff065fc54b6407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Bilinear/linear expressions for vector-valued FE spaces. </p>
+<p>Provides composable weak-form building blocks used to assemble systems whose trial and test functions are vector-valued (multi-component) FE functions:</p>
+<ul>
+<li><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html">FeExpressionGradContr</a> / <a class="el" href="namespacevulpes_1_1fe.html#ada69c75ed8a92fc6bbe7d8ff4cfd4bdc">grad_contr</a>: diagonal sum \( \sum_k \int_K F \cdot \nabla v_k \, u_k \, dK \).</li>
+<li><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a> / <a class="el" href="namespacevulpes_1_1fe.html#a8f23be0a18cbdb4213c62218bd448041">grad_contr_block</a>: single off-diagonal \( \int_K F \cdot \nabla v_k \, u_l \, dK \) for one <code></code>(TestComp,TrialComp) pair (volume term).</li>
+<li><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a> / <a class="el" href="namespacevulpes_1_1fe.html#a2aee2ab251f90e08c7ff065fc54b6407">inner_block</a>: single off-diagonal \( \int c \, v_k \, u_l \, dS \) for one <code></code>(TestComp,TrialComp) pair. Used for matrix-valued face fluxes in linearised hyperbolic systems.</li>
+</ul>
+<p>All block expressions integrate over the <code></code>(TestComp,TrialComp) pair only; other <code></code>(I,J) blocks return <code>void()</code> and are skipped by the integrator. Mirrors the existing iteration pattern in <code>WeakFormIntegratorSimplexify</code> so no integrator changes are required to support matrix-valued couplings between components. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_1d42be232f14d112552dcd34db4d5ceb.html">fe</a></li><li class="navelem"><a class="el" href="dir_e4477d1d4b20ed17436b601b368f7cb3.html">fe_expressions</a></li><li class="navelem"><a class="el" href="fe__expr__grad__contr_8hpp.html">fe_expr_grad_contr.hpp</a></li>
-    <li class="footer">Generated on Mon May 25 2026 07:13:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_1d42be232f14d112552dcd34db4d5ceb.html">fe</a></li><li class="navelem"><a class="el" href="dir_e4477d1d4b20ed17436b601b368f7cb3.html">fe_expressions</a></li><li class="navelem"><a class="el" href="fe__expr__vector_8hpp.html">fe_expr_vector.hpp</a></li>
+    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
