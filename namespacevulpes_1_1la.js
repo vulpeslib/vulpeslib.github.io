@@ -12,6 +12,7 @@ var namespacevulpes_1_1la =
       [ "ColumnMajor", "namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca5323c9b3e9b062f8110a1e9a1c0ab0af", null ],
       [ "RowMajor", "namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca748db46088f6cfe844946f6dd864d220", null ]
     ] ],
+    [ "addComponent", "namespacevulpes_1_1la.html#a7c168a0700f706690a196567eb54d884", null ],
     [ "dot", "namespacevulpes_1_1la.html#a484729c4a7c5a2e6e07a4f912814520b", null ],
     [ "extractAllComponents", "namespacevulpes_1_1la.html#aaca8380f6d8e4d324ed1483e3ce95e9a", null ],
     [ "extractComponent", "namespacevulpes_1_1la.html#ad1a9631646b373a8f4ff3bb76b78ff9f", null ],

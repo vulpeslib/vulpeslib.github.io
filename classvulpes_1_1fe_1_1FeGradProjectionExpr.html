@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1fe_1_1FeGradProjectionE
 </div><!--header-->
 <div class="contents">
 
-<p>Class that wraps the projected of a given vector of coefficients on the FE space using the gradient of the basis functions.  
+<p>Physical gradient of a DG field given its DOF coefficient vector.  
  <a href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="fe__expr__func_8hpp_source.html">fe_expr_func.hpp</a>&gt;</code></p>
@@ -199,8 +199,25 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t Dim, typename <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#aba0b18cd54e491637f9cbbb0d8ee4660">FeSpaceType</a>, typename DofHandlerType&gt;<br />
-class vulpes::fe::FeGradProjectionExpr&lt; Dim, FeSpaceType, DofHandlerType &gt;</div><p>Class that wraps the projected of a given vector of coefficients on the FE space using the gradient of the basis functions. </p>
-<dl class="section note"><dt>Note</dt><dd>This is used only for computing the projection for the gradient of the exact solution when the H1 semi-norm error is computed. </dd></dl>
+class vulpes::fe::FeGradProjectionExpr&lt; Dim, FeSpaceType, DofHandlerType &gt;</div><p>Physical gradient of a DG field given its DOF coefficient vector. </p>
+<p>Originally introduced to support H1 semi-norm error computation (int_K |grad(u_h - u_ref)|^2 dK). Also suitable when the gradient of a projected coefficient field is needed as a composable expression.</p>
+<p>Evaluates grad(u_h)(x_q) = sum_k c_k * grad(phi_k)(x_q) at every quadrature point using the precomputed physical gradients from fe_values.getGradEval(). Requires UpdateGradients.</p>
+<p>OutputType is Eigen::Vector&lt;double,Dim&gt;. computeOrder returns order-1 (gradient lowers polynomial degree by one). The expression is a pure coefficient node (is_bilinear = IsNothing).</p>
+<p>Use the factory <a class="el" href="namespacevulpes_1_1fe.html#a05e3f4d7b1993256105053aae97d842e" title="Factory for FeGradProjectionExpr: gradient of a DG field.">fe::grad_proj</a> to construct: </p><div class="fragment"><div class="line">  <span class="keyword">auto</span> grad_p = <a class="code hl_function" href="namespacevulpes_1_1fe.html#a05e3f4d7b1993256105053aae97d842e">fe::grad_proj</a>(p_vec, fe_space, dof_handler);</div>
+<div class="line">  <span class="comment">// curl of a 2D vector field (d_x(q) - d_y(p)):</span></div>
+<div class="line">  <span class="keyword">auto</span> curl = fe::spatial_component&lt;0&gt;(<a class="code hl_function" href="namespacevulpes_1_1fe.html#a05e3f4d7b1993256105053aae97d842e">fe::grad_proj</a>(q_vec, fe_space,</div>
+<div class="line">dof_handler))</div>
+<div class="line">            - fe::spatial_component&lt;1&gt;(<a class="code hl_function" href="namespacevulpes_1_1fe.html#a05e3f4d7b1993256105053aae97d842e">fe::grad_proj</a>(p_vec, fe_space,</div>
+<div class="line">dof_handler));</div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_a05e3f4d7b1993256105053aae97d842e"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a05e3f4d7b1993256105053aae97d842e">vulpes::fe::grad_proj</a></div><div class="ttdeci">FeGradProjectionExpr&lt; FeSpaceType::dim, FeSpaceType, DofHandlerType &gt; grad_proj(const la::Vector &amp;uh, const FeSpaceType &amp;fe_space, const DofHandlerType &amp;dof_handler)</div><div class="ttdoc">Factory for FeGradProjectionExpr: gradient of a DG field.</div><div class="ttdef"><b>Definition</b> fe_expr_func.hpp:805</div></div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">FeSpaceType</td><td>FE space type. </td></tr>
+    <tr><td class="paramname">DofHandlerType</td><td>DOF handler type. </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aba0b18cd54e491637f9cbbb0d8ee4660" name="aba0b18cd54e491637f9cbbb0d8ee4660"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba0b18cd54e491637f9cbbb0d8ee4660">&#9670;&#160;</a></span>FeSpaceType</h2>
@@ -821,7 +838,7 @@ template&lt;std::size_t Dim, typename <a class="el" href="classvulpes_1_1fe_1_1F
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html">FeGradProjectionExpr</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 15 2026 12:20:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

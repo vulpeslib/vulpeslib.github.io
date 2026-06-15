@@ -139,9 +139,6 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionCellConstantTensor< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionCellConstantTensor< Dim >", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html", null ]
     ] ],
-    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionComponentDth< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
-      [ "vulpes::fe::FeExpressionComponentDth< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionComponentDth.html", null ]
-    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionConstant< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionConstant< Dim >", "classvulpes_1_1fe_1_1FeExpressionConstant.html", null ]
     ] ],
@@ -155,6 +152,9 @@ var hierarchy =
       [ "vulpes::fe::FeExpressionFaceNormal< Dim >", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html", null ]
     ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFeProjection< Dim, FeSpace, DofHandler, 1 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFieldComponent< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionFieldComponent< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionFieldComponent.html", null ]
+    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFunc< IndexBegin, IndexEnd, Dim, FeSpace, false > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionFunc< IndexBegin, IndexEnd, Dim, FeSpace, false >", "classvulpes_1_1fe_1_1FeExpressionFunc.html", null ],
@@ -164,18 +164,17 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFunctionWrapperTensor< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionFunctionWrapperTensor< Dim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html", null ]
     ] ],
-    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradContr< IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
-      [ "vulpes::fe::FeExpressionGradContr< IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr >", "classvulpes_1_1fe_1_1FeExpressionGradContr.html", null ]
-    ] ],
-    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradContrBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
-      [ "vulpes::fe::FeExpressionGradContrBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr >", "classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html", null ]
-    ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradContr< IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, true > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradContrBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, true > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionGradFunc< IndexBegin, IndexEnd, Dim, FeSpace, false > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionInner< Dim, E1, E2 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionInner< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionInner.html", null ]
     ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionInnerBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionInnerBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr >", "classvulpes_1_1fe_1_1FeExpressionInnerBlock.html", null ]
+    ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionMakeVec< Dim, ScalarExprs... > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionMakeVec< Dim, ScalarExprs >", "classvulpes_1_1fe_1_1FeExpressionMakeVec.html", null ]
     ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionNeighborFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionNeighborFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html", null ]
@@ -186,11 +185,20 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionProduct< Dim, E1, E2 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionProduct< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionProduct.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionScale< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionScale< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionScale.html", null ]
+    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionSelfFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionSelfFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionSelfFunc.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionShift< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionShift< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionShift.html", null ]
+    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionSkipper< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionSkipper< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionSkipper.html", null ]
+    ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionSpatialComponent< K, Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionSpatialComponent< K, Dim, E >", "classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html", null ]
     ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionSum< Dim, E1, E2 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionSum< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionSum.html", null ]
@@ -313,10 +321,16 @@ var hierarchy =
       [ "vulpes::fe::FeExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html", null ],
       [ "vulpes::fe::FeExpressionFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionFunc.html", null ],
       [ "vulpes::fe::FeExpressionFunctionWrapper< Dim, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html", null ],
+      [ "vulpes::fe::FeExpressionGradContr< IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest >", "classvulpes_1_1fe_1_1FeExpressionGradContr.html", null ],
+      [ "vulpes::fe::FeExpressionGradContrBlock< TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest >", "classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html", null ],
       [ "vulpes::fe::FeExpressionGradFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionGradFunc.html", null ],
       [ "vulpes::fe::FeExpressionSymGradFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionSymGradFunc.html", null ],
       [ "vulpes::fe::FeExpressionTraceSymGradFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionTraceSymGradFunc.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionFieldComponent< Dim, E >::FsTypeOf< T, typename >", "structvulpes_1_1fe_1_1FeExpressionFieldComponent_1_1FsTypeOf.html", null ],
+    [ "vulpes::fe::FeExpressionFieldComponent< Dim, E >::FsTypeOf< T, std::void_t< typename T::FeSpaceType > >", "structvulpes_1_1fe_1_1FeExpressionFieldComponent_1_1FsTypeOf_3_01T_00_01std_1_1void__t_3_01typen1dfdb06d2084efdfa7075e0147f8b755.html", null ],
+    [ "vulpes::fe::FeExpressionSpatialComponent< K, Dim, E >::FsTypeOf< T, typename >", "structvulpes_1_1fe_1_1FeExpressionSpatialComponent_1_1FsTypeOf.html", null ],
+    [ "vulpes::fe::FeExpressionSpatialComponent< K, Dim, E >::FsTypeOf< T, std::void_t< typename T::FeSpaceType > >", "structvulpes_1_1fe_1_1FeExpressionSpatialComponent_1_1FsTypeOf_3_01T_00_01std_1_1void__t_3_01typdb3d734645fda72a983ea77d4fd95394.html", null ],
     [ "vulpes::fe::FeSpaceBase< Dim, FloatType, DofPolicy, FeSpace >", "classvulpes_1_1fe_1_1FeSpaceBase.html", null ],
     [ "vulpes::fe::FeValues< Dim >", "classvulpes_1_1fe_1_1FeValues.html", null ],
     [ "vulpes::fe::internal::LagrangianNodesPolicy< Dim >", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html", null ],

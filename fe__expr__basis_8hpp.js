@@ -8,6 +8,7 @@ var fe__expr__basis_8hpp =
     [ "vulpes::fe::FeExpressionSelfFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionSelfFunc.html", "classvulpes_1_1fe_1_1FeExpressionSelfFunc" ],
     [ "TestFunction", "fe__expr__basis_8hpp.html#a54bf5266142e2da10063b4aea96d64d2", null ],
     [ "TrialFunction", "fe__expr__basis_8hpp.html#a76a59ed77112997baea20fa092654530", null ],
+    [ "div", "fe__expr__basis_8hpp.html#a5e3f0530894f18338caa6e8f7d01e133", null ],
     [ "grad", "fe__expr__basis_8hpp.html#af24d31d4d96f90905f1c5aaa725fda77", null ],
     [ "neigh", "fe__expr__basis_8hpp.html#a1efb82f8b9865b641746301504399470", null ],
     [ "self", "fe__expr__basis_8hpp.html#af766bb00e734aee784af3f79a2719ece", null ],

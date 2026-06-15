@@ -215,7 +215,7 @@ class vulpes::fe::FeExpressionInnerBlock&lt; TestComp, TrialComp, IndexBegin, In
 <div class="line"><span class="keyword">auto</span> coeff_kl       = (0.5 * c) * n_x * n_x;</div>
 <div class="line"><span class="keyword">auto</span> wf_diag_kl     = -fe::inner_block&lt;k, l&gt;(coeff_kl, U, V);</div>
 <div class="line"><span class="keyword">auto</span> wf_neigh_kl    =  fe::inner_block&lt;k, l&gt;(coeff_kl, U, <a class="code hl_function" href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">fe::neigh</a>(V));</div>
-<div class="ttc" id="anamespacevulpes_1_1fe_html_a1efb82f8b9865b641746301504399470"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">vulpes::fe::neigh</a></div><div class="ttdeci">FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; neigh(const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</div><div class="ttdef"><b>Definition</b> fe_expr_basis.hpp:673</div></div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_a1efb82f8b9865b641746301504399470"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">vulpes::fe::neigh</a></div><div class="ttdeci">FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; neigh(const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</div><div class="ttdef"><b>Definition</b> fe_expr_basis.hpp:686</div></div>
 </div><!-- fragment --><p>Sum 9 such block expressions to obtain the full \( A^{\pm}(n) \) flux, or 4 + 5 to obtain a central + dissipation form.</p>
 <dl class="section note"><dt>Note</dt><dd><code>evaluatePoly</code> / <code>evaluatePolyCoef</code> return <code>void()</code>; this expression supports the simplexify (quadrature-based) integrator only. Same restriction as <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a>.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -909,7 +909,7 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 15 2026 12:20:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

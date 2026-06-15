@@ -135,7 +135,19 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">vulpes::fe::FeExpressionUnaryMinus&lt; Dim, E &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionComponentDth.html">vulpes::fe::FeExpressionComponentDth&lt; Dim, E &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFieldComponent.html">vulpes::fe::FeExpressionFieldComponent&lt; Dim, E &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the field (block) component of a multi-component test/trial expression driven by the integration loop's DOF index.  <a href="classvulpes_1_1fe_1_1FeExpressionFieldComponent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1FeExpressionFieldComponent_1_1FsTypeOf.html">vulpes::fe::FeExpressionFieldComponent&lt; Dim, E &gt;::FsTypeOf&lt; T, typename &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1FeExpressionFieldComponent_1_1FsTypeOf_3_01T_00_01std_1_1void__t_3_01typen1dfdb06d2084efdfa7075e0147f8b755.html">vulpes::fe::FeExpressionFieldComponent&lt; Dim, E &gt;::FsTypeOf&lt; T, std::void_t&lt; typename T::FeSpaceType &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html">vulpes::fe::FeExpressionSpatialComponent&lt; K, Dim, E &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a single scalar spatial component at compile-time index K from a vector-output FE expression.  <a href="classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1FeExpressionSpatialComponent_1_1FsTypeOf.html">vulpes::fe::FeExpressionSpatialComponent&lt; K, Dim, E &gt;::FsTypeOf&lt; T, typename &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1FeExpressionSpatialComponent_1_1FsTypeOf_3_01T_00_01std_1_1void__t_3_01typdb3d734645fda72a983ea77d4fd95394.html">vulpes::fe::FeExpressionSpatialComponent&lt; K, Dim, E &gt;::FsTypeOf&lt; T, std::void_t&lt; typename T::FeSpaceType &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionDiagOnly.html">vulpes::fe::FeExpressionDiagOnly&lt; Dim, E &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +161,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a74ad221e2fc952326e1f4f635e9a56f2" id="r_a74ad221e2fc952326e1f4f635e9a56f2"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a74ad221e2fc952326e1f4f635e9a56f2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html">FeExpressionSpatialComponent</a>&lt; K, Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a74ad221e2fc952326e1f4f635e9a56f2">vulpes::fe::spatial_component</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:a74ad221e2fc952326e1f4f635e9a56f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the K-th scalar spatial component of a vector-output FE expression at every quadrature point.  <br /></td></tr>
+<tr class="separator:a74ad221e2fc952326e1f4f635e9a56f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a3805f841036f3f46da0f2df821fa3" id="r_a78a3805f841036f3f46da0f2df821fa3"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a78a3805f841036f3f46da0f2df821fa3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFieldComponent.html">FeExpressionFieldComponent</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a78a3805f841036f3f46da0f2df821fa3">vulpes::fe::field_component</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:a78a3805f841036f3f46da0f2df821fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the block field component of a multi-component test/trial expression, driven by the integration loop's DOF index.  <br /></td></tr>
+<tr class="separator:a78a3805f841036f3f46da0f2df821fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5195455105ab9290dda47487c506bfd7" id="r_a5195455105ab9290dda47487c506bfd7"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a5195455105ab9290dda47487c506bfd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionDiagOnly.html">FeExpressionDiagOnly</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a5195455105ab9290dda47487c506bfd7">vulpes::fe::ondiag</a> (const E &amp;w)</td></tr>
 <tr class="separator:a5195455105ab9290dda47487c506bfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +180,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_1d42be232f14d112552dcd34db4d5ceb.html">fe</a></li><li class="navelem"><a class="el" href="dir_e4477d1d4b20ed17436b601b368f7cb3.html">fe_expressions</a></li><li class="navelem"><a class="el" href="fe__expr__unary_8hpp.html">fe_expr_unary.hpp</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 15 2026 12:20:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,9 +1,5 @@
-<map id="vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;" name="vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;">
-<area shape="rect" id="Node000001" title="Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK." alt="" coords="624,52,831,136"/>
-<area shape="rect" id="Node000002" href="$classvulpes_1_1fe_1_1FeExpressionBase.html" title=" " alt="" coords="275,5,543,89"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="557,66,624,76,623,82,556,72"/>
-<area shape="rect" id="Node000003" href="$classvulpes_1_1fe_1_1FeExpressionFunc.html" title=" " alt="" coords="303,113,515,168"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="528,121,623,106,624,112,528,126"/>
-<area shape="rect" id="Node000004" href="$classvulpes_1_1fe_1_1FeExpressionBase.html" title=" " alt="" coords="5,106,225,175"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,138,302,138,302,143,239,143"/>
+<map id="vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;" name="vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;">
+<area shape="rect" id="Node000001" title="Bilinear expression for a single (test, trial) component block. Two forms selected by GradOnTest:" alt="" coords="5,93,212,177"/>
+<area shape="rect" id="Node000002" href="$classvulpes_1_1fe_1_1FeExpressionBase.html" title="Base class for Finite Element Expressions." alt="" coords="6,5,211,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,59,111,93,106,93,106,59"/>
 </map>

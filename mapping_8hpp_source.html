@@ -373,7 +373,7 @@ $(document).ready(function(){initNavTree('mapping_8hpp_source.html',''); initRes
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keyword">const</span> Eigen::Matrix&lt;double, Dim, 2&gt;&amp; <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">curr_bbox</a>,</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keyword">const</span> Eigen::Matrix&lt;double, Dim, 2&gt;&amp; <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">neigh_bbox</a>,</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keyword">const</span> Eigen::Array&lt;double, Dim, 1&gt;&amp; <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">period</a>) {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  Eigen::Array&lt;double, Dim, 1&gt; <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">shift</a> = Eigen::Array&lt;double, Dim, 1&gt;::Zero();</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  Eigen::Array&lt;double, Dim, 1&gt; shift = Eigen::Array&lt;double, Dim, 1&gt;::Zero();</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordflow">for</span> (std::size_t d = 0; d &lt; Dim; ++d) {</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">period</a>[d] &gt; 0.0) {  <span class="comment">// Dimension is periodic</span></div>
@@ -388,15 +388,15 @@ $(document).ready(function(){initNavTree('mapping_8hpp_source.html',''); initRes
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="comment">// Cells are wrapped in this dimension</span></div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="comment">// Return shift in physical coordinates</span></div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">neigh_center</a> &gt; <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">curr_center</a>) {</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>          <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">shift</a>[d] = +<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">period</a>[d];  <span class="comment">// Neighbor appears right but wraps from left</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>          shift[d] = +<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">period</a>[d];  <span class="comment">// Neighbor appears right but wraps from left</span></div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>          <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">shift</a>[d] = -<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">period</a>[d];  <span class="comment">// Neighbor appears left but wraps from right</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>          shift[d] = -<a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">period</a>[d];  <span class="comment">// Neighbor appears left but wraps from right</span></div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        }</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      }</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  }</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">shift</a>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordflow">return</span> shift;</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>}</div>
 </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
@@ -451,7 +451,7 @@ $(document).ready(function(){initNavTree('mapping_8hpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_7020f5ed0a8de0aefef775a8859713a5.html">geometry</a></li><li class="navelem"><a class="el" href="mapping_8hpp.html">mapping.hpp</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 09:40:22 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 15 2026 12:20:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

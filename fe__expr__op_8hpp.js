@@ -7,10 +7,22 @@ var fe__expr__op_8hpp =
     [ "vulpes::fe::FeExpressionProduct< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionProduct.html", "classvulpes_1_1fe_1_1FeExpressionProduct" ],
     [ "vulpes::fe::FeExpressionSum< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionSum.html", "classvulpes_1_1fe_1_1FeExpressionSum" ],
     [ "vulpes::fe::FeExpressionDifference< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionDifference.html", "classvulpes_1_1fe_1_1FeExpressionDifference" ],
+    [ "vulpes::fe::FeExpressionMakeVec< Dim, ScalarExprs >", "classvulpes_1_1fe_1_1FeExpressionMakeVec.html", "classvulpes_1_1fe_1_1FeExpressionMakeVec" ],
+    [ "vulpes::fe::FeExpressionScale< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionScale.html", "classvulpes_1_1fe_1_1FeExpressionScale" ],
+    [ "vulpes::fe::FeExpressionShift< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionShift.html", "classvulpes_1_1fe_1_1FeExpressionShift" ],
     [ "FE_EXPRESSION_BINARY_IMPL", "fe__expr__op_8hpp.html#a9836f33bbfaacdb824fa05e48462c956", null ],
     [ "inner", "fe__expr__op_8hpp.html#afaa0eab5130623619ccbce8071ffe04c", null ],
+    [ "make_vec", "fe__expr__op_8hpp.html#a924d24ca6d2c199f1fc00ea4c81bfc3c", null ],
+    [ "operator*", "fe__expr__op_8hpp.html#a4fc57bbe5c7c0bb448597e8867ef69c3", null ],
     [ "operator*", "fe__expr__op_8hpp.html#a9bddf18cd9a1cd0538c776dc4f5fafd1", null ],
+    [ "operator*", "fe__expr__op_8hpp.html#a957025229438a7f81fe647b8454cb37b", null ],
+    [ "operator+", "fe__expr__op_8hpp.html#a887db5f17c7741ed8a9bf0309437f06b", null ],
     [ "operator+", "fe__expr__op_8hpp.html#a032f025e8697e868b6d7dd95079de378", null ],
+    [ "operator+", "fe__expr__op_8hpp.html#ac46f88747dc568847a3a587bde0231a4", null ],
+    [ "operator-", "fe__expr__op_8hpp.html#a5c1ac6ad9227a696fbbdb1a483c12dad", null ],
     [ "operator-", "fe__expr__op_8hpp.html#aeb4d489de83cf29feef2f13e09b36c6e", null ],
-    [ "outer", "fe__expr__op_8hpp.html#adaa7c45f087b3135ea06fca66a1c50d4", null ]
+    [ "outer", "fe__expr__op_8hpp.html#adaa7c45f087b3135ea06fca66a1c50d4", null ],
+    [ "perp", "fe__expr__op_8hpp.html#a695ac745a36dc5855f52dbb0bd673c75", null ],
+    [ "shift", "fe__expr__op_8hpp.html#a0f15926171f8a43e59f3ea005810ec23", null ],
+    [ "shift", "fe__expr__op_8hpp.html#a2f27abc6c56f74eb446522c954f11945", null ]
 ];

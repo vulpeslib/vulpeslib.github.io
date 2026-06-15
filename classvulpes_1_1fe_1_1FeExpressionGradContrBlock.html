@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vulpes: vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt; Class Template Reference</title>
+<title>Vulpes: vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt; Class Template Reference</title>
 <link rel="icon" href="vulpes_logo_notext_32.png" type="image/png" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -117,86 +117,88 @@ $(document).ready(function(){initNavTree('classvulpes_1_1fe_1_1FeExpressionGradC
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.  
+<p>Bilinear expression for a single (test, trial) component block. Two forms selected by <code>GradOnTest:</code>  
  <a href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="fe__expr__vector_8hpp_source.html">fe_expr_vector.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;:</div>
+Inheritance diagram for vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeExpressionGradContrBlock__inherit__graph.svg" width="534" height="95"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeExpressionGradContrBlock__inherit__graph.svg" width="218" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;:</div>
+Collaboration diagram for vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeExpressionGradContrBlock__coll__graph.svg" width="100%" height="436"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeExpressionGradContrBlock__coll__graph.svg" width="218" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afa519e1eb7a4cffa3bcefd551cc5553a" id="r_afa519e1eb7a4cffa3bcefd551cc5553a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#afa519e1eb7a4cffa3bcefd551cc5553a">FeSpaceType</a> = FeSpace</td></tr>
-<tr class="separator:afa519e1eb7a4cffa3bcefd551cc5553a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aa53a0a62480f5d31989a2e462dcd60" id="r_a0aa53a0a62480f5d31989a2e462dcd60"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a0aa53a0a62480f5d31989a2e462dcd60">PolynomialType</a> = std::decay_t&lt; decltype(FeSpace{0}.getBasis()[0])&gt;</td></tr>
-<tr class="separator:a0aa53a0a62480f5d31989a2e462dcd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e566812ec1c570843de11f915b7e5f" id="r_aa8e566812ec1c570843de11f915b7e5f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#aa8e566812ec1c570843de11f915b7e5f">FeSpaceType</a> = FeSpace</td></tr>
+<tr class="separator:aa8e566812ec1c570843de11f915b7e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006a96d23f283f3079108f69e25e13c9" id="r_a006a96d23f283f3079108f69e25e13c9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a006a96d23f283f3079108f69e25e13c9">PolynomialType</a> = std::decay_t&lt; decltype(FeSpace{0}.getBasis()[0])&gt;</td></tr>
+<tr class="separator:a006a96d23f283f3079108f69e25e13c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a224abc188f5edee61f17e2e871b38a60" id="r_a224abc188f5edee61f17e2e871b38a60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a224abc188f5edee61f17e2e871b38a60">FeExpressionGradContrBlock</a> (const FuncExpr &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
-<tr class="memdesc:a224abc188f5edee61f17e2e871b38a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a Dim-vector flux expression, test gradient, and trial function.  <br /></td></tr>
-<tr class="separator:a224abc188f5edee61f17e2e871b38a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a027b32404aaef8be828a2bbcdff3828b" id="r_a027b32404aaef8be828a2bbcdff3828b"><td class="memItemLeft" align="right" valign="top">constexpr const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a027b32404aaef8be828a2bbcdff3828b">feSpace</a> () const</td></tr>
-<tr class="separator:a027b32404aaef8be828a2bbcdff3828b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0246500bf48fa81b2a62700b94c013e" id="r_ac0246500bf48fa81b2a62700b94c013e"><td class="memTemplParams" colspan="2">template&lt;std::size_t J = 0, std::size_t I = 0&gt; </td></tr>
-<tr class="memitem:ac0246500bf48fa81b2a62700b94c013e"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#ac0246500bf48fa81b2a62700b94c013e">evaluate</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</td></tr>
-<tr class="memdesc:ac0246500bf48fa81b2a62700b94c013e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the (J, I) block contribution at quadrature point q.  <br /></td></tr>
-<tr class="separator:ac0246500bf48fa81b2a62700b94c013e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2835920b1fdc05294bc8d8de6bc7f741" id="r_a2835920b1fdc05294bc8d8de6bc7f741"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">UpdateFlagsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a2835920b1fdc05294bc8d8de6bc7f741">computeUpdateFlags</a> () const</td></tr>
-<tr class="separator:a2835920b1fdc05294bc8d8de6bc7f741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff8324a00fa03511aeb60b4daf317e9" id="r_a2ff8324a00fa03511aeb60b4daf317e9"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a2ff8324a00fa03511aeb60b4daf317e9">computeOrder</a> () const</td></tr>
-<tr class="separator:a2ff8324a00fa03511aeb60b4daf317e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74056fd4dbb5b3c7e101ea3d31afdf75" id="r_a74056fd4dbb5b3c7e101ea3d31afdf75"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a74056fd4dbb5b3c7e101ea3d31afdf75">evaluatePoly</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t, std::size_t) const</td></tr>
-<tr class="separator:a74056fd4dbb5b3c7e101ea3d31afdf75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77093f709802781442507d709b0d3554" id="r_a77093f709802781442507d709b0d3554"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a77093f709802781442507d709b0d3554">evaluatePolyCoef</a> (const auto &amp;, const auto &amp;, std::size_t, std::size_t) const</td></tr>
-<tr class="separator:a77093f709802781442507d709b0d3554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23f58f0dc98c26fd75afd2da43c9fcdc" id="r_a23f58f0dc98c26fd75afd2da43c9fcdc"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a23f58f0dc98c26fd75afd2da43c9fcdc">precompute</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, const <a class="el" href="namespacevulpes_1_1fe.html#a4f45bdccfe2a399019887657e481717d">CellsType</a>&lt; Dim &gt; &amp;cells) const</td></tr>
-<tr class="separator:a23f58f0dc98c26fd75afd2da43c9fcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa194506aca4e759376e053023687b62b" id="r_aa194506aca4e759376e053023687b62b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">FeExpressionUnaryMinus</a>&lt; Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#aa194506aca4e759376e053023687b62b">operator-</a> () const</td></tr>
+<tr class="memitem:abcf3983227ca28e09df2ba5a9ab45427" id="r_abcf3983227ca28e09df2ba5a9ab45427"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#abcf3983227ca28e09df2ba5a9ab45427">FeExpressionGradContrBlock</a> (const FuncExpr &amp;func, const FeSpace &amp;fe_space)</td></tr>
+<tr class="memdesc:abcf3983227ca28e09df2ba5a9ab45427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a Dim-vector flux expression and the FE space.  <br /></td></tr>
+<tr class="separator:abcf3983227ca28e09df2ba5a9ab45427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff8b12c0c6411dcefc82c95f621e896" id="r_a9ff8b12c0c6411dcefc82c95f621e896"><td class="memItemLeft" align="right" valign="top">constexpr const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a9ff8b12c0c6411dcefc82c95f621e896">feSpace</a> () const</td></tr>
+<tr class="separator:a9ff8b12c0c6411dcefc82c95f621e896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f8849304da25e49e0c9bdca7c79e12" id="r_ae3f8849304da25e49e0c9bdca7c79e12"><td class="memTemplParams" colspan="2">template&lt;std::size_t J = 0, std::size_t I = 0&gt; </td></tr>
+<tr class="memitem:ae3f8849304da25e49e0c9bdca7c79e12"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#ae3f8849304da25e49e0c9bdca7c79e12">evaluate</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t q) const</td></tr>
+<tr class="memdesc:ae3f8849304da25e49e0c9bdca7c79e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the (J, I) block contribution at quadrature point q.  <br /></td></tr>
+<tr class="separator:ae3f8849304da25e49e0c9bdca7c79e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0462de90a92a2df64e40d6b4f79f2262" id="r_a0462de90a92a2df64e40d6b4f79f2262"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">UpdateFlagsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a0462de90a92a2df64e40d6b4f79f2262">computeUpdateFlags</a> () const</td></tr>
+<tr class="separator:a0462de90a92a2df64e40d6b4f79f2262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123e9ca0e1e4febb759929258103af60" id="r_a123e9ca0e1e4febb759929258103af60"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a123e9ca0e1e4febb759929258103af60">computeOrder</a> () const</td></tr>
+<tr class="separator:a123e9ca0e1e4febb759929258103af60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc12396ae2f86db9ea77db653a7babce" id="r_adc12396ae2f86db9ea77db653a7babce"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#adc12396ae2f86db9ea77db653a7babce">evaluatePoly</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t, std::size_t) const</td></tr>
+<tr class="separator:adc12396ae2f86db9ea77db653a7babce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f83231640e477e7c202fa3975a7b96a" id="r_a8f83231640e477e7c202fa3975a7b96a"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a8f83231640e477e7c202fa3975a7b96a">evaluatePolyCoef</a> (const auto &amp;, const auto &amp;, std::size_t, std::size_t) const</td></tr>
+<tr class="separator:a8f83231640e477e7c202fa3975a7b96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5bc0330b5704e0f975a808dd241f7d" id="r_a1f5bc0330b5704e0f975a808dd241f7d"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a1f5bc0330b5704e0f975a808dd241f7d">precompute</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, const <a class="el" href="namespacevulpes_1_1fe.html#a4f45bdccfe2a399019887657e481717d">CellsType</a>&lt; Dim &gt; &amp;cells) const</td></tr>
+<tr class="separator:a1f5bc0330b5704e0f975a808dd241f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa194506aca4e759376e053023687b62b" id="r_aa194506aca4e759376e053023687b62b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">FeExpressionUnaryMinus</a>&lt; Dim, FeExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#aa194506aca4e759376e053023687b62b">operator-</a> () const</td></tr>
 <tr class="memdesc:aa194506aca4e759376e053023687b62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unary minus operator for the FE expression.  <br /></td></tr>
 <tr class="separator:aa194506aca4e759376e053023687b62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5333e37152496f64f2e88a1b0a473351" id="r_a5333e37152496f64f2e88a1b0a473351"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a5333e37152496f64f2e88a1b0a473351">is_leaf</a> = false</td></tr>
-<tr class="separator:a5333e37152496f64f2e88a1b0a473351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1842a011546a092cf85d978f90a2214" id="r_aa1842a011546a092cf85d978f90a2214"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#aa1842a011546a092cf85d978f90a2214">is_bilinear</a> = <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdae1ee74daa22febc532721ecb824cf32d">IsBilinear</a></td></tr>
-<tr class="separator:aa1842a011546a092cf85d978f90a2214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c1c38493b28dad61c4ec367cda3a5f" id="r_a39c1c38493b28dad61c4ec367cda3a5f"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a39c1c38493b28dad61c4ec367cda3a5f">k_index_begin</a> = IndexBegin</td></tr>
-<tr class="separator:a39c1c38493b28dad61c4ec367cda3a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d2c9919d81783050b14d216503f18b" id="r_a01d2c9919d81783050b14d216503f18b"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a01d2c9919d81783050b14d216503f18b">k_index_end</a> = IndexEnd</td></tr>
-<tr class="separator:a01d2c9919d81783050b14d216503f18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc48daf97c14dbf56ceb3f8ffb9b2089" id="r_acc48daf97c14dbf56ceb3f8ffb9b2089"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#acc48daf97c14dbf56ceb3f8ffb9b2089">is_leaf</a> = false</td></tr>
+<tr class="separator:acc48daf97c14dbf56ceb3f8ffb9b2089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a438248e58eaf77a92a874ecf365f4" id="r_a56a438248e58eaf77a92a874ecf365f4"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a56a438248e58eaf77a92a874ecf365f4">is_bilinear</a> = <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdae1ee74daa22febc532721ecb824cf32d">IsBilinear</a></td></tr>
+<tr class="separator:a56a438248e58eaf77a92a874ecf365f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f5ddd6dc599f1b807225e290049228" id="r_a98f5ddd6dc599f1b807225e290049228"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a98f5ddd6dc599f1b807225e290049228">k_index_begin</a> = IndexBegin</td></tr>
+<tr class="separator:a98f5ddd6dc599f1b807225e290049228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c7b218d5cdad8e54fc744f7fdc076f" id="r_ad8c7b218d5cdad8e54fc744f7fdc076f"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#ad8c7b218d5cdad8e54fc744f7fdc076f">k_index_end</a> = IndexEnd</td></tr>
+<tr class="separator:ad8c7b218d5cdad8e54fc744f7fdc076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae09c076ff44d5c6113219d3f5c72cab9" id="r_ae09c076ff44d5c6113219d3f5c72cab9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#ae09c076ff44d5c6113219d3f5c72cab9">self</a> () const</td></tr>
+<tr class="memitem:ae09c076ff44d5c6113219d3f5c72cab9" id="r_ae09c076ff44d5c6113219d3f5c72cab9"><td class="memItemLeft" align="right" valign="top">const FeExpression &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#ae09c076ff44d5c6113219d3f5c72cab9">self</a> () const</td></tr>
 <tr class="separator:ae09c076ff44d5c6113219d3f5c72cab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a264660d77c61cfb66b9a12819b981c76" id="r_a264660d77c61cfb66b9a12819b981c76"><td class="memItemLeft" align="right" valign="top">std::conditional_t&lt; FuncExpr::is_leaf, const FuncExpr &amp;, const FuncExpr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a264660d77c61cfb66b9a12819b981c76">m_func</a></td></tr>
-<tr class="separator:a264660d77c61cfb66b9a12819b981c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f53616a68bdbbd687b9bc959ec60fac" id="r_a8f53616a68bdbbd687b9bc959ec60fac"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a8f53616a68bdbbd687b9bc959ec60fac">m_u</a></td></tr>
-<tr class="separator:a8f53616a68bdbbd687b9bc959ec60fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b38c6fe1d6a8a660112a952305d6cbe" id="r_a7b38c6fe1d6a8a660112a952305d6cbe"><td class="memItemLeft" align="right" valign="top">std::conditional_t&lt; FuncExpr::is_leaf, const FuncExpr &amp;, const FuncExpr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a7b38c6fe1d6a8a660112a952305d6cbe">m_func</a></td></tr>
+<tr class="separator:a7b38c6fe1d6a8a660112a952305d6cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d73d87e03b168919c50e0173023d04a" id="r_a2d73d87e03b168919c50e0173023d04a"><td class="memItemLeft" align="right" valign="top">const FeSpace &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#a2d73d87e03b168919c50e0173023d04a">m_fe_space</a></td></tr>
+<tr class="separator:a2d73d87e03b168919c50e0173023d04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace, typename FuncExpr&gt;<br />
-class vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;</div><p>Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace, typename FuncExpr, bool GradOnTest = true&gt;<br />
+class vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;</div><p>Bilinear expression for a single (test, trial) component block. Two forms selected by <code>GradOnTest:</code> </p>
+<p><code>GradOnTest=true</code> (default): int_K F(x) . grad(v_k) * u_l dK <code>GradOnTest=false</code> (adjoint): int_K v_k * F(x) . grad(u_l) dK</p>
 <p>Activates exactly one block of the local matrix identified by (TestComp, TrialComp). All other (J, I) pairs return void and are skipped by the integrator.</p>
-<p>When TestComp == TrialComp this is a diagonal block (same as one component of <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: F . grad(v_I) * u_I, summed over diagonal component blocks (I == J only)...">FeExpressionGradContr</a>). When TestComp != TrialComp this is an off-diagonal block, expressing coupling between two distinct components.</p>
+<p>When TestComp == TrialComp this is a diagonal block (same as one component of <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a>). When TestComp != TrialComp this is an off-diagonal block, expressing coupling between two distinct components.</p>
 <p>A common use case is a linearized hyperbolic system where the flux Jacobian has off-diagonal entries A_{kl}(x) coupling test component k with trial component l: wf_kl = fe::grad_contr_block&lt;k, l&gt;(A_kl_expr, fe::grad(v), u);</p>
+<p>The trial-gradient form (GradOnTest=false) assembles the adjoint stiffness: T_{ij} = int_K phi_i * F . grad(phi_j) dK which equals the transpose of the test-gradient form &ndash; no IBP, no face terms. Needed when the adjoint stiffness T_{ij} = int_K phi_i * F . grad(phi_j) dK is required directly: wf_kl = fe::grad_contr_block&lt;k, l&gt;(F_expr, v, fe::grad(u));</p>
 <p>Note: evaluatePoly / evaluatePolyCoef are not implemented. This expression supports the simplexify (quadrature-based) integrator only.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -206,37 +208,38 @@ class vulpes::fe::FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin
     <tr><td class="paramname">IndexEnd</td><td>One past the last component index. </td></tr>
     <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
     <tr><td class="paramname">FeSpace</td><td>FE space type. </td></tr>
-    <tr><td class="paramname">FuncExpr</td><td>Expression type for F; must return an Eigen::Vector&lt;double, Dim&gt; from <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#ac0246500bf48fa81b2a62700b94c013e" title="Evaluate the (J, I) block contribution at quadrature point q.">evaluate()</a>. </td></tr>
+    <tr><td class="paramname">FuncExpr</td><td>Expression type for F; must return an Eigen::Vector&lt;double, Dim&gt; from <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#ae3f8849304da25e49e0c9bdca7c79e12" title="Evaluate the (J, I) block contribution at quadrature point q.">evaluate()</a>. </td></tr>
+    <tr><td class="paramname">GradOnTest</td><td>true = gradient on test function (default); false = gradient on trial function (adjoint form). </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="afa519e1eb7a4cffa3bcefd551cc5553a" name="afa519e1eb7a4cffa3bcefd551cc5553a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa519e1eb7a4cffa3bcefd551cc5553a">&#9670;&#160;</a></span>FeSpaceType</h2>
+<a id="aa8e566812ec1c570843de11f915b7e5f" name="aa8e566812ec1c570843de11f915b7e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e566812ec1c570843de11f915b7e5f">&#9670;&#160;</a></span>FeSpaceType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::FeSpaceType =  FeSpace</td>
+          <td class="memname">using <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::FeSpaceType =  FeSpace</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0aa53a0a62480f5d31989a2e462dcd60" name="a0aa53a0a62480f5d31989a2e462dcd60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aa53a0a62480f5d31989a2e462dcd60">&#9670;&#160;</a></span>PolynomialType</h2>
+<a id="a006a96d23f283f3079108f69e25e13c9" name="a006a96d23f283f3079108f69e25e13c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006a96d23f283f3079108f69e25e13c9">&#9670;&#160;</a></span>PolynomialType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::PolynomialType =  std::decay_t&lt;decltype(FeSpace{0}.getBasis()[0])&gt;</td>
+          <td class="memname">using <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::PolynomialType =  std::decay_t&lt;decltype(FeSpace{0}.getBasis()[0])&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -244,19 +247,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a224abc188f5edee61f17e2e871b38a60" name="a224abc188f5edee61f17e2e871b38a60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a224abc188f5edee61f17e2e871b38a60">&#9670;&#160;</a></span>FeExpressionGradContrBlock()</h2>
+<a id="abcf3983227ca28e09df2ba5a9ab45427" name="abcf3983227ca28e09df2ba5a9ab45427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf3983227ca28e09df2ba5a9ab45427">&#9670;&#160;</a></span>FeExpressionGradContrBlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::FeExpressionGradContrBlock </td>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::FeExpressionGradContrBlock </td>
           <td>(</td>
           <td class="paramtype">const FuncExpr &amp;&#160;</td>
           <td class="paramname"><em>func</em>, </td>
@@ -264,14 +267,8 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;&#160;</td>
-          <td class="paramname"><em>u</em>&#160;</td>
+          <td class="paramtype">const FeSpace &amp;&#160;</td>
+          <td class="paramname"><em>fe_space</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -286,13 +283,12 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 </table>
 </div><div class="memdoc">
 
-<p>Construct from a Dim-vector flux expression, test gradient, and trial function. </p>
-<p>The grad_v argument is accepted only for template parameter deduction and is not stored. Gradient values are read directly from fe_values at integration time.</p>
+<p>Construct from a Dim-vector flux expression and the FE space. </p>
+<p>The factory functions extract the FE space from the non-gradient argument (u for GradOnTest=true, v for GradOnTest=false) and pass it here. The gradient wrapper is used only for factory overload resolution and is not stored; gradient values are read directly from fe_values at integration time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">func</td><td>Dim-vector expression F(x). </td></tr>
-    <tr><td class="paramname">grad_v</td><td>Gradient of the vector test function (provides type info). </td></tr>
-    <tr><td class="paramname">u</td><td>Vector trial function. </td></tr>
+    <tr><td class="paramname">fe_space</td><td>FE space (same for both test and trial in DG). </td></tr>
   </table>
   </dd>
 </dl>
@@ -300,19 +296,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2ff8324a00fa03511aeb60b4daf317e9" name="a2ff8324a00fa03511aeb60b4daf317e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ff8324a00fa03511aeb60b4daf317e9">&#9670;&#160;</a></span>computeOrder()</h2>
+<a id="a123e9ca0e1e4febb759929258103af60" name="a123e9ca0e1e4febb759929258103af60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123e9ca0e1e4febb759929258103af60">&#9670;&#160;</a></span>computeOrder()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::computeOrder </td>
+          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::computeOrder </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -327,19 +323,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a2835920b1fdc05294bc8d8de6bc7f741" name="a2835920b1fdc05294bc8d8de6bc7f741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2835920b1fdc05294bc8d8de6bc7f741">&#9670;&#160;</a></span>computeUpdateFlags()</h2>
+<a id="a0462de90a92a2df64e40d6b4f79f2262" name="a0462de90a92a2df64e40d6b4f79f2262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0462de90a92a2df64e40d6b4f79f2262">&#9670;&#160;</a></span>computeUpdateFlags()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">UpdateFlagsType</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::computeUpdateFlags </td>
+          <td class="memname">constexpr <a class="el" href="namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21">UpdateFlagsType</a> <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::computeUpdateFlags </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -354,13 +350,13 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="ac0246500bf48fa81b2a62700b94c013e" name="ac0246500bf48fa81b2a62700b94c013e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0246500bf48fa81b2a62700b94c013e">&#9670;&#160;</a></span>evaluate()</h2>
+<a id="ae3f8849304da25e49e0c9bdca7c79e12" name="ae3f8849304da25e49e0c9bdca7c79e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f8849304da25e49e0c9bdca7c79e12">&#9670;&#160;</a></span>evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <div class="memtemplate">
 template&lt;std::size_t J = 0, std::size_t I = 0&gt; </div>
 <table class="mlabels">
@@ -368,7 +364,7 @@ template&lt;std::size_t J = 0, std::size_t I = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::evaluate </td>
+          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::evaluate </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;&#160;</td>
           <td class="paramname"><em>fe_values</em>, </td>
@@ -406,7 +402,7 @@ template&lt;std::size_t J = 0, std::size_t I = 0&gt; </div>
 
 <p>Evaluate the (J, I) block contribution at quadrature point q. </p>
 <p>J = D % nblocks is the trial component (col block index). I = D / nblocks is the test component (row block index). The integrator accumulates: row = j_basis * nblocks + I col = i_basis * nblocks + J This expression fires only when J == TrialComp and I == TestComp. All other (J, I) pairs return void.</p>
-<p>Returns F(x_q) . grad(phi_i) * phi_j for the active (J, I) pair.</p>
+<p>GradOnTest=true: F(x_q) . grad(phi_i) * phi_j (gradient on test i) GradOnTest=false: phi_i * F(x_q) . grad(phi_j) (gradient on trial j)</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">J</td><td>Trial component index (compile-time constant). </td></tr>
@@ -417,19 +413,19 @@ template&lt;std::size_t J = 0, std::size_t I = 0&gt; </div>
 
 </div>
 </div>
-<a id="a74056fd4dbb5b3c7e101ea3d31afdf75" name="a74056fd4dbb5b3c7e101ea3d31afdf75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74056fd4dbb5b3c7e101ea3d31afdf75">&#9670;&#160;</a></span>evaluatePoly()</h2>
+<a id="adc12396ae2f86db9ea77db653a7babce" name="adc12396ae2f86db9ea77db653a7babce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc12396ae2f86db9ea77db653a7babce">&#9670;&#160;</a></span>evaluatePoly()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::evaluatePoly </td>
+          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::evaluatePoly </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -473,19 +469,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a77093f709802781442507d709b0d3554" name="a77093f709802781442507d709b0d3554"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77093f709802781442507d709b0d3554">&#9670;&#160;</a></span>evaluatePolyCoef()</h2>
+<a id="a8f83231640e477e7c202fa3975a7b96a" name="a8f83231640e477e7c202fa3975a7b96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f83231640e477e7c202fa3975a7b96a">&#9670;&#160;</a></span>evaluatePolyCoef()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::evaluatePolyCoef </td>
+          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::evaluatePolyCoef </td>
           <td>(</td>
           <td class="paramtype">const auto &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -523,19 +519,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a027b32404aaef8be828a2bbcdff3828b" name="a027b32404aaef8be828a2bbcdff3828b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a027b32404aaef8be828a2bbcdff3828b">&#9670;&#160;</a></span>feSpace()</h2>
+<a id="a9ff8b12c0c6411dcefc82c95f621e896" name="a9ff8b12c0c6411dcefc82c95f621e896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff8b12c0c6411dcefc82c95f621e896">&#9670;&#160;</a></span>feSpace()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const auto &amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::feSpace </td>
+          <td class="memname">constexpr const auto &amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::feSpace </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -555,12 +551,14 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename FeExpression &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">FeExpressionUnaryMinus</a>&lt; Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;  &gt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;  &gt;::operator- </td>
+          <td class="memname">constexpr <a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">FeExpressionUnaryMinus</a>&lt; Dim, FeExpression &gt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; Dim, FeExpression &gt;::operator- </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -578,19 +576,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a23f58f0dc98c26fd75afd2da43c9fcdc" name="a23f58f0dc98c26fd75afd2da43c9fcdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23f58f0dc98c26fd75afd2da43c9fcdc">&#9670;&#160;</a></span>precompute()</h2>
+<a id="a1f5bc0330b5704e0f975a808dd241f7d" name="a1f5bc0330b5704e0f975a808dd241f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5bc0330b5704e0f975a808dd241f7d">&#9670;&#160;</a></span>precompute()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::precompute </td>
+          <td class="memname">constexpr bool <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::precompute </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;&#160;</td>
           <td class="paramname"><em>fe_values</em>, </td>
@@ -621,12 +619,14 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename FeExpression &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;  &amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;  &gt;::self </td>
+          <td class="memname">const FeExpression &amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; Dim, FeExpression &gt;::self </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -642,19 +642,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa1842a011546a092cf85d978f90a2214" name="aa1842a011546a092cf85d978f90a2214"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1842a011546a092cf85d978f90a2214">&#9670;&#160;</a></span>is_bilinear</h2>
+<a id="a56a438248e58eaf77a92a874ecf365f4" name="a56a438248e58eaf77a92a874ecf365f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a438248e58eaf77a92a874ecf365f4">&#9670;&#160;</a></span>is_bilinear</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr uint8_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::is_bilinear = <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdae1ee74daa22febc532721ecb824cf32d">IsBilinear</a></td>
+          <td class="memname">constexpr uint8_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::is_bilinear = <a class="el" href="namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bdae1ee74daa22febc532721ecb824cf32d">IsBilinear</a></td>
         </tr>
       </table>
   </td>
@@ -666,19 +666,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a5333e37152496f64f2e88a1b0a473351" name="a5333e37152496f64f2e88a1b0a473351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5333e37152496f64f2e88a1b0a473351">&#9670;&#160;</a></span>is_leaf</h2>
+<a id="acc48daf97c14dbf56ceb3f8ffb9b2089" name="acc48daf97c14dbf56ceb3f8ffb9b2089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc48daf97c14dbf56ceb3f8ffb9b2089">&#9670;&#160;</a></span>is_leaf</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::is_leaf = false</td>
+          <td class="memname">constexpr bool <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::is_leaf = false</td>
         </tr>
       </table>
   </td>
@@ -690,19 +690,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a39c1c38493b28dad61c4ec367cda3a5f" name="a39c1c38493b28dad61c4ec367cda3a5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39c1c38493b28dad61c4ec367cda3a5f">&#9670;&#160;</a></span>k_index_begin</h2>
+<a id="a98f5ddd6dc599f1b807225e290049228" name="a98f5ddd6dc599f1b807225e290049228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f5ddd6dc599f1b807225e290049228">&#9670;&#160;</a></span>k_index_begin</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::k_index_begin = IndexBegin</td>
+          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::k_index_begin = IndexBegin</td>
         </tr>
       </table>
   </td>
@@ -714,19 +714,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a01d2c9919d81783050b14d216503f18b" name="a01d2c9919d81783050b14d216503f18b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01d2c9919d81783050b14d216503f18b">&#9670;&#160;</a></span>k_index_end</h2>
+<a id="ad8c7b218d5cdad8e54fc744f7fdc076f" name="ad8c7b218d5cdad8e54fc744f7fdc076f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c7b218d5cdad8e54fc744f7fdc076f">&#9670;&#160;</a></span>k_index_end</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::k_index_end = IndexEnd</td>
+          <td class="memname">constexpr std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::k_index_end = IndexEnd</td>
         </tr>
       </table>
   </td>
@@ -738,19 +738,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a264660d77c61cfb66b9a12819b981c76" name="a264660d77c61cfb66b9a12819b981c76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a264660d77c61cfb66b9a12819b981c76">&#9670;&#160;</a></span>m_func</h2>
+<a id="a2d73d87e03b168919c50e0173023d04a" name="a2d73d87e03b168919c50e0173023d04a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d73d87e03b168919c50e0173023d04a">&#9670;&#160;</a></span>m_fe_space</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std:: conditional_t&lt;FuncExpr::is_leaf, const FuncExpr&amp;, const FuncExpr&gt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::m_func</td>
+          <td class="memname">const FeSpace&amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::m_fe_space</td>
         </tr>
       </table>
   </td>
@@ -762,19 +762,19 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 
 </div>
 </div>
-<a id="a8f53616a68bdbbd687b9bc959ec60fac" name="a8f53616a68bdbbd687b9bc959ec60fac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f53616a68bdbbd687b9bc959ec60fac">&#9670;&#160;</a></span>m_u</h2>
+<a id="a7b38c6fe1d6a8a660112a952305d6cbe" name="a7b38c6fe1d6a8a660112a952305d6cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b38c6fe1d6a8a660112a952305d6cbe">&#9670;&#160;</a></span>m_func</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr &gt; </div>
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , typename FuncExpr , bool GradOnTest = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt;IndexBegin, IndexEnd, Dim, FeSpace, false&gt;&amp; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr &gt;::m_u</td>
+          <td class="memname">std:: conditional_t&lt;FuncExpr::is_leaf, const FuncExpr&amp;, const FuncExpr&gt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">vulpes::fe::FeExpressionGradContrBlock</a>&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, GradOnTest &gt;::m_func</td>
         </tr>
       </table>
   </td>
@@ -796,7 +796,7 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t IndexBegin,
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 15 2026 12:20:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

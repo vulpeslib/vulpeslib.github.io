@@ -164,7 +164,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps the projected of a given vector of coefficients on the FE space.  <a href="classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html">vulpes::fe::FeGradProjectionExpr&lt; Dim, FeSpaceType, DofHandlerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps the projected of a given vector of coefficients on the FE space using the gradient of the basis functions.  <a href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical gradient of a DG field given its DOF coefficient vector.  <a href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html">vulpes::fe::FeExpressionFunctionWrapperTensor&lt; Dim &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps a user-provided function that returns a tensor, evaluated at the quadrature points.  <a href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html#details">More...</a><br /></td></tr>
@@ -185,6 +185,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a226e4922aefb47edea4078ad3b0b7c0d" id="r_a226e4922aefb47edea4078ad3b0b7c0d"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a226e4922aefb47edea4078ad3b0b7c0d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a226e4922aefb47edea4078ad3b0b7c0d">vulpes::fe::skip</a> (const E &amp;expr, const typename <a class="el" href="classvulpes_1_1fe_1_1FeExpressionSkipper.html">FeExpressionSkipper</a>&lt; Dim, E &gt;::FuncType &amp;func)</td></tr>
 <tr class="separator:a226e4922aefb47edea4078ad3b0b7c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e3f4d7b1993256105053aae97d842e" id="r_a05e3f4d7b1993256105053aae97d842e"><td class="memTemplParams" colspan="2">template&lt;typename FeSpaceType , typename DofHandlerType &gt; </td></tr>
+<tr class="memitem:a05e3f4d7b1993256105053aae97d842e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html">FeGradProjectionExpr</a>&lt; FeSpaceType::dim, FeSpaceType, DofHandlerType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a05e3f4d7b1993256105053aae97d842e">vulpes::fe::grad_proj</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;uh, const FeSpaceType &amp;fe_space, const DofHandlerType &amp;dof_handler)</td></tr>
+<tr class="memdesc:a05e3f4d7b1993256105053aae97d842e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory for <a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html" title="Physical gradient of a DG field given its DOF coefficient vector.">FeGradProjectionExpr</a>: gradient of a DG field.  <br /></td></tr>
+<tr class="separator:a05e3f4d7b1993256105053aae97d842e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -193,7 +197,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_1d42be232f14d112552dcd34db4d5ceb.html">fe</a></li><li class="navelem"><a class="el" href="dir_e4477d1d4b20ed17436b601b368f7cb3.html">fe_expressions</a></li><li class="navelem"><a class="el" href="fe__expr__func_8hpp.html">fe_expr_func.hpp</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 15 2026 12:20:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

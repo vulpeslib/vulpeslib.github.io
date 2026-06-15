@@ -155,8 +155,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html">FeExpressionCellConstantTensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps a cell constant tensor.  <a href="classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionComponentDth.html">FeExpressionComponentDth</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionConstant.html">FeExpressionConstant</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps a constant function.  <a href="classvulpes_1_1fe_1_1FeExpressionConstant.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +168,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFeProjection.html">FeExpressionFeProjection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps the projected of a given vector of coefficients on the FE space.  <a href="classvulpes_1_1fe_1_1FeExpressionFeProjection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFieldComponent.html">FeExpressionFieldComponent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the field (block) component of a multi-component test/trial expression driven by the integration loop's DOF index.  <a href="classvulpes_1_1fe_1_1FeExpressionFieldComponent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html">FeExpressionFunctionWrapper</a></td></tr>
@@ -179,10 +180,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps a user-provided function that returns a tensor, evaluated at the quadrature points.  <a href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html">FeExpressionGradContr</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General bilinear expression: F . grad(v_I) * u_I, summed over diagonal component blocks (I == J only).  <a href="classvulpes_1_1fe_1_1FeExpressionGradContr.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by <code>GradOnTest:</code>  <a href="classvulpes_1_1fe_1_1FeExpressionGradContr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html">FeExpressionGradContrBlock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.  <a href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bilinear expression for a single (test, trial) component block. Two forms selected by <code>GradOnTest:</code>  <a href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,16 +192,27 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-block bilinear expression \( c(x) \, u_l \, v_k \), where \( k \) = <code>TestComp</code> and \( l \) = <code>TrialComp</code>.  <a href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">FeExpressionMakeVec</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionOuter.html">FeExpressionOuter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionProduct.html">FeExpressionProduct</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html">FeExpressionScale</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply an FE expression by a scalar constant at every quadrature point.  <a href="classvulpes_1_1fe_1_1FeExpressionScale.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSelfFunc.html">FeExpressionSelfFunc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constant offset to an FE expression at every quadrature point.  <a href="classvulpes_1_1fe_1_1FeExpressionShift.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSkipper.html">FeExpressionSkipper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that is used to skip the computation of the expression (first parameter) if the rule is not verified (second parameter).  <a href="classvulpes_1_1fe_1_1FeExpressionSkipper.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html">FeExpressionSpatialComponent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a single scalar spatial component at compile-time index K from a vector-output FE expression.  <a href="classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSum.html">FeExpressionSum</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,7 +223,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">FeExpressionUnaryMinus</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html">FeGradProjectionExpr</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps the projected of a given vector of coefficients on the FE space using the gradient of the basis functions.  <a href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical gradient of a DG field given its DOF coefficient vector.  <a href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html">FeSpaceBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class describing the template for a FeSpace.  <a href="classvulpes_1_1fe_1_1FeSpaceBase.html#details">More...</a><br /></td></tr>
@@ -340,6 +352,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a47bf0094f170763071298c558b5b3d1f" id="r_a47bf0094f170763071298c558b5b3d1f"><td class="memTemplParams" colspan="2">template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , bool IsTest&gt; </td></tr>
 <tr class="memitem:a47bf0094f170763071298c558b5b3d1f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionTraceSymGradFunc.html">FeExpressionTraceSymGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a47bf0094f170763071298c558b5b3d1f">trsymgrad</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</td></tr>
 <tr class="separator:a47bf0094f170763071298c558b5b3d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3f0530894f18338caa6e8f7d01e133" id="r_a5e3f0530894f18338caa6e8f7d01e133"><td class="memTemplParams" colspan="2">template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , bool IsTest&gt; </td></tr>
+<tr class="memitem:a5e3f0530894f18338caa6e8f7d01e133"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionTraceSymGradFunc.html">FeExpressionTraceSymGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a5e3f0530894f18338caa6e8f7d01e133">div</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</td></tr>
+<tr class="separator:a5e3f0530894f18338caa6e8f7d01e133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1efb82f8b9865b641746301504399470" id="r_a1efb82f8b9865b641746301504399470"><td class="memTemplParams" colspan="2">template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , bool IsTest&gt; </td></tr>
 <tr class="memitem:a1efb82f8b9865b641746301504399470"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html">FeExpressionNeighborFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">neigh</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</td></tr>
 <tr class="separator:a1efb82f8b9865b641746301504399470"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,6 +367,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a226e4922aefb47edea4078ad3b0b7c0d" id="r_a226e4922aefb47edea4078ad3b0b7c0d"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a226e4922aefb47edea4078ad3b0b7c0d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a226e4922aefb47edea4078ad3b0b7c0d">skip</a> (const E &amp;expr, const typename <a class="el" href="classvulpes_1_1fe_1_1FeExpressionSkipper.html">FeExpressionSkipper</a>&lt; Dim, E &gt;::FuncType &amp;func)</td></tr>
 <tr class="separator:a226e4922aefb47edea4078ad3b0b7c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e3f4d7b1993256105053aae97d842e" id="r_a05e3f4d7b1993256105053aae97d842e"><td class="memTemplParams" colspan="2">template&lt;typename FeSpaceType , typename DofHandlerType &gt; </td></tr>
+<tr class="memitem:a05e3f4d7b1993256105053aae97d842e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html">FeGradProjectionExpr</a>&lt; FeSpaceType::dim, FeSpaceType, DofHandlerType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a05e3f4d7b1993256105053aae97d842e">grad_proj</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;uh, const FeSpaceType &amp;fe_space, const DofHandlerType &amp;dof_handler)</td></tr>
+<tr class="memdesc:a05e3f4d7b1993256105053aae97d842e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory for <a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html" title="Physical gradient of a DG field given its DOF coefficient vector.">FeGradProjectionExpr</a>: gradient of a DG field.  <br /></td></tr>
+<tr class="separator:a05e3f4d7b1993256105053aae97d842e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa0eab5130623619ccbce8071ffe04c" id="r_afaa0eab5130623619ccbce8071ffe04c"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FeExpressionU , typename FeExpressionV &gt; </td></tr>
 <tr class="memitem:afaa0eab5130623619ccbce8071ffe04c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInner.html">FeExpressionInner</a>&lt; Dim, FeExpressionU, FeExpressionV &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">inner</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FeExpressionU &gt; &amp;u, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FeExpressionV &gt; &amp;v)</td></tr>
 <tr class="separator:afaa0eab5130623619ccbce8071ffe04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,17 +386,68 @@ Functions</h2></td></tr>
 <tr class="memitem:aeb4d489de83cf29feef2f13e09b36c6e" id="r_aeb4d489de83cf29feef2f13e09b36c6e"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FeExpressionU , typename FeExpressionV &gt; </td></tr>
 <tr class="memitem:aeb4d489de83cf29feef2f13e09b36c6e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionDifference.html">FeExpressionDifference</a>&lt; Dim, FeExpressionU, FeExpressionV &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#aeb4d489de83cf29feef2f13e09b36c6e">operator-</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FeExpressionU &gt; &amp;u, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FeExpressionV &gt; &amp;v)</td></tr>
 <tr class="separator:aeb4d489de83cf29feef2f13e09b36c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924d24ca6d2c199f1fc00ea4c81bfc3c" id="r_a924d24ca6d2c199f1fc00ea4c81bfc3c"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename... ScalarExprs&gt; </td></tr>
+<tr class="memitem:a924d24ca6d2c199f1fc00ea4c81bfc3c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">FeExpressionMakeVec</a>&lt; Dim, ScalarExprs... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a924d24ca6d2c199f1fc00ea4c81bfc3c">make_vec</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, ScalarExprs &gt; &amp;... exprs)</td></tr>
+<tr class="separator:a924d24ca6d2c199f1fc00ea4c81bfc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957025229438a7f81fe647b8454cb37b" id="r_a957025229438a7f81fe647b8454cb37b"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a957025229438a7f81fe647b8454cb37b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html">FeExpressionScale</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a957025229438a7f81fe647b8454cb37b">operator*</a> (double c, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:a957025229438a7f81fe647b8454cb37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar-multiply an FE expression: <code>c</code> * expr.  <br /></td></tr>
+<tr class="separator:a957025229438a7f81fe647b8454cb37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc57bbe5c7c0bb448597e8867ef69c3" id="r_a4fc57bbe5c7c0bb448597e8867ef69c3"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a4fc57bbe5c7c0bb448597e8867ef69c3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html">FeExpressionScale</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a4fc57bbe5c7c0bb448597e8867ef69c3">operator*</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e, double c)</td></tr>
+<tr class="memdesc:a4fc57bbe5c7c0bb448597e8867ef69c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar-multiply an FE expression: <code>expr</code> * c.  <br /></td></tr>
+<tr class="separator:a4fc57bbe5c7c0bb448597e8867ef69c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46f88747dc568847a3a587bde0231a4" id="r_ac46f88747dc568847a3a587bde0231a4"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E , std::enable_if_t&lt; std::is_same_v&lt; typename E::OutputType, double &gt;, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:ac46f88747dc568847a3a587bde0231a4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ac46f88747dc568847a3a587bde0231a4">operator+</a> (double c, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:ac46f88747dc568847a3a587bde0231a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shift a scalar FE expression by a constant: <code>c</code> + expr.  <br /></td></tr>
+<tr class="separator:ac46f88747dc568847a3a587bde0231a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887db5f17c7741ed8a9bf0309437f06b" id="r_a887db5f17c7741ed8a9bf0309437f06b"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E , std::enable_if_t&lt; std::is_same_v&lt; typename E::OutputType, double &gt;, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a887db5f17c7741ed8a9bf0309437f06b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a887db5f17c7741ed8a9bf0309437f06b">operator+</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e, double c)</td></tr>
+<tr class="memdesc:a887db5f17c7741ed8a9bf0309437f06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shift a scalar FE expression by a constant: <code>expr</code> + c.  <br /></td></tr>
+<tr class="separator:a887db5f17c7741ed8a9bf0309437f06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c1ac6ad9227a696fbbdb1a483c12dad" id="r_a5c1ac6ad9227a696fbbdb1a483c12dad"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E , std::enable_if_t&lt; std::is_same_v&lt; typename E::OutputType, double &gt;, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a5c1ac6ad9227a696fbbdb1a483c12dad"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a5c1ac6ad9227a696fbbdb1a483c12dad">operator-</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e, double c)</td></tr>
+<tr class="memdesc:a5c1ac6ad9227a696fbbdb1a483c12dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shift a scalar FE expression by a negative constant: <code>expr</code> - c.  <br /></td></tr>
+<tr class="separator:a5c1ac6ad9227a696fbbdb1a483c12dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f27abc6c56f74eb446522c954f11945" id="r_a2f27abc6c56f74eb446522c954f11945"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a2f27abc6c56f74eb446522c954f11945"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a2f27abc6c56f74eb446522c954f11945">shift</a> (const typename E::OutputType &amp;c, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:a2f27abc6c56f74eb446522c954f11945"><td class="mdescLeft">&#160;</td><td class="mdescRight">General shift factory: <code>c</code> + expr, works for any <code>OutputType</code>.  <br /></td></tr>
+<tr class="separator:a2f27abc6c56f74eb446522c954f11945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f15926171f8a43e59f3ea005810ec23" id="r_a0f15926171f8a43e59f3ea005810ec23"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a0f15926171f8a43e59f3ea005810ec23"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a0f15926171f8a43e59f3ea005810ec23">shift</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e, const typename E::OutputType &amp;c)</td></tr>
+<tr class="memdesc:a0f15926171f8a43e59f3ea005810ec23"><td class="mdescLeft">&#160;</td><td class="mdescRight">General shift factory: <code>expr</code> + c, works for any <code>OutputType</code>.  <br /></td></tr>
+<tr class="separator:a0f15926171f8a43e59f3ea005810ec23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695ac745a36dc5855f52dbb0bd673c75" id="r_a695ac745a36dc5855f52dbb0bd673c75"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
+<tr class="memitem:a695ac745a36dc5855f52dbb0bd673c75"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a695ac745a36dc5855f52dbb0bd673c75">perp</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; 2, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:a695ac745a36dc5855f52dbb0bd673c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D perpendicular rotation of a 2-vector coefficient expression.  <br /></td></tr>
+<tr class="separator:a695ac745a36dc5855f52dbb0bd673c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ad221e2fc952326e1f4f635e9a56f2" id="r_a74ad221e2fc952326e1f4f635e9a56f2"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a74ad221e2fc952326e1f4f635e9a56f2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html">FeExpressionSpatialComponent</a>&lt; K, Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a74ad221e2fc952326e1f4f635e9a56f2">spatial_component</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:a74ad221e2fc952326e1f4f635e9a56f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the K-th scalar spatial component of a vector-output FE expression at every quadrature point.  <br /></td></tr>
+<tr class="separator:a74ad221e2fc952326e1f4f635e9a56f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a3805f841036f3f46da0f2df821fa3" id="r_a78a3805f841036f3f46da0f2df821fa3"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a78a3805f841036f3f46da0f2df821fa3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFieldComponent.html">FeExpressionFieldComponent</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a78a3805f841036f3f46da0f2df821fa3">field_component</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:a78a3805f841036f3f46da0f2df821fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the block field component of a multi-component test/trial expression, driven by the integration loop's DOF index.  <br /></td></tr>
+<tr class="separator:a78a3805f841036f3f46da0f2df821fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5195455105ab9290dda47487c506bfd7" id="r_a5195455105ab9290dda47487c506bfd7"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a5195455105ab9290dda47487c506bfd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionDiagOnly.html">FeExpressionDiagOnly</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a5195455105ab9290dda47487c506bfd7">ondiag</a> (const E &amp;w)</td></tr>
 <tr class="separator:a5195455105ab9290dda47487c506bfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc" id="r_ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
-<tr class="memitem:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ada69c75ed8a92fc6bbe7d8ff4cfd4bdc">grad_contr</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
-<tr class="memdesc:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: F . grad(v_I) * u_I, summed over diagonal component blocks (I == J only)...">FeExpressionGradContr</a>.  <br /></td></tr>
-<tr class="separator:ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f23be0a18cbdb4213c62218bd448041" id="r_a8f23be0a18cbdb4213c62218bd448041"><td class="memTemplParams" colspan="2">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
-<tr class="memitem:a8f23be0a18cbdb4213c62218bd448041"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a8f23be0a18cbdb4213c62218bd448041">grad_contr_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;grad_v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
-<tr class="memdesc:a8f23be0a18cbdb4213c62218bd448041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.">FeExpressionGradContrBlock</a>.  <br /></td></tr>
-<tr class="separator:a8f23be0a18cbdb4213c62218bd448041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01f9dbb02de00e7a93bc8e11c1bbfeb" id="r_ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
+<tr class="memitem:ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ac01f9dbb02de00e7a93bc8e11c1bbfeb">grad_contr</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
+<tr class="memdesc:ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a> with gradient on TEST (default, GradOnTest=true).  <br /></td></tr>
+<tr class="separator:ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851a03e3f68c38a4eb851ef7e2d3df11" id="r_a851a03e3f68c38a4eb851ef7e2d3df11"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
+<tr class="memitem:a851a03e3f68c38a4eb851ef7e2d3df11"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a851a03e3f68c38a4eb851ef7e2d3df11">grad_contr</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;)</td></tr>
+<tr class="memdesc:a851a03e3f68c38a4eb851ef7e2d3df11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a> with gradient on TRIAL (adjoint form, GradOnTest=false).  <br /></td></tr>
+<tr class="separator:a851a03e3f68c38a4eb851ef7e2d3df11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53438d82ae860ad844c3d484d2e7f561" id="r_a53438d82ae860ad844c3d484d2e7f561"><td class="memTemplParams" colspan="2">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
+<tr class="memitem:a53438d82ae860ad844c3d484d2e7f561"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a53438d82ae860ad844c3d484d2e7f561">grad_contr_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
+<tr class="memdesc:a53438d82ae860ad844c3d484d2e7f561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block. Two forms selected by GradOnTest:">FeExpressionGradContrBlock</a> with gradient on TEST (default, GradOnTest=true).  <br /></td></tr>
+<tr class="separator:a53438d82ae860ad844c3d484d2e7f561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31b1daa23b5a92d01f0b554c8d49959" id="r_ac31b1daa23b5a92d01f0b554c8d49959"><td class="memTemplParams" colspan="2">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
+<tr class="memitem:ac31b1daa23b5a92d01f0b554c8d49959"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ac31b1daa23b5a92d01f0b554c8d49959">grad_contr_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;v, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;)</td></tr>
+<tr class="memdesc:ac31b1daa23b5a92d01f0b554c8d49959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block. Two forms selected by GradOnTest:">FeExpressionGradContrBlock</a> with gradient on TRIAL (adjoint form, GradOnTest=false).  <br /></td></tr>
+<tr class="separator:ac31b1daa23b5a92d01f0b554c8d49959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aee2ab251f90e08c7ff065fc54b6407" id="r_a2aee2ab251f90e08c7ff065fc54b6407"><td class="memTemplParams" colspan="2">template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename CoeffExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace , typename VExpr &gt; </td></tr>
 <tr class="memitem:a2aee2ab251f90e08c7ff065fc54b6407"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a2aee2ab251f90e08c7ff065fc54b6407">inner_block</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, CoeffExpr &gt; &amp;coeff, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, VExpr &gt; &amp;v)</td></tr>
 <tr class="memdesc:a2aee2ab251f90e08c7ff065fc54b6407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a>.  <br /></td></tr>
@@ -732,6 +802,63 @@ template&lt;typename FeSpace , std::size_t IndexBegin = 0, std::size_t IndexEnd 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5e3f0530894f18338caa6e8f7d01e133" name="a5e3f0530894f18338caa6e8f7d01e133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e3f0530894f18338caa6e8f7d01e133">&#9670;&#160;</a></span>div()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typename FeSpace , bool IsTest&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionTraceSymGradFunc.html">FeExpressionTraceSymGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; vulpes::fe::div </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78a3805f841036f3f46da0f2df821fa3" name="a78a3805f841036f3f46da0f2df821fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a3805f841036f3f46da0f2df821fa3">&#9670;&#160;</a></span>field_component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFieldComponent.html">FeExpressionFieldComponent</a>&lt; Dim, E &gt; vulpes::fe::field_component </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract the block field component of a multi-component test/trial expression, driven by the integration loop's DOF index. </p>
+<p>The extracted index is the test DOF block index I (for IsLinearTest), trial index J (for IsLinearTrial), or (J,I) pair (for IsBilinear). The result is block-diagonal across fields.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type (IsLinearTest, IsLinearTrial, or IsBilinear). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Multi-component test/trial FE expression. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFieldComponent.html" title="Extract the field (block) component of a multi-component test/trial expression driven by the integrat...">FeExpressionFieldComponent</a> wrapping e. </dd></dl>
+
+</div>
+</div>
 <a id="af24d31d4d96f90905f1c5aaa725fda77" name="af24d31d4d96f90905f1c5aaa725fda77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af24d31d4d96f90905f1c5aaa725fda77">&#9670;&#160;</a></span>grad()</h2>
 
@@ -752,8 +879,58 @@ template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typen
 
 </div>
 </div>
-<a id="ada69c75ed8a92fc6bbe7d8ff4cfd4bdc" name="ada69c75ed8a92fc6bbe7d8ff4cfd4bdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada69c75ed8a92fc6bbe7d8ff4cfd4bdc">&#9670;&#160;</a></span>grad_contr()</h2>
+<a id="a851a03e3f68c38a4eb851ef7e2d3df11" name="a851a03e3f68c38a4eb851ef7e2d3df11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851a03e3f68c38a4eb851ef7e2d3df11">&#9670;&#160;</a></span>grad_contr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto vulpes::fe::grad_contr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a> with gradient on TRIAL (adjoint form, GradOnTest=false). </p>
+<p>Builds: sum_I int_K v_I * F . grad(u_I) dK</p>
+<p>Assembles the adjoint stiffness T_{ij} = int_K phi_i * F . grad(phi_j) dK directly &ndash; no integration-by-parts, no face terms.</p>
+<p>Typical use: auto wf = fe::grad_contr(c_expr, v, fe::grad(u));</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>Dim-vector expression for F(x). </td></tr>
+    <tr><td class="paramname">v</td><td>Vector test function. Must match grad_u's component range. </td></tr>
+    <tr><td class="paramname">grad_u</td><td>Gradient of the vector trial function. Provides type info for overload resolution; not stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a> instance ready for integration. </dd></dl>
+
+</div>
+</div>
+<a id="ac01f9dbb02de00e7a93bc8e11c1bbfeb" name="ac01f9dbb02de00e7a93bc8e11c1bbfeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01f9dbb02de00e7a93bc8e11c1bbfeb">&#9670;&#160;</a></span>grad_contr() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -770,7 +947,7 @@ template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::si
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;&#160;</td>
-          <td class="paramname"><em>grad_v</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -786,24 +963,74 @@ template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::si
       </table>
 </div><div class="memdoc">
 
-<p>Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: F . grad(v_I) * u_I, summed over diagonal component blocks (I == J only)...">FeExpressionGradContr</a>. </p>
-<p>Builds the bilinear expression F . grad(v_I) * u_I for each diagonal component block I, where F is a Dim-vector expression, v is the vector test function, and u is the vector trial function.</p>
+<p>Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a> with gradient on TEST (default, GradOnTest=true). </p>
+<p>Builds: sum_I int_K F . grad(v_I) * u_I dK</p>
 <p>Template parameters IndexBegin, IndexEnd, Dim, and FeSpace are deduced from the grad_v and u arguments, which must share the same component range and FE space.</p>
 <p>Typical use: auto wf = fe::grad_contr(c_expr, fe::grad(v), u);</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">func</td><td>Dim-vector expression for F(x). </td></tr>
-    <tr><td class="paramname">grad_v</td><td>Gradient of the vector test function. Provides type info. </td></tr>
+    <tr><td class="paramname">grad_v</td><td>Gradient of the vector test function. Provides type info for overload resolution; not stored. </td></tr>
     <tr><td class="paramname">u</td><td>Vector trial function. Must match grad_v's component range. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: F . grad(v_I) * u_I, summed over diagonal component blocks (I == J only)...">FeExpressionGradContr</a> instance ready for integration. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a> instance ready for integration. </dd></dl>
 
 </div>
 </div>
-<a id="a8f23be0a18cbdb4213c62218bd448041" name="a8f23be0a18cbdb4213c62218bd448041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f23be0a18cbdb4213c62218bd448041">&#9670;&#160;</a></span>grad_contr_block()</h2>
+<a id="ac31b1daa23b5a92d01f0b554c8d49959" name="ac31b1daa23b5a92d01f0b554c8d49959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31b1daa23b5a92d01f0b554c8d49959">&#9670;&#160;</a></span>grad_contr_block() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto vulpes::fe::grad_contr_block </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block. Two forms selected by GradOnTest:">FeExpressionGradContrBlock</a> with gradient on TRIAL (adjoint form, GradOnTest=false). </p>
+<p>Builds the bilinear expression v_k * F . grad(u_l) for the single (TestComp, TrialComp) component block. TestComp and TrialComp must be specified explicitly; all other template parameters are deduced from v and grad_u.</p>
+<p>Assembles: T_{ij} = int_K phi_i * F . grad(phi_j) dK This is the transpose of the test-gradient stiffness &ndash; no IBP, no face terms.</p>
+<p>Typical use (off-diagonal block k=0, l=1): auto wf = fe::grad_contr_block&lt;0, 1&gt;(A_expr, v, fe::grad(u));</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>Dim-vector expression for F(x). </td></tr>
+    <tr><td class="paramname">v</td><td>Vector test function. Must match grad_u's component range. </td></tr>
+    <tr><td class="paramname">grad_u</td><td>Gradient of the vector trial function. Provides type info for overload resolution; not stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block. Two forms selected by GradOnTest:">FeExpressionGradContrBlock</a> instance ready for integration. </dd></dl>
+
+</div>
+</div>
+<a id="a53438d82ae860ad844c3d484d2e7f561" name="a53438d82ae860ad844c3d484d2e7f561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53438d82ae860ad844c3d484d2e7f561">&#9670;&#160;</a></span>grad_contr_block() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -820,7 +1047,7 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typena
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;&#160;</td>
-          <td class="paramname"><em>grad_v</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -836,18 +1063,74 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typena
       </table>
 </div><div class="memdoc">
 
-<p>Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.">FeExpressionGradContrBlock</a>. </p>
+<p>Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block. Two forms selected by GradOnTest:">FeExpressionGradContrBlock</a> with gradient on TEST (default, GradOnTest=true). </p>
 <p>Builds the bilinear expression F . grad(v_k) * u_l for the single (TestComp, TrialComp) component block. TestComp and TrialComp must be specified explicitly; all other template parameters are deduced from grad_v and u.</p>
+<p>Assembles: S_{ij} = int_K F . grad(phi_i) * phi_j dK</p>
 <p>Typical use (off-diagonal block k=0, l=1): auto wf = fe::grad_contr_block&lt;0, 1&gt;(A_expr, fe::grad(v), u);</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">func</td><td>Dim-vector expression for F(x). </td></tr>
-    <tr><td class="paramname">grad_v</td><td>Gradient of the vector test function. Provides type info. </td></tr>
+    <tr><td class="paramname">grad_v</td><td>Gradient of the vector test function. Provides type info for overload resolution; not stored. </td></tr>
     <tr><td class="paramname">u</td><td>Vector trial function. Must match grad_v's component range. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block: int_K F(x) . grad(v_k) * u_l dK.">FeExpressionGradContrBlock</a> instance ready for integration. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html" title="Bilinear expression for a single (test, trial) component block. Two forms selected by GradOnTest:">FeExpressionGradContrBlock</a> instance ready for integration. </dd></dl>
+
+</div>
+</div>
+<a id="a05e3f4d7b1993256105053aae97d842e" name="a05e3f4d7b1993256105053aae97d842e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e3f4d7b1993256105053aae97d842e">&#9670;&#160;</a></span>grad_proj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FeSpaceType , typename DofHandlerType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html">FeGradProjectionExpr</a>&lt; FeSpaceType::dim, FeSpaceType, DofHandlerType &gt; vulpes::fe::grad_proj </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>uh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FeSpaceType &amp;&#160;</td>
+          <td class="paramname"><em>fe_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DofHandlerType &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Factory for <a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html" title="Physical gradient of a DG field given its DOF coefficient vector.">FeGradProjectionExpr</a>: gradient of a DG field. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension (deduced from FeSpaceType). </td></tr>
+    <tr><td class="paramname">FeSpaceType</td><td>FE space type. </td></tr>
+    <tr><td class="paramname">DofHandlerType</td><td>DOF handler type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uh</td><td>DOF coefficient vector of the field. </td></tr>
+    <tr><td class="paramname">fe_space</td><td>FE space used to define the basis. </td></tr>
+    <tr><td class="paramname">dof_handler</td><td>DOF handler mapping cells to DOF indices. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeGradProjectionExpr.html" title="Physical gradient of a DG field given its DOF coefficient vector.">FeGradProjectionExpr</a> evaluating grad(u_h) at every quadrature point. </dd></dl>
 
 </div>
 </div>
@@ -918,9 +1201,9 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typena
 <p>Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a>. </p>
 <p>Builds the bilinear expression \( c(x) \, u_l \, v_k \) for the single (<code>TestComp</code>, <code>TrialComp</code>) block. <code>TestComp</code> and <code>TrialComp</code> must be specified explicitly; the remaining template parameters are deduced from <code>u</code> and <code>v</code>.</p>
 <p>The test argument <code>v</code> may be either a regular vector test function ( <code>FeExpressionFunc&lt;...,true&gt;</code> ) or its neighbour-side wrapper ( <code>FeExpressionNeighborFunc&lt;...,true&gt;</code> obtained via <code><a class="el" href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">fe::neigh</a></code> ).</p>
-<p>Typical use (off-diagonal block <code>k=0</code>, <code>l=1</code>, e.g. one entry of an SWE Godunov flux Jacobian split): </p><div class="fragment"><div class="line"><span class="keyword">auto</span> wf_diag  = fe::inner_block&lt;0, 1&gt;(coeff_expr, u, v);</div>
+<p>Typical use (off-diagonal coupling between two field components, e.g. one entry of a flux Jacobian split): </p><div class="fragment"><div class="line"><span class="keyword">auto</span> wf_diag  = fe::inner_block&lt;0, 1&gt;(coeff_expr, u, v);</div>
 <div class="line"><span class="keyword">auto</span> wf_neigh = fe::inner_block&lt;0, 1&gt;(coeff_expr, u, <a class="code hl_function" href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">fe::neigh</a>(v));</div>
-<div class="ttc" id="anamespacevulpes_1_1fe_html_a1efb82f8b9865b641746301504399470"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">vulpes::fe::neigh</a></div><div class="ttdeci">FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; neigh(const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</div><div class="ttdef"><b>Definition</b> fe_expr_basis.hpp:673</div></div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_a1efb82f8b9865b641746301504399470"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470">vulpes::fe::neigh</a></div><div class="ttdeci">FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; neigh(const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &amp;w)</div><div class="ttdef"><b>Definition</b> fe_expr_basis.hpp:686</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">coeff</td><td>Scalar coefficient expression \( c(x) \). </td></tr>
@@ -930,6 +1213,26 @@ template&lt;std::size_t TestComp, std::size_t TrialComp, std::size_t Dim, typena
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionInnerBlock.html">FeExpressionInnerBlock</a> instance ready for integration. </dd></dl>
+
+</div>
+</div>
+<a id="a924d24ca6d2c199f1fc00ea4c81bfc3c" name="a924d24ca6d2c199f1fc00ea4c81bfc3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924d24ca6d2c199f1fc00ea4c81bfc3c">&#9670;&#160;</a></span>make_vec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename... ScalarExprs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">FeExpressionMakeVec</a>&lt; Dim, ScalarExprs... &gt; vulpes::fe::make_vec </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, ScalarExprs &gt; &amp;...&#160;</td>
+          <td class="paramname"><em>exprs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -993,8 +1296,55 @@ template&lt;std::size_t Dim, typename E &gt; </div>
 
 </div>
 </div>
+<a id="a4fc57bbe5c7c0bb448597e8867ef69c3" name="a4fc57bbe5c7c0bb448597e8867ef69c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc57bbe5c7c0bb448597e8867ef69c3">&#9670;&#160;</a></span>operator*() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html">FeExpressionScale</a>&lt; Dim, E &gt; vulpes::fe::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scalar-multiply an FE expression: <code>expr</code> * c. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>FE expression to scale. </td></tr>
+    <tr><td class="paramname">c</td><td>Scalar multiplier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html" title="Multiply an FE expression by a scalar constant at every quadrature point.">FeExpressionScale</a> wrapping <code>e</code> with factor <code>c</code>. </dd></dl>
+
+</div>
+</div>
 <a id="a9bddf18cd9a1cd0538c776dc4f5fafd1" name="a9bddf18cd9a1cd0538c776dc4f5fafd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bddf18cd9a1cd0538c776dc4f5fafd1">&#9670;&#160;</a></span>operator*()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bddf18cd9a1cd0538c776dc4f5fafd1">&#9670;&#160;</a></span>operator*() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1023,8 +1373,102 @@ template&lt;std::size_t Dim, typename FeExpressionU , typename FeExpressionV &gt
 
 </div>
 </div>
+<a id="a957025229438a7f81fe647b8454cb37b" name="a957025229438a7f81fe647b8454cb37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957025229438a7f81fe647b8454cb37b">&#9670;&#160;</a></span>operator*() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html">FeExpressionScale</a>&lt; Dim, E &gt; vulpes::fe::operator* </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scalar-multiply an FE expression: <code>c</code> * expr. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Scalar multiplier. </td></tr>
+    <tr><td class="paramname">e</td><td>FE expression to scale. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html" title="Multiply an FE expression by a scalar constant at every quadrature point.">FeExpressionScale</a> wrapping <code>e</code> with factor <code>c</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a887db5f17c7741ed8a9bf0309437f06b" name="a887db5f17c7741ed8a9bf0309437f06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887db5f17c7741ed8a9bf0309437f06b">&#9670;&#160;</a></span>operator+() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E , std::enable_if_t&lt; std::is_same_v&lt; typename E::OutputType, double &gt;, int &gt;  = 0&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt; vulpes::fe::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shift a scalar FE expression by a constant: <code>expr</code> + c. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type with <code>OutputType</code> = <code>double</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Scalar FE expression. </td></tr>
+    <tr><td class="paramname">c</td><td>Scalar offset. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html" title="Add a constant offset to an FE expression at every quadrature point.">FeExpressionShift</a> wrapping <code>e</code> with offset <code>c</code>. </dd></dl>
+
+</div>
+</div>
 <a id="a032f025e8697e868b6d7dd95079de378" name="a032f025e8697e868b6d7dd95079de378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a032f025e8697e868b6d7dd95079de378">&#9670;&#160;</a></span>operator+()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a032f025e8697e868b6d7dd95079de378">&#9670;&#160;</a></span>operator+() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1053,8 +1497,103 @@ template&lt;std::size_t Dim, typename FeExpressionU , typename FeExpressionV &gt
 
 </div>
 </div>
+<a id="ac46f88747dc568847a3a587bde0231a4" name="ac46f88747dc568847a3a587bde0231a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46f88747dc568847a3a587bde0231a4">&#9670;&#160;</a></span>operator+() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E , std::enable_if_t&lt; std::is_same_v&lt; typename E::OutputType, double &gt;, int &gt;  = 0&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt; vulpes::fe::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shift a scalar FE expression by a constant: <code>c</code> + expr. </p>
+<p>SFINAE-guarded to scalar expressions (<code>OutputType</code> = <code>double</code>) so that template argument deduction succeeds without ambiguity.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type with <code>OutputType</code> = <code>double</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Scalar offset. </td></tr>
+    <tr><td class="paramname">e</td><td>Scalar FE expression. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html" title="Add a constant offset to an FE expression at every quadrature point.">FeExpressionShift</a> wrapping <code>e</code> with offset <code>c</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a5c1ac6ad9227a696fbbdb1a483c12dad" name="a5c1ac6ad9227a696fbbdb1a483c12dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c1ac6ad9227a696fbbdb1a483c12dad">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E , std::enable_if_t&lt; std::is_same_v&lt; typename E::OutputType, double &gt;, int &gt;  = 0&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt; vulpes::fe::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shift a scalar FE expression by a negative constant: <code>expr</code> - c. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type with <code>OutputType</code> = <code>double</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Scalar FE expression. </td></tr>
+    <tr><td class="paramname">c</td><td>Scalar value to subtract. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html" title="Add a constant offset to an FE expression at every quadrature point.">FeExpressionShift</a> wrapping <code>e</code> with offset <code>-c</code>. </dd></dl>
+
+</div>
+</div>
 <a id="aeb4d489de83cf29feef2f13e09b36c6e" name="aeb4d489de83cf29feef2f13e09b36c6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb4d489de83cf29feef2f13e09b36c6e">&#9670;&#160;</a></span>operator-()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4d489de83cf29feef2f13e09b36c6e">&#9670;&#160;</a></span>operator-() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1113,6 +1652,48 @@ template&lt;std::size_t Dim, typename FeExpressionU , typename FeExpressionV &gt
 
 </div>
 </div>
+<a id="a695ac745a36dc5855f52dbb0bd673c75" name="a695ac745a36dc5855f52dbb0bd673c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695ac745a36dc5855f52dbb0bd673c75">&#9670;&#160;</a></span>perp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto vulpes::fe::perp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; 2, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2D perpendicular rotation of a 2-vector coefficient expression. </p>
+<p>Returns the 90-degree counterclockwise rotation: perp([u, v]) = [-v, u]</p>
+<p>Implemented as make_vec(-spatial_component&lt;1&gt;(e), spatial_component&lt;0&gt;(e)). No new class is needed; this is a free factory that composes existing expressions. Only defined for Dim=2 and expressions with OutputType = Eigen::Vector2d.</p>
+<p>Typical use (scalar weighting of a perpendicular 2D vector field): </p><div class="fragment"><div class="line"><span class="keyword">auto</span> w_perp = <a class="code hl_function" href="namespacevulpes_1_1fe.html#a695ac745a36dc5855f52dbb0bd673c75">fe::perp</a>(<a class="code hl_function" href="namespacevulpes_1_1fe.html#a924d24ca6d2c199f1fc00ea4c81bfc3c">fe::make_vec</a>(p_proj, q_proj));</div>
+<div class="line"><span class="keyword">auto</span> wf = <a class="code hl_function" href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">fe::inner</a>(c * w_perp, V);</div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_a695ac745a36dc5855f52dbb0bd673c75"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a695ac745a36dc5855f52dbb0bd673c75">vulpes::fe::perp</a></div><div class="ttdeci">auto perp(const FeExpressionBase&lt; 2, E &gt; &amp;e)</div><div class="ttdoc">2D perpendicular rotation of a 2-vector coefficient expression.</div><div class="ttdef"><b>Definition</b> fe_expr_op.hpp:955</div></div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_a924d24ca6d2c199f1fc00ea4c81bfc3c"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a924d24ca6d2c199f1fc00ea4c81bfc3c">vulpes::fe::make_vec</a></div><div class="ttdeci">FeExpressionMakeVec&lt; Dim, ScalarExprs... &gt; make_vec(const FeExpressionBase&lt; Dim, ScalarExprs &gt; &amp;... exprs)</div><div class="ttdef"><b>Definition</b> fe_expr_op.hpp:652</div></div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_afaa0eab5130623619ccbce8071ffe04c"><div class="ttname"><a href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">vulpes::fe::inner</a></div><div class="ttdeci">FeExpressionInner&lt; Dim, FeExpressionU, FeExpressionV &gt; inner(const FeExpressionBase&lt; Dim, FeExpressionU &gt; &amp;u, const FeExpressionBase&lt; Dim, FeExpressionV &gt; &amp;v)</div><div class="ttdef"><b>Definition</b> fe_expr_op.hpp:189</div></div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Expression type; OutputType must be Eigen::Vector&lt;double,2&gt;. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>2D vector-output coefficient expression. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>make_vec(-spatial_component&lt;1&gt;(e), spatial_component&lt;0&gt;(e)). </dd></dl>
+
+</div>
+</div>
 <a id="af766bb00e734aee784af3f79a2719ece" name="af766bb00e734aee784af3f79a2719ece"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af766bb00e734aee784af3f79a2719ece">&#9670;&#160;</a></span>self()</h2>
 
@@ -1130,6 +1711,102 @@ template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typen
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f15926171f8a43e59f3ea005810ec23" name="a0f15926171f8a43e59f3ea005810ec23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f15926171f8a43e59f3ea005810ec23">&#9670;&#160;</a></span>shift() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt; vulpes::fe::shift </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename E::OutputType &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>General shift factory: <code>expr</code> + c, works for any <code>OutputType</code>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>FE expression. </td></tr>
+    <tr><td class="paramname">c</td><td>Constant offset of type <code>E::OutputType</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html" title="Add a constant offset to an FE expression at every quadrature point.">FeExpressionShift</a> wrapping <code>e</code> with offset <code>c</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a2f27abc6c56f74eb446522c954f11945" name="a2f27abc6c56f74eb446522c954f11945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f27abc6c56f74eb446522c954f11945">&#9670;&#160;</a></span>shift() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html">FeExpressionShift</a>&lt; Dim, E &gt; vulpes::fe::shift </td>
+          <td>(</td>
+          <td class="paramtype">const typename E::OutputType &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>General shift factory: <code>c</code> + expr, works for any <code>OutputType</code>. </p>
+<p>Use this form for vector expressions where <code>operator+</code> is not available due to template deduction limitations: </p><div class="fragment"><div class="line"><a class="code hl_function" href="namespacevulpes_1_1fe.html#a2f27abc6c56f74eb446522c954f11945">fe::shift</a>(Eigen::Vector2d(1.0, -1.0), <a class="code hl_function" href="namespacevulpes_1_1fe.html#a924d24ca6d2c199f1fc00ea4c81bfc3c">fe::make_vec</a>(u_proj, v_proj))</div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_a2f27abc6c56f74eb446522c954f11945"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a2f27abc6c56f74eb446522c954f11945">vulpes::fe::shift</a></div><div class="ttdeci">FeExpressionShift&lt; Dim, E &gt; shift(const typename E::OutputType &amp;c, const FeExpressionBase&lt; Dim, E &gt; &amp;e)</div><div class="ttdoc">General shift factory: c + expr, works for any OutputType.</div><div class="ttdef"><b>Definition</b> fe_expr_op.hpp:911</div></div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Constant offset of type <code>E::OutputType</code>. </td></tr>
+    <tr><td class="paramname">e</td><td>FE expression. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionShift.html" title="Add a constant offset to an FE expression at every quadrature point.">FeExpressionShift</a> wrapping <code>e</code> with offset <code>c</code>. </dd></dl>
 
 </div>
 </div>
@@ -1160,6 +1837,43 @@ template&lt;std::size_t Dim, typename E &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74ad221e2fc952326e1f4f635e9a56f2" name="a74ad221e2fc952326e1f4f635e9a56f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ad221e2fc952326e1f4f635e9a56f2">&#9670;&#160;</a></span>spatial_component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t K, std::size_t Dim, typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html">FeExpressionSpatialComponent</a>&lt; K, Dim, E &gt; vulpes::fe::spatial_component </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract the K-th scalar spatial component of a vector-output FE expression at every quadrature point. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">K</td><td>Compile-time spatial component index (zero-based). </td></tr>
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">E</td><td>Expression type whose evaluate() returns a type supporting operator[]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Vector-output FE expression. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classvulpes_1_1fe_1_1FeExpressionSpatialComponent.html" title="Extract a single scalar spatial component at compile-time index K from a vector-output FE expression.">FeExpressionSpatialComponent</a> wrapping e, evaluating to e(q)[K]. </dd></dl>
 
 </div>
 </div>
@@ -1210,7 +1924,7 @@ template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typen
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li>
-    <li class="footer">Generated on Thu Jun 4 2026 09:40:23 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 15 2026 12:20:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
