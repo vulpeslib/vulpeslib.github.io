@@ -1,5 +1,9 @@
 var NAVTREEINDEX33 =
 {
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#abc3732424fbc8167397df45317e580eb":[9,0,3,15,24,2],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#ad30c039fbcef91414c1eb0742941570f":[10,0,2,11,23,7],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#ad30c039fbcef91414c1eb0742941570f":[9,0,3,15,24,7],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#afef0c190f172345283fb1a0494915e12":[9,0,3,15,24,9],
 "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#afef0c190f172345283fb1a0494915e12":[10,0,2,11,23,9],
 "structvulpes_1_1timeintegration_1_1LstableDIRK.html":[9,0,3,15,25],
 "structvulpes_1_1timeintegration_1_1LstableDIRK.html":[10,0,2,11,24],
@@ -245,9 +249,5 @@ var NAVTREEINDEX33 =
 "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html":[10,0,2,15,0,3],
 "tensor_8cpp.html":[11,0,1,1,5],
 "traits_8hpp.html":[11,0,1,4,16],
-"traits_8hpp.html#a72e6a6deae9bfee82032a94e225d980a":[11,0,1,4,16,0],
-"traits_8hpp_source.html":[11,0,1,4,16],
-"unionvulpes_1_1scipy_1_1heapcontents.html":[10,0,2,10,9],
-"unionvulpes_1_1scipy_1_1heapcontents.html":[9,0,3,14,9],
-"unionvulpes_1_1scipy_1_1heapcontents.html#a54f6d2d90b6b923f13b34362b6a8da0a":[9,0,3,14,9,1]
+"traits_8hpp.html#a72e6a6deae9bfee82032a94e225d980a":[11,0,1,4,16,0]
 };

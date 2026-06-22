@@ -8577,8 +8577,8 @@
       <type>decltype(auto)</type>
       <name>evaluatePolyCoef</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFaceNormal.html</anchorfile>
-      <anchor>a417874a8a5ff40b5cd70b4016a1c3703</anchor>
-      <arglist>(const auto &amp;, const auto &amp;, std::size_t, std::size_t) const</arglist>
+      <anchor>a05613556600c4de14ff67ffb9b6e71c3</anchor>
+      <arglist>(const auto &amp;, const auto &amp;fe_values, std::size_t, std::size_t) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
@@ -10242,25 +10242,25 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr const auto &amp;</type>
-      <name>feSpace</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>af0333705ad7416bd31da37eb47dd3491</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>ab34db8f9eb15f296fd3f25dc8bd08a61</anchor>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionMakeVec.html</anchorfile>
+      <anchor>a1c81b2c799365e5dc57ff33cad9536d4</anchor>
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
       <name>evaluatePolyCoef</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
-      <anchor>ac35e53267a9736f80c95c4a60c518e58</anchor>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionMakeVec.html</anchorfile>
+      <anchor>a713b88ad15f1c0596fc5e91f364469a2</anchor>
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr const auto &amp;</type>
+      <name>feSpace</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>af0333705ad7416bd31da37eb47dd3491</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionMakeVec&lt; Dim, ScalarExprs... &gt; &gt;</type>
@@ -10345,6 +10345,20 @@
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionMakeVec.html</anchorfile>
       <anchor>ac892b26f05b2de2cf697cb34927fbc16</anchor>
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells, std::index_sequence&lt; Ks... &gt;) const</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>decltype(auto)</type>
+      <name>evaluatePolyImpl</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionMakeVec.html</anchorfile>
+      <anchor>abcb7f22eb3b89a514d1819c97fccc367</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj, std::index_sequence&lt; Ks... &gt;) const</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>Eigen::Matrix&lt; double, static_cast&lt; int &gt;(N), -1 &gt;</type>
+      <name>evaluatePolyCoefImpl</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionMakeVec.html</anchorfile>
+      <anchor>a6db49df9d2b2444fe2da610aae0c60dc</anchor>
+      <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj, std::index_sequence&lt; Ks... &gt;) const</arglist>
     </member>
   </compound>
   <compound kind="class">

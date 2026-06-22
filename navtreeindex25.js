@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md19":[2,0],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md20":[2,0,0],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md21":[2,0,1],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md22":[2,0,2],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md23":[2,0,3],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index.html":[3],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index.html#autotoc_md25":[3,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "mpi__wrappers_8hpp.html#a743e7f9ce266c8255e6d7cf34e8284fe":[11,0,1,10,7,21],
 "mpi__wrappers_8hpp.html#a787c607c3161256d2028c225ce65e831":[11,0,1,10,7,3],
 "mpi__wrappers_8hpp.html#a7c5ad3558c3b08b22c32a5df5f5468bd":[11,0,1,10,7,15],
-"mpi__wrappers_8hpp.html#a7ec73a6d5f77213d86931e30fdb3fc38":[11,0,1,10,7,32],
-"mpi__wrappers_8hpp.html#a7edf67ee451d1f06d4cf742cba2847eb":[11,0,1,10,7,25],
-"mpi__wrappers_8hpp.html#a88120980755dcefe5adcddbc04bbdbb8":[11,0,1,10,7,30],
-"mpi__wrappers_8hpp.html#a8b5785828950e92e0802c398c79a2b4b":[11,0,1,10,7,28],
-"mpi__wrappers_8hpp.html#a8bdf0a09e438faf433812a78a0afd01a":[11,0,1,10,7,22]
+"mpi__wrappers_8hpp.html#a7ec73a6d5f77213d86931e30fdb3fc38":[11,0,1,10,7,32]
 };

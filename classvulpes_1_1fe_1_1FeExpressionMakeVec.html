@@ -155,15 +155,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6d12e6ef24efffb7520b323c00d105fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a0c1a69e598c01bbd4aa1c120235f3" id="r_af9a0c1a69e598c01bbd4aa1c120235f3"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html#af9a0c1a69e598c01bbd4aa1c120235f3">precompute</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, const <a class="el" href="namespacevulpes_1_1fe.html#a4f45bdccfe2a399019887657e481717d">CellsType</a>&lt; Dim &gt; &amp;cells) const</td></tr>
 <tr class="separator:af9a0c1a69e598c01bbd4aa1c120235f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c81b2c799365e5dc57ff33cad9536d4" id="r_a1c81b2c799365e5dc57ff33cad9536d4"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html#a1c81b2c799365e5dc57ff33cad9536d4">evaluatePoly</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</td></tr>
+<tr class="separator:a1c81b2c799365e5dc57ff33cad9536d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713b88ad15f1c0596fc5e91f364469a2" id="r_a713b88ad15f1c0596fc5e91f364469a2"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html#a713b88ad15f1c0596fc5e91f364469a2">evaluatePolyCoef</a> (const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</td></tr>
+<tr class="separator:a713b88ad15f1c0596fc5e91f364469a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0333705ad7416bd31da37eb47dd3491" id="r_af0333705ad7416bd31da37eb47dd3491"><td class="memItemLeft" align="right" valign="top">constexpr const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#af0333705ad7416bd31da37eb47dd3491">feSpace</a> () const</td></tr>
 <tr class="memdesc:af0333705ad7416bd31da37eb47dd3491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the associated Finite Element Space.  <br /></td></tr>
 <tr class="separator:af0333705ad7416bd31da37eb47dd3491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab34db8f9eb15f296fd3f25dc8bd08a61" id="r_ab34db8f9eb15f296fd3f25dc8bd08a61"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#ab34db8f9eb15f296fd3f25dc8bd08a61">evaluatePoly</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</td></tr>
-<tr class="memdesc:ab34db8f9eb15f296fd3f25dc8bd08a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the polynomial associated to the expression for basis i and j and block bi and bj.  <br /></td></tr>
-<tr class="separator:ab34db8f9eb15f296fd3f25dc8bd08a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35e53267a9736f80c95c4a60c518e58" id="r_ac35e53267a9736f80c95c4a60c518e58"><td class="memItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#ac35e53267a9736f80c95c4a60c518e58">evaluatePolyCoef</a> (const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</td></tr>
-<tr class="memdesc:ac35e53267a9736f80c95c4a60c518e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coefficients of the polynomial associated to the expression for basis i and j and block bi and bj.  <br /></td></tr>
-<tr class="separator:ac35e53267a9736f80c95c4a60c518e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa194506aca4e759376e053023687b62b" id="r_aa194506aca4e759376e053023687b62b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html">FeExpressionUnaryMinus</a>&lt; Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">FeExpressionMakeVec</a>&lt; Dim, ScalarExprs... &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html#aa194506aca4e759376e053023687b62b">operator-</a> () const</td></tr>
 <tr class="memdesc:aa194506aca4e759376e053023687b62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unary minus operator for the FE expression.  <br /></td></tr>
 <tr class="separator:aa194506aca4e759376e053023687b62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +205,12 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac892b26f05b2de2cf697cb34927fbc16" id="r_ac892b26f05b2de2cf697cb34927fbc16"><td class="memTemplParams" colspan="2">template&lt;std::size_t... Ks&gt; </td></tr>
 <tr class="memitem:ac892b26f05b2de2cf697cb34927fbc16"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html#ac892b26f05b2de2cf697cb34927fbc16">precomputeImpl</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, const <a class="el" href="namespacevulpes_1_1fe.html#a4f45bdccfe2a399019887657e481717d">CellsType</a>&lt; Dim &gt; &amp;cells, std::index_sequence&lt; Ks... &gt;) const</td></tr>
 <tr class="separator:ac892b26f05b2de2cf697cb34927fbc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb7f22eb3b89a514d1819c97fccc367" id="r_abcb7f22eb3b89a514d1819c97fccc367"><td class="memTemplParams" colspan="2">template&lt;std::size_t... Ks&gt; </td></tr>
+<tr class="memitem:abcb7f22eb3b89a514d1819c97fccc367"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html#abcb7f22eb3b89a514d1819c97fccc367">evaluatePolyImpl</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj, std::index_sequence&lt; Ks... &gt;) const</td></tr>
+<tr class="separator:abcb7f22eb3b89a514d1819c97fccc367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db49df9d2b2444fe2da610aae0c60dc" id="r_a6db49df9d2b2444fe2da610aae0c60dc"><td class="memTemplParams" colspan="2">template&lt;std::size_t... Ks&gt; </td></tr>
+<tr class="memitem:a6db49df9d2b2444fe2da610aae0c60dc"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, static_cast&lt; int &gt;(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html#a18c6ae435f8058b4078a159aaba101a1">N</a>), -1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html#a6db49df9d2b2444fe2da610aae0c60dc">evaluatePolyCoefImpl</a> (const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj, std::index_sequence&lt; Ks... &gt;) const</td></tr>
+<tr class="separator:a6db49df9d2b2444fe2da610aae0c60dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aba0b18cd54e491637f9cbbb0d8ee4660" name="aba0b18cd54e491637f9cbbb0d8ee4660"></a>
@@ -509,17 +513,19 @@ template&lt;std::size_t J = 0, std::size_t I = 0&gt; </div>
 
 </div>
 </div>
-<a id="ab34db8f9eb15f296fd3f25dc8bd08a61" name="ab34db8f9eb15f296fd3f25dc8bd08a61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab34db8f9eb15f296fd3f25dc8bd08a61">&#9670;&#160;</a></span>evaluatePoly()</h2>
+<a id="a1c81b2c799365e5dc57ff33cad9536d4" name="a1c81b2c799365e5dc57ff33cad9536d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c81b2c799365e5dc57ff33cad9536d4">&#9670;&#160;</a></span>evaluatePoly()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename... ScalarExprs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">FeExpressionMakeVec</a>&lt; Dim, ScalarExprs... &gt;  &gt;::evaluatePoly </td>
+          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">vulpes::fe::FeExpressionMakeVec</a>&lt; Dim, ScalarExprs &gt;::evaluatePoly </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;&#160;</td>
           <td class="paramname"><em>fe_values</em>, </td>
@@ -556,38 +562,26 @@ template&lt;std::size_t J = 0, std::size_t I = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute the polynomial associated to the expression for basis i and j and block bi and bj. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fe_values</td><td>Finite element values at quadrature points </td></tr>
-    <tr><td class="paramname">j</td><td>Index of the trial function basis </td></tr>
-    <tr><td class="paramname">i</td><td>Index of the test function basis </td></tr>
-    <tr><td class="paramname">bi</td><td>Block index of the trial function </td></tr>
-    <tr><td class="paramname">bj</td><td>Block index of the test function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Matrix of polynomials associated to the expression</dd></dl>
-<p>We use the convention that in the result, each row corresponds to a spatial direction (this extends also to tensors, by unrolling them), while each column corresponds to a addendum of the expression requiring a particular pullback/pushforward transformation. These coefficients are computed by the <code>evaluatePolyCoef</code> method. </p>
-
 </div>
 </div>
-<a id="ac35e53267a9736f80c95c4a60c518e58" name="ac35e53267a9736f80c95c4a60c518e58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac35e53267a9736f80c95c4a60c518e58">&#9670;&#160;</a></span>evaluatePolyCoef()</h2>
+<a id="a713b88ad15f1c0596fc5e91f364469a2" name="a713b88ad15f1c0596fc5e91f364469a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713b88ad15f1c0596fc5e91f364469a2">&#9670;&#160;</a></span>evaluatePolyCoef()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename... ScalarExprs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">vulpes::fe::FeExpressionBase</a>&lt; Dim, <a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">FeExpressionMakeVec</a>&lt; Dim, ScalarExprs... &gt;  &gt;::evaluatePolyCoef </td>
+          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">vulpes::fe::FeExpressionMakeVec</a>&lt; Dim, ScalarExprs &gt;::evaluatePolyCoef </td>
           <td>(</td>
           <td class="paramtype">const auto &amp;&#160;</td>
           <td class="paramname"><em>mapping</em>, </td>
@@ -618,23 +612,132 @@ template&lt;std::size_t J = 0, std::size_t I = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute the coefficients of the polynomial associated to the expression for basis i and j and block bi and bj. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mapping</td><td>The mapping used for the FE </td></tr>
-    <tr><td class="paramname">fe_values</td><td>Finite element values at quadrature points </td></tr>
-    <tr><td class="paramname">bi</td><td>Block index of the trial function </td></tr>
-    <tr><td class="paramname">bj</td><td>Block index of the test function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Matrix of coefficients associated to the polynomial expression</dd></dl>
-<p>The coefficients are the pullback/pushforward needed by each of the polynomial returned by <code>evaluatePoly</code>. Each column corresponds to an addendum of the expression requiring a particular pullback/pushforward transformation. Each row corresponds to a spatial direction (this extends also to tensors, by unrolling them). </p>
+</div>
+</div>
+<a id="a6db49df9d2b2444fe2da610aae0c60dc" name="a6db49df9d2b2444fe2da610aae0c60dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db49df9d2b2444fe2da610aae0c60dc">&#9670;&#160;</a></span>evaluatePolyCoefImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename... ScalarExprs&gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t... Ks&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt; double, static_cast&lt; int &gt;(<a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html#a18c6ae435f8058b4078a159aaba101a1">N</a>), -1 &gt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">vulpes::fe::FeExpressionMakeVec</a>&lt; Dim, ScalarExprs &gt;::evaluatePolyCoefImpl </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>mapping</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>fe_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::index_sequence&lt; Ks... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcb7f22eb3b89a514d1819c97fccc367" name="abcb7f22eb3b89a514d1819c97fccc367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb7f22eb3b89a514d1819c97fccc367">&#9670;&#160;</a></span>evaluatePolyImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename... ScalarExprs&gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t... Ks&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">decltype(auto) <a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">vulpes::fe::FeExpressionMakeVec</a>&lt; Dim, ScalarExprs &gt;::evaluatePolyImpl </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fe_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::index_sequence&lt; Ks... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -957,7 +1060,7 @@ template&lt;std::size_t Dim, typename... ScalarExprs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionMakeVec.html">FeExpressionMakeVec</a></li>
-    <li class="footer">Generated on Mon Jun 22 2026 13:43:43 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 22 2026 14:56:32 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

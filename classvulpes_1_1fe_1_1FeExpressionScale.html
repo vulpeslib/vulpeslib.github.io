@@ -204,8 +204,8 @@ class vulpes::fe::FeExpressionScale&lt; Dim, E &gt;</div><p>Multiply an FE expre
 <p>All update flags, precompute logic, and polynomial order are delegated to the wrapped expression. The expression is a pure coefficient node (<code>FeSpaceType=void</code> inherited from the base) and carries <code>is_bilinear</code> = E::is_bilinear unchanged.</p>
 <p>Typical use: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> wf = <a class="code hl_function" href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">fe::inner</a>(3.0 * a_proj, v);              <span class="comment">// scalar scale</span></div>
 <div class="line"><span class="keyword">auto</span> wf = <a class="code hl_function" href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">fe::inner</a>(2.0 * <a class="code hl_function" href="namespacevulpes_1_1fe.html#a924d24ca6d2c199f1fc00ea4c81bfc3c">fe::make_vec</a>(p, q), V);  <span class="comment">// vector scale</span></div>
-<div class="ttc" id="anamespacevulpes_1_1fe_html_a924d24ca6d2c199f1fc00ea4c81bfc3c"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a924d24ca6d2c199f1fc00ea4c81bfc3c">vulpes::fe::make_vec</a></div><div class="ttdeci">FeExpressionMakeVec&lt; Dim, ScalarExprs... &gt; make_vec(const FeExpressionBase&lt; Dim, ScalarExprs &gt; &amp;... exprs)</div><div class="ttdef"><b>Definition</b> fe_expr_op.hpp:652</div></div>
-<div class="ttc" id="anamespacevulpes_1_1fe_html_afaa0eab5130623619ccbce8071ffe04c"><div class="ttname"><a href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">vulpes::fe::inner</a></div><div class="ttdeci">FeExpressionInner&lt; Dim, FeExpressionU, FeExpressionV &gt; inner(const FeExpressionBase&lt; Dim, FeExpressionU &gt; &amp;u, const FeExpressionBase&lt; Dim, FeExpressionV &gt; &amp;v)</div><div class="ttdef"><b>Definition</b> fe_expr_op.hpp:189</div></div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_a924d24ca6d2c199f1fc00ea4c81bfc3c"><div class="ttname"><a href="namespacevulpes_1_1fe.html#a924d24ca6d2c199f1fc00ea4c81bfc3c">vulpes::fe::make_vec</a></div><div class="ttdeci">FeExpressionMakeVec&lt; Dim, ScalarExprs... &gt; make_vec(const FeExpressionBase&lt; Dim, ScalarExprs &gt; &amp;... exprs)</div><div class="ttdef"><b>Definition</b> fe_expr_op.hpp:761</div></div>
+<div class="ttc" id="anamespacevulpes_1_1fe_html_afaa0eab5130623619ccbce8071ffe04c"><div class="ttname"><a href="namespacevulpes_1_1fe.html#afaa0eab5130623619ccbce8071ffe04c">vulpes::fe::inner</a></div><div class="ttdeci">FeExpressionInner&lt; Dim, FeExpressionU, FeExpressionV &gt; inner(const FeExpressionBase&lt; Dim, FeExpressionU &gt; &amp;u, const FeExpressionBase&lt; Dim, FeExpressionV &gt; &amp;v)</div><div class="ttdef"><b>Definition</b> fe_expr_op.hpp:223</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
@@ -820,7 +820,7 @@ template&lt;std::size_t Dim, typename E &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html">FeExpressionScale</a></li>
-    <li class="footer">Generated on Mon Jun 22 2026 13:43:43 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 22 2026 14:56:32 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

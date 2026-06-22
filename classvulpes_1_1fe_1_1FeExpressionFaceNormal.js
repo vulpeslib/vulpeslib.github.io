@@ -8,7 +8,7 @@ var classvulpes_1_1fe_1_1FeExpressionFaceNormal =
     [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#aff4829a2d51ec50efe6e0aac5ef1e7bc", null ],
     [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a78a35418f73cec86d848379fb157603a", null ],
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#adfb50f22d5044c910baffe4582cd2c7a", null ],
-    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a417874a8a5ff40b5cd70b4016a1c3703", null ],
+    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a05613556600c4de14ff67ffb9b6e71c3", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#af0333705ad7416bd31da37eb47dd3491", null ],
     [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#aa194506aca4e759376e053023687b62b", null ],
     [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#ad4fc20f7895cde13e1fda54934c3f4d3", null ],

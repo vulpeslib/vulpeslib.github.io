@@ -1,5 +1,9 @@
 var NAVTREEINDEX34 =
 {
+"traits_8hpp_source.html":[11,0,1,4,16],
+"unionvulpes_1_1scipy_1_1heapcontents.html":[10,0,2,10,9],
+"unionvulpes_1_1scipy_1_1heapcontents.html":[9,0,3,14,9],
+"unionvulpes_1_1scipy_1_1heapcontents.html#a54f6d2d90b6b923f13b34362b6a8da0a":[9,0,3,14,9,1],
 "unionvulpes_1_1scipy_1_1heapcontents.html#a54f6d2d90b6b923f13b34362b6a8da0a":[10,0,2,10,9,1],
 "unionvulpes_1_1scipy_1_1heapcontents.html#ac2ae84af5a59a0c48ba1e7dc6c7e59d7":[10,0,2,10,9,0],
 "unionvulpes_1_1scipy_1_1heapcontents.html#ac2ae84af5a59a0c48ba1e7dc6c7e59d7":[9,0,3,14,9,0],

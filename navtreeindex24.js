@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"fe__modal__simplex_8hpp.html#a8a3ac0047d31adeb05ff8d7a66d79e76":[11,0,1,3,1,3,3],
+"fe__modal__simplex_8hpp.html#a930d811c0cfcf4b591444ed7264c112d":[11,0,1,3,1,3,2],
+"fe__modal__simplex_8hpp.html#a9c66ba0b8f1de46b9dcef2b2fbb97592":[11,0,1,3,1,3,8],
+"fe__modal__simplex_8hpp.html#ac7f456429dbf147bddb488e0705bdc8a":[11,0,1,3,1,3,4],
 "fe__modal__simplex_8hpp.html#ad3aaa939c5bb95941d16f2b78c89b9c4":[11,0,1,3,1,3,6],
 "fe__modal__simplex_8hpp_source.html":[11,0,1,3,1,3],
 "fe__modal__tensor_8hpp.html":[11,0,1,3,1,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16":[1,1,0],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md17":[1,2],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md9":[1,0],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html":[2],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md19":[2,0],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md20":[2,0,0],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md21":[2,0,1],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html#autotoc_md22":[2,0,2]
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html":[2]
 };

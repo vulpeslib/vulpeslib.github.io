@@ -1,5 +1,9 @@
 var NAVTREEINDEX32 =
 {
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#af2034cef6044de87b042f7ae50a1ad44":[9,0,3,15,8,1],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html":[9,0,3,15,9],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html":[10,0,2,11,8],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html#a06e3650620ccab50041d829ed4f7959b":[9,0,3,15,9,3],
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html#a06e3650620ccab50041d829ed4f7959b":[10,0,2,11,8,3],
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html#a117c3a9162cba6d0d6c615e89de9948e":[10,0,2,11,8,8],
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html#a117c3a9162cba6d0d6c615e89de9948e":[9,0,3,15,9,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX32 =
 "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#aabea129fcb572e111d6c9799f96908da":[10,0,2,11,23,4],
 "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#ab3d73a6d59672cd83617af267c70892a":[10,0,2,11,23,6],
 "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#ab3d73a6d59672cd83617af267c70892a":[9,0,3,15,24,6],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#abc3732424fbc8167397df45317e580eb":[10,0,2,11,23,2],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#abc3732424fbc8167397df45317e580eb":[9,0,3,15,24,2],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#ad30c039fbcef91414c1eb0742941570f":[10,0,2,11,23,7],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#ad30c039fbcef91414c1eb0742941570f":[9,0,3,15,24,7],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#afef0c190f172345283fb1a0494915e12":[9,0,3,15,24,9]
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#abc3732424fbc8167397df45317e580eb":[10,0,2,11,23,2]
 };
