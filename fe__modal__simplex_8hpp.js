@@ -1,7 +1,7 @@
 var fe__modal__simplex_8hpp =
 [
     [ "vulpes::fe::FeSpaceModalP< Dim, DofPolicy >", "classvulpes_1_1fe_1_1FeSpaceModalP.html", "classvulpes_1_1fe_1_1FeSpaceModalP" ],
-    [ "FeSpaceModalLegendreDP", "fe__modal__simplex_8hpp.html#a45667ebd33208ca3c2f00200a1c6fae9", null ],
+    [ "FeSpaceModalLegendreDP", "fe__modal__simplex_8hpp.html#aa37fcb0e643eec22912d2aa69da25bc2", null ],
     [ "evalSimplex", "fe__modal__simplex_8hpp.html#a930d811c0cfcf4b591444ed7264c112d", null ],
     [ "interpolateFunctionAtNodes", "fe__modal__simplex_8hpp.html#a8a3ac0047d31adeb05ff8d7a66d79e76", null ],
     [ "jacobiP", "fe__modal__simplex_8hpp.html#ac7f456429dbf147bddb488e0705bdc8a", null ],

@@ -1,7 +1,7 @@
 var fe__values_8hpp =
 [
     [ "vulpes::fe::FeValues< Dim >", "classvulpes_1_1fe_1_1FeValues.html", "classvulpes_1_1fe_1_1FeValues" ],
-    [ "UpdateFlagsType", "fe__values_8hpp.html#a2ca0f7334f0292f04c1dd25339d65d21", null ],
+    [ "UpdateFlagsType", "fe__values_8hpp.html#a59d037b358c6d469a6935388db8915df", null ],
     [ "UpdateFlags", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62f", [
       [ "UpdateNothing", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62fa42f5f9e73ecca69ea8877f0ef7db282a", null ],
       [ "UpdateMapping", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62fa8951d89a8579d00a679621692eccb00d", null ],

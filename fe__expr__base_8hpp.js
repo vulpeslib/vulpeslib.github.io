@@ -1,8 +1,8 @@
 var fe__expr__base_8hpp =
 [
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpression >", "classvulpes_1_1fe_1_1FeExpressionBase.html", "classvulpes_1_1fe_1_1FeExpressionBase" ],
-    [ "CellsType", "fe__expr__base_8hpp.html#a4f45bdccfe2a399019887657e481717d", null ],
-    [ "CellType", "fe__expr__base_8hpp.html#ad7d6019942d7c210a8bb0d0dc47538f1", null ],
+    [ "CellsType", "fe__expr__base_8hpp.html#a71a038aac924bc14a777c16636440f01", null ],
+    [ "CellType", "fe__expr__base_8hpp.html#a41276ccb7eed7a26d0bdb607860dca31", null ],
     [ "IntegrationForm", "fe__expr__base_8hpp.html#ae5ebf32825cb96839dd980a33ccd72bd", [
       [ "IsNothing", "fe__expr__base_8hpp.html#ae5ebf32825cb96839dd980a33ccd72bda77de660f3159503734d5b49ec951ebbc", null ],
       [ "IsLinearTest", "fe__expr__base_8hpp.html#ae5ebf32825cb96839dd980a33ccd72bda6a506d38a5246cc1f633c1ac60956d6a", null ],

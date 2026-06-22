@@ -1,6 +1,6 @@
 var classvulpes_1_1fe_1_1FeExpressionOuter =
 [
-    [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionOuter.html#a2ec5912d5c0df570aaa690298ad9609e", null ],
+    [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionOuter.html#a53a20cd999d1e25c33b24bdc3018f7bc", null ],
     [ "PolynomialType", "classvulpes_1_1fe_1_1FeExpressionOuter.html#aa3e8885547b799cdcecfc1a1f77a7d14", null ],
     [ "FeExpressionOuter", "classvulpes_1_1fe_1_1FeExpressionOuter.html#ae48237a205519b32578d4393ca53173b", null ],
     [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionOuter.html#a39072e47d51c2fd4b36a849c2761e47a", null ],
@@ -16,6 +16,6 @@ var classvulpes_1_1fe_1_1FeExpressionOuter =
     [ "is_leaf", "classvulpes_1_1fe_1_1FeExpressionOuter.html#a4e55125321f15ec816cdc527939277bd", null ],
     [ "k_index_begin", "classvulpes_1_1fe_1_1FeExpressionOuter.html#a4424d6f705cd95a8dddcb844c2390f8b", null ],
     [ "k_index_end", "classvulpes_1_1fe_1_1FeExpressionOuter.html#a610a11dac6f4aecf8b64b3a4378f9808", null ],
-    [ "m_u", "classvulpes_1_1fe_1_1FeExpressionOuter.html#ae07efaf21446da5b50c1d308ec5c880c", null ],
-    [ "m_v", "classvulpes_1_1fe_1_1FeExpressionOuter.html#a06a67594ff28e5e77d238a9c73f381a4", null ]
+    [ "m_u", "classvulpes_1_1fe_1_1FeExpressionOuter.html#a798dec69c581b60a0bd2bf22f1873948", null ],
+    [ "m_v", "classvulpes_1_1fe_1_1FeExpressionOuter.html#aabe855fba46844ee13d61193a01777a1", null ]
 ];

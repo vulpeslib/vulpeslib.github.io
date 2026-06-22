@@ -1,7 +1,7 @@
 var classvulpes_1_1geometry_1_1Triangulation =
 [
-    [ "float_t", "classvulpes_1_1geometry_1_1Triangulation.html#a39553688b2f1637c02aaaf7cf9b09d33", null ],
-    [ "index_t", "classvulpes_1_1geometry_1_1Triangulation.html#a2351385c7dff4ba568c956701a00d375", null ],
+    [ "float_t", "classvulpes_1_1geometry_1_1Triangulation.html#a33502892d01240bfded4cc934fcf0347", null ],
+    [ "index_t", "classvulpes_1_1geometry_1_1Triangulation.html#a1172df43d139eb212c84391edda520a9", null ],
     [ "PointsType", "classvulpes_1_1geometry_1_1Triangulation.html#a52cb342d174d564e15ec3aaf05d97e26", null ],
     [ "PointsViewType", "classvulpes_1_1geometry_1_1Triangulation.html#ac74c090404cb24dca509ed5d146c4f02", null ],
     [ "PointType", "classvulpes_1_1geometry_1_1Triangulation.html#a9c8af0e603ec6206a1bc8ae4917e4591", null ],
