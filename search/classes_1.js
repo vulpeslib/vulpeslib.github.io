@@ -15,18 +15,6 @@ var searchData=
   ['butchertableimex_12',['ButcherTableIMEX',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
   ['butchertableimex_3c_202_20_3e_13',['ButcherTableIMEX&lt; 2 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
   ['butchertableimex_3c_205_20_3e_14',['ButcherTableIMEX&lt; 5 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20backwardeuler_3a_3an_5fstages_2b1_20_3e_15',['ButcherTableIMEX&lt; BackwardEuler::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20ceschinokunzmann3_3a_3an_5fstages_2b1_20_3e_16',['ButcherTableIMEX&lt; CeschinoKunzmann3::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20ceschinokunzmann4_3a_3an_5fstages_2b1_20_3e_17',['ButcherTableIMEX&lt; CeschinoKunzmann4::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20cranknicolson_3a_3an_5fstages_2b1_20_3e_18',['ButcherTableIMEX&lt; CrankNicolson::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20forwardeuler_3a_3an_5fstages_20_3e_19',['ButcherTableIMEX&lt; ForwardEuler::n_stages &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20heun_3a_3an_5fstages_20_3e_20',['ButcherTableIMEX&lt; Heun::n_stages &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20lobattoiiic_3a_3an_5fstages_2b1_20_3e_21',['ButcherTableIMEX&lt; LobattoIIIC::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20lstabledirk_3a_3an_5fstages_2b1_20_3e_22',['ButcherTableIMEX&lt; LstableDIRK::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20miller3_3a_3an_5fstages_2b1_20_3e_23',['ButcherTableIMEX&lt; Miller3::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20plainbutcher_3a_3an_5fstages_20_3e_24',['ButcherTableIMEX&lt; PlainButcher::n_stages &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20plainbutcher_3a_3an_5fstages_2b1_20_3e_25',['ButcherTableIMEX&lt; PlainButcher::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20rk4_3a_3an_5fstages_20_3e_26',['ButcherTableIMEX&lt; RK4::n_stages &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20ssprk3_3a_3an_5fstages_20_3e_27',['ButcherTableIMEX&lt; SSPRK3::n_stages &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
-  ['butchertableimex_3c_20trbdf2_3a_3an_5fstages_2b1_20_3e_28',['ButcherTableIMEX&lt; TRBDF2::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]]
+  ['butchertableimex_3c_20plainbutcher_3a_3an_5fstages_20_3e_15',['ButcherTableIMEX&lt; PlainButcher::n_stages &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]],
+  ['butchertableimex_3c_20plainbutcher_3a_3an_5fstages_2b1_20_3e_16',['ButcherTableIMEX&lt; PlainButcher::n_stages+1 &gt;',['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html',1,'vulpes::timeintegration']]]
 ];

@@ -1,7 +1,7 @@
 var classvulpes_1_1geometry_1_1Tetrahedralization =
 [
-    [ "float_t", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a3e7b09ccb22147372d8bdb7fc2e5bc5a", null ],
-    [ "index_t", "classvulpes_1_1geometry_1_1Tetrahedralization.html#aa906d0b77c9126135290ab907cf5a4e7", null ],
+    [ "float_t", "classvulpes_1_1geometry_1_1Tetrahedralization.html#abccbab76ea5868476090d136c46306e4", null ],
+    [ "index_t", "classvulpes_1_1geometry_1_1Tetrahedralization.html#a30df0be3b066a1598c29b94d6227970f", null ],
     [ "PointsType", "classvulpes_1_1geometry_1_1Tetrahedralization.html#aa593e8d78938148242d61d7a31322b07", null ],
     [ "PointsViewType", "classvulpes_1_1geometry_1_1Tetrahedralization.html#ab8b399ec446c8fbdd1884fea96cd9027", null ],
     [ "PointType", "classvulpes_1_1geometry_1_1Tetrahedralization.html#ac20b4c8ed08a7e7a121fa35ef74669bf", null ],

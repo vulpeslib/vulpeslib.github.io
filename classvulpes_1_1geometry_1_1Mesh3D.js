@@ -1,7 +1,7 @@
 var classvulpes_1_1geometry_1_1Mesh3D =
 [
-    [ "BaseType", "classvulpes_1_1geometry_1_1Mesh3D.html#abdbef20e1575bce43a9718fbadbba658", null ],
-    [ "CellsFaceVtxsUncompressed", "classvulpes_1_1geometry_1_1Mesh3D.html#ab237514a520d80396747bb2c23690239", null ],
+    [ "BaseType", "classvulpes_1_1geometry_1_1Mesh3D.html#aa574cad31299c57490b91ceb81db38af", null ],
+    [ "CellsFaceVtxsUncompressed", "classvulpes_1_1geometry_1_1Mesh3D.html#a661908a2bd85841c13b050c7d88842f9", null ],
     [ "CellToEdgeMap", "classvulpes_1_1geometry_1_1Mesh3D.html#a664f0fe481e62a7b541bb5179d3b57e1", null ],
     [ "CellToFacetMap", "classvulpes_1_1geometry_1_1Mesh3D.html#a35477ed31c4300faa64cf296a3d83a3e", null ],
     [ "CellToVtxMap", "classvulpes_1_1geometry_1_1Mesh3D.html#a1ff1f8004bb8b892bbe7802347d46bcf", null ],
@@ -10,8 +10,8 @@ var classvulpes_1_1geometry_1_1Mesh3D =
     [ "EdgeToCellMap", "classvulpes_1_1geometry_1_1Mesh3D.html#a583d784e0cd1936f09ac3b9784f56374", null ],
     [ "EdgeToVtxMap", "classvulpes_1_1geometry_1_1Mesh3D.html#aa3d18e041835162fd74380c532cce6ca", null ],
     [ "EdgeVtxs", "classvulpes_1_1geometry_1_1Mesh3D.html#afa3946e3e8ba82b4cd3f5ee9d7e12384", null ],
-    [ "FacetToCellMap", "classvulpes_1_1geometry_1_1Mesh3D.html#aa1ef821a59f11de83a0a5c93985b9272", null ],
-    [ "FacetToVtxMap", "classvulpes_1_1geometry_1_1Mesh3D.html#a9a0156c8b3afdf602c8650a7d754dd5c", null ],
+    [ "FacetToCellMap", "classvulpes_1_1geometry_1_1Mesh3D.html#af2ba8fcda650ebfb9f8830002ca14ab4", null ],
+    [ "FacetToVtxMap", "classvulpes_1_1geometry_1_1Mesh3D.html#a1345b5fc1dda8e2fb6d043cfa2619c09", null ],
     [ "float_t", "classvulpes_1_1geometry_1_1Mesh3D.html#a59d59e487f83993524976c7bf96d31cc", null ],
     [ "index_t", "classvulpes_1_1geometry_1_1Mesh3D.html#a9d8df1be7296f871ad847b65c978e69e", null ],
     [ "SelfPoint", "classvulpes_1_1geometry_1_1Mesh3D.html#a0f8c2257fdb6072cba5b8b8f2994fec5", null ],
