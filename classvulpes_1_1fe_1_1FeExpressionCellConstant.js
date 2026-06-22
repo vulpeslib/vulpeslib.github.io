@@ -1,7 +1,7 @@
 var classvulpes_1_1fe_1_1FeExpressionCellConstant =
 [
     [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html#aba0b18cd54e491637f9cbbb0d8ee4660", null ],
-    [ "FuncType", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html#a2e5be91e89c2b264fe2db9d27d1c6511", null ],
+    [ "FuncType", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html#a20797bef6d8012061db134c9f2dba046", null ],
     [ "FeExpressionCellConstant", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html#aa059f615012708fcc1e18c8cbad0539d", null ],
     [ "FeExpressionCellConstant", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html#a28d082395443bd46165c4ab1dd1a2777", null ],
     [ "FeExpressionCellConstant", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html#acc2f2f5cafb7310311a5cfe68aa47c3a", null ],

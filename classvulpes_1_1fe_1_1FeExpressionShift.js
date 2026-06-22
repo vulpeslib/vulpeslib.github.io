@@ -5,7 +5,7 @@ var classvulpes_1_1fe_1_1FeExpressionShift =
     [ "FeExpressionShift", "classvulpes_1_1fe_1_1FeExpressionShift.html#ab5391b0eb4a8e0dda6e0d38e722bdaec", null ],
     [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionShift.html#a6bfabb207218dae7bfb100eac016d9a7", null ],
     [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionShift.html#a994bb020d70a693945b43de33ece3fa9", null ],
-    [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionShift.html#a9a2e86893bfc4374030b2dfd79d8707f", null ],
+    [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionShift.html#a31fc5c43aa8275271470de4c61be4d2a", null ],
     [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionShift.html#ab34db8f9eb15f296fd3f25dc8bd08a61", null ],
     [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionShift.html#ac35e53267a9736f80c95c4a60c518e58", null ],
     [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionShift.html#af0333705ad7416bd31da37eb47dd3491", null ],
