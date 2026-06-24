@@ -17,6 +17,7 @@ var namespacevulpes =
     [ "polynomial", "namespacevulpes_1_1polynomial.html", "namespacevulpes_1_1polynomial" ],
     [ "postprocessing", "namespacevulpes_1_1postprocessing.html", [
       [ "computeOrder", "namespacevulpes_1_1postprocessing.html#aa6a9e2a56768b8e5076941d3e9b8d497", null ],
+      [ "printConvergenceTable", "namespacevulpes_1_1postprocessing.html#a853994ec6978413bfb35db639093df23", null ],
       [ "projectSolution", "namespacevulpes_1_1postprocessing.html#a5f9ec84873a837fb54aed3c043958ec8", null ],
       [ "projectSolutionSubmesh", "namespacevulpes_1_1postprocessing.html#abc31fa8655aee2c9d3043afd81671076", null ]
     ] ],
@@ -29,6 +30,7 @@ var namespacevulpes =
     [ "vmath", "namespacevulpes_1_1vmath.html", "namespacevulpes_1_1vmath" ],
     [ "vutils", "namespacevulpes_1_1vutils.html", "namespacevulpes_1_1vutils" ],
     [ "vvutils", "namespacevulpes_1_1vvutils.html", "namespacevulpes_1_1vvutils" ],
+    [ "getVulpesRoot", "namespacevulpes.html#aaab0463471add9b9defc6c798fc32ae7", null ],
     [ "operator<<", "namespacevulpes.html#aa0fd08767263de129fce9f788148ef9b", null ],
     [ "print", "namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15", null ]
 ];

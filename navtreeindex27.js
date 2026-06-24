@@ -1,5 +1,10 @@
 var NAVTREEINDEX27 =
 {
+"namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3daa157a6dc7675987f7d55c678b98eb4c50":[9,0,3,4,42,1],
+"namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3daa37fd270f0eb43bd1cf0e4fbd25b385c5":[9,0,3,4,42,0],
+"namespacevulpes_1_1geometry.html#a38d31d4535d70cf1ffba69b4c3abb959":[9,0,3,4,38],
+"namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb":[9,0,3,4,55],
+"namespacevulpes_1_1geometry.html#a496dc31f3303aededdfd38a34f12ab4e":[9,0,3,4,56],
 "namespacevulpes_1_1geometry.html#a4addb93c64bac421b210251486415946":[9,0,3,4,62],
 "namespacevulpes_1_1geometry.html#a535e172da73723fcae91ad230fb18e6d":[9,0,3,4,44],
 "namespacevulpes_1_1geometry.html#a535e172da73723fcae91ad230fb18e6da095a1b43effec73955e31e790438de49":[9,0,3,4,44,0],
@@ -213,9 +218,10 @@ var NAVTREEINDEX27 =
 "namespacevulpes_1_1polynomial.html#a75599e84a0a9593e9442ee310abb0ff5":[9,0,3,9,5],
 "namespacevulpes_1_1polynomial.html#ab4d94fbb8f99ae97ccda985cd29915e3":[9,0,3,9,6],
 "namespacevulpes_1_1postprocessing.html":[9,0,3,10],
-"namespacevulpes_1_1postprocessing.html#a5f9ec84873a837fb54aed3c043958ec8":[9,0,3,10,1],
+"namespacevulpes_1_1postprocessing.html#a5f9ec84873a837fb54aed3c043958ec8":[9,0,3,10,2],
+"namespacevulpes_1_1postprocessing.html#a853994ec6978413bfb35db639093df23":[9,0,3,10,1],
 "namespacevulpes_1_1postprocessing.html#aa6a9e2a56768b8e5076941d3e9b8d497":[9,0,3,10,0],
-"namespacevulpes_1_1postprocessing.html#abc31fa8655aee2c9d3043afd81671076":[9,0,3,10,2],
+"namespacevulpes_1_1postprocessing.html#abc31fa8655aee2c9d3043afd81671076":[9,0,3,10,3],
 "namespacevulpes_1_1qfree.html":[9,0,3,11],
 "namespacevulpes_1_1qfree.html#a07945dc6bff66b9f767eb539235dcf00":[9,0,3,11,8],
 "namespacevulpes_1_1qfree.html#a19fc01660e0dc8cb02de72fa3d787465":[9,0,3,11,14],
@@ -243,11 +249,5 @@ var NAVTREEINDEX27 =
 "namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa22eb8c32466025c68a498dd37c6ebf46":[9,0,3,12,5,0],
 "namespacevulpes_1_1qrule.html#a1687388591db946e5b16e6ba133a350fa2634746a42faa622f29cd9928374afa0":[9,0,3,12,5,1],
 "namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb":[9,0,3,12,11],
-"namespacevulpes_1_1qrule.html#a28fb6e32bf6c2fb7a722adf869ea5d85":[9,0,3,12,6],
-"namespacevulpes_1_1qrule.html#a3cee3ab88c715115e1edc26168fabec1":[9,0,3,12,8],
-"namespacevulpes_1_1qrule.html#a56510856f2f5be4f448320e97c0bf54e":[9,0,3,12,3],
-"namespacevulpes_1_1qrule.html#a5dacf2bd4887e9379061365daa65920a":[9,0,3,12,9],
-"namespacevulpes_1_1qrule.html#a69f6219fca29b0c9d1adb00fbf00fd10":[9,0,3,12,13],
-"namespacevulpes_1_1qrule.html#acf808d810fe514bf8cf0c6a3229ff4a2":[9,0,3,12,12],
-"namespacevulpes_1_1qrule.html#af41db6b3f780ef06246c9d55a199347d":[9,0,3,12,10]
+"namespacevulpes_1_1qrule.html#a28fb6e32bf6c2fb7a722adf869ea5d85":[9,0,3,12,6]
 };

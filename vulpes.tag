@@ -1434,6 +1434,12 @@
     <namespace>Eigen::internal</namespace>
   </compound>
   <compound kind="file">
+    <name>env.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/utils/</path>
+    <filename>env_8hpp.html</filename>
+    <namespace>vulpes</namespace>
+  </compound>
+  <compound kind="file">
     <name>expression_parser.hpp</name>
     <path>/__w/vulpes/vulpes/vulpes/utils/</path>
     <filename>expression__parser_8hpp.html</filename>
@@ -26521,6 +26527,13 @@
     <namespace>vulpes::vutils</namespace>
     <namespace>vulpes::vvutils</namespace>
     <member kind="function">
+      <type>std::string</type>
+      <name>getVulpesRoot</name>
+      <anchorfile>namespacevulpes.html</anchorfile>
+      <anchor>aaab0463471add9b9defc6c798fc32ae7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>std::ostream &amp;</type>
       <name>print</name>
       <anchorfile>namespacevulpes.html</anchorfile>
@@ -29162,6 +29175,13 @@
       <anchorfile>namespacevulpes_1_1postprocessing.html</anchorfile>
       <anchor>aa6a9e2a56768b8e5076941d3e9b8d497</anchor>
       <arglist>(const std::vector&lt; double &gt; &amp;err, const std::vector&lt; double &gt; &amp;h)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>printConvergenceTable</name>
+      <anchorfile>namespacevulpes_1_1postprocessing.html</anchorfile>
+      <anchor>a853994ec6978413bfb35db639093df23</anchor>
+      <arglist>(const std::vector&lt; double &gt; &amp;h_vec, const std::vector&lt; std::pair&lt; std::string, std::vector&lt; double &gt; &gt; &gt; &amp;series, const std::string &amp;output_dir=&quot;&quot;, const std::string &amp;filename_stem=&quot;convergence&quot;)</arglist>
     </member>
     <member kind="function">
       <type>Eigen::MatrixXd</type>
