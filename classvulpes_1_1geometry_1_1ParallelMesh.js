@@ -15,6 +15,7 @@ var classvulpes_1_1geometry_1_1ParallelMesh =
     [ "buildLocalToLocalMaps", "classvulpes_1_1geometry_1_1ParallelMesh.html#a5fc4d5481ea5946c51f1e48ecbb9138b", null ],
     [ "buildWeakDual", "classvulpes_1_1geometry_1_1ParallelMesh.html#a5eea6589e29b1f12e3181507b53adc91", null ],
     [ "collectGhostCellsInRoot", "classvulpes_1_1geometry_1_1ParallelMesh.html#a4bfe0234ac77681b63e1769dda787199", null ],
+    [ "distributePeriodicMetadata", "classvulpes_1_1geometry_1_1ParallelMesh.html#aed4b70ea37628e9e11b58f745e1c9bbf", null ],
     [ "getCellToEdgeGlobalMap", "classvulpes_1_1geometry_1_1ParallelMesh.html#a663a611d086509cecb4379711297d91e", null ],
     [ "getCellToFacetGlobalMap", "classvulpes_1_1geometry_1_1ParallelMesh.html#ad5800d24f0b760029a689fb40c68d5a5", null ],
     [ "getCellToVtxGlobalMap", "classvulpes_1_1geometry_1_1ParallelMesh.html#a465aabdceea05fe3a55d7fb3df5d8eac", null ],

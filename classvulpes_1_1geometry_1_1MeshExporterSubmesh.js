@@ -13,6 +13,7 @@ var classvulpes_1_1geometry_1_1MeshExporterSubmesh =
     [ "getVtkGrids", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#a4deb7b8039a748c1ab28ee5800bf381e", null ],
     [ "initializeMeshForExport", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#a0203bccdc64558d34c6ddb105ea7e7fb", null ],
     [ "save", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#a3ac5887f31a3d813aef2cd9b711d2336", null ],
+    [ "savePvtu", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#aa708b3dd9dec4247a719cfa4d5bf15e6", null ],
     [ "m_export_options", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#a4d3d00c596f776ab5557994bdf638f16", null ],
     [ "m_mesh", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#a3aff23b810500810e7b8a38f8893dced", null ],
     [ "m_modified_mesh", "classvulpes_1_1geometry_1_1MeshExporterSubmesh.html#a125af6bb7118299e7ddea5e15c1f6924", null ],

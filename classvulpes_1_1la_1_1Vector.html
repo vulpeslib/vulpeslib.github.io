@@ -188,6 +188,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adcaab34f10d4e563da8d0365efcd7f11" id="r_adcaab34f10d4e563da8d0365efcd7f11"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; const Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#adcaab34f10d4e563da8d0365efcd7f11">toEigenMap</a> () const</td></tr>
 <tr class="memdesc:adcaab34f10d4e563da8d0365efcd7f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the vector to an <a class="el" href="namespaceEigen.html">Eigen</a> map.  <br /></td></tr>
 <tr class="separator:adcaab34f10d4e563da8d0365efcd7f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a438a6dfbceca07337bedca52d1a9b" id="r_aa7a438a6dfbceca07337bedca52d1a9b"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; const Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#aa7a438a6dfbceca07337bedca52d1a9b">toLocalEigenMap</a> () const</td></tr>
+<tr class="memdesc:aa7a438a6dfbceca07337bedca52d1a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the locally-owned vector entries to an <a class="el" href="namespaceEigen.html">Eigen</a> map.  <br /></td></tr>
+<tr class="separator:aa7a438a6dfbceca07337bedca52d1a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd4901247dc02941fa77f45a0c82ebc" id="r_a2bd4901247dc02941fa77f45a0c82ebc"><td class="memItemLeft" align="right" valign="top">std::pair&lt; PetscInt, PetscInt &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a2bd4901247dc02941fa77f45a0c82ebc">getLocAndGlobSize</a> () const</td></tr>
 <tr class="memdesc:a2bd4901247dc02941fa77f45a0c82ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get local and global sizes of the vector.  <br /></td></tr>
 <tr class="separator:a2bd4901247dc02941fa77f45a0c82ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1454,6 +1457,25 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
+<a id="aa7a438a6dfbceca07337bedca52d1a9b" name="aa7a438a6dfbceca07337bedca52d1a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a438a6dfbceca07337bedca52d1a9b">&#9670;&#160;</a></span>toLocalEigenMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Map&lt; const Eigen::VectorXd &gt; vulpes::la::Vector::toLocalEigenMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert the locally-owned vector entries to an <a class="el" href="namespaceEigen.html">Eigen</a> map. </p>
+
+</div>
+</div>
 <a id="a4f580b91660e2e9d11648f80053c4c4c" name="a4f580b91660e2e9d11648f80053c4c4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f580b91660e2e9d11648f80053c4c4c">&#9670;&#160;</a></span>zero()</h2>
 
@@ -1507,7 +1529,7 @@ template&lt;typename DofHandler &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a></li>
-    <li class="footer">Generated on Wed Jun 24 2026 12:05:51 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 13 2026 07:12:40 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -190,6 +190,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa3fd3a4c3bd010acae6884ff1a4d9d82" id="r_aa3fd3a4c3bd010acae6884ff1a4d9d82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html#aa3fd3a4c3bd010acae6884ff1a4d9d82">buildVtkMesh3D</a> ()</td></tr>
 <tr class="memdesc:aa3fd3a4c3bd010acae6884ff1a4d9d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a 3D VTK mesh from the internal mesh data.  <br /></td></tr>
 <tr class="separator:aa3fd3a4c3bd010acae6884ff1a4d9d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa708b3dd9dec4247a719cfa4d5bf15e6" id="r_aa708b3dd9dec4247a719cfa4d5bf15e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#aa708b3dd9dec4247a719cfa4d5bf15e6">savePvtu</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::string &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">filename</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1VtuOptions.html">VtuOptions</a> &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">write_options</a>) <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a></td></tr>
+<tr class="memdesc:aa708b3dd9dec4247a719cfa4d5bf15e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the mesh data to a parallel VTU file.  <br /></td></tr>
+<tr class="separator:aa708b3dd9dec4247a719cfa4d5bf15e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0203bccdc64558d34c6ddb105ea7e7fb" id="r_a0203bccdc64558d34c6ddb105ea7e7fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html#a0203bccdc64558d34c6ddb105ea7e7fb">initializeMeshForExport</a> () <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a></td></tr>
 <tr class="memdesc:a0203bccdc64558d34c6ddb105ea7e7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the mesh for export, modifying if necessary.  <br /></td></tr>
 <tr class="separator:a0203bccdc64558d34c6ddb105ea7e7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -834,6 +837,54 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 
 </div>
 </div>
+<a id="aa708b3dd9dec4247a719cfa4d5bf15e6" name="aa708b3dd9dec4247a719cfa4d5bf15e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa708b3dd9dec4247a719cfa4d5bf15e6">&#9670;&#160;</a></span>savePvtu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshDerived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> <a class="el" href="classvulpes_1_1geometry_1_1MeshExporterBase.html">vulpes::geometry::MeshExporterBase</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshDerived</a> &gt;::savePvtu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1VtuOptions.html">VtuOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>write_options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the mesh data to a parallel VTU file. </p>
+<p>This method writes the internal VTK grid data using the parallel <code>.pvtu</code> XML format. It is intended for <code><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html" title="This class wraps a serial mesh class and adds attributes and methods for parallelization.">ParallelMesh</a></code> exporters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The name of the output <code>.pvtu</code> file. </td></tr>
+    <tr><td class="paramname">write_options</td><td>Writer options used for the output files. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a4d3d00c596f776ab5557994bdf638f16" name="a4d3d00c596f776ab5557994bdf638f16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d3d00c596f776ab5557994bdf638f16">&#9670;&#160;</a></span>m_export_options</h2>
@@ -941,7 +992,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1MeshExporter.html">MeshExporter</a></li>
-    <li class="footer">Generated on Wed Jun 24 2026 12:05:51 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 13 2026 07:12:40 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

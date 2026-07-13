@@ -1,5 +1,15 @@
 var NAVTREEINDEX25 =
 {
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md5":[0,4],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md6":[0,5],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md7":[0,6],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html":[1],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md10":[1,0,0],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md11":[1,0,0,0],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md12":[1,0,1],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md13":[1,0,2],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md14":[1,0,3],
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md15":[1,1],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16":[1,1,0],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md17":[1,2],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md9":[1,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX25 =
 "monomial_8hpp_source.html":[11,0,1,6,0],
 "mpi__wrappers_8hpp.html":[11,0,1,10,8],
 "mpi__wrappers_8hpp.html#a0009b17b562e1901e17b0c1f4f3ddc6c":[11,0,1,10,8,16],
-"mpi__wrappers_8hpp.html#a079415f36d5dfee0dc1eac70037dac56":[11,0,1,10,8,20],
-"mpi__wrappers_8hpp.html#a124f98aa371424a6bb8cc87031f1a904":[11,0,1,10,8,14],
-"mpi__wrappers_8hpp.html#a13aaa11c7e540fc170314b6e548d4e6b":[11,0,1,10,8,8],
-"mpi__wrappers_8hpp.html#a2511052bffbdeaf3e7292592e93f8c83":[11,0,1,10,8,33],
-"mpi__wrappers_8hpp.html#a27d95399ca678cd25ecf3e862b339546":[11,0,1,10,8,23],
-"mpi__wrappers_8hpp.html#a28ff7fc7db9104c01b8846949c6f77ed":[11,0,1,10,8,18],
-"mpi__wrappers_8hpp.html#a54c935084f676a53ca201ff2948f1174":[11,0,1,10,8,17],
-"mpi__wrappers_8hpp.html#a5d25d97349ad971ed39593382db3a3c8":[11,0,1,10,8,12],
-"mpi__wrappers_8hpp.html#a69d9be96b8f08244e3e81936907d5023":[11,0,1,10,8,10],
-"mpi__wrappers_8hpp.html#a6dc40c3d7a59fa6dcf1827771d2f1ebc":[11,0,1,10,8,31],
-"mpi__wrappers_8hpp.html#a71e99bb30a1a6f821ca3c96eaa4cc4fe":[11,0,1,10,8,2]
+"mpi__wrappers_8hpp.html#a079415f36d5dfee0dc1eac70037dac56":[11,0,1,10,8,20]
 };

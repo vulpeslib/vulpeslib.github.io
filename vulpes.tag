@@ -859,6 +859,7 @@
     <includes id="mesh__2d_8hpp" name="mesh_2d.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/mesh/mesh_2d.hpp</includes>
     <includes id="simplexify_8hpp" name="simplexify.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/simplexify.hpp</includes>
     <includes id="traits_8hpp" name="traits.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/traits.hpp</includes>
+    <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
     <includes id="serialize_8hpp" name="serialize.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/serialize.hpp</includes>
     <class kind="struct">vulpes::geometry::VtuOptions</class>
     <class kind="class">vulpes::geometry::MeshExporterBase</class>
@@ -17861,6 +17862,13 @@
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
+      <name>savePvtu</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>aa708b3dd9dec4247a719cfa4d5bf15e6</anchor>
+      <arglist>(const std::string &amp;filename, const VtuOptions &amp;write_options) const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
       <name>initializeMeshForExport</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
       <anchor>a0203bccdc64558d34c6ddb105ea7e7fb</anchor>
@@ -17940,6 +17948,13 @@
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
       <anchor>a4deb7b8039a748c1ab28ee5800bf381e</anchor>
       <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>savePvtu</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>aa708b3dd9dec4247a719cfa4d5bf15e6</anchor>
+      <arglist>(const std::string &amp;filename, const VtuOptions &amp;write_options) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -18065,6 +18080,13 @@
       <anchorfile>classvulpes_1_1geometry_1_1MeshExporterSubmesh.html</anchorfile>
       <anchor>a2d16a3d3a30b66921627fe47e0bacd73</anchor>
       <arglist>(std::size_t min_n_submesh_elem)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>savePvtu</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshExporterBase.html</anchorfile>
+      <anchor>aa708b3dd9dec4247a719cfa4d5bf15e6</anchor>
+      <arglist>(const std::string &amp;filename, const VtuOptions &amp;write_options) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -18583,6 +18605,13 @@
       <name>buildLocalToLocalMaps</name>
       <anchorfile>classvulpes_1_1geometry_1_1ParallelMesh.html</anchorfile>
       <anchor>a5fc4d5481ea5946c51f1e48ecbb9138b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>distributePeriodicMetadata</name>
+      <anchorfile>classvulpes_1_1geometry_1_1ParallelMesh.html</anchorfile>
+      <anchor>aed4b70ea37628e9e11b58f745e1c9bbf</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -20776,6 +20805,13 @@
       <name>toEigenMap</name>
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
       <anchor>adcaab34f10d4e563da8d0365efcd7f11</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Eigen::Map&lt; const Eigen::VectorXd &gt;</type>
+      <name>toLocalEigenMap</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>aa7a438a6dfbceca07337bedca52d1a9b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">

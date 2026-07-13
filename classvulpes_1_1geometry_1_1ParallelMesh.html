@@ -259,6 +259,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5fc4d5481ea5946c51f1e48ecbb9138b" id="r_a5fc4d5481ea5946c51f1e48ecbb9138b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a5fc4d5481ea5946c51f1e48ecbb9138b">buildLocalToLocalMaps</a> ()</td></tr>
 <tr class="memdesc:a5fc4d5481ea5946c51f1e48ecbb9138b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts global entity numbering in the maps to local numbering.  <br /></td></tr>
 <tr class="separator:a5fc4d5481ea5946c51f1e48ecbb9138b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4b70ea37628e9e11b58f745e1c9bbf" id="r_aed4b70ea37628e9e11b58f745e1c9bbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aed4b70ea37628e9e11b58f745e1c9bbf">distributePeriodicMetadata</a> ()</td></tr>
+<tr class="memdesc:aed4b70ea37628e9e11b58f745e1c9bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the serial mesh had periodic topology, broadcasts the periodic ghost-vertex metadata from rank 0 and rebuilds it with local vertex IDs so that Cell2D::getCellVertexesPeriodic works correctly on every rank.  <br /></td></tr>
+<tr class="separator:aed4b70ea37628e9e11b58f745e1c9bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23a1bc8a7a62295d2c5c4cdbae66e09" id="r_ad23a1bc8a7a62295d2c5c4cdbae66e09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ad23a1bc8a7a62295d2c5c4cdbae66e09">removeNotOwnedFromLocalEntityToCellMaps</a> ()</td></tr>
 <tr class="memdesc:ad23a1bc8a7a62295d2c5c4cdbae66e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes references to non-owned cells from the local entity-to-cell maps.  <br /></td></tr>
 <tr class="separator:ad23a1bc8a7a62295d2c5c4cdbae66e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -747,6 +750,35 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 
 <p>Gathers ghost cell information on the root process. </p>
 <p>Each process sends its list of ghost cells to rank 0, which collects and stores this global information. </p>
+
+</div>
+</div>
+<a id="aed4b70ea37628e9e11b58f745e1c9bbf" name="aed4b70ea37628e9e11b58f745e1c9bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4b70ea37628e9e11b58f745e1c9bbf">&#9670;&#160;</a></span>distributePeriodicMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::distributePeriodicMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the serial mesh had periodic topology, broadcasts the periodic ghost-vertex metadata from rank 0 and rebuilds it with local vertex IDs so that Cell2D::getCellVertexesPeriodic works correctly on every rank. </p>
 
 </div>
 </div>
@@ -2051,7 +2083,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a></li>
-    <li class="footer">Generated on Wed Jun 24 2026 12:05:51 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 13 2026 07:12:40 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

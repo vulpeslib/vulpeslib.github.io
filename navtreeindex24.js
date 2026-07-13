@@ -1,5 +1,15 @@
 var NAVTREEINDEX24 =
 {
+"fe__lagrange__simplex_8hpp.html#aee537e01f990924884412e7dcc32e52f":[11,0,1,3,1,1,14],
+"fe__lagrange__simplex_8hpp.html#af30448e7da7545f7abafd001dd487b5a":[11,0,1,3,1,1,4],
+"fe__lagrange__simplex_8hpp.html#afec06edd0d41fe90cbf18654eb1f8a9b":[11,0,1,3,1,1,7],
+"fe__lagrange__simplex_8hpp_source.html":[11,0,1,3,1,1],
+"fe__lagrange__tensor_8hpp.html":[11,0,1,3,1,2],
+"fe__lagrange__tensor_8hpp.html#a0b5f00f2f85fe9f07d65efbb09d701a5":[11,0,1,3,1,2,2],
+"fe__lagrange__tensor_8hpp.html#a6a6542d71ae0517549f71128d6163419":[11,0,1,3,1,2,1],
+"fe__lagrange__tensor_8hpp.html#aaa50172ce0a62935d383460e78d962ef":[11,0,1,3,1,2,3],
+"fe__lagrange__tensor_8hpp.html#ae6388f676176d533d7c6fd18e3061ab7":[11,0,1,3,1,2,4],
+"fe__lagrange__tensor_8hpp_source.html":[11,0,1,3,1,2],
 "fe__modal__simplex_8hpp.html":[11,0,1,3,1,3],
 "fe__modal__simplex_8hpp.html#a0204f4dc193b91e6326ecaf6b409887c":[11,0,1,3,1,3,7],
 "fe__modal__simplex_8hpp.html#a45667ebd33208ca3c2f00200a1c6fae9":[11,0,1,3,1,3,1],
@@ -48,8 +58,8 @@ var NAVTREEINDEX24 =
 "frugal_8hpp.html#a271a2f67bae64f04de1373da61fd774d":[11,0,1,8,0,0],
 "frugal_8hpp.html#accaba2d6f40c92b841125e3ec0f96bf9":[11,0,1,8,0,1],
 "frugal_8hpp_source.html":[11,0,1,8,0],
-"functions.html":[10,3,0,0],
 "functions.html":[10,3,0],
+"functions.html":[10,3,0,0],
 "functions_a.html":[10,3,0,1],
 "functions_b.html":[10,3,0,2],
 "functions_c.html":[10,3,0,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX24 =
 "mapping_8hpp_source.html":[11,0,1,4,7],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html":[0],
 "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md3":[0,2],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md4":[0,3],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md5":[0,4],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md6":[0,5],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md7":[0,6],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html":[1],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md10":[1,0,0],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md11":[1,0,0,0],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md12":[1,0,1],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md13":[1,0,2],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md14":[1,0,3],
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md15":[1,1]
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md4":[0,3]
 };

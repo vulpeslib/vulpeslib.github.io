@@ -1,5 +1,15 @@
 var NAVTREEINDEX31 =
 {
+"structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#aeedacbda068974d47dbf77d4361093fa":[10,0,2,10,17,3],
+"structvulpes_1_1scipy_1_1Rectangle.html":[9,0,3,14,16],
+"structvulpes_1_1scipy_1_1Rectangle.html":[10,0,2,10,16],
+"structvulpes_1_1scipy_1_1Rectangle.html#a27ebece4951ca259715a5bd1bcda8e6c":[9,0,3,14,16,0],
+"structvulpes_1_1scipy_1_1Rectangle.html#a27ebece4951ca259715a5bd1bcda8e6c":[10,0,2,10,16,0],
+"structvulpes_1_1scipy_1_1Rectangle.html#a49f03200fb920e58436f680d8043300b":[9,0,3,14,16,1],
+"structvulpes_1_1scipy_1_1Rectangle.html#a49f03200fb920e58436f680d8043300b":[10,0,2,10,16,1],
+"structvulpes_1_1scipy_1_1Rectangle.html#aa607bed5777ba011b229b87bc5ae8d52":[9,0,3,14,16,2],
+"structvulpes_1_1scipy_1_1Rectangle.html#aa607bed5777ba011b229b87bc5ae8d52":[10,0,2,10,16,2],
+"structvulpes_1_1scipy_1_1Rectangle.html#ac79480354129bc5f64d3fb6aee957e80":[10,0,2,10,16,3],
 "structvulpes_1_1scipy_1_1Rectangle.html#ac79480354129bc5f64d3fb6aee957e80":[9,0,3,14,16,3],
 "structvulpes_1_1scipy_1_1ckdtree.html":[10,0,2,10,5],
 "structvulpes_1_1scipy_1_1ckdtree.html":[9,0,3,14,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX31 =
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#ab3d73a6d59672cd83617af267c70892a":[10,0,2,11,6,6],
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#abc3732424fbc8167397df45317e580eb":[9,0,3,15,7,2],
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#abc3732424fbc8167397df45317e580eb":[10,0,2,11,6,2],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#ad30c039fbcef91414c1eb0742941570f":[9,0,3,15,7,7],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#ad30c039fbcef91414c1eb0742941570f":[10,0,2,11,6,7],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#afef0c190f172345283fb1a0494915e12":[9,0,3,15,7,9],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#afef0c190f172345283fb1a0494915e12":[10,0,2,11,6,9],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html":[10,0,2,11,7],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html":[9,0,3,15,8],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#a269cc762d8809949b235fb4329e98777":[9,0,3,15,8,5],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#a269cc762d8809949b235fb4329e98777":[10,0,2,11,7,5],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#aa233762dce2b3102cdb68bdce1f765d4":[9,0,3,15,8,4],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#aa233762dce2b3102cdb68bdce1f765d4":[10,0,2,11,7,4],
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#abd20f415b4488b60490dfc8dde3ee20b":[9,0,3,15,8,0]
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#ad30c039fbcef91414c1eb0742941570f":[9,0,3,15,7,7]
 };

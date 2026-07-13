@@ -1,5 +1,15 @@
 var NAVTREEINDEX33 =
 {
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html":[9,0,3,15,24],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a06e3650620ccab50041d829ed4f7959b":[9,0,3,15,24,3],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a06e3650620ccab50041d829ed4f7959b":[10,0,2,11,23,3],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a117c3a9162cba6d0d6c615e89de9948e":[10,0,2,11,23,8],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a117c3a9162cba6d0d6c615e89de9948e":[9,0,3,15,24,8],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a755a7d0411d7753ef21bd63afc6dfe16":[9,0,3,15,24,5],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a755a7d0411d7753ef21bd63afc6dfe16":[10,0,2,11,23,5],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a95e04b09e69a00f8989eaebac4c4ea00":[9,0,3,15,24,1],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a95e04b09e69a00f8989eaebac4c4ea00":[10,0,2,11,23,1],
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#aa38ff7ffeb77c00c46857f2e762d9b5b":[9,0,3,15,24,0],
 "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#aa38ff7ffeb77c00c46857f2e762d9b5b":[10,0,2,11,23,0],
 "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#aabea129fcb572e111d6c9799f96908da":[9,0,3,15,24,4],
 "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#aabea129fcb572e111d6c9799f96908da":[10,0,2,11,23,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX33 =
 "structvulpes_1_1timeintegration_1_1TRBDF2IMEX.html#ad30c039fbcef91414c1eb0742941570f":[9,0,3,15,38,7],
 "structvulpes_1_1timeintegration_1_1TRBDF2IMEX.html#afef0c190f172345283fb1a0494915e12":[10,0,2,11,37,9],
 "structvulpes_1_1timeintegration_1_1TRBDF2IMEX.html#afef0c190f172345283fb1a0494915e12":[9,0,3,15,38,9],
-"structvulpes_1_1vmath_1_1is__gnump.html":[9,0,3,17,0],
-"structvulpes_1_1vmath_1_1is__gnump.html":[10,0,2,13,0],
-"structvulpes_1_1vmath_1_1is__pseudoaritmetic.html":[9,0,3,17,1],
-"structvulpes_1_1vmath_1_1is__pseudoaritmetic.html":[10,0,2,13,1],
-"structvulpes_1_1vmath_1_1is__pseudofloating.html":[10,0,2,13,2],
-"structvulpes_1_1vmath_1_1is__pseudofloating.html":[9,0,3,17,2],
-"structvulpes_1_1vvutils_1_1internal_1_1is__printable__container.html":[10,0,2,15,0,0],
-"structvulpes_1_1vvutils_1_1internal_1_1is__printable__container.html":[9,0,3,19,0,0],
-"structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html":[10,0,2,15,0,1],
-"structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html":[9,0,3,19,0,1],
-"structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1set_3_01Args_8_8_8_01_4_01_4.html":[10,0,2,15,0,2]
+"structvulpes_1_1vmath_1_1is__gnump.html":[9,0,3,17,0]
 };

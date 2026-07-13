@@ -1,5 +1,15 @@
 var NAVTREEINDEX30 =
 {
+"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html":[9,0,3,3,0,1],
+"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html#a86c46a3aafc93edb289d9aae9568b4b2":[10,0,2,3,0,1,0],
+"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html#a86c46a3aafc93edb289d9aae9568b4b2":[9,0,3,3,0,1,0],
+"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html":[10,0,2,3,0,2],
+"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html":[9,0,3,3,0,2],
+"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html#a9429f2bc9393ff342c423360800ab9fa":[10,0,2,3,0,2,0],
+"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html#a9429f2bc9393ff342c423360800ab9fa":[9,0,3,3,0,2,0],
+"structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html":[10,0,2,3,0,3],
+"structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html":[9,0,3,3,0,3],
+"structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html#a1a2d9d786bb7f20c74280821435d6d50":[10,0,2,3,0,3,1],
 "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html#a1a2d9d786bb7f20c74280821435d6d50":[9,0,3,3,0,3,1],
 "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html#ac84e3038b23626871fdabb0f0b55ecb1":[9,0,3,3,0,3,0],
 "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html#ac84e3038b23626871fdabb0f0b55ecb1":[10,0,2,3,0,3,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX30 =
 "structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#acd1b9b0b6056a09633bba45019607bfe":[9,0,3,14,17,0],
 "structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#ad088df03088fb916c2fc8e15821e424e":[10,0,2,10,17,8],
 "structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#ad088df03088fb916c2fc8e15821e424e":[9,0,3,14,17,8],
-"structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#aeedacbda068974d47dbf77d4361093fa":[9,0,3,14,17,3],
-"structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#aeedacbda068974d47dbf77d4361093fa":[10,0,2,10,17,3],
-"structvulpes_1_1scipy_1_1Rectangle.html":[9,0,3,14,16],
-"structvulpes_1_1scipy_1_1Rectangle.html":[10,0,2,10,16],
-"structvulpes_1_1scipy_1_1Rectangle.html#a27ebece4951ca259715a5bd1bcda8e6c":[9,0,3,14,16,0],
-"structvulpes_1_1scipy_1_1Rectangle.html#a27ebece4951ca259715a5bd1bcda8e6c":[10,0,2,10,16,0],
-"structvulpes_1_1scipy_1_1Rectangle.html#a49f03200fb920e58436f680d8043300b":[9,0,3,14,16,1],
-"structvulpes_1_1scipy_1_1Rectangle.html#a49f03200fb920e58436f680d8043300b":[10,0,2,10,16,1],
-"structvulpes_1_1scipy_1_1Rectangle.html#aa607bed5777ba011b229b87bc5ae8d52":[9,0,3,14,16,2],
-"structvulpes_1_1scipy_1_1Rectangle.html#aa607bed5777ba011b229b87bc5ae8d52":[10,0,2,10,16,2],
-"structvulpes_1_1scipy_1_1Rectangle.html#ac79480354129bc5f64d3fb6aee957e80":[10,0,2,10,16,3]
+"structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#aeedacbda068974d47dbf77d4361093fa":[9,0,3,14,17,3]
 };

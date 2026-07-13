@@ -42,6 +42,7 @@ var classvulpes_1_1la_1_1Vector =
     [ "setVectorSizes", "classvulpes_1_1la_1_1Vector.html#a1399d24f381b94f69855fb0e9f7a102b", null ],
     [ "sum", "classvulpes_1_1la_1_1Vector.html#a79006f02c00750882ed06548a0087e74", null ],
     [ "toEigenMap", "classvulpes_1_1la_1_1Vector.html#adcaab34f10d4e563da8d0365efcd7f11", null ],
+    [ "toLocalEigenMap", "classvulpes_1_1la_1_1Vector.html#aa7a438a6dfbceca07337bedca52d1a9b", null ],
     [ "zero", "classvulpes_1_1la_1_1Vector.html#a4f580b91660e2e9d11648f80053c4c4c", null ],
     [ "m_petsc_vector", "classvulpes_1_1la_1_1Vector.html#ac784a7878eb34c4cdb14ffd503cdcb1f", null ]
 ];

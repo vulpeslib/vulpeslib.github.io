@@ -1,5 +1,15 @@
 var NAVTREEINDEX32 =
 {
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#ad30c039fbcef91414c1eb0742941570f":[10,0,2,11,6,7],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#afef0c190f172345283fb1a0494915e12":[9,0,3,15,7,9],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#afef0c190f172345283fb1a0494915e12":[10,0,2,11,6,9],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html":[10,0,2,11,7],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html":[9,0,3,15,8],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#a269cc762d8809949b235fb4329e98777":[9,0,3,15,8,5],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#a269cc762d8809949b235fb4329e98777":[10,0,2,11,7,5],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#aa233762dce2b3102cdb68bdce1f765d4":[9,0,3,15,8,4],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#aa233762dce2b3102cdb68bdce1f765d4":[10,0,2,11,7,4],
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#abd20f415b4488b60490dfc8dde3ee20b":[9,0,3,15,8,0],
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#abd20f415b4488b60490dfc8dde3ee20b":[10,0,2,11,7,0],
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#aca54b32ea2a1d3a08297062c2b82a2b5":[9,0,3,15,8,3],
 "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html#aca54b32ea2a1d3a08297062c2b82a2b5":[10,0,2,11,7,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX32 =
 "structvulpes_1_1timeintegration_1_1LobattoIIIC.html#abd20f415b4488b60490dfc8dde3ee20b":[9,0,3,15,23,0],
 "structvulpes_1_1timeintegration_1_1LobattoIIIC.html#af2034cef6044de87b042f7ae50a1ad44":[9,0,3,15,23,1],
 "structvulpes_1_1timeintegration_1_1LobattoIIIC.html#af2034cef6044de87b042f7ae50a1ad44":[10,0,2,11,22,1],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html":[10,0,2,11,23],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html":[9,0,3,15,24],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a06e3650620ccab50041d829ed4f7959b":[9,0,3,15,24,3],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a06e3650620ccab50041d829ed4f7959b":[10,0,2,11,23,3],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a117c3a9162cba6d0d6c615e89de9948e":[10,0,2,11,23,8],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a117c3a9162cba6d0d6c615e89de9948e":[9,0,3,15,24,8],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a755a7d0411d7753ef21bd63afc6dfe16":[9,0,3,15,24,5],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a755a7d0411d7753ef21bd63afc6dfe16":[10,0,2,11,23,5],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a95e04b09e69a00f8989eaebac4c4ea00":[9,0,3,15,24,1],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#a95e04b09e69a00f8989eaebac4c4ea00":[10,0,2,11,23,1],
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#aa38ff7ffeb77c00c46857f2e762d9b5b":[9,0,3,15,24,0]
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html":[10,0,2,11,23]
 };
