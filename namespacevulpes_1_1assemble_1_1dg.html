@@ -948,7 +948,7 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The integral of the expression over the domain </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Uses <a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html" title="Specialized integrator for scalar expressions using simplification.">ScalarExpressionIntegrator</a> which mirrors <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html" title="Integrator that simplexifies cells and integrates weak forms on them.">WeakFormIntegratorSimplexify</a>'s simplification and quadrature infrastructure but evaluates expressions directly as scalars. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Uses <a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html" title="Specialized integrator for scalar expressions using simplification.">ScalarExpressionIntegrator</a> which mirrors <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html" title="Integrator that simplexifies cells and integrates weak forms on them.">WeakFormIntegratorSimplexify</a>'s simplification and quadrature infrastructure but evaluates expressions directly as scalars. Quadrature order is derived from expression.computeOrder() (same +1 convention as <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5e275b3390ef12060cf62438b6d45271" title="Compute the maximum polynomial order among all finite element expressions.">WeakFormIntegratorBase::computeMaxOrder</a>), so it stays exact regardless of the FE space's polynomial order instead of assuming a fixed degree. </dd></dl>
 
 </div>
 </div>
@@ -1270,7 +1270,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Mon Jul 13 2026 07:12:40 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 29 2026 12:58:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

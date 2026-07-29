@@ -1489,6 +1489,7 @@
     <filename>mpi__wrappers_8hpp.html</filename>
     <includes id="crs__map_8hpp" name="crs_map.hpp" local="yes" import="no" module="no" objc="no">vulpes/datastructure/crs_map.hpp</includes>
     <includes id="profiler_8hpp" name="profiler.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/profiler.hpp</includes>
+    <includes id="threading_8hpp" name="threading.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/threading.hpp</includes>
     <class kind="class">vulpes::mpi::MpiHandle</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::mpi</namespace>
@@ -1550,6 +1551,43 @@
     <filename>serialize_8hpp.html</filename>
     <namespace>boost</namespace>
     <namespace>boost::serialization</namespace>
+  </compound>
+  <compound kind="file">
+    <name>threading.cpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/utils/</path>
+    <filename>threading_8cpp.html</filename>
+    <includes id="threading_8hpp" name="threading.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/threading.hpp</includes>
+    <includes id="pcout_8hpp" name="pcout.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/pcout.hpp</includes>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::vutils</namespace>
+    <member kind="variable">
+      <type>int</type>
+      <name>num_threads</name>
+      <anchorfile>threading_8cpp.html</anchorfile>
+      <anchor>a08963f7335eef295237ab460863bc3d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>is_set</name>
+      <anchorfile>threading_8cpp.html</anchorfile>
+      <anchor>a4e30073e8b9d268066eeccbb2e251628</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>is_valid</name>
+      <anchorfile>threading_8cpp.html</anchorfile>
+      <anchor>a7b1d0df736739f38994ed29f54cffdf3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>threading.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/utils/</path>
+    <filename>threading_8hpp.html</filename>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::vutils</namespace>
   </compound>
   <compound kind="file">
     <name>vmath.hpp</name>
@@ -29899,6 +29937,13 @@
     <filename>namespacevulpes_1_1vutils.html</filename>
     <namespace>vulpes::vutils::internal</namespace>
     <class kind="class">vulpes::vutils::ExpressionParser</class>
+    <member kind="function">
+      <type>void</type>
+      <name>configureThreading</name>
+      <anchorfile>namespacevulpes_1_1vutils.html</anchorfile>
+      <anchor>adbc481188fb767494be6d6153a7c6c1a</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>std::vector&lt; T &gt;</type>
       <name>slice</name>
