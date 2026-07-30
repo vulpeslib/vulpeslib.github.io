@@ -166,9 +166,11 @@ Functions</h2></td></tr>
 <tr class="separator:aaab0463471add9b9defc6c798fc32ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf266c6a317230f5e51d8d0e4d1bf15" id="r_a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
 <tr class="memitem:a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15">print</a> (std::ostream &amp;os, const Container &amp;container, const std::string &amp;separator=&quot;,&quot;, const std::string &amp;postpend=&quot;\n&quot;, const std::string &amp;prepend=&quot;&quot;)</td></tr>
+<tr class="memdesc:a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a container's elements to a stream, separated and wrapped by the given strings.  <br /></td></tr>
 <tr class="separator:a4bf266c6a317230f5e51d8d0e4d1bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fd08767263de129fce9f788148ef9b" id="r_aa0fd08767263de129fce9f788148ef9b"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
 <tr class="memitem:aa0fd08767263de129fce9f788148ef9b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structvulpes_1_1vvutils_1_1internal_1_1is__printable__container.html">vvutils::internal::is_printable_container</a>&lt; Container &gt;::value, std::ostream &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes.html#aa0fd08767263de129fce9f788148ef9b">operator&lt;&lt;</a> (std::ostream &amp;os, const Container &amp;container)</td></tr>
+<tr class="memdesc:aa0fd08767263de129fce9f788148ef9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream a std::vector, std::set, or std::array via <a class="el" href="namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15" title="Print a container&#39;s elements to a stream, separated and wrapped by the given strings.">print()</a>.  <br /></td></tr>
 <tr class="separator:aa0fd08767263de129fce9f788148ef9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -194,6 +196,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Returns the vulpes repository root directory. Priority: VULPES_ROOT env var (if set and non-empty), then the path baked in at CMake configure time via VULPES_SOURCE_DIR. </p>
 
 </div>
 </div>
@@ -224,6 +227,22 @@ template&lt;typename Container &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Stream a std::vector, std::set, or std::array via <a class="el" href="namespacevulpes.html#a4bf266c6a317230f5e51d8d0e4d1bf15" title="Print a container&#39;s elements to a stream, separated and wrapped by the given strings.">print()</a>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Container</td><td>A std::vector, std::set, or std::array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>Output stream to write to. </td></tr>
+    <tr><td class="paramname">container</td><td>The container to print. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>os</code>, for chaining. </dd></dl>
 
 </div>
 </div>
@@ -273,6 +292,25 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Print a container's elements to a stream, separated and wrapped by the given strings. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Container</td><td>Any type exposing begin()/end() over streamable elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>Output stream to write to. </td></tr>
+    <tr><td class="paramname">container</td><td>The container whose elements are printed. </td></tr>
+    <tr><td class="paramname">separator</td><td>String inserted between consecutive elements. </td></tr>
+    <tr><td class="paramname">postpend</td><td>String appended after the last element. </td></tr>
+    <tr><td class="paramname">prepend</td><td>String written before the first element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>os</code>, for chaining. </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -282,7 +320,7 @@ template&lt;typename Container &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li>
-    <li class="footer">Generated on Wed Jul 29 2026 12:58:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jul 30 2026 13:19:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

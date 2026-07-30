@@ -122,6 +122,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a284f448bad05492253d200085ebc6400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a PETSc matrix from a binary file and copy it into a SparseMatrix.  <br /></td></tr>
 <tr class="separator:a284f448bad05492253d200085ebc6400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5739b7f5c25af87b5c72088e74c36fed" id="r_a5739b7f5c25af87b5c72088e74c36fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed">loadVectorFromFile</a> (<a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;result, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a5739b7f5c25af87b5c72088e74c36fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a PETSc vector from a binary file and copy it into a Vector.  <br /></td></tr>
 <tr class="separator:a5739b7f5c25af87b5c72088e74c36fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3470eb59cd11b665f91c2b288cbe4f4" id="r_af3470eb59cd11b665f91c2b288cbe4f4"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4">readCSVToEigenMatrix</a> (const std::string &amp;filename, char delimiter=',')</td></tr>
 <tr class="separator:af3470eb59cd11b665f91c2b288cbe4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +135,9 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void vulpes::io::loadMatrixFromFile </td>
@@ -153,6 +157,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Load a PETSc matrix from a binary file and copy it into a SparseMatrix. </p>
@@ -200,6 +209,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Load a PETSc vector from a binary file and copy it into a Vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>The Vector to load the data into </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the binary file containing the vector data </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af3470eb59cd11b665f91c2b288cbe4f4" name="af3470eb59cd11b665f91c2b288cbe4f4"></a>
@@ -207,6 +225,9 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Eigen::MatrixXd vulpes::io::readCSVToEigenMatrix </td>
@@ -226,6 +247,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Reads a CSV file containing a dense matrix and returns an Eigen::MatrixXd.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -303,7 +329,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1io.html">io</a></li>
-    <li class="footer">Generated on Wed Jul 29 2026 12:58:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jul 30 2026 13:19:08 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

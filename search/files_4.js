@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['eigen_2ehpp_0',['eigen.hpp',['../eigen_8hpp.html',1,'']]],
-  ['env_2ehpp_1',['env.hpp',['../env_8hpp.html',1,'']]],
-  ['err_5forder_2ehpp_2',['err_order.hpp',['../err__order_8hpp.html',1,'']]],
-  ['expression_5fparser_2ehpp_3',['expression_parser.hpp',['../expression__parser_8hpp.html',1,'']]]
+  ['dg_5futils_2ehpp_0',['dg_utils.hpp',['../dg__utils_8hpp.html',1,'']]],
+  ['distance_2ehpp_1',['distance.hpp',['../distance_8hpp.html',1,'']]],
+  ['dof_5fhandler_2ehpp_2',['dof_handler.hpp',['../dof__handler_8hpp.html',1,'']]],
+  ['dof_5fpolicy_2ehpp_3',['dof_policy.hpp',['../dof__policy_8hpp.html',1,'']]]
 ];

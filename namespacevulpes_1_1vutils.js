@@ -5,7 +5,8 @@ var namespacevulpes_1_1vutils =
       [ "checks", "namespacevulpes_1_1vutils_1_1internal.html#a91af4262edd06b4882cb9496c57265c9", null ]
     ] ],
     [ "ExpressionParser", "classvulpes_1_1vutils_1_1ExpressionParser.html", "classvulpes_1_1vutils_1_1ExpressionParser" ],
-    [ "configureThreading", "namespacevulpes_1_1vutils.html#adbc481188fb767494be6d6153a7c6c1a", null ],
+    [ "checkOpenBlasThreading", "namespacevulpes_1_1vutils.html#a606da97eab78c7a30c5480474ee6a196", null ],
+    [ "configureVtkThreading", "namespacevulpes_1_1vutils.html#a06729d792d8a5f2b6ae3c8e3f9fa2a95", null ],
     [ "for_each", "namespacevulpes_1_1vutils.html#adef74d45dd575ad10f2d51460aedc4ae", null ],
     [ "for_each_idxed", "namespacevulpes_1_1vutils.html#aab6903411968dab01497e6e432f64bd7", null ],
     [ "for_each_impl", "namespacevulpes_1_1vutils.html#a0c6463b6e7d4017c0d2bc4667e2331bd", null ],

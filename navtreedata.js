@@ -129,6 +129,61 @@ var NAVTREE =
       [ "Build devcontainer", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2workflows_2index.html#autotoc_md81", null ],
       [ "Website deploy", "md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2workflows_2index.html#autotoc_md82", null ]
     ] ],
+    [ "Mesh Kinds for <tt>01_assemble_lapl_dg_2d</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html", [
+      [ "Quick Summary", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md84", null ],
+      [ "General Notes", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md85", null ],
+      [ "1. <tt>tria</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md86", null ],
+      [ "2. <tt>sqr</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md88", null ],
+      [ "3. <tt>poly_meshes</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md90", null ],
+      [ "4. <tt>kway_kmeans</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md92", null ],
+      [ "5. <tt>kway_metis</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md94", null ],
+      [ "6. <tt>bisect_metis</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md96", null ],
+      [ "7. <tt>bisect_kmeans</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md98", null ],
+      [ "8. <tt>bisect_gnn</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md100", null ],
+      [ "9. <tt>rect_tri_periodic</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md102", null ],
+      [ "10. <tt>rect_sq_periodic</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md104", null ],
+      [ "11. <tt>voronoi_periodic</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md106", null ],
+      [ "Visualization", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md108", null ],
+      [ "Accessing mesh info in code (cells, neighbors, vertices)", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md110", null ]
+    ] ],
+    [ "Laplacian Assembly (DG)", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html", [
+      [ "1) Theoretical DG Formulation of the Laplacian", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md117", null ],
+      [ "2) Cellwise derivation", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md118", null ],
+      [ "3) Code notations", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md119", [
+        [ "Core weak-form terms in code", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md120", null ],
+        [ "Assembled algebraic operators", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md121", null ],
+        [ "Periodic case handling in Vulpes", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md122", null ],
+        [ "Practical interpretation", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md123", null ]
+      ] ],
+      [ "4) How to run the Laplacian convergence test", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md124", [
+        [ "Parameter files", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md125", null ],
+        [ "Running", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md126", null ],
+        [ "Example", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md127", null ],
+        [ "Output", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md128", null ]
+      ] ],
+      [ "5) Post-processing visualization in Paraview", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md129", null ],
+      [ "6) Post-processing convergence plots with vulplots", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md130", [
+        [ "Note", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md131", null ]
+      ] ]
+    ] ],
+    [ "Advection Assembly (DG)", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_203__Advection__Assembly.html", [
+      [ "1) DG Formulation of Advection", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_203__Advection__Assembly.html#autotoc_md133", null ]
+    ] ],
+    [ "Linear Shallow Water Equations (DG)", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG.html", [
+      [ "1) The Linearised Shallow Water Equations", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG.html#autotoc_md138", null ],
+      [ "2) DG Weak Formulation", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG.html#autotoc_md140", null ]
+    ] ],
+    [ "MPI Laplacian Assembly", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html", [
+      [ "Single-run, not a convergence study", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md156", null ],
+      [ "Running", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md157", [
+        [ "Examples", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md158", null ],
+        [ "Fields", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md159", null ],
+        [ "Supported <tt>mesh_kind</tt> values", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md160", null ]
+      ] ],
+      [ "Threads per MPI rank", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md161", null ],
+      [ "What gets exported", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md162", null ],
+      [ "Known limitations / TODOs", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md163", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -168,40 +223,40 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "abs__agg__model_8cpp.html",
-"classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a194aefb510970c835c97b7141e589f85",
-"classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1562de519ef8e455f2c6c53e6fc014a2",
-"classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a62a2b9f31df2093aab4338038313a7be",
-"classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aa69c03e6844785f7ae2e339c7354d175",
-"classvulpes_1_1datastructure_1_1TriMatrix.html#a6837e22f84c6e6fb456f551bc6eecb0c",
-"classvulpes_1_1fe_1_1FeExpressionCellConstant.html#aba0b18cd54e491637f9cbbb0d8ee4660",
-"classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#ab0c8b446835e06a601065ddb59e8f7a2",
-"classvulpes_1_1fe_1_1FeExpressionGradContr.html#a0d5c91d2f86f0903301b7368ffcb746c",
-"classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a23b4529cd7be1179c0c2d5295370bd45",
-"classvulpes_1_1fe_1_1FeExpressionSkipper.html#ad11d17d8b09af3e2a6a527551fbce63d",
-"classvulpes_1_1fe_1_1FeSpaceBase.html#a60c34c5f700be623951082d841403778",
-"classvulpes_1_1fe_1_1FeSpaceVEM.html#a3fcef7f9775cc8e29581045a75fa2bad",
-"classvulpes_1_1geometry_1_1Cell2D.html#a360dbf38726a490fded27f0d59ec4bf3",
-"classvulpes_1_1geometry_1_1GNNAgglomeration.html#ae0c009060936692b2f242a87a78cd40d",
-"classvulpes_1_1geometry_1_1Mesh2D.html#a3acf8926bf8ae0cd4ca86d9898bad426",
-"classvulpes_1_1geometry_1_1Mesh3D.html#a85cfc8c315d92a96d07b46888152f7fe",
-"classvulpes_1_1geometry_1_1MeshExporter.html#a44a7dfb5ca1e56d5dafb9e91967f8bcb",
-"classvulpes_1_1geometry_1_1ParallelMesh.html#af5d9d7fae4dfd46a7f983b1cf3ff5726",
-"classvulpes_1_1geometry_1_1UnionDistance.html#a84f7e39732f0de028be18f0bc61c0df0",
-"classvulpes_1_1la_1_1SparseMatrix.html#ac30a671086b2e6f846c16a49abe961ff",
-"classvulpes_1_1polynomial_1_1Polynomial.html#a86c472da35039e41facefe0f0c865b28",
-"classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae07b1d1782da2b6adb2cff4d3803d528",
-"classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a89e36ad1b3119b0c9c4cd5d30cac2c66",
-"fe__lagrange__simplex_8hpp.html#aee537e01f990924884412e7dcc32e52f",
-"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md5",
-"mpi__wrappers_8hpp.html#a124f98aa371424a6bb8cc87031f1a904",
-"namespacevulpes_1_1fe_1_1internal.html#af3cdecea87d7b118a0a5c8578e165c2a",
-"namespacevulpes_1_1qrule.html#a0540b0d397bb8efa560704709b4b90fc",
-"structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html#adbedaac0601d674c5460e4eb508f3658",
-"structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html",
-"structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#aeedacbda068974d47dbf77d4361093fa",
-"structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html#ad30c039fbcef91414c1eb0742941570f",
-"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html",
-"structvulpes_1_1vmath_1_1is__gnump.html"
+"classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a196c35e1397f737c2f6d9ebb27af5eac",
+"classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a15eda22e0f670ffe1a598663883ca496",
+"classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a66cc66bc9b71ad48a367ff72e2726ea8",
+"classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aac9212b3d1817e936b46351cb0fe1479",
+"classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8",
+"classvulpes_1_1fe_1_1FeExpressionCellConstant.html#abf128706b31859dafdb08f3f60006c64",
+"classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#aba0b18cd54e491637f9cbbb0d8ee4660",
+"classvulpes_1_1fe_1_1FeExpressionGradContr.html#a2839825db6145c9842783326a1ed7625",
+"classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html#a381e59575af791d16798b2b7bc0f0475",
+"classvulpes_1_1fe_1_1FeExpressionSkipper.html#ad7789ccaf487384d854f17e00b14400a",
+"classvulpes_1_1fe_1_1FeSpaceBase.html#a88e3c3ac717ace22ae95ebdc3624e251",
+"classvulpes_1_1fe_1_1FeSpaceVEM.html#a4b62e1349bc842589144be01b5ddf8a1",
+"classvulpes_1_1geometry_1_1Cell2D.html#a37e2c8ec48676419569e78f1fad2686d",
+"classvulpes_1_1geometry_1_1GNNAgglomeration.html#ae42ffebe48632aada835959dfb50b14d",
+"classvulpes_1_1geometry_1_1Mesh2D.html#a3b902ffd38d8f2b699a9f1070f2db7b2",
+"classvulpes_1_1geometry_1_1Mesh3D.html#a886cddfcedc0de63b222db9a09aa5abf",
+"classvulpes_1_1geometry_1_1MeshExporter.html#a4d3d00c596f776ab5557994bdf638f16",
+"classvulpes_1_1geometry_1_1ParallelMesh.html#af77ac9a934186255a7d567e450010514",
+"classvulpes_1_1geometry_1_1UnionDistance.html#aa16fbd9d44ebe07d1117207df2e3924f",
+"classvulpes_1_1la_1_1SparseMatrix.html#accea9d1a8604072dd8c3b0e3de5aa70b",
+"classvulpes_1_1polynomial_1_1Polynomial.html#a8bdeb23bb068365aa60f4216d1b935fa",
+"classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae32700e708c26c16a0887aeaebece114",
+"classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a921b480519fed653e916177b3ecd492c",
+"fe__lagrange__simplex_8hpp.html#af30448e7da7545f7abafd001dd487b5a",
+"md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html#autotoc_md6",
+"mesh__metrics_8cpp.html",
+"namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa52f1d67a21cbac57619f64d1cb48e083",
+"namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38",
+"structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html",
+"structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html#aa9e7114c858730697fb4ded8f2146fcf",
+"structvulpes_1_1scipy_1_1RR__stack__item.html#a536a91b85ec19455ff5671b6a389018f",
+"structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html#a8cb7a6f0ae301345185b5ae7ad16cdbf",
+"structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html#aabea129fcb572e111d6c9799f96908da",
+"structvulpes_1_1timeintegration_1_1SSPRK3IMEX.html#afa3f349b99b0129a033485aae72c03cd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

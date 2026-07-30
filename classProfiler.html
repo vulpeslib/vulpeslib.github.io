@@ -163,10 +163,13 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa24308316287f71773564de7e1facfa7" id="r_aa24308316287f71773564de7e1facfa7"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, <a class="el" href="classProfiler.html#a2318699af2226676b3013c48d686e199">TimeCounter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#aa24308316287f71773564de7e1facfa7">time_map</a> = {}</td></tr>
 <tr class="separator:aa24308316287f71773564de7e1facfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711d0a8f471a10e0096777148343442b" id="r_a711d0a8f471a10e0096777148343442b"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, <a class="el" href="classProfiler.html#af79c03f89822fbef749883106b877346">time_point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a711d0a8f471a10e0096777148343442b">start_times</a> = {}</td></tr>
+<tr class="memdesc:a711d0a8f471a10e0096777148343442b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending start time recorded per label via <a class="el" href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656" title="Begin timing a single interval for the specified label.">start()</a>, consumed by <a class="el" href="classProfiler.html#a4a4e5bc7fe0a0d6423bf476ed42b9c17" title="End timing a single interval for the specified label.">stop()</a>.  <br /></td></tr>
 <tr class="separator:a711d0a8f471a10e0096777148343442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac192e9c78f39d005330041335229f46b" id="r_ac192e9c78f39d005330041335229f46b"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="classProfiler.html#af79c03f89822fbef749883106b877346">time_point</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#ac192e9c78f39d005330041335229f46b">stop_time_intervals</a> = {}</td></tr>
+<tr class="memdesc:ac192e9c78f39d005330041335229f46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval end timestamps recorded per label via <a class="el" href="classProfiler.html#a6b7c77d30e2a9b41001b3fee135b9b2c" title="End one interval among multiple for the specified label.">stopInterval()</a>.  <br /></td></tr>
 <tr class="separator:ac192e9c78f39d005330041335229f46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6648f3c791a4418791313b3f6316d699" id="r_a6648f3c791a4418791313b3f6316d699"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="classProfiler.html#af79c03f89822fbef749883106b877346">time_point</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a6648f3c791a4418791313b3f6316d699">start_time_intervals</a> = {}</td></tr>
+<tr class="memdesc:a6648f3c791a4418791313b3f6316d699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval start timestamps recorded per label via <a class="el" href="classProfiler.html#aa42354c4231bf529100045c112731421" title="Mark the start of one interval among multiple for a label.">startInterval()</a>.  <br /></td></tr>
 <tr class="separator:a6648f3c791a4418791313b3f6316d699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -475,6 +478,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Interval start timestamps recorded per label via <a class="el" href="classProfiler.html#aa42354c4231bf529100045c112731421" title="Mark the start of one interval among multiple for a label.">startInterval()</a>. </p>
+
 </div>
 </div>
 <a id="a711d0a8f471a10e0096777148343442b" name="a711d0a8f471a10e0096777148343442b"></a>
@@ -496,6 +501,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pending start time recorded per label via <a class="el" href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656" title="Begin timing a single interval for the specified label.">start()</a>, consumed by <a class="el" href="classProfiler.html#a4a4e5bc7fe0a0d6423bf476ed42b9c17" title="End timing a single interval for the specified label.">stop()</a>. </p>
 
 </div>
 </div>
@@ -519,6 +526,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Interval end timestamps recorded per label via <a class="el" href="classProfiler.html#a6b7c77d30e2a9b41001b3fee135b9b2c" title="End one interval among multiple for the specified label.">stopInterval()</a>. </p>
+
 </div>
 </div>
 <a id="aa24308316287f71773564de7e1facfa7" name="aa24308316287f71773564de7e1facfa7"></a>
@@ -540,6 +549,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Cumulative {total_duration_ns, call_count} recorded per label via <a class="el" href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656" title="Begin timing a single interval for the specified label.">start()</a>/stop(). </p>
 
 </div>
 </div>
@@ -554,7 +564,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classProfiler.html">Profiler</a></li>
-    <li class="footer">Generated on Wed Jul 29 2026 12:58:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jul 30 2026 13:19:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

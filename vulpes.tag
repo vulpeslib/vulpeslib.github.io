@@ -51,6 +51,31 @@
     <filename>mainpage_8md.html</filename>
   </compound>
   <compound kind="file">
+    <name>01_Meshes_2D.md</name>
+    <path>/__w/vulpes/vulpes/doc/tutorials/</path>
+    <filename>01__Meshes__2D_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>02_Laplacian_Assembly.md</name>
+    <path>/__w/vulpes/vulpes/doc/tutorials/</path>
+    <filename>02__Laplacian__Assembly_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>03_Advection_Assembly.md</name>
+    <path>/__w/vulpes/vulpes/doc/tutorials/</path>
+    <filename>03__Advection__Assembly_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>04_Shallow_Water_DG.md</name>
+    <path>/__w/vulpes/vulpes/doc/tutorials/</path>
+    <filename>04__Shallow__Water__DG_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>05_MPI_Laplacian.md</name>
+    <path>/__w/vulpes/vulpes/doc/tutorials/</path>
+    <filename>05__MPI__Laplacian_8md.html</filename>
+  </compound>
+  <compound kind="file">
     <name>cell_manager.hpp</name>
     <path>/__w/vulpes/vulpes/vulpes/assemble/</path>
     <filename>cell__manager_8hpp.html</filename>
@@ -498,13 +523,6 @@
     <namespace>vulpes</namespace>
     <namespace>vulpes::fe</namespace>
     <namespace>vulpes::fe::internal</namespace>
-    <member kind="define">
-      <type>#define</type>
-      <name>VULPES_FE_FE_SPACES_HPP_</name>
-      <anchorfile>fe__lagrange__simplex_8cpp.html</anchorfile>
-      <anchor>a4034e67ca25a7d611b6d2f784341fa63</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>fe_lagrange_simplex.hpp</name>
@@ -1401,13 +1419,6 @@
     <namespace>vulpes</namespace>
     <namespace>vulpes::vutils</namespace>
     <namespace>vulpes::vutils::internal</namespace>
-    <member kind="define">
-      <type>#define</type>
-      <name>VULPES_UTILS_VVUTILS_HPP_</name>
-      <anchorfile>checks_8cpp.html</anchorfile>
-      <anchor>a7bc890e0e2944fc2300af15cf0b22360</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>checks.hpp</name>
@@ -29939,9 +29950,16 @@
     <class kind="class">vulpes::vutils::ExpressionParser</class>
     <member kind="function">
       <type>void</type>
-      <name>configureThreading</name>
+      <name>configureVtkThreading</name>
       <anchorfile>namespacevulpes_1_1vutils.html</anchorfile>
-      <anchor>adbc481188fb767494be6d6153a7c6c1a</anchor>
+      <anchor>a06729d792d8a5f2b6ae3c8e3f9fa2a95</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>checkOpenBlasThreading</name>
+      <anchorfile>namespacevulpes_1_1vutils.html</anchorfile>
+      <anchor>a606da97eab78c7a30c5480474ee6a196</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -30055,6 +30073,31 @@
     <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2workflows_2index</name>
     <title>Workflows</title>
     <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2workflows_2index.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D</name>
+    <title>Mesh Kinds for &lt;tt&gt;01_assemble_lapl_dg_2d&lt;/tt&gt;</title>
+    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly</name>
+    <title>Laplacian Assembly (DG)</title>
+    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_203__Advection__Assembly</name>
+    <title>Advection Assembly (DG)</title>
+    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_203__Advection__Assembly.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG</name>
+    <title>Linear Shallow Water Equations (DG)</title>
+    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian</name>
+    <title>MPI Laplacian Assembly</title>
+    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html</filename>
   </compound>
   <compound kind="page">
     <name>index</name>

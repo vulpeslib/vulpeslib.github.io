@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vulpes: /__w/vulpes/vulpes/vulpes/assemble -&gt; utils Relation</title>
+<title>Vulpes: Linear Shallow Water Equations (DG)</title>
 <link rel="icon" href="vulpes_logo_notext_32.png" type="image/png" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -84,7 +84,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('dir_fbdf0309f37d26479fea532d5cc8eb08.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -109,15 +109,39 @@ $(document).ready(function(){initNavTree('dir_fbdf0309f37d26479fea532d5cc8eb08.h
 </div>
 </div>
 
+<div><div class="header">
+  <div class="headertitle"><div class="title">Linear Shallow Water Equations (DG)</div></div>
+</div><!--header-->
 <div class="contents">
-<h3>assemble &rarr; utils Relation</h3><table class="dirtab"><tr class="dirtab"><th class="dirtab">File in vulpes/assemble</th><th class="dirtab">Includes file in vulpes/utils</th></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="cell__manager_8hpp.html">cell_manager.hpp</a></td><td class="dirtab"><a class="el" href="profiler_8hpp.html">profiler.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="integrator__base_8hpp.html">integrator_base.hpp</a></td><td class="dirtab"><a class="el" href="profiler_8hpp.html">profiler.hpp</a></td></tr></table></div><!-- contents -->
+<div class="textblock"><p><a class="anchor" id="autotoc_md136"></a> Author: Pedro Peixoto <a href="#" onclick="location.href='mai'+'lto:'+'ppe'+'ix'+'oto'+'@u'+'sp.'+'br'; return false;">ppeix<span class="obfuscator">.nosp@m.</span>oto@<span class="obfuscator">.nosp@m.</span>usp.b<span class="obfuscator">.nosp@m.</span>r</a></p>
+<p>This tutorial describes the Discontinuous Galerkin (DG) solver for the linearised shallow water equations assembled in <a href="examples/assembly/shallow_water/swe_assembly.hpp">examples/assembly/shallow_water/swe_assembly.hpp</a>.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md138"></a>
+1) The Linearised Shallow Water Equations</h1>
+<p>The shallow water equations model the depth-averaged flow of a thin fluid layer. Linearising around a rest state of constant depth $h_0$ and zero velocity gives the system</p>
+<p>$$ \frac{\partial \mathbf{U}}{\partial t}</p><ul>
+<li>A_x \frac{\partial \mathbf{U}}{\partial x}</li>
+<li>A_y \frac{\partial \mathbf{U}}{\partial y} = 0, $$</li>
+</ul>
+<p>where the state vector $\mathbf{U} = (h, u, v)^T$ collects the height perturbation $h$ and the depth-averaged velocity components $u$ and $v$. The flux Jacobians are</p>
+<p>$$ A_x = \begin{pmatrix} 0 &amp; h_0 &amp; 0 \ g &amp; 0 &amp; 0 \ 0 &amp; 0 &amp; 0 \end{pmatrix}, \qquad A_y = \begin{pmatrix} 0 &amp; 0 &amp; h_0 \ 0 &amp; 0 &amp; 0 \ g &amp; 0 &amp; 0 \end{pmatrix}, $$</p>
+<p>where $g$ is the gravitational acceleration. The system is symmetric hyperbolic with wave speed $c = \sqrt{g h_0}$.</p>
+<p>The component indices used throughout the code are</p>
+<p>$$ 0 \leftrightarrow h, \qquad 1 \leftrightarrow u, \qquad 2 \leftrightarrow v. $$</p>
+<p>The equations are solved on the biperiodic unit square $[0,1]^2$ with initial condition $\mathbf{U}(0,x) = \mathbf{U}_0(x)$.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md140"></a>
+2) DG Weak Formulation</h1>
+<p>Let $\mathcal{T}_h$ be a mesh and let</p>
+<p>$$ \mathbf{V}_h = \mathbf{v} \in (L^2(\Omega))^3 : \mathbf{v}|_K \in (\mathbb{P}_p(K))^3 \text{ for all } K \in \mathcal{T}_h </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_fbdf0309f37d26479fea532d5cc8eb08.html">assemble</a></li>
-    <li class="footer">Generated on Wed Jul 29 2026 12:58:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jul 30 2026 13:19:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

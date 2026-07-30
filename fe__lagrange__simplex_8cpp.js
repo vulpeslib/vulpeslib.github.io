@@ -1,6 +1,5 @@
 var fe__lagrange__simplex_8cpp =
 [
-    [ "VULPES_FE_FE_SPACES_HPP_", "fe__lagrange__simplex_8cpp.html#a4034e67ca25a7d611b6d2f784341fa63", null ],
     [ "computeWarp", "fe__lagrange__simplex_8cpp.html#afec06edd0d41fe90cbf18654eb1f8a9b", null ],
     [ "computeWarpAndBlend", "fe__lagrange__simplex_8cpp.html#a744281520a73eb8f840f17c971fb9640", null ],
     [ "equinNodes3D", "fe__lagrange__simplex_8cpp.html#a9db91a1e60c78db411bee31cb09dbb75", null ],

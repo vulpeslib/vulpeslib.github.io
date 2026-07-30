@@ -145,7 +145,7 @@ Using Callgrind</h2>
 </div><!-- fragment --></li>
 <li>**<code>PROFILE</code> macro**: The <code>PROFILE</code> macro couples a <code>start</code> and <code>stop</code> with label the code passed as argument <div class="fragment"><div class="line"> ++</div>
 <div class="line"><a class="code hl_define" href="profiler_8hpp.html#a44a6ff9abeb62481d0ea902a7769bfc8">PROFILE</a>(doSomeWork());</div>
-<div class="ttc" id="aprofiler_8hpp_html_a44a6ff9abeb62481d0ea902a7769bfc8"><div class="ttname"><a href="profiler_8hpp.html#a44a6ff9abeb62481d0ea902a7769bfc8">PROFILE</a></div><div class="ttdeci">#define PROFILE(func)</div><div class="ttdef"><b>Definition</b> profiler.hpp:39</div></div>
+<div class="ttc" id="aprofiler_8hpp_html_a44a6ff9abeb62481d0ea902a7769bfc8"><div class="ttname"><a href="profiler_8hpp.html#a44a6ff9abeb62481d0ea902a7769bfc8">PROFILE</a></div><div class="ttdeci">#define PROFILE(func)</div><div class="ttdoc">Time a single execution of func under the label #func using Profiler::start()/stop().</div><div class="ttdef"><b>Definition</b> profiler.hpp:44</div></div>
 </div><!-- fragment --></li>
 <li><b>Printing the Results</b>: The <code>print</code> static method outputs a neatly formatted table showing each label and its total execution time in milliseconds, sorted from the most time-consuming to the least.</li>
 <li><b>Conditional Compilation</b>: The profiler’s functionality can be disabled in production builds by defining <code>NPROFILE</code>. </li>
@@ -157,7 +157,7 @@ Using Callgrind</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 29 2026 12:58:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jul 30 2026 13:19:07 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

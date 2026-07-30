@@ -126,43 +126,90 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1vutils_1_1ExpressionParser.html">ExpressionParser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles and evaluates a scalar math expression at runtime.  <a href="classvulpes_1_1vutils_1_1ExpressionParser.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adbc481188fb767494be6d6153a7c6c1a" id="r_adbc481188fb767494be6d6153a7c6c1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#adbc481188fb767494be6d6153a7c6c1a">configureThreading</a> ()</td></tr>
-<tr class="separator:adbc481188fb767494be6d6153a7c6c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06729d792d8a5f2b6ae3c8e3f9fa2a95" id="r_a06729d792d8a5f2b6ae3c8e3f9fa2a95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#a06729d792d8a5f2b6ae3c8e3f9fa2a95">configureVtkThreading</a> ()</td></tr>
+<tr class="memdesc:a06729d792d8a5f2b6ae3c8e3f9fa2a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the VTK SMP thread budget.  <br /></td></tr>
+<tr class="separator:a06729d792d8a5f2b6ae3c8e3f9fa2a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606da97eab78c7a30c5480474ee6a196" id="r_a606da97eab78c7a30c5480474ee6a196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#a606da97eab78c7a30c5480474ee6a196">checkOpenBlasThreading</a> ()</td></tr>
+<tr class="memdesc:a606da97eab78c7a30c5480474ee6a196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the active OpenBLAS thread count.  <br /></td></tr>
+<tr class="separator:a606da97eab78c7a30c5480474ee6a196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bd0e624421d07a12ad0b3efc57e6b57" id="r_a0bd0e624421d07a12ad0b3efc57e6b57"><td class="memTemplParams" colspan="2">template&lt;typename T , typename IndexType &gt; </td></tr>
 <tr class="memitem:a0bd0e624421d07a12ad0b3efc57e6b57"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#a0bd0e624421d07a12ad0b3efc57e6b57">slice</a> (const std::vector&lt; T &gt; &amp;source, const std::vector&lt; IndexType &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a0bd0e624421d07a12ad0b3efc57e6b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a new vector by selecting elements of <code>source</code> at the given indices.  <br /></td></tr>
 <tr class="separator:a0bd0e624421d07a12ad0b3efc57e6b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c6463b6e7d4017c0d2bc4667e2331bd" id="r_a0c6463b6e7d4017c0d2bc4667e2331bd"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , typename Func , std::size_t... Is&gt; </td></tr>
 <tr class="memitem:a0c6463b6e7d4017c0d2bc4667e2331bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#a0c6463b6e7d4017c0d2bc4667e2331bd">for_each_impl</a> (Tuple &amp;&amp;tuple, Func &amp;&amp;func, std::index_sequence&lt; Is... &gt;)</td></tr>
 <tr class="separator:a0c6463b6e7d4017c0d2bc4667e2331bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adef74d45dd575ad10f2d51460aedc4ae" id="r_adef74d45dd575ad10f2d51460aedc4ae"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , typename Func &gt; </td></tr>
 <tr class="memitem:adef74d45dd575ad10f2d51460aedc4ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#adef74d45dd575ad10f2d51460aedc4ae">for_each</a> (Tuple &amp;&amp;tuple, Func &amp;&amp;func)</td></tr>
+<tr class="memdesc:adef74d45dd575ad10f2d51460aedc4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply <code>func</code> to every element of <code>tuple</code>, in order.  <br /></td></tr>
 <tr class="separator:adef74d45dd575ad10f2d51460aedc4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4336d47f77f009cde65bbce2b8f21f47" id="r_a4336d47f77f009cde65bbce2b8f21f47"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , typename Func , std::size_t... Is&gt; </td></tr>
 <tr class="memitem:a4336d47f77f009cde65bbce2b8f21f47"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#a4336d47f77f009cde65bbce2b8f21f47">for_each_impl_idxed</a> (Tuple &amp;&amp;tuple, Func &amp;&amp;func, std::index_sequence&lt; Is... &gt;)</td></tr>
 <tr class="separator:a4336d47f77f009cde65bbce2b8f21f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab6903411968dab01497e6e432f64bd7" id="r_aab6903411968dab01497e6e432f64bd7"><td class="memTemplParams" colspan="2">template&lt;typename Tuple , typename Func &gt; </td></tr>
 <tr class="memitem:aab6903411968dab01497e6e432f64bd7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1vutils.html#aab6903411968dab01497e6e432f64bd7">for_each_idxed</a> (Tuple &amp;&amp;tuple, Func &amp;&amp;func)</td></tr>
+<tr class="memdesc:aab6903411968dab01497e6e432f64bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply <code>func</code> to every element of <code>tuple</code> together with its index.  <br /></td></tr>
 <tr class="separator:aab6903411968dab01497e6e432f64bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="adbc481188fb767494be6d6153a7c6c1a" name="adbc481188fb767494be6d6153a7c6c1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbc481188fb767494be6d6153a7c6c1a">&#9670;&#160;</a></span>configureThreading()</h2>
+<a id="a606da97eab78c7a30c5480474ee6a196" name="a606da97eab78c7a30c5480474ee6a196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606da97eab78c7a30c5480474ee6a196">&#9670;&#160;</a></span>checkOpenBlasThreading()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void vulpes::vutils::configureThreading </td>
+          <td class="memname">void vulpes::vutils::checkOpenBlasThreading </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Validate the active OpenBLAS thread count. </p>
+<p>The function compares the number of threads reported by OpenBLAS with the requested thread budget:</p>
+<ul>
+<li><code>OPENBLAS_NUM_THREADS</code> is used when it contains a valid positive integer;</li>
+<li>otherwise, if <code>OPENBLAS_NUM_THREADS</code> is absent, a valid <code>OMP_NUM_THREADS</code> value is used as the expected budget;</li>
+<li>if <code>OPENBLAS_NUM_THREADS</code> is present but invalid, no expected OpenBLAS budget can be inferred.</li>
+<li>if neither <code>OPENBLAS_NUM_THREADS</code> nor <code>OMP_NUM_THREADS</code> is set, no expected budget can be inferred either; a stronger warning is emitted since OpenBLAS's actual thread count is then unpredictable and may silently oversubscribe the machine under MPI.</li>
+</ul>
+<p>OpenBLAS is inspected dynamically through <code>libopenblas.so.0</code> and <code>openblas_get_num_threads()</code>. Diagnostic warnings are emitted if OpenBLAS cannot be inspected or if its active thread count differs from the expected value.</p>
+<dl class="section note"><dt>Note</dt><dd>Call this function after <code>PetscInitialize()</code>, when PETSc's BLAS backend is available in the process. </dd>
+<dd>
+This function is diagnostic only. It does not modify the OpenBLAS thread count. </dd>
+<dd>
+If PETSc uses another BLAS implementation, OpenBLAS validation is unavailable and a warning is emitted. </dd></dl>
+
+</div>
+</div>
+<a id="a06729d792d8a5f2b6ae3c8e3f9fa2a95" name="a06729d792d8a5f2b6ae3c8e3f9fa2a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06729d792d8a5f2b6ae3c8e3f9fa2a95">&#9670;&#160;</a></span>configureVtkThreading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::vutils::configureVtkThreading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure the VTK SMP thread budget. </p>
+<p>The thread budget is read from the <code>OMP_NUM_THREADS</code> environment variable. The value must be a positive integer representable as an <code>int</code>.</p>
+<p>If <code>OMP_NUM_THREADS</code> is absent or invalid, Vulpes configures VTK to use one thread per MPI process and emits a warning.</p>
+<dl class="section note"><dt>Note</dt><dd>Call this function after MPI initialization and before any VTK parallel operation. </dd>
+<dd>
+This function configures VTK only. It does not configure PETSc, OpenMP, or the BLAS implementation. </dd></dl>
 
 </div>
 </div>
@@ -194,6 +241,22 @@ template&lt;typename Tuple , typename Func &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Apply <code>func</code> to every element of <code>tuple</code>, in order. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Tuple</td><td>Any std::tuple-like type. </td></tr>
+    <tr><td class="paramname">Func</td><td>Callable invocable with each element of <code>tuple</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tuple</td><td>The tuple to iterate over. </td></tr>
+    <tr><td class="paramname">func</td><td>The callable applied to each element. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aab6903411968dab01497e6e432f64bd7" name="aab6903411968dab01497e6e432f64bd7"></a>
@@ -223,6 +286,22 @@ template&lt;typename Tuple , typename Func &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Apply <code>func</code> to every element of <code>tuple</code> together with its index. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Tuple</td><td>Any std::tuple-like type. </td></tr>
+    <tr><td class="paramname">Func</td><td>Callable invocable with each element of <code>tuple</code> and its std::size_t index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tuple</td><td>The tuple to iterate over. </td></tr>
+    <tr><td class="paramname">func</td><td>The callable applied to each (element, index) pair. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -326,6 +405,23 @@ template&lt;typename T , typename IndexType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Build a new vector by selecting elements of <code>source</code> at the given indices. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Element type. </td></tr>
+    <tr><td class="paramname">IndexType</td><td>Integral index type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>The vector to select elements from. </td></tr>
+    <tr><td class="paramname">indices</td><td>Indices into <code>source</code>, in the desired output order. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new vector containing <code>source[indices[0]], source[indices[1]], ...</code>. </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -335,7 +431,7 @@ template&lt;typename T , typename IndexType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1vutils.html">vutils</a></li>
-    <li class="footer">Generated on Wed Jul 29 2026 12:58:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Jul 30 2026 13:19:08 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
