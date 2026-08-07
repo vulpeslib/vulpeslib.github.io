@@ -1,7 +1,9 @@
 var classvulpes_1_1la_1_1Vector =
 [
+    [ "GhostTag", "structvulpes_1_1la_1_1Vector_1_1GhostTag.html", null ],
     [ "Vector", "classvulpes_1_1la_1_1Vector.html#a74858b9e609477fd771197e9645a9f91", null ],
     [ "Vector", "classvulpes_1_1la_1_1Vector.html#a48e23338b497ab4ebde82f02e59fd506", null ],
+    [ "Vector", "classvulpes_1_1la_1_1Vector.html#acdfb7360e29da47ee915899068e38f40", null ],
     [ "Vector", "classvulpes_1_1la_1_1Vector.html#a7c72263a075540e0e34b8f96b417845e", null ],
     [ "~Vector", "classvulpes_1_1la_1_1Vector.html#ac23080477fb150e5dc6ad8a652ce2abd", null ],
     [ "abs", "classvulpes_1_1la_1_1Vector.html#a49a35042f0ecc0ae4996325800ebf0c5", null ],
@@ -14,6 +16,7 @@ var classvulpes_1_1la_1_1Vector =
     [ "compareVectors", "classvulpes_1_1la_1_1Vector.html#a46f417f690a4d862e7cc50c076b1fdd3", null ],
     [ "compress", "classvulpes_1_1la_1_1Vector.html#a848a5296261a4456b8facdc2b4430853", null ],
     [ "copy", "classvulpes_1_1la_1_1Vector.html#a0cff4ae56ed5ee16b8ae20cdbf542e51", null ],
+    [ "createGhosted", "classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d", null ],
     [ "createVector", "classvulpes_1_1la_1_1Vector.html#a7d5bb61d9d6861a00f3f193f7d58828b", null ],
     [ "getBlockSize", "classvulpes_1_1la_1_1Vector.html#a7ec9c2ddf7f3c279a10d244d6f261504", null ],
     [ "getLocalSize", "classvulpes_1_1la_1_1Vector.html#aa383a88cfa8b1981bbd945d71a2761bd", null ],
@@ -25,6 +28,7 @@ var classvulpes_1_1la_1_1Vector =
     [ "getSize", "classvulpes_1_1la_1_1Vector.html#a28e715fd46fad6739abb5d947b3bf661", null ],
     [ "getValue", "classvulpes_1_1la_1_1Vector.html#a152cf647068bd0e2956771c663db88b0", null ],
     [ "init", "classvulpes_1_1la_1_1Vector.html#a8180fa3530ea90fe420c48109bbdff05", null ],
+    [ "initGhosted", "classvulpes_1_1la_1_1Vector.html#a24ce0bc655900e474b60975337205779", null ],
     [ "insertValues", "classvulpes_1_1la_1_1Vector.html#a0e04eabd0ff69da094ed41c7c5eeb784", null ],
     [ "insertValues", "classvulpes_1_1la_1_1Vector.html#a08a6d51971d8ab8c3f9f6bdfd3452f5f", null ],
     [ "insertValuesBlocked", "classvulpes_1_1la_1_1Vector.html#a3a7b16f98112c41a6442cb09e3a5a248", null ],
@@ -43,6 +47,9 @@ var classvulpes_1_1la_1_1Vector =
     [ "sum", "classvulpes_1_1la_1_1Vector.html#a79006f02c00750882ed06548a0087e74", null ],
     [ "toEigenMap", "classvulpes_1_1la_1_1Vector.html#adcaab34f10d4e563da8d0365efcd7f11", null ],
     [ "toLocalEigenMap", "classvulpes_1_1la_1_1Vector.html#aa7a438a6dfbceca07337bedca52d1a9b", null ],
+    [ "toLocalGhostedEigenVector", "classvulpes_1_1la_1_1Vector.html#a9eea0f90d4af2454e970a3d1209f288b", null ],
+    [ "updateGhosts", "classvulpes_1_1la_1_1Vector.html#ac64f46909d4209596615b00c85c33364", null ],
     [ "zero", "classvulpes_1_1la_1_1Vector.html#a4f580b91660e2e9d11648f80053c4c4c", null ],
+    [ "m_is_ghosted", "classvulpes_1_1la_1_1Vector.html#af7e670b4c989e73bb7097b40b4b91e59", null ],
     [ "m_petsc_vector", "classvulpes_1_1la_1_1Vector.html#ac784a7878eb34c4cdb14ffd503cdcb1f", null ]
 ];

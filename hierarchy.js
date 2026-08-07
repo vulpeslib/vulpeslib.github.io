@@ -368,6 +368,7 @@ var hierarchy =
     [ "vulpes::la::SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html", null ],
     [ "vulpes::la::Tensor", "classvulpes_1_1la_1_1Tensor.html", null ],
     [ "vulpes::la::Vector", "classvulpes_1_1la_1_1Vector.html", null ],
+    [ "vulpes::la::Vector::GhostTag", "structvulpes_1_1la_1_1Vector_1_1GhostTag.html", null ],
     [ "vulpes::monomial::internal::NonScaledMonomial", "classvulpes_1_1monomial_1_1internal_1_1NonScaledMonomial.html", null ],
     [ "vulpes::monomial::internal::ScaledMonomial< Dim, IndexType, CoefType >", "classvulpes_1_1monomial_1_1internal_1_1ScaledMonomial.html", null ],
     [ "vulpes::mpi::MpiHandle", "classvulpes_1_1mpi_1_1MpiHandle.html", null ],

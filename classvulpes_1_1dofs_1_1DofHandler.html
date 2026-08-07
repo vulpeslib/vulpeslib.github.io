@@ -177,6 +177,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9ed698784609cdef626db54d8b70063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dd402cc5e89c751957b0aae64c4807d" id="r_a6dd402cc5e89c751957b0aae64c4807d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a6dd402cc5e89c751957b0aae64c4807d">hasRenumbering</a> () const</td></tr>
 <tr class="separator:a6dd402cc5e89c751957b0aae64c4807d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb02b4fe075e1015a657079a120a4514" id="r_adb02b4fe075e1015a657079a120a4514"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514">getGhostDofs</a> () const</td></tr>
+<tr class="memdesc:adb02b4fe075e1015a657079a120a4514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global dof indices of dofs living on this rank's ghost cells, i.e. dofs owned by another rank but needed locally for face terms (e.g. by <a class="el" href="classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d" title="Construct a ghost-aware Vector from a DofHandler. See the GhostTag constructor above for what this en...">la::Vector::createGhosted()</a>). Deduplicated, in a stable order fixed by the ghost cells' local ids. Empty for a serial mesh.  <br /></td></tr>
+<tr class="separator:adb02b4fe075e1015a657079a120a4514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68077221cf2485c1b6e3c7c5fbc6a8d6" id="r_a68077221cf2485c1b6e3c7c5fbc6a8d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a68077221cf2485c1b6e3c7c5fbc6a8d6">ghostDofLocalIndex</a> (<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> dof_id) const</td></tr>
+<tr class="memdesc:a68077221cf2485c1b6e3c7c5fbc6a8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position of a ghost dof's global id within <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514" title="Global dof indices of dofs living on this rank&#39;s ghost cells, i.e. dofs owned by another rank but nee...">getGhostDofs()</a>, i.e. its offset within a Vector::createGhosted() vector's ghost padding.  <br /></td></tr>
+<tr class="separator:a68077221cf2485c1b6e3c7c5fbc6a8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5712b7f6b1e55dcf136b18e2cf7af328" id="r_a5712b7f6b1e55dcf136b18e2cf7af328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328">nOwnedDofs</a> () const</td></tr>
+<tr class="memdesc:a5712b7f6b1e55dcf136b18e2cf7af328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of dofs owned by this rank (all of them, for a serial mesh).  <br /></td></tr>
+<tr class="separator:a5712b7f6b1e55dcf136b18e2cf7af328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fa6aea2f083ef4f9ed5dc7da654a44" id="r_a04fa6aea2f083ef4f9ed5dc7da654a44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a04fa6aea2f083ef4f9ed5dc7da654a44">localGhostedIndex</a> (<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> dof_id) const</td></tr>
+<tr class="memdesc:a04fa6aea2f083ef4f9ed5dc7da654a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local index, within a Vector built by <a class="el" href="classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d" title="Construct a ghost-aware Vector from a DofHandler. See the GhostTag constructor above for what this en...">la::Vector::createGhosted()</a> from this <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html" title="Compute and distribute the DoFs and sparsity pattern associated with a mesh and a certain finite elem...">DofHandler</a>, of the given global dof id &ndash; whichever of owned or ghost it is. Owned dofs map to [0, <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328" title="Number of dofs owned by this rank (all of them, for a serial mesh).">nOwnedDofs()</a>); this rank's ghost dofs map to [<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328" title="Number of dofs owned by this rank (all of them, for a serial mesh).">nOwnedDofs()</a>, <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328" title="Number of dofs owned by this rank (all of them, for a serial mesh).">nOwnedDofs()</a> + <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514" title="Global dof indices of dofs living on this rank&#39;s ghost cells, i.e. dofs owned by another rank but nee...">getGhostDofs()</a>.size()), in <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514" title="Global dof indices of dofs living on this rank&#39;s ghost cells, i.e. dofs owned by another rank but nee...">getGhostDofs()</a> order. This is the single accessor consumer code should use instead of hand-rolling ownership-range arithmetic (see the note on <a class="el" href="classvulpes_1_1la_1_1Vector.html#a9eea0f90d4af2454e970a3d1209f288b" title="Local-form snapshot of a ghost-aware Vector (see createGhosted()): this rank&#39;s owned dofs first ([0,...">la::Vector::toLocalGhostedEigenVector()</a>).  <br /></td></tr>
+<tr class="separator:a04fa6aea2f083ef4f9ed5dc7da654a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f517c13f599e46af9cfdf7b86b3e91" id="r_ab3f517c13f599e46af9cfdf7b86b3e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize</a> ()</td></tr>
 <tr class="separator:ab3f517c13f599e46af9cfdf7b86b3e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e3ab425fbdf6d07e82d9b0e5c9ee85a" id="r_a3e3ab425fbdf6d07e82d9b0e5c9ee85a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a3e3ab425fbdf6d07e82d9b0e5c9ee85a">renumberMpiSubdomainWise</a> ()</td></tr>
@@ -220,6 +232,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a28aa75dc07d5edb36afae8e4927d952e" id="r_a28aa75dc07d5edb36afae8e4927d952e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a28aa75dc07d5edb36afae8e4927d952e">invertDofToCellMappingAndCompress</a> (auto &amp;dof_to_cell)</td></tr>
 <tr class="memdesc:a28aa75dc07d5edb36afae8e4927d952e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert the dof to cell mapping.  <br /></td></tr>
 <tr class="separator:a28aa75dc07d5edb36afae8e4927d952e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04268b01ebe297881d5c1cea4288075e" id="r_a04268b01ebe297881d5c1cea4288075e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a04268b01ebe297881d5c1cea4288075e">buildGhostDofs</a> ()</td></tr>
+<tr class="memdesc:a04268b01ebe297881d5c1cea4288075e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds m_ghost_dofs/m_ghost_dof_to_local from this rank's ghost cells (mesh-level) and m_cell_to_dof (already in global numbering). Called once, from <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize()</a>, after m_cell_to_dof's global-numbering conversion. No-op for a serial mesh.  <br /></td></tr>
+<tr class="separator:a04268b01ebe297881d5c1cea4288075e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d7704a793d4b1cb76358c98db7d77b" id="r_a34d7704a793d4b1cb76358c98db7d77b"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FloatType , typename DofPolicy , typename FeSpace &gt; </td></tr>
 <tr class="memitem:a34d7704a793d4b1cb76358c98db7d77b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a34d7704a793d4b1cb76358c98db7d77b">computeNumDofs</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html">fe::FeSpaceBase</a>&lt; Dim, FloatType, DofPolicy, FeSpace &gt; &amp;fe_space)</td></tr>
 <tr class="memdesc:a34d7704a793d4b1cb76358c98db7d77b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the total number of DoFs.  <br /></td></tr>
@@ -282,6 +297,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a093d037d7e2326913811348bcad45a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a176bbf30a763e2db9b7651dfcebe8553" id="r_a176bbf30a763e2db9b7651dfcebe8553"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a176bbf30a763e2db9b7651dfcebe8553">m_partition_bnd_dofs</a></td></tr>
 <tr class="separator:a176bbf30a763e2db9b7651dfcebe8553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cad8b04c028d8749dc566f4b922cd1" id="r_ac9cad8b04c028d8749dc566f4b922cd1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ac9cad8b04c028d8749dc566f4b922cd1">m_ghost_dofs</a></td></tr>
+<tr class="separator:ac9cad8b04c028d8749dc566f4b922cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab681c5de73a63cdd1c3fe89d2ba716" id="r_a4ab681c5de73a63cdd1c3fe89d2ba716"><td class="memItemLeft" align="right" valign="top">boost::unordered_flat_map&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>, <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a4ab681c5de73a63cdd1c3fe89d2ba716">m_ghost_dof_to_local</a></td></tr>
+<tr class="separator:a4ab681c5de73a63cdd1c3fe89d2ba716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b56d07508ff3d2298cd422e9d2ed6a" id="r_ac2b56d07508ff3d2298cd422e9d2ed6a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ac2b56d07508ff3d2298cd422e9d2ed6a">m_all_old_to_new_numbering</a></td></tr>
 <tr class="separator:ac2b56d07508ff3d2298cd422e9d2ed6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe29f56ee30e6597368817b6c2c57cca" id="r_afe29f56ee30e6597368817b6c2c57cca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#afe29f56ee30e6597368817b6c2c57cca">m_all_shared_dof</a></td></tr>
@@ -445,6 +464,35 @@ template&lt;std::size_t Dim, typename FloatType , typename DofPolicy , typename 
 </div><div class="memdoc">
 
 <p>Build the local enumeration of the basis functions for each cell. </p>
+
+</div>
+</div>
+<a id="a04268b01ebe297881d5c1cea4288075e" name="a04268b01ebe297881d5c1cea4288075e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04268b01ebe297881d5c1cea4288075e">&#9670;&#160;</a></span>buildGhostDofs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::buildGhostDofs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds m_ghost_dofs/m_ghost_dof_to_local from this rank's ghost cells (mesh-level) and m_cell_to_dof (already in global numbering). Called once, from <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize()</a>, after m_cell_to_dof's global-numbering conversion. No-op for a serial mesh. </p>
 
 </div>
 </div>
@@ -974,6 +1022,36 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
+<a id="adb02b4fe075e1015a657079a120a4514" name="adb02b4fe075e1015a657079a120a4514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb02b4fe075e1015a657079a120a4514">&#9670;&#160;</a></span>getGhostDofs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> &gt; &amp; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::getGhostDofs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Global dof indices of dofs living on this rank's ghost cells, i.e. dofs owned by another rank but needed locally for face terms (e.g. by <a class="el" href="classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d" title="Construct a ghost-aware Vector from a DofHandler. See the GhostTag constructor above for what this en...">la::Vector::createGhosted()</a>). Deduplicated, in a stable order fixed by the ghost cells' local ids. Empty for a serial mesh. </p>
+<dl class="section note"><dt>Note</dt><dd>Only valid after <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize()</a> (and after <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a3e3ab425fbdf6d07e82d9b0e5c9ee85a" title="Renumber the DoFs in order to minimize the MPI communications.">renumberMpiSubdomainWise()</a>, if used) &ndash; matches the same precondition as <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a84e2c7bf27665599e569304686a4627c" title="Get the cell to dof map.">getCellToDof()</a>, which this is built from. </dd></dl>
+
+</div>
+</div>
 <a id="aa1a2505ac22c9a63d0009f3542a62f5e" name="aa1a2505ac22c9a63d0009f3542a62f5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1a2505ac22c9a63d0009f3542a62f5e">&#9670;&#160;</a></span>getGlobToLocNumbering()</h2>
 
@@ -1084,6 +1162,37 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
+<a id="a68077221cf2485c1b6e3c7c5fbc6a8d6" name="a68077221cf2485c1b6e3c7c5fbc6a8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68077221cf2485c1b6e3c7c5fbc6a8d6">&#9670;&#160;</a></span>ghostDofLocalIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::ghostDofLocalIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>&#160;</td>
+          <td class="paramname"><em>dof_id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Position of a ghost dof's global id within <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514" title="Global dof indices of dofs living on this rank&#39;s ghost cells, i.e. dofs owned by another rank but nee...">getGhostDofs()</a>, i.e. its offset within a Vector::createGhosted() vector's ghost padding. </p>
+<dl class="section note"><dt>Note</dt><dd>Throws std::out_of_range if dof_id is not one of this rank's ghost dofs (a member of <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514" title="Global dof indices of dofs living on this rank&#39;s ghost cells, i.e. dofs owned by another rank but nee...">getGhostDofs()</a>) &ndash; unconditionally, matching the existing m_global_to_local_dof.at(...) convention elsewhere in this class, not gated behind NDEBUG the way an assert() would be. A caller passing a bad dof_id here is exactly the class of error (silently reading another rank's memory) this class exists to make loud instead. </dd></dl>
+
+</div>
+</div>
 <a id="a6dd402cc5e89c751957b0aae64c4807d" name="a6dd402cc5e89c751957b0aae64c4807d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dd402cc5e89c751957b0aae64c4807d">&#9670;&#160;</a></span>hasRenumbering()</h2>
 
@@ -1143,6 +1252,37 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
+<a id="a04fa6aea2f083ef4f9ed5dc7da654a44" name="a04fa6aea2f083ef4f9ed5dc7da654a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fa6aea2f083ef4f9ed5dc7da654a44">&#9670;&#160;</a></span>localGhostedIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::localGhostedIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>&#160;</td>
+          <td class="paramname"><em>dof_id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Local index, within a Vector built by <a class="el" href="classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d" title="Construct a ghost-aware Vector from a DofHandler. See the GhostTag constructor above for what this en...">la::Vector::createGhosted()</a> from this <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html" title="Compute and distribute the DoFs and sparsity pattern associated with a mesh and a certain finite elem...">DofHandler</a>, of the given global dof id &ndash; whichever of owned or ghost it is. Owned dofs map to [0, <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328" title="Number of dofs owned by this rank (all of them, for a serial mesh).">nOwnedDofs()</a>); this rank's ghost dofs map to [<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328" title="Number of dofs owned by this rank (all of them, for a serial mesh).">nOwnedDofs()</a>, <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328" title="Number of dofs owned by this rank (all of them, for a serial mesh).">nOwnedDofs()</a> + <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514" title="Global dof indices of dofs living on this rank&#39;s ghost cells, i.e. dofs owned by another rank but nee...">getGhostDofs()</a>.size()), in <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514" title="Global dof indices of dofs living on this rank&#39;s ghost cells, i.e. dofs owned by another rank but nee...">getGhostDofs()</a> order. This is the single accessor consumer code should use instead of hand-rolling ownership-range arithmetic (see the note on <a class="el" href="classvulpes_1_1la_1_1Vector.html#a9eea0f90d4af2454e970a3d1209f288b" title="Local-form snapshot of a ghost-aware Vector (see createGhosted()): this rank&#39;s owned dofs first ([0,...">la::Vector::toLocalGhostedEigenVector()</a>). </p>
+<dl class="section note"><dt>Note</dt><dd>dof_id must be owned by this rank or one of its ghost dofs. </dd></dl>
+
+</div>
+</div>
 <a id="a5a158e97447963099803197b53dc20c5" name="a5a158e97447963099803197b53dc20c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a158e97447963099803197b53dc20c5">&#9670;&#160;</a></span>ndofs()</h2>
 
@@ -1198,6 +1338,35 @@ template&lt;typename MeshType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the total number of dofs. </p>
+
+</div>
+</div>
+<a id="a5712b7f6b1e55dcf136b18e2cf7af328" name="a5712b7f6b1e55dcf136b18e2cf7af328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5712b7f6b1e55dcf136b18e2cf7af328">&#9670;&#160;</a></span>nOwnedDofs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a> <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::nOwnedDofs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of dofs owned by this rank (all of them, for a serial mesh). </p>
 
 </div>
 </div>
@@ -1452,6 +1621,56 @@ template&lt;typename MeshType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Map each (local) dof to the global cells to which it belongs to </p>
+
+</div>
+</div>
+<a id="a4ab681c5de73a63cdd1c3fe89d2ba716" name="a4ab681c5de73a63cdd1c3fe89d2ba716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab681c5de73a63cdd1c3fe89d2ba716">&#9670;&#160;</a></span>m_ghost_dof_to_local</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::unordered_flat_map&lt;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>, <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>&gt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::m_ghost_dof_to_local</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>global dof id -&gt; its position within m_ghost_dofs &ndash; see <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a68077221cf2485c1b6e3c7c5fbc6a8d6" title="Position of a ghost dof&#39;s global id within getGhostDofs(), i.e. its offset within a Vector::createGho...">ghostDofLocalIndex()</a>. </p>
+
+</div>
+</div>
+<a id="ac9cad8b04c028d8749dc566f4b922cd1" name="ac9cad8b04c028d8749dc566f4b922cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9cad8b04c028d8749dc566f4b922cd1">&#9670;&#160;</a></span>m_ghost_dofs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MeshType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c">index_t</a>&gt; <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">vulpes::dofs::DofHandler</a>&lt; MeshType &gt;::m_ghost_dofs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>global dof indices of this rank's ghost-cell dofs, deduplicated, stable order &ndash; see <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#adb02b4fe075e1015a657079a120a4514" title="Global dof indices of dofs living on this rank&#39;s ghost cells, i.e. dofs owned by another rank but nee...">getGhostDofs()</a>. Built once by <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a04268b01ebe297881d5c1cea4288075e" title="Builds m_ghost_dofs/m_ghost_dof_to_local from this rank&#39;s ghost cells (mesh-level) and m_cell_to_dof ...">buildGhostDofs()</a>, called from <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize()</a>. </p>
 
 </div>
 </div>
@@ -1888,7 +2107,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1dofs.html">dofs</a></li><li class="navelem"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">DofHandler</a></li>
-    <li class="footer">Generated on Thu Jul 30 2026 13:19:08 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Aug 7 2026 12:15:41 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

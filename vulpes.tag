@@ -1077,6 +1077,7 @@
     <includes id="petsc__utils_8hpp" name="petsc_utils.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/petsc_utils.hpp</includes>
     <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
     <class kind="class">vulpes::la::Vector</class>
+    <class kind="struct">vulpes::la::Vector::GhostTag</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::la</namespace>
   </compound>
@@ -6665,6 +6666,34 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>const std::vector&lt; index_t &gt; &amp;</type>
+      <name>getGhostDofs</name>
+      <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
+      <anchor>adb02b4fe075e1015a657079a120a4514</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>index_t</type>
+      <name>ghostDofLocalIndex</name>
+      <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
+      <anchor>a68077221cf2485c1b6e3c7c5fbc6a8d6</anchor>
+      <arglist>(index_t dof_id) const</arglist>
+    </member>
+    <member kind="function">
+      <type>index_t</type>
+      <name>nOwnedDofs</name>
+      <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
+      <anchor>a5712b7f6b1e55dcf136b18e2cf7af328</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>index_t</type>
+      <name>localGhostedIndex</name>
+      <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
+      <anchor>a04fa6aea2f083ef4f9ed5dc7da654a44</anchor>
+      <arglist>(index_t dof_id) const</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>finalize</name>
       <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
@@ -6740,6 +6769,13 @@
       <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
       <anchor>a28aa75dc07d5edb36afae8e4927d952e</anchor>
       <arglist>(auto &amp;dof_to_cell)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>buildGhostDofs</name>
+      <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
+      <anchor>a04268b01ebe297881d5c1cea4288075e</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -6921,6 +6957,20 @@
       <name>m_partition_bnd_dofs</name>
       <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
       <anchor>a176bbf30a763e2db9b7651dfcebe8553</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::vector&lt; index_t &gt;</type>
+      <name>m_ghost_dofs</name>
+      <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
+      <anchor>ac9cad8b04c028d8749dc566f4b922cd1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>boost::unordered_flat_map&lt; index_t, index_t &gt;</type>
+      <name>m_ghost_dof_to_local</name>
+      <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
+      <anchor>a4ab681c5de73a63cdd1c3fe89d2ba716</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -20716,6 +20766,7 @@
   <compound kind="class">
     <name>vulpes::la::Vector</name>
     <filename>classvulpes_1_1la_1_1Vector.html</filename>
+    <class kind="struct">vulpes::la::Vector::GhostTag</class>
     <member kind="function">
       <type></type>
       <name>Vector</name>
@@ -20729,6 +20780,13 @@
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
       <anchor>a48e23338b497ab4ebde82f02e59fd506</anchor>
       <arglist>(const std::pair&lt; PetscInt, PetscInt &gt; &amp;sizes)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Vector</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>acdfb7360e29da47ee915899068e38f40</anchor>
+      <arglist>(GhostTag, const DofHandler &amp;dof_handler)</arglist>
     </member>
     <member kind="function">
       <type>Vector &amp;</type>
@@ -20750,6 +20808,13 @@
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
       <anchor>a8180fa3530ea90fe420c48109bbdff05</anchor>
       <arglist>(const DofHandler &amp;dof_handler, PetscInt block_size)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>initGhosted</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a24ce0bc655900e474b60975337205779</anchor>
+      <arglist>(const DofHandler &amp;dof_handler)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -20861,6 +20926,20 @@
       <name>toLocalEigenMap</name>
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
       <anchor>aa7a438a6dfbceca07337bedca52d1a9b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>updateGhosts</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>ac64f46909d4209596615b00c85c33364</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Eigen::VectorXd</type>
+      <name>toLocalGhostedEigenVector</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a9eea0f90d4af2454e970a3d1209f288b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -20997,6 +21076,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static Vector</type>
+      <name>createGhosted</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>af17172df4b4543f0b17a694c95fcf62d</anchor>
+      <arglist>(const DofHandler &amp;dof_handler)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static bool</type>
       <name>compareVectors</name>
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
@@ -21031,6 +21117,17 @@
       <anchor>ac784a7878eb34c4cdb14ffd503cdcb1f</anchor>
       <arglist></arglist>
     </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>m_is_ghosted</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>af7e670b4c989e73bb7097b40b4b91e59</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::la::Vector::GhostTag</name>
+    <filename>structvulpes_1_1la_1_1Vector_1_1GhostTag.html</filename>
   </compound>
   <compound kind="class">
     <name>vulpes::monomial::internal::NonScaledMonomial</name>

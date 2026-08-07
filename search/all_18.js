@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n_0',['n',['../structvulpes_1_1scipy_1_1ckdtree.html#a77a3172ea6d33517c8be3017197a69d3',1,'vulpes::scipy::ckdtree::n'],['../structvulpes_1_1scipy_1_1heap.html#abe8dafa09646133330788fb2d863012e',1,'vulpes::scipy::heap::n'],['../classvulpes_1_1fe_1_1FeExpressionMakeVec.html#a18c6ae435f8058b4078a159aaba101a1',1,'vulpes::fe::FeExpressionMakeVec::N']]],
+  ['n_0',['n',['../classvulpes_1_1fe_1_1FeExpressionMakeVec.html#a18c6ae435f8058b4078a159aaba101a1',1,'vulpes::fe::FeExpressionMakeVec::N'],['../structvulpes_1_1scipy_1_1ckdtree.html#a77a3172ea6d33517c8be3017197a69d3',1,'vulpes::scipy::ckdtree::n'],['../structvulpes_1_1scipy_1_1heap.html#abe8dafa09646133330788fb2d863012e',1,'vulpes::scipy::heap::n']]],
   ['n_20matrix_1',['n matrix',['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md144',1,'3.2 The A(n) Matrix'],['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md145',1,'3.3 The |A(n)| Matrix']]],
   ['n_5fstages_2',['n_stages',['../structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX.html#a873fd64500cba519b8cfb241fa1252f4',1,'vulpes::timeintegration::AscherRuuthSpiteriLstable4IMEX::n_stages'],['../classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a3db501c9850b72a57bab58655fdbb77e',1,'vulpes::timeintegration::TimeIntegratorDIRKIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html#aed732f4080e840f9fd3b8b105a7c0307',1,'vulpes::timeintegration::ImplicitExplicitMidpointIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX.html#a04a98dcd069914abd33abf0ada8df4e7',1,'vulpes::timeintegration::ForwardBackwardEulerIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html#afef0c190f172345283fb1a0494915e12',1,'vulpes::timeintegration::ImplicitButcherIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX.html#afa3f349b99b0129a033485aae72c03cd',1,'vulpes::timeintegration::ExplicitButcherIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ButcherTable.html#a269cc762d8809949b235fb4329e98777',1,'vulpes::timeintegration::ButcherTable::n_stages'],['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html#a42e5066cb4535c8d7a0bb7bb685f00b6',1,'vulpes::timeintegration::ButcherTableIMEX::n_stages']]],
   ['n_5fsweeps_5fcoarse_3',['n_sweeps_coarse',['../structvulpes_1_1la_1_1DataBoomerAMG.html#ab760e19a296b597a3fc1b932154c0eed',1,'vulpes::la::DataBoomerAMG']]],
@@ -47,12 +47,13 @@ var searchData=
   ['note_44',['Note',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html#autotoc_md131',1,'']]],
   ['notes_45',['General Notes',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md85',1,'']]],
   ['nownedcells_46',['nownedcells',['../classvulpes_1_1geometry_1_1MeshBase.html#ad176650a426095659b2c91267b08a8eb',1,'vulpes::geometry::MeshBase::nOwnedCells()'],['../classvulpes_1_1geometry_1_1ParallelMesh.html#a3382b00f8b94ef451504b2e7e570e0c8',1,'vulpes::geometry::ParallelMesh::nOwnedCells()']]],
-  ['npos_47',['npos',['../classvulpes_1_1datastructure_1_1IndexTracker.html#a57561eba929278fe11326d238a5a7224',1,'vulpes::datastructure::IndexTracker']]],
-  ['num_5ftetrahedron_5ftabled_5frules_48',['num_tetrahedron_tabled_rules',['../namespacevulpes_1_1qrule.html#a0dfcc4e6e3f0fe610b5b90ab7cb2f708',1,'vulpes::qrule']]],
-  ['num_5fthreads_49',['num_threads',['../threading_8cpp.html#a08963f7335eef295237ab460863bc3d5',1,'threading.cpp']]],
-  ['num_5ftriangle_5ftabled_5frules_50',['num_triangle_tabled_rules',['../namespacevulpes_1_1qrule.html#a0b7d30d08435e39cd9372cceb614c79b',1,'vulpes::qrule']]],
-  ['numbering_2ehpp_51',['numbering.hpp',['../numbering_8hpp.html',1,'']]],
-  ['numcells_52',['numCells',['../classvulpes_1_1geometry_1_1MeshBase.html#ab3ad58daae8b5324daa8640307d82606',1,'vulpes::geometry::MeshBase']]],
-  ['numel_53',['numel',['../classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8',1,'vulpes::datastructure::TriMatrix::numel()'],['../classvulpes_1_1datastructure_1_1TetraTensor.html#ae9cac2edbf4854322c98df75b130cdaa',1,'vulpes::datastructure::TetraTensor::numel()']]],
-  ['numerical_20flux_54',['3) Upwind (Godunov) Numerical Flux',['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md142',1,'']]]
+  ['nowneddofs_47',['nOwnedDofs',['../classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328',1,'vulpes::dofs::DofHandler']]],
+  ['npos_48',['npos',['../classvulpes_1_1datastructure_1_1IndexTracker.html#a57561eba929278fe11326d238a5a7224',1,'vulpes::datastructure::IndexTracker']]],
+  ['num_5ftetrahedron_5ftabled_5frules_49',['num_tetrahedron_tabled_rules',['../namespacevulpes_1_1qrule.html#a0dfcc4e6e3f0fe610b5b90ab7cb2f708',1,'vulpes::qrule']]],
+  ['num_5fthreads_50',['num_threads',['../threading_8cpp.html#a08963f7335eef295237ab460863bc3d5',1,'threading.cpp']]],
+  ['num_5ftriangle_5ftabled_5frules_51',['num_triangle_tabled_rules',['../namespacevulpes_1_1qrule.html#a0b7d30d08435e39cd9372cceb614c79b',1,'vulpes::qrule']]],
+  ['numbering_2ehpp_52',['numbering.hpp',['../numbering_8hpp.html',1,'']]],
+  ['numcells_53',['numCells',['../classvulpes_1_1geometry_1_1MeshBase.html#ab3ad58daae8b5324daa8640307d82606',1,'vulpes::geometry::MeshBase']]],
+  ['numel_54',['numel',['../classvulpes_1_1datastructure_1_1TetraTensor.html#ae9cac2edbf4854322c98df75b130cdaa',1,'vulpes::datastructure::TetraTensor::numel()'],['../classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8',1,'vulpes::datastructure::TriMatrix::numel()']]],
+  ['numerical_20flux_55',['3) Upwind (Godunov) Numerical Flux',['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md142',1,'']]]
 ];

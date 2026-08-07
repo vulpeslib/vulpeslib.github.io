@@ -15,12 +15,13 @@ var searchData=
   ['nodeinfo_5fpool_12',['nodeinfo_pool',['../structvulpes_1_1scipy_1_1nodeinfo__pool.html#a8f0ac25b9547697ff7ef93c4f026990d',1,'vulpes::scipy::nodeinfo_pool']]],
   ['nodes2d_13',['nodes2D',['../namespacevulpes_1_1fe_1_1internal.html#ad73d11b3d2c132f1808b1a5c11cd293b',1,'vulpes::fe::internal']]],
   ['nodes3d_14',['nodes3D',['../namespacevulpes_1_1fe_1_1internal.html#a7b1a9465945945b874c98904e51c4326',1,'vulpes::fe::internal']]],
-  ['norm_15',['norm',['../classvulpes_1_1la_1_1Vector.html#a38a2ad79a5bab8d501e933cbd0021de7',1,'vulpes::la::Vector::norm()'],['../classvulpes_1_1la_1_1SparseMatrix.html#a35cd15f2134a65e73cdaed4c467e446a',1,'vulpes::la::SparseMatrix::norm()']]],
+  ['norm_15',['norm',['../classvulpes_1_1la_1_1SparseMatrix.html#a35cd15f2134a65e73cdaed4c467e446a',1,'vulpes::la::SparseMatrix::norm()'],['../classvulpes_1_1la_1_1Vector.html#a38a2ad79a5bab8d501e933cbd0021de7',1,'vulpes::la::Vector::norm()']]],
   ['normal_16',['normal',['../namespacevulpes_1_1fe.html#a4b0d70188866f3fee35b43cd7e3f5971',1,'vulpes::fe']]],
   ['normalize_17',['normalize',['../namespacevulpes_1_1fe_1_1internal.html#aee537e01f990924884412e7dcc32e52f',1,'vulpes::fe::internal']]],
   ['normalizecellflags_18',['normalizeCellFlags',['../namespacevulpes_1_1geometry_1_1internal.html#a47208c45afc797ab228bb38d65144497',1,'vulpes::geometry::internal']]],
   ['normals_19',['normals',['../classvulpes_1_1geometry_1_1Cell3D.html#ac226570597b361064bcc2e9fa8284e37',1,'vulpes::geometry::Cell3D::normals()'],['../classvulpes_1_1geometry_1_1Cell2D.html#acea86f70656c0dbb87bf9fce258d48c4',1,'vulpes::geometry::Cell2D::normals()']]],
-  ['nownedcells_20',['nownedcells',['../classvulpes_1_1geometry_1_1MeshBase.html#ad176650a426095659b2c91267b08a8eb',1,'vulpes::geometry::MeshBase::nOwnedCells()'],['../classvulpes_1_1geometry_1_1ParallelMesh.html#a3382b00f8b94ef451504b2e7e570e0c8',1,'vulpes::geometry::ParallelMesh::nOwnedCells()']]],
-  ['numcells_21',['numCells',['../classvulpes_1_1geometry_1_1MeshBase.html#ab3ad58daae8b5324daa8640307d82606',1,'vulpes::geometry::MeshBase']]],
-  ['numel_22',['numel',['../classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8',1,'vulpes::datastructure::TriMatrix::numel()'],['../classvulpes_1_1datastructure_1_1TetraTensor.html#ae9cac2edbf4854322c98df75b130cdaa',1,'vulpes::datastructure::TetraTensor::numel()']]]
+  ['nownedcells_20',['nownedcells',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a3382b00f8b94ef451504b2e7e570e0c8',1,'vulpes::geometry::ParallelMesh::nOwnedCells()'],['../classvulpes_1_1geometry_1_1MeshBase.html#ad176650a426095659b2c91267b08a8eb',1,'vulpes::geometry::MeshBase::nOwnedCells()']]],
+  ['nowneddofs_21',['nOwnedDofs',['../classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328',1,'vulpes::dofs::DofHandler']]],
+  ['numcells_22',['numCells',['../classvulpes_1_1geometry_1_1MeshBase.html#ab3ad58daae8b5324daa8640307d82606',1,'vulpes::geometry::MeshBase']]],
+  ['numel_23',['numel',['../classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8',1,'vulpes::datastructure::TriMatrix::numel()'],['../classvulpes_1_1datastructure_1_1TetraTensor.html#ae9cac2edbf4854322c98df75b130cdaa',1,'vulpes::datastructure::TetraTensor::numel()']]]
 ];

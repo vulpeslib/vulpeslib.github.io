@@ -9,5 +9,6 @@ var searchData=
   ['linearsolver_6',['LinearSolver',['../classvulpes_1_1la_1_1LinearSolver.html#a0ecc24f106ebe2c1b7270c5aa1fddfa2',1,'vulpes::la::LinearSolver']]],
   ['loadmatrixfromfile_7',['loadMatrixFromFile',['../namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400',1,'vulpes::io']]],
   ['loadvectorfromfile_8',['loadVectorFromFile',['../namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed',1,'vulpes::io']]],
-  ['localtoglobal_9',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]]
+  ['localghostedindex_9',['localGhostedIndex',['../classvulpes_1_1dofs_1_1DofHandler.html#a04fa6aea2f083ef4f9ed5dc7da654a44',1,'vulpes::dofs::DofHandler']]],
+  ['localtoglobal_10',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]]
 ];
