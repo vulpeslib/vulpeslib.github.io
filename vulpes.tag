@@ -339,6 +339,25 @@
     <namespace>vulpes::datastructure</namespace>
   </compound>
   <compound kind="file">
+    <name>tensor.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/datastructure/</path>
+    <filename>datastructure_2tensor_8hpp.html</filename>
+    <class kind="class">vulpes::datastructure::TriMatrix</class>
+    <class kind="class">vulpes::datastructure::TetraTensor</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::datastructure</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tensor.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/la/</path>
+    <filename>la_2tensor_8hpp.html</filename>
+    <includes id="petsc__utils_8hpp" name="petsc_utils.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/petsc_utils.hpp</includes>
+    <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
+    <class kind="class">vulpes::la::Tensor</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::la</namespace>
+  </compound>
+  <compound kind="file">
     <name>dof_handler.hpp</name>
     <path>/__w/vulpes/vulpes/vulpes/dofs/</path>
     <filename>dof__handler_8hpp.html</filename>
@@ -1040,25 +1059,6 @@
     <includes id="qrule_8hpp" name="qrule.hpp" local="yes" import="no" module="no" objc="no">vulpes/quadrature/qrule.hpp</includes>
     <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
     <class kind="class">vulpes::la::SparseMatrix</class>
-    <namespace>vulpes</namespace>
-    <namespace>vulpes::la</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tensor.hpp</name>
-    <path>/__w/vulpes/vulpes/vulpes/datastructure/</path>
-    <filename>datastructure_2tensor_8hpp.html</filename>
-    <class kind="class">vulpes::datastructure::TriMatrix</class>
-    <class kind="class">vulpes::datastructure::TetraTensor</class>
-    <namespace>vulpes</namespace>
-    <namespace>vulpes::datastructure</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tensor.hpp</name>
-    <path>/__w/vulpes/vulpes/vulpes/la/</path>
-    <filename>la_2tensor_8hpp.html</filename>
-    <includes id="petsc__utils_8hpp" name="petsc_utils.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/petsc_utils.hpp</includes>
-    <includes id="mpi__wrappers_8hpp" name="mpi_wrappers.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/mpi_wrappers.hpp</includes>
-    <class kind="class">vulpes::la::Tensor</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::la</namespace>
   </compound>
