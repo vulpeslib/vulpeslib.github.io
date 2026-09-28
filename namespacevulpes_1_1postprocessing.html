@@ -164,15 +164,15 @@ Functions</h2></td></tr>
 <p>For consecutive refinement levels i and i+1, the order is computed as log(err[i] / err[i+1]) / log(h[i] / h[i+1]).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">err</td><td>Error values, one per refinement level (size &gt;= 2). </td></tr>
+    <tr><td class="paramname">err</td><td>Error values, one per refinement level (size &gt;= 1). </td></tr>
     <tr><td class="paramname">h</td><td>Mesh diameters corresponding to each level (same size as err). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Vector of orders, size = err.size() - 1. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector of orders, size = err.size() - 1 (empty for a single level). </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>if sizes are mismatched or smaller than 2. </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if sizes are mismatched or zero. </td></tr>
   </table>
   </dd>
 </dl>
@@ -365,7 +365,7 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1postprocessing.html">postprocessing</a></li>
-    <li class="footer">Generated on Thu Sep 17 2026 12:10:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Sep 28 2026 08:30:41 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

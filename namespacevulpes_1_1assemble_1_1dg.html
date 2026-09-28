@@ -128,18 +128,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ac97456719c7d7ab93db4c991d5fbda82" id="r_ac97456719c7d7ab93db4c991d5fbda82"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ac97456719c7d7ab93db4c991d5fbda82">computeDGError</a> (double errH1int, double errJump)</td></tr>
 <tr class="memdesc:ac97456719c7d7ab93db4c991d5fbda82"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the total DG error by combining the H1 semi-norm error and the jump error.  <br /></td></tr>
 <tr class="separator:ac97456719c7d7ab93db4c991d5fbda82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c3cb3b4a6b3cd12c6a35b1855edbbc5" id="r_a9c3cb3b4a6b3cd12c6a35b1855edbbc5"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </td></tr>
-<tr class="memitem:a9c3cb3b4a6b3cd12c6a35b1855edbbc5"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a9c3cb3b4a6b3cd12c6a35b1855edbbc5">integrateFeExpression</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression)</td></tr>
-<tr class="memdesc:a9c3cb3b4a6b3cd12c6a35b1855edbbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate a scalar finite element expression over the entire domain.  <br /></td></tr>
-<tr class="separator:a9c3cb3b4a6b3cd12c6a35b1855edbbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a780f8be63036a10fa34fd48d932c8632" id="r_a780f8be63036a10fa34fd48d932c8632"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType , typename ExprType &gt; </td></tr>
-<tr class="memitem:a780f8be63036a10fa34fd48d932c8632"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a780f8be63036a10fa34fd48d932c8632">computeL2Error</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const ExprType &amp;u_exact_expr)</td></tr>
-<tr class="memdesc:a780f8be63036a10fa34fd48d932c8632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the L2 error integral between a numerical solution and an exact expression.  <br /></td></tr>
-<tr class="separator:a780f8be63036a10fa34fd48d932c8632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a061a3bf84ba79ed7c85cbc6f40600d41" id="r_a061a3bf84ba79ed7c85cbc6f40600d41"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType , typename ExprType &gt; </td></tr>
-<tr class="memitem:a061a3bf84ba79ed7c85cbc6f40600d41"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a061a3bf84ba79ed7c85cbc6f40600d41">computeH1SemiError</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const ExprType &amp;grad_u_exact_expr)</td></tr>
-<tr class="memdesc:a061a3bf84ba79ed7c85cbc6f40600d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the H1 semi-norm error integral between a numerical solution and an exact gradient.  <br /></td></tr>
-<tr class="separator:a061a3bf84ba79ed7c85cbc6f40600d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f246899678feb8b7bc4839d7175cce4" id="r_a4f246899678feb8b7bc4839d7175cce4"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </td></tr>
+<tr class="memitem:a4f246899678feb8b7bc4839d7175cce4"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a4f246899678feb8b7bc4839d7175cce4">integrateFeExpression</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression, std::optional&lt; uint32_t &gt; quad_degree=std::nullopt)</td></tr>
+<tr class="memdesc:a4f246899678feb8b7bc4839d7175cce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate a scalar finite element expression over the entire domain.  <br /></td></tr>
+<tr class="separator:a4f246899678feb8b7bc4839d7175cce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b99bf1eae0d151a8aaf61eef5e7a947" id="r_a5b99bf1eae0d151a8aaf61eef5e7a947"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType , typename ExprType &gt; </td></tr>
+<tr class="memitem:a5b99bf1eae0d151a8aaf61eef5e7a947"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a5b99bf1eae0d151a8aaf61eef5e7a947">computeL2Error</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const ExprType &amp;u_exact_expr, std::optional&lt; uint32_t &gt; quad_degree=std::nullopt)</td></tr>
+<tr class="memdesc:a5b99bf1eae0d151a8aaf61eef5e7a947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the L2 error integral between a numerical solution and an exact expression.  <br /></td></tr>
+<tr class="separator:a5b99bf1eae0d151a8aaf61eef5e7a947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed567ce7eeacf3820f98066ffe30d142" id="r_aed567ce7eeacf3820f98066ffe30d142"><td class="memTemplParams" colspan="2">template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType , typename ExprType &gt; </td></tr>
+<tr class="memitem:aed567ce7eeacf3820f98066ffe30d142"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#aed567ce7eeacf3820f98066ffe30d142">computeH1SemiError</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">assemble::CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const ExprType &amp;grad_u_exact_expr, std::optional&lt; uint32_t &gt; quad_degree=std::nullopt)</td></tr>
+<tr class="memdesc:aed567ce7eeacf3820f98066ffe30d142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the H1 semi-norm error integral between a numerical solution and an exact gradient.  <br /></td></tr>
+<tr class="separator:aed567ce7eeacf3820f98066ffe30d142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1782eff394c79ab30be8fb61a9367d" id="r_a3b1782eff394c79ab30be8fb61a9367d"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
 <tr class="memitem:a3b1782eff394c79ab30be8fb61a9367d"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a3b1782eff394c79ab30be8fb61a9367d">computeJumpError</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;matrix)</td></tr>
 <tr class="memdesc:a3b1782eff394c79ab30be8fb61a9367d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total Jump error that is: sqrt(u_h^T matrix u_h). This is used only when the provided problem has homogeneous Dirichlet boundary conditions.  <br /></td></tr>
@@ -357,8 +357,8 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
-<a id="a061a3bf84ba79ed7c85cbc6f40600d41" name="a061a3bf84ba79ed7c85cbc6f40600d41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a061a3bf84ba79ed7c85cbc6f40600d41">&#9670;&#160;</a></span>computeH1SemiError()</h2>
+<a id="aed567ce7eeacf3820f98066ffe30d142" name="aed567ce7eeacf3820f98066ffe30d142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed567ce7eeacf3820f98066ffe30d142">&#9670;&#160;</a></span>computeH1SemiError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,7 +393,13 @@ template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType ,
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const ExprType &amp;&#160;</td>
-          <td class="paramname"><em>grad_u_exact_expr</em>&#160;</td>
+          <td class="paramname"><em>grad_u_exact_expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>quad_degree</em> = <code>std::nullopt</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -420,6 +426,7 @@ template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType ,
     <tr><td class="paramname">dof_handler</td><td>The DOF handler for the numerical solution </td></tr>
     <tr><td class="paramname">u_h</td><td>The numerical solution vector (DOF coefficients) </td></tr>
     <tr><td class="paramname">grad_u_exact_expr</td><td>The exact solution gradient as an FE expression </td></tr>
+    <tr><td class="paramname">quad_degree</td><td>Quadrature degree passed to integrateFeExpression </td></tr>
   </table>
   </dd>
 </dl>
@@ -480,8 +487,8 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
-<a id="a780f8be63036a10fa34fd48d932c8632" name="a780f8be63036a10fa34fd48d932c8632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a780f8be63036a10fa34fd48d932c8632">&#9670;&#160;</a></span>computeL2Error()</h2>
+<a id="a5b99bf1eae0d151a8aaf61eef5e7a947" name="a5b99bf1eae0d151a8aaf61eef5e7a947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b99bf1eae0d151a8aaf61eef5e7a947">&#9670;&#160;</a></span>computeL2Error()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,7 +523,13 @@ template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType ,
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const ExprType &amp;&#160;</td>
-          <td class="paramname"><em>u_exact_expr</em>&#160;</td>
+          <td class="paramname"><em>u_exact_expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>quad_degree</em> = <code>std::nullopt</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -543,6 +556,7 @@ template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType ,
     <tr><td class="paramname">dof_handler</td><td>The DOF handler for the numerical solution </td></tr>
     <tr><td class="paramname">u_h</td><td>The numerical solution vector (DOF coefficients) </td></tr>
     <tr><td class="paramname">u_exact_expr</td><td>The exact solution as an FE expression </td></tr>
+    <tr><td class="paramname">quad_degree</td><td>Quadrature degree passed to integrateFeExpression </td></tr>
   </table>
   </dd>
 </dl>
@@ -896,8 +910,8 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
-<a id="a9c3cb3b4a6b3cd12c6a35b1855edbbc5" name="a9c3cb3b4a6b3cd12c6a35b1855edbbc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c3cb3b4a6b3cd12c6a35b1855edbbc5">&#9670;&#160;</a></span>integrateFeExpression()</h2>
+<a id="a4f246899678feb8b7bc4839d7175cce4" name="a4f246899678feb8b7bc4839d7175cce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f246899678feb8b7bc4839d7175cce4">&#9670;&#160;</a></span>integrateFeExpression()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -920,7 +934,13 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const ExprType &amp;&#160;</td>
-          <td class="paramname"><em>expression</em>&#160;</td>
+          <td class="paramname"><em>expression</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>quad_degree</em> = <code>std::nullopt</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -944,11 +964,14 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
     <tr><td class="paramname">mesh</td><td>The computational mesh </td></tr>
     <tr><td class="paramname">cell_manager</td><td>The cell manager containing mesh and FE space information </td></tr>
     <tr><td class="paramname">expression</td><td>The scalar FE expression to integrate (e.g., f(x), (u_h - u_exact)^2) </td></tr>
+    <tr><td class="paramname">quad_degree</td><td>Polynomial degree integrated exactly by the simplex rule; defaults to 2 * expression.computeOrder() + 1 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The integral of the expression over the domain </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Uses <a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html" title="Specialized integrator for scalar expressions using simplification.">ScalarExpressionIntegrator</a> which mirrors <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html" title="Integrator that simplexifies cells and integrates weak forms on them.">WeakFormIntegratorSimplexify</a>'s simplification and quadrature infrastructure but evaluates expressions directly as scalars. Quadrature order is derived from expression.computeOrder() (same +1 convention as <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5e275b3390ef12060cf62438b6d45271" title="Compute the maximum polynomial order among all finite element expressions.">WeakFormIntegratorBase::computeMaxOrder</a>), so it stays exact regardless of the FE space's polynomial order instead of assuming a fixed degree. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Uses <a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html" title="Specialized integrator for scalar expressions using simplification.">ScalarExpressionIntegrator</a> which mirrors <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html" title="Integrator that simplexifies cells and integrates weak forms on them.">WeakFormIntegratorSimplexify</a>'s simplification and quadrature infrastructure but evaluates expressions directly as scalars. </dd>
+<dd>
+The default doubles an order that already counts products, so it over-integrates, and above degree 20 it falls back to Grundmann-Moeller rules. Recommended default: 1 + expression.computeOrder(), as in <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5e275b3390ef12060cf62438b6d45271" title="Compute the maximum polynomial order among all finite element expressions.">WeakFormIntegratorBase::computeMaxOrder</a>, with non-polynomial functions declared of an order above the FE degree (e.g. p + 3). </dd></dl>
 
 </div>
 </div>
@@ -1270,7 +1293,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Thu Sep 17 2026 12:10:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Sep 28 2026 08:30:41 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

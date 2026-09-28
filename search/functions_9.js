@@ -23,7 +23,7 @@ var searchData=
   ['integrateandevaluate_20',['integrateAndEvaluate',['../classvulpes_1_1polynomial_1_1SparsePolynomial.html#a077cb8c50824f8ed47b62608049c30ab',1,'vulpes::polynomial::SparsePolynomial']]],
   ['integratecell_21',['integrateCell',['../classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#af1b597695cc359e289c583bd1a60f885',1,'vulpes::assemble::ScalarExpressionIntegrator']]],
   ['integratefacecell_22',['integrateFaceCell',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#ad6740bffb0e4ec5ce55af391b304190d',1,'vulpes::assemble::WeakFormIntegratorQFree']]],
-  ['integratefeexpression_23',['integrateFeExpression',['../namespacevulpes_1_1assemble_1_1dg.html#a9c3cb3b4a6b3cd12c6a35b1855edbbc5',1,'vulpes::assemble::dg']]],
+  ['integratefeexpression_23',['integrateFeExpression',['../namespacevulpes_1_1assemble_1_1dg.html#a4f246899678feb8b7bc4839d7175cce4',1,'vulpes::assemble::dg']]],
   ['integratemonomialsqfree_24',['integrateMonomialsQFree',['../namespacevulpes_1_1qfree.html#ad6c6cf7c49c0131cdab6226c5dfc373d',1,'vulpes::qfree']]],
   ['integratemonomialsqfree2d_25',['integrateMonomialsQFree2D',['../namespacevulpes_1_1qfree.html#adbf474d2e1b5de0ebe5a0be2820d69c7',1,'vulpes::qfree']]],
   ['integratemonomialsqfree2d_3c_20false_2c_20double_2c_20int32_5ft_20_3e_26',['integrateMonomialsQFree2D&lt; false, double, int32_t &gt;',['../namespacevulpes_1_1qfree.html#a07945dc6bff66b9f767eb539235dcf00',1,'vulpes::qfree']]],

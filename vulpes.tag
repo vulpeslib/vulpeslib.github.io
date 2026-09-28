@@ -26761,22 +26761,22 @@
       <type>double</type>
       <name>integrateFeExpression</name>
       <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
-      <anchor>a9c3cb3b4a6b3cd12c6a35b1855edbbc5</anchor>
-      <arglist>(const MeshType &amp;mesh, assemble::CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression)</arglist>
+      <anchor>a4f246899678feb8b7bc4839d7175cce4</anchor>
+      <arglist>(const MeshType &amp;mesh, assemble::CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression, std::optional&lt; uint32_t &gt; quad_degree=std::nullopt)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>computeL2Error</name>
       <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
-      <anchor>a780f8be63036a10fa34fd48d932c8632</anchor>
-      <arglist>(const MeshType &amp;mesh, assemble::CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const la::Vector &amp;u_h, const ExprType &amp;u_exact_expr)</arglist>
+      <anchor>a5b99bf1eae0d151a8aaf61eef5e7a947</anchor>
+      <arglist>(const MeshType &amp;mesh, assemble::CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const la::Vector &amp;u_h, const ExprType &amp;u_exact_expr, std::optional&lt; uint32_t &gt; quad_degree=std::nullopt)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>computeH1SemiError</name>
       <anchorfile>namespacevulpes_1_1assemble_1_1dg.html</anchorfile>
-      <anchor>a061a3bf84ba79ed7c85cbc6f40600d41</anchor>
-      <arglist>(const MeshType &amp;mesh, assemble::CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const la::Vector &amp;u_h, const ExprType &amp;grad_u_exact_expr)</arglist>
+      <anchor>aed567ce7eeacf3820f98066ffe30d142</anchor>
+      <arglist>(const MeshType &amp;mesh, assemble::CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const DofHandlerType &amp;dof_handler, const la::Vector &amp;u_h, const ExprType &amp;grad_u_exact_expr, std::optional&lt; uint32_t &gt; quad_degree=std::nullopt)</arglist>
     </member>
     <member kind="function">
       <type>double</type>

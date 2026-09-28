@@ -163,9 +163,9 @@ $(document).ready(function(){initNavTree('err__order_8hpp_source.html',''); init
 <div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacevulpes_1_1postprocessing.html#aa6a9e2a56768b8e5076941d3e9b8d497">   53</a></span>std::vector&lt;double&gt; <a class="code hl_function" href="namespacevulpes_1_1postprocessing.html#aa6a9e2a56768b8e5076941d3e9b8d497">computeOrder</a>(</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> std::vector&lt;double&gt;&amp; err, <span class="keyword">const</span> std::vector&lt;double&gt;&amp; h) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">if</span> (err.size() &lt; 2 || h.size() &lt; 2 || err.size() != h.size()) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">if</span> (err.empty() || err.size() != h.size()) {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">throw</span> std::invalid_argument(</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="stringliteral">&quot;Vectors err and h must have the same size and at least two elements.&quot;</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="stringliteral">&quot;Vectors err and h must have the same non-zero size.&quot;</span>);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::vector&lt;double&gt; orders;</div>
@@ -266,7 +266,7 @@ $(document).ready(function(){initNavTree('err__order_8hpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_6c7e17ab64e974f30697ed0028c407ca.html">postprocessing</a></li><li class="navelem"><a class="el" href="err__order_8hpp.html">err_order.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 17 2026 12:10:31 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Sep 28 2026 08:30:40 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
