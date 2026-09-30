@@ -25,6 +25,7 @@ var classvulpes_1_1fe_1_1FeValues =
     [ "setFaceId", "classvulpes_1_1fe_1_1FeValues.html#a347afd88f50f6dfb6beeec36246c65b1", null ],
     [ "setFaceNormal", "classvulpes_1_1fe_1_1FeValues.html#a1ab9b672498f4fc1394fae88ac5b68e3", null ],
     [ "setHasFaceNeigh", "classvulpes_1_1fe_1_1FeValues.html#ac59086dd342d9740e1f8ec5950314d94", null ],
+    [ "tabulatedBasis", "classvulpes_1_1fe_1_1FeValues.html#adcfbb88fd910304d56c51aad05a44b90", null ],
     [ "weights", "classvulpes_1_1fe_1_1FeValues.html#addbba84b80da6f915e4bd6d2da1099cc", null ],
     [ "weights", "classvulpes_1_1fe_1_1FeValues.html#a44405975fa3793d8d2fffe4969f5b5c3", null ],
     [ "weightsRef", "classvulpes_1_1fe_1_1FeValues.html#a697d9ae826c5e776760d106975768f8e", null ],
@@ -41,5 +42,6 @@ var classvulpes_1_1fe_1_1FeValues =
     [ "m_quadrature_weights", "classvulpes_1_1fe_1_1FeValues.html#aaf50537b87bd288623e9e2cc51287bd4", null ],
     [ "m_quadrature_weights_ref", "classvulpes_1_1fe_1_1FeValues.html#a877e1af350fe4ad7612e162e736be761", null ],
     [ "m_scalar_shapes", "classvulpes_1_1fe_1_1FeValues.html#abbf748385e56e6538ef320c4daac9705", null ],
-    [ "m_scalar_shapes_ref", "classvulpes_1_1fe_1_1FeValues.html#a2137a3c415bc29bd96fa83307710898e", null ]
+    [ "m_scalar_shapes_ref", "classvulpes_1_1fe_1_1FeValues.html#a2137a3c415bc29bd96fa83307710898e", null ],
+    [ "m_tabulated_basis", "classvulpes_1_1fe_1_1FeValues.html#ab57d396622258431e964d4308cb4d746", null ]
 ];

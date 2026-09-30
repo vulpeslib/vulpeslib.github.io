@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"fe__expr__vector_8hpp.html#a851a03e3f68c38a4eb851ef7e2d3df11":[16,0,1,3,0,5,3],
+"fe__expr__vector_8hpp.html#ac01f9dbb02de00e7a93bc8e11c1bbfeb":[16,0,1,3,0,5,4],
+"fe__expr__vector_8hpp.html#ac31b1daa23b5a92d01f0b554c8d49959":[16,0,1,3,0,5,5],
+"fe__expr__vector_8hpp_source.html":[16,0,1,3,0,5],
 "fe__expression_8hpp.html":[16,0,1,3,3],
 "fe__expression_8hpp_source.html":[16,0,1,3,3],
 "fe__lagrange__simplex_8cpp.html":[16,0,1,3,1,0],
@@ -93,8 +97,8 @@ var NAVTREEINDEX24 =
 "functions_enum.html":[15,3,4],
 "functions_eval.html":[15,3,5],
 "functions_f.html":[15,3,0,6],
-"functions_func.html":[15,3,1],
 "functions_func.html":[15,3,1,0],
+"functions_func.html":[15,3,1],
 "functions_func_a.html":[15,3,1,1],
 "functions_func_b.html":[15,3,1,2],
 "functions_func_c.html":[15,3,1,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "io_8hpp_source.html":[16,0,1,10,6],
 "kdtree_8hpp.html":[16,0,1,1,4],
 "kdtree_8hpp_source.html":[16,0,1,1,4],
-"kmeans_8cpp.html":[16,0,1,4,5],
-"kmeans_8cpp.html#a00a015eb0c66b43e4b2a662ab6653f68":[16,0,1,4,5,2],
-"kmeans_8cpp.html#a9a8e2f4054c08ac6b72faa9ca576d065":[16,0,1,4,5,1],
-"kmeans_8cpp.html#a9d178ebc43b797c54211a2e1b48c0715":[16,0,1,4,5,3],
-"kmeans_8cpp.html#aa4673a55de5020aacce47d07885b81f4":[16,0,1,4,5,4]
+"kmeans_8cpp.html":[16,0,1,4,5]
 };

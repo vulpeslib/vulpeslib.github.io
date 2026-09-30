@@ -1,5 +1,9 @@
 var NAVTREEINDEX28 =
 {
+"namespacevulpes_1_1la.html#aa47c301683f90407fecc34e6f318e3bb":[14,0,3,6,12],
+"namespacevulpes_1_1la.html#aaca8380f6d8e4d324ed1483e3ce95e9a":[14,0,3,6,9],
+"namespacevulpes_1_1la.html#ab926e40f9912d90f9b01cb3543af2e2e":[14,0,3,6,11],
+"namespacevulpes_1_1la.html#ad1a9631646b373a8f4ff3bb76b78ff9f":[14,0,3,6,10],
 "namespacevulpes_1_1la_1_1internal.html":[14,0,3,6,0],
 "namespacevulpes_1_1la_1_1internal.html#ad19b0ee9d23741f39bd48c49931bc092":[14,0,3,6,0,0],
 "namespacevulpes_1_1monomial.html":[14,0,3,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX28 =
 "qrule_8hpp_source.html":[16,0,1,8,7],
 "serialize_8hpp.html":[16,0,1,10,12],
 "serialize_8hpp.html#a419b1127ceff8910acac15024e9ad81a":[16,0,1,10,12,0],
-"serialize_8hpp.html#a669cd374ace66ef44663b4ec461f0a59":[16,0,1,10,12,1],
-"serialize_8hpp_source.html":[16,0,1,10,12],
-"simplex_8hpp.html":[16,0,1,8,8],
-"simplex_8hpp.html#a0b7d30d08435e39cd9372cceb614c79b":[16,0,1,8,8,5],
-"simplex_8hpp.html#a0dfcc4e6e3f0fe610b5b90ab7cb2f708":[16,0,1,8,8,4]
+"serialize_8hpp.html#a669cd374ace66ef44663b4ec461f0a59":[16,0,1,10,12,1]
 };

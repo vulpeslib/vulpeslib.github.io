@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"classvulpes_1_1geometry_1_1Triangulation.html#ac6896c65615129560a9edae804903da3":[14,0,3,4,33,7],
+"classvulpes_1_1geometry_1_1Triangulation.html#ac6896c65615129560a9edae804903da3":[15,0,2,4,30,7],
+"classvulpes_1_1geometry_1_1Triangulation.html#ac74c090404cb24dca509ed5d146c4f02":[14,0,3,4,33,3],
+"classvulpes_1_1geometry_1_1Triangulation.html#ac74c090404cb24dca509ed5d146c4f02":[15,0,2,4,30,3],
 "classvulpes_1_1geometry_1_1Triangulation.html#ac7d914caa06affc3854462f42e83eba0":[14,0,3,4,33,12],
 "classvulpes_1_1geometry_1_1Triangulation.html#ac7d914caa06affc3854462f42e83eba0":[15,0,2,4,30,12],
 "classvulpes_1_1geometry_1_1Triangulation.html#adbed69d04a0b6b8ff825d71e1767a2fc":[15,0,2,4,30,15],
@@ -245,9 +249,5 @@ var NAVTREEINDEX19 =
 "classvulpes_1_1la_1_1SparseMatrix.html#a98bdee8e83a65cbf02ef1b3c1374752e":[15,0,2,5,2,19],
 "classvulpes_1_1la_1_1SparseMatrix.html#a98bdee8e83a65cbf02ef1b3c1374752e":[14,0,3,6,3,19],
 "classvulpes_1_1la_1_1SparseMatrix.html#a99d7fd9db0414b1850f28ab76516a51f":[14,0,3,6,3,24],
-"classvulpes_1_1la_1_1SparseMatrix.html#a99d7fd9db0414b1850f28ab76516a51f":[15,0,2,5,2,24],
-"classvulpes_1_1la_1_1SparseMatrix.html#a9b01eebc30786b2e14701c7adf8a2c63":[14,0,3,6,3,34],
-"classvulpes_1_1la_1_1SparseMatrix.html#a9b01eebc30786b2e14701c7adf8a2c63":[15,0,2,5,2,34],
-"classvulpes_1_1la_1_1SparseMatrix.html#aa7597c21e1854b3f6df54942c05248d7":[15,0,2,5,2,31],
-"classvulpes_1_1la_1_1SparseMatrix.html#aa7597c21e1854b3f6df54942c05248d7":[14,0,3,6,3,31]
+"classvulpes_1_1la_1_1SparseMatrix.html#a99d7fd9db0414b1850f28ab76516a51f":[15,0,2,5,2,24]
 };

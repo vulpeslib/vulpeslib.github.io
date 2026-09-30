@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"classvulpes_1_1la_1_1SparseMatrix.html#a9b01eebc30786b2e14701c7adf8a2c63":[14,0,3,6,3,34],
+"classvulpes_1_1la_1_1SparseMatrix.html#a9b01eebc30786b2e14701c7adf8a2c63":[15,0,2,5,2,34],
+"classvulpes_1_1la_1_1SparseMatrix.html#aa7597c21e1854b3f6df54942c05248d7":[15,0,2,5,2,31],
+"classvulpes_1_1la_1_1SparseMatrix.html#aa7597c21e1854b3f6df54942c05248d7":[14,0,3,6,3,31],
 "classvulpes_1_1la_1_1SparseMatrix.html#aad583ca048ced776976adeb3b0e3edbd":[15,0,2,5,2,12],
 "classvulpes_1_1la_1_1SparseMatrix.html#aad583ca048ced776976adeb3b0e3edbd":[14,0,3,6,3,12],
 "classvulpes_1_1la_1_1SparseMatrix.html#ab09be3f823df41df6a9e5990b098f12f":[15,0,2,5,2,36],
@@ -245,9 +249,5 @@ var NAVTREEINDEX20 =
 "classvulpes_1_1polynomial_1_1Polynomial.html#a44e6f1570fadbd4482241e425a3adf6c":[14,0,3,9,0,2],
 "classvulpes_1_1polynomial_1_1Polynomial.html#a44e6f1570fadbd4482241e425a3adf6c":[15,0,2,8,0,2],
 "classvulpes_1_1polynomial_1_1Polynomial.html#a50b0a538f31864d296392162107a6b96":[15,0,2,8,0,28],
-"classvulpes_1_1polynomial_1_1Polynomial.html#a50b0a538f31864d296392162107a6b96":[14,0,3,9,0,28],
-"classvulpes_1_1polynomial_1_1Polynomial.html#a5762cc21d7193b1867985bfe07c433bb":[15,0,2,8,0,12],
-"classvulpes_1_1polynomial_1_1Polynomial.html#a5762cc21d7193b1867985bfe07c433bb":[14,0,3,9,0,12],
-"classvulpes_1_1polynomial_1_1Polynomial.html#a58aa2d2b38b9563299e04bfdff1e7b7d":[15,0,2,8,0,34],
-"classvulpes_1_1polynomial_1_1Polynomial.html#a58aa2d2b38b9563299e04bfdff1e7b7d":[14,0,3,9,0,34]
+"classvulpes_1_1polynomial_1_1Polynomial.html#a50b0a538f31864d296392162107a6b96":[14,0,3,9,0,28]
 };

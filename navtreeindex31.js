@@ -1,5 +1,9 @@
 var NAVTREEINDEX31 =
 {
+"structvulpes_1_1scipy_1_1BoxDist1D.html#a860dfc27f3197ea0148438891d66064c":[14,0,3,14,4,3],
+"structvulpes_1_1scipy_1_1BoxDist1D.html#a860dfc27f3197ea0148438891d66064c":[15,0,2,10,4,3],
+"structvulpes_1_1scipy_1_1BoxDist1D.html#a9d80648a1951073682bb3902bf3b780a":[14,0,3,14,4,0],
+"structvulpes_1_1scipy_1_1BoxDist1D.html#a9d80648a1951073682bb3902bf3b780a":[15,0,2,10,4,0],
 "structvulpes_1_1scipy_1_1BoxDist1D.html#aa742cc924798708bab56b71f9a12bafb":[15,0,2,10,4,2],
 "structvulpes_1_1scipy_1_1BoxDist1D.html#aa742cc924798708bab56b71f9a12bafb":[14,0,3,14,4,2],
 "structvulpes_1_1scipy_1_1BoxDist1D.html#ac3fc68697d657ca6dfab5009518a333b":[14,0,3,14,4,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX31 =
 "structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#a95e04b09e69a00f8989eaebac4c4ea00":[15,0,2,11,2,1],
 "structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#a95e04b09e69a00f8989eaebac4c4ea00":[14,0,3,15,3,1],
 "structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#aa38ff7ffeb77c00c46857f2e762d9b5b":[15,0,2,11,2,0],
-"structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#aa38ff7ffeb77c00c46857f2e762d9b5b":[14,0,3,15,3,0],
-"structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#aabea129fcb572e111d6c9799f96908da":[14,0,3,15,3,4],
-"structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#aabea129fcb572e111d6c9799f96908da":[15,0,2,11,2,4],
-"structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#ab3d73a6d59672cd83617af267c70892a":[15,0,2,11,2,6],
-"structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#ab3d73a6d59672cd83617af267c70892a":[14,0,3,15,3,6]
+"structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html#aa38ff7ffeb77c00c46857f2e762d9b5b":[14,0,3,15,3,0]
 };

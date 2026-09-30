@@ -13545,6 +13545,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>constexpr const void *</type>
+      <name>tabulatedBasis</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>adcfbb88fd910304d56c51aad05a44b90</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>constexpr const Eigen::Vector&lt; real_t, Dim &gt; &amp;</type>
       <name>getFaceNormal</name>
       <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
@@ -13717,6 +13724,13 @@
       <name>m_quadrature_weights_ref</name>
       <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
       <anchor>a877e1af350fe4ad7612e162e736be761</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>const void *</type>
+      <name>m_tabulated_basis</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>ab57d396622258431e964d4308cb4d746</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">

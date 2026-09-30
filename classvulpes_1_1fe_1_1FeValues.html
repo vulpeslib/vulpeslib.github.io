@@ -161,6 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5fd7d44a4a1962ee4ce134220797d87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95f4f6c2a46fc5410b31861735227ee6" id="r_a95f4f6c2a46fc5410b31861735227ee6"><td class="memItemLeft" align="right" valign="top">constexpr auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a95f4f6c2a46fc5410b31861735227ee6">qptsRef</a> ()</td></tr>
 <tr class="separator:a95f4f6c2a46fc5410b31861735227ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcfbb88fd910304d56c51aad05a44b90" id="r_adcfbb88fd910304d56c51aad05a44b90"><td class="memItemLeft" align="right" valign="top">constexpr const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#adcfbb88fd910304d56c51aad05a44b90">tabulatedBasis</a> () const</td></tr>
+<tr class="memdesc:adcfbb88fd910304d56c51aad05a44b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basis tabulated by the last evalOnReferenceFrame, to compare by address.  <br /></td></tr>
+<tr class="separator:adcfbb88fd910304d56c51aad05a44b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6f14503ff2c1a3c4ba1a3e4b84c4f5f" id="r_af6f14503ff2c1a3c4ba1a3e4b84c4f5f"><td class="memItemLeft" align="right" valign="top">constexpr const Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeValues.html#aee373c97689fabfccd3ed0049f91c20f">real_t</a>, Dim &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#af6f14503ff2c1a3c4ba1a3e4b84c4f5f">getFaceNormal</a> () const</td></tr>
 <tr class="separator:af6f14503ff2c1a3c4ba1a3e4b84c4f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ab9b672498f4fc1394fae88ac5b68e3" id="r_a1ab9b672498f4fc1394fae88ac5b68e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a1ab9b672498f4fc1394fae88ac5b68e3">setFaceNormal</a> (const Eigen::Vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeValues.html#aee373c97689fabfccd3ed0049f91c20f">real_t</a>, Dim &gt; &amp;<a class="el" href="namespacevulpes_1_1fe.html#a4b0d70188866f3fee35b43cd7e3f5971">normal</a>)</td></tr>
@@ -218,6 +221,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7ab4877fcb8448dc5e72687cfb38f557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877e1af350fe4ad7612e162e736be761" id="r_a877e1af350fe4ad7612e162e736be761"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a006cadf9a687ce754027c1b69a63280f">QuadtratureWeigths</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#a877e1af350fe4ad7612e162e736be761">m_quadrature_weights_ref</a></td></tr>
 <tr class="separator:a877e1af350fe4ad7612e162e736be761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57d396622258431e964d4308cb4d746" id="r_ab57d396622258431e964d4308cb4d746"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#ab57d396622258431e964d4308cb4d746">m_tabulated_basis</a> = nullptr</td></tr>
+<tr class="separator:ab57d396622258431e964d4308cb4d746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9e29d8fd65a0c7b4f57c11edc2d2969" id="r_ac9e29d8fd65a0c7b4f57c11edc2d2969"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a>&lt; Dim &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html#ac9e29d8fd65a0c7b4f57c11edc2d2969">m_fe_values_neigh</a></td></tr>
 <tr class="separator:ac9e29d8fd65a0c7b4f57c11edc2d2969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -871,6 +876,35 @@ template&lt;std::size_t Dim&gt; </div>
 
 </div>
 </div>
+<a id="adcfbb88fd910304d56c51aad05a44b90" name="adcfbb88fd910304d56c51aad05a44b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcfbb88fd910304d56c51aad05a44b90">&#9670;&#160;</a></span>tabulatedBasis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const void * <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">vulpes::fe::FeValues</a>&lt; Dim &gt;::tabulatedBasis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Basis tabulated by the last evalOnReferenceFrame, to compare by address. </p>
+
+</div>
+</div>
 <a id="addbba84b80da6f915e4bd6d2da1099cc" name="addbba84b80da6f915e4bd6d2da1099cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addbba84b80da6f915e4bd6d2da1099cc">&#9670;&#160;</a></span>weights() <span class="overload">[1/2]</span></h2>
 
@@ -1292,6 +1326,30 @@ template&lt;std::size_t Dim&gt; </div>
 
 </div>
 </div>
+<a id="ab57d396622258431e964d4308cb4d746" name="ab57d396622258431e964d4308cb4d746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab57d396622258431e964d4308cb4d746">&#9670;&#160;</a></span>m_tabulated_basis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* <a class="el" href="classvulpes_1_1fe_1_1FeValues.html">vulpes::fe::FeValues</a>&lt; Dim &gt;::m_tabulated_basis = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/__w/vulpes/vulpes/vulpes/fe/<a class="el" href="fe__values_8hpp_source.html">fe_values.hpp</a></li>
 </ul>
@@ -1302,7 +1360,7 @@ template&lt;std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html">FeValues</a></li>
-    <li class="footer">Generated on Wed Sep 30 2026 09:42:54 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 30 2026 10:02:12 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
