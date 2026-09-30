@@ -148,8 +148,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a339a2b608329127bcad41e4557d82370" id="r_a339a2b608329127bcad41e4557d82370"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a339a2b608329127bcad41e4557d82370">FeExpressionFunctionWrapper</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a3388ad6f442e4073f067c57c93e48dc0">FuncT</a> &amp;func, std::size_t order=0)</td></tr>
-<tr class="separator:a339a2b608329127bcad41e4557d82370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8826319ac73636461f17e04d6bb6e8b2" id="r_a8826319ac73636461f17e04d6bb6e8b2"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a8826319ac73636461f17e04d6bb6e8b2">FeExpressionFunctionWrapper</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a3388ad6f442e4073f067c57c93e48dc0">FuncT</a> &amp;func, std::size_t order)</td></tr>
+<tr class="separator:a8826319ac73636461f17e04d6bb6e8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45dc87dc52323090149be9752af70ed9" id="r_a45dc87dc52323090149be9752af70ed9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a45dc87dc52323090149be9752af70ed9">FeExpressionFunctionWrapper</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html">FeExpressionFunctionWrapper</a> &amp;)=delete</td></tr>
 <tr class="separator:a45dc87dc52323090149be9752af70ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab882a578df0f9f672e5b776abdb594b8" id="r_ab882a578df0f9f672e5b776abdb594b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html">FeExpressionFunctionWrapper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#ab882a578df0f9f672e5b776abdb594b8">operator=</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html">FeExpressionFunctionWrapper</a> &amp;)=delete</td></tr>
@@ -204,13 +204,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a06e1142e8640f4c6a5ca216f089346ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41750f0ba5e9d4539f33bf22addd3ef9" id="r_a41750f0ba5e9d4539f33bf22addd3ef9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a19e2503e4c73a97a23de8d9d9434de6a">OutputType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a41750f0ba5e9d4539f33bf22addd3ef9">m_evals</a></td></tr>
 <tr class="separator:a41750f0ba5e9d4539f33bf22addd3ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6554dabaa362337ba7d10fed6bcff3e6" id="r_a6554dabaa362337ba7d10fed6bcff3e6"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a6554dabaa362337ba7d10fed6bcff3e6">m_order</a> = 0</td></tr>
+<tr class="memitem:a6554dabaa362337ba7d10fed6bcff3e6" id="r_a6554dabaa362337ba7d10fed6bcff3e6"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a6554dabaa362337ba7d10fed6bcff3e6">m_order</a></td></tr>
 <tr class="separator:a6554dabaa362337ba7d10fed6bcff3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t Dim, std::size_t OutputDim = 1&gt;<br />
 class vulpes::fe::FeExpressionFunctionWrapper&lt; Dim, OutputDim &gt;</div><p>Class that wraps a user-provided function. </p>
-<p><code>order</code> is the polynomial degree assumed for the function when quadrature rules are chosen; the default 0 means a constant. Non-polynomial functions need an explicit order, otherwise they are under-integrated. </p>
+<p><code>order</code> is the polynomial degree assumed for the function when quadrature rules are chosen; it has no default. For a non-polynomial function use at least p + 1, typically p + 3, where p is the degree of the FE space it is integrated against. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aba0b18cd54e491637f9cbbb0d8ee4660" name="aba0b18cd54e491637f9cbbb0d8ee4660"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba0b18cd54e491637f9cbbb0d8ee4660">&#9670;&#160;</a></span>FeSpaceType</h2>
@@ -271,8 +271,8 @@ template&lt;std::size_t Dim, std::size_t OutputDim = 1&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a339a2b608329127bcad41e4557d82370" name="a339a2b608329127bcad41e4557d82370"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a339a2b608329127bcad41e4557d82370">&#9670;&#160;</a></span>FeExpressionFunctionWrapper() <span class="overload">[1/3]</span></h2>
+<a id="a8826319ac73636461f17e04d6bb6e8b2" name="a8826319ac73636461f17e04d6bb6e8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8826319ac73636461f17e04d6bb6e8b2">&#9670;&#160;</a></span>FeExpressionFunctionWrapper() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +292,7 @@ template&lt;std::size_t Dim, std::size_t OutputDim = 1&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>order</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -946,7 +946,7 @@ template&lt;std::size_t Dim, std::size_t OutputDim = 1&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html">vulpes::fe::FeExpressionFunctionWrapper</a>&lt; Dim, OutputDim &gt;::m_order = 0</td>
+          <td class="memname">const std::size_t <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html">vulpes::fe::FeExpressionFunctionWrapper</a>&lt; Dim, OutputDim &gt;::m_order</td>
         </tr>
       </table>
   </td>
@@ -968,7 +968,7 @@ template&lt;std::size_t Dim, std::size_t OutputDim = 1&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html">FeExpressionFunctionWrapper</a></li>
-    <li class="footer">Generated on Mon Sep 28 2026 08:30:41 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 30 2026 08:48:59 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

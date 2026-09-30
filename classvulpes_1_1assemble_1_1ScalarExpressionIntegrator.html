@@ -133,9 +133,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abfa5542c283145156600153f86b9f80a" id="r_abfa5542c283145156600153f86b9f80a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#abfa5542c283145156600153f86b9f80a">ScalarExpressionIntegrator</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression, uint32_t quadrature_order=5)</td></tr>
-<tr class="memdesc:abfa5542c283145156600153f86b9f80a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct scalar integrator.  <br /></td></tr>
-<tr class="separator:abfa5542c283145156600153f86b9f80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a776fb316091f90c6507d181299fd02" id="r_a0a776fb316091f90c6507d181299fd02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#a0a776fb316091f90c6507d181299fd02">ScalarExpressionIntegrator</a> (const MeshType &amp;mesh, <a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a>&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression, std::optional&lt; uint32_t &gt; quadrature_order=std::nullopt)</td></tr>
+<tr class="memdesc:a0a776fb316091f90c6507d181299fd02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct scalar integrator.  <br /></td></tr>
+<tr class="separator:a0a776fb316091f90c6507d181299fd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e076bd5c29b8f8fdd51767d822ca2c3" id="r_a9e076bd5c29b8f8fdd51767d822ca2c3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#a9e076bd5c29b8f8fdd51767d822ca2c3">integrate</a> ()</td></tr>
 <tr class="memdesc:a9e076bd5c29b8f8fdd51767d822ca2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate the scalar expression over the entire domain.  <br /></td></tr>
 <tr class="separator:a9e076bd5c29b8f8fdd51767d822ca2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,8 +198,8 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="abfa5542c283145156600153f86b9f80a" name="abfa5542c283145156600153f86b9f80a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfa5542c283145156600153f86b9f80a">&#9670;&#160;</a></span>ScalarExpressionIntegrator()</h2>
+<a id="a0a776fb316091f90c6507d181299fd02" name="a0a776fb316091f90c6507d181299fd02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a776fb316091f90c6507d181299fd02">&#9670;&#160;</a></span>ScalarExpressionIntegrator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,8 +230,8 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>quadrature_order</em> = <code>5</code>&#160;</td>
+          <td class="paramtype">std::optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>quadrature_order</em> = <code>std::nullopt</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -252,7 +252,7 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
     <tr><td class="paramname">mesh</td><td>The computational mesh </td></tr>
     <tr><td class="paramname">cell_manager</td><td><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html" title="Manages geometrical informations about the cell and its mapping to the reference element.">CellManager</a> with FE space and mappings </td></tr>
     <tr><td class="paramname">expression</td><td>The scalar expression to integrate </td></tr>
-    <tr><td class="paramname">quadrature_order</td><td>Order of quadrature rule (default: 5) </td></tr>
+    <tr><td class="paramname">quadrature_order</td><td>Polynomial degree integrated exactly by the simplex rule; defaults to 1 + expression.computeOrder() </td></tr>
   </table>
   </dd>
 </dl>
@@ -591,7 +591,7 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html">ScalarExpressionIntegrator</a></li>
-    <li class="footer">Generated on Mon Sep 28 2026 08:30:41 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 30 2026 08:48:59 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

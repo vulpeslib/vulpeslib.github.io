@@ -1,7 +1,7 @@
 var classvulpes_1_1assemble_1_1ScalarExpressionIntegrator =
 [
     [ "index_t", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#ad754db1a93b00b6c127d026e51e8d734", null ],
-    [ "ScalarExpressionIntegrator", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#abfa5542c283145156600153f86b9f80a", null ],
+    [ "ScalarExpressionIntegrator", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#a0a776fb316091f90c6507d181299fd02", null ],
     [ "integrate", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#a9e076bd5c29b8f8fdd51767d822ca2c3", null ],
     [ "integrateCell", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#af1b597695cc359e289c583bd1a60f885", null ],
     [ "integrateSimplexDirect", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html#a0e525d4d0a4700af762b397d73f8df3c", null ],

@@ -100,6 +100,8 @@
     <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
     <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
     <includes id="vector__block__utils_8hpp" name="vector_block_utils.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector_block_utils.hpp</includes>
+    <includes id="simplex_8hpp" name="simplex.hpp" local="yes" import="no" module="no" objc="no">vulpes/quadrature/simplex.hpp</includes>
+    <includes id="pcout_8hpp" name="pcout.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/pcout.hpp</includes>
     <class kind="class">vulpes::assemble::dg::FeExpressionUpwindFromFunctionWrapper</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::assemble</namespace>
@@ -2931,8 +2933,8 @@
       <type></type>
       <name>ScalarExpressionIntegrator</name>
       <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
-      <anchor>abfa5542c283145156600153f86b9f80a</anchor>
-      <arglist>(const MeshType &amp;mesh, CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression, uint32_t quadrature_order=5)</arglist>
+      <anchor>a0a776fb316091f90c6507d181299fd02</anchor>
+      <arglist>(const MeshType &amp;mesh, CellManager&lt; MeshType, FeSpaceType &gt; &amp;cell_manager, const ExprType &amp;expression, std::optional&lt; uint32_t &gt; quadrature_order=std::nullopt)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -9275,8 +9277,8 @@
       <type>constexpr</type>
       <name>FeExpressionFunctionWrapper</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html</anchorfile>
-      <anchor>a339a2b608329127bcad41e4557d82370</anchor>
-      <arglist>(const FuncT &amp;func, std::size_t order=0)</arglist>
+      <anchor>a8826319ac73636461f17e04d6bb6e8b2</anchor>
+      <arglist>(const FuncT &amp;func, std::size_t order)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -9449,8 +9451,8 @@
       <type>constexpr</type>
       <name>FeExpressionFunctionWrapperTensor</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html</anchorfile>
-      <anchor>ac1d3574a443c97711adf75728a93aa62</anchor>
-      <arglist>(const FuncT &amp;func, std::size_t order=0)</arglist>
+      <anchor>afd25e6699f06e1af4bae5927d84053c8</anchor>
+      <arglist>(const FuncT &amp;func, std::size_t order)</arglist>
     </member>
     <member kind="function">
       <type></type>

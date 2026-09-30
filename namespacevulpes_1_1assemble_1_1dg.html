@@ -426,7 +426,7 @@ template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType ,
     <tr><td class="paramname">dof_handler</td><td>The DOF handler for the numerical solution </td></tr>
     <tr><td class="paramname">u_h</td><td>The numerical solution vector (DOF coefficients) </td></tr>
     <tr><td class="paramname">grad_u_exact_expr</td><td>The exact solution gradient as an FE expression </td></tr>
-    <tr><td class="paramname">quad_degree</td><td>Quadrature degree passed to integrateFeExpression </td></tr>
+    <tr><td class="paramname">quad_degree</td><td>Polynomial degree integrated exactly by the simplex rule; defaults to 1 + the order of the integrand, at least 2p + 7 (exact solution declared of order p + 3) </td></tr>
   </table>
   </dd>
 </dl>
@@ -556,7 +556,7 @@ template&lt;typename MeshType , typename FeSpaceType , typename DofHandlerType ,
     <tr><td class="paramname">dof_handler</td><td>The DOF handler for the numerical solution </td></tr>
     <tr><td class="paramname">u_h</td><td>The numerical solution vector (DOF coefficients) </td></tr>
     <tr><td class="paramname">u_exact_expr</td><td>The exact solution as an FE expression </td></tr>
-    <tr><td class="paramname">quad_degree</td><td>Quadrature degree passed to integrateFeExpression </td></tr>
+    <tr><td class="paramname">quad_degree</td><td>Polynomial degree integrated exactly by the simplex rule; defaults to 1 + the order of the integrand, at least 2p + 7 (exact solution declared of order p + 3) </td></tr>
   </table>
   </dd>
 </dl>
@@ -964,14 +964,12 @@ template&lt;typename MeshType , typename FeSpaceType , typename ExprType &gt; </
     <tr><td class="paramname">mesh</td><td>The computational mesh </td></tr>
     <tr><td class="paramname">cell_manager</td><td>The cell manager containing mesh and FE space information </td></tr>
     <tr><td class="paramname">expression</td><td>The scalar FE expression to integrate (e.g., f(x), (u_h - u_exact)^2) </td></tr>
-    <tr><td class="paramname">quad_degree</td><td>Polynomial degree integrated exactly by the simplex rule; defaults to 2 * expression.computeOrder() + 1 </td></tr>
+    <tr><td class="paramname">quad_degree</td><td>Polynomial degree integrated exactly by the simplex rule; defaults to 1 + expression.computeOrder(). Warns above the tabled rules, where Grundmann-Moeller rules amplify roundoff. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The integral of the expression over the domain </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Uses <a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html" title="Specialized integrator for scalar expressions using simplification.">ScalarExpressionIntegrator</a> which mirrors <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html" title="Integrator that simplexifies cells and integrates weak forms on them.">WeakFormIntegratorSimplexify</a>'s simplification and quadrature infrastructure but evaluates expressions directly as scalars. </dd>
-<dd>
-The default doubles an order that already counts products, so it over-integrates, and above degree 20 it falls back to Grundmann-Moeller rules. Recommended default: 1 + expression.computeOrder(), as in <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5e275b3390ef12060cf62438b6d45271" title="Compute the maximum polynomial order among all finite element expressions.">WeakFormIntegratorBase::computeMaxOrder</a>, with non-polynomial functions declared of an order above the FE degree (e.g. p + 3). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Uses <a class="el" href="classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html" title="Specialized integrator for scalar expressions using simplification.">ScalarExpressionIntegrator</a> which mirrors <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html" title="Integrator that simplexifies cells and integrates weak forms on them.">WeakFormIntegratorSimplexify</a>'s simplification and quadrature infrastructure but evaluates expressions directly as scalars. </dd></dl>
 
 </div>
 </div>
@@ -1293,7 +1291,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Mon Sep 28 2026 08:30:41 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Sep 30 2026 08:48:59 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
