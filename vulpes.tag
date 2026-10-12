@@ -453,6 +453,7 @@
     <class kind="class">vulpes::fe::FeExpressionCellConstant</class>
     <class kind="class">vulpes::fe::FeExpressionCellConstantTensor</class>
     <class kind="class">vulpes::fe::FeExpressionCellConstantNeedNeigh</class>
+    <class kind="class">vulpes::fe::FeExpressionFacePointsNeedNeigh</class>
     <class kind="class">vulpes::fe::FeExpressionSkipper</class>
     <class kind="class">vulpes::fe::FeExpressionFunctionWrapper</class>
     <class kind="class">vulpes::fe::FeExpressionFeProjection</class>
@@ -2943,19 +2944,19 @@
       <anchor>a9e076bd5c29b8f8fdd51767d822ca2c3</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>integrateCell</name>
+      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
+      <anchor>af1b597695cc359e289c583bd1a60f885</anchor>
+      <arglist>(index_t cell_id)</arglist>
+    </member>
     <member kind="variable" static="yes">
       <type>static constexpr std::size_t</type>
       <name>Dim</name>
       <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
       <anchor>affdc988803ebeb989cee3fa54f4411ba</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="function" protection="private">
-      <type>double</type>
-      <name>integrateCell</name>
-      <anchorfile>classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html</anchorfile>
-      <anchor>af1b597695cc359e289c583bd1a60f885</anchor>
-      <arglist>(index_t cell_id)</arglist>
     </member>
     <member kind="function" protection="private">
       <type>double</type>
@@ -7877,12 +7878,13 @@
     <name>vulpes::fe::FeExpressionCellConstantNeedNeigh</name>
     <filename>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionCellConstantNeedNeigh&lt; Dim &gt; &gt;</base>
+    <templarg>UpdateFlagsType ExtraFlags</templarg>
+    <base>vulpes::fe::FeExpressionBase</base>
     <member kind="typedef">
       <type>std::function&lt; double(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;)&gt;</type>
       <name>FuncType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>ab5647dbebb3af2b598b8e1a70870f754</anchor>
+      <anchor>a9747c84c071a8e534b58f033913398d7</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -7896,77 +7898,77 @@
       <type>constexpr</type>
       <name>FeExpressionCellConstantNeedNeigh</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a0f1c708f648584ccb23fea1c4181fe33</anchor>
+      <anchor>a59542542ba2e9f4e8d8884293b5a9abf</anchor>
       <arglist>(const FuncType &amp;func)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>FeExpressionCellConstantNeedNeigh</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a5097896a38473a8d88c55db04f337db8</anchor>
+      <anchor>ac15fe9147697d9c5deaea470543bf7f3</anchor>
       <arglist>(const FeExpressionCellConstantNeedNeigh &amp;)=delete</arglist>
     </member>
     <member kind="function">
       <type>FeExpressionCellConstantNeedNeigh &amp;</type>
       <name>operator=</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a6c4c9763de06c94626088d9d2b8d37e3</anchor>
+      <anchor>a451f07a65f566d3e5369a66d190fe652</anchor>
       <arglist>(const FeExpressionCellConstantNeedNeigh &amp;)=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>FeExpressionCellConstantNeedNeigh</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>ac71435951e61287a98fdfb33ae52b884</anchor>
+      <anchor>a5a04d0590f8ea211d27f3a365772793c</anchor>
       <arglist>(FeExpressionCellConstantNeedNeigh &amp;&amp;)=delete</arglist>
     </member>
     <member kind="function">
       <type>FeExpressionCellConstantNeedNeigh &amp;</type>
       <name>operator=</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a05fc6fc2855516652bc5a9684413b61a</anchor>
+      <anchor>a58ff9c552f4e542141af21d2b2aeb6d0</anchor>
       <arglist>(FeExpressionCellConstantNeedNeigh &amp;&amp;)=delete</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
       <name>evaluate</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a396658d5a045d55d636e276c2c747227</anchor>
+      <anchor>ae50d3c1dfb7cdfa4eaf6c6c33e2e767c</anchor>
       <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr UpdateFlagsType</type>
       <name>computeUpdateFlags</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a79cb2288b7fe5e0f20b3654640c601e8</anchor>
+      <anchor>a62cc8c9fcdb885757ebca2adeac0ac09</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr std::size_t</type>
       <name>computeOrder</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>ab5418a6168b8a771e0f51f24d5abaa3e</anchor>
+      <anchor>abec414dc5c9feb25726b1d7c70072d27</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
       <name>evaluatePoly</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a19343efce11468e5ef4139edbc1654c8</anchor>
+      <anchor>ae90e84a3e9431cd6e2e1f808794d1aff</anchor>
       <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t, std::size_t) const</arglist>
     </member>
     <member kind="function">
       <type>decltype(auto)</type>
       <name>evaluatePolyCoef</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a978d2ab609240c7df0eb07740f09759f</anchor>
+      <anchor>a275dc1e2f77f2fc35d68f2abcdd5b1da</anchor>
       <arglist>(const auto &amp;, const auto &amp;, std::size_t, std::size_t) const</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>precompute</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a0a8758010cf0f5a9a3d366cc4d4cae93</anchor>
+      <anchor>a0df1c71010011a7ff411bc8288a135f1</anchor>
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
     </member>
     <member kind="function">
@@ -7977,7 +7979,7 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionCellConstantNeedNeigh&lt; Dim &gt; &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -7987,14 +7989,14 @@
       <type>static constexpr bool</type>
       <name>is_leaf</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a2ad6cdc429055a9b4eb5c71123fd3439</anchor>
+      <anchor>a1812e9f4f1f27bf88ad4f461dc215077</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static constexpr uint8_t</type>
       <name>is_bilinear</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a3de1821ec78e034c8dd48e4afd57e47d</anchor>
+      <anchor>a7f1dea51a07a6a0428bf4890e29640e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
@@ -8012,7 +8014,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpressionCellConstantNeedNeigh&lt; Dim &gt; &amp;</type>
+      <type>const FeExpression &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -8022,14 +8024,14 @@
       <type>const FuncType</type>
       <name>m_func</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a68f33760e3f45c04d3719238d289a948</anchor>
+      <anchor>a621ca7bd9c589661fd05f42f3dcee9c4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>double</type>
       <name>m_val</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a61244719cc7f6a965861f2b63096f9af</anchor>
+      <anchor>a79854aa5bced360f64b12cd235e5a93f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8749,6 +8751,174 @@
       <name>m_normal</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFaceNormal.html</anchorfile>
       <anchor>ab0c8b446835e06a601065ddb59e8f7a2</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>vulpes::fe::FeExpressionFacePointsNeedNeigh</name>
+    <filename>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</filename>
+    <templarg>std::size_t Dim</templarg>
+    <templarg>UpdateFlagsType ExtraFlags</templarg>
+    <base>vulpes::fe::FeExpressionBase</base>
+    <member kind="typedef">
+      <type>std::function&lt; void(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;, std::vector&lt; double &gt; &amp;)&gt;</type>
+      <name>FuncType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>af67379c339efef28733748a4aacd4a96</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void</type>
+      <name>FeSpaceType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>aba0b18cd54e491637f9cbbb0d8ee4660</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr</type>
+      <name>FeExpressionFacePointsNeedNeigh</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>ab3c47da407826f84390ba32152dda06c</anchor>
+      <arglist>(const FuncType &amp;func, std::size_t order)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FeExpressionFacePointsNeedNeigh</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>aae16fea064e7b8c01a7270732b551d15</anchor>
+      <arglist>(const FeExpressionFacePointsNeedNeigh &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>FeExpressionFacePointsNeedNeigh &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a9c7c04efecacfae6ecb5a0a0666d50fa</anchor>
+      <arglist>(const FeExpressionFacePointsNeedNeigh &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FeExpressionFacePointsNeedNeigh</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a68d34214be22fc6226e29a2ccae0f850</anchor>
+      <arglist>(FeExpressionFacePointsNeedNeigh &amp;&amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>FeExpressionFacePointsNeedNeigh &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>aca33c6d4e4a855d850f3210963adfd4a</anchor>
+      <arglist>(FeExpressionFacePointsNeedNeigh &amp;&amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluate</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a23402fc957350b2b3caeb48b90c5eabc</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t q) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr UpdateFlagsType</type>
+      <name>computeUpdateFlags</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a8ab6ed2257961d3bd846f3eb2efc1a3e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::size_t</type>
+      <name>computeOrder</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a3fdf25269182f085c08d14facc93143c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>precompute</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a50fa00295b46b7385afca2e07413bf9f</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr const auto &amp;</type>
+      <name>feSpace</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>af0333705ad7416bd31da37eb47dd3491</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePoly</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ab34db8f9eb15f296fd3f25dc8bd08a61</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePolyCoef</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ac35e53267a9736f80c95c4a60c518e58</anchor>
+      <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <name>operator-</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr bool</type>
+      <name>is_leaf</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a1260eacf7ee029cc8852154791d62a65</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr uint8_t</type>
+      <name>is_bilinear</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a4c0c90feb7b2fa1d53513cd677f27d61</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_begin</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>a2ea9e3bdcbdc3dd7835c64ac607e30be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_end</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>a6482f4e05433e454afd3bfb876f7ac37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const FeExpression &amp;</type>
+      <name>self</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>const FuncType</type>
+      <name>m_func</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a272981ddc16733230ba9a260eff78f92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>const std::size_t</type>
+      <name>m_order</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a48e3eba20a2e991f168b54061060a82a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::vector&lt; double &gt;</type>
+      <name>m_vals</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
+      <anchor>a08335029362f4e4fd8874a394cfdf44e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -27140,6 +27310,7 @@
     <class kind="class">vulpes::fe::FeExpressionDiagOnly</class>
     <class kind="class">vulpes::fe::FeExpressionDifference</class>
     <class kind="class">vulpes::fe::FeExpressionFaceNormal</class>
+    <class kind="class">vulpes::fe::FeExpressionFacePointsNeedNeigh</class>
     <class kind="class">vulpes::fe::FeExpressionFeProjection</class>
     <class kind="class">vulpes::fe::FeExpressionFieldComponent</class>
     <class kind="class">vulpes::fe::FeExpressionFunc</class>

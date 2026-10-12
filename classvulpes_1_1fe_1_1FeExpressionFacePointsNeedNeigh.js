@@ -1,0 +1,26 @@
+var classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh =
+[
+    [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#aba0b18cd54e491637f9cbbb0d8ee4660", null ],
+    [ "FuncType", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#af67379c339efef28733748a4aacd4a96", null ],
+    [ "FeExpressionFacePointsNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#ab3c47da407826f84390ba32152dda06c", null ],
+    [ "FeExpressionFacePointsNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#aae16fea064e7b8c01a7270732b551d15", null ],
+    [ "FeExpressionFacePointsNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a68d34214be22fc6226e29a2ccae0f850", null ],
+    [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a3fdf25269182f085c08d14facc93143c", null ],
+    [ "computeUpdateFlags", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a8ab6ed2257961d3bd846f3eb2efc1a3e", null ],
+    [ "evaluate", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a23402fc957350b2b3caeb48b90c5eabc", null ],
+    [ "evaluatePoly", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#ab34db8f9eb15f296fd3f25dc8bd08a61", null ],
+    [ "evaluatePolyCoef", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#ac35e53267a9736f80c95c4a60c518e58", null ],
+    [ "feSpace", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#af0333705ad7416bd31da37eb47dd3491", null ],
+    [ "operator-", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#aa194506aca4e759376e053023687b62b", null ],
+    [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a9c7c04efecacfae6ecb5a0a0666d50fa", null ],
+    [ "operator=", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#aca33c6d4e4a855d850f3210963adfd4a", null ],
+    [ "precompute", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a50fa00295b46b7385afca2e07413bf9f", null ],
+    [ "self", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#ae09c076ff44d5c6113219d3f5c72cab9", null ],
+    [ "is_bilinear", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a4c0c90feb7b2fa1d53513cd677f27d61", null ],
+    [ "is_leaf", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a1260eacf7ee029cc8852154791d62a65", null ],
+    [ "k_index_begin", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a2ea9e3bdcbdc3dd7835c64ac607e30be", null ],
+    [ "k_index_end", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a6482f4e05433e454afd3bfb876f7ac37", null ],
+    [ "m_func", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a272981ddc16733230ba9a260eff78f92", null ],
+    [ "m_order", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a48e3eba20a2e991f168b54061060a82a", null ],
+    [ "m_vals", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a08335029362f4e4fd8874a394cfdf44e", null ]
+];

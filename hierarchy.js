@@ -133,9 +133,7 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionCellConstant< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionCellConstant< Dim >", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html", null ]
     ] ],
-    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionCellConstantNeedNeigh< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
-      [ "vulpes::fe::FeExpressionCellConstantNeedNeigh< Dim >", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html", null ]
-    ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionCellConstantNeedNeigh< Dim, UpdateNothing > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionCellConstantTensor< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionCellConstantTensor< Dim >", "classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html", null ]
     ] ],
@@ -151,6 +149,7 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFaceNormal< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionFaceNormal< Dim >", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFacePointsNeedNeigh< Dim, UpdateValues > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFeProjection< Dim, FeSpace, DofHandler, 1 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionFieldComponent< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionFieldComponent< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionFieldComponent.html", null ]
@@ -318,6 +317,8 @@ var hierarchy =
     [ "vulpes::fe::DofPolicyBase< Dim, DofPolicy >", "structvulpes_1_1fe_1_1DofPolicyBase.html", null ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpression >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExactExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", null ],
+      [ "vulpes::fe::FeExpressionCellConstantNeedNeigh< Dim, ExtraFlags >", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html", null ],
+      [ "vulpes::fe::FeExpressionFacePointsNeedNeigh< Dim, ExtraFlags >", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html", null ],
       [ "vulpes::fe::FeExpressionFeProjection< Dim, FeSpace, DofHandler, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html", null ],
       [ "vulpes::fe::FeExpressionFunc< IndexBegin, IndexEnd, Dim, FeSpace, IsTest >", "classvulpes_1_1fe_1_1FeExpressionFunc.html", null ],
       [ "vulpes::fe::FeExpressionFunctionWrapper< Dim, OutputDim >", "classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html", null ],

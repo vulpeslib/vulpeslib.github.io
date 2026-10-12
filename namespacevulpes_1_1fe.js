@@ -16,6 +16,7 @@ var namespacevulpes_1_1fe =
     [ "FeExpressionDiagOnly", "classvulpes_1_1fe_1_1FeExpressionDiagOnly.html", "classvulpes_1_1fe_1_1FeExpressionDiagOnly" ],
     [ "FeExpressionDifference", "classvulpes_1_1fe_1_1FeExpressionDifference.html", "classvulpes_1_1fe_1_1FeExpressionDifference" ],
     [ "FeExpressionFaceNormal", "classvulpes_1_1fe_1_1FeExpressionFaceNormal.html", "classvulpes_1_1fe_1_1FeExpressionFaceNormal" ],
+    [ "FeExpressionFacePointsNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh" ],
     [ "FeExpressionFeProjection", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExpressionFeProjection" ],
     [ "FeExpressionFieldComponent", "classvulpes_1_1fe_1_1FeExpressionFieldComponent.html", "classvulpes_1_1fe_1_1FeExpressionFieldComponent" ],
     [ "FeExpressionFunc", "classvulpes_1_1fe_1_1FeExpressionFunc.html", "classvulpes_1_1fe_1_1FeExpressionFunc" ],
