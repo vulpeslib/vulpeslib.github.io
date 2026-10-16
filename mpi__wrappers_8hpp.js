@@ -2,6 +2,7 @@ var mpi__wrappers_8hpp =
 [
     [ "vulpes::mpi::MpiHandle", "classvulpes_1_1mpi_1_1MpiHandle.html", "classvulpes_1_1mpi_1_1MpiHandle" ],
     [ "bcast", "mpi__wrappers_8hpp.html#ae206a31d40d5e14bbe921dcbf78a5f75", null ],
+    [ "bcast", "mpi__wrappers_8hpp.html#ada6d60f903363534b25de830eeee96ce", null ],
     [ "bcast", "mpi__wrappers_8hpp.html#a71e99bb30a1a6f821ca3c96eaa4cc4fe", null ],
     [ "bcast", "mpi__wrappers_8hpp.html#a787c607c3161256d2028c225ce65e831", null ],
     [ "bcast", "mpi__wrappers_8hpp.html#ae392da87c62647799e306debadc288d1", null ],
@@ -17,6 +18,7 @@ var mpi__wrappers_8hpp =
     [ "rank", "mpi__wrappers_8hpp.html#a124f98aa371424a6bb8cc87031f1a904", null ],
     [ "recv", "mpi__wrappers_8hpp.html#a7c5ad3558c3b08b22c32a5df5f5468bd", null ],
     [ "recv", "mpi__wrappers_8hpp.html#a0009b17b562e1901e17b0c1f4f3ddc6c", null ],
+    [ "recv", "mpi__wrappers_8hpp.html#a4fae946bbd9a20a990329f93ea339909", null ],
     [ "recv", "mpi__wrappers_8hpp.html#a54c935084f676a53ca201ff2948f1174", null ],
     [ "recv", "mpi__wrappers_8hpp.html#a28ff7fc7db9104c01b8846949c6f77ed", null ],
     [ "recv", "mpi__wrappers_8hpp.html#aae5d1373dadf91d4514345d021bec9f2", null ],
@@ -28,6 +30,7 @@ var mpi__wrappers_8hpp =
     [ "scatter", "mpi__wrappers_8hpp.html#a7edf67ee451d1f06d4cf742cba2847eb", null ],
     [ "scatterv", "mpi__wrappers_8hpp.html#aa6b81b56a23b0c4d0870f5dbcb4427fe", null ],
     [ "send", "mpi__wrappers_8hpp.html#a9faa1f6e305d49fd2760fcbc13315257", null ],
+    [ "send", "mpi__wrappers_8hpp.html#a170f3b466776739304da6ee1eea8682b", null ],
     [ "send", "mpi__wrappers_8hpp.html#a8b5785828950e92e0802c398c79a2b4b", null ],
     [ "send", "mpi__wrappers_8hpp.html#ae6849bed637020cace4c756506169a4c", null ],
     [ "send", "mpi__wrappers_8hpp.html#a88120980755dcefe5adcddbc04bbdbb8", null ],

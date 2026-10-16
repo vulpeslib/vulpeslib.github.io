@@ -18866,6 +18866,27 @@
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
+      <name>initializeMeshTags</name>
+      <anchorfile>classvulpes_1_1geometry_1_1ParallelMesh.html</anchorfile>
+      <anchor>a56bf45eb4061fcc6ef5741931c07573c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>sendMeshTags</name>
+      <anchorfile>classvulpes_1_1geometry_1_1ParallelMesh.html</anchorfile>
+      <anchor>a11698fb77018dd87945d9f0e8b9244c9</anchor>
+      <arglist>(const std::vector&lt; index_t &gt; &amp;vertex_numbering, int destination)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>receiveMeshTags</name>
+      <anchorfile>classvulpes_1_1geometry_1_1ParallelMesh.html</anchorfile>
+      <anchor>aaf0861f808629b60c9d93c29d47ccba9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
       <name>buildLocalEntityToCellMaps</name>
       <anchorfile>classvulpes_1_1geometry_1_1ParallelMesh.html</anchorfile>
       <anchor>a96a370d8e936fc027f72e0ede2d25249</anchor>
@@ -28507,6 +28528,13 @@
       <arglist>(std::vector&lt; index_t &gt; &amp;labels)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>importVtkMeshTags</name>
+      <anchorfile>namespacevulpes_1_1geometry_1_1internal.html</anchorfile>
+      <anchor>a303d0d0fca4c8c7b440d33fa3c012b42</anchor>
+      <arglist>(vtkFieldData *field_data, std::string_view association, std::unordered_map&lt; std::string, std::vector&lt; IndexType &gt; &gt; &amp;tags)</arglist>
+    </member>
+    <member kind="function">
       <type>std::pair&lt; double, double &gt;</type>
       <name>updateVoronoiCentroid</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1internal.html</anchorfile>
@@ -29354,6 +29382,13 @@
       <type>void</type>
       <name>send</name>
       <anchorfile>namespacevulpes_1_1mpi.html</anchorfile>
+      <anchor>a170f3b466776739304da6ee1eea8682b</anchor>
+      <arglist>(const std::string &amp;data, int destination, MPI_Comm communicator=MPI_COMM_WORLD)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>send</name>
+      <anchorfile>namespacevulpes_1_1mpi.html</anchorfile>
       <anchor>ae6849bed637020cace4c756506169a4c</anchor>
       <arglist>(const std::vector&lt; std::array&lt; T, N &gt; &gt; &amp;data, int destination, MPI_Comm communicator=MPI_COMM_WORLD)</arglist>
     </member>
@@ -29396,6 +29431,13 @@
       <type>void</type>
       <name>recv</name>
       <anchorfile>namespacevulpes_1_1mpi.html</anchorfile>
+      <anchor>a4fae946bbd9a20a990329f93ea339909</anchor>
+      <arglist>(std::string &amp;data, int source, MPI_Comm communicator=MPI_COMM_WORLD, MPI_Status *status=MPI_STATUS_IGNORE)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>recv</name>
+      <anchorfile>namespacevulpes_1_1mpi.html</anchorfile>
       <anchor>a28ff7fc7db9104c01b8846949c6f77ed</anchor>
       <arglist>(std::vector&lt; std::array&lt; T, N &gt; &gt; &amp;data, int source, MPI_Comm communicator=MPI_COMM_WORLD, MPI_Status *status=MPI_STATUS_IGNORE)</arglist>
     </member>
@@ -29433,6 +29475,13 @@
       <anchorfile>namespacevulpes_1_1mpi.html</anchorfile>
       <anchor>a71e99bb30a1a6f821ca3c96eaa4cc4fe</anchor>
       <arglist>(std::vector&lt; T &gt; &amp;data, int root, MPI_Comm communicator=MPI_COMM_WORLD)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>bcast</name>
+      <anchorfile>namespacevulpes_1_1mpi.html</anchorfile>
+      <anchor>ada6d60f903363534b25de830eeee96ce</anchor>
+      <arglist>(std::string &amp;data, int root, MPI_Comm communicator=MPI_COMM_WORLD)</arglist>
     </member>
     <member kind="function">
       <type>void</type>

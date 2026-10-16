@@ -143,6 +143,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ab57e0234a9f21d3ecae7b168d239349f"><td class="memTemplItemLeft" align="right" valign="top">index_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ab57e0234a9f21d3ecae7b168d239349f">removeEmptySets</a> (std::vector&lt; index_t &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">labels</a>)</td></tr>
 <tr class="memdesc:ab57e0234a9f21d3ecae7b168d239349f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compresses labels to a contiguous range <code>[0, N-1]</code>.  <br /></td></tr>
 <tr class="separator:ab57e0234a9f21d3ecae7b168d239349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303d0d0fca4c8c7b440d33fa3c012b42" id="r_a303d0d0fca4c8c7b440d33fa3c012b42"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </td></tr>
+<tr class="memitem:a303d0d0fca4c8c7b440d33fa3c012b42"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a303d0d0fca4c8c7b440d33fa3c012b42">importVtkMeshTags</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">vtkFieldData</a> *<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">field_data</a>, std::string_view <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">association</a>, std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &gt; &amp;tags)</td></tr>
+<tr class="memdesc:a303d0d0fca4c8c7b440d33fa3c012b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports scalar numeric VTK arrays into an integer mesh-tag table.  <br /></td></tr>
+<tr class="separator:a303d0d0fca4c8c7b440d33fa3c012b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ac66c2afd5dee2e3ba580086085b27" id="r_a77ac66c2afd5dee2e3ba580086085b27"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> Dim&gt; </td></tr>
 <tr class="memitem:a77ac66c2afd5dee2e3ba580086085b27"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27">updateVoronoiCentroid</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, Dim &gt;, 2 &gt; &amp;bbox, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, Dim &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">points</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">n_inside_seeds</a>)</td></tr>
 <tr class="separator:a77ac66c2afd5dee2e3ba580086085b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -415,6 +419,59 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a303d0d0fca4c8c7b440d33fa3c012b42" name="a303d0d0fca4c8c7b440d33fa3c012b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303d0d0fca4c8c7b440d33fa3c012b42">&#9670;&#160;</a></span>importVtkMeshTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> vulpes::geometry::internal::importVtkMeshTags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">vtkFieldData</a> *&#160;</td>
+          <td class="paramname"><em>field_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>association</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imports scalar numeric VTK arrays into an integer mesh-tag table. </p>
+<p>Mesh tags currently store one integer per entity. Numeric arrays with more than one component are therefore skipped, while scalar floating-point arrays are converted with an explicit warning. Nonnumeric arrays are rejected.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">IndexType</td><td>The integer type used to store mesh tags. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_data</td><td>VTK point or cell data containing the arrays to import. </td></tr>
+    <tr><td class="paramname">association</td><td>Human-readable array association used in diagnostics. </td></tr>
+    <tr><td class="paramname">tags</td><td>Destination mesh-tag table. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -787,7 +844,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html">internal</a></li>
-    <li class="footer">Generated on Mon Oct 12 2026 15:40:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 16 2026 07:59:25 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -122,6 +122,7 @@ $(document).ready(function(){initNavTree('mpi__wrappers_8hpp.html',''); initResi
 <code>#include &lt;petsc.h&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;Eigen/Dense&gt;</code><br />
 <code>#include &quot;<a class="el" href="crs__map_8hpp_source.html">vulpes/datastructure/crs_map.hpp</a>&quot;</code><br />
@@ -191,6 +192,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a88120980755dcefe5adcddbc04bbdbb8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a88120980755dcefe5adcddbc04bbdbb8">vulpes::mpi::send</a> (const std::vector&lt; T &gt; &amp;data, int destination, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
 <tr class="memdesc:a88120980755dcefe5adcddbc04bbdbb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a std::vector&lt;T&gt;, prefixed with its size.  <br /></td></tr>
 <tr class="separator:a88120980755dcefe5adcddbc04bbdbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170f3b466776739304da6ee1eea8682b" id="r_a170f3b466776739304da6ee1eea8682b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a170f3b466776739304da6ee1eea8682b">vulpes::mpi::send</a> (const std::string &amp;data, int destination, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
+<tr class="memdesc:a170f3b466776739304da6ee1eea8682b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a std::string, prefixed with its size.  <br /></td></tr>
+<tr class="separator:a170f3b466776739304da6ee1eea8682b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6849bed637020cace4c756506169a4c" id="r_ae6849bed637020cace4c756506169a4c"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:ae6849bed637020cace4c756506169a4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#ae6849bed637020cace4c756506169a4c">vulpes::mpi::send</a> (const std::vector&lt; std::array&lt; T, N &gt; &gt; &amp;data, int destination, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
 <tr class="memdesc:ae6849bed637020cace4c756506169a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a std::vector&lt;std::array&lt;T, N&gt;&gt;, prefixed with its size.  <br /></td></tr>
@@ -215,6 +219,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aae5d1373dadf91d4514345d021bec9f2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#aae5d1373dadf91d4514345d021bec9f2">vulpes::mpi::recv</a> (std::vector&lt; T &gt; &amp;data, int source, MPI_Comm communicator=MPI_COMM_WORLD, MPI_Status *status=MPI_STATUS_IGNORE)</td></tr>
 <tr class="memdesc:aae5d1373dadf91d4514345d021bec9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a std::vector&lt;T&gt; previously sent with <a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38" title="Send count contiguous values of type T to a destination rank.">send()</a>, resizing <code>data</code> to the transmitted size.  <br /></td></tr>
 <tr class="separator:aae5d1373dadf91d4514345d021bec9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fae946bbd9a20a990329f93ea339909" id="r_a4fae946bbd9a20a990329f93ea339909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a4fae946bbd9a20a990329f93ea339909">vulpes::mpi::recv</a> (std::string &amp;data, int source, MPI_Comm communicator=MPI_COMM_WORLD, MPI_Status *status=MPI_STATUS_IGNORE)</td></tr>
+<tr class="memdesc:a4fae946bbd9a20a990329f93ea339909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a std::string previously sent with <a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38" title="Send count contiguous values of type T to a destination rank.">send()</a>, resizing <code>data</code> to the transmitted size.  <br /></td></tr>
+<tr class="separator:a4fae946bbd9a20a990329f93ea339909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ff7fc7db9104c01b8846949c6f77ed" id="r_a28ff7fc7db9104c01b8846949c6f77ed"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:a28ff7fc7db9104c01b8846949c6f77ed"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a28ff7fc7db9104c01b8846949c6f77ed">vulpes::mpi::recv</a> (std::vector&lt; std::array&lt; T, N &gt; &gt; &amp;data, int source, MPI_Comm communicator=MPI_COMM_WORLD, MPI_Status *status=MPI_STATUS_IGNORE)</td></tr>
 <tr class="memdesc:a28ff7fc7db9104c01b8846949c6f77ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a std::vector&lt;std::array&lt;T, N&gt;&gt; previously sent with <a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38" title="Send count contiguous values of type T to a destination rank.">send()</a>, resizing <code>data</code> to the transmitted size.  <br /></td></tr>
@@ -239,6 +246,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a71e99bb30a1a6f821ca3c96eaa4cc4fe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a71e99bb30a1a6f821ca3c96eaa4cc4fe">vulpes::mpi::bcast</a> (std::vector&lt; T &gt; &amp;data, int <a class="el" href="namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546">root</a>, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
 <tr class="memdesc:a71e99bb30a1a6f821ca3c96eaa4cc4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a std::vector&lt;T&gt; from <code>root</code>, resizing <code>data</code> on the other ranks to match the root's size.  <br /></td></tr>
 <tr class="separator:a71e99bb30a1a6f821ca3c96eaa4cc4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6d60f903363534b25de830eeee96ce" id="r_ada6d60f903363534b25de830eeee96ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#ada6d60f903363534b25de830eeee96ce">vulpes::mpi::bcast</a> (std::string &amp;data, int <a class="el" href="namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546">root</a>, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
+<tr class="memdesc:ada6d60f903363534b25de830eeee96ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a std::string from <code>root</code>, resizing <code>data</code> on the other ranks to match the root's size.  <br /></td></tr>
+<tr class="separator:ada6d60f903363534b25de830eeee96ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae206a31d40d5e14bbe921dcbf78a5f75" id="r_ae206a31d40d5e14bbe921dcbf78a5f75"><td class="memTemplParams" colspan="2">template&lt;typename T , int N, int M, int Options&gt; </td></tr>
 <tr class="memitem:ae206a31d40d5e14bbe921dcbf78a5f75"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#ae206a31d40d5e14bbe921dcbf78a5f75">vulpes::mpi::bcast</a> (Eigen::Matrix&lt; T, N, M, Options &gt; &amp;data, int <a class="el" href="namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546">root</a>, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
 <tr class="memdesc:ae206a31d40d5e14bbe921dcbf78a5f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a dynamically-sized <a class="el" href="namespaceEigen.html">Eigen</a> matrix from <code>root</code>, resizing <code>data</code> on the other ranks to match the root's shape.  <br /></td></tr>
@@ -292,7 +302,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_57fd5c05a3144478f1fe40cbcefca761.html">utils</a></li><li class="navelem"><a class="el" href="mpi__wrappers_8hpp.html">mpi_wrappers.hpp</a></li>
-    <li class="footer">Generated on Mon Oct 12 2026 15:40:44 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 16 2026 07:59:24 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

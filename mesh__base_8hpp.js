@@ -6,5 +6,6 @@ var mesh__base_8hpp =
     [ "buildSubDual", "mesh__base_8hpp.html#a2b1c9d63b50cc0b9aae11eb0bf9487bd", null ],
     [ "cast", "mesh__base_8hpp.html#abe9663906c29eb9b4dde96cf8c8299b9", null ],
     [ "checkEmptySets", "mesh__base_8hpp.html#ae3a5f4421326eb4efbd67fc53e891b2d", null ],
+    [ "importVtkMeshTags", "mesh__base_8hpp.html#a303d0d0fca4c8c7b440d33fa3c012b42", null ],
     [ "removeEmptySets", "mesh__base_8hpp.html#ab57e0234a9f21d3ecae7b168d239349f", null ]
 ];

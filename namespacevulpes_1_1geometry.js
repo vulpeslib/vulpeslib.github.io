@@ -9,6 +9,7 @@ var namespacevulpes_1_1geometry =
       [ "computeGradient", "namespacevulpes_1_1geometry_1_1internal.html#a26a9fb77b98f1d370896b71f54d9dfa9", null ],
       [ "computeVoronoiMesh2D", "namespacevulpes_1_1geometry_1_1internal.html#adba98ffe37b9cf9811ed77c29a7e2409", null ],
       [ "computeVoronoiMesh3D", "namespacevulpes_1_1geometry_1_1internal.html#a837885952ff40014073aa139895d0f36", null ],
+      [ "importVtkMeshTags", "namespacevulpes_1_1geometry_1_1internal.html#a303d0d0fca4c8c7b440d33fa3c012b42", null ],
       [ "maxVtxToVtxSquaredDistance", "namespacevulpes_1_1geometry_1_1internal.html#a413b1af581f4e7ea2af184af04def367", null ],
       [ "normalizeCellFlags", "namespacevulpes_1_1geometry_1_1internal.html#a47208c45afc797ab228bb38d65144497", null ],
       [ "polyMesherAdjustFixedPoints", "namespacevulpes_1_1geometry_1_1internal.html#ad0881f836ef5e935ef2f46031b10857c", null ],

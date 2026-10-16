@@ -162,6 +162,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a88120980755dcefe5adcddbc04bbdbb8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a88120980755dcefe5adcddbc04bbdbb8">send</a> (const std::vector&lt; T &gt; &amp;data, int destination, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
 <tr class="memdesc:a88120980755dcefe5adcddbc04bbdbb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a std::vector&lt;T&gt;, prefixed with its size.  <br /></td></tr>
 <tr class="separator:a88120980755dcefe5adcddbc04bbdbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170f3b466776739304da6ee1eea8682b" id="r_a170f3b466776739304da6ee1eea8682b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a170f3b466776739304da6ee1eea8682b">send</a> (const std::string &amp;data, int destination, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
+<tr class="memdesc:a170f3b466776739304da6ee1eea8682b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a std::string, prefixed with its size.  <br /></td></tr>
+<tr class="separator:a170f3b466776739304da6ee1eea8682b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6849bed637020cace4c756506169a4c" id="r_ae6849bed637020cace4c756506169a4c"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:ae6849bed637020cace4c756506169a4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#ae6849bed637020cace4c756506169a4c">send</a> (const std::vector&lt; std::array&lt; T, N &gt; &gt; &amp;data, int destination, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
 <tr class="memdesc:ae6849bed637020cace4c756506169a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a std::vector&lt;std::array&lt;T, N&gt;&gt;, prefixed with its size.  <br /></td></tr>
@@ -186,6 +189,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aae5d1373dadf91d4514345d021bec9f2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#aae5d1373dadf91d4514345d021bec9f2">recv</a> (std::vector&lt; T &gt; &amp;data, int source, MPI_Comm communicator=MPI_COMM_WORLD, MPI_Status *status=MPI_STATUS_IGNORE)</td></tr>
 <tr class="memdesc:aae5d1373dadf91d4514345d021bec9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a std::vector&lt;T&gt; previously sent with <a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38" title="Send count contiguous values of type T to a destination rank.">send()</a>, resizing <code>data</code> to the transmitted size.  <br /></td></tr>
 <tr class="separator:aae5d1373dadf91d4514345d021bec9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fae946bbd9a20a990329f93ea339909" id="r_a4fae946bbd9a20a990329f93ea339909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a4fae946bbd9a20a990329f93ea339909">recv</a> (std::string &amp;data, int source, MPI_Comm communicator=MPI_COMM_WORLD, MPI_Status *status=MPI_STATUS_IGNORE)</td></tr>
+<tr class="memdesc:a4fae946bbd9a20a990329f93ea339909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a std::string previously sent with <a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38" title="Send count contiguous values of type T to a destination rank.">send()</a>, resizing <code>data</code> to the transmitted size.  <br /></td></tr>
+<tr class="separator:a4fae946bbd9a20a990329f93ea339909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ff7fc7db9104c01b8846949c6f77ed" id="r_a28ff7fc7db9104c01b8846949c6f77ed"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:a28ff7fc7db9104c01b8846949c6f77ed"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a28ff7fc7db9104c01b8846949c6f77ed">recv</a> (std::vector&lt; std::array&lt; T, N &gt; &gt; &amp;data, int source, MPI_Comm communicator=MPI_COMM_WORLD, MPI_Status *status=MPI_STATUS_IGNORE)</td></tr>
 <tr class="memdesc:a28ff7fc7db9104c01b8846949c6f77ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a std::vector&lt;std::array&lt;T, N&gt;&gt; previously sent with <a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38" title="Send count contiguous values of type T to a destination rank.">send()</a>, resizing <code>data</code> to the transmitted size.  <br /></td></tr>
@@ -210,6 +216,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a71e99bb30a1a6f821ca3c96eaa4cc4fe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#a71e99bb30a1a6f821ca3c96eaa4cc4fe">bcast</a> (std::vector&lt; T &gt; &amp;data, int <a class="el" href="namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546">root</a>, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
 <tr class="memdesc:a71e99bb30a1a6f821ca3c96eaa4cc4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a std::vector&lt;T&gt; from <code>root</code>, resizing <code>data</code> on the other ranks to match the root's size.  <br /></td></tr>
 <tr class="separator:a71e99bb30a1a6f821ca3c96eaa4cc4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6d60f903363534b25de830eeee96ce" id="r_ada6d60f903363534b25de830eeee96ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#ada6d60f903363534b25de830eeee96ce">bcast</a> (std::string &amp;data, int <a class="el" href="namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546">root</a>, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
+<tr class="memdesc:ada6d60f903363534b25de830eeee96ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a std::string from <code>root</code>, resizing <code>data</code> on the other ranks to match the root's size.  <br /></td></tr>
+<tr class="separator:ada6d60f903363534b25de830eeee96ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae206a31d40d5e14bbe921dcbf78a5f75" id="r_ae206a31d40d5e14bbe921dcbf78a5f75"><td class="memTemplParams" colspan="2">template&lt;typename T , int N, int M, int Options&gt; </td></tr>
 <tr class="memitem:ae206a31d40d5e14bbe921dcbf78a5f75"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1mpi.html#ae206a31d40d5e14bbe921dcbf78a5f75">bcast</a> (Eigen::Matrix&lt; T, N, M, Options &gt; &amp;data, int <a class="el" href="namespacevulpes_1_1mpi.html#a27d95399ca678cd25ecf3e862b339546">root</a>, MPI_Comm communicator=MPI_COMM_WORLD)</td></tr>
 <tr class="memdesc:ae206a31d40d5e14bbe921dcbf78a5f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a dynamically-sized <a class="el" href="namespaceEigen.html">Eigen</a> matrix from <code>root</code>, resizing <code>data</code> on the other ranks to match the root's shape.  <br /></td></tr>
@@ -258,7 +267,7 @@ Variables</h2></td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae206a31d40d5e14bbe921dcbf78a5f75" name="ae206a31d40d5e14bbe921dcbf78a5f75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae206a31d40d5e14bbe921dcbf78a5f75">&#9670;&#160;</a></span>bcast() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae206a31d40d5e14bbe921dcbf78a5f75">&#9670;&#160;</a></span>bcast() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,8 +321,60 @@ template&lt;typename T , int N, int M, int Options&gt; </div>
 
 </div>
 </div>
+<a id="ada6d60f903363534b25de830eeee96ce" name="ada6d60f903363534b25de830eeee96ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada6d60f903363534b25de830eeee96ce">&#9670;&#160;</a></span>bcast() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::mpi::bcast </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm&#160;</td>
+          <td class="paramname"><em>communicator</em> = <code>MPI_COMM_WORLD</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Broadcast a std::string from <code>root</code>, resizing <code>data</code> on the other ranks to match the root's size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>String to broadcast from (root) / resize and fill (other ranks). </td></tr>
+    <tr><td class="paramname">root</td><td>Rank broadcasting the data. </td></tr>
+    <tr><td class="paramname">communicator</td><td>MPI communicator to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a71e99bb30a1a6f821ca3c96eaa4cc4fe" name="a71e99bb30a1a6f821ca3c96eaa4cc4fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71e99bb30a1a6f821ca3c96eaa4cc4fe">&#9670;&#160;</a></span>bcast() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e99bb30a1a6f821ca3c96eaa4cc4fe">&#9670;&#160;</a></span>bcast() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,7 +426,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a787c607c3161256d2028c225ce65e831" name="a787c607c3161256d2028c225ce65e831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a787c607c3161256d2028c225ce65e831">&#9670;&#160;</a></span>bcast() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a787c607c3161256d2028c225ce65e831">&#9670;&#160;</a></span>bcast() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,7 +478,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ae392da87c62647799e306debadc288d1" name="ae392da87c62647799e306debadc288d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae392da87c62647799e306debadc288d1">&#9670;&#160;</a></span>bcast() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae392da87c62647799e306debadc288d1">&#9670;&#160;</a></span>bcast() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -897,7 +958,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a7c5ad3558c3b08b22c32a5df5f5468bd" name="a7c5ad3558c3b08b22c32a5df5f5468bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c5ad3558c3b08b22c32a5df5f5468bd">&#9670;&#160;</a></span>recv() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c5ad3558c3b08b22c32a5df5f5468bd">&#9670;&#160;</a></span>recv() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -958,7 +1019,7 @@ template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexTy
 </div>
 </div>
 <a id="a0009b17b562e1901e17b0c1f4f3ddc6c" name="a0009b17b562e1901e17b0c1f4f3ddc6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0009b17b562e1901e17b0c1f4f3ddc6c">&#9670;&#160;</a></span>recv() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0009b17b562e1901e17b0c1f4f3ddc6c">&#9670;&#160;</a></span>recv() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1010,8 +1071,67 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a4fae946bbd9a20a990329f93ea339909" name="a4fae946bbd9a20a990329f93ea339909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fae946bbd9a20a990329f93ea339909">&#9670;&#160;</a></span>recv() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::mpi::recv </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm&#160;</td>
+          <td class="paramname"><em>communicator</em> = <code>MPI_COMM_WORLD</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Status *&#160;</td>
+          <td class="paramname"><em>status</em> = <code>MPI_STATUS_IGNORE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Receive a std::string previously sent with <a class="el" href="namespacevulpes_1_1mpi.html#a7ec73a6d5f77213d86931e30fdb3fc38" title="Send count contiguous values of type T to a destination rank.">send()</a>, resizing <code>data</code> to the transmitted size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>String to receive into; resized to match the sender's size. </td></tr>
+    <tr><td class="paramname">source</td><td>Rank of the sending process. </td></tr>
+    <tr><td class="paramname">communicator</td><td>MPI communicator to use. </td></tr>
+    <tr><td class="paramname">status</td><td>Optional MPI_Status to fill in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a54c935084f676a53ca201ff2948f1174" name="a54c935084f676a53ca201ff2948f1174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54c935084f676a53ca201ff2948f1174">&#9670;&#160;</a></span>recv() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c935084f676a53ca201ff2948f1174">&#9670;&#160;</a></span>recv() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1073,7 +1193,7 @@ template&lt;typename T , int N, int M, int Options&gt; </div>
 </div>
 </div>
 <a id="a28ff7fc7db9104c01b8846949c6f77ed" name="a28ff7fc7db9104c01b8846949c6f77ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28ff7fc7db9104c01b8846949c6f77ed">&#9670;&#160;</a></span>recv() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ff7fc7db9104c01b8846949c6f77ed">&#9670;&#160;</a></span>recv() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1133,7 +1253,7 @@ template&lt;typename T , std::size_t N&gt; </div>
 </div>
 </div>
 <a id="aae5d1373dadf91d4514345d021bec9f2" name="aae5d1373dadf91d4514345d021bec9f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5d1373dadf91d4514345d021bec9f2">&#9670;&#160;</a></span>recv() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5d1373dadf91d4514345d021bec9f2">&#9670;&#160;</a></span>recv() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1192,7 +1312,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a079415f36d5dfee0dc1eac70037dac56" name="a079415f36d5dfee0dc1eac70037dac56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a079415f36d5dfee0dc1eac70037dac56">&#9670;&#160;</a></span>recv() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a079415f36d5dfee0dc1eac70037dac56">&#9670;&#160;</a></span>recv() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1644,7 +1764,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a9faa1f6e305d49fd2760fcbc13315257" name="a9faa1f6e305d49fd2760fcbc13315257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9faa1f6e305d49fd2760fcbc13315257">&#9670;&#160;</a></span>send() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9faa1f6e305d49fd2760fcbc13315257">&#9670;&#160;</a></span>send() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1697,8 +1817,60 @@ template&lt;typename DataType , typename IndexType , IndexType RowSize = IndexTy
 
 </div>
 </div>
+<a id="a170f3b466776739304da6ee1eea8682b" name="a170f3b466776739304da6ee1eea8682b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a170f3b466776739304da6ee1eea8682b">&#9670;&#160;</a></span>send() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::mpi::send </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm&#160;</td>
+          <td class="paramname"><em>communicator</em> = <code>MPI_COMM_WORLD</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a std::string, prefixed with its size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The string to send. </td></tr>
+    <tr><td class="paramname">destination</td><td>Rank of the receiving process. </td></tr>
+    <tr><td class="paramname">communicator</td><td>MPI communicator to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8b5785828950e92e0802c398c79a2b4b" name="a8b5785828950e92e0802c398c79a2b4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b5785828950e92e0802c398c79a2b4b">&#9670;&#160;</a></span>send() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5785828950e92e0802c398c79a2b4b">&#9670;&#160;</a></span>send() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1753,7 +1925,7 @@ template&lt;typename T , int N, int M, int Options&gt; </div>
 </div>
 </div>
 <a id="ae6849bed637020cace4c756506169a4c" name="ae6849bed637020cace4c756506169a4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6849bed637020cace4c756506169a4c">&#9670;&#160;</a></span>send() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6849bed637020cace4c756506169a4c">&#9670;&#160;</a></span>send() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1806,7 +1978,7 @@ template&lt;typename T , std::size_t N&gt; </div>
 </div>
 </div>
 <a id="a88120980755dcefe5adcddbc04bbdbb8" name="a88120980755dcefe5adcddbc04bbdbb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88120980755dcefe5adcddbc04bbdbb8">&#9670;&#160;</a></span>send() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88120980755dcefe5adcddbc04bbdbb8">&#9670;&#160;</a></span>send() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1858,7 +2030,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a6dc40c3d7a59fa6dcf1827771d2f1ebc" name="a6dc40c3d7a59fa6dcf1827771d2f1ebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dc40c3d7a59fa6dcf1827771d2f1ebc">&#9670;&#160;</a></span>send() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc40c3d7a59fa6dcf1827771d2f1ebc">&#9670;&#160;</a></span>send() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1910,7 +2082,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a7ec73a6d5f77213d86931e30fdb3fc38" name="a7ec73a6d5f77213d86931e30fdb3fc38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec73a6d5f77213d86931e30fdb3fc38">&#9670;&#160;</a></span>send() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec73a6d5f77213d86931e30fdb3fc38">&#9670;&#160;</a></span>send() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2027,7 +2199,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1mpi.html">mpi</a></li>
-    <li class="footer">Generated on Mon Oct 12 2026 15:40:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 16 2026 07:59:25 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

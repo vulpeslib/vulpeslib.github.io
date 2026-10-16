@@ -247,6 +247,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae80c0534ae01445a588ee187caeb8eba" id="r_ae80c0534ae01445a588ee187caeb8eba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ae80c0534ae01445a588ee187caeb8eba">buildLocalRenumbering</a> ()</td></tr>
 <tr class="memdesc:ae80c0534ae01445a588ee187caeb8eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes local-to-global and global-to-local numbering for all entities.  <br /></td></tr>
 <tr class="separator:ae80c0534ae01445a588ee187caeb8eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bf45eb4061fcc6ef5741931c07573c" id="r_a56bf45eb4061fcc6ef5741931c07573c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a56bf45eb4061fcc6ef5741931c07573c">initializeMeshTags</a> ()</td></tr>
+<tr class="memdesc:a56bf45eb4061fcc6ef5741931c07573c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes vertex and cell mesh tags.  <br /></td></tr>
+<tr class="separator:a56bf45eb4061fcc6ef5741931c07573c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11698fb77018dd87945d9f0e8b9244c9" id="r_a11698fb77018dd87945d9f0e8b9244c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a11698fb77018dd87945d9f0e8b9244c9">sendMeshTags</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">vertex_numbering</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">destination</a>)</td></tr>
+<tr class="memdesc:a11698fb77018dd87945d9f0e8b9244c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and sends local mesh tags from rank 0 to another rank.  <br /></td></tr>
+<tr class="separator:a11698fb77018dd87945d9f0e8b9244c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0861f808629b60c9d93c29d47ccba9" id="r_aaf0861f808629b60c9d93c29d47ccba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aaf0861f808629b60c9d93c29d47ccba9">receiveMeshTags</a> ()</td></tr>
+<tr class="memdesc:aaf0861f808629b60c9d93c29d47ccba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives local vertex and cell tags from rank 0.  <br /></td></tr>
+<tr class="separator:aaf0861f808629b60c9d93c29d47ccba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96a370d8e936fc027f72e0ede2d25249" id="r_a96a370d8e936fc027f72e0ede2d25249"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a96a370d8e936fc027f72e0ede2d25249">buildLocalEntityToCellMaps</a> ()</td></tr>
 <tr class="memdesc:a96a370d8e936fc027f72e0ede2d25249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and distributes local entity-to-cell maps.  <br /></td></tr>
 <tr class="separator:a96a370d8e936fc027f72e0ede2d25249"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,7 +343,8 @@ class vulpes::geometry::ParallelMesh&lt; Mesh &gt;</div><p>This class wraps a se
 <li>A mesh can be built entirely on a single process (rank 0) and then parallelized.</li>
 <li>The mesh partitions the entity and keeps a local-to-global and global-to-local maps for each entity</li>
 <li>The mesh's entity maps (e.g., cell-to-vertex, facet-to-cell) are stored as local-to-local maps. This are the "default" maps.</li>
-<li>Entity mappings are also available as local-to-global. These are stored as copies, do not require to pass by the entity mappings. Are available with methods called "Global". </li>
+<li>Entity mappings are also available as local-to-global. These are stored as copies, do not require to pass by the entity mappings. Are available with methods called "Global".</li>
+<li>Mesh tags attached to vertices and cells are distributed in local numbering, including owned and ghost entities. Tags attached to intermediate-dimensional entities (edges/facets) are currently not distributed. </li>
 </ul>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3d8461309261d8dd566674d8cf186b4a" name="a3d8461309261d8dd566674d8cf186b4a"></a>
@@ -1160,6 +1170,36 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 
 </div>
 </div>
+<a id="a56bf45eb4061fcc6ef5741931c07573c" name="a56bf45eb4061fcc6ef5741931c07573c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56bf45eb4061fcc6ef5741931c07573c">&#9670;&#160;</a></span>initializeMeshTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::initializeMeshTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes vertex and cell mesh tags. </p>
+<p>Broadcasts tag names and builds rank 0's local tags. Must be called collectively by all ranks. </p>
+
+</div>
+</div>
 <a id="a02b5850973e335a9fceb02f095eee5c4" name="a02b5850973e335a9fceb02f095eee5c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a02b5850973e335a9fceb02f095eee5c4">&#9670;&#160;</a></span>localToGlobal()</h2>
 
@@ -1369,6 +1409,35 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 
 </div>
 </div>
+<a id="aaf0861f808629b60c9d93c29d47ccba9" name="aaf0861f808629b60c9d93c29d47ccba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf0861f808629b60c9d93c29d47ccba9">&#9670;&#160;</a></span>receiveMeshTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::receiveMeshTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Receives local vertex and cell tags from rank 0. </p>
+
+</div>
+</div>
 <a id="a1a5fc70892059ab3abe3ee0ffbe609a2" name="a1a5fc70892059ab3abe3ee0ffbe609a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a5fc70892059ab3abe3ee0ffbe609a2">&#9670;&#160;</a></span>reconstructPartitioningAndScatterDual()</h2>
 
@@ -1433,6 +1502,53 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 
 <p>Removes references to non-owned cells from the local entity-to-cell maps. </p>
 <p>This method "cleans up" the local entity-to-cell maps by removing any references to cells that are not part of the process's owned or ghost cell set. </p>
+
+</div>
+</div>
+<a id="a11698fb77018dd87945d9f0e8b9244c9" name="a11698fb77018dd87945d9f0e8b9244c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11698fb77018dd87945d9f0e8b9244c9">&#9670;&#160;</a></span>sendMeshTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> Mesh &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">vulpes::geometry::ParallelMesh</a>&lt; Mesh &gt;::sendMeshTags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aa7a90b41c94365224ec29bb1faa0ccbe">index_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertex_numbering</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds and sends local mesh tags from rank 0 to another rank. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex_numbering</td><td>Local-to-global vertex numbering of the destination. </td></tr>
+    <tr><td class="paramname">destination</td><td>Destination MPI rank. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2083,7 +2199,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html">ParallelMesh</a></li>
-    <li class="footer">Generated on Mon Oct 12 2026 15:40:45 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 16 2026 07:59:25 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
