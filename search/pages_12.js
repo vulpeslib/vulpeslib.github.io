@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['water_20equations_20dg_0',['Linear Shallow Water Equations (DG)',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG.html',1,'']]],
-  ['workflows_1',['Workflows',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2workflows_2index.html',1,'']]]
+  ['water_20equations_20dg_0',['Linear Shallow Water Equations (DG)',['../tutorials_04_Shallow_Water_DG.html',1,'tutorials']]],
+  ['workflows_1',['Workflows',['../developers_guide_workflows.html',1,'developers_guide']]]
 ];

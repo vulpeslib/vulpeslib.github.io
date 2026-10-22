@@ -1,51 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <tagfile doxygen_version="1.9.8">
   <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/commit-and-merge-policy/</path>
-    <filename>commit-and-merge-policy_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/compile-native/</path>
-    <filename>compile-native_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/compile-options/</path>
-    <filename>compile-options_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/debugging/</path>
-    <filename>debugging_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/installation-instruction/</path>
-    <filename>installation-instruction_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/profiling/</path>
-    <filename>profiling_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/style-guide/</path>
-    <filename>style-guide_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/testing-and-coverage/</path>
-    <filename>testing-and-coverage_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>index.md</name>
-    <path>/__w/vulpes/vulpes/doc/developers-guide/workflows/</path>
-    <filename>workflows_2index_8md.html</filename>
-  </compound>
-  <compound kind="file">
     <name>mainpage.md</name>
     <path>/__w/vulpes/vulpes/doc/</path>
     <filename>mainpage_8md.html</filename>
@@ -79,6 +34,61 @@
     <name>06_Mesh_Agglomeration.md</name>
     <path>/__w/vulpes/vulpes/doc/tutorials/</path>
     <filename>06__Mesh__Agglomeration_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/commit-and-merge-policy/</path>
+    <filename>developers-guide_2commit-and-merge-policy_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/compile-native/</path>
+    <filename>developers-guide_2compile-native_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/compile-options/</path>
+    <filename>developers-guide_2compile-options_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/debugging/</path>
+    <filename>developers-guide_2debugging_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/</path>
+    <filename>developers-guide_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/installation-instruction/</path>
+    <filename>developers-guide_2installation-instruction_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/profiling/</path>
+    <filename>developers-guide_2profiling_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/style-guide/</path>
+    <filename>developers-guide_2style-guide_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/testing-and-coverage/</path>
+    <filename>developers-guide_2testing-and-coverage_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/workflows/</path>
+    <filename>developers-guide_2workflows_2index_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>index.md</name>
+    <path>/__w/vulpes/vulpes/doc/tutorials/</path>
+    <filename>tutorials_2index_8md.html</filename>
   </compound>
   <compound kind="file">
     <name>cell_manager.hpp</name>
@@ -30623,79 +30633,105 @@
     <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::vector&lt; Args... &gt; &gt;</class>
   </compound>
   <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index</name>
-    <title>Commit and Merge Policy</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index.html</filename>
+    <name>tutorials_01_Meshes_2D</name>
+    <title>Mesh Kinds for 01_assemble_lapl_dg_2d</title>
+    <filename>tutorials_01_Meshes_2D.html</filename>
   </compound>
   <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index</name>
-    <title>Native cluster compile</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index</name>
-    <title>Compile options</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index</name>
-    <title>Debugging</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index</name>
-    <title>Install &amp; Build</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index</name>
-    <title>Profiling</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index</name>
-    <title>C++ Style Guide</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2testing-and-coverage_2index</name>
-    <title>Testing and Coverage</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2testing-and-coverage_2index.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2workflows_2index</name>
-    <title>Workflows</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2workflows_2index.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D</name>
-    <title>Mesh Kinds for &lt;tt&gt;01_assemble_lapl_dg_2d&lt;/tt&gt;</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly</name>
+    <name>tutorials_02_Laplacian_Assembly</name>
     <title>Laplacian Assembly (DG)</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly.html</filename>
+    <filename>tutorials_02_Laplacian_Assembly.html</filename>
   </compound>
   <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_203__Advection__Assembly</name>
+    <name>tutorials_03_Advection_Assembly</name>
     <title>Advection Assembly (DG)</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_203__Advection__Assembly.html</filename>
+    <filename>tutorials_03_Advection_Assembly.html</filename>
   </compound>
   <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG</name>
+    <name>tutorials_04_Shallow_Water_DG</name>
     <title>Linear Shallow Water Equations (DG)</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG.html</filename>
+    <filename>tutorials_04_Shallow_Water_DG.html</filename>
   </compound>
   <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian</name>
+    <name>tutorials_05_MPI_Laplacian</name>
     <title>MPI Laplacian Assembly</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html</filename>
+    <filename>tutorials_05_MPI_Laplacian.html</filename>
   </compound>
   <compound kind="page">
-    <name>md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration</name>
+    <name>tutorials_06_Mesh_Agglomeration</name>
     <title>Tool for Mesh Agglomeration</title>
-    <filename>md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html</filename>
+    <filename>tutorials_06_Mesh_Agglomeration.html</filename>
+    <docanchor file="tutorials_06_Mesh_Agglomeration.html" title="References">references</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>tutorials</name>
+    <title>Tutorials</title>
+    <filename>tutorials.html</filename>
+    <subpage>tutorials_01_Meshes_2D.html</subpage>
+    <subpage>tutorials_02_Laplacian_Assembly.html</subpage>
+    <subpage>tutorials_03_Advection_Assembly.html</subpage>
+    <subpage>tutorials_04_Shallow_Water_DG.html</subpage>
+    <subpage>tutorials_05_MPI_Laplacian.html</subpage>
+    <subpage>tutorials_06_Mesh_Agglomeration.html</subpage>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_commit_and_merge_policy</name>
+    <title>Commit and Merge Policy</title>
+    <filename>developers_guide_commit_and_merge_policy.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_compile_native</name>
+    <title>Native cluster compile</title>
+    <filename>developers_guide_compile_native.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_compile_options</name>
+    <title>Compile options</title>
+    <filename>developers_guide_compile_options.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_debugging</name>
+    <title>Debugging</title>
+    <filename>developers_guide_debugging.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide</name>
+    <title>Developer&apos;s Guide</title>
+    <filename>developers_guide.html</filename>
+    <subpage>developers_guide_installation_instruction.html</subpage>
+    <subpage>developers_guide_compile_options.html</subpage>
+    <subpage>developers_guide_compile_native.html</subpage>
+    <subpage>developers_guide_style_guide.html</subpage>
+    <subpage>developers_guide_commit_and_merge_policy.html</subpage>
+    <subpage>developers_guide_testing_and_coverage.html</subpage>
+    <subpage>developers_guide_debugging.html</subpage>
+    <subpage>developers_guide_profiling.html</subpage>
+    <subpage>developers_guide_workflows.html</subpage>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_installation_instruction</name>
+    <title>Install &amp; Build</title>
+    <filename>developers_guide_installation_instruction.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_profiling</name>
+    <title>Profiling</title>
+    <filename>developers_guide_profiling.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_style_guide</name>
+    <title>C++ Style Guide</title>
+    <filename>developers_guide_style_guide.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_testing_and_coverage</name>
+    <title>Testing and Coverage</title>
+    <filename>developers_guide_testing_and_coverage.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>developers_guide_workflows</name>
+    <title>Workflows</title>
+    <filename>developers_guide_workflows.html</filename>
   </compound>
   <compound kind="page">
     <name>index</name>

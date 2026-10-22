@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['8_20tt_20bisect_5fgnn_20tt_0',['8. &lt;tt&gt;bisect_gnn&lt;/tt&gt;',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md100',1,'']]]
+  ['8_20bisect_5fgnn_0',['8. bisect_gnn',['../tutorials_01_Meshes_2D.html#autotoc_md16',1,'']]],
+  ['8_20running_20the_20solver_1',['8) Running the Solver',['../tutorials_04_Shallow_Water_DG.html#autotoc_md77',1,'']]]
 ];

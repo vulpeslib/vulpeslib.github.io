@@ -27,13 +27,13 @@ var searchData=
   ['updateweights_24',['UpdateWeights',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa30366acf17ea86ca9e5012ecd382dfd1',1,'vulpes::fe']]],
   ['upow_25',['upow',['../namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b',1,'vulpes::vmath']]],
   ['upper_5fbound_26',['upper_bound',['../structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#abd16d1ac55c1299821bb15dcb43063c7',1,'vulpes::scipy::RectRectDistanceTracker']]],
-  ['upwind_20flux_20and_20its_20central_20dissipation_20form_27',['3.1 The Upwind Flux and its Central + Dissipation Form',['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md143',1,'']]],
-  ['upwind_20godunov_20numerical_20flux_28',['3) Upwind (Godunov) Numerical Flux',['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md142',1,'']]],
-  ['use_20the_20docker_20from_20vscode_29',['Use the Docker from VSCode',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html#autotoc_md31',1,'']]],
-  ['usecase_30',['Our usecase',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md16',1,'']]],
-  ['users_20with_20m1_20m2_20chips_31',['MacOS users with M1/M2 chips',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html#autotoc_md29',1,'']]],
-  ['using_20assembly_20comments_32',['2. Checking Assembly Code and Using Assembly Comments',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md45',1,'']]],
-  ['using_20callgrind_33',['Using Callgrind',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md44',1,'']]],
-  ['using_20spack_34',['Using Spack',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index.html#autotoc_md15',1,'']]],
-  ['using_20system_20installed_20apptainer_20recommended_35',['Using system-installed Apptainer (recommended)',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2installation-instruction_2index.html#autotoc_md36',1,'']]]
+  ['upwind_20flux_20and_20its_20central_20dissipation_20form_27',['3.1 The Upwind Flux and its Central + Dissipation Form',['../tutorials_04_Shallow_Water_DG.html#autotoc_md59',1,'']]],
+  ['upwind_20godunov_20numerical_20flux_28',['3) Upwind (Godunov) Numerical Flux',['../tutorials_04_Shallow_Water_DG.html#autotoc_md58',1,'']]],
+  ['use_20the_20docker_20from_20vscode_29',['Use the Docker from VSCode',['../developers_guide_installation_instruction.html#autotoc_md125',1,'']]],
+  ['usecase_30',['Our usecase',['../developers_guide_compile_native.html#autotoc_md113',1,'']]],
+  ['users_20with_20m1_20m2_20chips_31',['MacOS users with M1/M2 chips',['../developers_guide_installation_instruction.html#autotoc_md123',1,'']]],
+  ['using_20assembly_20comments_32',['2. Checking Assembly Code and Using Assembly Comments',['../developers_guide_profiling.html#autotoc_md138',1,'']]],
+  ['using_20callgrind_33',['Using Callgrind',['../developers_guide_profiling.html#autotoc_md137',1,'']]],
+  ['using_20spack_34',['Using Spack',['../developers_guide_compile_native.html#autotoc_md112',1,'']]],
+  ['using_20system_20installed_20apptainer_20recommended_35',['Using system-installed Apptainer (recommended)',['../developers_guide_installation_instruction.html#autotoc_md130',1,'']]]
 ];
