@@ -1,6 +1,7 @@
 var dir_ffc3e8d0ffd5cf1b8ef4f07435f673f1 =
 [
     [ "boomer_amg.hpp", "boomer__amg_8hpp.html", "boomer__amg_8hpp" ],
+    [ "gamg.hpp", "gamg_8hpp.html", "gamg_8hpp" ],
     [ "linear_solver.cpp", "linear__solver_8cpp.html", "linear__solver_8cpp" ],
     [ "linear_solver.hpp", "linear__solver_8hpp.html", "linear__solver_8hpp" ],
     [ "petsc_utils.hpp", "petsc__utils_8hpp.html", "petsc__utils_8hpp" ],

@@ -8,6 +8,7 @@ var namespacevulpes_1_1fe =
     [ "DofPolicyFeSpaceDQ", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ" ],
     [ "DofPolicyFeSpaceVEM", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM" ],
     [ "FeExactExpressionFeProjection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection" ],
+    [ "FeExpressionAbs", "classvulpes_1_1fe_1_1FeExpressionAbs.html", "classvulpes_1_1fe_1_1FeExpressionAbs" ],
     [ "FeExpressionBase", "classvulpes_1_1fe_1_1FeExpressionBase.html", "classvulpes_1_1fe_1_1FeExpressionBase" ],
     [ "FeExpressionCellConstant", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html", "classvulpes_1_1fe_1_1FeExpressionCellConstant" ],
     [ "FeExpressionCellConstantNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh" ],
@@ -89,6 +90,7 @@ var namespacevulpes_1_1fe =
       [ "UpdateNeighborValues", "namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa4d35240e7133f9979cf52324e593c874", null ],
       [ "UpdateAll", "namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa000c668d9188fd4be6af9ccd77761b76", null ]
     ] ],
+    [ "abs", "namespacevulpes_1_1fe.html#a89c6b603f00931f425dcda67f1392d11", null ],
     [ "div", "namespacevulpes_1_1fe.html#a5e3f0530894f18338caa6e8f7d01e133", null ],
     [ "field_component", "namespacevulpes_1_1fe.html#a78a3805f841036f3f46da0f2df821fa3", null ],
     [ "grad", "namespacevulpes_1_1fe.html#af24d31d4d96f90905f1c5aaa725fda77", null ],

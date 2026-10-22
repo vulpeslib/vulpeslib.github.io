@@ -9,5 +9,6 @@ var searchData=
   ['3_20profiling_20with_20a_20the_20tt_20profiler_20tt_20class_6',['3. Profiling with a the &lt;tt&gt;Profiler&lt;/tt&gt; class',['../md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index.html#autotoc_md46',1,'']]],
   ['3_20time_20integration_7',['5.3 Time Integration',['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md154',1,'']]],
   ['3_20tt_20poly_5fmeshes_20tt_8',['3. &lt;tt&gt;poly_meshes&lt;/tt&gt;',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md90',1,'']]],
-  ['3_20upwind_20godunov_20numerical_20flux_9',['3) Upwind (Godunov) Numerical Flux',['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md142',1,'']]]
+  ['3_20upwind_20godunov_20numerical_20flux_9',['3) Upwind (Godunov) Numerical Flux',['..//__w/vulpes/vulpes/doc/tutorials/04_Shallow_Water_DG.md#autotoc_md142',1,'']]],
+  ['3d_20agglomerates_10',['Repair of 3D Agglomerates',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md178',1,'']]]
 ];

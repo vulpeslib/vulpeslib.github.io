@@ -4,12 +4,13 @@ var searchData=
   ['children_1',['children',['../structvulpes_1_1scipy_1_1ckdtreenode.html#ac33acfddfe957577d574ca5e8a4ac3b6',1,'vulpes::scipy::ckdtreenode']]],
   ['clip_5fto_5fbnd_2',['clip_to_bnd',['../structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#ad8055930ba80f477d4ee0aed7fd014d7',1,'vulpes::geometry::polymesher::PolyMesherParams']]],
   ['clipping_5frelax_3',['clipping_relax',['../structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#a6cbde58523b8cfb0e627513c98a202f9',1,'vulpes::geometry::polymesher::PolyMesherParams']]],
-  ['coef_4',['coef',['../structvulpes_1_1assemble_1_1CompressedMonomial.html#a870d5fedb937867aba63e98b1c9905ff',1,'vulpes::assemble::CompressedMonomial']]],
-  ['collapse_5fedge_5ftoll_5',['collapse_edge_toll',['../structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#a2785a2c5d7513ba87bae6100d56b724d',1,'vulpes::geometry::polymesher::PolyMesherParams']]],
-  ['compressor_5ftype_6',['compressor_type',['../structvulpes_1_1geometry_1_1VtuOptions.html#a8a1ec447ea6f503b07aaa245858600d7',1,'vulpes::geometry::VtuOptions']]],
-  ['contents_7',['contents',['../structvulpes_1_1scipy_1_1heapitem.html#aa9a0679a8a0413e9449e44426e8b4d0c',1,'vulpes::scipy::heapitem']]],
-  ['coordinate_5fprecision_8',['coordinate_precision',['../structvulpes_1_1geometry_1_1VtuOptions.html#ad13a690c077eadf6e385aa51a29b3411',1,'vulpes::geometry::VtuOptions']]],
-  ['ctree_9',['ctree',['../structvulpes_1_1scipy_1_1ckdtree.html#ab412245f7cad0366f9ac10a96b84a065',1,'vulpes::scipy::ckdtree']]],
-  ['current_5flevel_5f_10',['current_level_',['../classvulpes_1_1utils_1_1pcout__t.html#afba85a980fa313668bde26a83201f764',1,'vulpes::utils::pcout_t']]],
-  ['current_5foffset_11',['current_offset',['../structvulpes_1_1scipy_1_1nodeinfo__pool.html#a9ae3c569197801fc81b58e3059a93347',1,'vulpes::scipy::nodeinfo_pool']]]
+  ['coarse_5feq_5flimit_4',['coarse_eq_limit',['../structvulpes_1_1la_1_1DataGAMG.html#a34fa5771841a802160f45501119ae0ce',1,'vulpes::la::DataGAMG']]],
+  ['coef_5',['coef',['../structvulpes_1_1assemble_1_1CompressedMonomial.html#a870d5fedb937867aba63e98b1c9905ff',1,'vulpes::assemble::CompressedMonomial']]],
+  ['collapse_5fedge_5ftoll_6',['collapse_edge_toll',['../structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#a2785a2c5d7513ba87bae6100d56b724d',1,'vulpes::geometry::polymesher::PolyMesherParams']]],
+  ['compressor_5ftype_7',['compressor_type',['../structvulpes_1_1geometry_1_1VtuOptions.html#a8a1ec447ea6f503b07aaa245858600d7',1,'vulpes::geometry::VtuOptions']]],
+  ['contents_8',['contents',['../structvulpes_1_1scipy_1_1heapitem.html#aa9a0679a8a0413e9449e44426e8b4d0c',1,'vulpes::scipy::heapitem']]],
+  ['coordinate_5fprecision_9',['coordinate_precision',['../structvulpes_1_1geometry_1_1VtuOptions.html#ad13a690c077eadf6e385aa51a29b3411',1,'vulpes::geometry::VtuOptions']]],
+  ['ctree_10',['ctree',['../structvulpes_1_1scipy_1_1ckdtree.html#ab412245f7cad0366f9ac10a96b84a065',1,'vulpes::scipy::ckdtree']]],
+  ['current_5flevel_5f_11',['current_level_',['../classvulpes_1_1utils_1_1pcout__t.html#afba85a980fa313668bde26a83201f764',1,'vulpes::utils::pcout_t']]],
+  ['current_5foffset_12',['current_offset',['../structvulpes_1_1scipy_1_1nodeinfo__pool.html#a9ae3c569197801fc81b58e3059a93347',1,'vulpes::scipy::nodeinfo_pool']]]
 ];

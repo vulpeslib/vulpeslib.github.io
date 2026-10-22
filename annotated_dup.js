@@ -72,6 +72,7 @@ var annotated_dup =
         [ "DofPolicyFeSpaceDQ", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ" ],
         [ "DofPolicyFeSpaceVEM", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM" ],
         [ "FeExactExpressionFeProjection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection" ],
+        [ "FeExpressionAbs", "classvulpes_1_1fe_1_1FeExpressionAbs.html", "classvulpes_1_1fe_1_1FeExpressionAbs" ],
         [ "FeExpressionBase", "classvulpes_1_1fe_1_1FeExpressionBase.html", "classvulpes_1_1fe_1_1FeExpressionBase" ],
         [ "FeExpressionCellConstant", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html", "classvulpes_1_1fe_1_1FeExpressionCellConstant" ],
         [ "FeExpressionCellConstantNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html", "classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh" ],
@@ -158,6 +159,7 @@ var annotated_dup =
       ] ],
       [ "la", "namespacevulpes_1_1la.html", [
         [ "DataBoomerAMG", "structvulpes_1_1la_1_1DataBoomerAMG.html", "structvulpes_1_1la_1_1DataBoomerAMG" ],
+        [ "DataGAMG", "structvulpes_1_1la_1_1DataGAMG.html", "structvulpes_1_1la_1_1DataGAMG" ],
         [ "LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html", "classvulpes_1_1la_1_1LinearSolver" ],
         [ "SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html", "classvulpes_1_1la_1_1SparseMatrix" ],
         [ "Tensor", "classvulpes_1_1la_1_1Tensor.html", "classvulpes_1_1la_1_1Tensor" ],

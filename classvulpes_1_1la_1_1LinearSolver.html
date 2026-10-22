@@ -152,6 +152,7 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a564e56412cdb1b558723a09d8ccc782d">Cholesky</a>
 , <a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a34d71e624f819eb74a127e9c2ec41715">SuperLU</a>
 , <a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a4bf06081af8b2806e859c14c73c6578d">MUMPS</a>
+, <a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40ace83ae802b33af6ee63842560c46cc41">GAMG</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a7471023b16cc866f99ef0a761f7e8f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of available preconditioner types.  <a href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40">More...</a><br /></td></tr>
@@ -192,6 +193,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a33bf20b5178ed3df5358e2af0effce5b" id="r_a33bf20b5178ed3df5358e2af0effce5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a33bf20b5178ed3df5358e2af0effce5b">setOptionsBoomerAMG</a> (<a class="el" href="structvulpes_1_1la_1_1DataBoomerAMG.html">DataBoomerAMG</a> data)</td></tr>
 <tr class="memdesc:a33bf20b5178ed3df5358e2af0effce5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set options for the BoomerAMG preconditioner.  <br /></td></tr>
 <tr class="separator:a33bf20b5178ed3df5358e2af0effce5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0675fc0ed4011d655072481718fa1ca9" id="r_a0675fc0ed4011d655072481718fa1ca9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a0675fc0ed4011d655072481718fa1ca9">setOptionsGAMG</a> (const <a class="el" href="structvulpes_1_1la_1_1DataGAMG.html">DataGAMG</a> &amp;data)</td></tr>
+<tr class="memdesc:a0675fc0ed4011d655072481718fa1ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set options for the GAMG preconditioner.  <br /></td></tr>
+<tr class="separator:a0675fc0ed4011d655072481718fa1ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5f0118cb4d14c9e5aec59ba0afb255" id="r_afd5f0118cb4d14c9e5aec59ba0afb255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#afd5f0118cb4d14c9e5aec59ba0afb255">setOperators</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;A)</td></tr>
 <tr class="memdesc:afd5f0118cb4d14c9e5aec59ba0afb255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the system matrix.  <br /></td></tr>
 <tr class="separator:afd5f0118cb4d14c9e5aec59ba0afb255"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,11 +233,17 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a49e9250bb3f5a81b2c19fdfd4940102f" id="r_a49e9250bb3f5a81b2c19fdfd4940102f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a49e9250bb3f5a81b2c19fdfd4940102f">init</a> (<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a02549faebd5fbd5298b8b55ca492821f">Type</a> solver_type=<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a02549faebd5fbd5298b8b55ca492821fac777db270ef46a310f59467f670dcbd7">CG</a>, <a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40">PrecondType</a> pc_type=<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a24a797c8ab532a6c3ebd7f55f810d85f">Jacobi</a>)</td></tr>
 <tr class="separator:a49e9250bb3f5a81b2c19fdfd4940102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3b12be8298e8876df5db71830ee607" id="r_a9b3b12be8298e8876df5db71830ee607"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a9b3b12be8298e8876df5db71830ee607">setUp</a> ()</td></tr>
+<tr class="memdesc:a9b3b12be8298e8876df5db71830ee607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the KSP, applying the solver specific level smoother.  <br /></td></tr>
+<tr class="separator:a9b3b12be8298e8876df5db71830ee607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a0ab775c2b52852413b7649c8f6959be6" id="r_a0ab775c2b52852413b7649c8f6959be6"><td class="memItemLeft" align="right" valign="top">KSP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a0ab775c2b52852413b7649c8f6959be6">m_ksp</a></td></tr>
 <tr class="separator:a0ab775c2b52852413b7649c8f6959be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c24730263031a6a6bfcd5159102f933" id="r_a1c24730263031a6a6bfcd5159102f933"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a1c24730263031a6a6bfcd5159102f933">m_point_block_smoother</a> = false</td></tr>
+<tr class="memdesc:a1c24730263031a6a6bfcd5159102f933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use point-block Jacobi on the GAMG levels, see <a class="el" href="structvulpes_1_1la_1_1DataGAMG.html">DataGAMG</a>.  <br /></td></tr>
+<tr class="separator:a1c24730263031a6a6bfcd5159102f933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A linear solver class wrapping PETSc KSP solvers. </p>
@@ -264,6 +274,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a7471023b16cc866f99ef0a761f7e8f40a564e56412cdb1b558723a09d8ccc782d" name="a7471023b16cc866f99ef0a761f7e8f40a564e56412cdb1b558723a09d8ccc782d"></a>Cholesky&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7471023b16cc866f99ef0a761f7e8f40a34d71e624f819eb74a127e9c2ec41715" name="a7471023b16cc866f99ef0a761f7e8f40a34d71e624f819eb74a127e9c2ec41715"></a>SuperLU&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7471023b16cc866f99ef0a761f7e8f40a4bf06081af8b2806e859c14c73c6578d" name="a7471023b16cc866f99ef0a761f7e8f40a4bf06081af8b2806e859c14c73c6578d"></a>MUMPS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7471023b16cc866f99ef0a761f7e8f40ace83ae802b33af6ee63842560c46cc41" name="a7471023b16cc866f99ef0a761f7e8f40ace83ae802b33af6ee63842560c46cc41"></a>GAMG&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -683,6 +694,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0675fc0ed4011d655072481718fa1ca9" name="a0675fc0ed4011d655072481718fa1ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0675fc0ed4011d655072481718fa1ca9">&#9670;&#160;</a></span>setOptionsGAMG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::LinearSolver::setOptionsGAMG </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structvulpes_1_1la_1_1DataGAMG.html">DataGAMG</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set options for the GAMG preconditioner. </p>
+
+</div>
+</div>
 <a id="af86f1b474ec44e673eea2857d06351f0" name="af86f1b474ec44e673eea2857d06351f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af86f1b474ec44e673eea2857d06351f0">&#9670;&#160;</a></span>setPreconditioner()</h2>
 
@@ -836,6 +867,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9b3b12be8298e8876df5db71830ee607" name="a9b3b12be8298e8876df5db71830ee607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3b12be8298e8876df5db71830ee607">&#9670;&#160;</a></span>setUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::LinearSolver::setUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set up the KSP, applying the solver specific level smoother. </p>
+
+</div>
+</div>
 <a id="a8eb074aff6005d839028635bbe5c7d3d" name="a8eb074aff6005d839028635bbe5c7d3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8eb074aff6005d839028635bbe5c7d3d">&#9670;&#160;</a></span>solve()</h2>
 
@@ -896,6 +954,30 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1c24730263031a6a6bfcd5159102f933" name="a1c24730263031a6a6bfcd5159102f933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c24730263031a6a6bfcd5159102f933">&#9670;&#160;</a></span>m_point_block_smoother</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vulpes::la::LinearSolver::m_point_block_smoother = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Use point-block Jacobi on the GAMG levels, see <a class="el" href="structvulpes_1_1la_1_1DataGAMG.html">DataGAMG</a>. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/__w/vulpes/vulpes/vulpes/la/<a class="el" href="linear__solver_8hpp_source.html">linear_solver.hpp</a></li>
 <li>/__w/vulpes/vulpes/vulpes/la/<a class="el" href="linear__solver_8cpp.html">linear_solver.cpp</a></li>
@@ -907,7 +989,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html">LinearSolver</a></li>
-    <li class="footer">Generated on Fri Oct 16 2026 07:59:25 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 22 2026 12:36:33 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

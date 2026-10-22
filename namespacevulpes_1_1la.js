@@ -4,6 +4,7 @@ var namespacevulpes_1_1la =
       [ "to_string", "namespacevulpes_1_1la_1_1internal.html#ad19b0ee9d23741f39bd48c49931bc092", null ]
     ] ],
     [ "DataBoomerAMG", "structvulpes_1_1la_1_1DataBoomerAMG.html", "structvulpes_1_1la_1_1DataBoomerAMG" ],
+    [ "DataGAMG", "structvulpes_1_1la_1_1DataGAMG.html", "structvulpes_1_1la_1_1DataGAMG" ],
     [ "LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html", "classvulpes_1_1la_1_1LinearSolver" ],
     [ "SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html", "classvulpes_1_1la_1_1SparseMatrix" ],
     [ "Tensor", "classvulpes_1_1la_1_1Tensor.html", "classvulpes_1_1la_1_1Tensor" ],
@@ -13,6 +14,7 @@ var namespacevulpes_1_1la =
       [ "RowMajor", "namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3ca748db46088f6cfe844946f6dd864d220", null ]
     ] ],
     [ "addComponent", "namespacevulpes_1_1la.html#a7c168a0700f706690a196567eb54d884", null ],
+    [ "constantModalCoefficients", "namespacevulpes_1_1la.html#a43958e7b9e9b2016a6e1cef16b4f7244", null ],
     [ "dot", "namespacevulpes_1_1la.html#a484729c4a7c5a2e6e07a4f912814520b", null ],
     [ "extractAllComponents", "namespacevulpes_1_1la.html#aaca8380f6d8e4d324ed1483e3ce95e9a", null ],
     [ "extractComponent", "namespacevulpes_1_1la.html#ad1a9631646b373a8f4ff3bb76b78ff9f", null ],

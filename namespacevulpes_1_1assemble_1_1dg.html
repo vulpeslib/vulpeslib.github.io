@@ -125,6 +125,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0ddf0162ccc9535044cb941833bac166" id="r_a0ddf0162ccc9535044cb941833bac166"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a0ddf0162ccc9535044cb941833bac166">sqrtNonNegative</a> (double x, double tol=1e-12)</td></tr>
+<tr class="memdesc:a0ddf0162ccc9535044cb941833bac166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Square root of a quantity that is non-negative in exact arithmetic (squared norms, quadratic forms).  <br /></td></tr>
+<tr class="separator:a0ddf0162ccc9535044cb941833bac166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac97456719c7d7ab93db4c991d5fbda82" id="r_ac97456719c7d7ab93db4c991d5fbda82"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ac97456719c7d7ab93db4c991d5fbda82">computeDGError</a> (double errH1int, double errJump)</td></tr>
 <tr class="memdesc:ac97456719c7d7ab93db4c991d5fbda82"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the total DG error by combining the H1 semi-norm error and the jump error.  <br /></td></tr>
 <tr class="separator:ac97456719c7d7ab93db4c991d5fbda82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +151,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f7bebd8916f4c289633d4d6531fc0a1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a8f7bebd8916f4c289633d4d6531fc0a1">createPenaltyExpression</a> (std::size_t order, double gamma)</td></tr>
 <tr class="memdesc:a8f7bebd8916f4c289633d4d6531fc0a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a penalty expression for DG methods.  <br /></td></tr>
 <tr class="separator:a8f7bebd8916f4c289633d4d6531fc0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f3832267560c7b421f04780a22c44a" id="r_a93f3832267560c7b421f04780a22c44a"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename CellType &gt; </td></tr>
+<tr class="memitem:a93f3832267560c7b421f04780a22c44a"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a93f3832267560c7b421f04780a22c44a">faceMeasureForPenalty</a> (const CellType &amp;cell, std::size_t face_id)</td></tr>
+<tr class="memdesc:a93f3832267560c7b421f04780a22c44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measure |F| of a face of a cell, as used by the Kb penalties: the face diameter in 2D (equal to its length) and the face area in 3D.  <br /></td></tr>
+<tr class="separator:a93f3832267560c7b421f04780a22c44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa23de54555633cd41a12f489aff57fe5" id="r_aa23de54555633cd41a12f489aff57fe5"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
 <tr class="memitem:aa23de54555633cd41a12f489aff57fe5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#aa23de54555633cd41a12f489aff57fe5">createPenaltyExpressionKb</a> (std::size_t order, double gamma)</td></tr>
 <tr class="memdesc:aa23de54555633cd41a12f489aff57fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a penalty expression for DG methods using the face's Kb.  <br /></td></tr>
@@ -655,7 +662,7 @@ template&lt;std::size_t Dim&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the penalty value </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The penalty is computed as gamma * order^2 * Cinv * (h_f / |K|), where Cinv = |K| / Kb, h_f is the face diameter, |K| is the cell measure and Kb is the K flat introduced in Cangiani, Dong, H. Georgoulis, Houston (2017). The final penalty is the harmonic mean between the two cells sharing the face. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The penalty is computed as gamma * order^2 * Cinv * (|F| / |K|), where Cinv = |K| / Kb, |F| is the face measure (length in 2D, area in 3D), |K| is the cell measure and Kb is the K flat introduced in Cangiani, Dong, H. Georgoulis, Houston (2017). The final penalty is the harmonic mean between the two cells sharing the face. </dd></dl>
 
 </div>
 </div>
@@ -702,7 +709,7 @@ template&lt;std::size_t Dim&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the penalty value </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The penalty is computed as gamma * order^2 * Cinv * (h_f / |K|), where Cinv = |K| / Kb, h_f is the face diameter, |K| is the cell measure and Kb is the K flat introduced in Cangiani, Dong, H. Georgoulis, Houston (2017). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The penalty is computed as gamma * order^2 * Cinv * (|F| / |K|), where Cinv = |K| / Kb, |F| is the face measure (length in 2D, area in 3D), |K| is the cell measure and Kb is the K flat introduced in Cangiani, Dong, H. Georgoulis, Houston (2017). </dd></dl>
 
 </div>
 </div>
@@ -832,6 +839,38 @@ template&lt;std::size_t Dim, typename VelocityFunc &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the upwind flux coefficient </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Legacy variable-velocity helper. Prefer createUpwindFlux&lt;Dim&gt;(velocity_func) for q-point based physical-space evaluation. </dd></dl>
+
+</div>
+</div>
+<a id="a93f3832267560c7b421f04780a22c44a" name="a93f3832267560c7b421f04780a22c44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f3832267560c7b421f04780a22c44a">&#9670;&#160;</a></span>faceMeasureForPenalty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename CellType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double vulpes::assemble::dg::faceMeasureForPenalty </td>
+          <td>(</td>
+          <td class="paramtype">const CellType &amp;&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>face_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Measure |F| of a face of a cell, as used by the Kb penalties: the face diameter in 2D (equal to its length) and the face area in 3D. </p>
 
 </div>
 </div>
@@ -1284,6 +1323,53 @@ template&lt;typename MeshType &gt; </div>
 
 </div>
 </div>
+<a id="a0ddf0162ccc9535044cb941833bac166" name="a0ddf0162ccc9535044cb941833bac166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf0162ccc9535044cb941833bac166">&#9670;&#160;</a></span>sqrtNonNegative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double vulpes::assemble::dg::sqrtNonNegative </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tol</em> = <code>1e-12</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Square root of a quantity that is non-negative in exact arithmetic (squared norms, quadratic forms). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The value whose square root is taken </td></tr>
+    <tr><td class="paramname">tol</td><td>Negative values above -tol are treated as roundoff and clamped to zero; below -tol a warning is printed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>sqrt(max(x, 0)), or NaN if x is NaN </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>NaN is propagated on purpose: std::max(0.0, NaN) would return 0 and hide a diverged solution behind a zero error. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -1291,7 +1377,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Fri Oct 16 2026 07:59:25 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 22 2026 12:36:33 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

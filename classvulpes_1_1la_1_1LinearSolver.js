@@ -11,7 +11,8 @@ var classvulpes_1_1la_1_1LinearSolver =
       [ "LU", "classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a35465277fa4ea8d11e4b614122500a9b", null ],
       [ "Cholesky", "classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a564e56412cdb1b558723a09d8ccc782d", null ],
       [ "SuperLU", "classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a34d71e624f819eb74a127e9c2ec41715", null ],
-      [ "MUMPS", "classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a4bf06081af8b2806e859c14c73c6578d", null ]
+      [ "MUMPS", "classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40a4bf06081af8b2806e859c14c73c6578d", null ],
+      [ "GAMG", "classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40ace83ae802b33af6ee63842560c46cc41", null ]
     ] ],
     [ "Type", "classvulpes_1_1la_1_1LinearSolver.html#a02549faebd5fbd5298b8b55ca492821f", [
       [ "CG", "classvulpes_1_1la_1_1LinearSolver.html#a02549faebd5fbd5298b8b55ca492821fac777db270ef46a310f59467f670dcbd7", null ],
@@ -37,11 +38,14 @@ var classvulpes_1_1la_1_1LinearSolver =
     [ "setOperators", "classvulpes_1_1la_1_1LinearSolver.html#afd5f0118cb4d14c9e5aec59ba0afb255", null ],
     [ "setOperators", "classvulpes_1_1la_1_1LinearSolver.html#adfa30f1e805f04650806291cfb0e2064", null ],
     [ "setOptionsBoomerAMG", "classvulpes_1_1la_1_1LinearSolver.html#a33bf20b5178ed3df5358e2af0effce5b", null ],
+    [ "setOptionsGAMG", "classvulpes_1_1la_1_1LinearSolver.html#a0675fc0ed4011d655072481718fa1ca9", null ],
     [ "setPreconditioner", "classvulpes_1_1la_1_1LinearSolver.html#af86f1b474ec44e673eea2857d06351f0", null ],
     [ "setRelativeTolerance", "classvulpes_1_1la_1_1LinearSolver.html#a73e330a01f5cc9fe712f1e44cd77f7db", null ],
     [ "setSORParameters", "classvulpes_1_1la_1_1LinearSolver.html#a0bed16441050905be35a63f79c49ea9b", null ],
     [ "setTolerances", "classvulpes_1_1la_1_1LinearSolver.html#aa5a79814701cddee255d480c046361ef", null ],
     [ "setType", "classvulpes_1_1la_1_1LinearSolver.html#a238ac6e06df1ea25aca74de2fe9e77af", null ],
+    [ "setUp", "classvulpes_1_1la_1_1LinearSolver.html#a9b3b12be8298e8876df5db71830ee607", null ],
     [ "solve", "classvulpes_1_1la_1_1LinearSolver.html#a8eb074aff6005d839028635bbe5c7d3d", null ],
-    [ "m_ksp", "classvulpes_1_1la_1_1LinearSolver.html#a0ab775c2b52852413b7649c8f6959be6", null ]
+    [ "m_ksp", "classvulpes_1_1la_1_1LinearSolver.html#a0ab775c2b52852413b7649c8f6959be6", null ],
+    [ "m_point_block_smoother", "classvulpes_1_1la_1_1LinearSolver.html#a1c24730263031a6a6bfcd5159102f933", null ]
 ];

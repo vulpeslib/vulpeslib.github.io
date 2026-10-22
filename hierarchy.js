@@ -130,6 +130,9 @@ var hierarchy =
       [ "Eigen::internal::evaluator< EigenVulpes::SymMat< CrossId, ArgType > >", "structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html", null ]
     ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExactExpressionFeProjection< Dim, FeSpace, DofHandler, 1 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", null ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionAbs< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionAbs< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionAbs.html", null ]
+    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionCellConstant< Dim > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionCellConstant< Dim >", "classvulpes_1_1fe_1_1FeExpressionCellConstant.html", null ]
     ] ],
@@ -365,6 +368,7 @@ var hierarchy =
     [ "vulpes::geometry::Triangulation", "classvulpes_1_1geometry_1_1Triangulation.html", null ],
     [ "vulpes::geometry::VtuOptions", "structvulpes_1_1geometry_1_1VtuOptions.html", null ],
     [ "vulpes::la::DataBoomerAMG", "structvulpes_1_1la_1_1DataBoomerAMG.html", null ],
+    [ "vulpes::la::DataGAMG", "structvulpes_1_1la_1_1DataGAMG.html", null ],
     [ "vulpes::la::LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html", null ],
     [ "vulpes::la::SparseMatrix", "classvulpes_1_1la_1_1SparseMatrix.html", null ],
     [ "vulpes::la::Tensor", "classvulpes_1_1la_1_1Tensor.html", null ],

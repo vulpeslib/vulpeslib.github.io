@@ -18,7 +18,7 @@ var classvulpes_1_1geometry_1_1GNNAgglomeration =
     [ "bisectNRef", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#a95dd7d3c0dbd2a9f0d0693fd3b18d78a", null ],
     [ "bisectSubGraph", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#ab28024c6d368900bf38434152bada274", null ],
     [ "connectedComponents", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#a99641100d577a417cb944e162f8f5b5d", null ],
-    [ "directKWay", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#aa27f797c3ce82f33c2f066341fc329ae", null ],
+    [ "directKWay", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#ab2f64b3f38cb31717b009cc6f757e920", null ],
     [ "groupToBisection", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#aee80e7861e21c1ae0d3bdc3a26dae249", null ],
     [ "invokeMethod", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#a334a6ee7475fae7309d81d34f16db57d", null ],
     [ "multFactor", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#a87f8c6edf9e084b7eb5da0780a34461e", null ],

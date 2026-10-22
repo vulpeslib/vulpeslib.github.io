@@ -129,6 +129,8 @@ Namespaces</h2></td></tr>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1la_1_1DataBoomerAMG.html">DataBoomerAMG</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1la_1_1DataGAMG.html">DataGAMG</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html">LinearSolver</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A linear solver class wrapping PETSc KSP solvers.  <a href="classvulpes_1_1la_1_1LinearSolver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +152,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a43958e7b9e9b2016a6e1cef16b4f7244" id="r_a43958e7b9e9b2016a6e1cef16b4f7244"><td class="memTemplParams" colspan="2">template&lt;typename CellManagerType , typename DofHandlerType &gt; </td></tr>
+<tr class="memitem:a43958e7b9e9b2016a6e1cef16b4f7244"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1la.html#a43958e7b9e9b2016a6e1cef16b4f7244">constantModalCoefficients</a> (CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, double value=1.0)</td></tr>
+<tr class="memdesc:a43958e7b9e9b2016a6e1cef16b4f7244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficients of a constant function in a modal DG space.  <br /></td></tr>
+<tr class="separator:a43958e7b9e9b2016a6e1cef16b4f7244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3826656435a19ca632911e187101a335" id="r_a3826656435a19ca632911e187101a335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1la.html#a3826656435a19ca632911e187101a335">setPETScOptionValue</a> (const std::string &amp;name, const std::string &amp;value)</td></tr>
 <tr class="separator:a3826656435a19ca632911e187101a335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a484729c4a7c5a2e6e07a4f912814520b" id="r_a484729c4a7c5a2e6e07a4f912814520b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1la.html#a484729c4a7c5a2e6e07a4f912814520b">dot</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;a, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;b)</td></tr>
@@ -252,6 +258,54 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a43958e7b9e9b2016a6e1cef16b4f7244" name="a43958e7b9e9b2016a6e1cef16b4f7244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43958e7b9e9b2016a6e1cef16b4f7244">&#9670;&#160;</a></span>constantModalCoefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CellManagerType , typename DofHandlerType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> vulpes::la::constantModalCoefficients </td>
+          <td>(</td>
+          <td class="paramtype">CellManagerType &amp;&#160;</td>
+          <td class="paramname"><em>cell_manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DofHandlerType &amp;&#160;</td>
+          <td class="paramname"><em>dof_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em> = <code>1.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Coefficients of a constant function in a modal DG space. </p>
+<p>The constant is represented exactly by the first basis function of each cell, which is the constant mode of the modal Legendre basis, so the coefficients are computed cell by cell without solving any system. Only the coefficients of the owned cells are set (the others are zero). Typical use: near null space of the Laplacian for algebraic multigrid (see <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a35b5b3a40dabbb03c8050766f9baeebb" title="Attach a near null space to the matrix, used by algebraic multigrid preconditioners (e....">la::SparseMatrix::setNearNullSpace()</a>).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell_manager</td><td>Cell manager of the modal FE space </td></tr>
+    <tr><td class="paramname">dof_handler</td><td>The DOF handler </td></tr>
+    <tr><td class="paramname">value</td><td>The constant value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Modal coefficients of the constant function </dd></dl>
 
 </div>
 </div>
@@ -641,7 +695,7 @@ template&lt;std::size_t NFields&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li>
-    <li class="footer">Generated on Fri Oct 16 2026 07:59:25 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 22 2026 12:36:33 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -5,5 +5,6 @@ var searchData=
   ['02_5flaplacian_5fassembly_2emd_2',['02_Laplacian_Assembly.md',['../02__Laplacian__Assembly_8md.html',1,'']]],
   ['03_5fadvection_5fassembly_2emd_3',['03_Advection_Assembly.md',['../03__Advection__Assembly_8md.html',1,'']]],
   ['04_5fshallow_5fwater_5fdg_2emd_4',['04_Shallow_Water_DG.md',['../04__Shallow__Water__DG_8md.html',1,'']]],
-  ['05_5fmpi_5flaplacian_2emd_5',['05_MPI_Laplacian.md',['../05__MPI__Laplacian_8md.html',1,'']]]
+  ['05_5fmpi_5flaplacian_2emd_5',['05_MPI_Laplacian.md',['../05__MPI__Laplacian_8md.html',1,'']]],
+  ['06_5fmesh_5fagglomeration_2emd_6',['06_Mesh_Agglomeration.md',['../06__Mesh__Agglomeration_8md.html',1,'']]]
 ];

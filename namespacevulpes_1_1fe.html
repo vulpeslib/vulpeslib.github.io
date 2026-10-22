@@ -143,6 +143,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html">FeExactExpressionFeProjection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that wraps the projected of a given vector of coefficients on the FE space.  <a href="classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionAbs.html">FeExpressionAbs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for Finite Element Expressions.  <a href="classvulpes_1_1fe_1_1FeExpressionBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -435,6 +437,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5195455105ab9290dda47487c506bfd7" id="r_a5195455105ab9290dda47487c506bfd7"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a5195455105ab9290dda47487c506bfd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionDiagOnly.html">FeExpressionDiagOnly</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a5195455105ab9290dda47487c506bfd7">ondiag</a> (const E &amp;w)</td></tr>
 <tr class="separator:a5195455105ab9290dda47487c506bfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c6b603f00931f425dcda67f1392d11" id="r_a89c6b603f00931f425dcda67f1392d11"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:a89c6b603f00931f425dcda67f1392d11"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionAbs.html">FeExpressionAbs</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a89c6b603f00931f425dcda67f1392d11">abs</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="separator:a89c6b603f00931f425dcda67f1392d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01f9dbb02de00e7a93bc8e11c1bbfeb" id="r_ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
 <tr class="memitem:ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ac01f9dbb02de00e7a93bc8e11c1bbfeb">grad_contr</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
 <tr class="memdesc:ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a> with gradient on TEST (default, GradOnTest=true).  <br /></td></tr>
@@ -805,6 +810,26 @@ template&lt;typename FeSpace , std::size_t IndexBegin = 0, std::size_t IndexEnd 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a89c6b603f00931f425dcda67f1392d11" name="a89c6b603f00931f425dcda67f1392d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c6b603f00931f425dcda67f1392d11">&#9670;&#160;</a></span>abs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionAbs.html">FeExpressionAbs</a>&lt; Dim, E &gt; vulpes::fe::abs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5e3f0530894f18338caa6e8f7d01e133" name="a5e3f0530894f18338caa6e8f7d01e133"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e3f0530894f18338caa6e8f7d01e133">&#9670;&#160;</a></span>div()</h2>
 
@@ -1927,7 +1952,7 @@ template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typen
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li>
-    <li class="footer">Generated on Fri Oct 16 2026 07:59:25 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 22 2026 12:36:33 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

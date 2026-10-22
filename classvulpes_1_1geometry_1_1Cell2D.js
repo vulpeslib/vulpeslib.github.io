@@ -14,6 +14,7 @@ var classvulpes_1_1geometry_1_1Cell2D =
     [ "diameter", "classvulpes_1_1geometry_1_1Cell2D.html#a0da0203c3f7f0db9201523ca368347bb", null ],
     [ "faceDiam", "classvulpes_1_1geometry_1_1Cell2D.html#a39b4b6f50da891cd6302355d9799fc78", null ],
     [ "faceKb", "classvulpes_1_1geometry_1_1Cell2D.html#a2df0241654672872c75ff488285f3905", null ],
+    [ "faceMeasures", "classvulpes_1_1geometry_1_1Cell2D.html#aac54671281bf3d7c1639b5434b27a3d4", null ],
     [ "frontierMeasure", "classvulpes_1_1geometry_1_1Cell2D.html#a60077d47a02a8ee2b6f0db5cf5ebf30a", null ],
     [ "init", "classvulpes_1_1geometry_1_1Cell2D.html#a10c4a666a420b7fdca62b10d46c3b0ad", null ],
     [ "inscribedDiameter", "classvulpes_1_1geometry_1_1Cell2D.html#a61289416c499f2ee30af7916e029f9f4", null ],

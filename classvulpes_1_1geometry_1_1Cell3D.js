@@ -18,6 +18,7 @@ var classvulpes_1_1geometry_1_1Cell3D =
     [ "edges", "classvulpes_1_1geometry_1_1Cell3D.html#a5838cbf9747df545c16c41a6a9146b6a", null ],
     [ "faceDiam", "classvulpes_1_1geometry_1_1Cell3D.html#a44f1df54d3b417ab1a5878ba901d0d03", null ],
     [ "faceKb", "classvulpes_1_1geometry_1_1Cell3D.html#a459ea110af0201805b01276e83c5332f", null ],
+    [ "faceMeasures", "classvulpes_1_1geometry_1_1Cell3D.html#a04865d8a5a54eeb21db0bf007b78b058", null ],
     [ "faces", "classvulpes_1_1geometry_1_1Cell3D.html#a4be67182a0b3adde7ad7c06c4c4cd360", null ],
     [ "findEdgesToCompute", "classvulpes_1_1geometry_1_1Cell3D.html#a3cfddc3ee435ac794cc4025bf27df08c", null ],
     [ "frontierMeasure", "classvulpes_1_1geometry_1_1Cell3D.html#a302dea94a5d671e798cacc2639175787", null ],

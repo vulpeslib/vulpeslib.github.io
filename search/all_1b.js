@@ -32,5 +32,6 @@ var searchData=
   ['queryknn_29',['queryknn',['../classvulpes_1_1datastructure_1_1KDTree.html#a08dbc52612fb1454490de3df0640cc5c',1,'vulpes::datastructure::KDTree::queryKnn(const std::vector&lt; std::array&lt; double, Dim &gt; &gt; &amp;points, int64_t k, double eps=0, double distance_upper_bound=std::numeric_limits&lt; double &gt;::max()) const'],['../classvulpes_1_1datastructure_1_1KDTree.html#a964a2ea0b007ddf2498d264992945c24',1,'vulpes::datastructure::KDTree::queryKnn(const double *points, int64_t n_points, int64_t k, double eps=0, double distance_upper_bound=std::numeric_limits&lt; double &gt;::max()) const']]],
   ['querypairs_30',['queryPairs',['../classvulpes_1_1datastructure_1_1KDTree.html#a11277918cd88497194211fffcfdebb85',1,'vulpes::datastructure::KDTree']]],
   ['quick_20guideline_31',['Quick guideline',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md114',1,'']]],
-  ['quick_20summary_32',['Quick Summary',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md84',1,'']]]
+  ['quick_20start_32',['Quick Start',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md165',1,'']]],
+  ['quick_20summary_33',['Quick Summary',['../md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D.html#autotoc_md84',1,'']]]
 ];

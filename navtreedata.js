@@ -184,6 +184,27 @@ var NAVTREE =
       [ "What gets exported", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md162", null ],
       [ "Known limitations / TODOs", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__MPI__Laplacian.html#autotoc_md163", null ]
     ] ],
+    [ "Tool for Mesh Agglomeration", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html", [
+      [ "Quick Start", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md165", null ],
+      [ "Overview of the Pipeline", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md166", null ],
+      [ "JSON Reference", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md167", null ],
+      [ "Methods", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md168", [
+        [ "<tt>direct_kway</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md169", null ],
+        [ "<tt>bisect</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md170", null ],
+        [ "<tt>mult_factor</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md171", null ]
+      ] ],
+      [ "Backends", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md172", [
+        [ "<tt>parmetis</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md173", null ],
+        [ "<tt>kmeans</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md174", null ],
+        [ "<tt>gnn</tt>", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md175", null ]
+      ] ],
+      [ "Agglomeration by Region (Materials)", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md176", [
+        [ "Example: a cube with two materials", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md177", null ]
+      ] ],
+      [ "Repair of 3D Agglomerates", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md178", null ],
+      [ "Related Examples", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md179", null ],
+      [ "References", "md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Mesh__Agglomeration.html#autotoc_md180", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -228,35 +249,36 @@ var NAVTREEINDEX =
 "classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a66cc66bc9b71ad48a367ff72e2726ea8",
 "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aac9212b3d1817e936b46351cb0fe1479",
 "classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8",
-"classvulpes_1_1fe_1_1FeExpressionCellConstant.html#a6e7477bc24ee7edb9256cd557606fd8c",
-"classvulpes_1_1fe_1_1FeExpressionFaceNormal.html#a6482f4e05433e454afd3bfb876f7ac37",
-"classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#acd87be472d39680e4686de701709a8b0",
-"classvulpes_1_1fe_1_1FeExpressionInnerBlock.html#aff4728fb7a0550bf12f8726cebee33b6",
-"classvulpes_1_1fe_1_1FeExpressionShift.html#a834502f322b85e98184fc1014c3661e2",
-"classvulpes_1_1fe_1_1FeGradProjectionExpr.html#a1b322fe9cb6e539ceb048367e85ecb1b",
-"classvulpes_1_1fe_1_1FeSpaceModalQ.html#a62274af4cc9434b367925b4a755fa5fc",
-"classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html#aecabff4294381ff69bb29b57bd13f7ec",
-"classvulpes_1_1geometry_1_1DistanceExpression.html#a02be221c8a13a9e4f9b960585b5a4ac5",
-"classvulpes_1_1geometry_1_1KMeansNaive.html#a9ca5f51f436732567291a7a181d23f43",
-"classvulpes_1_1geometry_1_1Mesh3D.html#a42b381e4f7cb4ba6813b44ef8a7eaa36",
-"classvulpes_1_1geometry_1_1MeshBase.html#a926fb8304fca73c32bbb106ba3007fae",
-"classvulpes_1_1geometry_1_1ParallelMesh.html#a663a611d086509cecb4379711297d91e",
-"classvulpes_1_1geometry_1_1Tetrahedralization.html#ad08f3d18db2e6dd4a2e078f6e590a2df",
-"classvulpes_1_1la_1_1SparseMatrix.html#a2d9d606e5f096a9e8523504a8b62af7f",
-"classvulpes_1_1monomial_1_1Monomial.html#af1fd56fcaa9154418d72716addc985e2",
-"classvulpes_1_1polynomial_1_1PolynomialBase.html#a739690ce6da41629e984af71941de5e1",
-"classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html#a5ee154333a3d31432e345f3a678e4771",
-"fe__expr__base_8hpp.html",
-"gauss_8hpp.html#a26941ef29304bec3f440a7dde07eb9bb",
-"mesh__2d_8cpp.html#abcece87f1f584f2806e37492e61f755d",
-"namespacevulpes_1_1assemble_1_1dg.html#ab47891e1f6b99bc401b5cd2396f373fb",
-"namespacevulpes_1_1geometry_1_1mesh2d.html#ae7a2f3a6b1a6b1eac427ff3e9dc270ec",
-"pcout_8hpp.html#a1d197567093fbdcf511154c249e625bc",
-"structvulpes_1_1fe_1_1DofPolicyBase.html#ae736490b40a44537bb548b72cf18cee1",
-"structvulpes_1_1la_1_1DataBoomerAMG.html#ad0543600f3cdaa4d576d00afe9551d97",
-"structvulpes_1_1scipy_1_1nodeinfo__pool.html#abb6d68fd96529465bfebc3b22ec03137",
-"structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX.html#a382cf835a63eba216c4574a40d43e295",
-"structvulpes_1_1timeintegration_1_1RK4.html#a1af9f4b198b55ad2df1c0129a0aa113c"
+"classvulpes_1_1fe_1_1FeExpressionBase.html#aa194506aca4e759376e053023687b62b",
+"classvulpes_1_1fe_1_1FeExpressionDifference.html#a5d215a6526abc0912ec34e94e23245eb",
+"classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a08636ca538108406f96f04f2ac006eff",
+"classvulpes_1_1fe_1_1FeExpressionInnerBlock.html#a43e3f15194537755653c73b65f90d627",
+"classvulpes_1_1fe_1_1FeExpressionSelfFunc.html#a7ab0fbe9cd72d0476c025140baeb9ef8",
+"classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#a0af04b8b06e2db4e666ed76b03643795",
+"classvulpes_1_1fe_1_1FeSpaceModalP.html#aceb15ad95a454121903eb59722318ccd",
+"classvulpes_1_1fe_1_1FeValues.html#af6f14503ff2c1a3c4ba1a3e4b84c4f5f",
+"classvulpes_1_1geometry_1_1Cell3D.html#ae9f0cf32f4fa3e6009ef2403a3be1357",
+"classvulpes_1_1geometry_1_1KMeansBase.html#aa2e2ffeff80cba1d1e9a2870fe0be7d9",
+"classvulpes_1_1geometry_1_1Mesh3D.html#a1345b5fc1dda8e2fb6d043cfa2619c09",
+"classvulpes_1_1geometry_1_1MeshBase.html#a5d79394ae49b19a34e8133b1987bf82e",
+"classvulpes_1_1geometry_1_1ParallelMesh.html#a252fb01d5128f74f33e2e7c091498375",
+"classvulpes_1_1geometry_1_1Tetrahedralization.html#a663407c0466f68d2652fe64548eb3f75",
+"classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40ace83ae802b33af6ee63842560c46cc41",
+"classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d",
+"classvulpes_1_1polynomial_1_1Polynomial3D.html#a5087add7297fb0a0c12554181ff7d3c3",
+"classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a77deb7f88d9aed414aeea12a318782e0",
+"dir_6c7e17ab64e974f30697ed0028c407ca.html",
+"functions_type_f.html",
+"md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Shallow__Water__DG.html#autotoc_md140",
+"namespacemembers.html",
+"namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1e",
+"namespacevulpes_1_1scipy.html#abf547ddedbec9cc3864fdc3a18140b71",
+"structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a2f54f93eef6ab764030197186ec87402",
+"structvulpes_1_1geometry_1_1VtuOptions.html#a8a1ec447ea6f503b07aaa245858600d7",
+"structvulpes_1_1scipy_1_1ckdtree.html#a938ff769955ae4c855fc1c52eaa87efa",
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html#a117c3a9162cba6d0d6c615e89de9948e",
+"structvulpes_1_1timeintegration_1_1LstableDIRK.html",
+"threading_8hpp.html#a606da97eab78c7a30c5480474ee6a196"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
