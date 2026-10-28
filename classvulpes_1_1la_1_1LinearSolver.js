@@ -22,6 +22,7 @@ var classvulpes_1_1la_1_1LinearSolver =
       [ "PrecondOnly", "classvulpes_1_1la_1_1LinearSolver.html#a02549faebd5fbd5298b8b55ca492821fa51c387a5ceab1b84d48def1e484acc9b", null ]
     ] ],
     [ "LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html#a0ecc24f106ebe2c1b7270c5aa1fddfa2", null ],
+    [ "LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html#ae51ec5b761b92a563dc60aa8e99c5945", null ],
     [ "~LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html#af031c96fa6209ebe4443b76bd4eb1b87", null ],
     [ "getConvergenceReason", "classvulpes_1_1la_1_1LinearSolver.html#a08809b8322e5c151ebe4e3ec3f8d7e0e", null ],
     [ "getIterationCount", "classvulpes_1_1la_1_1LinearSolver.html#a1328fa138649881278065570bebc4f38", null ],
@@ -29,6 +30,7 @@ var classvulpes_1_1la_1_1LinearSolver =
     [ "getPC", "classvulpes_1_1la_1_1LinearSolver.html#ab1c86dad2b2ee2056877f0f879efb64f", null ],
     [ "getResidualNorm", "classvulpes_1_1la_1_1LinearSolver.html#a72991037c1fb8b369a7fd94215fe01cb", null ],
     [ "init", "classvulpes_1_1la_1_1LinearSolver.html#a49e9250bb3f5a81b2c19fdfd4940102f", null ],
+    [ "operator=", "classvulpes_1_1la_1_1LinearSolver.html#a00983d4c864ceaf781bbe1a4a7c7493f", null ],
     [ "printConvergenceInfo", "classvulpes_1_1la_1_1LinearSolver.html#ab658d63ad0cabfd936ff6f808d1d27db", null ],
     [ "setAbsoluteTolerance", "classvulpes_1_1la_1_1LinearSolver.html#aa9a03e39db92fb7f91bab7cea0ed464f", null ],
     [ "setGMRESRestart", "classvulpes_1_1la_1_1LinearSolver.html#afc193929bbcd3a247f058b88c26313de", null ],

@@ -2,13 +2,14 @@ var searchData=
 [
   ['l2projectexpressionblockedsubset_0',['l2ProjectExpressionBlockedSubset',['../namespacevulpes_1_1assemble_1_1dg.html#a5a607f5519e3de6cd116d9e7ccb75ade',1,'vulpes::assemble::dg']]],
   ['l2projectexpressionscalar_1',['l2projectexpressionscalar',['../namespacevulpes_1_1assemble_1_1dg.html#aa1954ee8bd51f572126d62fa4a0d7cce',1,'vulpes::assemble::dg::l2ProjectExpressionScalar(const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, const la::SparseMatrix &amp;mass_scalar)'],['../namespacevulpes_1_1assemble_1_1dg.html#a48e39b0d4340e285739888b2cee17ea0',1,'vulpes::assemble::dg::l2ProjectExpressionScalar(const MeshType &amp;mesh, CellManagerType &amp;cell_manager, const DofHandlerType &amp;dof_handler, const FeSpaceType &amp;fe_space, const Expression &amp;expr, const la::SparseMatrix &amp;mass_blocked, std::size_t component)']]],
-  ['level_2',['level',['../classvulpes_1_1utils_1_1pcout__t.html#a1a8c60927385d83e8e09b96cc6296660',1,'vulpes::utils::pcout_t']]],
-  ['lift_5fto_5fsame_5fspace_3',['lift_to_same_space',['../namespacevulpes_1_1fe_1_1internal.html#a76442cdd7a8c95b0428c27315db12541',1,'vulpes::fe::internal']]],
-  ['liftconstant_4',['liftConstant',['../namespacevulpes_1_1fe_1_1internal.html#ae5ff9de2b5ed3bf9b9077440ce0f957f',1,'vulpes::fe::internal']]],
-  ['liftdimension_5',['liftdimension',['../classvulpes_1_1monomial_1_1Monomial.html#a4326407c592293eececabf9dcf5c1963',1,'vulpes::monomial::Monomial::liftDimension()'],['../classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6b22d4e4f358e4abad4c67bdba1a9206',1,'vulpes::polynomial::SparsePolynomial::liftDimension()'],['../namespacevulpes_1_1fe_1_1internal.html#a69e6589db41bd17ce0fd9cd98e489c15',1,'vulpes::fe::internal::liftDimension()']]],
-  ['linearsolver_6',['LinearSolver',['../classvulpes_1_1la_1_1LinearSolver.html#a0ecc24f106ebe2c1b7270c5aa1fddfa2',1,'vulpes::la::LinearSolver']]],
-  ['loadmatrixfromfile_7',['loadMatrixFromFile',['../namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400',1,'vulpes::io']]],
-  ['loadvectorfromfile_8',['loadVectorFromFile',['../namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed',1,'vulpes::io']]],
-  ['localghostedindex_9',['localGhostedIndex',['../classvulpes_1_1dofs_1_1DofHandler.html#a04fa6aea2f083ef4f9ed5dc7da654a44',1,'vulpes::dofs::DofHandler']]],
-  ['localtoglobal_10',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]]
+  ['lastpicarditerations_2',['lastPicardIterations',['../classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#acc7310890324cbd8a003ea805a1555ba',1,'vulpes::timeintegration::CrankNicolsonGeneralized']]],
+  ['level_3',['level',['../classvulpes_1_1utils_1_1pcout__t.html#a1a8c60927385d83e8e09b96cc6296660',1,'vulpes::utils::pcout_t']]],
+  ['lift_5fto_5fsame_5fspace_4',['lift_to_same_space',['../namespacevulpes_1_1fe_1_1internal.html#a76442cdd7a8c95b0428c27315db12541',1,'vulpes::fe::internal']]],
+  ['liftconstant_5',['liftConstant',['../namespacevulpes_1_1fe_1_1internal.html#ae5ff9de2b5ed3bf9b9077440ce0f957f',1,'vulpes::fe::internal']]],
+  ['liftdimension_6',['liftdimension',['../classvulpes_1_1monomial_1_1Monomial.html#a4326407c592293eececabf9dcf5c1963',1,'vulpes::monomial::Monomial::liftDimension()'],['../classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6b22d4e4f358e4abad4c67bdba1a9206',1,'vulpes::polynomial::SparsePolynomial::liftDimension()'],['../namespacevulpes_1_1fe_1_1internal.html#a69e6589db41bd17ce0fd9cd98e489c15',1,'vulpes::fe::internal::liftDimension()']]],
+  ['linearsolver_7',['linearsolver',['../classvulpes_1_1la_1_1LinearSolver.html#a0ecc24f106ebe2c1b7270c5aa1fddfa2',1,'vulpes::la::LinearSolver::LinearSolver(Type solver_type=CG, PrecondType pc_type=Jacobi)'],['../classvulpes_1_1la_1_1LinearSolver.html#ae51ec5b761b92a563dc60aa8e99c5945',1,'vulpes::la::LinearSolver::LinearSolver(const LinearSolver &amp;)=delete']]],
+  ['loadmatrixfromfile_8',['loadMatrixFromFile',['../namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400',1,'vulpes::io']]],
+  ['loadvectorfromfile_9',['loadVectorFromFile',['../namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed',1,'vulpes::io']]],
+  ['localghostedindex_10',['localGhostedIndex',['../classvulpes_1_1dofs_1_1DofHandler.html#a04fa6aea2f083ef4f9ed5dc7da654a44',1,'vulpes::dofs::DofHandler']]],
+  ['localtoglobal_11',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]]
 ];

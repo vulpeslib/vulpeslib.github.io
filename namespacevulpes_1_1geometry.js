@@ -12,14 +12,14 @@ var namespacevulpes_1_1geometry =
       [ "importVtkMeshTags", "namespacevulpes_1_1geometry_1_1internal.html#a303d0d0fca4c8c7b440d33fa3c012b42", null ],
       [ "maxVtxToVtxSquaredDistance", "namespacevulpes_1_1geometry_1_1internal.html#a413b1af581f4e7ea2af184af04def367", null ],
       [ "normalizeCellFlags", "namespacevulpes_1_1geometry_1_1internal.html#a47208c45afc797ab228bb38d65144497", null ],
-      [ "polyMesherAdjustFixedPoints", "namespacevulpes_1_1geometry_1_1internal.html#ad0881f836ef5e935ef2f46031b10857c", null ],
-      [ "polyMesherClipToBoundary", "namespacevulpes_1_1geometry_1_1internal.html#a3db2ab4dd1e19d7e4cb131778c3764bb", null ],
-      [ "polyMesherCollapseEdges", "namespacevulpes_1_1geometry_1_1internal.html#ae704555005f472e6b200962395a45194", null ],
-      [ "polyMesherComputeEdgeAngle", "namespacevulpes_1_1geometry_1_1internal.html#a2d6f59f282ff90f3a0b0f7856e8b4f37", null ],
-      [ "polyMesherReflect", "namespacevulpes_1_1geometry_1_1internal.html#a28d98e6e35b60331d6f6aa7f0dd1e0a4", null ],
       [ "removeEmptySets", "namespacevulpes_1_1geometry_1_1internal.html#ab57e0234a9f21d3ecae7b168d239349f", null ],
       [ "toTorchType", "namespacevulpes_1_1geometry_1_1internal.html#a083529d73bffd666d5304bb7bc17133a", null ],
-      [ "updateVoronoiCentroid", "namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27", null ]
+      [ "updateVoronoiCentroid", "namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27", null ],
+      [ "vulPolyAdjustFixedPoints", "namespacevulpes_1_1geometry_1_1internal.html#a55a3671d65cade9b7c80cde7cf9983ca", null ],
+      [ "vulPolyClipToBoundary", "namespacevulpes_1_1geometry_1_1internal.html#a65dc48e3b5bd51e2fb7aa9d857de40bf", null ],
+      [ "vulPolyCollapseEdges", "namespacevulpes_1_1geometry_1_1internal.html#ae22d87996e76c9c208321b74d4c692e0", null ],
+      [ "vulPolyComputeEdgeAngle", "namespacevulpes_1_1geometry_1_1internal.html#ab324c082b6f3179f1f637f24af7e15f5", null ],
+      [ "vulPolyReflect", "namespacevulpes_1_1geometry_1_1internal.html#a0deaeacb1cb64d2a01ba176e06f42e1d", null ]
     ] ],
     [ "mesh2d", "namespacevulpes_1_1geometry_1_1mesh2d.html", "namespacevulpes_1_1geometry_1_1mesh2d" ],
     [ "mesh3d", "namespacevulpes_1_1geometry_1_1mesh3d.html", [
@@ -34,7 +34,7 @@ var namespacevulpes_1_1geometry =
       [ "rect_cuboid< double, uint32_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#aa0842d1fb0c5682bfa0d302195fdb673", null ],
       [ "rect_cuboid< double, uint64_t >", "namespacevulpes_1_1geometry_1_1mesh3d.html#ae8d45c9cc1517b4cdeda5d25f947d306", null ]
     ] ],
-    [ "polymesher", "namespacevulpes_1_1geometry_1_1polymesher.html", "namespacevulpes_1_1geometry_1_1polymesher" ],
+    [ "vulpoly", "namespacevulpes_1_1geometry_1_1vulpoly.html", "namespacevulpes_1_1geometry_1_1vulpoly" ],
     [ "AbstractAgglomerationModel", "classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html", "classvulpes_1_1geometry_1_1AbstractAgglomerationModel" ],
     [ "CartesianMapping", "classvulpes_1_1geometry_1_1CartesianMapping.html", "classvulpes_1_1geometry_1_1CartesianMapping" ],
     [ "Cell2D", "classvulpes_1_1geometry_1_1Cell2D.html", "classvulpes_1_1geometry_1_1Cell2D" ],

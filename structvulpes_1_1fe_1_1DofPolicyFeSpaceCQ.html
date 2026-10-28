@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -430,7 +430,7 @@ template&lt;typename MeshType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The index of the dof in cell enumeration</dd></dl>
-<p>We write each degree of freedom as a convex combination of the vertices of the hyper-cube that define the cell. Then, recover the local id of the dof by searching in a precomputed table. E.g., for the faces, we recover the global vertexes that define the face and write it as a convex combination of them. In this way we have a unique representation of the dof that does not depend on the frame of reference. The global vtx id of the face are <code>face_to_vtx_map[owning_enty_id_local]</code>. Their coefficient are <code>m_face_dofs[enty_multiplicity]</code> (up to a rescaling factor, since the rescaling is order^Dim and m_face_dofs are computed in 2D). Then, we can write this convex combination with respect to the local dofs of the cells since it has all the four vertices needed. Thus we find which are the position of these four global vertices in local enumeration (of the 8 vertices that define the cell), so we can write the dof as a ConvexCartIndex</p>
+<p>We write each degree of freedom as a convex combination of the vertices of the hyper-cube that define the cell. Then, recover the local id of the dof by searching in a precomputed table. E.g., for the faces, we recover the global vertices that define the face and write it as a convex combination of them. In this way we have a unique representation of the dof that does not depend on the frame of reference. The global vtx id of the face are <code>face_to_vtx_map[owning_enty_id_local]</code>. Their coefficient are <code>m_face_dofs[enty_multiplicity]</code> (up to a rescaling factor, since the rescaling is order^Dim and m_face_dofs are computed in 2D). Then, we can write this convex combination with respect to the local dofs of the cells since it has all the four vertices needed. Thus we find which are the position of these four global vertices in local enumeration (of the 8 vertices that define the cell), so we can write the dof as a ConvexCartIndex</p>
 <dl class="section warning"><dt>Warning</dt><dd>The convention for vertex numbering of the hexahedron in a cell is: (v0, v1, v5, v4) Front (v3, v2, v6, v7) Back (v0, v3, v7, v4) Left (v1, v2, v6, v5) Right (v0, v1, v2, v3) Bottom (v4, v5, v6, v7) Top</dd></dl>
 <p>y ^ z | / | 7-----&mdash;6 | /| / /| |/ | / / | 4-----&mdash;5 | | |/ | | | 3--&mdash;|&ndash;2 | / | / |/ |/ 0-----&mdash;1-&mdash;&gt;x </p>
 
@@ -647,7 +647,7 @@ template&lt;std::size_t Dim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html">DofPolicyFeSpaceCQ</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

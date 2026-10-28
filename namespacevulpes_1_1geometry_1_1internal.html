@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('namespacevulpes_1_1geometry_1_1interna
   <div class="headertitle"><div class="title">vulpes::geometry::internal Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Helpers implementing VulPoly's Voronoi construction and cleanup.  
+<a href="namespacevulpes_1_1geometry_1_1internal.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -149,33 +152,45 @@ Functions</h2></td></tr>
 <tr class="separator:a303d0d0fca4c8c7b440d33fa3c012b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ac66c2afd5dee2e3ba580086085b27" id="r_a77ac66c2afd5dee2e3ba580086085b27"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> Dim&gt; </td></tr>
 <tr class="memitem:a77ac66c2afd5dee2e3ba580086085b27"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a77ac66c2afd5dee2e3ba580086085b27">updateVoronoiCentroid</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, Dim &gt;, 2 &gt; &amp;bbox, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, Dim &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">points</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">n_inside_seeds</a>)</td></tr>
+<tr class="memdesc:a77ac66c2afd5dee2e3ba580086085b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move each Voronoi seed to its cell centroid and estimate relaxation error.  <br /></td></tr>
 <tr class="separator:a77ac66c2afd5dee2e3ba580086085b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a9fb77b98f1d370896b71f54d9dfa9" id="r_a26a9fb77b98f1d370896b71f54d9dfa9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
 <tr class="memitem:a26a9fb77b98f1d370896b71f54d9dfa9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a26a9fb77b98f1d370896b71f54d9dfa9">computeGradient</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">x</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">idx</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> finite_difference_h)</td></tr>
+<tr class="memdesc:a26a9fb77b98f1d370896b71f54d9dfa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate a signed-distance gradient by centered finite differences.  <br /></td></tr>
 <tr class="separator:a26a9fb77b98f1d370896b71f54d9dfa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adba98ffe37b9cf9811ed77c29a7e2409" id="r_adba98ffe37b9cf9811ed77c29a7e2409"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
 <tr class="memitem:adba98ffe37b9cf9811ed77c29a7e2409"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#adba98ffe37b9cf9811ed77c29a7e2409">computeVoronoiMesh2D</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, 2 &gt;, 2 &gt; &amp;bbox, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, 2 &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">points</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>)</td></tr>
+<tr class="memdesc:adba98ffe37b9cf9811ed77c29a7e2409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert in-domain 2D Voronoi cells into a Vulpes mesh.  <br /></td></tr>
 <tr class="separator:adba98ffe37b9cf9811ed77c29a7e2409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a837885952ff40014073aa139895d0f36" id="r_a837885952ff40014073aa139895d0f36"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
 <tr class="memitem:a837885952ff40014073aa139895d0f36"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html">Mesh3D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">int32_t</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a837885952ff40014073aa139895d0f36">computeVoronoiMesh3D</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, 3 &gt;, 2 &gt; &amp;bbox, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, 3 &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">points</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">double</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>)</td></tr>
+<tr class="memdesc:a837885952ff40014073aa139895d0f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert in-domain 3D Voronoi cells into a Vulpes mesh.  <br /></td></tr>
 <tr class="separator:a837885952ff40014073aa139895d0f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0881f836ef5e935ef2f46031b10857c" id="r_ad0881f836ef5e935ef2f46031b10857c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim&gt; </td></tr>
-<tr class="memitem:ad0881f836ef5e935ef2f46031b10857c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ad0881f836ef5e935ef2f46031b10857c">polyMesherAdjustFixedPoints</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">fixed_pts</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">near_boundary_idxs</a>, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">seed_pts</a>)</td></tr>
-<tr class="separator:ad0881f836ef5e935ef2f46031b10857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d98e6e35b60331d6f6aa7f0dd1e0a4" id="r_a28d98e6e35b60331d6f6aa7f0dd1e0a4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
-<tr class="memitem:a28d98e6e35b60331d6f6aa7f0dd1e0a4"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a28d98e6e35b60331d6f6aa7f0dd1e0a4">polyMesherReflect</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">alpha</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">polymesher::PolyMesherParams</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">params</a>, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">seed_pts</a>)</td></tr>
-<tr class="separator:a28d98e6e35b60331d6f6aa7f0dd1e0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db2ab4dd1e19d7e4cb131778c3764bb" id="r_a3db2ab4dd1e19d7e4cb131778c3764bb"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
-<tr class="memitem:a3db2ab4dd1e19d7e4cb131778c3764bb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a3db2ab4dd1e19d7e4cb131778c3764bb">polyMesherClipToBoundary</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a> &amp;mesh, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">alpha</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, MeshType::self_dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">polymesher::PolyMesherParams</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">params</a>)</td></tr>
-<tr class="separator:a3db2ab4dd1e19d7e4cb131778c3764bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d6f59f282ff90f3a0b0f7856e8b4f37" id="r_a2d6f59f282ff90f3a0b0f7856e8b4f37"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </td></tr>
-<tr class="memitem:a2d6f59f282ff90f3a0b0f7856e8b4f37"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a2d6f59f282ff90f3a0b0f7856e8b4f37">polyMesherComputeEdgeAngle</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;mesh, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">cell_id</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a>, 2 &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">edge</a>)</td></tr>
-<tr class="separator:a2d6f59f282ff90f3a0b0f7856e8b4f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae704555005f472e6b200962395a45194" id="r_ae704555005f472e6b200962395a45194"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
-<tr class="memitem:ae704555005f472e6b200962395a45194"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ae704555005f472e6b200962395a45194">polyMesherCollapseEdges</a> (<a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;mesh, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">edge_collapse_tol</a>)</td></tr>
-<tr class="separator:ae704555005f472e6b200962395a45194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a3671d65cade9b7c80cde7cf9983ca" id="r_a55a3671d65cade9b7c80cde7cf9983ca"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim&gt; </td></tr>
+<tr class="memitem:a55a3671d65cade9b7c80cde7cf9983ca"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a55a3671d65cade9b7c80cde7cf9983ca">vulPolyAdjustFixedPoints</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">fixed_pts</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">near_boundary_idxs</a>, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">seed_pts</a>)</td></tr>
+<tr class="memdesc:a55a3671d65cade9b7c80cde7cf9983ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust nearby seeds to keep fixed points represented in the mesh.  <br /></td></tr>
+<tr class="separator:a55a3671d65cade9b7c80cde7cf9983ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0deaeacb1cb64d2a01ba176e06f42e1d" id="r_a0deaeacb1cb64d2a01ba176e06f42e1d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
+<tr class="memitem:a0deaeacb1cb64d2a01ba176e06f42e1d"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a0deaeacb1cb64d2a01ba176e06f42e1d">vulPolyReflect</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">alpha</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html">vulpoly::VulPolyParams</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">params</a>, std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">seed_pts</a>)</td></tr>
+<tr class="memdesc:a0deaeacb1cb64d2a01ba176e06f42e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add reflected seeds near domain boundaries.  <br /></td></tr>
+<tr class="separator:a0deaeacb1cb64d2a01ba176e06f42e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65dc48e3b5bd51e2fb7aa9d857de40bf" id="r_a65dc48e3b5bd51e2fb7aa9d857de40bf"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
+<tr class="memitem:a65dc48e3b5bd51e2fb7aa9d857de40bf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#a65dc48e3b5bd51e2fb7aa9d857de40bf">vulPolyClipToBoundary</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a> &amp;mesh, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">alpha</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, MeshType::self_dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html">vulpoly::VulPolyParams</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">params</a>)</td></tr>
+<tr class="memdesc:a65dc48e3b5bd51e2fb7aa9d857de40bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Improve positions of mesh vertices close to the domain boundary.  <br /></td></tr>
+<tr class="separator:a65dc48e3b5bd51e2fb7aa9d857de40bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab324c082b6f3179f1f637f24af7e15f5" id="r_ab324c082b6f3179f1f637f24af7e15f5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </td></tr>
+<tr class="memitem:ab324c082b6f3179f1f637f24af7e15f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ab324c082b6f3179f1f637f24af7e15f5">vulPolyComputeEdgeAngle</a> (<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;mesh, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">cell_id</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a>, 2 &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">edge</a>)</td></tr>
+<tr class="memdesc:ab324c082b6f3179f1f637f24af7e15f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate an edge's normalized angular size in an adjacent cell.  <br /></td></tr>
+<tr class="separator:ab324c082b6f3179f1f637f24af7e15f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22d87996e76c9c208321b74d4c692e0" id="r_ae22d87996e76c9c208321b74d4c692e0"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </td></tr>
+<tr class="memitem:ae22d87996e76c9c208321b74d4c692e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html#ae22d87996e76c9c208321b74d4c692e0">vulPolyCollapseEdges</a> (<a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;mesh, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">distanceFunction</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">edge_collapse_tol</a>)</td></tr>
+<tr class="memdesc:ae22d87996e76c9c208321b74d4c692e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collapse isolated undersized edges in a 2D mesh.  <br /></td></tr>
+<tr class="separator:ae22d87996e76c9c208321b74d4c692e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helpers implementing VulPoly's Voronoi construction and cleanup. </p>
+<p>The PolyMesher-derived algorithms are identified in their documentation. This namespace also adapts Voro++ output to Vulpes mesh data structures. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a2b1c9d63b50cc0b9aae11eb0bf9487bd" name="a2b1c9d63b50cc0b9aae11eb0bf9487bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b1c9d63b50cc0b9aae11eb0bf9487bd">&#9670;&#160;</a></span>buildSubDual()</h2>
 
@@ -348,6 +363,27 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
       </table>
 </div><div class="memdoc">
 
+<p>Estimate a signed-distance gradient by centered finite differences. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FloatType</td><td>Coordinate scalar type. </td></tr>
+    <tr><td class="paramname">IndexType</td><td>Index type used for the selected distance component. </td></tr>
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">D</td><td>Distance-expression implementation type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Point where the gradient is evaluated. </td></tr>
+    <tr><td class="paramname">distanceFunction</td><td>Signed-distance expression. </td></tr>
+    <tr><td class="paramname">idx</td><td>Distance component to differentiate, or -1 for the final domain distance. </td></tr>
+    <tr><td class="paramname">finite_difference_h</td><td>Centered-difference step size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Estimated gradient of the requested distance component. </dd></dl>
+
 </div>
 </div>
 <a id="adba98ffe37b9cf9811ed77c29a7e2409" name="adba98ffe37b9cf9811ed77c29a7e2409"></a>
@@ -384,6 +420,24 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
       </table>
 </div><div class="memdoc">
 
+<p>Convert in-domain 2D Voronoi cells into a Vulpes mesh. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Dimension parameter of the distance expression. </td></tr>
+    <tr><td class="paramname">D</td><td>Distance-expression implementation type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bbox</td><td>Bounding box for Voronoi cell construction. </td></tr>
+    <tr><td class="paramname">points</td><td>Voronoi seeds. </td></tr>
+    <tr><td class="paramname">distanceFunction</td><td>Domain signed-distance expression used to retain cells inside the domain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 2D mesh with coincident neighboring cell vertices merged. </dd></dl>
+
 </div>
 </div>
 <a id="a837885952ff40014073aa139895d0f36" name="a837885952ff40014073aa139895d0f36"></a>
@@ -419,6 +473,24 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Convert in-domain 3D Voronoi cells into a Vulpes mesh. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Dimension parameter of the distance expression. </td></tr>
+    <tr><td class="paramname">D</td><td>Distance-expression implementation type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bbox</td><td>Bounding box for Voronoi cell construction. </td></tr>
+    <tr><td class="paramname">points</td><td>Voronoi seeds. </td></tr>
+    <tr><td class="paramname">distanceFunction</td><td>Domain signed-distance expression used to retain cells inside the domain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 3D mesh with shared vertices and face connectivity. </dd></dl>
 
 </div>
 </div>
@@ -537,198 +609,6 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 
 </div>
 </div>
-<a id="ad0881f836ef5e935ef2f46031b10857c" name="ad0881f836ef5e935ef2f46031b10857c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0881f836ef5e935ef2f46031b10857c">&#9670;&#160;</a></span>polyMesherAdjustFixedPoints()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> vulpes::geometry::internal::polyMesherAdjustFixedPoints </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>fixed_pts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>near_boundary_idxs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>seed_pts</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3db2ab4dd1e19d7e4cb131778c3764bb" name="a3db2ab4dd1e19d7e4cb131778c3764bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3db2ab4dd1e19d7e4cb131778c3764bb">&#9670;&#160;</a></span>polyMesherClipToBoundary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> vulpes::geometry::internal::polyMesherClipToBoundary </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a> &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, MeshType::self_dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>distanceFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">polymesher::PolyMesherParams</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>params</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae704555005f472e6b200962395a45194" name="ae704555005f472e6b200962395a45194"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae704555005f472e6b200962395a45194">&#9670;&#160;</a></span>polyMesherCollapseEdges()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> vulpes::geometry::internal::polyMesherCollapseEdges </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>distanceFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>&#160;</td>
-          <td class="paramname"><em>edge_collapse_tol</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d6f59f282ff90f3a0b0f7856e8b4f37" name="a2d6f59f282ff90f3a0b0f7856e8b4f37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d6f59f282ff90f3a0b0f7856e8b4f37">&#9670;&#160;</a></span>polyMesherComputeEdgeAngle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> vulpes::geometry::internal::polyMesherComputeEdgeAngle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a>&#160;</td>
-          <td class="paramname"><em>cell_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a>, 2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>edge</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a28d98e6e35b60331d6f6aa7f0dd1e0a4" name="a28d98e6e35b60331d6f6aa7f0dd1e0a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28d98e6e35b60331d6f6aa7f0dd1e0a4">&#9670;&#160;</a></span>polyMesherReflect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; vulpes::geometry::internal::polyMesherReflect </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>distanceFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html">polymesher::PolyMesherParams</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>params</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>seed_pts</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab57e0234a9f21d3ecae7b168d239349f" name="ab57e0234a9f21d3ecae7b168d239349f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab57e0234a9f21d3ecae7b168d239349f">&#9670;&#160;</a></span>removeEmptySets()</h2>
 
@@ -835,6 +715,315 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
       </table>
 </div><div class="memdoc">
 
+<p>Move each Voronoi seed to its cell centroid and estimate relaxation error. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bbox</td><td>Two opposite corners of the box containing the Voronoi diagram. </td></tr>
+    <tr><td class="paramname">points</td><td>Seeds, updated in place by adding each cell's centroid offset. </td></tr>
+    <tr><td class="paramname">n_inside_seeds</td><td>Number of original in-domain seeds used for error and area accumulation; appended reflected seeds are excluded. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The normalized centroid displacement error and summed in-domain cell area/measure. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Centroidal Voronoi relaxation follows PolyMesher; see the file reference. </dd></dl>
+
+</div>
+</div>
+<a id="a55a3671d65cade9b7c80cde7cf9983ca" name="a55a3671d65cade9b7c80cde7cf9983ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a3671d65cade9b7c80cde7cf9983ca">&#9670;&#160;</a></span>vulPolyAdjustFixedPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> vulpes::geometry::internal::vulPolyAdjustFixedPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fixed_pts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>near_boundary_idxs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>seed_pts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adjust nearby seeds to keep fixed points represented in the mesh. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FloatType</td><td>Coordinate scalar type. </td></tr>
+    <tr><td class="paramname">IndexType</td><td>Seed index type. </td></tr>
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fixed_pts</td><td>Locations to preserve. </td></tr>
+    <tr><td class="paramname">near_boundary_idxs</td><td>Indices of seeds close to the domain boundary. </td></tr>
+    <tr><td class="paramname">seed_pts</td><td>Seeds to update in place. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Preserving fixed points during Voronoi relaxation follows the PolyMesher approach; see the file reference. </dd></dl>
+
+</div>
+</div>
+<a id="a65dc48e3b5bd51e2fb7aa9d857de40bf" name="a65dc48e3b5bd51e2fb7aa9d857de40bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65dc48e3b5bd51e2fb7aa9d857de40bf">&#9670;&#160;</a></span>vulPolyClipToBoundary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> vulpes::geometry::internal::vulPolyClipToBoundary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, MeshType::self_dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>distanceFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html">vulpoly::VulPolyParams</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Improve positions of mesh vertices close to the domain boundary. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FloatType</td><td>Coordinate scalar type. </td></tr>
+    <tr><td class="paramname">MeshType</td><td>Mesh type being modified. </td></tr>
+    <tr><td class="paramname">D</td><td>Distance-expression implementation type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>Mesh whose vertices may be clipped. </td></tr>
+    <tr><td class="paramname">alpha</td><td>Characteristic cell width. </td></tr>
+    <tr><td class="paramname">distanceFunction</td><td>Domain signed-distance expression. </td></tr>
+    <tr><td class="paramname">params</td><td>VulPoly algorithm parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This boundary-vertex correction is a Vulpes addition to the PolyMesher-derived meshing procedure. </dd></dl>
+
+</div>
+</div>
+<a id="ae22d87996e76c9c208321b74d4c692e0" name="ae22d87996e76c9c208321b74d4c692e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22d87996e76c9c208321b74d4c692e0">&#9670;&#160;</a></span>vulPolyCollapseEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">void</a> vulpes::geometry::internal::vulPolyCollapseEdges </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>distanceFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>&#160;</td>
+          <td class="paramname"><em>edge_collapse_tol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Collapse isolated undersized edges in a 2D mesh. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FloatType</td><td>Coordinate scalar type. </td></tr>
+    <tr><td class="paramname">IndexType</td><td>Mesh index type. </td></tr>
+    <tr><td class="paramname">Dim</td><td>Dimension parameter of the distance expression. </td></tr>
+    <tr><td class="paramname">D</td><td>Distance-expression implementation type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>Mesh to simplify in place. </td></tr>
+    <tr><td class="paramname">distanceFunction</td><td>Domain signed-distance expression, used to preserve the boundary approximation. </td></tr>
+    <tr><td class="paramname">edge_collapse_tol</td><td>Threshold for an edge's normalized angular size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Short-edge removal follows PolyMesher; see the file reference. </dd></dl>
+
+</div>
+</div>
+<a id="ab324c082b6f3179f1f637f24af7e15f5" name="ab324c082b6f3179f1f637f24af7e15f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab324c082b6f3179f1f637f24af7e15f5">&#9670;&#160;</a></span>vulPolyComputeEdgeAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> vulpes::geometry::internal::vulPolyComputeEdgeAngle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html">Mesh2D</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a>&#160;</td>
+          <td class="paramname"><em>cell_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> std::array&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a>, 2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estimate an edge's normalized angular size in an adjacent cell. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FloatType</td><td>Coordinate scalar type. </td></tr>
+    <tr><td class="paramname">IndexType</td><td>Mesh index type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>2D mesh containing the cell and edge. </td></tr>
+    <tr><td class="paramname">cell_id</td><td>Adjacent cell index, or -1 for a boundary side. </td></tr>
+    <tr><td class="paramname">edge</td><td>The edge's two vertex indices in the requested orientation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Normalized angular size, or the maximum scalar value for cell_id -1. </dd></dl>
+
+</div>
+</div>
+<a id="a0deaeacb1cb64d2a01ba176e06f42e1d" name="a0deaeacb1cb64d2a01ba176e06f42e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0deaeacb1cb64d2a01ba176e06f42e1d">&#9670;&#160;</a></span>vulPolyReflect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> , <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">IndexType</a> &gt; vulpes::geometry::internal::vulPolyReflect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="classvulpes_1_1geometry_1_1DistanceExpression.html">DistanceExpression</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim, <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>distanceFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">const</a> <a class="el" href="structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html">vulpoly::VulPolyParams</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a72e6a6deae9bfee82032a94e225d980a">Point</a>&lt; <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">FloatType</a>, Dim &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>seed_pts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add reflected seeds near domain boundaries. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FloatType</td><td>Coordinate scalar type. </td></tr>
+    <tr><td class="paramname">IndexType</td><td>Seed index type. </td></tr>
+    <tr><td class="paramname">Dim</td><td>Spatial dimension. </td></tr>
+    <tr><td class="paramname">D</td><td>Distance-expression implementation type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distanceFunction</td><td>Domain signed-distance expression. </td></tr>
+    <tr><td class="paramname">alpha</td><td>Characteristic distance used to select seeds near boundaries. </td></tr>
+    <tr><td class="paramname">params</td><td>VulPoly algorithm parameters. </td></tr>
+    <tr><td class="paramname">seed_pts</td><td>Seeds, extended in place with successful reflections. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Indices of original seeds near the boundary and of the reflected points appended to seed_pts. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Boundary reflection follows PolyMesher; see the file reference. </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -844,7 +1033,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry_1_1internal.html">internal</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

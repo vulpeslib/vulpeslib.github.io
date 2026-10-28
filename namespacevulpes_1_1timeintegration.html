@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -144,11 +144,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1timeintegration_1_1CrankNicolson.html">CrankNicolson</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html">CrankNicolsonGeneralized</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crank-Nicolson solver for linear and nonlinear problems of the form.  <a href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html">CrankNicolsonIMEX</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html">CrankNicolsonMFK</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html">CrankNicolsonSolver</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crank-Nicolson solver for M du/dt + L u = F(t), where L is lin_op. Default linear solver: PrecondOnly + LU (see <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a3303af67f809a026f7678fec9103ae79">getSolver()</a>).  <a href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html">CrankNicolsonSolverFK</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +199,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1timeintegration_1_1SSPRK3IMEX.html">SSPRK3IMEX</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html">TimeIntegratorDIRKIMEX</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runge-Kutta solver for M du/dt + L u + N(u) = F(t). L is implicit when the Butcher table has an implicit part, N is always explicit. Default linear solver: PrecondOnly + LU (see <a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#abfcaa719f56bd46f9a9f77ba94ffd077">getSolver()</a>).  <a href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1timeintegration_1_1TRBDF2.html">TRBDF2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +213,7 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1timeintegration.html">timeintegration</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['guide_0',['guide',['../developers_guide_style_guide.html',1,'C++ Style Guide'],['../developers_guide.html',1,'Developer&apos;s Guide']]]
+  ['install_20build_0',['Install &amp; Build',['../developers_guide_installation_instruction.html',1,'developers_guide']]]
 ];

@@ -18,7 +18,7 @@ var searchData=
   ['vulpes_3a_3ageometry_3a_3amesh2d_15',['mesh2d',['../namespacevulpes_1_1geometry_1_1mesh2d.html',1,'vulpes::geometry']]],
   ['vulpes_3a_3ageometry_3a_3amesh2d_3a_3ainternal_16',['internal',['../namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html',1,'vulpes::geometry::mesh2d']]],
   ['vulpes_3a_3ageometry_3a_3amesh3d_17',['mesh3d',['../namespacevulpes_1_1geometry_1_1mesh3d.html',1,'vulpes::geometry']]],
-  ['vulpes_3a_3ageometry_3a_3apolymesher_18',['polymesher',['../namespacevulpes_1_1geometry_1_1polymesher.html',1,'vulpes::geometry']]],
+  ['vulpes_3a_3ageometry_3a_3avulpoly_18',['vulpoly',['../namespacevulpes_1_1geometry_1_1vulpoly.html',1,'vulpes::geometry']]],
   ['vulpes_3a_3aio_19',['io',['../namespacevulpes_1_1io.html',1,'vulpes']]],
   ['vulpes_3a_3ala_20',['la',['../namespacevulpes_1_1la.html',1,'vulpes']]],
   ['vulpes_3a_3ala_3a_3ainternal_21',['internal',['../namespacevulpes_1_1la_1_1internal.html',1,'vulpes::la']]],

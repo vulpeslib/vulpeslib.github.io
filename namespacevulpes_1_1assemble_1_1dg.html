@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -167,14 +167,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ae92970f95e9ab89db9ecafbcce1f19ca"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ae92970f95e9ab89db9ecafbcce1f19ca">createUpwindFlux</a> (VelocityFunc velocity_func)</td></tr>
 <tr class="memdesc:ae92970f95e9ab89db9ecafbcce1f19ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an upwind flux expression from a velocity callable.  <br /></td></tr>
 <tr class="separator:ae92970f95e9ab89db9ecafbcce1f19ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8756536eb1192ba7b20fa879210ce271" id="r_a8756536eb1192ba7b20fa879210ce271"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim&gt; </td></tr>
-<tr class="memitem:a8756536eb1192ba7b20fa879210ce271"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a8756536eb1192ba7b20fa879210ce271">createUpwindFluxConstant</a> (double vx, double vy=0.0, double vz=0.0)</td></tr>
-<tr class="memdesc:a8756536eb1192ba7b20fa879210ce271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy constant-velocity upwind helper.  <br /></td></tr>
-<tr class="separator:a8756536eb1192ba7b20fa879210ce271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d5a3ca701f2be0fa847f671a87bf1b1" id="r_a3d5a3ca701f2be0fa847f671a87bf1b1"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename VelocityFunc &gt; </td></tr>
-<tr class="memitem:a3d5a3ca701f2be0fa847f671a87bf1b1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#a3d5a3ca701f2be0fa847f671a87bf1b1">createUpwindFluxVariable</a> (VelocityFunc velocity_func)</td></tr>
-<tr class="memdesc:a3d5a3ca701f2be0fa847f671a87bf1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an upwind flux coefficient expression for VARIABLE (spatially-varying) advection velocity. The velocity is evaluated at the face centroid.  <br /></td></tr>
-<tr class="separator:a3d5a3ca701f2be0fa847f671a87bf1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb" id="r_ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplParams" colspan="2">template&lt;typename MeshType &gt; </td></tr>
 <tr class="memitem:ab47891e1f6b99bc401b5cd2396f373fb"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html#ab47891e1f6b99bc401b5cd2396f373fb">computeError</a> (const <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">dofs::DofHandler</a>&lt; MeshType &gt; &amp;dof_handler, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_h, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;u_exact, const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a> &amp;matrix)</td></tr>
 <tr class="memdesc:ab47891e1f6b99bc401b5cd2396f373fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the error between a discrete solution and an exact one.  <br /></td></tr>
@@ -296,11 +288,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">errH1int</td><td>the H1 semi-norm error </td></tr>
-    <tr><td class="paramname">errJump</td><td></td></tr>
+    <tr><td class="paramname">errJump</td><td>the jump error </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>sqrt(errH1int^2 + errJump^2) </dd></dl>
 
 </div>
 </div>
@@ -615,7 +607,7 @@ template&lt;std::size_t Dim&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the penalty value </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The penalty is computed as gamma * order^2 / h, where h is the cell diameter </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The penalty is computed as gamma * order^2 / h, where h is the cell diameter. It vanishes for order 0. </dd></dl>
 
 </div>
 </div>
@@ -709,7 +701,7 @@ template&lt;std::size_t Dim&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the penalty value </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The penalty is computed as gamma * order^2 * Cinv * (|F| / |K|), where Cinv = |K| / Kb, |F| is the face measure (length in 2D, area in 3D), |K| is the cell measure and Kb is the K flat introduced in Cangiani, Dong, H. Georgoulis, Houston (2017). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The penalty is computed as gamma * order^2 * Cinv * (|F| / |K|), where Cinv = |K| / Kb, |F| is the face measure (length in 2D, area in 3D), |K| is the cell measure and Kb is the K flat introduced in Cangiani, Dong, H. Georgoulis, Houston (2017). It vanishes for order 0. </dd></dl>
 
 </div>
 </div>
@@ -746,99 +738,6 @@ template&lt;std::size_t Dim, typename VelocityFunc &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the upwind flux coefficient </dd></dl>
-
-</div>
-</div>
-<a id="a8756536eb1192ba7b20fa879210ce271" name="a8756536eb1192ba7b20fa879210ce271"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8756536eb1192ba7b20fa879210ce271">&#9670;&#160;</a></span>createUpwindFluxConstant()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::size_t Dim&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto vulpes::assemble::dg::createUpwindFluxConstant </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vy</em> = <code>0.0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vz</em> = <code>0.0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Legacy constant-velocity upwind helper. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Dim</td><td>Dimension of the problem </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vx</td><td>X-component of velocity </td></tr>
-    <tr><td class="paramname">vy</td><td>Y-component of velocity (only for 2D) </td></tr>
-    <tr><td class="paramname">vz</td><td>Z-component of velocity (only for 3D) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the upwind flux coefficient </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The upwind flux is computed as 0.5 * (|velocity.n| + velocity.n), which evaluates to velocity . n when velocity . n &gt; 0 (outflow) and 0 when velocity . n &lt; 0 (inflow). This implements the standard upwind flux for first-order hyperbolic problems following Brezzi, Marini, Suli (2004).</dd>
-<dd>
-Prefer createUpwindFlux&lt;Dim&gt;(velocity_func) for the unified q-point based path used across advection assembly and tests. </dd></dl>
-
-</div>
-</div>
-<a id="a3d5a3ca701f2be0fa847f671a87bf1b1" name="a3d5a3ca701f2be0fa847f671a87bf1b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d5a3ca701f2be0fa847f671a87bf1b1">&#9670;&#160;</a></span>createUpwindFluxVariable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::size_t Dim, typename VelocityFunc &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto vulpes::assemble::dg::createUpwindFluxVariable </td>
-          <td>(</td>
-          <td class="paramtype">VelocityFunc&#160;</td>
-          <td class="paramname"><em>velocity_func</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create an upwind flux coefficient expression for VARIABLE (spatially-varying) advection velocity. The velocity is evaluated at the face centroid. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Dim</td><td>Dimension of the problem </td></tr>
-    <tr><td class="paramname">VelocityFunc</td><td>Callable returning Eigen::Vector&lt;double,Dim&gt; given a physical point Eigen::Vector&lt;double,Dim&gt;. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">velocity_func</td><td>Callable that takes a point and returns velocity vector. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Finite element expression containing the upwind flux coefficient </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Legacy variable-velocity helper. Prefer createUpwindFlux&lt;Dim&gt;(velocity_func) for q-point based physical-space evaluation. </dd></dl>
 
 </div>
 </div>
@@ -1181,6 +1080,7 @@ template&lt;typename MeshType , typename CellManagerType , typename DofHandlerTy
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vector of modal coefficients of the projected scalar field </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The component is extracted by <a class="el" href="namespacevulpes_1_1la.html#ab926e40f9912d90f9b01cb3543af2e2e" title="Extract one scalar diagonal component from a blocked matrix.">la::extractDiagonalBlockComponent</a>, which aborts above <a class="el" href="namespacevulpes_1_1la.html#a04b27bf49a3931a86de5024b3662ae21" title="Largest scalar dimension for which the dense helpers below call toEigenDense(). Beyond it the O(N^2) ...">la::kMaxDenseExtractSize</a> scalar rows. For larger meshes use l2ProjectExpressionBlockedSubset, or the overload above with a scalar mass matrix. </dd></dl>
 
 </div>
 </div>
@@ -1377,7 +1277,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble_1_1dg.html">dg</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

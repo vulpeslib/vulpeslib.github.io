@@ -1,7 +1,7 @@
 var namespacevulpes_1_1timeintegration =
 [
     [ "internal", "namespacevulpes_1_1timeintegration_1_1internal.html", [
-      [ "checkButcherTable", "namespacevulpes_1_1timeintegration_1_1internal.html#a1d408488a99d3752e58d22521c192487", null ],
+      [ "checkButcherTable", "namespacevulpes_1_1timeintegration_1_1internal.html#a852fccb0d82bfec27eb2816a19edfe69", null ],
       [ "checkFSAL", "namespacevulpes_1_1timeintegration_1_1internal.html#aa81ff571da7cb0b1a4ce3e0123e2f65f", null ],
       [ "padEndArray", "namespacevulpes_1_1timeintegration_1_1internal.html#a09fa14548f9f9647afbcf9435376113e", null ],
       [ "padStartArray", "namespacevulpes_1_1timeintegration_1_1internal.html#a05567d778d8c502fa795cad138a3bff6", null ],
@@ -18,6 +18,7 @@ var namespacevulpes_1_1timeintegration =
     [ "CeschinoKunzmann4", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4" ],
     [ "CeschinoKunzmann4IMEX", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX" ],
     [ "CrankNicolson", "structvulpes_1_1timeintegration_1_1CrankNicolson.html", "structvulpes_1_1timeintegration_1_1CrankNicolson" ],
+    [ "CrankNicolsonGeneralized", "classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized" ],
     [ "CrankNicolsonIMEX", "structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html", "structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX" ],
     [ "CrankNicolsonMFK", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK" ],
     [ "CrankNicolsonSolver", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolver" ],

@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('simplex_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="simplex_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (C) 2024 - 2025 by the vulpes authors.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (C) 2024 - 2026 by the Vulpes authors.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// This file is part of Vulpes.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Vulpes is free software; you can redistribute it and/or modify</span></div>
@@ -166,8 +166,8 @@ $(document).ready(function(){initNavTree('simplex_8hpp_source.html',''); initRes
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  rule.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a0edb88c1e8aee56cc5cf60b25931263a">degree</a> = rule_bary.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a0edb88c1e8aee56cc5cf60b25931263a">degree</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  rule.nodes.reserve(rule_bary.<a class="code hl_variable" href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">nodes</a>.size());</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="comment">// volume of n-simplex = |det(A)| / n!</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="comment">// where the columns of A are the difference of the vertexes with respect to</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// the first vertex. |det(A)| = 1 for the unit ortogonal simplex.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="comment">// where the columns of A are the difference of the vertices with respect to</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// the first vertex. |det(A)| = 1 for the unit orthogonal simplex.</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// We multiply by 2^n for rescaling in [-1, 1]^n</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  mpf_class weight0 = mpq_class(</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      (1U &lt;&lt; (Dim - 1)), <a class="code hl_function" href="namespacevulpes_1_1vmath.html#a1129681c86e318419d8b6144fb842202">vmath::factorial</a>(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(Dim - 1)));</div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('simplex_8hpp_source.html',''); initRes
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    rule.nodes.back().weight = node.weight * weight0;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">for</span> (std::size_t d = 0; d &lt; (Dim - 1); ++d) {</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="comment">// matvec with matrix of vertices</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="comment">// we assume that the vertexes are zero and the versors</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="comment">// we assume that the vertices are zero and the versors</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="comment">// then we apply a homotety and a translation</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      rule.nodes.back().point[d] = node.point[d + 1] * T(2) - T(1);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
@@ -267,10 +267,10 @@ $(document).ready(function(){initNavTree('simplex_8hpp_source.html',''); initRes
 <div class="ttc" id="anamespacevulpes_1_1qrule_html_a5dacf2bd4887e9379061365daa65920a"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#a5dacf2bd4887e9379061365daa65920a">vulpes::qrule::getTetrahedronTabledQuadrature</a></div><div class="ttdeci">const QuadratureRule&lt; mpf_class, 3 &gt; &amp; getTetrahedronTabledQuadrature(std::size_t deg)</div><div class="ttdoc">Retrieves a precomputed quadrature rule for a tetrahedron.</div><div class="ttdef"><b>Definition</b> simplex.tet.cpp:41</div></div>
 <div class="ttc" id="anamespacevulpes_1_1qrule_html_a69f6219fca29b0c9d1adb00fbf00fd10"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#a69f6219fca29b0c9d1adb00fbf00fd10">vulpes::qrule::mpfGrundammMoellerQuadrature</a></div><div class="ttdeci">QuadratureRule&lt; mpf_class, Dim+1 &gt; mpfGrundammMoellerQuadrature(std::size_t deg, std::size_t precision)</div><div class="ttdoc">Generates Grundamm-Moller quadrature rules in barycentric coordinates.</div><div class="ttdef"><b>Definition</b> simplex.hpp:102</div></div>
 <div class="ttc" id="anamespacevulpes_1_1qrule_html_af41db6b3f780ef06246c9d55a199347d"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#af41db6b3f780ef06246c9d55a199347d">vulpes::qrule::getTriangleTabledQuadrature</a></div><div class="ttdeci">const QuadratureRule&lt; mpf_class, 2 &gt; &amp; getTriangleTabledQuadrature(std::size_t deg)</div><div class="ttdoc">Retrieves a precomputed quadrature rule for a triangle.</div><div class="ttdef"><b>Definition</b> simplex.tri.cpp:59</div></div>
-<div class="ttc" id="anamespacevulpes_1_1vmath_html_a0682f20a70be8fa66858922f1b08ec85"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a0682f20a70be8fa66858922f1b08ec85">vulpes::vmath::pow1</a></div><div class="ttdeci">constexpr int64_t pow1(T exp)</div><div class="ttdoc">Computes (-1)^exp.</div><div class="ttdef"><b>Definition</b> vmath.hpp:378</div></div>
-<div class="ttc" id="anamespacevulpes_1_1vmath_html_a1129681c86e318419d8b6144fb842202"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a1129681c86e318419d8b6144fb842202">vulpes::vmath::factorial</a></div><div class="ttdeci">constexpr T factorial(T n)</div><div class="ttdoc">Computes the factorial of a pseudo-arithmetic number iteratively.</div><div class="ttdef"><b>Definition</b> vmath.hpp:345</div></div>
-<div class="ttc" id="anamespacevulpes_1_1vmath_html_a2b17e16df3a08f27fff0aa30c875555b"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b">vulpes::vmath::upow</a></div><div class="ttdeci">constexpr U upow(U base, V exp, U result=U(1))</div><div class="ttdoc">Computes the unsigned power of a number.</div><div class="ttdef"><b>Definition</b> vmath.hpp:106</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:36</div></div>
+<div class="ttc" id="anamespacevulpes_1_1vmath_html_a0682f20a70be8fa66858922f1b08ec85"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a0682f20a70be8fa66858922f1b08ec85">vulpes::vmath::pow1</a></div><div class="ttdeci">constexpr int64_t pow1(T exp)</div><div class="ttdoc">Computes (-1)^exp.</div><div class="ttdef"><b>Definition</b> vmath.hpp:381</div></div>
+<div class="ttc" id="anamespacevulpes_1_1vmath_html_a1129681c86e318419d8b6144fb842202"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a1129681c86e318419d8b6144fb842202">vulpes::vmath::factorial</a></div><div class="ttdeci">constexpr T factorial(T n)</div><div class="ttdoc">Computes the factorial of a pseudo-arithmetic number iteratively.</div><div class="ttdef"><b>Definition</b> vmath.hpp:348</div></div>
+<div class="ttc" id="anamespacevulpes_1_1vmath_html_a2b17e16df3a08f27fff0aa30c875555b"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b">vulpes::vmath::upow</a></div><div class="ttdeci">constexpr U upow(U base, V exp, U result=U(1))</div><div class="ttdoc">Computes the unsigned power of a number.</div><div class="ttdef"><b>Definition</b> vmath.hpp:107</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:38</div></div>
 <div class="ttc" id="aqrule_8hpp_html"><div class="ttname"><a href="qrule_8hpp.html">qrule.hpp</a></div></div>
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html">vulpes::qrule::QuadratureRule</a></div><div class="ttdoc">Represents a quadrature rule consisting of a set of points and associated weights.</div><div class="ttdef"><b>Definition</b> qrule.hpp:69</div></div>
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html_a0edb88c1e8aee56cc5cf60b25931263a"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html#a0edb88c1e8aee56cc5cf60b25931263a">vulpes::qrule::QuadratureRule::degree</a></div><div class="ttdeci">std::size_t degree</div><div class="ttdoc">Polynomial degree of accuracy of the rule.</div><div class="ttdef"><b>Definition</b> qrule.hpp:73</div></div>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('simplex_8hpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="simplex_8hpp.html">simplex.hpp</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

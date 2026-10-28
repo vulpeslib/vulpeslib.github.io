@@ -16,7 +16,7 @@ var classvulpes_1_1timeintegration_1_1CrankNicolsonMFK =
     [ "m_f_old", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#af5ebb8424a36043a665f1816b38b26c7", null ],
     [ "m_final_time", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#afccde6899b276e3b8902631d03e5b60d", null ],
     [ "m_force_func", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#a056aebea2ab51485fa929149616f35fb", null ],
-    [ "m_intial_time", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#a1558d007db8b41171f24466e6999ea2e", null ],
+    [ "m_initial_time", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#a5c3a85b2b8a4aceb69e61e7dfdca4e83", null ],
     [ "m_iter", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#a5b63f5bfd4d6edfae9ca4b40f2ed1c73", null ],
     [ "m_LHS", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#aca5cb5bcb2a4c7795e6464b321afde45", null ],
     [ "m_lin_op", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#accdaf64ff26115d57612dc6137039b3a", null ],

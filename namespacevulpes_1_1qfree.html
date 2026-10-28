@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -426,7 +426,7 @@ template&lt;bool PPoly, bool Pruning, typename FloatType , typename IndexType &g
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">PPoly</td><td>A boolean template parameter to indicate if the function is using monomials of the space \( \mathbb{P}^k \). If true, the function skips monomials where the sum of exponents is exceeding the degree.</td></tr>
-    <tr><td class="paramname">Pruning</td><td>A boolean template parameter to indicate if the edge pruning is applied. In order to apply it, it is necessary to assess the topology of the cell and do suitable pre-computations. The optimal choice of pre-computations is an open problem. For more details on the algorithm see Radley, Houston &amp; Hubbard (2023). For an example euristic see the Cell class.</td></tr>
+    <tr><td class="paramname">Pruning</td><td>A boolean template parameter to indicate if the edge pruning is applied. In order to apply it, it is necessary to assess the topology of the cell and do suitable pre-computations. The optimal choice of pre-computations is an open problem. For more details on the algorithm see Radley, Houston &amp; Hubbard (2023). For an example heuristic see the Cell class.</td></tr>
     <tr><td class="paramname">FloatType</td><td>The floating-point type used for computations (e.g., <code>float</code>, <code>double</code>). </td></tr>
     <tr><td class="paramname">IndexType</td><td>The type used for indexing (typically an integer type).</td></tr>
   </table>
@@ -449,7 +449,7 @@ template&lt;bool PPoly, bool Pruning, typename FloatType , typename IndexType &g
 <li>Integrals computations</li>
 </ol>
 </dd></dl>
-<p>The integrals are computed in a non-recursive manner, starting for the vertexes, then edges, faces and finally volume. The center \( x_0 \) of the entities defining the polyhedron is choosen to be a vertex of the entity itself for edges and faces, and the origin (0, 0, 0) for the volume. The reason is that this allows for pruning of edge integrals in the computation of face integrals. Since the faces integrals are often needed, instead of pruning the face integrals during the computation of the volume integral, it is more convenient to avoid the sum of lower order monomials for the volume. Indeed this approach is a merge of Chin &amp; Sukumar work (which is non-recursive) and the pruning technique proposed by Radley, Houston &amp; Hubbard.</p>
+<p>The integrals are computed in a non-recursive manner, starting for the vertices, then edges, faces and finally volume. The center \( x_0 \) of the entities defining the polyhedron is chosen to be a vertex of the entity itself for edges and faces, and the origin (0, 0, 0) for the volume. The reason is that this allows for pruning of edge integrals in the computation of face integrals. Since the faces integrals are often needed, instead of pruning the face integrals during the computation of the volume integral, it is more convenient to avoid the sum of lower order monomials for the volume. Indeed this approach is a merge of Chin &amp; Sukumar work (which is non-recursive) and the pruning technique proposed by Radley, Houston &amp; Hubbard.</p>
 <p>Several other modifications are applied in order to enhance efficiency. For more details see the comments in the source code.</p>
 <p>References:</p><ul>
 <li>Chin, Eric B., Jean B. Lasserre, and N. Sukumar. "Numerical integration of
@@ -584,7 +584,7 @@ polytopic discontinuous Galerkin methods for transport problems." arXiv preprint
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1qfree.html">qfree</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

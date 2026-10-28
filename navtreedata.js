@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Vulpes", "index.html", [
     [ "Tutorials", "tutorials.html", [
-      [ "Mesh Kinds for 01_assemble_lapl_dg_2d", "tutorials_01_Meshes_2D.html", [
+      [ "Mesh Kinds for lap_dg_2d_main", "tutorials_01_Meshes_2D.html", [
         [ "Quick Summary", "tutorials_01_Meshes_2D.html#autotoc_md0", null ],
         [ "General Notes", "tutorials_01_Meshes_2D.html#autotoc_md1", null ],
         [ "1. tria", "tutorials_01_Meshes_2D.html#autotoc_md2", null ],
@@ -172,7 +172,7 @@ var NAVTREE =
         [ "Using Spack", "developers_guide_compile_native.html#autotoc_md112", [
           [ "Our usecase", "developers_guide_compile_native.html#autotoc_md113", null ]
         ] ],
-        [ "Specifing the position of a library", "developers_guide_compile_native.html#autotoc_md114", null ]
+        [ "Specifying the position of a library", "developers_guide_compile_native.html#autotoc_md114", null ]
       ] ],
       [ "C++ Style Guide", "developers_guide_style_guide.html", [
         [ "Background", "developers_guide_style_guide.html#autotoc_md140", null ],
@@ -279,40 +279,39 @@ var NAVTREEINDEX =
 [
 "abs__agg__model_8cpp.html",
 "classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a196c35e1397f737c2f6d9ebb27af5eac",
-"classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a15eda22e0f670ffe1a598663883ca496",
-"classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a66cc66bc9b71ad48a367ff72e2726ea8",
-"classvulpes_1_1datastructure_1_1CrsMapUncompressed.html#aac9212b3d1817e936b46351cb0fe1479",
-"classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8",
-"classvulpes_1_1fe_1_1FeExpressionBase.html#aa194506aca4e759376e053023687b62b",
-"classvulpes_1_1fe_1_1FeExpressionDifference.html#a5d215a6526abc0912ec34e94e23245eb",
-"classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html#a08636ca538108406f96f04f2ac006eff",
-"classvulpes_1_1fe_1_1FeExpressionInnerBlock.html#a43e3f15194537755653c73b65f90d627",
-"classvulpes_1_1fe_1_1FeExpressionSelfFunc.html#a7ab0fbe9cd72d0476c025140baeb9ef8",
-"classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html#a0af04b8b06e2db4e666ed76b03643795",
-"classvulpes_1_1fe_1_1FeSpaceModalP.html#aceb15ad95a454121903eb59722318ccd",
-"classvulpes_1_1fe_1_1FeValues.html#af6f14503ff2c1a3c4ba1a3e4b84c4f5f",
-"classvulpes_1_1geometry_1_1Cell3D.html#ae9f0cf32f4fa3e6009ef2403a3be1357",
-"classvulpes_1_1geometry_1_1KMeansBase.html#aa2e2ffeff80cba1d1e9a2870fe0be7d9",
-"classvulpes_1_1geometry_1_1Mesh3D.html#a1345b5fc1dda8e2fb6d043cfa2619c09",
-"classvulpes_1_1geometry_1_1MeshBase.html#a5d79394ae49b19a34e8133b1987bf82e",
-"classvulpes_1_1geometry_1_1ParallelMesh.html#a252fb01d5128f74f33e2e7c091498375",
-"classvulpes_1_1geometry_1_1Tetrahedralization.html#a663407c0466f68d2652fe64548eb3f75",
-"classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40ace83ae802b33af6ee63842560c46cc41",
-"classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d",
-"classvulpes_1_1polynomial_1_1Polynomial3D.html#a5087add7297fb0a0c12554181ff7d3c3",
-"classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a77deb7f88d9aed414aeea12a318782e0",
-"developers_guide_installation_instruction.html#autotoc_md125",
-"fe__values_8hpp.html",
-"mesh__2d_8cpp.html#aa71c0611a353e086e9accf6245c86cfa",
-"namespacevulpes_1_1assemble_1_1dg.html#a5a607f5519e3de6cd116d9e7ccb75ade",
-"namespacevulpes_1_1geometry_1_1mesh2d.html#a9ea12c49777fe75b640fd32dce456f3c",
-"numbering_8hpp.html#aec2fe4a94046fafac40c620169b31eca",
-"structvulpes_1_1datastructure_1_1internal_1_1StaticSelector_3_01T_00_01true_00_01Default_01_4.html#ac47d17900e564abeb82759042cf6d9b8",
-"structvulpes_1_1la_1_1DataBoomerAMG.html#a6a4dddc072fc9673f02bf11ddc647ae9",
-"structvulpes_1_1scipy_1_1nodeinfo.html#a2798e322fc0b2f5676f2f9ff96d5ced3",
-"structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX.html#a807135c1cf7bc6bd8586c7ecd5c880a6",
-"structvulpes_1_1timeintegration_1_1Miller3IMEX.html",
-"tutorials_04_Shallow_Water_DG.html#autotoc_md71"
+"classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#aa7a4a8aaebb2b84539dd939dd81057cc",
+"classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html#af0333705ad7416bd31da37eb47dd3491",
+"classvulpes_1_1datastructure_1_1SmallVector.html#a8d60a5b3cb88d46924d68d990ff342ac",
+"classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html#a643333b55562816567a4157b17501114",
+"classvulpes_1_1fe_1_1FeExpressionConstant.html#a46b6da3158b2ed2914cad5a08f59ec7e",
+"classvulpes_1_1fe_1_1FeExpressionFieldComponent.html#a2b552b454ed6da62efef2ea75c03e92b",
+"classvulpes_1_1fe_1_1FeExpressionGradContrBlock.html#ae3f8849304da25e49e0c9bdca7c79e12",
+"classvulpes_1_1fe_1_1FeExpressionProduct.html#a3e4b966a2020ad7f9f5cbfa0e6df1cdc",
+"classvulpes_1_1fe_1_1FeExpressionSum.html#aa3149f7610aacc940e3b745820469c4b",
+"classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html",
+"classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html#a39ce37a8fd1673289143fe32ec65b230",
+"classvulpes_1_1geometry_1_1Cell3D.html#afa924a802a2f769d60a4cc1e397ff327",
+"classvulpes_1_1geometry_1_1KMeansBase.html#adcd1c013112d45686b72fa6b622248d0",
+"classvulpes_1_1geometry_1_1Mesh3D.html#a240d843337767978ddf046686dcc8865",
+"classvulpes_1_1geometry_1_1MeshBase.html#a721a652697cc2d9f9ae2ad68f0f366c5",
+"classvulpes_1_1geometry_1_1ParallelMesh.html#a3d8461309261d8dd566674d8cf186b4a",
+"classvulpes_1_1geometry_1_1Tetrahedralization.html#a9451de51f7e41d7bc418985b25d30993",
+"classvulpes_1_1la_1_1LinearSolver.html#a9b3b12be8298e8876df5db71830ee607",
+"classvulpes_1_1la_1_1Vector.html#af6ead2d6a6ebde449e657c9030902bbf",
+"classvulpes_1_1polynomial_1_1Polynomial3D.html#a7839b45f815e52bca0dd6367bddd4793",
+"classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#af9f92e76fdb4eac50f70316735124b5f",
+"classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#ac932982092b4b80e6cb69798c741af7e",
+"fe__expr__basis_8hpp.html#a76a59ed77112997baea20fa092654530",
+"imex_8hpp_source.html",
+"mpi__wrappers_8hpp.html#a9faa1f6e305d49fd2760fcbc13315257",
+"namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab",
+"namespacevulpes_1_1qrule.html#a69f6219fca29b0c9d1adb00fbf00fd10",
+"structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html",
+"structvulpes_1_1geometry_1_1VtuOptions.html#a69556faf3567c35f743390d2ee05326d",
+"structvulpes_1_1scipy_1_1ckdtree.html#a8d989ebf0da3b5ed3808f6c12a9f6335",
+"structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html#a06e3650620ccab50041d829ed4f7959b",
+"structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html#aabea129fcb572e111d6c9799f96908da",
+"structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

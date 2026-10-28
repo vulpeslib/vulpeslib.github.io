@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -122,13 +122,15 @@ $(document).ready(function(){initNavTree('functions_n.html',''); initResizable()
 <li>ndofs()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a5a158e97447963099803197b53dc20c5">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>ndofsGlobal()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a72bd366229fa4c3e0090e1f2c6836c25">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>nedges()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#a74f6813c81cb576cb7fb74b66f0b8ba9">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#ae9f0cf32f4fa3e6009ef2403a3be1357">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
-<li>needBasisScaling()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a60c34c5f700be623951082d841403778">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a32a2a6c7d748d31e2b5b30c4836d6fea">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
+<li>needBasisScaling()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html#a60c34c5f700be623951082d841403778">vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</a>, <a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#afd74de6b633582feabbb761d3d3405f4">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy, EnableScaling &gt;</a></li>
 <li>neigh_cell_id&#160;:&#160;<a class="el" href="structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a27a374284a93dec6ed6f46c169ab4677">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;::NeighInfo</a></li>
 <li>neighValues()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeValues.html#ae0e32f00e673ca85042ee2435a0e09ed">vulpes::fe::FeValues&lt; Dim &gt;</a></li>
 <li>nEntity()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Mesh2D.html#a4cec3153b4af33e813a1274875c65f0b">vulpes::geometry::Mesh2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Mesh3D.html#aa795283e72554718845eb959a4c1d4cf">vulpes::geometry::Mesh3D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a8a315984f7a8aea6a1331066da967fd8">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#aed332b759f9c41487e535bacd0c74143">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
 <li>Nested&#160;:&#160;<a class="el" href="classEigenVulpes_1_1OneComponentVector.html#a12fa34037d4adf41bfdfb459d9e5746b">EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt;</a>, <a class="el" href="classEigenVulpes_1_1RowMat.html#a09aa30950ff13a0726ed88b0ecb99020">EigenVulpes::RowMat&lt; RowId, ArgType &gt;</a>, <a class="el" href="classEigenVulpes_1_1SymMat.html#a6584953205a1b9d65f1c155e76f36c27">EigenVulpes::SymMat&lt; CrossId, ArgType &gt;</a></li>
 <li>nfaces()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell2D.html#ae5f9c200a125b26eb10ac01f2e7e66f4">vulpes::geometry::Cell2D&lt; FloatType, IndexType &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#a8e03a256e90b2939aeacabd15819dc38">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
 <li>nGhostEntity()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#ac6b0aa1d13b99216d5f564f40ac90c77">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
+<li>nl_matrix&#160;:&#160;<a class="el" href="structvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized_1_1Terms.html#a4e65770e094cfe94a180d8db341e03d8">vulpes::timeintegration::CrankNicolsonGeneralized::Terms</a></li>
+<li>nl_vector&#160;:&#160;<a class="el" href="structvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized_1_1Terms.html#af60e51cc5bebc641bf8f06fd5b4d4351">vulpes::timeintegration::CrankNicolsonGeneralized::Terms</a></li>
 <li>nLocEntity()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1MeshBase.html#a6ed2c1cfe340c6005d06f0a0bf865659">vulpes::geometry::MeshBase&lt; FloatType, IndexType, OuterDim, SelfDim, Derived &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1ParallelMesh.html#a8fffa6e45563376cee7e42f3a4e22f79">vulpes::geometry::ParallelMesh&lt; Mesh &gt;</a></li>
 <li>node&#160;:&#160;<a class="el" href="structvulpes_1_1scipy_1_1nodeinfo.html#aed8c7bb8487b5956e0607eabe5afcb76">vulpes::scipy::nodeinfo&lt; m &gt;</a></li>
 <li>nodeinfo_pool()&#160;:&#160;<a class="el" href="structvulpes_1_1scipy_1_1nodeinfo__pool.html#a8f0ac25b9547697ff7ef93c4f026990d">vulpes::scipy::nodeinfo_pool&lt; m &gt;</a></li>
@@ -149,7 +151,7 @@ $(document).ready(function(){initNavTree('functions_n.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['cellinitoptions_0',['CellInitOptions',['../namespacevulpes_1_1geometry.html#ad2f45b81f4d778acb7c48e9c5f104e2e',1,'vulpes::geometry']]],
-  ['cellintersectstatus_1',['CellIntersectStatus',['../namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html#ade11641ea0144ae6023bd435c322dd07',1,'vulpes::geometry::mesh2d::internal']]],
-  ['coordinateprecision_2',['CoordinatePrecision',['../namespacevulpes_1_1geometry.html#a36f2ad18a6f49684734fa89872d9f3da',1,'vulpes::geometry']]]
+  ['datalayout_0',['DataLayout',['../namespacevulpes_1_1la.html#a6038bea9a3da8ab2f0af294f383b9b3c',1,'vulpes::la']]],
+  ['datamode_1',['DataMode',['../namespacevulpes_1_1geometry.html#a5cb9ef6723547f9fe3e6aa1490c8b2ab',1,'vulpes::geometry']]]
 ];

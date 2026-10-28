@@ -113,9 +113,6 @@ var hierarchy =
     [ "vulpes::fe::DofPolicyBase< Dim, DofPolicyFeSpaceDQ< Dim > >", "structvulpes_1_1fe_1_1DofPolicyBase.html", [
       [ "vulpes::fe::DofPolicyFeSpaceDQ< Dim >", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html", null ]
     ] ],
-    [ "vulpes::fe::DofPolicyBase< Dim, DofPolicyFeSpaceVEM< Dim > >", "structvulpes_1_1fe_1_1DofPolicyBase.html", [
-      [ "vulpes::fe::DofPolicyFeSpaceVEM< Dim >", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html", null ]
-    ] ],
     [ "Eigen::internal::traits< EigenVulpes::OneComponentVector< Idx, Scalar_, Size_ > >", "structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html", null ],
     [ "Eigen::internal::traits< EigenVulpes::RowMat< RowId, ArgType > >", "structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< EigenVulpes::SymMat< CrossId, ArgType > >", "structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html", null ],
@@ -225,12 +222,7 @@ var hierarchy =
     [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicy, FeSpaceModalP< Dim, DofPolicy > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
       [ "vulpes::fe::FeSpaceModalP< Dim, DofPolicy >", "classvulpes_1_1fe_1_1FeSpaceModalP.html", null ]
     ] ],
-    [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicy, FeSpaceModalQ< Dim, DofPolicy > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
-      [ "vulpes::fe::FeSpaceModalQ< Dim, DofPolicy >", "classvulpes_1_1fe_1_1FeSpaceModalQ.html", null ]
-    ] ],
-    [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicyFeSpaceVEM< Dim >, FeSpaceVEM< Dim > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
-      [ "vulpes::fe::FeSpaceVEM< Dim >", "classvulpes_1_1fe_1_1FeSpaceVEM.html", null ]
-    ] ],
+    [ "vulpes::fe::FeSpaceBase< Dim, internal::real_t, DofPolicy, FeSpaceModalQ< Dim, DofPolicy, false > >", "classvulpes_1_1fe_1_1FeSpaceBase.html", null ],
     [ "vulpes::fe::FeValues< dim >", "classvulpes_1_1fe_1_1FeValues.html", null ],
     [ "vulpes::geometry::MappingBase< FloatType, Dim, CartesianMapping< FloatType, Dim > >", "classvulpes_1_1geometry_1_1MappingBase.html", [
       [ "vulpes::geometry::CartesianMapping< FloatType, Dim >", "classvulpes_1_1geometry_1_1CartesianMapping.html", null ]
@@ -257,11 +249,7 @@ var hierarchy =
     [ "vulpes::polynomial::PolynomialBase< T, 2, Polynomial2D< T, true > >", "classvulpes_1_1polynomial_1_1PolynomialBase.html", null ],
     [ "vulpes::polynomial::PolynomialBase< T, 3, Polynomial3D< T, true > >", "classvulpes_1_1polynomial_1_1PolynomialBase.html", null ],
     [ "Profiler", "classProfiler.html", null ],
-    [ "vulpes::qrule::QuadratureRule< double, dim - 1 >", "structvulpes_1_1qrule_1_1QuadratureRule.html", null ],
     [ "vulpes::qrule::QuadratureRule< double, dim >", "structvulpes_1_1qrule_1_1QuadratureRule.html", null ],
-    [ "vulpes::qrule::QuadratureRule< fast_float_t >", "structvulpes_1_1qrule_1_1QuadratureRule.html", null ],
-    [ "vulpes::qrule::QuadratureRule< mpf_class, dim - 1 >", "structvulpes_1_1qrule_1_1QuadratureRule.html", null ],
-    [ "vulpes::qrule::QuadratureRule< mpf_class, dim >", "structvulpes_1_1qrule_1_1QuadratureRule.html", null ],
     [ "vulpes::scipy::Rectangle< Dim >", "structvulpes_1_1scipy_1_1Rectangle.html", null ],
     [ "vulpes::datastructure::internal::StaticSelector< IndexType, RowSize !=IndexType(-1), RowSize >", "structvulpes_1_1datastructure_1_1internal_1_1StaticSelector.html", null ],
     [ "std::bool_constant", null, [
@@ -296,15 +284,11 @@ var hierarchy =
     [ "vulpes::assemble::CompressedGatheredMonomial", "structvulpes_1_1assemble_1_1CompressedGatheredMonomial.html", null ],
     [ "vulpes::assemble::CompressedMonomial", "structvulpes_1_1assemble_1_1CompressedMonomial.html", null ],
     [ "vulpes::assemble::GatheredMonomial< Dim >", "structvulpes_1_1assemble_1_1GatheredMonomial.html", null ],
-    [ "vulpes::assemble::internal::concat_tuples< T, U >", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples.html", null ],
-    [ "vulpes::assemble::internal::concat_tuples< std::tuple< Ts... >, std::tuple< Us... > >", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5.html", null ],
     [ "vulpes::assemble::ScalarExpressionIntegrator< MeshType, FeSpaceType, ExprType >", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html", null ],
     [ "vulpes::assemble::WeakFormIntegratorBase< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html", [
-      [ "vulpes::assemble::WeakFormIntegratorGauss< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorGauss.html", null ],
       [ "vulpes::assemble::WeakFormIntegratorQFree< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html", null ],
       [ "vulpes::assemble::WeakFormIntegratorSimplexify< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html", null ]
     ] ],
-    [ "vulpes::assemble::WeakFormIntegratorVem< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html", null ],
     [ "vulpes::datastructure::CrsMap< DataType, IndexType, RowSize >", "classvulpes_1_1datastructure_1_1CrsMap.html", null ],
     [ "vulpes::datastructure::CrsMap< DataType, IndexType, RowSize >::RowView< Mutable >", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html", null ],
     [ "vulpes::datastructure::CrsMapUncompressed< DataType, N >", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html", null ],
@@ -335,7 +319,9 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionFieldComponent< Dim, E >::FsTypeOf< T, std::void_t< typename T::FeSpaceType > >", "structvulpes_1_1fe_1_1FeExpressionFieldComponent_1_1FsTypeOf_3_01T_00_01std_1_1void__t_3_01typen1dfdb06d2084efdfa7075e0147f8b755.html", null ],
     [ "vulpes::fe::FeExpressionSpatialComponent< K, Dim, E >::FsTypeOf< T, typename >", "structvulpes_1_1fe_1_1FeExpressionSpatialComponent_1_1FsTypeOf.html", null ],
     [ "vulpes::fe::FeExpressionSpatialComponent< K, Dim, E >::FsTypeOf< T, std::void_t< typename T::FeSpaceType > >", "structvulpes_1_1fe_1_1FeExpressionSpatialComponent_1_1FsTypeOf_3_01T_00_01std_1_1void__t_3_01typdb3d734645fda72a983ea77d4fd95394.html", null ],
-    [ "vulpes::fe::FeSpaceBase< Dim, FloatType, DofPolicy, FeSpace >", "classvulpes_1_1fe_1_1FeSpaceBase.html", null ],
+    [ "vulpes::fe::FeSpaceBase< Dim, FloatType, DofPolicy, FeSpace >", "classvulpes_1_1fe_1_1FeSpaceBase.html", [
+      [ "vulpes::fe::FeSpaceModalQ< Dim, DofPolicy, EnableScaling >", "classvulpes_1_1fe_1_1FeSpaceModalQ.html", null ]
+    ] ],
     [ "vulpes::fe::FeValues< Dim >", "classvulpes_1_1fe_1_1FeValues.html", null ],
     [ "vulpes::fe::internal::LagrangianNodesPolicy< Dim >", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html", null ],
     [ "vulpes::fe::internal::PolynomialTypeHelper< T, typename >", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html", null ],
@@ -362,11 +348,11 @@ var hierarchy =
     [ "vulpes::geometry::MeshMetrics< MeshType >", "classvulpes_1_1geometry_1_1MeshMetrics.html", null ],
     [ "vulpes::geometry::MeshTag< Dim, IndexType >", "structvulpes_1_1geometry_1_1MeshTag.html", null ],
     [ "vulpes::geometry::Metadata< FloatType, IndexType >", "structvulpes_1_1geometry_1_1Metadata.html", null ],
-    [ "vulpes::geometry::polymesher::PolyMesherParams< FloatType >", "structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html", null ],
     [ "vulpes::geometry::Simplexify< Dim, typename >", "classvulpes_1_1geometry_1_1Simplexify.html", null ],
     [ "vulpes::geometry::Tetrahedralization", "classvulpes_1_1geometry_1_1Tetrahedralization.html", null ],
     [ "vulpes::geometry::Triangulation", "classvulpes_1_1geometry_1_1Triangulation.html", null ],
     [ "vulpes::geometry::VtuOptions", "structvulpes_1_1geometry_1_1VtuOptions.html", null ],
+    [ "vulpes::geometry::vulpoly::VulPolyParams< FloatType >", "structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html", null ],
     [ "vulpes::la::DataBoomerAMG", "structvulpes_1_1la_1_1DataBoomerAMG.html", null ],
     [ "vulpes::la::DataGAMG", "structvulpes_1_1la_1_1DataGAMG.html", null ],
     [ "vulpes::la::LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html", null ],
@@ -407,6 +393,8 @@ var hierarchy =
     [ "vulpes::scipy::RR_stack_item", "structvulpes_1_1scipy_1_1RR__stack__item.html", null ],
     [ "vulpes::timeintegration::ButcherTable< S >", "structvulpes_1_1timeintegration_1_1ButcherTable.html", null ],
     [ "vulpes::timeintegration::ButcherTableIMEX< S >", "structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html", null ],
+    [ "vulpes::timeintegration::CrankNicolsonGeneralized", "classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html", null ],
+    [ "vulpes::timeintegration::CrankNicolsonGeneralized::Terms", "structvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized_1_1Terms.html", null ],
     [ "vulpes::timeintegration::CrankNicolsonMFK", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html", null ],
     [ "vulpes::timeintegration::CrankNicolsonSolver", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html", null ],
     [ "vulpes::timeintegration::CrankNicolsonSolverFK", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html", null ],

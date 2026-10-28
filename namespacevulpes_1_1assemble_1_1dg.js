@@ -11,8 +11,6 @@ var namespacevulpes_1_1assemble_1_1dg =
     [ "createPenaltyExpressionHarmonic", "namespacevulpes_1_1assemble_1_1dg.html#a9f30e5d498a9b58a6e75e1e5cbcc9e98", null ],
     [ "createPenaltyExpressionKb", "namespacevulpes_1_1assemble_1_1dg.html#aa23de54555633cd41a12f489aff57fe5", null ],
     [ "createUpwindFlux", "namespacevulpes_1_1assemble_1_1dg.html#ae92970f95e9ab89db9ecafbcce1f19ca", null ],
-    [ "createUpwindFluxConstant", "namespacevulpes_1_1assemble_1_1dg.html#a8756536eb1192ba7b20fa879210ce271", null ],
-    [ "createUpwindFluxVariable", "namespacevulpes_1_1assemble_1_1dg.html#a3d5a3ca701f2be0fa847f671a87bf1b1", null ],
     [ "faceMeasureForPenalty", "namespacevulpes_1_1assemble_1_1dg.html#a93f3832267560c7b421f04780a22c44a", null ],
     [ "forceEqualMean", "namespacevulpes_1_1assemble_1_1dg.html#a98f07f81661669f07b85286c79f2ef2d", null ],
     [ "integrateFeExpression", "namespacevulpes_1_1assemble_1_1dg.html#a4f246899678feb8b7bc4839d7175cce4", null ],

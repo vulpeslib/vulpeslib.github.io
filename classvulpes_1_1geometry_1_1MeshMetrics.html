@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -190,7 +190,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">typename</a> <a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816cc8964805a225338bb">MeshType</a>&gt;<br />
 class vulpes::geometry::MeshMetrics&lt; MeshType &gt;</div><p>A class template that can be used to compute various mesh metrics (CircleRatio, AreaToPerimeterRatio, UniformityRatio, VolumeDifference) </p>
-<p>The <a class="el" href="classvulpes_1_1geometry_1_1MeshMetrics.html" title="A class template that can be used to compute various mesh metrics (CircleRatio, AreaToPerimeterRatio,...">MeshMetrics</a> class template provides methods to compute and access various geometric quality metrics for each cell in a mesh, such as circle ratio, area-to-perimeter ratio, uniformity factor, and volume difference. The metrics to be computed can be selected on costruction via the MetricsInitOptions enum, allowing flexible and efficient analysis of mesh quality. Metrics are computed using the cell class and are stored internally for fast access. The class supports both 2D and 3D meshes, and is compatible with different floating-point and index types.</p>
+<p>The <a class="el" href="classvulpes_1_1geometry_1_1MeshMetrics.html" title="A class template that can be used to compute various mesh metrics (CircleRatio, AreaToPerimeterRatio,...">MeshMetrics</a> class template provides methods to compute and access various geometric quality metrics for each cell in a mesh, such as circle ratio, area-to-perimeter ratio, uniformity factor, and volume difference. The metrics to be computed can be selected on construction via the MetricsInitOptions enum, allowing flexible and efficient analysis of mesh quality. Metrics are computed using the cell class and are stored internally for fast access. The class supports both 2D and 3D meshes, and is compatible with different floating-point and index types.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">MeshType</td><td>The particular mesh type on which the metrics have to be computed on (e.g. Mesh2D&lt;double, int32_t&gt;, etc.) </td></tr>
@@ -303,7 +303,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mesh</td><td>A reference to the mesh we want to compute the metrics on </td></tr>
-    <tr><td class="paramname">options</td><td>A parameter that specifies the metrics we want initialized on costruction. If not specified it has value AllMetrics </td></tr>
+    <tr><td class="paramname">options</td><td>A parameter that specifies the metrics we want initialized on construction. If not specified it has value AllMetrics </td></tr>
   </table>
   </dd>
 </dl>
@@ -656,7 +656,7 @@ template&lt;<a class="el" href="namespacevulpes_1_1geometry.html#a3a5283ac7f4816
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1geometry.html">geometry</a></li><li class="navelem"><a class="el" href="classvulpes_1_1geometry_1_1MeshMetrics.html">MeshMetrics</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

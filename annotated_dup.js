@@ -21,8 +21,6 @@ var annotated_dup =
           [ "FeExpressionUpwindFromFunctionWrapper", "classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html", "classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper" ]
         ] ],
         [ "internal", "namespacevulpes_1_1assemble_1_1internal.html", [
-          [ "concat_tuples", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples.html", null ],
-          [ "concat_tuples< std::tuple< Ts... >, std::tuple< Us... > >", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5.html", "structvulpes_1_1assemble_1_1internal_1_1concat__tuples_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_00_01sbaa9e6dbc68f1082e63a65b285da3df5" ],
           [ "is_fe_expression_derived", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived.html", null ],
           [ "is_fe_expression_derived< T, std::void_t<> >", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived_3_01T_00_01std_1_1void__t_3_4_01_4.html", null ],
           [ "is_fe_expression_derived_dim", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived__dim.html", null ],
@@ -37,10 +35,8 @@ var annotated_dup =
         [ "GatheredMonomial", "structvulpes_1_1assemble_1_1GatheredMonomial.html", "structvulpes_1_1assemble_1_1GatheredMonomial" ],
         [ "ScalarExpressionIntegrator", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator.html", "classvulpes_1_1assemble_1_1ScalarExpressionIntegrator" ],
         [ "WeakFormIntegratorBase", "classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html", "classvulpes_1_1assemble_1_1WeakFormIntegratorBase" ],
-        [ "WeakFormIntegratorGauss", "classvulpes_1_1assemble_1_1WeakFormIntegratorGauss.html", "classvulpes_1_1assemble_1_1WeakFormIntegratorGauss" ],
         [ "WeakFormIntegratorQFree", "classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html", "classvulpes_1_1assemble_1_1WeakFormIntegratorQFree" ],
-        [ "WeakFormIntegratorSimplexify", "classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html", "classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify" ],
-        [ "WeakFormIntegratorVem", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem.html", "classvulpes_1_1assemble_1_1WeakFormIntegratorVem" ]
+        [ "WeakFormIntegratorSimplexify", "classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html", "classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify" ]
       ] ],
       [ "datastructure", "namespacevulpes_1_1datastructure.html", [
         [ "internal", "namespacevulpes_1_1datastructure_1_1internal.html", [
@@ -70,7 +66,6 @@ var annotated_dup =
         [ "DofPolicyFeSpaceCQ", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ" ],
         [ "DofPolicyFeSpaceDP", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDP" ],
         [ "DofPolicyFeSpaceDQ", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ" ],
-        [ "DofPolicyFeSpaceVEM", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html", "structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM" ],
         [ "FeExactExpressionFeProjection", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html", "classvulpes_1_1fe_1_1FeExactExpressionFeProjection" ],
         [ "FeExpressionAbs", "classvulpes_1_1fe_1_1FeExpressionAbs.html", "classvulpes_1_1fe_1_1FeExpressionAbs" ],
         [ "FeExpressionBase", "classvulpes_1_1fe_1_1FeExpressionBase.html", "classvulpes_1_1fe_1_1FeExpressionBase" ],
@@ -111,7 +106,6 @@ var annotated_dup =
         [ "FeSpaceLagrangeQ", "classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html", "classvulpes_1_1fe_1_1FeSpaceLagrangeQ" ],
         [ "FeSpaceModalP", "classvulpes_1_1fe_1_1FeSpaceModalP.html", "classvulpes_1_1fe_1_1FeSpaceModalP" ],
         [ "FeSpaceModalQ", "classvulpes_1_1fe_1_1FeSpaceModalQ.html", "classvulpes_1_1fe_1_1FeSpaceModalQ" ],
-        [ "FeSpaceVEM", "classvulpes_1_1fe_1_1FeSpaceVEM.html", "classvulpes_1_1fe_1_1FeSpaceVEM" ],
         [ "FeValues", "classvulpes_1_1fe_1_1FeValues.html", "classvulpes_1_1fe_1_1FeValues" ]
       ] ],
       [ "geometry", "namespacevulpes_1_1geometry.html", [
@@ -123,8 +117,8 @@ var annotated_dup =
           [ "HexahedronDistance", "classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html", "classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance" ],
           [ "SphereDistance", "classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance.html", "classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance" ]
         ] ],
-        [ "polymesher", "namespacevulpes_1_1geometry_1_1polymesher.html", [
-          [ "PolyMesherParams", "structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html", "structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams" ]
+        [ "vulpoly", "namespacevulpes_1_1geometry_1_1vulpoly.html", [
+          [ "VulPolyParams", "structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html", "structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams" ]
         ] ],
         [ "AbstractAgglomerationModel", "classvulpes_1_1geometry_1_1AbstractAgglomerationModel.html", "classvulpes_1_1geometry_1_1AbstractAgglomerationModel" ],
         [ "CartesianMapping", "classvulpes_1_1geometry_1_1CartesianMapping.html", "classvulpes_1_1geometry_1_1CartesianMapping" ],
@@ -219,6 +213,7 @@ var annotated_dup =
         [ "CeschinoKunzmann4", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4" ],
         [ "CeschinoKunzmann4IMEX", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html", "structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX" ],
         [ "CrankNicolson", "structvulpes_1_1timeintegration_1_1CrankNicolson.html", "structvulpes_1_1timeintegration_1_1CrankNicolson" ],
+        [ "CrankNicolsonGeneralized", "classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized" ],
         [ "CrankNicolsonIMEX", "structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html", "structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX" ],
         [ "CrankNicolsonMFK", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonMFK" ],
         [ "CrankNicolsonSolver", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html", "classvulpes_1_1timeintegration_1_1CrankNicolsonSolver" ],

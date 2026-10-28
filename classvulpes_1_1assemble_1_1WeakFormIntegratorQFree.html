@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -458,7 +458,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a51c73f59b0ad85183e7a9abb95264463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags indicating whether neighboring cell information is needed.  <br /></td></tr>
 <tr class="separator:a51c73f59b0ad85183e7a9abb95264463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a2b9f31df2093aab4338038313a7be" id="r_a62a2b9f31df2093aab4338038313a7be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a62a2b9f31df2093aab4338038313a7be">m_need_neigh_values</a> = -1</td></tr>
-<tr class="memdesc:a62a2b9f31df2093aab4338038313a7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags indicating whether neighboring cell values are needed, a subset of the above, if this true, than the above is true.  <br /></td></tr>
+<tr class="memdesc:a62a2b9f31df2093aab4338038313a7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags indicating whether neighboring cell values are needed, a subset of the above, so if this is true the above is true too.  <br /></td></tr>
 <tr class="separator:a62a2b9f31df2093aab4338038313a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b70f7fd74d1ca6d95ccf3cf1b333cf" id="r_ad4b70f7fd74d1ca6d95ccf3cf1b333cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a1e06cf88b240eab0da5351ad880902a7">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#ad4b70f7fd74d1ca6d95ccf3cf1b333cf">m_cell_id</a> = -1</td></tr>
 <tr class="memdesc:ad4b70f7fd74d1ca6d95ccf3cf1b333cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current cell id being integrated, in mesh MPI local enumeration.  <br /></td></tr>
@@ -503,7 +503,7 @@ P(\hat{\mathbf{x}}) = \sum_{k} c_k \hat{\mathbf{x}}^{\alpha_k}
 P(\mathbf{F}(\hat{\mathbf{x}})) G(F) |\det(J)| \,d\hat{\mathbf{x}}
 \]
 </p>
- Here, \(G(F)\) represents the pullback. Indeed, the polynomial can be either a vector field or a covector field (e.g. gradient) that needs further transformation. This terms (like the derminant of the the Jacobian), changes on a cell by cell basis and depending of the part of the weak form considered (e.g. in a reaction-diffusion equation we have both a vector and a covector). For this reason, the <code>FeExpression</code> of a weak form does not return one polynomial, but a list of polynomials that summed represent the weak form. To each polynomial of the list is associated a coefficient \(G(F)\) that needs to be multiplied in order to have the correct tranformation when applying the physical mapping of the cell. E.g., the inner(grad(u), grad(v)) weak form is made by two polynomials, one that represents de_x(u)de_x(v) and one de_y(u)de_y(v), which require as coefficient the inverse of the jacobian in the x and y components, respectively. The integral is further simplified to become a weighted sum of precomputed monomial integrals. The values \(\int_{\hat{K}} \hat{\mathbf{x}}^{\alpha_k} \,d\hat{\mathbf{x}}\) are computed beforehand for all necessary monomial powers \(\alpha_k\) via the quadrature free algorithm.</li>
+ Here, \(G(F)\) represents the pullback. Indeed, the polynomial can be either a vector field or a covector field (e.g. gradient) that needs further transformation. This terms (like the derminant of the the Jacobian), changes on a cell by cell basis and depending of the part of the weak form considered (e.g. in a reaction-diffusion equation we have both a vector and a covector). For this reason, the <code>FeExpression</code> of a weak form does not return one polynomial, but a list of polynomials that summed represent the weak form. To each polynomial of the list is associated a coefficient \(G(F)\) that needs to be multiplied in order to have the correct transformation when applying the physical mapping of the cell. E.g., the inner(grad(u), grad(v)) weak form is made by two polynomials, one that represents de_x(u)de_x(v) and one de_y(u)de_y(v), which require as coefficient the inverse of the jacobian in the x and y components, respectively. The integral is further simplified to become a weighted sum of precomputed monomial integrals. The values \(\int_{\hat{K}} \hat{\mathbf{x}}^{\alpha_k} \,d\hat{\mathbf{x}}\) are computed beforehand for all necessary monomial powers \(\alpha_k\) via the quadrature free algorithm.</li>
 <li><b>Optimization via Compression</b>: To manage the potentially vast number of polynomials and monomials, the class employs several compression techniques:</li>
 </ol>
 <ul>
@@ -517,7 +517,7 @@ P(\mathbf{F}(\hat{\mathbf{x}})) G(F) |\det(J)| \,d\hat{\mathbf{x}}
 <li><b>Lifting</b>: A monomial on the neighbor, like \((\hat{x}&#39;)^\beta\), becomes a polynomial in \(\hat{\mathbf{x}}\), \(\mathbf{A}\), and \(\mathbf{b}\). This effectively "lifts" the polynomial into a higher-dimensional space with variables \((\hat{\mathbf{x}}, \mathbf{A},
 \mathbf{b})\). For instance, a 1D monomial \((\hat{x}&#39;)^2\) becomes  \((A\hat{x} + b)^2 = A^2\hat{x}^2 + 2Ab\hat{x}
 + b^2\).</li>
-<li><b>Gathering</b>: To evaluate the integral efficiently, terms are factorized and "gathered". The integral is only with respect to \(\hat{\mathbf{x}}\). The parts dependent on the map \((\mathbf{A}, \mathbf{b})\) are evaluated separately. In particular, each polynomial is written as \( P(x, a, b) = M_p(x) M_q(a, b) P_r(a, b) \) where M_p and M_q are monomials and P_r is a polynomial. All the possible M_p, M_q and P_r are precomputed once (during the construction of the integrator) and evaluated for each cell. M_p is evaluated via the quadrature free algorihtm, M_q and P_r (which are not 1 only for FeExpression that need the neighbor), are computed on the fly for each cell. </li>
+<li><b>Gathering</b>: To evaluate the integral efficiently, terms are factorized and "gathered". The integral is only with respect to \(\hat{\mathbf{x}}\). The parts dependent on the map \((\mathbf{A}, \mathbf{b})\) are evaluated separately. In particular, each polynomial is written as \( P(x, a, b) = M_p(x) M_q(a, b) P_r(a, b) \) where M_p and M_q are monomials and P_r is a polynomial. All the possible M_p, M_q and P_r are precomputed once (during the construction of the integrator) and evaluated for each cell. M_p is evaluated via the quadrature free algorithm, M_q and P_r (which are not 1 only for FeExpression that need the neighbor), are computed on the fly for each cell. </li>
 </ul>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a95869de30e73d6da82e27fd016092055" name="a95869de30e73d6da82e27fd016092055"></a>
@@ -1262,8 +1262,8 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </dd>
 </dl>
 <p>This method converts each <code><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html" title="Represents a monomial after the &quot;gathering&quot; process for face integrals.">GatheredMonomial</a></code> into a <code><a class="el" href="structvulpes_1_1assemble_1_1CompressedGatheredMonomial.html" title="A fully compressed representation of a gathered monomial GatheredMonomial for face integrals.">CompressedGatheredMonomial</a></code> by replacing exponent arrays and coefficient lists with unique integer IDs that point to entries in <code>m_eva_idx_table</code> and <code>m_gathered_monos</code>.</p>
-<p>The gathered monomial are stored as three indexes: one that indicates the integral (with respect to the space variable), one that indicates an homogenous term (e.g. the <code>a</code> in <code>xa(b + 1)</code>) and one the indicates the sum of other monomials, that is the index in the <code>m_gathered_monos</code> table</p>
-<p>It is composed by two steps, in the first one, we substitue the std::array&lt;uint8_t, Dim * 2&gt; using the table <code>m_eva_idx_table</code> computed with buildUniqueEvaTable (in both the <code>evalut_id</code> and <code>gather</code> of <code><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html" title="Represents a monomial after the &quot;gathering&quot; process for face integrals.">GatheredMonomial</a></code>). In the second, we build a table with the unique gathered parts (the gathered part is the sum of monomials times a coefficient); with this table, we substitute the std::vector&lt;std::pair&lt;double, int16_t&gt;&gt; representing the gather part with a unique id. </p>
+<p>The gathered monomial are stored as three indexes: one that indicates the integral (with respect to the space variable), one that indicates an homogeneous term (e.g. the <code>a</code> in <code>xa(b + 1)</code>) and one the indicates the sum of other monomials, that is the index in the <code>m_gathered_monos</code> table</p>
+<p>It is composed by two steps, in the first one, we substitute the std::array&lt;uint8_t, Dim * 2&gt; using the table <code>m_eva_idx_table</code> computed with buildUniqueEvaTable (in both the <code>evalut_id</code> and <code>gather</code> of <code><a class="el" href="structvulpes_1_1assemble_1_1GatheredMonomial.html" title="Represents a monomial after the &quot;gathering&quot; process for face integrals.">GatheredMonomial</a></code>). In the second, we build a table with the unique gathered parts (the gathered part is the sum of monomials times a coefficient); with this table, we substitute the std::vector&lt;std::pair&lt;double, int16_t&gt;&gt; representing the gather part with a unique id. </p>
 
 </div>
 </div>
@@ -2605,7 +2605,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
-<p>Flags indicating whether neighboring cell values are needed, a subset of the above, if this true, than the above is true. </p>
+<p>Flags indicating whether neighboring cell values are needed, a subset of the above, so if this is true the above is true too. </p>
 
 </div>
 </div>
@@ -3365,7 +3365,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">WeakFormIntegratorBaseType::nblocks</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a6f76f0c9fe18aab1cdff42a133da4be2"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">vulpes::assemble::WeakFormIntegratorBase::nblocks</a></div><div class="ttdeci">static constexpr uint32_t nblocks</div><div class="ttdoc">Number of vector blocks in the system, e.g. for a scalar problem is 1, for an elasticity problem is d...</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:108</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a6f76f0c9fe18aab1cdff42a133da4be2"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a6f76f0c9fe18aab1cdff42a133da4be2">vulpes::assemble::WeakFormIntegratorBase::nblocks</a></div><div class="ttdeci">static constexpr uint32_t nblocks</div><div class="ttdoc">Number of vector blocks in the system, e.g. for a scalar problem is 1, for an elasticity problem is d...</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:111</div></div>
 </div><!-- fragment -->
 <p>The number of blocks for vector/tensor-valued problems. </p>
 
@@ -3394,7 +3394,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">WeakFormIntegratorBaseType::s_n_expr</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a004380571b0cca53b1931a71efc3a493"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">vulpes::assemble::WeakFormIntegratorBase::s_n_expr</a></div><div class="ttdeci">static constexpr index_t s_n_expr</div><div class="ttdoc">total number of expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:73</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a004380571b0cca53b1931a71efc3a493"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a004380571b0cca53b1931a71efc3a493">vulpes::assemble::WeakFormIntegratorBase::s_n_expr</a></div><div class="ttdeci">static constexpr index_t s_n_expr</div><div class="ttdoc">total number of expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:76</div></div>
 </div><!-- fragment -->
 <p>The number of volume expressions. </p>
 
@@ -3423,7 +3423,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#afdaea1cf72a8df534d7662302870fcc9">WeakFormIntegratorBaseType::s_n_expr_bilinear</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_afdaea1cf72a8df534d7662302870fcc9"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#afdaea1cf72a8df534d7662302870fcc9">vulpes::assemble::WeakFormIntegratorBase::s_n_expr_bilinear</a></div><div class="ttdeci">static constexpr index_t s_n_expr_bilinear</div><div class="ttdoc">total number of bilinear expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:84</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_afdaea1cf72a8df534d7662302870fcc9"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#afdaea1cf72a8df534d7662302870fcc9">vulpes::assemble::WeakFormIntegratorBase::s_n_expr_bilinear</a></div><div class="ttdeci">static constexpr index_t s_n_expr_bilinear</div><div class="ttdoc">total number of bilinear expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:87</div></div>
 </div><!-- fragment -->
 <p>The number of bilinear volume expressions. </p>
 
@@ -3452,7 +3452,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5d4bd5b93741168929d1513f2cb65705">WeakFormIntegratorBaseType::s_n_expr_linear</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a5d4bd5b93741168929d1513f2cb65705"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5d4bd5b93741168929d1513f2cb65705">vulpes::assemble::WeakFormIntegratorBase::s_n_expr_linear</a></div><div class="ttdeci">static constexpr index_t s_n_expr_linear</div><div class="ttdoc">total number of linear expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:87</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a5d4bd5b93741168929d1513f2cb65705"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a5d4bd5b93741168929d1513f2cb65705">vulpes::assemble::WeakFormIntegratorBase::s_n_expr_linear</a></div><div class="ttdeci">static constexpr index_t s_n_expr_linear</div><div class="ttdoc">total number of linear expression integrated inside the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:90</div></div>
 </div><!-- fragment -->
 <p>The number of linear (RHS) volume expressions. </p>
 
@@ -3481,7 +3481,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">WeakFormIntegratorBaseType::s_n_face_expr</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_adbd29bba2be5d7a53cb4fc74e5bef660"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr</div><div class="ttdoc">total number of expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:76</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_adbd29bba2be5d7a53cb4fc74e5bef660"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#adbd29bba2be5d7a53cb4fc74e5bef660">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr</div><div class="ttdoc">total number of expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:79</div></div>
 </div><!-- fragment -->
 <p>The number of face expressions. </p>
 
@@ -3510,7 +3510,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#af7e7cff4afcf9f6d6dbbf8406e7556c3">WeakFormIntegratorBaseType::s_n_face_expr_bilinear</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_af7e7cff4afcf9f6d6dbbf8406e7556c3"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#af7e7cff4afcf9f6d6dbbf8406e7556c3">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr_bilinear</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr_bilinear</div><div class="ttdoc">total number of bilinear expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:96</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_af7e7cff4afcf9f6d6dbbf8406e7556c3"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#af7e7cff4afcf9f6d6dbbf8406e7556c3">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr_bilinear</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr_bilinear</div><div class="ttdoc">total number of bilinear expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:99</div></div>
 </div><!-- fragment -->
 <p>The number of bilinear face expressions. </p>
 
@@ -3539,7 +3539,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">      <a class="code hl_variable" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a3d674996c0083c63fd73ce787186677e">WeakFormIntegratorBaseType::s_n_face_expr_linear</a></div>
-<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a3d674996c0083c63fd73ce787186677e"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a3d674996c0083c63fd73ce787186677e">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr_linear</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr_linear</div><div class="ttdoc">total number of linear expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:99</div></div>
+<div class="ttc" id="aclassvulpes_1_1assemble_1_1WeakFormIntegratorBase_html_a3d674996c0083c63fd73ce787186677e"><div class="ttname"><a href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a3d674996c0083c63fd73ce787186677e">vulpes::assemble::WeakFormIntegratorBase::s_n_face_expr_linear</a></div><div class="ttdeci">static constexpr index_t s_n_face_expr_linear</div><div class="ttdoc">total number of linear expression integrated on the boundary of the cell</div><div class="ttdef"><b>Definition</b> integrator_base.hpp:102</div></div>
 </div><!-- fragment -->
 <p>The number of linear (RHS) face expressions. </p>
 
@@ -3555,7 +3555,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html">WeakFormIntegratorQFree</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

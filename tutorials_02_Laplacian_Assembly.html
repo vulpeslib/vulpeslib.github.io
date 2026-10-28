@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -287,7 +287,7 @@ bc =
 </p>
 </li>
 </ul>
-<p>In vulpes, everytime that there is an edge/facet integration that relies only on the current cell (so restricted to information in \(K\), integrated on \(\partial K\)), the output is always the sum of the integrals over all edges/facets.</p>
+<p>In vulpes, every time that there is an edge/facet integration that relies only on the current cell (so restricted to information in \(K\), integrated on \(\partial K\)), the output is always the sum of the integrals over all edges/facets.</p>
 <ul>
 <li>Penalty term on current cell block (<em>wf_SA</em>):  <p class="formulaDsp">
 \[
@@ -432,7 +432,7 @@ Output</h2>
 <li>the \(L^2\) error computed by direct integration</li>
 <li>the DG error</li>
 </ul>
-<p>At the end of the run a formatted convergence table is printed and saved as a CSV to <code>output/laplacian/convergence_p{order}_{mesh_kind}.csv</code>.</p>
+<p>At the end of the run a formatted convergence table is printed and saved as a CSV to <code>output/laplacian/convergence_{dim}d_p{order}_{mesh_kind}.csv</code>.</p>
 <p>VTK files for mesh and solution visualization are written to <code>output/laplacian/</code> with the naming convention:</p>
 <div class="fragment"><div class="line">lap_2d_p{order}_{mesh_kind}_{mesh_index}_mesh.vtu   -- mesh only</div>
 <div class="line">lap_2d_p{order}_{mesh_kind}_{mesh_index}.vtu        -- solution, exact, error</div>
@@ -461,7 +461,7 @@ Output</h2>
 <div class="line">./lap_dg_2d_main ../examples/assembly/laplacian/lap_2d_parameters.json 1 6 voronoi_periodic \</div>
 <div class="line">    &gt; lap_conv_voronoi_periodic.txt</div>
 </div><!-- fragment --><p>you can generate the convergence plot, within Vulplots library, with:</p>
-<div class="fragment"><div class="line">vulplots_convergence ../vulpes/build/lap_conv_voronoi_periodic.txt</div>
+<div class="fragment"><div class="line">vulplots_convergence lap_conv_voronoi_periodic.txt</div>
 </div><!-- fragment --><p>The tool reads the Vulpes log file and extracts:</p>
 <ul>
 <li>the mesh diameter <code>h</code></li>
@@ -484,7 +484,7 @@ Output</h2>
 <div class="fragment"><div class="line">output/lap_conv_voronoi_periodic.png</div>
 <div class="line">output/lap_conv_voronoi_periodic.csv</div>
 </div><!-- fragment --><p><img src="figs/lap_conv_vor_periodic.png" alt="convergence plot" width="600" class="inline"/> </p>
-<p>Figure: Convergence plot for the solution of the Poisson equations with polyDG P1 on periodic Voronoi meshes. File: <code>output/lap_conv_voronoi_periodic.png</code> obtained from <code>vulplots_convergence ../vulpes/build/lap_conv_voronoi_periodic.txt</code>. </p>
+<p>Figure: Convergence plot for the solution of the Poisson equations with polyDG P1 on periodic Voronoi meshes. File: <code>output/lap_conv_voronoi_periodic.png</code> obtained from <code>vulplots_convergence lap_conv_voronoi_periodic.txt</code>. </p>
 <p>``` </p>
 <h2><a class="anchor" id="autotoc_md46"></a>
 Note</h2>
@@ -497,7 +497,7 @@ Note</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

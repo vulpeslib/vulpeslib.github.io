@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kmeansalgtype_0',['KMeansAlgType',['../namespacevulpes_1_1geometry.html#a535e172da73723fcae91ad230fb18e6d',1,'vulpes::geometry']]]
+  ['loglevel_0',['LogLevel',['../namespacevulpes_1_1utils.html#a1d197567093fbdcf511154c249e625bc',1,'vulpes::utils']]]
 ];

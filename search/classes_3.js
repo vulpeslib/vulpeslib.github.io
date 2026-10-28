@@ -17,10 +17,8 @@ var searchData=
   ['dofpolicybase_3c_20dim_2c_20dofpolicyfespacecq_3c_20dim_20_3e_20_3e_14',['DofPolicyBase&lt; Dim, DofPolicyFeSpaceCQ&lt; Dim &gt; &gt;',['../structvulpes_1_1fe_1_1DofPolicyBase.html',1,'vulpes::fe']]],
   ['dofpolicybase_3c_20dim_2c_20dofpolicyfespacedp_3c_20dim_20_3e_20_3e_15',['DofPolicyBase&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt; &gt;',['../structvulpes_1_1fe_1_1DofPolicyBase.html',1,'vulpes::fe']]],
   ['dofpolicybase_3c_20dim_2c_20dofpolicyfespacedq_3c_20dim_20_3e_20_3e_16',['DofPolicyBase&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt; &gt;',['../structvulpes_1_1fe_1_1DofPolicyBase.html',1,'vulpes::fe']]],
-  ['dofpolicybase_3c_20dim_2c_20dofpolicyfespacevem_3c_20dim_20_3e_20_3e_17',['DofPolicyBase&lt; Dim, DofPolicyFeSpaceVEM&lt; Dim &gt; &gt;',['../structvulpes_1_1fe_1_1DofPolicyBase.html',1,'vulpes::fe']]],
-  ['dofpolicyfespacecp_18',['DofPolicyFeSpaceCP',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceCP.html',1,'vulpes::fe']]],
-  ['dofpolicyfespacecq_19',['DofPolicyFeSpaceCQ',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html',1,'vulpes::fe']]],
-  ['dofpolicyfespacedp_20',['DofPolicyFeSpaceDP',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html',1,'vulpes::fe']]],
-  ['dofpolicyfespacedq_21',['DofPolicyFeSpaceDQ',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html',1,'vulpes::fe']]],
-  ['dofpolicyfespacevem_22',['DofPolicyFeSpaceVEM',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceVEM.html',1,'vulpes::fe']]]
+  ['dofpolicyfespacecp_17',['DofPolicyFeSpaceCP',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceCP.html',1,'vulpes::fe']]],
+  ['dofpolicyfespacecq_18',['DofPolicyFeSpaceCQ',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html',1,'vulpes::fe']]],
+  ['dofpolicyfespacedp_19',['DofPolicyFeSpaceDP',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html',1,'vulpes::fe']]],
+  ['dofpolicyfespacedq_20',['DofPolicyFeSpaceDQ',['../structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html',1,'vulpes::fe']]]
 ];

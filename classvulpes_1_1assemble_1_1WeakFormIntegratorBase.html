@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1assemble_1_1WeakFormInt
 <div class="dynheader">
 Inheritance diagram for vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1assemble_1_1WeakFormIntegratorBase__inherit__graph.svg" width="568" height="267"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1assemble_1_1WeakFormIntegratorBase__inherit__graph.svg" width="568" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;:</div>
@@ -305,7 +305,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a51c73f59b0ad85183e7a9abb95264463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags indicating whether neighboring cell information is needed.  <br /></td></tr>
 <tr class="separator:a51c73f59b0ad85183e7a9abb95264463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a2b9f31df2093aab4338038313a7be" id="r_a62a2b9f31df2093aab4338038313a7be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a62a2b9f31df2093aab4338038313a7be">m_need_neigh_values</a> = -1</td></tr>
-<tr class="memdesc:a62a2b9f31df2093aab4338038313a7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags indicating whether neighboring cell values are needed, a subset of the above, if this true, than the above is true.  <br /></td></tr>
+<tr class="memdesc:a62a2b9f31df2093aab4338038313a7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags indicating whether neighboring cell values are needed, a subset of the above, so if this is true the above is true too.  <br /></td></tr>
 <tr class="separator:a62a2b9f31df2093aab4338038313a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b70f7fd74d1ca6d95ccf3cf1b333cf" id="r_ad4b70f7fd74d1ca6d95ccf3cf1b333cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a77826b49db64f01fb25d44f06ce59c92">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#ad4b70f7fd74d1ca6d95ccf3cf1b333cf">m_cell_id</a> = -1</td></tr>
 <tr class="memdesc:ad4b70f7fd74d1ca6d95ccf3cf1b333cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current cell id being integrated, in mesh MPI local enumeration.  <br /></td></tr>
@@ -1126,7 +1126,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a619054a0312d99c59f835b79f850c23a">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a66cc66bc9b71ad48a367ff72e2726ea8">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, and <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorGauss.html#a9114e09f25fe80bd6e769291e518a269">vulpes::assemble::WeakFormIntegratorGauss&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#a619054a0312d99c59f835b79f850c23a">vulpes::assemble::WeakFormIntegratorQFree&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>, and <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html#a66cc66bc9b71ad48a367ff72e2726ea8">vulpes::assemble::WeakFormIntegratorSimplexify&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +1623,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 </table>
 </div><div class="memdoc">
 
-<p>Flags indicating whether neighboring cell values are needed, a subset of the above, if this true, than the above is true. </p>
+<p>Flags indicating whether neighboring cell values are needed, a subset of the above, so if this is true the above is true too. </p>
 
 </div>
 </div>
@@ -2018,7 +2018,7 @@ template&lt;typename MeshType , typename FeExpressionTuple , typename FeExpressi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html">WeakFormIntegratorBase</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

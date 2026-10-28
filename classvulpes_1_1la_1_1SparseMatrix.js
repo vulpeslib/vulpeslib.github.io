@@ -34,8 +34,8 @@ var classvulpes_1_1la_1_1SparseMatrix =
     [ "insertValuesBlocked", "classvulpes_1_1la_1_1SparseMatrix.html#ace23c1da3d3a2067e01fda29f894a859", null ],
     [ "insertValuesBlocked", "classvulpes_1_1la_1_1SparseMatrix.html#a7efd462dc575ad32b48bc096419bbfa5", null ],
     [ "insertValuesBlocked", "classvulpes_1_1la_1_1SparseMatrix.html#a2d3bb2f124122b9d6a323298a81ac410", null ],
-    [ "matMult", "classvulpes_1_1la_1_1SparseMatrix.html#a7068d79c6709d50c847a59aa808d8401", null ],
-    [ "matMultTranspose", "classvulpes_1_1la_1_1SparseMatrix.html#a3a971ca0b34d2c7bda5085e6060cc60a", null ],
+    [ "matMult", "classvulpes_1_1la_1_1SparseMatrix.html#a7045e543e39d98ecf9f6f4a900d4a41f", null ],
+    [ "matMultTranspose", "classvulpes_1_1la_1_1SparseMatrix.html#aed906da4b0555d4047e084166da1d5ae", null ],
     [ "norm", "classvulpes_1_1la_1_1SparseMatrix.html#a35cd15f2134a65e73cdaed4c467e446a", null ],
     [ "operator=", "classvulpes_1_1la_1_1SparseMatrix.html#aa7597c21e1854b3f6df54942c05248d7", null ],
     [ "operator=", "classvulpes_1_1la_1_1SparseMatrix.html#a2d9d606e5f096a9e8523504a8b62af7f", null ],
@@ -46,10 +46,11 @@ var classvulpes_1_1la_1_1SparseMatrix =
     [ "setMatrixSizes", "classvulpes_1_1la_1_1SparseMatrix.html#accea9d1a8604072dd8c3b0e3de5aa70b", null ],
     [ "setNearNullSpace", "classvulpes_1_1la_1_1SparseMatrix.html#a35b5b3a40dabbb03c8050766f9baeebb", null ],
     [ "toEigenDense", "classvulpes_1_1la_1_1SparseMatrix.html#a2e24da77e87720f0ec35398d2c68ba12", null ],
-    [ "transposeMatMult", "classvulpes_1_1la_1_1SparseMatrix.html#af1c99f87f436eb3b562270b84843f2db", null ],
+    [ "transposeMatMult", "classvulpes_1_1la_1_1SparseMatrix.html#a105b47450d818326bf67ea3e4d8840aa", null ],
     [ "vmult", "classvulpes_1_1la_1_1SparseMatrix.html#ac30a671086b2e6f846c16a49abe961ff", null ],
     [ "vmultAdd", "classvulpes_1_1la_1_1SparseMatrix.html#ac203262c3c8c452fc26db6d67737086e", null ],
     [ "vmultT", "classvulpes_1_1la_1_1SparseMatrix.html#af96974bba1d666fdfeffd59e94294acf", null ],
     [ "vmultTAdd", "classvulpes_1_1la_1_1SparseMatrix.html#abf0db8b7279b0e02209655ef92bc6c7f", null ],
+    [ "zero", "classvulpes_1_1la_1_1SparseMatrix.html#af7f43d67e9f1f1c17d6667c9b9b24975", null ],
     [ "m_petsc_matrix", "classvulpes_1_1la_1_1SparseMatrix.html#a2f3ab9c833852ba563ce125f795dd941", null ]
 ];

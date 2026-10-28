@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -164,7 +164,7 @@ class vulpes::qrule::QuadratureLibrary&lt; Dim, FloatType &gt;</div><p>A library
 <p>The <code><a class="el" href="classvulpes_1_1qrule_1_1QuadratureLibrary.html" title="A library for managing and generating quadrature rules for numerical integration.">QuadratureLibrary</a></code> class provides a mechanism to lazily generate and cache quadrature rules for various element types and integration orders. The rules are generated for a specific spatial dimension and can be accessed using a key consisting of the element type and order.</p>
 <p>The coefficient of the polynomials are computed <b>exactly</b> by using <code>mpq_class</code> (a class that represent a fraction in arbitrary precision implemented in <a href="https://gmplib.org/">GNU GMP</a>) using the recursive formula of <a href="https://en.wikipedia.org/wiki/Legendre_polynomials">Legendre polynomials</a> (Bonnet's recursion formula). Evaluation of the polynomials is done using the <code>mpf_class</code> to handle floating point in arbitrary precision. Nodes and points are computed using Newton's iterations</p>
 <p>For the n-dimensional simplex we employ the following strategy:</p><ul>
-<li>Tabulated literature quadrature rules for low order. We choose rules that have positive weights and internal points. Different sources consider different reference triangles, thus a tranformation may be needed. Original points are in the repo as raw files. At the following links you may find a review of the quadrature rules <a href="http://web.archive.org/web/20240415021756/https://www.math.unipd.it/~alvise/SETS_CUBATURE_TRIANGLE/rules_triangle.html">http://web.archive.org/web/20240415021756/https://www.math.unipd.it/~alvise/SETS_CUBATURE_TRIANGLE/rules_triangle.html</a>, <a href="https://github.com/MatteoCaldana/legacy-quadpy">https://github.com/MatteoCaldana/legacy-quadpy</a></li>
+<li>Tabulated literature quadrature rules for low order. We choose rules that have positive weights and internal points. Different sources consider different reference triangles, thus a transformation may be needed. Original points are in the repo as raw files. At the following links you may find a review of the quadrature rules <a href="http://web.archive.org/web/20240415021756/https://www.math.unipd.it/~alvise/SETS_CUBATURE_TRIANGLE/rules_triangle.html">http://web.archive.org/web/20240415021756/https://www.math.unipd.it/~alvise/SETS_CUBATURE_TRIANGLE/rules_triangle.html</a>, <a href="https://github.com/MatteoCaldana/legacy-quadpy">https://github.com/MatteoCaldana/legacy-quadpy</a></li>
 <li>General rules for high-order. The tradeoff is that literature quadrature have less quadrature points, thus are cheaper, but (by nature) less general.</li>
 </ul>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -382,7 +382,7 @@ template&lt;std::size_t Dim, typename FloatType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1qrule.html">qrule</a></li><li class="navelem"><a class="el" href="classvulpes_1_1qrule_1_1QuadratureLibrary.html">QuadratureLibrary</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

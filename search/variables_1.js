@@ -6,7 +6,7 @@ var searchData=
   ['aggressive_5fcoarsening_5fnum_5flevels_3',['aggressive_coarsening_num_levels',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a5146e09563b78d7743ef8c82ff599d72',1,'vulpes::la::DataBoomerAMG']]],
   ['aggressive_5flevels_4',['aggressive_levels',['../structvulpes_1_1la_1_1DataGAMG.html#a1cdccf5dfc0852c598d9c557874f5f99',1,'vulpes::la::DataGAMG']]],
   ['alloc_5fsize_5',['alloc_size',['../structvulpes_1_1scipy_1_1nodeinfo__pool.html#afa4793a8719dac5198342c76488159da',1,'vulpes::scipy::nodeinfo_pool']]],
-  ['area_5frelax_6',['area_relax',['../structvulpes_1_1geometry_1_1polymesher_1_1PolyMesherParams.html#ab934a430a7a87b3be56795f0d11fa0f2',1,'vulpes::geometry::polymesher::PolyMesherParams']]],
+  ['area_5frelax_6',['area_relax',['../structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html#a9a22cb85e70e986d79f00f16ec8f7611',1,'vulpes::geometry::vulpoly::VulPolyParams']]],
   ['arena_7',['arena',['../structvulpes_1_1scipy_1_1nodeinfo__pool.html#aede4bf2b4ae1cb0de990531579a69591',1,'vulpes::scipy::nodeinfo_pool']]],
   ['arena_5fsize_8',['arena_size',['../structvulpes_1_1scipy_1_1nodeinfo__pool.html#a236f386b3b26484dec05275c3915a6c8',1,'vulpes::scipy::nodeinfo_pool']]]
 ];

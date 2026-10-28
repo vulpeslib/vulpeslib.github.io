@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -120,6 +120,9 @@ $(document).ready(function(){initNavTree('classvulpes_1_1timeintegration_1_1Cran
 </div><!--header-->
 <div class="contents">
 
+<p>Crank-Nicolson solver for M du/dt + L u = F(t), where L is lin_op. Default linear solver: PrecondOnly + LU (see <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a3303af67f809a026f7678fec9103ae79">getSolver()</a>).  
+ <a href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="cranknicolson_8hpp_source.html">cranknicolson.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for vulpes::timeintegration::CrankNicolsonSolver:</div>
@@ -156,8 +159,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a58d4ef989f968f4f572080da174f62af" id="r_a58d4ef989f968f4f572080da174f62af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a4a4428ed7f52274ada6d8c77c00216a6">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a58d4ef989f968f4f572080da174f62af">m_intial_time</a></td></tr>
-<tr class="separator:a58d4ef989f968f4f572080da174f62af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e3c0fe27b1156701c40f6836452265" id="r_a39e3c0fe27b1156701c40f6836452265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a4a4428ed7f52274ada6d8c77c00216a6">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a39e3c0fe27b1156701c40f6836452265">m_initial_time</a></td></tr>
+<tr class="separator:a39e3c0fe27b1156701c40f6836452265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45286060e16db6f0a06027f719034063" id="r_a45286060e16db6f0a06027f719034063"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a4a4428ed7f52274ada6d8c77c00216a6">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a45286060e16db6f0a06027f719034063">m_time_step</a></td></tr>
 <tr class="separator:a45286060e16db6f0a06027f719034063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77deb7f88d9aed414aeea12a318782e0" id="r_a77deb7f88d9aed414aeea12a318782e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a4a4428ed7f52274ada6d8c77c00216a6">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a77deb7f88d9aed414aeea12a318782e0">m_final_time</a></td></tr>
@@ -193,7 +196,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a66acc7e8a325918f2ba7355c4b5a7567" id="r_a66acc7e8a325918f2ba7355c4b5a7567"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a39cd5a98d7b3e37335a7d6e11d29722c">ForceFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a66acc7e8a325918f2ba7355c4b5a7567">m_force_func</a></td></tr>
 <tr class="separator:a66acc7e8a325918f2ba7355c4b5a7567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Crank-Nicolson solver for M du/dt + L u = F(t), where L is lin_op. Default linear solver: PrecondOnly + LU (see <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a3303af67f809a026f7678fec9103ae79">getSolver()</a>). </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a39cd5a98d7b3e37335a7d6e11d29722c" name="a39cd5a98d7b3e37335a7d6e11d29722c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39cd5a98d7b3e37335a7d6e11d29722c">&#9670;&#160;</a></span>ForceFunc</h2>
 
@@ -557,8 +562,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a58d4ef989f968f4f572080da174f62af" name="a58d4ef989f968f4f572080da174f62af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58d4ef989f968f4f572080da174f62af">&#9670;&#160;</a></span>m_intial_time</h2>
+<a id="a39e3c0fe27b1156701c40f6836452265" name="a39e3c0fe27b1156701c40f6836452265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e3c0fe27b1156701c40f6836452265">&#9670;&#160;</a></span>m_initial_time</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,7 +572,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a4a4428ed7f52274ada6d8c77c00216a6">real_t</a> vulpes::timeintegration::CrankNicolsonSolver::m_intial_time</td>
+          <td class="memname"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a4a4428ed7f52274ada6d8c77c00216a6">real_t</a> vulpes::timeintegration::CrankNicolsonSolver::m_initial_time</td>
         </tr>
       </table>
   </td>
@@ -832,7 +837,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1timeintegration.html">timeintegration</a></li><li class="navelem"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html">CrankNicolsonSolver</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

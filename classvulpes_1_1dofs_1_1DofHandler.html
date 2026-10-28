@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -311,7 +311,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename MeshType&gt;<br />
 class vulpes::dofs::DofHandler&lt; MeshType &gt;</div><p>Compute and distribute the DoFs and sparsity pattern associated with a mesh and a certain finite element space. </p>
-<p>This class implements the tools to distribute and compute the DoFs and sparsity pattern of a mesh and finite element space both in serial and in parallel. The class distinguishes between the two cases by checking the boolean value of MeshType::parallel(). The <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html" title="Compute and distribute the DoFs and sparsity pattern associated with a mesh and a certain finite elem...">DofHandler</a> also manages the renumbering of the DoFs to minimize the bandwidth of the sparsity pattern (to enhance cache locality and reduce the condition number of the final matrix). If the mesh is parallel the class automatically applies a preliminary renumbering in order to minimize intra-process communications at assebly-time.</p>
+<p>This class implements the tools to distribute and compute the DoFs and sparsity pattern of a mesh and finite element space both in serial and in parallel. The class distinguishes between the two cases by checking the boolean value of MeshType::parallel(). The <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html" title="Compute and distribute the DoFs and sparsity pattern associated with a mesh and a certain finite elem...">DofHandler</a> also manages the renumbering of the DoFs to minimize the bandwidth of the sparsity pattern (to enhance cache locality and reduce the condition number of the final matrix). If the mesh is parallel the class automatically applies a preliminary renumbering in order to minimize intra-process communications at assembly time.</p>
 <dl class="section note"><dt>Note</dt><dd>: before using the class call the method <code>finalize</code> to apply the <code>cell_to_cell_dof</code> permutation to each of the rows in <code>cell_to_dof</code>. This is not automatically done since the user may want to apply a renumbering to the dofs. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a00fbdf56b883d0c08c4e1160c24a112c" name="a00fbdf56b883d0c08c4e1160c24a112c"></a>
@@ -991,7 +991,7 @@ template&lt;typename MeshType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the cell to dof map. </p>
-<p>The cell is in local index, the dof in global index TODO: check it is updated after renumbering TODO: this should also take into account the m_cell_to_cell_dof </p>
+<p>The cell is in local index, the dof in global index. Valid after <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">finalize()</a>, which applies <a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a97440e5ffd6be885615450aef96661aa">getCellToCellDof()</a> and any renumbering. </p>
 
 </div>
 </div>
@@ -2107,7 +2107,7 @@ template&lt;typename MeshType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1dofs.html">dofs</a></li><li class="navelem"><a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html">DofHandler</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('classvulpes_1_1assemble_1_1CellManager
 </div><!--header-->
 <div class="contents">
 
-<p>Manages geometrical informations about the cell and its mapping to the reference element.  
+<p>Manages geometrical information about the cell and its mapping to the reference element.  
  <a href="classvulpes_1_1assemble_1_1CellManager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="cell__manager_8hpp_source.html">cell_manager.hpp</a>&gt;</code></p>
@@ -198,8 +198,8 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename MeshType, typename FeSpaceType&gt;<br />
-class vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</div><p>Manages geometrical informations about the cell and its mapping to the reference element. </p>
-<p>This class constructs lazily all the cells of a mesh (in a mesh all cells are represented implicitly). This requires a lot of extra memory, but the having contiguous information (e.g., for vertices) significantly improves the speed of the code. The cells are initialized builinding all the extra informations required by the finite element space, namely the <code>cellInitOptions()</code> static method that all finite elements type must implement. The cells are then mapped to the reference element and the mapping is stored. This class also offers the possibility to query the neighbour of the cell in local cell enumeration, which is more costly to do in global mesh enumeration.</p>
+class vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</div><p>Manages geometrical information about the cell and its mapping to the reference element. </p>
+<p>This class constructs lazily all the cells of a mesh (in a mesh all cells are represented implicitly). This requires a lot of extra memory, but having contiguous information (e.g., for vertices) significantly improves the speed of the code. The cells are initialized by building all the extra information required by the finite element space, namely the <code>cellInitOptions()</code> static method that all finite elements type must implement. The cells are then mapped to the reference element and the mapping is stored. This class also offers the possibility to query the neighbour of the cell in local cell enumeration, which is more costly to do in global mesh enumeration.</p>
 <dl class="section note"><dt>Note</dt><dd>we have two kind of enumerations: the cell enumeration and the mesh (or MPI) enumerations. The first ranges from 0 to the number of neighbours of the cell, the second one is common to all the mesh, in particular we consider the MPI local mesh enumeration, so that the i-th cell id is the one of the i-th local (MPI) cell </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a30c8cd4986aee205bf5b50022df8d6b4" name="a30c8cd4986aee205bf5b50022df8d6b4"></a>
@@ -754,7 +754,7 @@ template&lt;typename MeshType , typename FeSpaceType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1assemble.html">assemble</a></li><li class="navelem"><a class="el" href="classvulpes_1_1assemble_1_1CellManager.html">CellManager</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

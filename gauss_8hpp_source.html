@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('gauss_8hpp_source.html',''); initResiz
 <div class="contents">
 <a href="gauss_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (C) 2024 - 2025 by the vulpes authors.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (C) 2024 - 2026 by the Vulpes authors.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// This file is part of Vulpes.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Vulpes is free software; you can redistribute it and/or modify</span></div>
@@ -192,10 +192,10 @@ $(document).ready(function(){initNavTree('gauss_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}  <span class="comment">// namespace vulpes</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif  </span><span class="comment">// VULPES_QUADRATURE_GAUSS_HPP_</span></div>
 <div class="ttc" id="anamespacevulpes_1_1qrule_html_a08f90f4c63ab870c7f01fc4258f994ed"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#a08f90f4c63ab870c7f01fc4258f994ed">vulpes::qrule::buildTensorQuadrature</a></div><div class="ttdeci">QuadratureRule&lt; T, dim &gt; buildTensorQuadrature(const QuadratureRule1D&lt; T &gt; &amp;rule1d)</div><div class="ttdoc">Constructs a tensor-product quadrature rule from a 1D quadrature rule.</div><div class="ttdef"><b>Definition</b> gauss.hpp:106</div></div>
-<div class="ttc" id="anamespacevulpes_1_1qrule_html_a26941ef29304bec3f440a7dde07eb9bb"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb">vulpes::qrule::gmpGaussLegendreQuadrature</a></div><div class="ttdeci">QuadratureRule1Dmp gmpGaussLegendreQuadrature(std::size_t n, std::size_t precision)</div><div class="ttdoc">Computes a Gauss-Legendre quadrature rule with arbitrary precision.</div><div class="ttdef"><b>Definition</b> gauss.cpp:40</div></div>
-<div class="ttc" id="anamespacevulpes_1_1qrule_html_acf808d810fe514bf8cf0c6a3229ff4a2"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#acf808d810fe514bf8cf0c6a3229ff4a2">vulpes::qrule::gmpGaussLobattoQuadrature</a></div><div class="ttdeci">QuadratureRule1Dmp gmpGaussLobattoQuadrature(std::size_t n, std::size_t precision)</div><div class="ttdoc">Generates a Gauss-Lobatto quadrature rule in 1D with arbitrary-precision arithmetic.</div><div class="ttdef"><b>Definition</b> gauss.cpp:111</div></div>
-<div class="ttc" id="anamespacevulpes_1_1vmath_html_a2b17e16df3a08f27fff0aa30c875555b"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b">vulpes::vmath::upow</a></div><div class="ttdeci">constexpr U upow(U base, V exp, U result=U(1))</div><div class="ttdoc">Computes the unsigned power of a number.</div><div class="ttdef"><b>Definition</b> vmath.hpp:106</div></div>
-<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:36</div></div>
+<div class="ttc" id="anamespacevulpes_1_1qrule_html_a26941ef29304bec3f440a7dde07eb9bb"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#a26941ef29304bec3f440a7dde07eb9bb">vulpes::qrule::gmpGaussLegendreQuadrature</a></div><div class="ttdeci">QuadratureRule1Dmp gmpGaussLegendreQuadrature(std::size_t n, std::size_t precision)</div><div class="ttdoc">Computes a Gauss-Legendre quadrature rule with arbitrary precision.</div><div class="ttdef"><b>Definition</b> gauss.cpp:41</div></div>
+<div class="ttc" id="anamespacevulpes_1_1qrule_html_acf808d810fe514bf8cf0c6a3229ff4a2"><div class="ttname"><a href="namespacevulpes_1_1qrule.html#acf808d810fe514bf8cf0c6a3229ff4a2">vulpes::qrule::gmpGaussLobattoQuadrature</a></div><div class="ttdeci">QuadratureRule1Dmp gmpGaussLobattoQuadrature(std::size_t n, std::size_t precision)</div><div class="ttdoc">Generates a Gauss-Lobatto quadrature rule in 1D with arbitrary-precision arithmetic.</div><div class="ttdef"><b>Definition</b> gauss.cpp:112</div></div>
+<div class="ttc" id="anamespacevulpes_1_1vmath_html_a2b17e16df3a08f27fff0aa30c875555b"><div class="ttname"><a href="namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b">vulpes::vmath::upow</a></div><div class="ttdeci">constexpr U upow(U base, V exp, U result=U(1))</div><div class="ttdoc">Computes the unsigned power of a number.</div><div class="ttdef"><b>Definition</b> vmath.hpp:107</div></div>
+<div class="ttc" id="anamespacevulpes_html"><div class="ttname"><a href="namespacevulpes.html">vulpes</a></div><div class="ttdef"><b>Definition</b> cell_manager.hpp:38</div></div>
 <div class="ttc" id="aqrule_8hpp_html"><div class="ttname"><a href="qrule_8hpp.html">qrule.hpp</a></div></div>
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html">vulpes::qrule::QuadratureRule</a></div><div class="ttdoc">Represents a quadrature rule consisting of a set of points and associated weights.</div><div class="ttdef"><b>Definition</b> qrule.hpp:69</div></div>
 <div class="ttc" id="astructvulpes_1_1qrule_1_1QuadratureRule_html_a539e7c059c883b5d72added2ff7351cf"><div class="ttname"><a href="structvulpes_1_1qrule_1_1QuadratureRule.html#a539e7c059c883b5d72added2ff7351cf">vulpes::qrule::QuadratureRule::nodes</a></div><div class="ttdeci">std::vector&lt; QuadraturePoint&lt; T, Dim &gt; &gt; nodes</div><div class="ttdoc">List of quadrature points.</div><div class="ttdef"><b>Definition</b> qrule.hpp:71</div></div>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('gauss_8hpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_c7f7ab40232942afa5e2adeef9c82e3e.html">quadrature</a></li><li class="navelem"><a class="el" href="gauss_8hpp.html">gauss.hpp</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

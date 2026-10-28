@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_20guide_0',['Developer&apos;s Guide',['../developers_guide.html',1,'']]],
-  ['shallow_20water_20equations_20dg_1',['Linear Shallow Water Equations (DG)',['../tutorials_04_Shallow_Water_DG.html',1,'tutorials']]],
-  ['style_20guide_2',['C++ Style Guide',['../developers_guide_style_guide.html',1,'developers_guide']]]
+  ['testing_20and_20coverage_0',['Testing and Coverage',['../developers_guide_testing_and_coverage.html',1,'developers_guide']]],
+  ['tool_20for_20mesh_20agglomeration_1',['Tool for Mesh Agglomeration',['../tutorials_06_Mesh_Agglomeration.html',1,'tutorials']]],
+  ['tutorials_2',['Tutorials',['../tutorials.html',1,'']]]
 ];

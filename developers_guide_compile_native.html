@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -136,7 +136,7 @@ Install a Debug version of Petsc</h3>
 <div class="line">  COPTFLAGS=&quot;-O0 -g&quot; CXXOPTFLAGS=&quot;-O0 -g&quot;  FOPTFLAGS=&quot;-O0 -g&quot;</div>
 <div class="line">make PETSC_DIR=/workspaces/petsc-3.23.4 PETSC_ARCH=arch-linux-c-debug all</div>
 </div><!-- fragment --><p><b>NOTE:</b> NOT NEED INSTALL IF NO PREFIX</p>
-<p>See, also for other useful stuff: <a href="https://precice.discourse.group/t/cmake-isnt-picking-up-on-the-correct-petsc-version/1921/4">https://precice.discourse.group/t/cmake-isnt-picking-up-on-the-correct-petsc-version/1921/4</a></p>
+<p>See, also for other useful stuff: <a href="https://precise.discourse.group/t/cmake-isnt-picking-up-on-the-correct-petsc-version/1921/4">https://precise.discourse.group/t/cmake-isnt-picking-up-on-the-correct-petsc-version/1921/4</a></p>
 <p>CMake uses pkg config to find PETSc, we must update it and check it sees it. </p><div class="fragment"><div class="line">export PETSC_DIR=/workspaces/petsc-3.23.4 </div>
 <div class="line">export PETSC_ARCH=arch-linux-c-debug</div>
 <div class="line">export PKG_CONFIG_PATH=$PETSC_DIR/$PETSC_ARCH/lib/pkgconfig:$PKG_CONFIG_PATH</div>
@@ -196,7 +196,7 @@ Our usecase</h2>
 <p>spack load parmetis@4.0.3gcc@12.1.0 /ke7auhk spack load <a href="#" onclick="location.href='mai'+'lto:'+'pet'+'sc'+'@3.'+'20'; return false;">petsc<span class="obfuscator">.nosp@m.</span>@3.2<span class="obfuscator">.nosp@m.</span>0</a>.1gcc@12.1.0 /cpthtdp spack load metis@5.1.0gcc@12.1.0 /2wj6juc</p>
 <p>/7shc2am -&gt; ^metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared /47qod2s -&gt; ^metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared /qu4efxi -&gt; metis@5.1.0gcc@12.1.0~gdb~int64~ipo+real64+shared</p>
 <h1><a class="anchor" id="autotoc_md114"></a>
-Specifing the position of a library</h1>
+Specifying the position of a library</h1>
 <p>Gigat cluster: </p><div class="fragment"><div class="line">source /u/sw/etc/profile</div>
 <div class="line">module load gcc-glibc/11 metis</div>
 <div class="line">cmake .. -DCMAKE_PREFIX_PATH=&quot;/u/sw/toolchains/gcc-glibc/11.2.0/pkgs/metis/5.1.0/include/;/u/sw/toolchains/gcc-glibc/11.2.0/pkgs/metis/5.1.0/bin/;/u/sw/toolchains/gcc-glibc/11.2.0/pkgs/metis/5.1.0/lib/;/u/archive/numer/caldana/boost/;/u/archive/numer/caldana/VTK-9.5.0/build/&quot;</div>
@@ -208,7 +208,7 @@ Specifing the position of a library</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="developers_guide.html">Developer&#39;s Guide</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

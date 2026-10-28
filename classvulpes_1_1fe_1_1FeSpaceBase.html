@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -126,6 +126,11 @@ $(document).ready(function(){initNavTree('classvulpes_1_1fe_1_1FeSpaceBase.html'
  <a href="classvulpes_1_1fe_1_1FeSpaceBase.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="fe__space_8hpp_source.html">fe_space.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1fe_1_1FeSpaceBase__inherit__graph.svg" width="270" height="154"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -203,15 +208,14 @@ class vulpes::fe::FeSpaceBase&lt; Dim, FloatType, DofPolicy, FeSpace &gt;</div><
 <li>a basis of polynomial in 32bit or 64bit float precision</li>
 <li>define on which types of elements <code>FeType</code> it can work with</li>
 <li>define how many dofs are on any geometrical entity (vertex, edge, ...) via the DofPolicy</li>
-<li>define the dof interaction distance (at which cell distance, in the dual map, two dofs may have non-zero integrals). For all continous elements is 0, for DG is 1 since we have the face-face coupling.</li>
+<li>define the dof interaction distance (at which cell distance, in the dual map, two dofs may have non-zero integrals). For all continuous elements is 0, for DG is 1 since we have the face-face coupling.</li>
 <li>polynomial order</li>
 </ul>
-<p>There are 11 avaiable FE spaces:</p><ul>
+<p>There are 10 available FE spaces:</p><ul>
 <li>Lagrangian/Spectral on Simplex in both Continuous and Discontinuous versions</li>
 <li>Lagrangian/Spectral on Tensors in both Continuous and Discontinuous versions</li>
 <li>Modal on Simplex in discontinuous version</li>
-<li>Modal on Tensor in discontinuous version</li>
-<li>VEM </li>
+<li>Modal on Tensor in discontinuous version </li>
 </ul>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1c77ee7ffd70d229378324aa593113aa" name="a1c77ee7ffd70d229378324aa593113aa"></a>
@@ -329,7 +333,7 @@ template&lt;std::size_t Dim, typename FloatType , typename DofPolicy , typename 
   </tr>
 </table>
 </div><div class="memdoc">
-<p>cell distance (on the dual graph) up to which compute dof interaction e.g. in the continuous FE is 0 b.c. a dof belongs to all the cells in the discontinous case is 1 b.c. each dof belongs to one cell and there are the coupling terms to take into consideration </p>
+<p>cell distance (on the dual graph) up to which compute dof interaction e.g. in the continuous FE is 0 b.c. a dof belongs to all the cells in the discontinuous case is 1 b.c. each dof belongs to one cell and there are the coupling terms to take into consideration </p>
 
 </div>
 </div>
@@ -393,7 +397,7 @@ template&lt;typename MeshType &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mesh</td><td>the mesh </td></tr>
-    <tr><td class="paramname">cell_id</td><td>global id of the cell in cosideration (with MPI is the (global) id in local proc enumeration) </td></tr>
+    <tr><td class="paramname">cell_id</td><td>global id of the cell in consideration (with MPI is the (global) id in local proc enumeration) </td></tr>
     <tr><td class="paramname">owning_enty_id</td><td>id of the geometric entity that owns the dof (e.g. the dof may belong to a vertex, an edge, a face or be internal to the cell) </td></tr>
     <tr><td class="paramname">enty_dim</td><td>dimension of the entity, that is this specify if the entity considered in the previous parameter is a vertex (0), and edge (2) etc. </td></tr>
     <tr><td class="paramname">enty_multiplicity</td><td>id within the entity, e.g. to an edge might belong more than one dof, this indicates which is the id within these </td></tr>
@@ -795,7 +799,7 @@ template&lt;std::size_t Dim, typename FloatType , typename DofPolicy , typename 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li><li class="navelem"><a class="el" href="classvulpes_1_1fe_1_1FeSpaceBase.html">FeSpaceBase</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

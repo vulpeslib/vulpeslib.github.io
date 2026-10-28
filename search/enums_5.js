@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['integrationform_0',['IntegrationForm',['../namespacevulpes_1_1fe.html#ae5ebf32825cb96839dd980a33ccd72bd',1,'vulpes::fe']]]
+  ['kmeansalgtype_0',['KMeansAlgType',['../namespacevulpes_1_1geometry.html#a535e172da73723fcae91ad230fb18e6d',1,'vulpes::geometry']]]
 ];

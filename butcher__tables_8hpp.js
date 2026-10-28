@@ -34,7 +34,7 @@ var butcher__tables_8hpp =
     [ "vulpes::timeintegration::ForwardBackwardEulerIMEX", "structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX.html", "structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX" ],
     [ "vulpes::timeintegration::ImplicitExplicitMidpointIMEX", "structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html", "structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX" ],
     [ "vulpes::timeintegration::AscherRuuthSpiteriLstable4IMEX", "structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX.html", "structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX" ],
-    [ "checkButcherTable", "butcher__tables_8hpp.html#a1d408488a99d3752e58d22521c192487", null ],
+    [ "checkButcherTable", "butcher__tables_8hpp.html#a852fccb0d82bfec27eb2816a19edfe69", null ],
     [ "checkFSAL", "butcher__tables_8hpp.html#aa81ff571da7cb0b1a4ce3e0123e2f65f", null ],
     [ "padEndArray", "butcher__tables_8hpp.html#a09fa14548f9f9647afbcf9435376113e", null ],
     [ "padStartArray", "butcher__tables_8hpp.html#a05567d778d8c502fa795cad138a3bff6", null ],

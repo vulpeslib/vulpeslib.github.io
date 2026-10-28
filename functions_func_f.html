@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -157,10 +157,9 @@ $(document).ready(function(){initNavTree('functions_func_f.html',''); initResiza
 <li>FeSpaceLagrangeP()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeP.html#a23f17c8352033c2cb64562c7d4080021">vulpes::fe::FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt;</a></li>
 <li>FeSpaceLagrangeQ()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceLagrangeQ.html#aa8acddff3ae1bbd52b298e9683535342">vulpes::fe::FeSpaceLagrangeQ&lt; Dim, DofPolicy, Poly1DPolicy &gt;</a></li>
 <li>FeSpaceModalP()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalP.html#a8a57ed67ff756db2017c3dffe7718039">vulpes::fe::FeSpaceModalP&lt; Dim, DofPolicy &gt;</a></li>
-<li>FeSpaceModalQ()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a37dd8aafbd6e7670542f96a93fa46d1c">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy &gt;</a></li>
-<li>FeSpaceVEM()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceVEM.html#a1bd9b9011ee578db506d5a3e7140f5e8">vulpes::fe::FeSpaceVEM&lt; Dim &gt;</a></li>
+<li>FeSpaceModalQ()&#160;:&#160;<a class="el" href="classvulpes_1_1fe_1_1FeSpaceModalQ.html#a38451592f279b412a9ba365854cdd82a">vulpes::fe::FeSpaceModalQ&lt; Dim, DofPolicy, EnableScaling &gt;</a></li>
 <li>finalize()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#ab3f517c13f599e46af9cfdf7b86b3e91">vulpes::dofs::DofHandler&lt; MeshType &gt;</a>, <a class="el" href="classvulpes_1_1mpi_1_1MpiHandle.html#ab20add7947a8601721cf7dec841680e2">vulpes::mpi::MpiHandle</a></li>
-<li>finalTime()&#160;:&#160;<a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#a704674c3e6b5b41f7b793734f9b828a0">vulpes::timeintegration::CrankNicolsonMFK</a>, <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a6bb64d8cc776e2b42bdfe9f8a747e415">vulpes::timeintegration::CrankNicolsonSolver</a>, <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html#a60f9bdc4eedc61a4b55cc8e9b4c7d717">vulpes::timeintegration::CrankNicolsonSolverFK</a></li>
+<li>finalTime()&#160;:&#160;<a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a189f4defc9e366ae9a7fe8ef4c7a6b5e">vulpes::timeintegration::CrankNicolsonGeneralized</a>, <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonMFK.html#a704674c3e6b5b41f7b793734f9b828a0">vulpes::timeintegration::CrankNicolsonMFK</a>, <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolver.html#a6bb64d8cc776e2b42bdfe9f8a747e415">vulpes::timeintegration::CrankNicolsonSolver</a>, <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html#a60f9bdc4eedc61a4b55cc8e9b4c7d717">vulpes::timeintegration::CrankNicolsonSolverFK</a></li>
 <li>findCellNeigh()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1CellManager.html#acfe73e886bb95a67ed3fc1cb6c6d3d96">vulpes::assemble::CellManager&lt; MeshType, FeSpaceType &gt;</a>, <a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#aba501e8a43cec560cc7a355b5da2b9d0">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>findEdgesToCompute()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1Cell3D.html#a3cfddc3ee435ac794cc4025bf27df08c">vulpes::geometry::Cell3D&lt; FloatType, IndexType &gt;</a></li>
 <li>fit()&#160;:&#160;<a class="el" href="classvulpes_1_1geometry_1_1KMeansBase.html#adcd1c013112d45686b72fa6b622248d0">vulpes::geometry::KMeansBase&lt; T, Dim &gt;</a>, <a class="el" href="classvulpes_1_1geometry_1_1KMeansNaive.html#a77a90a1b1a33ccff43aa98acca72f216">vulpes::geometry::KMeansNaive&lt; T, Dim &gt;</a></li>
@@ -175,7 +174,7 @@ $(document).ready(function(){initNavTree('functions_func_f.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

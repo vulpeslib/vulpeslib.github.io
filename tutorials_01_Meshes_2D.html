@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vulpes: Mesh Kinds for 01_assemble_lapl_dg_2d</title>
+<title>Vulpes: Mesh Kinds for lap_dg_2d_main</title>
 <link rel="icon" href="vulpes_logo_notext_32.png" type="image/png" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('tutorials_01_Meshes_2D.html',''); init
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Mesh Kinds for 01_assemble_lapl_dg_2d</div></div>
+  <div class="headertitle"><div class="title">Mesh Kinds for lap_dg_2d_main</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Author: Pedro Peixoto <a href="#" onclick="location.href='mai'+'lto:'+'ppe'+'ix'+'oto'+'@u'+'sp.'+'br'; return false;">ppeix<span class="obfuscator">.nosp@m.</span>oto@<span class="obfuscator">.nosp@m.</span>usp.b<span class="obfuscator">.nosp@m.</span>r</a></p>
-<p>This note documents the <code>mesh_kind</code> values accepted by the example <code>examples/assembly/laplacian/01_assemble_lapl_dg_2d.cpp</code>.</p>
+<p>This note documents the <code>mesh_kind</code> values accepted by the example <code>examples/assembly/laplacian/lap_dg_2d_main.cpp</code>.</p>
 <p>The executable expects:</p>
-<div class="fragment"><div class="line">./01_assemble_lapl_dg_2d &lt;order&gt; &lt;nlvls&gt; &lt;mesh_kind&gt;</div>
+<div class="fragment"><div class="line">./lap_dg_2d_main &lt;order&gt; &lt;nlvls&gt; &lt;mesh_kind&gt;</div>
 </div><!-- fragment --><p>where <code>mesh_kind</code> selects the family of meshes used in the Laplacian DG test.</p>
 <h1><a class="anchor" id="autotoc_md0"></a>
 Quick Summary</h1>
@@ -433,10 +433,10 @@ Periodic topology workflow (open/closed)</h3>
 <div class="line">  }</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassvulpes_1_1geometry_1_1Mesh2D_html"><div class="ttname"><a href="classvulpes_1_1geometry_1_1Mesh2D.html">vulpes::geometry::Mesh2D</a></div><div class="ttdoc">A class for a 2D mesh, inheriting from MeshBase.</div><div class="ttdef"><b>Definition</b> mesh_2d.hpp:92</div></div>
+<div class="ttc" id="aclassvulpes_1_1geometry_1_1Mesh2D_html"><div class="ttname"><a href="classvulpes_1_1geometry_1_1Mesh2D.html">vulpes::geometry::Mesh2D</a></div><div class="ttdoc">A class for a 2D mesh, inheriting from MeshBase.</div><div class="ttdef"><b>Definition</b> mesh_2d.hpp:93</div></div>
 <div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_a5edc475421bf89f7b288a4c9d53f8438"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#a5edc475421bf89f7b288a4c9d53f8438">vulpes::geometry::mesh2d::rectangle_periodic&lt; double, int32_t &gt;</a></div><div class="ttdeci">template Mesh2D&lt; double, int32_t &gt; rectangle_periodic&lt; double, int32_t &gt;(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int32_t, 2 &gt; &amp;, bool)</div></div>
-<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_aa10c9d28ffcc4e2c9bbf339de76f4aad"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa10c9d28ffcc4e2c9bbf339de76f4aad">vulpes::geometry::mesh2d::openPeriodicTopology</a></div><div class="ttdeci">Mesh2D&lt; FloatType, IndexType &gt; openPeriodicTopology(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</div><div class="ttdef"><b>Definition</b> mesh_2d.cpp:1760</div></div>
-<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_ab471ec574bb67b1b85296b71343b1337"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#ab471ec574bb67b1b85296b71343b1337">vulpes::geometry::mesh2d::closePeriodicTopology</a></div><div class="ttdeci">Mesh2D&lt; FloatType, IndexType &gt; closePeriodicTopology(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</div><div class="ttdef"><b>Definition</b> mesh_2d.cpp:1593</div></div>
+<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_aa10c9d28ffcc4e2c9bbf339de76f4aad"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa10c9d28ffcc4e2c9bbf339de76f4aad">vulpes::geometry::mesh2d::openPeriodicTopology</a></div><div class="ttdeci">Mesh2D&lt; FloatType, IndexType &gt; openPeriodicTopology(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</div><div class="ttdef"><b>Definition</b> mesh_2d.cpp:1759</div></div>
+<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_ab471ec574bb67b1b85296b71343b1337"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#ab471ec574bb67b1b85296b71343b1337">vulpes::geometry::mesh2d::closePeriodicTopology</a></div><div class="ttdeci">Mesh2D&lt; FloatType, IndexType &gt; closePeriodicTopology(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</div><div class="ttdef"><b>Definition</b> mesh_2d.cpp:1597</div></div>
 </div><!-- fragment --><p>In short: use closed topology for standard assembly workflows, and open topology when you need to inspect ghost vertices or periodic connectivity explicitly, or to export the mesh.</p>
 <p><img src="figs/periodic_mesh_closed.png" alt="closed mesh" width="400" class="inline"/> </p>
 <p>Figure: Example of a CLOSED periodic mesh with indexes used by Vulpes. These are used inside Vulpes for weak form assembly and have a closed connectivity (no boundaries). </p>
@@ -450,7 +450,7 @@ Periodic topology workflow (open/closed)</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

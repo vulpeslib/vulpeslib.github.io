@@ -14,6 +14,5 @@ var searchData=
   ['fe_5fmodal_5ftensor_2ehpp_11',['fe_modal_tensor.hpp',['../fe__modal__tensor_8hpp.html',1,'']]],
   ['fe_5fspace_2ehpp_12',['fe_space.hpp',['../fe__space_8hpp.html',1,'']]],
   ['fe_5fvalues_2ehpp_13',['fe_values.hpp',['../fe__values_8hpp.html',1,'']]],
-  ['fe_5fvem_2ehpp_14',['fe_vem.hpp',['../fe__vem_8hpp.html',1,'']]],
-  ['frugal_2ehpp_15',['frugal.hpp',['../frugal_8hpp.html',1,'']]]
+  ['frugal_2ehpp_14',['frugal.hpp',['../frugal_8hpp.html',1,'']]]
 ];

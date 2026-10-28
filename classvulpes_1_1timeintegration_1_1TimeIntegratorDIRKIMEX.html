@@ -47,7 +47,7 @@ MathJax.Hub.Config({
    <div id="projectname">Vulpes
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Virtual and Discontinuous Polytopal Elements Library</div>
+   <div id="projectbrief">Versatile and parallel compUtational Library for high-order discontinuous Polytopal Element Simulations</div>
   </td>
  </tr>
  </tbody>
@@ -122,11 +122,14 @@ $(document).ready(function(){initNavTree('classvulpes_1_1timeintegration_1_1Time
 </div><!--header-->
 <div class="contents">
 
+<p>Runge-Kutta solver for M du/dt + L u + N(u) = F(t). L is implicit when the Butcher table has an implicit part, N is always explicit. Default linear solver: PrecondOnly + LU (see <a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#abfcaa719f56bd46f9a9f77ba94ffd077">getSolver()</a>).  
+ <a href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="imex_8hpp_source.html">imex.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for vulpes::timeintegration::TimeIntegratorDIRKIMEX&lt; ButcherTableType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX__coll__graph.svg" width="548" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX__coll__graph.svg" width="548" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -194,14 +197,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4382e6947d62912c9f1d61f1b008ed70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b13a889658183ebffc87e55171fa7c7" id="r_a1b13a889658183ebffc87e55171fa7c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a1b13a889658183ebffc87e55171fa7c7">m_stage_sol</a></td></tr>
 <tr class="separator:a1b13a889658183ebffc87e55171fa7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3637079e47d558f2decc767bf43e7e51" id="r_a3637079e47d558f2decc767bf43e7e51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a3637079e47d558f2decc767bf43e7e51">m_internal_stages_sum_im</a></td></tr>
-<tr class="separator:a3637079e47d558f2decc767bf43e7e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86feda703cb3752e49967525578b7214" id="r_a86feda703cb3752e49967525578b7214"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a86feda703cb3752e49967525578b7214">m_stage_rhs_ex</a></td></tr>
 <tr class="separator:a86feda703cb3752e49967525578b7214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6554ad754a704cf2f83c6a2b00084c36" id="r_a6554ad754a704cf2f83c6a2b00084c36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a6554ad754a704cf2f83c6a2b00084c36">m_stage_rhs_im</a></td></tr>
 <tr class="separator:a6554ad754a704cf2f83c6a2b00084c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a684a3288c417a66adb370f0333107d80" id="r_a684a3288c417a66adb370f0333107d80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a684a3288c417a66adb370f0333107d80">m_non_linear_stage_eval</a></td></tr>
-<tr class="separator:a684a3288c417a66adb370f0333107d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3cf98ed256288751ec2507997e2f7df" id="r_ab3cf98ed256288751ec2507997e2f7df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#ab3cf98ed256288751ec2507997e2f7df">m_tmp</a></td></tr>
 <tr class="separator:ab3cf98ed256288751ec2507997e2f7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c83b22352870ab1e2e5184fb7a255e" id="r_ad0c83b22352870ab1e2e5184fb7a255e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#ad0c83b22352870ab1e2e5184fb7a255e">m_stage_operator</a></td></tr>
@@ -227,7 +226,10 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a855e257b61c240bdece321ba60189c45" id="r_a855e257b61c240bdece321ba60189c45"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a855e257b61c240bdece321ba60189c45">FSAL</a></td></tr>
 <tr class="separator:a855e257b61c240bdece321ba60189c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename ButcherTableType&gt;<br />
+class vulpes::timeintegration::TimeIntegratorDIRKIMEX&lt; ButcherTableType &gt;</div><p>Runge-Kutta solver for M du/dt + L u + N(u) = F(t). L is implicit when the Butcher table has an implicit part, N is always explicit. Default linear solver: PrecondOnly + LU (see <a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#abfcaa719f56bd46f9a9f77ba94ffd077">getSolver()</a>). </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6dcdd60fdd291516affc07d77054cc20" name="a6dcdd60fdd291516affc07d77054cc20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dcdd60fdd291516affc07d77054cc20">&#9670;&#160;</a></span>ForceFunc</h2>
 
@@ -902,30 +904,6 @@ template&lt;typename ButcherTableType &gt; </div>
 
 </div>
 </div>
-<a id="a3637079e47d558f2decc767bf43e7e51" name="a3637079e47d558f2decc767bf43e7e51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3637079e47d558f2decc767bf43e7e51">&#9670;&#160;</a></span>m_internal_stages_sum_im</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ButcherTableType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> <a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html">vulpes::timeintegration::TimeIntegratorDIRKIMEX</a>&lt; ButcherTableType &gt;::m_internal_stages_sum_im</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab8baab8721b695ab2a97c100ae616bfd" name="ab8baab8721b695ab2a97c100ae616bfd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8baab8721b695ab2a97c100ae616bfd">&#9670;&#160;</a></span>m_linear_op</h2>
 
@@ -987,30 +965,6 @@ template&lt;typename ButcherTableType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#ac932982092b4b80e6cb69798c741af7e">NonlinearPartFunc</a> <a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html">vulpes::timeintegration::TimeIntegratorDIRKIMEX</a>&lt; ButcherTableType &gt;::m_non_linear_op</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a684a3288c417a66adb370f0333107d80" name="a684a3288c417a66adb370f0333107d80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a684a3288c417a66adb370f0333107d80">&#9670;&#160;</a></span>m_non_linear_stage_eval</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ButcherTableType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> <a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html">vulpes::timeintegration::TimeIntegratorDIRKIMEX</a>&lt; ButcherTableType &gt;::m_non_linear_stage_eval</td>
         </tr>
       </table>
   </td>
@@ -1296,7 +1250,7 @@ template&lt;typename ButcherTableType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1timeintegration.html">timeintegration</a></li><li class="navelem"><a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html">TimeIntegratorDIRKIMEX</a></li>
-    <li class="footer">Generated on Thu Oct 22 2026 14:34:15 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
