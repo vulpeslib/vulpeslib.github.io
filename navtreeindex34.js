@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"structvulpes_1_1timeintegration_1_1RK4IMEX.html#aa49078a5fa25343e3db860d175bdfc24":[2,0,3,15,34,3],
+"structvulpes_1_1timeintegration_1_1RK4IMEX.html#aa49078a5fa25343e3db860d175bdfc24":[3,0,2,11,33,3],
 "structvulpes_1_1timeintegration_1_1RK4IMEX.html#aa8d5f81a82ea05f946a584ceef4fa4c2":[3,0,2,11,33,6],
 "structvulpes_1_1timeintegration_1_1RK4IMEX.html#aa8d5f81a82ea05f946a584ceef4fa4c2":[2,0,3,15,34,6],
 "structvulpes_1_1timeintegration_1_1RK4IMEX.html#aaad98e4a54e870100794904968a4353b":[3,0,2,11,33,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX34 =
 "vector__block__utils_8hpp.html#a2ba177e96cb4a1e259233310e0d543cc":[4,0,1,5,10,6],
 "vector__block__utils_8hpp.html#a792a504cc46b5de987de2422c3322ca1":[4,0,1,5,10,3],
 "vector__block__utils_8hpp.html#a7c168a0700f706690a196567eb54d884":[4,0,1,5,10,0],
-"vector__block__utils_8hpp.html#aa47c301683f90407fecc34e6f318e3bb":[4,0,1,5,10,5],
-"vector__block__utils_8hpp.html#aaca8380f6d8e4d324ed1483e3ce95e9a":[4,0,1,5,10,1],
-"vector__block__utils_8hpp.html#ab926e40f9912d90f9b01cb3543af2e2e":[4,0,1,5,10,4]
+"vector__block__utils_8hpp.html#aa47c301683f90407fecc34e6f318e3bb":[4,0,1,5,10,5]
 };

@@ -118,8 +118,8 @@ $(document).ready(function(){initNavTree('tutorials_03_Advection_Assembly.html',
 <p>The advection example is split into two subfolders:</p>
 <ul>
 <li><a href="examples/assembly/advection/scalar/">examples/assembly/advection/scalar/</a> — scalar advection (this tutorial).</li>
-<li><a href="examples/assembly/advection/vector/">examples/assembly/advection/vector/</a> — vector advection: the same DG formulation applied component-wise to a multi-component field, sharing the RK4 integrator and runtime utilities from <a href="examples/assembly/advection/common/">examples/assembly/advection/common/</a>.</li>
-<li><a href="examples/assembly/advection/common/">examples/assembly/advection/common/</a> — shared RK4 integrator and output utilities used by both subfolders.</li>
+<li><a href="examples/assembly/advection/vector/">examples/assembly/advection/vector/</a> — vector advection: the same DG formulation applied component-wise to a multi-component field, sharing the runtime utilities from <a href="examples/assembly/advection/common/">examples/assembly/advection/common/</a>.</li>
+<li><a href="examples/assembly/advection/common/">examples/assembly/advection/common/</a> — runtime and output utilities shared by both subfolders.</li>
 </ul>
 <p>Reference for notation and DG formulation style: F. Brezzi, L. D. Marini, and E. Suli, <em>Discontinuous Galerkin methods for first-order hyperbolic problems</em>, Math. Models Methods Appl. Sci. 14(12), 2004.</p>
 <p>Disclaimer: we will abuse some of the notation to allow faster understanding of the ideas. Full mathematical formulations should be checked in the associated papers.</p>
@@ -333,7 +333,7 @@ A = \sum_{K\in\mathcal{T}_h} \text{Cell}(K)   + \sum_{K\in\mathcal{T}_h} \text{F
 M \dot{U} = A U + F(t),
 \]
 </p>
-<p>with \(F(t)=0\) in this pure advection example.</p>
+<p>with \(F(t)=0\) in this pure advection example. It is advanced in time with the classical RK4 of the library (<code>TimeIntegratorDIRKIMEX</code> with <code>RK4IMEX</code>), which solves \(M \dot{U} + L U = F(t)\), so the example passes \(L = -A\).</p>
 <p>The velocity field is defined in <a href="examples/assembly/advection/scalar/advection_physics.hpp">examples/assembly/advection/scalar/advection_physics.hpp</a>:</p>
 <ul>
 <li>Constant case:</li>
@@ -393,7 +393,7 @@ c(x,y) = (c_x, c_y) + c_{\mathrm{var}}(x,y),
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:23:02 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

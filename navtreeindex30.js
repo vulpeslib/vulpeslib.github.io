@@ -1,5 +1,7 @@
 var NAVTREEINDEX30 =
 {
+"structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a62037be1cb1f84122c01ea7f92d79b0e":[3,0,2,3,3,17],
+"structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a62037be1cb1f84122c01ea7f92d79b0e":[2,0,3,3,3,17],
 "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a739905a1d9595a92ad05011ad2161982":[2,0,3,3,3,16],
 "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a739905a1d9595a92ad05011ad2161982":[3,0,2,3,3,16],
 "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a7a616a76def9a9203869f634047f9756":[2,0,3,3,3,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX30 =
 "structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html#a734426bf367c6ed7821283354ae3b9c7":[3,0,2,10,1,2],
 "structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html#a734426bf367c6ed7821283354ae3b9c7":[2,0,3,14,1,2],
 "structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html#a7442ac8f4c37126d160b2b7c6c3a3bb9":[2,0,3,14,1,0],
-"structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html#a7442ac8f4c37126d160b2b7c6c3a3bb9":[3,0,2,10,1,0],
-"structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html#a92dc024aaf0c3b11b1bb1f0b15fbf4c2":[3,0,2,10,1,1],
-"structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html#a92dc024aaf0c3b11b1bb1f0b15fbf4c2":[2,0,3,14,1,1]
+"structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html#a7442ac8f4c37126d160b2b7c6c3a3bb9":[3,0,2,10,1,0]
 };

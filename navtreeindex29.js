@@ -1,5 +1,7 @@
 var NAVTREEINDEX29 =
 {
+"qfree_8hpp.html#ad6c6cf7c49c0131cdab6226c5dfc373d":[4,0,1,8,4,0],
+"qfree_8hpp.html#ad8dec3197fbcc4cb94523adba2b46e37":[4,0,1,8,4,5],
 "qfree_8hpp.html#adbf474d2e1b5de0ebe5a0be2820d69c7":[4,0,1,8,4,1],
 "qfree_8hpp_source.html":[4,0,1,8,4],
 "qlibrary_8cpp.html":[4,0,1,8,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX29 =
 "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a598e9eb03a50254c89f71e05f068841a":[3,0,2,3,3,14],
 "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a598e9eb03a50254c89f71e05f068841a":[2,0,3,3,3,14],
 "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a5da7b5c005a1108953e1298eff6e5762":[3,0,2,3,3,6],
-"structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a5da7b5c005a1108953e1298eff6e5762":[2,0,3,3,3,6],
-"structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a62037be1cb1f84122c01ea7f92d79b0e":[3,0,2,3,3,17],
-"structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a62037be1cb1f84122c01ea7f92d79b0e":[2,0,3,3,3,17]
+"structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a5da7b5c005a1108953e1298eff6e5762":[2,0,3,3,3,6]
 };

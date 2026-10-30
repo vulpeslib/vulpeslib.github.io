@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"structvulpes_1_1timeintegration_1_1ForwardEulerIMEX.html":[2,0,3,15,19],
+"structvulpes_1_1timeintegration_1_1ForwardEulerIMEX.html":[3,0,2,11,18],
 "structvulpes_1_1timeintegration_1_1ForwardEulerIMEX.html#a0380cb7619d6d3ea1e0230db6878a244":[3,0,2,11,18,5],
 "structvulpes_1_1timeintegration_1_1ForwardEulerIMEX.html#a0380cb7619d6d3ea1e0230db6878a244":[2,0,3,15,19,5],
 "structvulpes_1_1timeintegration_1_1ForwardEulerIMEX.html#a4c7ede20896947d7e6b7989c6ff95e9c":[3,0,2,11,18,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "structvulpes_1_1timeintegration_1_1RK4IMEX.html#a7cb77726c16747f4edb80a08e9f757e2":[2,0,3,15,34,1],
 "structvulpes_1_1timeintegration_1_1RK4IMEX.html#a7cb77726c16747f4edb80a08e9f757e2":[3,0,2,11,33,1],
 "structvulpes_1_1timeintegration_1_1RK4IMEX.html#a807135c1cf7bc6bd8586c7ecd5c880a6":[3,0,2,11,33,7],
-"structvulpes_1_1timeintegration_1_1RK4IMEX.html#a807135c1cf7bc6bd8586c7ecd5c880a6":[2,0,3,15,34,7],
-"structvulpes_1_1timeintegration_1_1RK4IMEX.html#aa49078a5fa25343e3db860d175bdfc24":[2,0,3,15,34,3],
-"structvulpes_1_1timeintegration_1_1RK4IMEX.html#aa49078a5fa25343e3db860d175bdfc24":[3,0,2,11,33,3]
+"structvulpes_1_1timeintegration_1_1RK4IMEX.html#a807135c1cf7bc6bd8586c7ecd5c880a6":[2,0,3,15,34,7]
 };

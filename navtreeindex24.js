@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"developers_guide_testing_and_coverage.html#autotoc_md170":[1,5,1],
+"developers_guide_workflows.html":[1,8],
 "developers_guide_workflows.html#autotoc_md171":[1,8,0],
 "developers_guide_workflows.html#autotoc_md172":[1,8,1],
 "dg__utils_8hpp.html":[4,0,1,0,1],
@@ -231,8 +233,8 @@ var NAVTREEINDEX24 =
 "functions_enum.html":[3,3,4],
 "functions_eval.html":[3,3,5],
 "functions_f.html":[3,3,0,6],
-"functions_func.html":[3,3,1],
 "functions_func.html":[3,3,1,0],
+"functions_func.html":[3,3,1],
 "functions_func_a.html":[3,3,1,1],
 "functions_func_b.html":[3,3,1,2],
 "functions_func_c.html":[3,3,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "functions_func_l.html":[3,3,1,12],
 "functions_func_m.html":[3,3,1,13],
 "functions_func_n.html":[3,3,1,14],
-"functions_func_o.html":[3,3,1,15],
-"functions_func_p.html":[3,3,1,16],
-"functions_func_q.html":[3,3,1,17]
+"functions_func_o.html":[3,3,1,15]
 };

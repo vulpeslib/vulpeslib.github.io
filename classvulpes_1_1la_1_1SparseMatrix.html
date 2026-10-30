@@ -233,8 +233,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed906da4b0555d4047e084166da1d5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a105b47450d818326bf67ea3e4d8840aa" id="r_a105b47450d818326bf67ea3e4d8840aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a105b47450d818326bf67ea3e4d8840aa">transposeMatMult</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;B, <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;C, MatReuse reuse=MAT_INITIAL_MATRIX, PetscReal fill=PETSC_DETERMINE) const</td></tr>
 <tr class="separator:a105b47450d818326bf67ea3e4d8840aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a7ad1d7bc0162d4e11d64f6f9481bff" id="r_a7a7ad1d7bc0162d4e11d64f6f9481bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a7a7ad1d7bc0162d4e11d64f6f9481bff">addScaledMatrix</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;other, PetscScalar scale, MatStructure str=UNKNOWN_NONZERO_PATTERN)</td></tr>
+<tr class="memitem:a7a7ad1d7bc0162d4e11d64f6f9481bff" id="r_a7a7ad1d7bc0162d4e11d64f6f9481bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a7a7ad1d7bc0162d4e11d64f6f9481bff">addScaledMatrix</a> (const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a> &amp;other, PetscScalar <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a1a4987fbbbd497950bc7b2fa5876cb91">scale</a>, MatStructure str=UNKNOWN_NONZERO_PATTERN)</td></tr>
 <tr class="separator:a7a7ad1d7bc0162d4e11d64f6f9481bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4987fbbbd497950bc7b2fa5876cb91" id="r_a1a4987fbbbd497950bc7b2fa5876cb91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a1a4987fbbbd497950bc7b2fa5876cb91">scale</a> (PetscScalar value)</td></tr>
+<tr class="memdesc:a1a4987fbbbd497950bc7b2fa5876cb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply all entries by a scalar, in place.  <br /></td></tr>
+<tr class="separator:a1a4987fbbbd497950bc7b2fa5876cb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab98c0a7df2d200286d590c2e4737e9a8" id="r_ab98c0a7df2d200286d590c2e4737e9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#ab98c0a7df2d200286d590c2e4737e9a8">pinDof</a> (PetscInt dof_idx, PetscScalar value=1.0)</td></tr>
 <tr class="memdesc:ab98c0a7df2d200286d590c2e4737e9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin a degree of freedom to enforce a constraint This performs symmetric elimination: sets row and column of the specified DOF to zero, except the diagonal which is set to 1.0. This removes a DOF from the system and is useful for enforcing Dirichlet BCs or removing null space (e.g., constant modes in periodic problems). The corresponding RHS entry should be set to the desired value.  <br /></td></tr>
 <tr class="separator:ab98c0a7df2d200286d590c2e4737e9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1648,6 +1651,26 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
+<a id="a1a4987fbbbd497950bc7b2fa5876cb91" name="a1a4987fbbbd497950bc7b2fa5876cb91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4987fbbbd497950bc7b2fa5876cb91">&#9670;&#160;</a></span>scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::SparseMatrix::scale </td>
+          <td>(</td>
+          <td class="paramtype">PetscScalar&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiply all entries by a scalar, in place. </p>
+
+</div>
+</div>
 <a id="accea9d1a8604072dd8c3b0e3de5aa70b" name="accea9d1a8604072dd8c3b0e3de5aa70b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accea9d1a8604072dd8c3b0e3de5aa70b">&#9670;&#160;</a></span>setMatrixSizes()</h2>
 
@@ -1946,7 +1969,7 @@ template&lt;typename DofHandler &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">SparseMatrix</a></li>
-    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:23:03 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

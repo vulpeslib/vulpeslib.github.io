@@ -43,6 +43,7 @@ var classvulpes_1_1la_1_1SparseMatrix =
     [ "print", "classvulpes_1_1la_1_1SparseMatrix.html#a9b01eebc30786b2e14701c7adf8a2c63", null ],
     [ "save", "classvulpes_1_1la_1_1SparseMatrix.html#a8fd0d2aa5bf7e9b80ec3fe850cf153ef", null ],
     [ "saveBinary", "classvulpes_1_1la_1_1SparseMatrix.html#ab09be3f823df41df6a9e5990b098f12f", null ],
+    [ "scale", "classvulpes_1_1la_1_1SparseMatrix.html#a1a4987fbbbd497950bc7b2fa5876cb91", null ],
     [ "setMatrixSizes", "classvulpes_1_1la_1_1SparseMatrix.html#accea9d1a8604072dd8c3b0e3de5aa70b", null ],
     [ "setNearNullSpace", "classvulpes_1_1la_1_1SparseMatrix.html#a35b5b3a40dabbb03c8050766f9baeebb", null ],
     [ "toEigenDense", "classvulpes_1_1la_1_1SparseMatrix.html#a2e24da77e87720f0ec35398d2c68ba12", null ],

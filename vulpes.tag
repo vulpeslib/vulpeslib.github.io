@@ -20460,6 +20460,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>scale</name>
+      <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
+      <anchor>a1a4987fbbbd497950bc7b2fa5876cb91</anchor>
+      <arglist>(PetscScalar value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>pinDof</name>
       <anchorfile>classvulpes_1_1la_1_1SparseMatrix.html</anchorfile>
       <anchor>ab98c0a7df2d200286d590c2e4737e9a8</anchor>
