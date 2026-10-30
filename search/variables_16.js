@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['w_0',['w',['../structvulpes_1_1timeintegration_1_1TRBDF2.html#a458f4dd830b787d0d0ec858b3cbb6f37',1,'vulpes::timeintegration::TRBDF2']]],
-  ['w_5fcycle_1',['w_cycle',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a3fcc0d6a6ba5f66d8a5fcd9033f1abf2',1,'vulpes::la::DataBoomerAMG']]],
-  ['weight_2',['weight',['../structvulpes_1_1qrule_1_1QuadraturePoint.html#aa41787c8c888564029774184bb80cea9',1,'vulpes::qrule::QuadraturePoint']]],
-  ['which_3',['which',['../structvulpes_1_1scipy_1_1RR__stack__item.html#a536a91b85ec19455ff5671b6a389018f',1,'vulpes::scipy::RR_stack_item']]]
+  ['v_0',['v',['../structvulpes_1_1scipy_1_1coo__entry.html#a7170935e029c21a019262ca35cab72c1',1,'vulpes::scipy::coo_entry']]],
+  ['value_1',['value',['../structvulpes_1_1datastructure_1_1internal_1_1StaticSelector.html#a40e89665d9cb5068f9aadd64a3f81376',1,'vulpes::datastructure::internal::StaticSelector::value'],['../structvulpes_1_1datastructure_1_1internal_1_1StaticSelector_3_01T_00_01true_00_01Default_01_4.html#ac47d17900e564abeb82759042cf6d9b8',1,'vulpes::datastructure::internal::StaticSelector&lt; T, true, Default &gt;::value']]],
+  ['vtx_5fper_5fface_2',['vtx_per_face',['../classvulpes_1_1geometry_1_1MeshBase.html#a5d79394ae49b19a34e8133b1987bf82e',1,'vulpes::geometry::MeshBase']]]
 ];

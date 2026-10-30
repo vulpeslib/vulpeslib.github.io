@@ -160,9 +160,12 @@ Functions</h2></td></tr>
 <tr class="separator:a3826656435a19ca632911e187101a335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a484729c4a7c5a2e6e07a4f912814520b" id="r_a484729c4a7c5a2e6e07a4f912814520b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1la.html#a484729c4a7c5a2e6e07a4f912814520b">dot</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;a, const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;b)</td></tr>
 <tr class="separator:a484729c4a7c5a2e6e07a4f912814520b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792a504cc46b5de987de2422c3322ca1" id="r_a792a504cc46b5de987de2422c3322ca1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1la.html#a792a504cc46b5de987de2422c3322ca1">extractComponent</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;blocked_vec, std::size_t f, <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;comp)</td></tr>
+<tr class="memdesc:a792a504cc46b5de987de2422c3322ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract one scalar component from a blocked vector into an existing scalar vector (owned entries; ghost entries untouched).  <br /></td></tr>
+<tr class="separator:a792a504cc46b5de987de2422c3322ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1a9631646b373a8f4ff3bb76b78ff9f" id="r_ad1a9631646b373a8f4ff3bb76b78ff9f"><td class="memTemplParams" colspan="2">template&lt;typename DofHandlerType &gt; </td></tr>
 <tr class="memitem:ad1a9631646b373a8f4ff3bb76b78ff9f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1la.html#ad1a9631646b373a8f4ff3bb76b78ff9f">extractComponent</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;blocked_vec, const DofHandlerType &amp;dof_handler, std::size_t f)</td></tr>
-<tr class="memdesc:ad1a9631646b373a8f4ff3bb76b78ff9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract one scalar component from a blocked vector.  <br /></td></tr>
+<tr class="memdesc:ad1a9631646b373a8f4ff3bb76b78ff9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract one scalar component from a blocked vector into a new vector.  <br /></td></tr>
 <tr class="separator:ad1a9631646b373a8f4ff3bb76b78ff9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca8380f6d8e4d324ed1483e3ce95e9a" id="r_aaca8380f6d8e4d324ed1483e3ce95e9a"><td class="memTemplParams" colspan="2">template&lt;std::size_t NFields, typename DofHandlerType &gt; </td></tr>
 <tr class="memitem:aaca8380f6d8e4d324ed1483e3ce95e9a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1la.html#aaca8380f6d8e4d324ed1483e3ce95e9a">extractAllComponents</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;blocked_vec, const DofHandlerType &amp;dof_handler)</td></tr>
@@ -394,7 +397,7 @@ template&lt;std::size_t NFields, typename DofHandlerType &gt; </div>
 </div>
 </div>
 <a id="ad1a9631646b373a8f4ff3bb76b78ff9f" name="ad1a9631646b373a8f4ff3bb76b78ff9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1a9631646b373a8f4ff3bb76b78ff9f">&#9670;&#160;</a></span>extractComponent()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a9631646b373a8f4ff3bb76b78ff9f">&#9670;&#160;</a></span>extractComponent() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,8 +438,7 @@ template&lt;typename DofHandlerType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Extract one scalar component from a blocked vector. </p>
-<p>Deduces the block size from the size ratio blocked/scalar and calls VecSetBlockSize before gathering, so this works even when blocked_vec was constructed without an explicit block size (e.g. from a size-only constructor such as an RK stage scratch vector). Symmetric counterpart to addComponent (which uses VecStrideScatter).</p>
+<p>Extract one scalar component from a blocked vector into a new vector. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">DofHandlerType</td><td>Type of the DOF handler used to build output vector </td></tr>
@@ -452,6 +454,59 @@ template&lt;typename DofHandlerType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Scalar vector containing component <code>f</code> of the blocked input </dd></dl>
+
+</div>
+</div>
+<a id="a792a504cc46b5de987de2422c3322ca1" name="a792a504cc46b5de987de2422c3322ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a792a504cc46b5de987de2422c3322ca1">&#9670;&#160;</a></span>extractComponent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::extractComponent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>blocked_vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extract one scalar component from a blocked vector into an existing scalar vector (owned entries; ghost entries untouched). </p>
+<p>Deduces the block size from the size ratio blocked/scalar and calls VecSetBlockSize before gathering, so this works even when blocked_vec was constructed without an explicit block size (e.g. from a size-only constructor such as an RK stage scratch vector). Symmetric counterpart to addComponent (which uses VecStrideScatter).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blocked_vec</td><td>Input blocked vector </td></tr>
+    <tr><td class="paramname">f</td><td>Component index to extract </td></tr>
+    <tr><td class="paramname">comp</td><td>Scalar vector receiving component <code>f</code> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -700,7 +755,7 @@ template&lt;std::size_t NFields&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

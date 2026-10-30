@@ -23,5 +23,6 @@ var classvulpes_1_1fe_1_1FeExpressionFeProjection =
     [ "m_dof_handler", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#a23cc22433795c36a59e1321046ed624f", null ],
     [ "m_evals", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#a4f5fde6ce45c51d07b9d2fb3137d2196", null ],
     [ "m_fe_space", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#a7ab2cf12109969f902e40911abdc65c5", null ],
-    [ "m_projection", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#acc18decfd8fa08a39a99e1b94ce6b199", null ]
+    [ "m_projection", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#acc18decfd8fa08a39a99e1b94ce6b199", null ],
+    [ "m_stamp", "classvulpes_1_1fe_1_1FeExpressionFeProjection.html#aa632e0498ab4560e00659fac2a0fdc38", null ]
 ];

@@ -9,7 +9,8 @@ var searchData=
   ['liftdimension_6',['liftdimension',['../classvulpes_1_1monomial_1_1Monomial.html#a4326407c592293eececabf9dcf5c1963',1,'vulpes::monomial::Monomial::liftDimension()'],['../classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6b22d4e4f358e4abad4c67bdba1a9206',1,'vulpes::polynomial::SparsePolynomial::liftDimension()'],['../namespacevulpes_1_1fe_1_1internal.html#a69e6589db41bd17ce0fd9cd98e489c15',1,'vulpes::fe::internal::liftDimension()']]],
   ['linearsolver_7',['linearsolver',['../classvulpes_1_1la_1_1LinearSolver.html#a0ecc24f106ebe2c1b7270c5aa1fddfa2',1,'vulpes::la::LinearSolver::LinearSolver(Type solver_type=CG, PrecondType pc_type=Jacobi)'],['../classvulpes_1_1la_1_1LinearSolver.html#ae51ec5b761b92a563dc60aa8e99c5945',1,'vulpes::la::LinearSolver::LinearSolver(const LinearSolver &amp;)=delete']]],
   ['loadmatrixfromfile_8',['loadMatrixFromFile',['../namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400',1,'vulpes::io']]],
-  ['loadvectorfromfile_9',['loadVectorFromFile',['../namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed',1,'vulpes::io']]],
-  ['localghostedindex_10',['localGhostedIndex',['../classvulpes_1_1dofs_1_1DofHandler.html#a04fa6aea2f083ef4f9ed5dc7da654a44',1,'vulpes::dofs::DofHandler']]],
-  ['localtoglobal_11',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]]
+  ['loadreferenceframe_9',['loadReferenceFrame',['../classvulpes_1_1fe_1_1FeValues.html#ac692a54cadb7087551e4c9f858456762',1,'vulpes::fe::FeValues']]],
+  ['loadvectorfromfile_10',['loadVectorFromFile',['../namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed',1,'vulpes::io']]],
+  ['localghostedindex_11',['localGhostedIndex',['../classvulpes_1_1dofs_1_1DofHandler.html#a04fa6aea2f083ef4f9ed5dc7da654a44',1,'vulpes::dofs::DofHandler']]],
+  ['localtoglobal_12',['localToGlobal',['../classvulpes_1_1geometry_1_1ParallelMesh.html#a02b5850973e335a9fceb02f095eee5c4',1,'vulpes::geometry::ParallelMesh']]]
 ];

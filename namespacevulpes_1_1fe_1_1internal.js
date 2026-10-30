@@ -1,5 +1,7 @@
 var namespacevulpes_1_1fe_1_1internal =
 [
+    [ "IsUnscaledSparsePolynomial", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial.html", null ],
+    [ "IsUnscaledSparsePolynomial< polynomial::SparsePolynomial< D, I, double, false > >", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial_3_01polynomial_1_1SparsePolynomial_47ef93cddb00879cf29a3200ecd17bba.html", null ],
     [ "LagrangianNodesPolicy", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy" ],
     [ "PolynomialTypeHelper", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper" ],
     [ "PolynomialTypeHelper< T, std::enable_if_t< std::is_same_v< T, void > > >", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331" ],

@@ -137,11 +137,11 @@ Using Callgrind</h2>
 3. Profiling with a the Profiler class</h1>
 <ul>
 <li><b>Start and Stop Methods</b>: The start method records the current time using <code>std::chrono::high_resolution_clock::now()</code> and associates it with a label. The stop method calculates the elapsed time since the corresponding start call and accumulates it in a time map. The profiler supports multiple measurements for the same label by accumulating the elapsed time, enabling you to profile code executed in loops or called multiple times. <div class="fragment"><div class="line"> ++</div>
-<div class="line"><a class="code hl_function" href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656">Profiler::start</a>(<span class="stringliteral">&quot;do-some-work&quot;</span>);</div>
+<div class="line"><a class="code hl_function" href="classProfiler.html#aefabc412e75c95a4674c428321cefe2b">Profiler::start</a>(<span class="stringliteral">&quot;do-some-work&quot;</span>);</div>
 <div class="line">doSomeWork();</div>
-<div class="line"><a class="code hl_function" href="classProfiler.html#a4a4e5bc7fe0a0d6423bf476ed42b9c17">Profiler::stop</a>(<span class="stringliteral">&quot;do-some-work&quot;</span>);</div>
-<div class="ttc" id="aclassProfiler_html_a4a4e5bc7fe0a0d6423bf476ed42b9c17"><div class="ttname"><a href="classProfiler.html#a4a4e5bc7fe0a0d6423bf476ed42b9c17">Profiler::stop</a></div><div class="ttdeci">static void stop(const std::string &amp;label)</div><div class="ttdoc">End timing a single interval for the specified label.</div><div class="ttdef"><b>Definition</b> profiler.cpp:56</div></div>
-<div class="ttc" id="aclassProfiler_html_a6b2985ecc576cd2aa31856d57374c656"><div class="ttname"><a href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656">Profiler::start</a></div><div class="ttdeci">static void start(const std::string &amp;label)</div><div class="ttdoc">Begin timing a single interval for the specified label.</div><div class="ttdef"><b>Definition</b> profiler.cpp:52</div></div>
+<div class="line"><a class="code hl_function" href="classProfiler.html#a669c6940f7acb9d588b8dc3ee17754b4">Profiler::stop</a>(<span class="stringliteral">&quot;do-some-work&quot;</span>);</div>
+<div class="ttc" id="aclassProfiler_html_a669c6940f7acb9d588b8dc3ee17754b4"><div class="ttname"><a href="classProfiler.html#a669c6940f7acb9d588b8dc3ee17754b4">Profiler::stop</a></div><div class="ttdeci">static void stop(const char *label)</div><div class="ttdoc">stop(label) when recording is on.</div><div class="ttdef"><b>Definition</b> profiler.hpp:90</div></div>
+<div class="ttc" id="aclassProfiler_html_aefabc412e75c95a4674c428321cefe2b"><div class="ttname"><a href="classProfiler.html#aefabc412e75c95a4674c428321cefe2b">Profiler::start</a></div><div class="ttdeci">static void start(const char *label)</div><div class="ttdoc">start(label) when recording is on.</div><div class="ttdef"><b>Definition</b> profiler.hpp:84</div></div>
 </div><!-- fragment --></li>
 <li>**<code>PROFILE</code> macro**: The <code>PROFILE</code> macro couples a <code>start</code> and <code>stop</code> with label the code passed as argument <div class="fragment"><div class="line"> ++</div>
 <div class="line"><a class="code hl_define" href="profiler_8hpp.html#a44a6ff9abeb62481d0ea902a7769bfc8">PROFILE</a>(doSomeWork());</div>
@@ -158,7 +158,7 @@ Using Callgrind</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="developers_guide.html">Developer&#39;s Guide</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

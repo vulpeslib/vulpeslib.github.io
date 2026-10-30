@@ -209,6 +209,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8eb074aff6005d839028635bbe5c7d3d" id="r_a8eb074aff6005d839028635bbe5c7d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a8eb074aff6005d839028635bbe5c7d3d">solve</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;b, <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;x)</td></tr>
 <tr class="memdesc:a8eb074aff6005d839028635bbe5c7d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the linear system Ax = b.  <br /></td></tr>
 <tr class="separator:a8eb074aff6005d839028635bbe5c7d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad864fa203aa3b3a007b89a5649a8640b" id="r_ad864fa203aa3b3a007b89a5649a8640b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#ad864fa203aa3b3a007b89a5649a8640b">applyPreconditioner</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;b, <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;x)</td></tr>
+<tr class="memdesc:ad864fa203aa3b3a007b89a5649a8640b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the preconditioner only, x = P^{-1} b: the result of <a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a8eb074aff6005d839028635bbe5c7d3d" title="Solve the linear system Ax = b.">solve()</a> for type PrecondOnly, without its collective convergence check. Aborts if this rank's preconditioner failed (e.g. a zero pivot).  <br /></td></tr>
+<tr class="separator:ad864fa203aa3b3a007b89a5649a8640b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1328fa138649881278065570bebc4f38" id="r_a1328fa138649881278065570bebc4f38"><td class="memItemLeft" align="right" valign="top">PetscInt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a1328fa138649881278065570bebc4f38">getIterationCount</a> ()</td></tr>
 <tr class="memdesc:a1328fa138649881278065570bebc4f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of iterations taken by the solver.  <br /></td></tr>
 <tr class="separator:a1328fa138649881278065570bebc4f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -396,6 +399,36 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad864fa203aa3b3a007b89a5649a8640b" name="ad864fa203aa3b3a007b89a5649a8640b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad864fa203aa3b3a007b89a5649a8640b">&#9670;&#160;</a></span>applyPreconditioner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::LinearSolver::applyPreconditioner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply the preconditioner only, x = P^{-1} b: the result of <a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a8eb074aff6005d839028635bbe5c7d3d" title="Solve the linear system Ax = b.">solve()</a> for type PrecondOnly, without its collective convergence check. Aborts if this rank's preconditioner failed (e.g. a zero pivot). </p>
+
+</div>
+</div>
 <a id="a08809b8322e5c151ebe4e3ec3f8d7e0e" name="a08809b8322e5c151ebe4e3ec3f8d7e0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08809b8322e5c151ebe4e3ec3f8d7e0e">&#9670;&#160;</a></span>getConvergenceReason()</h2>
 
@@ -1045,7 +1078,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1LinearSolver.html">LinearSolver</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

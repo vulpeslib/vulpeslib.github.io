@@ -118,6 +118,8 @@ $(document).ready(function(){initNavTree('functions_a.html',''); initResizable()
 <li>A_im&#160;:&#160;<a class="el" href="structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX.html#a1802b2ee99a833487e17278858998b4b">vulpes::timeintegration::AscherRuuthSpiteriLstable4IMEX</a>, <a class="el" href="structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html#aa49078a5fa25343e3db860d175bdfc24">vulpes::timeintegration::ButcherTableIMEX&lt; S &gt;</a>, <a class="el" href="structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX.html#a9e46a673c9f7283d98eef87d3271c4e6">vulpes::timeintegration::ForwardBackwardEulerIMEX</a>, <a class="el" href="structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html#a06e3650620ccab50041d829ed4f7959b">vulpes::timeintegration::ImplicitButcherIMEX&lt; PlainButcher &gt;</a>, <a class="el" href="structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html#a34e4fdf977a0533570a036303d2afe45">vulpes::timeintegration::ImplicitExplicitMidpointIMEX</a>, <a class="el" href="classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a2845b158d399166c644486d0ef0614ee">vulpes::timeintegration::TimeIntegratorDIRKIMEX&lt; ButcherTableType &gt;</a></li>
 <li>abs()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a49a35042f0ecc0ae4996325800ebf0c5">vulpes::la::Vector</a></li>
 <li>AcceleratedSIMD&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a53e9e1d2f6e563fd94e0e3ba5128d5caae6ca427ebde2f3c1bc32597a8768f640">vulpes::la::SparseMatrix</a></li>
+<li>accumulateGhostsBegin()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a5e7ed4a795a848ae047287aa532af753">vulpes::la::Vector</a></li>
+<li>accumulateGhostsEnd()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a498c1f0f26bdde76cb17065bc15e1618">vulpes::la::Vector</a></li>
 <li>add()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a456491ab379c1b4791e71b1a10d6b22b">vulpes::la::Vector</a>, <a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#a64ca52c8602c14baa2fc57e081260323">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
 <li>add_()&#160;:&#160;<a class="el" href="classvulpes_1_1polynomial_1_1Polynomial2D.html#a3c6875b6650a2ae25906b9e7342f3cf2">vulpes::polynomial::Polynomial2D&lt; T, IsSpaceP &gt;</a>, <a class="el" href="classvulpes_1_1polynomial_1_1Polynomial3D.html#a10605254a132be446b60358e4c0e0211">vulpes::polynomial::Polynomial3D&lt; T, IsSpaceP &gt;</a></li>
 <li>addCouple()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1Vector.html#a1bbc39557274ebcbd1ca4b90e99b769d">vulpes::la::Vector</a></li>
@@ -135,6 +137,7 @@ $(document).ready(function(){initNavTree('functions_a.html',''); initResizable()
 <li>allocateMatrix()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a2b3ae5bff5426b05029bfcc7d47df60e">vulpes::la::SparseMatrix</a></li>
 <li>applyBasisScaling()&#160;:&#160;<a class="el" href="classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html#a196c35e1397f737c2f6d9ebb27af5eac">vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</a></li>
 <li>applyCartesianMapping()&#160;:&#160;<a class="el" href="classvulpes_1_1polynomial_1_1SparsePolynomial.html#af6cf90c0ef5a86255de67e3e50197c2a">vulpes::polynomial::SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</a></li>
+<li>applyPreconditioner()&#160;:&#160;<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#ad864fa203aa3b3a007b89a5649a8640b">vulpes::la::LinearSolver</a></li>
 <li>applyRenumbering()&#160;:&#160;<a class="el" href="classvulpes_1_1dofs_1_1DofHandler.html#a6ab8b920c5f72735cb158dc7e0741c8f">vulpes::dofs::DofHandler&lt; MeshType &gt;</a></li>
 <li>area_relax&#160;:&#160;<a class="el" href="structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html#a9a22cb85e70e986d79f00f16ec8f7611">vulpes::geometry::vulpoly::VulPolyParams&lt; FloatType &gt;</a></li>
 <li>arena&#160;:&#160;<a class="el" href="structvulpes_1_1scipy_1_1nodeinfo__pool.html#aede4bf2b4ae1cb0de990531579a69591">vulpes::scipy::nodeinfo_pool&lt; m &gt;</a></li>
@@ -157,7 +160,7 @@ $(document).ready(function(){initNavTree('functions_a.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

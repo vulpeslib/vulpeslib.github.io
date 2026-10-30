@@ -117,7 +117,10 @@ $(document).ready(function(){initNavTree('fe__expr__unary_8hpp.html',''); initRe
   <div class="headertitle"><div class="title">fe_expr_unary.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="fe__expr__base_8hpp_source.html">vulpes/fe/fe_expressions/fe_expr_base.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="fe__expr__base_8hpp_source.html">vulpes/fe/fe_expressions/fe_expr_base.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pcout_8hpp_source.html">vulpes/utils/pcout.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fe_expr_unary.hpp:</div>
@@ -154,6 +157,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionAbs.html">vulpes::fe::FeExpressionAbs&lt; Dim, E &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html">vulpes::fe::FeExpressionQptsCache&lt; Dim, E &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of a coefficient expression (no test or trial function) stored at the quadrature points by <a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html#a00029c374bfb1b315a3b65847995ec2f">precompute()</a>, so that a form evaluates the coefficient once per point instead of once per (basis, point) pair. The stored values are those <a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html#a1f99e5f2dd74c73912549232952b79b3">evaluate()</a> of the wrapped expression returns.  <a href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -178,6 +184,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a89c6b603f00931f425dcda67f1392d11" id="r_a89c6b603f00931f425dcda67f1392d11"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a89c6b603f00931f425dcda67f1392d11"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionAbs.html">FeExpressionAbs</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a89c6b603f00931f425dcda67f1392d11">vulpes::fe::abs</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
 <tr class="separator:a89c6b603f00931f425dcda67f1392d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3443a144a4e468f13e4653d5381333e" id="r_af3443a144a4e468f13e4653d5381333e"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:af3443a144a4e468f13e4653d5381333e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html">FeExpressionQptsCache</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#af3443a144a4e468f13e4653d5381333e">vulpes::fe::cached</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:af3443a144a4e468f13e4653d5381333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient expression evaluated once per quadrature point (see <a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html" title="Values of a coefficient expression (no test or trial function) stored at the quadrature points by pre...">FeExpressionQptsCache</a>).  <br /></td></tr>
+<tr class="separator:af3443a144a4e468f13e4653d5381333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -186,7 +196,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_1d42be232f14d112552dcd34db4d5ceb.html">fe</a></li><li class="navelem"><a class="el" href="dir_e4477d1d4b20ed17436b601b368f7cb3.html">fe_expressions</a></li><li class="navelem"><a class="el" href="fe__expr__unary_8hpp.html">fe_expr_unary.hpp</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

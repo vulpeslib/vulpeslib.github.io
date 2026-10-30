@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['v_0',['v',['../structvulpes_1_1scipy_1_1coo__entry.html#a7170935e029c21a019262ca35cab72c1',1,'vulpes::scipy::coo_entry']]],
-  ['value_1',['value',['../structvulpes_1_1datastructure_1_1internal_1_1StaticSelector.html#a40e89665d9cb5068f9aadd64a3f81376',1,'vulpes::datastructure::internal::StaticSelector::value'],['../structvulpes_1_1datastructure_1_1internal_1_1StaticSelector_3_01T_00_01true_00_01Default_01_4.html#ac47d17900e564abeb82759042cf6d9b8',1,'vulpes::datastructure::internal::StaticSelector&lt; T, true, Default &gt;::value']]],
-  ['vtx_5fper_5fface_2',['vtx_per_face',['../classvulpes_1_1geometry_1_1MeshBase.html#a5d79394ae49b19a34e8133b1987bf82e',1,'vulpes::geometry::MeshBase']]]
+  ['undef_0',['undef',['../classvulpes_1_1geometry_1_1Mesh2D.html#a2135ea47d8d0186e63deda8664c4af26',1,'vulpes::geometry::Mesh2D::UNDEF'],['../classvulpes_1_1geometry_1_1MeshBase.html#ab7adf769acf684564c5d6e0919359fcf',1,'vulpes::geometry::MeshBase::UNDEF']]],
+  ['upper_5fbound_1',['upper_bound',['../structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#abd16d1ac55c1299821bb15dcb43063c7',1,'vulpes::scipy::RectRectDistanceTracker']]]
 ];

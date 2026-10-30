@@ -118,14 +118,20 @@ $(document).ready(function(){initNavTree('fe__values_8hpp.html',''); initResizab
   <div class="headertitle"><div class="title">fe_values.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;Eigen/Dense&gt;</code><br />
 <code>#include &quot;<a class="el" href="fe__space_8hpp_source.html">vulpes/fe/fe_space.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cell_8hpp_source.html">vulpes/geometry/cell.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mapping_8hpp_source.html">vulpes/geometry/mapping.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sparse__polynomial_8hpp_source.html">vulpes/polynomials/sparse_polynomial.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="qrule_8hpp_source.html">vulpes/quadrature/qrule.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vmath_8hpp_source.html">vulpes/utils/vmath.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fe_values.hpp:</div>
 <div class="dyncontent">
@@ -141,8 +147,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial.html">vulpes::fe::internal::IsUnscaledSparsePolynomial&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True for a double SparsePolynomial with unscaled monomials.  <a href="structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial_3_01polynomial_1_1SparsePolynomial_47ef93cddb00879cf29a3200ecd17bba.html">vulpes::fe::internal::IsUnscaledSparsePolynomial&lt; polynomial::SparsePolynomial&lt; D, I, double, false &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeValues.html">vulpes::fe::FeValues&lt; Dim &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class works as a cache table for computing efficiently the value of the basis function and its derivatives for each cell.  <a href="classvulpes_1_1fe_1_1FeValues.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html">vulpes::fe::FeValues&lt; Dim &gt;::ReferenceTables</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference-frame tables written by evalOnReferenceFrame.  <a href="structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -150,6 +164,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacevulpes" id="r_namespacevulpes"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes.html">vulpes</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevulpes_1_1fe" id="r_namespacevulpes_1_1fe"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html">vulpes::fe</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevulpes_1_1fe_1_1internal" id="r_namespacevulpes_1_1fe_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe_1_1internal.html">vulpes::fe::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -186,7 +202,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_35f1a0849d07b3f60f0d7ab29139efdc.html">vulpes</a></li><li class="navelem"><a class="el" href="dir_1d42be232f14d112552dcd34db4d5ceb.html">fe</a></li><li class="navelem"><a class="el" href="fe__values_8hpp.html">fe_values.hpp</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,9 @@
 var fe__values_8hpp =
 [
+    [ "vulpes::fe::internal::IsUnscaledSparsePolynomial< T >", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial.html", null ],
+    [ "vulpes::fe::internal::IsUnscaledSparsePolynomial< polynomial::SparsePolynomial< D, I, double, false > >", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial_3_01polynomial_1_1SparsePolynomial_47ef93cddb00879cf29a3200ecd17bba.html", null ],
     [ "vulpes::fe::FeValues< Dim >", "classvulpes_1_1fe_1_1FeValues.html", "classvulpes_1_1fe_1_1FeValues" ],
+    [ "vulpes::fe::FeValues< Dim >::ReferenceTables", "structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html", "structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables" ],
     [ "UpdateFlagsType", "fe__values_8hpp.html#a2ca0f7334f0292f04c1dd25339d65d21", null ],
     [ "UpdateFlags", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62f", [
       [ "UpdateNothing", "fe__values_8hpp.html#ac833b81cb5314629af970858c8e6b62fa42f5f9e73ecca69ea8877f0ef7db282a", null ],

@@ -209,6 +209,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac64f46909d4209596615b00c85c33364" id="r_ac64f46909d4209596615b00c85c33364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#ac64f46909d4209596615b00c85c33364">updateGhosts</a> ()</td></tr>
 <tr class="memdesc:ac64f46909d4209596615b00c85c33364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the ghost padding of a ghost-aware <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> (see <a class="el" href="classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d" title="Construct a ghost-aware Vector from a DofHandler. See the GhostTag constructor above for what this en...">createGhosted()</a>) from each ghost dof's owning rank. Collective; call after writing new values, before reading any ghost value via <a class="el" href="classvulpes_1_1la_1_1Vector.html#a9eea0f90d4af2454e970a3d1209f288b" title="Local-form snapshot of a ghost-aware Vector (see createGhosted()): this rank&#39;s owned dofs first ([0,...">toLocalGhostedEigenVector()</a>. Only valid on a <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> built via <a class="el" href="classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d" title="Construct a ghost-aware Vector from a DofHandler. See the GhostTag constructor above for what this en...">createGhosted()</a>.  <br /></td></tr>
 <tr class="separator:ac64f46909d4209596615b00c85c33364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71dbd0cf27362d7a07dc9cbc5d6c3546" id="r_a71dbd0cf27362d7a07dc9cbc5d6c3546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a71dbd0cf27362d7a07dc9cbc5d6c3546">updateGhostsBegin</a> ()</td></tr>
+<tr class="memdesc:a71dbd0cf27362d7a07dc9cbc5d6c3546"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvulpes_1_1la_1_1Vector.html#ac64f46909d4209596615b00c85c33364" title="Refresh the ghost padding of a ghost-aware Vector (see createGhosted()) from each ghost dof&#39;s owning ...">updateGhosts()</a> split in two, so that the exchanges of several vectors overlap: begin all of them, then end all of them.  <br /></td></tr>
+<tr class="separator:a71dbd0cf27362d7a07dc9cbc5d6c3546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4ca6d026944a03d684aa8bf67a55f0" id="r_afb4ca6d026944a03d684aa8bf67a55f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#afb4ca6d026944a03d684aa8bf67a55f0">updateGhostsEnd</a> ()</td></tr>
+<tr class="separator:afb4ca6d026944a03d684aa8bf67a55f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7ed4a795a848ae047287aa532af753" id="r_a5e7ed4a795a848ae047287aa532af753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a5e7ed4a795a848ae047287aa532af753">accumulateGhostsBegin</a> ()</td></tr>
+<tr class="memdesc:a5e7ed4a795a848ae047287aa532af753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the ghost entries of the local form (see <a class="el" href="classvulpes_1_1la_1_1Vector.html#a102635aa5fc0e8a14d264585ff037370" title="Writable view of the local form of a ghost-aware Vector (owned dofs, then ghost dofs,...">getLocalGhostedView()</a>) into the entries of their owning ranks, the reverse of <a class="el" href="classvulpes_1_1la_1_1Vector.html#ac64f46909d4209596615b00c85c33364" title="Refresh the ghost padding of a ghost-aware Vector (see createGhosted()) from each ghost dof&#39;s owning ...">updateGhosts()</a>. Collective; split as updateGhostsBegin/End. The ghost entries keep their values: zero them before the next sum.  <br /></td></tr>
+<tr class="separator:a5e7ed4a795a848ae047287aa532af753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498c1f0f26bdde76cb17065bc15e1618" id="r_a498c1f0f26bdde76cb17065bc15e1618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a498c1f0f26bdde76cb17065bc15e1618">accumulateGhostsEnd</a> ()</td></tr>
+<tr class="separator:a498c1f0f26bdde76cb17065bc15e1618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102635aa5fc0e8a14d264585ff037370" id="r_a102635aa5fc0e8a14d264585ff037370"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a102635aa5fc0e8a14d264585ff037370">getLocalGhostedView</a> ()</td></tr>
+<tr class="memdesc:a102635aa5fc0e8a14d264585ff037370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writable view of the local form of a ghost-aware <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> (owned dofs, then ghost dofs, indexed by DofHandler::localGhostedIndex()). Valid until <a class="el" href="classvulpes_1_1la_1_1Vector.html#af32927c45fc30965af212c2b28257857">restoreLocalGhostedView()</a>, which must be called before any other use of the <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a>.  <br /></td></tr>
+<tr class="separator:a102635aa5fc0e8a14d264585ff037370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32927c45fc30965af212c2b28257857" id="r_af32927c45fc30965af212c2b28257857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#af32927c45fc30965af212c2b28257857">restoreLocalGhostedView</a> ()</td></tr>
+<tr class="separator:af32927c45fc30965af212c2b28257857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eea0f90d4af2454e970a3d1209f288b" id="r_a9eea0f90d4af2454e970a3d1209f288b"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a9eea0f90d4af2454e970a3d1209f288b">toLocalGhostedEigenVector</a> () const</td></tr>
 <tr class="memdesc:a9eea0f90d4af2454e970a3d1209f288b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local-form snapshot of a ghost-aware <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> (see <a class="el" href="classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d" title="Construct a ghost-aware Vector from a DofHandler. See the GhostTag constructor above for what this en...">createGhosted()</a>): this rank's owned dofs first ([0, n_owned)), then its ghost dofs in DofHandler::getGhostDofs() order ([n_owned, n_owned + n_ghost)). Use DofHandler::localGhostedIndex(global_dof_id) to index into it rather than hand-rolling ownership-range arithmetic against a global dof id &ndash; doing that by hand for a <em>ghost</em> dof is exactly the bug this class exists to remove (a global dof id belonging to another rank is not a valid index into <a class="el" href="classvulpes_1_1la_1_1Vector.html#adcaab34f10d4e563da8d0365efcd7f11" title="Convert the locally-owned vector entries to an Eigen map (same as toLocalEigenMap())">toEigenMap()</a>/toLocalEigenMap()). The ghost segment is only current immediately after <a class="el" href="classvulpes_1_1la_1_1Vector.html#ac64f46909d4209596615b00c85c33364" title="Refresh the ghost padding of a ghost-aware Vector (see createGhosted()) from each ghost dof&#39;s owning ...">updateGhosts()</a>; nothing invalidates it automatically on a subsequent write. Only valid on a <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> built via <a class="el" href="classvulpes_1_1la_1_1Vector.html#af17172df4b4543f0b17a694c95fcf62d" title="Construct a ghost-aware Vector from a DofHandler. See the GhostTag constructor above for what this en...">createGhosted()</a>.  <br /></td></tr>
 <tr class="separator:a9eea0f90d4af2454e970a3d1209f288b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,6 +309,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ac784a7878eb34c4cdb14ffd503cdcb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e670b4c989e73bb7097b40b4b91e59" id="r_af7e670b4c989e73bb7097b40b4b91e59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#af7e670b4c989e73bb7097b40b4b91e59">m_is_ghosted</a> = false</td></tr>
 <tr class="separator:af7e670b4c989e73bb7097b40b4b91e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c79af4bd74c64a9466f294f77f6b5fa" id="r_a9c79af4bd74c64a9466f294f77f6b5fa"><td class="memItemLeft" align="right" valign="top">Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a9c79af4bd74c64a9466f294f77f6b5fa">m_local_form</a> = nullptr</td></tr>
+<tr class="separator:a9c79af4bd74c64a9466f294f77f6b5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1668a6b92032f7a434f21a4f4c332fe7" id="r_a1668a6b92032f7a434f21a4f4c332fe7"><td class="memItemLeft" align="right" valign="top">PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1la_1_1Vector.html#a1668a6b92032f7a434f21a4f4c332fe7">m_local_array</a> = nullptr</td></tr>
+<tr class="separator:a1668a6b92032f7a434f21a4f4c332fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper around PETSc Vec for distributed vectors. </p>
@@ -461,6 +480,42 @@ template&lt;typename DofHandler &gt; </div>
 </div><div class="memdoc">
 
 <p>Replaces each component of a vector by its absolute value. </p>
+
+</div>
+</div>
+<a id="a5e7ed4a795a848ae047287aa532af753" name="a5e7ed4a795a848ae047287aa532af753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7ed4a795a848ae047287aa532af753">&#9670;&#160;</a></span>accumulateGhostsBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::Vector::accumulateGhostsBegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add the ghost entries of the local form (see <a class="el" href="classvulpes_1_1la_1_1Vector.html#a102635aa5fc0e8a14d264585ff037370" title="Writable view of the local form of a ghost-aware Vector (owned dofs, then ghost dofs,...">getLocalGhostedView()</a>) into the entries of their owning ranks, the reverse of <a class="el" href="classvulpes_1_1la_1_1Vector.html#ac64f46909d4209596615b00c85c33364" title="Refresh the ghost padding of a ghost-aware Vector (see createGhosted()) from each ghost dof&#39;s owning ...">updateGhosts()</a>. Collective; split as updateGhostsBegin/End. The ghost entries keep their values: zero them before the next sum. </p>
+
+</div>
+</div>
+<a id="a498c1f0f26bdde76cb17065bc15e1618" name="a498c1f0f26bdde76cb17065bc15e1618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498c1f0f26bdde76cb17065bc15e1618">&#9670;&#160;</a></span>accumulateGhostsEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::Vector::accumulateGhostsEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -826,6 +881,25 @@ template&lt;typename DofHandler &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the block size of the vector. </p>
+
+</div>
+</div>
+<a id="a102635aa5fc0e8a14d264585ff037370" name="a102635aa5fc0e8a14d264585ff037370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102635aa5fc0e8a14d264585ff037370">&#9670;&#160;</a></span>getLocalGhostedView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Map&lt; Eigen::VectorXd &gt; vulpes::la::Vector::getLocalGhostedView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writable view of the local form of a ghost-aware <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a> (owned dofs, then ghost dofs, indexed by DofHandler::localGhostedIndex()). Valid until <a class="el" href="classvulpes_1_1la_1_1Vector.html#af32927c45fc30965af212c2b28257857">restoreLocalGhostedView()</a>, which must be called before any other use of the <a class="el" href="classvulpes_1_1la_1_1Vector.html" title="A wrapper around PETSc Vec for distributed vectors.">Vector</a>. </p>
 
 </div>
 </div>
@@ -1344,6 +1418,23 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
+<a id="af32927c45fc30965af212c2b28257857" name="af32927c45fc30965af212c2b28257857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32927c45fc30965af212c2b28257857">&#9670;&#160;</a></span>restoreLocalGhostedView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::Vector::restoreLocalGhostedView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0d930dca8d068008861a95510c94b781" name="a0d930dca8d068008861a95510c94b781"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d930dca8d068008861a95510c94b781">&#9670;&#160;</a></span>save()</h2>
 
@@ -1643,6 +1734,42 @@ template&lt;typename DofHandler &gt; </div>
 
 </div>
 </div>
+<a id="a71dbd0cf27362d7a07dc9cbc5d6c3546" name="a71dbd0cf27362d7a07dc9cbc5d6c3546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71dbd0cf27362d7a07dc9cbc5d6c3546">&#9670;&#160;</a></span>updateGhostsBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::Vector::updateGhostsBegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classvulpes_1_1la_1_1Vector.html#ac64f46909d4209596615b00c85c33364" title="Refresh the ghost padding of a ghost-aware Vector (see createGhosted()) from each ghost dof&#39;s owning ...">updateGhosts()</a> split in two, so that the exchanges of several vectors overlap: begin all of them, then end all of them. </p>
+
+</div>
+</div>
+<a id="afb4ca6d026944a03d684aa8bf67a55f0" name="afb4ca6d026944a03d684aa8bf67a55f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4ca6d026944a03d684aa8bf67a55f0">&#9670;&#160;</a></span>updateGhostsEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::la::Vector::updateGhostsEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4f580b91660e2e9d11648f80053c4c4c" name="a4f580b91660e2e9d11648f80053c4c4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f580b91660e2e9d11648f80053c4c4c">&#9670;&#160;</a></span>zero()</h2>
 
@@ -1674,6 +1801,50 @@ template&lt;typename DofHandler &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool vulpes::la::Vector::m_is_ghosted = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1668a6b92032f7a434f21a4f4c332fe7" name="a1668a6b92032f7a434f21a4f4c332fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1668a6b92032f7a434f21a4f4c332fe7">&#9670;&#160;</a></span>m_local_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PetscScalar* vulpes::la::Vector::m_local_array = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c79af4bd74c64a9466f294f77f6b5fa" name="a9c79af4bd74c64a9466f294f77f6b5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c79af4bd74c64a9466f294f77f6b5fa">&#9670;&#160;</a></span>m_local_form</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vec vulpes::la::Vector::m_local_form = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1718,7 +1889,7 @@ template&lt;typename DofHandler &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="classvulpes_1_1la_1_1Vector.html">Vector</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:06 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -203,6 +203,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionProduct.html">FeExpressionProduct</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html">FeExpressionQptsCache</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of a coefficient expression (no test or trial function) stored at the quadrature points by <a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html#a00029c374bfb1b315a3b65847995ec2f">precompute()</a>, so that a form evaluates the coefficient once per point instead of once per (basis, point) pair. The stored values are those <a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html#a1f99e5f2dd74c73912549232952b79b3">evaluate()</a> of the wrapped expression returns.  <a href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionScale.html">FeExpressionScale</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply an FE expression by a scalar constant at every quadrature point.  <a href="classvulpes_1_1fe_1_1FeExpressionScale.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -435,6 +438,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a89c6b603f00931f425dcda67f1392d11" id="r_a89c6b603f00931f425dcda67f1392d11"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
 <tr class="memitem:a89c6b603f00931f425dcda67f1392d11"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionAbs.html">FeExpressionAbs</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#a89c6b603f00931f425dcda67f1392d11">abs</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
 <tr class="separator:a89c6b603f00931f425dcda67f1392d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3443a144a4e468f13e4653d5381333e" id="r_af3443a144a4e468f13e4653d5381333e"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename E &gt; </td></tr>
+<tr class="memitem:af3443a144a4e468f13e4653d5381333e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html">FeExpressionQptsCache</a>&lt; Dim, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#af3443a144a4e468f13e4653d5381333e">cached</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;e)</td></tr>
+<tr class="memdesc:af3443a144a4e468f13e4653d5381333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient expression evaluated once per quadrature point (see <a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html" title="Values of a coefficient expression (no test or trial function) stored at the quadrature points by pre...">FeExpressionQptsCache</a>).  <br /></td></tr>
+<tr class="separator:af3443a144a4e468f13e4653d5381333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01f9dbb02de00e7a93bc8e11c1bbfeb" id="r_ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="memTemplParams" colspan="2">template&lt;std::size_t Dim, typename FuncExpr , std::size_t IndexBegin, std::size_t IndexEnd, typename FeSpace &gt; </td></tr>
 <tr class="memitem:ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevulpes_1_1fe.html#ac01f9dbb02de00e7a93bc8e11c1bbfeb">grad_contr</a> (const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, FuncExpr &gt; &amp;func, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradFunc.html">FeExpressionGradFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, true &gt; &amp;, const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionFunc.html">FeExpressionFunc</a>&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;u)</td></tr>
 <tr class="memdesc:ac01f9dbb02de00e7a93bc8e11c1bbfeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="classvulpes_1_1fe_1_1FeExpressionGradContr.html" title="General bilinear expression: diagonal sum over component blocks (I == J only). Two forms selected by ...">FeExpressionGradContr</a> with gradient on TEST (default, GradOnTest=true).  <br /></td></tr>
@@ -822,6 +829,28 @@ template&lt;std::size_t Dim, typename E &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3443a144a4e468f13e4653d5381333e" name="af3443a144a4e468f13e4653d5381333e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3443a144a4e468f13e4653d5381333e">&#9670;&#160;</a></span>cached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html">FeExpressionQptsCache</a>&lt; Dim, E &gt; vulpes::fe::cached </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1fe_1_1FeExpressionBase.html">FeExpressionBase</a>&lt; Dim, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Coefficient expression evaluated once per quadrature point (see <a class="el" href="classvulpes_1_1fe_1_1FeExpressionQptsCache.html" title="Values of a coefficient expression (no test or trial function) stored at the quadrature points by pre...">FeExpressionQptsCache</a>). </p>
 
 </div>
 </div>
@@ -1957,7 +1986,7 @@ template&lt;std::size_t IndexBegin, std::size_t IndexEnd, std::size_t Dim, typen
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1fe.html">fe</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

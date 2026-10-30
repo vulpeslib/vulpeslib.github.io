@@ -159,6 +159,7 @@
     <includes id="simplexify_8hpp" name="simplexify.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/simplexify.hpp</includes>
     <includes id="qlibrary_8hpp" name="qlibrary.hpp" local="yes" import="no" module="no" objc="no">vulpes/quadrature/qlibrary.hpp</includes>
     <class kind="class">vulpes::assemble::WeakFormIntegratorSimplexify</class>
+    <class kind="struct">vulpes::assemble::WeakFormIntegratorSimplexify::CellCache</class>
     <class kind="class">vulpes::assemble::ScalarExpressionIntegrator</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::assemble</namespace>
@@ -497,6 +498,7 @@
     <class kind="struct">vulpes::fe::FeExpressionSpatialComponent::FsTypeOf&lt; T, std::void_t&lt; typename T::FeSpaceType &gt; &gt;</class>
     <class kind="class">vulpes::fe::FeExpressionDiagOnly</class>
     <class kind="class">vulpes::fe::FeExpressionAbs</class>
+    <class kind="class">vulpes::fe::FeExpressionQptsCache</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::fe</namespace>
   </compound>
@@ -597,10 +599,16 @@
     <includes id="fe__space_8hpp" name="fe_space.hpp" local="yes" import="no" module="no" objc="no">vulpes/fe/fe_space.hpp</includes>
     <includes id="cell_8hpp" name="cell.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/cell.hpp</includes>
     <includes id="mapping_8hpp" name="mapping.hpp" local="yes" import="no" module="no" objc="no">vulpes/geometry/mapping.hpp</includes>
+    <includes id="sparse__polynomial_8hpp" name="sparse_polynomial.hpp" local="yes" import="no" module="no" objc="no">vulpes/polynomials/sparse_polynomial.hpp</includes>
     <includes id="qrule_8hpp" name="qrule.hpp" local="yes" import="no" module="no" objc="no">vulpes/quadrature/qrule.hpp</includes>
+    <includes id="vmath_8hpp" name="vmath.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/vmath.hpp</includes>
+    <class kind="struct">vulpes::fe::internal::IsUnscaledSparsePolynomial</class>
+    <class kind="struct">vulpes::fe::internal::IsUnscaledSparsePolynomial&lt; polynomial::SparsePolynomial&lt; D, I, double, false &gt; &gt;</class>
     <class kind="class">vulpes::fe::FeValues</class>
+    <class kind="struct">vulpes::fe::FeValues::ReferenceTables</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::fe</namespace>
+    <namespace>vulpes::fe::internal</namespace>
   </compound>
   <compound kind="file">
     <name>abs_agg_model.cpp</name>
@@ -2376,6 +2384,41 @@
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
+      <name>setEnabled</name>
+      <anchorfile>classProfiler.html</anchorfile>
+      <anchor>ae8cb2f0d8599889d0256f41698f7a4af</anchor>
+      <arglist>(bool enabled)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>start</name>
+      <anchorfile>classProfiler.html</anchorfile>
+      <anchor>aefabc412e75c95a4674c428321cefe2b</anchor>
+      <arglist>(const char *label)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>stop</name>
+      <anchorfile>classProfiler.html</anchorfile>
+      <anchor>a669c6940f7acb9d588b8dc3ee17754b4</anchor>
+      <arglist>(const char *label)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>startInterval</name>
+      <anchorfile>classProfiler.html</anchorfile>
+      <anchor>a504bbca879a628f38bf89a04f73345df</anchor>
+      <arglist>(const char *label)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>stopInterval</name>
+      <anchorfile>classProfiler.html</anchorfile>
+      <anchor>a7ab6851e2d5eff954f5bc8755ca129e0</anchor>
+      <arglist>(const char *label)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>start</name>
       <anchorfile>classProfiler.html</anchorfile>
       <anchor>a6b2985ecc576cd2aa31856d57374c656</anchor>
@@ -2429,6 +2472,13 @@
       <anchorfile>classProfiler.html</anchorfile>
       <anchor>a5cbba38c6c58687795622df900669041</anchor>
       <arglist>(const std::string &amp;label)</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static bool</type>
+      <name>s_enabled</name>
+      <anchorfile>classProfiler.html</anchorfile>
+      <anchor>a1290d4c7ad08951bdceff46228e29538</anchor>
+      <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static std::unordered_map&lt; std::string, TimeCounter &gt;</type>
@@ -4211,6 +4261,7 @@
     <templarg>typename FeExpressionTuple</templarg>
     <templarg>typename FeExpressionFaceTuple</templarg>
     <base>vulpes::assemble::WeakFormIntegratorBase</base>
+    <class kind="struct">vulpes::assemble::WeakFormIntegratorSimplexify::CellCache</class>
     <member kind="typedef">
       <type>typename MeshType::index_t</type>
       <name>index_t</name>
@@ -4287,6 +4338,13 @@
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
       <anchor>a66cc66bc9b71ad48a367ff72e2726ea8</anchor>
       <arglist>(index_t cell_id) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCellCache</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
+      <anchor>a80807237241d5c89fb893be1ea55f22a</anchor>
+      <arglist>(bool enable)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -4472,6 +4530,13 @@
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
+      <name>evalReferenceFrame</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
+      <anchor>aaae5b9b000390677b55c3965ba5b1840</anchor>
+      <arglist>(fe::FeValues&lt; dim &gt; &amp;fe_values, const QRule &amp;qrule)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
       <name>mapQuadraturePointsToSimplex</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
       <anchor>a959be81d802dcfee02c152e67324bf10</anchor>
@@ -4497,6 +4562,34 @@
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
       <anchor>a5a5212724b51db6f893e0c9cce52330c</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>m_cell_cache_enabled</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
+      <anchor>a6af5f5abe8cf5f22e52e9e8d444b56b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::vector&lt; CellCache &gt;</type>
+      <name>m_cell_cache</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
+      <anchor>a8b8ebd98001ba5f5ae057c64ec33c6e3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CellCache *</type>
+      <name>m_curr_cache</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
+      <anchor>aff12bfefb59a6f8bd40af6d61fae2a38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::size_t</type>
+      <name>m_table_slot</name>
+      <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
+      <anchor>ae68162ef97ba5a954c0d465a0869f1b6</anchor>
+      <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>std::shared_ptr&lt; qrule::QuadratureRule&lt; double, dim &gt; &gt;</type>
@@ -4692,6 +4785,24 @@
       <name>m_mapping</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
       <anchor>ae8c5734cd99baf571bbac483205c3f50</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::assemble::WeakFormIntegratorSimplexify::CellCache</name>
+    <filename>structvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify_1_1CellCache.html</filename>
+    <member kind="variable">
+      <type>std::unique_ptr&lt; geometry::Simplexify&lt; dim &gt; &gt;</type>
+      <name>simplexification</name>
+      <anchorfile>structvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify_1_1CellCache.html</anchorfile>
+      <anchor>a88198cdcce7cdd0603726223b44c2633</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::vector&lt; typename fe::FeValues&lt; dim &gt;::ReferenceTables &gt;</type>
+      <name>tables</name>
+      <anchorfile>structvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify_1_1CellCache.html</anchorfile>
+      <anchor>af083ffe1e8dde7aae3ec377faa6e5e44</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8566,6 +8677,13 @@
       <anchor>a4f5fde6ce45c51d07b9d2fb3137d2196</anchor>
       <arglist></arglist>
     </member>
+    <member kind="variable" protection="protected">
+      <type>std::uint64_t</type>
+      <name>m_stamp</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionFeProjection.html</anchorfile>
+      <anchor>aa632e0498ab4560e00659fac2a0fdc38</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>vulpes::fe::FeExpressionFieldComponent</name>
@@ -10494,6 +10612,153 @@
       <name>m_v</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionProduct.html</anchorfile>
       <anchor>a19134b49581b941aa2ab3835b4036d7c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>vulpes::fe::FeExpressionQptsCache</name>
+    <filename>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</filename>
+    <templarg>std::size_t Dim</templarg>
+    <templarg>typename E</templarg>
+    <base>FeExpressionBase&lt; Dim, FeExpressionQptsCache&lt; Dim, E &gt; &gt;</base>
+    <member kind="typedef">
+      <type>std::decay_t&lt; decltype(std::declval&lt; const E &amp; &gt;().evaluate(std::declval&lt; const FeValues&lt; Dim &gt; &amp; &gt;(), 0, 0, 0))&gt;</type>
+      <name>EvalType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a3d99ab605547f73bf91ae8787515739b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename decltype([] { if constexpr(std::is_arithmetic_v&lt; EvalType &gt;) { return std::type_identity&lt; EvalType &gt;{}</type>
+      <name>OutputType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a344ce9786af80d6138ff68e37d2c07d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void</type>
+      <name>FeSpaceType</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>aba0b18cd54e491637f9cbbb0d8ee4660</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FeExpressionQptsCache</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a514273710e768d46aa94e6f74d714d1b</anchor>
+      <arglist>(const E &amp;expr)</arglist>
+    </member>
+    <member kind="function">
+      <type>const OutputType &amp;</type>
+      <name>evaluate</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a1f99e5f2dd74c73912549232952b79b3</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;, std::size_t, std::size_t, std::size_t q) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr UpdateFlagsType</type>
+      <name>computeUpdateFlags</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a71d276ce29ecd207d083e0b863fac6a5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::size_t</type>
+      <name>computeOrder</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>aacfdd2c0de07d01d5e96f37a8d20d23b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePoly</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a274186faf5653723c97d9ae135b73f2d</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, std::size_t j, std::size_t i, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>evaluatePolyCoef</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>ac5784c0d9f72ff68f4d6178bf4663479</anchor>
+      <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>precompute</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a00029c374bfb1b315a3b65847995ec2f</anchor>
+      <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr const auto &amp;</type>
+      <name>feSpace</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>af0333705ad7416bd31da37eb47dd3491</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionQptsCache&lt; Dim, E &gt; &gt;</type>
+      <name>operator-</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>aa194506aca4e759376e053023687b62b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>else</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a421c718e306581a094d64f3f218cd394</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr bool</type>
+      <name>is_leaf</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a00bc567f6005c1bcf553fc9980e937f5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr uint8_t</type>
+      <name>is_bilinear</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a631c14db4e1a4715bdffb0c84ac6aedb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_begin</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>a2ea9e3bdcbdc3dd7835c64ac607e30be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>k_index_end</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>a6482f4e05433e454afd3bfb876f7ac37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const FeExpressionQptsCache&lt; Dim, E &gt; &amp;</type>
+      <name>self</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
+      <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::conditional_t&lt; E::is_leaf, const E &amp;, const E &gt;</type>
+      <name>m_expr</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>aed40d55b38eecec702b7588ec296b6d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::vector&lt; OutputType &gt;</type>
+      <name>m_values</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
+      <anchor>a68b243b62b3925d44e579af6c9a62cf2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -12700,6 +12965,7 @@
     <name>vulpes::fe::FeValues</name>
     <filename>classvulpes_1_1fe_1_1FeValues.html</filename>
     <templarg>std::size_t Dim</templarg>
+    <class kind="struct">vulpes::fe::FeValues::ReferenceTables</class>
     <member kind="typedef">
       <type>double</type>
       <name>real_t</name>
@@ -12820,6 +13086,20 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>constexpr std::uint64_t</type>
+      <name>stamp</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>a1535ccb56466a3c7320e890c6507123e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setStampEnabled</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>ae7ba328b366b0344c8505691d7196503</anchor>
+      <arglist>(bool enabled)</arglist>
+    </member>
+    <member kind="function">
       <type>constexpr const Eigen::Vector&lt; real_t, Dim &gt; &amp;</type>
       <name>getFaceNormal</name>
       <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
@@ -12898,6 +13178,20 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>saveReferenceFrame</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>a933d47b57bbc31f92febd428c7f17c40</anchor>
+      <arglist>(ReferenceTables &amp;tables) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>loadReferenceFrame</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>ac692a54cadb7087551e4c9f858456762</anchor>
+      <arglist>(const ReferenceTables &amp;tables)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>evalAndApplyMapping</name>
       <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
       <anchor>afad6d795a5d05440b8967421a6e04b42</anchor>
@@ -12923,6 +13217,27 @@
       <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
       <anchor>a1d436a476ec7d53f97cf5c582f34350f</anchor>
       <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>resizeTables</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>a219f139bdc71970745f0321a4be6c74b</anchor>
+      <arglist>(int64_t basis_size, int64_t nodes_size)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>evalSparseBasis</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>a9f070b64819ae3a4b5f0f3401d0b59a3</anchor>
+      <arglist>(const std::vector&lt; Polynomial &gt; &amp;basis, const qrule::QuadratureRule&lt; FloatType, Dim &gt; &amp;qrule)</arglist>
+    </member>
+    <member kind="function" protection="protected" static="yes">
+      <type>static std::uint64_t</type>
+      <name>nextStamp</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>ad6241d91ea1ae3eb3d3443c6e3a213e5</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>FeValuesScalar</type>
@@ -13023,12 +13338,83 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>std::uint64_t</type>
+      <name>m_stamp</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>a582452e756263b8588f60844a4e45cf1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>m_stamp_enabled</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>a80833794160c971e07d8b6668c6b3abf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::vector&lt; double &gt;</type>
+      <name>m_pow_table</name>
+      <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
+      <anchor>a3bf18107daf7b6554fb210ed8f41a5c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>std::unique_ptr&lt; FeValues&lt; Dim &gt; &gt;</type>
       <name>m_fe_values_neigh</name>
       <anchorfile>classvulpes_1_1fe_1_1FeValues.html</anchorfile>
       <anchor>ac9e29d8fd65a0c7b4f57c11edc2d2969</anchor>
       <arglist></arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::fe::FeValues::ReferenceTables</name>
+    <filename>structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html</filename>
+    <member kind="variable">
+      <type>FeValuesScalar</type>
+      <name>shapes</name>
+      <anchorfile>structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html</anchorfile>
+      <anchor>a8493dfeaa8d1263f02dafbbe93ba3615</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>FeValuesGrad</type>
+      <name>grads</name>
+      <anchorfile>structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html</anchorfile>
+      <anchor>a19f6b5dd040ea3a700221e816aa7500b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>PhysicalQPts</type>
+      <name>qpts</name>
+      <anchorfile>structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html</anchorfile>
+      <anchor>ac5d7556498414abbda4cb68dd9ce7dc2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>QuadtratureWeigths</type>
+      <name>weights</name>
+      <anchorfile>structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html</anchorfile>
+      <anchor>a73283ee0b0492f1e06faa56004fe0a4f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const void *</type>
+      <name>basis</name>
+      <anchorfile>structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html</anchorfile>
+      <anchor>aa82f6630626eaed4c685954e76f2e4f0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::fe::internal::IsUnscaledSparsePolynomial</name>
+    <filename>structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial.html</filename>
+    <templarg>typename T</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>vulpes::fe::internal::IsUnscaledSparsePolynomial&lt; polynomial::SparsePolynomial&lt; D, I, double, false &gt; &gt;</name>
+    <filename>structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial_3_01polynomial_1_1SparsePolynomial_47ef93cddb00879cf29a3200ecd17bba.html</filename>
+    <templarg>std::size_t D</templarg>
+    <templarg>typename I</templarg>
   </compound>
   <compound kind="struct">
     <name>vulpes::fe::internal::LagrangianNodesPolicy</name>
@@ -19659,6 +20045,13 @@
       <arglist>(const Vector &amp;b, Vector &amp;x)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>applyPreconditioner</name>
+      <anchorfile>classvulpes_1_1la_1_1LinearSolver.html</anchorfile>
+      <anchor>ad864fa203aa3b3a007b89a5649a8640b</anchor>
+      <arglist>(const Vector &amp;b, Vector &amp;x)</arglist>
+    </member>
+    <member kind="function">
       <type>PetscInt</type>
       <name>getIterationCount</name>
       <anchorfile>classvulpes_1_1la_1_1LinearSolver.html</anchorfile>
@@ -20376,6 +20769,48 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>updateGhostsBegin</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a71dbd0cf27362d7a07dc9cbc5d6c3546</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>updateGhostsEnd</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>afb4ca6d026944a03d684aa8bf67a55f0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>accumulateGhostsBegin</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a5e7ed4a795a848ae047287aa532af753</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>accumulateGhostsEnd</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a498c1f0f26bdde76cb17065bc15e1618</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Eigen::Map&lt; Eigen::VectorXd &gt;</type>
+      <name>getLocalGhostedView</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a102635aa5fc0e8a14d264585ff037370</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>restoreLocalGhostedView</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>af32927c45fc30965af212c2b28257857</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>Eigen::VectorXd</type>
       <name>toLocalGhostedEigenVector</name>
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
@@ -20562,6 +20997,20 @@
       <name>m_is_ghosted</name>
       <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
       <anchor>af7e670b4c989e73bb7097b40b4b91e59</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Vec</type>
+      <name>m_local_form</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a9c79af4bd74c64a9466f294f77f6b5fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>PetscScalar *</type>
+      <name>m_local_array</name>
+      <anchorfile>classvulpes_1_1la_1_1Vector.html</anchorfile>
+      <anchor>a1668a6b92032f7a434f21a4f4c332fe7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -26955,6 +27404,7 @@
     <class kind="class">vulpes::fe::FeExpressionNeighborFunc</class>
     <class kind="class">vulpes::fe::FeExpressionOuter</class>
     <class kind="class">vulpes::fe::FeExpressionProduct</class>
+    <class kind="class">vulpes::fe::FeExpressionQptsCache</class>
     <class kind="class">vulpes::fe::FeExpressionScale</class>
     <class kind="class">vulpes::fe::FeExpressionSelfFunc</class>
     <class kind="class">vulpes::fe::FeExpressionShift</class>
@@ -27408,6 +27858,13 @@
       <arglist>(const FeExpressionBase&lt; Dim, E &gt; &amp;e)</arglist>
     </member>
     <member kind="function">
+      <type>FeExpressionQptsCache&lt; Dim, E &gt;</type>
+      <name>cached</name>
+      <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
+      <anchor>af3443a144a4e468f13e4653d5381333e</anchor>
+      <arglist>(const FeExpressionBase&lt; Dim, E &gt; &amp;e)</arglist>
+    </member>
+    <member kind="function">
       <type>auto</type>
       <name>grad_contr</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
@@ -27446,6 +27903,8 @@
   <compound kind="namespace">
     <name>vulpes::fe::internal</name>
     <filename>namespacevulpes_1_1fe_1_1internal.html</filename>
+    <class kind="struct">vulpes::fe::internal::IsUnscaledSparsePolynomial</class>
+    <class kind="struct">vulpes::fe::internal::IsUnscaledSparsePolynomial&lt; polynomial::SparsePolynomial&lt; D, I, double, false &gt; &gt;</class>
     <class kind="struct">vulpes::fe::internal::LagrangianNodesPolicy</class>
     <class kind="struct">vulpes::fe::internal::PolynomialTypeHelper</class>
     <class kind="struct">vulpes::fe::internal::PolynomialTypeHelper&lt; T, std::enable_if_t&lt; std::is_same_v&lt; T, void &gt; &gt; &gt;</class>
@@ -28804,6 +29263,13 @@
       <anchorfile>namespacevulpes_1_1la.html</anchorfile>
       <anchor>a484729c4a7c5a2e6e07a4f912814520b</anchor>
       <arglist>(const Vector &amp;a, const Vector &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>extractComponent</name>
+      <anchorfile>namespacevulpes_1_1la.html</anchorfile>
+      <anchor>a792a504cc46b5de987de2422c3322ca1</anchor>
+      <arglist>(const Vector &amp;blocked_vec, std::size_t f, Vector &amp;comp)</arglist>
     </member>
     <member kind="function">
       <type>Vector</type>

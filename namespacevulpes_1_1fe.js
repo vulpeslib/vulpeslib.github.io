@@ -31,6 +31,7 @@ var namespacevulpes_1_1fe =
     [ "FeExpressionNeighborFunc", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc.html", "classvulpes_1_1fe_1_1FeExpressionNeighborFunc" ],
     [ "FeExpressionOuter", "classvulpes_1_1fe_1_1FeExpressionOuter.html", "classvulpes_1_1fe_1_1FeExpressionOuter" ],
     [ "FeExpressionProduct", "classvulpes_1_1fe_1_1FeExpressionProduct.html", "classvulpes_1_1fe_1_1FeExpressionProduct" ],
+    [ "FeExpressionQptsCache", "classvulpes_1_1fe_1_1FeExpressionQptsCache.html", "classvulpes_1_1fe_1_1FeExpressionQptsCache" ],
     [ "FeExpressionScale", "classvulpes_1_1fe_1_1FeExpressionScale.html", "classvulpes_1_1fe_1_1FeExpressionScale" ],
     [ "FeExpressionSelfFunc", "classvulpes_1_1fe_1_1FeExpressionSelfFunc.html", "classvulpes_1_1fe_1_1FeExpressionSelfFunc" ],
     [ "FeExpressionShift", "classvulpes_1_1fe_1_1FeExpressionShift.html", "classvulpes_1_1fe_1_1FeExpressionShift" ],
@@ -89,6 +90,7 @@ var namespacevulpes_1_1fe =
       [ "UpdateAll", "namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa000c668d9188fd4be6af9ccd77761b76", null ]
     ] ],
     [ "abs", "namespacevulpes_1_1fe.html#a89c6b603f00931f425dcda67f1392d11", null ],
+    [ "cached", "namespacevulpes_1_1fe.html#af3443a144a4e468f13e4653d5381333e", null ],
     [ "div", "namespacevulpes_1_1fe.html#a5e3f0530894f18338caa6e8f7d01e133", null ],
     [ "field_component", "namespacevulpes_1_1fe.html#a78a3805f841036f3f46da0f2df821fa3", null ],
     [ "grad", "namespacevulpes_1_1fe.html#af24d31d4d96f90905f1c5aaa725fda77", null ],

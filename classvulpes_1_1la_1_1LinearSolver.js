@@ -24,6 +24,7 @@ var classvulpes_1_1la_1_1LinearSolver =
     [ "LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html#a0ecc24f106ebe2c1b7270c5aa1fddfa2", null ],
     [ "LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html#ae51ec5b761b92a563dc60aa8e99c5945", null ],
     [ "~LinearSolver", "classvulpes_1_1la_1_1LinearSolver.html#af031c96fa6209ebe4443b76bd4eb1b87", null ],
+    [ "applyPreconditioner", "classvulpes_1_1la_1_1LinearSolver.html#ad864fa203aa3b3a007b89a5649a8640b", null ],
     [ "getConvergenceReason", "classvulpes_1_1la_1_1LinearSolver.html#a08809b8322e5c151ebe4e3ec3f8d7e0e", null ],
     [ "getIterationCount", "classvulpes_1_1la_1_1LinearSolver.html#a1328fa138649881278065570bebc4f38", null ],
     [ "getKSP", "classvulpes_1_1la_1_1LinearSolver.html#af08ae1bd34e38662e57ea2a38b479018", null ],

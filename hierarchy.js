@@ -184,6 +184,9 @@ var hierarchy =
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionProduct< Dim, E1, E2 > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionProduct< Dim, E1, E2 >", "classvulpes_1_1fe_1_1FeExpressionProduct.html", null ]
     ] ],
+    [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionQptsCache< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
+      [ "vulpes::fe::FeExpressionQptsCache< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionQptsCache.html", null ]
+    ] ],
     [ "vulpes::fe::FeExpressionBase< Dim, FeExpressionScale< Dim, E > >", "classvulpes_1_1fe_1_1FeExpressionBase.html", [
       [ "vulpes::fe::FeExpressionScale< Dim, E >", "classvulpes_1_1fe_1_1FeExpressionScale.html", null ]
     ] ],
@@ -263,6 +266,7 @@ var hierarchy =
       [ "vulpes::assemble::internal::is_fe_expression_derived< T, typename >", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived.html", null ],
       [ "vulpes::assemble::internal::is_tuple< T >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple.html", null ],
       [ "vulpes::assemble::internal::is_tuple_of_fe_expr_pointers< T, typename >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers.html", null ],
+      [ "vulpes::fe::internal::IsUnscaledSparsePolynomial< T >", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial.html", null ],
       [ "vulpes::vvutils::internal::is_printable_container< T >", "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container.html", null ]
     ] ],
     [ "std::integral_constant", null, [
@@ -273,6 +277,7 @@ var hierarchy =
     [ "std::true_type", null, [
       [ "vulpes::assemble::internal::is_tuple< std::tuple< Args... > >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html", null ],
       [ "vulpes::assemble::internal::is_tuple_of_fe_expr_pointers< std::tuple< Args... >, std::enable_if_t<(std::conjunction_v< std::is_pointer< Args >... >) &&(std::conjunction_v< is_fe_expression_derived< std::remove_pointer_t< Args > >... >)> >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html", null ],
+      [ "vulpes::fe::internal::IsUnscaledSparsePolynomial< polynomial::SparsePolynomial< D, I, double, false > >", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial_3_01polynomial_1_1SparsePolynomial_47ef93cddb00879cf29a3200ecd17bba.html", null ],
       [ "vulpes::vvutils::internal::is_printable_container< std::array< T, N > >", "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
       [ "vulpes::vvutils::internal::is_printable_container< std::set< Args... > >", "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1set_3_01Args_8_8_8_01_4_01_4.html", null ],
       [ "vulpes::vvutils::internal::is_printable_container< std::vector< Args... > >", "structvulpes_1_1vvutils_1_1internal_1_1is__printable__container_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html", null ]
@@ -289,6 +294,7 @@ var hierarchy =
       [ "vulpes::assemble::WeakFormIntegratorQFree< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html", null ],
       [ "vulpes::assemble::WeakFormIntegratorSimplexify< MeshType, FeExpressionTuple, FeExpressionFaceTuple >", "classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html", null ]
     ] ],
+    [ "vulpes::assemble::WeakFormIntegratorSimplexify< MeshType, FeExpressionTuple, FeExpressionFaceTuple >::CellCache", "structvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify_1_1CellCache.html", null ],
     [ "vulpes::datastructure::CrsMap< DataType, IndexType, RowSize >", "classvulpes_1_1datastructure_1_1CrsMap.html", null ],
     [ "vulpes::datastructure::CrsMap< DataType, IndexType, RowSize >::RowView< Mutable >", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html", null ],
     [ "vulpes::datastructure::CrsMapUncompressed< DataType, N >", "classvulpes_1_1datastructure_1_1CrsMapUncompressed.html", null ],
@@ -323,6 +329,7 @@ var hierarchy =
       [ "vulpes::fe::FeSpaceModalQ< Dim, DofPolicy, EnableScaling >", "classvulpes_1_1fe_1_1FeSpaceModalQ.html", null ]
     ] ],
     [ "vulpes::fe::FeValues< Dim >", "classvulpes_1_1fe_1_1FeValues.html", null ],
+    [ "vulpes::fe::FeValues< Dim >::ReferenceTables", "structvulpes_1_1fe_1_1FeValues_1_1ReferenceTables.html", null ],
     [ "vulpes::fe::internal::LagrangianNodesPolicy< Dim >", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html", null ],
     [ "vulpes::fe::internal::PolynomialTypeHelper< T, typename >", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html", null ],
     [ "vulpes::fe::internal::PolynomialTypeHelper< T, std::enable_if_t< std::is_same_v< T, void > > >", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html", null ],

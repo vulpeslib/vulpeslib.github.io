@@ -131,6 +131,8 @@ Profiling</h2>
 </div><!-- fragment --></li>
 <li>The <code>Profile</code> class in <code>utils</code>. You can profile the call of a function using the <code>PROFILE</code> macro. This requires manual intervention to the code and that the flag <code>NPROFILE</code> is not defined.</li>
 </ul>
+<p>To compile the profiler out, so that its timers become empty functions, add </p><div class="fragment"><div class="line">-DNProfile=ON</div>
+</div><!-- fragment --><p> which defines <code>NPROFILE</code>.</p>
 <h2><a class="anchor" id="autotoc_md118"></a>
 Where to work?</h2>
 <p>If you want to test your code you can either add an <code>example</code> or a <code>test</code> in the respective folders. The former has no dependence on Google Test, so its more light-weight but is not a way to test your code. <b>NOTE:</b> all code in the library should be tested. If you want to check the test coverage, add the compile option </p><div class="fragment"><div class="line">-DCoverage=ON</div>
@@ -145,7 +147,7 @@ Check the compile commands</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="developers_guide.html">Developer&#39;s Guide</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

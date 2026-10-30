@@ -133,6 +133,21 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae8cb2f0d8599889d0256f41698f7a4af" id="r_ae8cb2f0d8599889d0256f41698f7a4af"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#ae8cb2f0d8599889d0256f41698f7a4af">setEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:ae8cb2f0d8599889d0256f41698f7a4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn recording on or off (on by default), outside timed regions: a <a class="el" href="classProfiler.html#a669c6940f7acb9d588b8dc3ee17754b4" title="stop(label) when recording is on.">stop()</a> without its <a class="el" href="classProfiler.html#aefabc412e75c95a4674c428321cefe2b" title="start(label) when recording is on.">start()</a> records a wrong time. When off, start/stop with a literal label cost one branch.  <br /></td></tr>
+<tr class="separator:ae8cb2f0d8599889d0256f41698f7a4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefabc412e75c95a4674c428321cefe2b" id="r_aefabc412e75c95a4674c428321cefe2b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#aefabc412e75c95a4674c428321cefe2b">start</a> (const char *label)</td></tr>
+<tr class="memdesc:aefabc412e75c95a4674c428321cefe2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">start(label) when recording is on.  <br /></td></tr>
+<tr class="separator:aefabc412e75c95a4674c428321cefe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669c6940f7acb9d588b8dc3ee17754b4" id="r_a669c6940f7acb9d588b8dc3ee17754b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a669c6940f7acb9d588b8dc3ee17754b4">stop</a> (const char *label)</td></tr>
+<tr class="memdesc:a669c6940f7acb9d588b8dc3ee17754b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop(label) when recording is on.  <br /></td></tr>
+<tr class="separator:a669c6940f7acb9d588b8dc3ee17754b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504bbca879a628f38bf89a04f73345df" id="r_a504bbca879a628f38bf89a04f73345df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a504bbca879a628f38bf89a04f73345df">startInterval</a> (const char *label)</td></tr>
+<tr class="memdesc:a504bbca879a628f38bf89a04f73345df"><td class="mdescLeft">&#160;</td><td class="mdescRight">startInterval(label) when recording is on.  <br /></td></tr>
+<tr class="separator:a504bbca879a628f38bf89a04f73345df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab6851e2d5eff954f5bc8755ca129e0" id="r_a7ab6851e2d5eff954f5bc8755ca129e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a7ab6851e2d5eff954f5bc8755ca129e0">stopInterval</a> (const char *label)</td></tr>
+<tr class="memdesc:a7ab6851e2d5eff954f5bc8755ca129e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">stopInterval(label) when recording is on.  <br /></td></tr>
+<tr class="separator:a7ab6851e2d5eff954f5bc8755ca129e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b2985ecc576cd2aa31856d57374c656" id="r_a6b2985ecc576cd2aa31856d57374c656"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656">start</a> (const std::string &amp;label)</td></tr>
 <tr class="memdesc:a6b2985ecc576cd2aa31856d57374c656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin timing a single interval for the specified label.  <br /></td></tr>
 <tr class="separator:a6b2985ecc576cd2aa31856d57374c656"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,16 +175,18 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a1290d4c7ad08951bdceff46228e29538" id="r_a1290d4c7ad08951bdceff46228e29538"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a1290d4c7ad08951bdceff46228e29538">s_enabled</a> = true</td></tr>
+<tr class="separator:a1290d4c7ad08951bdceff46228e29538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa24308316287f71773564de7e1facfa7" id="r_aa24308316287f71773564de7e1facfa7"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, <a class="el" href="classProfiler.html#a2318699af2226676b3013c48d686e199">TimeCounter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#aa24308316287f71773564de7e1facfa7">time_map</a> = {}</td></tr>
 <tr class="separator:aa24308316287f71773564de7e1facfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711d0a8f471a10e0096777148343442b" id="r_a711d0a8f471a10e0096777148343442b"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, <a class="el" href="classProfiler.html#af79c03f89822fbef749883106b877346">time_point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a711d0a8f471a10e0096777148343442b">start_times</a> = {}</td></tr>
-<tr class="memdesc:a711d0a8f471a10e0096777148343442b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending start time recorded per label via <a class="el" href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656" title="Begin timing a single interval for the specified label.">start()</a>, consumed by <a class="el" href="classProfiler.html#a4a4e5bc7fe0a0d6423bf476ed42b9c17" title="End timing a single interval for the specified label.">stop()</a>.  <br /></td></tr>
+<tr class="memdesc:a711d0a8f471a10e0096777148343442b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending start time recorded per label via <a class="el" href="classProfiler.html#aefabc412e75c95a4674c428321cefe2b" title="start(label) when recording is on.">start()</a>, consumed by <a class="el" href="classProfiler.html#a669c6940f7acb9d588b8dc3ee17754b4" title="stop(label) when recording is on.">stop()</a>.  <br /></td></tr>
 <tr class="separator:a711d0a8f471a10e0096777148343442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac192e9c78f39d005330041335229f46b" id="r_ac192e9c78f39d005330041335229f46b"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="classProfiler.html#af79c03f89822fbef749883106b877346">time_point</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#ac192e9c78f39d005330041335229f46b">stop_time_intervals</a> = {}</td></tr>
-<tr class="memdesc:ac192e9c78f39d005330041335229f46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval end timestamps recorded per label via <a class="el" href="classProfiler.html#a6b7c77d30e2a9b41001b3fee135b9b2c" title="End one interval among multiple for the specified label.">stopInterval()</a>.  <br /></td></tr>
+<tr class="memdesc:ac192e9c78f39d005330041335229f46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval end timestamps recorded per label via <a class="el" href="classProfiler.html#a7ab6851e2d5eff954f5bc8755ca129e0" title="stopInterval(label) when recording is on.">stopInterval()</a>.  <br /></td></tr>
 <tr class="separator:ac192e9c78f39d005330041335229f46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6648f3c791a4418791313b3f6316d699" id="r_a6648f3c791a4418791313b3f6316d699"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="classProfiler.html#af79c03f89822fbef749883106b877346">time_point</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfiler.html#a6648f3c791a4418791313b3f6316d699">start_time_intervals</a> = {}</td></tr>
-<tr class="memdesc:a6648f3c791a4418791313b3f6316d699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval start timestamps recorded per label via <a class="el" href="classProfiler.html#aa42354c4231bf529100045c112731421" title="Mark the start of one interval among multiple for a label.">startInterval()</a>.  <br /></td></tr>
+<tr class="memdesc:a6648f3c791a4418791313b3f6316d699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval start timestamps recorded per label via <a class="el" href="classProfiler.html#a504bbca879a628f38bf89a04f73345df" title="startInterval(label) when recording is on.">startInterval()</a>.  <br /></td></tr>
 <tr class="separator:a6648f3c791a4418791313b3f6316d699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -317,8 +334,64 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae8cb2f0d8599889d0256f41698f7a4af" name="ae8cb2f0d8599889d0256f41698f7a4af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8cb2f0d8599889d0256f41698f7a4af">&#9670;&#160;</a></span>setEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Profiler::setEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Turn recording on or off (on by default), outside timed regions: a <a class="el" href="classProfiler.html#a669c6940f7acb9d588b8dc3ee17754b4" title="stop(label) when recording is on.">stop()</a> without its <a class="el" href="classProfiler.html#aefabc412e75c95a4674c428321cefe2b" title="start(label) when recording is on.">start()</a> records a wrong time. When off, start/stop with a literal label cost one branch. </p>
+
+</div>
+</div>
+<a id="aefabc412e75c95a4674c428321cefe2b" name="aefabc412e75c95a4674c428321cefe2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefabc412e75c95a4674c428321cefe2b">&#9670;&#160;</a></span>start() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Profiler::start </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>start(label) when recording is on. </p>
+
+</div>
+</div>
 <a id="a6b2985ecc576cd2aa31856d57374c656" name="a6b2985ecc576cd2aa31856d57374c656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b2985ecc576cd2aa31856d57374c656">&#9670;&#160;</a></span>start()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2985ecc576cd2aa31856d57374c656">&#9670;&#160;</a></span>start() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,8 +425,36 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a504bbca879a628f38bf89a04f73345df" name="a504bbca879a628f38bf89a04f73345df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a504bbca879a628f38bf89a04f73345df">&#9670;&#160;</a></span>startInterval() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Profiler::startInterval </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>startInterval(label) when recording is on. </p>
+
+</div>
+</div>
 <a id="aa42354c4231bf529100045c112731421" name="aa42354c4231bf529100045c112731421"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa42354c4231bf529100045c112731421">&#9670;&#160;</a></span>startInterval()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42354c4231bf529100045c112731421">&#9670;&#160;</a></span>startInterval() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,8 +488,36 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a669c6940f7acb9d588b8dc3ee17754b4" name="a669c6940f7acb9d588b8dc3ee17754b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669c6940f7acb9d588b8dc3ee17754b4">&#9670;&#160;</a></span>stop() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Profiler::stop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>stop(label) when recording is on. </p>
+
+</div>
+</div>
 <a id="a4a4e5bc7fe0a0d6423bf476ed42b9c17" name="a4a4e5bc7fe0a0d6423bf476ed42b9c17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a4e5bc7fe0a0d6423bf476ed42b9c17">&#9670;&#160;</a></span>stop()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a4e5bc7fe0a0d6423bf476ed42b9c17">&#9670;&#160;</a></span>stop() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,8 +551,36 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7ab6851e2d5eff954f5bc8755ca129e0" name="a7ab6851e2d5eff954f5bc8755ca129e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab6851e2d5eff954f5bc8755ca129e0">&#9670;&#160;</a></span>stopInterval() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Profiler::stopInterval </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>stopInterval(label) when recording is on. </p>
+
+</div>
+</div>
 <a id="a6b7c77d30e2a9b41001b3fee135b9b2c" name="a6b7c77d30e2a9b41001b3fee135b9b2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b7c77d30e2a9b41001b3fee135b9b2c">&#9670;&#160;</a></span>stopInterval()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b7c77d30e2a9b41001b3fee135b9b2c">&#9670;&#160;</a></span>stopInterval() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,6 +615,28 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1290d4c7ad08951bdceff46228e29538" name="a1290d4c7ad08951bdceff46228e29538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1290d4c7ad08951bdceff46228e29538">&#9670;&#160;</a></span>s_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Profiler::s_enabled = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6648f3c791a4418791313b3f6316d699" name="a6648f3c791a4418791313b3f6316d699"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6648f3c791a4418791313b3f6316d699">&#9670;&#160;</a></span>start_time_intervals</h2>
 
@@ -478,7 +657,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Interval start timestamps recorded per label via <a class="el" href="classProfiler.html#aa42354c4231bf529100045c112731421" title="Mark the start of one interval among multiple for a label.">startInterval()</a>. </p>
+<p>Interval start timestamps recorded per label via <a class="el" href="classProfiler.html#a504bbca879a628f38bf89a04f73345df" title="startInterval(label) when recording is on.">startInterval()</a>. </p>
 
 </div>
 </div>
@@ -502,7 +681,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pending start time recorded per label via <a class="el" href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656" title="Begin timing a single interval for the specified label.">start()</a>, consumed by <a class="el" href="classProfiler.html#a4a4e5bc7fe0a0d6423bf476ed42b9c17" title="End timing a single interval for the specified label.">stop()</a>. </p>
+<p>Pending start time recorded per label via <a class="el" href="classProfiler.html#aefabc412e75c95a4674c428321cefe2b" title="start(label) when recording is on.">start()</a>, consumed by <a class="el" href="classProfiler.html#a669c6940f7acb9d588b8dc3ee17754b4" title="stop(label) when recording is on.">stop()</a>. </p>
 
 </div>
 </div>
@@ -526,7 +705,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Interval end timestamps recorded per label via <a class="el" href="classProfiler.html#a6b7c77d30e2a9b41001b3fee135b9b2c" title="End one interval among multiple for the specified label.">stopInterval()</a>. </p>
+<p>Interval end timestamps recorded per label via <a class="el" href="classProfiler.html#a7ab6851e2d5eff954f5bc8755ca129e0" title="stopInterval(label) when recording is on.">stopInterval()</a>. </p>
 
 </div>
 </div>
@@ -549,7 +728,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Cumulative {total_duration_ns, call_count} recorded per label via <a class="el" href="classProfiler.html#a6b2985ecc576cd2aa31856d57374c656" title="Begin timing a single interval for the specified label.">start()</a>/stop(). </p>
+<p>Cumulative {total_duration_ns, call_count} recorded per label via <a class="el" href="classProfiler.html#aefabc412e75c95a4674c428321cefe2b" title="start(label) when recording is on.">start()</a>/stop(). </p>
 
 </div>
 </div>
@@ -564,7 +743,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classProfiler.html">Profiler</a></li>
-    <li class="footer">Generated on Wed Oct 28 2026 10:07:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Oct 30 2026 15:21:09 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
