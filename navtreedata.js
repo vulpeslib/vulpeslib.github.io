@@ -110,133 +110,132 @@ var NAVTREE =
           [ "Supported mesh_kind values", "tutorials_05_MPI_Laplacian.html#autotoc_md82", null ]
         ] ],
         [ "Threads per MPI rank", "tutorials_05_MPI_Laplacian.html#autotoc_md83", null ],
-        [ "What gets exported", "tutorials_05_MPI_Laplacian.html#autotoc_md84", null ],
-        [ "Known limitations / TODOs", "tutorials_05_MPI_Laplacian.html#autotoc_md85", null ]
+        [ "What gets exported", "tutorials_05_MPI_Laplacian.html#autotoc_md84", null ]
       ] ],
       [ "Tool for Mesh Agglomeration", "tutorials_06_Mesh_Agglomeration.html", [
-        [ "Quick Start", "tutorials_06_Mesh_Agglomeration.html#autotoc_md86", null ],
-        [ "Overview of the Pipeline", "tutorials_06_Mesh_Agglomeration.html#autotoc_md87", null ],
-        [ "JSON Reference", "tutorials_06_Mesh_Agglomeration.html#autotoc_md88", null ],
-        [ "Methods", "tutorials_06_Mesh_Agglomeration.html#autotoc_md89", [
-          [ "direct_kway", "tutorials_06_Mesh_Agglomeration.html#autotoc_md90", null ],
-          [ "bisect", "tutorials_06_Mesh_Agglomeration.html#autotoc_md91", null ],
-          [ "mult_factor", "tutorials_06_Mesh_Agglomeration.html#autotoc_md92", null ]
+        [ "Quick Start", "tutorials_06_Mesh_Agglomeration.html#autotoc_md85", null ],
+        [ "Overview of the Pipeline", "tutorials_06_Mesh_Agglomeration.html#autotoc_md86", null ],
+        [ "JSON Reference", "tutorials_06_Mesh_Agglomeration.html#autotoc_md87", null ],
+        [ "Methods", "tutorials_06_Mesh_Agglomeration.html#autotoc_md88", [
+          [ "direct_kway", "tutorials_06_Mesh_Agglomeration.html#autotoc_md89", null ],
+          [ "bisect", "tutorials_06_Mesh_Agglomeration.html#autotoc_md90", null ],
+          [ "mult_factor", "tutorials_06_Mesh_Agglomeration.html#autotoc_md91", null ]
         ] ],
-        [ "Backends", "tutorials_06_Mesh_Agglomeration.html#autotoc_md93", [
-          [ "parmetis", "tutorials_06_Mesh_Agglomeration.html#autotoc_md94", null ],
-          [ "kmeans", "tutorials_06_Mesh_Agglomeration.html#autotoc_md95", null ],
-          [ "gnn", "tutorials_06_Mesh_Agglomeration.html#autotoc_md96", null ]
+        [ "Backends", "tutorials_06_Mesh_Agglomeration.html#autotoc_md92", [
+          [ "parmetis", "tutorials_06_Mesh_Agglomeration.html#autotoc_md93", null ],
+          [ "kmeans", "tutorials_06_Mesh_Agglomeration.html#autotoc_md94", null ],
+          [ "gnn", "tutorials_06_Mesh_Agglomeration.html#autotoc_md95", null ]
         ] ],
-        [ "Agglomeration by Region (Materials)", "tutorials_06_Mesh_Agglomeration.html#autotoc_md97", [
-          [ "Example: a cube with two materials", "tutorials_06_Mesh_Agglomeration.html#autotoc_md98", null ]
+        [ "Agglomeration by Region (Materials)", "tutorials_06_Mesh_Agglomeration.html#autotoc_md96", [
+          [ "Example: a cube with two materials", "tutorials_06_Mesh_Agglomeration.html#autotoc_md97", null ]
         ] ],
-        [ "Repair of 3D Agglomerates", "tutorials_06_Mesh_Agglomeration.html#autotoc_md99", null ],
-        [ "Related Examples", "tutorials_06_Mesh_Agglomeration.html#autotoc_md100", null ],
+        [ "Repair of 3D Agglomerates", "tutorials_06_Mesh_Agglomeration.html#autotoc_md98", null ],
+        [ "Related Examples", "tutorials_06_Mesh_Agglomeration.html#autotoc_md99", null ],
         [ "References", "tutorials_06_Mesh_Agglomeration.html#references", null ]
       ] ]
     ] ],
     [ "Developer's Guide", "developers_guide.html", [
       [ "Install & Build", "developers_guide_installation_instruction.html", [
-        [ "VSCode extensions", "developers_guide_installation_instruction.html#autotoc_md124", null ],
-        [ "Use the Docker from VSCode", "developers_guide_installation_instruction.html#autotoc_md125", null ],
-        [ "Simple firsts steps", "developers_guide_installation_instruction.html#autotoc_md126", null ],
-        [ "Installation of Vulpes on Cluster - Apptainer Image", "developers_guide_installation_instruction.html#autotoc_md127", [
-          [ "MacOS users with M1/M2 chips", "developers_guide_installation_instruction.html#autotoc_md123", null ],
-          [ "1. Install Vulpes on cluster", "developers_guide_installation_instruction.html#autotoc_md128", null ],
-          [ "2. Setup Apptainer on cluster:", "developers_guide_installation_instruction.html#autotoc_md129", [
-            [ "Using system-installed Apptainer (recommended)", "developers_guide_installation_instruction.html#autotoc_md130", null ],
-            [ "Installing a local version", "developers_guide_installation_instruction.html#autotoc_md131", null ]
+        [ "VSCode extensions", "developers_guide_installation_instruction.html#autotoc_md123", null ],
+        [ "Use the Docker from VSCode", "developers_guide_installation_instruction.html#autotoc_md124", null ],
+        [ "Simple firsts steps", "developers_guide_installation_instruction.html#autotoc_md125", null ],
+        [ "Installation of Vulpes on Cluster - Apptainer Image", "developers_guide_installation_instruction.html#autotoc_md126", [
+          [ "MacOS users with M1/M2 chips", "developers_guide_installation_instruction.html#autotoc_md122", null ],
+          [ "1. Install Vulpes on cluster", "developers_guide_installation_instruction.html#autotoc_md127", null ],
+          [ "2. Setup Apptainer on cluster:", "developers_guide_installation_instruction.html#autotoc_md128", [
+            [ "Using system-installed Apptainer (recommended)", "developers_guide_installation_instruction.html#autotoc_md129", null ],
+            [ "Installing a local version", "developers_guide_installation_instruction.html#autotoc_md130", null ]
           ] ],
-          [ "3. Create the Apptainer definition file", "developers_guide_installation_instruction.html#autotoc_md133", null ],
-          [ "4. Build the image", "developers_guide_installation_instruction.html#autotoc_md134", null ],
-          [ "5. Run the image and compile Vulpes", "developers_guide_installation_instruction.html#autotoc_md135", null ]
+          [ "3. Create the Apptainer definition file", "developers_guide_installation_instruction.html#autotoc_md132", null ],
+          [ "4. Build the image", "developers_guide_installation_instruction.html#autotoc_md133", null ],
+          [ "5. Run the image and compile Vulpes", "developers_guide_installation_instruction.html#autotoc_md134", null ]
         ] ]
       ] ],
       [ "Compile options", "developers_guide_compile_options.html", [
-        [ "Background", "developers_guide_compile_options.html#autotoc_md115", [
-          [ "Day to day", "developers_guide_compile_options.html#autotoc_md116", null ],
-          [ "Profiling", "developers_guide_compile_options.html#autotoc_md117", null ],
-          [ "Where to work?", "developers_guide_compile_options.html#autotoc_md118", null ],
-          [ "Check the compile commands", "developers_guide_compile_options.html#autotoc_md119", null ]
+        [ "Background", "developers_guide_compile_options.html#autotoc_md114", [
+          [ "Day to day", "developers_guide_compile_options.html#autotoc_md115", null ],
+          [ "Profiling", "developers_guide_compile_options.html#autotoc_md116", null ],
+          [ "Where to work?", "developers_guide_compile_options.html#autotoc_md117", null ],
+          [ "Check the compile commands", "developers_guide_compile_options.html#autotoc_md118", null ]
         ] ]
       ] ],
       [ "Native cluster compile", "developers_guide_compile_native.html", [
-        [ "Installing missing packages", "developers_guide_compile_native.html#autotoc_md106", [
-          [ "Petsc", "developers_guide_compile_native.html#autotoc_md107", [
-            [ "Install a Debug version of Petsc", "developers_guide_compile_native.html#autotoc_md108", null ]
+        [ "Installing missing packages", "developers_guide_compile_native.html#autotoc_md105", [
+          [ "Petsc", "developers_guide_compile_native.html#autotoc_md106", [
+            [ "Install a Debug version of Petsc", "developers_guide_compile_native.html#autotoc_md107", null ]
           ] ],
-          [ "vtk", "developers_guide_compile_native.html#autotoc_md109", null ],
-          [ "boost", "developers_guide_compile_native.html#autotoc_md110", null ],
-          [ "parmetis", "developers_guide_compile_native.html#autotoc_md111", null ]
+          [ "vtk", "developers_guide_compile_native.html#autotoc_md108", null ],
+          [ "boost", "developers_guide_compile_native.html#autotoc_md109", null ],
+          [ "parmetis", "developers_guide_compile_native.html#autotoc_md110", null ]
         ] ],
-        [ "Using Spack", "developers_guide_compile_native.html#autotoc_md112", [
-          [ "Our usecase", "developers_guide_compile_native.html#autotoc_md113", null ]
+        [ "Using Spack", "developers_guide_compile_native.html#autotoc_md111", [
+          [ "Our usecase", "developers_guide_compile_native.html#autotoc_md112", null ]
         ] ],
-        [ "Specifying the position of a library", "developers_guide_compile_native.html#autotoc_md114", null ]
+        [ "Specifying the position of a library", "developers_guide_compile_native.html#autotoc_md113", null ]
       ] ],
       [ "C++ Style Guide", "developers_guide_style_guide.html", [
-        [ "Background", "developers_guide_style_guide.html#autotoc_md140", null ],
-        [ "Formatting code", "developers_guide_style_guide.html#autotoc_md141", null ],
-        [ "Static analysis", "developers_guide_style_guide.html#autotoc_md142", null ],
-        [ "File structure", "developers_guide_style_guide.html#autotoc_md143", [
-          [ "Define guard", "developers_guide_style_guide.html#autotoc_md144", null ],
-          [ "Includes", "developers_guide_style_guide.html#autotoc_md145", null ]
+        [ "Background", "developers_guide_style_guide.html#autotoc_md139", null ],
+        [ "Formatting code", "developers_guide_style_guide.html#autotoc_md140", null ],
+        [ "Static analysis", "developers_guide_style_guide.html#autotoc_md141", null ],
+        [ "File structure", "developers_guide_style_guide.html#autotoc_md142", [
+          [ "Define guard", "developers_guide_style_guide.html#autotoc_md143", null ],
+          [ "Includes", "developers_guide_style_guide.html#autotoc_md144", null ]
         ] ],
-        [ "Namespaces", "developers_guide_style_guide.html#autotoc_md146", null ],
-        [ "Variables", "developers_guide_style_guide.html#autotoc_md147", [
-          [ "Local Variables", "developers_guide_style_guide.html#autotoc_md148", null ],
-          [ "Global Variables", "developers_guide_style_guide.html#autotoc_md149", [
-            [ "Common patterns", "developers_guide_style_guide.html#autotoc_md150", null ]
+        [ "Namespaces", "developers_guide_style_guide.html#autotoc_md145", null ],
+        [ "Variables", "developers_guide_style_guide.html#autotoc_md146", [
+          [ "Local Variables", "developers_guide_style_guide.html#autotoc_md147", null ],
+          [ "Global Variables", "developers_guide_style_guide.html#autotoc_md148", [
+            [ "Common patterns", "developers_guide_style_guide.html#autotoc_md149", null ]
           ] ]
         ] ],
-        [ "Classes", "developers_guide_style_guide.html#autotoc_md151", [
-          [ "Struct", "developers_guide_style_guide.html#autotoc_md152", null ],
-          [ "Inheritance", "developers_guide_style_guide.html#autotoc_md153", null ],
-          [ "Operator Overloading", "developers_guide_style_guide.html#autotoc_md154", null ],
-          [ "Friends", "developers_guide_style_guide.html#autotoc_md155", null ]
+        [ "Classes", "developers_guide_style_guide.html#autotoc_md150", [
+          [ "Struct", "developers_guide_style_guide.html#autotoc_md151", null ],
+          [ "Inheritance", "developers_guide_style_guide.html#autotoc_md152", null ],
+          [ "Operator Overloading", "developers_guide_style_guide.html#autotoc_md153", null ],
+          [ "Friends", "developers_guide_style_guide.html#autotoc_md154", null ]
         ] ],
-        [ "Functions", "developers_guide_style_guide.html#autotoc_md156", null ],
-        [ "The auto keyword", "developers_guide_style_guide.html#autotoc_md157", null ],
-        [ "Exceptions", "developers_guide_style_guide.html#autotoc_md158", null ],
-        [ "Casting", "developers_guide_style_guide.html#autotoc_md159", null ],
-        [ "Integer Types", "developers_guide_style_guide.html#autotoc_md160", null ],
-        [ "Macros", "developers_guide_style_guide.html#autotoc_md161", null ],
-        [ "Naming conventions", "developers_guide_style_guide.html#autotoc_md162", [
-          [ "Types", "developers_guide_style_guide.html#autotoc_md163", null ],
-          [ "Variable prefixes", "developers_guide_style_guide.html#autotoc_md164", null ]
+        [ "Functions", "developers_guide_style_guide.html#autotoc_md155", null ],
+        [ "The auto keyword", "developers_guide_style_guide.html#autotoc_md156", null ],
+        [ "Exceptions", "developers_guide_style_guide.html#autotoc_md157", null ],
+        [ "Casting", "developers_guide_style_guide.html#autotoc_md158", null ],
+        [ "Integer Types", "developers_guide_style_guide.html#autotoc_md159", null ],
+        [ "Macros", "developers_guide_style_guide.html#autotoc_md160", null ],
+        [ "Naming conventions", "developers_guide_style_guide.html#autotoc_md161", [
+          [ "Types", "developers_guide_style_guide.html#autotoc_md162", null ],
+          [ "Variable prefixes", "developers_guide_style_guide.html#autotoc_md163", null ]
         ] ],
-        [ "Control structures", "developers_guide_style_guide.html#autotoc_md165", [
-          [ "Switch", "developers_guide_style_guide.html#autotoc_md166", null ]
+        [ "Control structures", "developers_guide_style_guide.html#autotoc_md164", [
+          [ "Switch", "developers_guide_style_guide.html#autotoc_md165", null ]
         ] ],
-        [ "Pointers", "developers_guide_style_guide.html#autotoc_md167", null ],
-        [ "Return from errors immediately", "developers_guide_style_guide.html#autotoc_md168", null ]
+        [ "Pointers", "developers_guide_style_guide.html#autotoc_md166", null ],
+        [ "Return from errors immediately", "developers_guide_style_guide.html#autotoc_md167", null ]
       ] ],
       [ "Commit and Merge Policy", "developers_guide_commit_and_merge_policy.html", [
-        [ "Overview", "developers_guide_commit_and_merge_policy.html#autotoc_md101", null ],
-        [ "Feature Branch Strategy", "developers_guide_commit_and_merge_policy.html#autotoc_md102", null ],
-        [ "Commit Guidelines", "developers_guide_commit_and_merge_policy.html#autotoc_md103", null ],
-        [ "Merge Requirements", "developers_guide_commit_and_merge_policy.html#autotoc_md104", null ],
-        [ "Additional Recommendations", "developers_guide_commit_and_merge_policy.html#autotoc_md105", null ]
+        [ "Overview", "developers_guide_commit_and_merge_policy.html#autotoc_md100", null ],
+        [ "Feature Branch Strategy", "developers_guide_commit_and_merge_policy.html#autotoc_md101", null ],
+        [ "Commit Guidelines", "developers_guide_commit_and_merge_policy.html#autotoc_md102", null ],
+        [ "Merge Requirements", "developers_guide_commit_and_merge_policy.html#autotoc_md103", null ],
+        [ "Additional Recommendations", "developers_guide_commit_and_merge_policy.html#autotoc_md104", null ]
       ] ],
       [ "Testing and Coverage", "developers_guide_testing_and_coverage.html", [
-        [ "Developing tests", "developers_guide_testing_and_coverage.html#autotoc_md169", null ],
-        [ "Running tests", "developers_guide_testing_and_coverage.html#autotoc_md170", null ]
+        [ "Developing tests", "developers_guide_testing_and_coverage.html#autotoc_md168", null ],
+        [ "Running tests", "developers_guide_testing_and_coverage.html#autotoc_md169", null ]
       ] ],
       [ "Debugging", "developers_guide_debugging.html", [
-        [ "ASan", "developers_guide_debugging.html#autotoc_md120", null ],
-        [ "GDB", "developers_guide_debugging.html#autotoc_md121", null ],
-        [ "Petsc", "developers_guide_debugging.html#autotoc_md122", null ]
+        [ "ASan", "developers_guide_debugging.html#autotoc_md119", null ],
+        [ "GDB", "developers_guide_debugging.html#autotoc_md120", null ],
+        [ "Petsc", "developers_guide_debugging.html#autotoc_md121", null ]
       ] ],
       [ "Profiling", "developers_guide_profiling.html", [
-        [ "1. Profiling with Valgrind Callgrind and KCachegrind", "developers_guide_profiling.html#autotoc_md136", [
-          [ "Using Callgrind", "developers_guide_profiling.html#autotoc_md137", null ]
+        [ "1. Profiling with Valgrind Callgrind and KCachegrind", "developers_guide_profiling.html#autotoc_md135", [
+          [ "Using Callgrind", "developers_guide_profiling.html#autotoc_md136", null ]
         ] ],
-        [ "2. Checking Assembly Code and Using Assembly Comments", "developers_guide_profiling.html#autotoc_md138", null ],
-        [ "3. Profiling with a the Profiler class", "developers_guide_profiling.html#autotoc_md139", null ]
+        [ "2. Checking Assembly Code and Using Assembly Comments", "developers_guide_profiling.html#autotoc_md137", null ],
+        [ "3. Profiling with a the Profiler class", "developers_guide_profiling.html#autotoc_md138", null ]
       ] ],
       [ "Workflows", "developers_guide_workflows.html", [
-        [ "Build devcontainer", "developers_guide_workflows.html#autotoc_md171", null ],
-        [ "Website deploy", "developers_guide_workflows.html#autotoc_md172", null ]
+        [ "Build devcontainer", "developers_guide_workflows.html#autotoc_md170", null ],
+        [ "Website deploy", "developers_guide_workflows.html#autotoc_md171", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -298,21 +297,20 @@ var NAVTREEINDEX =
 "classvulpes_1_1geometry_1_1SimplexMapping.html#a8f25d7f6ac03963c4e5f6b176c4c60cd",
 "classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance.html#a730eaf3168810be8c5a78a5d0eddc90f",
 "classvulpes_1_1la_1_1Vector.html#a102635aa5fc0e8a14d264585ff037370",
-"classvulpes_1_1polynomial_1_1Polynomial.html#ad310679e71c5bd3cb9c410b3e39bb25f",
-"classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a0093968d7b3c513865384083eae69e75",
-"classvulpes_1_1timeintegration_1_1CrankNicolsonSolverFK.html#a4bb7ff57838c2b2012311bc06a35b6d9",
-"developers_guide_testing_and_coverage.html#autotoc_md170",
-"functions_func_p.html",
-"mesh__3d_8cpp.html#a6d2a404b64092391f7a6c0931a6edc78",
-"namespacevulpes_1_1fe.html#a236b70be3e3ef828b4c7f52774e514f3",
-"namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400",
-"qfree_8hpp.html#ad6c6cf7c49c0131cdab6226c5dfc373d",
-"structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a62037be1cb1f84122c01ea7f92d79b0e",
-"structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html#a92dc024aaf0c3b11b1bb1f0b15fbf4c2",
-"structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX.html#ab5b9c0749d3cc075a3d450d8455157c7",
-"structvulpes_1_1timeintegration_1_1ForwardEulerIMEX.html",
-"structvulpes_1_1timeintegration_1_1RK4IMEX.html#aa49078a5fa25343e3db860d175bdfc24",
-"vector__block__utils_8hpp.html#aaca8380f6d8e4d324ed1483e3ce95e9a"
+"classvulpes_1_1polynomial_1_1Polynomial.html#acb35aa91415753bac40f94e47483d841",
+"classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html",
+"developers_guide_compile_native.html#autotoc_md107",
+"fe__modal__simplex_8hpp.html#a9c66ba0b8f1de46b9dcef2b2fbb97592",
+"mesh__2d_8cpp.html#a6fd61d12db746f29663dbc32da82f2c9",
+"namespaces.html",
+"namespacevulpes_1_1geometry_1_1mesh2d.html#a5346b33e6fcd562cc51628fe26d6d390",
+"numbering_8hpp.html",
+"structvulpes_1_1datastructure_1_1internal_1_1StaticSelector.html#a52dfb87771a3026effc857a31e9f7ff5",
+"structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69af6d02e46b6363dc27250d2155b8912bf",
+"structvulpes_1_1scipy_1_1heapitem.html#aa9a0679a8a0413e9449e44426e8b4d0c",
+"structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html#ad30c039fbcef91414c1eb0742941570f",
+"structvulpes_1_1timeintegration_1_1Miller3.html",
+"tutorials_04_Shallow_Water_DG.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

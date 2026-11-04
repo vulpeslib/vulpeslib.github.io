@@ -203,16 +203,7 @@ What gets exported</h1>
 <ul>
 <li><code>u_h</code> — the computed solution</li>
 <li><code>u_exact</code> — the projected exact solution</li>
-<li><code>u_error</code> — <code>u_h - u_exact</code></li>
-</ul>
-<h1><a class="anchor" id="autotoc_md85"></a>
-Known limitations / TODOs</h1>
-<ul>
-<li><b>ParMETIS agglomerated mesh support</b> (<code>kway_metis</code>/<code>bisect_metis</code>, 2D). Not implemented: see the next item.</li>
-<li><b>Distributed agglomerated mesh pipeline.</b> <code>ParmetisAgglomeration</code> itself calls ParMETIS collectively across all ranks, but <code>ParallelMesh</code>'s mesh-generator lambda only runs on rank 0 — the two don't compose today without first agglomerating collectively and then redistributing the rank-0 result again. The right fix is to keep an agglomerated mesh distributed directly instead of round-tripping through a rank-0 full mesh.</li>
-<li><b>MPI-reduced volume integral errors.</b> <code>errL2int</code>/<code>errH1int</code> (as computed by the sequential examples) sum only over each rank's owned cells with no MPI reduction; adding them here would silently report a wrong per-rank-partial error until a global sum reduction is added.</li>
-<li><b>MPI-correct DG/jump face errors.</b> Similarly, <code>errJump</code>/<code>errDG</code> need careful handling of partition-interface faces so they're counted exactly once, not per-rank.</li>
-<li><b>Periodic mesh support.</b> Not implemented for MPI. </li>
+<li><code>u_error</code> — <code>u_h - u_exact</code> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -222,7 +213,7 @@ Known limitations / TODOs</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Oct 30 2026 15:23:02 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Nov 4 2026 13:08:42 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
