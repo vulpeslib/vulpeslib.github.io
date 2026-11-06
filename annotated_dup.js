@@ -114,6 +114,7 @@ var annotated_dup =
       [ "geometry", "namespacevulpes_1_1geometry.html", [
         [ "dist2d", "namespacevulpes_1_1geometry_1_1dist2d.html", [
           [ "CircleDistance", "classvulpes_1_1geometry_1_1dist2d_1_1CircleDistance.html", "classvulpes_1_1geometry_1_1dist2d_1_1CircleDistance" ],
+          [ "PolygonDistance", "classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html", "classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance" ],
           [ "RectangleDistance", "classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html", "classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance" ]
         ] ],
         [ "dist3d", "namespacevulpes_1_1geometry_1_1dist3d.html", [
@@ -226,6 +227,7 @@ var annotated_dup =
         [ "HeunIMEX", "structvulpes_1_1timeintegration_1_1HeunIMEX.html", "structvulpes_1_1timeintegration_1_1HeunIMEX" ],
         [ "ImplicitButcherIMEX", "structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html", "structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX" ],
         [ "ImplicitExplicitMidpointIMEX", "structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html", "structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX" ],
+        [ "LeapfrogSolver", "classvulpes_1_1timeintegration_1_1LeapfrogSolver.html", "classvulpes_1_1timeintegration_1_1LeapfrogSolver" ],
         [ "LobattoIIIC", "structvulpes_1_1timeintegration_1_1LobattoIIIC.html", "structvulpes_1_1timeintegration_1_1LobattoIIIC" ],
         [ "LobattoIIICIMEX", "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html", "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX" ],
         [ "LstableDIRK", "structvulpes_1_1timeintegration_1_1LstableDIRK.html", "structvulpes_1_1timeintegration_1_1LstableDIRK" ],

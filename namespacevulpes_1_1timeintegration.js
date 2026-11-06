@@ -28,6 +28,7 @@ var namespacevulpes_1_1timeintegration =
     [ "HeunIMEX", "structvulpes_1_1timeintegration_1_1HeunIMEX.html", "structvulpes_1_1timeintegration_1_1HeunIMEX" ],
     [ "ImplicitButcherIMEX", "structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html", "structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX" ],
     [ "ImplicitExplicitMidpointIMEX", "structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html", "structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX" ],
+    [ "LeapfrogSolver", "classvulpes_1_1timeintegration_1_1LeapfrogSolver.html", "classvulpes_1_1timeintegration_1_1LeapfrogSolver" ],
     [ "LobattoIIIC", "structvulpes_1_1timeintegration_1_1LobattoIIIC.html", "structvulpes_1_1timeintegration_1_1LobattoIIIC" ],
     [ "LobattoIIICIMEX", "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html", "structvulpes_1_1timeintegration_1_1LobattoIIICIMEX" ],
     [ "LstableDIRK", "structvulpes_1_1timeintegration_1_1LstableDIRK.html", "structvulpes_1_1timeintegration_1_1LstableDIRK" ],

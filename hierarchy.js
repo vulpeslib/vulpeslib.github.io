@@ -83,6 +83,9 @@ var hierarchy =
     [ "vulpes::geometry::DistanceExpression< FloatType, 2, CircleDistance< FloatType > >", "classvulpes_1_1geometry_1_1DistanceExpression.html", [
       [ "vulpes::geometry::dist2d::CircleDistance< FloatType >", "classvulpes_1_1geometry_1_1dist2d_1_1CircleDistance.html", null ]
     ] ],
+    [ "vulpes::geometry::DistanceExpression< FloatType, 2, PolygonDistance< FloatType > >", "classvulpes_1_1geometry_1_1DistanceExpression.html", [
+      [ "vulpes::geometry::dist2d::PolygonDistance< FloatType >", "classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html", null ]
+    ] ],
     [ "vulpes::geometry::DistanceExpression< FloatType, 2, RectangleDistance< FloatType > >", "classvulpes_1_1geometry_1_1DistanceExpression.html", [
       [ "vulpes::geometry::dist2d::RectangleDistance< FloatType >", "classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html", null ]
     ] ],
@@ -402,6 +405,7 @@ var hierarchy =
     [ "vulpes::timeintegration::ButcherTableIMEX< S >", "structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html", null ],
     [ "vulpes::timeintegration::CrankNicolsonGeneralized", "classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html", null ],
     [ "vulpes::timeintegration::CrankNicolsonGeneralized::Terms", "structvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized_1_1Terms.html", null ],
+    [ "vulpes::timeintegration::LeapfrogSolver", "classvulpes_1_1timeintegration_1_1LeapfrogSolver.html", null ],
     [ "vulpes::timeintegration::TimeIntegratorDIRKIMEX< ButcherTableType >", "classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html", null ],
     [ "vulpes::utils::pcout_t", "classvulpes_1_1utils_1_1pcout__t.html", null ],
     [ "vulpes::vutils::ExpressionParser< N >", "classvulpes_1_1vutils_1_1ExpressionParser.html", null ],

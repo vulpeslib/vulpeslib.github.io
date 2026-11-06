@@ -416,7 +416,7 @@ Periodic topology workflow (open/closed)</h3>
 <p>Minimal usage pattern:</p>
 <div class="fragment"><div class="line"><span class="keyword">using </span>MeshType = <a class="code hl_class" href="classvulpes_1_1geometry_1_1Mesh2D.html">vulpes::geometry::Mesh2D&lt;double, int32_t&gt;</a>;</div>
 <div class="line"> </div>
-<div class="line">MeshType mesh_closed = <a class="code hl_function" href="namespacevulpes_1_1geometry_1_1mesh2d.html#a5edc475421bf89f7b288a4c9d53f8438">vulpes::geometry::mesh2d::rectangle_periodic&lt;double, int32_t&gt;</a>(</div>
+<div class="line">MeshType mesh_closed = <a class="code hl_function" href="namespacevulpes_1_1geometry_1_1mesh2d.html#ab44ffcab25b5a96c877d127080d74fc7">vulpes::geometry::mesh2d::rectangle_periodic&lt;double, int32_t&gt;</a>(</div>
 <div class="line">    {0.0, 0.0}, {1.0, 1.0}, {3, 3}, <span class="keyword">true</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> mesh_open = <a class="code hl_function" href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa10c9d28ffcc4e2c9bbf339de76f4aad">vulpes::geometry::mesh2d::openPeriodicTopology</a>(mesh_closed);</div>
@@ -433,10 +433,10 @@ Periodic topology workflow (open/closed)</h3>
 <div class="line">  }</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassvulpes_1_1geometry_1_1Mesh2D_html"><div class="ttname"><a href="classvulpes_1_1geometry_1_1Mesh2D.html">vulpes::geometry::Mesh2D</a></div><div class="ttdoc">A class for a 2D mesh, inheriting from MeshBase.</div><div class="ttdef"><b>Definition</b> mesh_2d.hpp:93</div></div>
-<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_a5edc475421bf89f7b288a4c9d53f8438"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#a5edc475421bf89f7b288a4c9d53f8438">vulpes::geometry::mesh2d::rectangle_periodic&lt; double, int32_t &gt;</a></div><div class="ttdeci">template Mesh2D&lt; double, int32_t &gt; rectangle_periodic&lt; double, int32_t &gt;(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int32_t, 2 &gt; &amp;, bool)</div></div>
-<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_aa10c9d28ffcc4e2c9bbf339de76f4aad"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa10c9d28ffcc4e2c9bbf339de76f4aad">vulpes::geometry::mesh2d::openPeriodicTopology</a></div><div class="ttdeci">Mesh2D&lt; FloatType, IndexType &gt; openPeriodicTopology(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</div><div class="ttdef"><b>Definition</b> mesh_2d.cpp:1759</div></div>
-<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_ab471ec574bb67b1b85296b71343b1337"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#ab471ec574bb67b1b85296b71343b1337">vulpes::geometry::mesh2d::closePeriodicTopology</a></div><div class="ttdeci">Mesh2D&lt; FloatType, IndexType &gt; closePeriodicTopology(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</div><div class="ttdef"><b>Definition</b> mesh_2d.cpp:1597</div></div>
+<div class="ttc" id="aclassvulpes_1_1geometry_1_1Mesh2D_html"><div class="ttname"><a href="classvulpes_1_1geometry_1_1Mesh2D.html">vulpes::geometry::Mesh2D</a></div><div class="ttdoc">A class for a 2D mesh, inheriting from MeshBase.</div><div class="ttdef"><b>Definition</b> mesh_2d.hpp:94</div></div>
+<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_aa10c9d28ffcc4e2c9bbf339de76f4aad"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#aa10c9d28ffcc4e2c9bbf339de76f4aad">vulpes::geometry::mesh2d::openPeriodicTopology</a></div><div class="ttdeci">Mesh2D&lt; FloatType, IndexType &gt; openPeriodicTopology(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</div><div class="ttdef"><b>Definition</b> mesh_2d.cpp:1775</div></div>
+<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_ab44ffcab25b5a96c877d127080d74fc7"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#ab44ffcab25b5a96c877d127080d74fc7">vulpes::geometry::mesh2d::rectangle_periodic&lt; double, int32_t &gt;</a></div><div class="ttdeci">template Mesh2D&lt; double, int32_t &gt; rectangle_periodic&lt; double, int32_t &gt;(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int32_t, 2 &gt; &amp;, bool, bool, bool)</div></div>
+<div class="ttc" id="anamespacevulpes_1_1geometry_1_1mesh2d_html_ab471ec574bb67b1b85296b71343b1337"><div class="ttname"><a href="namespacevulpes_1_1geometry_1_1mesh2d.html#ab471ec574bb67b1b85296b71343b1337">vulpes::geometry::mesh2d::closePeriodicTopology</a></div><div class="ttdeci">Mesh2D&lt; FloatType, IndexType &gt; closePeriodicTopology(const Mesh2D&lt; FloatType, IndexType &gt; &amp;mesh)</div><div class="ttdef"><b>Definition</b> mesh_2d.cpp:1613</div></div>
 </div><!-- fragment --><p>In short: use closed topology for standard assembly workflows, and open topology when you need to inspect ghost vertices or periodic connectivity explicitly, or to export the mesh.</p>
 <p><img src="figs/periodic_mesh_closed.png" alt="closed mesh" width="400" class="inline"/> </p>
 <p>Figure: Example of a CLOSED periodic mesh with indexes used by Vulpes. These are used inside Vulpes for weak form assembly and have a closed connectivity (no boundaries). </p>
@@ -450,7 +450,7 @@ Periodic topology workflow (open/closed)</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Nov 6 2026 07:08:04 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Nov 6 2026 07:19:53 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

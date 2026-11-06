@@ -2,6 +2,7 @@ var distance_8hpp =
 [
     [ "vulpes::geometry::DistanceExpression< FloatType, Dim, Distance >", "classvulpes_1_1geometry_1_1DistanceExpression.html", "classvulpes_1_1geometry_1_1DistanceExpression" ],
     [ "vulpes::geometry::dist2d::RectangleDistance< FloatType >", "classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html", "classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance" ],
+    [ "vulpes::geometry::dist2d::PolygonDistance< FloatType >", "classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html", "classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance" ],
     [ "vulpes::geometry::dist2d::CircleDistance< FloatType >", "classvulpes_1_1geometry_1_1dist2d_1_1CircleDistance.html", "classvulpes_1_1geometry_1_1dist2d_1_1CircleDistance" ],
     [ "vulpes::geometry::dist3d::HexahedronDistance< FloatType >", "classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html", "classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance" ],
     [ "vulpes::geometry::dist3d::SphereDistance< FloatType >", "classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance.html", "classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance" ],

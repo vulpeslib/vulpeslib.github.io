@@ -733,6 +733,7 @@
     <includes id="vmath_8hpp" name="vmath.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/vmath.hpp</includes>
     <class kind="class">vulpes::geometry::DistanceExpression</class>
     <class kind="class">vulpes::geometry::dist2d::RectangleDistance</class>
+    <class kind="class">vulpes::geometry::dist2d::PolygonDistance</class>
     <class kind="class">vulpes::geometry::dist2d::CircleDistance</class>
     <class kind="class">vulpes::geometry::dist3d::HexahedronDistance</class>
     <class kind="class">vulpes::geometry::dist3d::SphereDistance</class>
@@ -1372,6 +1373,26 @@
     <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
     <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
     <class kind="class">vulpes::timeintegration::TimeIntegratorDIRKIMEX</class>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::timeintegration</namespace>
+  </compound>
+  <compound kind="file">
+    <name>leapfrog.cpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/timeintegration/</path>
+    <filename>leapfrog_8cpp.html</filename>
+    <includes id="leapfrog_8hpp" name="leapfrog.hpp" local="yes" import="no" module="no" objc="no">vulpes/timeintegration/leapfrog.hpp</includes>
+    <includes id="pcout_8hpp" name="pcout.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/pcout.hpp</includes>
+    <namespace>vulpes</namespace>
+    <namespace>vulpes::timeintegration</namespace>
+  </compound>
+  <compound kind="file">
+    <name>leapfrog.hpp</name>
+    <path>/__w/vulpes/vulpes/vulpes/timeintegration/</path>
+    <filename>leapfrog_8hpp.html</filename>
+    <includes id="linear__solver_8hpp" name="linear_solver.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/linear_solver.hpp</includes>
+    <includes id="sparse__matrix_8hpp" name="sparse_matrix.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/sparse_matrix.hpp</includes>
+    <includes id="vector_8hpp" name="vector.hpp" local="yes" import="no" module="no" objc="no">vulpes/la/vector.hpp</includes>
+    <class kind="class">vulpes::timeintegration::LeapfrogSolver</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::timeintegration</namespace>
   </compound>
@@ -14464,6 +14485,82 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>vulpes::geometry::dist2d::PolygonDistance</name>
+    <filename>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</filename>
+    <templarg>typename FloatType</templarg>
+    <base>DistanceExpression&lt; FloatType, 2, PolygonDistance&lt; FloatType &gt; &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PolygonDistance</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>ac5a76936633438d3cb34172c5d86dffe</anchor>
+      <arglist>(const std::vector&lt; Point&lt; FloatType, 2 &gt; &gt; &amp;vertices)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>a9e7b71780bb23f5b9d7baa3f8dc8e73f</anchor>
+      <arglist>(const Point&lt; FloatType, 2 &gt; &amp;point, FloatType *distance_buffer) const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::array&lt; Point&lt; FloatType, 2 &gt;, 2 &gt;</type>
+      <name>bbox</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>a074de704dba88aaed11d680c20d5f303</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>classvulpes_1_1geometry_1_1DistanceExpression.html</anchorfile>
+      <anchor>a02be221c8a13a9e4f9b960585b5a4ac5</anchor>
+      <arglist>(const Point&lt; FloatType, Dim &gt; &amp;point, FloatType *distance_buffer) const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static constexpr size_t</type>
+      <name>size</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>ac160d8159c62564c8a5ec8cd7b519aeb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr size_t</type>
+      <name>max_edges</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>aa7118695407c335bc35cf812d119ac30</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr bool</type>
+      <name>is_leaf</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>a4fdcd0c0534dca3a31c82c3938a2caa3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>hasIntersectingEdges</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>a5c096c22110fa4eb702827082f017c9c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const std::vector&lt; Point&lt; FloatType, 2 &gt; &gt;</type>
+      <name>m_vertices</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>a556647615068abda1fb1bdc858d0ebf1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>FloatType</type>
+      <name>m_outward_sign</name>
+      <anchorfile>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</anchorfile>
+      <anchor>a90f5a62fd0fdaa164b880b7c5ba7f2fa</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>vulpes::geometry::dist2d::RectangleDistance</name>
     <filename>classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html</filename>
     <templarg>typename FloatType</templarg>
@@ -24882,6 +24979,241 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>vulpes::timeintegration::LeapfrogSolver</name>
+    <filename>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</filename>
+    <member kind="typedef">
+      <type>PetscScalar</type>
+      <name>real_t</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a65a343172856a0d0457d5678857b0616</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; void(real_t, la::Vector &amp;)&gt;</type>
+      <name>ForceFunc</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>acf7190903e6ee310ef9349f6fecd1773</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>LeapfrogSolver</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>aa567d521fdccce9b450aa483902390ae</anchor>
+      <arglist>(real_t time_step, real_t initial_time, real_t final_time, const la::SparseMatrix &amp;lin_op, const la::SparseMatrix &amp;mass, const la::Vector &amp;u0, const la::Vector &amp;v0, const ForceFunc &amp;force_func)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>step</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a06b8d9d00999676faf6ce0053bbae6d5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSolverType</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>ae227fe60bf34cbde14c838a1f9b29c21</anchor>
+      <arglist>(la::LinearSolver::Type solver_type, la::LinearSolver::PrecondType pc_type)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto &amp;</type>
+      <name>getSolver</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a95257b23c1224999c1f726ed3eb2ffbc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const la::Vector &amp;</type>
+      <name>getSolution</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a2f34b887cd9c1f739622832afc7d091e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>la::Vector</type>
+      <name>getVelocity</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a2e45acbe4933793beec657052132a1c1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>real_t</type>
+      <name>time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a76a66fef5c512e38f489b1d165b42215</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_t</type>
+      <name>finalTime</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>aeaf2ed0503d190e4dbacfaf16a11abde</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>setupSolver</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>ac3eebf408b3f44c1fae3ee62c734fc43</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_time_step</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a0752a9ef89d95319b3d524fb8ebe32bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_initial_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a0ce32a29a77e9814bc9e2cd5ede9677e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>acc9e08330567eb37ff16bec2952e64d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>real_t</type>
+      <name>m_final_time</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>ad6d7df5fa88f1882a891382ff0d858d2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>PetscInt</type>
+      <name>m_iter</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>adb9c9da2229cc0cc9b08f81359d439d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const la::SparseMatrix &amp;</type>
+      <name>m_mass</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a18e3672c3f32d246d8e37c51e9651c94</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const la::SparseMatrix &amp;</type>
+      <name>m_lin_op</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>ac2e05cb36a87e6d833dbbc62b771d603</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::SparseMatrix</type>
+      <name>m_RHS</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a0f832e57a0f038da10293fc970c3e2d0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a4bcda23e1acba395b000c4009244971b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_u_old</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>ac6bd67b5bcf92460146a23cce8f2c33d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_w</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a7247fe3a374765141a571d8b40929995</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector *</type>
+      <name>m_f_old</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a4e25139bf9a5442fb13734e73bd4966e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector *</type>
+      <name>m_f_new</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a9260935dabb5625cbababc42df1be279</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_f_1</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a2137dccb4808b91dc738adbcb73bbc67</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_f_2</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>ab6a2723f39dd0e188b10b0ab65ee7731</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_tmp</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>ac2a388e347e0c6b9a10b317ecc2119af</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::Vector</type>
+      <name>m_rhs</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a7019501b3283a7b4a1dd37e62f9ec64d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::LinearSolver</type>
+      <name>m_solver</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a78c0a64459dca388bf20f55f11f25600</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::LinearSolver::Type</type>
+      <name>m_solver_type</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a6120c5336fa4d4bf447ce9ccee6920ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>la::LinearSolver::PrecondType</type>
+      <name>m_pc_type</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a0ac109c3f147c2bdf3d4d314518c0c59</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>bool</type>
+      <name>m_solver_ready</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a9d7fd069a4cf88c8b894c27cfe7ada57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const ForceFunc</type>
+      <name>m_force_func</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1LeapfrogSolver.html</anchorfile>
+      <anchor>a72e35d8836312652be0e895571476684</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="struct">
     <name>vulpes::timeintegration::LobattoIIIC</name>
     <filename>structvulpes_1_1timeintegration_1_1LobattoIIIC.html</filename>
@@ -27892,6 +28224,7 @@
     <name>vulpes::geometry::dist2d</name>
     <filename>namespacevulpes_1_1geometry_1_1dist2d.html</filename>
     <class kind="class">vulpes::geometry::dist2d::CircleDistance</class>
+    <class kind="class">vulpes::geometry::dist2d::PolygonDistance</class>
     <class kind="class">vulpes::geometry::dist2d::RectangleDistance</class>
   </compound>
   <compound kind="namespace">
@@ -28143,36 +28476,36 @@
       <type>Mesh2D&lt; FloatType, IndexType &gt;</type>
       <name>rectangle_periodic</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
-      <anchor>a062e00866aa766ec4e6d93be9b5447ac</anchor>
-      <arglist>(const Point&lt; FloatType, 2 &gt; &amp;corner_a, const Point&lt; FloatType, 2 &gt; &amp;corner_b, const Point&lt; IndexType, 2 &gt; &amp;n_divisions, bool tria_elements=false)</arglist>
+      <anchor>a6da6b234180ff185278205af92047a5b</anchor>
+      <arglist>(const Point&lt; FloatType, 2 &gt; &amp;corner_a, const Point&lt; FloatType, 2 &gt; &amp;corner_b, const Point&lt; IndexType, 2 &gt; &amp;n_divisions, bool tria_elements=false, bool x_periodic=true, bool y_periodic=true)</arglist>
     </member>
     <member kind="function">
       <type>template Mesh2D&lt; double, int32_t &gt;</type>
       <name>rectangle_periodic&lt; double, int32_t &gt;</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
-      <anchor>a5edc475421bf89f7b288a4c9d53f8438</anchor>
-      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int32_t, 2 &gt; &amp;, bool)</arglist>
+      <anchor>ab44ffcab25b5a96c877d127080d74fc7</anchor>
+      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int32_t, 2 &gt; &amp;, bool, bool, bool)</arglist>
     </member>
     <member kind="function">
       <type>template Mesh2D&lt; double, uint32_t &gt;</type>
       <name>rectangle_periodic&lt; double, uint32_t &gt;</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
-      <anchor>a1ff51dd2526dc4da50e3ca9d3820c0d1</anchor>
-      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; uint32_t, 2 &gt; &amp;, bool)</arglist>
+      <anchor>aaf12996cb68241c3e33762a74ddab9e1</anchor>
+      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; uint32_t, 2 &gt; &amp;, bool, bool, bool)</arglist>
     </member>
     <member kind="function">
       <type>template Mesh2D&lt; double, int64_t &gt;</type>
       <name>rectangle_periodic&lt; double, int64_t &gt;</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
-      <anchor>ab342524a7bc4c00b9822f169493ac21d</anchor>
-      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int64_t, 2 &gt; &amp;, bool)</arglist>
+      <anchor>afaed06713535676a6990aa6c3b9dede7</anchor>
+      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; int64_t, 2 &gt; &amp;, bool, bool, bool)</arglist>
     </member>
     <member kind="function">
       <type>template Mesh2D&lt; double, uint64_t &gt;</type>
       <name>rectangle_periodic&lt; double, uint64_t &gt;</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
-      <anchor>a2411ea4e6f9ca976592f0fd1664edc47</anchor>
-      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; uint64_t, 2 &gt; &amp;, bool)</arglist>
+      <anchor>a86e6a6af3b30e20b02facda942a96513</anchor>
+      <arglist>(const Point&lt; double, 2 &gt; &amp;, const Point&lt; double, 2 &gt; &amp;, const Point&lt; uint64_t, 2 &gt; &amp;, bool, bool, bool)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -29503,6 +29836,7 @@
     <class kind="struct">vulpes::timeintegration::HeunIMEX</class>
     <class kind="struct">vulpes::timeintegration::ImplicitButcherIMEX</class>
     <class kind="struct">vulpes::timeintegration::ImplicitExplicitMidpointIMEX</class>
+    <class kind="class">vulpes::timeintegration::LeapfrogSolver</class>
     <class kind="struct">vulpes::timeintegration::LobattoIIIC</class>
     <class kind="struct">vulpes::timeintegration::LobattoIIICIMEX</class>
     <class kind="struct">vulpes::timeintegration::LstableDIRK</class>

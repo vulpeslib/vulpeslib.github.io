@@ -49,7 +49,7 @@ var searchData=
   ['threading_2ehpp_46',['threading.hpp',['../threading_8hpp.html',1,'']]],
   ['threads_20per_20mpi_20rank_47',['Threads per MPI rank',['../tutorials_05_MPI_Laplacian.html#autotoc_md83',1,'']]],
   ['threshold_48',['threshold',['../structvulpes_1_1la_1_1DataGAMG.html#a447dad276e70bb3100c0c7fc3f637eea',1,'vulpes::la::DataGAMG']]],
-  ['time_49',['time',['../classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#ac30d2d4efe0d2e05b752e5c2a8e4f541',1,'vulpes::timeintegration::CrankNicolsonGeneralized']]],
+  ['time_49',['time',['../classvulpes_1_1timeintegration_1_1LeapfrogSolver.html#a76a66fef5c512e38f489b1d165b42215',1,'vulpes::timeintegration::LeapfrogSolver::time()'],['../classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#ac30d2d4efe0d2e05b752e5c2a8e4f541',1,'vulpes::timeintegration::CrankNicolsonGeneralized::time()']]],
   ['time_20integration_50',['5.3 Time Integration',['../tutorials_04_Shallow_Water_DG.html#autotoc_md70',1,'']]],
   ['time_5fmap_51',['time_map',['../classProfiler.html#aa24308316287f71773564de7e1facfa7',1,'Profiler']]],
   ['time_5fpoint_52',['time_point',['../classProfiler.html#af79c03f89822fbef749883106b877346',1,'Profiler']]],
