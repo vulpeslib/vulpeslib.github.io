@@ -1,5 +1,13 @@
 var NAVTREEINDEX33 =
 {
+"structvulpes_1_1timeintegration_1_1MidPoint.html#abd20f415b4488b60490dfc8dde3ee20b":[3,0,2,11,24,0],
+"structvulpes_1_1timeintegration_1_1MidPoint.html#ae73f7e518e264f448752b7dd614e0962":[2,0,3,15,25,3],
+"structvulpes_1_1timeintegration_1_1MidPoint.html#ae73f7e518e264f448752b7dd614e0962":[3,0,2,11,24,3],
+"structvulpes_1_1timeintegration_1_1MidPoint.html#aecdca4ec2748f7ba8731ded3c971307b":[2,0,3,15,25,4],
+"structvulpes_1_1timeintegration_1_1MidPoint.html#aecdca4ec2748f7ba8731ded3c971307b":[3,0,2,11,24,4],
+"structvulpes_1_1timeintegration_1_1MidPoint.html#af2034cef6044de87b042f7ae50a1ad44":[2,0,3,15,25,1],
+"structvulpes_1_1timeintegration_1_1MidPoint.html#af2034cef6044de87b042f7ae50a1ad44":[3,0,2,11,24,1],
+"structvulpes_1_1timeintegration_1_1Miller3.html":[2,0,3,15,26],
 "structvulpes_1_1timeintegration_1_1Miller3.html":[3,0,2,11,25],
 "structvulpes_1_1timeintegration_1_1Miller3.html#a14f1c2b58bd9828eba681afe73bda4a2":[2,0,3,15,26,2],
 "structvulpes_1_1timeintegration_1_1Miller3.html#a14f1c2b58bd9828eba681afe73bda4a2":[3,0,2,11,25,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX33 =
 "tutorials_02_Laplacian_Assembly.html#autotoc_md42":[0,1,3,2],
 "tutorials_02_Laplacian_Assembly.html#autotoc_md43":[0,1,3,3],
 "tutorials_02_Laplacian_Assembly.html#autotoc_md44":[0,1,4],
-"tutorials_02_Laplacian_Assembly.html#autotoc_md45":[0,1,5],
-"tutorials_02_Laplacian_Assembly.html#autotoc_md46":[0,1,5,0],
-"tutorials_03_Advection_Assembly.html":[0,2],
-"tutorials_03_Advection_Assembly.html#autotoc_md47":[0,2,0],
-"tutorials_03_Advection_Assembly.html#autotoc_md48":[0,2,1],
-"tutorials_03_Advection_Assembly.html#autotoc_md49":[0,2,2],
-"tutorials_03_Advection_Assembly.html#autotoc_md50":[0,2,2,0],
-"tutorials_03_Advection_Assembly.html#autotoc_md51":[0,2,3],
-"tutorials_03_Advection_Assembly.html#autotoc_md52":[0,2,4]
+"tutorials_02_Laplacian_Assembly.html#autotoc_md45":[0,1,5]
 };

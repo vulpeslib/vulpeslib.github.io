@@ -158,6 +158,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a605cc05445ba227a82daae26018ea31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c94502b12fce00620fb7a2f2d6b5ea" id="r_a72c94502b12fce00620fb7a2f2d6b5ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a72c94502b12fce00620fb7a2f2d6b5ea">setSolverType</a> (<a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a02549faebd5fbd5298b8b55ca492821f">la::LinearSolver::Type</a> solver_type, <a class="el" href="classvulpes_1_1la_1_1LinearSolver.html#a7471023b16cc866f99ef0a761f7e8f40">la::LinearSolver::PrecondType</a> pc_type)</td></tr>
 <tr class="separator:a72c94502b12fce00620fb7a2f2d6b5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e2c26232a198a5baa0b9287727cfc1" id="r_ae1e2c26232a198a5baa0b9287727cfc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#ae1e2c26232a198a5baa0b9287727cfc1">setNearNullSpace</a> (const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;v)</td></tr>
+<tr class="separator:ae1e2c26232a198a5baa0b9287727cfc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a84ad7e0d9ca7c8b44483212db6d29" id="r_a96a84ad7e0d9ca7c8b44483212db6d29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a96a84ad7e0d9ca7c8b44483212db6d29">setLinearPreconditioner</a> (bool linear_preconditioner)</td></tr>
+<tr class="separator:a96a84ad7e0d9ca7c8b44483212db6d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a106d4814457629177bdad51bdd418" id="r_a27a106d4814457629177bdad51bdd418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a27a106d4814457629177bdad51bdd418">setPicard</a> (PetscInt max_iterations, <a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a8d49be9f9beaee3c0abd68c7db2a8303">real_t</a> tolerance)</td></tr>
 <tr class="separator:a27a106d4814457629177bdad51bdd418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc7310890324cbd8a003ea805a1555ba" id="r_acc7310890324cbd8a003ea805a1555ba"><td class="memItemLeft" align="right" valign="top">PetscInt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#acc7310890324cbd8a003ea805a1555ba">lastPicardIterations</a> () const</td></tr>
@@ -244,6 +248,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab7744695bdb53dcddc260b1666345df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51d489954b6ef506dbf533b51ff60e1" id="r_af51d489954b6ef506dbf533b51ff60e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#af51d489954b6ef506dbf533b51ff60e1">m_solver_ready</a> = false</td></tr>
 <tr class="separator:af51d489954b6ef506dbf533b51ff60e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1385424860147399364dbc447a999a4f" id="r_a1385424860147399364dbc447a999a4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a1385424860147399364dbc447a999a4f">m_linear_preconditioner</a> = false</td></tr>
+<tr class="separator:a1385424860147399364dbc447a999a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab050ba29fa094d02a3ea9ff2d824be3e" id="r_ab050ba29fa094d02a3ea9ff2d824be3e"><td class="memItemLeft" align="right" valign="top">PetscInt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#ab050ba29fa094d02a3ea9ff2d824be3e">m_max_picard_iterations</a> = 0</td></tr>
 <tr class="separator:ab050ba29fa094d02a3ea9ff2d824be3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a933e8e02cad9a5cc3483a00e40cac14a" id="r_a933e8e02cad9a5cc3483a00e40cac14a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a8d49be9f9beaee3c0abd68c7db2a8303">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html#a933e8e02cad9a5cc3483a00e40cac14a">m_picard_tolerance</a> = 1e-10</td></tr>
@@ -267,7 +273,8 @@ Private Attributes</h2></td></tr>
 <li>Picard iterations disabled (default): u* is the Adams-Bashforth extrapolation 3/2 u_{n} - 1/2 u_{n-1}, one solve per step;</li>
 <li>Picard iterations enabled: after the first solve the step is repeated with u* = (u_{n} + u_{n+1}^k) / 2 until convergence (fully implicit CN).</li>
 </ul>
-<p>All the terms are assembled by the user through a single AssembleFunc, called once per step (and once per Picard iteration) with the terms needed in that call, so that F(t_{n+1}), N(u*) and g(u*) can be integrated in the same loop on the cells. The requested terms are zeroed before the call and compressed afterwards by the solver. The matrix has the sparsity pattern of M + A, entries outside that pattern are not allowed. Alternatively, a ForceFunc and an optional LinearizeFunc can be passed: they are called one after the other (two loops on the cells). </p>
+<p>All the terms are assembled by the user through a single AssembleFunc, called once per step (and once per Picard iteration) with the terms needed in that call, so that F(t_{n+1}), N(u*) and g(u*) can be integrated in the same loop on the cells. The requested terms are zeroed before the call and compressed afterwards by the solver. The matrix has the sparsity pattern of M + A, entries outside that pattern are not allowed. Alternatively, a ForceFunc and an optional LinearizeFunc can be passed: they are called one after the other (two loops on the cells).</p>
+<p>Algebraic multigrid (e.g. GAMG): stepper.setSolverType(la::LinearSolver::GMRES, la::LinearSolver::GAMG); stepper.getSolver().setOptionsGAMG(data); stepper.setNearNullSpace(v); // e.g. the constant function for DG The LHS matrices are created inside the solver, so the near null space must be set here and not on M or A. They inherit the block size of M (see the aij_block_size of <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a>, needed by the point-block smoother). For nonlinear problems the multigrid hierarchy is rebuilt at every solve: DataGAMG::reuse_interpolation keeps the prolongators, while setLinearPreconditioner(true) builds it only once on M + h A / 2. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af9f92e76fdb4eac50f70316735124b5f" name="af9f92e76fdb4eac50f70316735124b5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9f92e76fdb4eac50f70316735124b5f">&#9670;&#160;</a></span>AssembleFunc</h2>
@@ -683,6 +690,52 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96a84ad7e0d9ca7c8b44483212db6d29" name="a96a84ad7e0d9ca7c8b44483212db6d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a84ad7e0d9ca7c8b44483212db6d29">&#9670;&#160;</a></span>setLinearPreconditioner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::timeintegration::CrankNicolsonGeneralized::setLinearPreconditioner </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>linear_preconditioner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Nonlinear problems only: precondition M + h (A + N*) / 2 with the static M + h A / 2, so that the preconditioner is set up once instead of at every solve. Effective when N* is small compared to M + h A / 2 (e.g. a reaction term). </p>
+
+</div>
+</div>
+<a id="ae1e2c26232a198a5baa0b9287727cfc1" name="ae1e2c26232a198a5baa0b9287727cfc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e2c26232a198a5baa0b9287727cfc1">&#9670;&#160;</a></span>setNearNullSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vulpes::timeintegration::CrankNicolsonGeneralized::setNearNullSpace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvulpes_1_1la_1_1Vector.html">la::Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Near null space of the LHS matrices, used by the algebraic multigrid preconditioners (see <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html#a35b5b3a40dabbb03c8050766f9baeebb" title="Attach a near null space to the matrix, used by algebraic multigrid preconditioners (e....">la::SparseMatrix::setNearNullSpace()</a>) </p>
 
 </div>
 </div>
@@ -1107,6 +1160,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classvulpes_1_1la_1_1SparseMatrix.html">la::SparseMatrix</a>&amp; vulpes::timeintegration::CrankNicolsonGeneralized::m_lin_op</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1385424860147399364dbc447a999a4f" name="a1385424860147399364dbc447a999a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1385424860147399364dbc447a999a4f">&#9670;&#160;</a></span>m_linear_preconditioner</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vulpes::timeintegration::CrankNicolsonGeneralized::m_linear_preconditioner = false</td>
         </tr>
       </table>
   </td>
@@ -1591,7 +1666,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1timeintegration.html">timeintegration</a></li><li class="navelem"><a class="el" href="classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html">CrankNicolsonGeneralized</a></li>
-    <li class="footer">Generated on Wed Nov 4 2026 13:08:43 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Nov 6 2026 07:08:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

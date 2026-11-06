@@ -19640,6 +19640,13 @@
       <anchor>ac1d2172e07cb0f5deedf702fac0b3c89</anchor>
       <arglist></arglist>
     </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>reuse_interpolation</name>
+      <anchorfile>structvulpes_1_1la_1_1DataGAMG.html</anchorfile>
+      <anchor>ab752307603f0843832efce87b17429fc</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>vulpes::la::LinearSolver</name>
@@ -23894,6 +23901,20 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setNearNullSpace</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html</anchorfile>
+      <anchor>ae1e2c26232a198a5baa0b9287727cfc1</anchor>
+      <arglist>(const la::Vector &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLinearPreconditioner</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html</anchorfile>
+      <anchor>a96a84ad7e0d9ca7c8b44483212db6d29</anchor>
+      <arglist>(bool linear_preconditioner)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setPicard</name>
       <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html</anchorfile>
       <anchor>a27a106d4814457629177bdad51bdd418</anchor>
@@ -24170,6 +24191,13 @@
       <name>m_solver_ready</name>
       <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html</anchorfile>
       <anchor>af51d489954b6ef506dbf533b51ff60e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>bool</type>
+      <name>m_linear_preconditioner</name>
+      <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html</anchorfile>
+      <anchor>a1385424860147399364dbc447a999a4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="private">

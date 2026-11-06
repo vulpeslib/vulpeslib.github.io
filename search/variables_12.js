@@ -10,5 +10,6 @@ var searchData=
   ['reflection_5frelax_7',['reflection_relax',['../structvulpes_1_1geometry_1_1vulpoly_1_1VulPolyParams.html#aef02dd45423b5d8522b0d0c5be6e09a1',1,'vulpes::geometry::vulpoly::VulPolyParams']]],
   ['relaxation_5ftype_5fcoarse_8',['relaxation_type_coarse',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a7c3f99a07ed0df4b65f72503081b5d9f',1,'vulpes::la::DataBoomerAMG']]],
   ['relaxation_5ftype_5fdown_9',['relaxation_type_down',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a6a4dddc072fc9673f02bf11ddc647ae9',1,'vulpes::la::DataBoomerAMG']]],
-  ['relaxation_5ftype_5fup_10',['relaxation_type_up',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a662145e24949ac270df54bad375313d6',1,'vulpes::la::DataBoomerAMG']]]
+  ['relaxation_5ftype_5fup_10',['relaxation_type_up',['../structvulpes_1_1la_1_1DataBoomerAMG.html#a662145e24949ac270df54bad375313d6',1,'vulpes::la::DataBoomerAMG']]],
+  ['reuse_5finterpolation_11',['reuse_interpolation',['../structvulpes_1_1la_1_1DataGAMG.html#ab752307603f0843832efce87b17429fc',1,'vulpes::la::DataGAMG']]]
 ];

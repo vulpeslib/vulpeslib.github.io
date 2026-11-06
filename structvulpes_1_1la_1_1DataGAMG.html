@@ -131,6 +131,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a34fa5771841a802160f45501119ae0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1d2172e07cb0f5deedf702fac0b3c89" id="r_ac1d2172e07cb0f5deedf702fac0b3c89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1la_1_1DataGAMG.html#ac1d2172e07cb0f5deedf702fac0b3c89">point_block_smoother</a> = false</td></tr>
 <tr class="separator:ac1d2172e07cb0f5deedf702fac0b3c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab752307603f0843832efce87b17429fc" id="r_ab752307603f0843832efce87b17429fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvulpes_1_1la_1_1DataGAMG.html#ab752307603f0843832efce87b17429fc">reuse_interpolation</a> = false</td></tr>
+<tr class="separator:ab752307603f0843832efce87b17429fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Options of the PETSc smoothed aggregation algebraic multigrid (PCGAMG).</p>
@@ -197,6 +199,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab752307603f0843832efce87b17429fc" name="ab752307603f0843832efce87b17429fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab752307603f0843832efce87b17429fc">&#9670;&#160;</a></span>reuse_interpolation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vulpes::la::DataGAMG::reuse_interpolation = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reuse the prolongators when the operator changes its values but not its sparsity pattern (e.g. a linearized operator at every time step), see PCGAMGSetReuseInterpolation(): only the coarse operators are recomputed. </p>
+
+</div>
+</div>
 <a id="a447dad276e70bb3100c0c7fc3f637eea" name="a447dad276e70bb3100c0c7fc3f637eea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a447dad276e70bb3100c0c7fc3f637eea">&#9670;&#160;</a></span>threshold</h2>
 
@@ -222,7 +239,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevulpes.html">vulpes</a></li><li class="navelem"><a class="el" href="namespacevulpes_1_1la.html">la</a></li><li class="navelem"><a class="el" href="structvulpes_1_1la_1_1DataGAMG.html">DataGAMG</a></li>
-    <li class="footer">Generated on Wed Nov 4 2026 13:08:42 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Nov 6 2026 07:08:05 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

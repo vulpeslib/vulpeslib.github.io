@@ -1,5 +1,11 @@
 var NAVTREEINDEX23 =
 {
+"developers_guide_commit_and_merge_policy.html#autotoc_md102":[1,4,2],
+"developers_guide_commit_and_merge_policy.html#autotoc_md103":[1,4,3],
+"developers_guide_commit_and_merge_policy.html#autotoc_md104":[1,4,4],
+"developers_guide_compile_native.html":[1,2],
+"developers_guide_compile_native.html#autotoc_md105":[1,2,0],
+"developers_guide_compile_native.html#autotoc_md106":[1,2,0,0],
 "developers_guide_compile_native.html#autotoc_md107":[1,2,0,0,0],
 "developers_guide_compile_native.html#autotoc_md108":[1,2,0,1],
 "developers_guide_compile_native.html#autotoc_md109":[1,2,0,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX23 =
 "fe__lagrange__tensor_8hpp.html#a6a6542d71ae0517549f71128d6163419":[4,0,1,3,1,2,1],
 "fe__lagrange__tensor_8hpp.html#aaa50172ce0a62935d383460e78d962ef":[4,0,1,3,1,2,3],
 "fe__lagrange__tensor_8hpp.html#ae6388f676176d533d7c6fd18e3061ab7":[4,0,1,3,1,2,4],
-"fe__lagrange__tensor_8hpp_source.html":[4,0,1,3,1,2],
-"fe__modal__simplex_8hpp.html":[4,0,1,3,1,3],
-"fe__modal__simplex_8hpp.html#a0204f4dc193b91e6326ecaf6b409887c":[4,0,1,3,1,3,7],
-"fe__modal__simplex_8hpp.html#a45667ebd33208ca3c2f00200a1c6fae9":[4,0,1,3,1,3,1],
-"fe__modal__simplex_8hpp.html#a84031c3af794935ac8c25bb21346f1cf":[4,0,1,3,1,3,5],
-"fe__modal__simplex_8hpp.html#a8a3ac0047d31adeb05ff8d7a66d79e76":[4,0,1,3,1,3,3],
-"fe__modal__simplex_8hpp.html#a930d811c0cfcf4b591444ed7264c112d":[4,0,1,3,1,3,2]
+"fe__lagrange__tensor_8hpp_source.html":[4,0,1,3,1,2]
 };

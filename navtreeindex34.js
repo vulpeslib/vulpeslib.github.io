@@ -1,5 +1,13 @@
 var NAVTREEINDEX34 =
 {
+"tutorials_02_Laplacian_Assembly.html#autotoc_md46":[0,1,5,0],
+"tutorials_03_Advection_Assembly.html":[0,2],
+"tutorials_03_Advection_Assembly.html#autotoc_md47":[0,2,0],
+"tutorials_03_Advection_Assembly.html#autotoc_md48":[0,2,1],
+"tutorials_03_Advection_Assembly.html#autotoc_md49":[0,2,2],
+"tutorials_03_Advection_Assembly.html#autotoc_md50":[0,2,2,0],
+"tutorials_03_Advection_Assembly.html#autotoc_md51":[0,2,3],
+"tutorials_03_Advection_Assembly.html#autotoc_md52":[0,2,4],
 "tutorials_04_Shallow_Water_DG.html":[0,3],
 "tutorials_04_Shallow_Water_DG.html#autotoc_md54":[0,3,0],
 "tutorials_04_Shallow_Water_DG.html#autotoc_md56":[0,3,1],

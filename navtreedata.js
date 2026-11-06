@@ -299,18 +299,18 @@ var NAVTREEINDEX =
 "classvulpes_1_1la_1_1Vector.html#a102635aa5fc0e8a14d264585ff037370",
 "classvulpes_1_1polynomial_1_1Polynomial.html#acb35aa91415753bac40f94e47483d841",
 "classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html",
-"developers_guide_compile_native.html#autotoc_md107",
-"fe__modal__simplex_8hpp.html#a9c66ba0b8f1de46b9dcef2b2fbb97592",
-"mesh__2d_8cpp.html#a6fd61d12db746f29663dbc32da82f2c9",
-"namespaces.html",
-"namespacevulpes_1_1geometry_1_1mesh2d.html#a5346b33e6fcd562cc51628fe26d6d390",
-"numbering_8hpp.html",
-"structvulpes_1_1datastructure_1_1internal_1_1StaticSelector.html#a52dfb87771a3026effc857a31e9f7ff5",
-"structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69af6d02e46b6363dc27250d2155b8912bf",
-"structvulpes_1_1scipy_1_1heapitem.html#aa9a0679a8a0413e9449e44426e8b4d0c",
-"structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html#ad30c039fbcef91414c1eb0742941570f",
-"structvulpes_1_1timeintegration_1_1Miller3.html",
-"tutorials_04_Shallow_Water_DG.html"
+"developers_guide_commit_and_merge_policy.html#autotoc_md102",
+"fe__modal__simplex_8hpp.html",
+"mesh__2d_8cpp.html#a5c22f3df559861a517b9ec67f380225d",
+"namespacemembers_t.html",
+"namespacevulpes_1_1geometry_1_1mesh2d.html#a10dd2d78db3cb9a682b81efa95de231b",
+"namespacevulpes_1_1vutils_1_1internal.html#a91af4262edd06b4882cb9496c57265c9",
+"structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html",
+"structvulpes_1_1la_1_1DataBoomerAMG.html#a607d2ac911172a8531eeab6023f99f69aa37da13e84e90a41c7cd4ee1e60e926a",
+"structvulpes_1_1scipy_1_1heap.html#abe8dafa09646133330788fb2d863012e",
+"structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html#aa38ff7ffeb77c00c46857f2e762d9b5b",
+"structvulpes_1_1timeintegration_1_1MidPoint.html#abd20f415b4488b60490dfc8dde3ee20b",
+"tutorials_02_Laplacian_Assembly.html#autotoc_md46"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
