@@ -398,7 +398,7 @@ Running</h2>
 <div class="line">./lap_dg_2d_main /path/to/lap_2d_parameters.json 1 6 voronoi_periodic</div>
 </div><!-- fragment --><p>To see all options:</p>
 <div class="fragment"><div class="line">./lap_dg_2d_main --help</div>
-</div><!-- fragment --><p>For distributed assembly and execution, see <a class="el" href="tutorials_05_MPI_Laplacian.html">MPI Laplacian Assembly</a>.</p>
+</div><!-- fragment --><p>For distributed assembly and execution, see <a class="el" href="tutorials_02_Laplacian_Assembly.html#mpi-laplacian-assembly">MPI Laplacian Assembly</a>.</p>
 <p>The supported 2D mesh families are (see the meshes tutorial <a class="el" href="tutorials_01_Meshes_2D.html">01_Meshes_2D.md</a>):</p>
 <div class="fragment"><div class="line">tria</div>
 <div class="line">sqr</div>
@@ -453,42 +453,30 @@ Output</h2>
 <li>Project this modal different to physical space on a set of sub-triangular mesh.</li>
 </ul>
 <p><img src="figs/lap_error.png" alt="Error" width="300" class="inline"/> </p>
-<h1><a class="anchor" id="autotoc_md45"></a>
-6) Post-processing convergence plots with vulplots</h1>
-<p>Once the convergence run has been saved to a text log, it can be post-processed with <code>vulplots</code> (<a href="https://github.com/vulpeslib/vulplots">https://github.com/vulpeslib/vulplots</a>).</p>
-<p>Starting from the example above in Vulpes:</p>
-<div class="fragment"><div class="line">cd build</div>
-<div class="line">./lap_dg_2d_main ../examples/assembly/laplacian/lap_2d_parameters.json 1 6 voronoi_periodic \</div>
-<div class="line">    &gt; lap_conv_voronoi_periodic.txt</div>
-</div><!-- fragment --><p>you can generate the convergence plot, within Vulplots library, with:</p>
-<div class="fragment"><div class="line">vulplots_convergence lap_conv_voronoi_periodic.txt</div>
-</div><!-- fragment --><p>The tool reads the Vulpes log file and extracts:</p>
-<ul>
-<li>the mesh diameter <code>h</code></li>
-<li>the matrix-based \(L^2\) error</li>
-<li>the integration-based \(L^2\) error</li>
-<li>the DG error</li>
-</ul>
-<p>For this Laplacian example, <code>vulplots</code> will detect the log format and generate a three-panel convergence figure:</p>
-<ul>
-<li>\(L^2\) error from the matrix-based measure</li>
-<li>\(L^2\) error from the integration-based measure</li>
-<li>DG error</li>
-</ul>
-<p>By default, <code>vulplots</code> also creates an <code>output/</code> directory containing:</p>
-<ul>
-<li>a PNG convergence plot</li>
-<li>a CSV export of the parsed convergence data</li>
-</ul>
-<p>The output filenames are derived from the input log filename. For example, a log named <code>lap_conv_voronoi_periodic.txt</code> produces files such as:</p>
-<div class="fragment"><div class="line">output/lap_conv_voronoi_periodic.png</div>
-<div class="line">output/lap_conv_voronoi_periodic.csv</div>
-</div><!-- fragment --><p><img src="figs/lap_conv_vor_periodic.png" alt="convergence plot" width="600" class="inline"/> </p>
-<p>Figure: Convergence plot for the solution of the Poisson equations with polyDG P1 on periodic Voronoi meshes. File: <code>output/lap_conv_voronoi_periodic.png</code> obtained from <code>vulplots_convergence lap_conv_voronoi_periodic.txt</code>. </p>
-<p>``` </p>
-<h2><a class="anchor" id="autotoc_md46"></a>
-Note</h2>
-<p>Vulplots is a Python package with different dependencies than Vulpes, so it cannot be ran inside the Vulpes docker container. Open a new vscode window and install it in your WSL system. </p>
+<h1><a class="anchor" id="mpi-laplacian-assembly"></a>
+MPI Laplacian Assembly</h1>
+<p>Only a few lines differ from the serial assembly: wrap the mesh in <code>ParallelMesh</code>, finalize an MPI-aware DoF numbering, and assemble owned cells. The weak form and the <code>SparseMatrix</code>, <code>Vector</code>, and <code>LinearSolver</code> calls remain unchanged; Vulpes uses distributed PETSc objects underneath.</p>
+<div class="fragment"><div class="line">geometry::ParallelMesh&lt;MeshType&gt; mesh([&amp;]() { <span class="keywordflow">return</span> getMesh(cfg); });</div>
+<div class="line"> </div>
+<div class="line">dofs::DofHandler dof_handler(mesh);</div>
+<div class="line">dof_handler.distributeDofs(fe_space);</div>
+<div class="line">dof_handler.renumberMpiSubdomainWise();</div>
+<div class="line">dof_handler.finalize();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">for</span> (index_t cell_id = 0; cell_id &lt; mesh.nOwnedCells(); ++cell_id) {</div>
+<div class="line">  <span class="comment">// same integration and insertion code as in serial</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><p>From the build directory:</p>
+<div class="fragment"><div class="line">OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 \</div>
+<div class="line">mpirun -n 4 ./lap_dg_2d_mpi_main \</div>
+<div class="line">  ../examples/assembly/laplacian/MPI/lap_2d_mpi_parameters.json</div>
+<div class="line"> </div>
+<div class="line">OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 \</div>
+<div class="line">mpirun -n 4 ./lap_dg_3d_mpi_main \</div>
+<div class="line">  ../examples/assembly/laplacian/MPI/lap_3d_mpi_parameters.json</div>
+</div><!-- fragment --><p>The MPI-specific positional order is <code>order mesh_kind nel dof_distrib_type [mesh_file] [output_path]</code>, also used for overrides after a JSON path. Instead of <code>n_lvls</code>, <code>nel</code> selects the mesh size (cells per direction for Cartesian meshes), mesh-file index, or agglomeration size/depth. <code>load_file</code> requires <code>mesh_file</code> and ignores <code>nel</code>; use <code>--help</code> for supported mesh kinds and selectors.</p>
+<p>Open the exported <code>.pvtu</code> in ParaView, keeping its per-rank <code>.vtu</code> pieces alongside it. It contains <code>u_h</code>, <code>u_exact</code>, and <code>u_error</code>. Reported errors are the globally computed, matrix-based \(L^2\) error and \(H^1\) semi-error.</p>
+<p><b>Warning:</b> Keep <code>dof_distrib_type = 2</code> for export so owned-cell coefficients are locally owned, and set thread counts before launching to control threads per rank. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -497,7 +485,7 @@ Note</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Nov 6 2026 07:19:53 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Nov 6 2026 09:56:29 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

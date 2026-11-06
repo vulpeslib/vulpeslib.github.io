@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('tutorials_06_Mesh_Agglomeration.html',
 <div class="textblock"><p>Author: Nicola De March <a href="#" onclick="location.href='mai'+'lto:'+'nic'+'ol'+'a.d'+'em'+'arc'+'h@'+'pol'+'im'+'i.i'+'t'; return false;">nicol<span class="obfuscator">.nosp@m.</span>a.de<span class="obfuscator">.nosp@m.</span>march<span class="obfuscator">.nosp@m.</span>@pol<span class="obfuscator">.nosp@m.</span>imi.i<span class="obfuscator">.nosp@m.</span>t</a></p>
 <p>This tutorial documents the example <code>examples/mesh/agglomeration/agglomerate_mesh.cpp</code>, a command-line tool that reads a fine 2D or 3D mesh, groups its cells into agglomerates (polygons in 2D, polyhedra in 3D) and writes the agglomerated mesh. Every option is read from a JSON file; a template is provided in <code>examples/mesh/agglomeration/agglomeration_parameters.json</code>.</p>
 <p>The agglomeration strategies implemented in Vulpes follow the approach of the <b>MAGNET</b> library; see <a class="el" href="tutorials_06_Mesh_Agglomeration.html#references">References</a>.</p>
-<h1><a class="anchor" id="autotoc_md85"></a>
+<h1><a class="anchor" id="autotoc_md88"></a>
 Quick Start</h1>
 <p>The executable is built together with the other examples (target <code>agglomerate_mesh</code>). It runs on <b>one MPI rank only</b>:</p>
 <div class="fragment"><div class="line">./agglomerate_mesh &lt;settings.json&gt;</div>
@@ -134,7 +134,7 @@ Quick Start</h1>
 <blockquote class="doxtable">
 <p>&zwj;The JSON file must be plain JSON: comments (<code>//</code>) are <b>not</b> allowed. The commented block at the top of <code>agglomerate_mesh.cpp</code> is only documentation. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md86"></a>
+<h1><a class="anchor" id="autotoc_md89"></a>
 Overview of the Pipeline</h1>
 <ol type="1">
 <li><b>Read</b> the fine mesh (cell tags are imported from the VTK cell data).</li>
@@ -145,7 +145,7 @@ Overview of the Pipeline</h1>
 <li><b>Validate</b> (3D only): the mesh is written only if no agglomerate has a non-manifold edge or a face of zero area.</li>
 <li><b>Write</b> the agglomerated mesh (<code>.vtu</code>/<code>.vtk</code>).</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md87"></a>
+<h1><a class="anchor" id="autotoc_md90"></a>
 JSON Reference</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -178,24 +178,24 @@ JSON Reference</h1>
 <td class="markdownTableBodyNone"><code>repair_stall_iterations</code>   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone"><code>3</code>   </td><td class="markdownTableBodyNone">3D, <code>repair</code>   </td><td class="markdownTableBodyNone">After how many iterations a persistently non-manifold edge is resolved with new agglomerates.   </td></tr>
 </table>
 <p>Keys that do not apply to the chosen backend/method are ignored, so the same file can keep all of them (as the template does) and you only switch <code>backend</code> and <code>method</code>.</p>
-<h1><a class="anchor" id="autotoc_md88"></a>
+<h1><a class="anchor" id="autotoc_md91"></a>
 Methods</h1>
 <p>The <code>method</code> decides <em>how</em> the fine cells are split; the <code>backend</code> decides <em>which algorithm</em> computes each split.</p>
-<h2><a class="anchor" id="autotoc_md89"></a>
+<h2><a class="anchor" id="autotoc_md92"></a>
 direct_kway</h2>
 <p>A single k-way partition of the whole mesh (or of each region) into <code>n_cells</code> groups.</p>
 <ul>
 <li>Parameter: <code>n_cells &gt;= 1</code>.</li>
 <li>Backends: <code>parmetis</code>, <code>kmeans</code>. <b>Not available with <code>gnn</code>.</b></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md90"></a>
+<h2><a class="anchor" id="autotoc_md93"></a>
 bisect</h2>
 <p>Recursive bisection: at each level every group is split in two. The number of levels is <code>ceil(log2(n_cells))</code>, so the result has up to <code>2^ceil(log2(n_cells))</code> agglomerates: <code>n_cells = 1000</code> gives 10 levels, i.e. up to 1024 agglomerates.</p>
 <ul>
 <li>Parameter: <code>n_cells &gt;= 2</code>.</li>
 <li>Backends: <code>parmetis</code>, <code>kmeans</code>, <code>gnn</code>.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md91"></a>
+<h2><a class="anchor" id="autotoc_md94"></a>
 mult_factor</h2>
 <p>Recursive bisection driven by size: every group whose (vertex-vertex) diameter is larger than <code>target_diameter</code> is bisected again, until all groups are small enough. The number of agglomerates follows from the geometry; <code>n_cells</code> is ignored.</p>
 <ul>
@@ -205,9 +205,9 @@ mult_factor</h2>
 <blockquote class="doxtable">
 <p>&zwj;Groups that are not connected are split by the library, so the final number of agglomerates can differ slightly from <code>n_cells</code>. The repair (3D) can also add a few agglomerates. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md92"></a>
+<h1><a class="anchor" id="autotoc_md95"></a>
 Backends</h1>
-<h2><a class="anchor" id="autotoc_md93"></a>
+<h2><a class="anchor" id="autotoc_md96"></a>
 parmetis</h2>
 <p>Graph partitioning of the dual graph of the mesh (cells are nodes, shared facets are edges) with METIS/ParMETIS. It uses only the connectivity, not the geometry, so it is the fastest backend and the only one that accepts 3D input meshes with non-manifold fine cells. ParMETIS is not deterministic: two runs can give slightly different agglomerations.</p>
 <table class="markdownTable">
@@ -228,7 +228,7 @@ parmetis</h2>
 <div class="line">  &quot;method&quot;: &quot;direct_kway&quot;,</div>
 <div class="line">  &quot;n_cells&quot;: 100000</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md94"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md97"></a>
 kmeans</h2>
 <p>Clusters the fine cells by the position of their barycenters (k-means, with cell measures). It produces compact, roughly isotropic agglomerates; the connectivity is enforced afterwards. With <code>bisect</code>/<code>mult_factor</code> each split is a 2-means.</p>
 <table class="markdownTable">
@@ -252,7 +252,7 @@ kmeans</h2>
 </div><!-- fragment --><blockquote class="doxtable">
 <p>&zwj;[!WARNING] In 3D the <code>kmeans</code> backend needs closed manifold fine cells (barycenters and measures are computed with <code>geometry::Cell3D</code>). If the input check finds non-manifold cells the program stops: fix the mesh or use <code>parmetis</code>. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md95"></a>
+<h2><a class="anchor" id="autotoc_md98"></a>
 gnn</h2>
 <p>Each bisection is computed by a pretrained Graph Neural Network (GraphSAGE, loaded with TorchScript from <code>vulpes/geometry/gnn_models/</code>), as proposed in MAGNET. The network bisects the dual graph using geometric features of the cells, aiming at well-shaped agglomerates with a quality comparable to METIS.</p>
 <table class="markdownTable">
@@ -283,7 +283,7 @@ gnn</h2>
 </div><!-- fragment --><blockquote class="doxtable">
 <p>&zwj;[!WARNING] Like <code>kmeans</code>, the <code>gnn</code> backend refuses 3D meshes with non-manifold fine cells. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md96"></a>
+<h1><a class="anchor" id="autotoc_md99"></a>
 Agglomeration by Region (Materials)</h1>
 <p>Many problems have several materials or subdomains, and agglomerates must not cross the interface between them. Vulpes supports this through a <b>cell tag</b>:</p>
 <ul>
@@ -302,7 +302,7 @@ Agglomeration by Region (Materials)</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>mult_factor</code>   </td><td class="markdownTableBodyNone"><code>target_diameter</code> (maximum diameter in that region)   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md97"></a>
+<h2><a class="anchor" id="autotoc_md100"></a>
 Example: a cube with two materials</h2>
 <p>The figure shows a cube meshed with tetrahedra and split into two materials (<code>Material ID = 1</code> and <code>Material ID = 2</code>). The two halves are agglomerated independently and with different resolutions: the agglomerates of material 1 are small (fine agglomeration), those of material 2 are larger (coarse agglomeration), and no agglomerate crosses the material interface.</p>
 <p><img src="figs/Cube_with_materials.png" alt="Cube agglomerated by material" width="800" class="inline"/> </p>
@@ -342,7 +342,7 @@ Example: a cube with two materials</h2>
 </div><!-- fragment --><blockquote class="doxtable">
 <p>&zwj;[!TIP] With the <code>gnn</code> backend and materials, <code>"gnn_model": "hetero"</code> uses the model trained on heterogeneous media. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md98"></a>
+<h1><a class="anchor" id="autotoc_md101"></a>
 Repair of 3D Agglomerates</h1>
 <p>In 3D an agglomerate can be made of two parts that touch only along an edge. That edge is then shared by more than two faces of the agglomerate (<em>non-manifold edge</em>): <code>geometry::Cell3D</code> does not support such polyhedra and the DG solvers abort on them. With <code>"repair": true</code> (default) the labels are fixed iteratively, until no such edge is left or <code>repair_max_iterations</code> is reached:</p>
 <ol type="1">
@@ -356,7 +356,7 @@ Repair of 3D Agglomerates</h1>
 <li>with <code>repair: true</code>, increase <code>repair_max_iterations</code>, or rerun (ParMETIS is not deterministic).</li>
 </ul>
 <p>In 2D the input check, repair and validation are skipped and the mesh is written as it is.</p>
-<h1><a class="anchor" id="autotoc_md99"></a>
+<h1><a class="anchor" id="autotoc_md102"></a>
 Related Examples</h1>
 <p>The other files in <code>examples/mesh/agglomeration/</code> show how to call the agglomeration classes directly from C++:</p>
 <ul>
@@ -377,7 +377,7 @@ References</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Nov 6 2026 07:19:53 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri Nov 6 2026 09:56:29 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

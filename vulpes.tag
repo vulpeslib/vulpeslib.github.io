@@ -16,19 +16,19 @@
     <filename>02__Laplacian__Assembly_8md.html</filename>
   </compound>
   <compound kind="file">
-    <name>03_Advection_Assembly.md</name>
+    <name>03_Elasticity_Assembly.md</name>
     <path>/__w/vulpes/vulpes/doc/tutorials/</path>
-    <filename>03__Advection__Assembly_8md.html</filename>
+    <filename>03__Elasticity__Assembly_8md.html</filename>
   </compound>
   <compound kind="file">
-    <name>04_Shallow_Water_DG.md</name>
+    <name>04_Advection_Assembly.md</name>
     <path>/__w/vulpes/vulpes/doc/tutorials/</path>
-    <filename>04__Shallow__Water__DG_8md.html</filename>
+    <filename>04__Advection__Assembly_8md.html</filename>
   </compound>
   <compound kind="file">
-    <name>05_MPI_Laplacian.md</name>
+    <name>05_Shallow_Water_DG.md</name>
     <path>/__w/vulpes/vulpes/doc/tutorials/</path>
-    <filename>05__MPI__Laplacian_8md.html</filename>
+    <filename>05__Shallow__Water__DG_8md.html</filename>
   </compound>
   <compound kind="file">
     <name>06_Mesh_Agglomeration.md</name>
@@ -30143,21 +30143,22 @@
     <name>tutorials_02_Laplacian_Assembly</name>
     <title>Laplacian Assembly (DG)</title>
     <filename>tutorials_02_Laplacian_Assembly.html</filename>
+    <docanchor file="tutorials_02_Laplacian_Assembly.html" title="MPI Laplacian Assembly">mpi-laplacian-assembly</docanchor>
   </compound>
   <compound kind="page">
-    <name>tutorials_03_Advection_Assembly</name>
+    <name>tutorials_03_Elasticity_Assembly</name>
+    <title>Linear Elasticity Assembly (DG)</title>
+    <filename>tutorials_03_Elasticity_Assembly.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>tutorials_04_Advection_Assembly</name>
     <title>Advection Assembly (DG)</title>
-    <filename>tutorials_03_Advection_Assembly.html</filename>
+    <filename>tutorials_04_Advection_Assembly.html</filename>
   </compound>
   <compound kind="page">
-    <name>tutorials_04_Shallow_Water_DG</name>
+    <name>tutorials_05_Shallow_Water_DG</name>
     <title>Linear Shallow Water Equations (DG)</title>
-    <filename>tutorials_04_Shallow_Water_DG.html</filename>
-  </compound>
-  <compound kind="page">
-    <name>tutorials_05_MPI_Laplacian</name>
-    <title>MPI Laplacian Assembly</title>
-    <filename>tutorials_05_MPI_Laplacian.html</filename>
+    <filename>tutorials_05_Shallow_Water_DG.html</filename>
   </compound>
   <compound kind="page">
     <name>tutorials_06_Mesh_Agglomeration</name>
@@ -30171,9 +30172,9 @@
     <filename>tutorials.html</filename>
     <subpage>tutorials_01_Meshes_2D.html</subpage>
     <subpage>tutorials_02_Laplacian_Assembly.html</subpage>
-    <subpage>tutorials_03_Advection_Assembly.html</subpage>
-    <subpage>tutorials_04_Shallow_Water_DG.html</subpage>
-    <subpage>tutorials_05_MPI_Laplacian.html</subpage>
+    <subpage>tutorials_03_Elasticity_Assembly.html</subpage>
+    <subpage>tutorials_04_Advection_Assembly.html</subpage>
+    <subpage>tutorials_05_Shallow_Water_DG.html</subpage>
     <subpage>tutorials_06_Mesh_Agglomeration.html</subpage>
   </compound>
   <compound kind="page">
