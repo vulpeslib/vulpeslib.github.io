@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('tutorials_02_Laplacian_Assembly.html',
 <li>Show an example of usage and post-processing.</li>
 </ol>
 <p>Reference for notation and DG formulation style: L. Cangiani, Z. Dong, E. H. Georgoulis, and P. Houston, <em>hp-Version Discontinuous Galerkin Methods on Polygonal and Polyhedral Meshes</em>, Springer, 2017. DOI: <a href="https://doi.org/10.1007/978-3-319-19800-2">10.1007/978-3-319-19800-2</a></p>
-<h1><a class="anchor" id="autotoc_md32"></a>
+<h1><a class="anchor" id="autotoc_md45"></a>
 1) Theoretical DG Formulation of the Laplacian</h1>
 <p>Consider the Poisson problem</p>
 <p class="formulaDsp">
@@ -168,7 +168,7 @@ a_h(u_h,v_h)
 a_h(u_h,v_h) = \ell_h(v_h) \qquad \forall v_h\in V_h.
 \]
 </p>
-<h1><a class="anchor" id="autotoc_md33"></a>
+<h1><a class="anchor" id="autotoc_md46"></a>
 2) Cellwise derivation</h1>
 <p>Vulpes, and in fact most DG codes, loop over cells and then the edges of the respective cells, not through the whole set of faces directly. Here we will re-write the formulation above to accommodate for that.</p>
 <p>We will look into the internal edge term, dropping the \(_h\) for brevity, and noting that \(n^+=-n^-\).  </p><p class="formulaDsp">
@@ -251,7 +251,7 @@ N^+ = \frac{1}{2}(\nabla u^{+}\cdot n^+)v^-+ \frac{1}{2}(\nabla v^{+}\cdot n^+)u
 \sum_{e\in\mathcal{F}_h\cup\mathcal{F}_h^{\mathcal{B}}} \int_e \gamma [\![u_h]\!]\cdot[\![v_h]\!].
 \]
 </p>
-<h1><a class="anchor" id="autotoc_md34"></a>
+<h1><a class="anchor" id="autotoc_md47"></a>
 3) Code notations</h1>
 <p>From <a href="examples/assembly/laplacian/lap_dg_2d_main.cpp">examples/assembly/laplacian/lap_dg_2d_main.cpp</a>, Vulpes assembles the Laplacian with modal DG basis and the manufactured solution</p>
 <p class="formulaDsp">
@@ -261,7 +261,7 @@ u(x,y)=\sin(2\pi x)\sin(2\pi y),
 f(x,y)=8\pi^2\sin(2\pi x)\sin(2\pi y).
 \]
 </p>
-<h2><a class="anchor" id="autotoc_md35"></a>
+<h2><a class="anchor" id="autotoc_md48"></a>
 Core weak-form terms in code</h2>
 <p>The file defines the following expressions (symbol names in parentheses):</p>
 <ul>
@@ -320,7 +320,7 @@ bc =
 </p>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md36"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 Assembled algebraic operators</h2>
 <p>The matrix and vectors are assembled as:</p>
 <ul>
@@ -352,7 +352,7 @@ A = K + IA + IA^t + SA + IAn + IAn^t + SAn,
 <li>\(\mathrm{rhs}_{exact}\) (for projection of exact solution),</li>
 <li>\(\mathrm{rhs}_{const}\) (for constant-mode handling).</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md37"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
 Periodic case handling in Vulpes</h2>
 <p>If the mesh is periodic, the discrete Laplacian has a constant null space. The implementation:</p>
 <ol type="1">
@@ -360,7 +360,7 @@ Periodic case handling in Vulpes</h2>
 <li>After solving, enforces equal mean between numerical and exact projected solutions via a dedicated routine.</li>
 </ol>
 <p>This removes the arbitrary additive constant and allows consistent error computation.</p>
-<h2><a class="anchor" id="autotoc_md38"></a>
+<h2><a class="anchor" id="autotoc_md51"></a>
 Practical interpretation</h2>
 <p>The implemented form is an interior-penalty DG Laplacian where:</p>
 <ul>
@@ -369,10 +369,10 @@ Practical interpretation</h2>
 <li>neighbor terms are assembled explicitly using face-neighbor couplings.</li>
 </ul>
 <p>So the code realizes a standard IPDG/SIPG-style discretization written in a cell-wise block assembly style suitable for polygonal meshes.</p>
-<h1><a class="anchor" id="autotoc_md39"></a>
+<h1><a class="anchor" id="autotoc_md52"></a>
 4) How to run the Laplacian convergence test</h1>
 <p>The 2D convergence example is in <code>examples/assembly/laplacian/lap_dg_2d_main.cpp</code>. A 3D sequential version is in <code>lap_dg_3d_main.cpp</code>. Single-run 2D and 3D MPI examples are in <code>examples/assembly/laplacian/MPI/</code>.</p>
-<h2><a class="anchor" id="autotoc_md40"></a>
+<h2><a class="anchor" id="autotoc_md53"></a>
 Parameter files</h2>
 <p>Each example can read its parameters from a JSON file. Example parameter files are provided in the source directory:</p>
 <div class="fragment"><div class="line">examples/assembly/laplacian/lap_2d_parameters.json</div>
@@ -387,7 +387,7 @@ Parameter files</h2>
 <div class="line">  &quot;output_path&quot;: &quot;output/laplacian&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Copy or edit one of these files to define a run.</p>
-<h2><a class="anchor" id="autotoc_md41"></a>
+<h2><a class="anchor" id="autotoc_md54"></a>
 Running</h2>
 <p>A complete JSON file or every positional CLI parameter must be supplied. The programs do not search for a parameter file automatically.</p>
 <p>From the build directory, pass the JSON file as the first argument:</p>
@@ -415,7 +415,7 @@ Running</h2>
 <div class="fragment"><div class="line">tet</div>
 <div class="line">hexa  (alias: cart)</div>
 <div class="line">poly</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md55"></a>
 Example</h2>
 <p>For a first-order DG convergence run on the periodic Voronoi mesh sequence:</p>
 <div class="fragment"><div class="line">cd build</div>
@@ -423,7 +423,7 @@ Example</h2>
 </div><!-- fragment --><p>To save the convergence output to a text file:</p>
 <div class="fragment"><div class="line">./lap_dg_2d_main ../examples/assembly/laplacian/lap_2d_parameters.json 1 6 voronoi_periodic \</div>
 <div class="line">    &gt; lap_conv_voronoi_periodic.txt</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md56"></a>
 Output</h2>
 <p>For each mesh in the selected sequence, the code prints:</p>
 <ul>
@@ -436,7 +436,7 @@ Output</h2>
 <p>VTK files for mesh and solution visualization are written to <code>output/laplacian/</code> with the naming convention:</p>
 <div class="fragment"><div class="line">lap_2d_p{order}_{mesh_kind}_{mesh_index}_mesh.vtu   -- mesh only</div>
 <div class="line">lap_2d_p{order}_{mesh_kind}_{mesh_index}.vtu        -- solution, exact, error</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md44"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md57"></a>
 5) Post-processing visualization in Paraview</h1>
 <p>You can view just the mesh file in Paraview. For instance <code>output/laplacian/lap_2d_p1_voronoi_periodic_2_mesh.vtu</code>. This file only contains mesh information, but no solution of the Laplace problem.</p>
 <p><img src="figs/Paraview_periodic_voronoi_mesh.png" alt="mesh plot" width="600" class="inline"/> </p>
@@ -485,7 +485,7 @@ MPI Laplacian Assembly</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Nov 6 2026 09:56:29 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 12:10:10 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

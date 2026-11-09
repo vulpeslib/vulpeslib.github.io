@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('tutorials_04_Advection_Assembly.html',
 </ul>
 <p>Reference for notation and DG formulation style: F. Brezzi, L. D. Marini, and E. Suli, <em>Discontinuous Galerkin methods for first-order hyperbolic problems</em>, Math. Models Methods Appl. Sci. 14(12), 2004.</p>
 <p>Disclaimer: we will abuse some of the notation to allow faster understanding of the ideas. Full mathematical formulations should be checked in the associated papers.</p>
-<h1><a class="anchor" id="autotoc_md57"></a>
+<h1><a class="anchor" id="autotoc_md70"></a>
 1) DG Formulation of Advection</h1>
 <p>Consider the advection problem</p>
 <p class="formulaDsp">
@@ -256,7 +256,7 @@ w_{K&#39;}(x) =\max(c(x)\cdot n&#39;,0) = \max(c(x)\cdot (-n),0) = - \min(c(x)\c
 \]
 </p>
 <p>where \(K&#39;\) is the neighbor across face \(e\). A key difference here is that we only use \(w_K\), not \(w_{K&#39;}\) anymore, which facilitates the expression handling that we will see later. This is the form most closely matching the Vulpes implementation.</p>
-<h1><a class="anchor" id="autotoc_md58"></a>
+<h1><a class="anchor" id="autotoc_md71"></a>
 2) Cellwise Derivation Matching the Vulpes Assembly</h1>
 <p>Vulpes assembles by looping over cells and then over their neighbor faces, not by looping over the global set of faces directly.</p>
 <p>For a given cell \(K\) with outward normal \(n_K\), define</p>
@@ -294,7 +294,7 @@ A = \sum_{K\in\mathcal{T}_h} \text{Cell}(K)   + \sum_{K\in\mathcal{T}_h} \text{F
 \]
 </p>
 <p>For periodic meshes, there are no external boundary terms; every face has a neighbor under the periodic connectivity.</p>
-<h1><a class="anchor" id="autotoc_md59"></a>
+<h1><a class="anchor" id="autotoc_md72"></a>
 3) Code Notations in the Advection Example</h1>
 <p>From <a href="examples/assembly/advection/scalar/advection_dg_assembly.hpp">examples/assembly/advection/scalar/advection_dg_assembly.hpp</a>, the current code defines:</p>
 <ul>
@@ -343,7 +343,7 @@ M \dot{U} = A U + F(t),
 c(x,y) = (c_x, c_y).
 \]
 </p>
-<h2><a class="anchor" id="autotoc_md60"></a>
+<h2><a class="anchor" id="autotoc_md73"></a>
 Variable mode (current)</h2>
 <p>Variable mode uses a constant background drift plus a divergence-free rotational component from streamfunction</p>
 <p class="formulaDsp">
@@ -372,13 +372,13 @@ c(x,y) = (c_x, c_y) + c_{\mathrm{var}}(x,y),
 |c| \le \sqrt{c_x^2+c_y^2} + 1.
 \]
 </p>
-<h1><a class="anchor" id="autotoc_md61"></a>
+<h1><a class="anchor" id="autotoc_md74"></a>
 4) Initial Condition and Snapshots</h1>
 <ul>
 <li>In variable mode, the pulse is intentionally off-centered to avoid a steady-profile setup and to show visible advection/rotation.</li>
 <li>Snapshot collection always includes the initial and final times (coverage of the full time range \([0,T]\)), with interior snapshots taken at uniform integer-step intervals.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md62"></a>
+<h1><a class="anchor" id="autotoc_md75"></a>
 5) Run</h1>
 <p>From the build directory:</p>
 <div class="fragment"><div class="line">./advection_main ../examples/assembly/advection/scalar/advection_parameters.json</div>
@@ -393,7 +393,7 @@ c(x,y) = (c_x, c_y) + c_{\mathrm{var}}(x,y),
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Nov 6 2026 09:56:29 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 12:10:10 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

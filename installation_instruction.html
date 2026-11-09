@@ -84,7 +84,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('developers_guide_installation_instruction.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('installation_instruction.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('developers_guide_installation_instruct
 <li>Should be promped to enter the <code>.devcontaier</code> when opening the <code>vulpes</code> folder. We you agree the first time VSCode will start building the Docker container automatically. It will take a few minutes.</li>
 </ul>
 <p>Every time you install a kernel update you may need to restart your pc to use this setup. </p>
-<h2><a class="anchor" id="autotoc_md125"></a>
+<h2><a class="anchor" id="autotoc_md0"></a>
 MacOS users with M1/M2 chips</h2>
 <p>Move inside the directory and open the <code>devcontainer.json</code> file located under the hidden <code>.devcontainer</code> folder. Substitute the content of the file with the following: </p><div class="fragment"><div class="line">json</div>
 <div class="line">  // For format details, see https://aka.ms/devcontainer.json. For config options, see the</div>
@@ -167,17 +167,17 @@ MacOS users with M1/M2 chips</h2>
 </div><!-- fragment --><p> Save and close the file.</p>
 <p><b>Build Image</b> Open VScode and select the option "Reopen in container".</p>
 <p>Proceed with the instructions in the main documentation to complete the setup and start using Vulpes. </p>
-<h1><a class="anchor" id="autotoc_md126"></a>
+<h1><a class="anchor" id="autotoc_md1"></a>
 VSCode extensions</h1>
 <p>Relevant VSCode extensions in the remote container should be automatically installed.</p>
 <p>In settings (File &gt; Preferences &gt; Settings) search "Clang_format_style" and set <code><a href="file:/workspaces/vulpes/.clang-format">file:/workspaces/vulpes/.clang-format</a></code>. Then you can format with Ctrl+Shift+I.</p>
-<h1><a class="anchor" id="autotoc_md127"></a>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Use the Docker from VSCode</h1>
 <ul>
 <li>To create a new terminal from VS Code use <code>Ctrl+Shift+P</code> and select <code>Terminal: Create New Terminal</code></li>
 <li>To enter the docker from a generic terminal, find the name of the container using <code>docker ps -a</code> (the image name should be something similar to <code>vsc-vulpes-&lt;hash&gt;</code>), then use <code>docker exec -it &lt;docker container name&gt; /bin/bash</code> to open the container in interactive mode</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md128"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Simple firsts steps</h1>
 <p>If you want to jump directly into the code your first step can be something like</p>
 <div class="fragment"><div class="line">mkdir build</div>
@@ -185,19 +185,19 @@ Simple firsts steps</h1>
 <div class="line">make -j&lt;n_jobs&gt;</div>
 </div><!-- fragment --><p>To test the code </p><div class="fragment"><div class="line">ctest -j&lt;n_jobs&gt;</div>
 </div><!-- fragment --><p>To check the failure of a test, you can run the single executable in the <code>tests</code> folder.</p>
-<h1><a class="anchor" id="autotoc_md129"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Installation of Vulpes on Cluster - Apptainer Image</h1>
-<h2><a class="anchor" id="autotoc_md130"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 1. Install Vulpes on cluster</h2>
 <p>Clone the library from github and install all the third party libraries. </p><div class="fragment"><div class="line">git clone git@github.com:vulpeslib/vulpes.git --recursive</div>
 <div class="line">cd vulpes</div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md131"></a>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md6"></a>
 2. Setup Apptainer on cluster:</h2>
 <p>You can use either the system-installed Apptainer (recommended) or install a local version.</p>
-<h3><a class="anchor" id="autotoc_md132"></a>
+<h3><a class="anchor" id="autotoc_md7"></a>
 Using system-installed Apptainer (recommended)</h3>
 <p>In order to use the local installation, you just need to run: </p><div class="fragment"><div class="line">/opt/mox/apptainer/bin/apptainer &lt;commands&gt;</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md133"></a>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md8"></a>
 Installing a local version</h3>
 <p>In order to setup you local installation, run the following commands </p><div class="fragment"><div class="line">cd </div>
 <div class="line">mkdir opt</div>
@@ -206,7 +206,7 @@ Installing a local version</h3>
 </div><!-- fragment --><p> With this command you install a local version of Apptainer, you can use the Apptainer commands by running: </p><div class="fragment"><div class="line">/opt/apptainer/bin/apptainer &lt;command&gt;</div>
 </div><!-- fragment --> <hr  />
 <p> See <a href="https://apptainer.org/docs/user/latest/index.html">Apptainer User Guide</a> for full documentation. </p>
-<h2><a class="anchor" id="autotoc_md135"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 3. Create the Apptainer definition file</h2>
 <p>Navigate to the repository and create the folder for the definition file: </p><div class="fragment"><div class="line">mkdir .apptainer</div>
 <div class="line">cd .apptainer</div>
@@ -248,11 +248,11 @@ Installing a local version</h3>
 <div class="line"> </div>
 <div class="line">%help</div>
 <div class="line">    This container </div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md136"></a>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md11"></a>
 4. Build the image</h2>
 <div class="fragment"><div class="line">/opt/mox/apptainer/bin/apptainer build vulpes_apptainer.sif vulpes.def</div>
 </div><!-- fragment --><p> This creates <code>vulpes_apptainer.sif</code>, which can be used on any cluster with Apptainer/Singularity installed.</p>
-<h2><a class="anchor" id="autotoc_md137"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 5. Run the image and compile Vulpes</h2>
 <p>Start the container: </p><div class="fragment"><div class="line">/opt/mox/apptainer/bin/apptainer exec vulpes_apptainer.sif bash</div>
 </div><!-- fragment --><p> then the terminal should transform into an Apptainer terminal. Navigate to the base directory of Vulpes and start the compilation (see the <a href="https://vulpeslib.github.io/md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2developer-setup_2index.html">Vulpes Documentation</a>): </p><div class="fragment"><div class="line">mkdir build</div>
@@ -267,8 +267,7 @@ Installing a local version</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="developers_guide.html">Developer&#39;s Guide</a></li>
-    <li class="footer">Generated on Fri Nov 6 2026 09:56:29 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 12:10:10 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

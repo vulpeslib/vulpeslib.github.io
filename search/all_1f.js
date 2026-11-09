@@ -29,13 +29,13 @@ var searchData=
   ['updateweights_26',['UpdateWeights',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa30366acf17ea86ca9e5012ecd382dfd1',1,'vulpes::fe']]],
   ['upow_27',['upow',['../namespacevulpes_1_1vmath.html#a2b17e16df3a08f27fff0aa30c875555b',1,'vulpes::vmath']]],
   ['upper_5fbound_28',['upper_bound',['../structvulpes_1_1scipy_1_1RectRectDistanceTracker.html#abd16d1ac55c1299821bb15dcb43063c7',1,'vulpes::scipy::RectRectDistanceTracker']]],
-  ['upwind_20flux_20and_20its_20central_20dissipation_20form_29',['3.1 The Upwind Flux and its Central + Dissipation Form',['../tutorials_05_Shallow_Water_DG.html#autotoc_md69',1,'']]],
-  ['upwind_20godunov_20numerical_20flux_30',['3) Upwind (Godunov) Numerical Flux',['../tutorials_05_Shallow_Water_DG.html#autotoc_md68',1,'']]],
-  ['use_20the_20docker_20from_20vscode_31',['Use the Docker from VSCode',['../developers_guide_installation_instruction.html#autotoc_md127',1,'']]],
-  ['usecase_32',['Our usecase',['../developers_guide_compile_native.html#autotoc_md115',1,'']]],
-  ['users_20with_20m1_20m2_20chips_33',['MacOS users with M1/M2 chips',['../developers_guide_installation_instruction.html#autotoc_md125',1,'']]],
+  ['upwind_20flux_20and_20its_20central_20dissipation_20form_29',['3.1 The Upwind Flux and its Central + Dissipation Form',['../tutorials_05_Shallow_Water_DG.html#autotoc_md82',1,'']]],
+  ['upwind_20godunov_20numerical_20flux_30',['3) Upwind (Godunov) Numerical Flux',['../tutorials_05_Shallow_Water_DG.html#autotoc_md81',1,'']]],
+  ['use_20the_20docker_20from_20vscode_31',['Use the Docker from VSCode',['../installation_instruction.html#autotoc_md2',1,'']]],
+  ['usecase_32',['Our usecase',['../developers_guide_compile_native.html#autotoc_md128',1,'']]],
+  ['users_20with_20m1_20m2_20chips_33',['MacOS users with M1/M2 chips',['../installation_instruction.html#autotoc_md0',1,'']]],
   ['using_20assembly_20comments_34',['2. Checking Assembly Code and Using Assembly Comments',['../developers_guide_profiling.html#autotoc_md140',1,'']]],
   ['using_20callgrind_35',['Using Callgrind',['../developers_guide_profiling.html#autotoc_md139',1,'']]],
-  ['using_20spack_36',['Using Spack',['../developers_guide_compile_native.html#autotoc_md114',1,'']]],
-  ['using_20system_20installed_20apptainer_20recommended_37',['Using system-installed Apptainer (recommended)',['../developers_guide_installation_instruction.html#autotoc_md132',1,'']]]
+  ['using_20spack_36',['Using Spack',['../developers_guide_compile_native.html#autotoc_md127',1,'']]],
+  ['using_20system_20installed_20apptainer_20recommended_37',['Using system-installed Apptainer (recommended)',['../installation_instruction.html#autotoc_md7',1,'']]]
 ];

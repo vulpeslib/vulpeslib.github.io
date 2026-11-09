@@ -25,158 +25,158 @@
 var NAVTREE =
 [
   [ "Vulpes", "index.html", [
+    [ "Install & Build", "installation_instruction.html", [
+      [ "VSCode extensions", "installation_instruction.html#autotoc_md1", null ],
+      [ "Use the Docker from VSCode", "installation_instruction.html#autotoc_md2", null ],
+      [ "Simple firsts steps", "installation_instruction.html#autotoc_md3", null ],
+      [ "Installation of Vulpes on Cluster - Apptainer Image", "installation_instruction.html#autotoc_md4", [
+        [ "MacOS users with M1/M2 chips", "installation_instruction.html#autotoc_md0", null ],
+        [ "1. Install Vulpes on cluster", "installation_instruction.html#autotoc_md5", null ],
+        [ "2. Setup Apptainer on cluster:", "installation_instruction.html#autotoc_md6", [
+          [ "Using system-installed Apptainer (recommended)", "installation_instruction.html#autotoc_md7", null ],
+          [ "Installing a local version", "installation_instruction.html#autotoc_md8", null ]
+        ] ],
+        [ "3. Create the Apptainer definition file", "installation_instruction.html#autotoc_md10", null ],
+        [ "4. Build the image", "installation_instruction.html#autotoc_md11", null ],
+        [ "5. Run the image and compile Vulpes", "installation_instruction.html#autotoc_md12", null ]
+      ] ]
+    ] ],
     [ "Tutorials", "tutorials.html", [
       [ "Mesh Kinds for lap_dg_2d_main", "tutorials_01_Meshes_2D.html", [
-        [ "Quick Summary", "tutorials_01_Meshes_2D.html#autotoc_md0", null ],
-        [ "General Notes", "tutorials_01_Meshes_2D.html#autotoc_md1", null ],
-        [ "1. tria", "tutorials_01_Meshes_2D.html#autotoc_md2", null ],
-        [ "2. sqr", "tutorials_01_Meshes_2D.html#autotoc_md4", null ],
-        [ "3. poly_meshes", "tutorials_01_Meshes_2D.html#autotoc_md6", null ],
-        [ "4. kway_kmeans", "tutorials_01_Meshes_2D.html#autotoc_md8", null ],
-        [ "5. kway_metis", "tutorials_01_Meshes_2D.html#autotoc_md10", null ],
-        [ "6. bisect_metis", "tutorials_01_Meshes_2D.html#autotoc_md12", null ],
-        [ "7. bisect_kmeans", "tutorials_01_Meshes_2D.html#autotoc_md14", null ],
-        [ "8. bisect_gnn", "tutorials_01_Meshes_2D.html#autotoc_md16", null ],
-        [ "9. rect_tri_periodic", "tutorials_01_Meshes_2D.html#autotoc_md18", null ],
-        [ "10. rect_sq_periodic", "tutorials_01_Meshes_2D.html#autotoc_md20", null ],
-        [ "11. voronoi_periodic", "tutorials_01_Meshes_2D.html#autotoc_md22", null ],
-        [ "Visualization", "tutorials_01_Meshes_2D.html#autotoc_md24", null ],
-        [ "Accessing mesh info in code (cells, neighbors, vertices)", "tutorials_01_Meshes_2D.html#autotoc_md26", [
-          [ "Topology-level access from mesh", "tutorials_01_Meshes_2D.html#autotoc_md27", [
-            [ "DualMaps", "tutorials_01_Meshes_2D.html#autotoc_md28", null ]
+        [ "Quick Summary", "tutorials_01_Meshes_2D.html#autotoc_md13", null ],
+        [ "General Notes", "tutorials_01_Meshes_2D.html#autotoc_md14", null ],
+        [ "1. tria", "tutorials_01_Meshes_2D.html#autotoc_md15", null ],
+        [ "2. sqr", "tutorials_01_Meshes_2D.html#autotoc_md17", null ],
+        [ "3. poly_meshes", "tutorials_01_Meshes_2D.html#autotoc_md19", null ],
+        [ "4. kway_kmeans", "tutorials_01_Meshes_2D.html#autotoc_md21", null ],
+        [ "5. kway_metis", "tutorials_01_Meshes_2D.html#autotoc_md23", null ],
+        [ "6. bisect_metis", "tutorials_01_Meshes_2D.html#autotoc_md25", null ],
+        [ "7. bisect_kmeans", "tutorials_01_Meshes_2D.html#autotoc_md27", null ],
+        [ "8. bisect_gnn", "tutorials_01_Meshes_2D.html#autotoc_md29", null ],
+        [ "9. rect_tri_periodic", "tutorials_01_Meshes_2D.html#autotoc_md31", null ],
+        [ "10. rect_sq_periodic", "tutorials_01_Meshes_2D.html#autotoc_md33", null ],
+        [ "11. voronoi_periodic", "tutorials_01_Meshes_2D.html#autotoc_md35", null ],
+        [ "Visualization", "tutorials_01_Meshes_2D.html#autotoc_md37", null ],
+        [ "Accessing mesh info in code (cells, neighbors, vertices)", "tutorials_01_Meshes_2D.html#autotoc_md39", [
+          [ "Topology-level access from mesh", "tutorials_01_Meshes_2D.html#autotoc_md40", [
+            [ "DualMaps", "tutorials_01_Meshes_2D.html#autotoc_md41", null ]
           ] ],
-          [ "Geometry-level access from CellManager", "tutorials_01_Meshes_2D.html#autotoc_md29", [
-            [ "Quick guideline", "tutorials_01_Meshes_2D.html#autotoc_md30", null ],
-            [ "Periodic topology workflow (open/closed)", "tutorials_01_Meshes_2D.html#autotoc_md31", null ]
+          [ "Geometry-level access from CellManager", "tutorials_01_Meshes_2D.html#autotoc_md42", [
+            [ "Quick guideline", "tutorials_01_Meshes_2D.html#autotoc_md43", null ],
+            [ "Periodic topology workflow (open/closed)", "tutorials_01_Meshes_2D.html#autotoc_md44", null ]
           ] ]
         ] ]
       ] ],
       [ "Laplacian Assembly (DG)", "tutorials_02_Laplacian_Assembly.html", [
-        [ "1) Theoretical DG Formulation of the Laplacian", "tutorials_02_Laplacian_Assembly.html#autotoc_md32", null ],
-        [ "2) Cellwise derivation", "tutorials_02_Laplacian_Assembly.html#autotoc_md33", null ],
-        [ "3) Code notations", "tutorials_02_Laplacian_Assembly.html#autotoc_md34", [
-          [ "Core weak-form terms in code", "tutorials_02_Laplacian_Assembly.html#autotoc_md35", null ],
-          [ "Assembled algebraic operators", "tutorials_02_Laplacian_Assembly.html#autotoc_md36", null ],
-          [ "Periodic case handling in Vulpes", "tutorials_02_Laplacian_Assembly.html#autotoc_md37", null ],
-          [ "Practical interpretation", "tutorials_02_Laplacian_Assembly.html#autotoc_md38", null ]
+        [ "1) Theoretical DG Formulation of the Laplacian", "tutorials_02_Laplacian_Assembly.html#autotoc_md45", null ],
+        [ "2) Cellwise derivation", "tutorials_02_Laplacian_Assembly.html#autotoc_md46", null ],
+        [ "3) Code notations", "tutorials_02_Laplacian_Assembly.html#autotoc_md47", [
+          [ "Core weak-form terms in code", "tutorials_02_Laplacian_Assembly.html#autotoc_md48", null ],
+          [ "Assembled algebraic operators", "tutorials_02_Laplacian_Assembly.html#autotoc_md49", null ],
+          [ "Periodic case handling in Vulpes", "tutorials_02_Laplacian_Assembly.html#autotoc_md50", null ],
+          [ "Practical interpretation", "tutorials_02_Laplacian_Assembly.html#autotoc_md51", null ]
         ] ],
-        [ "4) How to run the Laplacian convergence test", "tutorials_02_Laplacian_Assembly.html#autotoc_md39", [
-          [ "Parameter files", "tutorials_02_Laplacian_Assembly.html#autotoc_md40", null ],
-          [ "Running", "tutorials_02_Laplacian_Assembly.html#autotoc_md41", null ],
-          [ "Example", "tutorials_02_Laplacian_Assembly.html#autotoc_md42", null ],
-          [ "Output", "tutorials_02_Laplacian_Assembly.html#autotoc_md43", null ]
+        [ "4) How to run the Laplacian convergence test", "tutorials_02_Laplacian_Assembly.html#autotoc_md52", [
+          [ "Parameter files", "tutorials_02_Laplacian_Assembly.html#autotoc_md53", null ],
+          [ "Running", "tutorials_02_Laplacian_Assembly.html#autotoc_md54", null ],
+          [ "Example", "tutorials_02_Laplacian_Assembly.html#autotoc_md55", null ],
+          [ "Output", "tutorials_02_Laplacian_Assembly.html#autotoc_md56", null ]
         ] ],
-        [ "5) Post-processing visualization in Paraview", "tutorials_02_Laplacian_Assembly.html#autotoc_md44", null ],
+        [ "5) Post-processing visualization in Paraview", "tutorials_02_Laplacian_Assembly.html#autotoc_md57", null ],
         [ "MPI Laplacian Assembly", "tutorials_02_Laplacian_Assembly.html#mpi-laplacian-assembly", null ]
       ] ],
       [ "Linear Elasticity Assembly (DG)", "tutorials_03_Elasticity_Assembly.html", [
-        [ "1) Linear elasticity and its SIPG formulation", "tutorials_03_Elasticity_Assembly.html#autotoc_md45", [
-          [ "Symmetric-jump algebra", "tutorials_03_Elasticity_Assembly.html#autotoc_md46", null ]
+        [ "1) Linear elasticity and its SIPG formulation", "tutorials_03_Elasticity_Assembly.html#autotoc_md58", [
+          [ "Symmetric-jump algebra", "tutorials_03_Elasticity_Assembly.html#autotoc_md59", null ]
         ] ],
-        [ "2) Cellwise derivation and matrix blocks", "tutorials_03_Elasticity_Assembly.html#autotoc_md47", [
-          [ "Consistency terms", "tutorials_03_Elasticity_Assembly.html#autotoc_md48", null ],
-          [ "Stabilization terms", "tutorials_03_Elasticity_Assembly.html#autotoc_md49", null ]
+        [ "2) Cellwise derivation and matrix blocks", "tutorials_03_Elasticity_Assembly.html#autotoc_md60", [
+          [ "Consistency terms", "tutorials_03_Elasticity_Assembly.html#autotoc_md61", null ],
+          [ "Stabilization terms", "tutorials_03_Elasticity_Assembly.html#autotoc_md62", null ]
         ] ],
-        [ "3) Code notation and assembly", "tutorials_03_Elasticity_Assembly.html#autotoc_md50", [
-          [ "Penalty coefficient", "tutorials_03_Elasticity_Assembly.html#autotoc_md51", null ],
-          [ "Weak-form terms", "tutorials_03_Elasticity_Assembly.html#autotoc_md52", null ],
-          [ "Assembled algebraic operators", "tutorials_03_Elasticity_Assembly.html#autotoc_md53", null ]
+        [ "3) Code notation and assembly", "tutorials_03_Elasticity_Assembly.html#autotoc_md63", [
+          [ "Penalty coefficient", "tutorials_03_Elasticity_Assembly.html#autotoc_md64", null ],
+          [ "Weak-form terms", "tutorials_03_Elasticity_Assembly.html#autotoc_md65", null ],
+          [ "Assembled algebraic operators", "tutorials_03_Elasticity_Assembly.html#autotoc_md66", null ]
         ] ],
-        [ "4) Manufactured solutions: 2D and 3D", "tutorials_03_Elasticity_Assembly.html#autotoc_md54", null ],
-        [ "5) Running the elasticity convergence examples", "tutorials_03_Elasticity_Assembly.html#autotoc_md55", null ],
-        [ "6) Error measures and convergence output", "tutorials_03_Elasticity_Assembly.html#autotoc_md56", null ]
+        [ "4) Manufactured solutions: 2D and 3D", "tutorials_03_Elasticity_Assembly.html#autotoc_md67", null ],
+        [ "5) Running the elasticity convergence examples", "tutorials_03_Elasticity_Assembly.html#autotoc_md68", null ],
+        [ "6) Error measures and convergence output", "tutorials_03_Elasticity_Assembly.html#autotoc_md69", null ]
       ] ],
       [ "Advection Assembly (DG)", "tutorials_04_Advection_Assembly.html", [
-        [ "1) DG Formulation of Advection", "tutorials_04_Advection_Assembly.html#autotoc_md57", null ],
-        [ "2) Cellwise Derivation Matching the Vulpes Assembly", "tutorials_04_Advection_Assembly.html#autotoc_md58", null ],
-        [ "3) Code Notations in the Advection Example", "tutorials_04_Advection_Assembly.html#autotoc_md59", [
-          [ "Variable mode (current)", "tutorials_04_Advection_Assembly.html#autotoc_md60", null ]
+        [ "1) DG Formulation of Advection", "tutorials_04_Advection_Assembly.html#autotoc_md70", null ],
+        [ "2) Cellwise Derivation Matching the Vulpes Assembly", "tutorials_04_Advection_Assembly.html#autotoc_md71", null ],
+        [ "3) Code Notations in the Advection Example", "tutorials_04_Advection_Assembly.html#autotoc_md72", [
+          [ "Variable mode (current)", "tutorials_04_Advection_Assembly.html#autotoc_md73", null ]
         ] ],
-        [ "4) Initial Condition and Snapshots", "tutorials_04_Advection_Assembly.html#autotoc_md61", null ],
-        [ "5) Run", "tutorials_04_Advection_Assembly.html#autotoc_md62", null ]
+        [ "4) Initial Condition and Snapshots", "tutorials_04_Advection_Assembly.html#autotoc_md74", null ],
+        [ "5) Run", "tutorials_04_Advection_Assembly.html#autotoc_md75", null ]
       ] ],
       [ "Linear Shallow Water Equations (DG)", "tutorials_05_Shallow_Water_DG.html", [
-        [ "1) The Linearised Shallow Water Equations", "tutorials_05_Shallow_Water_DG.html#autotoc_md64", null ],
-        [ "2) DG Weak Formulation", "tutorials_05_Shallow_Water_DG.html#autotoc_md66", null ],
-        [ "3) Upwind (Godunov) Numerical Flux", "tutorials_05_Shallow_Water_DG.html#autotoc_md68", [
-          [ "3.1 The Upwind Flux and its Central + Dissipation Form", "tutorials_05_Shallow_Water_DG.html#autotoc_md69", null ],
-          [ "3.2 The A(n) Matrix", "tutorials_05_Shallow_Water_DG.html#autotoc_md70", null ],
-          [ "3.3 The |A(n)| Matrix", "tutorials_05_Shallow_Water_DG.html#autotoc_md71", null ]
+        [ "1) The Linearised Shallow Water Equations", "tutorials_05_Shallow_Water_DG.html#autotoc_md77", null ],
+        [ "2) DG Weak Formulation", "tutorials_05_Shallow_Water_DG.html#autotoc_md79", null ],
+        [ "3) Upwind (Godunov) Numerical Flux", "tutorials_05_Shallow_Water_DG.html#autotoc_md81", [
+          [ "3.1 The Upwind Flux and its Central + Dissipation Form", "tutorials_05_Shallow_Water_DG.html#autotoc_md82", null ],
+          [ "3.2 The A(n) Matrix", "tutorials_05_Shallow_Water_DG.html#autotoc_md83", null ],
+          [ "3.3 The |A(n)| Matrix", "tutorials_05_Shallow_Water_DG.html#autotoc_md84", null ]
         ] ],
-        [ "4) Cell-wise Assembly Matching the Vulpes Code", "tutorials_05_Shallow_Water_DG.html#autotoc_md73", [
-          [ "4.1 Volume Term", "tutorials_05_Shallow_Water_DG.html#autotoc_md74", null ],
-          [ "4.2 Face Flux", "tutorials_05_Shallow_Water_DG.html#autotoc_md75", null ]
+        [ "4) Cell-wise Assembly Matching the Vulpes Code", "tutorials_05_Shallow_Water_DG.html#autotoc_md86", [
+          [ "4.1 Volume Term", "tutorials_05_Shallow_Water_DG.html#autotoc_md87", null ],
+          [ "4.2 Face Flux", "tutorials_05_Shallow_Water_DG.html#autotoc_md88", null ]
         ] ],
-        [ "5) Code Structure", "tutorials_05_Shallow_Water_DG.html#autotoc_md77", [
-          [ "5.1 Physics: ShallowWaterPhysics", "tutorials_05_Shallow_Water_DG.html#autotoc_md78", null ],
-          [ "5.2 Assembly: DGAssembly::assembleSystem()", "tutorials_05_Shallow_Water_DG.html#autotoc_md79", null ],
-          [ "5.3 Time Integration", "tutorials_05_Shallow_Water_DG.html#autotoc_md80", null ],
-          [ "5.4 Configuration", "tutorials_05_Shallow_Water_DG.html#autotoc_md81", null ]
+        [ "5) Code Structure", "tutorials_05_Shallow_Water_DG.html#autotoc_md90", [
+          [ "5.1 Physics: ShallowWaterPhysics", "tutorials_05_Shallow_Water_DG.html#autotoc_md91", null ],
+          [ "5.2 Assembly: DGAssembly::assembleSystem()", "tutorials_05_Shallow_Water_DG.html#autotoc_md92", null ],
+          [ "5.3 Time Integration", "tutorials_05_Shallow_Water_DG.html#autotoc_md93", null ],
+          [ "5.4 Configuration", "tutorials_05_Shallow_Water_DG.html#autotoc_md94", null ]
         ] ],
-        [ "6) Benchmark: linear_plane_wave", "tutorials_05_Shallow_Water_DG.html#autotoc_md83", null ],
-        [ "7) Example Run", "tutorials_05_Shallow_Water_DG.html#autotoc_md85", null ],
-        [ "8) Running the Solver", "tutorials_05_Shallow_Water_DG.html#autotoc_md87", null ]
+        [ "6) Benchmark: linear_plane_wave", "tutorials_05_Shallow_Water_DG.html#autotoc_md96", null ],
+        [ "7) Example Run", "tutorials_05_Shallow_Water_DG.html#autotoc_md98", null ],
+        [ "8) Running the Solver", "tutorials_05_Shallow_Water_DG.html#autotoc_md100", null ]
       ] ],
       [ "Tool for Mesh Agglomeration", "tutorials_06_Mesh_Agglomeration.html", [
-        [ "Quick Start", "tutorials_06_Mesh_Agglomeration.html#autotoc_md88", null ],
-        [ "Overview of the Pipeline", "tutorials_06_Mesh_Agglomeration.html#autotoc_md89", null ],
-        [ "JSON Reference", "tutorials_06_Mesh_Agglomeration.html#autotoc_md90", null ],
-        [ "Methods", "tutorials_06_Mesh_Agglomeration.html#autotoc_md91", [
-          [ "direct_kway", "tutorials_06_Mesh_Agglomeration.html#autotoc_md92", null ],
-          [ "bisect", "tutorials_06_Mesh_Agglomeration.html#autotoc_md93", null ],
-          [ "mult_factor", "tutorials_06_Mesh_Agglomeration.html#autotoc_md94", null ]
+        [ "Quick Start", "tutorials_06_Mesh_Agglomeration.html#autotoc_md101", null ],
+        [ "Overview of the Pipeline", "tutorials_06_Mesh_Agglomeration.html#autotoc_md102", null ],
+        [ "JSON Reference", "tutorials_06_Mesh_Agglomeration.html#autotoc_md103", null ],
+        [ "Methods", "tutorials_06_Mesh_Agglomeration.html#autotoc_md104", [
+          [ "direct_kway", "tutorials_06_Mesh_Agglomeration.html#autotoc_md105", null ],
+          [ "bisect", "tutorials_06_Mesh_Agglomeration.html#autotoc_md106", null ],
+          [ "mult_factor", "tutorials_06_Mesh_Agglomeration.html#autotoc_md107", null ]
         ] ],
-        [ "Backends", "tutorials_06_Mesh_Agglomeration.html#autotoc_md95", [
-          [ "parmetis", "tutorials_06_Mesh_Agglomeration.html#autotoc_md96", null ],
-          [ "kmeans", "tutorials_06_Mesh_Agglomeration.html#autotoc_md97", null ],
-          [ "gnn", "tutorials_06_Mesh_Agglomeration.html#autotoc_md98", null ]
+        [ "Backends", "tutorials_06_Mesh_Agglomeration.html#autotoc_md108", [
+          [ "parmetis", "tutorials_06_Mesh_Agglomeration.html#autotoc_md109", null ],
+          [ "kmeans", "tutorials_06_Mesh_Agglomeration.html#autotoc_md110", null ],
+          [ "gnn", "tutorials_06_Mesh_Agglomeration.html#autotoc_md111", null ]
         ] ],
-        [ "Agglomeration by Region (Materials)", "tutorials_06_Mesh_Agglomeration.html#autotoc_md99", [
-          [ "Example: a cube with two materials", "tutorials_06_Mesh_Agglomeration.html#autotoc_md100", null ]
+        [ "Agglomeration by Region (Materials)", "tutorials_06_Mesh_Agglomeration.html#autotoc_md112", [
+          [ "Example: a cube with two materials", "tutorials_06_Mesh_Agglomeration.html#autotoc_md113", null ]
         ] ],
-        [ "Repair of 3D Agglomerates", "tutorials_06_Mesh_Agglomeration.html#autotoc_md101", null ],
-        [ "Related Examples", "tutorials_06_Mesh_Agglomeration.html#autotoc_md102", null ],
+        [ "Repair of 3D Agglomerates", "tutorials_06_Mesh_Agglomeration.html#autotoc_md114", null ],
+        [ "Related Examples", "tutorials_06_Mesh_Agglomeration.html#autotoc_md115", null ],
         [ "References", "tutorials_06_Mesh_Agglomeration.html#references", null ]
       ] ]
     ] ],
     [ "Developer's Guide", "developers_guide.html", [
-      [ "Install & Build", "developers_guide_installation_instruction.html", [
-        [ "VSCode extensions", "developers_guide_installation_instruction.html#autotoc_md126", null ],
-        [ "Use the Docker from VSCode", "developers_guide_installation_instruction.html#autotoc_md127", null ],
-        [ "Simple firsts steps", "developers_guide_installation_instruction.html#autotoc_md128", null ],
-        [ "Installation of Vulpes on Cluster - Apptainer Image", "developers_guide_installation_instruction.html#autotoc_md129", [
-          [ "MacOS users with M1/M2 chips", "developers_guide_installation_instruction.html#autotoc_md125", null ],
-          [ "1. Install Vulpes on cluster", "developers_guide_installation_instruction.html#autotoc_md130", null ],
-          [ "2. Setup Apptainer on cluster:", "developers_guide_installation_instruction.html#autotoc_md131", [
-            [ "Using system-installed Apptainer (recommended)", "developers_guide_installation_instruction.html#autotoc_md132", null ],
-            [ "Installing a local version", "developers_guide_installation_instruction.html#autotoc_md133", null ]
-          ] ],
-          [ "3. Create the Apptainer definition file", "developers_guide_installation_instruction.html#autotoc_md135", null ],
-          [ "4. Build the image", "developers_guide_installation_instruction.html#autotoc_md136", null ],
-          [ "5. Run the image and compile Vulpes", "developers_guide_installation_instruction.html#autotoc_md137", null ]
-        ] ]
-      ] ],
       [ "Compile options", "developers_guide_compile_options.html", [
-        [ "Background", "developers_guide_compile_options.html#autotoc_md117", [
-          [ "Day to day", "developers_guide_compile_options.html#autotoc_md118", null ],
-          [ "Profiling", "developers_guide_compile_options.html#autotoc_md119", null ],
-          [ "Where to work?", "developers_guide_compile_options.html#autotoc_md120", null ],
-          [ "Check the compile commands", "developers_guide_compile_options.html#autotoc_md121", null ]
+        [ "Background", "developers_guide_compile_options.html#autotoc_md130", [
+          [ "Day to day", "developers_guide_compile_options.html#autotoc_md131", null ],
+          [ "Profiling", "developers_guide_compile_options.html#autotoc_md132", null ],
+          [ "Where to work?", "developers_guide_compile_options.html#autotoc_md133", null ],
+          [ "Check the compile commands", "developers_guide_compile_options.html#autotoc_md134", null ]
         ] ]
       ] ],
       [ "Native cluster compile", "developers_guide_compile_native.html", [
-        [ "Installing missing packages", "developers_guide_compile_native.html#autotoc_md108", [
-          [ "Petsc", "developers_guide_compile_native.html#autotoc_md109", [
-            [ "Install a Debug version of Petsc", "developers_guide_compile_native.html#autotoc_md110", null ]
+        [ "Installing missing packages", "developers_guide_compile_native.html#autotoc_md121", [
+          [ "Petsc", "developers_guide_compile_native.html#autotoc_md122", [
+            [ "Install a Debug version of Petsc", "developers_guide_compile_native.html#autotoc_md123", null ]
           ] ],
-          [ "vtk", "developers_guide_compile_native.html#autotoc_md111", null ],
-          [ "boost", "developers_guide_compile_native.html#autotoc_md112", null ],
-          [ "parmetis", "developers_guide_compile_native.html#autotoc_md113", null ]
+          [ "vtk", "developers_guide_compile_native.html#autotoc_md124", null ],
+          [ "boost", "developers_guide_compile_native.html#autotoc_md125", null ],
+          [ "parmetis", "developers_guide_compile_native.html#autotoc_md126", null ]
         ] ],
-        [ "Using Spack", "developers_guide_compile_native.html#autotoc_md114", [
-          [ "Our usecase", "developers_guide_compile_native.html#autotoc_md115", null ]
+        [ "Using Spack", "developers_guide_compile_native.html#autotoc_md127", [
+          [ "Our usecase", "developers_guide_compile_native.html#autotoc_md128", null ]
         ] ],
-        [ "Specifying the position of a library", "developers_guide_compile_native.html#autotoc_md116", null ]
+        [ "Specifying the position of a library", "developers_guide_compile_native.html#autotoc_md129", null ]
       ] ],
       [ "C++ Style Guide", "developers_guide_style_guide.html", [
         [ "Background", "developers_guide_style_guide.html#autotoc_md142", null ],
@@ -216,20 +216,20 @@ var NAVTREE =
         [ "Return from errors immediately", "developers_guide_style_guide.html#autotoc_md170", null ]
       ] ],
       [ "Commit and Merge Policy", "developers_guide_commit_and_merge_policy.html", [
-        [ "Overview", "developers_guide_commit_and_merge_policy.html#autotoc_md103", null ],
-        [ "Feature Branch Strategy", "developers_guide_commit_and_merge_policy.html#autotoc_md104", null ],
-        [ "Commit Guidelines", "developers_guide_commit_and_merge_policy.html#autotoc_md105", null ],
-        [ "Merge Requirements", "developers_guide_commit_and_merge_policy.html#autotoc_md106", null ],
-        [ "Additional Recommendations", "developers_guide_commit_and_merge_policy.html#autotoc_md107", null ]
+        [ "Overview", "developers_guide_commit_and_merge_policy.html#autotoc_md116", null ],
+        [ "Feature Branch Strategy", "developers_guide_commit_and_merge_policy.html#autotoc_md117", null ],
+        [ "Commit Guidelines", "developers_guide_commit_and_merge_policy.html#autotoc_md118", null ],
+        [ "Merge Requirements", "developers_guide_commit_and_merge_policy.html#autotoc_md119", null ],
+        [ "Additional Recommendations", "developers_guide_commit_and_merge_policy.html#autotoc_md120", null ]
       ] ],
       [ "Testing and Coverage", "developers_guide_testing_and_coverage.html", [
         [ "Developing tests", "developers_guide_testing_and_coverage.html#autotoc_md171", null ],
         [ "Running tests", "developers_guide_testing_and_coverage.html#autotoc_md172", null ]
       ] ],
       [ "Debugging", "developers_guide_debugging.html", [
-        [ "ASan", "developers_guide_debugging.html#autotoc_md122", null ],
-        [ "GDB", "developers_guide_debugging.html#autotoc_md123", null ],
-        [ "Petsc", "developers_guide_debugging.html#autotoc_md124", null ]
+        [ "ASan", "developers_guide_debugging.html#autotoc_md135", null ],
+        [ "GDB", "developers_guide_debugging.html#autotoc_md136", null ],
+        [ "Petsc", "developers_guide_debugging.html#autotoc_md137", null ]
       ] ],
       [ "Profiling", "developers_guide_profiling.html", [
         [ "1. Profiling with Valgrind Callgrind and KCachegrind", "developers_guide_profiling.html#autotoc_md138", [
@@ -305,8 +305,8 @@ var NAVTREEINDEX =
 "classvulpes_1_1polynomial_1_1Polynomial.html#a86c472da35039e41facefe0f0c865b28",
 "classvulpes_1_1polynomial_1_1SparsePolynomial.html#ae07b1d1782da2b6adb2cff4d3803d528",
 "classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a931483b404fcef9bf47297a00427ae25",
-"fe__expr__base_8hpp.html#a94c5da1acc368603daf26306923400ae",
-"gauss_8hpp.html#acf808d810fe514bf8cf0c6a3229ff4a2",
+"fe__expr__basis_8hpp.html#a54bf5266142e2da10063b4aea96d64d2",
+"gnn__graph_8hpp.html",
 "mpi__wrappers_8hpp.html#a13aaa11c7e540fc170314b6e548d4e6b",
 "namespacevulpes_1_1fe_1_1internal.html#ad73d11b3d2c132f1808b1a5c11cd293b",
 "namespacevulpes_1_1qfree.html#ab852dd6eadf63ef42c49539eed5bcf8e",

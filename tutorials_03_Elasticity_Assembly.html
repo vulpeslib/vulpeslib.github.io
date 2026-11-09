@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('tutorials_03_Elasticity_Assembly.html'
 </ul>
 <p>The formulation and assembly are developed once for \(d\in\{2,3\}\). The manufactured solutions and boundary data used to verify the two implementations are presented together in Section 4.</p>
 <p>Reference: A. Cangiani, Z. Dong, E. H. Georgoulis, and P. Houston, <em>hp-Version Discontinuous Galerkin Methods on Polygonal and Polyhedral Meshes</em>, Springer, 2017. <a href="https://doi.org/10.1007/978-3-319-19800-2">DOI: 10.1007/978-3-319-19800-2</a>.</p>
-<h1><a class="anchor" id="autotoc_md45"></a>
+<h1><a class="anchor" id="autotoc_md58"></a>
 1) Linear elasticity and its SIPG formulation</h1>
 <p>Let \(\Omega\subset\mathbb R^d\), \(d\in\{2,3\}\), and let \(u:\Omega\to\mathbb R^d\) be the displacement. We solve</p>
 <p class="formulaDsp">
@@ -231,7 +231,7 @@ a_h(u,v)={}&amp;\sum_{K\in\mathcal T_h}\int_K
 \]
 </p>
 <p>This is the <b>symmetric</b> interior penalty method: the two consistency terms are transposes of each other. The nonhomogeneous Dirichlet data appear only in the right-hand side; setting \(g_D=0\) removes those boundary RHS terms.</p>
-<h2><a class="anchor" id="autotoc_md46"></a>
+<h2><a class="anchor" id="autotoc_md59"></a>
 Symmetric-jump algebra</h2>
 <p>Starting from \((a\otimes b):(c\otimes d)=(a\cdot c)(b\cdot d)\),</p>
 <p class="formulaDsp">
@@ -253,7 +253,7 @@ Symmetric-jump algebra</h2>
 \]
 </p>
 <p>This factor \(1/2\) is essential for the penalty expressions in the code.</p>
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h1><a class="anchor" id="autotoc_md60"></a>
 2) Cellwise derivation and matrix blocks</h1>
 <p>Vulpes iterates over each cell \(K\) and its faces. On an interior face shared with a neighbor \(K&#39;\), let \(u=u|_K\), \(u&#39;=u|_{K&#39;}\), and similarly for \(v\), with \(n\) the outward normal of \(K\). Then \(n&#39;=-n\) and</p>
 <p class="formulaDsp">
@@ -264,7 +264,7 @@ Symmetric-jump algebra</h2>
 =\frac12\bigl(\sigma(w)+\sigma(w&#39;)\bigr).
 \]
 </p>
-<h2><a class="anchor" id="autotoc_md48"></a>
+<h2><a class="anchor" id="autotoc_md61"></a>
 Consistency terms</h2>
 <p>Expanding the interior-face integrand gives</p>
 <p class="formulaDsp">
@@ -313,7 +313,7 @@ N_K=+\frac12\sigma(u)n\cdot v&#39;
 \]
 </p>
 <p>As \(\varepsilon(w)\) is symmetric, the ordinary outer product \(t\otimes n\) may be used in this contraction.</p>
-<h2><a class="anchor" id="autotoc_md49"></a>
+<h2><a class="anchor" id="autotoc_md62"></a>
 Stabilization terms</h2>
 <p>On an interior face,</p>
 <p class="formulaDsp">
@@ -373,10 +373,10 @@ Stabilization terms</h2>
 \]
 </p>
 <p>Moving the last line to the right-hand side reverses its signs, yielding the Dirichlet terms of \(\ell_h\) in Section 1.</p>
-<h1><a class="anchor" id="autotoc_md50"></a>
+<h1><a class="anchor" id="autotoc_md63"></a>
 3) Code notation and assembly</h1>
 <p>The <a href="../../examples/assembly/elasticity/elasticity_2d_main.cpp">2D</a> and <a href="../../examples/assembly/elasticity/elasticity_3d_main.cpp">3D</a> drivers use <code>fe::FeSpaceModalLegendreDQ&lt;Dim&gt;</code> with vector-valued trial and test functions. Both assemble the volume and face contributions using <code>assemble::WeakFormIntegratorSimplexify</code>. The weak forms are summarized below; full expression definitions and insertion loops are available in the linked source files.</p>
-<h2><a class="anchor" id="autotoc_md51"></a>
+<h2><a class="anchor" id="autotoc_md64"></a>
 Penalty coefficient</h2>
 <p>Let \(h_K=\operatorname{diam}(K)\) be the cell diameter. Both drivers use \(C_\gamma=10\) and the diameter-based penalty helper used by Laplacian. The full coefficient multiplying the symmetric tensor-jump contraction is</p>
 <p class="formulaDsp">
@@ -396,7 +396,7 @@ Penalty coefficient</h2>
 <div class="line"><span class="keyword">auto</span> gamma_half =</div>
 <div class="line">    assemble::dg::createPenaltyExpression&lt;Dim&gt;(p, half_penalty_scale);</div>
 </div><!-- fragment --><p><a href="../../vulpes/assemble/dg_utils.hpp"><code>createPenaltyExpression</code></a> divides by the cell diameter and takes the maximum of the adjacent-cell penalties on interior faces. For \(\lambda=\mu=1\), the expanded boundary coefficient is \(\eta_F=15p^2/h_K\). The material multiplier and symmetric-jump factor \(1/2\) are both retained. <code>C_gamma</code> is a source constant, not a JSON or CLI parameter.</p>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<h2><a class="anchor" id="autotoc_md65"></a>
 Weak-form terms</h2>
 <p>Write \(n\) for the current cell's outward normal and \(v&#39;\) for the test function on its neighbor (<code>fe::neigh(v)</code>). The face coefficient is \(b_F=-\tfrac12\) on interior faces and \(b_F=-1\) on Dirichlet faces.</p>
 <table class="markdownTable">
@@ -418,7 +418,7 @@ Weak-form terms</h2>
 <td class="markdownTableBodyNone"><code>wf_F_dirichlet</code> (3D)   </td><td class="markdownTableBodyNone">\(\eta_F[g_D\cdot v+(g_D\cdot n)(v\cdot n)]-(\sigma(v)n)\cdot g_D\)   </td><td class="markdownTableBodyNone">Dirichlet faces (RHS)   </td></tr>
 </table>
 <p>The consistency terms use <code>fe::symgrad</code>, <code>fe::trsymgrad</code>, <code>fe::outer</code>, and <code>fe::inner</code>. The stabilization terms use dot products of vector fields and normal components. The 3D boundary term is restricted to Dirichlet faces; it vanishes for the homogeneous boundary data in the 2D example.</p>
-<h2><a class="anchor" id="autotoc_md53"></a>
+<h2><a class="anchor" id="autotoc_md66"></a>
 Assembled algebraic operators</h2>
 <p>The matrix contributions from Section 2 are assembled as</p>
 <p class="formulaDsp">
@@ -429,7 +429,7 @@ A=A_V+A_{IT}+A_{IT}^T+A_{ITn}+A_{ITn}^T+A_S+A_{Sn},
 </p>
 <p>Here \(A_V\) comes from <code>wf_stiff</code>; \(A_{IT}\) and \(A_{ITn}\) are the current-cell and neighbor consistency contributions; and \(A_S\) and \(A_{Sn}\) are the corresponding penalty contributions. Vulpes inserts each consistency block together with its transpose. For neighbor blocks, the transpose insertion also exchanges current-cell and neighbor DoF indices. The neighbor penalty block needs no separate transpose insertion, since the reverse block is assembled when the neighboring cell is visited.</p>
 <p>Both drivers solve the resulting linear system using direct LU and retain a separate stabilization matrix <code>S_matrix</code> for the error computations in Section 6. They are serial convergence examples, not distributed-mesh MPI examples.</p>
-<h1><a class="anchor" id="autotoc_md54"></a>
+<h1><a class="anchor" id="autotoc_md67"></a>
 4) Manufactured solutions: 2D and 3D</h1>
 <p>Both drivers use \(\Omega=(0,1)^d\) and prescribe \(g_D=u_{\mathrm{ex}}|_{\partial\Omega}\) with \(f=-\nabla\cdot\sigma(u_{\mathrm{ex}})\). The dimensions differ only in the chosen manufactured data, not in the SIPG formulation or assembly machinery.</p>
 <table class="markdownTable">
@@ -484,7 +484,7 @@ f=3\pi^2(\lambda+2\mu)u_{\mathrm{ex}}.
 \]
 </p>
 <p>The C++ functions <code>exactDisplacement()</code>, <code>bodyForce()</code>, and <code>exactGradientRow()</code> are defined in each driver. The numeric Lamé constants used by each executable are declared at the top of its source file; the mathematical formulation above does not depend on that choice. If the material constants are changed in the example, the manufactured forcing must remain consistent with them (the 2D <code>bodyForce()</code> currently evaluates a specialized constant-coefficient expression).</p>
-<h1><a class="anchor" id="autotoc_md55"></a>
+<h1><a class="anchor" id="autotoc_md68"></a>
 5) Running the elasticity convergence examples</h1>
 <p>The executables are <code>elasticity_2d_main</code> and <code>elasticity_3d_main</code> and their parameter files are:</p>
 <div class="fragment"><div class="line">examples/assembly/elasticity/elasticity_2d_parameters.json</div>
@@ -521,7 +521,7 @@ f=3\pi^2(\lambda+2\mu)u_{\mathrm{ex}}.
 <div class="fragment"><div class="line">./elasticity_2d_main 2 4 sqr output/elasticity &gt; elasticity_2d.log</div>
 <div class="line">./elasticity_3d_main 2 3 hexa output/elasticity &gt; elasticity_3d.log</div>
 </div><!-- fragment --><p>A JSON path is not searched for automatically. To inspect the supported arguments, run either executable with <code>--help</code>.</p>
-<h1><a class="anchor" id="autotoc_md56"></a>
+<h1><a class="anchor" id="autotoc_md69"></a>
 6) Error measures and convergence output</h1>
 <p>Let \(e=u_h-u_{\mathrm{ex}}\), evaluated element by element. Both drivers compute four errors:</p>
 <p>** \(L^2\) error:**</p>
@@ -597,7 +597,7 @@ c_D={}&amp;\sum_{F\in\mathcal F_h^D}\int_F
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Nov 6 2026 09:56:29 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 12:10:10 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

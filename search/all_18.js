@@ -1,7 +1,7 @@
 var searchData=
 [
   ['n_0',['n',['../structvulpes_1_1scipy_1_1ckdtree.html#a77a3172ea6d33517c8be3017197a69d3',1,'vulpes::scipy::ckdtree::n'],['../structvulpes_1_1scipy_1_1heap.html#abe8dafa09646133330788fb2d863012e',1,'vulpes::scipy::heap::n'],['../classvulpes_1_1fe_1_1FeExpressionMakeVec.html#a18c6ae435f8058b4078a159aaba101a1',1,'vulpes::fe::FeExpressionMakeVec::N']]],
-  ['n_20matrix_1',['n matrix',['../tutorials_05_Shallow_Water_DG.html#autotoc_md70',1,'3.2 The A(n) Matrix'],['../tutorials_05_Shallow_Water_DG.html#autotoc_md71',1,'3.3 The |A(n)| Matrix']]],
+  ['n_20matrix_1',['n matrix',['../tutorials_05_Shallow_Water_DG.html#autotoc_md83',1,'3.2 The A(n) Matrix'],['../tutorials_05_Shallow_Water_DG.html#autotoc_md84',1,'3.3 The |A(n)| Matrix']]],
   ['n_5fsmooths_2',['n_smooths',['../structvulpes_1_1la_1_1DataGAMG.html#a78db44fdabab99478fb3e9b73a67d189',1,'vulpes::la::DataGAMG']]],
   ['n_5fstages_3',['n_stages',['../structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX.html#a873fd64500cba519b8cfb241fa1252f4',1,'vulpes::timeintegration::AscherRuuthSpiteriLstable4IMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html#aed732f4080e840f9fd3b8b105a7c0307',1,'vulpes::timeintegration::ImplicitExplicitMidpointIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX.html#a04a98dcd069914abd33abf0ada8df4e7',1,'vulpes::timeintegration::ForwardBackwardEulerIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html#afef0c190f172345283fb1a0494915e12',1,'vulpes::timeintegration::ImplicitButcherIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX.html#afa3f349b99b0129a033485aae72c03cd',1,'vulpes::timeintegration::ExplicitButcherIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html#a42e5066cb4535c8d7a0bb7bb685f00b6',1,'vulpes::timeintegration::ButcherTableIMEX::n_stages'],['../structvulpes_1_1timeintegration_1_1ButcherTable.html#a269cc762d8809949b235fb4329e98777',1,'vulpes::timeintegration::ButcherTable::n_stages'],['../classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html#a3db501c9850b72a57bab58655fdbb77e',1,'vulpes::timeintegration::TimeIntegratorDIRKIMEX::n_stages']]],
   ['n_5fsweeps_5fcoarse_4',['n_sweeps_coarse',['../structvulpes_1_1la_1_1DataBoomerAMG.html#ab760e19a296b597a3fc1b932154c0eed',1,'vulpes::la::DataBoomerAMG']]],
@@ -17,7 +17,7 @@ var searchData=
   ['needbasisscaling_14',['needbasisscaling',['../classvulpes_1_1fe_1_1FeSpaceBase.html#a60c34c5f700be623951082d841403778',1,'vulpes::fe::FeSpaceBase::needBasisScaling()'],['../classvulpes_1_1fe_1_1FeSpaceModalQ.html#afd74de6b633582feabbb761d3d3405f4',1,'vulpes::fe::FeSpaceModalQ::needBasisScaling()']]],
   ['neigh_15',['neigh',['../namespacevulpes_1_1fe.html#a1efb82f8b9865b641746301504399470',1,'vulpes::fe']]],
   ['neigh_5fcell_5fid_16',['neigh_cell_id',['../structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html#a27a374284a93dec6ed6f46c169ab4677',1,'vulpes::assemble::CellManager::NeighInfo']]],
-  ['neighbors_20vertices_17',['Accessing mesh info in code (cells, neighbors, vertices)',['../tutorials_01_Meshes_2D.html#autotoc_md26',1,'']]],
+  ['neighbors_20vertices_17',['Accessing mesh info in code (cells, neighbors, vertices)',['../tutorials_01_Meshes_2D.html#autotoc_md39',1,'']]],
   ['neighinfo_18',['NeighInfo',['../structvulpes_1_1assemble_1_1CellManager_1_1NeighInfo.html',1,'vulpes::assemble::CellManager']]],
   ['neighvalues_19',['neighvalues',['../classvulpes_1_1fe_1_1FeValues.html#ae0e32f00e673ca85042ee2435a0e09ed',1,'vulpes::fe::FeValues::neighValues()'],['../classvulpes_1_1fe_1_1FeValues.html#a1d436a476ec7d53f97cf5c582f34350f',1,'vulpes::fe::FeValues::neighValues() const']]],
   ['nentity_20',['nentity',['../classvulpes_1_1geometry_1_1Mesh2D.html#a4cec3153b4af33e813a1274875c65f0b',1,'vulpes::geometry::Mesh2D::nEntity()'],['../classvulpes_1_1geometry_1_1Mesh3D.html#aa795283e72554718845eb959a4c1d4cf',1,'vulpes::geometry::Mesh3D::nEntity()'],['../classvulpes_1_1geometry_1_1MeshBase.html#a8a315984f7a8aea6a1331066da967fd8',1,'vulpes::geometry::MeshBase::nEntity()'],['../classvulpes_1_1geometry_1_1ParallelMesh.html#aed332b759f9c41487e535bacd0c74143',1,'vulpes::geometry::ParallelMesh::nEntity()']]],
@@ -46,10 +46,10 @@ var searchData=
   ['normalize_43',['normalize',['../namespacevulpes_1_1fe_1_1internal.html#aee537e01f990924884412e7dcc32e52f',1,'vulpes::fe::internal']]],
   ['normalizecellflags_44',['normalizeCellFlags',['../namespacevulpes_1_1geometry_1_1internal.html#a47208c45afc797ab228bb38d65144497',1,'vulpes::geometry::internal']]],
   ['normals_45',['normals',['../classvulpes_1_1geometry_1_1Cell3D.html#ac226570597b361064bcc2e9fa8284e37',1,'vulpes::geometry::Cell3D::normals()'],['../classvulpes_1_1geometry_1_1Cell2D.html#acea86f70656c0dbb87bf9fce258d48c4',1,'vulpes::geometry::Cell2D::normals()']]],
-  ['notation_20and_20assembly_46',['3) Code notation and assembly',['../tutorials_03_Elasticity_Assembly.html#autotoc_md50',1,'']]],
-  ['notations_47',['3) Code notations',['../tutorials_02_Laplacian_Assembly.html#autotoc_md34',1,'']]],
-  ['notations_20in_20the_20advection_20example_48',['3) Code Notations in the Advection Example',['../tutorials_04_Advection_Assembly.html#autotoc_md59',1,'']]],
-  ['notes_49',['General Notes',['../tutorials_01_Meshes_2D.html#autotoc_md1',1,'']]],
+  ['notation_20and_20assembly_46',['3) Code notation and assembly',['../tutorials_03_Elasticity_Assembly.html#autotoc_md63',1,'']]],
+  ['notations_47',['3) Code notations',['../tutorials_02_Laplacian_Assembly.html#autotoc_md47',1,'']]],
+  ['notations_20in_20the_20advection_20example_48',['3) Code Notations in the Advection Example',['../tutorials_04_Advection_Assembly.html#autotoc_md72',1,'']]],
+  ['notes_49',['General Notes',['../tutorials_01_Meshes_2D.html#autotoc_md14',1,'']]],
   ['nownedcells_50',['nownedcells',['../classvulpes_1_1geometry_1_1MeshBase.html#ad176650a426095659b2c91267b08a8eb',1,'vulpes::geometry::MeshBase::nOwnedCells()'],['../classvulpes_1_1geometry_1_1ParallelMesh.html#a3382b00f8b94ef451504b2e7e570e0c8',1,'vulpes::geometry::ParallelMesh::nOwnedCells()']]],
   ['nowneddofs_51',['nOwnedDofs',['../classvulpes_1_1dofs_1_1DofHandler.html#a5712b7f6b1e55dcf136b18e2cf7af328',1,'vulpes::dofs::DofHandler']]],
   ['npos_52',['npos',['../classvulpes_1_1datastructure_1_1IndexTracker.html#a57561eba929278fe11326d238a5a7224',1,'vulpes::datastructure::IndexTracker']]],
@@ -59,5 +59,5 @@ var searchData=
   ['numbering_2ehpp_56',['numbering.hpp',['../numbering_8hpp.html',1,'']]],
   ['numcells_57',['numCells',['../classvulpes_1_1geometry_1_1MeshBase.html#ab3ad58daae8b5324daa8640307d82606',1,'vulpes::geometry::MeshBase']]],
   ['numel_58',['numel',['../classvulpes_1_1datastructure_1_1TetraTensor.html#ae9cac2edbf4854322c98df75b130cdaa',1,'vulpes::datastructure::TetraTensor::numel()'],['../classvulpes_1_1datastructure_1_1TriMatrix.html#a68b41a5d7b8eacf3a0a7bcf7587bcda8',1,'vulpes::datastructure::TriMatrix::numel()']]],
-  ['numerical_20flux_59',['3) Upwind (Godunov) Numerical Flux',['../tutorials_05_Shallow_Water_DG.html#autotoc_md68',1,'']]]
+  ['numerical_20flux_59',['3) Upwind (Godunov) Numerical Flux',['../tutorials_05_Shallow_Water_DG.html#autotoc_md81',1,'']]]
 ];

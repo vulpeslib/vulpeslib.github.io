@@ -10,7 +10,7 @@ var searchData=
   ['keyword_7',['The auto keyword',['../developers_guide_style_guide.html#autotoc_md159',1,'']]],
   ['kinds_20for_20lap_5fdg_5f2d_5fmain_8',['Mesh Kinds for lap_dg_2d_main',['../tutorials_01_Meshes_2D.html',1,'tutorials']]],
   ['kmaxdenseextractsize_9',['kMaxDenseExtractSize',['../namespacevulpes_1_1la.html#a04b27bf49a3931a86de5024b3662ae21',1,'vulpes::la']]],
-  ['kmeans_10',['kmeans',['../tutorials_06_Mesh_Agglomeration.html#autotoc_md97',1,'']]],
+  ['kmeans_10',['kmeans',['../tutorials_06_Mesh_Agglomeration.html#autotoc_md110',1,'']]],
   ['kmeans_2ecpp_11',['kmeans.cpp',['../kmeans_8cpp.html',1,'']]],
   ['kmeans_2ehpp_12',['kmeans.hpp',['../kmeans_8hpp.html',1,'']]],
   ['kmeans_5fagglomeration_2ecpp_13',['kmeans_agglomeration.cpp',['../kmeans__agglomeration_8cpp.html',1,'']]],
@@ -19,6 +19,6 @@ var searchData=
   ['kmeansalgtype_16',['KMeansAlgType',['../namespacevulpes_1_1geometry.html#a535e172da73723fcae91ad230fb18e6d',1,'vulpes::geometry']]],
   ['kmeansbase_17',['kmeansbase',['../classvulpes_1_1geometry_1_1KMeansBase.html#ace6d820cab0a99c7abe7f74371388c3c',1,'vulpes::geometry::KMeansBase::KMeansBase()'],['../classvulpes_1_1geometry_1_1KMeansBase.html#a8aa3beffe1626a98534fa1e050dda901',1,'vulpes::geometry::KMeansBase::KMeansBase(size_t k, size_t max_iter=1e6, T tol=1e-6, size_t seed=0)'],['../classvulpes_1_1geometry_1_1KMeansBase.html',1,'vulpes::geometry::KMeansBase&lt; T, Dim &gt;']]],
   ['kmeansnaive_18',['kmeansnaive',['../classvulpes_1_1geometry_1_1KMeansNaive.html#aa51c0ab8c4d33157a2725ec345bce4a9',1,'vulpes::geometry::KMeansNaive::KMeansNaive()'],['../classvulpes_1_1geometry_1_1KMeansNaive.html',1,'vulpes::geometry::KMeansNaive&lt; T, Dim &gt;']]],
-  ['kway_5fkmeans_19',['4. kway_kmeans',['../tutorials_01_Meshes_2D.html#autotoc_md8',1,'']]],
-  ['kway_5fmetis_20',['5. kway_metis',['../tutorials_01_Meshes_2D.html#autotoc_md10',1,'']]]
+  ['kway_5fkmeans_19',['4. kway_kmeans',['../tutorials_01_Meshes_2D.html#autotoc_md21',1,'']]],
+  ['kway_5fmetis_20',['5. kway_metis',['../tutorials_01_Meshes_2D.html#autotoc_md23',1,'']]]
 ];

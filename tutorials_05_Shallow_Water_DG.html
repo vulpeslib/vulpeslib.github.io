@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('tutorials_05_Shallow_Water_DG.html',''
 <div class="textblock"><p>Author: Pedro Peixoto <a href="#" onclick="location.href='mai'+'lto:'+'ppe'+'ix'+'oto'+'@u'+'sp.'+'br'; return false;">ppeix<span class="obfuscator">.nosp@m.</span>oto@<span class="obfuscator">.nosp@m.</span>usp.b<span class="obfuscator">.nosp@m.</span>r</a></p>
 <p>This tutorial describes the Discontinuous Galerkin (DG) solver for the linearised shallow water equations assembled in <a href="examples/assembly/shallow_water/swe_assembly.hpp">examples/assembly/shallow_water/swe_assembly.hpp</a>.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md64"></a>
+<h1><a class="anchor" id="autotoc_md77"></a>
 1) The Linearised Shallow Water Equations</h1>
 <p>The shallow water equations model the depth-averaged flow of a thin fluid layer. Linearising around a rest state of constant depth \(h_0\) and zero velocity gives the system</p>
 <p class="formulaDsp">
@@ -143,7 +143,7 @@ A_y = \begin{pmatrix} 0 &amp; 0 &amp; h_0 \\ 0 &amp; 0 &amp; 0 \\ g &amp; 0 &amp
 </p>
 <p>The equations are solved on the biperiodic unit square \([0,1]^2\) with initial condition \(\mathbf{U}(0,x) = \mathbf{U}_0(x)\).</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md66"></a>
+<h1><a class="anchor" id="autotoc_md79"></a>
 2) DG Weak Formulation</h1>
 <p>Let \(\mathcal{T}_h\) be a mesh and let</p>
 <p class="formulaDsp">
@@ -171,9 +171,9 @@ M \frac{d\mathbf{U}}{dt} = A \mathbf{U},
 </p>
 <p>where \(M\) is the block-diagonal mass matrix and \(A\) is the advection operator assembled from volume and face contributions.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md68"></a>
+<h1><a class="anchor" id="autotoc_md81"></a>
 3) Upwind (Godunov) Numerical Flux</h1>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md82"></a>
 3.1 The Upwind Flux and its Central + Dissipation Form</h2>
 <p>For a linear hyperbolic system, the exact Godunov flux (exact Riemann solver) coincides with the upwind flux and with the Roe flux, since all three reduce to the same expression when the flux Jacobian is constant:</p>
 <p class="formulaDsp">
@@ -191,7 +191,7 @@ M \frac{d\mathbf{U}}{dt} = A \mathbf{U},
 \]
 </p>
 <p>The central part uses the same 4 nonzero entries as the volume operator and the dissipation part has a simple closed form (Section 3.3), so no eigendecomposition is needed at runtime.</p>
-<h2><a class="anchor" id="autotoc_md70"></a>
+<h2><a class="anchor" id="autotoc_md83"></a>
 3.2 The A(n) Matrix</h2>
 <p>Combining the Jacobians with the normal \(n = (n_x, n_y)\):</p>
 <p class="formulaDsp">
@@ -203,7 +203,7 @@ A(n) = n_x A_x + n_y A_y =
 \]
 </p>
 <p>This has 4 nonzero entries, corresponding to the blocks \((h,u)\), \((h,v)\), \((u,h)\), and \((v,h)\).</p>
-<h2><a class="anchor" id="autotoc_md71"></a>
+<h2><a class="anchor" id="autotoc_md84"></a>
 3.3 The |A(n)| Matrix</h2>
 <p>The eigenvalues of \(A(n)\) are \(\lambda = c, -c, 0\) where \(c = \sqrt{g h_0}\). Rotating to the normal/tangential frame and back gives</p>
 <p class="formulaDsp">
@@ -216,9 +216,9 @@ A(n) = n_x A_x + n_y A_y =
 </p>
 <p>This matrix is block-diagonal between \(h\) and \((u,v)\), has 5 nonzero entries, and satisfies \(|A(-n)| = |A(n)|\) (it is even in \(n\)). The last property means the diag/neigh sign convention for the dissipation term is the same as for the central term (see Section 4).</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md73"></a>
+<h1><a class="anchor" id="autotoc_md86"></a>
 4) Cell-wise Assembly Matching the Vulpes Code</h1>
-<h2><a class="anchor" id="autotoc_md74"></a>
+<h2><a class="anchor" id="autotoc_md87"></a>
 4.1 Volume Term</h2>
 <p>The volume contribution for cell \(K\) is</p>
 <p class="formulaDsp">
@@ -242,7 +242,7 @@ A(n) = n_x A_x + n_y A_y =
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">\((v, h)\)   </td><td class="markdownTableBodyNone">\(\int_K g\,\frac{\partial v_v}{\partial y}\,h\,dK\)   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md75"></a>
+<h2><a class="anchor" id="autotoc_md88"></a>
 4.2 Face Flux</h2>
 <p>Substituting the Godunov flux and using the sign convention that the face integral contributes with a minus sign to the right-hand side gives two face forms per nonzero entry of \(A(n)\) and \(|A(n)|\):</p>
 <p class="formulaDsp">
@@ -284,9 +284,9 @@ A = \sum_{K} \mathrm{Cell}(K)
 \]
 </p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md77"></a>
+<h1><a class="anchor" id="autotoc_md90"></a>
 5) Code Structure</h1>
-<h2><a class="anchor" id="autotoc_md78"></a>
+<h2><a class="anchor" id="autotoc_md91"></a>
 5.1 Physics: ShallowWaterPhysics</h2>
 <p>Defined in <a href="examples/assembly/shallow_water/swe_physics.hpp">examples/assembly/shallow_water/swe_physics.hpp</a>.</p>
 <ul>
@@ -295,7 +295,7 @@ A = \sum_{K} \mathrm{Cell}(K)
 <li><code>waveSpeed()</code> returns \(c = \sqrt{g h_0}\).</li>
 <li><code>exactStateAtPoint(pt, t)</code> returns the time-dependent exact solution for supported benchmarks (see Section 6).</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md79"></a>
+<h2><a class="anchor" id="autotoc_md92"></a>
 5.2 Assembly: DGAssembly::assembleSystem()</h2>
 <p>Defined in <a href="examples/assembly/shallow_water/swe_assembly.hpp">examples/assembly/shallow_water/swe_assembly.hpp</a>.</p>
 <p>The assembly builds two matrices:</p>
@@ -312,7 +312,7 @@ A = \sum_{K} \mathrm{Cell}(K)
 </ul>
 <p>The normal-dependent coefficients \(n_x\), \(n_y\) are built by projecting <code>fe::normal(fe_space)</code> onto the Cartesian unit vectors via <code>fe::inner</code>. All scalar coefficients ( \(c_{A,01}\), \(c_{D,11}\), etc.) are composed from these using <code>operator*</code> on FE expressions &ndash; no new framework classes needed.</p>
 <p>The <code>fe::inner_block&lt;TestComp, TrialComp&gt;</code> expression selects a single \((I, J)\) block of the local matrix, returning <code>void()</code> for all other blocks so that the integrator skips them. <code>operator+</code> on two such expressions (enabled by a fix to <code>FeExpressionSum</code>) accumulates contributions to different blocks in a single pass.</p>
-<h2><a class="anchor" id="autotoc_md80"></a>
+<h2><a class="anchor" id="autotoc_md93"></a>
 5.3 Time Integration</h2>
 <p>The semi-discrete system \(M\,\dot{\mathbf{U}} = A\,\mathbf{U}\) is advanced by a 4th-order Runge-Kutta scheme in <a href="examples/assembly/shallow_water/rk4_integrator.hpp">examples/assembly/shallow_water/rk4_integrator.hpp</a>.</p>
 <p>The time step is computed from the CFL condition</p>
@@ -322,7 +322,7 @@ A = \sum_{K} \mathrm{Cell}(K)
 \]
 </p>
 <p>where \(c_{\max} = \max(|c_{\mathrm{bg}}|, c)\) combines the background advection speed and the gravity wave speed.</p>
-<h2><a class="anchor" id="autotoc_md81"></a>
+<h2><a class="anchor" id="autotoc_md94"></a>
 5.4 Configuration</h2>
 <p>All run parameters are set in <a href="examples/assembly/shallow_water/swe_parameters.json">examples/assembly/shallow_water/swe_parameters.json</a>.</p>
 <p>Key fields:</p>
@@ -347,7 +347,7 @@ A = \sum_{K} \mathrm{Cell}(K)
 <td class="markdownTableBodyNone"><code>benchmark</code>   </td><td class="markdownTableBodyNone">named preset; overrides physics and \(T_{\mathrm{final}}\)   </td></tr>
 </table>
 <hr  />
-<h1><a class="anchor" id="autotoc_md83"></a>
+<h1><a class="anchor" id="autotoc_md96"></a>
 6) Benchmark: linear_plane_wave</h1>
 <p>The <code>linear_plane_wave</code> benchmark sets \(g = h_0 = 1\) (wave speed \(c = 1\)) and uses a single Fourier mode as initial condition:</p>
 <p class="formulaDsp">
@@ -369,7 +369,7 @@ u(x,t) = -\sqrt{\frac{g}{h_0}}\,\sin(2\pi x)\sin(\omega t),
 </p>
 <p>where \(\omega = 2\pi c\). The period \(T = 1/c\) is set automatically as <code>T_final</code>. Running with <code>do_convergence: true</code> gives clean \(O(h^{p+1})\) convergence in the integration-based L2 error for all three fields.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md85"></a>
+<h1><a class="anchor" id="autotoc_md98"></a>
 7) Example Run</h1>
 <p>The configuration below runs a cosine-pulse initial condition on a Voronoi periodic mesh at polynomial order 3 for qualitative visualization (no convergence loop, no benchmark override):</p>
 <div class="fragment"><div class="line">{</div>
@@ -402,7 +402,7 @@ u(x,t) = -\sqrt{\frac{g}{h_0}}\,\sin(2\pi x)\sin(\omega t),
 </div><!-- fragment --><p>Snapshots of the height field \(h\) at \(t = 0.0\) and \(t= 1.0\) (Voronoi mesh, \(p = 3\), <code>convergence_levels = 5</code>):</p>
 <p><img src="figs/swe_cosine_pulse_h_ic.png" alt="h at t=0.0" width="48%" class="inline"/> <img src="figs/swe_cosine_pulse_h_t1.png" alt="h at t=1.0" width="48%" class="inline"/></p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md87"></a>
+<h1><a class="anchor" id="autotoc_md100"></a>
 8) Running the Solver</h1>
 <p>From the build directory:</p>
 <div class="fragment"><div class="line">./swe_main ../examples/assembly/shallow_water/swe_parameters.json</div>
@@ -424,7 +424,7 @@ u(x,t) = -\sqrt{\frac{g}{h_0}}\,\sin(2\pi x)\sin(\omega t),
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tutorials.html">Tutorials</a></li>
-    <li class="footer">Generated on Fri Nov 6 2026 09:56:29 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Nov 9 2026 12:10:10 for Vulpes by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
