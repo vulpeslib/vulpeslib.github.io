@@ -1,8 +1,8 @@
 /* ----------------------------------------------------------------------
  * Vulpes website: editable content.
  *
- * Everything that changes over time (team, publications, gallery, hero
- * video) lives here, so the page can be updated without touching HTML.
+ * Everything that changes over time (team, gallery, hero video) lives
+ * here, so the page can be updated without touching HTML.
  * See website/README.md for details.
  * ---------------------------------------------------------------------- */
 
@@ -18,8 +18,21 @@ window.VULPES = {
   },
 
   /* Gallery cards. `image` is required, `video` is optional: when given,
-   * the card plays the clip on hover (muted, looping). */
+   * the card plays the clip on hover (muted, looping). With `cover: true`
+   * the video is the cover itself and loops while the card is on screen
+   * (`image` is then its poster). `feature: true` makes the card twice as
+   * large, `wide: true` spans two columns, `contain: true` shows the
+   * whole image on white instead of cropping it. Leave `link` empty for no link. */
   gallery: [
+    {
+      title: "Fisher-Kolmogorov on a brain mesh",
+      caption: "Spreading front of a reaction-diffusion problem, DG on polyhedral cells.",
+      image: "assets/video/BrainSimulation-poster.jpg",
+      video: "assets/video/BrainSimulation.mp4",
+      cover: true,
+      feature: true,
+      link: "doc/tutorials_06_Fisher_Kolmogorov.html",
+    },
     {
       title: "Advection on a deforming flow",
       caption: "Discontinuous Galerkin transport of a scalar field.",
@@ -46,8 +59,8 @@ window.VULPES = {
       caption: "Segregated 3D agglomeration driven by material tags.",
       image: "assets/img/gallery/agglomeration-3d.jpg",
       video: "",
-      link: "doc/tutorials_06_Mesh_Agglomeration.html",
-      wide: true,
+      link: "doc/tutorials_07_Mesh_Agglomeration.html",
+      contain: true,
     },
     {
       title: "Periodic Voronoi tessellations",
@@ -58,42 +71,27 @@ window.VULPES = {
     },
   ],
 
-  /* Publications that use Vulpes. Newest first.
-   * Fields: authors, title, venue, year, and optionally doi, arxiv, url,
-   * tags (array of short strings). */
-  publications: [
-    {
-      authors: "P. F. Antonietti, M. Caldana, I. Mazzieri, A. Re Fraccalvieri",
-      title: "MAGNET: an open-source library for mesh agglomeration by Graph Neural Networks",
-      venue: "Engineering with Computers 41, 4825–4850",
-      year: 2025,
-      doi: "10.1007/s00366-025-02223-y",
-      arxiv: "2504.21780",
-      tags: ["agglomeration", "GNN"],
-    },
-  ],
+  /* Publications are read from assets/data/publications.bib (BibTeX). */
 
-  /* Team. `photo` is a path such as "assets/img/team/name-surname.jpg"
-   * (square, at least 400x400 px). Leave it empty to show initials.
-   * `group` is one of: "pi", "core", "former". */
+  /* Team. `group` is one of: "pi", "core", "former".
+   * `url` (optional) adds a link to a personal web page. */
   team: [
     {
       name: "Paola F. Antonietti",
       role: "Principal Investigator, NEMESIS PoliMi node",
       affiliation: "Politecnico di Milano",
-      photo: "",
       url: "https://antonietti.faculty.polimi.it",
       group: "pi",
     },
-    { name: "Francesco Daniele", role: "Developer", affiliation: "Politecnico di Milano", photo: "", email: "francesco.daniele@polimi.it", group: "core" },
-    { name: "Nicola De March", role: "Developer", affiliation: "Politecnico di Milano", photo: "", email: "nicola.demarch@polimi.it", group: "core" },
-    { name: "Ivan Fumagalli", role: "Developer", affiliation: "Politecnico di Milano", photo: "", email: "ivan.fumagalli@polimi.it", group: "core" },
-    { name: "Caterina Beatrice Leimer Saglio", role: "Developer", affiliation: "Politecnico di Milano", photo: "", email: "caterinabeatrice.leimer@polimi.it", group: "core" },
-    { name: "Ilario Mazzieri", role: "Developer", affiliation: "Politecnico di Milano", photo: "", email: "ilario.mazzieri@polimi.it", group: "core" },
-    { name: "Stefano Pagani", role: "Developer", affiliation: "Politecnico di Milano", photo: "", email: "stefano.pagani@polimi.it", group: "core" },
-    { name: "Pedro Peixoto", role: "Developer", affiliation: "Universidade de São Paulo", photo: "", email: "ppeixoto@usp.br", group: "core" },
-    { name: "Francesco Rosnati", role: "Developer", affiliation: "Politecnico di Milano", photo: "", email: "francesco.rosnati@polimi.it", group: "core" },
-    { name: "Matteo Caldana", role: "Former developer", affiliation: "Politecnico di Milano", photo: "", email: "matteo.caldana@polimi.it", group: "former" },
+    { name: "Francesco Daniele", role: "Developer", affiliation: "Politecnico di Milano", group: "core" },
+    { name: "Nicola De March", role: "Developer", affiliation: "Politecnico di Milano", group: "core" },
+    { name: "Ivan Fumagalli", role: "Developer", affiliation: "Politecnico di Milano", group: "core" },
+    { name: "Caterina Beatrice Leimer Saglio", role: "Developer", affiliation: "Politecnico di Milano", group: "core" },
+    { name: "Ilario Mazzieri", role: "Developer", affiliation: "Politecnico di Milano", group: "core" },
+    { name: "Stefano Pagani", role: "Developer", affiliation: "Politecnico di Milano", group: "core" },
+    { name: "Pedro Peixoto", role: "Developer", affiliation: "Universidade de São Paulo", group: "core" },
+    { name: "Francesco Rosnati", role: "Developer", affiliation: "Politecnico di Milano", group: "core" },
+    { name: "Matteo Caldana", role: "Former developer", affiliation: "Politecnico di Milano", group: "former" },
   ],
 
   /* Further acknowledgements, shown as a plain list under the team. */

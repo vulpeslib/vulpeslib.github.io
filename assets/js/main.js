@@ -198,25 +198,49 @@
   /* ---------------- Gallery ---------------- */
 
   var grid = document.getElementById("galleryGrid");
+  var coverObserver = "IntersectionObserver" in window && !reduceMotion
+    ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var v = e.target.querySelector("video");
+          if (e.isIntersecting) v.play().catch(function () {}); else v.pause();
+        });
+      }, { threshold: 0.25 })
+    : null;
+
   (DATA.gallery || []).forEach(function (g) {
-    var media = [el("img", { src: g.image, alt: g.title, loading: "lazy" })];
-    var vid = null;
-    if (g.video) {
-      vid = el("video", { src: g.video, muted: true, loop: true, playsinline: true, preload: "none" });
+    var media = [], vid = null;
+    if (g.video && g.cover) {
+      // the video is the cover: plays (muted, looping) while visible
+      vid = el("video", {
+        src: g.video, poster: g.image, muted: true, loop: true, playsinline: true,
+        preload: reduceMotion ? "none" : "metadata", "aria-label": g.title,
+      });
       vid.muted = true;
       media.push(vid);
-      media.push(el("span", { className: "gcard__play", text: "VIDEO" }));
+    } else {
+      media.push(el("img", { src: g.image, alt: g.title, loading: "lazy" }));
+      if (g.video) {
+        vid = el("video", { src: g.video, muted: true, loop: true, playsinline: true, preload: "none" });
+        vid.muted = true;
+        media.push(vid);
+        media.push(el("span", { className: "gcard__play", text: "VIDEO" }));
+      }
     }
+    var cls = "gcard reveal" + (g.wide ? " gcard--wide" : "") + (g.feature ? " gcard--feature" : "") + (g.cover && g.video ? " gcard--cover" : "") + (g.contain ? " gcard--contain" : "");
+    var isDoc = g.link && /^\/?doc\//.test(g.link);
     var card = el(g.link ? "a" : "div", {
-      className: "gcard reveal" + (g.wide ? " gcard--wide" : ""),
-      href: g.link || undefined,
+      className: cls, href: g.link || undefined,
+      // documentation always opens in a new tab
+      target: isDoc ? "_blank" : undefined, rel: isDoc ? "noopener" : undefined,
     }, media.concat([
       el("div", { className: "gcard__body" }, [
         el("p", { className: "gcard__title", text: g.title }),
         g.caption ? el("p", { className: "gcard__caption", text: g.caption }) : null,
       ]),
     ]));
-    if (vid && !reduceMotion) {
+    if (vid && g.cover) {
+      if (coverObserver) coverObserver.observe(card);
+    } else if (vid && !reduceMotion) {
       card.addEventListener("mouseenter", function () { vid.play().then(function () { card.classList.add("is-playing"); }).catch(function () {}); });
       card.addEventListener("mouseleave", function () { vid.pause(); card.classList.remove("is-playing"); });
     }
@@ -224,77 +248,203 @@
   });
 
   /* ---------------- Publications ---------------- */
+  /* Read from assets/data/publications.bib (BibTeX). */
 
-  var pubs = (DATA.publications || []).slice().sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
+  var PUBS_FILE = "assets/data/publications.bib";
   var pubList = document.getElementById("pubList");
   var pubFilter = document.getElementById("pubFilter");
 
-  function renderPubs(year) {
-    pubList.innerHTML = "";
-    var shown = pubs.filter(function (p) { return !year || p.year === year; });
-    if (!shown.length) {
-      pubList.appendChild(el("li", { className: "pubs__empty", text: "No publications listed yet." }));
-      return;
+  // Minimal BibTeX reader: @type{key, field = {...} | "..." | number, ...}.
+  // Text outside entries (comments) is ignored.
+  function parseBibtex(src) {
+    var entries = [], i = 0, n = src.length;
+    function skipWs() { while (i < n && /[\s,]/.test(src[i])) i++; }
+    function readValue() {
+      skipWs();
+      var out = "";
+      if (src[i] === "{") {
+        var depth = 0;
+        do {
+          if (src[i] === "{") depth++;
+          else if (src[i] === "}") depth--;
+          out += src[i]; i++;
+        } while (i < n && depth > 0);
+        return out.slice(1, -1);
+      }
+      if (src[i] === '"') {
+        i++;
+        var d = 0;
+        while (i < n && !(src[i] === '"' && d === 0)) {
+          if (src[i] === "{") d++; else if (src[i] === "}") d--;
+          out += src[i]; i++;
+        }
+        i++;
+        return out;
+      }
+      while (i < n && /[^,}\s]/.test(src[i])) { out += src[i]; i++; }
+      return out;
     }
-    shown.forEach(function (p) {
-      var links = [];
-      if (p.doi) links.push(el("a", { href: "https://doi.org/" + p.doi, text: "DOI" }));
-      if (p.arxiv) links.push(el("a", { href: "https://arxiv.org/abs/" + p.arxiv, text: "arXiv:" + p.arxiv }));
-      if (p.url) links.push(el("a", { href: p.url, text: "Link" }));
-      (p.tags || []).forEach(function (t) { links.push(el("span", { className: "pub__tag", text: t })); });
-      pubList.appendChild(el("li", { className: "pub reveal is-visible" }, [
-        el("div", { className: "pub__year", text: String(p.year || "") }),
-        el("div", null, [
-          el("p", { className: "pub__title", text: p.title }),
-          el("p", { className: "pub__authors", text: p.authors }),
-          p.venue ? el("p", { className: "pub__venue", text: p.venue }) : null,
-          links.length ? el("div", { className: "pub__links" }, links) : null,
-        ]),
-      ]));
-    });
+    while (i < n) {
+      var at = src.indexOf("@", i);
+      if (at < 0) break;
+      var open = src.indexOf("{", at);
+      if (open < 0) break;
+      var type = src.slice(at + 1, open).trim().toLowerCase();
+      i = open + 1;
+      if (type === "comment" || type === "preamble" || type === "string") {
+        var depth = 1;
+        while (i < n && depth > 0) { if (src[i] === "{") depth++; else if (src[i] === "}") depth--; i++; }
+        continue;
+      }
+      var comma = src.indexOf(",", i);
+      var entry = { type: type, key: src.slice(i, comma).trim(), fields: {} };
+      i = comma + 1;
+      for (;;) {
+        skipWs();
+        if (i >= n || src[i] === "}") { i++; break; }
+        var eq = src.indexOf("=", i);
+        if (eq < 0) { i = n; break; }
+        var name = src.slice(i, eq).trim().toLowerCase();
+        i = eq + 1;
+        entry.fields[name] = readValue();
+      }
+      entries.push(entry);
+    }
+    return entries;
   }
 
-  var years = pubs.map(function (p) { return p.year; }).filter(function (y, i, a) { return y && a.indexOf(y) === i; });
-  if (years.length > 1) {
-    [null].concat(years).forEach(function (y) {
-      var b = el("button", { type: "button", className: "chip" + (y === null ? " is-active" : ""), text: y === null ? "All" : String(y) });
-      b.addEventListener("click", function () {
-        pubFilter.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("is-active"); });
-        b.classList.add("is-active");
-        renderPubs(y);
-      });
-      pubFilter.appendChild(b);
-    });
-  } else {
-    pubFilter.remove();
+  // LaTeX to plain text: accents, dashes, braces
+  var ACCENTS = { "`": "̀", "'": "́", "^": "̂", "~": "̃", '"': "̈", "c": "̧" };
+  function delatex(s) {
+    return String(s || "")
+      .replace(/\\([`'^~"c])\s*\{?\\?([A-Za-z])\}?/g, function (_, acc, ch) {
+        return (ch + ACCENTS[acc]).normalize("NFC");
+      })
+      .replace(/\\ss\b/g, "ß").replace(/\\&/g, "&").replace(/\\%/g, "%")
+      .replace(/---/g, "—").replace(/--/g, "–")
+      .replace(/~/g, " ")
+      .replace(/[{}]/g, "")
+      .replace(/\s+/g, " ").trim();
   }
-  renderPubs(null);
+
+  // "Last, First Middle and ..." -> "F. M. Last, ..."
+  function formatAuthors(s) {
+    return delatex(s).split(/\s+and\s+/).map(function (a) {
+      var last, first;
+      if (a.indexOf(",") >= 0) {
+        last = a.slice(0, a.indexOf(",")).trim();
+        first = a.slice(a.indexOf(",") + 1).trim();
+      } else {
+        // "First von Last": the last name starts at the first lowercase
+        // word (da, de, van, von, ...), or is the last word
+        var w = a.split(" ");
+        var k = 1;
+        while (k < w.length - 1 && !/^[a-z]/.test(w[k])) k++;
+        if (k >= w.length - 1) k = w.length - 1;
+        last = w.slice(k).join(" "); first = w.slice(0, k).join(" ");
+      }
+      var initials = first.split(/[\s]+/).filter(Boolean).map(function (w) {
+        return w.split("-").map(function (p) { return p.charAt(0) + "."; }).join("-");
+      }).join(" ");
+      return (initials ? initials + " " : "") + last;
+    }).join(", ");
+  }
+
+  function toPublication(e) {
+    var f = e.fields;
+    var isArxiv = /arxiv/i.test(f.archiveprefix || "") || /arxiv/i.test(f.eprinttype || "");
+    var venue = delatex(f.journal || f.booktitle || f.publisher || f.school || f.howpublished || "");
+    if (venue && f.volume) venue += " " + delatex(f.volume) + (f.number ? "(" + delatex(f.number) + ")" : "");
+    if (venue && f.pages) venue += ", " + delatex(f.pages);
+    if (!venue && isArxiv && f.eprint) venue = "arXiv preprint";
+    var doi = f.doi ? delatex(f.doi).replace(/^https?:\/\/(dx\.)?doi\.org\//, "") : "";
+    // the arXiv DOI only duplicates the arXiv link
+    if (/^10\.48550\//.test(doi) && isArxiv) doi = "";
+    return {
+      key: e.key,
+      title: delatex(f.title),
+      authors: formatAuthors(f.author || ""),
+      venue: venue,
+      year: parseInt(f.year, 10) || null,
+      doi: doi,
+      arxiv: isArxiv && f.eprint ? delatex(f.eprint) : "",
+      // skip a url that only repeats the DOI link
+      url: f.url && !(doi && delatex(f.url).indexOf(doi) >= 0) ? delatex(f.url) : "",
+      tags: f.keywords ? delatex(f.keywords).split(/\s*[,;]\s*/).filter(Boolean) : [],
+    };
+  }
+
+  function showPubs(pubs) {
+    function renderPubs(year) {
+      pubList.innerHTML = "";
+      var shown = pubs.filter(function (p) { return !year || p.year === year; });
+      if (!shown.length) {
+        pubList.appendChild(el("li", { className: "pubs__empty", text: "No publications listed yet." }));
+        return;
+      }
+      shown.forEach(function (p) {
+        var links = [];
+        if (p.doi) links.push(el("a", { href: "https://doi.org/" + p.doi, text: "DOI" }));
+        if (p.arxiv) links.push(el("a", { href: "https://arxiv.org/abs/" + p.arxiv, text: "arXiv:" + p.arxiv }));
+        if (p.url) links.push(el("a", { href: p.url, text: "Link" }));
+        p.tags.forEach(function (t) { links.push(el("span", { className: "pub__tag", text: t })); });
+        pubList.appendChild(el("li", { className: "pub reveal is-visible" }, [
+          el("div", { className: "pub__year", text: String(p.year || "") }),
+          el("div", null, [
+            el("p", { className: "pub__title", text: p.title }),
+            el("p", { className: "pub__authors", text: p.authors }),
+            p.venue ? el("p", { className: "pub__venue", text: p.venue }) : null,
+            links.length ? el("div", { className: "pub__links" }, links) : null,
+          ]),
+        ]));
+      });
+    }
+
+    var years = pubs.map(function (p) { return p.year; }).filter(function (y, i, a) { return y && a.indexOf(y) === i; });
+    if (years.length > 1) {
+      [null].concat(years).forEach(function (y) {
+        var b = el("button", { type: "button", className: "chip" + (y === null ? " is-active" : ""), text: y === null ? "All" : String(y) });
+        b.addEventListener("click", function () {
+          pubFilter.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("is-active"); });
+          b.classList.add("is-active");
+          renderPubs(y);
+        });
+        pubFilter.appendChild(b);
+      });
+    } else {
+      pubFilter.remove();
+    }
+    renderPubs(null);
+  }
+
+  fetch(PUBS_FILE, { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+    .then(function (text) {
+      var pubs = parseBibtex(text).map(toPublication).filter(function (p) { return p.title; });
+      // newest first, file order within the same year
+      pubs = pubs.map(function (p, k) { p.order = k; return p; }).sort(function (a, b) {
+        return (b.year || 0) - (a.year || 0) || a.order - b.order;
+      });
+      showPubs(pubs);
+    })
+    .catch(function () {
+      pubFilter.remove();
+      pubList.appendChild(el("li", { className: "pubs__empty", text: "The list of publications could not be loaded." }));
+    });
 
   /* ---------------- Team ---------------- */
 
-  var ICON_MAIL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
   var ICON_WEB = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
 
-  function initials(name) {
-    var parts = name.split(/\s+/).filter(function (w) { return /^[A-ZÀ-Ý]/.test(w) && w.length > 1; });
-    return ((parts[0] || "")[0] || "") + ((parts[parts.length - 1] || "")[0] || "");
-  }
-
   function memberCard(m) {
-    var photo = m.photo
-      ? el("img", { src: m.photo, alt: m.name, loading: "lazy" })
-      : el("span", { text: initials(m.name), "aria-hidden": "true" });
-    var links = [];
-    if (m.url) links.push(el("a", { href: m.url, "aria-label": m.name + " website", html: ICON_WEB }));
-    if (m.email) links.push(el("a", { href: "mailto:" + m.email, "aria-label": "Email " + m.name, html: ICON_MAIL }));
+    var name = m.url
+      ? el("a", { href: m.url, className: "member__url", html: ICON_WEB }, [])
+      : null;
+    if (name) name.insertAdjacentText("afterbegin", m.name + " ");
     return el("article", { className: "member reveal" }, [
-      el("div", { className: "member__photo" }, [photo]),
-      el("div", null, [
-        el("p", { className: "member__name", text: m.name }),
-        m.role ? el("p", { className: "member__role", text: m.role }) : null,
-        m.affiliation ? el("p", { className: "member__aff", text: m.affiliation }) : null,
-        links.length ? el("div", { className: "member__links" }, links) : null,
-      ]),
+      el("p", { className: "member__name" }, [name || document.createTextNode(m.name)]),
+      m.role ? el("p", { className: "member__role", text: m.role }) : null,
+      m.affiliation ? el("p", { className: "member__aff", text: m.affiliation }) : null,
     ]);
   }
 

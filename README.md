@@ -24,20 +24,17 @@ and open <http://localhost:8000>.
 
 ## Editing content
 
-Everything that changes over time is in [`assets/js/data.js`](assets/js/data.js):
+Publications are read from [`assets/data/publications.bib`](assets/data/publications.bib):
+paste the BibTeX entry of a new paper there (fields used are listed at the top of the file).
+
+Everything else that changes over time is in [`assets/js/data.js`](assets/js/data.js):
 
 | What | Key | Notes |
 |---|---|---|
-| Publications | `publications` | `authors`, `title`, `venue`, `year`, optional `doi`, `arxiv`, `url`, `tags` |
-| Team | `team` | `group`: `pi`, `core` or `former`; `photo` optional |
+| Team | `team` | `group`: `pi`, `core` or `former`; `url` optional |
 | Acknowledgements | `contributors` | plain strings |
 | Gallery | `gallery` | `image` required, `video` optional (plays on hover), `wide: true` spans two columns |
 | Hero background | `heroVideo` | empty `mp4` = animated Voronoi mesh drawn in the browser |
-
-### Team photos
-
-Square photo (at least 400×400 px, JPEG, under 150 KB) in `assets/img/team/name-surname.jpg`,
-then `photo: "assets/img/team/name-surname.jpg"`. Without a photo the card shows the initials.
 
 ### Logos
 
