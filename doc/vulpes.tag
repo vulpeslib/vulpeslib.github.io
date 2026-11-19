@@ -86,9 +86,14 @@
     <filename>05__Shallow__Water__DG_8md.html</filename>
   </compound>
   <compound kind="file">
-    <name>06_Mesh_Agglomeration.md</name>
+    <name>06_Fisher_Kolmogorov.md</name>
     <path>/__w/vulpes/vulpes/doc/tutorials/</path>
-    <filename>06__Mesh__Agglomeration_8md.html</filename>
+    <filename>06__Fisher__Kolmogorov_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>07_Mesh_Agglomeration.md</name>
+    <path>/__w/vulpes/vulpes/doc/tutorials/</path>
+    <filename>07__Mesh__Agglomeration_8md.html</filename>
   </compound>
   <compound kind="file">
     <name>cell_manager.hpp</name>
@@ -30166,10 +30171,15 @@
     <filename>tutorials_05_Shallow_Water_DG.html</filename>
   </compound>
   <compound kind="page">
-    <name>tutorials_06_Mesh_Agglomeration</name>
+    <name>tutorials_06_Fisher_Kolmogorov</name>
+    <title>Fisher-Kolmogorov Assembly (DG)</title>
+    <filename>tutorials_06_Fisher_Kolmogorov.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>tutorials_07_Mesh_Agglomeration</name>
     <title>Tool for Mesh Agglomeration</title>
-    <filename>tutorials_06_Mesh_Agglomeration.html</filename>
-    <docanchor file="tutorials_06_Mesh_Agglomeration.html" title="References">references</docanchor>
+    <filename>tutorials_07_Mesh_Agglomeration.html</filename>
+    <docanchor file="tutorials_07_Mesh_Agglomeration.html" title="References">references</docanchor>
   </compound>
   <compound kind="page">
     <name>tutorials</name>
@@ -30180,7 +30190,8 @@
     <subpage>tutorials_03_Elasticity_Assembly.html</subpage>
     <subpage>tutorials_04_Advection_Assembly.html</subpage>
     <subpage>tutorials_05_Shallow_Water_DG.html</subpage>
-    <subpage>tutorials_06_Mesh_Agglomeration.html</subpage>
+    <subpage>tutorials_06_Fisher_Kolmogorov.html</subpage>
+    <subpage>tutorials_07_Mesh_Agglomeration.html</subpage>
   </compound>
   <compound kind="page">
     <name>developers_guide_commit_and_merge_policy</name>

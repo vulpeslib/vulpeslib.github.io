@@ -133,114 +133,122 @@ var NAVTREE =
         [ "7) Example Run", "tutorials_05_Shallow_Water_DG.html#autotoc_md98", null ],
         [ "8) Running the Solver", "tutorials_05_Shallow_Water_DG.html#autotoc_md100", null ]
       ] ],
-      [ "Tool for Mesh Agglomeration", "tutorials_06_Mesh_Agglomeration.html", [
-        [ "Quick Start", "tutorials_06_Mesh_Agglomeration.html#autotoc_md101", null ],
-        [ "Overview of the Pipeline", "tutorials_06_Mesh_Agglomeration.html#autotoc_md102", null ],
-        [ "JSON Reference", "tutorials_06_Mesh_Agglomeration.html#autotoc_md103", null ],
-        [ "Methods", "tutorials_06_Mesh_Agglomeration.html#autotoc_md104", [
-          [ "direct_kway", "tutorials_06_Mesh_Agglomeration.html#autotoc_md105", null ],
-          [ "bisect", "tutorials_06_Mesh_Agglomeration.html#autotoc_md106", null ],
-          [ "mult_factor", "tutorials_06_Mesh_Agglomeration.html#autotoc_md107", null ]
+      [ "Fisher-Kolmogorov Assembly (DG)", "tutorials_06_Fisher_Kolmogorov.html", [
+        [ "1) DG Formulation of Fisher-Kolmogorov", "tutorials_06_Fisher_Kolmogorov.html#autotoc_md101", null ],
+        [ "2) Code Notations in the Fisher-Kolmogorov Example", "tutorials_06_Fisher_Kolmogorov.html#autotoc_md102", null ],
+        [ "3) Run", "tutorials_06_Fisher_Kolmogorov.html#autotoc_md103", [
+          [ "Brain simulation", "tutorials_06_Fisher_Kolmogorov.html#autotoc_md104", null ],
+          [ "Convergence test", "tutorials_06_Fisher_Kolmogorov.html#autotoc_md105", null ]
+        ] ]
+      ] ],
+      [ "Tool for Mesh Agglomeration", "tutorials_07_Mesh_Agglomeration.html", [
+        [ "Quick Start", "tutorials_07_Mesh_Agglomeration.html#autotoc_md106", null ],
+        [ "Overview of the Pipeline", "tutorials_07_Mesh_Agglomeration.html#autotoc_md107", null ],
+        [ "JSON Reference", "tutorials_07_Mesh_Agglomeration.html#autotoc_md108", null ],
+        [ "Methods", "tutorials_07_Mesh_Agglomeration.html#autotoc_md109", [
+          [ "direct_kway", "tutorials_07_Mesh_Agglomeration.html#autotoc_md110", null ],
+          [ "bisect", "tutorials_07_Mesh_Agglomeration.html#autotoc_md111", null ],
+          [ "mult_factor", "tutorials_07_Mesh_Agglomeration.html#autotoc_md112", null ]
         ] ],
-        [ "Backends", "tutorials_06_Mesh_Agglomeration.html#autotoc_md108", [
-          [ "parmetis", "tutorials_06_Mesh_Agglomeration.html#autotoc_md109", null ],
-          [ "kmeans", "tutorials_06_Mesh_Agglomeration.html#autotoc_md110", null ],
-          [ "gnn", "tutorials_06_Mesh_Agglomeration.html#autotoc_md111", null ]
+        [ "Backends", "tutorials_07_Mesh_Agglomeration.html#autotoc_md113", [
+          [ "parmetis", "tutorials_07_Mesh_Agglomeration.html#autotoc_md114", null ],
+          [ "kmeans", "tutorials_07_Mesh_Agglomeration.html#autotoc_md115", null ],
+          [ "gnn", "tutorials_07_Mesh_Agglomeration.html#autotoc_md116", null ]
         ] ],
-        [ "Agglomeration by Region (Materials)", "tutorials_06_Mesh_Agglomeration.html#autotoc_md112", [
-          [ "Example: a cube with two materials", "tutorials_06_Mesh_Agglomeration.html#autotoc_md113", null ]
+        [ "Agglomeration by Region (Materials)", "tutorials_07_Mesh_Agglomeration.html#autotoc_md117", [
+          [ "Example: a cube with two materials", "tutorials_07_Mesh_Agglomeration.html#autotoc_md118", null ]
         ] ],
-        [ "Repair of 3D Agglomerates", "tutorials_06_Mesh_Agglomeration.html#autotoc_md114", null ],
-        [ "Related Examples", "tutorials_06_Mesh_Agglomeration.html#autotoc_md115", null ],
-        [ "References", "tutorials_06_Mesh_Agglomeration.html#references", null ]
+        [ "Repair of 3D Agglomerates", "tutorials_07_Mesh_Agglomeration.html#autotoc_md119", null ],
+        [ "Related Examples", "tutorials_07_Mesh_Agglomeration.html#autotoc_md120", null ],
+        [ "References", "tutorials_07_Mesh_Agglomeration.html#references", null ]
       ] ]
     ] ],
     [ "Developer's Guide", "developers_guide.html", [
       [ "Compile options", "developers_guide_compile_options.html", [
-        [ "Background", "developers_guide_compile_options.html#autotoc_md130", [
-          [ "Day to day", "developers_guide_compile_options.html#autotoc_md131", null ],
-          [ "Profiling", "developers_guide_compile_options.html#autotoc_md132", null ],
-          [ "Where to work?", "developers_guide_compile_options.html#autotoc_md133", null ],
-          [ "Check the compile commands", "developers_guide_compile_options.html#autotoc_md134", null ]
+        [ "Background", "developers_guide_compile_options.html#autotoc_md135", [
+          [ "Day to day", "developers_guide_compile_options.html#autotoc_md136", null ],
+          [ "Profiling", "developers_guide_compile_options.html#autotoc_md137", null ],
+          [ "Where to work?", "developers_guide_compile_options.html#autotoc_md138", null ],
+          [ "Check the compile commands", "developers_guide_compile_options.html#autotoc_md139", null ]
         ] ]
       ] ],
       [ "Native cluster compile", "developers_guide_compile_native.html", [
-        [ "Installing missing packages", "developers_guide_compile_native.html#autotoc_md121", [
-          [ "Petsc", "developers_guide_compile_native.html#autotoc_md122", [
-            [ "Install a Debug version of Petsc", "developers_guide_compile_native.html#autotoc_md123", null ]
+        [ "Installing missing packages", "developers_guide_compile_native.html#autotoc_md126", [
+          [ "Petsc", "developers_guide_compile_native.html#autotoc_md127", [
+            [ "Install a Debug version of Petsc", "developers_guide_compile_native.html#autotoc_md128", null ]
           ] ],
-          [ "vtk", "developers_guide_compile_native.html#autotoc_md124", null ],
-          [ "boost", "developers_guide_compile_native.html#autotoc_md125", null ],
-          [ "parmetis", "developers_guide_compile_native.html#autotoc_md126", null ]
+          [ "vtk", "developers_guide_compile_native.html#autotoc_md129", null ],
+          [ "boost", "developers_guide_compile_native.html#autotoc_md130", null ],
+          [ "parmetis", "developers_guide_compile_native.html#autotoc_md131", null ]
         ] ],
-        [ "Using Spack", "developers_guide_compile_native.html#autotoc_md127", [
-          [ "Our usecase", "developers_guide_compile_native.html#autotoc_md128", null ]
+        [ "Using Spack", "developers_guide_compile_native.html#autotoc_md132", [
+          [ "Our usecase", "developers_guide_compile_native.html#autotoc_md133", null ]
         ] ],
-        [ "Specifying the position of a library", "developers_guide_compile_native.html#autotoc_md129", null ]
+        [ "Specifying the position of a library", "developers_guide_compile_native.html#autotoc_md134", null ]
       ] ],
       [ "C++ Style Guide", "developers_guide_style_guide.html", [
-        [ "Background", "developers_guide_style_guide.html#autotoc_md142", null ],
-        [ "Formatting code", "developers_guide_style_guide.html#autotoc_md143", null ],
-        [ "Static analysis", "developers_guide_style_guide.html#autotoc_md144", null ],
-        [ "File structure", "developers_guide_style_guide.html#autotoc_md145", [
-          [ "Define guard", "developers_guide_style_guide.html#autotoc_md146", null ],
-          [ "Includes", "developers_guide_style_guide.html#autotoc_md147", null ]
+        [ "Background", "developers_guide_style_guide.html#autotoc_md147", null ],
+        [ "Formatting code", "developers_guide_style_guide.html#autotoc_md148", null ],
+        [ "Static analysis", "developers_guide_style_guide.html#autotoc_md149", null ],
+        [ "File structure", "developers_guide_style_guide.html#autotoc_md150", [
+          [ "Define guard", "developers_guide_style_guide.html#autotoc_md151", null ],
+          [ "Includes", "developers_guide_style_guide.html#autotoc_md152", null ]
         ] ],
-        [ "Namespaces", "developers_guide_style_guide.html#autotoc_md148", null ],
-        [ "Variables", "developers_guide_style_guide.html#autotoc_md149", [
-          [ "Local Variables", "developers_guide_style_guide.html#autotoc_md150", null ],
-          [ "Global Variables", "developers_guide_style_guide.html#autotoc_md151", [
-            [ "Common patterns", "developers_guide_style_guide.html#autotoc_md152", null ]
+        [ "Namespaces", "developers_guide_style_guide.html#autotoc_md153", null ],
+        [ "Variables", "developers_guide_style_guide.html#autotoc_md154", [
+          [ "Local Variables", "developers_guide_style_guide.html#autotoc_md155", null ],
+          [ "Global Variables", "developers_guide_style_guide.html#autotoc_md156", [
+            [ "Common patterns", "developers_guide_style_guide.html#autotoc_md157", null ]
           ] ]
         ] ],
-        [ "Classes", "developers_guide_style_guide.html#autotoc_md153", [
-          [ "Struct", "developers_guide_style_guide.html#autotoc_md154", null ],
-          [ "Inheritance", "developers_guide_style_guide.html#autotoc_md155", null ],
-          [ "Operator Overloading", "developers_guide_style_guide.html#autotoc_md156", null ],
-          [ "Friends", "developers_guide_style_guide.html#autotoc_md157", null ]
+        [ "Classes", "developers_guide_style_guide.html#autotoc_md158", [
+          [ "Struct", "developers_guide_style_guide.html#autotoc_md159", null ],
+          [ "Inheritance", "developers_guide_style_guide.html#autotoc_md160", null ],
+          [ "Operator Overloading", "developers_guide_style_guide.html#autotoc_md161", null ],
+          [ "Friends", "developers_guide_style_guide.html#autotoc_md162", null ]
         ] ],
-        [ "Functions", "developers_guide_style_guide.html#autotoc_md158", null ],
-        [ "The auto keyword", "developers_guide_style_guide.html#autotoc_md159", null ],
-        [ "Exceptions", "developers_guide_style_guide.html#autotoc_md160", null ],
-        [ "Casting", "developers_guide_style_guide.html#autotoc_md161", null ],
-        [ "Integer Types", "developers_guide_style_guide.html#autotoc_md162", null ],
-        [ "Macros", "developers_guide_style_guide.html#autotoc_md163", null ],
-        [ "Naming conventions", "developers_guide_style_guide.html#autotoc_md164", [
-          [ "Types", "developers_guide_style_guide.html#autotoc_md165", null ],
-          [ "Variable prefixes", "developers_guide_style_guide.html#autotoc_md166", null ]
+        [ "Functions", "developers_guide_style_guide.html#autotoc_md163", null ],
+        [ "The auto keyword", "developers_guide_style_guide.html#autotoc_md164", null ],
+        [ "Exceptions", "developers_guide_style_guide.html#autotoc_md165", null ],
+        [ "Casting", "developers_guide_style_guide.html#autotoc_md166", null ],
+        [ "Integer Types", "developers_guide_style_guide.html#autotoc_md167", null ],
+        [ "Macros", "developers_guide_style_guide.html#autotoc_md168", null ],
+        [ "Naming conventions", "developers_guide_style_guide.html#autotoc_md169", [
+          [ "Types", "developers_guide_style_guide.html#autotoc_md170", null ],
+          [ "Variable prefixes", "developers_guide_style_guide.html#autotoc_md171", null ]
         ] ],
-        [ "Control structures", "developers_guide_style_guide.html#autotoc_md167", [
-          [ "Switch", "developers_guide_style_guide.html#autotoc_md168", null ]
+        [ "Control structures", "developers_guide_style_guide.html#autotoc_md172", [
+          [ "Switch", "developers_guide_style_guide.html#autotoc_md173", null ]
         ] ],
-        [ "Pointers", "developers_guide_style_guide.html#autotoc_md169", null ],
-        [ "Return from errors immediately", "developers_guide_style_guide.html#autotoc_md170", null ]
+        [ "Pointers", "developers_guide_style_guide.html#autotoc_md174", null ],
+        [ "Return from errors immediately", "developers_guide_style_guide.html#autotoc_md175", null ]
       ] ],
       [ "Commit and Merge Policy", "developers_guide_commit_and_merge_policy.html", [
-        [ "Overview", "developers_guide_commit_and_merge_policy.html#autotoc_md116", null ],
-        [ "Feature Branch Strategy", "developers_guide_commit_and_merge_policy.html#autotoc_md117", null ],
-        [ "Commit Guidelines", "developers_guide_commit_and_merge_policy.html#autotoc_md118", null ],
-        [ "Merge Requirements", "developers_guide_commit_and_merge_policy.html#autotoc_md119", null ],
-        [ "Additional Recommendations", "developers_guide_commit_and_merge_policy.html#autotoc_md120", null ]
+        [ "Overview", "developers_guide_commit_and_merge_policy.html#autotoc_md121", null ],
+        [ "Feature Branch Strategy", "developers_guide_commit_and_merge_policy.html#autotoc_md122", null ],
+        [ "Commit Guidelines", "developers_guide_commit_and_merge_policy.html#autotoc_md123", null ],
+        [ "Merge Requirements", "developers_guide_commit_and_merge_policy.html#autotoc_md124", null ],
+        [ "Additional Recommendations", "developers_guide_commit_and_merge_policy.html#autotoc_md125", null ]
       ] ],
       [ "Testing and Coverage", "developers_guide_testing_and_coverage.html", [
-        [ "Developing tests", "developers_guide_testing_and_coverage.html#autotoc_md171", null ],
-        [ "Running tests", "developers_guide_testing_and_coverage.html#autotoc_md172", null ]
+        [ "Developing tests", "developers_guide_testing_and_coverage.html#autotoc_md176", null ],
+        [ "Running tests", "developers_guide_testing_and_coverage.html#autotoc_md177", null ]
       ] ],
       [ "Debugging", "developers_guide_debugging.html", [
-        [ "ASan", "developers_guide_debugging.html#autotoc_md135", null ],
-        [ "GDB", "developers_guide_debugging.html#autotoc_md136", null ],
-        [ "Petsc", "developers_guide_debugging.html#autotoc_md137", null ]
+        [ "ASan", "developers_guide_debugging.html#autotoc_md140", null ],
+        [ "GDB", "developers_guide_debugging.html#autotoc_md141", null ],
+        [ "Petsc", "developers_guide_debugging.html#autotoc_md142", null ]
       ] ],
       [ "Profiling", "developers_guide_profiling.html", [
-        [ "1. Profiling with Valgrind Callgrind and KCachegrind", "developers_guide_profiling.html#autotoc_md138", [
-          [ "Using Callgrind", "developers_guide_profiling.html#autotoc_md139", null ]
+        [ "1. Profiling with Valgrind Callgrind and KCachegrind", "developers_guide_profiling.html#autotoc_md143", [
+          [ "Using Callgrind", "developers_guide_profiling.html#autotoc_md144", null ]
         ] ],
-        [ "2. Checking Assembly Code and Using Assembly Comments", "developers_guide_profiling.html#autotoc_md140", null ],
-        [ "3. Profiling with a the Profiler class", "developers_guide_profiling.html#autotoc_md141", null ]
+        [ "2. Checking Assembly Code and Using Assembly Comments", "developers_guide_profiling.html#autotoc_md145", null ],
+        [ "3. Profiling with a the Profiler class", "developers_guide_profiling.html#autotoc_md146", null ]
       ] ],
       [ "Workflows", "developers_guide_workflows.html", [
-        [ "Build devcontainer", "developers_guide_workflows.html#autotoc_md173", null ],
-        [ "Website deploy", "developers_guide_workflows.html#autotoc_md174", null ]
+        [ "Build devcontainer", "developers_guide_workflows.html#autotoc_md178", null ],
+        [ "Website deploy", "developers_guide_workflows.html#autotoc_md179", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
