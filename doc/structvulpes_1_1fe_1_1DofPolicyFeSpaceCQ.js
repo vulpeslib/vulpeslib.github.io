@@ -9,7 +9,6 @@ var structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ =
     [ "dofsInteractionDistance", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a5da7b5c005a1108953e1298eff6e5762", null ],
     [ "dofToCellDof", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#af5ce59f280a4314171625b165b72b049", null ],
     [ "getLocalDof", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a7a616a76def9a9203869f634047f9756", null ],
-    [ "self", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a2bd9e284b4c3251ca30b5e0ae60f637d", null ],
     [ "self", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#af351c17ac2f2cbd8e2ec3fe9fae05172", null ],
     [ "m_dofs", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a90fb0481ee1bc0985b54ae2a8722a305", null ],
     [ "m_dofs_perm", "structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html#a187bad64f543f9cbe46d0fd1eb48db1e", null ],

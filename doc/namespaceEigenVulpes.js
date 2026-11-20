@@ -1,8 +1,8 @@
 var namespaceEigenVulpes =
 [
-    [ "OneComponentVector", "classEigenVulpes_1_1OneComponentVector.html", "classEigenVulpes_1_1OneComponentVector" ],
-    [ "RowMat", "classEigenVulpes_1_1RowMat.html", "classEigenVulpes_1_1RowMat" ],
     [ "SymMat", "classEigenVulpes_1_1SymMat.html", "classEigenVulpes_1_1SymMat" ],
+    [ "RowMat", "classEigenVulpes_1_1RowMat.html", "classEigenVulpes_1_1RowMat" ],
+    [ "OneComponentVector", "classEigenVulpes_1_1OneComponentVector.html", "classEigenVulpes_1_1OneComponentVector" ],
     [ "compareEigenMatrices", "namespaceEigenVulpes.html#a866b12d4a3bf96a397b69a19cba842af", null ],
     [ "compareEigenVectors", "namespaceEigenVulpes.html#a653dc28b7fad57b23bc7db8c99f4407a", null ],
     [ "makeRowMat", "namespaceEigenVulpes.html#a8e7547839698f9a709eeea9df883af7e", null ],

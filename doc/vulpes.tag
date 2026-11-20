@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.8">
+<tagfile doxygen_version="1.15.0">
   <compound kind="file">
     <name>index.md</name>
     <path>/__w/vulpes/vulpes/doc/developers-guide/commit-and-merge-policy/</path>
@@ -1503,6 +1503,13 @@
     <class kind="class">vulpes::utils::pcout_t</class>
     <namespace>vulpes</namespace>
     <namespace>vulpes::utils</namespace>
+    <member kind="enumeration">
+      <type></type>
+      <name>LogLevel</name>
+      <anchorfile>pcout_8hpp.html</anchorfile>
+      <anchor>a1d197567093fbdcf511154c249e625bc</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="variable">
       <type>vulpes::utils::pcout_t &amp;</type>
       <name>pcout</name>
@@ -1561,27 +1568,6 @@
     <includes id="pcout_8hpp" name="pcout.hpp" local="yes" import="no" module="no" objc="no">vulpes/utils/pcout.hpp</includes>
     <namespace>vulpes</namespace>
     <namespace>vulpes::vutils</namespace>
-    <member kind="variable">
-      <type>int</type>
-      <name>num_threads</name>
-      <anchorfile>threading_8cpp.html</anchorfile>
-      <anchor>a08963f7335eef295237ab460863bc3d5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>bool</type>
-      <name>is_set</name>
-      <anchorfile>threading_8cpp.html</anchorfile>
-      <anchor>a4e30073e8b9d268066eeccbb2e251628</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>bool</type>
-      <name>is_valid</name>
-      <anchorfile>threading_8cpp.html</anchorfile>
-      <anchor>a7b1d0df736739f38994ed29f54cffdf3</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>threading.hpp</name>
@@ -1622,13 +1608,13 @@
     <member kind="enumvalue">
       <name>CoeffReadCost</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a8571211d3dcf6e83a0cb1f3c91809164a4be903db3bc2a1c655ef58c7a2ba3bdb</anchor>
+      <anchor>aa72ea19b49ac2d969ad408a6c5bfe588a4be903db3bc2a1c655ef58c7a2ba3bdb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a8571211d3dcf6e83a0cb1f3c91809164a134a2702b49d15b046fa73a6aca1acec</anchor>
+      <anchor>aa72ea19b49ac2d969ad408a6c5bfe588a134a2702b49d15b046fa73a6aca1acec</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -1648,13 +1634,13 @@
     <member kind="enumvalue">
       <name>CoeffReadCost</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a8571211d3dcf6e83a0cb1f3c91809164a4be903db3bc2a1c655ef58c7a2ba3bdb</anchor>
+      <anchor>aa72ea19b49ac2d969ad408a6c5bfe588a4be903db3bc2a1c655ef58c7a2ba3bdb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a8571211d3dcf6e83a0cb1f3c91809164a134a2702b49d15b046fa73a6aca1acec</anchor>
+      <anchor>aa72ea19b49ac2d969ad408a6c5bfe588a134a2702b49d15b046fa73a6aca1acec</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -1687,13 +1673,13 @@
     <member kind="enumvalue">
       <name>CoeffReadCost</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a4d8c544627b111b3035077d829fa2e55ac3de305748c60dc3d629d22c2edb2aca</anchor>
+      <anchor>ad048400f252de0de8496b6a6113f0829ac3de305748c60dc3d629d22c2edb2aca</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a4d8c544627b111b3035077d829fa2e55a4d89a499fe2218814f6373a3d3512434</anchor>
+      <anchor>ad048400f252de0de8496b6a6113f0829a4d89a499fe2218814f6373a3d3512434</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -1727,13 +1713,13 @@
     <member kind="enumvalue">
       <name>CoeffReadCost</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a4d8c544627b111b3035077d829fa2e55ac3de305748c60dc3d629d22c2edb2aca</anchor>
+      <anchor>ad048400f252de0de8496b6a6113f0829ac3de305748c60dc3d629d22c2edb2aca</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a4d8c544627b111b3035077d829fa2e55a4d89a499fe2218814f6373a3d3512434</anchor>
+      <anchor>ad048400f252de0de8496b6a6113f0829a4d89a499fe2218814f6373a3d3512434</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -1773,13 +1759,13 @@
     <member kind="enumvalue">
       <name>CoeffReadCost</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a64deef8a60a3fe8ab8a01658998cc79fa63baf05e63689ba161521e2668cbaf70</anchor>
+      <anchor>adb40be2d67de7d2b6f212d14ea4ae725a63baf05e63689ba161521e2668cbaf70</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a64deef8a60a3fe8ab8a01658998cc79fa4e92f132ca2dc0bf3d0b51eebadac8b5</anchor>
+      <anchor>adb40be2d67de7d2b6f212d14ea4ae725a4e92f132ca2dc0bf3d0b51eebadac8b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -1813,13 +1799,13 @@
     <member kind="enumvalue">
       <name>CoeffReadCost</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a64deef8a60a3fe8ab8a01658998cc79fa63baf05e63689ba161521e2668cbaf70</anchor>
+      <anchor>adb40be2d67de7d2b6f212d14ea4ae725a63baf05e63689ba161521e2668cbaf70</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1evaluator_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a64deef8a60a3fe8ab8a01658998cc79fa4e92f132ca2dc0bf3d0b51eebadac8b5</anchor>
+      <anchor>adb40be2d67de7d2b6f212d14ea4ae725a4e92f132ca2dc0bf3d0b51eebadac8b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -1860,31 +1846,31 @@
     <member kind="enumvalue">
       <name>RowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6eab6487aa51c318c842bb9d884e27df021</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06ab6487aa51c318c842bb9d884e27df021</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6ea469aa9b4978fc51b2a6df01de84df620</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06a469aa9b4978fc51b2a6df01de84df620</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxRowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6ea021e7bf451506187c1ad8ee17d116ad1</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06a021e7bf451506187c1ad8ee17d116ad1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6eaa8e47742e15b38acf0a1bc7bc5fc7297</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06aa8e47742e15b38acf0a1bc7bc5fc7297</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6eaf858595e2b272c5d512e99a716a081e7</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06af858595e2b272c5d512e99a716a081e7</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -1918,31 +1904,31 @@
     <member kind="enumvalue">
       <name>RowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6eab6487aa51c318c842bb9d884e27df021</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06ab6487aa51c318c842bb9d884e27df021</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6ea469aa9b4978fc51b2a6df01de84df620</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06a469aa9b4978fc51b2a6df01de84df620</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxRowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6ea021e7bf451506187c1ad8ee17d116ad1</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06a021e7bf451506187c1ad8ee17d116ad1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6eaa8e47742e15b38acf0a1bc7bc5fc7297</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06aa8e47742e15b38acf0a1bc7bc5fc7297</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1OneComponentVector_3_01Idx_00_01Scalar___00_01Size___01_4_01_4.html</anchorfile>
-      <anchor>a7878f2ec0e68cc693bcc6ca45f4f7f6eaf858595e2b272c5d512e99a716a081e7</anchor>
+      <anchor>a03ed7b85fc2e1c40ebae4b9e744cef06af858595e2b272c5d512e99a716a081e7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1954,31 +1940,31 @@
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca6cf3f0095292c3b9bc390aa345832365</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a6cf3f0095292c3b9bc390aa345832365</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca80e45d04bb27a6d33dd33391cf111260</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a80e45d04bb27a6d33dd33391cf111260</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca28e7c98b14f6774991e56f42dc4badf7</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a28e7c98b14f6774991e56f42dc4badf7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxRowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca01b46ecd398402f3e739d45e243ef6ee</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a01b46ecd398402f3e739d45e243ef6ee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca720d4641c15c277f5e55e967b6a7a99d</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a720d4641c15c277f5e55e967b6a7a99d</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -2012,31 +1998,31 @@
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca6cf3f0095292c3b9bc390aa345832365</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a6cf3f0095292c3b9bc390aa345832365</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca80e45d04bb27a6d33dd33391cf111260</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a80e45d04bb27a6d33dd33391cf111260</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca28e7c98b14f6774991e56f42dc4badf7</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a28e7c98b14f6774991e56f42dc4badf7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxRowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca01b46ecd398402f3e739d45e243ef6ee</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a01b46ecd398402f3e739d45e243ef6ee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1RowMat_3_01RowId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a942adf5612887c3039412151f27c48eca720d4641c15c277f5e55e967b6a7a99d</anchor>
+      <anchor>a042f9a4f734c679979e3a00683fcd691a720d4641c15c277f5e55e967b6a7a99d</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2048,31 +2034,31 @@
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926aa5479134bd8e045553210b8624343082</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9aa5479134bd8e045553210b8624343082</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926af021a8db1eb8a801ca0c5d8ea05a36e8</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9af021a8db1eb8a801ca0c5d8ea05a36e8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926a0519feb01d27803ba131de88da1a97ce</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9a0519feb01d27803ba131de88da1a97ce</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxRowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926aebdfc852729f1f196d1f5376ff9955e4</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9aebdfc852729f1f196d1f5376ff9955e4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926a53816b9df4509a9fa0f8d273230b3bd4</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9a53816b9df4509a9fa0f8d273230b3bd4</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -2106,31 +2092,31 @@
     <member kind="enumvalue">
       <name>Flags</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926aa5479134bd8e045553210b8624343082</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9aa5479134bd8e045553210b8624343082</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926af021a8db1eb8a801ca0c5d8ea05a36e8</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9af021a8db1eb8a801ca0c5d8ea05a36e8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926a0519feb01d27803ba131de88da1a97ce</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9a0519feb01d27803ba131de88da1a97ce</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxRowsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926aebdfc852729f1f196d1f5376ff9955e4</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9aebdfc852729f1f196d1f5376ff9955e4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MaxColsAtCompileTime</name>
       <anchorfile>structEigen_1_1internal_1_1traits_3_01EigenVulpes_1_1SymMat_3_01CrossId_00_01ArgType_01_4_01_4.html</anchorfile>
-      <anchor>a6294768e50f52162da96eae2f28f2926a53816b9df4509a9fa0f8d273230b3bd4</anchor>
+      <anchor>aa35e532993a4b5c11d6634e72507e6e9a53816b9df4509a9fa0f8d273230b3bd4</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2158,14 +2144,14 @@
       <type>Eigen::MatrixBase&lt; OneComponentVector&lt; Idx, Scalar_, Size_ &gt; &gt;</type>
       <name>Base</name>
       <anchorfile>classEigenVulpes_1_1OneComponentVector.html</anchorfile>
-      <anchor>a79ea82db17d95c2e6a56f72b0e16b5e7</anchor>
+      <anchor>a3b73f5b9b073c46703e2ba7a82c58e7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename Eigen::internal::ref_selector&lt; OneComponentVector &gt;::type</type>
       <name>Nested</name>
       <anchorfile>classEigenVulpes_1_1OneComponentVector.html</anchorfile>
-      <anchor>a12fa34037d4adf41bfdfb459d9e5746b</anchor>
+      <anchor>a185f1d3df71b6d19334e4065a9fa0d5f</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -2713,7 +2699,7 @@
     <filename>classvulpes_1_1assemble_1_1dg_1_1FeExpressionUpwindFromFunctionWrapper.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename VelocityFunc</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionUpwindFromFunctionWrapper&lt; Dim, VelocityFunc &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionUpwindFromFunctionWrapper&lt; Dim, VelocityFunc &gt; &gt;</base>
     <member kind="typedef">
       <type>void</type>
       <name>FeSpaceType</name>
@@ -3034,35 +3020,35 @@
       <type>std::remove_pointer_t&lt; std::tuple_element_t&lt; 0, FeExpressionTuple &gt; &gt;::FeSpaceType</type>
       <name>FeType</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>a044dbe54fa856003db111e1aee801cb9</anchor>
+      <anchor>a9ae1c0ad6a4429ee232b295b1740d2b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>decltype(internal::split_expression_tuple(FeExpressionTuple{}).first)</type>
       <name>FeExpressionTupleBilinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>a082e207593fdf6b0c1501cde6b1c25fa</anchor>
+      <anchor>a76ff606794813f75a1b0b9218c18a5a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>decltype(internal::split_expression_tuple(FeExpressionTuple{}).second)</type>
       <name>FeExpressionTupleLinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>a9760ea4460c6e4d24b4e2f4d33f39190</anchor>
+      <anchor>acbdd79ce3c36aaae114aa6fcafb69a8f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>decltype(internal::split_expression_tuple(FeExpressionFaceTuple{}).first)</type>
       <name>FeExpressionTupleFaceBilinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>aba3a3f512d6b8571dcf63f6c7a4d6425</anchor>
+      <anchor>ad5bfc2f1a24f5fcf12b4b36ebeb8dfa4</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>decltype(internal::split_expression_tuple(FeExpressionFaceTuple{}) .second)</type>
       <name>FeExpressionTupleFaceLinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>ab0c2810f26f738874447c6ef70d5a357</anchor>
+      <anchor>ad2fc44a3b987222b51f9e0b70d08743c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -3450,19 +3436,19 @@
     <templarg>typename MeshType</templarg>
     <templarg>typename FeExpressionTuple</templarg>
     <templarg>typename FeExpressionFaceTuple</templarg>
-    <base>vulpes::assemble::WeakFormIntegratorBase</base>
+    <base>vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, std::tuple&lt;&gt; &gt;</base>
     <member kind="typedef">
       <type>WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</type>
       <name>WeakFormIntegratorBaseType</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>a2bfaa434c47b8b35087bd4592fec4383</anchor>
+      <anchor>a214e2d2e8bd000dff638b24d00dd4150</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::remove_pointer_t&lt; std::tuple_element_t&lt; 0, FeExpressionTuple &gt; &gt;::FeSpaceType</type>
       <name>FeType</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>ae32e2842128c3543eadba4e84e9e4146</anchor>
+      <anchor>a8c58ae5a202c4b5dc5afe5fb348bc436</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -3483,7 +3469,7 @@
       <type>std::decay_t&lt; decltype(PolyType{}.template liftDimension&lt; 0, 2 *dim &gt;())&gt;</type>
       <name>PolyTypeLifted</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>aa4160c0fae18bd2bc92c61a7ab925ba0</anchor>
+      <anchor>a78cd8943a0fee214ad30dbdc42a79294</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -3504,14 +3490,14 @@
       <type>std::vector&lt; GatheredMonomial&lt; dim &gt; &gt;</type>
       <name>GatheredPolynomial</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>a7a469988acfaf69aa3fbb0e7414311c4</anchor>
+      <anchor>ac4a0fede23eb346261be44be50241bbd</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::vector&lt; std::pair&lt; double, uint16_t &gt; &gt;</type>
       <name>GatheredPolynomialCoef</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>a26ba2c6cf3c5e1bbeb6d5119c98b6681</anchor>
+      <anchor>a7a6bc196c00bd83ce7996cad07236121</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -3532,35 +3518,35 @@
       <type>datastructure::CrsMap&lt; CompressedGatheredMonomial, index_t &gt;</type>
       <name>CompressedListGatheredPoly</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html</anchorfile>
-      <anchor>abf590e2a650459eb8fb8f152cb2fa7ec</anchor>
+      <anchor>a3c273008682110b989ef1e223e77076b</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>decltype(internal::split_expression_tuple(FeExpressionTuple{}).first)</type>
       <name>FeExpressionTupleBilinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>a082e207593fdf6b0c1501cde6b1c25fa</anchor>
+      <anchor>a76ff606794813f75a1b0b9218c18a5a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>decltype(internal::split_expression_tuple(FeExpressionTuple{}).second)</type>
       <name>FeExpressionTupleLinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>a9760ea4460c6e4d24b4e2f4d33f39190</anchor>
+      <anchor>acbdd79ce3c36aaae114aa6fcafb69a8f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>decltype(internal::split_expression_tuple(FeExpressionFaceTuple{}).first)</type>
+      <type>decltype(internal::split_expression_tuple(std::tuple&lt;&gt;{}).first)</type>
       <name>FeExpressionTupleFaceBilinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>aba3a3f512d6b8571dcf63f6c7a4d6425</anchor>
+      <anchor>ad5bfc2f1a24f5fcf12b4b36ebeb8dfa4</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>decltype(internal::split_expression_tuple(FeExpressionFaceTuple{}) .second)</type>
+      <type>decltype(internal::split_expression_tuple(std::tuple&lt;&gt;{}) .second)</type>
       <name>FeExpressionTupleFaceLinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>ab0c2810f26f738874447c6ef70d5a357</anchor>
+      <anchor>ad2fc44a3b987222b51f9e0b70d08743c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -4068,7 +4054,7 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>FeExpressionFaceTuple</type>
+      <type>std::tuple&lt;&gt;</type>
       <name>m_fe_expression_face</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
       <anchor>a4110c0fe647bfd2c890e0d1195968f3d</anchor>
@@ -4223,7 +4209,7 @@
     <templarg>typename MeshType</templarg>
     <templarg>typename FeExpressionTuple</templarg>
     <templarg>typename FeExpressionFaceTuple</templarg>
-    <base>vulpes::assemble::WeakFormIntegratorBase</base>
+    <base>vulpes::assemble::WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, std::tuple&lt;&gt; &gt;</base>
     <class kind="struct">vulpes::assemble::WeakFormIntegratorSimplexify::CellCache</class>
     <member kind="typedef">
       <type>typename MeshType::index_t</type>
@@ -4236,7 +4222,7 @@
       <type>WeakFormIntegratorBase&lt; MeshType, FeExpressionTuple, FeExpressionFaceTuple &gt;</type>
       <name>WeakFormIntegratorBaseType</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorSimplexify.html</anchorfile>
-      <anchor>aca0ebf34db713e9393d0cb5e659f16e3</anchor>
+      <anchor>a0264450883c109f71510281a0407df19</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -4264,28 +4250,28 @@
       <type>decltype(internal::split_expression_tuple(FeExpressionTuple{}).first)</type>
       <name>FeExpressionTupleBilinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>a082e207593fdf6b0c1501cde6b1c25fa</anchor>
+      <anchor>a76ff606794813f75a1b0b9218c18a5a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>decltype(internal::split_expression_tuple(FeExpressionTuple{}).second)</type>
       <name>FeExpressionTupleLinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>a9760ea4460c6e4d24b4e2f4d33f39190</anchor>
+      <anchor>acbdd79ce3c36aaae114aa6fcafb69a8f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>decltype(internal::split_expression_tuple(FeExpressionFaceTuple{}).first)</type>
+      <type>decltype(internal::split_expression_tuple(std::tuple&lt;&gt;{}).first)</type>
       <name>FeExpressionTupleFaceBilinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>aba3a3f512d6b8571dcf63f6c7a4d6425</anchor>
+      <anchor>ad5bfc2f1a24f5fcf12b4b36ebeb8dfa4</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>decltype(internal::split_expression_tuple(FeExpressionFaceTuple{}) .second)</type>
+      <type>decltype(internal::split_expression_tuple(std::tuple&lt;&gt;{}) .second)</type>
       <name>FeExpressionTupleFaceLinear</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
-      <anchor>ab0c2810f26f738874447c6ef70d5a357</anchor>
+      <anchor>ad2fc44a3b987222b51f9e0b70d08743c</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -4604,7 +4590,7 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>FeExpressionFaceTuple</type>
+      <type>std::tuple&lt;&gt;</type>
       <name>m_fe_expression_face</name>
       <anchorfile>classvulpes_1_1assemble_1_1WeakFormIntegratorBase.html</anchorfile>
       <anchor>a4110c0fe647bfd2c890e0d1195968f3d</anchor>
@@ -4960,14 +4946,14 @@
       <type>typename std::conditional_t&lt; Mutable, DataType &amp;, const DataType &amp; &gt;</type>
       <name>reference_t</name>
       <anchorfile>classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html</anchorfile>
-      <anchor>a2e05b911c45c5936e9c263ab25096d7d</anchor>
+      <anchor>a22b7beaec9e3578e05be43ae1a333b31</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename std::conditional_t&lt; Mutable, DataType *, const DataType * &gt;</type>
       <name>pointer_t</name>
       <anchorfile>classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html</anchorfile>
-      <anchor>a7de00b17518312c1f969c81166a131a4</anchor>
+      <anchor>a439f7bf6a103c6f76aed97105d6a92ca</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -6213,7 +6199,7 @@
       <type>std::conditional_t&lt; MeshType::parallel(), boost::unordered_flat_map&lt; index_t, index_t &gt;, std::vector&lt; index_t &gt; &gt;</type>
       <name>MappingType</name>
       <anchorfile>classvulpes_1_1dofs_1_1DofHandler.html</anchorfile>
-      <anchor>ab9cc001b9f2ec76a4b9971c6aeb19f0d</anchor>
+      <anchor>ac032e17daabb64bbdf24362571e97076</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
@@ -6535,7 +6521,7 @@
     <name>vulpes::fe::DofPolicyFeSpaceCP</name>
     <filename>structvulpes_1_1fe_1_1DofPolicyFeSpaceCP.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>DofPolicyBase&lt; Dim, DofPolicyFeSpaceCP&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::DofPolicyBase&lt; Dim, DofPolicyFeSpaceCP&lt; Dim &gt; &gt;</base>
     <member kind="typedef">
       <type>int8_t</type>
       <name>CartDofIndexType</name>
@@ -6599,13 +6585,6 @@
       <anchor>af351c17ac2f2cbd8e2ec3fe9fae05172</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>auto &amp;</type>
-      <name>self</name>
-      <anchorfile>structvulpes_1_1fe_1_1DofPolicyBase.html</anchorfile>
-      <anchor>a2bd9e284b4c3251ca30b5e0ae60f637d</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>std::size_t</type>
       <name>m_order</name>
@@ -6618,7 +6597,7 @@
     <name>vulpes::fe::DofPolicyFeSpaceCQ</name>
     <filename>structvulpes_1_1fe_1_1DofPolicyFeSpaceCQ.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>DofPolicyBase&lt; Dim, DofPolicyFeSpaceCQ&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::DofPolicyBase&lt; Dim, DofPolicyFeSpaceCQ&lt; Dim &gt; &gt;</base>
     <member kind="typedef">
       <type>uint16_t</type>
       <name>ConvexCartIndexValue</name>
@@ -6731,13 +6710,6 @@
       <anchor>af351c17ac2f2cbd8e2ec3fe9fae05172</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>auto &amp;</type>
-      <name>self</name>
-      <anchorfile>structvulpes_1_1fe_1_1DofPolicyBase.html</anchorfile>
-      <anchor>a2bd9e284b4c3251ca30b5e0ae60f637d</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>std::size_t</type>
       <name>m_order</name>
@@ -6750,7 +6722,7 @@
     <name>vulpes::fe::DofPolicyFeSpaceDP</name>
     <filename>structvulpes_1_1fe_1_1DofPolicyFeSpaceDP.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>DofPolicyBase&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::DofPolicyBase&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>DofPolicyFeSpaceDP</name>
@@ -6786,13 +6758,6 @@
       <anchor>af351c17ac2f2cbd8e2ec3fe9fae05172</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>auto &amp;</type>
-      <name>self</name>
-      <anchorfile>structvulpes_1_1fe_1_1DofPolicyBase.html</anchorfile>
-      <anchor>a2bd9e284b4c3251ca30b5e0ae60f637d</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>std::size_t</type>
       <name>m_order</name>
@@ -6805,7 +6770,7 @@
     <name>vulpes::fe::DofPolicyFeSpaceDQ</name>
     <filename>structvulpes_1_1fe_1_1DofPolicyFeSpaceDQ.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>DofPolicyBase&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::DofPolicyBase&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>DofPolicyFeSpaceDQ</name>
@@ -6841,13 +6806,6 @@
       <anchor>af351c17ac2f2cbd8e2ec3fe9fae05172</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>auto &amp;</type>
-      <name>self</name>
-      <anchorfile>structvulpes_1_1fe_1_1DofPolicyBase.html</anchorfile>
-      <anchor>a2bd9e284b4c3251ca30b5e0ae60f637d</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>std::size_t</type>
       <name>m_order</name>
@@ -6863,12 +6821,12 @@
     <templarg>typename FeSpace</templarg>
     <templarg>typename DofHandler</templarg>
     <templarg>std::size_t OutputDim</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExactExpressionFeProjection&lt; Dim, FeSpace, DofHandler, 1 &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::conditional_t&lt; OutputDim==1, double, Eigen::Vector&lt; double, OutputDim &gt; &gt;</type>
+      <type>std:: conditional_t&lt; OutputDim==1, double, Eigen::Vector&lt; double, OutputDim &gt; &gt;</type>
       <name>OutputType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExactExpressionFeProjection.html</anchorfile>
-      <anchor>ab80d992ff0deec8a04e06eea8a41a4c4</anchor>
+      <anchor>a7d03727f4e8a5c72b2b80e142cdf4966</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -6963,7 +6921,7 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExactExpressionFeProjection&lt; Dim, FeSpace, DofHandler, 1 &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -6998,7 +6956,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExactExpressionFeProjection&lt; Dim, FeSpace, DofHandler, 1 &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -7038,7 +6996,7 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionAbs.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionAbs&lt; Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionAbs&lt; Dim, E &gt; &gt;</base>
     <member kind="typedef">
       <type>void</type>
       <name>FeSpaceType</name>
@@ -7260,12 +7218,12 @@
     <name>vulpes::fe::FeExpressionCellConstant</name>
     <filename>classvulpes_1_1fe_1_1FeExpressionCellConstant.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionCellConstant&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionCellConstant&lt; Dim &gt; &gt;</base>
     <member kind="typedef">
       <type>std::function&lt; double(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;)&gt;</type>
       <name>FuncType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstant.html</anchorfile>
-      <anchor>a20797bef6d8012061db134c9f2dba046</anchor>
+      <anchor>a2e5be91e89c2b264fe2db9d27d1c6511</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -7421,12 +7379,12 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>UpdateFlagsType ExtraFlags</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionCellConstantNeedNeigh&lt; Dim, UpdateNothing &gt; &gt;</base>
     <member kind="typedef">
       <type>std::function&lt; double(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;)&gt;</type>
       <name>FuncType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantNeedNeigh.html</anchorfile>
-      <anchor>a9747c84c071a8e534b58f033913398d7</anchor>
+      <anchor>a8dc77f1de56581a9a4a8ada73cdb0308</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -7521,7 +7479,7 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionCellConstantNeedNeigh&lt; Dim, UpdateNothing &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -7556,7 +7514,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionCellConstantNeedNeigh&lt; Dim, UpdateNothing &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -7581,7 +7539,7 @@
     <name>vulpes::fe::FeExpressionCellConstantTensor</name>
     <filename>classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionCellConstantTensor&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionCellConstantTensor&lt; Dim &gt; &gt;</base>
     <member kind="typedef">
       <type>Eigen::Matrix&lt; double, Dim, Dim &gt;</type>
       <name>TensorType</name>
@@ -7593,7 +7551,7 @@
       <type>std::function&lt; TensorType(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;)&gt;</type>
       <name>FuncType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionCellConstantTensor.html</anchorfile>
-      <anchor>a76bcc3e901fd458c1fa8eff3d0fe6ede</anchor>
+      <anchor>a77384f62c05ecf2df7c8000a91627236</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -7748,7 +7706,7 @@
     <name>vulpes::fe::FeExpressionConstant</name>
     <filename>classvulpes_1_1fe_1_1FeExpressionConstant.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionConstant&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionConstant&lt; Dim &gt; &gt;</base>
     <member kind="typedef">
       <type>void</type>
       <name>FeSpaceType</name>
@@ -7895,7 +7853,7 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionDiagOnly.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionDiagOnly&lt; Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionDiagOnly&lt; Dim, E &gt; &gt;</base>
     <member kind="typedef">
       <type>typename E::FeSpaceType</type>
       <name>FeSpaceType</name>
@@ -8022,12 +7980,12 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E1</templarg>
     <templarg>typename E2</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionDifference&lt; Dim, E1, E2 &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionDifference&lt; Dim, E1, E2 &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1 ::FeSpaceType, void &gt;, typename E2 ::FeSpaceType, typename E1 ::FeSpaceType &gt;</type>
+      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1::FeSpaceType, void &gt;, typename E2::FeSpaceType, typename E1::FeSpaceType &gt;</type>
       <name>FeSpaceType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionDifference.html</anchorfile>
-      <anchor>a2189203c1772db3a8a44c62ca7412049</anchor>
+      <anchor>a505f9ceade94f454bb8337044d920e62</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -8136,17 +8094,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E1 ::is_leaf, const E1 &amp;, const E1 &gt;</type>
+      <type>std::conditional_t&lt; E1::is_leaf, const E1 &amp;, const E1 &gt;</type>
       <name>m_u</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionDifference.html</anchorfile>
-      <anchor>a476a73b177a78c6f7bef8bce56b50c4b</anchor>
+      <anchor>ae2bf6f3aaa0d610bf62bc009463d1a76</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E2 ::is_leaf, const E2 &amp;, const E2 &gt;</type>
+      <type>std::conditional_t&lt; E2::is_leaf, const E2 &amp;, const E2 &gt;</type>
       <name>m_v</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionDifference.html</anchorfile>
-      <anchor>ac76b0a43aeb9499dc8ac3f9b582e9a77</anchor>
+      <anchor>adade91bc10134f0e35b21a9467ca7769</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8154,7 +8112,7 @@
     <name>vulpes::fe::FeExpressionFaceNormal</name>
     <filename>classvulpes_1_1fe_1_1FeExpressionFaceNormal.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionFaceNormal&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionFaceNormal&lt; Dim &gt; &gt;</base>
     <member kind="typedef">
       <type>void</type>
       <name>FeSpaceType</name>
@@ -8301,12 +8259,12 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>UpdateFlagsType ExtraFlags</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionFacePointsNeedNeigh&lt; Dim, UpdateValues &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::function&lt; void(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;, std::vector&lt; double &gt; &amp;)&gt;</type>
+      <type>std::function&lt; void( const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;, std::vector&lt; double &gt; &amp;)&gt;</type>
       <name>FuncType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html</anchorfile>
-      <anchor>af67379c339efef28733748a4aacd4a96</anchor>
+      <anchor>a26938abd89fe9c5c54d13a1408d1e850</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -8401,7 +8359,7 @@
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionFacePointsNeedNeigh&lt; Dim, UpdateValues &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -8436,7 +8394,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionFacePointsNeedNeigh&lt; Dim, UpdateValues &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -8471,12 +8429,12 @@
     <templarg>typename FeSpace</templarg>
     <templarg>typename DofHandler</templarg>
     <templarg>std::size_t OutputDim</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionFeProjection&lt; Dim, FeSpace, DofHandler, 1 &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::conditional_t&lt; OutputDim==1, double, Eigen::Vector&lt; double, OutputDim &gt; &gt;</type>
+      <type>std:: conditional_t&lt; OutputDim==1, double, Eigen::Vector&lt; double, OutputDim &gt; &gt;</type>
       <name>OutputType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFeProjection.html</anchorfile>
-      <anchor>a37b0560afdab8d6b6dc62f5c50ba728c</anchor>
+      <anchor>aaa6077769d110236e1bb796f2666615f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -8571,7 +8529,7 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionFeProjection&lt; Dim, FeSpace, DofHandler, 1 &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -8606,7 +8564,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionFeProjection&lt; Dim, FeSpace, DofHandler, 1 &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -8653,7 +8611,7 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionFieldComponent.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionFieldComponent&lt; Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionFieldComponent&lt; Dim, E &gt; &gt;</base>
     <class kind="struct">vulpes::fe::FeExpressionFieldComponent::FsTypeOf</class>
     <class kind="struct">vulpes::fe::FeExpressionFieldComponent::FsTypeOf&lt; T, std::void_t&lt; typename T::FeSpaceType &gt; &gt;</class>
     <member kind="typedef">
@@ -8809,7 +8767,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename FeSpace</templarg>
     <templarg>bool IsTest</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -8909,7 +8867,7 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -8951,7 +8909,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -8970,12 +8928,12 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>std::size_t OutputDim</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionFunctionWrapper&lt; Dim, 1 &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::conditional_t&lt; OutputDim==1, double, Eigen::Vector&lt; double, OutputDim &gt; &gt;</type>
+      <type>std:: conditional_t&lt; OutputDim==1, double, Eigen::Vector&lt; double, OutputDim &gt; &gt;</type>
       <name>OutputType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionFunctionWrapper.html</anchorfile>
-      <anchor>a19e2503e4c73a97a23de8d9d9434de6a</anchor>
+      <anchor>a310fad910091e072421eb9b338dc7dd5</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -9077,7 +9035,7 @@
       <arglist>(const auto &amp;mapping, const auto &amp;fe_values, std::size_t bi, std::size_t bj) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionFunctionWrapper&lt; Dim, 1 &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -9112,7 +9070,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionFunctionWrapper&lt; Dim, 1 &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -9144,7 +9102,7 @@
     <name>vulpes::fe::FeExpressionFunctionWrapperTensor</name>
     <filename>classvulpes_1_1fe_1_1FeExpressionFunctionWrapperTensor.html</filename>
     <templarg>std::size_t Dim</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionFunctionWrapperTensor&lt; Dim &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionFunctionWrapperTensor&lt; Dim &gt; &gt;</base>
     <member kind="typedef">
       <type>Eigen::Matrix&lt; double, Dim, Dim &gt;</type>
       <name>OutputType</name>
@@ -9323,7 +9281,7 @@
     <templarg>typename FeSpace</templarg>
     <templarg>typename FuncExpr</templarg>
     <templarg>bool GradOnTest</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionGradContr&lt; IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, true &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -9395,7 +9353,7 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionGradContr&lt; IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, true &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -9430,7 +9388,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionGradContr&lt; IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, true &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -9462,7 +9420,7 @@
     <templarg>typename FeSpace</templarg>
     <templarg>typename FuncExpr</templarg>
     <templarg>bool GradOnTest</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, true &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -9534,7 +9492,7 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;fe_values, const CellsType&lt; Dim &gt; &amp;cells) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, true &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -9569,7 +9527,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionGradContrBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, FuncExpr, true &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -9598,7 +9556,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename FeSpace</templarg>
     <templarg>bool IsTest</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -9670,7 +9628,7 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -9705,7 +9663,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -9725,12 +9683,12 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E1</templarg>
     <templarg>typename E2</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionInner&lt; Dim, E1, E2 &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionInner&lt; Dim, E1, E2 &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1 ::FeSpaceType, void &gt;, typename E2 ::FeSpaceType, typename E1 ::FeSpaceType &gt;</type>
+      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1::FeSpaceType, void &gt;, typename E2::FeSpaceType, typename E1::FeSpaceType &gt;</type>
       <name>FeSpaceType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionInner.html</anchorfile>
-      <anchor>a0da1ad2b406784f532cd3d5a023b0bf4</anchor>
+      <anchor>abaa69c942f19b2d1f2cfad97f9aee05d</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -9839,17 +9797,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E1 ::is_leaf, const E1 &amp;, const E1 &gt;</type>
+      <type>std::conditional_t&lt; E1::is_leaf, const E1 &amp;, const E1 &gt;</type>
       <name>m_u</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionInner.html</anchorfile>
-      <anchor>af5f6796f426e0c8105ccf913198893bd</anchor>
+      <anchor>ae5766f47df45dc496431b038c854cb45</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E2 ::is_leaf, const E2 &amp;, const E2 &gt;</type>
+      <type>std::conditional_t&lt; E2::is_leaf, const E2 &amp;, const E2 &gt;</type>
       <name>m_v</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionInner.html</anchorfile>
-      <anchor>a073f9785c7a6fb13c64f277f7012ef32</anchor>
+      <anchor>a6549200d613f6a840598c9f39b4858b3</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9864,7 +9822,7 @@
     <templarg>typename FeSpace</templarg>
     <templarg>typename CoeffExpr</templarg>
     <templarg>typename VExpr</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionInnerBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionInnerBlock&lt; TestComp, TrialComp, IndexBegin, IndexEnd, Dim, FeSpace, CoeffExpr, VExpr &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -10018,7 +9976,7 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionMakeVec.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename... ScalarExprs</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionMakeVec&lt; Dim, ScalarExprs... &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionMakeVec&lt; Dim, ScalarExprs... &gt; &gt;</base>
     <member kind="typedef">
       <type>Eigen::Vector&lt; double, static_cast&lt; int &gt;(N)&gt;</type>
       <name>OutputType</name>
@@ -10196,7 +10154,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename FeSpace</templarg>
     <templarg>bool IsTest</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionNeighborFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -10316,12 +10274,12 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E1</templarg>
     <templarg>typename E2</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionOuter&lt; Dim, E1, E2 &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionOuter&lt; Dim, E1, E2 &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1 ::FeSpaceType, void &gt;, typename E2 ::FeSpaceType, typename E1 ::FeSpaceType &gt;</type>
+      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1::FeSpaceType, void &gt;, typename E2::FeSpaceType, typename E1::FeSpaceType &gt;</type>
       <name>FeSpaceType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionOuter.html</anchorfile>
-      <anchor>a2ec5912d5c0df570aaa690298ad9609e</anchor>
+      <anchor>a53a20cd999d1e25c33b24bdc3018f7bc</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -10430,17 +10388,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E1 ::is_leaf, const E1 &amp;, const E1 &gt;</type>
+      <type>std::conditional_t&lt; E1::is_leaf, const E1 &amp;, const E1 &gt;</type>
       <name>m_u</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionOuter.html</anchorfile>
-      <anchor>ae07efaf21446da5b50c1d308ec5c880c</anchor>
+      <anchor>a798dec69c581b60a0bd2bf22f1873948</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E2 ::is_leaf, const E2 &amp;, const E2 &gt;</type>
+      <type>std::conditional_t&lt; E2::is_leaf, const E2 &amp;, const E2 &gt;</type>
       <name>m_v</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionOuter.html</anchorfile>
-      <anchor>a06a67594ff28e5e77d238a9c73f381a4</anchor>
+      <anchor>aabe855fba46844ee13d61193a01777a1</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -10450,12 +10408,12 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E1</templarg>
     <templarg>typename E2</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionProduct&lt; Dim, E1, E2 &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionProduct&lt; Dim, E1, E2 &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1 ::FeSpaceType, void &gt;, typename E2 ::FeSpaceType, typename E1 ::FeSpaceType &gt;</type>
+      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1::FeSpaceType, void &gt;, typename E2::FeSpaceType, typename E1::FeSpaceType &gt;</type>
       <name>FeSpaceType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionProduct.html</anchorfile>
-      <anchor>ac2f234fafa2c872093344391e983d0b4</anchor>
+      <anchor>a35845732b79a612160c6d65ff5b397ef</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -10564,17 +10522,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E1 ::is_leaf, const E1 &amp;, const E1 &gt;</type>
+      <type>std::conditional_t&lt; E1::is_leaf, const E1 &amp;, const E1 &gt;</type>
       <name>m_u</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionProduct.html</anchorfile>
-      <anchor>a0142c3c79b1f3e2ecf58b8d2514767e4</anchor>
+      <anchor>a9590d78cb362a8665a3b846c29370ada</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E2 ::is_leaf, const E2 &amp;, const E2 &gt;</type>
+      <type>std::conditional_t&lt; E2::is_leaf, const E2 &amp;, const E2 &gt;</type>
       <name>m_v</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionProduct.html</anchorfile>
-      <anchor>a19134b49581b941aa2ab3835b4036d7c</anchor>
+      <anchor>a97ea16920247ac6ee92abf49ebac3ce1</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -10583,19 +10541,19 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionQptsCache&lt; Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionQptsCache&lt; Dim, E &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::decay_t&lt; decltype(std::declval&lt; const E &amp; &gt;().evaluate(std::declval&lt; const FeValues&lt; Dim &gt; &amp; &gt;(), 0, 0, 0))&gt;</type>
+      <type>std::decay_t&lt; decltype(std::declval&lt; const E &amp; &gt;().evaluate( std::declval&lt; const FeValues&lt; Dim &gt; &amp; &gt;(), 0, 0, 0))&gt;</type>
       <name>EvalType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
-      <anchor>a3d99ab605547f73bf91ae8787515739b</anchor>
+      <anchor>ad4c406899760cf9a9dde97393007e815</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>typename decltype([] { if constexpr(std::is_arithmetic_v&lt; EvalType &gt;) { return std::type_identity&lt; EvalType &gt;{}</type>
+      <type>typename decltype([] { if constexpr(std::is_arithmetic_v&lt; EvalType &gt;) { return std::type_identity&lt; EvalType &gt;{}; } else { return std::type_identity&lt; std::decay_t&lt; decltype(std::declval&lt; EvalType &gt;().eval())&gt; &gt;{}; } }())::type</type>
       <name>OutputType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
-      <anchor>a344ce9786af80d6138ff68e37d2c07d7</anchor>
+      <anchor>a81655d87ca9956a34f36213c8c0f7262</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -10668,13 +10626,6 @@
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="variable">
-      <type></type>
-      <name>else</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeExpressionQptsCache.html</anchorfile>
-      <anchor>a421c718e306581a094d64f3f218cd394</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="variable" static="yes">
       <type>static constexpr bool</type>
       <name>is_leaf</name>
@@ -10730,7 +10681,7 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionScale.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionScale&lt; Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionScale&lt; Dim, E &gt; &gt;</base>
     <member kind="typedef">
       <type>typename E::OutputType</type>
       <name>OutputType</name>
@@ -10866,7 +10817,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename FeSpace</templarg>
     <templarg>bool IsTest</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionSelfFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionSelfFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, IsTest &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -10985,7 +10936,7 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionShift.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionShift&lt; Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionShift&lt; Dim, E &gt; &gt;</base>
     <member kind="typedef">
       <type>typename E::OutputType</type>
       <name>OutputType</name>
@@ -11118,12 +11069,12 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionSkipper.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionSkipper&lt; Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionSkipper&lt; Dim, E &gt; &gt;</base>
     <member kind="typedef">
       <type>std::function&lt; double(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;)&gt;</type>
       <name>FuncType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSkipper.html</anchorfile>
-      <anchor>a61704e842e43716522884c643fa5f57d</anchor>
+      <anchor>a5c53b539cbe60da6457b7203744440de</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -11280,7 +11231,7 @@
     <templarg>std::size_t K</templarg>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionSpatialComponent&lt; K, Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionSpatialComponent&lt; K, Dim, E &gt; &gt;</base>
     <class kind="struct">vulpes::fe::FeExpressionSpatialComponent::FsTypeOf</class>
     <class kind="struct">vulpes::fe::FeExpressionSpatialComponent::FsTypeOf&lt; T, std::void_t&lt; typename T::FeSpaceType &gt; &gt;</class>
     <member kind="typedef">
@@ -11434,12 +11385,12 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E1</templarg>
     <templarg>typename E2</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionSum&lt; Dim, E1, E2 &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionSum&lt; Dim, E1, E2 &gt; &gt;</base>
     <member kind="typedef">
-      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1 ::FeSpaceType, void &gt;, typename E2 ::FeSpaceType, typename E1 ::FeSpaceType &gt;</type>
+      <type>std::conditional_t&lt; std::is_same_v&lt; typename E1::FeSpaceType, void &gt;, typename E2::FeSpaceType, typename E1::FeSpaceType &gt;</type>
       <name>FeSpaceType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSum.html</anchorfile>
-      <anchor>a3b54ff27a963ace18adb77fb3ad04069</anchor>
+      <anchor>a5c1e791df1cf611452783191940526a0</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -11548,17 +11499,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E1 ::is_leaf, const E1 &amp;, const E1 &gt;</type>
+      <type>std::conditional_t&lt; E1::is_leaf, const E1 &amp;, const E1 &gt;</type>
       <name>m_u</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSum.html</anchorfile>
-      <anchor>ac6ca29a8d8fa70a6fb2b29f85e1c3d9f</anchor>
+      <anchor>ad2e61a17251b469813056d991b2ede53</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>std::conditional_t&lt; E2 ::is_leaf, const E2 &amp;, const E2 &gt;</type>
+      <type>std::conditional_t&lt; E2::is_leaf, const E2 &amp;, const E2 &gt;</type>
       <name>m_v</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionSum.html</anchorfile>
-      <anchor>aa3149f7610aacc940e3b745820469c4b</anchor>
+      <anchor>a5ce27354ea1b5c90cff54f3ef13b7267</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -11570,7 +11521,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename FeSpace</templarg>
     <templarg>bool IsTest</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionSymGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -11642,7 +11593,7 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionSymGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -11677,7 +11628,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionSymGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -11699,7 +11650,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename FeSpace</templarg>
     <templarg>bool IsTest</templarg>
-    <base>vulpes::fe::FeExpressionBase</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionTraceSymGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &gt;</base>
     <member kind="typedef">
       <type>FeSpace</type>
       <name>FeSpaceType</name>
@@ -11771,7 +11722,7 @@
       <arglist>(const FeValues&lt; Dim &gt; &amp;, const CellsType&lt; Dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
-      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpression &gt;</type>
+      <type>constexpr FeExpressionUnaryMinus&lt; Dim, FeExpressionTraceSymGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &gt;</type>
       <name>operator-</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>aa194506aca4e759376e053023687b62b</anchor>
@@ -11806,7 +11757,7 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>const FeExpression &amp;</type>
+      <type>const FeExpressionTraceSymGradFunc&lt; IndexBegin, IndexEnd, Dim, FeSpace, false &gt; &amp;</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeExpressionBase.html</anchorfile>
       <anchor>ae09c076ff44d5c6113219d3f5c72cab9</anchor>
@@ -11825,7 +11776,7 @@
     <filename>classvulpes_1_1fe_1_1FeExpressionUnaryMinus.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename E</templarg>
-    <base>FeExpressionBase&lt; Dim, FeExpressionUnaryMinus&lt; Dim, E &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeExpressionUnaryMinus&lt; Dim, E &gt; &gt;</base>
     <member kind="typedef">
       <type>void</type>
       <name>FeSpaceType</name>
@@ -11945,7 +11896,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename FeSpaceType</templarg>
     <templarg>typename DofHandlerType</templarg>
-    <base>FeExpressionBase&lt; Dim, FeGradProjectionExpr&lt; Dim, FeSpaceType, DofHandlerType &gt; &gt;</base>
+    <base>vulpes::fe::FeExpressionBase&lt; Dim, FeGradProjectionExpr&lt; Dim, FeSpaceType, DofHandlerType &gt; &gt;</base>
     <member kind="typedef">
       <type>Eigen::Vector&lt; double, Dim &gt;</type>
       <name>OutputType</name>
@@ -12241,7 +12192,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename DofPolicy</templarg>
     <templarg>typename NodePolicy</templarg>
-    <base>FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt; &gt;</base>
+    <base>vulpes::fe::FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt; &gt;</base>
     <member kind="typedef">
       <type>polynomial::NdPolynomial&lt; internal::real_t, Dim &gt;</type>
       <name>Polynomial</name>
@@ -12368,13 +12319,6 @@
       <anchor>a88e3c3ac717ace22ae95ebdc3624e251</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>const FeSpaceLagrangeP&lt; Dim, DofPolicy, NodePolicy &gt; *</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>ab5390edfdbb28c033cb4fbd3aea88b30</anchor>
-      <arglist>() const</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>std::vector&lt; Polynomial &gt;</type>
       <name>m_polys</name>
@@ -12417,7 +12361,7 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename DofPolicy</templarg>
     <templarg>typename Poly1DPolicy</templarg>
-    <base>FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceLagrangeQ&lt; Dim, DofPolicy, Poly1DPolicy &gt; &gt;</base>
+    <base>vulpes::fe::FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceLagrangeQ&lt; Dim, DofPolicy, Poly1DPolicy &gt; &gt;</base>
     <member kind="typedef">
       <type>polynomial::NdPolynomial&lt; internal::real_t, Dim, false &gt;</type>
       <name>Polynomial</name>
@@ -12544,13 +12488,6 @@
       <anchor>a88e3c3ac717ace22ae95ebdc3624e251</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>const FeSpaceLagrangeQ&lt; Dim, DofPolicy, Poly1DPolicy &gt; *</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>ab5390edfdbb28c033cb4fbd3aea88b30</anchor>
-      <arglist>() const</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>std::vector&lt; Polynomial &gt;</type>
       <name>m_polys</name>
@@ -12592,7 +12529,7 @@
     <filename>classvulpes_1_1fe_1_1FeSpaceModalP.html</filename>
     <templarg>std::size_t Dim</templarg>
     <templarg>typename DofPolicy</templarg>
-    <base>FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceModalP&lt; Dim, DofPolicy &gt; &gt;</base>
+    <base>vulpes::fe::FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceModalP&lt; Dim, DofPolicy &gt; &gt;</base>
     <member kind="typedef">
       <type>polynomial::NdPolynomial&lt; internal::real_t, Dim &gt;</type>
       <name>Polynomial</name>
@@ -12712,13 +12649,6 @@
       <anchor>a88e3c3ac717ace22ae95ebdc3624e251</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>const FeSpaceModalP&lt; Dim, DofPolicy &gt; *</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>ab5390edfdbb28c033cb4fbd3aea88b30</anchor>
-      <arglist>() const</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>std::vector&lt; Polynomial &gt;</type>
       <name>m_polys</name>
@@ -12754,30 +12684,30 @@
     <templarg>std::size_t Dim</templarg>
     <templarg>typename DofPolicy</templarg>
     <templarg>bool EnableScaling</templarg>
-    <base>vulpes::fe::FeSpaceBase</base>
+    <base>vulpes::fe::FeSpaceBase&lt; Dim, internal::real_t, DofPolicy, FeSpaceModalQ&lt; Dim, DofPolicy, false &gt; &gt;</base>
     <member kind="typedef">
       <type>polynomial::SparsePolynomial&lt; Dim, uint8_t, internal::real_t, false &gt;</type>
       <name>Polynomial</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>ae70f6e0696373aabbbb62fceb68731b9</anchor>
+      <anchor>ac7c72719aa414237c0dfcbe4e39576b8</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>polynomial::SparsePolynomial&lt; Dim, uint8_t, double, false &gt;</type>
       <name>PolynomialFast</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceModalQ.html</anchorfile>
-      <anchor>ade064d5dd8a6ce146b2c9b425e5d7ae6</anchor>
+      <anchor>ab505306b5ba157623d3c02919039773d</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>FloatType</type>
+      <type>internal::real_t</type>
       <name>real_t</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>a4b62e1349bc842589144be01b5ddf8a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>FeSpace</type>
+      <type>FeSpaceModalQ&lt; Dim, DofPolicy, false &gt;</type>
       <name>FeSpaceType</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>a1c77ee7ffd70d229378324aa593113aa</anchor>
@@ -12875,18 +12805,11 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>FeSpace *</type>
+      <type>FeSpaceModalQ&lt; Dim, DofPolicy, false &gt; *</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
       <anchor>a88e3c3ac717ace22ae95ebdc3624e251</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>const FeSpace *</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1fe_1_1FeSpaceBase.html</anchorfile>
-      <anchor>ab5390edfdbb28c033cb4fbd3aea88b30</anchor>
-      <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>std::vector&lt; Polynomial &gt;</type>
@@ -13564,7 +13487,7 @@
     <filename>classvulpes_1_1geometry_1_1CartesianMapping.html</filename>
     <templarg>typename FloatType</templarg>
     <templarg>std::size_t Dim</templarg>
-    <base protection="private">MappingBase&lt; FloatType, Dim, CartesianMapping&lt; FloatType, Dim &gt; &gt;</base>
+    <base protection="private">vulpes::geometry::MappingBase&lt; FloatType, Dim, CartesianMapping&lt; FloatType, Dim &gt; &gt;</base>
     <member kind="function">
       <type>constexpr</type>
       <name>CartesianMapping</name>
@@ -13718,13 +13641,6 @@
       <anchorfile>classvulpes_1_1geometry_1_1MappingBase.html</anchorfile>
       <anchor>a32aa5c79a66a4297f3f02b7656a520da</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>const auto &amp;</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MappingBase.html</anchorfile>
-      <anchor>add1aee4c19067d3ab7e67772c1775aa9</anchor>
-      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -14376,7 +14292,7 @@
     <templarg>int32_t Dim</templarg>
     <templarg>typename D1</templarg>
     <templarg>typename D2</templarg>
-    <base>DistanceExpression&lt; FloatType, Dim, DifferenceDistance&lt; FloatType, Dim, D1, D2 &gt; &gt;</base>
+    <base>vulpes::geometry::DistanceExpression&lt; FloatType, Dim, DifferenceDistance&lt; FloatType, Dim, D1, D2 &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>DifferenceDistance</name>
@@ -14431,7 +14347,7 @@
     <name>vulpes::geometry::dist2d::CircleDistance</name>
     <filename>classvulpes_1_1geometry_1_1dist2d_1_1CircleDistance.html</filename>
     <templarg>typename FloatType</templarg>
-    <base>DistanceExpression&lt; FloatType, 2, CircleDistance&lt; FloatType &gt; &gt;</base>
+    <base>vulpes::geometry::DistanceExpression&lt; FloatType, 2, CircleDistance&lt; FloatType &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>CircleDistance</name>
@@ -14493,7 +14409,7 @@
     <name>vulpes::geometry::dist2d::PolygonDistance</name>
     <filename>classvulpes_1_1geometry_1_1dist2d_1_1PolygonDistance.html</filename>
     <templarg>typename FloatType</templarg>
-    <base>DistanceExpression&lt; FloatType, 2, PolygonDistance&lt; FloatType &gt; &gt;</base>
+    <base>vulpes::geometry::DistanceExpression&lt; FloatType, 2, PolygonDistance&lt; FloatType &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>PolygonDistance</name>
@@ -14569,7 +14485,7 @@
     <name>vulpes::geometry::dist2d::RectangleDistance</name>
     <filename>classvulpes_1_1geometry_1_1dist2d_1_1RectangleDistance.html</filename>
     <templarg>typename FloatType</templarg>
-    <base>DistanceExpression&lt; FloatType, 2, RectangleDistance&lt; FloatType &gt; &gt;</base>
+    <base>vulpes::geometry::DistanceExpression&lt; FloatType, 2, RectangleDistance&lt; FloatType &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>RectangleDistance</name>
@@ -14631,7 +14547,7 @@
     <name>vulpes::geometry::dist3d::HexahedronDistance</name>
     <filename>classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html</filename>
     <templarg>typename FloatType</templarg>
-    <base>DistanceExpression&lt; FloatType, 3, HexahedronDistance&lt; FloatType &gt; &gt;</base>
+    <base>vulpes::geometry::DistanceExpression&lt; FloatType, 3, HexahedronDistance&lt; FloatType &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>HexahedronDistance</name>
@@ -14693,7 +14609,7 @@
     <name>vulpes::geometry::dist3d::SphereDistance</name>
     <filename>classvulpes_1_1geometry_1_1dist3d_1_1SphereDistance.html</filename>
     <templarg>typename FloatType</templarg>
-    <base>DistanceExpression&lt; FloatType, 3, SphereDistance&lt; FloatType &gt; &gt;</base>
+    <base>vulpes::geometry::DistanceExpression&lt; FloatType, 3, SphereDistance&lt; FloatType &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>SphereDistance</name>
@@ -14790,7 +14706,7 @@
     <name>vulpes::geometry::GNNAgglomeration</name>
     <filename>classvulpes_1_1geometry_1_1GNNAgglomeration.html</filename>
     <templarg>typename MeshType</templarg>
-    <base>vulpes::geometry::AbstractAgglomerationModel</base>
+    <base>vulpes::geometry::AbstractAgglomerationModel&lt; MeshType &gt;</base>
     <member kind="typedef">
       <type>typename AbstractAgglomerationModel&lt; MeshType &gt;::float_t</type>
       <name>ClassFloatType</name>
@@ -14844,7 +14760,7 @@
       <type>typename AbstractAgglomerationModel&lt; MeshType &gt;::IndexTrackerType</type>
       <name>IndexTrackerType</name>
       <anchorfile>classvulpes_1_1geometry_1_1GNNAgglomeration.html</anchorfile>
-      <anchor>abb39a1e26ea8e2a26f2767852b4b2a0c</anchor>
+      <anchor>aebfa05eeb256678a603bd0b5b318abfb</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -15167,7 +15083,7 @@
     <templarg>int32_t Dim</templarg>
     <templarg>typename D1</templarg>
     <templarg>typename D2</templarg>
-    <base>DistanceExpression&lt; FloatType, Dim, IntersectDistance&lt; FloatType, Dim, D1, D2 &gt; &gt;</base>
+    <base>vulpes::geometry::DistanceExpression&lt; FloatType, Dim, IntersectDistance&lt; FloatType, Dim, D1, D2 &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>IntersectDistance</name>
@@ -15222,7 +15138,7 @@
     <name>vulpes::geometry::KMeansAgglomeration</name>
     <filename>classvulpes_1_1geometry_1_1KMeansAgglomeration.html</filename>
     <templarg>typename MeshType</templarg>
-    <base>vulpes::geometry::AbstractAgglomerationModel</base>
+    <base>vulpes::geometry::AbstractAgglomerationModel&lt; MeshType &gt;</base>
     <member kind="typedef">
       <type>typename AbstractAgglomerationModel&lt; MeshType &gt;::float_t</type>
       <name>ClassFloatType</name>
@@ -15276,14 +15192,14 @@
       <type>Eigen::Matrix&lt; ClassFloatType, MeshType::self_dim, Eigen::Dynamic &gt;</type>
       <name>MatType</name>
       <anchorfile>classvulpes_1_1geometry_1_1KMeansAgglomeration.html</anchorfile>
-      <anchor>a2214b5408c5d11bc178deaa59a11c3a3</anchor>
+      <anchor>a95813832aa5c4ea9caa819d1d1753ba6</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename AbstractAgglomerationModel&lt; MeshType &gt;::IndexTrackerType</type>
       <name>IndexTrackerType</name>
       <anchorfile>classvulpes_1_1geometry_1_1KMeansAgglomeration.html</anchorfile>
-      <anchor>a4421522eb01b686de80e7fbf5c9f565d</anchor>
+      <anchor>ac0e5c65456aba0f41170246c225740c2</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -15564,7 +15480,7 @@
     <filename>classvulpes_1_1geometry_1_1KMeansNaive.html</filename>
     <templarg>typename T</templarg>
     <templarg>size_t Dim</templarg>
-    <base>vulpes::geometry::KMeansBase</base>
+    <base>vulpes::geometry::KMeansBase&lt; T, Dim &gt;</base>
     <member kind="typedef">
       <type>KMeansBase&lt; T, Dim &gt;::LabelType</type>
       <name>LabelType</name>
@@ -15725,7 +15641,7 @@
     <filename>classvulpes_1_1geometry_1_1Mesh2D.html</filename>
     <templarg>typename FloatType</templarg>
     <templarg>typename IndexType</templarg>
-    <base>MeshBase&lt; FloatType, IndexType, 2, 2, Mesh2D&lt; FloatType, IndexType &gt; &gt;</base>
+    <base>vulpes::geometry::MeshBase&lt; FloatType, IndexType, 2, 2, Mesh2D&lt; FloatType, IndexType &gt; &gt;</base>
     <member kind="typedef">
       <type>Point&lt; FloatType, 2 &gt;</type>
       <name>SelfPoint</name>
@@ -15737,7 +15653,7 @@
       <type>MeshBase&lt; FloatType, IndexType, 2, 2, Mesh2D&lt; FloatType, IndexType &gt; &gt;</type>
       <name>BaseType</name>
       <anchorfile>classvulpes_1_1geometry_1_1Mesh2D.html</anchorfile>
-      <anchor>a571dc02e863feef6c8da60ccbb567eb8</anchor>
+      <anchor>a7a426e046fd873b0f29fbe9e498c07c8</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -15752,13 +15668,6 @@
       <name>CellToVtxMapUncompressed</name>
       <anchorfile>classvulpes_1_1geometry_1_1Mesh2D.html</anchorfile>
       <anchor>ab9db175e6b544ae79e5d6e9ae371ec25</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>Entity</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>a3acf8926bf8ae0cd4ca86d9898bad426</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -15793,14 +15702,14 @@
       <type>std::conditional_t&lt; is_manifold, datastructure::CrsMap&lt; IndexType, IndexType &gt;, std::vector&lt; std::array&lt; IndexType, 2 &gt; &gt; &gt;</type>
       <name>FacetToCellMap</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>af2ba8fcda650ebfb9f8830002ca14ab4</anchor>
+      <anchor>aa1ef821a59f11de83a0a5c93985b9272</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>datastructure::CrsMap&lt; IndexType, IndexType, vtx_per_face &gt;</type>
       <name>FacetToVtxMap</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>a1345b5fc1dda8e2fb6d043cfa2619c09</anchor>
+      <anchor>a9a0156c8b3afdf602c8650a7d754dd5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -15854,6 +15763,13 @@
       <name>CellEnty</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
       <anchor>a3acf8926bf8ae0cd4ca86d9898bad426a1192285801e95350c31b8b1f29e9c586</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Entity</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>a3acf8926bf8ae0cd4ca86d9898bad426</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -16345,7 +16261,7 @@
     <filename>classvulpes_1_1geometry_1_1Mesh3D.html</filename>
     <templarg>typename FloatType</templarg>
     <templarg>typename IndexType</templarg>
-    <base>MeshBase&lt; FloatType, IndexType, 3, 3, Mesh3D&lt; FloatType, IndexType &gt; &gt;</base>
+    <base>vulpes::geometry::MeshBase&lt; FloatType, IndexType, 3, 3, Mesh3D&lt; FloatType, IndexType &gt; &gt;</base>
     <member kind="typedef">
       <type>Point&lt; FloatType, 3 &gt;</type>
       <name>SelfPoint</name>
@@ -16357,21 +16273,56 @@
       <type>MeshBase&lt; FloatType, IndexType, 3, 3, Mesh3D&lt; FloatType, IndexType &gt; &gt;</type>
       <name>BaseType</name>
       <anchorfile>classvulpes_1_1geometry_1_1Mesh3D.html</anchorfile>
-      <anchor>aa574cad31299c57490b91ceb81db38af</anchor>
+      <anchor>abdbef20e1575bce43a9718fbadbba658</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::vector&lt; std::vector&lt; IndexType &gt; &gt;</type>
       <name>CellsFaceVtxsUncompressed</name>
       <anchorfile>classvulpes_1_1geometry_1_1Mesh3D.html</anchorfile>
-      <anchor>a661908a2bd85841c13b050c7d88842f9</anchor>
+      <anchor>ab237514a520d80396747bb2c23690239</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>Entity</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>a3acf8926bf8ae0cd4ca86d9898bad426</anchor>
+    <member kind="typedef">
+      <type>datastructure::CrsMap&lt; IndexType, IndexType &gt;</type>
+      <name>CellToVtxMap</name>
+      <anchorfile>classvulpes_1_1geometry_1_1Mesh3D.html</anchorfile>
+      <anchor>afa04554dbc28bab2340a0aa0891d77d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>datastructure::CrsMapUncompressed&lt; IndexType &gt;</type>
+      <name>CellToVtxMapUncompressed</name>
+      <anchorfile>classvulpes_1_1geometry_1_1Mesh3D.html</anchorfile>
+      <anchor>a3a6f751f794f28a88c3294174cf6d28e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>datastructure::CrsMap&lt; IndexType, IndexType &gt;</type>
+      <name>CellToEdgeMap</name>
+      <anchorfile>classvulpes_1_1geometry_1_1Mesh3D.html</anchorfile>
+      <anchor>a0b118585667062943742000d3a712b8f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>datastructure::CrsMap&lt; IndexType, IndexType &gt;</type>
+      <name>EdgeToCellMap</name>
+      <anchorfile>classvulpes_1_1geometry_1_1Mesh3D.html</anchorfile>
+      <anchor>a8738cd8f8a17aedfb7a63cd954eafe3b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::vector&lt; EdgeVtxs &gt;</type>
+      <name>EdgeToVtxMap</name>
+      <anchorfile>classvulpes_1_1geometry_1_1Mesh3D.html</anchorfile>
+      <anchor>a088e23a22011503fdb6223fe84a16f5f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::array&lt; IndexType, 2 &gt;</type>
+      <name>EdgeVtxs</name>
+      <anchorfile>classvulpes_1_1geometry_1_1Mesh3D.html</anchorfile>
+      <anchor>a6d44198f446c33da6683f26b9616a5ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -16403,31 +16354,17 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>datastructure::CrsMap&lt; IndexType, IndexType &gt;</type>
-      <name>CellToVtxMap</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>a1ff1f8004bb8b892bbe7802347d46bcf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>datastructure::CrsMapUncompressed&lt; IndexType &gt;</type>
-      <name>CellToVtxMapUncompressed</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>af2b63fb4745ea392db31b1fc3baa904b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
       <type>std::conditional_t&lt; is_manifold, datastructure::CrsMap&lt; IndexType, IndexType &gt;, std::vector&lt; std::array&lt; IndexType, 2 &gt; &gt; &gt;</type>
       <name>FacetToCellMap</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>af2ba8fcda650ebfb9f8830002ca14ab4</anchor>
+      <anchor>aa1ef821a59f11de83a0a5c93985b9272</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>datastructure::CrsMap&lt; IndexType, IndexType, vtx_per_face &gt;</type>
       <name>FacetToVtxMap</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>a1345b5fc1dda8e2fb6d043cfa2619c09</anchor>
+      <anchor>a9a0156c8b3afdf602c8650a7d754dd5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -16435,34 +16372,6 @@
       <name>VtxToCellMap</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
       <anchor>a4f5a146f9a260fc93650e8f05866d15d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>std::array&lt; IndexType, 2 &gt;</type>
-      <name>EdgeVtxs</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>afa3946e3e8ba82b4cd3f5ee9d7e12384</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>std::vector&lt; EdgeVtxs &gt;</type>
-      <name>EdgeToVtxMap</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>aa3d18e041835162fd74380c532cce6ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>datastructure::CrsMap&lt; IndexType, IndexType &gt;</type>
-      <name>CellToEdgeMap</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>a664f0fe481e62a7b541bb5179d3b57e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>datastructure::CrsMap&lt; IndexType, IndexType &gt;</type>
-      <name>EdgeToCellMap</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>a583d784e0cd1936f09ac3b9784f56374</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -16481,6 +16390,13 @@
       <name>CellEnty</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
       <anchor>a3acf8926bf8ae0cd4ca86d9898bad426a1192285801e95350c31b8b1f29e9c586</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Entity</name>
+      <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
+      <anchor>a3acf8926bf8ae0cd4ca86d9898bad426</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -17116,14 +17032,14 @@
       <type>std::conditional_t&lt; is_manifold, datastructure::CrsMap&lt; IndexType, IndexType &gt;, std::vector&lt; std::array&lt; IndexType, 2 &gt; &gt; &gt;</type>
       <name>FacetToCellMap</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>af2ba8fcda650ebfb9f8830002ca14ab4</anchor>
+      <anchor>aa1ef821a59f11de83a0a5c93985b9272</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>datastructure::CrsMap&lt; IndexType, IndexType, vtx_per_face &gt;</type>
       <name>FacetToVtxMap</name>
       <anchorfile>classvulpes_1_1geometry_1_1MeshBase.html</anchorfile>
-      <anchor>a1345b5fc1dda8e2fb6d043cfa2619c09</anchor>
+      <anchor>a9a0156c8b3afdf602c8650a7d754dd5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -17597,7 +17513,7 @@
     <name>vulpes::geometry::MeshExporter</name>
     <filename>classvulpes_1_1geometry_1_1MeshExporter.html</filename>
     <templarg>typename MeshDerived</templarg>
-    <base>vulpes::geometry::MeshExporterBase</base>
+    <base>vulpes::geometry::MeshExporterBase&lt; MeshDerived &gt;</base>
     <member kind="typedef">
       <type>MeshDerived::float_t</type>
       <name>float_t</name>
@@ -17846,7 +17762,7 @@
     <name>vulpes::geometry::MeshExporterSubmesh</name>
     <filename>classvulpes_1_1geometry_1_1MeshExporterSubmesh.html</filename>
     <templarg>typename MeshDerived</templarg>
-    <base>vulpes::geometry::MeshExporterBase</base>
+    <base>vulpes::geometry::MeshExporterBase&lt; MeshDerived &gt;</base>
     <member kind="typedef">
       <type>MeshDerived::float_t</type>
       <name>float_t</name>
@@ -18142,7 +18058,7 @@
       <type>std::unordered_map&lt; TagLabel, std::vector&lt; TagType &gt; &gt;</type>
       <name>TagTable</name>
       <anchorfile>structvulpes_1_1geometry_1_1MeshTag.html</anchorfile>
-      <anchor>a46ba4fc468e0fa2b852184332d38a33e</anchor>
+      <anchor>a36ea5e05ee55edcfbc0816514d35183a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -18637,7 +18553,7 @@
     <name>vulpes::geometry::ParmetisAgglomeration</name>
     <filename>classvulpes_1_1geometry_1_1ParmetisAgglomeration.html</filename>
     <templarg>typename MeshType</templarg>
-    <base>vulpes::geometry::AbstractAgglomerationModel</base>
+    <base>vulpes::geometry::AbstractAgglomerationModel&lt; MeshType &gt;</base>
     <member kind="typedef">
       <type>typename AbstractAgglomerationModel&lt; MeshType &gt;::float_t</type>
       <name>ClassFloatType</name>
@@ -18691,7 +18607,7 @@
       <type>typename AbstractAgglomerationModel&lt; MeshType &gt;::IndexTrackerType</type>
       <name>IndexTrackerType</name>
       <anchorfile>classvulpes_1_1geometry_1_1ParmetisAgglomeration.html</anchorfile>
-      <anchor>a9588980045cf99612c945d77c5508968</anchor>
+      <anchor>aaadd1989b400cd12596ff902bd6238fa</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -18809,7 +18725,7 @@
       <type>std::conditional_t&lt; Dim==2, Triangulation, Tetrahedralization &gt;</type>
       <name>SimplexifyEngine</name>
       <anchorfile>classvulpes_1_1geometry_1_1Simplexify.html</anchorfile>
-      <anchor>a7bac1eda54fdb1f19d0e72c5ad6f7358</anchor>
+      <anchor>a7fdf1193328d1733d874a0c6e8e61e28</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -18923,7 +18839,7 @@
     <filename>classvulpes_1_1geometry_1_1SimplexMapping.html</filename>
     <templarg>typename FloatType</templarg>
     <templarg>std::size_t Dim</templarg>
-    <base protection="private">MappingBase&lt; FloatType, Dim, SimplexMapping&lt; FloatType, Dim &gt; &gt;</base>
+    <base protection="private">vulpes::geometry::MappingBase&lt; FloatType, Dim, SimplexMapping&lt; FloatType, Dim &gt; &gt;</base>
     <member kind="function">
       <type>constexpr</type>
       <name>SimplexMapping</name>
@@ -19008,13 +18924,6 @@
       <anchor>a32aa5c79a66a4297f3f02b7656a520da</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>const auto &amp;</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1geometry_1_1MappingBase.html</anchorfile>
-      <anchor>add1aee4c19067d3ab7e67772c1775aa9</anchor>
-      <arglist>() const</arglist>
-    </member>
   </compound>
   <compound kind="class">
     <name>vulpes::geometry::Tetrahedralization</name>
@@ -19023,14 +18932,14 @@
       <type>tetgen::REAL</type>
       <name>float_t</name>
       <anchorfile>classvulpes_1_1geometry_1_1Tetrahedralization.html</anchorfile>
-      <anchor>abccbab76ea5868476090d136c46306e4</anchor>
+      <anchor>a3e7b09ccb22147372d8bdb7fc2e5bc5a</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>int32_t</type>
       <name>index_t</name>
       <anchorfile>classvulpes_1_1geometry_1_1Tetrahedralization.html</anchorfile>
-      <anchor>a30df0be3b066a1598c29b94d6227970f</anchor>
+      <anchor>aa906d0b77c9126135290ab907cf5a4e7</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -19258,14 +19167,14 @@
       <type>triangle::REAL</type>
       <name>float_t</name>
       <anchorfile>classvulpes_1_1geometry_1_1Triangulation.html</anchorfile>
-      <anchor>a39553688b2f1637c02aaaf7cf9b09d33</anchor>
+      <anchor>a33502892d01240bfded4cc934fcf0347</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>int32_t</type>
       <name>index_t</name>
       <anchorfile>classvulpes_1_1geometry_1_1Triangulation.html</anchorfile>
-      <anchor>a2351385c7dff4ba568c956701a00d375</anchor>
+      <anchor>a1172df43d139eb212c84391edda520a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -19458,7 +19367,7 @@
     <templarg>int32_t Dim</templarg>
     <templarg>typename D1</templarg>
     <templarg>typename D2</templarg>
-    <base>DistanceExpression&lt; FloatType, Dim, UnionDistance&lt; FloatType, Dim, D1, D2 &gt; &gt;</base>
+    <base>vulpes::geometry::DistanceExpression&lt; FloatType, Dim, UnionDistance&lt; FloatType, Dim, D1, D2 &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>UnionDistance</name>
@@ -20589,7 +20498,7 @@
       <type>Eigen::Map&lt; const Eigen::Matrix&lt; double, Dim, Dim, Eigen::RowMajor &gt; &gt;</type>
       <name>LocalMap</name>
       <anchorfile>classvulpes_1_1la_1_1Tensor.html</anchorfile>
-      <anchor>a09c461cf275f4c044dce7eea0ee67acc</anchor>
+      <anchor>a9b957a8912b11f88635f56ef3ffa1e6a</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -21301,7 +21210,7 @@
     <name>vulpes::polynomial::Polynomial</name>
     <filename>classvulpes_1_1polynomial_1_1Polynomial.html</filename>
     <templarg>typename T</templarg>
-    <base>PolynomialBase&lt; T, 1, Polynomial&lt; T &gt; &gt;</base>
+    <base>vulpes::polynomial::PolynomialBase&lt; T, 1, Polynomial&lt; T &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>Polynomial</name>
@@ -21514,20 +21423,13 @@
     </member>
     <member kind="function">
       <type>T</type>
-      <name>evaluate</name>
-      <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
-      <anchor>ae8f3709edb1680749b38a5e4e64ffe43</anchor>
-      <arglist>(const Eigen::Vector&lt; T, Dim &gt; &amp;x) const</arglist>
-    </member>
-    <member kind="function">
-      <type>T</type>
       <name>integrate</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a86c472da35039e41facefe0f0c865b28</anchor>
       <arglist>(const datastructure::SimplexDataView&lt; Dim, SimplexData, T, std::size_t &gt; &amp;monomial_integrals) const</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial&lt; T &gt;</type>
+      <type>Polynomial</type>
       <name>primitive</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a079d6c8e713d8024ae8f7e5c83b1d195</anchor>
@@ -21548,18 +21450,11 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>Polynomial&lt; T &gt; *</type>
+      <type>Polynomial *</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>acb35aa91415753bac40f94e47483d841</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>const Polynomial&lt; T &gt; *</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
-      <anchor>a82a2b8e6329b5027d5476a2db49efaab</anchor>
-      <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>std::vector&lt; T &gt;</type>
@@ -21602,7 +21497,7 @@
     <filename>classvulpes_1_1polynomial_1_1Polynomial2D.html</filename>
     <templarg>typename T</templarg>
     <templarg>bool IsSpaceP</templarg>
-    <base>vulpes::polynomial::PolynomialBase</base>
+    <base>vulpes::polynomial::PolynomialBase&lt; T, 2, Polynomial2D&lt; T, true &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>Polynomial2D</name>
@@ -21731,45 +21626,38 @@
     </member>
     <member kind="function">
       <type>T</type>
-      <name>evaluate</name>
-      <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
-      <anchor>ae8f3709edb1680749b38a5e4e64ffe43</anchor>
-      <arglist>(const Eigen::Vector&lt; T, Dim &gt; &amp;x) const</arglist>
-    </member>
-    <member kind="function">
-      <type>T</type>
       <name>integrate</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a86c472da35039e41facefe0f0c865b28</anchor>
       <arglist>(const datastructure::SimplexDataView&lt; Dim, SimplexData, T, std::size_t &gt; &amp;monomial_integrals) const</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial</type>
+      <type>Polynomial2D&lt; T, true &gt;</type>
       <name>primitive</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a079d6c8e713d8024ae8f7e5c83b1d195</anchor>
       <arglist>(std::size_t component) const</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial &amp;</type>
+      <type>Polynomial2D&lt; T, true &gt; &amp;</type>
       <name>operator+=</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a17057d8b639f1109ad1386aa01b5c33a</anchor>
-      <arglist>(const Polynomial &amp;other)</arglist>
+      <arglist>(const Polynomial2D&lt; T, true &gt; &amp;other)</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial &amp;</type>
+      <type>Polynomial2D&lt; T, true &gt; &amp;</type>
       <name>operator-=</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a4fdfacd4cd6bae2f1c030351ad3d4505</anchor>
-      <arglist>(const Polynomial &amp;other)</arglist>
+      <arglist>(const Polynomial2D&lt; T, true &gt; &amp;other)</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial &amp;</type>
+      <type>Polynomial2D&lt; T, true &gt; &amp;</type>
       <name>operator*=</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a739690ce6da41629e984af71941de5e1</anchor>
-      <arglist>(const Polynomial &amp;other)</arglist>
+      <arglist>(const Polynomial2D&lt; T, true &gt; &amp;other)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>Polynomial2D&lt; T, IsSpaceP &gt; &amp;</type>
@@ -21779,18 +21667,11 @@
       <arglist>(const Polynomial2D&lt; T, IsSpaceP &gt; &amp;other)</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>Polynomial *</type>
+      <type>Polynomial2D&lt; T, true &gt; *</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>acb35aa91415753bac40f94e47483d841</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>const Polynomial *</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
-      <anchor>a82a2b8e6329b5027d5476a2db49efaab</anchor>
-      <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>datastructure::TriMatrix&lt; IsSpaceP, false, T, std::size_t &gt;</type>
@@ -21812,7 +21693,7 @@
     <filename>classvulpes_1_1polynomial_1_1Polynomial3D.html</filename>
     <templarg>typename T</templarg>
     <templarg>bool IsSpaceP</templarg>
-    <base>vulpes::polynomial::PolynomialBase</base>
+    <base>vulpes::polynomial::PolynomialBase&lt; T, 3, Polynomial3D&lt; T, true &gt; &gt;</base>
     <member kind="function">
       <type></type>
       <name>Polynomial3D</name>
@@ -21941,45 +21822,38 @@
     </member>
     <member kind="function">
       <type>T</type>
-      <name>evaluate</name>
-      <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
-      <anchor>ae8f3709edb1680749b38a5e4e64ffe43</anchor>
-      <arglist>(const Eigen::Vector&lt; T, Dim &gt; &amp;x) const</arglist>
-    </member>
-    <member kind="function">
-      <type>T</type>
       <name>integrate</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a86c472da35039e41facefe0f0c865b28</anchor>
       <arglist>(const datastructure::SimplexDataView&lt; Dim, SimplexData, T, std::size_t &gt; &amp;monomial_integrals) const</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial</type>
+      <type>Polynomial3D&lt; T, true &gt;</type>
       <name>primitive</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a079d6c8e713d8024ae8f7e5c83b1d195</anchor>
       <arglist>(std::size_t component) const</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial &amp;</type>
+      <type>Polynomial3D&lt; T, true &gt; &amp;</type>
       <name>operator+=</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a17057d8b639f1109ad1386aa01b5c33a</anchor>
-      <arglist>(const Polynomial &amp;other)</arglist>
+      <arglist>(const Polynomial3D&lt; T, true &gt; &amp;other)</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial &amp;</type>
+      <type>Polynomial3D&lt; T, true &gt; &amp;</type>
       <name>operator-=</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a4fdfacd4cd6bae2f1c030351ad3d4505</anchor>
-      <arglist>(const Polynomial &amp;other)</arglist>
+      <arglist>(const Polynomial3D&lt; T, true &gt; &amp;other)</arglist>
     </member>
     <member kind="function">
-      <type>Polynomial &amp;</type>
+      <type>Polynomial3D&lt; T, true &gt; &amp;</type>
       <name>operator*=</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>a739690ce6da41629e984af71941de5e1</anchor>
-      <arglist>(const Polynomial &amp;other)</arglist>
+      <arglist>(const Polynomial3D&lt; T, true &gt; &amp;other)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>Polynomial3D&lt; T, IsSpaceP &gt; &amp;</type>
@@ -21989,18 +21863,11 @@
       <arglist>(const Polynomial3D&lt; T, IsSpaceP &gt; &amp;other)</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>Polynomial *</type>
+      <type>Polynomial3D&lt; T, true &gt; *</type>
       <name>self</name>
       <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
       <anchor>acb35aa91415753bac40f94e47483d841</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>const Polynomial *</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
-      <anchor>a82a2b8e6329b5027d5476a2db49efaab</anchor>
-      <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>datastructure::TetraTensor&lt; IsSpaceP, false, T, std::size_t &gt;</type>
@@ -22150,7 +22017,7 @@
     <templarg>typename IndexType</templarg>
     <templarg>typename CoefType</templarg>
     <templarg>bool IsScaled</templarg>
-    <base>PolynomialBase&lt; CoefType, Dim, SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt; &gt;</base>
+    <base>vulpes::polynomial::PolynomialBase&lt; CoefType, Dim, SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt; &gt;</base>
     <member kind="typedef">
       <type>monomial::Monomial&lt; Dim, IndexType, CoefType, IsScaled &gt;</type>
       <name>MonomialType</name>
@@ -22347,13 +22214,6 @@
       <anchor>acb35aa91415753bac40f94e47483d841</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>const SparsePolynomial&lt; Dim, IndexType, CoefType, IsScaled &gt; *</type>
-      <name>self</name>
-      <anchorfile>classvulpes_1_1polynomial_1_1PolynomialBase.html</anchorfile>
-      <anchor>a82a2b8e6329b5027d5476a2db49efaab</anchor>
-      <arglist>() const</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>IndexType</type>
       <name>m_max_exp</name>
@@ -22483,7 +22343,7 @@
     <filename>structvulpes_1_1scipy_1_1BaseMinkowskiDistP1.html</filename>
     <templarg>typename Dist1D</templarg>
     <templarg>ckdtree_intp_t Dim</templarg>
-    <base>vulpes::scipy::BaseMinkowskiDistPp</base>
+    <base>vulpes::scipy::BaseMinkowskiDistPp&lt; Dist1D, Dim &gt;</base>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>interval_interval_p</name>
@@ -22518,7 +22378,7 @@
     <filename>structvulpes_1_1scipy_1_1BaseMinkowskiDistP2.html</filename>
     <templarg>typename Dist1D</templarg>
     <templarg>ckdtree_intp_t Dim</templarg>
-    <base>vulpes::scipy::BaseMinkowskiDistPp</base>
+    <base>vulpes::scipy::BaseMinkowskiDistPp&lt; Dist1D, Dim &gt;</base>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>interval_interval_p</name>
@@ -22553,7 +22413,7 @@
     <filename>structvulpes_1_1scipy_1_1BaseMinkowskiDistPinf.html</filename>
     <templarg>typename Dist1D</templarg>
     <templarg>ckdtree_intp_t Dim</templarg>
-    <base>vulpes::scipy::BaseMinkowskiDistPp</base>
+    <base>vulpes::scipy::BaseMinkowskiDistPp&lt; Dist1D, Dim &gt;</base>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>interval_interval_p</name>
@@ -22917,7 +22777,7 @@
     <name>vulpes::scipy::MinkowskiDistP2</name>
     <filename>structvulpes_1_1scipy_1_1MinkowskiDistP2.html</filename>
     <templarg>ckdtree_intp_t Dim</templarg>
-    <base>vulpes::scipy::BaseMinkowskiDistP2</base>
+    <base>vulpes::scipy::BaseMinkowskiDistP2&lt; PlainDist1D&lt; Dim &gt;, Dim &gt;</base>
     <member kind="function" static="yes">
       <type>static double</type>
       <name>point_point_p</name>
@@ -23334,7 +23194,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::AscherRuuthSpiteriLstable4IMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX.html</filename>
-    <base>ButcherTableIMEX&lt; 5 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTableIMEX&lt; 5 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -23409,7 +23269,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::BackwardEuler</name>
     <filename>structvulpes_1_1timeintegration_1_1BackwardEuler.html</filename>
-    <base>ButcherTable&lt; 1 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 1 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -23456,7 +23316,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::BackwardEulerIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1BackwardEulerIMEX.html</filename>
-    <base>ImplicitButcherIMEX&lt; BackwardEuler &gt;</base>
+    <base>vulpes::timeintegration::ImplicitButcherIMEX&lt; BackwardEuler &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -23653,7 +23513,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::CeschinoKunzmann3</name>
     <filename>structvulpes_1_1timeintegration_1_1CeschinoKunzmann3.html</filename>
-    <base>ButcherTable&lt; 3 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 3 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -23700,7 +23560,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::CeschinoKunzmann3IMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1CeschinoKunzmann3IMEX.html</filename>
-    <base>ImplicitButcherIMEX&lt; CeschinoKunzmann3 &gt;</base>
+    <base>vulpes::timeintegration::ImplicitButcherIMEX&lt; CeschinoKunzmann3 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -23775,7 +23635,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::CeschinoKunzmann4</name>
     <filename>structvulpes_1_1timeintegration_1_1CeschinoKunzmann4.html</filename>
-    <base>ButcherTable&lt; 4 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 4 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -23822,7 +23682,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::CeschinoKunzmann4IMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1CeschinoKunzmann4IMEX.html</filename>
-    <base>ImplicitButcherIMEX&lt; CeschinoKunzmann4 &gt;</base>
+    <base>vulpes::timeintegration::ImplicitButcherIMEX&lt; CeschinoKunzmann4 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -23897,7 +23757,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::CrankNicolson</name>
     <filename>structvulpes_1_1timeintegration_1_1CrankNicolson.html</filename>
-    <base>ButcherTable&lt; 2 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 2 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -23960,17 +23820,17 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>std::function&lt; void(real_t t_half, const la::Vector &amp;u_star, la::SparseMatrix &amp;nl_matrix, la::Vector &amp;nl_vector)&gt;</type>
+      <type>std::function&lt; void( real_t t_half, const la::Vector &amp;u_star, la::SparseMatrix &amp;nl_matrix, la::Vector &amp;nl_vector)&gt;</type>
       <name>LinearizeFunc</name>
       <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html</anchorfile>
-      <anchor>a5be8d336de58212502cd3c77cfa7c9d4</anchor>
+      <anchor>a2db696af51e67b515304bebeb86646b6</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>std::function&lt; void(real_t t_force, real_t t_half, const la::Vector &amp;u_star, const Terms &amp;terms)&gt;</type>
+      <type>std::function&lt; void( real_t t_force, real_t t_half, const la::Vector &amp;u_star, const Terms &amp;terms)&gt;</type>
       <name>AssembleFunc</name>
       <anchorfile>classvulpes_1_1timeintegration_1_1CrankNicolsonGeneralized.html</anchorfile>
-      <anchor>af9f92e76fdb4eac50f70316735124b5f</anchor>
+      <anchor>a45687bacdbdf43e974aca2891a2aff76</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -24366,7 +24226,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::CrankNicolsonIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1CrankNicolsonIMEX.html</filename>
-    <base>ImplicitButcherIMEX&lt; CrankNicolson &gt;</base>
+    <base>vulpes::timeintegration::ImplicitButcherIMEX&lt; CrankNicolson &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -24442,7 +24302,7 @@
     <name>vulpes::timeintegration::ExplicitButcherIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX.html</filename>
     <templarg>typename PlainButcher</templarg>
-    <base>ButcherTableIMEX&lt; PlainButcher::n_stages &gt;</base>
+    <base>vulpes::timeintegration::ButcherTableIMEX&lt; PlainButcher::n_stages &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -24517,7 +24377,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::ForwardBackwardEulerIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX.html</filename>
-    <base>ButcherTableIMEX&lt; 2 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTableIMEX&lt; 2 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -24592,7 +24452,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::ForwardEuler</name>
     <filename>structvulpes_1_1timeintegration_1_1ForwardEuler.html</filename>
-    <base>ButcherTable&lt; 1 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 1 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -24639,7 +24499,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::ForwardEulerIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1ForwardEulerIMEX.html</filename>
-    <base>ExplicitButcherIMEX&lt; ForwardEuler &gt;</base>
+    <base>vulpes::timeintegration::ExplicitButcherIMEX&lt; ForwardEuler &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -24714,7 +24574,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::Heun</name>
     <filename>structvulpes_1_1timeintegration_1_1Heun.html</filename>
-    <base>ButcherTable&lt; 2 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 2 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -24761,7 +24621,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::HeunIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1HeunIMEX.html</filename>
-    <base>ExplicitButcherIMEX&lt; Heun &gt;</base>
+    <base>vulpes::timeintegration::ExplicitButcherIMEX&lt; Heun &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -24837,7 +24697,7 @@
     <name>vulpes::timeintegration::ImplicitButcherIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html</filename>
     <templarg>typename PlainButcher</templarg>
-    <base>ButcherTableIMEX&lt; PlainButcher::n_stages+1 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTableIMEX&lt; PlainButcher::n_stages+1 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -24912,7 +24772,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::ImplicitExplicitMidpointIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html</filename>
-    <base>ButcherTableIMEX&lt; 2 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTableIMEX&lt; 2 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -25222,7 +25082,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::LobattoIIIC</name>
     <filename>structvulpes_1_1timeintegration_1_1LobattoIIIC.html</filename>
-    <base>ButcherTable&lt; 3 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 3 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -25269,7 +25129,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::LobattoIIICIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1LobattoIIICIMEX.html</filename>
-    <base>ImplicitButcherIMEX&lt; LobattoIIIC &gt;</base>
+    <base>vulpes::timeintegration::ImplicitButcherIMEX&lt; LobattoIIIC &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -25344,7 +25204,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::LstableDIRK</name>
     <filename>structvulpes_1_1timeintegration_1_1LstableDIRK.html</filename>
-    <base>ButcherTable&lt; 4 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 4 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -25391,7 +25251,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::LstableDIRKIMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1LstableDIRKIMEX.html</filename>
-    <base>ImplicitButcherIMEX&lt; LstableDIRK &gt;</base>
+    <base>vulpes::timeintegration::ImplicitButcherIMEX&lt; LstableDIRK &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -25466,7 +25326,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::MidPoint</name>
     <filename>structvulpes_1_1timeintegration_1_1MidPoint.html</filename>
-    <base>ButcherTable&lt; 2 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 2 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -25513,7 +25373,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::Miller3</name>
     <filename>structvulpes_1_1timeintegration_1_1Miller3.html</filename>
-    <base>ButcherTable&lt; 3 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 3 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -25560,7 +25420,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::Miller3IMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1Miller3IMEX.html</filename>
-    <base>ImplicitButcherIMEX&lt; Miller3 &gt;</base>
+    <base>vulpes::timeintegration::ImplicitButcherIMEX&lt; Miller3 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -25635,7 +25495,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::RalstonOrder2</name>
     <filename>structvulpes_1_1timeintegration_1_1RalstonOrder2.html</filename>
-    <base>ButcherTable&lt; 2 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 2 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -25682,7 +25542,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::RalstonOrder3</name>
     <filename>structvulpes_1_1timeintegration_1_1RalstonOrder3.html</filename>
-    <base>ButcherTable&lt; 3 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 3 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -25729,7 +25589,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::RK4</name>
     <filename>structvulpes_1_1timeintegration_1_1RK4.html</filename>
-    <base>ButcherTable&lt; 4 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 4 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -25776,7 +25636,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::RK4IMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1RK4IMEX.html</filename>
-    <base>ExplicitButcherIMEX&lt; RK4 &gt;</base>
+    <base>vulpes::timeintegration::ExplicitButcherIMEX&lt; RK4 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -25851,7 +25711,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::SSPRK3</name>
     <filename>structvulpes_1_1timeintegration_1_1SSPRK3.html</filename>
-    <base>ButcherTable&lt; 3 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 3 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -25898,7 +25758,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::SSPRK3IMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1SSPRK3IMEX.html</filename>
-    <base>ExplicitButcherIMEX&lt; SSPRK3 &gt;</base>
+    <base>vulpes::timeintegration::ExplicitButcherIMEX&lt; SSPRK3 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -25985,7 +25845,7 @@
       <type>std::function&lt; void(const la::Vector &amp;, real_t, la::Vector &amp;)&gt;</type>
       <name>NonlinearPartFunc</name>
       <anchorfile>classvulpes_1_1timeintegration_1_1TimeIntegratorDIRKIMEX.html</anchorfile>
-      <anchor>ac932982092b4b80e6cb69798c741af7e</anchor>
+      <anchor>af474d443f98ee9853557fad79adcefab</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -26244,7 +26104,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::TRBDF2</name>
     <filename>structvulpes_1_1timeintegration_1_1TRBDF2.html</filename>
-    <base>ButcherTable&lt; 3 &gt;</base>
+    <base>vulpes::timeintegration::ButcherTable&lt; 3 &gt;</base>
     <member kind="typedef">
       <type>std::array&lt; double, S &gt;</type>
       <name>ArrayType</name>
@@ -26312,7 +26172,7 @@
   <compound kind="struct">
     <name>vulpes::timeintegration::TRBDF2IMEX</name>
     <filename>structvulpes_1_1timeintegration_1_1TRBDF2IMEX.html</filename>
-    <base>ImplicitButcherIMEX&lt; TRBDF2 &gt;</base>
+    <base>vulpes::timeintegration::ImplicitButcherIMEX&lt; TRBDF2 &gt;</base>
     <member kind="typedef">
       <type>ButcherTable&lt; n_stages &gt;::ArrayType</type>
       <name>ArrayType</name>
@@ -26593,19 +26453,19 @@
   <compound kind="namespace">
     <name>Eigen::internal</name>
     <filename>namespaceEigen_1_1internal.html</filename>
-    <class kind="struct">Eigen::internal::evaluator&lt; EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt; &gt;</class>
-    <class kind="struct">Eigen::internal::evaluator&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;</class>
-    <class kind="struct">Eigen::internal::evaluator&lt; EigenVulpes::SymMat&lt; CrossId, ArgType &gt; &gt;</class>
-    <class kind="struct">Eigen::internal::traits&lt; EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt; &gt;</class>
-    <class kind="struct">Eigen::internal::traits&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;</class>
     <class kind="struct">Eigen::internal::traits&lt; EigenVulpes::SymMat&lt; CrossId, ArgType &gt; &gt;</class>
+    <class kind="struct">Eigen::internal::evaluator&lt; EigenVulpes::SymMat&lt; CrossId, ArgType &gt; &gt;</class>
+    <class kind="struct">Eigen::internal::traits&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;</class>
+    <class kind="struct">Eigen::internal::evaluator&lt; EigenVulpes::RowMat&lt; RowId, ArgType &gt; &gt;</class>
+    <class kind="struct">Eigen::internal::traits&lt; EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt; &gt;</class>
+    <class kind="struct">Eigen::internal::evaluator&lt; EigenVulpes::OneComponentVector&lt; Idx, Scalar_, Size_ &gt; &gt;</class>
   </compound>
   <compound kind="namespace">
     <name>EigenVulpes</name>
     <filename>namespaceEigenVulpes.html</filename>
-    <class kind="class">EigenVulpes::OneComponentVector</class>
-    <class kind="class">EigenVulpes::RowMat</class>
     <class kind="class">EigenVulpes::SymMat</class>
+    <class kind="class">EigenVulpes::RowMat</class>
+    <class kind="class">EigenVulpes::OneComponentVector</class>
     <member kind="function">
       <type>SymMat&lt; CrossId, ArgType &gt;</type>
       <name>makeSymMat</name>
@@ -26620,28 +26480,28 @@
       <anchor>a8e7547839698f9a709eeea9df883af7e</anchor>
       <arglist>(const Eigen::MatrixBase&lt; ArgType &gt; &amp;arg)</arglist>
     </member>
-    <member kind="function" protection="private">
+    <member kind="function">
       <type>auto</type>
       <name>toMap</name>
       <anchorfile>namespaceEigenVulpes.html</anchorfile>
       <anchor>a8b78c9cefc38e472d674e57dfc258bc4</anchor>
       <arglist>(Eigen::MatrixBase&lt; Derived &gt; &amp;mat)</arglist>
     </member>
-    <member kind="function" protection="private">
+    <member kind="function">
       <type>auto</type>
       <name>toConstMap</name>
       <anchorfile>namespaceEigenVulpes.html</anchorfile>
       <anchor>a7d0ac3594467fff73a18674f24394c23</anchor>
       <arglist>(const Eigen::MatrixBase&lt; Derived &gt; &amp;mat)</arglist>
     </member>
-    <member kind="function" protection="private">
+    <member kind="function">
       <type>bool</type>
       <name>compareEigenMatrices</name>
       <anchorfile>namespaceEigenVulpes.html</anchorfile>
       <anchor>a866b12d4a3bf96a397b69a19cba842af</anchor>
       <arglist>(const Eigen::MatrixXd &amp;mat1, const Eigen::MatrixXd &amp;mat2, const double tolerance=1e-12)</arglist>
     </member>
-    <member kind="function" protection="private">
+    <member kind="function">
       <type>bool</type>
       <name>compareEigenVectors</name>
       <anchorfile>namespaceEigenVulpes.html</anchorfile>
@@ -26653,24 +26513,24 @@
     <name>vulpes</name>
     <filename>namespacevulpes.html</filename>
     <namespace>vulpes::assemble</namespace>
+    <namespace>vulpes::scipy</namespace>
     <namespace>vulpes::datastructure</namespace>
     <namespace>vulpes::dofs</namespace>
     <namespace>vulpes::fe</namespace>
     <namespace>vulpes::geometry</namespace>
-    <namespace>vulpes::io</namespace>
-    <namespace>vulpes::la</namespace>
-    <namespace>vulpes::monomial</namespace>
-    <namespace>vulpes::mpi</namespace>
-    <namespace>vulpes::polynomial</namespace>
-    <namespace>vulpes::postprocessing</namespace>
     <namespace>vulpes::qfree</namespace>
+    <namespace>vulpes::la</namespace>
+    <namespace>vulpes::polynomial</namespace>
+    <namespace>vulpes::monomial</namespace>
+    <namespace>vulpes::postprocessing</namespace>
     <namespace>vulpes::qrule</namespace>
-    <namespace>vulpes::random</namespace>
-    <namespace>vulpes::scipy</namespace>
     <namespace>vulpes::timeintegration</namespace>
-    <namespace>vulpes::utils</namespace>
-    <namespace>vulpes::vmath</namespace>
     <namespace>vulpes::vutils</namespace>
+    <namespace>vulpes::io</namespace>
+    <namespace>vulpes::mpi</namespace>
+    <namespace>vulpes::utils</namespace>
+    <namespace>vulpes::random</namespace>
+    <namespace>vulpes::vmath</namespace>
     <namespace>vulpes::vvutils</namespace>
     <member kind="function">
       <type>std::string</type>
@@ -26700,13 +26560,13 @@
     <namespace>vulpes::assemble::dg</namespace>
     <namespace>vulpes::assemble::internal</namespace>
     <class kind="class">vulpes::assemble::CellManager</class>
-    <class kind="struct">vulpes::assemble::CompressedGatheredMonomial</class>
-    <class kind="struct">vulpes::assemble::CompressedMonomial</class>
-    <class kind="struct">vulpes::assemble::GatheredMonomial</class>
-    <class kind="class">vulpes::assemble::ScalarExpressionIntegrator</class>
     <class kind="class">vulpes::assemble::WeakFormIntegratorBase</class>
+    <class kind="struct">vulpes::assemble::GatheredMonomial</class>
+    <class kind="struct">vulpes::assemble::CompressedMonomial</class>
+    <class kind="struct">vulpes::assemble::CompressedGatheredMonomial</class>
     <class kind="class">vulpes::assemble::WeakFormIntegratorQFree</class>
     <class kind="class">vulpes::assemble::WeakFormIntegratorSimplexify</class>
+    <class kind="class">vulpes::assemble::ScalarExpressionIntegrator</class>
   </compound>
   <compound kind="namespace">
     <name>vulpes::assemble::dg</name>
@@ -26842,11 +26702,11 @@
   <compound kind="namespace">
     <name>vulpes::assemble::internal</name>
     <filename>namespacevulpes_1_1assemble_1_1internal.html</filename>
-    <class kind="struct">vulpes::assemble::internal::is_fe_expression_derived</class>
-    <class kind="struct">vulpes::assemble::internal::is_fe_expression_derived&lt; T, std::void_t&lt;&gt; &gt;</class>
-    <class kind="struct">vulpes::assemble::internal::is_fe_expression_derived_dim</class>
     <class kind="struct">vulpes::assemble::internal::is_tuple</class>
     <class kind="struct">vulpes::assemble::internal::is_tuple&lt; std::tuple&lt; Args... &gt; &gt;</class>
+    <class kind="struct">vulpes::assemble::internal::is_fe_expression_derived</class>
+    <class kind="struct">vulpes::assemble::internal::is_fe_expression_derived_dim</class>
+    <class kind="struct">vulpes::assemble::internal::is_fe_expression_derived&lt; T, std::void_t&lt;&gt; &gt;</class>
     <class kind="struct">vulpes::assemble::internal::is_tuple_of_fe_expr_pointers</class>
     <class kind="struct">vulpes::assemble::internal::is_tuple_of_fe_expr_pointers&lt; std::tuple&lt; Args... &gt;, std::enable_if_t&lt;(std::conjunction_v&lt; std::is_pointer&lt; Args &gt;... &gt;) &amp;&amp;(std::conjunction_v&lt; is_fe_expression_derived&lt; std::remove_pointer_t&lt; Args &gt; &gt;... &gt;)&gt; &gt;</class>
     <member kind="function">
@@ -26904,24 +26764,24 @@
     <filename>namespacevulpes_1_1datastructure.html</filename>
     <namespace>vulpes::datastructure::internal</namespace>
     <class kind="class">vulpes::datastructure::CrsMap</class>
+    <class kind="class">vulpes::datastructure::SmallVector</class>
     <class kind="class">vulpes::datastructure::CrsMapUncompressed</class>
     <class kind="class">vulpes::datastructure::IndexTracker</class>
     <class kind="class">vulpes::datastructure::KDTree</class>
-    <class kind="class">vulpes::datastructure::SmallVector</class>
-    <class kind="class">vulpes::datastructure::TetraTensor</class>
     <class kind="class">vulpes::datastructure::TriMatrix</class>
+    <class kind="class">vulpes::datastructure::TetraTensor</class>
     <member kind="typedef">
       <type>std::variant&lt; CrsMapUncompressed&lt; DataType, 4 &gt;, CrsMapUncompressed&lt; DataType, 8 &gt;, CrsMapUncompressed&lt; DataType, 16 &gt;, CrsMapUncompressed&lt; DataType, 32 &gt;, CrsMapUncompressed&lt; DataType, 64 &gt;, CrsMapUncompressed&lt; DataType, 128 &gt;, CrsMapUncompressed&lt; DataType, 256 &gt;, CrsMapUncompressed&lt; DataType, 512 &gt;, CrsMapUncompressed&lt; DataType, 1024 &gt;, CrsMapUncompressed&lt; DataType, 2048 &gt;, CrsMapUncompressed&lt; DataType, 4096 &gt;, CrsMapUncompressed&lt; DataType, 8192 &gt; &gt;</type>
       <name>CrsMapUncompressedVariant</name>
       <anchorfile>namespacevulpes_1_1datastructure.html</anchorfile>
-      <anchor>a1d0afa4e29d50830f14a082548043887</anchor>
+      <anchor>ac4f38fd2832a83a1378dd4197382f759</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::conditional_t&lt; Dim==2, TriMatrix&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, std::conditional_t&lt; Dim==3, TetraTensor&lt; Simplex, false, DataType, IndexType, const DataType * &gt;, const DataType * &gt; &gt;</type>
       <name>SimplexDataView</name>
       <anchorfile>namespacevulpes_1_1datastructure.html</anchorfile>
-      <anchor>acfe4387e8c43ac4721d755d611be9951</anchor>
+      <anchor>ab6ae2dae40dfef75f23f8429cf75df6a</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -26955,21 +26815,21 @@
   <compound kind="namespace">
     <name>vulpes::dofs</name>
     <filename>namespacevulpes_1_1dofs.html</filename>
-    <namespace>vulpes::dofs::boosttypes</namespace>
     <namespace>vulpes::dofs::internal</namespace>
+    <namespace>vulpes::dofs::boosttypes</namespace>
     <class kind="class">vulpes::dofs::DofHandler</class>
     <member kind="typedef">
       <type>std::pair&lt; std::vector&lt; T &gt;, std::vector&lt; T &gt; &gt;</type>
       <name>Permutation</name>
       <anchorfile>namespacevulpes_1_1dofs.html</anchorfile>
-      <anchor>ab481c1d4bac86f40d09a31064e92255a</anchor>
+      <anchor>a00da0d13bb47440ea091bb6f2ab40107</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>std::function&lt; Permutation&lt; T &gt;(const datastructure::CrsMap&lt; T, T &gt; &amp;sparsity_pattern, bool reversed)&gt;</type>
+      <type>std::function&lt; Permutation&lt; T &gt;( const datastructure::CrsMap&lt; T, T &gt; &amp;sparsity_pattern, bool reversed)&gt;</type>
       <name>RenumberingFunctor</name>
       <anchorfile>namespacevulpes_1_1dofs.html</anchorfile>
-      <anchor>ac4c45bbcac2b56eee9de8acf68bc0fd3</anchor>
+      <anchor>ac2f66737ac2c8a9921359431443de956</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -27001,42 +26861,42 @@
       <type>boost::adjacency_list&lt; boost::vecS, boost::vecS, boost::undirectedS, boost::property&lt; boost::vertex_color_t, boost::default_color_type, boost::property&lt; boost::vertex_degree_t, int &gt; &gt; &gt;</type>
       <name>Graph</name>
       <anchorfile>namespacevulpes_1_1dofs_1_1boosttypes.html</anchorfile>
-      <anchor>a7404e8f96c7799b64254b1c2ec0cf6ec</anchor>
+      <anchor>aa76a5396c86d981d10e5335424dcd502</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>boost::property_map&lt; Graph, boost::vertex_degree_t &gt;::type</type>
       <name>GraphDegree</name>
       <anchorfile>namespacevulpes_1_1dofs_1_1boosttypes.html</anchorfile>
-      <anchor>aa66414c3fd26ecc00465cb019debc82b</anchor>
+      <anchor>a7fb5df310b80cf1ebecfa3f9dce537c4</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>boost::property_map&lt; Graph, boost::vertex_index_t &gt;::type</type>
       <name>GraphIndex</name>
       <anchorfile>namespacevulpes_1_1dofs_1_1boosttypes.html</anchorfile>
-      <anchor>ad206b320ef8210caec815e94406333a3</anchor>
+      <anchor>a832a490f690fec8e6ba913e180d6db3c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>boost::graph_traits&lt; Graph &gt;::vertex_descriptor</type>
       <name>Vertex</name>
       <anchorfile>namespacevulpes_1_1dofs_1_1boosttypes.html</anchorfile>
-      <anchor>aa4eb2a40b4c72422bbdca1579ab412c0</anchor>
+      <anchor>a8132882508d930f599a9fe8842a9c393</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>boost::graph_traits&lt; Graph &gt;::vertices_size_type</type>
       <name>size_type</name>
       <anchorfile>namespacevulpes_1_1dofs_1_1boosttypes.html</anchorfile>
-      <anchor>acada01fe12cc1d40b5e635a62ce1f7c7</anchor>
+      <anchor>a5111efc39b7fcc6d460bef9340c872f1</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::pair&lt; size_type, size_type &gt;</type>
       <name>Pair</name>
       <anchorfile>namespacevulpes_1_1dofs_1_1boosttypes.html</anchorfile>
-      <anchor>a662d86e03fdcdf381cc259d9b09c8799</anchor>
+      <anchor>a71ee7d60ba50fd84501bf399da4b19b3</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -27063,46 +26923,46 @@
     <filename>namespacevulpes_1_1fe.html</filename>
     <namespace>vulpes::fe::internal</namespace>
     <class kind="struct">vulpes::fe::DofPolicyBase</class>
-    <class kind="struct">vulpes::fe::DofPolicyFeSpaceCP</class>
     <class kind="struct">vulpes::fe::DofPolicyFeSpaceCQ</class>
-    <class kind="struct">vulpes::fe::DofPolicyFeSpaceDP</class>
+    <class kind="struct">vulpes::fe::DofPolicyFeSpaceCP</class>
     <class kind="struct">vulpes::fe::DofPolicyFeSpaceDQ</class>
-    <class kind="class">vulpes::fe::FeExactExpressionFeProjection</class>
-    <class kind="class">vulpes::fe::FeExpressionAbs</class>
+    <class kind="struct">vulpes::fe::DofPolicyFeSpaceDP</class>
+    <class kind="class">vulpes::fe::FeExpressionUnaryMinus</class>
     <class kind="class">vulpes::fe::FeExpressionBase</class>
-    <class kind="class">vulpes::fe::FeExpressionCellConstant</class>
-    <class kind="class">vulpes::fe::FeExpressionCellConstantNeedNeigh</class>
-    <class kind="class">vulpes::fe::FeExpressionCellConstantTensor</class>
-    <class kind="class">vulpes::fe::FeExpressionConstant</class>
-    <class kind="class">vulpes::fe::FeExpressionDiagOnly</class>
-    <class kind="class">vulpes::fe::FeExpressionDifference</class>
-    <class kind="class">vulpes::fe::FeExpressionFaceNormal</class>
-    <class kind="class">vulpes::fe::FeExpressionFacePointsNeedNeigh</class>
-    <class kind="class">vulpes::fe::FeExpressionFeProjection</class>
-    <class kind="class">vulpes::fe::FeExpressionFieldComponent</class>
     <class kind="class">vulpes::fe::FeExpressionFunc</class>
-    <class kind="class">vulpes::fe::FeExpressionFunctionWrapper</class>
-    <class kind="class">vulpes::fe::FeExpressionFunctionWrapperTensor</class>
-    <class kind="class">vulpes::fe::FeExpressionGradContr</class>
-    <class kind="class">vulpes::fe::FeExpressionGradContrBlock</class>
     <class kind="class">vulpes::fe::FeExpressionGradFunc</class>
-    <class kind="class">vulpes::fe::FeExpressionInner</class>
-    <class kind="class">vulpes::fe::FeExpressionInnerBlock</class>
-    <class kind="class">vulpes::fe::FeExpressionMakeVec</class>
-    <class kind="class">vulpes::fe::FeExpressionNeighborFunc</class>
-    <class kind="class">vulpes::fe::FeExpressionOuter</class>
-    <class kind="class">vulpes::fe::FeExpressionProduct</class>
-    <class kind="class">vulpes::fe::FeExpressionQptsCache</class>
-    <class kind="class">vulpes::fe::FeExpressionScale</class>
-    <class kind="class">vulpes::fe::FeExpressionSelfFunc</class>
-    <class kind="class">vulpes::fe::FeExpressionShift</class>
-    <class kind="class">vulpes::fe::FeExpressionSkipper</class>
-    <class kind="class">vulpes::fe::FeExpressionSpatialComponent</class>
-    <class kind="class">vulpes::fe::FeExpressionSum</class>
     <class kind="class">vulpes::fe::FeExpressionSymGradFunc</class>
     <class kind="class">vulpes::fe::FeExpressionTraceSymGradFunc</class>
-    <class kind="class">vulpes::fe::FeExpressionUnaryMinus</class>
+    <class kind="class">vulpes::fe::FeExpressionNeighborFunc</class>
+    <class kind="class">vulpes::fe::FeExpressionSelfFunc</class>
+    <class kind="class">vulpes::fe::FeExpressionFaceNormal</class>
+    <class kind="class">vulpes::fe::FeExpressionConstant</class>
+    <class kind="class">vulpes::fe::FeExpressionCellConstant</class>
+    <class kind="class">vulpes::fe::FeExpressionCellConstantTensor</class>
+    <class kind="class">vulpes::fe::FeExpressionCellConstantNeedNeigh</class>
+    <class kind="class">vulpes::fe::FeExpressionFacePointsNeedNeigh</class>
+    <class kind="class">vulpes::fe::FeExpressionSkipper</class>
+    <class kind="class">vulpes::fe::FeExpressionFunctionWrapper</class>
+    <class kind="class">vulpes::fe::FeExpressionFeProjection</class>
+    <class kind="class">vulpes::fe::FeExactExpressionFeProjection</class>
     <class kind="class">vulpes::fe::FeGradProjectionExpr</class>
+    <class kind="class">vulpes::fe::FeExpressionFunctionWrapperTensor</class>
+    <class kind="class">vulpes::fe::FeExpressionInner</class>
+    <class kind="class">vulpes::fe::FeExpressionOuter</class>
+    <class kind="class">vulpes::fe::FeExpressionProduct</class>
+    <class kind="class">vulpes::fe::FeExpressionSum</class>
+    <class kind="class">vulpes::fe::FeExpressionDifference</class>
+    <class kind="class">vulpes::fe::FeExpressionMakeVec</class>
+    <class kind="class">vulpes::fe::FeExpressionScale</class>
+    <class kind="class">vulpes::fe::FeExpressionShift</class>
+    <class kind="class">vulpes::fe::FeExpressionFieldComponent</class>
+    <class kind="class">vulpes::fe::FeExpressionSpatialComponent</class>
+    <class kind="class">vulpes::fe::FeExpressionDiagOnly</class>
+    <class kind="class">vulpes::fe::FeExpressionAbs</class>
+    <class kind="class">vulpes::fe::FeExpressionQptsCache</class>
+    <class kind="class">vulpes::fe::FeExpressionGradContr</class>
+    <class kind="class">vulpes::fe::FeExpressionGradContrBlock</class>
+    <class kind="class">vulpes::fe::FeExpressionInnerBlock</class>
     <class kind="class">vulpes::fe::FeSpaceBase</class>
     <class kind="class">vulpes::fe::FeSpaceLagrangeP</class>
     <class kind="class">vulpes::fe::FeSpaceLagrangeQ</class>
@@ -27113,112 +26973,112 @@
       <type>geometry::Cell&lt; Dim, double, int32_t &gt;</type>
       <name>CellType</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>ad7d6019942d7c210a8bb0d0dc47538f1</anchor>
+      <anchor>a41276ccb7eed7a26d0bdb607860dca31</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::vector&lt; std::unique_ptr&lt; CellType&lt; Dim &gt; &gt; &gt;</type>
       <name>CellsType</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a4f45bdccfe2a399019887657e481717d</anchor>
+      <anchor>a71a038aac924bc14a777c16636440f01</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeExpressionFunc&lt; IndexBegin, IndexEnd, FeSpace::dim, FeSpace, false &gt;</type>
       <name>TrialFunction</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a76a59ed77112997baea20fa092654530</anchor>
+      <anchor>a8a16d6734f9408b094ab08435b185863</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeExpressionFunc&lt; IndexBegin, IndexEnd, FeSpace::dim, FeSpace, true &gt;</type>
       <name>TestFunction</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a54bf5266142e2da10063b4aea96d64d2</anchor>
+      <anchor>ac427c57e9e1d9e9ab8d02dc0b719c6f2</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>geometry::Point&lt; DataType, Dim &gt;</type>
       <name>Point</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a236b70be3e3ef828b4c7f52774e514f3</anchor>
+      <anchor>a5cefd2b41325473081b6049b24aa4342</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceLagrangeP&lt; Dim, DofPolicyFeSpaceCP&lt; Dim &gt;, internal::LagrangianNodesPolicy&lt; Dim &gt; &gt;</type>
       <name>FeSpaceLagrangeCP</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a429f4aa2574b71d9b43b664c9e86430e</anchor>
+      <anchor>a43e98559802ac0407d0aab833e39b376</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceLagrangeP&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt;, internal::LagrangianNodesPolicy&lt; Dim &gt; &gt;</type>
       <name>FeSpaceLagrangeDP</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>af30448e7da7545f7abafd001dd487b5a</anchor>
+      <anchor>ac032c6d2dff4a02410f19d289a57978a</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceLagrangeP&lt; Dim, DofPolicyFeSpaceCP&lt; Dim &gt;, internal::WarpAndBlendNodesPolicy&lt; Dim &gt; &gt;</type>
       <name>FeSpaceSpectralCP</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a5b02fefffe02f141356f10fc50939632</anchor>
+      <anchor>a0cee79bf090cefd024396fc622d0684f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceLagrangeP&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt;, internal::WarpAndBlendNodesPolicy&lt; Dim &gt; &gt;</type>
       <name>FeSpaceSpectralDP</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>aa87cba6aa045e3438e3304d00bba95e6</anchor>
+      <anchor>a9824d6e8a15e8a6432430a08c9659274</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceLagrangeQ&lt; Dim, DofPolicyFeSpaceCQ&lt; Dim &gt;, internal::LagrangianNodesPolicy&lt; 1 &gt; &gt;</type>
       <name>FeSpaceLagrangeCQ</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a6a6542d71ae0517549f71128d6163419</anchor>
+      <anchor>a1b25d66da790a72a3637dcf479ca46c8</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceLagrangeQ&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt;, internal::LagrangianNodesPolicy&lt; 1 &gt; &gt;</type>
       <name>FeSpaceLagrangeDQ</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a0b5f00f2f85fe9f07d65efbb09d701a5</anchor>
+      <anchor>aebe3d15bdcf9b2e8d5db6cb63e5547ac</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceLagrangeQ&lt; Dim, DofPolicyFeSpaceCQ&lt; Dim &gt;, internal::WarpAndBlendNodesPolicy&lt; 1 &gt; &gt;</type>
       <name>FeSpaceSpectralCQ</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>aaa50172ce0a62935d383460e78d962ef</anchor>
+      <anchor>ac7a3350353c82d9dda0ea0ce38d37a22</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceLagrangeQ&lt; Dim, DofPolicyFeSpaceDQ&lt; Dim &gt;, internal::WarpAndBlendNodesPolicy&lt; 1 &gt; &gt;</type>
       <name>FeSpaceSpectralDQ</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>ae6388f676176d533d7c6fd18e3061ab7</anchor>
+      <anchor>ac11b03128f3b1a42fc43a605600f01d0</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceModalP&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt; &gt;</type>
       <name>FeSpaceModalLegendreDP</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a45667ebd33208ca3c2f00200a1c6fae9</anchor>
+      <anchor>aa37fcb0e643eec22912d2aa69da25bc2</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>FeSpaceModalQ&lt; Dim, DofPolicyFeSpaceDP&lt; Dim &gt;, EnableScaling &gt;</type>
       <name>FeSpaceModalLegendreDQ</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a852d988646a0c47486b04640d5a55f28</anchor>
+      <anchor>aa4d5706dd0074db9a437435dae0f72c5</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::underlying_type_t&lt; UpdateFlags &gt;</type>
       <name>UpdateFlagsType</name>
       <anchorfile>namespacevulpes_1_1fe.html</anchorfile>
-      <anchor>a2ca0f7334f0292f04c1dd25339d65d21</anchor>
+      <anchor>a59d037b358c6d469a6935388db8915df</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -27591,17 +27451,17 @@
   <compound kind="namespace">
     <name>vulpes::fe::internal</name>
     <filename>namespacevulpes_1_1fe_1_1internal.html</filename>
-    <class kind="struct">vulpes::fe::internal::IsUnscaledSparsePolynomial</class>
-    <class kind="struct">vulpes::fe::internal::IsUnscaledSparsePolynomial&lt; polynomial::SparsePolynomial&lt; D, I, double, false &gt; &gt;</class>
-    <class kind="struct">vulpes::fe::internal::LagrangianNodesPolicy</class>
     <class kind="struct">vulpes::fe::internal::PolynomialTypeHelper</class>
     <class kind="struct">vulpes::fe::internal::PolynomialTypeHelper&lt; T, std::enable_if_t&lt; std::is_same_v&lt; T, void &gt; &gt; &gt;</class>
+    <class kind="struct">vulpes::fe::internal::LagrangianNodesPolicy</class>
     <class kind="struct">vulpes::fe::internal::WarpAndBlendNodesPolicy</class>
-    <member kind="typedef" protection="protected">
+    <class kind="struct">vulpes::fe::internal::IsUnscaledSparsePolynomial</class>
+    <class kind="struct">vulpes::fe::internal::IsUnscaledSparsePolynomial&lt; polynomial::SparsePolynomial&lt; D, I, double, false &gt; &gt;</class>
+    <member kind="typedef">
       <type>mpf_class</type>
       <name>real_t</name>
       <anchorfile>namespacevulpes_1_1fe_1_1internal.html</anchorfile>
-      <anchor>a6603eb9554bb6b7399878a3bba383ad6</anchor>
+      <anchor>a2bb3d86813c2e3c81803ddbc4784f9f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" static="yes">
@@ -27639,28 +27499,28 @@
       <anchor>a738594faa323683b391d5c17ff0ae312</anchor>
       <arglist>(const auto &amp;u, const auto &amp;v)</arglist>
     </member>
-    <member kind="function" protection="protected">
+    <member kind="function">
       <type>double</type>
       <name>conditionNumber</name>
       <anchorfile>namespacevulpes_1_1fe_1_1internal.html</anchorfile>
       <anchor>a767f53f9bfe43511d2c38a8496931bf3</anchor>
       <arglist>(const Eigen::MatrixXd &amp;A)</arglist>
     </member>
-    <member kind="function" protection="protected">
+    <member kind="function">
       <type>Eigen::Matrix&lt; FloatType, -1, -1 &gt;</type>
       <name>buildVandermonde</name>
       <anchorfile>namespacevulpes_1_1fe_1_1internal.html</anchorfile>
       <anchor>a149529c6dad257c887c4eccc4f56de2a</anchor>
       <arglist>(const std::vector&lt; Point&lt; FloatType, Dim &gt; &gt; &amp;points)</arglist>
     </member>
-    <member kind="function" protection="protected">
+    <member kind="function">
       <type>Eigen::Matrix&lt; FloatType, -1, -1 &gt;</type>
       <name>computeInverse</name>
       <anchorfile>namespacevulpes_1_1fe_1_1internal.html</anchorfile>
       <anchor>a84ad20732cf47d1ef97208cde6f50ee7</anchor>
       <arglist>(const Eigen::Matrix&lt; FloatType, -1, -1 &gt; &amp;matrix)</arglist>
     </member>
-    <member kind="function" protection="protected">
+    <member kind="function">
       <type>Eigen::Matrix&lt; FloatType, -1, -1 &gt;</type>
       <name>computeLagrangianPolyCoef</name>
       <anchorfile>namespacevulpes_1_1fe_1_1internal.html</anchorfile>
@@ -27790,75 +27650,75 @@
   <compound kind="namespace">
     <name>vulpes::geometry</name>
     <filename>namespacevulpes_1_1geometry.html</filename>
+    <namespace>vulpes::geometry::internal</namespace>
     <namespace>vulpes::geometry::dist2d</namespace>
     <namespace>vulpes::geometry::dist3d</namespace>
-    <namespace>vulpes::geometry::internal</namespace>
     <namespace>vulpes::geometry::mesh2d</namespace>
     <namespace>vulpes::geometry::mesh3d</namespace>
     <namespace>vulpes::geometry::vulpoly</namespace>
     <class kind="class">vulpes::geometry::AbstractAgglomerationModel</class>
-    <class kind="class">vulpes::geometry::CartesianMapping</class>
-    <class kind="class">vulpes::geometry::Cell2D</class>
-    <class kind="class">vulpes::geometry::Cell3D</class>
-    <class kind="class">vulpes::geometry::DifferenceDistance</class>
-    <class kind="class">vulpes::geometry::DistanceExpression</class>
     <class kind="class">vulpes::geometry::GNNAgglomeration</class>
     <class kind="class">vulpes::geometry::GNNGraph</class>
-    <class kind="class">vulpes::geometry::IntersectDistance</class>
     <class kind="class">vulpes::geometry::KMeansAgglomeration</class>
+    <class kind="class">vulpes::geometry::ParmetisAgglomeration</class>
+    <class kind="class">vulpes::geometry::Cell2D</class>
+    <class kind="class">vulpes::geometry::Cell3D</class>
+    <class kind="class">vulpes::geometry::DistanceExpression</class>
+    <class kind="class">vulpes::geometry::UnionDistance</class>
+    <class kind="class">vulpes::geometry::IntersectDistance</class>
+    <class kind="class">vulpes::geometry::DifferenceDistance</class>
     <class kind="class">vulpes::geometry::KMeansBase</class>
     <class kind="class">vulpes::geometry::KMeansNaive</class>
     <class kind="class">vulpes::geometry::MappingBase</class>
+    <class kind="class">vulpes::geometry::CartesianMapping</class>
+    <class kind="class">vulpes::geometry::SimplexMapping</class>
     <class kind="class">vulpes::geometry::Mesh2D</class>
     <class kind="class">vulpes::geometry::Mesh3D</class>
+    <class kind="struct">vulpes::geometry::Metadata</class>
+    <class kind="struct">vulpes::geometry::MeshTag</class>
     <class kind="class">vulpes::geometry::MeshBase</class>
-    <class kind="class">vulpes::geometry::MeshExporter</class>
+    <class kind="struct">vulpes::geometry::VtuOptions</class>
     <class kind="class">vulpes::geometry::MeshExporterBase</class>
+    <class kind="class">vulpes::geometry::MeshExporter</class>
     <class kind="class">vulpes::geometry::MeshExporterSubmesh</class>
     <class kind="class">vulpes::geometry::MeshMetrics</class>
-    <class kind="struct">vulpes::geometry::MeshTag</class>
-    <class kind="struct">vulpes::geometry::Metadata</class>
     <class kind="class">vulpes::geometry::ParallelMesh</class>
-    <class kind="class">vulpes::geometry::ParmetisAgglomeration</class>
-    <class kind="class">vulpes::geometry::Simplexify</class>
-    <class kind="class">vulpes::geometry::SimplexMapping</class>
-    <class kind="class">vulpes::geometry::Tetrahedralization</class>
     <class kind="class">vulpes::geometry::Triangulation</class>
-    <class kind="class">vulpes::geometry::UnionDistance</class>
-    <class kind="struct">vulpes::geometry::VtuOptions</class>
+    <class kind="class">vulpes::geometry::Tetrahedralization</class>
+    <class kind="class">vulpes::geometry::Simplexify</class>
     <member kind="typedef">
       <type>std::underlying_type_t&lt; CellInitOptions &gt;</type>
       <name>CellInitOptionsType</name>
       <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
-      <anchor>af3a786c7fca1e115d7874dee2bd72985</anchor>
+      <anchor>a9ed30ea3597d9bb825d56f5126ac5d82</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::conditional_t&lt; Dim==2, Cell2D&lt; FloatType, IndexType &gt;, Cell3D&lt; FloatType, IndexType &gt; &gt;</type>
       <name>Cell</name>
       <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
-      <anchor>a9c09611cfe1534ef23da85c983c0aa1f</anchor>
+      <anchor>a8f9205c1fb00e6879e3eb1ab3f813495</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::underlying_type_t&lt; MetricsInitOptions &gt;</type>
       <name>MetricsInitOptionsType</name>
       <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
-      <anchor>a38d31d4535d70cf1ffba69b4c3abb959</anchor>
+      <anchor>a153bb847159871979f4813b6365a45f9</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Eigen::Matrix&lt; DataType, Dim, 1, Eigen::ColMajor &gt;</type>
       <name>Point</name>
       <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
-      <anchor>a72e6a6deae9bfee82032a94e225d980a</anchor>
+      <anchor>a14bc8b3480beef4a179361f0e7c5188e</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::conditional_t&lt; Dim==2, voro::voronoicell_neighbor_2d, voro::voronoicell_neighbor &gt;</type>
       <name>VoronoiCell</name>
       <anchorfile>namespacevulpes_1_1geometry.html</anchorfile>
-      <anchor>a2a96b5fc017196bde2b03b387d9ec227</anchor>
+      <anchor>a1d479d4e8f1884c5d1b9a2d7d18e7231</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -28228,9 +28088,9 @@
   <compound kind="namespace">
     <name>vulpes::geometry::dist2d</name>
     <filename>namespacevulpes_1_1geometry_1_1dist2d.html</filename>
-    <class kind="class">vulpes::geometry::dist2d::CircleDistance</class>
-    <class kind="class">vulpes::geometry::dist2d::PolygonDistance</class>
     <class kind="class">vulpes::geometry::dist2d::RectangleDistance</class>
+    <class kind="class">vulpes::geometry::dist2d::PolygonDistance</class>
+    <class kind="class">vulpes::geometry::dist2d::CircleDistance</class>
   </compound>
   <compound kind="namespace">
     <name>vulpes::geometry::dist3d</name>
@@ -28568,7 +28428,7 @@
       <anchor>a560009da902effa46d06c3645a93ce71</anchor>
       <arglist>(const Mesh2D&lt; double, int32_t &gt; &amp;, int32_t)</arglist>
     </member>
-    <member kind="function" protection="protected">
+    <member kind="function">
       <type>Mesh2D&lt; FloatType, IndexType &gt;</type>
       <name>intersectCartesianGrid</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d.html</anchorfile>
@@ -28583,42 +28443,42 @@
       <type>int8_t</type>
       <name>CellIntersectStatusType</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html</anchorfile>
-      <anchor>a88e8cb37cbfd69cc6164e150c42dedc6</anchor>
+      <anchor>adc394169bfa81158de7d25170db6dedc</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Eigen::Matrix&lt; CellIntersectStatusType, -1, -1 &gt;</type>
       <name>CartesianCellStatues</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html</anchorfile>
-      <anchor>a78f7574dcef56b36d30162d10fb87f21</anchor>
+      <anchor>a639407f9cd873375aede8e3ffc4a6163</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>datastructure::CrsMap&lt; IndexType, IndexType &gt;</type>
       <name>CartCellToFineFacet</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html</anchorfile>
-      <anchor>a253c5be26472825414bc3178511bf03c</anchor>
+      <anchor>a57a41a77f59450d34f9ebb6fb638cdb5</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::array&lt; IndexType, 3 &gt;</type>
       <name>EdgeIntersection</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html</anchorfile>
-      <anchor>ad0166b5d1d3448db32d6ca960b83df9d</anchor>
+      <anchor>a8fa0039b626ac0248f6f8a2b997501a2</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>std::map&lt; EdgeIntersection&lt; IndexType &gt;, IndexType &gt;</type>
       <name>EdgeIntersectionTable</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html</anchorfile>
-      <anchor>a02609f080281ed1caa81cc3bb4dc1ecf</anchor>
+      <anchor>a64c9b594afa21e6461d14a23bb89908d</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename EdgeIntersectionTable&lt; IndexType &gt;::iterator</type>
       <name>IntersectionPtr</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html</anchorfile>
-      <anchor>a8950c5f775aa294de697bf9acba3476f</anchor>
+      <anchor>a82e3ba85a5af7d96cf539d83d3720875</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -28730,7 +28590,7 @@
       <anchor>a6104dd2d2559ad9d9765e9b1221cbd8e</anchor>
       <arglist>(const Mesh2D&lt; FloatType, IndexType &gt; &amp;new_mesh, FloatType standard_measure, FloatType agglomeration_threshold)</arglist>
     </member>
-    <member kind="function" protection="protected">
+    <member kind="function">
       <type>std::array&lt; std::vector&lt; FloatType &gt;, 2 &gt;</type>
       <name>buildCartesianBbox</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1mesh2d_1_1internal.html</anchorfile>
@@ -28820,7 +28680,7 @@
       <type>std::conditional_t&lt; Dim==2, Mesh2D&lt; FloatType, IndexType &gt;, Mesh3D&lt; FloatType, IndexType &gt; &gt;</type>
       <name>Mesh</name>
       <anchorfile>namespacevulpes_1_1geometry_1_1vulpoly.html</anchorfile>
-      <anchor>aa5cad5ac9f9ac73b18182dc7da9c4df7</anchor>
+      <anchor>acea408e698943d74a6a7074760db4e01</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -29058,8 +28918,8 @@
   <compound kind="namespace">
     <name>vulpes::monomial::internal</name>
     <filename>namespacevulpes_1_1monomial_1_1internal.html</filename>
-    <class kind="class">vulpes::monomial::internal::NonScaledMonomial</class>
     <class kind="class">vulpes::monomial::internal::ScaledMonomial</class>
+    <class kind="class">vulpes::monomial::internal::NonScaledMonomial</class>
     <member kind="function">
       <type>constexpr std::array&lt; T, 2 &gt;</type>
       <name>getMonomial2D_Impl</name>
@@ -29342,16 +29202,16 @@
   <compound kind="namespace">
     <name>vulpes::polynomial</name>
     <filename>namespacevulpes_1_1polynomial.html</filename>
+    <class kind="class">vulpes::polynomial::SparsePolynomial</class>
+    <class kind="class">vulpes::polynomial::PolynomialBase</class>
     <class kind="class">vulpes::polynomial::Polynomial</class>
     <class kind="class">vulpes::polynomial::Polynomial2D</class>
     <class kind="class">vulpes::polynomial::Polynomial3D</class>
-    <class kind="class">vulpes::polynomial::PolynomialBase</class>
-    <class kind="class">vulpes::polynomial::SparsePolynomial</class>
     <member kind="typedef">
       <type>std::conditional_t&lt; Dim==1, Polynomial&lt; T &gt;, std::conditional_t&lt; Dim==2, Polynomial2D&lt; T, IsSpaceP &gt;, Polynomial3D&lt; T, IsSpaceP &gt; &gt; &gt;</type>
       <name>NdPolynomial</name>
       <anchorfile>namespacevulpes_1_1polynomial.html</anchorfile>
-      <anchor>a75599e84a0a9593e9442ee310abb0ff5</anchor>
+      <anchor>af3e7abfbcb495bcce6d72ae0cc1e4460</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -29402,28 +29262,35 @@
       <type>datastructure::TriMatrix&lt; PPoly, false, FloatType, IndexType &gt;</type>
       <name>AreaIntegral2D</name>
       <anchorfile>namespacevulpes_1_1qfree.html</anchorfile>
-      <anchor>a90d000a0daf511e876e95deb8dd181b1</anchor>
+      <anchor>ade24e4ebb42ed09a72a056bf72998707</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>datastructure::TriMatrix&lt; PPoly, true, FloatType, IndexType &gt;</type>
       <name>EdgeIntegral2D</name>
       <anchorfile>namespacevulpes_1_1qfree.html</anchorfile>
-      <anchor>afc7e62280a4037f61d40bce7e42f1230</anchor>
+      <anchor>aa633100dee24bf514513be4b32bece71</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>datastructure::TetraTensor&lt; PPoly, false, FloatType, IndexType &gt;</type>
       <name>VolumeIntegral3D</name>
       <anchorfile>namespacevulpes_1_1qfree.html</anchorfile>
-      <anchor>abf22c9be809ca91dd654059febec70bd</anchor>
+      <anchor>a2ec7769cd57a159ac5d914cbd61eeff9</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>datastructure::TetraTensor&lt; PPoly, true, FloatType, IndexType &gt;</type>
       <name>LowerIntegral3D</name>
       <anchorfile>namespacevulpes_1_1qfree.html</anchorfile>
-      <anchor>a2e99dc5f3471d81f48abcca915180569</anchor>
+      <anchor>ac746025a5c3628c9dd0115ad86edcd24</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Eigen::Matrix&lt; DataType, Dim, 1, Eigen::ColMajor &gt;</type>
+      <name>Point</name>
+      <anchorfile>namespacevulpes_1_1qfree.html</anchorfile>
+      <anchor>a14bc8b3480beef4a179361f0e7c5188e</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -29518,14 +29385,14 @@
       <type>QuadratureRule1D&lt; mpf_class &gt;</type>
       <name>QuadratureRule1Dmp</name>
       <anchorfile>namespacevulpes_1_1qrule.html</anchorfile>
-      <anchor>a0540b0d397bb8efa560704709b4b90fc</anchor>
+      <anchor>aa6fbbe35f1eb310dcd7cfb14c92ec1ef</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>QuadratureRule&lt; T, 1 &gt;</type>
       <name>QuadratureRule1D</name>
       <anchorfile>namespacevulpes_1_1qrule.html</anchorfile>
-      <anchor>a56510856f2f5be4f448320e97c0bf54e</anchor>
+      <anchor>aab08f1c3e20b6209099b867d841ac8ca</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -29650,58 +29517,58 @@
   <compound kind="namespace">
     <name>vulpes::scipy</name>
     <filename>namespacevulpes_1_1scipy.html</filename>
-    <class kind="struct">vulpes::scipy::BaseMinkowskiDistP1</class>
-    <class kind="struct">vulpes::scipy::BaseMinkowskiDistP2</class>
-    <class kind="struct">vulpes::scipy::BaseMinkowskiDistPinf</class>
-    <class kind="struct">vulpes::scipy::BaseMinkowskiDistPp</class>
-    <class kind="struct">vulpes::scipy::BoxDist1D</class>
-    <class kind="struct">vulpes::scipy::ckdtree</class>
-    <class kind="struct">vulpes::scipy::ckdtreenode</class>
     <class kind="struct">vulpes::scipy::coo_entry</class>
-    <class kind="struct">vulpes::scipy::heap</class>
+    <class kind="struct">vulpes::scipy::ordered_pair</class>
+    <class kind="struct">vulpes::scipy::ckdtreenode</class>
+    <class kind="struct">vulpes::scipy::ckdtree</class>
+    <class kind="struct">vulpes::scipy::Rectangle</class>
+    <class kind="struct">vulpes::scipy::RR_stack_item</class>
+    <class kind="struct">vulpes::scipy::RectRectDistanceTracker</class>
+    <class kind="struct">vulpes::scipy::BaseMinkowskiDistPp</class>
+    <class kind="struct">vulpes::scipy::BaseMinkowskiDistP1</class>
+    <class kind="struct">vulpes::scipy::BaseMinkowskiDistPinf</class>
+    <class kind="struct">vulpes::scipy::BaseMinkowskiDistP2</class>
+    <class kind="struct">vulpes::scipy::PlainDist1D</class>
+    <class kind="struct">vulpes::scipy::MinkowskiDistP2</class>
+    <class kind="struct">vulpes::scipy::BoxDist1D</class>
     <class kind="union">vulpes::scipy::heapcontents</class>
     <class kind="struct">vulpes::scipy::heapitem</class>
-    <class kind="struct">vulpes::scipy::MinkowskiDistP2</class>
+    <class kind="struct">vulpes::scipy::heap</class>
     <class kind="struct">vulpes::scipy::nodeinfo</class>
     <class kind="struct">vulpes::scipy::nodeinfo_pool</class>
-    <class kind="struct">vulpes::scipy::ordered_pair</class>
-    <class kind="struct">vulpes::scipy::PlainDist1D</class>
-    <class kind="struct">vulpes::scipy::Rectangle</class>
-    <class kind="struct">vulpes::scipy::RectRectDistanceTracker</class>
-    <class kind="struct">vulpes::scipy::RR_stack_item</class>
     <member kind="typedef">
       <type>intptr_t</type>
       <name>ckdtree_intp_t</name>
       <anchorfile>namespacevulpes_1_1scipy.html</anchorfile>
-      <anchor>ad4a6f40daf2691d41a89ea6f16656768</anchor>
+      <anchor>a2f015a7eb592c00d49ae09c620c8b12d</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>BaseMinkowskiDistPp&lt; PlainDist1D&lt; Dim &gt;, Dim &gt;</type>
       <name>MinkowskiDistPp</name>
       <anchorfile>namespacevulpes_1_1scipy.html</anchorfile>
-      <anchor>a0283e7bef505c4e3cdf964cfe0e0512d</anchor>
+      <anchor>a30b04e4a2af70e25032c15a6fadfe674</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>BaseMinkowskiDistPinf&lt; PlainDist1D&lt; Dim &gt;, Dim &gt;</type>
       <name>MinkowskiDistPinf</name>
       <anchorfile>namespacevulpes_1_1scipy.html</anchorfile>
-      <anchor>a076c35fdfe5e2557d68d8cff0eaedfec</anchor>
+      <anchor>ae93601b0109006a8749b3e00e6b0905e</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>BaseMinkowskiDistP1&lt; PlainDist1D&lt; Dim &gt;, Dim &gt;</type>
       <name>MinkowskiDistP1</name>
       <anchorfile>namespacevulpes_1_1scipy.html</anchorfile>
-      <anchor>a304b107e7b8d0959d8b7b336f8c8b1a9</anchor>
+      <anchor>a86f5fab8547490c72fe972a4bbc4bb8f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>BaseMinkowskiDistP2&lt; PlainDist1D&lt; Dim &gt;, Dim &gt;</type>
       <name>NonOptimizedMinkowskiDistP2</name>
       <anchorfile>namespacevulpes_1_1scipy.html</anchorfile>
-      <anchor>aeeda278fe74763d9d5d77aa55faf7a88</anchor>
+      <anchor>a3c6bd8ae32d66eff3e780b83228807e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -29821,43 +29688,43 @@
     <name>vulpes::timeintegration</name>
     <filename>namespacevulpes_1_1timeintegration.html</filename>
     <namespace>vulpes::timeintegration::internal</namespace>
-    <class kind="struct">vulpes::timeintegration::AscherRuuthSpiteriLstable4IMEX</class>
-    <class kind="struct">vulpes::timeintegration::BackwardEuler</class>
-    <class kind="struct">vulpes::timeintegration::BackwardEulerIMEX</class>
     <class kind="struct">vulpes::timeintegration::ButcherTable</class>
     <class kind="struct">vulpes::timeintegration::ButcherTableIMEX</class>
-    <class kind="struct">vulpes::timeintegration::CeschinoKunzmann3</class>
-    <class kind="struct">vulpes::timeintegration::CeschinoKunzmann3IMEX</class>
-    <class kind="struct">vulpes::timeintegration::CeschinoKunzmann4</class>
-    <class kind="struct">vulpes::timeintegration::CeschinoKunzmann4IMEX</class>
-    <class kind="struct">vulpes::timeintegration::CrankNicolson</class>
-    <class kind="class">vulpes::timeintegration::CrankNicolsonGeneralized</class>
-    <class kind="struct">vulpes::timeintegration::CrankNicolsonIMEX</class>
-    <class kind="struct">vulpes::timeintegration::ExplicitButcherIMEX</class>
-    <class kind="struct">vulpes::timeintegration::ForwardBackwardEulerIMEX</class>
     <class kind="struct">vulpes::timeintegration::ForwardEuler</class>
-    <class kind="struct">vulpes::timeintegration::ForwardEulerIMEX</class>
-    <class kind="struct">vulpes::timeintegration::Heun</class>
-    <class kind="struct">vulpes::timeintegration::HeunIMEX</class>
-    <class kind="struct">vulpes::timeintegration::ImplicitButcherIMEX</class>
-    <class kind="struct">vulpes::timeintegration::ImplicitExplicitMidpointIMEX</class>
-    <class kind="class">vulpes::timeintegration::LeapfrogSolver</class>
-    <class kind="struct">vulpes::timeintegration::LobattoIIIC</class>
-    <class kind="struct">vulpes::timeintegration::LobattoIIICIMEX</class>
-    <class kind="struct">vulpes::timeintegration::LstableDIRK</class>
-    <class kind="struct">vulpes::timeintegration::LstableDIRKIMEX</class>
+    <class kind="struct">vulpes::timeintegration::BackwardEuler</class>
     <class kind="struct">vulpes::timeintegration::MidPoint</class>
-    <class kind="struct">vulpes::timeintegration::Miller3</class>
-    <class kind="struct">vulpes::timeintegration::Miller3IMEX</class>
+    <class kind="struct">vulpes::timeintegration::Heun</class>
     <class kind="struct">vulpes::timeintegration::RalstonOrder2</class>
+    <class kind="struct">vulpes::timeintegration::CrankNicolson</class>
     <class kind="struct">vulpes::timeintegration::RalstonOrder3</class>
-    <class kind="struct">vulpes::timeintegration::RK4</class>
-    <class kind="struct">vulpes::timeintegration::RK4IMEX</class>
     <class kind="struct">vulpes::timeintegration::SSPRK3</class>
-    <class kind="struct">vulpes::timeintegration::SSPRK3IMEX</class>
-    <class kind="class">vulpes::timeintegration::TimeIntegratorDIRKIMEX</class>
+    <class kind="struct">vulpes::timeintegration::RK4</class>
+    <class kind="struct">vulpes::timeintegration::LobattoIIIC</class>
+    <class kind="struct">vulpes::timeintegration::CeschinoKunzmann3</class>
+    <class kind="struct">vulpes::timeintegration::CeschinoKunzmann4</class>
+    <class kind="struct">vulpes::timeintegration::Miller3</class>
     <class kind="struct">vulpes::timeintegration::TRBDF2</class>
+    <class kind="struct">vulpes::timeintegration::LstableDIRK</class>
+    <class kind="struct">vulpes::timeintegration::ExplicitButcherIMEX</class>
+    <class kind="struct">vulpes::timeintegration::ImplicitButcherIMEX</class>
+    <class kind="struct">vulpes::timeintegration::ForwardEulerIMEX</class>
+    <class kind="struct">vulpes::timeintegration::HeunIMEX</class>
+    <class kind="struct">vulpes::timeintegration::SSPRK3IMEX</class>
+    <class kind="struct">vulpes::timeintegration::RK4IMEX</class>
+    <class kind="struct">vulpes::timeintegration::BackwardEulerIMEX</class>
+    <class kind="struct">vulpes::timeintegration::CrankNicolsonIMEX</class>
+    <class kind="struct">vulpes::timeintegration::LobattoIIICIMEX</class>
+    <class kind="struct">vulpes::timeintegration::CeschinoKunzmann3IMEX</class>
+    <class kind="struct">vulpes::timeintegration::CeschinoKunzmann4IMEX</class>
+    <class kind="struct">vulpes::timeintegration::Miller3IMEX</class>
+    <class kind="struct">vulpes::timeintegration::LstableDIRKIMEX</class>
     <class kind="struct">vulpes::timeintegration::TRBDF2IMEX</class>
+    <class kind="struct">vulpes::timeintegration::ForwardBackwardEulerIMEX</class>
+    <class kind="struct">vulpes::timeintegration::ImplicitExplicitMidpointIMEX</class>
+    <class kind="struct">vulpes::timeintegration::AscherRuuthSpiteriLstable4IMEX</class>
+    <class kind="class">vulpes::timeintegration::CrankNicolsonGeneralized</class>
+    <class kind="class">vulpes::timeintegration::TimeIntegratorDIRKIMEX</class>
+    <class kind="class">vulpes::timeintegration::LeapfrogSolver</class>
   </compound>
   <compound kind="namespace">
     <name>vulpes::timeintegration::internal</name>
@@ -30135,50 +30002,58 @@
     <name>vulpes::vvutils::internal</name>
     <filename>namespacevulpes_1_1vvutils_1_1internal.html</filename>
     <class kind="struct">vulpes::vvutils::internal::is_printable_container</class>
-    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::array&lt; T, N &gt; &gt;</class>
-    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::set&lt; Args... &gt; &gt;</class>
     <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::vector&lt; Args... &gt; &gt;</class>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::set&lt; Args... &gt; &gt;</class>
+    <class kind="struct">vulpes::vvutils::internal::is_printable_container&lt; std::array&lt; T, N &gt; &gt;</class>
   </compound>
   <compound kind="page">
     <name>installation_instruction</name>
     <title>Install &amp; Build</title>
     <filename>installation_instruction.html</filename>
+    <docanchor file="installation_instruction.html" title="/__w/vulpes/vulpes/doc/installation-instruction/index.md">md__2____w_2vulpes_2vulpes_2doc_2installation-instruction_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>tutorials_01_Meshes_2D</name>
     <title>Mesh Kinds for lap_dg_2d_main</title>
     <filename>tutorials_01_Meshes_2D.html</filename>
+    <docanchor file="tutorials_01_Meshes_2D.html" title="/__w/vulpes/vulpes/doc/tutorials/01_Meshes_2D.md">md__2____w_2vulpes_2vulpes_2doc_2tutorials_201__Meshes__2D</docanchor>
   </compound>
   <compound kind="page">
     <name>tutorials_02_Laplacian_Assembly</name>
     <title>Laplacian Assembly (DG)</title>
     <filename>tutorials_02_Laplacian_Assembly.html</filename>
+    <docanchor file="tutorials_02_Laplacian_Assembly.html" title="/__w/vulpes/vulpes/doc/tutorials/02_Laplacian_Assembly.md">md__2____w_2vulpes_2vulpes_2doc_2tutorials_202__Laplacian__Assembly</docanchor>
     <docanchor file="tutorials_02_Laplacian_Assembly.html" title="MPI Laplacian Assembly">mpi-laplacian-assembly</docanchor>
   </compound>
   <compound kind="page">
     <name>tutorials_03_Elasticity_Assembly</name>
     <title>Linear Elasticity Assembly (DG)</title>
     <filename>tutorials_03_Elasticity_Assembly.html</filename>
+    <docanchor file="tutorials_03_Elasticity_Assembly.html" title="/__w/vulpes/vulpes/doc/tutorials/03_Elasticity_Assembly.md">md__2____w_2vulpes_2vulpes_2doc_2tutorials_203__Elasticity__Assembly</docanchor>
   </compound>
   <compound kind="page">
     <name>tutorials_04_Advection_Assembly</name>
     <title>Advection Assembly (DG)</title>
     <filename>tutorials_04_Advection_Assembly.html</filename>
+    <docanchor file="tutorials_04_Advection_Assembly.html" title="/__w/vulpes/vulpes/doc/tutorials/04_Advection_Assembly.md">md__2____w_2vulpes_2vulpes_2doc_2tutorials_204__Advection__Assembly</docanchor>
   </compound>
   <compound kind="page">
     <name>tutorials_05_Shallow_Water_DG</name>
     <title>Linear Shallow Water Equations (DG)</title>
     <filename>tutorials_05_Shallow_Water_DG.html</filename>
+    <docanchor file="tutorials_05_Shallow_Water_DG.html" title="/__w/vulpes/vulpes/doc/tutorials/05_Shallow_Water_DG.md">md__2____w_2vulpes_2vulpes_2doc_2tutorials_205__Shallow__Water__DG</docanchor>
   </compound>
   <compound kind="page">
     <name>tutorials_06_Fisher_Kolmogorov</name>
     <title>Fisher-Kolmogorov Assembly (DG)</title>
     <filename>tutorials_06_Fisher_Kolmogorov.html</filename>
+    <docanchor file="tutorials_06_Fisher_Kolmogorov.html" title="/__w/vulpes/vulpes/doc/tutorials/06_Fisher_Kolmogorov.md">md__2____w_2vulpes_2vulpes_2doc_2tutorials_206__Fisher__Kolmogorov</docanchor>
   </compound>
   <compound kind="page">
     <name>tutorials_07_Mesh_Agglomeration</name>
     <title>Tool for Mesh Agglomeration</title>
     <filename>tutorials_07_Mesh_Agglomeration.html</filename>
+    <docanchor file="tutorials_07_Mesh_Agglomeration.html" title="/__w/vulpes/vulpes/doc/tutorials/07_Mesh_Agglomeration.md">md__2____w_2vulpes_2vulpes_2doc_2tutorials_207__Mesh__Agglomeration</docanchor>
     <docanchor file="tutorials_07_Mesh_Agglomeration.html" title="References">references</docanchor>
   </compound>
   <compound kind="page">
@@ -30192,26 +30067,31 @@
     <subpage>tutorials_05_Shallow_Water_DG.html</subpage>
     <subpage>tutorials_06_Fisher_Kolmogorov.html</subpage>
     <subpage>tutorials_07_Mesh_Agglomeration.html</subpage>
+    <docanchor file="tutorials.html" title="/__w/vulpes/vulpes/doc/tutorials/index.md">md__2____w_2vulpes_2vulpes_2doc_2tutorials_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide_commit_and_merge_policy</name>
     <title>Commit and Merge Policy</title>
     <filename>developers_guide_commit_and_merge_policy.html</filename>
+    <docanchor file="developers_guide_commit_and_merge_policy.html" title="/__w/vulpes/vulpes/doc/developers-guide/commit-and-merge-policy/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2commit-and-merge-policy_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide_compile_native</name>
     <title>Native cluster compile</title>
     <filename>developers_guide_compile_native.html</filename>
+    <docanchor file="developers_guide_compile_native.html" title="/__w/vulpes/vulpes/doc/developers-guide/compile-native/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-native_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide_compile_options</name>
     <title>Compile options</title>
     <filename>developers_guide_compile_options.html</filename>
+    <docanchor file="developers_guide_compile_options.html" title="/__w/vulpes/vulpes/doc/developers-guide/compile-options/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2compile-options_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide_debugging</name>
     <title>Debugging</title>
     <filename>developers_guide_debugging.html</filename>
+    <docanchor file="developers_guide_debugging.html" title="/__w/vulpes/vulpes/doc/developers-guide/debugging/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2debugging_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide</name>
@@ -30225,26 +30105,331 @@
     <subpage>developers_guide_debugging.html</subpage>
     <subpage>developers_guide_profiling.html</subpage>
     <subpage>developers_guide_workflows.html</subpage>
+    <docanchor file="developers_guide.html" title="/__w/vulpes/vulpes/doc/developers-guide/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide_profiling</name>
     <title>Profiling</title>
     <filename>developers_guide_profiling.html</filename>
+    <docanchor file="developers_guide_profiling.html" title="/__w/vulpes/vulpes/doc/developers-guide/profiling/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2profiling_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide_style_guide</name>
     <title>C++ Style Guide</title>
     <filename>developers_guide_style_guide.html</filename>
+    <docanchor file="developers_guide_style_guide.html" title="/__w/vulpes/vulpes/doc/developers-guide/style-guide/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2style-guide_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide_testing_and_coverage</name>
     <title>Testing and Coverage</title>
     <filename>developers_guide_testing_and_coverage.html</filename>
+    <docanchor file="developers_guide_testing_and_coverage.html" title="/__w/vulpes/vulpes/doc/developers-guide/testing-and-coverage/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2testing-and-coverage_2index</docanchor>
   </compound>
   <compound kind="page">
     <name>developers_guide_workflows</name>
     <title>Workflows</title>
     <filename>developers_guide_workflows.html</filename>
+    <docanchor file="developers_guide_workflows.html" title="/__w/vulpes/vulpes/doc/developers-guide/workflows/index.md">md__2____w_2vulpes_2vulpes_2doc_2developers-guide_2workflows_2index</docanchor>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/geometry/agglomeration</name>
+    <path>/__w/vulpes/vulpes/vulpes/geometry/agglomeration/</path>
+    <filename>dir_f418e2388a634816c9e5c0afa75261f8.html</filename>
+    <file>abs_agg_model.cpp</file>
+    <file>abs_agg_model.hpp</file>
+    <file>gnn_agglomeration.cpp</file>
+    <file>gnn_agglomeration.hpp</file>
+    <file>gnn_graph.cpp</file>
+    <file>gnn_graph.hpp</file>
+    <file>kmeans_agglomeration.cpp</file>
+    <file>kmeans_agglomeration.hpp</file>
+    <file>parmetis_agglomeration.cpp</file>
+    <file>parmetis_agglomeration.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/assemble</name>
+    <path>/__w/vulpes/vulpes/vulpes/assemble/</path>
+    <filename>dir_fbdf0309f37d26479fea532d5cc8eb08.html</filename>
+    <file>cell_manager.hpp</file>
+    <file>dg_utils.hpp</file>
+    <file>integrator_base.hpp</file>
+    <file>integrator_qfree.hpp</file>
+    <file>integrator_simplexify.hpp</file>
+    <file>integrator_traits.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/datastructure/ckdtree</name>
+    <path>/__w/vulpes/vulpes/vulpes/datastructure/ckdtree/</path>
+    <filename>dir_b537475ffe151cc58e154b82367541ee.html</filename>
+    <file>ckdtree_decl.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide/commit-and-merge-policy</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/commit-and-merge-policy/</path>
+    <filename>dir_c3d066b0b369732b516d7880d651452b.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide/compile-native</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/compile-native/</path>
+    <filename>dir_f8db5babac5a7e0e9b2f55b62cf9151e.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide/compile-options</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/compile-options/</path>
+    <filename>dir_6b18a8d39fc6d91258ca9b91a87b0897.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/timeintegration/dae</name>
+    <path>/__w/vulpes/vulpes/vulpes/timeintegration/dae/</path>
+    <filename>dir_9eccd101cbf095d9ee005bbac74a417c.html</filename>
+    <file>imex.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/datastructure</name>
+    <path>/__w/vulpes/vulpes/vulpes/datastructure/</path>
+    <filename>dir_76c7cfc4ed48b69da3495ed0a3f2a82b.html</filename>
+    <dir>/__w/vulpes/vulpes/vulpes/datastructure/ckdtree</dir>
+    <file>crs_map.hpp</file>
+    <file>index_tracker.cpp</file>
+    <file>index_tracker.hpp</file>
+    <file>kdtree.hpp</file>
+    <file>tensor.cpp</file>
+    <file>tensor.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide/debugging</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/debugging/</path>
+    <filename>dir_f71ba891ec447133ee79391ba0ef4fc2.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/</path>
+    <filename>dir_899810871695c698881e52dec09c8f04.html</filename>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide/commit-and-merge-policy</dir>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide/compile-native</dir>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide/compile-options</dir>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide/debugging</dir>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide/profiling</dir>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide/style-guide</dir>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide/testing-and-coverage</dir>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide/workflows</dir>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc</name>
+    <path>/__w/vulpes/vulpes/doc/</path>
+    <filename>dir_e68e8157741866f444e17edd764ebbae.html</filename>
+    <dir>/__w/vulpes/vulpes/doc/developers-guide</dir>
+    <dir>/__w/vulpes/vulpes/doc/installation-instruction</dir>
+    <dir>/__w/vulpes/vulpes/doc/tutorials</dir>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/dofs</name>
+    <path>/__w/vulpes/vulpes/vulpes/dofs/</path>
+    <filename>dir_6eff03e4f108943e0ec081c616da05c3.html</filename>
+    <file>dof_handler.hpp</file>
+    <file>numbering.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/fe</name>
+    <path>/__w/vulpes/vulpes/vulpes/fe/</path>
+    <filename>dir_1d42be232f14d112552dcd34db4d5ceb.html</filename>
+    <dir>/__w/vulpes/vulpes/vulpes/fe/fe_expressions</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/fe/fe_spaces</dir>
+    <file>dof_policy.hpp</file>
+    <file>fe_expression.hpp</file>
+    <file>fe_space.hpp</file>
+    <file>fe_values.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/fe/fe_expressions</name>
+    <path>/__w/vulpes/vulpes/vulpes/fe/fe_expressions/</path>
+    <filename>dir_e4477d1d4b20ed17436b601b368f7cb3.html</filename>
+    <file>fe_expr_base.hpp</file>
+    <file>fe_expr_basis.hpp</file>
+    <file>fe_expr_func.hpp</file>
+    <file>fe_expr_op.hpp</file>
+    <file>fe_expr_unary.hpp</file>
+    <file>fe_expr_vector.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/fe/fe_spaces</name>
+    <path>/__w/vulpes/vulpes/vulpes/fe/fe_spaces/</path>
+    <filename>dir_f25ceabd9d8a75987ca9d6abd5f8853c.html</filename>
+    <file>fe_lagrange_simplex.cpp</file>
+    <file>fe_lagrange_simplex.hpp</file>
+    <file>fe_lagrange_tensor.hpp</file>
+    <file>fe_modal_simplex.hpp</file>
+    <file>fe_modal_tensor.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/geometry</name>
+    <path>/__w/vulpes/vulpes/vulpes/geometry/</path>
+    <filename>dir_7020f5ed0a8de0aefef775a8859713a5.html</filename>
+    <dir>/__w/vulpes/vulpes/vulpes/geometry/agglomeration</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/geometry/mesh</dir>
+    <file>cell.cpp</file>
+    <file>cell.hpp</file>
+    <file>distance.hpp</file>
+    <file>kmeans.cpp</file>
+    <file>kmeans.hpp</file>
+    <file>mapping.hpp</file>
+    <file>mesh.hpp</file>
+    <file>mesh_exporter.hpp</file>
+    <file>mesh_metrics.cpp</file>
+    <file>mesh_metrics.hpp</file>
+    <file>mesher.hpp</file>
+    <file>parallel_mesh.hpp</file>
+    <file>simplexify.cpp</file>
+    <file>simplexify.hpp</file>
+    <file>traits.hpp</file>
+    <file>voronoi.cpp</file>
+    <file>voronoi.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/installation-instruction</name>
+    <path>/__w/vulpes/vulpes/doc/installation-instruction/</path>
+    <filename>dir_4c5a1113c5859997bda08a4baa49057f.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/la</name>
+    <path>/__w/vulpes/vulpes/vulpes/la/</path>
+    <filename>dir_ffc3e8d0ffd5cf1b8ef4f07435f673f1.html</filename>
+    <file>boomer_amg.hpp</file>
+    <file>gamg.hpp</file>
+    <file>linear_solver.cpp</file>
+    <file>linear_solver.hpp</file>
+    <file>petsc_utils.hpp</file>
+    <file>sparse_matrix.cpp</file>
+    <file>sparse_matrix.hpp</file>
+    <file>tensor.hpp</file>
+    <file>vector.cpp</file>
+    <file>vector.hpp</file>
+    <file>vector_block_utils.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/geometry/mesh</name>
+    <path>/__w/vulpes/vulpes/vulpes/geometry/mesh/</path>
+    <filename>dir_3213ab77fe4ea86cfa506605152366dc.html</filename>
+    <file>mesh_2d.cpp</file>
+    <file>mesh_2d.hpp</file>
+    <file>mesh_3d.cpp</file>
+    <file>mesh_3d.hpp</file>
+    <file>mesh_base.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/polynomials</name>
+    <path>/__w/vulpes/vulpes/vulpes/polynomials/</path>
+    <filename>dir_f847fbc2a10034652ea68ba29427c8a1.html</filename>
+    <file>monomial.hpp</file>
+    <file>ndpolynomial.hpp</file>
+    <file>polynomial.hpp</file>
+    <file>polynomial1d.hpp</file>
+    <file>polynomial2d.hpp</file>
+    <file>polynomial3d.hpp</file>
+    <file>sparse_polynomial.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/postprocessing</name>
+    <path>/__w/vulpes/vulpes/vulpes/postprocessing/</path>
+    <filename>dir_6c7e17ab64e974f30697ed0028c407ca.html</filename>
+    <file>err_order.hpp</file>
+    <file>project_solution.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide/profiling</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/profiling/</path>
+    <filename>dir_c9a3753ed2e1c5d400b1c4027b5f8218.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/quadrature</name>
+    <path>/__w/vulpes/vulpes/vulpes/quadrature/</path>
+    <filename>dir_c7f7ab40232942afa5e2adeef9c82e3e.html</filename>
+    <file>frugal.hpp</file>
+    <file>gauss.cpp</file>
+    <file>gauss.hpp</file>
+    <file>qfree.cpp</file>
+    <file>qfree.hpp</file>
+    <file>qlibrary.cpp</file>
+    <file>qlibrary.hpp</file>
+    <file>qrule.hpp</file>
+    <file>simplex.hpp</file>
+    <file>simplex.tet.cpp</file>
+    <file>simplex.tri.cpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/utils/random</name>
+    <path>/__w/vulpes/vulpes/vulpes/utils/random/</path>
+    <filename>dir_21519e5f0e063ee354f332346107e9a9.html</filename>
+    <file>additive_recurrence.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide/style-guide</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/style-guide/</path>
+    <filename>dir_e6c684ce6ccd6553acc0b6ec1fac3f9e.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide/testing-and-coverage</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/testing-and-coverage/</path>
+    <filename>dir_78fbd9978cd3332b9cd253807f50e18b.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/timeintegration</name>
+    <path>/__w/vulpes/vulpes/vulpes/timeintegration/</path>
+    <filename>dir_f3bb4cd4855da1dadc073099e9befd96.html</filename>
+    <dir>/__w/vulpes/vulpes/vulpes/timeintegration/dae</dir>
+    <file>butcher_tables.hpp</file>
+    <file>cranknicolson_generalized.cpp</file>
+    <file>cranknicolson_generalized.hpp</file>
+    <file>leapfrog.cpp</file>
+    <file>leapfrog.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/tutorials</name>
+    <path>/__w/vulpes/vulpes/doc/tutorials/</path>
+    <filename>dir_5b0b179e83013be2ae877b5cea1eb6e2.html</filename>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes/utils</name>
+    <path>/__w/vulpes/vulpes/vulpes/utils/</path>
+    <filename>dir_57fd5c05a3144478f1fe40cbcefca761.html</filename>
+    <dir>/__w/vulpes/vulpes/vulpes/utils/random</dir>
+    <file>checks.cpp</file>
+    <file>checks.hpp</file>
+    <file>eigen.hpp</file>
+    <file>env.hpp</file>
+    <file>expression_parser.hpp</file>
+    <file>io.hpp</file>
+    <file>macros.hpp</file>
+    <file>mpi_wrappers.hpp</file>
+    <file>pcout.hpp</file>
+    <file>profiler.cpp</file>
+    <file>profiler.hpp</file>
+    <file>serialize.hpp</file>
+    <file>threading.cpp</file>
+    <file>threading.hpp</file>
+    <file>vmath.hpp</file>
+    <file>vvutils.hpp</file>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/vulpes</name>
+    <path>/__w/vulpes/vulpes/vulpes/</path>
+    <filename>dir_35f1a0849d07b3f60f0d7ab29139efdc.html</filename>
+    <dir>/__w/vulpes/vulpes/vulpes/assemble</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/datastructure</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/dofs</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/fe</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/geometry</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/la</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/polynomials</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/postprocessing</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/quadrature</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/timeintegration</dir>
+    <dir>/__w/vulpes/vulpes/vulpes/utils</dir>
+  </compound>
+  <compound kind="dir">
+    <name>/__w/vulpes/vulpes/doc/developers-guide/workflows</name>
+    <path>/__w/vulpes/vulpes/doc/developers-guide/workflows/</path>
+    <filename>dir_4b56baa12483781ef5cf871b376122c7.html</filename>
   </compound>
   <compound kind="page">
     <name>index</name>

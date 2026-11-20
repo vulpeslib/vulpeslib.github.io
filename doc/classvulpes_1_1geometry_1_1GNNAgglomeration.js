@@ -5,7 +5,7 @@ var classvulpes_1_1geometry_1_1GNNAgglomeration =
     [ "ClassIndexType", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#a1799b9601dfe8fe7b7f629fce427107d", null ],
     [ "float_t", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#a39ce37a8fd1673289143fe32ec65b230", null ],
     [ "index_t", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#adfe290106bdf16423be60af98d697aae", null ],
-    [ "IndexTrackerType", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#abb39a1e26ea8e2a26f2767852b4b2a0c", null ],
+    [ "IndexTrackerType", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#aebfa05eeb256678a603bd0b5b318abfb", null ],
     [ "IndVec", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#af40f81c0ff7a9dc0812f2eb619a90880", null ],
     [ "MapType", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#a49945a7a5e071deb88ee51a42d28e30d", null ],
     [ "MeshFloatType", "classvulpes_1_1geometry_1_1GNNAgglomeration.html#a118a4beb4583b1fc32bdcc1aceb1b716", null ],

@@ -10,8 +10,9 @@ var searchData=
   ['3_20poly_5fmeshes_7',['3. poly_meshes',['../tutorials_01_Meshes_2D.html#autotoc_md19',1,'']]],
   ['3_20profiling_20with_20a_20the_20profiler_20class_8',['3. Profiling with a the Profiler class',['../developers_guide_profiling.html#autotoc_md146',1,'']]],
   ['3_20run_9',['3) Run',['../tutorials_06_Fisher_Kolmogorov.html#autotoc_md103',1,'']]],
-  ['3_20time_20integration_10',['5.3 Time Integration',['../tutorials_05_Shallow_Water_DG.html#autotoc_md93',1,'']]],
-  ['3_20upwind_20godunov_20numerical_20flux_11',['3) Upwind (Godunov) Numerical Flux',['../tutorials_05_Shallow_Water_DG.html#autotoc_md81',1,'']]],
-  ['3d_12',['4) Manufactured solutions: 2D and 3D',['../tutorials_03_Elasticity_Assembly.html#autotoc_md67',1,'']]],
-  ['3d_20agglomerates_13',['Repair of 3D Agglomerates',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md119',1,'']]]
+  ['3_20the_20a_20n_20matrix_10',['3.3 The |A(n)| Matrix',['../tutorials_05_Shallow_Water_DG.html#autotoc_md84',1,'']]],
+  ['3_20time_20integration_11',['5.3 Time Integration',['../tutorials_05_Shallow_Water_DG.html#autotoc_md93',1,'']]],
+  ['3_20upwind_20godunov_20numerical_20flux_12',['3) Upwind (Godunov) Numerical Flux',['../tutorials_05_Shallow_Water_DG.html#autotoc_md81',1,'']]],
+  ['3d_13',['4) Manufactured solutions: 2D and 3D',['../tutorials_03_Elasticity_Assembly.html#autotoc_md67',1,'']]],
+  ['3d_20agglomerates_14',['Repair of 3D Agglomerates',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md119',1,'']]]
 ];

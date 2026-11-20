@@ -25,7 +25,6 @@ var classvulpes_1_1polynomial_1_1SparsePolynomial =
     [ "permuteVariables", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a6572739f0aa5daf946eaab6813dde08e", null ],
     [ "primitive", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a079d6c8e713d8024ae8f7e5c83b1d195", null ],
     [ "self", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#acb35aa91415753bac40f94e47483d841", null ],
-    [ "self", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a82a2b8e6329b5027d5476a2db49efaab", null ],
     [ "to", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a7f846c4daf0ea4bc45bb8b3937c1f37d", null ],
     [ "updateMaxExp", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a613f1c0e842a79b9cf77a87efb097d91", null ],
     [ "operator<<", "classvulpes_1_1polynomial_1_1SparsePolynomial.html#a836b3873667e633ac524a0dd2de366a3", null ],

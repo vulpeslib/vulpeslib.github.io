@@ -12,5 +12,7 @@ var searchData=
   ['rk4imex_9',['RK4IMEX',['../structvulpes_1_1timeintegration_1_1RK4IMEX.html',1,'vulpes::timeintegration']]],
   ['rowmat_10',['RowMat',['../classEigenVulpes_1_1RowMat.html',1,'EigenVulpes']]],
   ['rowview_11',['RowView',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html',1,'vulpes::datastructure::CrsMap']]],
-  ['rr_5fstack_5fitem_12',['RR_stack_item',['../structvulpes_1_1scipy_1_1RR__stack__item.html',1,'vulpes::scipy']]]
+  ['rowview_3c_20false_20_3e_12',['RowView&lt; false &gt;',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html',1,'vulpes::datastructure::CrsMap']]],
+  ['rowview_3c_20true_20_3e_13',['RowView&lt; true &gt;',['../classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html',1,'vulpes::datastructure::CrsMap']]],
+  ['rr_5fstack_5fitem_14',['RR_stack_item',['../structvulpes_1_1scipy_1_1RR__stack__item.html',1,'vulpes::scipy']]]
 ];

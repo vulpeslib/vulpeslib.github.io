@@ -1,7 +1,7 @@
 var butcher__tables_8hpp =
 [
-    [ "vulpes::timeintegration::ButcherTable< S >", "structvulpes_1_1timeintegration_1_1ButcherTable.html", "structvulpes_1_1timeintegration_1_1ButcherTable" ],
-    [ "vulpes::timeintegration::ButcherTableIMEX< S >", "structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html", "structvulpes_1_1timeintegration_1_1ButcherTableIMEX" ],
+    [ "vulpes::timeintegration::ButcherTable&lt; S &gt;", "structvulpes_1_1timeintegration_1_1ButcherTable.html", "structvulpes_1_1timeintegration_1_1ButcherTable" ],
+    [ "vulpes::timeintegration::ButcherTableIMEX&lt; S &gt;", "structvulpes_1_1timeintegration_1_1ButcherTableIMEX.html", "structvulpes_1_1timeintegration_1_1ButcherTableIMEX" ],
     [ "vulpes::timeintegration::ForwardEuler", "structvulpes_1_1timeintegration_1_1ForwardEuler.html", "structvulpes_1_1timeintegration_1_1ForwardEuler" ],
     [ "vulpes::timeintegration::BackwardEuler", "structvulpes_1_1timeintegration_1_1BackwardEuler.html", "structvulpes_1_1timeintegration_1_1BackwardEuler" ],
     [ "vulpes::timeintegration::MidPoint", "structvulpes_1_1timeintegration_1_1MidPoint.html", "structvulpes_1_1timeintegration_1_1MidPoint" ],
@@ -17,8 +17,8 @@ var butcher__tables_8hpp =
     [ "vulpes::timeintegration::Miller3", "structvulpes_1_1timeintegration_1_1Miller3.html", "structvulpes_1_1timeintegration_1_1Miller3" ],
     [ "vulpes::timeintegration::TRBDF2", "structvulpes_1_1timeintegration_1_1TRBDF2.html", "structvulpes_1_1timeintegration_1_1TRBDF2" ],
     [ "vulpes::timeintegration::LstableDIRK", "structvulpes_1_1timeintegration_1_1LstableDIRK.html", "structvulpes_1_1timeintegration_1_1LstableDIRK" ],
-    [ "vulpes::timeintegration::ExplicitButcherIMEX< PlainButcher >", "structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX.html", "structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX" ],
-    [ "vulpes::timeintegration::ImplicitButcherIMEX< PlainButcher >", "structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html", "structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX" ],
+    [ "vulpes::timeintegration::ExplicitButcherIMEX&lt; PlainButcher &gt;", "structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX.html", "structvulpes_1_1timeintegration_1_1ExplicitButcherIMEX" ],
+    [ "vulpes::timeintegration::ImplicitButcherIMEX&lt; PlainButcher &gt;", "structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX.html", "structvulpes_1_1timeintegration_1_1ImplicitButcherIMEX" ],
     [ "vulpes::timeintegration::ForwardEulerIMEX", "structvulpes_1_1timeintegration_1_1ForwardEulerIMEX.html", "structvulpes_1_1timeintegration_1_1ForwardEulerIMEX" ],
     [ "vulpes::timeintegration::HeunIMEX", "structvulpes_1_1timeintegration_1_1HeunIMEX.html", "structvulpes_1_1timeintegration_1_1HeunIMEX" ],
     [ "vulpes::timeintegration::SSPRK3IMEX", "structvulpes_1_1timeintegration_1_1SSPRK3IMEX.html", "structvulpes_1_1timeintegration_1_1SSPRK3IMEX" ],
@@ -34,10 +34,10 @@ var butcher__tables_8hpp =
     [ "vulpes::timeintegration::ForwardBackwardEulerIMEX", "structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX.html", "structvulpes_1_1timeintegration_1_1ForwardBackwardEulerIMEX" ],
     [ "vulpes::timeintegration::ImplicitExplicitMidpointIMEX", "structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX.html", "structvulpes_1_1timeintegration_1_1ImplicitExplicitMidpointIMEX" ],
     [ "vulpes::timeintegration::AscherRuuthSpiteriLstable4IMEX", "structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX.html", "structvulpes_1_1timeintegration_1_1AscherRuuthSpiteriLstable4IMEX" ],
-    [ "checkButcherTable", "butcher__tables_8hpp.html#a852fccb0d82bfec27eb2816a19edfe69", null ],
-    [ "checkFSAL", "butcher__tables_8hpp.html#aa81ff571da7cb0b1a4ce3e0123e2f65f", null ],
-    [ "padEndArray", "butcher__tables_8hpp.html#a09fa14548f9f9647afbcf9435376113e", null ],
-    [ "padStartArray", "butcher__tables_8hpp.html#a05567d778d8c502fa795cad138a3bff6", null ],
-    [ "padTopLeftMat", "butcher__tables_8hpp.html#a9bc77afa8c719de073dfbe12fa2b7b1b", null ],
-    [ "padTopRightMat", "butcher__tables_8hpp.html#a1df1edc2612170072c68e7dc13c65baf", null ]
+    [ "vulpes::timeintegration::internal::checkButcherTable", "namespacevulpes_1_1timeintegration_1_1internal.html#a852fccb0d82bfec27eb2816a19edfe69", null ],
+    [ "vulpes::timeintegration::internal::checkFSAL", "namespacevulpes_1_1timeintegration_1_1internal.html#aa81ff571da7cb0b1a4ce3e0123e2f65f", null ],
+    [ "vulpes::timeintegration::internal::padEndArray", "namespacevulpes_1_1timeintegration_1_1internal.html#a09fa14548f9f9647afbcf9435376113e", null ],
+    [ "vulpes::timeintegration::internal::padStartArray", "namespacevulpes_1_1timeintegration_1_1internal.html#a05567d778d8c502fa795cad138a3bff6", null ],
+    [ "vulpes::timeintegration::internal::padTopLeftMat", "namespacevulpes_1_1timeintegration_1_1internal.html#a9bc77afa8c719de073dfbe12fa2b7b1b", null ],
+    [ "vulpes::timeintegration::internal::padTopRightMat", "namespacevulpes_1_1timeintegration_1_1internal.html#a1df1edc2612170072c68e7dc13c65baf", null ]
 ];

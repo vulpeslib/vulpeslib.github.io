@@ -1,7 +1,7 @@
 var classvulpes_1_1dofs_1_1DofHandler =
 [
     [ "index_t", "classvulpes_1_1dofs_1_1DofHandler.html#a00fbdf56b883d0c08c4e1160c24a112c", null ],
-    [ "MappingType", "classvulpes_1_1dofs_1_1DofHandler.html#ab9cc001b9f2ec76a4b9971c6aeb19f0d", null ],
+    [ "MappingType", "classvulpes_1_1dofs_1_1DofHandler.html#ac032e17daabb64bbdf24362571e97076", null ],
     [ "Mesh", "classvulpes_1_1dofs_1_1DofHandler.html#a2f53b8c3dfc789f66555f7b56c5a90f2", null ],
     [ "DofHandler", "classvulpes_1_1dofs_1_1DofHandler.html#ae5a475cc95debab99a743b805d2f2b6e", null ],
     [ "applyRenumbering", "classvulpes_1_1dofs_1_1DofHandler.html#a6ab8b920c5f72735cb158dc7e0741c8f", null ],

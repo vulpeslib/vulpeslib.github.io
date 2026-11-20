@@ -2,8 +2,8 @@ var classvulpes_1_1datastructure_1_1CrsMap_1_1RowView =
 [
     [ "const_iterator", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#ad0add8bb1c3fd0d7ec98cd7872a54b61", null ],
     [ "iterator", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a9768d6ab20ab8387b6b0346989626fe9", null ],
-    [ "pointer_t", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a7de00b17518312c1f969c81166a131a4", null ],
-    [ "reference_t", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a2e05b911c45c5936e9c263ab25096d7d", null ],
+    [ "pointer_t", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a439f7bf6a103c6f76aed97105d6a92ca", null ],
+    [ "reference_t", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a22b7beaec9e3578e05be43ae1a333b31", null ],
     [ "RowView", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#aec43b637e6198255d17e3b5b99a55883", null ],
     [ "begin", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a414737244773f4660f914762a5cc019d", null ],
     [ "begin", "classvulpes_1_1datastructure_1_1CrsMap_1_1RowView.html#a0768b4f5bc2dc919b3d69f9d7a0dd5c0", null ],

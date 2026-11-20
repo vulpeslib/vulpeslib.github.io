@@ -1,12 +1,12 @@
 var namespacevulpes_1_1fe_1_1internal =
 [
-    [ "IsUnscaledSparsePolynomial", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial.html", null ],
-    [ "IsUnscaledSparsePolynomial< polynomial::SparsePolynomial< D, I, double, false > >", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial_3_01polynomial_1_1SparsePolynomial_47ef93cddb00879cf29a3200ecd17bba.html", null ],
-    [ "LagrangianNodesPolicy", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy" ],
     [ "PolynomialTypeHelper", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper.html", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper" ],
-    [ "PolynomialTypeHelper< T, std::enable_if_t< std::is_same_v< T, void > > >", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331" ],
+    [ "PolynomialTypeHelper&lt; T, std::enable_if_t&lt; std::is_same_v&lt; T, void &gt; &gt; &gt;", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331.html", "structvulpes_1_1fe_1_1internal_1_1PolynomialTypeHelper_3_01T_00_01std_1_1enable__if__t_3_01std_18ce14324af7bb5444618348655afb331" ],
+    [ "LagrangianNodesPolicy", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy.html", "structvulpes_1_1fe_1_1internal_1_1LagrangianNodesPolicy" ],
     [ "WarpAndBlendNodesPolicy", "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy.html", "structvulpes_1_1fe_1_1internal_1_1WarpAndBlendNodesPolicy" ],
-    [ "real_t", "namespacevulpes_1_1fe_1_1internal.html#a6603eb9554bb6b7399878a3bba383ad6", null ],
+    [ "IsUnscaledSparsePolynomial", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial.html", null ],
+    [ "IsUnscaledSparsePolynomial&lt; polynomial::SparsePolynomial&lt; D, I, double, false &gt; &gt;", "structvulpes_1_1fe_1_1internal_1_1IsUnscaledSparsePolynomial_3_01polynomial_1_1SparsePolynomial_47ef93cddb00879cf29a3200ecd17bba.html", null ],
+    [ "real_t", "namespacevulpes_1_1fe_1_1internal.html#a2bb3d86813c2e3c81803ddbc4784f9f3", null ],
     [ "buildVandermonde", "namespacevulpes_1_1fe_1_1internal.html#a149529c6dad257c887c4eccc4f56de2a", null ],
     [ "cartesian_hcat", "namespacevulpes_1_1fe_1_1internal.html#a738594faa323683b391d5c17ff0ae312", null ],
     [ "computeInverse", "namespacevulpes_1_1fe_1_1internal.html#a84ad20732cf47d1ef97208cde6f50ee7", null ],

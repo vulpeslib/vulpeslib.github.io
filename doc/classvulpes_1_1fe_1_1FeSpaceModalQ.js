@@ -1,8 +1,8 @@
 var classvulpes_1_1fe_1_1FeSpaceModalQ =
 [
     [ "FeSpaceType", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a1c77ee7ffd70d229378324aa593113aa", null ],
-    [ "Polynomial", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ae70f6e0696373aabbbb62fceb68731b9", null ],
-    [ "PolynomialFast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ade064d5dd8a6ce146b2c9b425e5d7ae6", null ],
+    [ "Polynomial", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ac7c72719aa414237c0dfcbe4e39576b8", null ],
+    [ "PolynomialFast", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ab505306b5ba157623d3c02919039773d", null ],
     [ "real_t", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a4b62e1349bc842589144be01b5ddf8a1", null ],
     [ "FeSpaceModalQ", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a38451592f279b412a9ba365854cdd82a", null ],
     [ "cellInitOptions", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a32a2a63d6328703e1452c006214927fb", null ],
@@ -16,7 +16,6 @@ var classvulpes_1_1fe_1_1FeSpaceModalQ =
     [ "needBasisScaling", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#afd74de6b633582feabbb761d3d3405f4", null ],
     [ "order", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#af644ca63b73d22f902f2857a488e2efa", null ],
     [ "self", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a88e3c3ac717ace22ae95ebdc3624e251", null ],
-    [ "self", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#ab5390edfdbb28c033cb4fbd3aea88b30", null ],
     [ "dim", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a90d644a3d1dcb078b2bc97c4c27924e7", null ],
     [ "fe_space_dim", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#a2780af3cb112fb3168e778d380118178", null ],
     [ "m_dof_policy", "classvulpes_1_1fe_1_1FeSpaceModalQ.html#aceb15ad95a454121903eb59722318ccd", null ],

@@ -1,12 +1,12 @@
 var namespacevulpes_1_1assemble_1_1internal =
 [
-    [ "is_fe_expression_derived", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived.html", null ],
-    [ "is_fe_expression_derived< T, std::void_t<> >", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived_3_01T_00_01std_1_1void__t_3_4_01_4.html", null ],
-    [ "is_fe_expression_derived_dim", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived__dim.html", null ],
     [ "is_tuple", "structvulpes_1_1assemble_1_1internal_1_1is__tuple.html", null ],
-    [ "is_tuple< std::tuple< Args... > >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html", null ],
+    [ "is_tuple&lt; std::tuple&lt; Args... &gt; &gt;", "structvulpes_1_1assemble_1_1internal_1_1is__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html", null ],
+    [ "is_fe_expression_derived", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived.html", null ],
+    [ "is_fe_expression_derived_dim", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived__dim.html", null ],
+    [ "is_fe_expression_derived&lt; T, std::void_t&lt;&gt; &gt;", "structvulpes_1_1assemble_1_1internal_1_1is__fe__expression__derived_3_01T_00_01std_1_1void__t_3_4_01_4.html", null ],
     [ "is_tuple_of_fe_expr_pointers", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers.html", null ],
-    [ "is_tuple_of_fe_expr_pointers< std::tuple< Args... >, std::enable_if_t<(std::conjunction_v< std::is_pointer< Args >... >) &&(std::conjunction_v< is_fe_expression_derived< std::remove_pointer_t< Args > >... >)> >", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html", null ],
+    [ "is_tuple_of_fe_expr_pointers&lt; std::tuple&lt; Args... &gt;, std::enable_if_t&lt;(std::conjunction_v&lt; std::is_pointer&lt; Args &gt;... &gt;) &amp;&amp;(std::conjunction_v&lt; is_fe_expression_derived&lt; std::remove_pointer_t&lt; Args &gt; &gt;... &gt;)&gt; &gt;", "structvulpes_1_1assemble_1_1internal_1_1is__tuple__of__fe__expr__pointers_3_01std_1_1tuple_3_01A3f1a4bf116d637271183cda44664ad7a.html", null ],
     [ "extract_false", "namespacevulpes_1_1assemble_1_1internal.html#a8de999237d41ed61782b1f0ac4657ab7", null ],
     [ "extract_true", "namespacevulpes_1_1assemble_1_1internal.html#ab9497678b40f0c2ef5887367e2522061", null ],
     [ "split_expression_tuple", "namespacevulpes_1_1assemble_1_1internal.html#a3452007ee5d0906d35c5771b51048895", null ],

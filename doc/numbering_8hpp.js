@@ -1,16 +1,16 @@
 var numbering_8hpp =
 [
-    [ "Graph", "numbering_8hpp.html#a7404e8f96c7799b64254b1c2ec0cf6ec", null ],
-    [ "GraphDegree", "numbering_8hpp.html#aa66414c3fd26ecc00465cb019debc82b", null ],
-    [ "GraphIndex", "numbering_8hpp.html#ad206b320ef8210caec815e94406333a3", null ],
-    [ "Pair", "numbering_8hpp.html#a662d86e03fdcdf381cc259d9b09c8799", null ],
-    [ "Permutation", "numbering_8hpp.html#ab481c1d4bac86f40d09a31064e92255a", null ],
-    [ "RenumberingFunctor", "numbering_8hpp.html#ac4c45bbcac2b56eee9de8acf68bc0fd3", null ],
-    [ "size_type", "numbering_8hpp.html#acada01fe12cc1d40b5e635a62ce1f7c7", null ],
-    [ "Vertex", "numbering_8hpp.html#aa4eb2a40b4c72422bbdca1579ab412c0", null ],
-    [ "computeBoostCuthillMckeeOrdering", "numbering_8hpp.html#a49b2d4a032188147ed88c0a0233f3995", null ],
-    [ "computeBoostKingOrdering", "numbering_8hpp.html#afd351cc2c8263c2318ddc76bc3efd4d0", null ],
-    [ "computeReverseCuthillMckeeOrdering", "numbering_8hpp.html#ae1241641e230350d59e0fbee1441cff6", null ],
-    [ "createGraph", "numbering_8hpp.html#aec2fe4a94046fafac40c620169b31eca", null ],
-    [ "nodeDegrees", "numbering_8hpp.html#a018b5e385bc0f17fa1ea62dc94400cdb", null ]
+    [ "vulpes::dofs::boosttypes::Graph", "namespacevulpes_1_1dofs_1_1boosttypes.html#aa76a5396c86d981d10e5335424dcd502", null ],
+    [ "vulpes::dofs::boosttypes::GraphDegree", "namespacevulpes_1_1dofs_1_1boosttypes.html#a7fb5df310b80cf1ebecfa3f9dce537c4", null ],
+    [ "vulpes::dofs::boosttypes::GraphIndex", "namespacevulpes_1_1dofs_1_1boosttypes.html#a832a490f690fec8e6ba913e180d6db3c", null ],
+    [ "vulpes::dofs::boosttypes::Pair", "namespacevulpes_1_1dofs_1_1boosttypes.html#a71ee7d60ba50fd84501bf399da4b19b3", null ],
+    [ "vulpes::dofs::Permutation", "namespacevulpes_1_1dofs.html#a00da0d13bb47440ea091bb6f2ab40107", null ],
+    [ "vulpes::dofs::RenumberingFunctor", "namespacevulpes_1_1dofs.html#ac2f66737ac2c8a9921359431443de956", null ],
+    [ "vulpes::dofs::boosttypes::size_type", "namespacevulpes_1_1dofs_1_1boosttypes.html#a5111efc39b7fcc6d460bef9340c872f1", null ],
+    [ "vulpes::dofs::boosttypes::Vertex", "namespacevulpes_1_1dofs_1_1boosttypes.html#a8132882508d930f599a9fe8842a9c393", null ],
+    [ "vulpes::dofs::computeBoostCuthillMckeeOrdering", "namespacevulpes_1_1dofs.html#a49b2d4a032188147ed88c0a0233f3995", null ],
+    [ "vulpes::dofs::computeBoostKingOrdering", "namespacevulpes_1_1dofs.html#afd351cc2c8263c2318ddc76bc3efd4d0", null ],
+    [ "vulpes::dofs::computeReverseCuthillMckeeOrdering", "namespacevulpes_1_1dofs.html#ae1241641e230350d59e0fbee1441cff6", null ],
+    [ "vulpes::dofs::internal::createGraph", "namespacevulpes_1_1dofs_1_1internal.html#aec2fe4a94046fafac40c620169b31eca", null ],
+    [ "vulpes::dofs::internal::nodeDegrees", "namespacevulpes_1_1dofs_1_1internal.html#a018b5e385bc0f17fa1ea62dc94400cdb", null ]
 ];

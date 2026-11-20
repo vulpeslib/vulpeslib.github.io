@@ -15,7 +15,6 @@ var classvulpes_1_1fe_1_1FeSpaceModalP =
     [ "needBasisScaling", "classvulpes_1_1fe_1_1FeSpaceModalP.html#a60c34c5f700be623951082d841403778", null ],
     [ "order", "classvulpes_1_1fe_1_1FeSpaceModalP.html#af644ca63b73d22f902f2857a488e2efa", null ],
     [ "self", "classvulpes_1_1fe_1_1FeSpaceModalP.html#a88e3c3ac717ace22ae95ebdc3624e251", null ],
-    [ "self", "classvulpes_1_1fe_1_1FeSpaceModalP.html#ab5390edfdbb28c033cb4fbd3aea88b30", null ],
     [ "dim", "classvulpes_1_1fe_1_1FeSpaceModalP.html#a90d644a3d1dcb078b2bc97c4c27924e7", null ],
     [ "fe_space_dim", "classvulpes_1_1fe_1_1FeSpaceModalP.html#a2780af3cb112fb3168e778d380118178", null ],
     [ "m_dof_policy", "classvulpes_1_1fe_1_1FeSpaceModalP.html#aceb15ad95a454121903eb59722318ccd", null ],
