@@ -37,7 +37,7 @@ window.VULPES = {
       link: "doc/tutorials_05_Shallow_Water_DG.html",
     },
     {
-      title: "Fisher-Kolmogorov on a brain mesh",
+      title: "Fisher-Kolmogorov: traveling wave on a brain mesh",
       caption: "Spreading front of a reaction-diffusion problem, DG on polyhedral cells.",
       image: "assets/video/BrainSimulation-poster.jpg",
       video: "assets/video/BrainSimulation.mp4",
@@ -47,7 +47,7 @@ window.VULPES = {
     },
     {
       title: "Advection on a deforming flow",
-      caption: "Discontinuous Galerkin transport of a scalar field, P3 on a Voronoi mesh.",
+      caption: "Discontinuous Galerkin transport of a scalar field, p=3 on a Voronoi mesh.",
       image: "assets/video/animP3-poster.jpg",
       video: "assets/video/animP3.mp4",
       cover: true,
