@@ -216,6 +216,11 @@
         preload: reduceMotion ? "none" : "metadata", "aria-label": g.title,
       });
       vid.muted = true;
+      if (g.speed) {
+        // playback speed (1 = normal); set again on load, since loading resets it
+        vid.playbackRate = g.speed;
+        vid.addEventListener("loadedmetadata", function () { vid.playbackRate = g.speed; });
+      }
       media.push(vid);
     } else {
       media.push(el("img", { src: g.image, alt: g.title, loading: "lazy" }));

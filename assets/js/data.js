@@ -22,30 +22,37 @@ window.VULPES = {
    * the video is the cover itself and loops while the card is on screen
    * (`image` is then its poster). `feature: true` makes the card twice as
    * large, `wide: true` spans two columns, `contain: true` shows the
-   * whole image on white instead of cropping it. Leave `link` empty for no link. */
+   * whole image on white instead of cropping it. `speed` sets the playback
+   * speed of a cover video (e.g. 2 = twice as fast). Leave `link` empty for no link. */
   gallery: [
+    {
+      title: "Shallow water equations",
+      caption: "Relative vorticity of a jet: p = 4 on 4096 cells and p = 1 on 65 536 cells.",
+      image: "assets/video/video-jet-poster.jpg",
+      video: "assets/video/video-jet.mp4",
+      cover: true,
+      contain: true,
+      feature: true,
+      speed: 2,
+      link: "doc/tutorials_05_Shallow_Water_DG.html",
+    },
     {
       title: "Fisher-Kolmogorov on a brain mesh",
       caption: "Spreading front of a reaction-diffusion problem, DG on polyhedral cells.",
       image: "assets/video/BrainSimulation-poster.jpg",
       video: "assets/video/BrainSimulation.mp4",
       cover: true,
-      feature: true,
+      contain: true,
       link: "doc/tutorials_06_Fisher_Kolmogorov.html",
     },
     {
       title: "Advection on a deforming flow",
-      caption: "Discontinuous Galerkin transport of a scalar field.",
-      image: "assets/img/gallery/advection.jpg",
-      video: "",
+      caption: "Discontinuous Galerkin transport of a scalar field, P3 on a Voronoi mesh.",
+      image: "assets/video/animP3-poster.jpg",
+      video: "assets/video/animP3.mp4",
+      cover: true,
+      speed: 2,
       link: "doc/tutorials_04_Advection_Assembly.html",
-    },
-    {
-      title: "Shallow water equations",
-      caption: "Cosine pulse on a polygonal mesh, water height.",
-      image: "assets/img/gallery/shallow-water.jpg",
-      video: "",
-      link: "doc/tutorials_05_Shallow_Water_DG.html",
     },
     {
       title: "Laplacian on periodic Voronoi meshes",

@@ -357,7 +357,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .gcard--wide { grid-column: span 2; }
 .gcard--feature { grid-column: span 2; grid-row: span 2; }
-.gcard--cover,
 .gcard--contain { background: #fff; }
 .gcard:hover { text-decoration: none; }
 .gcard img,
@@ -367,8 +366,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   transition: transform .6s cubic-bezier(.2,.7,.2,1), opacity .4s;
 }
 .gcard--wide img,
-.gcard--contain img { object-fit: contain; background: #fff; }
-.gcard.gcard--cover video { opacity: 1; object-fit: contain; }
+.gcard--contain img,
+.gcard--contain video { object-fit: contain; background: #fff; }
+.gcard.gcard--cover video { opacity: 1; }
 .gcard video { opacity: 0; }
 .gcard.is-playing video { opacity: 1; }
 .gcard:hover img { transform: scale(1.05); }
