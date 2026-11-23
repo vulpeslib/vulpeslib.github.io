@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kinds_20for_20lap_5fdg_5f2d_5fmain_0',['Mesh Kinds for lap_dg_2d_main',['../tutorials_01_Meshes_2D.html',1,'tutorials']]]
+  ['9_20rect_5ftri_5fperiodic_0',['9. rect_tri_periodic',['../tutorials_01_Meshes_2D.html#autotoc_md31',1,'']]]
 ];

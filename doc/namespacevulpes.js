@@ -1,34 +1,34 @@
 var namespacevulpes =
 [
     [ "assemble", "namespacevulpes_1_1assemble.html", "namespacevulpes_1_1assemble" ],
+    [ "scipy", "namespacevulpes_1_1scipy.html", "namespacevulpes_1_1scipy" ],
     [ "datastructure", "namespacevulpes_1_1datastructure.html", "namespacevulpes_1_1datastructure" ],
     [ "dofs", "namespacevulpes_1_1dofs.html", "namespacevulpes_1_1dofs" ],
     [ "fe", "namespacevulpes_1_1fe.html", "namespacevulpes_1_1fe" ],
     [ "geometry", "namespacevulpes_1_1geometry.html", "namespacevulpes_1_1geometry" ],
-    [ "io", "namespacevulpes_1_1io.html", [
-      [ "loadMatrixFromFile", "namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400", null ],
-      [ "loadVectorFromFile", "namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed", null ],
-      [ "readCSVToEigenMatrix", "namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4", null ],
-      [ "readCSVToEigenVector", "namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf", null ]
-    ] ],
+    [ "qfree", "namespacevulpes_1_1qfree.html", "namespacevulpes_1_1qfree" ],
     [ "la", "namespacevulpes_1_1la.html", "namespacevulpes_1_1la" ],
-    [ "monomial", "namespacevulpes_1_1monomial.html", "namespacevulpes_1_1monomial" ],
-    [ "mpi", "namespacevulpes_1_1mpi.html", "namespacevulpes_1_1mpi" ],
     [ "polynomial", "namespacevulpes_1_1polynomial.html", "namespacevulpes_1_1polynomial" ],
+    [ "monomial", "namespacevulpes_1_1monomial.html", "namespacevulpes_1_1monomial" ],
     [ "postprocessing", "namespacevulpes_1_1postprocessing.html", [
       [ "computeOrder", "namespacevulpes_1_1postprocessing.html#aa6a9e2a56768b8e5076941d3e9b8d497", null ],
       [ "printConvergenceTable", "namespacevulpes_1_1postprocessing.html#a853994ec6978413bfb35db639093df23", null ],
       [ "projectSolution", "namespacevulpes_1_1postprocessing.html#a5f9ec84873a837fb54aed3c043958ec8", null ],
       [ "projectSolutionSubmesh", "namespacevulpes_1_1postprocessing.html#abc31fa8655aee2c9d3043afd81671076", null ]
     ] ],
-    [ "qfree", "namespacevulpes_1_1qfree.html", "namespacevulpes_1_1qfree" ],
     [ "qrule", "namespacevulpes_1_1qrule.html", "namespacevulpes_1_1qrule" ],
-    [ "random", "namespacevulpes_1_1random.html", "namespacevulpes_1_1random" ],
-    [ "scipy", "namespacevulpes_1_1scipy.html", "namespacevulpes_1_1scipy" ],
     [ "timeintegration", "namespacevulpes_1_1timeintegration.html", "namespacevulpes_1_1timeintegration" ],
-    [ "utils", "namespacevulpes_1_1utils.html", "namespacevulpes_1_1utils" ],
-    [ "vmath", "namespacevulpes_1_1vmath.html", "namespacevulpes_1_1vmath" ],
     [ "vutils", "namespacevulpes_1_1vutils.html", "namespacevulpes_1_1vutils" ],
+    [ "io", "namespacevulpes_1_1io.html", [
+      [ "loadMatrixFromFile", "namespacevulpes_1_1io.html#a284f448bad05492253d200085ebc6400", null ],
+      [ "loadVectorFromFile", "namespacevulpes_1_1io.html#a5739b7f5c25af87b5c72088e74c36fed", null ],
+      [ "readCSVToEigenMatrix", "namespacevulpes_1_1io.html#af3470eb59cd11b665f91c2b288cbe4f4", null ],
+      [ "readCSVToEigenVector", "namespacevulpes_1_1io.html#a9c8b05abaab65e062e4a72d5fc04d3cf", null ]
+    ] ],
+    [ "mpi", "namespacevulpes_1_1mpi.html", "namespacevulpes_1_1mpi" ],
+    [ "utils", "namespacevulpes_1_1utils.html", "namespacevulpes_1_1utils" ],
+    [ "random", "namespacevulpes_1_1random.html", "namespacevulpes_1_1random" ],
+    [ "vmath", "namespacevulpes_1_1vmath.html", "namespacevulpes_1_1vmath" ],
     [ "vvutils", "namespacevulpes_1_1vvutils.html", "namespacevulpes_1_1vvutils" ],
     [ "getVulpesRoot", "namespacevulpes.html#aaab0463471add9b9defc6c798fc32ae7", null ],
     [ "operator<<", "namespacevulpes.html#aa0fd08767263de129fce9f788148ef9b", null ],

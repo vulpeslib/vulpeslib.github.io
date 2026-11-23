@@ -1,6 +1,6 @@
 var classvulpes_1_1fe_1_1FeExpressionSum =
 [
-    [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionSum.html#a3b54ff27a963ace18adb77fb3ad04069", null ],
+    [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionSum.html#a5c1e791df1cf611452783191940526a0", null ],
     [ "PolynomialType", "classvulpes_1_1fe_1_1FeExpressionSum.html#a37f2785200a6d5a829a3a1225e9eb2ac", null ],
     [ "FeExpressionSum", "classvulpes_1_1fe_1_1FeExpressionSum.html#a35243be415b01fc2311eb0d8bd0f4ed9", null ],
     [ "computeOrder", "classvulpes_1_1fe_1_1FeExpressionSum.html#acb8eea26dd851c8fbfbe8592b455c5ee", null ],
@@ -16,6 +16,6 @@ var classvulpes_1_1fe_1_1FeExpressionSum =
     [ "is_leaf", "classvulpes_1_1fe_1_1FeExpressionSum.html#a6e88e079fbfe292b004b4c27402b1cac", null ],
     [ "k_index_begin", "classvulpes_1_1fe_1_1FeExpressionSum.html#a3cf98a17cede7f6d513f4139acab51ea", null ],
     [ "k_index_end", "classvulpes_1_1fe_1_1FeExpressionSum.html#a01cc70fd754041ac80c937300c18967b", null ],
-    [ "m_u", "classvulpes_1_1fe_1_1FeExpressionSum.html#ac6ca29a8d8fa70a6fb2b29f85e1c3d9f", null ],
-    [ "m_v", "classvulpes_1_1fe_1_1FeExpressionSum.html#aa3149f7610aacc940e3b745820469c4b", null ]
+    [ "m_u", "classvulpes_1_1fe_1_1FeExpressionSum.html#ad2e61a17251b469813056d991b2ede53", null ],
+    [ "m_v", "classvulpes_1_1fe_1_1FeExpressionSum.html#a5ce27354ea1b5c90cff54f3ef13b7267", null ]
 ];

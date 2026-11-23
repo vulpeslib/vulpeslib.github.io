@@ -10,7 +10,6 @@ var classvulpes_1_1geometry_1_1CartesianMapping =
     [ "jacobianDet", "classvulpes_1_1geometry_1_1CartesianMapping.html#aaf573a1bf83f1ef4e82c5b5d0468a90a", null ],
     [ "jacobianInv", "classvulpes_1_1geometry_1_1CartesianMapping.html#a9bed09dac87406c0df0b7128565bc081", null ],
     [ "self", "classvulpes_1_1geometry_1_1CartesianMapping.html#a32aa5c79a66a4297f3f02b7656a520da", null ],
-    [ "self", "classvulpes_1_1geometry_1_1CartesianMapping.html#add1aee4c19067d3ab7e67772c1775aa9", null ],
     [ "setJacobianDet", "classvulpes_1_1geometry_1_1CartesianMapping.html#ac8a5cfdf7239b1334cbbc80b655fde0e", null ],
     [ "transform", "classvulpes_1_1geometry_1_1CartesianMapping.html#ad74291d328f006522c28fb7287214a8d", null ],
     [ "transform", "classvulpes_1_1geometry_1_1CartesianMapping.html#ac961956b42d0b531dfa58b7a24a0fc22", null ],

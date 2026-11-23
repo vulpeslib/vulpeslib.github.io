@@ -1,5 +1,30 @@
 var searchData=
 [
-  ['water_20equations_20dg_0',['Linear Shallow Water Equations (DG)',['../tutorials_05_Shallow_Water_DG.html',1,'tutorials']]],
-  ['workflows_1',['Workflows',['../developers_guide_workflows.html',1,'developers_guide']]]
+  ['image_0',['Installation of Vulpes on Cluster - Apptainer Image',['../installation_instruction.html#autotoc_md4',1,'']]],
+  ['image_1',['4. Build the image',['../installation_instruction.html#autotoc_md11',1,'']]],
+  ['image_20and_20compile_20vulpes_2',['5. Run the image and compile Vulpes',['../installation_instruction.html#autotoc_md12',1,'']]],
+  ['immediately_3',['Return from errors immediately',['../developers_guide_style_guide.html#autotoc_md175',1,'']]],
+  ['in_20code_4',['Core weak-form terms in code',['../tutorials_02_Laplacian_Assembly.html#autotoc_md48',1,'']]],
+  ['in_20code_20cells_20neighbors_20vertices_5',['Accessing mesh info in code (cells, neighbors, vertices)',['../tutorials_01_Meshes_2D.html#autotoc_md39',1,'']]],
+  ['in_20paraview_6',['5) Post-processing visualization in Paraview',['../tutorials_02_Laplacian_Assembly.html#autotoc_md57',1,'']]],
+  ['in_20the_20advection_20example_7',['3) Code Notations in the Advection Example',['../tutorials_04_Advection_Assembly.html#autotoc_md72',1,'']]],
+  ['in_20the_20fisher_20kolmogorov_20example_8',['2) Code Notations in the Fisher-Kolmogorov Example',['../tutorials_06_Fisher_Kolmogorov.html#autotoc_md102',1,'']]],
+  ['in_20vulpes_9',['Periodic case handling in Vulpes',['../tutorials_02_Laplacian_Assembly.html#autotoc_md50',1,'']]],
+  ['includes_10',['Includes',['../developers_guide_style_guide.html#autotoc_md152',1,'']]],
+  ['info_20in_20code_20cells_20neighbors_20vertices_11',['Accessing mesh info in code (cells, neighbors, vertices)',['../tutorials_01_Meshes_2D.html#autotoc_md39',1,'']]],
+  ['inheritance_12',['Inheritance',['../developers_guide_style_guide.html#autotoc_md160',1,'']]],
+  ['initial_20condition_20and_20snapshots_13',['4) Initial Condition and Snapshots',['../tutorials_04_Advection_Assembly.html#autotoc_md74',1,'']]],
+  ['install_20a_20debug_20version_20of_20petsc_14',['Install a Debug version of Petsc',['../developers_guide_compile_native.html#autotoc_md128',1,'']]],
+  ['install_20build_15',['Install &amp;amp; Build',['../installation_instruction.html',1,'']]],
+  ['install_20vulpes_20on_20cluster_16',['1. Install Vulpes on cluster',['../installation_instruction.html#autotoc_md5',1,'']]],
+  ['installation_20of_20vulpes_20on_20cluster_20apptainer_20image_17',['Installation of Vulpes on Cluster - Apptainer Image',['../installation_instruction.html#autotoc_md4',1,'']]],
+  ['installed_20apptainer_20recommended_18',['Using system-installed Apptainer (recommended)',['../installation_instruction.html#autotoc_md7',1,'']]],
+  ['installing_20a_20local_20version_19',['Installing a local version',['../installation_instruction.html#autotoc_md8',1,'']]],
+  ['installing_20missing_20packages_20',['Installing missing packages',['../developers_guide_compile_native.html#autotoc_md126',1,'']]],
+  ['integer_20types_21',['Integer Types',['../developers_guide_style_guide.html#autotoc_md167',1,'']]],
+  ['integration_22',['5.3 Time Integration',['../tutorials_05_Shallow_Water_DG.html#autotoc_md93',1,'']]],
+  ['integration_20process_23',['The Integration Process',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#process_sec',1,'']]],
+  ['interpretation_24',['Practical interpretation',['../tutorials_02_Laplacian_Assembly.html#autotoc_md51',1,'']]],
+  ['its_20central_20dissipation_20form_25',['3.1 The Upwind Flux and its Central + Dissipation Form',['../tutorials_05_Shallow_Water_DG.html#autotoc_md82',1,'']]],
+  ['its_20sipg_20formulation_26',['1) Linear elasticity and its SIPG formulation',['../tutorials_03_Elasticity_Assembly.html#autotoc_md58',1,'']]]
 ];

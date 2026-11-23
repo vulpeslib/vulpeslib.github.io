@@ -1,7 +1,7 @@
 var classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh =
 [
     [ "FeSpaceType", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#aba0b18cd54e491637f9cbbb0d8ee4660", null ],
-    [ "FuncType", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#af67379c339efef28733748a4aacd4a96", null ],
+    [ "FuncType", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a26938abd89fe9c5c54d13a1408d1e850", null ],
     [ "FeExpressionFacePointsNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#ab3c47da407826f84390ba32152dda06c", null ],
     [ "FeExpressionFacePointsNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#aae16fea064e7b8c01a7270732b551d15", null ],
     [ "FeExpressionFacePointsNeedNeigh", "classvulpes_1_1fe_1_1FeExpressionFacePointsNeedNeigh.html#a68d34214be22fc6226e29a2ccae0f850", null ],

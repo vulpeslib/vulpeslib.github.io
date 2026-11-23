@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['of_203d_20agglomerates_0',['Repair of 3D Agglomerates',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md119',1,'']]],
+  ['of_20a_20library_1',['Specifying the position of a library',['../developers_guide_compile_native.html#autotoc_md134',1,'']]],
+  ['of_20advection_2',['1) DG Formulation of Advection',['../tutorials_04_Advection_Assembly.html#autotoc_md70',1,'']]],
+  ['of_20fisher_20kolmogorov_3',['1) DG Formulation of Fisher-Kolmogorov',['../tutorials_06_Fisher_Kolmogorov.html#autotoc_md101',1,'']]],
+  ['of_20petsc_4',['Install a Debug version of Petsc',['../developers_guide_compile_native.html#autotoc_md128',1,'']]],
+  ['of_20the_20laplacian_5',['1) Theoretical DG Formulation of the Laplacian',['../tutorials_02_Laplacian_Assembly.html#autotoc_md45',1,'']]],
+  ['of_20the_20pipeline_6',['Overview of the Pipeline',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md107',1,'']]],
+  ['of_20vulpes_20on_20cluster_20apptainer_20image_7',['Installation of Vulpes on Cluster - Apptainer Image',['../installation_instruction.html#autotoc_md4',1,'']]],
+  ['on_20cluster_8',['1. Install Vulpes on cluster',['../installation_instruction.html#autotoc_md5',1,'']]],
+  ['on_20cluster_20apptainer_20image_9',['Installation of Vulpes on Cluster - Apptainer Image',['../installation_instruction.html#autotoc_md4',1,'']]],
+  ['on_20cluster_3a_10',['2. Setup Apptainer on cluster:',['../installation_instruction.html#autotoc_md6',1,'']]],
+  ['open_20closed_11',['Periodic topology workflow (open/closed)',['../tutorials_01_Meshes_2D.html#autotoc_md44',1,'']]],
+  ['operator_20overloading_12',['Operator Overloading',['../developers_guide_style_guide.html#autotoc_md161',1,'']]],
+  ['operators_13',['operators',['../tutorials_02_Laplacian_Assembly.html#autotoc_md49',1,'Assembled algebraic operators'],['../tutorials_03_Elasticity_Assembly.html#autotoc_md66',1,'Assembled algebraic operators']]],
+  ['options_14',['Compile options',['../developers_guide_compile_options.html',1,'developers_guide']]],
+  ['ordering_20rules_3a_15',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md180',1,'']]],
+  ['our_20usecase_16',['Our usecase',['../developers_guide_compile_native.html#autotoc_md133',1,'']]],
+  ['output_17',['Output',['../tutorials_02_Laplacian_Assembly.html#autotoc_md56',1,'']]],
+  ['output_18',['6) Error measures and convergence output',['../tutorials_03_Elasticity_Assembly.html#autotoc_md69',1,'']]],
+  ['overloading_19',['Operator Overloading',['../developers_guide_style_guide.html#autotoc_md161',1,'']]],
+  ['overview_20',['Overview',['../developers_guide_commit_and_merge_policy.html#autotoc_md121',1,'Overview'],['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#overview_sec',1,'Overview']]],
+  ['overview_20of_20the_20pipeline_21',['Overview of the Pipeline',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md107',1,'']]]
+];

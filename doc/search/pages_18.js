@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['packages_0',['Installing missing packages',['../developers_guide_compile_native.html#autotoc_md126',1,'']]],
+  ['parameter_20files_1',['Parameter files',['../tutorials_02_Laplacian_Assembly.html#autotoc_md53',1,'']]],
+  ['paraview_2',['5) Post-processing visualization in Paraview',['../tutorials_02_Laplacian_Assembly.html#autotoc_md57',1,'']]],
+  ['parmetis_3',['parmetis',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md114',1,'parmetis'],['../developers_guide_compile_native.html#autotoc_md131',1,'parmetis']]],
+  ['patterns_4',['Common patterns',['../developers_guide_style_guide.html#autotoc_md157',1,'']]],
+  ['penalty_20coefficient_5',['Penalty coefficient',['../tutorials_03_Elasticity_Assembly.html#autotoc_md64',1,'']]],
+  ['periodic_20case_20handling_20in_20vulpes_6',['Periodic case handling in Vulpes',['../tutorials_02_Laplacian_Assembly.html#autotoc_md50',1,'']]],
+  ['periodic_20topology_20workflow_20open_20closed_7',['Periodic topology workflow (open/closed)',['../tutorials_01_Meshes_2D.html#autotoc_md44',1,'']]],
+  ['petsc_8',['Petsc',['../developers_guide_compile_native.html#autotoc_md128',1,'Install a Debug version of Petsc'],['../developers_guide_compile_native.html#autotoc_md127',1,'Petsc'],['../developers_guide_debugging.html#autotoc_md142',1,'Petsc']]],
+  ['physics_3a_20shallowwaterphysics_9',['5.1 Physics: ShallowWaterPhysics',['../tutorials_05_Shallow_Water_DG.html#autotoc_md91',1,'']]],
+  ['pipeline_10',['Overview of the Pipeline',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md107',1,'']]],
+  ['pointers_11',['Pointers',['../developers_guide_style_guide.html#autotoc_md174',1,'']]],
+  ['policy_12',['Commit and Merge Policy',['../developers_guide_commit_and_merge_policy.html',1,'developers_guide']]],
+  ['poly_5fmeshes_13',['3. poly_meshes',['../tutorials_01_Meshes_2D.html#autotoc_md19',1,'']]],
+  ['position_20of_20a_20library_14',['Specifying the position of a library',['../developers_guide_compile_native.html#autotoc_md134',1,'']]],
+  ['post_20processing_20visualization_20in_20paraview_15',['5) Post-processing visualization in Paraview',['../tutorials_02_Laplacian_Assembly.html#autotoc_md57',1,'']]],
+  ['practical_20interpretation_16',['Practical interpretation',['../tutorials_02_Laplacian_Assembly.html#autotoc_md51',1,'']]],
+  ['prefixes_17',['Variable prefixes',['../developers_guide_style_guide.html#autotoc_md171',1,'']]],
+  ['process_18',['The Integration Process',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#process_sec',1,'']]],
+  ['processing_20visualization_20in_20paraview_19',['5) Post-processing visualization in Paraview',['../tutorials_02_Laplacian_Assembly.html#autotoc_md57',1,'']]],
+  ['profiler_20class_20',['3. Profiling with a the Profiler class',['../developers_guide_profiling.html#autotoc_md146',1,'']]],
+  ['profiling_21',['Profiling',['../developers_guide_profiling.html',1,'Profiling'],['../developers_guide_compile_options.html#autotoc_md137',1,'Profiling']]],
+  ['profiling_20with_20a_20the_20profiler_20class_22',['3. Profiling with a the Profiler class',['../developers_guide_profiling.html#autotoc_md146',1,'']]],
+  ['profiling_20with_20valgrind_20callgrind_20and_20kcachegrind_23',['1. Profiling with Valgrind Callgrind and KCachegrind',['../developers_guide_profiling.html#autotoc_md143',1,'']]],
+  ['properties_20and_20ordering_20rules_3a_24',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md180',1,'']]]
+];

@@ -18,6 +18,6 @@ var searchData=
   ['heterogeneous_15',['Heterogeneous',['../namespacevulpes_1_1geometry.html#a2b723d4eda8229ee7f5005b9f71bdb92abacb92991a0f0e7ae9e0d878d4d14131',1,'vulpes::geometry']]],
   ['heun_16',['Heun',['../structvulpes_1_1timeintegration_1_1Heun.html',1,'vulpes::timeintegration']]],
   ['heunimex_17',['HeunIMEX',['../structvulpes_1_1timeintegration_1_1HeunIMEX.html',1,'vulpes::timeintegration']]],
-  ['hexahedrondistance_18',['hexahedrondistance',['../classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html#af9f5022a5c9f614354dd58d725f2df0c',1,'vulpes::geometry::dist3d::HexahedronDistance::HexahedronDistance()'],['../classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html',1,'vulpes::geometry::dist3d::HexahedronDistance&lt; FloatType &gt;']]],
+  ['hexahedrondistance_18',['HexahedronDistance',['../classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html',1,'vulpes::geometry::dist3d::HexahedronDistance&lt; FloatType &gt;'],['../classvulpes_1_1geometry_1_1dist3d_1_1HexahedronDistance.html#af9f5022a5c9f614354dd58d725f2df0c',1,'vulpes::geometry::dist3d::HexahedronDistance::HexahedronDistance()']]],
   ['how_20to_20run_20the_20laplacian_20convergence_20test_19',['4) How to run the Laplacian convergence test',['../tutorials_02_Laplacian_Assembly.html#autotoc_md52',1,'']]]
 ];

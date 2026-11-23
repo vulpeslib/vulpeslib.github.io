@@ -6,7 +6,6 @@ var classvulpes_1_1geometry_1_1SimplexMapping =
     [ "SimplexMapping", "classvulpes_1_1geometry_1_1SimplexMapping.html#ad1c6f6f9bd110ac4119af7b8fb3b2ecf", null ],
     [ "jacobianDet", "classvulpes_1_1geometry_1_1SimplexMapping.html#a1d5517787195e2588d9473062d0ec20a", null ],
     [ "self", "classvulpes_1_1geometry_1_1SimplexMapping.html#a32aa5c79a66a4297f3f02b7656a520da", null ],
-    [ "self", "classvulpes_1_1geometry_1_1SimplexMapping.html#add1aee4c19067d3ab7e67772c1775aa9", null ],
     [ "transform", "classvulpes_1_1geometry_1_1SimplexMapping.html#a8a25e9f70e9e048da7471f7f44273cf1", null ],
     [ "transformInv", "classvulpes_1_1geometry_1_1SimplexMapping.html#a4f638922ade4faec76669a6deb2ecbe7", null ],
     [ "m_homogeneous", "classvulpes_1_1geometry_1_1SimplexMapping.html#a69b421d66697dd17aa6af6294477efdb", null ],

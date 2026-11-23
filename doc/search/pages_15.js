@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['m1_20m2_20chips_0',['MacOS users with M1/M2 chips',['../installation_instruction.html#autotoc_md0',1,'']]],
+  ['m2_20chips_1',['MacOS users with M1/M2 chips',['../installation_instruction.html#autotoc_md0',1,'']]],
+  ['macos_20users_20with_20m1_20m2_20chips_2',['MacOS users with M1/M2 chips',['../installation_instruction.html#autotoc_md0',1,'']]],
+  ['macros_3',['Macros',['../developers_guide_style_guide.html#autotoc_md168',1,'']]],
+  ['manufactured_20solutions_3a_202d_20and_203d_4',['4) Manufactured solutions: 2D and 3D',['../tutorials_03_Elasticity_Assembly.html#autotoc_md67',1,'']]],
+  ['matching_20the_20vulpes_20assembly_5',['2) Cellwise Derivation Matching the Vulpes Assembly',['../tutorials_04_Advection_Assembly.html#autotoc_md71',1,'']]],
+  ['matching_20the_20vulpes_20code_6',['4) Cell-wise Assembly Matching the Vulpes Code',['../tutorials_05_Shallow_Water_DG.html#autotoc_md86',1,'']]],
+  ['materials_7',['Agglomeration by Region (Materials)',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md117',1,'']]],
+  ['materials_8',['Example: a cube with two materials',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md118',1,'']]],
+  ['matrix_9',['Matrix',['../tutorials_05_Shallow_Water_DG.html#autotoc_md83',1,'3.2 The A(n) Matrix'],['../tutorials_05_Shallow_Water_DG.html#autotoc_md84',1,'3.3 The |A(n)| Matrix']]],
+  ['matrix_20blocks_10',['2) Cellwise derivation and matrix blocks',['../tutorials_03_Elasticity_Assembly.html#autotoc_md60',1,'']]],
+  ['measures_20and_20convergence_20output_11',['6) Error measures and convergence output',['../tutorials_03_Elasticity_Assembly.html#autotoc_md69',1,'']]],
+  ['merge_20policy_12',['Commit and Merge Policy',['../developers_guide_commit_and_merge_policy.html',1,'developers_guide']]],
+  ['merge_20requirements_13',['Merge Requirements',['../developers_guide_commit_and_merge_policy.html#autotoc_md124',1,'']]],
+  ['mesh_14',['Topology-level access from mesh',['../tutorials_01_Meshes_2D.html#autotoc_md40',1,'']]],
+  ['mesh_20agglomeration_15',['Tool for Mesh Agglomeration',['../tutorials_07_Mesh_Agglomeration.html',1,'tutorials']]],
+  ['mesh_20info_20in_20code_20cells_20neighbors_20vertices_16',['Accessing mesh info in code (cells, neighbors, vertices)',['../tutorials_01_Meshes_2D.html#autotoc_md39',1,'']]],
+  ['mesh_20kinds_20for_20lap_5fdg_5f2d_5fmain_17',['Mesh Kinds for lap_dg_2d_main',['../tutorials_01_Meshes_2D.html',1,'tutorials']]],
+  ['mesh_20properties_20and_20ordering_20rules_3a_18',['Mesh Properties and Ordering Rules:',['../classvulpes_1_1geometry_1_1Mesh2D.html#autotoc_md180',1,'']]],
+  ['methods_19',['Methods',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md109',1,'']]],
+  ['missing_20packages_20',['Installing missing packages',['../developers_guide_compile_native.html#autotoc_md126',1,'']]],
+  ['mode_20current_21',['Variable mode (current)',['../tutorials_04_Advection_Assembly.html#autotoc_md73',1,'']]],
+  ['mpi_20laplacian_20assembly_22',['MPI Laplacian Assembly',['../tutorials_02_Laplacian_Assembly.html#mpi-laplacian-assembly',1,'']]],
+  ['mult_5ffactor_23',['mult_factor',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md112',1,'']]]
+];

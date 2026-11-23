@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['undef_0',['undef',['../classvulpes_1_1geometry_1_1Mesh2D.html#a2135ea47d8d0186e63deda8664c4af26',1,'vulpes::geometry::Mesh2D::UNDEF'],['../classvulpes_1_1geometry_1_1MeshBase.html#ab7adf769acf684564c5d6e0919359fcf',1,'vulpes::geometry::MeshBase::UNDEF']]],
+  ['undef_0',['UNDEF',['../classvulpes_1_1geometry_1_1Mesh2D.html#a2135ea47d8d0186e63deda8664c4af26',1,'vulpes::geometry::Mesh2D::UNDEF'],['../classvulpes_1_1geometry_1_1MeshBase.html#ab7adf769acf684564c5d6e0919359fcf',1,'vulpes::geometry::MeshBase::UNDEF']]],
   ['uniformityfactor_1',['UniformityFactor',['../namespacevulpes_1_1geometry.html#aceb1dc8c931252a591293493d88adc1eaf1df75dc65fec403c973599ebce4ecc0',1,'vulpes::geometry']]],
   ['uniformityfactorid_2',['UniformityFactorID',['../namespacevulpes_1_1geometry.html#a7a6b6fe736cc0fc087950ea66815378ba3ed46f9ce77cb3dfd87487d17e24cce9',1,'vulpes::geometry']]],
-  ['uniondistance_3',['uniondistance',['../classvulpes_1_1geometry_1_1UnionDistance.html#a84f7e39732f0de028be18f0bc61c0df0',1,'vulpes::geometry::UnionDistance::UnionDistance()'],['../classvulpes_1_1geometry_1_1UnionDistance.html',1,'vulpes::geometry::UnionDistance&lt; FloatType, Dim, D1, D2 &gt;']]],
+  ['uniondistance_3',['UnionDistance',['../classvulpes_1_1geometry_1_1UnionDistance.html',1,'vulpes::geometry::UnionDistance&lt; FloatType, Dim, D1, D2 &gt;'],['../classvulpes_1_1geometry_1_1UnionDistance.html#a84f7e39732f0de028be18f0bc61c0df0',1,'vulpes::geometry::UnionDistance::UnionDistance()']]],
   ['update_5fside_5fdistance_4',['update_side_distance',['../structvulpes_1_1scipy_1_1nodeinfo.html#abe1b7d978817dad7c380209b659fc63f',1,'vulpes::scipy::nodeinfo']]],
   ['updateall_5',['UpdateAll',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62fa000c668d9188fd4be6af9ccd77761b76',1,'vulpes::fe']]],
   ['updatefacenormalandgetnanson_6',['updateFaceNormalAndGetNanson',['../classvulpes_1_1assemble_1_1WeakFormIntegratorQFree.html#adc74124859d8b3c1af21071f4e0966f3',1,'vulpes::assemble::WeakFormIntegratorQFree']]],
   ['updateflags_7',['UpdateFlags',['../namespacevulpes_1_1fe.html#ac833b81cb5314629af970858c8e6b62f',1,'vulpes::fe']]],
-  ['updateflagstype_8',['UpdateFlagsType',['../namespacevulpes_1_1fe.html#a2ca0f7334f0292f04c1dd25339d65d21',1,'vulpes::fe']]],
+  ['updateflagstype_8',['UpdateFlagsType',['../namespacevulpes_1_1fe.html#a59d037b358c6d469a6935388db8915df',1,'vulpes::fe']]],
   ['updateghosts_9',['updateGhosts',['../classvulpes_1_1la_1_1Vector.html#ac64f46909d4209596615b00c85c33364',1,'vulpes::la::Vector']]],
   ['updateghostsbegin_10',['updateGhostsBegin',['../classvulpes_1_1la_1_1Vector.html#a71dbd0cf27362d7a07dc9cbc5d6c3546',1,'vulpes::la::Vector']]],
   ['updateghostsend_11',['updateGhostsEnd',['../classvulpes_1_1la_1_1Vector.html#afb4ca6d026944a03d684aa8bf67a55f0',1,'vulpes::la::Vector']]],
@@ -32,10 +32,10 @@ var searchData=
   ['upwind_20flux_20and_20its_20central_20dissipation_20form_29',['3.1 The Upwind Flux and its Central + Dissipation Form',['../tutorials_05_Shallow_Water_DG.html#autotoc_md82',1,'']]],
   ['upwind_20godunov_20numerical_20flux_30',['3) Upwind (Godunov) Numerical Flux',['../tutorials_05_Shallow_Water_DG.html#autotoc_md81',1,'']]],
   ['use_20the_20docker_20from_20vscode_31',['Use the Docker from VSCode',['../installation_instruction.html#autotoc_md2',1,'']]],
-  ['usecase_32',['Our usecase',['../developers_guide_compile_native.html#autotoc_md128',1,'']]],
+  ['usecase_32',['Our usecase',['../developers_guide_compile_native.html#autotoc_md133',1,'']]],
   ['users_20with_20m1_20m2_20chips_33',['MacOS users with M1/M2 chips',['../installation_instruction.html#autotoc_md0',1,'']]],
-  ['using_20assembly_20comments_34',['2. Checking Assembly Code and Using Assembly Comments',['../developers_guide_profiling.html#autotoc_md140',1,'']]],
-  ['using_20callgrind_35',['Using Callgrind',['../developers_guide_profiling.html#autotoc_md139',1,'']]],
-  ['using_20spack_36',['Using Spack',['../developers_guide_compile_native.html#autotoc_md127',1,'']]],
+  ['using_20assembly_20comments_34',['2. Checking Assembly Code and Using Assembly Comments',['../developers_guide_profiling.html#autotoc_md145',1,'']]],
+  ['using_20callgrind_35',['Using Callgrind',['../developers_guide_profiling.html#autotoc_md144',1,'']]],
+  ['using_20spack_36',['Using Spack',['../developers_guide_compile_native.html#autotoc_md132',1,'']]],
   ['using_20system_20installed_20apptainer_20recommended_37',['Using system-installed Apptainer (recommended)',['../installation_instruction.html#autotoc_md7',1,'']]]
 ];

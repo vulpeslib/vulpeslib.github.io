@@ -1,4 +1,26 @@
 var searchData=
 [
-  ['options_0',['Compile options',['../developers_guide_compile_options.html',1,'developers_guide']]]
+  ['day_0',['Day to day',['../developers_guide_compile_options.html#autotoc_md136',1,'']]],
+  ['day_20to_20day_1',['Day to day',['../developers_guide_compile_options.html#autotoc_md136',1,'']]],
+  ['debug_20version_20of_20petsc_2',['Install a Debug version of Petsc',['../developers_guide_compile_native.html#autotoc_md128',1,'']]],
+  ['debugging_3',['Debugging',['../developers_guide_debugging.html',1,'developers_guide']]],
+  ['define_20guard_4',['Define guard',['../developers_guide_style_guide.html#autotoc_md151',1,'']]],
+  ['definition_20file_5',['3. Create the Apptainer definition file',['../installation_instruction.html#autotoc_md10',1,'']]],
+  ['deploy_6',['Website deploy',['../developers_guide_workflows.html#autotoc_md179',1,'']]],
+  ['derivation_7',['2) Cellwise derivation',['../tutorials_02_Laplacian_Assembly.html#autotoc_md46',1,'']]],
+  ['derivation_20and_20matrix_20blocks_8',['2) Cellwise derivation and matrix blocks',['../tutorials_03_Elasticity_Assembly.html#autotoc_md60',1,'']]],
+  ['derivation_20matching_20the_20vulpes_20assembly_9',['2) Cellwise Derivation Matching the Vulpes Assembly',['../tutorials_04_Advection_Assembly.html#autotoc_md71',1,'']]],
+  ['devcontainer_10',['Build devcontainer',['../developers_guide_workflows.html#autotoc_md178',1,'']]],
+  ['developer_20s_20guide_11',['Developer&apos;s Guide',['../developers_guide.html',1,'']]],
+  ['developing_20tests_12',['Developing tests',['../developers_guide_testing_and_coverage.html#autotoc_md176',1,'']]],
+  ['dg_13',['DG',['../tutorials_04_Advection_Assembly.html',1,'Advection Assembly (DG)'],['../tutorials_06_Fisher_Kolmogorov.html',1,'Fisher-Kolmogorov Assembly (DG)'],['../tutorials_02_Laplacian_Assembly.html',1,'Laplacian Assembly (DG)'],['../tutorials_03_Elasticity_Assembly.html',1,'Linear Elasticity Assembly (DG)'],['../tutorials_05_Shallow_Water_DG.html',1,'Linear Shallow Water Equations (DG)']]],
+  ['dg_20formulation_20of_20advection_14',['1) DG Formulation of Advection',['../tutorials_04_Advection_Assembly.html#autotoc_md70',1,'']]],
+  ['dg_20formulation_20of_20fisher_20kolmogorov_15',['1) DG Formulation of Fisher-Kolmogorov',['../tutorials_06_Fisher_Kolmogorov.html#autotoc_md101',1,'']]],
+  ['dg_20formulation_20of_20the_20laplacian_16',['1) Theoretical DG Formulation of the Laplacian',['../tutorials_02_Laplacian_Assembly.html#autotoc_md45',1,'']]],
+  ['dg_20weak_20formulation_17',['2) DG Weak Formulation',['../tutorials_05_Shallow_Water_DG.html#autotoc_md79',1,'']]],
+  ['dgassembly_3a_3aassemblesystem_18',['5.2 Assembly: DGAssembly::assembleSystem()',['../tutorials_05_Shallow_Water_DG.html#autotoc_md92',1,'']]],
+  ['direct_5fkway_19',['direct_kway',['../tutorials_07_Mesh_Agglomeration.html#autotoc_md110',1,'']]],
+  ['dissipation_20form_20',['3.1 The Upwind Flux and its Central + Dissipation Form',['../tutorials_05_Shallow_Water_DG.html#autotoc_md82',1,'']]],
+  ['docker_20from_20vscode_21',['Use the Docker from VSCode',['../installation_instruction.html#autotoc_md2',1,'']]],
+  ['dualmaps_22',['DualMaps',['../tutorials_01_Meshes_2D.html#autotoc_md41',1,'']]]
 ];
